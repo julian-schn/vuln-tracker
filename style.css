@@ -1,0 +1,211 @@
+/* --- Reset / base --- */
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+               Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 1rem;
+  background: #fff;
+  color: #111;
+  line-height: 1.5;
+}
+
+/* --- Container --- */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* --- Header --- */
+header {
+  margin-bottom: 2rem;
+  border-bottom: 2px solid #e0e0e0;
+  padding-bottom: 1rem;
+}
+
+header h1 {
+  margin: 0 0 0.25rem;
+  font-size: 1.8rem;
+}
+
+.subtitle {
+  margin: 0 0 0.25rem;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.last-updated {
+  margin: 0;
+  color: #888;
+  font-size: 0.85rem;
+}
+
+/* --- Sections --- */
+section {
+  margin-bottom: 2.5rem;
+}
+
+section h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0.75rem;
+}
+
+.count {
+  font-weight: 400;
+  color: #666;
+  font-size: 0.9em;
+}
+
+/* --- Table wrapper (horizontal scroll on mobile) --- */
+.table-wrapper {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 700px;
+  font-size: 0.9rem;
+}
+
+th {
+  background: #f0f0f0;
+  text-align: left;
+  padding: 0.5rem 0.75rem;
+  border-bottom: 2px solid #ccc;
+  white-space: nowrap;
+}
+
+td {
+  padding: 0.45rem 0.75rem;
+  border-bottom: 1px solid #e8e8e8;
+  vertical-align: top;
+}
+
+tr:nth-child(even) td {
+  background: #f9f9f9;
+}
+
+tr:hover td {
+  background: #f0f7ff;
+}
+
+/* --- Links --- */
+a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* --- Severity labels --- */
+.severity {
+  display: inline-block;
+  padding: 0.15rem 0.5rem;
+  border-radius: 3px;
+  font-size: 0.78em;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #fff;
+  white-space: nowrap;
+}
+
+.severity.critical { background: #c0392b; }
+.severity.high     { background: #e67e22; }
+.severity.medium   { background: #f39c12; color: #333; }
+.severity.low      { background: #2980b9; }
+.severity.none     { background: #7f8c8d; }
+
+/* --- KEV indicator --- */
+.kev-yes {
+  color: #c0392b;
+  font-weight: 700;
+  font-size: 1.1em;
+}
+
+/* --- Description expand/collapse --- */
+details summary {
+  cursor: pointer;
+  color: #555;
+  font-size: 0.88em;
+  list-style: none;
+}
+
+details summary::-webkit-details-marker { display: none; }
+
+details summary::before {
+  content: "+ ";
+  font-weight: 700;
+  color: #888;
+}
+
+details[open] summary::before {
+  content: "- ";
+}
+
+details p {
+  margin: 0.4rem 0 0;
+  font-size: 0.88em;
+  color: #444;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+/* --- Footer --- */
+footer {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e0e0e0;
+  font-size: 0.8em;
+  color: #888;
+}
+
+/* --- Dark mode --- */
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #1a1a1a;
+    color: #e8e8e8;
+  }
+
+  header {
+    border-bottom-color: #333;
+  }
+
+  .subtitle { color: #aaa; }
+  .last-updated { color: #666; }
+
+  th {
+    background: #252525;
+    border-bottom-color: #444;
+    color: #ccc;
+  }
+
+  td {
+    border-bottom-color: #2e2e2e;
+  }
+
+  tr:nth-child(even) td {
+    background: #222;
+  }
+
+  tr:hover td {
+    background: #1e2a38;
+  }
+
+  a { color: #7aadff; }
+
+  .severity.medium { color: #111; }
+
+  .count { color: #888; }
+
+  details summary { color: #aaa; }
+  details p { color: #bbb; }
+
+  footer {
+    border-top-color: #333;
+    color: #666;
+  }
+}
