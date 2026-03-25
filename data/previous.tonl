@@ -2,7 +2,7 @@
 #delimiter "|"
 
 
-cves[4153]{cveId:str|published:str|lastModified:str|cvssScore:f64|severity:str|cweId:str|cweName:str|kev:bool|description:str|nvdUrl:str}:
+cves[4169]{cveId:str|published:str|lastModified:str|cvssScore:f64|severity:str|cweId:str|cweName:str|kev:bool|description:str|nvdUrl:str}:
   CVE-2026-3376|2026-02-28T23:16:01.177|2026-03-03T17:35:16.400|7.4|HIGH|CWE-119|N/A|false|A security vulnerability has been detected in Tenda F453 1.0.0.3. Affected by this vulnerability is the function fromSafeMacFilter of the file /goform/SafeMacFilter. Such manipulation of the argument page leads to buffer overflow. It is possible to launch the attack remotely. The exploit has been disclosed publicly and may be used.|https://nvd.nist.gov/vuln/detail/CVE-2026-3376
   CVE-2026-28562|2026-02-28T22:16:03.560|2026-03-05T15:41:20.113|8.8|HIGH|CWE-89|N/A|false|wpForo 2.4.14 contains an unauthenticated SQL injection vulnerability in Topics::get_topics() where the ORDER BY clause relies on ineffective esc_sql() sanitization on unquoted identifiers. Attackers exploit the wpfob parameter with CASE WHEN payloads to perform blind boolean extraction of credentials from the WordPress database.|https://nvd.nist.gov/vuln/detail/CVE-2026-28562
   CVE-2026-28561|2026-02-28T22:16:03.347|2026-03-05T15:42:01.087|4.8|MEDIUM|CWE-79|N/A|false|wpForo Forum 2.4.14 contains a stored cross-site scripting vulnerability that allows administrators to inject persistent JavaScript via forum description fields echoed without output escaping across multiple theme template files. On multisite installations or with a compromised admin account, attackers set a forum description containing HTML event handlers that execute when any user views the forum listing.|https://nvd.nist.gov/vuln/detail/CVE-2026-28561
@@ -1799,6 +1799,41 @@ cves[4153]{cveId:str|published:str|lastModified:str|cvssScore:f64|severity:str|c
   CVE-2025-13965|2026-02-18T17:21:31.610|2026-02-18T17:21:31.610|0.0|NONE|N/A|N/A|false|Rejected reason: ** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: CVE-2025-12500. Reason: This candidate is a reservation duplicate of CVE-2025-12500. Notes: All CVE users should reference CVE-2025-12500 instead of this candidate. All references and descriptions in this candidate have been removed to prevent accidental usage.|https://nvd.nist.gov/vuln/detail/CVE-2025-13965
   CVE-2025-13933|2026-02-18T17:21:31.530|2026-02-18T17:21:31.530|0.0|NONE|N/A|N/A|false|Rejected reason: ** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: CVE-2025-12500. Reason: This candidate is a reservation duplicate of CVE-2025-12500. Notes: All CVE users should reference CVE-2025-12500 instead of this candidate. All references and descriptions in this candidate have been removed to prevent accidental usage.|https://nvd.nist.gov/vuln/detail/CVE-2025-13933
   CVE-2025-13602|2026-02-18T17:21:30.243|2026-02-18T17:21:30.243|0.0|NONE|N/A|N/A|false|Rejected reason: ** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. Reason: This candidate was issued in error. Notes: All references and descriptions in this candidate have been removed to prevent accidental usage.|https://nvd.nist.gov/vuln/detail/CVE-2025-13602
+  CVE-2026-23227|2026-02-18T16:22:32.467|2026-03-25T11:16:19.980|7.8|HIGH|CWE-416|N/A|false|"In the Linux kernel, the following vulnerability has been resolved:
+
+drm/exynos: vidi: use ctx->lock to protect struct vidi_context member variables related to memory alloc/free
+
+Exynos Virtual Display driver performs memory alloc/free operations
+without lock protection, which easily causes concurrency problem.
+
+For example, use-after-free can occur in race scenario like this:
+```
+	CPU0				CPU1				CPU2
+	----				----				----
+  vidi_connection_ioctl()
+    if (vidi->connection) // true
+      drm_edid = drm_edid_alloc(); // alloc drm_edid
+      ...
+      ctx->raw_edid = drm_edid;
+      ...
+								drm_mode_getconnector()
+								  drm_helper_probe_single_connector_modes()
+								    vidi_get_modes()
+								      if (ctx->raw_edid) // true
+								        drm_edid_dup(ctx->raw_edid);
+								          if (!drm_edid) // false
+								          ...
+				vidi_connection_ioctl()
+				  if (vidi->connection) // false
+				    drm_edid_free(ctx->raw_edid); // free drm_edid
+				    ...
+								          drm_edid_alloc(drm_edid->edid)
+								            kmemdup(edid); // UAF!!
+								            ...
+```
+
+To prevent these vulns, at least in vidi_context, member variables related
+to memory alloc/free should be protected with ctx->lock."|https://nvd.nist.gov/vuln/detail/CVE-2026-23227
   CVE-2025-70998|2026-02-18T16:22:29.453|2026-02-19T18:47:14.493|9.8|CRITICAL|CWE-1188|N/A|false|UTT HiPER 810 / nv810v4 router firmware v1.5.0-140603 was discovered to contain insecure default credentials for the telnet service, possibly allowing a remote attacker to gain root access via a crafted script.|https://nvd.nist.gov/vuln/detail/CVE-2025-70998
   CVE-2025-65791|2026-02-18T16:22:29.093|2026-03-11T04:17:33.153|9.8|CRITICAL|CWE-78|N/A|false|ZoneMinder v1.36.34 is vulnerable to Command Injection in web/views/image.php. The application passes unsanitized user input directly to the exec() function. NOTE: this is disputed by the Supplier because there is no unsanitized user input to web/views/image.php.|https://nvd.nist.gov/vuln/detail/CVE-2025-65791
   CVE-2025-65519|2026-02-18T16:22:28.977|2026-02-20T20:08:11.543|6.5|MEDIUM|CWE-674|N/A|false|mayswind ezbookkeeping versions 1.2.0 and earlier contain a critical vulnerability in JSON and XML file import processing. The application fails to validate nesting depth during parsing operations, allowing authenticated attackers to trigger denial of service conditions by uploading deeply nested malicious files. This results in CPU exhaustion, service degradation, or complete service unavailability.|https://nvd.nist.gov/vuln/detail/CVE-2025-65519
@@ -2108,6 +2143,284 @@ cves[4153]{cveId:str|published:str|lastModified:str|cvssScore:f64|severity:str|c
   CVE-2026-1793|2026-02-15T04:15:54.260|2026-02-18T17:52:22.253|6.5|MEDIUM|CWE-22|N/A|false|The Element Pack Addons for Elementor plugin for WordPress is vulnerable to arbitrary file reads in all versions up to, and including, 8.3.17 via the SVG widget and a lack of sufficient file validation in the 'render_svg' function. This makes it possible for authenticated attackers, with contributor-level access and above, to read the contents of arbitrary files on the server, which can contain sensitive information.|https://nvd.nist.gov/vuln/detail/CVE-2026-1793
   CVE-2026-1750|2026-02-15T04:15:54.113|2026-02-18T17:52:22.253|8.8|HIGH|CWE-269|N/A|false|The Ecwid by Lightspeed Ecommerce Shopping Cart plugin for WordPress is vulnerable to Privilege Escalation in all versions up to, and including, 7.0.7. This is due to a missing capability check in the 'save_custom_user_profile_fields' function. This makes it possible for authenticated attackers, with minimal permissions such as a subscriber, to supply the 'ec_store_admin_access' parameter during a profile update and gain store manager access to the site.|https://nvd.nist.gov/vuln/detail/CVE-2026-1750
   CVE-2026-1490|2026-02-15T04:15:53.783|2026-02-18T17:52:22.253|9.8|CRITICAL|CWE-350|N/A|false|The Spam protection, Anti-Spam, FireWall by CleanTalk plugin for WordPress is vulnerable to unauthorized Arbitrary Plugin Installation due to an authorization bypass via reverse DNS (PTR record) spoofing on the 'checkWithoutToken' function in all versions up to, and including, 6.71. This makes it possible for unauthenticated attackers to install and activate arbitrary plugins which can be leveraged to achieve remote code execution if another vulnerable plugin is installed and activated. Note: This is only exploitable on sites with an invalid API key.|https://nvd.nist.gov/vuln/detail/CVE-2026-1490
+  CVE-2026-23204|2026-02-14T17:15:58.297|2026-03-25T11:16:19.767|7.1|HIGH|CWE-125|N/A|false|"In the Linux kernel, the following vulnerability has been resolved:
+
+net/sched: cls_u32: use skb_header_pointer_careful()
+
+skb_header_pointer() does not fully validate negative @offset values.
+
+Use skb_header_pointer_careful() instead.
+
+GangMin Kim provided a report and a repro fooling u32_classify():
+
+BUG: KASAN: slab-out-of-bounds in u32_classify+0x1180/0x11b0
+net/sched/cls_u32.c:221"|https://nvd.nist.gov/vuln/detail/CVE-2026-23204
+  CVE-2025-71221|2026-02-14T17:15:54.450|2026-03-25T11:16:15.247|7.0|HIGH|CWE-362|N/A|false|"In the Linux kernel, the following vulnerability has been resolved:
+
+dmaengine: mmp_pdma: Fix race condition in mmp_pdma_residue()
+
+Add proper locking in mmp_pdma_residue() to prevent use-after-free when
+accessing descriptor list and descriptor contents.
+
+The race occurs when multiple threads call tx_status() while the tasklet
+on another CPU is freeing completed descriptors:
+
+CPU 0                              CPU 1
+-----                              -----
+mmp_pdma_tx_status()
+mmp_pdma_residue()
+  -> NO LOCK held
+     list_for_each_entry(sw, ..)
+                                   DMA interrupt
+                                   dma_do_tasklet()
+                                     -> spin_lock(&desc_lock)
+                                        list_move(sw->node, ...)
+                                        spin_unlock(&desc_lock)
+  |                                     dma_pool_free(sw) <- FREED!
+  -> access sw->desc <- UAF!
+
+This issue can be reproduced when running dmatest on the same channel with
+multiple threads (threads_per_chan > 1).
+
+Fix by protecting the chain_running list iteration and descriptor access
+with the chan->desc_lock spinlock."|https://nvd.nist.gov/vuln/detail/CVE-2025-71221
+  CVE-2025-71203|2026-02-14T17:15:54.110|2026-03-25T11:16:15.093|7.0|HIGH|CWE-129|N/A|false|"In the Linux kernel, the following vulnerability has been resolved:
+
+riscv: Sanitize syscall table indexing under speculation
+
+The syscall number is a user-controlled value used to index into the
+syscall table. Use array_index_nospec() to clamp this value after the
+bounds check to prevent speculative out-of-bounds access and subsequent
+data leakage via cache side channels."|https://nvd.nist.gov/vuln/detail/CVE-2025-71203
+  CVE-2026-23157|2026-02-14T16:15:55.863|2026-03-25T11:16:19.570|5.5|MEDIUM|CWE-667|N/A|false|"In the Linux kernel, the following vulnerability has been resolved:
+
+btrfs: do not strictly require dirty metadata threshold for metadata writepages
+
+[BUG]
+There is an internal report that over 1000 processes are
+waiting at the io_schedule_timeout() of balance_dirty_pages(), causing
+a system hang and trigger a kernel coredump.
+
+The kernel is v6.4 kernel based, but the root problem still applies to
+any upstream kernel before v6.18.
+
+[CAUSE]
+From Jan Kara for his wisdom on the dirty page balance behavior first.
+
+  This cgroup dirty limit was what was actually playing the role here
+  because the cgroup had only a small amount of memory and so the dirty
+  limit for it was something like 16MB.
+
+  Dirty throttling is responsible for enforcing that nobody can dirty
+  (significantly) more dirty memory than there's dirty limit. Thus when
+  a task is dirtying pages it periodically enters into balance_dirty_pages()
+  and we let it sleep there to slow down the dirtying.
+
+  When the system is over dirty limit already (either globally or within
+  a cgroup of the running task), we will not let the task exit from
+  balance_dirty_pages() until the number of dirty pages drops below the
+  limit.
+
+  So in this particular case, as I already mentioned, there was a cgroup
+  with relatively small amount of memory and as a result with dirty limit
+  set at 16MB. A task from that cgroup has dirtied about 28MB worth of
+  pages in btrfs btree inode and these were practically the only dirty
+  pages in that cgroup.
+
+So that means the only way to reduce the dirty pages of that cgroup is
+to writeback the dirty pages of btrfs btree inode, and only after that
+those processes can exit balance_dirty_pages().
+
+Now back to the btrfs part, btree_writepages() is responsible for
+writing back dirty btree inode pages.
+
+The problem here is, there is a btrfs internal threshold that if the
+btree inode's dirty bytes are below the 32M threshold, it will not
+do any writeback.
+
+This behavior is to batch as much metadata as possible so we won't write
+back those tree blocks and then later re-COW them again for another
+modification.
+
+This internal 32MiB is higher than the existing dirty page size (28MiB),
+meaning no writeback will happen, causing a deadlock between btrfs and
+cgroup:
+
+- Btrfs doesn't want to write back btree inode until more dirty pages
+
+- Cgroup/MM doesn't want more dirty pages for btrfs btree inode
+  Thus any process touching that btree inode is put into sleep until
+  the number of dirty pages is reduced.
+
+Thanks Jan Kara a lot for the analysis of the root cause.
+
+[ENHANCEMENT]
+Since kernel commit b55102826d7d (""btrfs: set AS_KERNEL_FILE on the
+btree_inode""), btrfs btree inode pages will only be charged to the root
+cgroup which should have a much larger limit than btrfs' 32MiB
+threshold.
+So it should not affect newer kernels.
+
+But for all current LTS kernels, they are all affected by this problem,
+and backporting the whole AS_KERNEL_FILE may not be a good idea.
+
+Even for newer kernels I still think it's a good idea to get
+rid of the internal threshold at btree_writepages(), since for most cases
+cgroup/MM has a better view of full system memory usage than btrfs' fixed
+threshold.
+
+For internal callers using btrfs_btree_balance_dirty() since that
+function is already doing internal threshold check, we don't need to
+bother them.
+
+But for external callers of btree_writepages(), just respect their
+requests and write back whatever they want, ignoring the internal
+btrfs threshold to avoid such deadlock on btree inode dirty page
+balancing."|https://nvd.nist.gov/vuln/detail/CVE-2026-23157
+  CVE-2026-23154|2026-02-14T16:15:55.550|2026-03-25T11:16:19.400|5.5|MEDIUM|NVD-CWE-noinfo|N/A|false|"In the Linux kernel, the following vulnerability has been resolved:
+
+net: fix segmentation of forwarding fraglist GRO
+
+This patch enhances GSO segment handling by properly checking
+the SKB_GSO_DODGY flag for frag_list GSO packets, addressing
+low throughput issues observed when a station accesses IPv4
+servers via hotspots with an IPv6-only upstream interface.
+
+Specifically, it fixes a bug in GSO segmentation when forwarding
+GRO packets containing a frag_list. The function skb_segment_list
+cannot correctly process GRO skbs that have been converted by XLAT,
+since XLAT only translates the header of the head skb. Consequently,
+skbs in the frag_list may remain untranslated, resulting in protocol
+inconsistencies and reduced throughput.
+
+To address this, the patch explicitly sets the SKB_GSO_DODGY flag
+for GSO packets in XLAT's IPv4/IPv6 protocol translation helpers
+(bpf_skb_proto_4_to_6 and bpf_skb_proto_6_to_4). This marks GSO
+packets as potentially modified after protocol translation. As a
+result, GSO segmentation will avoid using skb_segment_list and
+instead falls back to skb_segment for packets with the SKB_GSO_DODGY
+flag. This ensures that only safe and fully translated frag_list
+packets are processed by skb_segment_list, resolving protocol
+inconsistencies and improving throughput when forwarding GRO packets
+converted by XLAT."|https://nvd.nist.gov/vuln/detail/CVE-2026-23154
+  CVE-2026-23141|2026-02-14T16:15:54.163|2026-03-25T11:16:19.240|5.5|MEDIUM|NVD-CWE-noinfo|N/A|false|"In the Linux kernel, the following vulnerability has been resolved:
+
+btrfs: send: check for inline extents in range_is_hole_in_parent()
+
+Before accessing the disk_bytenr field of a file extent item we need
+to check if we are dealing with an inline extent.
+This is because for inline extents their data starts at the offset of
+the disk_bytenr field. So accessing the disk_bytenr
+means we are accessing inline data or in case the inline data is less
+than 8 bytes we can actually cause an invalid
+memory access if this inline extent item is the first item in the leaf
+or access metadata from other items."|https://nvd.nist.gov/vuln/detail/CVE-2026-23141
+  CVE-2026-23138|2026-02-14T16:15:53.830|2026-03-25T11:16:19.087|5.5|MEDIUM|NVD-CWE-noinfo|N/A|false|"In the Linux kernel, the following vulnerability has been resolved:
+
+tracing: Add recursion protection in kernel stack trace recording
+
+A bug was reported about an infinite recursion caused by tracing the rcu
+events with the kernel stack trace trigger enabled. The stack trace code
+called back into RCU which then called the stack trace again.
+
+Expand the ftrace recursion protection to add a set of bits to protect
+events from recursion. Each bit represents the context that the event is
+in (normal, softirq, interrupt and NMI).
+
+Have the stack trace code use the interrupt context to protect against
+recursion.
+
+Note, the bug showed an issue in both the RCU code as well as the tracing
+stacktrace code. This only handles the tracing stack trace side of the
+bug. The RCU fix will be handled separately."|https://nvd.nist.gov/vuln/detail/CVE-2026-23138
+  CVE-2026-23118|2026-02-14T15:16:06.933|2026-03-25T11:16:18.923|4.7|MEDIUM|CWE-362|N/A|false|"In the Linux kernel, the following vulnerability has been resolved:
+
+rxrpc: Fix data-race warning and potential load/store tearing
+
+Fix the following:
+
+        BUG: KCSAN: data-race in rxrpc_peer_keepalive_worker / rxrpc_send_data_packet
+
+which is reporting an issue with the reads and writes to ->last_tx_at in:
+
+        conn->peer->last_tx_at = ktime_get_seconds();
+
+and:
+
+        keepalive_at = peer->last_tx_at + RXRPC_KEEPALIVE_TIME;
+
+The lockless accesses to these to values aren't actually a problem as the
+read only needs an approximate time of last transmission for the purposes
+of deciding whether or not the transmission of a keepalive packet is
+warranted yet.
+
+Also, as ->last_tx_at is a 64-bit value, tearing can occur on a 32-bit
+arch.
+
+Fix both of these by switching to an unsigned int for ->last_tx_at and only
+storing the LSW of the time64_t.  It can then be reconstructed at need
+provided no more than 68 years has elapsed since the last transmission."|https://nvd.nist.gov/vuln/detail/CVE-2026-23118
+  CVE-2026-23113|2026-02-14T15:16:06.380|2026-03-25T11:16:18.723|5.5|MEDIUM|NVD-CWE-noinfo|N/A|false|"In the Linux kernel, the following vulnerability has been resolved:
+
+io_uring/io-wq: check IO_WQ_BIT_EXIT inside work run loop
+
+Currently this is checked before running the pending work. Normally this
+is quite fine, as work items either end up blocking (which will create a
+new worker for other items), or they complete fairly quickly. But syzbot
+reports an issue where io-wq takes seemingly forever to exit, and with a
+bit of debugging, this turns out to be because it queues a bunch of big
+(2GB - 4096b) reads with a /dev/msr* file. Since this file type doesn't
+support ->read_iter(), loop_rw_iter() ends up handling them. Each read
+returns 16MB of data read, which takes 20 (!!) seconds. With a bunch of
+these pending, processing the whole chain can take a long time. Easily
+longer than the syzbot uninterruptible sleep timeout of 140 seconds.
+This then triggers a complaint off the io-wq exit path:
+
+INFO: task syz.4.135:6326 blocked for more than 143 seconds.
+      Not tainted syzkaller #0
+      Blocked by coredump.
+""echo 0 > /proc/sys/kernel/hung_task_timeout_secs"" disables this message.
+task:syz.4.135       state:D stack:26824 pid:6326  tgid:6324  ppid:5957   task_flags:0x400548 flags:0x00080000
+Call Trace:
+ <TASK>
+ context_switch kernel/sched/core.c:5256 [inline]
+ __schedule+0x1139/0x6150 kernel/sched/core.c:6863
+ __schedule_loop kernel/sched/core.c:6945 [inline]
+ schedule+0xe7/0x3a0 kernel/sched/core.c:6960
+ schedule_timeout+0x257/0x290 kernel/time/sleep_timeout.c:75
+ do_wait_for_common kernel/sched/completion.c:100 [inline]
+ __wait_for_common+0x2fc/0x4e0 kernel/sched/completion.c:121
+ io_wq_exit_workers io_uring/io-wq.c:1328 [inline]
+ io_wq_put_and_exit+0x271/0x8a0 io_uring/io-wq.c:1356
+ io_uring_clean_tctx+0x10d/0x190 io_uring/tctx.c:203
+ io_uring_cancel_generic+0x69c/0x9a0 io_uring/cancel.c:651
+ io_uring_files_cancel include/linux/io_uring.h:19 [inline]
+ do_exit+0x2ce/0x2bd0 kernel/exit.c:911
+ do_group_exit+0xd3/0x2a0 kernel/exit.c:1112
+ get_signal+0x2671/0x26d0 kernel/signal.c:3034
+ arch_do_signal_or_restart+0x8f/0x7e0 arch/x86/kernel/signal.c:337
+ __exit_to_user_mode_loop kernel/entry/common.c:41 [inline]
+ exit_to_user_mode_loop+0x8c/0x540 kernel/entry/common.c:75
+ __exit_to_user_mode_prepare include/linux/irq-entry-common.h:226 [inline]
+ syscall_exit_to_user_mode_prepare include/linux/irq-entry-common.h:256 [inline]
+ syscall_exit_to_user_mode_work include/linux/entry-common.h:159 [inline]
+ syscall_exit_to_user_mode include/linux/entry-common.h:194 [inline]
+ do_syscall_64+0x4ee/0xf80 arch/x86/entry/syscall_64.c:100
+ entry_SYSCALL_64_after_hwframe+0x77/0x7f
+RIP: 0033:0x7fa02738f749
+RSP: 002b:00007fa0281ae0e8 EFLAGS: 00000246 ORIG_RAX: 00000000000000ca
+RAX: fffffffffffffe00 RBX: 00007fa0275e6098 RCX: 00007fa02738f749
+RDX: 0000000000000000 RSI: 0000000000000080 RDI: 00007fa0275e6098
+RBP: 00007fa0275e6090 R08: 0000000000000000 R09: 0000000000000000
+R10: 0000000000000000 R11: 0000000000000246 R12: 0000000000000000
+R13: 00007fa0275e6128 R14: 00007fff14e4fcb0 R15: 00007fff14e4fd98
+
+There's really nothing wrong here, outside of processing these reads
+will take a LONG time. However, we can speed up the exit by checking the
+IO_WQ_BIT_EXIT inside the io_worker_handle_work() loop, as syzbot will
+exit the ring after queueing up all of these reads. Then once the first
+item is processed, io-wq will simply cancel the rest. That should avoid
+syzbot running into this complaint again."|https://nvd.nist.gov/vuln/detail/CVE-2026-23113
   CVE-2026-2312|2026-02-14T12:15:56.123|2026-02-18T17:52:44.520|4.3|MEDIUM|CWE-862|N/A|false|The Media Library Folders plugin for WordPress is vulnerable to Insecure Direct Object Reference in all versions up to, and including, 8.3.6 via the delete_maxgalleria_media() and maxgalleria_rename_image() functions due to missing validation on a user controlled key. This makes it possible for authenticated attackers, with Author-level access and above, to delete or rename attachments owned by other users (including administrators). The rename flow also deletes all postmeta for the target attachment, causing data loss.|https://nvd.nist.gov/vuln/detail/CVE-2026-2312
   CVE-2026-1512|2026-02-14T10:16:06.627|2026-02-18T17:52:44.520|6.4|MEDIUM|CWE-79|N/A|false|The Essential Addons for Elementor – Popular Elementor Templates & Widgets plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the plugin's Info Box widget in all versions up to, and including, 6.5.9 due to insufficient input sanitization and output escaping on user supplied attributes. This makes it possible for authenticated attackers, with contributor-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.|https://nvd.nist.gov/vuln/detail/CVE-2026-1512
   CVE-2026-1843|2026-02-14T09:16:12.360|2026-02-18T17:52:44.520|7.2|HIGH|CWE-79|N/A|false|The Super Page Cache plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the Activity Log in all versions up to, and including, 5.2.2 due to insufficient input sanitization and output escaping. This makes it possible for unauthenticated attackers to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.|https://nvd.nist.gov/vuln/detail/CVE-2026-1843
@@ -3666,6 +3979,174 @@ cves[4153]{cveId:str|published:str|lastModified:str|cvssScore:f64|severity:str|c
   CVE-2026-25052|2026-02-04T17:16:23.113|2026-02-05T20:32:11.497|9.4|CRITICAL|CWE-367|N/A|false|n8n is an open source workflow automation platform. Prior to versions 1.123.18 and 2.5.0, a vulnerability in the file access controls allows authenticated users with permission to create or modify workflows to read sensitive files from the n8n host system. This can be exploited to obtain critical configuration data and user credentials, leading to complete account takeover of any user on the instance. This issue has been patched in versions 1.123.18 and 2.5.0.|https://nvd.nist.gov/vuln/detail/CVE-2026-25052
   CVE-2026-25051|2026-02-04T17:16:22.980|2026-02-05T20:23:13.437|8.5|HIGH|CWE-79|N/A|false|n8n is an open source workflow automation platform. Prior to version 1.123.2, a Cross-Site Scripting (XSS) vulnerability has been identified in the handling of webhook responses and related HTTP endpoints. Under certain conditions, the Content Security Policy (CSP) sandbox protection intended to isolate HTML responses may not be applied correctly. An authenticated user with permission to create or modify workflows could abuse this to execute malicious scripts with same-origin privileges when other users interact with the crafted workflow. This could lead to session hijacking and account takeover. This issue has been patched in version 1.123.2.|https://nvd.nist.gov/vuln/detail/CVE-2026-25051
   CVE-2026-25049|2026-02-04T17:16:22.833|2026-02-05T20:22:47.870|9.4|CRITICAL|CWE-913|N/A|false|n8n is an open source workflow automation platform. Prior to versions 1.123.17 and 2.5.2, an authenticated user with permission to create or modify workflows could abuse crafted expressions in workflow parameters to trigger unintended system command execution on the host running n8n. This issue has been patched in versions 1.123.17 and 2.5.2.|https://nvd.nist.gov/vuln/detail/CVE-2026-25049
+  CVE-2026-23104|2026-02-04T17:16:21.270|2026-03-25T11:16:18.577|5.5|MEDIUM|NVD-CWE-noinfo|N/A|false|"In the Linux kernel, the following vulnerability has been resolved:
+
+ice: fix devlink reload call trace
+
+Commit 4da71a77fc3b (""ice: read internal temperature sensor"") introduced
+internal temperature sensor reading via HWMON. ice_hwmon_init() was added
+to ice_init_feature() and ice_hwmon_exit() was added to ice_remove(). As a
+result if devlink reload is used to reinit the device and then the driver
+is removed, a call trace can occur.
+
+BUG: unable to handle page fault for address: ffffffffc0fd4b5d
+Call Trace:
+ string+0x48/0xe0
+ vsnprintf+0x1f9/0x650
+ sprintf+0x62/0x80
+ name_show+0x1f/0x30
+ dev_attr_show+0x19/0x60
+
+The call trace repeats approximately every 10 minutes when system
+monitoring tools (e.g., sadc) attempt to read the orphaned hwmon sysfs
+attributes that reference freed module memory.
+
+The sequence is:
+1. Driver load, ice_hwmon_init() gets called from ice_init_feature()
+2. Devlink reload down, flow does not call ice_remove()
+3. Devlink reload up, ice_hwmon_init() gets called from
+   ice_init_feature() resulting in a second instance
+4. Driver unload, ice_hwmon_exit() called from ice_remove() leaving the
+   first hwmon instance orphaned with dangling pointer
+
+Fix this by moving ice_hwmon_exit() from ice_remove() to
+ice_deinit_features() to ensure proper cleanup symmetry with
+ice_hwmon_init()."|https://nvd.nist.gov/vuln/detail/CVE-2026-23104
+  CVE-2026-23100|2026-02-04T17:16:20.880|2026-03-25T11:16:18.370|5.5|MEDIUM|NVD-CWE-noinfo|N/A|false|"In the Linux kernel, the following vulnerability has been resolved:
+
+mm/hugetlb: fix hugetlb_pmd_shared()
+
+Patch series ""mm/hugetlb: fixes for PMD table sharing (incl.  using
+mmu_gather)"", v3.
+
+One functional fix, one performance regression fix, and two related
+comment fixes.
+
+I cleaned up my prototype I recently shared [1] for the performance fix,
+deferring most of the cleanups I had in the prototype to a later point. 
+While doing that I identified the other things.
+
+The goal of this patch set is to be backported to stable trees ""fairly""
+easily. At least patch #1 and #4.
+
+Patch #1 fixes hugetlb_pmd_shared() not detecting any sharing
+Patch #2 + #3 are simple comment fixes that patch #4 interacts with.
+Patch #4 is a fix for the reported performance regression due to excessive
+IPI broadcasts during fork()+exit().
+
+The last patch is all about TLB flushes, IPIs and mmu_gather.
+Read: complicated
+
+There are plenty of cleanups in the future to be had + one reasonable
+optimization on x86. But that's all out of scope for this series.
+
+Runtime tested, with a focus on fixing the performance regression using
+the original reproducer [2] on x86.
+
+
+This patch (of 4):
+
+We switched from (wrongly) using the page count to an independent shared
+count.  Now, shared page tables have a refcount of 1 (excluding
+speculative references) and instead use ptdesc->pt_share_count to identify
+sharing.
+
+We didn't convert hugetlb_pmd_shared(), so right now, we would never
+detect a shared PMD table as such, because sharing/unsharing no longer
+touches the refcount of a PMD table.
+
+Page migration, like mbind() or migrate_pages() would allow for migrating
+folios mapped into such shared PMD tables, even though the folios are not
+exclusive.  In smaps we would account them as ""private"" although they are
+""shared"", and we would be wrongly setting the PM_MMAP_EXCLUSIVE in the
+pagemap interface.
+
+Fix it by properly using ptdesc_pmd_is_shared() in hugetlb_pmd_shared()."|https://nvd.nist.gov/vuln/detail/CVE-2026-23100
+  CVE-2026-23070|2026-02-04T17:16:17.717|2026-03-25T11:16:18.107|5.5|MEDIUM|NVD-CWE-noinfo|N/A|false|"In the Linux kernel, the following vulnerability has been resolved:
+
+Octeontx2-af: Add proper checks for fwdata
+
+firmware populates MAC address, link modes (supported, advertised)
+and EEPROM data in shared firmware structure which kernel access
+via MAC block(CGX/RPM).
+
+Accessing fwdata, on boards booted with out MAC block leading to
+kernel panics.
+
+Internal error: Oops: 0000000096000005 [#1]  SMP
+[   10.460721] Modules linked in:
+[   10.463779] CPU: 0 UID: 0 PID: 174 Comm: kworker/0:3 Not tainted 6.19.0-rc5-00154-g76ec646abdf7-dirty #3 PREEMPT
+[   10.474045] Hardware name: Marvell OcteonTX CN98XX board (DT)
+[   10.479793] Workqueue: events work_for_cpu_fn
+[   10.484159] pstate: 80400009 (Nzcv daif +PAN -UAO -TCO -DIT -SSBS BTYPE=--)
+[   10.491124] pc : rvu_sdp_init+0x18/0x114
+[   10.495051] lr : rvu_probe+0xe58/0x1d18"|https://nvd.nist.gov/vuln/detail/CVE-2026-23070
+  CVE-2026-23066|2026-02-04T17:16:17.303|2026-03-25T11:16:17.740|5.5|MEDIUM|CWE-674|N/A|false|"In the Linux kernel, the following vulnerability has been resolved:
+
+rxrpc: Fix recvmsg() unconditional requeue
+
+If rxrpc_recvmsg() fails because MSG_DONTWAIT was specified but the call at
+the front of the recvmsg queue already has its mutex locked, it requeues
+the call - whether or not the call is already queued.  The call may be on
+the queue because MSG_PEEK was also passed and so the call was not dequeued
+or because the I/O thread requeued it.
+
+The unconditional requeue may then corrupt the recvmsg queue, leading to
+things like UAFs or refcount underruns.
+
+Fix this by only requeuing the call if it isn't already on the queue - and
+moving it to the front if it is already queued.  If we don't queue it, we
+have to put the ref we obtained by dequeuing it.
+
+Also, MSG_PEEK doesn't dequeue the call so shouldn't call
+rxrpc_notify_socket() for the call if we didn't use up all the data on the
+queue, so fix that also."|https://nvd.nist.gov/vuln/detail/CVE-2026-23066
+  CVE-2026-23053|2026-02-04T17:16:15.970|2026-03-25T11:16:17.600|0.0|NONE|N/A|N/A|false|"In the Linux kernel, the following vulnerability has been resolved:
+
+NFS: Fix a deadlock involving nfs_release_folio()
+
+Wang Zhaolong reports a deadlock involving NFSv4.1 state recovery
+waiting on kthreadd, which is attempting to reclaim memory by calling
+nfs_release_folio(). The latter cannot make progress due to state
+recovery being needed.
+
+It seems that the only safe thing to do here is to kick off a writeback
+of the folio, without waiting for completion, or else kicking off an
+asynchronous commit."|https://nvd.nist.gov/vuln/detail/CVE-2026-23053
+  CVE-2026-23050|2026-02-04T17:16:15.663|2026-03-25T11:16:17.447|0.0|NONE|N/A|N/A|false|"In the Linux kernel, the following vulnerability has been resolved:
+
+pNFS: Fix a deadlock when returning a delegation during open()
+
+Ben Coddington reports seeing a hang in the following stack trace:
+  0 [ffffd0b50e1774e0] __schedule at ffffffff9ca05415
+  1 [ffffd0b50e177548] schedule at ffffffff9ca05717
+  2 [ffffd0b50e177558] bit_wait at ffffffff9ca061e1
+  3 [ffffd0b50e177568] __wait_on_bit at ffffffff9ca05cfb
+  4 [ffffd0b50e1775c8] out_of_line_wait_on_bit at ffffffff9ca05ea5
+  5 [ffffd0b50e177618] pnfs_roc at ffffffffc154207b [nfsv4]
+  6 [ffffd0b50e1776b8] _nfs4_proc_delegreturn at ffffffffc1506586 [nfsv4]
+  7 [ffffd0b50e177788] nfs4_proc_delegreturn at ffffffffc1507480 [nfsv4]
+  8 [ffffd0b50e1777f8] nfs_do_return_delegation at ffffffffc1523e41 [nfsv4]
+  9 [ffffd0b50e177838] nfs_inode_set_delegation at ffffffffc1524a75 [nfsv4]
+ 10 [ffffd0b50e177888] nfs4_process_delegation at ffffffffc14f41dd [nfsv4]
+ 11 [ffffd0b50e1778a0] _nfs4_opendata_to_nfs4_state at ffffffffc1503edf [nfsv4]
+ 12 [ffffd0b50e1778c0] _nfs4_open_and_get_state at ffffffffc1504e56 [nfsv4]
+ 13 [ffffd0b50e177978] _nfs4_do_open at ffffffffc15051b8 [nfsv4]
+ 14 [ffffd0b50e1779f8] nfs4_do_open at ffffffffc150559c [nfsv4]
+ 15 [ffffd0b50e177a80] nfs4_atomic_open at ffffffffc15057fb [nfsv4]
+ 16 [ffffd0b50e177ad0] nfs4_file_open at ffffffffc15219be [nfsv4]
+ 17 [ffffd0b50e177b78] do_dentry_open at ffffffff9c09e6ea
+ 18 [ffffd0b50e177ba8] vfs_open at ffffffff9c0a082e
+ 19 [ffffd0b50e177bd0] dentry_open at ffffffff9c0a0935
+
+The issue is that the delegreturn is being asked to wait for a layout
+return that cannot complete because a state recovery was initiated. The
+state recovery cannot complete until the open() finishes processing the
+delegations it was given.
+
+The solution is to propagate the existing flags that indicate a
+non-blocking call to the function pnfs_roc(), so that it knows not to
+wait in this situation."|https://nvd.nist.gov/vuln/detail/CVE-2026-23050
   CVE-2026-0662|2026-02-04T17:16:13.100|2026-02-06T14:45:33.330|7.8|HIGH|CWE-426|N/A|false|A maliciously crafted project directory, when opening a max file in Autodesk 3ds Max, could lead to execution of arbitrary code in the context of the current process due to an Untrusted Search Path being utilized.|https://nvd.nist.gov/vuln/detail/CVE-2026-0662
   CVE-2026-0661|2026-02-04T17:16:12.947|2026-02-06T16:26:55.207|7.8|HIGH|CWE-787|N/A|false|A maliciously crafted RGB file, when parsed through Autodesk 3ds Max, can force a Memory Corruption vulnerability. A malicious actor can leverage this vulnerability to execute arbitrary code in the context of the current process.|https://nvd.nist.gov/vuln/detail/CVE-2026-0661
   CVE-2026-0660|2026-02-04T17:16:12.790|2026-02-06T17:48:33.337|7.8|HIGH|CWE-121|N/A|false|A maliciously crafted GIF file, when parsed through Autodesk 3ds Max, can cause a Stack-Based Buffer Overflow vulnerability. A malicious actor can leverage this vulnerability to execute arbitrary code in the context of the current process.|https://nvd.nist.gov/vuln/detail/CVE-2026-0660
