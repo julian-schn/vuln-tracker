@@ -11,11 +11,11 @@
     <header>
       <h1>vuln-tracker</h1>
       <p class="subtitle">CVEs from the National Vulnerability Database — current and previous month</p>
-      <p class="last-updated">Last updated: 2026-03-25 19:04 UTC</p>
+      <p class="last-updated">Last updated: 2026-03-25 20:48 UTC</p>
     </header>
     <main>
     <section>
-      <h2>Current Month — March 2026 <span class="count">(4678)</span></h2>
+      <h2>Current Month — March 2026 <span class="count">(4695)</span></h2>
       <div class="table-wrapper">
         <table>
           <thead>
@@ -30,6 +30,195 @@
             </tr>
           </thead>
           <tbody>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33247" target="_blank" rel="noopener">CVE-2026-33247</a></td>
+        <td>7.4</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-215</td>
+        <td>&nbsp;</td>
+        <td><details><summary>NATS-Server is a High-Performance server for NATS.io, a cloud and edge native me...</summary><p>NATS-Server is a High-Performance server for NATS.io, a cloud and edge native messaging system. Prior to versions 2.11.15 and 2.12.6, if a nats-server is run with static credentials for all clients provided via argv (the command-line), then those credentials are visible to any user who can see the monitoring port, if that too is enabled. The `/debug/vars` end-point contains an unredacted copy of argv. Versions 2.11.15 and 2.12.6 contain a fix. As a workaround, configure credentials inside a configuration file instead of via argv, and do not enable the monitoring port if using secrets in argv. Best practice remains to not expose the monitoring port to the Internet, or to untrusted network sources.</p></details></td>
+        <td>2026-03-25</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33246" target="_blank" rel="noopener">CVE-2026-33246</a></td>
+        <td>6.4</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-287</td>
+        <td>&nbsp;</td>
+        <td><details><summary>NATS-Server is a High-Performance server for NATS.io, a cloud and edge native me...</summary><p>NATS-Server is a High-Performance server for NATS.io, a cloud and edge native messaging system. The nats-server offers a `Nats-Request-Info:` message header, providing information about a request. This is supposed to provide enough information to allow for account/user identification, such that NATS clients could make their own decisions on how to trust a message, provided that they trust the nats-server as a broker. A leafnode connecting to a nats-server is not fully trusted unless the system account is bridged too. Thus identity claims should not have propagated unchecked. Prior to versions 2.11.15 and 2.12.6, NATS clients relying upon the Nats-Request-Info: header could be spoofed. This does not directly affect the nats-server itself, but the CVSS Confidentiality and Integrity scores are based upon what a hypothetical client might choose to do with this NATS header. Versions 2.11.15 and 2.12.6 contain a fix. No known workarounds are available.</p></details></td>
+        <td>2026-03-25</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33219" target="_blank" rel="noopener">CVE-2026-33219</a></td>
+        <td>5.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-770</td>
+        <td>&nbsp;</td>
+        <td><details><summary>NATS-Server is a High-Performance server for NATS.io, a cloud and edge native me...</summary><p>NATS-Server is a High-Performance server for NATS.io, a cloud and edge native messaging system. Prior to versions 2.11.15 and 2.12.6, a malicious client which can connect to the WebSockets port can cause unbounded memory use in the nats-server before authentication; this requires sending a corresponding amount of data. This is a milder variant of CVE-2026-27571. That earlier issue was a compression bomb, this vulnerability is not. Attacks against this new issue thus require significant client bandwidth. Versions 2.11.15 and 2.12.6 contain a fix. As a workaround, disable websockets if not required for project deployment.</p></details></td>
+        <td>2026-03-25</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33218" target="_blank" rel="noopener">CVE-2026-33218</a></td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-20</td>
+        <td>&nbsp;</td>
+        <td><details><summary>NATS-Server is a High-Performance server for NATS.io, a cloud and edge native me...</summary><p>NATS-Server is a High-Performance server for NATS.io, a cloud and edge native messaging system. Prior to versions 2.11.15 and 2.12.6, a client which can connect to the leafnode port can crash the nats-server with a certain malformed message pre-authentication. Versions 2.11.15 and 2.12.6 contain a fix. As a workaround, disable leafnode support if not needed or restrict network connections to the leafnode port, if plausible without compromising the service offered.</p></details></td>
+        <td>2026-03-25</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33217" target="_blank" rel="noopener">CVE-2026-33217</a></td>
+        <td>7.1</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-863</td>
+        <td>&nbsp;</td>
+        <td><details><summary>NATS-Server is a High-Performance server for NATS.io, a cloud and edge native me...</summary><p>NATS-Server is a High-Performance server for NATS.io, a cloud and edge native messaging system. Prior to versions 2.11.15 and 2.12.6, when using ACLs on message subjects, these ACLs were not applied in the `$MQTT.&gt;` namespace, allowing MQTT clients to bypass ACL checks for MQTT subjects. Versions 2.11.15 and 2.12.6 contain a fix. No known workarounds are available.</p></details></td>
+        <td>2026-03-25</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33216" target="_blank" rel="noopener">CVE-2026-33216</a></td>
+        <td>8.6</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-256</td>
+        <td>&nbsp;</td>
+        <td><details><summary>NATS-Server is a High-Performance server for NATS.io, a cloud and edge native me...</summary><p>NATS-Server is a High-Performance server for NATS.io, a cloud and edge native messaging system. Prior to versions 2.11.15 and 2.12.6, for MQTT deployments using usercodes/passwords: MQTT passwords are incorrectly classified as a non-authenticating identity statement (JWT) and exposed via monitoring endpoints. Versions 2.11.14 and 2.12.6 contain a fix. As a workaround, ensure monitoring end-points are adequately secured. Best practice remains to not expose the monitoring endpoint to the Internet or other untrusted network users.</p></details></td>
+        <td>2026-03-25</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-29785" target="_blank" rel="noopener">CVE-2026-29785</a></td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-476</td>
+        <td>&nbsp;</td>
+        <td><details><summary>NATS-Server is a High-Performance server for NATS.io, a cloud and edge native me...</summary><p>NATS-Server is a High-Performance server for NATS.io, a cloud and edge native messaging system. Prior to versions 2.11.14 and 2.12.5, if the nats-server has the &quot;leafnode&quot; configuration enabled (not default), then anyone who can connect can crash the nats-server by triggering a panic. This happens pre-authentication and requires that compression be enabled (which it is, by default, when leafnodes are used). Versions 2.11.14 and 2.12.5 contain a fix. As a workaround, disable compression on the leafnode port.</p></details></td>
+        <td>2026-03-25</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-27889" target="_blank" rel="noopener">CVE-2026-27889</a></td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-190</td>
+        <td>&nbsp;</td>
+        <td><details><summary>NATS-Server is a High-Performance server for NATS.io, a cloud and edge native me...</summary><p>NATS-Server is a High-Performance server for NATS.io, a cloud and edge native messaging system. Starting in version 2.2.0 and prior to versions 2.11.14 and 2.12.5, a missing sanity check on a WebSockets frame could trigger a server panic in the nats-server.  This happens before authentication, and so is exposed to anyone who can connect to the websockets port. Versions 2.11.14 and 2.12.5 contains a fix. A workaround is available. The vulnerability only affects deployments which use WebSockets and which expose the network port to untrusted end-points. If one is able to do so, a defense in depth of restricting either of these will mitigate the attack.</p></details></td>
+        <td>2026-03-25</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-70888" target="_blank" rel="noopener">CVE-2025-70888</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td><details><summary>An issue in mtrojnar Osslsigncode affected at v2.10 and before allows a remote a...</summary><p>An issue in mtrojnar Osslsigncode affected at v2.10 and before allows a remote attacker to escalate privileges via the osslsigncode.c component</p></details></td>
+        <td>2026-03-25</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-14790" target="_blank" rel="noopener">CVE-2025-14790</a></td>
+        <td>6.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-522</td>
+        <td>&nbsp;</td>
+        <td><details><summary>IBM InfoSphere Information Server 11.7.0.0 through 11.7.1.6 could allow an attac...</summary><p>IBM InfoSphere Information Server 11.7.0.0 through 11.7.1.6 could allow an attacker to obtain sensitive information due to insufficiently protected credentials.</p></details></td>
+        <td>2026-03-25</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-12708" target="_blank" rel="noopener">CVE-2025-12708</a></td>
+        <td>6.2</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-798</td>
+        <td>&nbsp;</td>
+        <td><details><summary>IBM Concert 1.0.0 through 2.2.0 contains hard-coded credentials that could be ob...</summary><p>IBM Concert 1.0.0 through 2.2.0 contains hard-coded credentials that could be obtained by a local user.</p></details></td>
+        <td>2026-03-25</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33809" target="_blank" rel="noopener">CVE-2026-33809</a></td>
+        <td>5.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td><details><summary>A maliciously crafted TIFF file can cause image decoding to attempt to allocate ...</summary><p>A maliciously crafted TIFF file can cause image decoding to attempt to allocate up 4GiB of memory, causing either excessive resource consumption or an out-of-memory error.</p></details></td>
+        <td>2026-03-25</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33751" target="_blank" rel="noopener">CVE-2026-33751</a></td>
+        <td>6.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-90</td>
+        <td>&nbsp;</td>
+        <td><details><summary>n8n is an open source workflow automation platform. Prior to versions 1.123.27, ...</summary><p>n8n is an open source workflow automation platform. Prior to versions 1.123.27, 2.13.3, and 2.14.1, a flaw in the LDAP node&#x27;s filter escape logic allowed LDAP metacharacters to pass through unescaped when user-controlled input was interpolated into LDAP search filters. In workflows where external user input is passed via expressions into the LDAP node&#x27;s search parameters, an attacker could manipulate the constructed filter to retrieve unintended LDAP records or bypass authentication checks implemented in the workflow. Exploitation requires a specific workflow configuration. The LDAP node must be used with user-controlled input passed via expressions (e.g., from a form or webhook). The issue has been fixed in n8n versions 1.123.27, 2.13.3, and 2.14.1. Users should upgrade to one of these versions or later to remediate the vulnerability. If upgrading is not immediately possible, administrators should consider the following temporary mitigations: Limit workflow creation and editing permissions to fully trusted users only, disable the LDAP node by adding `n8n-nodes-base.ldap` to the `NODES_EXCLUDE` environment variable, and/or avoid passing unvalidated external user input into LDAP node search parameters via expressions. These workarounds do not fully remediate the risk and should only be used as short-term mitigation measures.</p></details></td>
+        <td>2026-03-25</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33749" target="_blank" rel="noopener">CVE-2026-33749</a></td>
+        <td>6.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td><details><summary>n8n is an open source workflow automation platform. Prior to versions 1.123.27, ...</summary><p>n8n is an open source workflow automation platform. Prior to versions 1.123.27, 2.13.3, and 2.14.1, an authenticated user with permission to create or modify workflows could craft a workflow that produces an HTML binary data object without a filename. The `/rest/binary-data` endpoint served such responses inline on the n8n origin without `Content-Disposition` or `Content-Security-Policy` headers, allowing the HTML to render in the browser with full same-origin JavaScript access. By sending the resulting URL to a higher-privileged user, an attacker could execute JavaScript in the victim&#x27;s authenticated session, enabling exfiltration of workflows and credentials, modification of workflows, or privilege escalation to admin. The issue has been fixed in n8n versions 1.123.27, 2.13.3, and 2.14.1. Users should upgrade to one of these versions or later to remediate the vulnerability. If upgrading is not immediately possible, administrators should consider the following temporary mitigations: Limit workflow creation and editing permissions to fully trusted users only, and/or restrict network access to the n8n instance to prevent untrusted users from accessing binary data URLs. These workarounds do not fully remediate the risk and should only be used as short-term mitigation measures.</p></details></td>
+        <td>2026-03-25</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33724" target="_blank" rel="noopener">CVE-2026-33724</a></td>
+        <td>6.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-639</td>
+        <td>&nbsp;</td>
+        <td><details><summary>n8n is an open source workflow automation platform. Prior to version 2.5.0, when...</summary><p>n8n is an open source workflow automation platform. Prior to version 2.5.0, when the Source Control feature is configured to use SSH, the SSH command used for git operations explicitly disabled host key verification. A network attacker positioned between the n8n instance and the remote Git server could intercept the connection and present a fraudulent host key, potentially injecting malicious content into workflows or intercepting repository data. This issue only affects instances where the Source Control feature has been explicitly enabled and configured to use SSH (non-default). The issue has been fixed in n8n version 2.5.0. Users should upgrade to this version or later to remediate the vulnerability. If upgrading is not immediately possible, administrators should consider the following temporary mitigations: Disable the Source Control feature if it is not actively required, and/or restrict network access to ensure the n8n instance communicates with the Git server only over trusted, controlled network paths. These workarounds do not fully remediate the risk and should only be used as short-term mitigation measures.</p></details></td>
+        <td>2026-03-25</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33722" target="_blank" rel="noopener">CVE-2026-33722</a></td>
+        <td>7.3</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-863</td>
+        <td>&nbsp;</td>
+        <td><details><summary>n8n is an open source workflow automation platform. Prior to versions 2.6.4 and ...</summary><p>n8n is an open source workflow automation platform. Prior to versions 2.6.4 and 1.123.23, an authenticated user without permission to list external secrets could reference a secret by the external name in a credential and retrieve its plaintext value when saving the credential. This bypassed the `externalSecret:list` permission check and allowed access to secrets stored in connected vaults without admin or owner privileges. This issue requires the instance to have an external secrets vault configured. The attacker must know or be able to guess the name of a target secret. The issue has been fixed in n8n versions 1.123.23 and 2.6.4. Users should upgrade to one of these versions or later to remediate the vulnerability. If upgrading is not immediately possible, administrators should consider the following temporary mitigations: Restrict n8n access to fully trusted users only, and/or disable external secrets integration until the patch can be applied. These workarounds do not fully remediate the risk and should only be used as short-term mitigation measures.</p></details></td>
+        <td>2026-03-25</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33720" target="_blank" rel="noopener">CVE-2026-33720</a></td>
+        <td>6.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-863</td>
+        <td>&nbsp;</td>
+        <td><details><summary>n8n is an open source workflow automation platform. Prior to version 2.8.0, when...</summary><p>n8n is an open source workflow automation platform. Prior to version 2.8.0, when the `N8N_SKIP_AUTH_ON_OAUTH_CALLBACK` environment variable is set to `true`, the OAuth callback handler skips ownership verification of the OAuth state parameter. This allows an attacker to trick a victim into completing an OAuth flow against a credential object the attacker controls, causing the victim&#x27;s OAuth tokens to be stored in the attacker&#x27;s credential. The attacker can then use those tokens to execute workflows in their name. This issue only affects instances where `N8N_SKIP_AUTH_ON_OAUTH_CALLBACK=true` is explicitly configured (non-default). The issue has been fixed in n8n version 2.8.0. Users should upgrade to this version or later to remediate the vulnerability. If upgrading is not immediately possible, administrators should consider the following temporary mitigations: Avoid enabling `N8N_SKIP_AUTH_ON_OAUTH_CALLBACK=true` unless strictly required, and/ or restrict access to the n8n instance to fully trusted users only. These workarounds do not fully remediate the risk and should only be used as short-term mitigation measures.</p></details></td>
+        <td>2026-03-25</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-27602" target="_blank" rel="noopener">CVE-2026-27602</a></td>
+        <td>7.2</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-78</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Modoboa is a mail hosting and management platform. Prior to version 2.7.1, `exec...</summary><p>Modoboa is a mail hosting and management platform. Prior to version 2.7.1, `exec_cmd()` in `modoboa/lib/sysutils.py` always runs subprocess calls with `shell=True`. Since domain names flow directly into shell command strings without any sanitization, a Reseller or SuperAdmin can include shell metacharacters in a domain name to run arbitrary OS commands on the server. Version 2.7.1 patches the issue.</p></details></td>
+        <td>2026-03-25</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-1001" target="_blank" rel="noopener">CVE-2026-1001</a></td>
+        <td>4.8</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Domoticz versions prior to 2026.1 contain a stored cross-site scripting vulnerab...</summary><p>Domoticz versions prior to 2026.1 contain a stored cross-site scripting vulnerability in the Add Hardware and rename device functionality of the web interface that allows authenticated administrators to execute arbitrary scripts by supplying crafted names containing script or HTML markup. Attackers can inject malicious code that is stored and rendered without proper output encoding, causing script execution in the browsers of users viewing the affected page and enabling unauthorized actions within their session context.</p></details></td>
+        <td>2026-03-25</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-70952" target="_blank" rel="noopener">CVE-2025-70952</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td><details><summary>pf4j before 20c2f80 has a path traversal vulnerability in the extract() function...</summary><p>pf4j before 20c2f80 has a path traversal vulnerability in the extract() function of Unzip.java, where improper handling of zip entry names can allow directory traversal or Zip Slip attacks, due to a lack of proper path normalization and validation.</p></details></td>
+        <td>2026-03-25</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-70887" target="_blank" rel="noopener">CVE-2025-70887</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td><details><summary>An issue in ralphje Signify before v.0.9.2 allows a remote attacker to escalate ...</summary><p>An issue in ralphje Signify before v.0.9.2 allows a remote attacker to escalate privileges via the signed_data.py and the context.py components</p></details></td>
+        <td>2026-03-25</td>
+      </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33713" target="_blank" rel="noopener">CVE-2026-33713</a></td>
         <td>8.7</td>
@@ -131,8 +320,8 @@
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32573" target="_blank" rel="noopener">CVE-2026-32573</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>9.1</td>
+        <td><span class="severity critical">CRITICAL</span></td>
         <td>CWE-94</td>
         <td>&nbsp;</td>
         <td><details><summary>Improper Control of Generation of Code (&#x27;Code Injection&#x27;) vulnerability in Nelio...</summary><p>Improper Control of Generation of Code (&#x27;Code Injection&#x27;) vulnerability in Nelio Software Nelio AB Testing nelio-ab-testing allows Code Injection.This issue affects Nelio AB Testing: from n/a through &lt;= 8.2.7.</p></details></td>
@@ -140,8 +329,8 @@
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32567" target="_blank" rel="noopener">CVE-2026-32567</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>6.8</td>
+        <td><span class="severity medium">MEDIUM</span></td>
         <td>CWE-22</td>
         <td>&nbsp;</td>
         <td><details><summary>Improper Limitation of a Pathname to a Restricted Directory (&#x27;Path Traversal&#x27;) v...</summary><p>Improper Limitation of a Pathname to a Restricted Directory (&#x27;Path Traversal&#x27;) vulnerability in icopydoc YML for Yandex Market yml-for-yandex-market allows Path Traversal.This issue affects YML for Yandex Market: from n/a through &lt; 5.3.0.</p></details></td>
@@ -149,8 +338,8 @@
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32562" target="_blank" rel="noopener">CVE-2026-32562</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>5.4</td>
+        <td><span class="severity medium">MEDIUM</span></td>
         <td>CWE-862</td>
         <td>&nbsp;</td>
         <td><details><summary>Missing Authorization vulnerability in WP Folio Team PPWP password-protect-page ...</summary><p>Missing Authorization vulnerability in WP Folio Team PPWP password-protect-page allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects PPWP: from n/a through &lt;= 1.9.15.</p></details></td>
@@ -158,8 +347,8 @@
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32546" target="_blank" rel="noopener">CVE-2026-32546</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
         <td>CWE-862</td>
         <td>&nbsp;</td>
         <td><details><summary>Missing Authorization vulnerability in StellarWP Restrict Content restrict-conte...</summary><p>Missing Authorization vulnerability in StellarWP Restrict Content restrict-content allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects Restrict Content: from n/a through &lt;= 3.2.22.</p></details></td>
@@ -176,8 +365,8 @@
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32544" target="_blank" rel="noopener">CVE-2026-32544</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>7.1</td>
+        <td><span class="severity high">HIGH</span></td>
         <td>CWE-79</td>
         <td>&nbsp;</td>
         <td><details><summary>Improper Neutralization of Input During Web Page Generation (&#x27;Cross-site Scripti...</summary><p>Improper Neutralization of Input During Web Page Generation (&#x27;Cross-site Scripting&#x27;) vulnerability in OOPSpam Team OOPSpam Anti-Spam oopspam-anti-spam allows Stored XSS.This issue affects OOPSpam Anti-Spam: from n/a through &lt;= 1.2.62.</p></details></td>
@@ -212,8 +401,8 @@
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32539" target="_blank" rel="noopener">CVE-2026-32539</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>9.3</td>
+        <td><span class="severity critical">CRITICAL</span></td>
         <td>CWE-89</td>
         <td>&nbsp;</td>
         <td><details><summary>Improper Neutralization of Special Elements used in an SQL Command (&#x27;SQL Injecti...</summary><p>Improper Neutralization of Special Elements used in an SQL Command (&#x27;SQL Injection&#x27;) vulnerability in PublishPress PublishPress Revisions revisionary allows Blind SQL Injection.This issue affects PublishPress Revisions: from n/a through &lt;= 3.7.23.</p></details></td>
@@ -338,8 +527,8 @@
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32525" target="_blank" rel="noopener">CVE-2026-32525</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>9.9</td>
+        <td><span class="severity critical">CRITICAL</span></td>
         <td>CWE-94</td>
         <td>&nbsp;</td>
         <td><details><summary>Improper Control of Generation of Code (&#x27;Code Injection&#x27;) vulnerability in jetmo...</summary><p>Improper Control of Generation of Code (&#x27;Code Injection&#x27;) vulnerability in jetmonsters JetFormBuilder jetformbuilder allows Code Injection.This issue affects JetFormBuilder: from n/a through &lt;= 3.5.6.1.</p></details></td>
@@ -1031,8 +1220,8 @@
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-27044" target="_blank" rel="noopener">CVE-2026-27044</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>9.9</td>
+        <td><span class="severity critical">CRITICAL</span></td>
         <td>CWE-94</td>
         <td>&nbsp;</td>
         <td><details><summary>Improper Control of Generation of Code (&#x27;Code Injection&#x27;) vulnerability in Total...</summary><p>Improper Control of Generation of Code (&#x27;Code Injection&#x27;) vulnerability in TotalSuite Total Poll Lite totalpoll-lite allows Remote Code Inclusion.This issue affects Total Poll Lite: from n/a through &lt;= 4.12.0.</p></details></td>
@@ -1184,8 +1373,8 @@
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-25447" target="_blank" rel="noopener">CVE-2026-25447</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>9.1</td>
+        <td><span class="severity critical">CRITICAL</span></td>
         <td>CWE-94</td>
         <td>&nbsp;</td>
         <td><details><summary>Improper Control of Generation of Code (&#x27;Code Injection&#x27;) vulnerability in Jonat...</summary><p>Improper Control of Generation of Code (&#x27;Code Injection&#x27;) vulnerability in Jonathan Daggerhart Widget Wrangler widget-wrangler allows Code Injection.This issue affects Widget Wrangler: from n/a through &lt;= 2.3.9.</p></details></td>
@@ -1400,8 +1589,8 @@
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-25366" target="_blank" rel="noopener">CVE-2026-25366</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>9.9</td>
+        <td><span class="severity critical">CRITICAL</span></td>
         <td>CWE-94</td>
         <td>&nbsp;</td>
         <td><details><summary>Improper Control of Generation of Code (&#x27;Code Injection&#x27;) vulnerability in Theme...</summary><p>Improper Control of Generation of Code (&#x27;Code Injection&#x27;) vulnerability in Themeisle Woody ad snippets insert-php allows Code Injection.This issue affects Woody ad snippets: from n/a through &lt;= 2.7.1.</p></details></td>
@@ -1805,8 +1994,8 @@
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-25001" target="_blank" rel="noopener">CVE-2026-25001</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>8.5</td>
+        <td><span class="severity high">HIGH</span></td>
         <td>CWE-94</td>
         <td>&nbsp;</td>
         <td><details><summary>Improper Control of Generation of Code (&#x27;Code Injection&#x27;) vulnerability in Saad ...</summary><p>Improper Control of Generation of Code (&#x27;Code Injection&#x27;) vulnerability in Saad Iqbal Post Snippets post-snippets allows Remote Code Inclusion.This issue affects Post Snippets: from n/a through &lt;= 4.0.12.</p></details></td>
@@ -2525,8 +2714,8 @@
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-3218" target="_blank" rel="noopener">CVE-2026-3218</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>6.1</td>
+        <td><span class="severity medium">MEDIUM</span></td>
         <td>CWE-79</td>
         <td>&nbsp;</td>
         <td><details><summary>Improper Neutralization of Input During Web Page Generation (&quot;Cross-site Scripti...</summary><p>Improper Neutralization of Input During Web Page Generation (&quot;Cross-site Scripting&quot;) vulnerability in Drupal Responsive Favicons allows Cross-Site Scripting (XSS).This issue affects Responsive Favicons: from 0.0.0 before 2.0.2.</p></details></td>
@@ -2534,8 +2723,8 @@
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-3217" target="_blank" rel="noopener">CVE-2026-3217</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>6.1</td>
+        <td><span class="severity medium">MEDIUM</span></td>
         <td>CWE-79</td>
         <td>&nbsp;</td>
         <td><details><summary>Improper Neutralization of Input During Web Page Generation (&quot;Cross-site Scripti...</summary><p>Improper Neutralization of Input During Web Page Generation (&quot;Cross-site Scripting&quot;) vulnerability in Drupal SAML SSO - Service Provider allows Cross-Site Scripting (XSS).This issue affects SAML SSO - Service Provider: from 0.0.0 before 3.1.3.</p></details></td>
@@ -2552,8 +2741,8 @@
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-3215" target="_blank" rel="noopener">CVE-2026-3215</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>6.1</td>
+        <td><span class="severity medium">MEDIUM</span></td>
         <td>CWE-79</td>
         <td>&nbsp;</td>
         <td><details><summary>Improper Neutralization of Input During Web Page Generation (&quot;Cross-site Scripti...</summary><p>Improper Neutralization of Input During Web Page Generation (&quot;Cross-site Scripting&quot;) vulnerability in Drupal Islandora allows Cross-Site Scripting (XSS).This issue affects Islandora: from 0.0.0 before 2.17.5.</p></details></td>
@@ -2570,8 +2759,8 @@
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-3213" target="_blank" rel="noopener">CVE-2026-3213</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>6.1</td>
+        <td><span class="severity medium">MEDIUM</span></td>
         <td>CWE-79</td>
         <td>&nbsp;</td>
         <td><details><summary>Improper Neutralization of Input During Web Page Generation (&quot;Cross-site Scripti...</summary><p>Improper Neutralization of Input During Web Page Generation (&quot;Cross-site Scripting&quot;) vulnerability in Drupal Anti-Spam by CleanTalk allows Cross-Site Scripting (XSS).This issue affects Anti-Spam by CleanTalk: from 0.0.0 before 9.7.0.</p></details></td>
@@ -2579,8 +2768,8 @@
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-3212" target="_blank" rel="noopener">CVE-2026-3212</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>6.1</td>
+        <td><span class="severity medium">MEDIUM</span></td>
         <td>CWE-79</td>
         <td>&nbsp;</td>
         <td><details><summary>Improper Neutralization of Input During Web Page Generation (&quot;Cross-site Scripti...</summary><p>Improper Neutralization of Input During Web Page Generation (&quot;Cross-site Scripting&quot;) vulnerability in Drupal Tagify allows Cross-Site Scripting (XSS).This issue affects Tagify: from 0.0.0 before 1.2.49.</p></details></td>
@@ -2588,8 +2777,8 @@
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-3211" target="_blank" rel="noopener">CVE-2026-3211</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>6.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
         <td>CWE-352</td>
         <td>&nbsp;</td>
         <td><details><summary>Cross-Site Request Forgery (CSRF) vulnerability in Drupal Theme Negotiation by R...</summary><p>Cross-Site Request Forgery (CSRF) vulnerability in Drupal Theme Negotiation by Rules allows Cross Site Request Forgery.This issue affects Theme Negotiation by Rules: from 0.0.0 before 1.2.1.</p></details></td>
@@ -2597,8 +2786,8 @@
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-3210" target="_blank" rel="noopener">CVE-2026-3210</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>6.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
         <td>CWE-863</td>
         <td>&nbsp;</td>
         <td><details><summary>Incorrect Authorization vulnerability in Drupal Material Icons allows Forceful B...</summary><p>Incorrect Authorization vulnerability in Drupal Material Icons allows Forceful Browsing.This issue affects Material Icons: from 0.0.0 before 2.0.4.</p></details></td>
@@ -2606,8 +2795,8 @@
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-2349" target="_blank" rel="noopener">CVE-2026-2349</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>6.1</td>
+        <td><span class="severity medium">MEDIUM</span></td>
         <td>CWE-79</td>
         <td>&nbsp;</td>
         <td><details><summary>Improper Neutralization of Input During Web Page Generation (&quot;Cross-site Scripti...</summary><p>Improper Neutralization of Input During Web Page Generation (&quot;Cross-site Scripting&quot;) vulnerability in Drupal UI Icons allows Cross-Site Scripting (XSS).This issue affects UI Icons: from 0.0.0 before 1.0.1, from 1.1.0 before 1.1.1.</p></details></td>
@@ -2615,8 +2804,8 @@
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-2348" target="_blank" rel="noopener">CVE-2026-2348</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>6.1</td>
+        <td><span class="severity medium">MEDIUM</span></td>
         <td>CWE-79</td>
         <td>&nbsp;</td>
         <td><details><summary>Improper Neutralization of Input During Web Page Generation (&quot;Cross-site Scripti...</summary><p>Improper Neutralization of Input During Web Page Generation (&quot;Cross-site Scripting&quot;) vulnerability in Drupal Quick Edit allows Cross-Site Scripting (XSS).This issue affects Quick Edit: from 0.0.0 before 1.0.5, from 2.0.0 before 2.0.1.</p></details></td>
@@ -2660,8 +2849,8 @@
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-1917" target="_blank" rel="noopener">CVE-2026-1917</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>7.3</td>
+        <td><span class="severity high">HIGH</span></td>
         <td>CWE-288</td>
         <td>&nbsp;</td>
         <td><details><summary>Authentication Bypass Using an Alternate Path or Channel vulnerability in Drupal...</summary><p>Authentication Bypass Using an Alternate Path or Channel vulnerability in Drupal Login Disable allows Functionality Bypass.This issue affects Login Disable: from 0.0.0 before 2.1.3.</p></details></td>
@@ -2803,16 +2992,6 @@
         <td>2026-03-25</td>
       </tr>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-3608" target="_blank" rel="noopener">CVE-2026-3608</a></td>
-        <td>7.5</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-617</td>
-        <td>&nbsp;</td>
-        <td><details><summary>Sending a maliciously crafted message to the kea-ctrl-agent, kea-dhcp-ddns, kea-...</summary><p>Sending a maliciously crafted message to the kea-ctrl-agent, kea-dhcp-ddns, kea-dhcp4, or kea-dhcp6 daemons over any configured API socket or HA listener can cause the receiving daemon to exit with a stack overflow error.
-This issue affects Kea versions 2.6.0 through 2.6.4 and 3.0.0 through 3.0.2.</p></details></td>
-        <td>2026-03-25</td>
-      </tr>
-      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32326" target="_blank" rel="noopener">CVE-2026-32326</a></td>
         <td>6.9</td>
         <td><span class="severity medium">MEDIUM</span></td>
@@ -2913,9 +3092,9 @@ This issue affects Kea versions 2.6.0 through 2.6.4 and 3.0.0 through 3.0.2.</p>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-28893" target="_blank" rel="noopener">CVE-2026-28893</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>3.3</td>
+        <td><span class="severity low">LOW</span></td>
+        <td>NVD-CWE-noinfo</td>
         <td>&nbsp;</td>
         <td><details><summary>A privacy issue was addressed with improved handling of temporary files. This is...</summary><p>A privacy issue was addressed with improved handling of temporary files. This issue is fixed in macOS Tahoe 26.4. A document may be written to a temporary file when using print preview.</p></details></td>
         <td>2026-03-25</td>
@@ -2940,18 +3119,18 @@ This issue affects Kea versions 2.6.0 through 2.6.4 and 3.0.0 through 3.0.2.</p>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-28890" target="_blank" rel="noopener">CVE-2026-28890</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>5.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-125</td>
         <td>&nbsp;</td>
         <td><details><summary>An out-of-bounds read was addressed with improved bounds checking. This issue is...</summary><p>An out-of-bounds read was addressed with improved bounds checking. This issue is fixed in Xcode 26.4. An app may be able to cause unexpected system termination.</p></details></td>
         <td>2026-03-25</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-28889" target="_blank" rel="noopener">CVE-2026-28889</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>6.2</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-269</td>
         <td>&nbsp;</td>
         <td><details><summary>A permissions issue was addressed with additional restrictions. This issue is fi...</summary><p>A permissions issue was addressed with additional restrictions. This issue is fixed in Xcode 26.4. An app may be able to read arbitrary files as root.</p></details></td>
         <td>2026-03-25</td>
@@ -2985,9 +3164,9 @@ This issue affects Kea versions 2.6.0 through 2.6.4 and 3.0.0 through 3.0.2.</p>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-28881" target="_blank" rel="noopener">CVE-2026-28881</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>5.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>NVD-CWE-noinfo</td>
         <td>&nbsp;</td>
         <td><details><summary>A privacy issue was addressed by moving sensitive data. This issue is fixed in m...</summary><p>A privacy issue was addressed by moving sensitive data. This issue is fixed in macOS Tahoe 26.4. An app may be able to access sensitive user data.</p></details></td>
         <td>2026-03-25</td>
@@ -3012,9 +3191,9 @@ This issue affects Kea versions 2.6.0 through 2.6.4 and 3.0.0 through 3.0.2.</p>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-28878" target="_blank" rel="noopener">CVE-2026-28878</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>6.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-200</td>
         <td>&nbsp;</td>
         <td><details><summary>A privacy issue was addressed by removing sensitive data. This issue is fixed in...</summary><p>A privacy issue was addressed by removing sensitive data. This issue is fixed in iOS 18.7.7 and iPadOS 18.7.7, iOS 26.4 and iPadOS 26.4, macOS Sonoma 14.8.5, macOS Tahoe 26.4, tvOS 26.4, visionOS 26.4, watchOS 26.4. An app may be able to enumerate a user&#x27;s installed apps.</p></details></td>
         <td>2026-03-25</td>
@@ -3048,9 +3227,9 @@ This issue affects Kea versions 2.6.0 through 2.6.4 and 3.0.0 through 3.0.2.</p>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-28874" target="_blank" rel="noopener">CVE-2026-28874</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-400</td>
         <td>&nbsp;</td>
         <td><details><summary>The issue was addressed with improved checks. This issue is fixed in iOS 26.4 an...</summary><p>The issue was addressed with improved checks. This issue is fixed in iOS 26.4 and iPadOS 26.4. A remote attacker may cause an unexpected app termination.</p></details></td>
         <td>2026-03-25</td>
@@ -3075,9 +3254,9 @@ This issue affects Kea versions 2.6.0 through 2.6.4 and 3.0.0 through 3.0.2.</p>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-28868" target="_blank" rel="noopener">CVE-2026-28868</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>5.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-532</td>
         <td>&nbsp;</td>
         <td><details><summary>A logging issue was addressed with improved data redaction. This issue is fixed ...</summary><p>A logging issue was addressed with improved data redaction. This issue is fixed in iOS 18.7.7 and iPadOS 18.7.7, iOS 26.4 and iPadOS 26.4, macOS Sequoia 15.7.5, macOS Sonoma 14.8.5, macOS Tahoe 26.4, visionOS 26.4, watchOS 26.4. An app may be able to disclose kernel memory.</p></details></td>
         <td>2026-03-25</td>
@@ -3093,18 +3272,18 @@ This issue affects Kea versions 2.6.0 through 2.6.4 and 3.0.0 through 3.0.2.</p>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-28866" target="_blank" rel="noopener">CVE-2026-28866</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>6.2</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-59</td>
         <td>&nbsp;</td>
         <td><details><summary>This issue was addressed with improved validation of symlinks. This issue is fix...</summary><p>This issue was addressed with improved validation of symlinks. This issue is fixed in iOS 18.7.7 and iPadOS 18.7.7, iOS 26.4 and iPadOS 26.4, macOS Sequoia 15.7.5, macOS Sonoma 14.8.5, macOS Tahoe 26.4. An app may be able to access sensitive user data.</p></details></td>
         <td>2026-03-25</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-28865" target="_blank" rel="noopener">CVE-2026-28865</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-285</td>
         <td>&nbsp;</td>
         <td><details><summary>An authentication issue was addressed with improved state management. This issue...</summary><p>An authentication issue was addressed with improved state management. This issue is fixed in iOS 18.7.7 and iPadOS 18.7.7, iOS 26.4 and iPadOS 26.4, macOS Sequoia 15.7.5, macOS Sonoma 14.8.5, macOS Tahoe 26.4, tvOS 26.4, visionOS 26.4, watchOS 26.4. An attacker in a privileged network position may be able to intercept network traffic.</p></details></td>
         <td>2026-03-25</td>
@@ -3129,9 +3308,9 @@ This issue affects Kea versions 2.6.0 through 2.6.4 and 3.0.0 through 3.0.2.</p>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-28862" target="_blank" rel="noopener">CVE-2026-28862</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>5.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-284</td>
         <td>&nbsp;</td>
         <td><details><summary>A privacy issue was addressed with improved private data redaction for log entri...</summary><p>A privacy issue was addressed with improved private data redaction for log entries. This issue is fixed in macOS Sequoia 15.7.5, macOS Sonoma 14.8.5, macOS Tahoe 26.4. An app may be able to access user-sensitive data.</p></details></td>
         <td>2026-03-25</td>
@@ -3147,18 +3326,18 @@ This issue affects Kea versions 2.6.0 through 2.6.4 and 3.0.0 through 3.0.2.</p>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-28859" target="_blank" rel="noopener">CVE-2026-28859</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>4.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-125</td>
         <td>&nbsp;</td>
         <td><details><summary>The issue was addressed with improved memory handling. This issue is fixed in Sa...</summary><p>The issue was addressed with improved memory handling. This issue is fixed in Safari 26.4, iOS 26.4 and iPadOS 26.4, macOS Tahoe 26.4, tvOS 26.4, visionOS 26.4, watchOS 26.4. A malicious website may be able to process restricted web content outside the sandbox.</p></details></td>
         <td>2026-03-25</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-28858" target="_blank" rel="noopener">CVE-2026-28858</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>9.8</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-120</td>
         <td>&nbsp;</td>
         <td><details><summary>A buffer overflow was addressed with improved bounds checking. This issue is fix...</summary><p>A buffer overflow was addressed with improved bounds checking. This issue is fixed in iOS 26.4 and iPadOS 26.4. A remote user may be able to cause unexpected system termination or corrupt kernel memory.</p></details></td>
         <td>2026-03-25</td>
@@ -3192,18 +3371,18 @@ This issue affects Kea versions 2.6.0 through 2.6.4 and 3.0.0 through 3.0.2.</p>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-28852" target="_blank" rel="noopener">CVE-2026-28852</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>5.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-20</td>
         <td>&nbsp;</td>
         <td><details><summary>A stack overflow was addressed with improved input validation. This issue is fix...</summary><p>A stack overflow was addressed with improved input validation. This issue is fixed in iOS 18.7.7 and iPadOS 18.7.7, iOS 26.4 and iPadOS 26.4, macOS Sequoia 15.7.5, macOS Tahoe 26.4, tvOS 26.4, visionOS 26.4, watchOS 26.4. An app may be able to cause a denial-of-service.</p></details></td>
         <td>2026-03-25</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-28845" target="_blank" rel="noopener">CVE-2026-28845</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>5.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-285</td>
         <td>&nbsp;</td>
         <td><details><summary>An authorization issue was addressed with improved state management. This issue ...</summary><p>An authorization issue was addressed with improved state management. This issue is fixed in macOS Tahoe 26.4. An app may be able to access protected user data.</p></details></td>
         <td>2026-03-25</td>
@@ -3219,9 +3398,9 @@ This issue affects Kea versions 2.6.0 through 2.6.4 and 3.0.0 through 3.0.2.</p>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-28842" target="_blank" rel="noopener">CVE-2026-28842</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>7.3</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-120</td>
         <td>&nbsp;</td>
         <td><details><summary>The issue was addressed with improved bounds checks. This issue is fixed in macO...</summary><p>The issue was addressed with improved bounds checks. This issue is fixed in macOS Tahoe 26.4. A buffer overflow may result in memory corruption and unexpected app termination.</p></details></td>
         <td>2026-03-25</td>
@@ -3237,9 +3416,9 @@ This issue affects Kea versions 2.6.0 through 2.6.4 and 3.0.0 through 3.0.2.</p>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-28839" target="_blank" rel="noopener">CVE-2026-28839</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>5.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-285</td>
         <td>&nbsp;</td>
         <td><details><summary>The issue was addressed with improved checks. This issue is fixed in macOS Sequo...</summary><p>The issue was addressed with improved checks. This issue is fixed in macOS Sequoia 15.7.5, macOS Sonoma 14.8.5, macOS Tahoe 26.4. An app may be able to access sensitive user data.</p></details></td>
         <td>2026-03-25</td>
@@ -3264,9 +3443,9 @@ This issue affects Kea versions 2.6.0 through 2.6.4 and 3.0.0 through 3.0.2.</p>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-28835" target="_blank" rel="noopener">CVE-2026-28835</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>6.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-416</td>
         <td>&nbsp;</td>
         <td><details><summary>A use-after-free issue was addressed with improved memory management. This issue...</summary><p>A use-after-free issue was addressed with improved memory management. This issue is fixed in macOS Sequoia 15.7.5, macOS Sonoma 14.8.5, macOS Tahoe 26.4. Mounting a maliciously crafted SMB network share may lead to system termination.</p></details></td>
         <td>2026-03-25</td>
@@ -3291,9 +3470,9 @@ This issue affects Kea versions 2.6.0 through 2.6.4 and 3.0.0 through 3.0.2.</p>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-28832" target="_blank" rel="noopener">CVE-2026-28832</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>5.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-125</td>
         <td>&nbsp;</td>
         <td><details><summary>An out-of-bounds read was addressed with improved bounds checking. This issue is...</summary><p>An out-of-bounds read was addressed with improved bounds checking. This issue is fixed in macOS Sequoia 15.7.5, macOS Sonoma 14.8.5, macOS Tahoe 26.4. An app may be able to disclose kernel memory.</p></details></td>
         <td>2026-03-25</td>
@@ -3309,18 +3488,18 @@ This issue affects Kea versions 2.6.0 through 2.6.4 and 3.0.0 through 3.0.2.</p>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-28829" target="_blank" rel="noopener">CVE-2026-28829</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>5.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-732</td>
         <td>&nbsp;</td>
         <td><details><summary>A permissions issue was addressed with additional restrictions. This issue is fi...</summary><p>A permissions issue was addressed with additional restrictions. This issue is fixed in macOS Sequoia 15.7.5, macOS Sonoma 14.8.5, macOS Tahoe 26.4. An app may be able to modify protected parts of the file system.</p></details></td>
         <td>2026-03-25</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-28828" target="_blank" rel="noopener">CVE-2026-28828</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>5.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-284</td>
         <td>&nbsp;</td>
         <td><details><summary>A permissions issue was addressed by removing the vulnerable code. This issue is...</summary><p>A permissions issue was addressed by removing the vulnerable code. This issue is fixed in macOS Sequoia 15.7.5, macOS Sonoma 14.8.5, macOS Tahoe 26.4. An app may be able to access sensitive user data.</p></details></td>
         <td>2026-03-25</td>
@@ -3345,27 +3524,27 @@ This issue affects Kea versions 2.6.0 through 2.6.4 and 3.0.0 through 3.0.2.</p>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-28825" target="_blank" rel="noopener">CVE-2026-28825</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>5.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-787</td>
         <td>&nbsp;</td>
         <td><details><summary>An out-of-bounds write issue was addressed with improved bounds checking. This i...</summary><p>An out-of-bounds write issue was addressed with improved bounds checking. This issue is fixed in macOS Sequoia 15.7.5, macOS Sonoma 14.8.5, macOS Tahoe 26.4. An app may be able to modify protected parts of the file system.</p></details></td>
         <td>2026-03-25</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-28824" target="_blank" rel="noopener">CVE-2026-28824</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>5.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-284</td>
         <td>&nbsp;</td>
         <td><details><summary>An authorization issue was addressed with improved state management. This issue ...</summary><p>An authorization issue was addressed with improved state management. This issue is fixed in macOS Sequoia 15.7.5, macOS Sonoma 14.8.5, macOS Tahoe 26.4. An app may be able to access sensitive user data.</p></details></td>
         <td>2026-03-25</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-28823" target="_blank" rel="noopener">CVE-2026-28823</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>4.9</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-284</td>
         <td>&nbsp;</td>
         <td><details><summary>A path handling issue was addressed with improved validation. This issue is fixe...</summary><p>A path handling issue was addressed with improved validation. This issue is fixed in macOS Tahoe 26.4. An app with root privileges may be able to delete protected system files.</p></details></td>
         <td>2026-03-25</td>
@@ -3399,9 +3578,9 @@ This issue affects Kea versions 2.6.0 through 2.6.4 and 3.0.0 through 3.0.2.</p>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-28818" target="_blank" rel="noopener">CVE-2026-28818</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>5.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-284</td>
         <td>&nbsp;</td>
         <td><details><summary>A logging issue was addressed with improved data redaction. This issue is fixed ...</summary><p>A logging issue was addressed with improved data redaction. This issue is fixed in macOS Sequoia 15.7.5, macOS Sonoma 14.8.5, macOS Tahoe 26.4. An app may be able to access sensitive user data.</p></details></td>
         <td>2026-03-25</td>
@@ -3426,9 +3605,9 @@ This issue affects Kea versions 2.6.0 through 2.6.4 and 3.0.0 through 3.0.2.</p>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-20701" target="_blank" rel="noopener">CVE-2026-20701</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-693</td>
         <td>&nbsp;</td>
         <td><details><summary>An access issue was addressed with additional sandbox restrictions. This issue i...</summary><p>An access issue was addressed with additional sandbox restrictions. This issue is fixed in macOS Sequoia 15.7.5, macOS Sonoma 14.8.5, macOS Tahoe 26.4. An app may be able to connect to a network share without user consent.</p></details></td>
         <td>2026-03-25</td>
@@ -3453,9 +3632,9 @@ This issue affects Kea versions 2.6.0 through 2.6.4 and 3.0.0 through 3.0.2.</p>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-20697" target="_blank" rel="noopener">CVE-2026-20697</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>5.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-284</td>
         <td>&nbsp;</td>
         <td><details><summary>A permissions issue was addressed with additional restrictions. This issue is fi...</summary><p>A permissions issue was addressed with additional restrictions. This issue is fixed in macOS Sequoia 15.7.5, macOS Sonoma 14.8.5, macOS Tahoe 26.4. An app may be able to access sensitive user data.</p></details></td>
         <td>2026-03-25</td>
@@ -3480,9 +3659,9 @@ This issue affects Kea versions 2.6.0 through 2.6.4 and 3.0.0 through 3.0.2.</p>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-20693" target="_blank" rel="noopener">CVE-2026-20693</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>4.9</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-732</td>
         <td>&nbsp;</td>
         <td><details><summary>This issue was addressed through improved state management. This issue is fixed ...</summary><p>This issue was addressed through improved state management. This issue is fixed in macOS Sequoia 15.7.5, macOS Sonoma 14.8.5, macOS Tahoe 26.4. An attacker with root privileges may be able to delete protected system files.</p></details></td>
         <td>2026-03-25</td>
@@ -3525,18 +3704,18 @@ This issue affects Kea versions 2.6.0 through 2.6.4 and 3.0.0 through 3.0.2.</p>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-20687" target="_blank" rel="noopener">CVE-2026-20687</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>7.1</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-416</td>
         <td>&nbsp;</td>
         <td><details><summary>A use after free issue was addressed with improved memory management. This issue...</summary><p>A use after free issue was addressed with improved memory management. This issue is fixed in iOS 18.7.7 and iPadOS 18.7.7, iOS 26.4 and iPadOS 26.4, macOS Sequoia 15.7.5, macOS Tahoe 26.4, tvOS 26.4, watchOS 26.4. An app may be able to cause unexpected system termination or write kernel memory.</p></details></td>
         <td>2026-03-25</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-20686" target="_blank" rel="noopener">CVE-2026-20686</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>5.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-20</td>
         <td>&nbsp;</td>
         <td><details><summary>This issue was addressed with improved input validation. This issue is fixed in ...</summary><p>This issue was addressed with improved input validation. This issue is fixed in iOS 26.3 and iPadOS 26.3. An app may be able to access sensitive user data.</p></details></td>
         <td>2026-03-25</td>
@@ -3561,18 +3740,18 @@ This issue affects Kea versions 2.6.0 through 2.6.4 and 3.0.0 through 3.0.2.</p>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-20668" target="_blank" rel="noopener">CVE-2026-20668</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>5.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-532</td>
         <td>&nbsp;</td>
         <td><details><summary>A logging issue was addressed with improved data redaction. This issue is fixed ...</summary><p>A logging issue was addressed with improved data redaction. This issue is fixed in iOS 18.7.7 and iPadOS 18.7.7, iOS 26.3 and iPadOS 26.3, macOS Sequoia 15.7.5, macOS Sonoma 14.8.5, macOS Tahoe 26.3, visionOS 26.3. An app may be able to access sensitive user data.</p></details></td>
         <td>2026-03-25</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-20665" target="_blank" rel="noopener">CVE-2026-20665</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>6.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-693</td>
         <td>&nbsp;</td>
         <td><details><summary>This issue was addressed through improved state management. This issue is fixed ...</summary><p>This issue was addressed through improved state management. This issue is fixed in Safari 26.4, iOS 18.7.7 and iPadOS 18.7.7, iOS 26.4 and iPadOS 26.4, macOS Tahoe 26.4, tvOS 26.4, visionOS 26.4, watchOS 26.4. Processing maliciously crafted web content may prevent Content Security Policy from being enforced.</p></details></td>
         <td>2026-03-25</td>
@@ -3597,18 +3776,18 @@ This issue affects Kea versions 2.6.0 through 2.6.4 and 3.0.0 through 3.0.2.</p>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-20651" target="_blank" rel="noopener">CVE-2026-20651</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>6.2</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-377</td>
         <td>&nbsp;</td>
         <td><details><summary>A privacy issue was addressed with improved handling of temporary files. This is...</summary><p>A privacy issue was addressed with improved handling of temporary files. This issue is fixed in macOS Sequoia 15.7.5, macOS Sonoma 14.8.4, macOS Tahoe 26.3. An app may be able to access sensitive user data.</p></details></td>
         <td>2026-03-25</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-20639" target="_blank" rel="noopener">CVE-2026-20639</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-190</td>
         <td>&nbsp;</td>
         <td><details><summary>An integer overflow was addressed with improved input validation. This issue is ...</summary><p>An integer overflow was addressed with improved input validation. This issue is fixed in macOS Sequoia 15.7.5, macOS Sonoma 14.8.5, macOS Tahoe 26.3. Processing a maliciously crafted string may lead to heap corruption.</p></details></td>
         <td>2026-03-25</td>
@@ -3624,18 +3803,18 @@ This issue affects Kea versions 2.6.0 through 2.6.4 and 3.0.0 through 3.0.2.</p>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-20633" target="_blank" rel="noopener">CVE-2026-20633</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>5.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-59</td>
         <td>&nbsp;</td>
         <td><details><summary>This issue was addressed with improved handling of symlinks. This issue is fixed...</summary><p>This issue was addressed with improved handling of symlinks. This issue is fixed in macOS Sequoia 15.7.5, macOS Sonoma 14.8.5, macOS Tahoe 26.4. An app may be able to access user-sensitive data.</p></details></td>
         <td>2026-03-25</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-20632" target="_blank" rel="noopener">CVE-2026-20632</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>5.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-284</td>
         <td>&nbsp;</td>
         <td><details><summary>A parsing issue in the handling of directory paths was addressed with improved p...</summary><p>A parsing issue in the handling of directory paths was addressed with improved path validation. This issue is fixed in macOS Tahoe 26.4. An app may be able to access sensitive user data.</p></details></td>
         <td>2026-03-25</td>
@@ -3669,9 +3848,9 @@ This issue affects Kea versions 2.6.0 through 2.6.4 and 3.0.0 through 3.0.2.</p>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-43534" target="_blank" rel="noopener">CVE-2025-43534</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>6.8</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-284</td>
         <td>&nbsp;</td>
         <td><details><summary>A path handling issue was addressed with improved validation. This issue is fixe...</summary><p>A path handling issue was addressed with improved validation. This issue is fixed in iOS 18.7.7 and iPadOS 18.7.7, iOS 26.2 and iPadOS 26.2. A user with physical access to an iOS device may be able to bypass Activation Lock.</p></details></td>
         <td>2026-03-25</td>
@@ -3750,9 +3929,9 @@ This issue affects Kea versions 2.6.0 through 2.6.4 and 3.0.0 through 3.0.2.</p>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-3889" target="_blank" rel="noopener">CVE-2026-3889</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>6.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-451</td>
         <td>&nbsp;</td>
         <td><details><summary>Spoofing issue in Thunderbird. This vulnerability affects Thunderbird &lt; 149 and ...</summary><p>Spoofing issue in Thunderbird. This vulnerability affects Thunderbird &lt; 149 and Thunderbird &lt; 140.9.</p></details></td>
         <td>2026-03-24</td>
@@ -4704,27 +4883,27 @@ This issue affects Kea versions 2.6.0 through 2.6.4 and 3.0.0 through 3.0.2.</p>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4728" target="_blank" rel="noopener">CVE-2026-4728</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>6.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-290</td>
         <td>&nbsp;</td>
         <td><details><summary>Spoofing issue in the Privacy: Anti-Tracking component. This vulnerability affec...</summary><p>Spoofing issue in the Privacy: Anti-Tracking component. This vulnerability affects Firefox &lt; 149 and Thunderbird &lt; 149.</p></details></td>
         <td>2026-03-24</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4727" target="_blank" rel="noopener">CVE-2026-4727</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-400</td>
         <td>&nbsp;</td>
         <td><details><summary>Denial-of-service in the Libraries component in NSS. This vulnerability affects ...</summary><p>Denial-of-service in the Libraries component in NSS. This vulnerability affects Firefox &lt; 149 and Thunderbird &lt; 149.</p></details></td>
         <td>2026-03-24</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4726" target="_blank" rel="noopener">CVE-2026-4726</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-400</td>
         <td>&nbsp;</td>
         <td><details><summary>Denial-of-service in the XML component. This vulnerability affects Firefox &lt; 149...</summary><p>Denial-of-service in the XML component. This vulnerability affects Firefox &lt; 149 and Thunderbird &lt; 149.</p></details></td>
         <td>2026-03-24</td>
@@ -4740,9 +4919,9 @@ This issue affects Kea versions 2.6.0 through 2.6.4 and 3.0.0 through 3.0.2.</p>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4724" target="_blank" rel="noopener">CVE-2026-4724</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>9.1</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-758</td>
         <td>&nbsp;</td>
         <td><details><summary>Undefined behavior in the Audio/Video component. This vulnerability affects Fire...</summary><p>Undefined behavior in the Audio/Video component. This vulnerability affects Firefox &lt; 149 and Thunderbird &lt; 149.</p></details></td>
         <td>2026-03-24</td>
@@ -4794,9 +4973,9 @@ This issue affects Kea versions 2.6.0 through 2.6.4 and 3.0.0 through 3.0.2.</p>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4718" target="_blank" rel="noopener">CVE-2026-4718</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>8.1</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-758</td>
         <td>&nbsp;</td>
         <td><details><summary>Undefined behavior in the WebRTC: Signaling component. This vulnerability affect...</summary><p>Undefined behavior in the WebRTC: Signaling component. This vulnerability affects Firefox &lt; 149, Firefox ESR &lt; 140.9, Thunderbird &lt; 149, and Thunderbird &lt; 140.9.</p></details></td>
         <td>2026-03-24</td>
@@ -10841,19 +11020,6 @@ This issue affects Kea versions 2.6.0 through 2.6.4 and 3.0.0 through 3.0.2.</p>
         <td>2026-03-20</td>
       </tr>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4519" target="_blank" rel="noopener">CVE-2026-4519</a></td>
-        <td>7.0</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-20</td>
-        <td>&nbsp;</td>
-        <td><details><summary>The webbrowser.open() API would accept leading dashes in the URL which 
-could be...</summary><p>The webbrowser.open() API would accept leading dashes in the URL which 
-could be handled as command line options for certain web browsers. New 
-behavior rejects leading dashes. Users are recommended to sanitize URLs 
-prior to passing to webbrowser.open().</p></details></td>
-        <td>2026-03-20</td>
-      </tr>
-      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4487" target="_blank" rel="noopener">CVE-2026-4487</a></td>
         <td>7.4</td>
         <td><span class="severity high">HIGH</span></td>
@@ -11578,7 +11744,7 @@ prior to passing to webbrowser.open().</p></details></td>
         <td>9.3</td>
         <td><span class="severity critical">CRITICAL</span></td>
         <td>CWE-94</td>
-        <td>&nbsp;</td>
+        <td><span class="kev-yes">&#10003;</span></td>
         <td><details><summary>Langflow is a tool for building and deploying AI-powered agents and workflows. I...</summary><p>Langflow is a tool for building and deploying AI-powered agents and workflows. In versions prior to 1.9.0, the POST /api/v1/build_public_tmp/{flow_id}/flow endpoint allows building public flows without requiring authentication. When the optional data parameter is supplied, the endpoint uses attacker-controlled flow data (containing arbitrary Python code in node definitions) instead of the stored flow data from the database. This code is passed to exec() with zero sandboxing, resulting in unauthenticated remote code execution. This is distinct from CVE-2025-3248, which fixed /api/v1/validate/code by adding authentication. The build_public_tmp endpoint is designed to be unauthenticated (for public flows) but incorrectly accepts attacker-supplied flow data containing arbitrary executable code. This issue has been fixed in version 1.9.0.</p></details></td>
         <td>2026-03-20</td>
       </tr>
@@ -34866,17 +35032,6 @@ prior to passing to webbrowser.open().</p></details></td>
         <td>2026-03-05</td>
       </tr>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-30796" target="_blank" rel="noopener">CVE-2026-30796</a></td>
-        <td>8.7</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-319</td>
-        <td>&nbsp;</td>
-        <td><details><summary>Cleartext Transmission of Sensitive Information vulnerability in rustdesk-server...</summary><p>Cleartext Transmission of Sensitive Information vulnerability in rustdesk-server-pro RustDesk Server Pro rustdesk-server-pro on Windows, MacOS, Linux (Address book sync API modules) allows Sniffing Attacks. This vulnerability is associated with program files Closed source — API endpoint handling heartbeat sync and program routines Heartbeat API handler (accepts preset-address-book-password in plaintext).
-
-This issue affects RustDesk Server Pro: through 1.7.5.</p></details></td>
-        <td>2026-03-05</td>
-      </tr>
-      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-26377" target="_blank" rel="noopener">CVE-2026-26377</a></td>
         <td>5.4</td>
         <td><span class="severity medium">MEDIUM</span></td>
@@ -38132,18 +38287,6 @@ This issue affects RustDesk Server Pro: through 1.7.5.</p></details></td>
         <td>CWE-863</td>
         <td>&nbsp;</td>
         <td><details><summary>Dell Device Management Agent (DDMA), versions prior to 26.02, contain an Incorre...</summary><p>Dell Device Management Agent (DDMA), versions prior to 26.02, contain an Incorrect Authorization vulnerability. A low privileged attacker with local access could potentially exploit this vulnerability, leading to Elevation of Privileges.</p></details></td>
-        <td>2026-03-04</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-20131" target="_blank" rel="noopener">CVE-2026-20131</a></td>
-        <td>10.0</td>
-        <td><span class="severity critical">CRITICAL</span></td>
-        <td>CWE-502</td>
-        <td><span class="kev-yes">&#10003;</span></td>
-        <td><details><summary>A vulnerability in the web-based management interface of Cisco Secure Firewall M...</summary><p>A vulnerability in the web-based management interface of Cisco Secure Firewall Management Center (FMC) Software could allow an unauthenticated, remote attacker to execute arbitrary Java code as root&amp;nbsp;on an affected device.
-
-This vulnerability is due to insecure deserialization of a user-supplied Java byte stream. An attacker could exploit this vulnerability by sending a crafted serialized Java object to the web-based management interface of an affected device. A successful exploit could allow the attacker to execute arbitrary code on the device and elevate privileges to root.
-Note: If the FMC management interface does not have public internet access, the attack surface that is associated with this vulnerability is reduced.</p></details></td>
         <td>2026-03-04</td>
       </tr>
       <tr>
