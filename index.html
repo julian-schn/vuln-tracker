@@ -11,11 +11,11 @@
     <header>
       <h1>vuln-tracker</h1>
       <p class="subtitle">CVEs from the National Vulnerability Database — current and previous month</p>
-      <p class="last-updated">Last updated: 2026-03-25 02:44 UTC</p>
+      <p class="last-updated">Last updated: 2026-03-25 05:25 UTC</p>
     </header>
     <main>
     <section>
-      <h2>Current Month — March 2026 <span class="count">(4361)</span></h2>
+      <h2>Current Month — March 2026 <span class="count">(4363)</span></h2>
       <div class="table-wrapper">
         <table>
           <thead>
@@ -30,6 +30,24 @@
             </tr>
           </thead>
           <tbody>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-2072" target="_blank" rel="noopener">CVE-2026-2072</a></td>
+        <td>8.2</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Cross-Site Scripting vulnerability in Hitachi Infrastructure Analytics Advisor (...</summary><p>Cross-Site Scripting vulnerability in Hitachi Infrastructure Analytics Advisor (Analytics probe component), Hitachi Ops Center Analyzer.This issue affects Hitachi Infrastructure Analytics Advisor:; Hitachi Ops Center Analyzer: from 10.0.0-00 before 11.0.5-00.</p></details></td>
+        <td>2026-03-25</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-1166" target="_blank" rel="noopener">CVE-2026-1166</a></td>
+        <td>4.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-601</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Open Redirect vulnerability in Hitachi Ops Center Administrator.This issue affec...</summary><p>Open Redirect vulnerability in Hitachi Ops Center Administrator.This issue affects Hitachi Ops Center Administrator: from 10.2.0 before 11.0.8.</p></details></td>
+        <td>2026-03-25</td>
+      </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4784" target="_blank" rel="noopener">CVE-2026-4784</a></td>
         <td>6.9</td>
@@ -31711,25 +31729,6 @@
         <td>2026-03-05</td>
       </tr>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-21621" target="_blank" rel="noopener">CVE-2026-21621</a></td>
-        <td>7.0</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-863</td>
-        <td>&nbsp;</td>
-        <td><details><summary>Incorrect Authorization vulnerability in hexpm hexpm/hexpm (&#x27;Elixir.HexpmWeb.API...</summary><p>Incorrect Authorization vulnerability in hexpm hexpm/hexpm (&#x27;Elixir.HexpmWeb.API.OAuthController&#x27; module) allows Privilege Escalation.
-
-An API key created with read-only permissions (domain: &quot;api&quot;, resource: &quot;read&quot;) can be escalated to full write access under specific conditions.
-
-When exchanging a read-only API key via the OAuth client_credentials grant, the resource qualifier is ignored. The resulting JWT receives the broad &quot;api&quot; scope instead of the expected &quot;api:read&quot; scope. This token is therefore treated as having full API access.
-
-If an attacker is able to obtain a victim&#x27;s read-only API key and a valid 2FA (TOTP) code for the victim account, they can use the incorrectly scoped JWT to create a new full-access API key with unrestricted API permissions that does not expire by default and can perform write operations such as publishing, retiring, or modifying packages.
-
-This vulnerability is associated with program files lib/hexpm_web/controllers/api/oauth_controller.ex and program routines &#x27;Elixir.HexpmWeb.API.OAuthController&#x27;:validate_scopes_against_key/2.
-
-This issue affects hexpm: from 71829cb6f6559bcceb1ef4e43a2fb8cdd3af654b before 71c127afebb7ed7cc637eb231b98feb802d62999.</p></details></td>
-        <td>2026-03-05</td>
-      </tr>
-      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-29165" target="_blank" rel="noopener">CVE-2025-29165</a></td>
         <td>9.8</td>
         <td><span class="severity critical">CRITICAL</span></td>
@@ -35633,6 +35632,16 @@ This issue affects hexpm: from 71829cb6f6559bcceb1ef4e43a2fb8cdd3af654b before 7
         <td>CWE-613</td>
         <td>&nbsp;</td>
         <td><details><summary>2N Access Commander version 3.4.2 and prior improperly invalidates session token...</summary><p>2N Access Commander version 3.4.2 and prior improperly invalidates session tokens, allowing multiple session cookies to remain active after logout in web application.</p></details></td>
+        <td>2026-03-04</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-12801" target="_blank" rel="noopener">CVE-2025-12801</a></td>
+        <td>6.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-279</td>
+        <td>&nbsp;</td>
+        <td><details><summary>A vulnerability was recently discovered in the rpc.mountd daemon in the nfs-util...</summary><p>A vulnerability was recently discovered in the rpc.mountd daemon in the nfs-utils package for Linux, that allows a NFSv3 client to escalate the
+privileges assigned to it in the /etc/exports file at mount time. In particular, it allows the client to access any subdirectory or subtree of an exported directory, regardless of the set file permissions, and regardless of any &#x27;root_squash&#x27; or &#x27;all_squash&#x27; attributes that would normally be expected to apply to that client.</p></details></td>
         <td>2026-03-04</td>
       </tr>
       <tr>
