@@ -2,7 +2,9 @@
 #delimiter "|"
 
 
-cves[4366]{cveId:str|published:str|lastModified:str|cvssScore:f64|severity:str|cweId:str|cweName:str|kev:bool|description:str|nvdUrl:str}:
+cves[4367]{cveId:str|published:str|lastModified:str|cvssScore:f64|severity:str|cweId:str|cweName:str|kev:bool|description:str|nvdUrl:str}:
+  CVE-2026-3608|2026-03-25T09:16:25.810|2026-03-25T09:16:25.810|7.5|HIGH|CWE-617|N/A|false|"Sending a maliciously crafted message to the kea-ctrl-agent, kea-dhcp-ddns, kea-dhcp4, or kea-dhcp6 daemons over any configured API socket or HA listener can cause the receiving daemon to exit with a stack overflow error.
+This issue affects Kea versions 2.6.0 through 2.6.4 and 3.0.0 through 3.0.2."|https://nvd.nist.gov/vuln/detail/CVE-2026-3608
   CVE-2026-32326|2026-03-25T08:16:22.547|2026-03-25T08:16:22.547|6.9|MEDIUM|CWE-306|N/A|false|SHARP routers do not perform authentication for some web APIs. The device information may be retrieved without authentication. If the administrative password of the device is left as the initial one, the device may be taken over.|https://nvd.nist.gov/vuln/detail/CVE-2026-32326
   CVE-2026-33253|2026-03-25T06:16:28.527|2026-03-25T06:16:28.527|8.4|HIGH|CWE-428|N/A|false|SANUPS SOFTWARE provided by SANYO DENKI CO., LTD. registers Windows services with unquoted file paths. A user with the write permission on the root directory of the system drive may execute arbitrary code with SYSTEM privilege.|https://nvd.nist.gov/vuln/detail/CVE-2026-33253
   CVE-2026-2343|2026-03-25T06:16:28.407|2026-03-25T06:16:28.407|0.0|NONE|N/A|N/A|false|The PeproDev Ultimate Invoice WordPress plugin through 2.2.5 has a bulk download invoices action that generates ZIP archives containing exported invoice PDFs. The ZIP files are named predictably making it possible to brute force and retreive PII.|https://nvd.nist.gov/vuln/detail/CVE-2026-2343
