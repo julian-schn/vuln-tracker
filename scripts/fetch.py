@@ -36,7 +36,7 @@ TOP50_HTML     = ROOT_DIR / "top50.html"
 
 TOP50_COUNT    = 50
 
-TONL_HEADER    = "#version 1.0\n#delimiter \"|\"\n"
+TONL_HEADER    = "#version 1.0\n#delimiter \"|\""
 TONL_SCHEMA    = "cves[COUNT]{cveId:str|published:str|lastModified:str|cvssScore:f64|severity:str|cweId:str|cweName:str|kev:bool|description:str|nvdUrl:str}:"
 FIELD_NAMES    = ["cveId", "published", "lastModified", "cvssScore", "severity",
                   "cweId", "cweName", "kev", "description", "nvdUrl"]
@@ -121,9 +121,11 @@ def write_tonl(path: Path, records: dict) -> None:
         lines.append(row)
     path.write_text('\n'.join(lines) + '\n', encoding="utf-8")
 
-def write_markdown(path: Path, records: dict, title: str) -> None:
-    """Write records to a Markdown file, sorted by published descending."""
-    sorted_recs = sorted(records.values(), key=lambda r: r["published"], reverse=True)
+def write_markdown(path: Path, records: dict, title: str, sort_key=None) -> None:
+    """Write records to a Markdown file, sorted by published descending by default."""
+    if sort_key is None:
+        sort_key = lambda r: r["published"]
+    sorted_recs = sorted(records.values(), key=sort_key, reverse=True)
     lines = [
         f"# {title}",
         "",
@@ -497,6 +499,7 @@ def main():
         write_tonl(CURRENT_TONL, {})
         state["current_month"] = today_month
         state["last_fetched"]  = None
+        save_state(state)  # persist before fetch so a crash can't re-trigger rollover
 
     # --- Fetch ---
     if state["last_fetched"] is None:
@@ -537,6 +540,7 @@ def main():
         previous_records = merge_records(load_tonl(PREVIOUS_TONL), previous_new)
 
     # --- Write outputs (all-or-nothing order: data first, then HTML, then state) ---
+    timestamp      = now_utc.strftime("%Y-%m-%d %H:%M UTC")
     current_label  = now_utc.strftime("%B %Y")
     previous_label = get_prev_month_range(now_utc)[0].strftime("%B %Y")
 
@@ -551,10 +555,10 @@ def main():
     top50 = get_top50(current_records, previous_records)
     print(f"Writing Top {TOP50_COUNT} ({len(top50)} entries)...")
     write_tonl(TOP50_TONL, top50)
-    write_markdown(TOP50_MD, top50, f"Top {TOP50_COUNT} CVEs — {current_label} & {previous_label}")
+    write_markdown(TOP50_MD, top50, f"Top {TOP50_COUNT} CVEs — {current_label} & {previous_label}",
+                   sort_key=lambda r: (r["kev"], r["cvssScore"]))
     TOP50_HTML.write_text(render_html_top50(top50, timestamp), encoding="utf-8")
 
-    timestamp = now_utc.strftime("%Y-%m-%d %H:%M UTC")
     print("Generating index.html...")
     INDEX_HTML.write_text(render_html(current_records, previous_records, timestamp, now_utc), encoding="utf-8")
 
