@@ -11,11 +11,11 @@
     <header>
       <h1>vuln-tracker</h1>
       <p class="subtitle">CVEs from the National Vulnerability Database — current and previous month</p>
-      <p class="last-updated">Last updated: 2026-03-26 13:42 UTC</p>
+      <p class="last-updated">Last updated: 2026-03-26 15:12 UTC</p>
     </header>
     <main>
     <section>
-      <h2>Current Month — March 2026 <span class="count">(4840)</span></h2>
+      <h2>Current Month — March 2026 <span class="count">(4865)</span></h2>
       <div class="table-wrapper">
         <table>
           <thead>
@@ -30,6 +30,231 @@
             </tr>
           </thead>
           <tbody>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4877" target="_blank" rel="noopener">CVE-2026-4877</a></td>
+        <td>5.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td><details><summary>A security flaw has been discovered in itsourcecode Payroll Management System up...</summary><p>A security flaw has been discovered in itsourcecode Payroll Management System up to 1.0. This affects an unknown function of the file /index.php. Performing a manipulation of the argument page results in cross site scripting. It is possible to initiate the attack remotely. The exploit has been released to the public and may be used for attacks.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4876" target="_blank" rel="noopener">CVE-2026-4876</a></td>
+        <td>5.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-74</td>
+        <td>&nbsp;</td>
+        <td><details><summary>A vulnerability was identified in itsourcecode Free Hotel Reservation System 1.0...</summary><p>A vulnerability was identified in itsourcecode Free Hotel Reservation System 1.0. The impacted element is an unknown function of the file /admin/mod_amenities/index.php?view=editpic. Such manipulation of the argument ID leads to sql injection. The attack may be performed from remote. The exploit is publicly available and might be used.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33413" target="_blank" rel="noopener">CVE-2026-33413</a></td>
+        <td>8.8</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td><details><summary>etcd is a distributed key-value store for the data of a distributed system. Prio...</summary><p>etcd is a distributed key-value store for the data of a distributed system. Prior to versions 3.4.42, 3.5.28, and 3.6.9, unauthorized users may bypass authentication or authorization checks and call certain etcd functions in clusters that expose the gRPC API to untrusted or partially trusted clients. In unpatched etcd clusters with etcd auth enabled, unauthorized users are able to call MemberList and learn cluster topology, including member IDs and advertised endpoints; call Alarm, which can be abused for operational disruption or denial of service; use Lease APIs, interfering with TTL-based keys and lease ownership; and/or trigger compaction, permanently removing historical revisions and disrupting watch, audit, and recovery workflows. Kubernetes does not rely on etcd’s built-in authentication and authorization. Instead, the API server handles authentication and authorization itself, so typical Kubernetes deployments are not affected. Versions 3.4.42, 3.5.28, and 3.6.9 contain a patch. If upgrading is not immediately possible, reduce exposure by treating the affected RPCs as unauthenticated in practice. Restrict network access to etcd server ports so only trusted components can connect and/or require strong client identity at the transport layer, such as mTLS with tightly scoped client certificate distribution.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33396" target="_blank" rel="noopener">CVE-2026-33396</a></td>
+        <td>9.9</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-78</td>
+        <td>&nbsp;</td>
+        <td><details><summary>OneUptime is an open-source monitoring and observability platform. Prior to vers...</summary><p>OneUptime is an open-source monitoring and observability platform. Prior to version 10.0.35, a low-privileged authenticated user (ProjectMember) can achieve remote command execution on the Probe container/host by abusing Synthetic Monitor Playwright script execution. Synthetic monitor code is executed in VMRunner.runCodeInNodeVM with a live Playwright page object in context. The sandbox relies on a denylist of blocked properties/methods, but it is incomplete. Specifically, _browserType and launchServer are not blocked, so attacker code can traverse `page.context().browser()._browserType.launchServer(...)` and spawn arbitrary processes. Version 10.0.35 contains a patch.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33343" target="_blank" rel="noopener">CVE-2026-33343</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-863</td>
+        <td>&nbsp;</td>
+        <td><details><summary>etcd is a distributed key-value store for the data of a distributed system. Prio...</summary><p>etcd is a distributed key-value store for the data of a distributed system. Prior to versions 3.4.42, 3.5.28, and 3.6.9, an authenticated user with RBAC restricted permissions on key ranges can use nested transactions to bypass all key-level authorization. This allows any authenticated user with direct access to etcd to effectively ignore all key range restrictions, accessing the entire etcd data store. Kubernetes does not rely on etcd’s built-in authentication and authorization. Instead, the API server handles authentication and authorization itself, so typical Kubernetes deployments are not affected. Versions 3.4.42, 3.5.28, and 3.6.9 contain a patch. If upgrading is not immediately possible, reduce exposure by treating the affected RPCs as unauthenticated in practice. Restrict network access to etcd server ports so only trusted components can connect and require strong client identity at the transport layer, such as mTLS with tightly scoped client certificate distribution.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-2511" target="_blank" rel="noopener">CVE-2026-2511</a></td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-89</td>
+        <td>&nbsp;</td>
+        <td><details><summary>The JS Help Desk – AI-Powered Support &amp; Ticketing System plugin for WordPress is...</summary><p>The JS Help Desk – AI-Powered Support &amp; Ticketing System plugin for WordPress is vulnerable to SQL Injection via the `multiformid` parameter in the `storeTickets()` function in all versions up to, and including, 3.0.4. This is due to the user-supplied `multiformid` value being passed to `esc_sql()` without enclosing the result in quotes in the SQL query, rendering the escaping ineffective against payloads that do not contain quote characters. This makes it possible for unauthenticated attackers to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-2389" target="_blank" rel="noopener">CVE-2026-2389</a></td>
+        <td>4.9</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td><details><summary>The Complianz – GDPR/CCPA Cookie Consent plugin for WordPress is vulnerable to S...</summary><p>The Complianz – GDPR/CCPA Cookie Consent plugin for WordPress is vulnerable to Stored Cross-Site Scripting in all versions up to, and including, 7.4.4.2. This is due to the `revert_divs_to_summary` function replacing `&amp;#8221;` HTML entities with literal double-quote characters (`&quot;`) in post content without subsequent sanitization. This makes it possible for authenticated attackers, with Contributor-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses the injected page. The Classic Editor plugin is required to be installed and activated in order to exploit this vulnerability.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-2231" target="_blank" rel="noopener">CVE-2026-2231</a></td>
+        <td>7.2</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td><details><summary>The Fluent Booking plugin for WordPress is vulnerable to Stored Cross-Site Scrip...</summary><p>The Fluent Booking plugin for WordPress is vulnerable to Stored Cross-Site Scripting via multiple parameters in all versions up to, and including, 2.0.01 due to insufficient input sanitization and output escaping. This makes it possible for unauthenticated attackers to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-1032" target="_blank" rel="noopener">CVE-2026-1032</a></td>
+        <td>4.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-352</td>
+        <td>&nbsp;</td>
+        <td><details><summary>The Conditional Menus plugin for WordPress is vulnerable to Cross-Site Request F...</summary><p>The Conditional Menus plugin for WordPress is vulnerable to Cross-Site Request Forgery in all versions up to, and including, 1.2.6. This is due to missing nonce validation on the &#x27;save_options&#x27; function. This makes it possible for unauthenticated attackers to modify conditional menu assignments via a forged request granted they can trick a site administrator into performing an action such as clicking on a link.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-55264" target="_blank" rel="noopener">CVE-2025-55264</a></td>
+        <td>5.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-613</td>
+        <td>&nbsp;</td>
+        <td><details><summary>HCL Aftermarket DPC is affected by Failure to Invalidate Session on Password Cha...</summary><p>HCL Aftermarket DPC is affected by Failure to Invalidate Session on Password Change will allow attacker to access to a session, then they can maintain control over the account despite the password change leading to account takeover.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-55263" target="_blank" rel="noopener">CVE-2025-55263</a></td>
+        <td>7.3</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-798</td>
+        <td>&nbsp;</td>
+        <td><details><summary>HCL Aftermarket DPC is affected by Hardcoded Sensitive Data which allows attacke...</summary><p>HCL Aftermarket DPC is affected by Hardcoded Sensitive Data which allows attacker to gain access to the source code or if it is stored in insecure repositories, they can easily retrieve these hardcoded secrets.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-55262" target="_blank" rel="noopener">CVE-2025-55262</a></td>
+        <td>8.3</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-798</td>
+        <td>&nbsp;</td>
+        <td><details><summary>HCL Aftermarket DPC is affected by SQL Injection which allows attacker to exploi...</summary><p>HCL Aftermarket DPC is affected by SQL Injection which allows attacker to exploit this vulnerability to retrieve sensitive information from the database.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-55261" target="_blank" rel="noopener">CVE-2025-55261</a></td>
+        <td>8.1</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-284</td>
+        <td>&nbsp;</td>
+        <td><details><summary>HCL Aftermarket DPC is affected by Missing Functional Level Access Control which...</summary><p>HCL Aftermarket DPC is affected by Missing Functional Level Access Control which will allow attacker to escalate his privileges and may compromise the application and may steal and manipulate the data.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2019-25650" target="_blank" rel="noopener">CVE-2019-25650</a></td>
+        <td>8.6</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-787</td>
+        <td>&nbsp;</td>
+        <td><details><summary>River Past CamDo 3.7.6 contains a structured exception handler (SEH) buffer over...</summary><p>River Past CamDo 3.7.6 contains a structured exception handler (SEH) buffer overflow vulnerability that allows local attackers to execute arbitrary code by supplying a malicious string in the Lame_enc.dll name field. Attackers can craft a payload with a 280-byte buffer, NSEH jump instruction, and SEH handler address pointing to a pop-pop-ret gadget to trigger code execution and establish a bind shell on port 3110.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2019-25649" target="_blank" rel="noopener">CVE-2019-25649</a></td>
+        <td>6.8</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-787</td>
+        <td>&nbsp;</td>
+        <td><details><summary>River Past Audio Converter 7.7.16 contains a local buffer overflow vulnerability...</summary><p>River Past Audio Converter 7.7.16 contains a local buffer overflow vulnerability in the activation code field that allows local attackers to crash the application by supplying an oversized input string. Attackers can paste a large payload of repeated characters into the &#x27;E-Mail and Activation Code&#x27; field and click &#x27;Activate&#x27; to trigger a denial of service condition.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2019-25648" target="_blank" rel="noopener">CVE-2019-25648</a></td>
+        <td>6.9</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-787</td>
+        <td>&nbsp;</td>
+        <td><details><summary>MyVideoConverter Pro 3.14 contains a local buffer overflow vulnerability that al...</summary><p>MyVideoConverter Pro 3.14 contains a local buffer overflow vulnerability that allows attackers to crash the application by supplying an excessively long string to the registration code input field. Attackers can paste a malicious payload containing 10000 bytes into the &#x27;Copy and Paste Registration Code&#x27; field to trigger a denial of service condition.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2018-25219" target="_blank" rel="noopener">CVE-2018-25219</a></td>
+        <td>8.6</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-787</td>
+        <td>&nbsp;</td>
+        <td><details><summary>PassFab Excel Password Recovery 8.3.1 contains a structured exception handling b...</summary><p>PassFab Excel Password Recovery 8.3.1 contains a structured exception handling buffer overflow vulnerability that allows local attackers to execute arbitrary code by supplying a malicious payload in the registration code field. Attackers can craft a buffer overflow payload with a pop-pop-ret gadget and shellcode that triggers code execution when pasted into the Licensed E-mail and Registration Code field during the registration process.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2018-25218" target="_blank" rel="noopener">CVE-2018-25218</a></td>
+        <td>8.6</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-787</td>
+        <td>&nbsp;</td>
+        <td><details><summary>PassFab RAR Password Recovery 9.3.2 contains a structured exception handler (SEH...</summary><p>PassFab RAR Password Recovery 9.3.2 contains a structured exception handler (SEH) buffer overflow vulnerability that allows local attackers to execute arbitrary code by supplying a malicious payload. Attackers can craft a payload with a buffer overflow, NSEH jump, and shellcode, then paste it into the &#x27;Licensed E-mail and Registration Code&#x27; field during registration to trigger code execution.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2018-25217" target="_blank" rel="noopener">CVE-2018-25217</a></td>
+        <td>8.6</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-787</td>
+        <td>&nbsp;</td>
+        <td><details><summary>PDF Explorer 1.5.66.2 contains a structured exception handler (SEH) overflow vul...</summary><p>PDF Explorer 1.5.66.2 contains a structured exception handler (SEH) overflow vulnerability that allows local attackers to execute arbitrary code by overwriting SEH records with malicious data. Attackers can craft a payload with buffer overflow, NSEH jump, and ROP gadget chains that execute when the Custom fields settings dialog processes the malicious input in the Label field.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2018-25216" target="_blank" rel="noopener">CVE-2018-25216</a></td>
+        <td>6.9</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-787</td>
+        <td>&nbsp;</td>
+        <td><details><summary>AnyBurn 4.3 contains a local buffer overflow vulnerability that allows local att...</summary><p>AnyBurn 4.3 contains a local buffer overflow vulnerability that allows local attackers to crash the application by supplying an excessively long string in the image file name field. Attackers can paste a 10000-byte payload into the &#x27;Image file name&#x27; parameter during the &#x27;Copy disk to Image&#x27; operation to trigger a denial of service condition.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2018-25215" target="_blank" rel="noopener">CVE-2018-25215</a></td>
+        <td>6.8</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-787</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Excel Password Recovery Professional 8.2.0.0 contains a local buffer overflow vu...</summary><p>Excel Password Recovery Professional 8.2.0.0 contains a local buffer overflow vulnerability that allows attackers to cause a denial of service by supplying an excessively long string to the &#x27;E-Mail and Registrations Code&#x27; field. Attackers can paste a crafted payload containing 5000 bytes of data into the registration field to trigger a crash when the Register button is clicked.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2018-25214" target="_blank" rel="noopener">CVE-2018-25214</a></td>
+        <td>6.9</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-787</td>
+        <td>&nbsp;</td>
+        <td><details><summary>MegaPing contains a local buffer overflow vulnerability that allows local attack...</summary><p>MegaPing contains a local buffer overflow vulnerability that allows local attackers to crash the application by supplying an oversized payload to the Destination Address List field in the Finger function. Attackers can paste a crafted buffer exceeding expected input limits into the vulnerable field and trigger the Start button to cause a denial of service crash.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2018-25213" target="_blank" rel="noopener">CVE-2018-25213</a></td>
+        <td>8.6</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-787</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Nsauditor 3.0.28.0 contains a structured exception handling buffer overflow vuln...</summary><p>Nsauditor 3.0.28.0 contains a structured exception handling buffer overflow vulnerability that allows local attackers to execute arbitrary code by supplying malicious input to the DNS Lookup tool. Attackers can craft a payload with SEH chain overwrite and inject shellcode through the DNS Query field to achieve code execution with application privileges.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2018-25212" target="_blank" rel="noopener">CVE-2018-25212</a></td>
+        <td>8.6</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-787</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Boxoft wav-wma Converter 1.0 contains a local buffer overflow vulnerability in s...</summary><p>Boxoft wav-wma Converter 1.0 contains a local buffer overflow vulnerability in structured exception handling that allows attackers to execute arbitrary code by crafting malicious WAV files. Attackers can create a specially crafted WAV file with excessive data and ROP gadgets to overwrite the SEH chain and achieve code execution on Windows systems.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2018-25211" target="_blank" rel="noopener">CVE-2018-25211</a></td>
+        <td>8.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-787</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Allok Video Splitter 3.1.1217 contains a buffer overflow vulnerability that allo...</summary><p>Allok Video Splitter 3.1.1217 contains a buffer overflow vulnerability that allows local attackers to cause a denial of service or execute arbitrary code by supplying an oversized string in the License Name field. Attackers can craft a malicious payload exceeding 780 bytes, paste it into the License Name registration field, and trigger the overflow when the Register button is clicked.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4887" target="_blank" rel="noopener">CVE-2026-4887</a></td>
         <td>6.1</td>
@@ -355,148 +580,6 @@
         <td>2026-03-26</td>
       </tr>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-23398" target="_blank" rel="noopener">CVE-2026-23398</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
-        <td>&nbsp;</td>
-        <td><details><summary>In the Linux kernel, the following vulnerability has been resolved:
-
-icmp: fix N...</summary><p>In the Linux kernel, the following vulnerability has been resolved:
-
-icmp: fix NULL pointer dereference in icmp_tag_validation()
-
-icmp_tag_validation() unconditionally dereferences the result of
-rcu_dereference(inet_protos[proto]) without checking for NULL.
-The inet_protos[] array is sparse -- only about 15 of 256 protocol
-numbers have registered handlers. When ip_no_pmtu_disc is set to 3
-(hardened PMTU mode) and the kernel receives an ICMP Fragmentation
-Needed error with a quoted inner IP header containing an unregistered
-protocol number, the NULL dereference causes a kernel panic in
-softirq context.
-
- Oops: general protection fault, probably for non-canonical address 0xdffffc0000000002: 0000 [#1] SMP KASAN NOPTI
- KASAN: null-ptr-deref in range [0x0000000000000010-0x0000000000000017]
- RIP: 0010:icmp_unreach (net/ipv4/icmp.c:1085 net/ipv4/icmp.c:1143)
- Call Trace:
-  &lt;IRQ&gt;
-  icmp_rcv (net/ipv4/icmp.c:1527)
-  ip_protocol_deliver_rcu (net/ipv4/ip_input.c:207)
-  ip_local_deliver_finish (net/ipv4/ip_input.c:242)
-  ip_local_deliver (net/ipv4/ip_input.c:262)
-  ip_rcv (net/ipv4/ip_input.c:573)
-  __netif_receive_skb_one_core (net/core/dev.c:6164)
-  process_backlog (net/core/dev.c:6628)
-  handle_softirqs (kernel/softirq.c:561)
-  &lt;/IRQ&gt;
-
-Add a NULL check before accessing icmp_strict_tag_validation. If the
-protocol has no registered handler, return false since it cannot
-perform strict tag validation.</p></details></td>
-        <td>2026-03-26</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-23397" target="_blank" rel="noopener">CVE-2026-23397</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
-        <td>&nbsp;</td>
-        <td><details><summary>In the Linux kernel, the following vulnerability has been resolved:
-
-nfnetlink_o...</summary><p>In the Linux kernel, the following vulnerability has been resolved:
-
-nfnetlink_osf: validate individual option lengths in fingerprints
-
-nfnl_osf_add_callback() validates opt_num bounds and string
-NUL-termination but does not check individual option length fields.
-A zero-length option causes nf_osf_match_one() to enter the option
-matching loop even when foptsize sums to zero, which matches packets
-with no TCP options where ctx-&gt;optp is NULL:
-
- Oops: general protection fault
- KASAN: null-ptr-deref in range [0x0000000000000000-0x0000000000000007]
- RIP: 0010:nf_osf_match_one (net/netfilter/nfnetlink_osf.c:98)
- Call Trace:
-  nf_osf_match (net/netfilter/nfnetlink_osf.c:227)
-  xt_osf_match_packet (net/netfilter/xt_osf.c:32)
-  ipt_do_table (net/ipv4/netfilter/ip_tables.c:293)
-  nf_hook_slow (net/netfilter/core.c:623)
-  ip_local_deliver (net/ipv4/ip_input.c:262)
-  ip_rcv (net/ipv4/ip_input.c:573)
-
-Additionally, an MSS option (kind=2) with length &lt; 4 causes
-out-of-bounds reads when nf_osf_match_one() unconditionally accesses
-optp[2] and optp[3] for MSS value extraction.  While RFC 9293
-section 3.2 specifies that the MSS option is always exactly 4
-bytes (Kind=2, Length=4), the check uses &quot;&lt; 4&quot; rather than
-&quot;!= 4&quot; because lengths greater than 4 do not cause memory
-safety issues -- the buffer is guaranteed to be at least
-foptsize bytes by the ctx-&gt;optsize == foptsize check.
-
-Reject fingerprints where any option has zero length, or where an MSS
-option has length less than 4, at add time rather than trusting these
-values in the packet matching hot path.</p></details></td>
-        <td>2026-03-26</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-23396" target="_blank" rel="noopener">CVE-2026-23396</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
-        <td>&nbsp;</td>
-        <td><details><summary>In the Linux kernel, the following vulnerability has been resolved:
-
-wifi: mac80...</summary><p>In the Linux kernel, the following vulnerability has been resolved:
-
-wifi: mac80211: fix NULL deref in mesh_matches_local()
-
-mesh_matches_local() unconditionally dereferences ie-&gt;mesh_config to
-compare mesh configuration parameters. When called from
-mesh_rx_csa_frame(), the parsed action-frame elements may not contain a
-Mesh Configuration IE, leaving ie-&gt;mesh_config NULL and triggering a
-kernel NULL pointer dereference.
-
-The other two callers are already safe:
-  - ieee80211_mesh_rx_bcn_presp() checks !elems-&gt;mesh_config before
-    calling mesh_matches_local()
-  - mesh_plink_get_event() is only reached through
-    mesh_process_plink_frame(), which checks !elems-&gt;mesh_config, too
-
-mesh_rx_csa_frame() is the only caller that passes raw parsed elements
-to mesh_matches_local() without guarding mesh_config. An adjacent
-attacker can exploit this by sending a crafted CSA action frame that
-includes a valid Mesh ID IE but omits the Mesh Configuration IE,
-crashing the kernel.
-
-The captured crash log:
-
-Oops: general protection fault, probably for non-canonical address ...
-KASAN: null-ptr-deref in range [0x0000000000000000-0x0000000000000007]
-Workqueue: events_unbound cfg80211_wiphy_work
-[...]
-Call Trace:
- &lt;TASK&gt;
- ? __pfx_mesh_matches_local (net/mac80211/mesh.c:65)
- ieee80211_mesh_rx_queued_mgmt (net/mac80211/mesh.c:1686)
- [...]
- ieee80211_iface_work (net/mac80211/iface.c:1754 net/mac80211/iface.c:1802)
- [...]
- cfg80211_wiphy_work (net/wireless/core.c:426)
- process_one_work (net/kernel/workqueue.c:3280)
- ? assign_work (net/kernel/workqueue.c:1219)
- worker_thread (net/kernel/workqueue.c:3352)
- ? __pfx_worker_thread (net/kernel/workqueue.c:3385)
- kthread (net/kernel/kthread.c:436)
- [...]
- ret_from_fork_asm (net/arch/x86/entry/entry_64.S:255)
- &lt;/TASK&gt;
-
-This patch adds a NULL check for ie-&gt;mesh_config at the top of
-mesh_matches_local() to return false early when the Mesh Configuration
-IE is absent.</p></details></td>
-        <td>2026-03-26</td>
-      </tr>
-      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4862" target="_blank" rel="noopener">CVE-2026-4862</a></td>
         <td>7.4</td>
         <td><span class="severity high">HIGH</span></td>
@@ -578,6 +661,30 @@ IE is absent.</p></details></td>
         <td>2026-03-26</td>
       </tr>
       <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4747" target="_blank" rel="noopener">CVE-2026-4747</a></td>
+        <td>8.8</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-121</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Each RPCSEC_GSS data packet is validated by a routine which checks a signature i...</summary><p>Each RPCSEC_GSS data packet is validated by a routine which checks a signature in the packet.  This routine copies a portion of the packet into a stack buffer, but fails to ensure that the buffer is sufficiently large, and a malicious client can trigger a stack overflow.  Notably, this does not require the client to authenticate itself first.
+
+As kgssapi.ko&#x27;s RPCSEC_GSS implementation is vulnerable, remote code execution in the kernel is possible by an authenticated user that is able to send packets to the kernel&#x27;s NFS server while kgssapi.ko is loaded into the kernel.
+
+In userspace, applications which have librpcgss_sec loaded and run an RPC server are vulnerable to remote code execution from any client able to send it packets.  We are not aware of any such applications in the FreeBSD base system.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4652" target="_blank" rel="noopener">CVE-2026-4652</a></td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-476</td>
+        <td>&nbsp;</td>
+        <td><details><summary>On a system exposing an NVMe/TCP target, a remote client can trigger a kernel pa...</summary><p>On a system exposing an NVMe/TCP target, a remote client can trigger a kernel panic by sending a CONNECT command for an I/O queue with a bogus or stale CNTLID.
+
+An attacker with network access to the NVMe/TCP target can trigger an unauthenticated Denial of Service condition on the affected machine.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32680" target="_blank" rel="noopener">CVE-2026-32680</a></td>
         <td>8.5</td>
         <td><span class="severity high">HIGH</span></td>
@@ -597,8 +704,8 @@ IE is absent.</p></details></td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-1890" target="_blank" rel="noopener">CVE-2026-1890</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>5.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
         <td>N/A</td>
         <td>&nbsp;</td>
         <td><details><summary>The LeadConnector WordPress plugin before 3.0.22 does not have authorization in ...</summary><p>The LeadConnector WordPress plugin before 3.0.22 does not have authorization in a REST route, allowing unauthenticated users to call it and overwrite existing data</p></details></td>
@@ -606,8 +713,8 @@ IE is absent.</p></details></td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-1430" target="_blank" rel="noopener">CVE-2026-1430</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>4.8</td>
+        <td><span class="severity medium">MEDIUM</span></td>
         <td>N/A</td>
         <td>&nbsp;</td>
         <td><details><summary>The WP Lightbox 2 WordPress plugin before 3.0.7 does not sanitise and escape som...</summary><p>The WP Lightbox 2 WordPress plugin before 3.0.7 does not sanitise and escape some of its settings, which could allow high privilege users such as admin to perform Stored Cross-Site Scripting attacks even when the unfiltered_html capability is disallowed (for example in multisite setup).</p></details></td>
@@ -615,8 +722,8 @@ IE is absent.</p></details></td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-15488" target="_blank" rel="noopener">CVE-2025-15488</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>6.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
         <td>N/A</td>
         <td>&nbsp;</td>
         <td><details><summary>The Responsive Plus  WordPress plugin before 3.4.3 is vulnerable to arbitrary sh...</summary><p>The Responsive Plus  WordPress plugin before 3.4.3 is vulnerable to arbitrary shortcode execution due to the software allowing unauthenticated users to execute the update_responsive_woo_free_shipping_left_shortcode AJAX action that does not properly validate the content_rech_data parameter before processing it as a shortcode.</p></details></td>
@@ -624,8 +731,8 @@ IE is absent.</p></details></td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-15433" target="_blank" rel="noopener">CVE-2025-15433</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>6.8</td>
+        <td><span class="severity medium">MEDIUM</span></td>
         <td>N/A</td>
         <td>&nbsp;</td>
         <td><details><summary>The Shared Files  WordPress plugin before 1.7.58 allows users with a role as low...</summary><p>The Shared Files  WordPress plugin before 1.7.58 allows users with a role as low as Contributor to download any file on the web server (such as wp-config.php) via a path traversal vector</p></details></td>
@@ -1803,8 +1910,8 @@ IE is absent.</p></details></td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32541" target="_blank" rel="noopener">CVE-2026-32541</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>6.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
         <td>CWE-862</td>
         <td>&nbsp;</td>
         <td><details><summary>Missing Authorization vulnerability in Premmerce Premmerce Redirect Manager prem...</summary><p>Missing Authorization vulnerability in Premmerce Premmerce Redirect Manager premmerce-redirect-manager allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects Premmerce Redirect Manager: from n/a through &lt;= 1.0.12.</p></details></td>
@@ -1857,8 +1964,8 @@ IE is absent.</p></details></td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32535" target="_blank" rel="noopener">CVE-2026-32535</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>6.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
         <td>CWE-639</td>
         <td>&nbsp;</td>
         <td><details><summary>Authorization Bypass Through User-Controlled Key vulnerability in JoomSky JS Hel...</summary><p>Authorization Bypass Through User-Controlled Key vulnerability in JoomSky JS Help Desk js-support-ticket allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects JS Help Desk: from n/a through &lt;= 3.0.3.</p></details></td>
@@ -1875,8 +1982,8 @@ IE is absent.</p></details></td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32533" target="_blank" rel="noopener">CVE-2026-32533</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>6.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
         <td>CWE-639</td>
         <td>&nbsp;</td>
         <td><details><summary>Authorization Bypass Through User-Controlled Key vulnerability in LatePoint Late...</summary><p>Authorization Bypass Through User-Controlled Key vulnerability in LatePoint LatePoint latepoint allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects LatePoint: from n/a through &lt;= 5.2.6.</p></details></td>
@@ -1902,8 +2009,8 @@ IE is absent.</p></details></td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32530" target="_blank" rel="noopener">CVE-2026-32530</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>8.8</td>
+        <td><span class="severity high">HIGH</span></td>
         <td>CWE-266</td>
         <td>&nbsp;</td>
         <td><details><summary>Incorrect Privilege Assignment vulnerability in WPFunnels Creator LMS creatorlms...</summary><p>Incorrect Privilege Assignment vulnerability in WPFunnels Creator LMS creatorlms allows Privilege Escalation.This issue affects Creator LMS: from n/a through &lt;= 1.1.18.</p></details></td>
@@ -1965,8 +2072,8 @@ IE is absent.</p></details></td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32523" target="_blank" rel="noopener">CVE-2026-32523</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>9.9</td>
+        <td><span class="severity critical">CRITICAL</span></td>
         <td>CWE-434</td>
         <td>&nbsp;</td>
         <td><details><summary>Unrestricted Upload of File with Dangerous Type vulnerability in denishua WPJAM ...</summary><p>Unrestricted Upload of File with Dangerous Type vulnerability in denishua WPJAM Basic wpjam-basic allows Using Malicious Files.This issue affects WPJAM Basic: from n/a through &lt;= 6.9.2.</p></details></td>
@@ -2037,8 +2144,8 @@ IE is absent.</p></details></td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32515" target="_blank" rel="noopener">CVE-2026-32515</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
         <td>CWE-862</td>
         <td>&nbsp;</td>
         <td><details><summary>Missing Authorization vulnerability in kamleshyadav Miraculous miraculous allows...</summary><p>Missing Authorization vulnerability in kamleshyadav Miraculous miraculous allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects Miraculous: from n/a through &lt; 2.1.2.</p></details></td>
@@ -2091,8 +2198,8 @@ IE is absent.</p></details></td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32509" target="_blank" rel="noopener">CVE-2026-32509</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>5.4</td>
+        <td><span class="severity medium">MEDIUM</span></td>
         <td>CWE-502</td>
         <td>&nbsp;</td>
         <td><details><summary>Deserialization of Untrusted Data vulnerability in Edge-Themes Gracey gracey all...</summary><p>Deserialization of Untrusted Data vulnerability in Edge-Themes Gracey gracey allows Object Injection.This issue affects Gracey: from n/a through &lt; 1.4.</p></details></td>
@@ -2127,8 +2234,8 @@ IE is absent.</p></details></td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32505" target="_blank" rel="noopener">CVE-2026-32505</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>8.1</td>
+        <td><span class="severity high">HIGH</span></td>
         <td>CWE-98</td>
         <td>&nbsp;</td>
         <td><details><summary>Improper Control of Filename for Include/Require Statement in PHP Program (&#x27;PHP ...</summary><p>Improper Control of Filename for Include/Require Statement in PHP Program (&#x27;PHP Remote File Inclusion&#x27;) vulnerability in CreativeWS Kiddy kiddy allows PHP Local File Inclusion.This issue affects Kiddy: from n/a through &lt;= 2.0.8.</p></details></td>
@@ -4818,9 +4925,9 @@ IE is absent.</p></details></td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-28842" target="_blank" rel="noopener">CVE-2026-28842</a></td>
-        <td>7.3</td>
+        <td>7.5</td>
         <td><span class="severity high">HIGH</span></td>
-        <td>CWE-120</td>
+        <td>CWE-122</td>
         <td>&nbsp;</td>
         <td><details><summary>The issue was addressed with improved bounds checks. This issue is fixed in macO...</summary><p>The issue was addressed with improved bounds checks. This issue is fixed in macOS Tahoe 26.4. A buffer overflow may result in memory corruption and unexpected app termination.</p></details></td>
         <td>2026-03-25</td>
@@ -4890,8 +4997,8 @@ IE is absent.</p></details></td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-28832" target="_blank" rel="noopener">CVE-2026-28832</a></td>
-        <td>5.3</td>
-        <td><span class="severity medium">MEDIUM</span></td>
+        <td>8.4</td>
+        <td><span class="severity high">HIGH</span></td>
         <td>CWE-125</td>
         <td>&nbsp;</td>
         <td><details><summary>An out-of-bounds read was addressed with improved bounds checking. This issue is...</summary><p>An out-of-bounds read was addressed with improved bounds checking. This issue is fixed in macOS Sequoia 15.7.5, macOS Sonoma 14.8.5, macOS Tahoe 26.4. An app may be able to disclose kernel memory.</p></details></td>
@@ -4980,9 +5087,9 @@ IE is absent.</p></details></td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-28821" target="_blank" rel="noopener">CVE-2026-28821</a></td>
-        <td>6.5</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-284</td>
+        <td>8.4</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-20</td>
         <td>&nbsp;</td>
         <td><details><summary>A validation issue existed in the entitlement verification. This issue was addre...</summary><p>A validation issue existed in the entitlement verification. This issue was addressed with improved validation of the process entitlement. This issue is fixed in macOS Sequoia 15.7.5, macOS Sonoma 14.8.5, macOS Tahoe 26.4. An app may be able to gain elevated privileges.</p></details></td>
         <td>2026-03-25</td>
@@ -6218,6 +6325,18 @@ IE is absent.</p></details></td>
         <td>NVD-CWE-noinfo</td>
         <td>&nbsp;</td>
         <td><details><summary>An issue in Free5GC v.4.2.0 and before allows a remote attacker to cause a denia...</summary><p>An issue in Free5GC v.4.2.0 and before allows a remote attacker to cause a denial of service via the function HandleAuthenticationFailure of the component AMF</p></details></td>
+        <td>2026-03-24</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-28755" target="_blank" rel="noopener">CVE-2026-28755</a></td>
+        <td>5.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-863</td>
+        <td>&nbsp;</td>
+        <td><details><summary>NGINX Plus and NGINX Open Source have a vulnerability in the ngx_stream_ssl_modu...</summary><p>NGINX Plus and NGINX Open Source have a vulnerability in the ngx_stream_ssl_module module due to the improper handling of revoked certificates when configured with the ssl_verify_client on and ssl_ocsp on directives, allowing the TLS handshake to succeed even after an OCSP check identifies the certificate as revoked.   
+
+
+Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.</p></details></td>
         <td>2026-03-24</td>
       </tr>
       <tr>
