@@ -11,11 +11,11 @@
     <header>
       <h1>vuln-tracker</h1>
       <p class="subtitle">CVEs from the National Vulnerability Database — current and previous month</p>
-      <p class="last-updated">Last updated: 2026-03-26 15:12 UTC</p>
+      <p class="last-updated">Last updated: 2026-03-26 17:10 UTC</p>
     </header>
     <main>
     <section>
-      <h2>Current Month — March 2026 <span class="count">(4865)</span></h2>
+      <h2>Current Month — March 2026 <span class="count">(4898)</span></h2>
       <div class="table-wrapper">
         <table>
           <thead>
@@ -30,6 +30,159 @@
             </tr>
           </thead>
           <tbody>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4897" target="_blank" rel="noopener">CVE-2026-4897</a></td>
+        <td>5.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-770</td>
+        <td>&nbsp;</td>
+        <td><details><summary>A flaw was found in polkit. A local user can exploit this by providing a special...</summary><p>A flaw was found in polkit. A local user can exploit this by providing a specially crafted, excessively long input to the `polkit-agent-helper-1` setuid binary via standard input (stdin). This unbounded input can lead to an out-of-memory (OOM) condition, resulting in a Denial of Service (DoS) for the system.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33397" target="_blank" rel="noopener">CVE-2026-33397</a></td>
+        <td>6.9</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-601</td>
+        <td>&nbsp;</td>
+        <td><details><summary>The Angular SSR is a server-rise rendering tool for Angular applications. Versio...</summary><p>The Angular SSR is a server-rise rendering tool for Angular applications. Versions on the 22.x branch prior to 22.0.0-next.2, the 21.x branch prior to 21.2.3, and the 20.x branch prior to 20.3.21 have an Open Redirect vulnerability in `@angular/ssr` due to an incomplete fix for CVE-2026-27738. While the original fix successfully blocked multiple leading slashes (e.g., `///`), the internal validation logic fails to account for a single backslash (`\`) bypass. When an Angular SSR application is deployed behind a proxy that passes the `X-Forwarded-Prefix` header, an attacker provides a value starting with a single backslash, the internal validation failed to flag the single backslash as invalid, the application prepends a leading forward slash, resulting in a `Location` header containing the URL, and modern browsers interpret the `/\` sequence as `//`, treating it as a protocol-relative URL and redirecting the user to the attacker-controlled domain. Furthermore, the response lacks the `Vary: X-Forwarded-Prefix` header, allowing the malicious redirect to be stored in intermediate caches (Web Cache Poisoning). Versions 22.0.0-next.2, 21.2.3, and 20.3.21 contain a patch. Until the patch is applied, developers should sanitize the `X-Forwarded-Prefix` header in their `server.ts` before the Angular engine processes the request.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-30162" target="_blank" rel="noopener">CVE-2026-30162</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Cross Site Scripting (xss) vulnerability in Timo 2.0.3 via crafted links in the ...</summary><p>Cross Site Scripting (xss) vulnerability in Timo 2.0.3 via crafted links in the title field.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-29976" target="_blank" rel="noopener">CVE-2026-29976</a></td>
+        <td>6.2</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-120</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Buffer Overflow vulnerability in ZerBea hcxpcapngtool v. 7.0.1-43-g2ee308e allow...</summary><p>Buffer Overflow vulnerability in ZerBea hcxpcapngtool v. 7.0.1-43-g2ee308e allows a local attacker to obtain sensitive information via the getradiotapfield() function</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-29934" target="_blank" rel="noopener">CVE-2026-29934</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td><details><summary>A reflected cross-site scripting (XSS) vulnerability in the /admin/menus compone...</summary><p>A reflected cross-site scripting (XSS) vulnerability in the /admin/menus component of Lightcms v2.0 allows attackers to execute arbitrary Javascript in the context of the user&#x27;s browser via modifying the referer value in the request header.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-29933" target="_blank" rel="noopener">CVE-2026-29933</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td><details><summary>A reflected cross-site scripting (XSS) vulnerability in the /index/login.html co...</summary><p>A reflected cross-site scripting (XSS) vulnerability in the /index/login.html component of YZMCMS v7.4 allows attackers to execute arbitrary Javascript in the context of the user&#x27;s browser via modifying the referrer value in the request header.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-28298" target="_blank" rel="noopener">CVE-2026-28298</a></td>
+        <td>5.9</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td><details><summary>SolarWinds Observability Self-Hosted was found to be affected by a stored cross-...</summary><p>SolarWinds Observability Self-Hosted was found to be affected by a stored cross-site scripting vulnerability, which when exploited, can lead to unintended script execution.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-28297" target="_blank" rel="noopener">CVE-2026-28297</a></td>
+        <td>6.1</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td><details><summary>SolarWinds Observability Self-Hosted was found to be affected by a stored cross-...</summary><p>SolarWinds Observability Self-Hosted was found to be affected by a stored cross-site scripting vulnerability, which when exploited, can lead to unintended script execution.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-27664" target="_blank" rel="noopener">CVE-2026-27664</a></td>
+        <td>8.7</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-787</td>
+        <td>&nbsp;</td>
+        <td><details><summary>A vulnerability has been identified in CPCI85 Central Processing/Communication (...</summary><p>A vulnerability has been identified in CPCI85 Central Processing/Communication (All versions &lt; V26.10), SICORE Base system (All versions &lt; V26.10.0). The affected application contains an out-of-bounds write vulnerability while parsing specially crafted XML inputs. This could allow an unauthenticated attacker to exploit this issue by sending a malicious XML request, which may cause the service to crash, resulting in a denial-of-service condition.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-27663" target="_blank" rel="noopener">CVE-2026-27663</a></td>
+        <td>7.1</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-770</td>
+        <td>&nbsp;</td>
+        <td><details><summary>A vulnerability has been identified in CPCI85 Central Processing/Communication (...</summary><p>A vulnerability has been identified in CPCI85 Central Processing/Communication (All versions &lt; V26.10), RTUM85 RTU Base (All versions &lt; V26.10). The affected application contains denial-of-service (DoS) vulnerability. The remote operation mode is susceptible to a resource exhaustion condition when subjected to a high volume of requests. Sending multiple requests can exhaust resources, preventing parameterization and requiring a reset or reboot to restore functionality.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-26072" target="_blank" rel="noopener">CVE-2026-26072</a></td>
+        <td>4.2</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-362</td>
+        <td>&nbsp;</td>
+        <td><details><summary>EVerest is an EV charging software stack. Versions prior to 2026.02.0 have a dat...</summary><p>EVerest is an EV charging software stack. Versions prior to 2026.02.0 have a data race leading to `std::map&lt;std::optional&gt;` concurrent access (container/optional corruption possible). The trigger is EV SoC update with powermeter periodic update and unplugging/SessionFinished status. Version 2026.02.0 patches the issue.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-26071" target="_blank" rel="noopener">CVE-2026-26071</a></td>
+        <td>4.2</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-362</td>
+        <td>&nbsp;</td>
+        <td><details><summary>EVerest is an EV charging software stack. Versions prior to 2026.02.0 have a dat...</summary><p>EVerest is an EV charging software stack. Versions prior to 2026.02.0 have a data race leading to `std::string` concurrent access. with heap-use-after-free possible. This is triggered by EVCCID update (EV/ISO15118) and OCPP session/authorization events. Version 2026.02.0 contains a patch.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-26070" target="_blank" rel="noopener">CVE-2026-26070</a></td>
+        <td>4.6</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-362</td>
+        <td>&nbsp;</td>
+        <td><details><summary>EVerest is an EV charging software stack. Versions prior to 2026.02.0 have a dat...</summary><p>EVerest is an EV charging software stack. Versions prior to 2026.02.0 have a data race leading to `std::map&lt;std::optional&gt;` concurrent access (container/optional corruption possible). The trigger is an EV SoC update with powermeter periodic update and unplugging/SessionFinished state. Version 2026.2.0 contains a patch.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-26008" target="_blank" rel="noopener">CVE-2026-26008</a></td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-125</td>
+        <td>&nbsp;</td>
+        <td><details><summary>EVerest is an EV charging software stack. Versions prior to 2026.02.0 have an ou...</summary><p>EVerest is an EV charging software stack. Versions prior to 2026.02.0 have an out-of-bounds access (std::vector) that leads to possible remote crash/memory corruption. This is because the CSMS sends UpdateAllowedEnergyTransferModes over the network. Version 2026.2.0 contains a patch.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-23995" target="_blank" rel="noopener">CVE-2026-23995</a></td>
+        <td>8.4</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-121</td>
+        <td>&nbsp;</td>
+        <td><details><summary>EVerest is an EV charging software stack. Prior to version 2026.02.0, stack-base...</summary><p>EVerest is an EV charging software stack. Prior to version 2026.02.0, stack-based buffer overflow in CAN interface initialization: passing an interface name longer than IFNAMSIZ (16) to CAN open routines overflows `ifreq.ifr_name`, corrupting adjacent stack data and enabling potential code execution. A malicious or misconfigured interface name can trigger this before any privilege checks. Version 2026.02.0 contains a patch.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-22790" target="_blank" rel="noopener">CVE-2026-22790</a></td>
+        <td>8.8</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-121</td>
+        <td>&nbsp;</td>
+        <td><details><summary>EVerest is an EV charging software stack. Prior to version 2026.02.0, `HomeplugM...</summary><p>EVerest is an EV charging software stack. Prior to version 2026.02.0, `HomeplugMessage::setup_payload` trusts `len` after an `assert`; in release builds the check is removed, so oversized SLAC payloads are `memcpy`&#x27;d into a ~1497-byte stack buffer, corrupting the stack and enabling remote code execution from network-provided frames. Version 2026.02.0 contains a patch.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-22593" target="_blank" rel="noopener">CVE-2026-22593</a></td>
+        <td>8.4</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-193</td>
+        <td>&nbsp;</td>
+        <td><details><summary>EVerest is an EV charging software stack. Prior to version 2026.02.0, an off-by-...</summary><p>EVerest is an EV charging software stack. Prior to version 2026.02.0, an off-by-one check in IsoMux certificate filename handling causes a stack-based buffer overflow when a filename length equals `MAX_FILE_NAME_LENGTH` (100). A crafted filename in the certificate directory can overflow `file_names[idx]`, corrupting stack state and enabling potential code execution. Version 2026.02.0 contains a patch.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4877" target="_blank" rel="noopener">CVE-2026-4877</a></td>
         <td>5.3</td>
@@ -572,8 +725,8 @@
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-24068" target="_blank" rel="noopener">CVE-2026-24068</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>8.8</td>
+        <td><span class="severity high">HIGH</span></td>
         <td>CWE-306</td>
         <td>&nbsp;</td>
         <td><details><summary>The VSL privileged helper does utilize NSXPC for IPC. The implementation of the ...</summary><p>The VSL privileged helper does utilize NSXPC for IPC. The implementation of the &quot;shouldAcceptNewConnection&quot; function, which is used by the NSXPC framework to validate if a client should be allowed to connect to the XPC listener, does not validate clients at all. This means that any process can connect to this service using the configured protocol. A malicious process is able to call all the functions defined in the corresponding HelperToolProtocol. No validation is performed in the functions &quot;writeReceiptFile&quot; and “runUninstaller” of the HelperToolProtocol. This allows an attacker to write files to any location with any data as well as execute any file with any arguments. Any process can call these functions because of the missing XPC client validation described before. The abuse of the missing endpoint validation leads to privilege escalation.</p></details></td>
@@ -586,6 +739,16 @@
         <td>CWE-119</td>
         <td>&nbsp;</td>
         <td><details><summary>A security vulnerability has been detected in UTT HiPER 1250GW up to 3.2.7-21090...</summary><p>A security vulnerability has been detected in UTT HiPER 1250GW up to 3.2.7-210907-180535. This issue affects the function strcpy of the file /goform/formConfigDnsFilterGlobal of the component Parameter Handler. Such manipulation of the argument GroupName leads to buffer overflow. The attack can be launched remotely. The exploit has been disclosed publicly and may be used.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4263" target="_blank" rel="noopener">CVE-2026-4263</a></td>
+        <td>6.9</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-863</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Vulnerability of incorrect authorization in HiJiffy Chatbot allows an attacker t...</summary><p>Vulnerability of incorrect authorization in HiJiffy Chatbot allows an attacker to download private messages from other users via the parameter 
+&#x27;visitor&#x27; in &#x27;/api/v1/webchat/message&#x27;.</p></details></td>
         <td>2026-03-26</td>
       </tr>
       <tr>
@@ -682,6 +845,19 @@ In userspace, applications which have librpcgss_sec loaded and run an RPC server
         <td><details><summary>On a system exposing an NVMe/TCP target, a remote client can trigger a kernel pa...</summary><p>On a system exposing an NVMe/TCP target, a remote client can trigger a kernel panic by sending a CONNECT command for an I/O queue with a bogus or stale CNTLID.
 
 An attacker with network access to the NVMe/TCP target can trigger an unauthenticated Denial of Service condition on the affected machine.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4247" target="_blank" rel="noopener">CVE-2026-4247</a></td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-401</td>
+        <td>&nbsp;</td>
+        <td><details><summary>When a challenge ACK is to be sent tcp_respond() constructs and sends the challe...</summary><p>When a challenge ACK is to be sent tcp_respond() constructs and sends the challenge ACK and consumes the mbuf that is passed in.  When no challenge ACK should be sent the function returns and leaks the mbuf.
+
+If an attacker is either on path with an established TCP connection, or can themselves establish a TCP connection, to an affected FreeBSD machine, they can easily craft and send packets which meet the challenge ACK criteria and cause the FreeBSD host to leak an mbuf for each crafted packet in excess of the configured rate limit settings i.e. with default settings, crafted packets in excess of the first 5 sent within a 1s period will leak an mbuf.
+
+Technically, off-path attackers can also exploit this problem by guessing the IP addresses, TCP port numbers and in some cases the sequence numbers of established connections and spoofing packets towards a FreeBSD machine, but this is harder to do effectively.</p></details></td>
         <td>2026-03-26</td>
       </tr>
       <tr>
@@ -934,6 +1110,27 @@ An attacker with network access to the NVMe/TCP target can trigger an unauthenti
         <td>CWE-79</td>
         <td>&nbsp;</td>
         <td><details><summary>A security vulnerability has been detected in code-projects Accounting System 1....</summary><p>A security vulnerability has been detected in code-projects Accounting System 1.0. Impacted is an unknown function of the file /my_account/add_costumer.php of the component Web Application Interface. Such manipulation of the argument costumer_name leads to cross site scripting. The attack may be performed from remote. The exploit has been disclosed publicly and may be used.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-15101" target="_blank" rel="noopener">CVE-2025-15101</a></td>
+        <td>8.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-78</td>
+        <td>&nbsp;</td>
+        <td><details><summary>A Cross-Site Request Forgery (CSRF) vulnerability has been identified in the Web...</summary><p>A Cross-Site Request Forgery (CSRF) vulnerability has been identified in the Web management interface of certain ASUS router models. This vulnerability potentially allows actions to be performed with the existing privileges of an authenticated user on the affected device, including the ability to execute system commands through unintended mechanisms.
+Refer to the &#x27;Security Update for ASUS Router Firmware&#x27; section on the ASUS Security Advisory for more information.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2014-125112" target="_blank" rel="noopener">CVE-2014-125112</a></td>
+        <td>9.8</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-565</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Plack::Middleware::Session::Cookie versions through 0.21 for Perl allows remote ...</summary><p>Plack::Middleware::Session::Cookie versions through 0.21 for Perl allows remote code execution.
+
+Plack::Middleware::Session::Cookie versions through 0.21 has a security vulnerability where it allows an attacker to execute arbitrary code on the server during deserialization of the cookie data, when there is no secret used to sign the cookie.</p></details></td>
         <td>2026-03-26</td>
       </tr>
       <tr>
@@ -2108,8 +2305,8 @@ An attacker with network access to the NVMe/TCP target can trigger an unauthenti
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32519" target="_blank" rel="noopener">CVE-2026-32519</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>9.0</td>
+        <td><span class="severity critical">CRITICAL</span></td>
         <td>CWE-266</td>
         <td>&nbsp;</td>
         <td><details><summary>Incorrect Privilege Assignment vulnerability in Bit Apps Bit SMTP bit-smtp allow...</summary><p>Incorrect Privilege Assignment vulnerability in Bit Apps Bit SMTP bit-smtp allows Privilege Escalation.This issue affects Bit SMTP: from n/a through &lt;= 1.2.2.</p></details></td>
@@ -2171,8 +2368,8 @@ An attacker with network access to the NVMe/TCP target can trigger an unauthenti
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32512" target="_blank" rel="noopener">CVE-2026-32512</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>9.8</td>
+        <td><span class="severity critical">CRITICAL</span></td>
         <td>CWE-502</td>
         <td>&nbsp;</td>
         <td><details><summary>Deserialization of Untrusted Data vulnerability in Edge-Themes Pelicula pelicula...</summary><p>Deserialization of Untrusted Data vulnerability in Edge-Themes Pelicula pelicula-video-production-and-movie-theme allows Object Injection.This issue affects Pelicula: from n/a through &lt; 1.10.</p></details></td>
@@ -2252,8 +2449,8 @@ An attacker with network access to the NVMe/TCP target can trigger an unauthenti
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32503" target="_blank" rel="noopener">CVE-2026-32503</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>8.1</td>
+        <td><span class="severity high">HIGH</span></td>
         <td>CWE-98</td>
         <td>&nbsp;</td>
         <td><details><summary>Improper Control of Filename for Include/Require Statement in PHP Program (&#x27;PHP ...</summary><p>Improper Control of Filename for Include/Require Statement in PHP Program (&#x27;PHP Remote File Inclusion&#x27;) vulnerability in CreativeWS Trendustry trendustry allows PHP Local File Inclusion.This issue affects Trendustry: from n/a through &lt;= 1.1.4.</p></details></td>
@@ -2261,8 +2458,8 @@ An attacker with network access to the NVMe/TCP target can trigger an unauthenti
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32502" target="_blank" rel="noopener">CVE-2026-32502</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>9.8</td>
+        <td><span class="severity critical">CRITICAL</span></td>
         <td>CWE-502</td>
         <td>&nbsp;</td>
         <td><details><summary>Deserialization of Untrusted Data vulnerability in Select-Themes Borgholm borgho...</summary><p>Deserialization of Untrusted Data vulnerability in Select-Themes Borgholm borgholm-marketing-agency-theme allows Object Injection.This issue affects Borgholm: from n/a through &lt; 1.6.</p></details></td>
@@ -2288,8 +2485,8 @@ An attacker with network access to the NVMe/TCP target can trigger an unauthenti
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32499" target="_blank" rel="noopener">CVE-2026-32499</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>9.3</td>
+        <td><span class="severity critical">CRITICAL</span></td>
         <td>CWE-89</td>
         <td>&nbsp;</td>
         <td><details><summary>Improper Neutralization of Special Elements used in an SQL Command (&#x27;SQL Injecti...</summary><p>Improper Neutralization of Special Elements used in an SQL Command (&#x27;SQL Injection&#x27;) vulnerability in QuantumCloud ChatBot chatbot allows Blind SQL Injection.This issue affects ChatBot: from n/a through &lt;= 7.7.9.</p></details></td>
@@ -2405,8 +2602,8 @@ An attacker with network access to the NVMe/TCP target can trigger an unauthenti
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32484" target="_blank" rel="noopener">CVE-2026-32484</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>8.8</td>
+        <td><span class="severity high">HIGH</span></td>
         <td>CWE-502</td>
         <td>&nbsp;</td>
         <td><details><summary>Deserialization of Untrusted Data vulnerability in BoldGrid weForms weforms allo...</summary><p>Deserialization of Untrusted Data vulnerability in BoldGrid weForms weforms allows Object Injection.This issue affects weForms: from n/a through &lt;= 1.6.26.</p></details></td>
@@ -2450,8 +2647,8 @@ An attacker with network access to the NVMe/TCP target can trigger an unauthenti
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-31920" target="_blank" rel="noopener">CVE-2026-31920</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>9.3</td>
+        <td><span class="severity critical">CRITICAL</span></td>
         <td>CWE-89</td>
         <td>&nbsp;</td>
         <td><details><summary>Improper Neutralization of Special Elements used in an SQL Command (&#x27;SQL Injecti...</summary><p>Improper Neutralization of Special Elements used in an SQL Command (&#x27;SQL Injection&#x27;) vulnerability in Devteam HaywoodTech Product Rearrange for WooCommerce products-rearrange-woocommerce allows Blind SQL Injection.This issue affects Product Rearrange for WooCommerce: from n/a through &lt;= 1.2.2.</p></details></td>
@@ -2468,8 +2665,8 @@ An attacker with network access to the NVMe/TCP target can trigger an unauthenti
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-31913" target="_blank" rel="noopener">CVE-2026-31913</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>8.6</td>
+        <td><span class="severity high">HIGH</span></td>
         <td>CWE-22</td>
         <td>&nbsp;</td>
         <td><details><summary>Improper Limitation of a Pathname to a Restricted Directory (&#x27;Path Traversal&#x27;) v...</summary><p>Improper Limitation of a Pathname to a Restricted Directory (&#x27;Path Traversal&#x27;) vulnerability in Whitebox-Studio Scape scape allows Path Traversal.This issue affects Scape: from n/a through &lt; 1.5.16.</p></details></td>
@@ -2549,8 +2746,8 @@ An attacker with network access to the NVMe/TCP target can trigger an unauthenti
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-27095" target="_blank" rel="noopener">CVE-2026-27095</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>9.8</td>
+        <td><span class="severity critical">CRITICAL</span></td>
         <td>CWE-502</td>
         <td>&nbsp;</td>
         <td><details><summary>Deserialization of Untrusted Data vulnerability in magepeopleteam Bus Ticket Boo...</summary><p>Deserialization of Untrusted Data vulnerability in magepeopleteam Bus Ticket Booking with Seat Reservation bus-ticket-booking-with-seat-reservation allows Object Injection.This issue affects Bus Ticket Booking with Seat Reservation: from n/a through &lt;= 5.6.0.</p></details></td>
@@ -2576,8 +2773,8 @@ An attacker with network access to the NVMe/TCP target can trigger an unauthenti
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-27084" target="_blank" rel="noopener">CVE-2026-27084</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>9.8</td>
+        <td><span class="severity critical">CRITICAL</span></td>
         <td>CWE-502</td>
         <td>&nbsp;</td>
         <td><details><summary>Deserialization of Untrusted Data vulnerability in ThemeREX Buisson buisson allo...</summary><p>Deserialization of Untrusted Data vulnerability in ThemeREX Buisson buisson allows Object Injection.This issue affects Buisson: from n/a through &lt;= 1.1.11.</p></details></td>
@@ -2585,8 +2782,8 @@ An attacker with network access to the NVMe/TCP target can trigger an unauthenti
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-27083" target="_blank" rel="noopener">CVE-2026-27083</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>9.8</td>
+        <td><span class="severity critical">CRITICAL</span></td>
         <td>CWE-502</td>
         <td>&nbsp;</td>
         <td><details><summary>Deserialization of Untrusted Data vulnerability in ThemeREX Work &amp; Travel Compan...</summary><p>Deserialization of Untrusted Data vulnerability in ThemeREX Work &amp; Travel Company work-travel-company allows Object Injection.This issue affects Work &amp; Travel Company: from n/a through &lt;= 1.2.</p></details></td>
@@ -2594,8 +2791,8 @@ An attacker with network access to the NVMe/TCP target can trigger an unauthenti
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-27082" target="_blank" rel="noopener">CVE-2026-27082</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>9.8</td>
+        <td><span class="severity critical">CRITICAL</span></td>
         <td>CWE-502</td>
         <td>&nbsp;</td>
         <td><details><summary>Deserialization of Untrusted Data vulnerability in ThemeREX Love Story lovestory...</summary><p>Deserialization of Untrusted Data vulnerability in ThemeREX Love Story lovestory allows Object Injection.This issue affects Love Story: from n/a through &lt;= 1.3.12.</p></details></td>
@@ -2612,8 +2809,8 @@ An attacker with network access to the NVMe/TCP target can trigger an unauthenti
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-27080" target="_blank" rel="noopener">CVE-2026-27080</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>8.1</td>
+        <td><span class="severity high">HIGH</span></td>
         <td>CWE-98</td>
         <td>&nbsp;</td>
         <td><details><summary>Improper Control of Filename for Include/Require Statement in PHP Program (&#x27;PHP ...</summary><p>Improper Control of Filename for Include/Require Statement in PHP Program (&#x27;PHP Remote File Inclusion&#x27;) vulnerability in Mikado-Themes Deston deston allows PHP Local File Inclusion.This issue affects Deston: from n/a through &lt;= 1.0.</p></details></td>
@@ -2630,8 +2827,8 @@ An attacker with network access to the NVMe/TCP target can trigger an unauthenti
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-27078" target="_blank" rel="noopener">CVE-2026-27078</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>8.1</td>
+        <td><span class="severity high">HIGH</span></td>
         <td>CWE-98</td>
         <td>&nbsp;</td>
         <td><details><summary>Improper Control of Filename for Include/Require Statement in PHP Program (&#x27;PHP ...</summary><p>Improper Control of Filename for Include/Require Statement in PHP Program (&#x27;PHP Remote File Inclusion&#x27;) vulnerability in Mikado-Themes Emaurri emaurri allows PHP Local File Inclusion.This issue affects Emaurri: from n/a through &lt;= 1.0.1.</p></details></td>
@@ -2648,8 +2845,8 @@ An attacker with network access to the NVMe/TCP target can trigger an unauthenti
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-27076" target="_blank" rel="noopener">CVE-2026-27076</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>8.1</td>
+        <td><span class="severity high">HIGH</span></td>
         <td>CWE-98</td>
         <td>&nbsp;</td>
         <td><details><summary>Improper Control of Filename for Include/Require Statement in PHP Program (&#x27;PHP ...</summary><p>Improper Control of Filename for Include/Require Statement in PHP Program (&#x27;PHP Remote File Inclusion&#x27;) vulnerability in Mikado-Themes LuxeDrive luxedrive allows PHP Local File Inclusion.This issue affects LuxeDrive: from n/a through &lt;= 1.0.</p></details></td>
@@ -2702,8 +2899,8 @@ An attacker with network access to the NVMe/TCP target can trigger an unauthenti
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-27049" target="_blank" rel="noopener">CVE-2026-27049</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>9.8</td>
+        <td><span class="severity critical">CRITICAL</span></td>
         <td>CWE-288</td>
         <td>&nbsp;</td>
         <td><details><summary>Authentication Bypass Using an Alternate Path or Channel vulnerability in NooThe...</summary><p>Authentication Bypass Using an Alternate Path or Channel vulnerability in NooTheme Jobica Core jobica-core allows Authentication Abuse.This issue affects Jobica Core: from n/a through &lt;= 1.4.2.</p></details></td>
@@ -2720,8 +2917,8 @@ An attacker with network access to the NVMe/TCP target can trigger an unauthenti
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-27047" target="_blank" rel="noopener">CVE-2026-27047</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>8.1</td>
+        <td><span class="severity high">HIGH</span></td>
         <td>CWE-98</td>
         <td>&nbsp;</td>
         <td><details><summary>Improper Control of Filename for Include/Require Statement in PHP Program (&#x27;PHP ...</summary><p>Improper Control of Filename for Include/Require Statement in PHP Program (&#x27;PHP Remote File Inclusion&#x27;) vulnerability in Mikado-Themes Curly Core curly-core allows PHP Local File Inclusion.This issue affects Curly Core: from n/a through &lt;= 2.1.6.</p></details></td>
@@ -2738,8 +2935,8 @@ An attacker with network access to the NVMe/TCP target can trigger an unauthenti
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-27045" target="_blank" rel="noopener">CVE-2026-27045</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>8.8</td>
+        <td><span class="severity high">HIGH</span></td>
         <td>CWE-502</td>
         <td>&nbsp;</td>
         <td><details><summary>Deserialization of Untrusted Data vulnerability in sbthemes WooCommerce Infinite...</summary><p>Deserialization of Untrusted Data vulnerability in sbthemes WooCommerce Infinite Scroll sb-woocommerce-infinite-scroll allows Object Injection.This issue affects WooCommerce Infinite Scroll: from n/a through &lt;= 1.6.2.</p></details></td>
@@ -2756,8 +2953,8 @@ An attacker with network access to the NVMe/TCP target can trigger an unauthenti
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-27040" target="_blank" rel="noopener">CVE-2026-27040</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>8.8</td>
+        <td><span class="severity high">HIGH</span></td>
         <td>CWE-22</td>
         <td>&nbsp;</td>
         <td><details><summary>Improper Limitation of a Pathname to a Restricted Directory (&#x27;Path Traversal&#x27;) v...</summary><p>Improper Limitation of a Pathname to a Restricted Directory (&#x27;Path Traversal&#x27;) vulnerability in AA-Team WZone woozone allows Path Traversal.This issue affects WZone: from n/a through &lt;= 14.0.31.</p></details></td>
@@ -2810,8 +3007,8 @@ An attacker with network access to the NVMe/TCP target can trigger an unauthenti
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-25464" target="_blank" rel="noopener">CVE-2026-25464</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>8.1</td>
+        <td><span class="severity high">HIGH</span></td>
         <td>CWE-98</td>
         <td>&nbsp;</td>
         <td><details><summary>Improper Control of Filename for Include/Require Statement in PHP Program (&#x27;PHP ...</summary><p>Improper Control of Filename for Include/Require Statement in PHP Program (&#x27;PHP Remote File Inclusion&#x27;) vulnerability in TieLabs Jannah jannah allows PHP Local File Inclusion.This issue affects Jannah: from n/a through &lt;= 7.6.3.</p></details></td>
@@ -2846,8 +3043,8 @@ An attacker with network access to the NVMe/TCP target can trigger an unauthenti
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-25458" target="_blank" rel="noopener">CVE-2026-25458</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>8.1</td>
+        <td><span class="severity high">HIGH</span></td>
         <td>CWE-98</td>
         <td>&nbsp;</td>
         <td><details><summary>Improper Control of Filename for Include/Require Statement in PHP Program (&#x27;PHP ...</summary><p>Improper Control of Filename for Include/Require Statement in PHP Program (&#x27;PHP Remote File Inclusion&#x27;) vulnerability in Select-Themes Moments moments allows PHP Local File Inclusion.This issue affects Moments: from n/a through &lt;= 2.2.</p></details></td>
@@ -2936,8 +3133,8 @@ An attacker with network access to the NVMe/TCP target can trigger an unauthenti
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-25429" target="_blank" rel="noopener">CVE-2026-25429</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>9.8</td>
+        <td><span class="severity critical">CRITICAL</span></td>
         <td>CWE-502</td>
         <td>&nbsp;</td>
         <td><details><summary>Deserialization of Untrusted Data vulnerability in wpdive Nexa Blocks nexa-block...</summary><p>Deserialization of Untrusted Data vulnerability in wpdive Nexa Blocks nexa-blocks allows Object Injection.This issue affects Nexa Blocks: from n/a through &lt;= 1.1.1.</p></details></td>
@@ -2990,8 +3187,8 @@ An attacker with network access to the NVMe/TCP target can trigger an unauthenti
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-25400" target="_blank" rel="noopener">CVE-2026-25400</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>8.8</td>
+        <td><span class="severity high">HIGH</span></td>
         <td>CWE-502</td>
         <td>&nbsp;</td>
         <td><details><summary>Deserialization of Untrusted Data vulnerability in thememount Apicona apicona al...</summary><p>Deserialization of Untrusted Data vulnerability in thememount Apicona apicona allows Object Injection.This issue affects Apicona: from n/a through &lt;= 24.1.0.</p></details></td>
@@ -3143,8 +3340,8 @@ An attacker with network access to the NVMe/TCP target can trigger an unauthenti
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-25360" target="_blank" rel="noopener">CVE-2026-25360</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>8.8</td>
+        <td><span class="severity high">HIGH</span></td>
         <td>CWE-502</td>
         <td>&nbsp;</td>
         <td><details><summary>Deserialization of Untrusted Data vulnerability in rascals Vex vex allows Object...</summary><p>Deserialization of Untrusted Data vulnerability in rascals Vex vex allows Object Injection.This issue affects Vex: from n/a through &lt; 1.2.9.</p></details></td>
@@ -3161,8 +3358,8 @@ An attacker with network access to the NVMe/TCP target can trigger an unauthenti
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-25358" target="_blank" rel="noopener">CVE-2026-25358</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>8.8</td>
+        <td><span class="severity high">HIGH</span></td>
         <td>CWE-502</td>
         <td>&nbsp;</td>
         <td><details><summary>Deserialization of Untrusted Data vulnerability in rascals Meloo meloo allows Ob...</summary><p>Deserialization of Untrusted Data vulnerability in rascals Meloo meloo allows Object Injection.This issue affects Meloo: from n/a through &lt; 2.8.2.</p></details></td>
@@ -3413,8 +3610,8 @@ An attacker with network access to the NVMe/TCP target can trigger an unauthenti
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-25032" target="_blank" rel="noopener">CVE-2026-25032</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>9.8</td>
+        <td><span class="severity critical">CRITICAL</span></td>
         <td>CWE-502</td>
         <td>&nbsp;</td>
         <td><details><summary>Deserialization of Untrusted Data vulnerability in park_of_ideas Ricky ricky all...</summary><p>Deserialization of Untrusted Data vulnerability in park_of_ideas Ricky ricky allows Object Injection.This issue affects Ricky: from n/a through &lt; 2.31.</p></details></td>
@@ -3431,8 +3628,8 @@ An attacker with network access to the NVMe/TCP target can trigger an unauthenti
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-25030" target="_blank" rel="noopener">CVE-2026-25030</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>9.8</td>
+        <td><span class="severity critical">CRITICAL</span></td>
         <td>CWE-502</td>
         <td>&nbsp;</td>
         <td><details><summary>Deserialization of Untrusted Data vulnerability in park_of_ideas Goldish goldish...</summary><p>Deserialization of Untrusted Data vulnerability in park_of_ideas Goldish goldish allows Object Injection.This issue affects Goldish: from n/a through &lt; 3.47.</p></details></td>
@@ -3539,8 +3736,8 @@ An attacker with network access to the NVMe/TCP target can trigger an unauthenti
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-24989" target="_blank" rel="noopener">CVE-2026-24989</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>9.8</td>
+        <td><span class="severity critical">CRITICAL</span></td>
         <td>CWE-502</td>
         <td>&nbsp;</td>
         <td><details><summary>Deserialization of Untrusted Data vulnerability in FantasticPlugins SUMO Affilia...</summary><p>Deserialization of Untrusted Data vulnerability in FantasticPlugins SUMO Affiliates Pro affs allows Object Injection.This issue affects SUMO Affiliates Pro: from n/a through &lt; 11.4.0.</p></details></td>
@@ -3593,8 +3790,8 @@ An attacker with network access to the NVMe/TCP target can trigger an unauthenti
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-24978" target="_blank" rel="noopener">CVE-2026-24978</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>8.8</td>
+        <td><span class="severity high">HIGH</span></td>
         <td>CWE-502</td>
         <td>&nbsp;</td>
         <td><details><summary>Deserialization of Untrusted Data vulnerability in NooTheme Jobica Core jobica-c...</summary><p>Deserialization of Untrusted Data vulnerability in NooTheme Jobica Core jobica-core allows Object Injection.This issue affects Jobica Core: from n/a through &lt;= 1.4.1.</p></details></td>
@@ -3611,8 +3808,8 @@ An attacker with network access to the NVMe/TCP target can trigger an unauthenti
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-24976" target="_blank" rel="noopener">CVE-2026-24976</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>8.8</td>
+        <td><span class="severity high">HIGH</span></td>
         <td>CWE-502</td>
         <td>&nbsp;</td>
         <td><details><summary>Deserialization of Untrusted Data vulnerability in NooTheme Organici Library noo...</summary><p>Deserialization of Untrusted Data vulnerability in NooTheme Organici Library noo-organici-library allows Object Injection.This issue affects Organici Library: from n/a through &lt;= 2.1.2.</p></details></td>
@@ -3629,8 +3826,8 @@ An attacker with network access to the NVMe/TCP target can trigger an unauthenti
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-24974" target="_blank" rel="noopener">CVE-2026-24974</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>8.8</td>
+        <td><span class="severity high">HIGH</span></td>
         <td>CWE-502</td>
         <td>&nbsp;</td>
         <td><details><summary>Deserialization of Untrusted Data vulnerability in NooTheme CitiLights noo-citil...</summary><p>Deserialization of Untrusted Data vulnerability in NooTheme CitiLights noo-citilights allows Object Injection.This issue affects CitiLights: from n/a through &lt;= 3.7.1.</p></details></td>
@@ -3719,8 +3916,8 @@ An attacker with network access to the NVMe/TCP target can trigger an unauthenti
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-24378" target="_blank" rel="noopener">CVE-2026-24378</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>9.8</td>
+        <td><span class="severity critical">CRITICAL</span></td>
         <td>CWE-502</td>
         <td>&nbsp;</td>
         <td><details><summary>Deserialization of Untrusted Data vulnerability in Metagauss EventPrime eventpri...</summary><p>Deserialization of Untrusted Data vulnerability in Metagauss EventPrime eventprime-event-calendar-management allows Object Injection.This issue affects EventPrime: from n/a through &lt;= 4.2.8.0.</p></details></td>
@@ -4196,8 +4393,8 @@ An attacker with network access to the NVMe/TCP target can trigger an unauthenti
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-69347" target="_blank" rel="noopener">CVE-2025-69347</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>8.5</td>
+        <td><span class="severity high">HIGH</span></td>
         <td>CWE-639</td>
         <td>&nbsp;</td>
         <td><details><summary>Authorization Bypass Through User-Controlled Key vulnerability in Convers Lab WP...</summary><p>Authorization Bypass Through User-Controlled Key vulnerability in Convers Lab WPSubscription subscription allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects WPSubscription: from n/a through &lt;= 1.8.10.</p></details></td>
@@ -4241,7 +4438,7 @@ An attacker with network access to the NVMe/TCP target can trigger an unauthenti
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-3218" target="_blank" rel="noopener">CVE-2026-3218</a></td>
-        <td>6.1</td>
+        <td>4.8</td>
         <td><span class="severity medium">MEDIUM</span></td>
         <td>CWE-79</td>
         <td>&nbsp;</td>
@@ -4268,7 +4465,7 @@ An attacker with network access to the NVMe/TCP target can trigger an unauthenti
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-3215" target="_blank" rel="noopener">CVE-2026-3215</a></td>
-        <td>6.1</td>
+        <td>5.4</td>
         <td><span class="severity medium">MEDIUM</span></td>
         <td>CWE-79</td>
         <td>&nbsp;</td>
@@ -4277,8 +4474,8 @@ An attacker with network access to the NVMe/TCP target can trigger an unauthenti
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-3214" target="_blank" rel="noopener">CVE-2026-3214</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>6.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
         <td>CWE-288</td>
         <td>&nbsp;</td>
         <td><details><summary>Authentication Bypass Using an Alternate Path or Channel vulnerability in Drupal...</summary><p>Authentication Bypass Using an Alternate Path or Channel vulnerability in Drupal CAPTCHA allows Functionality Bypass.This issue affects CAPTCHA: from 0.0.0 before 1.17.0, from 2.0.0 before 2.0.10.</p></details></td>
@@ -4286,7 +4483,7 @@ An attacker with network access to the NVMe/TCP target can trigger an unauthenti
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-3213" target="_blank" rel="noopener">CVE-2026-3213</a></td>
-        <td>6.1</td>
+        <td>4.7</td>
         <td><span class="severity medium">MEDIUM</span></td>
         <td>CWE-79</td>
         <td>&nbsp;</td>
@@ -4295,7 +4492,7 @@ An attacker with network access to the NVMe/TCP target can trigger an unauthenti
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-3212" target="_blank" rel="noopener">CVE-2026-3212</a></td>
-        <td>6.1</td>
+        <td>5.4</td>
         <td><span class="severity medium">MEDIUM</span></td>
         <td>CWE-79</td>
         <td>&nbsp;</td>
@@ -4304,7 +4501,7 @@ An attacker with network access to the NVMe/TCP target can trigger an unauthenti
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-3211" target="_blank" rel="noopener">CVE-2026-3211</a></td>
-        <td>6.3</td>
+        <td>4.3</td>
         <td><span class="severity medium">MEDIUM</span></td>
         <td>CWE-352</td>
         <td>&nbsp;</td>
@@ -4313,7 +4510,7 @@ An attacker with network access to the NVMe/TCP target can trigger an unauthenti
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-3210" target="_blank" rel="noopener">CVE-2026-3210</a></td>
-        <td>6.5</td>
+        <td>5.3</td>
         <td><span class="severity medium">MEDIUM</span></td>
         <td>CWE-863</td>
         <td>&nbsp;</td>
@@ -4331,7 +4528,7 @@ An attacker with network access to the NVMe/TCP target can trigger an unauthenti
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-2348" target="_blank" rel="noopener">CVE-2026-2348</a></td>
-        <td>6.1</td>
+        <td>5.4</td>
         <td><span class="severity medium">MEDIUM</span></td>
         <td>CWE-79</td>
         <td>&nbsp;</td>
@@ -4375,9 +4572,142 @@ An attacker with network access to the NVMe/TCP target can trigger an unauthenti
         <td>2026-03-25</td>
       </tr>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-1917" target="_blank" rel="noopener">CVE-2026-1917</a></td>
-        <td>7.3</td>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-20125" target="_blank" rel="noopener">CVE-2026-20125</a></td>
+        <td>7.7</td>
         <td><span class="severity high">HIGH</span></td>
+        <td>CWE-228</td>
+        <td>&nbsp;</td>
+        <td><details><summary>A vulnerability in the HTTP Server feature of Cisco IOS Software and Cisco IOS X...</summary><p>A vulnerability in the HTTP Server feature of Cisco IOS Software and Cisco IOS XE Software Release 3E could allow an authenticated, remote attacker to cause an affected device to reload unexpectedly, resulting in a denial of service (DoS) condition.
+ This vulnerability is due to improper validation of user-supplied input. An attacker could exploit this vulnerability by sending malformed HTTP requests to an affected device. A successful exploit could allow the attacker to cause a watchdog timer to expire and the device to reload, resulting in a DoS condition. To exploit this vulnerability, the attacker must have a valid user account.</p></details></td>
+        <td>2026-03-25</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-20115" target="_blank" rel="noopener">CVE-2026-20115</a></td>
+        <td>6.1</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-319</td>
+        <td>&nbsp;</td>
+        <td><details><summary>A vulnerability in Cisco IOS XE Software for Cisco Meraki could allow a remote, ...</summary><p>A vulnerability in Cisco IOS XE Software for Cisco Meraki could allow a remote, unauthenticated attacker to view confidential device information.
+ This vulnerability is due to a device configuration upload being performed over an insecure tunnel. An attacker could exploit this vulnerability by conducting an on-path attack between the affected device and the Cisco Meraki Dashboard. A successful exploit could allow the attacker to view sensitive device configuration information.</p></details></td>
+        <td>2026-03-25</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-20114" target="_blank" rel="noopener">CVE-2026-20114</a></td>
+        <td>5.4</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-1286</td>
+        <td>&nbsp;</td>
+        <td><details><summary>A vulnerability in the Lobby Ambassador web-based management API of Cisco IOS XE...</summary><p>A vulnerability in the Lobby Ambassador web-based management API of Cisco IOS XE Software could allow an authenticated, remote attacker to elevate their privileges and access management APIs that would not normally be available for Lobby Ambassador users. 
+ This vulnerability exists because parameters that are received by an API endpoint are not sufficiently validated. An attacker could exploit this vulnerability by authenticating as a Lobby Ambassador user and sending a crafted HTTP request to an affected device. A successful exploit could allow the attacker to create a new user with privilege level 1 access to the web-based management API. The attacker would then be able to access the device with these new credentials and privileges.</p></details></td>
+        <td>2026-03-25</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-20113" target="_blank" rel="noopener">CVE-2026-20113</a></td>
+        <td>5.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-93</td>
+        <td>&nbsp;</td>
+        <td><details><summary>A vulnerability in the web-based Cisco IOx application hosting environment manag...</summary><p>A vulnerability in the web-based Cisco IOx application hosting environment management interface of Cisco IOS XE Software could allow an unauthenticated, remote attacker to perform a carriage return line feed (CRLF) injection attack against a user.
+ This vulnerability is due to insufficient validation of user input. An attacker could exploit this vulnerability by sending crafted packets to an affected device. A successful exploit could allow the attacker to arbitrarily inject log entries, manipulate the structure of log files, or obscure legitimate log events.</p></details></td>
+        <td>2026-03-25</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-20112" target="_blank" rel="noopener">CVE-2026-20112</a></td>
+        <td>4.8</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td><details><summary>A vulnerability in the web-based Cisco IOx application hosting environment manag...</summary><p>A vulnerability in the web-based Cisco IOx application hosting environment management interface of Cisco IOS XE Software could allow an authenticated, remote attacker to conduct a stored cross-site scripting (XSS) attack against a user of the web-based management interface of an affected device.
+ This vulnerability is due to insufficient validation of user-supplied input. An attacker could exploit this vulnerability by injecting malicious code into specific pages of the interface. A successful exploit could allow the attacker to execute arbitrary script code in the context of the affected interface or access sensitive, browser-based information. To exploit this vulnerability, the attacker must have valid administrative credentials.</p></details></td>
+        <td>2026-03-25</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-20110" target="_blank" rel="noopener">CVE-2026-20110</a></td>
+        <td>6.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-266</td>
+        <td>&nbsp;</td>
+        <td><details><summary>A vulnerability in the CLI of Cisco IOS XE Software could allow an authenticated...</summary><p>A vulnerability in the CLI of Cisco IOS XE Software could allow an authenticated, local attacker to cause a denial of service (DoS) condition on an affected device.
+ This vulnerability exists because incorrect privileges are associated with the start maintenance command. An attacker could exploit this vulnerability by accessing the management CLI of the affected device as a low-privileged user and using the start maintenance command. A successful exploit could allow the attacker to put the device in maintenance mode, which shuts down interfaces, resulting in a denial of service (DoS) condition. In case of exploitation, a device administrator can connect to the CLI and use the stop maintenance command to restore operations.</p></details></td>
+        <td>2026-03-25</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-20108" target="_blank" rel="noopener">CVE-2026-20108</a></td>
+        <td>5.4</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td><details><summary>A vulnerability in the web-based management interface of Cisco Catalyst SD-WAN M...</summary><p>A vulnerability in the web-based management interface of Cisco Catalyst SD-WAN Manager could allow an authenticated, remote attacker to conduct a cross-site scripting (XSS) attack against a user of the interface of an affected device.
+ This vulnerability is due to insufficient validation of user input. An attacker could exploit this vulnerability by persuading a user of the web-based management interface to click a crafted link. A successful exploit could allow the attacker to execute arbitrary script code in the context of the affected interface or access sensitive, browser-based information.</p></details></td>
+        <td>2026-03-25</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-20104" target="_blank" rel="noopener">CVE-2026-20104</a></td>
+        <td>6.1</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-124</td>
+        <td>&nbsp;</td>
+        <td><details><summary>A vulnerability in the bootloader of Cisco IOS XE Software for Cisco Catalyst 92...</summary><p>A vulnerability in the bootloader of Cisco IOS XE Software for Cisco Catalyst 9200 Series Switches, Cisco Catalyst ESS9300 Embedded Series Switches, Cisco Catalyst IE9310 and IE9320 Rugged Series Switches, and Cisco IE3500 and IE3505 Rugged Series Switches could allow an authenticated, local attacker with level-15 privileges or an unauthenticated attacker with physical access to an affected device to execute arbitrary code at boot time and break the chain of trust.
+ This vulnerability is due to insufficient validation of software at boot time. An attacker could exploit this vulnerability by manipulating the loaded binaries on an affected device to bypass some of the integrity checks that are performed during the boot process. A successful exploit could allow the attacker to execute code that bypasses the requirement to run Cisco-signed images.
+ Cisco has assigned this security advisory a Security Impact Rating (SIR) of High rather than Medium as the score indicates because this vulnerability allows an attacker to bypass a major security feature of a device.</p></details></td>
+        <td>2026-03-25</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-20086" target="_blank" rel="noopener">CVE-2026-20086</a></td>
+        <td>8.6</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-230</td>
+        <td>&nbsp;</td>
+        <td><details><summary>A vulnerability in the processing of Control and Provisioning of Wireless Access...</summary><p>A vulnerability in the processing of Control and Provisioning of Wireless Access Points (CAPWAP) packets of Cisco IOS XE Wireless Controller Software for the Catalyst CW9800 Family could allow an unauthenticated, remote attacker to cause a denial of service (DoS) condition on an affected device.
+ This vulnerability is due to improper handling of a malformed CAPWAP packet. An attacker could exploit this vulnerability by sending a malformed CAPWAP packet to an affected device. A successful exploit could allow the attacker to cause the affected device to reload unexpectedly, resulting in a DoS condition.</p></details></td>
+        <td>2026-03-25</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-20084" target="_blank" rel="noopener">CVE-2026-20084</a></td>
+        <td>8.6</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-400</td>
+        <td>&nbsp;</td>
+        <td><details><summary>A vulnerability in the DHCP snooping feature of Cisco IOS XE Software could allo...</summary><p>A vulnerability in the DHCP snooping feature of Cisco IOS XE Software could allow an unauthenticated, remote attacker to cause BOOTP packets to be forwarded between VLANs, resulting in a denial of service (DoS) condition. 
+ This vulnerability is due to improper handling of BOOTP packets on Cisco Catalyst 9000 Series Switches. An attacker could exploit this vulnerability by sending BOOTP request packets to an affected device. A successful exploit could allow an attacker to forward BOOTP packets from one VLAN to another, resulting in BOOTP VLAN leakage and potentially leading to high CPU utilization. This makes the device unreachable (either through console or remote management) and unable to forward traffic, resulting in a DoS condition. 
+ Note: This vulnerability can be exploited with either unicast or broadcast BOOTP packets.
+   There are workarounds that address this vulnerability.</p></details></td>
+        <td>2026-03-25</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-20083" target="_blank" rel="noopener">CVE-2026-20083</a></td>
+        <td>6.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-235</td>
+        <td>&nbsp;</td>
+        <td><details><summary>A vulnerability in the Secure Copy Protocol (SCP) server feature of Cisco IOS XE...</summary><p>A vulnerability in the Secure Copy Protocol (SCP) server feature of Cisco IOS XE Software could allow an authenticated, local attacker with low privileges to cause a denial of service (DoS) condition on an affected device.
+ This vulnerability is due to improper handling of a malformed SCP request. An attacker could exploit this vulnerability by issuing a crafted command through SSH. A successful exploit could allow the attacker to cause the device to reload unexpectedly, resulting in a DoS condition.</p></details></td>
+        <td>2026-03-25</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-20012" target="_blank" rel="noopener">CVE-2026-20012</a></td>
+        <td>8.6</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-401</td>
+        <td>&nbsp;</td>
+        <td><details><summary>A vulnerability in the Internet Key Exchange version 2 (IKEv2) feature of Cisco ...</summary><p>A vulnerability in the Internet Key Exchange version 2 (IKEv2) feature of Cisco IOS Software, Cisco IOS XE Software, Cisco Secure Firewall Adaptive Security Appliance (ASA) Software, and Cisco Secure Firewall Threat Defense (FTD) Software could allow an unauthenticated, remote attacker to trigger a memory leak, resulting in a denial of service (DoS) condition on an affected device.
+ This vulnerability is due to improper parsing of IKEv2 packets. An attacker could exploit this vulnerability by sending crafted IKEv2 packets to an affected device. A successful exploit of Cisco IOS Software and IOS XE Software could allow the attacker to cause the affected device to reload, resulting in a DoS condition. A successful exploit of Cisco Secure Firewall ASA Software and Secure FTD Software could allow the attacker to partially exhaust system memory, resulting in system instability, such as the inability to establish new IKEv2 VPN sessions. A manual reboot of the device is required to recover from this condition.</p></details></td>
+        <td>2026-03-25</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-20004" target="_blank" rel="noopener">CVE-2026-20004</a></td>
+        <td>7.4</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-771</td>
+        <td>&nbsp;</td>
+        <td><details><summary>A vulnerability in the TLS library of Cisco IOS XE Software could allow an unaut...</summary><p>A vulnerability in the TLS library of Cisco IOS XE Software could allow an unauthenticated, adjacent attacker to exhaust the available memory of an affected device.
+ This vulnerability is due to improper management of memory resources during TLS connection setup. An attacker could exploit this vulnerability by repeatedly triggering the conditions that cause the memory increase. This could be done in a variety of ways, such as by repeatedly attempting Extensible Authentication Protocol (EAP) authentication when local EAP is enabled on an affected device or by using a machine-in-the-middle attack and resetting TLS connections between the affected device and other devices. A successful exploit could allow the attacker to exhaust the available memory on an affected device, resulting in an unexpected reload and a denial of service (DoS) condition.</p></details></td>
+        <td>2026-03-25</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-1917" target="_blank" rel="noopener">CVE-2026-1917</a></td>
+        <td>4.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
         <td>CWE-288</td>
         <td>&nbsp;</td>
         <td><details><summary>Authentication Bypass Using an Alternate Path or Channel vulnerability in Drupal...</summary><p>Authentication Bypass Using an Alternate Path or Channel vulnerability in Drupal Login Disable allows Functionality Bypass.This issue affects Login Disable: from 0.0.0 before 2.1.3.</p></details></td>
@@ -4682,8 +5012,8 @@ An attacker with network access to the NVMe/TCP target can trigger an unauthenti
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-28882" target="_blank" rel="noopener">CVE-2026-28882</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>4.0</td>
+        <td><span class="severity medium">MEDIUM</span></td>
         <td>N/A</td>
         <td>&nbsp;</td>
         <td><details><summary>This issue was addressed with improved checks. This issue is fixed in iOS 26.4 a...</summary><p>This issue was addressed with improved checks. This issue is fixed in iOS 26.4 and iPadOS 26.4, macOS Tahoe 26.4, tvOS 26.4, visionOS 26.4, watchOS 26.4. An app may be able to enumerate a user&#x27;s installed apps.</p></details></td>
@@ -4844,9 +5174,9 @@ An attacker with network access to the NVMe/TCP target can trigger an unauthenti
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-28861" target="_blank" rel="noopener">CVE-2026-28861</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>4.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>NVD-CWE-noinfo</td>
         <td>&nbsp;</td>
         <td><details><summary>A logic issue was addressed with improved state management. This issue is fixed ...</summary><p>A logic issue was addressed with improved state management. This issue is fixed in Safari 26.4, iOS 18.7.7 and iPadOS 18.7.7, iOS 26.4 and iPadOS 26.4, macOS Tahoe 26.4, visionOS 26.4. A malicious website may be able to access script message handlers intended for other origins.</p></details></td>
         <td>2026-03-25</td>
@@ -4871,9 +5201,9 @@ An attacker with network access to the NVMe/TCP target can trigger an unauthenti
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-28857" target="_blank" rel="noopener">CVE-2026-28857</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>6.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-125</td>
         <td>&nbsp;</td>
         <td><details><summary>The issue was addressed with improved memory handling. This issue is fixed in Sa...</summary><p>The issue was addressed with improved memory handling. This issue is fixed in Safari 26.4, iOS 26.4 and iPadOS 26.4, macOS Tahoe 26.4, visionOS 26.4. Processing maliciously crafted web content may lead to an unexpected process crash.</p></details></td>
         <td>2026-03-25</td>
@@ -5033,9 +5363,9 @@ An attacker with network access to the NVMe/TCP target can trigger an unauthenti
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-28827" target="_blank" rel="noopener">CVE-2026-28827</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>9.3</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-22</td>
         <td>&nbsp;</td>
         <td><details><summary>A parsing issue in the handling of directory paths was addressed with improved p...</summary><p>A parsing issue in the handling of directory paths was addressed with improved path validation. This issue is fixed in macOS Sequoia 15.7.5, macOS Sonoma 14.8.5, macOS Tahoe 26.4. An app may be able to break out of its sandbox.</p></details></td>
         <td>2026-03-25</td>
@@ -5123,9 +5453,9 @@ An attacker with network access to the NVMe/TCP target can trigger an unauthenti
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-28816" target="_blank" rel="noopener">CVE-2026-28816</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>4.0</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-22</td>
         <td>&nbsp;</td>
         <td><details><summary>A path handling issue was addressed with improved validation. This issue is fixe...</summary><p>A path handling issue was addressed with improved validation. This issue is fixed in macOS Sequoia 15.7.5, macOS Sonoma 14.8.5, macOS Tahoe 26.4. An app may be able to delete files for which it does not have permission.</p></details></td>
         <td>2026-03-25</td>
@@ -5168,8 +5498,8 @@ An attacker with network access to the NVMe/TCP target can trigger an unauthenti
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-20695" target="_blank" rel="noopener">CVE-2026-20695</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>6.2</td>
+        <td><span class="severity medium">MEDIUM</span></td>
         <td>N/A</td>
         <td>&nbsp;</td>
         <td><details><summary>An information disclosure issue was addressed with improved memory management. T...</summary><p>An information disclosure issue was addressed with improved memory management. This issue is fixed in macOS Sequoia 15.7.5, macOS Sonoma 14.8.5, macOS Tahoe 26.4. An app may be able to determine kernel memory layout.</p></details></td>
@@ -5222,9 +5552,9 @@ An attacker with network access to the NVMe/TCP target can trigger an unauthenti
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-20688" target="_blank" rel="noopener">CVE-2026-20688</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>9.3</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-22</td>
         <td>&nbsp;</td>
         <td><details><summary>A path handling issue was addressed with improved validation. This issue is fixe...</summary><p>A path handling issue was addressed with improved validation. This issue is fixed in iOS 26.4 and iPadOS 26.4, macOS Sequoia 15.7.5, macOS Sonoma 14.8.5, macOS Tahoe 26.4, visionOS 26.4. An app may be able to break out of its sandbox.</p></details></td>
         <td>2026-03-25</td>
@@ -5294,9 +5624,9 @@ An attacker with network access to the NVMe/TCP target can trigger an unauthenti
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-20657" target="_blank" rel="noopener">CVE-2026-20657</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>6.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-119</td>
         <td>&nbsp;</td>
         <td><details><summary>The issue was addressed with improved memory handling. This issue is fixed in iO...</summary><p>The issue was addressed with improved memory handling. This issue is fixed in iOS 18.7.7 and iPadOS 18.7.7, macOS Sequoia 15.7.5, macOS Sonoma 14.8.5. Parsing a maliciously crafted file may lead to an unexpected app termination.</p></details></td>
         <td>2026-03-25</td>
@@ -5366,9 +5696,9 @@ An attacker with network access to the NVMe/TCP target can trigger an unauthenti
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-20607" target="_blank" rel="noopener">CVE-2026-20607</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>4.0</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-269</td>
         <td>&nbsp;</td>
         <td><details><summary>A permissions issue was addressed with additional restrictions. This issue is fi...</summary><p>A permissions issue was addressed with additional restrictions. This issue is fixed in macOS Sequoia 15.7.5, macOS Sonoma 14.8.5, macOS Tahoe 26.4. An app may be able to access protected user data.</p></details></td>
         <td>2026-03-25</td>
@@ -6325,18 +6655,6 @@ An attacker with network access to the NVMe/TCP target can trigger an unauthenti
         <td>NVD-CWE-noinfo</td>
         <td>&nbsp;</td>
         <td><details><summary>An issue in Free5GC v.4.2.0 and before allows a remote attacker to cause a denia...</summary><p>An issue in Free5GC v.4.2.0 and before allows a remote attacker to cause a denial of service via the function HandleAuthenticationFailure of the component AMF</p></details></td>
-        <td>2026-03-24</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-28755" target="_blank" rel="noopener">CVE-2026-28755</a></td>
-        <td>5.3</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-863</td>
-        <td>&nbsp;</td>
-        <td><details><summary>NGINX Plus and NGINX Open Source have a vulnerability in the ngx_stream_ssl_modu...</summary><p>NGINX Plus and NGINX Open Source have a vulnerability in the ngx_stream_ssl_module module due to the improper handling of revoked certificates when configured with the ssl_verify_client on and ssl_ocsp on directives, allowing the TLS handshake to succeed even after an OCSP check identifies the certificate as revoked.   
-
-
-Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.</p></details></td>
         <td>2026-03-24</td>
       </tr>
       <tr>
@@ -15584,11 +15902,11 @@ Note: Software versions which have reached End of Technical Support (EoTS) are n
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-69720" target="_blank" rel="noopener">CVE-2025-69720</a></td>
-        <td>9.8</td>
-        <td><span class="severity critical">CRITICAL</span></td>
-        <td>CWE-120</td>
+        <td>7.3</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-121</td>
         <td>&nbsp;</td>
-        <td><details><summary>ncurses v6.5 and v6.4 are vulnerable to Buffer Overflow in progs/infocmp.c, func...</summary><p>ncurses v6.5 and v6.4 are vulnerable to Buffer Overflow in progs/infocmp.c, function analyze_string().</p></details></td>
+        <td><details><summary>The infocmp command-line tool in ncurses before 6.5-20251213 has a stack-based b...</summary><p>The infocmp command-line tool in ncurses before 6.5-20251213 has a stack-based buffer overflow in analyze_string in progs/infocmp.c.</p></details></td>
         <td>2026-03-19</td>
       </tr>
       <tr>
