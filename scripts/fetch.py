@@ -27,6 +27,8 @@ DATA_DIR       = ROOT_DIR / "data"
 STATE_FILE     = DATA_DIR / "state.json"
 CURRENT_TONL   = DATA_DIR / "current.tonl"
 PREVIOUS_TONL  = DATA_DIR / "previous.tonl"
+CURRENT_MD     = DATA_DIR / "current.md"
+PREVIOUS_MD    = DATA_DIR / "previous.md"
 INDEX_HTML     = ROOT_DIR / "index.html"
 
 TONL_HEADER    = "#version 1.0\n#delimiter \"|\"\n"
@@ -112,6 +114,33 @@ def write_tonl(path: Path, records: dict) -> None:
             f"|{q(rec['description'])}|{q(rec['nvdUrl'])}"
         )
         lines.append(row)
+    path.write_text('\n'.join(lines) + '\n', encoding="utf-8")
+
+def write_markdown(path: Path, records: dict, title: str) -> None:
+    """Write records to a Markdown file, sorted by published descending."""
+    sorted_recs = sorted(records.values(), key=lambda r: r["published"], reverse=True)
+    lines = [
+        f"# {title}",
+        "",
+        f"_{len(sorted_recs)} vulnerabilities_",
+        "",
+        "| CVE ID | Score | Severity | CWE | KEV | Published | Description |",
+        "|--------|-------|----------|-----|-----|-----------|-------------|",
+    ]
+    for rec in sorted_recs:
+        desc = rec["description"].replace("|", "\\|").replace("\n", " ")
+        if len(desc) > 120:
+            desc = desc[:120].rstrip() + "..."
+        kev = "Yes" if rec["kev"] else "No"
+        lines.append(
+            f"| [{rec['cveId']}]({rec['nvdUrl']}) "
+            f"| {rec['cvssScore']:.1f} "
+            f"| {rec['severity']} "
+            f"| {rec['cweId']} "
+            f"| {kev} "
+            f"| {rec['published'][:10]} "
+            f"| {desc} |"
+        )
     path.write_text('\n'.join(lines) + '\n', encoding="utf-8")
 
 # ---------------------------------------------------------------------------
@@ -373,6 +402,8 @@ def main():
         print(f"Month rollover: '{state['current_month']}' -> '{today_month}'")
         if CURRENT_TONL.exists():
             shutil.copy2(CURRENT_TONL, PREVIOUS_TONL)
+        if CURRENT_MD.exists():
+            shutil.copy2(CURRENT_MD, PREVIOUS_MD)
         write_tonl(CURRENT_TONL, {})
         state["current_month"] = today_month
         state["last_fetched"]  = None
@@ -416,9 +447,16 @@ def main():
         previous_records = merge_records(load_tonl(PREVIOUS_TONL), previous_new)
 
     # --- Write outputs (all-or-nothing order: data first, then HTML, then state) ---
+    current_label  = now_utc.strftime("%B %Y")
+    previous_label = get_prev_month_range(now_utc)[0].strftime("%B %Y")
+
     print(f"Writing TONL: {len(current_records)} current, {len(previous_records)} previous")
     write_tonl(CURRENT_TONL,  current_records)
     write_tonl(PREVIOUS_TONL, previous_records)
+
+    print("Writing Markdown...")
+    write_markdown(CURRENT_MD,  current_records,  f"CVEs — {current_label}")
+    write_markdown(PREVIOUS_MD, previous_records, f"CVEs — {previous_label}")
 
     timestamp = now_utc.strftime("%Y-%m-%d %H:%M UTC")
     print("Generating index.html...")

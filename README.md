@@ -4,6 +4,7 @@ A static GitHub Pages site that displays CVEs (Common Vulnerabilities and Exposu
 
 - Zero JavaScript — pure HTML + CSS
 - Data stored in TONL format as the canonical data layer
+- Markdown tables generated automatically for GitHub viewing
 - Severity color-coded: CRITICAL, HIGH, MEDIUM, LOW, NONE
 - KEV (Known Exploited Vulnerabilities) indicator
 - Dark mode support
@@ -15,7 +16,7 @@ pip install requests
 python scripts/fetch.py
 ```
 
-This writes `data/current.tonl`, `data/previous.tonl`, `data/state.json`, and `index.html` to the repo root. Open `index.html` in a browser to preview.
+This writes `data/current.tonl`, `data/previous.tonl`, `data/current.md`, `data/previous.md`, `data/state.json`, and `index.html` to the repo root. Open `index.html` in a browser to preview.
 
 ## File structure
 
@@ -25,7 +26,9 @@ This writes `data/current.tonl`, `data/previous.tonl`, `data/state.json`, and `i
 ├── scripts/fetch.py                  # NVD API client + HTML generator
 ├── data/
 │   ├── current.tonl                  # Current month CVEs (TONL format)
+│   ├── current.md                    # Current month CVEs (Markdown table)
 │   ├── previous.tonl                 # Previous month CVEs (TONL format)
+│   ├── previous.md                   # Previous month CVEs (Markdown table)
 │   └── state.json                    # Fetch state (last run, current month)
 ├── index.html                        # Generated static site
 └── style.css                         # Styles
