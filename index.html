@@ -11,11 +11,11 @@
     <header>
       <h1>vuln-tracker</h1>
       <p class="subtitle">CVEs from the National Vulnerability Database — current and previous month</p>
-      <p class="last-updated">Last updated: 2026-03-26 17:10 UTC</p>
+      <p class="last-updated">Last updated: 2026-03-26 19:16 UTC</p>
     </header>
     <main>
     <section>
-      <h2>Current Month — March 2026 <span class="count">(4898)</span></h2>
+      <h2>Current Month — March 2026 <span class="count">(4924)</span></h2>
       <div class="table-wrapper">
         <table>
           <thead>
@@ -30,6 +30,418 @@
             </tr>
           </thead>
           <tbody>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-26213" target="_blank" rel="noopener">CVE-2026-26213</a></td>
+        <td>8.7</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-78</td>
+        <td>&nbsp;</td>
+        <td><details><summary>thingino-firmware versions up to the firmware-2026-03-16 release contains an una...</summary><p>thingino-firmware versions up to the firmware-2026-03-16 release contains an unauthenticated os command injection vulnerability in the WiFi captive portal CGI script that allows remote attackers to execute arbitrary commands as root by injecting malicious code through unsanitized HTTP parameter names. Attackers can exploit the eval function in parse_query() and parse_post() functions to achieve remote code execution and perform privileged configuration changes including root password reset and SSH authorized_keys modification, resulting in full persistent device compromise.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33732" target="_blank" rel="noopener">CVE-2026-33732</a></td>
+        <td>4.8</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-706</td>
+        <td>&nbsp;</td>
+        <td><details><summary>srvx is a universal server based on web standards. Prior to version 0.11.13, a p...</summary><p>srvx is a universal server based on web standards. Prior to version 0.11.13, a pathname parsing discrepancy in srvx&#x27;s `FastURL` allows middleware bypass on the Node.js adapter when a raw HTTP request uses an absolute URI with a non-standard scheme (e.g. `file://`). Starting in version 0.11.13, the `FastURL` constructor now deopts to native `URL` for any string not starting with `/`, ensuring consistent pathname resolution.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33504" target="_blank" rel="noopener">CVE-2026-33504</a></td>
+        <td>7.2</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-89</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Ory Hydra is an OAuth 2.0 Server and OpenID Connect Provider. Prior to version 2...</summary><p>Ory Hydra is an OAuth 2.0 Server and OpenID Connect Provider. Prior to version 26.2.0, the listOAuth2Clients, listOAuth2ConsentSessions, and listTrustedOAuth2JwtGrantIssuers Admin APIs in Ory Hydra are vulnerable to SQL injection due to flaws in its pagination implementation. Pagination tokens are encrypted using the secret configured in `secrets.pagination`. If this value is not set, Hydra falls back to using `secrets.system`. An attacker who knows this secret can craft their own tokens, including malicious tokens that lead to SQL injection. This issue can be exploited when one or more admin APIs listed above are directly or indirectly accessible to the attacker; the attacker can pass a raw pagination token to the affected API; and the configuration value `secrets.pagination` is set and known to the attacker, or `secrets.pagination` is not set and `secrets.system` is known to the attacker. An attacker can execute arbitrary SQL queries through forged pagination tokens. As a first line of defense, immediately configure a custom value for `secrets.pagination` by generating a cryptographically secure random secret. Next, upgrade Hydra to the fixed version, 26.2.0 as soon as possible.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33503" target="_blank" rel="noopener">CVE-2026-33503</a></td>
+        <td>7.2</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-89</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Ory Kratos is an identity, user management and authentication system for cloud s...</summary><p>Ory Kratos is an identity, user management and authentication system for cloud services. Prior to version 26.2.0, the ListCourierMessages Admin API in Ory Kratos is vulnerable to SQL injection due to flaws in its pagination implementation. Pagination tokens are encrypted using the secret configured in `secrets.pagination`. An attacker who knows this secret can craft their own tokens, including malicious tokens that lead to SQL injection. If this configuration value is not set, Kratos falls back to a default pagination encryption secret. Because this default value is publicly known, attackers can generate valid and malicious pagination tokens manually for installations where this secret is not set. As a first line of defense, immediately configure a custom value for `secrets.pagination` by generating a cryptographically secure random secret. Next, upgrade Kratos** to a fixed version, 26.2.0 or later, as soon as possible.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33496" target="_blank" rel="noopener">CVE-2026-33496</a></td>
+        <td>8.1</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-305</td>
+        <td>&nbsp;</td>
+        <td><details><summary>ORY Oathkeeper is an Identity &amp; Access Proxy (IAP) and Access Control Decision A...</summary><p>ORY Oathkeeper is an Identity &amp; Access Proxy (IAP) and Access Control Decision API that authorizes HTTP requests based on sets of Access Rules. Versions prior to 26.2.0 are  vulnerable to authentication bypass due to cache key confusion. The `oauth2_introspection` authenticator cache does not distinguish tokens that were validated with different introspection URLs. An attacker can therefore legitimately use a token to prime the cache, and subsequently use the same token for rules that use a different introspection server. Ory Oathkeeper has to be configured with multiple `oauth2_introspection` authenticator servers, each accepting different tokens. The authenticators also must be configured to use caching. An attacker has to have a way to gain a valid token for one of the configured introspection servers. Starting in version 26.2.0, Ory Oathkeeper includes the introspection server URL in the cache key, preventing confusion of tokens. Update to the patched version of Ory Oathkeeper. If that is not immediately possible, disable caching for `oauth2_introspection` authenticators.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33495" target="_blank" rel="noopener">CVE-2026-33495</a></td>
+        <td>6.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td><details><summary>ORY Oathkeeper is an Identity &amp; Access Proxy (IAP) and Access Control Decision A...</summary><p>ORY Oathkeeper is an Identity &amp; Access Proxy (IAP) and Access Control Decision API that authorizes HTTP requests based on sets of Access Rules. Ory Oathkeeper is often deployed behind other components like CDNs, WAFs, or reverse proxies. Depending on the setup, another component might forward the request to the Oathkeeper proxy with a different protocol (http vs. https) than the original request. In order to properly match the request against the configured rules, Oathkeeper considers the `X-Forwarded-Proto`  header when evaluating rules. The configuration option `serve.proxy.trust_forwarded_headers` (defaults to false) governs whether this and other `X-Forwarded-*` headers should be trusted. Prior to version 26.2.0, Oathkeeper did not properly respect this configuration, and would always consider the `X-Forwarded-Proto`  header. In order for an attacker to abuse this, an installation of Ory Oathkeeper needs to have distinct rules for HTTP and HTTPS requests. Also, the attacker needs to be able to trigger one but not the other rule. In this scenario, the attacker can send the same request but with the `X-Forwarded-Proto`  header in order to trigger the other rule. We do not expect many configurations to meet these preconditions. Version 26.2.0 contains a patch. Ory Oathkeeper will correctly respect the `serve.proxy.trust_forwarded_headers` configuration going forward, thereby eliminating the attack scenario. We recommend upgrading to a fixed version even if the preconditions are not met. As an additional mitigation, it is generally recommended to drop any unexpected headers as early as possible when a request is handled, e.g. in the WAF.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33494" target="_blank" rel="noopener">CVE-2026-33494</a></td>
+        <td>10.0</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-23</td>
+        <td>&nbsp;</td>
+        <td><details><summary>ORY Oathkeeper is an Identity &amp; Access Proxy (IAP) and Access Control Decision A...</summary><p>ORY Oathkeeper is an Identity &amp; Access Proxy (IAP) and Access Control Decision API that authorizes HTTP requests based on sets of Access Rules. Versions prior to 26.2.0 are vulnerable to an authorization bypass via HTTP path traversal. An attacker can craft a URL containing path traversal sequences (e.g. `/public/../admin/secrets`) that resolves to a protected path after normalization, but is matched against a permissive rule because the raw, un-normalized path is used during rule evaluation. Version 26.2.0 contains a patch.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33490" target="_blank" rel="noopener">CVE-2026-33490</a></td>
+        <td>3.7</td>
+        <td><span class="severity low">LOW</span></td>
+        <td>CWE-706</td>
+        <td>&nbsp;</td>
+        <td><details><summary>H3 is a minimal H(TTP) framework. In versions 2.0.0-0 through 2.0.1-rc.16, the `...</summary><p>H3 is a minimal H(TTP) framework. In versions 2.0.0-0 through 2.0.1-rc.16, the `mount()` method in h3 uses a simple `startsWith()` check to determine whether incoming requests fall under a mounted sub-application&#x27;s path prefix. Because this check does not verify a path segment boundary (i.e., that the next character after the base is `/` or end-of-string), middleware registered on a mount like `/admin` will also execute for unrelated routes such as `/admin-public`, `/administrator`, or `/adminstuff`. This allows an attacker to trigger context-setting middleware on paths it was never intended to cover, potentially polluting request context with unintended privilege flags. Version 2.0.2-rc.17 contains a patch.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33487" target="_blank" rel="noopener">CVE-2026-33487</a></td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-347</td>
+        <td>&nbsp;</td>
+        <td><details><summary>goxmlsig provides XML Digital Signatures implemented in Go. Prior to version 1.6...</summary><p>goxmlsig provides XML Digital Signatures implemented in Go. Prior to version 1.6.0, the `validateSignature` function in `validate.go` goes through the references in the `SignedInfo` block to find one that matches the signed element&#x27;s ID. In Go versions before 1.22, or when `go.mod` uses an older version, there is a loop variable capture issue. The code takes the address of the loop variable `_ref` instead of its value. As a result, if more than one reference matches the ID or if the loop logic is incorrect, the `ref` pointer will always end up pointing to the last element in the `SignedInfo.References` slice after the loop. goxmlsig version 1.6.0 contains a patch.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33486" target="_blank" rel="noopener">CVE-2026-33486</a></td>
+        <td>6.8</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-918</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Roadiz is a polymorphic content management system based on a node system that ca...</summary><p>Roadiz is a polymorphic content management system based on a node system that can handle many types of services. A vulnerability in roadiz/documents prior to versions 2.7.9, 2.6.28, 2.5.44, and 2.3.42 allows an authenticated attacker to read any file on the server&#x27;s local file system that the web server process has access to, including highly sensitive environment variables, database credentials, and internal configuration files. Versions 2.7.9, 2.6.28, 2.5.44, and 2.3.42 contain a patch.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33481" target="_blank" rel="noopener">CVE-2026-33481</a></td>
+        <td>5.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-460</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Syft is a a CLI tool and Go library for generating a Software Bill of Materials ...</summary><p>Syft is a a CLI tool and Go library for generating a Software Bill of Materials (SBOM) from container images and filesystems. Syft versions before v1.42.3 would not properly cleanup temporary storage if the temporary storage was exhausted during a scan. When scanning archives Syft will unpack those archives into temporary storage then inspect the unpacked contents. Under normal operation Syft will remove the temporary data it writes after completing a scan. This vulnerability would affect users of Syft that were scanning content that could cause Syft to fill the temporary storage that would then cause Syft to raise an error and exit. When the error is triggered Syft would exit without properly removing the temporary files in use. In our testing this was most easily reproduced by scanning very large artifacts or highly compressed artifacts such as a zipbomb. Because Syft would not clean up its temporary files, the result would be filling temporary file storage preventing future runs of Syft or other system utilities that rely on temporary storage being available. The patch has been released in v1.42.3. Syft now cleans up temporary files when an error condition is encountered. There are no workarounds for this vulnerability in Syft. Users that find their temporary storage depleted can manually remove the temporary files.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33477" target="_blank" rel="noopener">CVE-2026-33477</a></td>
+        <td>4.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-863</td>
+        <td>&nbsp;</td>
+        <td><details><summary>FileRise is a self-hosted web-based file manager with multi-file upload, editing...</summary><p>FileRise is a self-hosted web-based file manager with multi-file upload, editing, and batch operations. In versiosn 2.3.7 through 3.10.0, the file snippet endpoint `/api/file/snippet.php` allows an authenticated user with only `read_own` access to a folder to retrieve snippet content from files uploaded by other users in the same folder. This is a server-side authorization flaw in the `read_own` enforcement for hover previews. Version 3.11.0 fixes the issue.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32857" target="_blank" rel="noopener">CVE-2026-32857</a></td>
+        <td>7.8</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-918</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Firecrawl version 2.8.0 and prior contain a server-side request forgery (SSRF) p...</summary><p>Firecrawl version 2.8.0 and prior contain a server-side request forgery (SSRF) protection bypass vulnerability in the Playwright scraping service where network policy validation is applied only to the initial user-supplied URL and not to subsequent redirect destinations. Attackers can supply an externally valid URL that passes validation and returns an HTTP redirect to an internal or restricted resource, allowing the browser to follow the redirect and fetch the final destination without revalidation, thereby gaining access to internal network services and sensitive endpoints. This issue is distinct from CVE-2024-56800, which describes redirect-based SSRF generally. This vulnerability specifically arises from a post-redirect enforcement gap in implemented SSRF protections, where validation is applied only to the initial request and not to the final redirected destination.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4867" target="_blank" rel="noopener">CVE-2026-4867</a></td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-1333</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Impact:
+
+A bad regular expression is generated any time you have three or more p...</summary><p>Impact:
+
+A bad regular expression is generated any time you have three or more parameters within a single segment, separated by something that is not a period (.). For example, /:a-:b-:c or /:a-:b-:c-:d. The backtrack protection added in path-to-regexp@0.1.12 only prevents ambiguity for two parameters. With three or more, the generated lookahead does not block single separator characters, so capture groups overlap and cause catastrophic backtracking.
+
+Patches:
+
+Upgrade to path-to-regexp@0.1.13
+
+Custom regex patterns in route definitions (e.g., /:a-:b([^-/]+)-:c([^-/]+)) are not affected because they override the default capture group.
+
+Workarounds:
+
+All versions can be patched by providing a custom regular expression for parameters after the first in a single segment. As long as the custom regular expression does not match the text before the parameter, you will be safe. For example, change /:a-:b-:c to /:a-:b([^-/]+)-:c([^-/]+).
+
+If paths cannot be rewritten and versions cannot be upgraded, another alternative is to limit the URL length.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-3116" target="_blank" rel="noopener">CVE-2026-3116</a></td>
+        <td>4.9</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-400</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Mattermost Plugins versions &lt;=11.4 11.0.4 11.1.3 11.3.2 10.11.11.0 fail to valid...</summary><p>Mattermost Plugins versions &lt;=11.4 11.0.4 11.1.3 11.3.2 10.11.11.0 fail to validate incoming request size which allows an authenticated attacker to cause service disruption via the webhook endpoint. Mattermost Advisory ID: MMSA-2026-00589</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-3115" target="_blank" rel="noopener">CVE-2026-3115</a></td>
+        <td>4.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-863</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Mattermost versions 11.2.x &lt;= 11.2.2, 10.11.x &lt;= 10.11.10, 11.4.x &lt;= 11.4.0, 11....</summary><p>Mattermost versions 11.2.x &lt;= 11.2.2, 10.11.x &lt;= 10.11.10, 11.4.x &lt;= 11.4.0, 11.3.x &lt;= 11.3.1 fail to apply view restrictions when retrieving group member IDs, which allows authenticated guest users to enumerate user IDs outside their allowed visibility scope via the group retrieval endpoint.. Mattermost Advisory ID: MMSA-2026-00594</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-3114" target="_blank" rel="noopener">CVE-2026-3114</a></td>
+        <td>6.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-409</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Mattermost versions 11.4.x &lt;= 11.4.0, 11.3.x &lt;= 11.3.1, 11.2.x &lt;= 11.2.3, 10.11....</summary><p>Mattermost versions 11.4.x &lt;= 11.4.0, 11.3.x &lt;= 11.3.1, 11.2.x &lt;= 11.2.3, 10.11.x &lt;= 10.11.11 fail to validate decompressed archive entry sizes during file extraction which allows authenticated users with file upload permissions to cause a denial of service via crafted zip archives containing highly compressed entries (zip bombs) that exhaust server memory.. Mattermost Advisory ID: MMSA-2026-00598</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-3113" target="_blank" rel="noopener">CVE-2026-3113</a></td>
+        <td>5.0</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-732</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Mattermost versions 11.4.x &lt;= 11.4.0, 11.3.x &lt;= 11.3.1, 11.2.x &lt;= 11.2.3, 10.11....</summary><p>Mattermost versions 11.4.x &lt;= 11.4.0, 11.3.x &lt;= 11.3.1, 11.2.x &lt;= 11.2.3, 10.11.x &lt;= 10.11.11 fail to set permissions on downloaded bulk export which allows other local users on the server to be able to read contents of the bulk export.. Mattermost Advisory ID: MMSA-2026-00593</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-3112" target="_blank" rel="noopener">CVE-2026-3112</a></td>
+        <td>6.8</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-22</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Mattermost versions 11.4.x &lt;= 11.4.0, 11.3.x &lt;= 11.3.1, 11.2.x &lt;= 11.2.3, 10.11....</summary><p>Mattermost versions 11.4.x &lt;= 11.4.0, 11.3.x &lt;= 11.3.1, 11.2.x &lt;= 11.2.3, 10.11.x &lt;= 10.11.11 fail to validate Advanced Logging file target paths which allows system administrators to read arbitrary host files via malicious AdvancedLoggingJSON configuration in support packet generation. Mattermost Advisory ID: MMSA-2025-00562</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-3109" target="_blank" rel="noopener">CVE-2026-3109</a></td>
+        <td>2.2</td>
+        <td><span class="severity low">LOW</span></td>
+        <td>CWE-754</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Mattermost Plugins versions &lt;=11.4 10.11.11.0 fail to validate webhook request t...</summary><p>Mattermost Plugins versions &lt;=11.4 10.11.11.0 fail to validate webhook request timestamps which allows an attacker to corrupt Zoom meeting state in Mattermost via replayed webhook requests. Mattermost Advisory ID: MMSA-2026-00584</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-3108" target="_blank" rel="noopener">CVE-2026-3108</a></td>
+        <td>8.0</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-150</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Mattermost versions 11.2.x &lt;= 11.2.2, 10.11.x &lt;= 10.11.10, 11.4.x &lt;= 11.4.0, 11....</summary><p>Mattermost versions 11.2.x &lt;= 11.2.2, 10.11.x &lt;= 10.11.10, 11.4.x &lt;= 11.4.0, 11.3.x &lt;= 11.3.1 fail to sanitize user-controlled post content in the mmctl commands terminal output which allows attackers to manipulate administrator terminals via crafted messages containing ANSI and OSC escape sequences that enable screen manipulation, fake prompts, and clipboard hijacking.. Mattermost Advisory ID: MMSA-2026-00599</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34071" target="_blank" rel="noopener">CVE-2026-34071</a></td>
+        <td>5.4</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Stirling-PDF is a locally hosted web application that allows you to perform vari...</summary><p>Stirling-PDF is a locally hosted web application that allows you to perform various operations on PDF files. In version 2.7.3, the /api/v1/convert/eml/pdf endpoint with parameter downloadHtml=true returns unsanitized HTML from the email body with Content-Type: text/html. An attacker who sends a malicious email to a Stirling-PDF user can achieve JavaScript execution when that user exports the email using the &quot;Download HTML intermediate file&quot; feature. Version 2.8.0 fixes the issue.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33636" target="_blank" rel="noopener">CVE-2026-33636</a></td>
+        <td>7.6</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-125</td>
+        <td>&nbsp;</td>
+        <td><details><summary>LIBPNG is a reference library for use in applications that read, create, and man...</summary><p>LIBPNG is a reference library for use in applications that read, create, and manipulate PNG (Portable Network Graphics) raster image files. In versions 1.6.36 through 1.6.55, an out-of-bounds read and write exists in libpng&#x27;s ARM/AArch64 Neon-optimized palette expansion path. When expanding 8-bit paletted rows to RGB or RGBA, the Neon loop processes a final partial chunk without verifying that enough input pixels remain. Because the implementation works backward from the end of the row, the final iteration dereferences pointers before the start of the row buffer (OOB read) and writes expanded pixel data to the same underflowed positions (OOB write). This is reachable via normal decoding of attacker-controlled PNG input if Neon is enabled. Version 1.6.56 fixes the issue.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33470" target="_blank" rel="noopener">CVE-2026-33470</a></td>
+        <td>6.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Frigate is a network video recorder (NVR) with realtime local object detection f...</summary><p>Frigate is a network video recorder (NVR) with realtime local object detection for IP cameras. In version 0.17.0, a low-privilege authenticated user restricted to one camera can access snapshots from other cameras. This is possible through a chain of two authorization problems: `/api/timeline` returns timeline entries for cameras outside the caller&#x27;s allowed camera set, then `/api/events/{event_id}/snapshot-clean.webp` declares `Depends(require_camera_access)` but never actually validates `event.camera` after looking up the event. Together, this allows a restricted user to enumerate event IDs from unauthorized cameras and then fetch clean snapshots for those events. Version 0.17.1 fixes the issue.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33469" target="_blank" rel="noopener">CVE-2026-33469</a></td>
+        <td>6.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-863</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Frigate is a network video recorder (NVR) with realtime local object detection f...</summary><p>Frigate is a network video recorder (NVR) with realtime local object detection for IP cameras. In version 0.17.0, an authenticated non-admin user can retrieve the full raw Frigate configuration through `/api/config/raw`. This exposes sensitive values that are intentionally redacted from `/api/config`, including camera credentials, go2rtc stream credentials, MQTT passwords, proxy secrets, and any other secrets stored in `config.yml`. This appears to be a broken access control issue introduced by the admin-by-default API refactor: `/api/config/raw_paths` is admin-only, but `/api/config/raw` is still accessible to any authenticated user. Version 0.17.1 contains a patch.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33468" target="_blank" rel="noopener">CVE-2026-33468</a></td>
+        <td>8.1</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-89</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Kysely is a type-safe TypeScript SQL query builder. Prior to version 0.28.14, Ky...</summary><p>Kysely is a type-safe TypeScript SQL query builder. Prior to version 0.28.14, Kysely&#x27;s `DefaultQueryCompiler.sanitizeStringLiteral()` only escapes single quotes by doubling them (`&#x27;` → `&#x27;&#x27;`) but does not escape backslashes. When used with the MySQL dialect (where `NO_BACKSLASH_ESCAPES` is OFF by default), an attacker can use a backslash to escape the trailing quote of a string literal, breaking out of the string context and injecting arbitrary SQL. This affects any code path that uses `ImmediateValueTransformer` to inline values — specifically `CreateIndexBuilder.where()` and `CreateViewBuilder.as()`. Version 0.28.14 contains a fix.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33442" target="_blank" rel="noopener">CVE-2026-33442</a></td>
+        <td>8.1</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-89</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Kysely is a type-safe TypeScript SQL query builder. In versions 0.28.12 and 0.28...</summary><p>Kysely is a type-safe TypeScript SQL query builder. In versions 0.28.12 and 0.28.13, the `sanitizeStringLiteral` method in Kysely&#x27;s query compiler escapes single quotes (`&#x27;` → `&#x27;&#x27;`) but does not escape backslashes. On MySQL with the default `BACKSLASH_ESCAPES` SQL mode, an attacker can inject a backslash before a single quote to neutralize the escaping, breaking out of the JSON path string literal and injecting arbitrary SQL. Version 0.28.14 fixes the issue.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33438" target="_blank" rel="noopener">CVE-2026-33438</a></td>
+        <td>6.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-770</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Stirling-PDF is a locally hosted web application that allows you to perform vari...</summary><p>Stirling-PDF is a locally hosted web application that allows you to perform various operations on PDF files. Versions starting in 2.1.5 and prior to 2.5.2 have Denial of Service (DoS) vulnerability in the Stirling-PDF watermark functionality (`/api/v1/security/add-watermark` endpoint). The vulnerability allows authenticated users to cause resource exhaustion and server crashes by providing extreme values for the `fontSize` and `widthSpacer` parameters. Version 2.5.2 patches the issue.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33430" target="_blank" rel="noopener">CVE-2026-33430</a></td>
+        <td>7.3</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-732</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Briefcase is a tool for converting a Python project into a standalone native app...</summary><p>Briefcase is a tool for converting a Python project into a standalone native application. Starting in version 0.3.0 and prior to version 0.3.26, if a developer uses Briefcase to produce an Windows MSI installer for a project, and that project is installed for All Users (i.e., per-machine scope), the installation process creates an directory that inherits all the permissions of the parent directory. Depending on the location chosen by the installing user, this may allow a low privilege but authenticated user to replace or modify the binaries installed by the application. If an administrator then runs the altered binary, the binary will run with elevated privileges. The problem is caused by the template used to generate the WXS file for Windows projects. It was fixed in the templates used in Briefcase 0.3.26, 0.4.0, and 0.4.1. Re-running `briefcase create` on your Briefcase project will result in the updated templates being used. As a workaround, the patch can be added to any existing Briefcase .wxs file generated by Briefcase 0.3.24 or later.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33416" target="_blank" rel="noopener">CVE-2026-33416</a></td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-416</td>
+        <td>&nbsp;</td>
+        <td><details><summary>LIBPNG is a reference library for use in applications that read, create, and man...</summary><p>LIBPNG is a reference library for use in applications that read, create, and manipulate PNG (Portable Network Graphics) raster image files. In versions 1.2.1 through 1.6.55, `png_set_tRNS` and `png_set_PLTE` each alias a heap-allocated buffer between `png_struct` and `png_info`, sharing a single allocation across two structs with independent lifetimes. The `trans_alpha` aliasing has been present since at least libpng 1.0, and the `palette` aliasing since at least 1.2.1. Both affect all prior release lines `png_set_tRNS` sets `png_ptr-&gt;trans_alpha = info_ptr-&gt;trans_alpha` (256-byte buffer) and `png_set_PLTE` sets `info_ptr-&gt;palette = png_ptr-&gt;palette` (768-byte buffer). In both cases, calling `png_free_data` (with `PNG_FREE_TRNS` or `PNG_FREE_PLTE`) frees the buffer through `info_ptr` while the corresponding `png_ptr` pointer remains dangling. Subsequent row-transform functions dereference and, in some code paths, write to the freed memory. A second call to `png_set_tRNS` or `png_set_PLTE` has the same effect, because both functions call `png_free_data` internally before reallocating the `info_ptr` buffer. Version 1.6.56 fixes the issue.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33402" target="_blank" rel="noopener">CVE-2026-33402</a></td>
+        <td>1.3</td>
+        <td><span class="severity low">LOW</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Sakai is a Collaboration and Learning Environment (CLE). In versions 23.0 throug...</summary><p>Sakai is a Collaboration and Learning Environment (CLE). In versions 23.0 through 23.4 and 25.0 through 25.1, group titles and description can contain cross-site scripting scripts. The patch is included in releases 25.2 and 23.5. As a workaround, one can check the SAKAI_SITE_GROUP table for titles and descriptions that contain this info.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33015" target="_blank" rel="noopener">CVE-2026-33015</a></td>
+        <td>5.2</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-863</td>
+        <td>&nbsp;</td>
+        <td><details><summary>EVerest is an EV charging software stack. Prior to version 2026.02.0, even immed...</summary><p>EVerest is an EV charging software stack. Prior to version 2026.02.0, even immediately after CSMS performs a RemoteStop (StopTransaction), the EVSE can return to `PrepareCharging` via the EV&#x27;s BCB toggle, allowing session restart. This breaks the irreversibility of remote stop and can bypass operational/billing/safety controls. Version 2026.02.0 contains a patch.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33014" target="_blank" rel="noopener">CVE-2026-33014</a></td>
+        <td>5.2</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-863</td>
+        <td>&nbsp;</td>
+        <td><details><summary>EVerest is an EV charging software stack. Prior to version 2026.02.0, during Rem...</summary><p>EVerest is an EV charging software stack. Prior to version 2026.02.0, during RemoteStop processing, a delayed authorization response restores `authorized` back to true, defeating the `stop_transaction()` call condition on PowerOff events. As a result, the transaction can remain open even after a remote stop. Version 2026.02.0 contains a patch.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33009" target="_blank" rel="noopener">CVE-2026-33009</a></td>
+        <td>8.2</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-362</td>
+        <td>&nbsp;</td>
+        <td><details><summary>EVerest is an EV charging software stack. Versions prior to 2026.02.0 have a dat...</summary><p>EVerest is an EV charging software stack. Versions prior to 2026.02.0 have a data race leading to C++ UB (potential memory corruption). This is triggered by an MQTT `everest_external/nodered/{connector}/cmd/switch_three_phases_while_charging` message and results in `Charger::shared_context` / `internal_context` accessed concurrently without lock. Version 2026.02.0 contains a patch.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32846" target="_blank" rel="noopener">CVE-2026-32846</a></td>
+        <td>8.7</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-22</td>
+        <td>&nbsp;</td>
+        <td><details><summary>OpenClaw through 2026.3.23 (fixed in commit 4797bbc) contains a path traversal v...</summary><p>OpenClaw through 2026.3.23 (fixed in commit 4797bbc) contains a path traversal vulnerability in media parsing that allows attackers to read arbitrary files by bypassing path validation in the isLikelyLocalPath() and isValidMedia() functions. Attackers can exploit incomplete validation and the allowBareFilename bypass to reference files outside the intended application sandbox, resulting in disclosure of sensitive information including system files, environment files, and SSH keys.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-29905" target="_blank" rel="noopener">CVE-2026-29905</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Kirby CMS through 5.1.4 allows an authenticated user with &#x27;Editor&#x27; permissions t...</summary><p>Kirby CMS through 5.1.4 allows an authenticated user with &#x27;Editor&#x27; permissions to cause a persistent Denial of Service (DoS) via a malformed image upload. The application fails to properly validate the return value of the PHP getimagesize() function. When the system attempts to process this file for metadata or thumbnail generation, it triggers a fatal TypeError.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-29044" target="_blank" rel="noopener">CVE-2026-29044</a></td>
+        <td>5.0</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-863</td>
+        <td>&nbsp;</td>
+        <td><details><summary>EVerest is an EV charging software stack. Prior to version 2026.02.0, when Withd...</summary><p>EVerest is an EV charging software stack. Prior to version 2026.02.0, when WithdrawAuthorization is processed before the TransactionStarted event, AuthHandler determines `transaction_active=false` and only calls `withdraw_authorization_callback`. This path ultimately calls `Charger::deauthorize()`, but no actual stop (StopTransaction) occurs in the Charging state. As a result, authorization withdrawal can be defeated by timing, allowing charging to continue. Version 2026.02.0 contains a patch.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-27828" target="_blank" rel="noopener">CVE-2026-27828</a></td>
+        <td>5.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-416</td>
+        <td>&nbsp;</td>
+        <td><details><summary>EVerest is an EV charging software stack. Prior to version 2026.02.0, ISO15118_c...</summary><p>EVerest is an EV charging software stack. Prior to version 2026.02.0, ISO15118_chargerImpl::handle_session_setup uses v2g_ctx after it has been freed when ISO15118 initialization fails (e.g., no IPv6 link-local address). The EVSE process can be crashed remotely by an attacker with MQTT access who issues a session_setup command while v2g_ctx has been released. Version 2026.02.0 contains a patch.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-27816" target="_blank" rel="noopener">CVE-2026-27816</a></td>
+        <td>5.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-787</td>
+        <td>&nbsp;</td>
+        <td><details><summary>EVerest is an EV charging software stack. Prior to versions to 2026.02.0, ISO151...</summary><p>EVerest is an EV charging software stack. Prior to versions to 2026.02.0, ISO15118_chargerImpl::handle_update_energy_transfer_modes copies a variable-length list into a fixed-size array of length 6 without bounds checking. With schema validation disabled by default, oversized MQTT Cmd payloads can trigger out-of-bounds writes and corrupt adjacent EVSE state or crash the process. Version 2026.02.0 contains a patch.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-27815" target="_blank" rel="noopener">CVE-2026-27815</a></td>
+        <td>5.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-787</td>
+        <td>&nbsp;</td>
+        <td><details><summary>EVerest is an EV charging software stack. Prior to versions to 2026.02.0, ISO151...</summary><p>EVerest is an EV charging software stack. Prior to versions to 2026.02.0, ISO15118_chargerImpl::handle_session_setup copies a variable-length payment_options list into a fixed-size array of length 2 without bounds checking. With schema validation disabled by default, oversized MQTT Cmd payloads can trigger out-of-bounds writes and corrupt adjacent EVSE state or crash the process. Version 2026.02.0 contains a patch.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-27814" target="_blank" rel="noopener">CVE-2026-27814</a></td>
+        <td>4.2</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-362</td>
+        <td>&nbsp;</td>
+        <td><details><summary>EVerest is an EV charging software stack. Versions prior to 2026.02.0 have a dat...</summary><p>EVerest is an EV charging software stack. Versions prior to 2026.02.0 have a data race (C++ UB) triggered by an A 1-phase ↔ 3-phase switch request (`ac_switch_three_phases_while_charging`) during charging/waiting executes concurrently with the state machine loop. Version 2026.02.0 contains a patch.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-27813" target="_blank" rel="noopener">CVE-2026-27813</a></td>
+        <td>5.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-416</td>
+        <td>&nbsp;</td>
+        <td><details><summary>EVerest is an EV charging software stack. Versions prior to 2026.02.0 have a dat...</summary><p>EVerest is an EV charging software stack. Versions prior to 2026.02.0 have a data race leading to use-after-free. This is triggered by EV plug-in/unplug and RFID/RemoteStart/OCPP authorization events (or delayed authorization response). Version 2026.2.0 contains a patch.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-26074" target="_blank" rel="noopener">CVE-2026-26074</a></td>
+        <td>7.0</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-362</td>
+        <td>&nbsp;</td>
+        <td><details><summary>EVerest is an EV charging software stack. Versions prior to 2026.02.0 have a dat...</summary><p>EVerest is an EV charging software stack. Versions prior to 2026.02.0 have a data race leading to possible `std::map&lt;std::queue&gt;` corruption. The trigger is CSMS GetLog/UpdateFirmware request (network) with an EVSE fault event (physical). This results in TSAN reports concurrent access (data race) to `event_queue`. Version 2026.2.0 contains a patch.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-26073" target="_blank" rel="noopener">CVE-2026-26073</a></td>
+        <td>5.9</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-122</td>
+        <td>&nbsp;</td>
+        <td><details><summary>EVerest is an EV charging software stack. Versions prior to 2026.02.0 have a dat...</summary><p>EVerest is an EV charging software stack. Versions prior to 2026.02.0 have a data race leading to possible `std::queue`/`std::deque` corruption. The trigger is powermeter public key update and EV session/error events (while OCPP not started). This results in a TSAN data race report and an ASAN/UBSAN misaligned address runtime error being observed. Version 2026.02.0 contains a patch.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4897" target="_blank" rel="noopener">CVE-2026-4897</a></td>
         <td>5.5</td>
@@ -742,16 +1154,6 @@
         <td>2026-03-26</td>
       </tr>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4263" target="_blank" rel="noopener">CVE-2026-4263</a></td>
-        <td>6.9</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-863</td>
-        <td>&nbsp;</td>
-        <td><details><summary>Vulnerability of incorrect authorization in HiJiffy Chatbot allows an attacker t...</summary><p>Vulnerability of incorrect authorization in HiJiffy Chatbot allows an attacker to download private messages from other users via the parameter 
-&#x27;visitor&#x27; in &#x27;/api/v1/webchat/message&#x27;.</p></details></td>
-        <td>2026-03-26</td>
-      </tr>
-      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4262" target="_blank" rel="noopener">CVE-2026-4262</a></td>
         <td>6.9</td>
         <td><span class="severity medium">MEDIUM</span></td>
@@ -821,43 +1223,6 @@
         <td>CWE-79</td>
         <td>&nbsp;</td>
         <td><details><summary>A vulnerability was found in dameng100 muucmf 1.9.5.20260309. The impacted eleme...</summary><p>A vulnerability was found in dameng100 muucmf 1.9.5.20260309. The impacted element is an unknown function of the file /admin/config/list.html. Performing a manipulation of the argument Name results in cross site scripting. The attack can be initiated remotely. The exploit has been made public and could be used. The vendor was contacted early about this disclosure but did not respond in any way.</p></details></td>
-        <td>2026-03-26</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4747" target="_blank" rel="noopener">CVE-2026-4747</a></td>
-        <td>8.8</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-121</td>
-        <td>&nbsp;</td>
-        <td><details><summary>Each RPCSEC_GSS data packet is validated by a routine which checks a signature i...</summary><p>Each RPCSEC_GSS data packet is validated by a routine which checks a signature in the packet.  This routine copies a portion of the packet into a stack buffer, but fails to ensure that the buffer is sufficiently large, and a malicious client can trigger a stack overflow.  Notably, this does not require the client to authenticate itself first.
-
-As kgssapi.ko&#x27;s RPCSEC_GSS implementation is vulnerable, remote code execution in the kernel is possible by an authenticated user that is able to send packets to the kernel&#x27;s NFS server while kgssapi.ko is loaded into the kernel.
-
-In userspace, applications which have librpcgss_sec loaded and run an RPC server are vulnerable to remote code execution from any client able to send it packets.  We are not aware of any such applications in the FreeBSD base system.</p></details></td>
-        <td>2026-03-26</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4652" target="_blank" rel="noopener">CVE-2026-4652</a></td>
-        <td>7.5</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-476</td>
-        <td>&nbsp;</td>
-        <td><details><summary>On a system exposing an NVMe/TCP target, a remote client can trigger a kernel pa...</summary><p>On a system exposing an NVMe/TCP target, a remote client can trigger a kernel panic by sending a CONNECT command for an I/O queue with a bogus or stale CNTLID.
-
-An attacker with network access to the NVMe/TCP target can trigger an unauthenticated Denial of Service condition on the affected machine.</p></details></td>
-        <td>2026-03-26</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4247" target="_blank" rel="noopener">CVE-2026-4247</a></td>
-        <td>7.5</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-401</td>
-        <td>&nbsp;</td>
-        <td><details><summary>When a challenge ACK is to be sent tcp_respond() constructs and sends the challe...</summary><p>When a challenge ACK is to be sent tcp_respond() constructs and sends the challenge ACK and consumes the mbuf that is passed in.  When no challenge ACK should be sent the function returns and leaks the mbuf.
-
-If an attacker is either on path with an established TCP connection, or can themselves establish a TCP connection, to an affected FreeBSD machine, they can easily craft and send packets which meet the challenge ACK criteria and cause the FreeBSD host to leak an mbuf for each crafted packet in excess of the configured rate limit settings i.e. with default settings, crafted packets in excess of the first 5 sent within a 1s period will leak an mbuf.
-
-Technically, off-path attackers can also exploit this problem by guessing the IP addresses, TCP port numbers and in some cases the sequence numbers of established connections and spoofing packets towards a FreeBSD machine, but this is harder to do effectively.</p></details></td>
         <td>2026-03-26</td>
       </tr>
       <tr>
@@ -1110,27 +1475,6 @@ Technically, off-path attackers can also exploit this problem by guessing the IP
         <td>CWE-79</td>
         <td>&nbsp;</td>
         <td><details><summary>A security vulnerability has been detected in code-projects Accounting System 1....</summary><p>A security vulnerability has been detected in code-projects Accounting System 1.0. Impacted is an unknown function of the file /my_account/add_costumer.php of the component Web Application Interface. Such manipulation of the argument costumer_name leads to cross site scripting. The attack may be performed from remote. The exploit has been disclosed publicly and may be used.</p></details></td>
-        <td>2026-03-26</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-15101" target="_blank" rel="noopener">CVE-2025-15101</a></td>
-        <td>8.5</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-78</td>
-        <td>&nbsp;</td>
-        <td><details><summary>A Cross-Site Request Forgery (CSRF) vulnerability has been identified in the Web...</summary><p>A Cross-Site Request Forgery (CSRF) vulnerability has been identified in the Web management interface of certain ASUS router models. This vulnerability potentially allows actions to be performed with the existing privileges of an authenticated user on the affected device, including the ability to execute system commands through unintended mechanisms.
-Refer to the &#x27;Security Update for ASUS Router Firmware&#x27; section on the ASUS Security Advisory for more information.</p></details></td>
-        <td>2026-03-26</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2014-125112" target="_blank" rel="noopener">CVE-2014-125112</a></td>
-        <td>9.8</td>
-        <td><span class="severity critical">CRITICAL</span></td>
-        <td>CWE-565</td>
-        <td>&nbsp;</td>
-        <td><details><summary>Plack::Middleware::Session::Cookie versions through 0.21 for Perl allows remote ...</summary><p>Plack::Middleware::Session::Cookie versions through 0.21 for Perl allows remote code execution.
-
-Plack::Middleware::Session::Cookie versions through 0.21 has a security vulnerability where it allows an attacker to execute arbitrary code on the server during deserialization of the cookie data, when there is no secret used to sign the cookie.</p></details></td>
         <td>2026-03-26</td>
       </tr>
       <tr>
@@ -2233,8 +2577,8 @@ Plack::Middleware::Session::Cookie versions through 0.21 has a security vulnerab
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32527" target="_blank" rel="noopener">CVE-2026-32527</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>6.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
         <td>CWE-862</td>
         <td>&nbsp;</td>
         <td><details><summary>Missing Authorization vulnerability in CRM Perks WP Insightly for Contact Form 7...</summary><p>Missing Authorization vulnerability in CRM Perks WP Insightly for Contact Form 7, WPForms, Elementor, Formidable and Ninja Forms cf7-insightly allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects WP Insightly for Contact Form 7, WPForms, Elementor, Formidable and Ninja Forms: from n/a through &lt;= 1.1.5.</p></details></td>
@@ -2350,8 +2694,8 @@ Plack::Middleware::Session::Cookie versions through 0.21 has a security vulnerab
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32514" target="_blank" rel="noopener">CVE-2026-32514</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>6.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
         <td>CWE-862</td>
         <td>&nbsp;</td>
         <td><details><summary>Missing Authorization vulnerability in Anton Voytenko Petitioner petitioner allo...</summary><p>Missing Authorization vulnerability in Anton Voytenko Petitioner petitioner allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects Petitioner: from n/a through &lt;= 0.7.3.</p></details></td>
@@ -2386,8 +2730,8 @@ Plack::Middleware::Session::Cookie versions through 0.21 has a security vulnerab
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32510" target="_blank" rel="noopener">CVE-2026-32510</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>5.4</td>
+        <td><span class="severity medium">MEDIUM</span></td>
         <td>CWE-502</td>
         <td>&nbsp;</td>
         <td><details><summary>Deserialization of Untrusted Data vulnerability in Edge-Themes Kamperen kamperen...</summary><p>Deserialization of Untrusted Data vulnerability in Edge-Themes Kamperen kamperen allows Object Injection.This issue affects Kamperen: from n/a through &lt; 1.3.</p></details></td>
@@ -2404,8 +2748,8 @@ Plack::Middleware::Session::Cookie versions through 0.21 has a security vulnerab
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32508" target="_blank" rel="noopener">CVE-2026-32508</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>5.4</td>
+        <td><span class="severity medium">MEDIUM</span></td>
         <td>CWE-502</td>
         <td>&nbsp;</td>
         <td><details><summary>Deserialization of Untrusted Data vulnerability in Mikado-Themes Halstein halste...</summary><p>Deserialization of Untrusted Data vulnerability in Mikado-Themes Halstein halstein allows Object Injection.This issue affects Halstein: from n/a through &lt; 1.8.</p></details></td>
@@ -2422,8 +2766,8 @@ Plack::Middleware::Session::Cookie versions through 0.21 has a security vulnerab
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32506" target="_blank" rel="noopener">CVE-2026-32506</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>5.4</td>
+        <td><span class="severity medium">MEDIUM</span></td>
         <td>CWE-502</td>
         <td>&nbsp;</td>
         <td><details><summary>Deserialization of Untrusted Data vulnerability in Edge-Themes Archicon archicon...</summary><p>Deserialization of Untrusted Data vulnerability in Edge-Themes Archicon archicon allows Object Injection.This issue affects Archicon: from n/a through &lt; 1.7.</p></details></td>
@@ -2575,8 +2919,8 @@ Plack::Middleware::Session::Cookie versions through 0.21 has a security vulnerab
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32489" target="_blank" rel="noopener">CVE-2026-32489</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>6.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
         <td>CWE-862</td>
         <td>&nbsp;</td>
         <td><details><summary>Missing Authorization vulnerability in bPlugins B Blocks b-blocks allows Exploit...</summary><p>Missing Authorization vulnerability in bPlugins B Blocks b-blocks allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects B Blocks: from n/a through &lt; 2.0.30.</p></details></td>
@@ -2611,8 +2955,8 @@ Plack::Middleware::Session::Cookie versions through 0.21 has a security vulnerab
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32483" target="_blank" rel="noopener">CVE-2026-32483</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>6.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
         <td>CWE-862</td>
         <td>&nbsp;</td>
         <td><details><summary>Missing Authorization vulnerability in codepeople Contact Form Email contact-for...</summary><p>Missing Authorization vulnerability in codepeople Contact Form Email contact-form-to-email allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects Contact Form Email: from n/a through &lt;= 1.3.63.</p></details></td>
@@ -2800,8 +3144,8 @@ Plack::Middleware::Session::Cookie versions through 0.21 has a security vulnerab
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-27081" target="_blank" rel="noopener">CVE-2026-27081</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>8.1</td>
+        <td><span class="severity high">HIGH</span></td>
         <td>CWE-98</td>
         <td>&nbsp;</td>
         <td><details><summary>Improper Control of Filename for Include/Require Statement in PHP Program (&#x27;PHP ...</summary><p>Improper Control of Filename for Include/Require Statement in PHP Program (&#x27;PHP Remote File Inclusion&#x27;) vulnerability in Mikado-Themes Rosebud rosebud allows PHP Local File Inclusion.This issue affects Rosebud: from n/a through &lt;= 1.4.</p></details></td>
@@ -2818,8 +3162,8 @@ Plack::Middleware::Session::Cookie versions through 0.21 has a security vulnerab
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-27079" target="_blank" rel="noopener">CVE-2026-27079</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>8.1</td>
+        <td><span class="severity high">HIGH</span></td>
         <td>CWE-98</td>
         <td>&nbsp;</td>
         <td><details><summary>Improper Control of Filename for Include/Require Statement in PHP Program (&#x27;PHP ...</summary><p>Improper Control of Filename for Include/Require Statement in PHP Program (&#x27;PHP Remote File Inclusion&#x27;) vulnerability in Mikado-Themes Amfissa amfissa allows PHP Local File Inclusion.This issue affects Amfissa: from n/a through &lt;= 1.1.</p></details></td>
@@ -2836,8 +3180,8 @@ Plack::Middleware::Session::Cookie versions through 0.21 has a security vulnerab
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-27077" target="_blank" rel="noopener">CVE-2026-27077</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>8.1</td>
+        <td><span class="severity high">HIGH</span></td>
         <td>CWE-98</td>
         <td>&nbsp;</td>
         <td><details><summary>Improper Control of Filename for Include/Require Statement in PHP Program (&#x27;PHP ...</summary><p>Improper Control of Filename for Include/Require Statement in PHP Program (&#x27;PHP Remote File Inclusion&#x27;) vulnerability in Mikado-Themes MultiOffice multioffice allows PHP Local File Inclusion.This issue affects MultiOffice: from n/a through &lt;= 1.2.</p></details></td>
@@ -2854,8 +3198,8 @@ Plack::Middleware::Session::Cookie versions through 0.21 has a security vulnerab
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-27075" target="_blank" rel="noopener">CVE-2026-27075</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>8.1</td>
+        <td><span class="severity high">HIGH</span></td>
         <td>CWE-98</td>
         <td>&nbsp;</td>
         <td><details><summary>Improper Control of Filename for Include/Require Statement in PHP Program (&#x27;PHP ...</summary><p>Improper Control of Filename for Include/Require Statement in PHP Program (&#x27;PHP Remote File Inclusion&#x27;) vulnerability in Mikado-Themes Belfort belfort allows PHP Local File Inclusion.This issue affects Belfort: from n/a through &lt;= 1.0.</p></details></td>
@@ -2863,8 +3207,8 @@ Plack::Middleware::Session::Cookie versions through 0.21 has a security vulnerab
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-27073" target="_blank" rel="noopener">CVE-2026-27073</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
         <td>CWE-798</td>
         <td>&nbsp;</td>
         <td><details><summary>Use of Hard-coded Credentials vulnerability in Addi Addi &amp;#8211; Cuotas que se a...</summary><p>Use of Hard-coded Credentials vulnerability in Addi Addi &amp;#8211; Cuotas que se adaptan a ti buy-now-pay-later-addi allows Password Recovery Exploitation.This issue affects Addi &amp;#8211; Cuotas que se adaptan a ti: from n/a through &lt;= 2.0.4.</p></details></td>
@@ -2908,8 +3252,8 @@ Plack::Middleware::Session::Cookie versions through 0.21 has a security vulnerab
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-27048" target="_blank" rel="noopener">CVE-2026-27048</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>8.1</td>
+        <td><span class="severity high">HIGH</span></td>
         <td>CWE-98</td>
         <td>&nbsp;</td>
         <td><details><summary>Improper Control of Filename for Include/Require Statement in PHP Program (&#x27;PHP ...</summary><p>Improper Control of Filename for Include/Require Statement in PHP Program (&#x27;PHP Remote File Inclusion&#x27;) vulnerability in Elated-Themes The Aisle Core theaisle-core allows PHP Local File Inclusion.This issue affects The Aisle Core: from n/a through &lt;= 2.0.5.</p></details></td>
@@ -2926,8 +3270,8 @@ Plack::Middleware::Session::Cookie versions through 0.21 has a security vulnerab
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-27046" target="_blank" rel="noopener">CVE-2026-27046</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>6.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
         <td>CWE-862</td>
         <td>&nbsp;</td>
         <td><details><summary>Missing Authorization vulnerability in Kaira StoreCustomizer woocustomizer allow...</summary><p>Missing Authorization vulnerability in Kaira StoreCustomizer woocustomizer allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects StoreCustomizer: from n/a through &lt;= 2.6.3.</p></details></td>
@@ -2962,8 +3306,8 @@ Plack::Middleware::Session::Cookie versions through 0.21 has a security vulnerab
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-27039" target="_blank" rel="noopener">CVE-2026-27039</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>8.5</td>
+        <td><span class="severity high">HIGH</span></td>
         <td>CWE-89</td>
         <td>&nbsp;</td>
         <td><details><summary>Improper Neutralization of Special Elements used in an SQL Command (&#x27;SQL Injecti...</summary><p>Improper Neutralization of Special Elements used in an SQL Command (&#x27;SQL Injection&#x27;) vulnerability in AA-Team WZone woozone allows Blind SQL Injection.This issue affects WZone: from n/a through &lt;= 14.0.31.</p></details></td>
@@ -2989,8 +3333,8 @@ Plack::Middleware::Session::Cookie versions through 0.21 has a security vulnerab
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-25469" target="_blank" rel="noopener">CVE-2026-25469</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>6.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
         <td>CWE-862</td>
         <td>&nbsp;</td>
         <td><details><summary>Missing Authorization vulnerability in ViaBill for WooCommerce ViaBill &amp;#8211; W...</summary><p>Missing Authorization vulnerability in ViaBill for WooCommerce ViaBill &amp;#8211; WooCommerce viabill-woocommerce allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects ViaBill &amp;#8211; WooCommerce: from n/a through &lt;= 1.1.53.</p></details></td>
@@ -3016,8 +3360,8 @@ Plack::Middleware::Session::Cookie versions through 0.21 has a security vulnerab
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-25462" target="_blank" rel="noopener">CVE-2026-25462</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>6.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
         <td>CWE-862</td>
         <td>&nbsp;</td>
         <td><details><summary>Missing Authorization vulnerability in avalex avalex avalex allows Exploiting In...</summary><p>Missing Authorization vulnerability in avalex avalex avalex allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects avalex: from n/a through &lt;= 3.1.3.</p></details></td>
@@ -3052,8 +3396,8 @@ Plack::Middleware::Session::Cookie versions through 0.21 has a security vulnerab
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-25457" target="_blank" rel="noopener">CVE-2026-25457</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>8.1</td>
+        <td><span class="severity high">HIGH</span></td>
         <td>CWE-98</td>
         <td>&nbsp;</td>
         <td><details><summary>Improper Control of Filename for Include/Require Statement in PHP Program (&#x27;PHP ...</summary><p>Improper Control of Filename for Include/Require Statement in PHP Program (&#x27;PHP Remote File Inclusion&#x27;) vulnerability in Select-Themes Mixtape mixtape allows PHP Local File Inclusion.This issue affects Mixtape: from n/a through &lt;= 2.1.</p></details></td>
@@ -3070,8 +3414,8 @@ Plack::Middleware::Session::Cookie versions through 0.21 has a security vulnerab
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-25455" target="_blank" rel="noopener">CVE-2026-25455</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>6.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
         <td>CWE-862</td>
         <td>&nbsp;</td>
         <td><details><summary>Missing Authorization vulnerability in PickPlugins Product Slider for WooCommerc...</summary><p>Missing Authorization vulnerability in PickPlugins Product Slider for WooCommerce woocommerce-products-slider allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects Product Slider for WooCommerce: from n/a through &lt;= 1.13.60.</p></details></td>
@@ -3079,8 +3423,8 @@ Plack::Middleware::Session::Cookie versions through 0.21 has a security vulnerab
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-25454" target="_blank" rel="noopener">CVE-2026-25454</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>6.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
         <td>CWE-862</td>
         <td>&nbsp;</td>
         <td><details><summary>Missing Authorization vulnerability in MVPThemes The League the-league allows Ex...</summary><p>Missing Authorization vulnerability in MVPThemes The League the-league allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects The League: from n/a through &lt;= 4.4.1.</p></details></td>
@@ -3106,8 +3450,8 @@ Plack::Middleware::Session::Cookie versions through 0.21 has a security vulnerab
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-25437" target="_blank" rel="noopener">CVE-2026-25437</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>6.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
         <td>CWE-862</td>
         <td>&nbsp;</td>
         <td><details><summary>Missing Authorization vulnerability in سید محمدامین هاشمی GZSEO gzseo allows Exp...</summary><p>Missing Authorization vulnerability in سید محمدامین هاشمی GZSEO gzseo allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects GZSEO: from n/a through &lt;= 2.0.14.</p></details></td>
@@ -3124,8 +3468,8 @@ Plack::Middleware::Session::Cookie versions through 0.21 has a security vulnerab
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-25430" target="_blank" rel="noopener">CVE-2026-25430</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>6.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
         <td>CWE-862</td>
         <td>&nbsp;</td>
         <td><details><summary>Missing Authorization vulnerability in CRM Perks Integration for Mailchimp and C...</summary><p>Missing Authorization vulnerability in CRM Perks Integration for Mailchimp and Contact Form 7, WPForms, Elementor, Ninja Forms cf7-mailchimp allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects Integration for Mailchimp and Contact Form 7, WPForms, Elementor, Ninja Forms: from n/a through &lt;= 1.2.2.</p></details></td>
@@ -3151,8 +3495,8 @@ Plack::Middleware::Session::Cookie versions through 0.21 has a security vulnerab
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-25414" target="_blank" rel="noopener">CVE-2026-25414</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>8.8</td>
+        <td><span class="severity high">HIGH</span></td>
         <td>CWE-266</td>
         <td>&nbsp;</td>
         <td><details><summary>Incorrect Privilege Assignment vulnerability in iqonicdesign WPBookit Pro wpbook...</summary><p>Incorrect Privilege Assignment vulnerability in iqonicdesign WPBookit Pro wpbookit-pro allows Privilege Escalation.This issue affects WPBookit Pro: from n/a through &lt;= 1.6.18.</p></details></td>
@@ -3169,8 +3513,8 @@ Plack::Middleware::Session::Cookie versions through 0.21 has a security vulnerab
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-25406" target="_blank" rel="noopener">CVE-2026-25406</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>8.8</td>
+        <td><span class="severity high">HIGH</span></td>
         <td>CWE-288</td>
         <td>&nbsp;</td>
         <td><details><summary>Authentication Bypass Using an Alternate Path or Channel vulnerability in Themeu...</summary><p>Authentication Bypass Using an Alternate Path or Channel vulnerability in Themeum Tutor LMS Pro tutor-pro allows Authentication Abuse.This issue affects Tutor LMS Pro: from n/a through &lt;= 3.9.4.</p></details></td>
@@ -3196,8 +3540,8 @@ Plack::Middleware::Session::Cookie versions through 0.21 has a security vulnerab
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-25398" target="_blank" rel="noopener">CVE-2026-25398</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>6.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
         <td>CWE-862</td>
         <td>&nbsp;</td>
         <td><details><summary>Missing Authorization vulnerability in Webilia Inc. Vertex Addons for Elementor ...</summary><p>Missing Authorization vulnerability in Webilia Inc. Vertex Addons for Elementor addons-for-elementor-builder allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects Vertex Addons for Elementor: from n/a through &lt;= 1.6.4.</p></details></td>
@@ -3205,8 +3549,8 @@ Plack::Middleware::Session::Cookie versions through 0.21 has a security vulnerab
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-25397" target="_blank" rel="noopener">CVE-2026-25397</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
         <td>CWE-35</td>
         <td>&nbsp;</td>
         <td><details><summary>Path Traversal: &#x27;.../...//&#x27; vulnerability in Snowray Software File Uploader for ...</summary><p>Path Traversal: &#x27;.../...//&#x27; vulnerability in Snowray Software File Uploader for WooCommerce file-uploader-for-woocommerce allows Path Traversal.This issue affects File Uploader for WooCommerce: from n/a through &lt;= 1.0.4.</p></details></td>
@@ -3223,8 +3567,8 @@ Plack::Middleware::Session::Cookie versions through 0.21 has a security vulnerab
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-25390" target="_blank" rel="noopener">CVE-2026-25390</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>6.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
         <td>CWE-862</td>
         <td>&nbsp;</td>
         <td><details><summary>Missing Authorization vulnerability in Saad Iqbal New User Approve new-user-appr...</summary><p>Missing Authorization vulnerability in Saad Iqbal New User Approve new-user-approve allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects New User Approve: from n/a through &lt;= 3.2.3.</p></details></td>
@@ -3241,8 +3585,8 @@ Plack::Middleware::Session::Cookie versions through 0.21 has a security vulnerab
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-25382" target="_blank" rel="noopener">CVE-2026-25382</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>8.1</td>
+        <td><span class="severity high">HIGH</span></td>
         <td>CWE-98</td>
         <td>&nbsp;</td>
         <td><details><summary>Improper Control of Filename for Include/Require Statement in PHP Program (&#x27;PHP ...</summary><p>Improper Control of Filename for Include/Require Statement in PHP Program (&#x27;PHP Remote File Inclusion&#x27;) vulnerability in jwsthemes IdealAuto idealauto allows PHP Local File Inclusion.This issue affects IdealAuto: from n/a through &lt; 3.8.6.</p></details></td>
@@ -3250,8 +3594,8 @@ Plack::Middleware::Session::Cookie versions through 0.21 has a security vulnerab
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-25381" target="_blank" rel="noopener">CVE-2026-25381</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>8.1</td>
+        <td><span class="severity high">HIGH</span></td>
         <td>CWE-98</td>
         <td>&nbsp;</td>
         <td><details><summary>Improper Control of Filename for Include/Require Statement in PHP Program (&#x27;PHP ...</summary><p>Improper Control of Filename for Include/Require Statement in PHP Program (&#x27;PHP Remote File Inclusion&#x27;) vulnerability in jwsthemes LoveDate lovedate allows PHP Local File Inclusion.This issue affects LoveDate: from n/a through &lt; 3.8.6.</p></details></td>
@@ -3259,8 +3603,8 @@ Plack::Middleware::Session::Cookie versions through 0.21 has a security vulnerab
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-25380" target="_blank" rel="noopener">CVE-2026-25380</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>8.1</td>
+        <td><span class="severity high">HIGH</span></td>
         <td>CWE-98</td>
         <td>&nbsp;</td>
         <td><details><summary>Improper Control of Filename for Include/Require Statement in PHP Program (&#x27;PHP ...</summary><p>Improper Control of Filename for Include/Require Statement in PHP Program (&#x27;PHP Remote File Inclusion&#x27;) vulnerability in jwsthemes Feedy feedy allows PHP Local File Inclusion.This issue affects Feedy: from n/a through &lt; 2.1.5.</p></details></td>
@@ -3268,8 +3612,8 @@ Plack::Middleware::Session::Cookie versions through 0.21 has a security vulnerab
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-25379" target="_blank" rel="noopener">CVE-2026-25379</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>8.1</td>
+        <td><span class="severity high">HIGH</span></td>
         <td>CWE-98</td>
         <td>&nbsp;</td>
         <td><details><summary>Improper Control of Filename for Include/Require Statement in PHP Program (&#x27;PHP ...</summary><p>Improper Control of Filename for Include/Require Statement in PHP Program (&#x27;PHP Remote File Inclusion&#x27;) vulnerability in jwsthemes StreamVid streamvid allows PHP Local File Inclusion.This issue affects StreamVid: from n/a through &lt; 6.8.6.</p></details></td>
@@ -3277,8 +3621,8 @@ Plack::Middleware::Session::Cookie versions through 0.21 has a security vulnerab
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-25377" target="_blank" rel="noopener">CVE-2026-25377</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>9.3</td>
+        <td><span class="severity critical">CRITICAL</span></td>
         <td>CWE-89</td>
         <td>&nbsp;</td>
         <td><details><summary>Improper Neutralization of Special Elements used in an SQL Command (&#x27;SQL Injecti...</summary><p>Improper Neutralization of Special Elements used in an SQL Command (&#x27;SQL Injection&#x27;) vulnerability in eyecix Addon Jobsearch Chat addon-jobsearch-chat allows SQL Injection.This issue affects Addon Jobsearch Chat: from n/a through &lt;= 3.0.</p></details></td>
@@ -3322,8 +3666,8 @@ Plack::Middleware::Session::Cookie versions through 0.21 has a security vulnerab
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-25365" target="_blank" rel="noopener">CVE-2026-25365</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>6.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
         <td>CWE-862</td>
         <td>&nbsp;</td>
         <td><details><summary>Missing Authorization vulnerability in Özgür KARALAR Kargo Takip kargo-takip-tur...</summary><p>Missing Authorization vulnerability in Özgür KARALAR Kargo Takip kargo-takip-turkiye allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects Kargo Takip: from n/a through &lt; 0.2.4.</p></details></td>
@@ -3349,8 +3693,8 @@ Plack::Middleware::Session::Cookie versions through 0.21 has a security vulnerab
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-25359" target="_blank" rel="noopener">CVE-2026-25359</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>8.8</td>
+        <td><span class="severity high">HIGH</span></td>
         <td>CWE-502</td>
         <td>&nbsp;</td>
         <td><details><summary>Deserialization of Untrusted Data vulnerability in rascals Pendulum pendulum all...</summary><p>Deserialization of Untrusted Data vulnerability in rascals Pendulum pendulum allows Object Injection.This issue affects Pendulum: from n/a through &lt; 3.1.5.</p></details></td>
@@ -3367,8 +3711,8 @@ Plack::Middleware::Session::Cookie versions through 0.21 has a security vulnerab
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-25357" target="_blank" rel="noopener">CVE-2026-25357</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>8.1</td>
+        <td><span class="severity high">HIGH</span></td>
         <td>CWE-288</td>
         <td>&nbsp;</td>
         <td><details><summary>Authentication Bypass Using an Alternate Path or Channel vulnerability in azzaro...</summary><p>Authentication Bypass Using an Alternate Path or Channel vulnerability in azzaroco Ultimate Membership Pro indeed-membership-pro allows Authentication Abuse.This issue affects Ultimate Membership Pro: from n/a through &lt;= 13.7.</p></details></td>
@@ -3475,8 +3819,8 @@ Plack::Middleware::Session::Cookie versions through 0.21 has a security vulnerab
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-25344" target="_blank" rel="noopener">CVE-2026-25344</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>6.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
         <td>CWE-497</td>
         <td>&nbsp;</td>
         <td><details><summary>Exposure of Sensitive System Information to an Unauthorized Control Sphere vulne...</summary><p>Exposure of Sensitive System Information to an Unauthorized Control Sphere vulnerability in RadiusTheme Review Schema review-schema allows Retrieve Embedded Sensitive Data.This issue affects Review Schema: from n/a through &lt;= 2.2.6.</p></details></td>
@@ -3502,8 +3846,8 @@ Plack::Middleware::Session::Cookie versions through 0.21 has a security vulnerab
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-25340" target="_blank" rel="noopener">CVE-2026-25340</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>9.3</td>
+        <td><span class="severity critical">CRITICAL</span></td>
         <td>CWE-89</td>
         <td>&nbsp;</td>
         <td><details><summary>Improper Neutralization of Special Elements used in an SQL Command (&#x27;SQL Injecti...</summary><p>Improper Neutralization of Special Elements used in an SQL Command (&#x27;SQL Injection&#x27;) vulnerability in NooTheme Jobmonster noo-jobmonster allows Blind SQL Injection.This issue affects Jobmonster: from n/a through &lt; 4.8.4.</p></details></td>
@@ -3511,8 +3855,8 @@ Plack::Middleware::Session::Cookie versions through 0.21 has a security vulnerab
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-25339" target="_blank" rel="noopener">CVE-2026-25339</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>6.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
         <td>CWE-201</td>
         <td>&nbsp;</td>
         <td><details><summary>Insertion of Sensitive Information Into Sent Data vulnerability in Syed Balkhi C...</summary><p>Insertion of Sensitive Information Into Sent Data vulnerability in Syed Balkhi Contact Form by WPForms wpforms-lite allows Retrieve Embedded Sensitive Data.This issue affects Contact Form by WPForms: from n/a through &lt;= 1.9.8.7.</p></details></td>
@@ -3529,8 +3873,8 @@ Plack::Middleware::Session::Cookie versions through 0.21 has a security vulnerab
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-25328" target="_blank" rel="noopener">CVE-2026-25328</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>6.8</td>
+        <td><span class="severity medium">MEDIUM</span></td>
         <td>CWE-22</td>
         <td>&nbsp;</td>
         <td><details><summary>Improper Limitation of a Pathname to a Restricted Directory (&#x27;Path Traversal&#x27;) v...</summary><p>Improper Limitation of a Pathname to a Restricted Directory (&#x27;Path Traversal&#x27;) vulnerability in add-ons.org Product File Upload for WooCommerce products-file-upload-for-woocommerce allows Path Traversal.This issue affects Product File Upload for WooCommerce: from n/a through &lt;= 2.2.4.</p></details></td>
@@ -3538,8 +3882,8 @@ Plack::Middleware::Session::Cookie versions through 0.21 has a security vulnerab
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-25327" target="_blank" rel="noopener">CVE-2026-25327</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>6.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
         <td>CWE-862</td>
         <td>&nbsp;</td>
         <td><details><summary>Missing Authorization vulnerability in Rustaurius Five Star Restaurant Reservati...</summary><p>Missing Authorization vulnerability in Rustaurius Five Star Restaurant Reservations restaurant-reservations allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects Five Star Restaurant Reservations: from n/a through &lt;= 2.7.9.</p></details></td>
@@ -3583,8 +3927,8 @@ Plack::Middleware::Session::Cookie versions through 0.21 has a security vulnerab
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-25035" target="_blank" rel="noopener">CVE-2026-25035</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>9.8</td>
+        <td><span class="severity critical">CRITICAL</span></td>
         <td>CWE-288</td>
         <td>&nbsp;</td>
         <td><details><summary>Authentication Bypass Using an Alternate Path or Channel vulnerability in Wasili...</summary><p>Authentication Bypass Using an Alternate Path or Channel vulnerability in Wasiliy Strecker / ContestGallery developer Contest Gallery contest-gallery allows Authentication Abuse.This issue affects Contest Gallery: from n/a through &lt;= 28.1.2.2.</p></details></td>
@@ -3592,8 +3936,8 @@ Plack::Middleware::Session::Cookie versions through 0.21 has a security vulnerab
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-25034" target="_blank" rel="noopener">CVE-2026-25034</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>6.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
         <td>CWE-862</td>
         <td>&nbsp;</td>
         <td><details><summary>Missing Authorization vulnerability in Iqonic Design KiviCare kivicare-clinic-ma...</summary><p>Missing Authorization vulnerability in Iqonic Design KiviCare kivicare-clinic-management-system allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects KiviCare: from n/a through &lt;= 3.6.16.</p></details></td>
@@ -3619,8 +3963,8 @@ Plack::Middleware::Session::Cookie versions through 0.21 has a security vulnerab
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-25031" target="_blank" rel="noopener">CVE-2026-25031</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>9.8</td>
+        <td><span class="severity critical">CRITICAL</span></td>
         <td>CWE-502</td>
         <td>&nbsp;</td>
         <td><details><summary>Deserialization of Untrusted Data vulnerability in park_of_ideas Tasty Daily tas...</summary><p>Deserialization of Untrusted Data vulnerability in park_of_ideas Tasty Daily tastydaily allows Object Injection.This issue affects Tasty Daily: from n/a through &lt; 1.27.</p></details></td>
@@ -3637,8 +3981,8 @@ Plack::Middleware::Session::Cookie versions through 0.21 has a security vulnerab
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-25029" target="_blank" rel="noopener">CVE-2026-25029</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>9.8</td>
+        <td><span class="severity critical">CRITICAL</span></td>
         <td>CWE-502</td>
         <td>&nbsp;</td>
         <td><details><summary>Deserialization of Untrusted Data vulnerability in park_of_ideas KIDZ kidz allow...</summary><p>Deserialization of Untrusted Data vulnerability in park_of_ideas KIDZ kidz allows Object Injection.This issue affects KIDZ: from n/a through &lt;= 5.24.</p></details></td>
@@ -3673,8 +4017,8 @@ Plack::Middleware::Session::Cookie versions through 0.21 has a security vulnerab
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-25017" target="_blank" rel="noopener">CVE-2026-25017</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>8.1</td>
+        <td><span class="severity high">HIGH</span></td>
         <td>CWE-98</td>
         <td>&nbsp;</td>
         <td><details><summary>Improper Control of Filename for Include/Require Statement in PHP Program (&#x27;PHP ...</summary><p>Improper Control of Filename for Include/Require Statement in PHP Program (&#x27;PHP Remote File Inclusion&#x27;) vulnerability in stmcan NaturaLife Extensions naturalife-extensions allows PHP Local File Inclusion.This issue affects NaturaLife Extensions: from n/a through &lt;= 2.1.</p></details></td>
@@ -3691,8 +4035,8 @@ Plack::Middleware::Session::Cookie versions through 0.21 has a security vulnerab
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-25009" target="_blank" rel="noopener">CVE-2026-25009</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>6.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
         <td>CWE-862</td>
         <td>&nbsp;</td>
         <td><details><summary>Missing Authorization vulnerability in raratheme Education Zone education-zone a...</summary><p>Missing Authorization vulnerability in raratheme Education Zone education-zone allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects Education Zone: from n/a through &lt;= 1.3.8.</p></details></td>
@@ -3700,8 +4044,8 @@ Plack::Middleware::Session::Cookie versions through 0.21 has a security vulnerab
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-25007" target="_blank" rel="noopener">CVE-2026-25007</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>8.5</td>
+        <td><span class="severity high">HIGH</span></td>
         <td>CWE-89</td>
         <td>&nbsp;</td>
         <td><details><summary>Improper Neutralization of Special Elements used in an SQL Command (&#x27;SQL Injecti...</summary><p>Improper Neutralization of Special Elements used in an SQL Command (&#x27;SQL Injection&#x27;) vulnerability in Element Invader ElementInvader Addons for Elementor elementinvader-addons-for-elementor allows Blind SQL Injection.This issue affects ElementInvader Addons for Elementor: from n/a through &lt;= 1.4.2.</p></details></td>
@@ -3709,8 +4053,8 @@ Plack::Middleware::Session::Cookie versions through 0.21 has a security vulnerab
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-25002" target="_blank" rel="noopener">CVE-2026-25002</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
         <td>CWE-288</td>
         <td>&nbsp;</td>
         <td><details><summary>Authentication Bypass Using an Alternate Path or Channel vulnerability in ThimPr...</summary><p>Authentication Bypass Using an Alternate Path or Channel vulnerability in ThimPress LearnPress &amp;#8211; Sepay Payment learnpress-sepay-payment allows Authentication Abuse.This issue affects LearnPress &amp;#8211; Sepay Payment: from n/a through &lt;= 4.0.0.</p></details></td>
@@ -3727,8 +4071,8 @@ Plack::Middleware::Session::Cookie versions through 0.21 has a security vulnerab
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-24993" target="_blank" rel="noopener">CVE-2026-24993</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>9.3</td>
+        <td><span class="severity critical">CRITICAL</span></td>
         <td>CWE-89</td>
         <td>&nbsp;</td>
         <td><details><summary>Improper Neutralization of Special Elements used in an SQL Command (&#x27;SQL Injecti...</summary><p>Improper Neutralization of Special Elements used in an SQL Command (&#x27;SQL Injection&#x27;) vulnerability in WPFactory Advanced WooCommerce Product Sales Reporting webd-woocommerce-advanced-reporting-statistics allows Blind SQL Injection.This issue affects Advanced WooCommerce Product Sales Reporting: from n/a through &lt;= 4.1.3.</p></details></td>
@@ -3745,8 +4089,8 @@ Plack::Middleware::Session::Cookie versions through 0.21 has a security vulnerab
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-24987" target="_blank" rel="noopener">CVE-2026-24987</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>6.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
         <td>CWE-862</td>
         <td>&nbsp;</td>
         <td><details><summary>Missing Authorization vulnerability in activity-log.com WP System Log winterlock...</summary><p>Missing Authorization vulnerability in activity-log.com WP System Log winterlock allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects WP System Log: from n/a through &lt;= 1.2.7.</p></details></td>
@@ -3763,8 +4107,8 @@ Plack::Middleware::Session::Cookie versions through 0.21 has a security vulnerab
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-24981" target="_blank" rel="noopener">CVE-2026-24981</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>8.8</td>
+        <td><span class="severity high">HIGH</span></td>
         <td>CWE-502</td>
         <td>&nbsp;</td>
         <td><details><summary>Deserialization of Untrusted Data vulnerability in NooTheme Visionary Core noo-v...</summary><p>Deserialization of Untrusted Data vulnerability in NooTheme Visionary Core noo-visionary-core allows Object Injection.This issue affects Visionary Core: from n/a through &lt;= 1.4.9.</p></details></td>
@@ -3799,8 +4143,8 @@ Plack::Middleware::Session::Cookie versions through 0.21 has a security vulnerab
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-24977" target="_blank" rel="noopener">CVE-2026-24977</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>8.5</td>
+        <td><span class="severity high">HIGH</span></td>
         <td>CWE-89</td>
         <td>&nbsp;</td>
         <td><details><summary>Improper Neutralization of Special Elements used in an SQL Command (&#x27;SQL Injecti...</summary><p>Improper Neutralization of Special Elements used in an SQL Command (&#x27;SQL Injection&#x27;) vulnerability in NooTheme Organici Library noo-organici-library allows Blind SQL Injection.This issue affects Organici Library: from n/a through &lt;= 2.1.2.</p></details></td>
@@ -3844,8 +4188,8 @@ Plack::Middleware::Session::Cookie versions through 0.21 has a security vulnerab
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-24972" target="_blank" rel="noopener">CVE-2026-24972</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>6.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
         <td>CWE-862</td>
         <td>&nbsp;</td>
         <td><details><summary>Missing Authorization vulnerability in Elated-Themes Elated Listing eltd-listing...</summary><p>Missing Authorization vulnerability in Elated-Themes Elated Listing eltd-listing allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects Elated Listing: from n/a through &lt;= 1.4.</p></details></td>
@@ -3871,8 +4215,8 @@ Plack::Middleware::Session::Cookie versions through 0.21 has a security vulnerab
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-24969" target="_blank" rel="noopener">CVE-2026-24969</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>7.7</td>
+        <td><span class="severity high">HIGH</span></td>
         <td>CWE-22</td>
         <td>&nbsp;</td>
         <td><details><summary>Improper Limitation of a Pathname to a Restricted Directory (&#x27;Path Traversal&#x27;) v...</summary><p>Improper Limitation of a Pathname to a Restricted Directory (&#x27;Path Traversal&#x27;) vulnerability in designingmedia Instant VA instantva allows Path Traversal.This issue affects Instant VA: from n/a through &lt;= 1.0.1.</p></details></td>
@@ -3925,8 +4269,8 @@ Plack::Middleware::Session::Cookie versions through 0.21 has a security vulnerab
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-24376" target="_blank" rel="noopener">CVE-2026-24376</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>6.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
         <td>CWE-862</td>
         <td>&nbsp;</td>
         <td><details><summary>Missing Authorization vulnerability in Javier Casares WPVulnerability wpvulnerab...</summary><p>Missing Authorization vulnerability in Javier Casares WPVulnerability wpvulnerability allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects WPVulnerability: from n/a through &lt;= 4.2.1.</p></details></td>
@@ -3970,8 +4314,8 @@ Plack::Middleware::Session::Cookie versions through 0.21 has a security vulnerab
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-24364" target="_blank" rel="noopener">CVE-2026-24364</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>6.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
         <td>CWE-862</td>
         <td>&nbsp;</td>
         <td><details><summary>Missing Authorization vulnerability in weDevs WP User Frontend wp-user-frontend ...</summary><p>Missing Authorization vulnerability in weDevs WP User Frontend wp-user-frontend allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects WP User Frontend: from n/a through &lt;= 4.2.5.</p></details></td>
@@ -4033,8 +4377,8 @@ Plack::Middleware::Session::Cookie versions through 0.21 has a security vulnerab
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-23972" target="_blank" rel="noopener">CVE-2026-23972</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>6.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
         <td>CWE-862</td>
         <td>&nbsp;</td>
         <td><details><summary>Missing Authorization vulnerability in magepeopleteam Booking and Rental Manager...</summary><p>Missing Authorization vulnerability in magepeopleteam Booking and Rental Manager booking-and-rental-manager-for-woocommerce allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects Booking and Rental Manager: from n/a through &lt;= 2.6.0.</p></details></td>
@@ -4114,8 +4458,8 @@ Plack::Middleware::Session::Cookie versions through 0.21 has a security vulnerab
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-22516" target="_blank" rel="noopener">CVE-2026-22516</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>8.1</td>
+        <td><span class="severity high">HIGH</span></td>
         <td>CWE-98</td>
         <td>&nbsp;</td>
         <td><details><summary>Improper Control of Filename for Include/Require Statement in PHP Program (&#x27;PHP ...</summary><p>Improper Control of Filename for Include/Require Statement in PHP Program (&#x27;PHP Remote File Inclusion&#x27;) vulnerability in AncoraThemes Wizor&#x27;s wizors-investments allows PHP Local File Inclusion.This issue affects Wizor&#x27;s: from n/a through &lt;= 2.12.</p></details></td>
@@ -4123,8 +4467,8 @@ Plack::Middleware::Session::Cookie versions through 0.21 has a security vulnerab
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-22515" target="_blank" rel="noopener">CVE-2026-22515</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>8.1</td>
+        <td><span class="severity high">HIGH</span></td>
         <td>CWE-98</td>
         <td>&nbsp;</td>
         <td><details><summary>Improper Control of Filename for Include/Require Statement in PHP Program (&#x27;PHP ...</summary><p>Improper Control of Filename for Include/Require Statement in PHP Program (&#x27;PHP Remote File Inclusion&#x27;) vulnerability in AncoraThemes VegaDays vegadays allows PHP Local File Inclusion.This issue affects VegaDays: from n/a through &lt;= 1.2.0.</p></details></td>
@@ -4132,8 +4476,8 @@ Plack::Middleware::Session::Cookie versions through 0.21 has a security vulnerab
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-22514" target="_blank" rel="noopener">CVE-2026-22514</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>8.1</td>
+        <td><span class="severity high">HIGH</span></td>
         <td>CWE-98</td>
         <td>&nbsp;</td>
         <td><details><summary>Improper Control of Filename for Include/Require Statement in PHP Program (&#x27;PHP ...</summary><p>Improper Control of Filename for Include/Require Statement in PHP Program (&#x27;PHP Remote File Inclusion&#x27;) vulnerability in AncoraThemes Unica unica allows PHP Local File Inclusion.This issue affects Unica: from n/a through &lt;= 1.4.1.</p></details></td>
@@ -4141,8 +4485,8 @@ Plack::Middleware::Session::Cookie versions through 0.21 has a security vulnerab
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-22513" target="_blank" rel="noopener">CVE-2026-22513</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>8.1</td>
+        <td><span class="severity high">HIGH</span></td>
         <td>CWE-98</td>
         <td>&nbsp;</td>
         <td><details><summary>Improper Control of Filename for Include/Require Statement in PHP Program (&#x27;PHP ...</summary><p>Improper Control of Filename for Include/Require Statement in PHP Program (&#x27;PHP Remote File Inclusion&#x27;) vulnerability in AncoraThemes Triompher triompher allows PHP Local File Inclusion.This issue affects Triompher: from n/a through &lt;= 1.1.0.</p></details></td>
@@ -4150,8 +4494,8 @@ Plack::Middleware::Session::Cookie versions through 0.21 has a security vulnerab
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-22512" target="_blank" rel="noopener">CVE-2026-22512</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>8.1</td>
+        <td><span class="severity high">HIGH</span></td>
         <td>CWE-98</td>
         <td>&nbsp;</td>
         <td><details><summary>Improper Control of Filename for Include/Require Statement in PHP Program (&#x27;PHP ...</summary><p>Improper Control of Filename for Include/Require Statement in PHP Program (&#x27;PHP Remote File Inclusion&#x27;) vulnerability in Elated-Themes Roisin roisin allows PHP Local File Inclusion.This issue affects Roisin: from n/a through &lt;= 1.2.1.</p></details></td>
@@ -4159,8 +4503,8 @@ Plack::Middleware::Session::Cookie versions through 0.21 has a security vulnerab
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-22511" target="_blank" rel="noopener">CVE-2026-22511</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>8.1</td>
+        <td><span class="severity high">HIGH</span></td>
         <td>CWE-98</td>
         <td>&nbsp;</td>
         <td><details><summary>Improper Control of Filename for Include/Require Statement in PHP Program (&#x27;PHP ...</summary><p>Improper Control of Filename for Include/Require Statement in PHP Program (&#x27;PHP Remote File Inclusion&#x27;) vulnerability in Elated-Themes NeoBeat neobeat allows PHP Local File Inclusion.This issue affects NeoBeat: from n/a through &lt;= 1.2.</p></details></td>
@@ -4168,8 +4512,8 @@ Plack::Middleware::Session::Cookie versions through 0.21 has a security vulnerab
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-22510" target="_blank" rel="noopener">CVE-2026-22510</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>8.1</td>
+        <td><span class="severity high">HIGH</span></td>
         <td>CWE-502</td>
         <td>&nbsp;</td>
         <td><details><summary>Deserialization of Untrusted Data vulnerability in AncoraThemes Melody melodysch...</summary><p>Deserialization of Untrusted Data vulnerability in AncoraThemes Melody melodyschool allows Object Injection.This issue affects Melody: from n/a through &lt;= 1.6.3.</p></details></td>
@@ -4177,8 +4521,8 @@ Plack::Middleware::Session::Cookie versions through 0.21 has a security vulnerab
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-22509" target="_blank" rel="noopener">CVE-2026-22509</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>8.1</td>
+        <td><span class="severity high">HIGH</span></td>
         <td>CWE-98</td>
         <td>&nbsp;</td>
         <td><details><summary>Improper Control of Filename for Include/Require Statement in PHP Program (&#x27;PHP ...</summary><p>Improper Control of Filename for Include/Require Statement in PHP Program (&#x27;PHP Remote File Inclusion&#x27;) vulnerability in Elated-Themes Gioia gioia allows PHP Local File Inclusion.This issue affects Gioia: from n/a through &lt;= 1.4.</p></details></td>
@@ -4186,8 +4530,8 @@ Plack::Middleware::Session::Cookie versions through 0.21 has a security vulnerab
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-22508" target="_blank" rel="noopener">CVE-2026-22508</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>8.1</td>
+        <td><span class="severity high">HIGH</span></td>
         <td>CWE-98</td>
         <td>&nbsp;</td>
         <td><details><summary>Improper Control of Filename for Include/Require Statement in PHP Program (&#x27;PHP ...</summary><p>Improper Control of Filename for Include/Require Statement in PHP Program (&#x27;PHP Remote File Inclusion&#x27;) vulnerability in AncoraThemes Dentalux dentalux allows PHP Local File Inclusion.This issue affects Dentalux: from n/a through &lt;= 3.3.</p></details></td>
@@ -4195,8 +4539,8 @@ Plack::Middleware::Session::Cookie versions through 0.21 has a security vulnerab
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-22507" target="_blank" rel="noopener">CVE-2026-22507</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>9.8</td>
+        <td><span class="severity critical">CRITICAL</span></td>
         <td>CWE-502</td>
         <td>&nbsp;</td>
         <td><details><summary>Deserialization of Untrusted Data vulnerability in AncoraThemes Beelove beelove ...</summary><p>Deserialization of Untrusted Data vulnerability in AncoraThemes Beelove beelove allows Object Injection.This issue affects Beelove: from n/a through &lt;= 1.2.6.</p></details></td>
@@ -4204,8 +4548,8 @@ Plack::Middleware::Session::Cookie versions through 0.21 has a security vulnerab
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-22506" target="_blank" rel="noopener">CVE-2026-22506</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>8.1</td>
+        <td><span class="severity high">HIGH</span></td>
         <td>CWE-98</td>
         <td>&nbsp;</td>
         <td><details><summary>Improper Control of Filename for Include/Require Statement in PHP Program (&#x27;PHP ...</summary><p>Improper Control of Filename for Include/Require Statement in PHP Program (&#x27;PHP Remote File Inclusion&#x27;) vulnerability in Elated-Themes Amoli amoli allows PHP Local File Inclusion.This issue affects Amoli: from n/a through &lt;= 1.0.</p></details></td>
@@ -4213,8 +4557,8 @@ Plack::Middleware::Session::Cookie versions through 0.21 has a security vulnerab
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-22505" target="_blank" rel="noopener">CVE-2026-22505</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>8.1</td>
+        <td><span class="severity high">HIGH</span></td>
         <td>CWE-502</td>
         <td>&nbsp;</td>
         <td><details><summary>Deserialization of Untrusted Data vulnerability in AncoraThemes Morning Records ...</summary><p>Deserialization of Untrusted Data vulnerability in AncoraThemes Morning Records morning-records allows Object Injection.This issue affects Morning Records: from n/a through &lt;= 1.2.</p></details></td>
@@ -4222,8 +4566,8 @@ Plack::Middleware::Session::Cookie versions through 0.21 has a security vulnerab
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-22504" target="_blank" rel="noopener">CVE-2026-22504</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>8.1</td>
+        <td><span class="severity high">HIGH</span></td>
         <td>CWE-98</td>
         <td>&nbsp;</td>
         <td><details><summary>Improper Control of Filename for Include/Require Statement in PHP Program (&#x27;PHP ...</summary><p>Improper Control of Filename for Include/Require Statement in PHP Program (&#x27;PHP Remote File Inclusion&#x27;) vulnerability in ThemeREX ProLingua prolingua allows PHP Local File Inclusion.This issue affects ProLingua: from n/a through &lt;= 1.1.12.</p></details></td>
@@ -4231,8 +4575,8 @@ Plack::Middleware::Session::Cookie versions through 0.21 has a security vulnerab
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-22503" target="_blank" rel="noopener">CVE-2026-22503</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>8.1</td>
+        <td><span class="severity high">HIGH</span></td>
         <td>CWE-98</td>
         <td>&nbsp;</td>
         <td><details><summary>Improper Control of Filename for Include/Require Statement in PHP Program (&#x27;PHP ...</summary><p>Improper Control of Filename for Include/Require Statement in PHP Program (&#x27;PHP Remote File Inclusion&#x27;) vulnerability in ThemeREX Nelson nelson allows PHP Local File Inclusion.This issue affects Nelson: from n/a through &lt;= 1.2.0.</p></details></td>
@@ -4240,8 +4584,8 @@ Plack::Middleware::Session::Cookie versions through 0.21 has a security vulnerab
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-22502" target="_blank" rel="noopener">CVE-2026-22502</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>8.1</td>
+        <td><span class="severity high">HIGH</span></td>
         <td>CWE-98</td>
         <td>&nbsp;</td>
         <td><details><summary>Improper Control of Filename for Include/Require Statement in PHP Program (&#x27;PHP ...</summary><p>Improper Control of Filename for Include/Require Statement in PHP Program (&#x27;PHP Remote File Inclusion&#x27;) vulnerability in AncoraThemes Mr. Cobbler mr-cobbler allows PHP Local File Inclusion.This issue affects Mr. Cobbler: from n/a through &lt;= 1.1.9.</p></details></td>
@@ -4249,8 +4593,8 @@ Plack::Middleware::Session::Cookie versions through 0.21 has a security vulnerab
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-22500" target="_blank" rel="noopener">CVE-2026-22500</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>9.8</td>
+        <td><span class="severity critical">CRITICAL</span></td>
         <td>CWE-502</td>
         <td>&nbsp;</td>
         <td><details><summary>Deserialization of Untrusted Data vulnerability in axiomthemes m2 | Construction...</summary><p>Deserialization of Untrusted Data vulnerability in axiomthemes m2 | Construction and Tools Store m2-ce allows Object Injection.This issue affects m2 | Construction and Tools Store: from n/a through &lt;= 1.1.2.</p></details></td>
@@ -4258,8 +4602,8 @@ Plack::Middleware::Session::Cookie versions through 0.21 has a security vulnerab
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-22499" target="_blank" rel="noopener">CVE-2026-22499</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>8.1</td>
+        <td><span class="severity high">HIGH</span></td>
         <td>CWE-98</td>
         <td>&nbsp;</td>
         <td><details><summary>Improper Control of Filename for Include/Require Statement in PHP Program (&#x27;PHP ...</summary><p>Improper Control of Filename for Include/Require Statement in PHP Program (&#x27;PHP Remote File Inclusion&#x27;) vulnerability in Elated-Themes Lella lella allows PHP Local File Inclusion.This issue affects Lella: from n/a through &lt;= 1.2.</p></details></td>
@@ -4267,8 +4611,8 @@ Plack::Middleware::Session::Cookie versions through 0.21 has a security vulnerab
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-22498" target="_blank" rel="noopener">CVE-2026-22498</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>8.1</td>
+        <td><span class="severity high">HIGH</span></td>
         <td>CWE-98</td>
         <td>&nbsp;</td>
         <td><details><summary>Improper Control of Filename for Include/Require Statement in PHP Program (&#x27;PHP ...</summary><p>Improper Control of Filename for Include/Require Statement in PHP Program (&#x27;PHP Remote File Inclusion&#x27;) vulnerability in Elated-Themes Laurent laurent allows PHP Local File Inclusion.This issue affects Laurent: from n/a through &lt;= 3.1.</p></details></td>
@@ -4276,8 +4620,8 @@ Plack::Middleware::Session::Cookie versions through 0.21 has a security vulnerab
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-22496" target="_blank" rel="noopener">CVE-2026-22496</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>8.1</td>
+        <td><span class="severity high">HIGH</span></td>
         <td>CWE-98</td>
         <td>&nbsp;</td>
         <td><details><summary>Improper Control of Filename for Include/Require Statement in PHP Program (&#x27;PHP ...</summary><p>Improper Control of Filename for Include/Require Statement in PHP Program (&#x27;PHP Remote File Inclusion&#x27;) vulnerability in AncoraThemes Hypnotherapy hypnotherapy allows PHP Local File Inclusion.This issue affects Hypnotherapy: from n/a through &lt;= 1.2.10.</p></details></td>
@@ -4285,8 +4629,8 @@ Plack::Middleware::Session::Cookie versions through 0.21 has a security vulnerab
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-22495" target="_blank" rel="noopener">CVE-2026-22495</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>8.1</td>
+        <td><span class="severity high">HIGH</span></td>
         <td>CWE-98</td>
         <td>&nbsp;</td>
         <td><details><summary>Improper Control of Filename for Include/Require Statement in PHP Program (&#x27;PHP ...</summary><p>Improper Control of Filename for Include/Require Statement in PHP Program (&#x27;PHP Remote File Inclusion&#x27;) vulnerability in AncoraThemes Greenville greenville allows PHP Local File Inclusion.This issue affects Greenville: from n/a through &lt;= 1.3.2.</p></details></td>
@@ -4294,8 +4638,8 @@ Plack::Middleware::Session::Cookie versions through 0.21 has a security vulnerab
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-22494" target="_blank" rel="noopener">CVE-2026-22494</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>8.1</td>
+        <td><span class="severity high">HIGH</span></td>
         <td>CWE-98</td>
         <td>&nbsp;</td>
         <td><details><summary>Improper Control of Filename for Include/Require Statement in PHP Program (&#x27;PHP ...</summary><p>Improper Control of Filename for Include/Require Statement in PHP Program (&#x27;PHP Remote File Inclusion&#x27;) vulnerability in ThemeREX Good Homes good-homes allows PHP Local File Inclusion.This issue affects Good Homes: from n/a through &lt;= 1.3.13.</p></details></td>
@@ -4303,8 +4647,8 @@ Plack::Middleware::Session::Cookie versions through 0.21 has a security vulnerab
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-22493" target="_blank" rel="noopener">CVE-2026-22493</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>8.1</td>
+        <td><span class="severity high">HIGH</span></td>
         <td>CWE-98</td>
         <td>&nbsp;</td>
         <td><details><summary>Improper Control of Filename for Include/Require Statement in PHP Program (&#x27;PHP ...</summary><p>Improper Control of Filename for Include/Require Statement in PHP Program (&#x27;PHP Remote File Inclusion&#x27;) vulnerability in Elated-Themes Gaspard gaspard allows PHP Local File Inclusion.This issue affects Gaspard: from n/a through &lt;= 1.3.</p></details></td>
@@ -4321,8 +4665,8 @@ Plack::Middleware::Session::Cookie versions through 0.21 has a security vulnerab
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-22485" target="_blank" rel="noopener">CVE-2026-22485</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>6.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
         <td>CWE-862</td>
         <td>&nbsp;</td>
         <td><details><summary>Missing Authorization vulnerability in Ruhul Amin My Album Gallery my-album-gall...</summary><p>Missing Authorization vulnerability in Ruhul Amin My Album Gallery my-album-gallery allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects My Album Gallery: from n/a through &lt;= 1.0.4.</p></details></td>
@@ -4330,8 +4674,8 @@ Plack::Middleware::Session::Cookie versions through 0.21 has a security vulnerab
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-22484" target="_blank" rel="noopener">CVE-2026-22484</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>9.3</td>
+        <td><span class="severity critical">CRITICAL</span></td>
         <td>CWE-89</td>
         <td>&nbsp;</td>
         <td><details><summary>Improper Neutralization of Special Elements used in an SQL Command (&#x27;SQL Injecti...</summary><p>Improper Neutralization of Special Elements used in an SQL Command (&#x27;SQL Injection&#x27;) vulnerability in pebas Lisfinity Core lisfinity-core allows SQL Injection.This issue affects Lisfinity Core: from n/a through &lt;= 1.5.0.</p></details></td>
@@ -4339,8 +4683,8 @@ Plack::Middleware::Session::Cookie versions through 0.21 has a security vulnerab
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-22480" target="_blank" rel="noopener">CVE-2026-22480</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>7.2</td>
+        <td><span class="severity high">HIGH</span></td>
         <td>CWE-502</td>
         <td>&nbsp;</td>
         <td><details><summary>Deserialization of Untrusted Data vulnerability in WebToffee Product Feed for Wo...</summary><p>Deserialization of Untrusted Data vulnerability in WebToffee Product Feed for WooCommerce webtoffee-product-feed allows Object Injection.This issue affects Product Feed for WooCommerce: from n/a through &lt;= 2.3.3.</p></details></td>
@@ -4572,139 +4916,6 @@ Plack::Middleware::Session::Cookie versions through 0.21 has a security vulnerab
         <td>2026-03-25</td>
       </tr>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-20125" target="_blank" rel="noopener">CVE-2026-20125</a></td>
-        <td>7.7</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-228</td>
-        <td>&nbsp;</td>
-        <td><details><summary>A vulnerability in the HTTP Server feature of Cisco IOS Software and Cisco IOS X...</summary><p>A vulnerability in the HTTP Server feature of Cisco IOS Software and Cisco IOS XE Software Release 3E could allow an authenticated, remote attacker to cause an affected device to reload unexpectedly, resulting in a denial of service (DoS) condition.
- This vulnerability is due to improper validation of user-supplied input. An attacker could exploit this vulnerability by sending malformed HTTP requests to an affected device. A successful exploit could allow the attacker to cause a watchdog timer to expire and the device to reload, resulting in a DoS condition. To exploit this vulnerability, the attacker must have a valid user account.</p></details></td>
-        <td>2026-03-25</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-20115" target="_blank" rel="noopener">CVE-2026-20115</a></td>
-        <td>6.1</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-319</td>
-        <td>&nbsp;</td>
-        <td><details><summary>A vulnerability in Cisco IOS XE Software for Cisco Meraki could allow a remote, ...</summary><p>A vulnerability in Cisco IOS XE Software for Cisco Meraki could allow a remote, unauthenticated attacker to view confidential device information.
- This vulnerability is due to a device configuration upload being performed over an insecure tunnel. An attacker could exploit this vulnerability by conducting an on-path attack between the affected device and the Cisco Meraki Dashboard. A successful exploit could allow the attacker to view sensitive device configuration information.</p></details></td>
-        <td>2026-03-25</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-20114" target="_blank" rel="noopener">CVE-2026-20114</a></td>
-        <td>5.4</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-1286</td>
-        <td>&nbsp;</td>
-        <td><details><summary>A vulnerability in the Lobby Ambassador web-based management API of Cisco IOS XE...</summary><p>A vulnerability in the Lobby Ambassador web-based management API of Cisco IOS XE Software could allow an authenticated, remote attacker to elevate their privileges and access management APIs that would not normally be available for Lobby Ambassador users. 
- This vulnerability exists because parameters that are received by an API endpoint are not sufficiently validated. An attacker could exploit this vulnerability by authenticating as a Lobby Ambassador user and sending a crafted HTTP request to an affected device. A successful exploit could allow the attacker to create a new user with privilege level 1 access to the web-based management API. The attacker would then be able to access the device with these new credentials and privileges.</p></details></td>
-        <td>2026-03-25</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-20113" target="_blank" rel="noopener">CVE-2026-20113</a></td>
-        <td>5.3</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-93</td>
-        <td>&nbsp;</td>
-        <td><details><summary>A vulnerability in the web-based Cisco IOx application hosting environment manag...</summary><p>A vulnerability in the web-based Cisco IOx application hosting environment management interface of Cisco IOS XE Software could allow an unauthenticated, remote attacker to perform a carriage return line feed (CRLF) injection attack against a user.
- This vulnerability is due to insufficient validation of user input. An attacker could exploit this vulnerability by sending crafted packets to an affected device. A successful exploit could allow the attacker to arbitrarily inject log entries, manipulate the structure of log files, or obscure legitimate log events.</p></details></td>
-        <td>2026-03-25</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-20112" target="_blank" rel="noopener">CVE-2026-20112</a></td>
-        <td>4.8</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-79</td>
-        <td>&nbsp;</td>
-        <td><details><summary>A vulnerability in the web-based Cisco IOx application hosting environment manag...</summary><p>A vulnerability in the web-based Cisco IOx application hosting environment management interface of Cisco IOS XE Software could allow an authenticated, remote attacker to conduct a stored cross-site scripting (XSS) attack against a user of the web-based management interface of an affected device.
- This vulnerability is due to insufficient validation of user-supplied input. An attacker could exploit this vulnerability by injecting malicious code into specific pages of the interface. A successful exploit could allow the attacker to execute arbitrary script code in the context of the affected interface or access sensitive, browser-based information. To exploit this vulnerability, the attacker must have valid administrative credentials.</p></details></td>
-        <td>2026-03-25</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-20110" target="_blank" rel="noopener">CVE-2026-20110</a></td>
-        <td>6.5</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-266</td>
-        <td>&nbsp;</td>
-        <td><details><summary>A vulnerability in the CLI of Cisco IOS XE Software could allow an authenticated...</summary><p>A vulnerability in the CLI of Cisco IOS XE Software could allow an authenticated, local attacker to cause a denial of service (DoS) condition on an affected device.
- This vulnerability exists because incorrect privileges are associated with the start maintenance command. An attacker could exploit this vulnerability by accessing the management CLI of the affected device as a low-privileged user and using the start maintenance command. A successful exploit could allow the attacker to put the device in maintenance mode, which shuts down interfaces, resulting in a denial of service (DoS) condition. In case of exploitation, a device administrator can connect to the CLI and use the stop maintenance command to restore operations.</p></details></td>
-        <td>2026-03-25</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-20108" target="_blank" rel="noopener">CVE-2026-20108</a></td>
-        <td>5.4</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-79</td>
-        <td>&nbsp;</td>
-        <td><details><summary>A vulnerability in the web-based management interface of Cisco Catalyst SD-WAN M...</summary><p>A vulnerability in the web-based management interface of Cisco Catalyst SD-WAN Manager could allow an authenticated, remote attacker to conduct a cross-site scripting (XSS) attack against a user of the interface of an affected device.
- This vulnerability is due to insufficient validation of user input. An attacker could exploit this vulnerability by persuading a user of the web-based management interface to click a crafted link. A successful exploit could allow the attacker to execute arbitrary script code in the context of the affected interface or access sensitive, browser-based information.</p></details></td>
-        <td>2026-03-25</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-20104" target="_blank" rel="noopener">CVE-2026-20104</a></td>
-        <td>6.1</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-124</td>
-        <td>&nbsp;</td>
-        <td><details><summary>A vulnerability in the bootloader of Cisco IOS XE Software for Cisco Catalyst 92...</summary><p>A vulnerability in the bootloader of Cisco IOS XE Software for Cisco Catalyst 9200 Series Switches, Cisco Catalyst ESS9300 Embedded Series Switches, Cisco Catalyst IE9310 and IE9320 Rugged Series Switches, and Cisco IE3500 and IE3505 Rugged Series Switches could allow an authenticated, local attacker with level-15 privileges or an unauthenticated attacker with physical access to an affected device to execute arbitrary code at boot time and break the chain of trust.
- This vulnerability is due to insufficient validation of software at boot time. An attacker could exploit this vulnerability by manipulating the loaded binaries on an affected device to bypass some of the integrity checks that are performed during the boot process. A successful exploit could allow the attacker to execute code that bypasses the requirement to run Cisco-signed images.
- Cisco has assigned this security advisory a Security Impact Rating (SIR) of High rather than Medium as the score indicates because this vulnerability allows an attacker to bypass a major security feature of a device.</p></details></td>
-        <td>2026-03-25</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-20086" target="_blank" rel="noopener">CVE-2026-20086</a></td>
-        <td>8.6</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-230</td>
-        <td>&nbsp;</td>
-        <td><details><summary>A vulnerability in the processing of Control and Provisioning of Wireless Access...</summary><p>A vulnerability in the processing of Control and Provisioning of Wireless Access Points (CAPWAP) packets of Cisco IOS XE Wireless Controller Software for the Catalyst CW9800 Family could allow an unauthenticated, remote attacker to cause a denial of service (DoS) condition on an affected device.
- This vulnerability is due to improper handling of a malformed CAPWAP packet. An attacker could exploit this vulnerability by sending a malformed CAPWAP packet to an affected device. A successful exploit could allow the attacker to cause the affected device to reload unexpectedly, resulting in a DoS condition.</p></details></td>
-        <td>2026-03-25</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-20084" target="_blank" rel="noopener">CVE-2026-20084</a></td>
-        <td>8.6</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-400</td>
-        <td>&nbsp;</td>
-        <td><details><summary>A vulnerability in the DHCP snooping feature of Cisco IOS XE Software could allo...</summary><p>A vulnerability in the DHCP snooping feature of Cisco IOS XE Software could allow an unauthenticated, remote attacker to cause BOOTP packets to be forwarded between VLANs, resulting in a denial of service (DoS) condition. 
- This vulnerability is due to improper handling of BOOTP packets on Cisco Catalyst 9000 Series Switches. An attacker could exploit this vulnerability by sending BOOTP request packets to an affected device. A successful exploit could allow an attacker to forward BOOTP packets from one VLAN to another, resulting in BOOTP VLAN leakage and potentially leading to high CPU utilization. This makes the device unreachable (either through console or remote management) and unable to forward traffic, resulting in a DoS condition. 
- Note: This vulnerability can be exploited with either unicast or broadcast BOOTP packets.
-   There are workarounds that address this vulnerability.</p></details></td>
-        <td>2026-03-25</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-20083" target="_blank" rel="noopener">CVE-2026-20083</a></td>
-        <td>6.5</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-235</td>
-        <td>&nbsp;</td>
-        <td><details><summary>A vulnerability in the Secure Copy Protocol (SCP) server feature of Cisco IOS XE...</summary><p>A vulnerability in the Secure Copy Protocol (SCP) server feature of Cisco IOS XE Software could allow an authenticated, local attacker with low privileges to cause a denial of service (DoS) condition on an affected device.
- This vulnerability is due to improper handling of a malformed SCP request. An attacker could exploit this vulnerability by issuing a crafted command through SSH. A successful exploit could allow the attacker to cause the device to reload unexpectedly, resulting in a DoS condition.</p></details></td>
-        <td>2026-03-25</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-20012" target="_blank" rel="noopener">CVE-2026-20012</a></td>
-        <td>8.6</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-401</td>
-        <td>&nbsp;</td>
-        <td><details><summary>A vulnerability in the Internet Key Exchange version 2 (IKEv2) feature of Cisco ...</summary><p>A vulnerability in the Internet Key Exchange version 2 (IKEv2) feature of Cisco IOS Software, Cisco IOS XE Software, Cisco Secure Firewall Adaptive Security Appliance (ASA) Software, and Cisco Secure Firewall Threat Defense (FTD) Software could allow an unauthenticated, remote attacker to trigger a memory leak, resulting in a denial of service (DoS) condition on an affected device.
- This vulnerability is due to improper parsing of IKEv2 packets. An attacker could exploit this vulnerability by sending crafted IKEv2 packets to an affected device. A successful exploit of Cisco IOS Software and IOS XE Software could allow the attacker to cause the affected device to reload, resulting in a DoS condition. A successful exploit of Cisco Secure Firewall ASA Software and Secure FTD Software could allow the attacker to partially exhaust system memory, resulting in system instability, such as the inability to establish new IKEv2 VPN sessions. A manual reboot of the device is required to recover from this condition.</p></details></td>
-        <td>2026-03-25</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-20004" target="_blank" rel="noopener">CVE-2026-20004</a></td>
-        <td>7.4</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-771</td>
-        <td>&nbsp;</td>
-        <td><details><summary>A vulnerability in the TLS library of Cisco IOS XE Software could allow an unaut...</summary><p>A vulnerability in the TLS library of Cisco IOS XE Software could allow an unauthenticated, adjacent attacker to exhaust the available memory of an affected device.
- This vulnerability is due to improper management of memory resources during TLS connection setup. An attacker could exploit this vulnerability by repeatedly triggering the conditions that cause the memory increase. This could be done in a variety of ways, such as by repeatedly attempting Extensible Authentication Protocol (EAP) authentication when local EAP is enabled on an affected device or by using a machine-in-the-middle attack and resetting TLS connections between the affected device and other devices. A successful exploit could allow the attacker to exhaust the available memory on an affected device, resulting in an unexpected reload and a denial of service (DoS) condition.</p></details></td>
-        <td>2026-03-25</td>
-      </tr>
-      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-1917" target="_blank" rel="noopener">CVE-2026-1917</a></td>
         <td>4.3</td>
         <td><span class="severity medium">MEDIUM</span></td>
@@ -4846,6 +5057,49 @@ Plack::Middleware::Session::Cookie versions through 0.21 has a security vulnerab
         <td>CWE-330</td>
         <td>&nbsp;</td>
         <td><details><summary>An issue in Eufy Homebase 2 version 3.3.4.1h allows a local attacker to obtain s...</summary><p>An issue in Eufy Homebase 2 version 3.3.4.1h allows a local attacker to obtain sensitive information via the cryptographic scheme.</p></details></td>
+        <td>2026-03-25</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-31788" target="_blank" rel="noopener">CVE-2026-31788</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td><details><summary>In the Linux kernel, the following vulnerability has been resolved:
+
+xen/privcmd...</summary><p>In the Linux kernel, the following vulnerability has been resolved:
+
+xen/privcmd: restrict usage in unprivileged domU
+
+The Xen privcmd driver allows to issue arbitrary hypercalls from
+user space processes. This is normally no problem, as access is
+usually limited to root and the hypervisor will deny any hypercalls
+affecting other domains.
+
+In case the guest is booted using secure boot, however, the privcmd
+driver would be enabling a root user process to modify e.g. kernel
+memory contents, thus breaking the secure boot feature.
+
+The only known case where an unprivileged domU is really needing to
+use the privcmd driver is the case when it is acting as the device
+model for another guest. In this case all hypercalls issued via the
+privcmd driver will target that other guest.
+
+Fortunately the privcmd driver can already be locked down to allow
+only hypercalls targeting a specific domain, but this mode can be
+activated from user land only today.
+
+The target domain can be obtained from Xenstore, so when not running
+in dom0 restrict the privcmd driver to that target domain from the
+beginning, resolving the potential problem of breaking secure boot.
+
+This is XSA-482
+
+---
+V2:
+- defer reading from Xenstore if Xenstore isn&#x27;t ready yet (Jan Beulich)
+- wait in open() if target domain isn&#x27;t known yet
+- issue message in case no target domain found (Jan Beulich)</p></details></td>
         <td>2026-03-25</td>
       </tr>
       <tr>
@@ -5014,7 +5268,7 @@ Plack::Middleware::Session::Cookie versions through 0.21 has a security vulnerab
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-28882" target="_blank" rel="noopener">CVE-2026-28882</a></td>
         <td>4.0</td>
         <td><span class="severity medium">MEDIUM</span></td>
-        <td>N/A</td>
+        <td>NVD-CWE-noinfo</td>
         <td>&nbsp;</td>
         <td><details><summary>This issue was addressed with improved checks. This issue is fixed in iOS 26.4 a...</summary><p>This issue was addressed with improved checks. This issue is fixed in iOS 26.4 and iPadOS 26.4, macOS Tahoe 26.4, tvOS 26.4, visionOS 26.4, watchOS 26.4. An app may be able to enumerate a user&#x27;s installed apps.</p></details></td>
         <td>2026-03-25</td>
@@ -5500,7 +5754,7 @@ Plack::Middleware::Session::Cookie versions through 0.21 has a security vulnerab
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-20695" target="_blank" rel="noopener">CVE-2026-20695</a></td>
         <td>6.2</td>
         <td><span class="severity medium">MEDIUM</span></td>
-        <td>N/A</td>
+        <td>NVD-CWE-noinfo</td>
         <td>&nbsp;</td>
         <td><details><summary>An information disclosure issue was addressed with improved memory management. T...</summary><p>An information disclosure issue was addressed with improved memory management. This issue is fixed in macOS Sequoia 15.7.5, macOS Sonoma 14.8.5, macOS Tahoe 26.4. An app may be able to determine kernel memory layout.</p></details></td>
         <td>2026-03-25</td>
@@ -7309,7 +7563,7 @@ Plack::Middleware::Session::Cookie versions through 0.21 has a security vulnerab
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2019-25630" target="_blank" rel="noopener">CVE-2019-25630</a></td>
         <td>8.7</td>
         <td><span class="severity high">HIGH</span></td>
-        <td>CWE-79</td>
+        <td>CWE-434</td>
         <td>&nbsp;</td>
         <td><details><summary>PhreeBooks ERP 5.2.3 contains an arbitrary file upload vulnerability in the Imag...</summary><p>PhreeBooks ERP 5.2.3 contains an arbitrary file upload vulnerability in the Image Manager component that allows authenticated attackers to upload malicious files by submitting requests to the image upload endpoint. Attackers can upload PHP files through the imgFile parameter to the bizuno/image/manager endpoint and execute them via the bizunoFS.php script for remote code execution.</p></details></td>
         <td>2026-03-24</td>
@@ -8102,7 +8356,7 @@ Plack::Middleware::Session::Cookie versions through 0.21 has a security vulnerab
         <td>9.4</td>
         <td><span class="severity critical">CRITICAL</span></td>
         <td>CWE-506</td>
-        <td>&nbsp;</td>
+        <td><span class="kev-yes">&#10003;</span></td>
         <td><details><summary>Trivy is a security scanner. On March 19, 2026, a threat actor used compromised ...</summary><p>Trivy is a security scanner. On March 19, 2026, a threat actor used compromised credentials to publish a malicious Trivy v0.69.4 release, force-push 76 of 77 version tags in `aquasecurity/trivy-action` to credential-stealing malware, and replace all 7 tags in `aquasecurity/setup-trivy` with malicious commits. This incident is a continuation of the supply chain attack that began in late February 2026. Following the initial disclosure on March 1, credential rotation was performed but was not atomic (not all credentials were revoked simultaneously). The attacker could have use a valid token to exfiltrate newly rotated secrets during the rotation window (which lasted a few days). This could have allowed the attacker to retain access and execute the March 19 attack. Affected components include the `aquasecurity/trivy` Go / Container image version 0.69.4, the `aquasecurity/trivy-action` GitHub Action versions 0.0.1 – 0.34.2 (76/77), and the`aquasecurity/setup-trivy` GitHub Action versions 0.2.0 – 0.2.6, prior to the recreation of 0.2.6 with a safe commit. Known safe versions include versions 0.69.2 and 0.69.3 of the Trivy binary, version 0.35.0 of trivy-action, and version 0.2.6 of setup-trivy. Additionally, take other mitigations to ensure the safety of secrets. If there is any possibility that a compromised version ran in one&#x27;s environment, all secrets accessible to affected pipelines must be treated as exposed and rotated immediately. Check whether one&#x27;s organization pulled or executed Trivy v0.69.4 from any source. Remove any affected artifacts immediately. Review all workflows using `aquasecurity/trivy-action` or `aquasecurity/setup-trivy`. Those who referenced a version tag rather than a full commit SHA should check workflow run logs from March 19–20, 2026 for signs of compromise. Look for repositories named `tpcp-docs` in one&#x27;s GitHub organization. The presence of such a repository may indicate that the fallback exfiltration mechanism was triggered and secrets were successfully stolen. Pin GitHub Actions to full, immutable commit SHA hashes, don&#x27;t use mutable version tags.</p></details></td>
         <td>2026-03-23</td>
       </tr>
@@ -10495,7 +10749,7 @@ Plack::Middleware::Session::Cookie versions through 0.21 has a security vulnerab
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2019-25578" target="_blank" rel="noopener">CVE-2019-25578</a></td>
         <td>8.8</td>
         <td><span class="severity high">HIGH</span></td>
-        <td>CWE-22</td>
+        <td>CWE-89</td>
         <td>&nbsp;</td>
         <td><details><summary>phpTransformer 2016.9 contains an SQL injection vulnerability that allows remote...</summary><p>phpTransformer 2016.9 contains an SQL injection vulnerability that allows remote attackers to execute arbitrary SQL queries by injecting malicious code through the idnews parameter. Attackers can send crafted GET requests to GeneratePDF.php with SQL payloads in the idnews parameter to extract sensitive database information or manipulate queries.</p></details></td>
         <td>2026-03-21</td>
@@ -14932,7 +15186,7 @@ Plack::Middleware::Session::Cookie versions through 0.21 has a security vulnerab
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32027" target="_blank" rel="noopener">CVE-2026-32027</a></td>
         <td>7.1</td>
         <td><span class="severity high">HIGH</span></td>
-        <td>CWE-22</td>
+        <td>CWE-863</td>
         <td>&nbsp;</td>
         <td><details><summary>OpenClaw versions prior to 2026.2.26 contain an authorization bypass vulnerabili...</summary><p>OpenClaw versions prior to 2026.2.26 contain an authorization bypass vulnerability where DM pairing-store identities are incorrectly eligible for group allowlist authorization checks. Attackers can exploit this cross-context authorization flaw by using a sender approved via DM pairing to satisfy group sender allowlist checks without explicit presence in groupAllowFrom, bypassing group message access controls.</p></details></td>
         <td>2026-03-19</td>
@@ -23237,11 +23491,11 @@ Plack::Middleware::Session::Cookie versions through 0.21 has a security vulnerab
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-22209" target="_blank" rel="noopener">CVE-2026-22209</a></td>
-        <td>8.7</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-78</td>
+        <td>5.1</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
         <td>&nbsp;</td>
-        <td><details><summary>thingino-firmware up to commit e3f6a41 (published on 2026-03-15) contains an una...</summary><p>thingino-firmware up to commit e3f6a41 (published on 2026-03-15) contains an unauthenticated os command injection vulnerability in the WiFi captive portal CGI script that allows remote attackers to execute arbitrary commands as root by injecting malicious code through unsanitized HTTP parameter names. Attackers can exploit the eval function in parse_query() and parse_post() functions to achieve remote code execution and perform privileged configuration changes including root password reset and SSH authorized_keys modification, resulting in full persistent device compromise.</p></details></td>
+        <td><details><summary>wpDiscuz before 7.6.47 contains a cross-site scripting vulnerability in the cust...</summary><p>wpDiscuz before 7.6.47 contains a cross-site scripting vulnerability in the customCss field that allows administrators to inject malicious scripts by breaking out of style tags. Attackers with admin access can inject payloads like &lt;/style&gt;&lt;script&gt;alert(1)&lt;/script&gt; in the custom CSS setting to execute arbitrary JavaScript in user browsers.</p></details></td>
         <td>2026-03-13</td>
       </tr>
       <tr>
