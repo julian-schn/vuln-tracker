@@ -11,7 +11,7 @@
     <header>
       <h1>vuln-tracker</h1>
       <p class="subtitle">CVEs from the National Vulnerability Database — current and previous month</p>
-      <p class="last-updated">Last updated: 2026-03-26 19:28 UTC</p>
+      <p class="last-updated">Last updated: 2026-03-26 20:41 UTC</p>
     </header>
     <nav>
       <a href="top50.html">&#9733; Top 50</a>
@@ -25,7 +25,7 @@
     </nav>
     <main>
     <section>
-      <h2>Current Month — March 2026 <span class="count">(4939)</span></h2>
+      <h2>Current Month — March 2026 <span class="count">(4954)</span></h2>
       <div class="table-wrapper">
         <table>
           <thead>
@@ -41,56 +41,156 @@
           </thead>
           <tbody>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4926" target="_blank" rel="noopener">CVE-2026-4926</a></td>
-        <td>7.5</td>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33632" target="_blank" rel="noopener">CVE-2026-33632</a></td>
+        <td>8.4</td>
         <td><span class="severity high">HIGH</span></td>
-        <td>CWE-400</td>
+        <td>CWE-862</td>
         <td>&nbsp;</td>
-        <td><details><summary>Impact:
-
-A bad regular expression is generated any time you have multiple sequen...</summary><p>Impact:
-
-A bad regular expression is generated any time you have multiple sequential optional groups (curly brace syntax), such as `{a}{b}{c}:z`. The generated regex grows exponentially with the number of groups, causing denial of service.
-
-Patches:
-
-Fixed in version 8.4.0.
-
-Workarounds:
-
-Limit the number of sequential optional groups in route patterns. Avoid passing user-controlled input as route patterns.</p></details></td>
+        <td><details><summary>ClearanceKit intercepts file-system access events on macOS and enforces per-proc...</summary><p>ClearanceKit intercepts file-system access events on macOS and enforces per-process access policies. Prior to version 4.2.4, two file operation event types — ES_EVENT_TYPE_AUTH_EXCHANGEDATA and ES_EVENT_TYPE_AUTH_CLONE — were not intercepted by ClearanceKit&#x27;s opfilter system extension, allowing local processes to bypass file access policies. Commit 6181c4a patches the vulnerability by subscribing to both event types and routing them through the existing policy evaluator. Users must upgrade to v4.2.4 or later and reactivate the system extension.</p></details></td>
         <td>2026-03-26</td>
       </tr>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4923" target="_blank" rel="noopener">CVE-2026-4923</a></td>
-        <td>5.9</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-1333</td>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33631" target="_blank" rel="noopener">CVE-2026-33631</a></td>
+        <td>8.7</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-862</td>
         <td>&nbsp;</td>
-        <td><details><summary>Impact:
-
-When using multiple wildcards, combined with at least one parameter, a ...</summary><p>Impact:
-
-When using multiple wildcards, combined with at least one parameter, a regular expression can be generated that is vulnerable to ReDoS. This backtracking vulnerability requires the second wildcard to be somewhere other than the end of the path.
-
-Unsafe examples:
-
-/*foo-*bar-:baz
-/*a-:b-*c-:d
-/x/*a-:b/*c/y
-
-Safe examples:
-
-/*foo-:bar
-/*foo-:bar-*baz
-
-Patches:
-
-Upgrade to version 8.4.0.
-
-Workarounds:
-
-If you are using multiple wildcard parameters, you can check the regex output with a tool such as https://makenowjust-labs.github.io/recheck/playground/ to confirm whether a path is vulnerable.</p></details></td>
+        <td><details><summary>ClearanceKit intercepts file-system access events on macOS and enforces per-proc...</summary><p>ClearanceKit intercepts file-system access events on macOS and enforces per-process access policies. In versions on the 4.1 branch and earlier, the opfilter Endpoint Security system extension enforced file access policy exclusively by intercepting ES_EVENT_TYPE_AUTH_OPEN events. Seven additional file operation event types were not intercepted, allowing any locally running process to bypass the configured FAA policy without triggering a denial. Commit a3d1733 adds subscriptions for all seven event types and routes them through the existing FAA policy evaluator. AUTH_RENAME and AUTH_UNLINK additionally preserve XProtect change detection: events on the XProtect path are allowed and trigger the existing onXProtectChanged callback rather than being evaluated against user policy. All versions on the 4.2 branch contain the fix. No known workarounds are available.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33536" target="_blank" rel="noopener">CVE-2026-33536</a></td>
+        <td>5.1</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-121</td>
+        <td>&nbsp;</td>
+        <td><details><summary>ImageMagick is free and open-source software used for editing and manipulating d...</summary><p>ImageMagick is free and open-source software used for editing and manipulating digital images. Prior to 7.1.2-18 and 6.9.13-43, due to an incorrect return value on certain platforms a pointer is incremented past the end of a buffer that is on the stack and that could result in an out of bounds write. Versions 7.1.2-18 and 6.9.13-43 patch the issue.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33535" target="_blank" rel="noopener">CVE-2026-33535</a></td>
+        <td>4.0</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-787</td>
+        <td>&nbsp;</td>
+        <td><details><summary>ImageMagick is free and open-source software used for editing and manipulating d...</summary><p>ImageMagick is free and open-source software used for editing and manipulating digital images. Prior to 7.1.2-18 and 6.9.13-43, an out-of-bounds write of a zero byte exists in the X11 `display` interaction path that could lead to a crash. Versions 7.1.2-18 and 6.9.13-43 patch the issue.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33532" target="_blank" rel="noopener">CVE-2026-33532</a></td>
+        <td>4.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-674</td>
+        <td>&nbsp;</td>
+        <td><details><summary>`yaml` is a YAML parser and serialiser for JavaScript. Parsing a YAML document w...</summary><p>`yaml` is a YAML parser and serialiser for JavaScript. Parsing a YAML document with a version of `yaml` on the 1.x branch prior to 1.10.3 or on the 2.x branch prior to 2.8.3 may throw a RangeError due to a stack overflow. The node resolution/composition phase uses recursive function calls without a depth bound. An attacker who can supply YAML for parsing can trigger a `RangeError: Maximum call stack size exceeded` with a small payload (~2–10 KB). The `RangeError` is not a `YAMLParseError`, so applications that only catch YAML-specific errors will encounter an unexpected exception type. Depending on the host application&#x27;s exception handling, this can fail requests or terminate the Node.js process. Flow sequences allow deep nesting with minimal bytes (2 bytes per level: one `[` and one `]`). On the default Node.js stack, approximately 1,000–5,000 levels of nesting (2–10 KB input) exhaust the call stack. The exact threshold is environment-dependent (Node.js version, stack size, call stack depth at invocation). Note: the library&#x27;s `Parser` (CST phase) uses a stack-based iterative approach and is not affected. Only the compose/resolve phase uses actual call-stack recursion. All three public parsing APIs are affected: `YAML.parse()`, `YAML.parseDocument()`, and `YAML.parseAllDocuments()`. Versions 1.10.3 and 2.8.3 contain a patch.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33531" target="_blank" rel="noopener">CVE-2026-33531</a></td>
+        <td>4.9</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-89</td>
+        <td>&nbsp;</td>
+        <td><details><summary>InvenTree is an Open Source Inventory Management System. Prior to version 1.2.6,...</summary><p>InvenTree is an Open Source Inventory Management System. Prior to version 1.2.6, a path traversal vulnerability in the report template engine allows a staff-level user to read arbitrary files from the server filesystem via crafted template tags. Affected functions: `encode_svg_image()`, `asset()`, and `uploaded_image()` in `src/backend/InvenTree/report/templatetags/report.py`. This requires staff access (to upload / edit templates with maliciously crafted tags). If the InvenTree installation is configured with high access privileges on the host system, this path traversal may allow file access outside of the InvenTree source directory. This issue is patched in version 1.2.6, and 1.3.0 (or above). Users should update to the patched versions. No known workarounds are available.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33530" target="_blank" rel="noopener">CVE-2026-33530</a></td>
+        <td>7.7</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-202</td>
+        <td>&nbsp;</td>
+        <td><details><summary>InvenTree is an Open Source Inventory Management System. Prior to version 1.2.6,...</summary><p>InvenTree is an Open Source Inventory Management System. Prior to version 1.2.6, certain API endpoints associated with bulk data operations can be hijacked to exfiltrate sensitive information from the database. The bulk operation API endpoints (e.g. `/api/part/`, `/api/stock/`, `/api/order/so/allocation/`, and others) accept a filters parameter that is passed directly to Django&#x27;s ORM queryset.filter(**filters) without any field allowlisting. This enables any authenticated user to traverse model relationships using Django&#x27;s __ lookup syntax and perform blind boolean-based data extraction. This issue is patched in version 1.2.6, and 1.3.0 (or above). Users should update to the patched versions. No known workarounds are available.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33529" target="_blank" rel="noopener">CVE-2026-33529</a></td>
+        <td>3.3</td>
+        <td><span class="severity low">LOW</span></td>
+        <td>CWE-22</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Zoraxy is a general purpose HTTP reverse proxy and forwarding tool. Prior to ver...</summary><p>Zoraxy is a general purpose HTTP reverse proxy and forwarding tool. Prior to version 3.3.2, an authenticated path traversal vulnerability in the configuration import endpoint allows an authenticated user to write arbitrary files outside the config directory, which can lead to RCE by creating a plugin. Version 3.3.2 patches the issue.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33528" target="_blank" rel="noopener">CVE-2026-33528</a></td>
+        <td>6.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-22</td>
+        <td>&nbsp;</td>
+        <td><details><summary>GoDoxy is a reverse proxy and container orchestrator for self-hosters. Prior to ...</summary><p>GoDoxy is a reverse proxy and container orchestrator for self-hosters. Prior to version 0.27.5, the file content API endpoint at `/api/v1/file/content` is vulnerable to path traversal. The `filename` query parameter is passed directly to `path.Join(common.ConfigBasePath, filename)` where `ConfigBasePath = &quot;config&quot;` (a relative path). No sanitization or validation is applied beyond checking that the field is non-empty (`binding:&quot;required&quot;`). An authenticated attacker can use `../` sequences to read or write files outside the intended `config/` directory, including TLS private keys, OAuth refresh tokens, and any file accessible to the container&#x27;s UID. Version 0.27.5 fixes the issue.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33525" target="_blank" rel="noopener">CVE-2026-33525</a></td>
+        <td>0.5</td>
+        <td><span class="severity low">LOW</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Authelia is an open-source authentication and authorization server providing two...</summary><p>Authelia is an open-source authentication and authorization server providing two-factor authentication and single sign-on (SSO) for applications via a web portal. In version 4.39.15, an attacker may potentially be able to inject javascript into the Authelia login page if several conditions are met simultaneously. Unless both the `script-src` and `connect-src` directives have been modified it&#x27;s almost impossible for this to have a meaningful impact. However if both of these are and they are done so without consideration to their potential impact; there is a are situations where this vulnerability could be exploited. This is caused to the lack of neutralization of the `langauge` cookie value when rendering the HTML template. This vulnerability is likely difficult to discover though fingerprinting due to the way Authelia is designed but it should not be considered impossible. The additional requirement to identify the secondary application is however likely to be significantly harder to identify along side this, but also likely easier to fingerprint. Users should upgrade to 4.39.16 or downgrade to 4.39.14 to mitigate the issue. The overwhelming majority of installations will not be affected and no workarounds are necessary. The default value for the Content Security Policy makes exploiting this weakness completely impossible. It&#x27;s only possible via the deliberate removal of the Content Security Policy or deliberate inclusion of clearly noted unsafe policies.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32287" target="_blank" rel="noopener">CVE-2026-32287</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Boolean XPath expressions that evaluate to true can cause an infinite loop in lo...</summary><p>Boolean XPath expressions that evaluate to true can cause an infinite loop in logicalQuery.Select, leading to 100% CPU usage. This can be triggered by top-level selectors such as &quot;1=1&quot; or &quot;true()&quot;.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32286" target="_blank" rel="noopener">CVE-2026-32286</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td><details><summary>The DataRow.Decode function fails to properly validate field lengths. A maliciou...</summary><p>The DataRow.Decode function fails to properly validate field lengths. A malicious or compromised PostgreSQL server can send a DataRow message with a negative field length, causing a slice bounds out of range panic.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32285" target="_blank" rel="noopener">CVE-2026-32285</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td><details><summary>The Delete function fails to properly validate offsets when processing malformed...</summary><p>The Delete function fails to properly validate offsets when processing malformed JSON input. This can lead to a negative slice index and a runtime panic, allowing a denial of service attack.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32284" target="_blank" rel="noopener">CVE-2026-32284</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td><details><summary>The msgpack decoder fails to properly validate the input buffer length when proc...</summary><p>The msgpack decoder fails to properly validate the input buffer length when processing truncated fixext data (format codes 0xd4-0xd8). This can lead to an out-of-bounds read and a runtime panic, allowing a denial of service attack.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-2436" target="_blank" rel="noopener">CVE-2026-2436</a></td>
+        <td>6.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-825</td>
+        <td>&nbsp;</td>
+        <td><details><summary>A flaw was found in libsoup&#x27;s SoupServer. A remote attacker could exploit a use-...</summary><p>A flaw was found in libsoup&#x27;s SoupServer. A remote attacker could exploit a use-after-free vulnerability where the `soup_server_disconnect()` function frees connection objects prematurely, even if a TLS handshake is still pending. If the handshake completes after the connection object has been freed, a dangling pointer is accessed, leading to a server crash and a Denial of Service.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2023-7338" target="_blank" rel="noopener">CVE-2023-7338</a></td>
+        <td>7.7</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-78</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Ruckus Unleashed contains a remote code execution vulnerability in the web-based...</summary><p>Ruckus Unleashed contains a remote code execution vulnerability in the web-based management interface that allows authenticated remote attackers to execute arbitrary code on the system when gateway mode is enabled. Attackers can exploit this vulnerability by sending specially crafted requests through the management interface to achieve arbitrary code execution on affected systems.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2021-4474" target="_blank" rel="noopener">CVE-2021-4474</a></td>
+        <td>6.9</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-552</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Ruckus Access Point products contain an arbitrary file read vulnerability in the...</summary><p>Ruckus Access Point products contain an arbitrary file read vulnerability in the command-line interface that allows authenticated remote attackers with administrative privileges to read arbitrary files from the underlying filesystem. Attackers can exploit this vulnerability to access sensitive information including configuration files, credentials, and system data stored on the device.</p></details></td>
         <td>2026-03-26</td>
       </tr>
       <tr>
@@ -3011,8 +3111,8 @@ If you are using multiple wildcard parameters, you can check the regex output wi
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32498" target="_blank" rel="noopener">CVE-2026-32498</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
         <td>CWE-862</td>
         <td>&nbsp;</td>
         <td><details><summary>Missing Authorization vulnerability in Metagauss RegistrationMagic custom-regist...</summary><p>Missing Authorization vulnerability in Metagauss RegistrationMagic custom-registration-form-builder-with-submission-manager allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects RegistrationMagic: from n/a through &lt;= 6.0.7.6.</p></details></td>
@@ -3029,8 +3129,8 @@ If you are using multiple wildcard parameters, you can check the regex output wi
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32496" target="_blank" rel="noopener">CVE-2026-32496</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>6.7</td>
+        <td><span class="severity medium">MEDIUM</span></td>
         <td>CWE-22</td>
         <td>&nbsp;</td>
         <td><details><summary>Improper Limitation of a Pathname to a Restricted Directory (&#x27;Path Traversal&#x27;) v...</summary><p>Improper Limitation of a Pathname to a Restricted Directory (&#x27;Path Traversal&#x27;) vulnerability in NYSL Spam Protect for Contact Form 7 wp-contact-form-7-spam-blocker allows Path Traversal.This issue affects Spam Protect for Contact Form 7: from n/a through &lt;= 1.2.9.</p></details></td>
@@ -3065,8 +3165,8 @@ If you are using multiple wildcard parameters, you can check the regex output wi
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32492" target="_blank" rel="noopener">CVE-2026-32492</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>5.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
         <td>CWE-290</td>
         <td>&nbsp;</td>
         <td><details><summary>Authentication Bypass by Spoofing vulnerability in Joe Dolson My Tickets my-tick...</summary><p>Authentication Bypass by Spoofing vulnerability in Joe Dolson My Tickets my-tickets allows Identity Spoofing.This issue affects My Tickets: from n/a through &lt;= 2.1.1.</p></details></td>
@@ -3101,8 +3201,8 @@ If you are using multiple wildcard parameters, you can check the regex output wi
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32488" target="_blank" rel="noopener">CVE-2026-32488</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>8.1</td>
+        <td><span class="severity high">HIGH</span></td>
         <td>CWE-266</td>
         <td>&nbsp;</td>
         <td><details><summary>Incorrect Privilege Assignment vulnerability in wpeverest User Registration user...</summary><p>Incorrect Privilege Assignment vulnerability in wpeverest User Registration user-registration allows Privilege Escalation.This issue affects User Registration: from n/a through &lt;= 4.4.9.</p></details></td>
@@ -3137,8 +3237,8 @@ If you are using multiple wildcard parameters, you can check the regex output wi
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32482" target="_blank" rel="noopener">CVE-2026-32482</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>9.9</td>
+        <td><span class="severity critical">CRITICAL</span></td>
         <td>CWE-434</td>
         <td>&nbsp;</td>
         <td><details><summary>Unrestricted Upload of File with Dangerous Type vulnerability in deothemes Ona o...</summary><p>Unrestricted Upload of File with Dangerous Type vulnerability in deothemes Ona ona allows Upload a Web Shell to a Web Server.This issue affects Ona: from n/a through &lt; 1.24.</p></details></td>
@@ -3155,8 +3255,8 @@ If you are using multiple wildcard parameters, you can check the regex output wi
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-31921" target="_blank" rel="noopener">CVE-2026-31921</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>8.2</td>
+        <td><span class="severity high">HIGH</span></td>
         <td>CWE-862</td>
         <td>&nbsp;</td>
         <td><details><summary>Missing Authorization vulnerability in Devteam HaywoodTech Product Rearrange for...</summary><p>Missing Authorization vulnerability in Devteam HaywoodTech Product Rearrange for WooCommerce products-rearrange-woocommerce allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects Product Rearrange for WooCommerce: from n/a through &lt;= 1.2.2.</p></details></td>
@@ -3389,8 +3489,8 @@ If you are using multiple wildcard parameters, you can check the regex output wi
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-27071" target="_blank" rel="noopener">CVE-2026-27071</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>9.1</td>
+        <td><span class="severity critical">CRITICAL</span></td>
         <td>CWE-862</td>
         <td>&nbsp;</td>
         <td><details><summary>Missing Authorization vulnerability in Arraytics WPCafe wp-cafe allows Exploitin...</summary><p>Missing Authorization vulnerability in Arraytics WPCafe wp-cafe allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects WPCafe: from n/a through &lt;= 3.0.7.</p></details></td>
@@ -3578,8 +3678,8 @@ If you are using multiple wildcard parameters, you can check the regex output wi
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-25456" target="_blank" rel="noopener">CVE-2026-25456</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
         <td>CWE-862</td>
         <td>&nbsp;</td>
         <td><details><summary>Missing Authorization vulnerability in Aarsiv Groups Automated FedEx live/manual...</summary><p>Missing Authorization vulnerability in Aarsiv Groups Automated FedEx live/manual rates with shipping labels a2z-fedex-shipping allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects Automated FedEx live/manual rates with shipping labels: from n/a through &lt;= 5.1.8.</p></details></td>
@@ -4064,8 +4164,8 @@ If you are using multiple wildcard parameters, you can check the regex output wi
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-25317" target="_blank" rel="noopener">CVE-2026-25317</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
         <td>CWE-862</td>
         <td>&nbsp;</td>
         <td><details><summary>Missing Authorization vulnerability in tychesoftwares Print Invoice &amp; Delivery N...</summary><p>Missing Authorization vulnerability in tychesoftwares Print Invoice &amp; Delivery Notes for WooCommerce woocommerce-delivery-notes allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects Print Invoice &amp; Delivery Notes for WooCommerce: from n/a through &lt;= 5.9.0.</p></details></td>
@@ -4424,8 +4524,8 @@ If you are using multiple wildcard parameters, you can check the regex output wi
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-24382" target="_blank" rel="noopener">CVE-2026-24382</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
         <td>CWE-862</td>
         <td>&nbsp;</td>
         <td><details><summary>Missing Authorization vulnerability in wproyal News Magazine X news-magazine-x a...</summary><p>Missing Authorization vulnerability in wproyal News Magazine X news-magazine-x allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects News Magazine X: from n/a through &lt;= 1.2.50.</p></details></td>
@@ -4478,8 +4578,8 @@ If you are using multiple wildcard parameters, you can check the regex output wi
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-24369" target="_blank" rel="noopener">CVE-2026-24369</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>7.1</td>
+        <td><span class="severity high">HIGH</span></td>
         <td>CWE-862</td>
         <td>&nbsp;</td>
         <td><details><summary>Missing Authorization vulnerability in Theme-one The Grid the-grid allows Exploi...</summary><p>Missing Authorization vulnerability in Theme-one The Grid the-grid allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects The Grid: from n/a through &lt; 2.8.0.</p></details></td>
@@ -4496,8 +4596,8 @@ If you are using multiple wildcard parameters, you can check the regex output wi
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-24363" target="_blank" rel="noopener">CVE-2026-24363</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
         <td>CWE-862</td>
         <td>&nbsp;</td>
         <td><details><summary>Missing Authorization vulnerability in loopus WP Cost Estimation &amp; Payment Forms...</summary><p>Missing Authorization vulnerability in loopus WP Cost Estimation &amp; Payment Forms Builder WP_Estimation_Form allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects WP Cost Estimation &amp; Payment Forms Builder: from n/a through &lt; 10.3.0.</p></details></td>
@@ -4532,8 +4632,8 @@ If you are using multiple wildcard parameters, you can check the regex output wi
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-23977" target="_blank" rel="noopener">CVE-2026-23977</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
         <td>CWE-862</td>
         <td>&nbsp;</td>
         <td><details><summary>Missing Authorization vulnerability in WPFactory Helpdesk Support Ticket System ...</summary><p>Missing Authorization vulnerability in WPFactory Helpdesk Support Ticket System for WooCommerce support-ticket-system-for-woocommerce allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects Helpdesk Support Ticket System for WooCommerce: from n/a through &lt;= 2.1.2.</p></details></td>
@@ -4901,8 +5001,8 @@ If you are using multiple wildcard parameters, you can check the regex output wi
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-69358" target="_blank" rel="noopener">CVE-2025-69358</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
         <td>CWE-862</td>
         <td>&nbsp;</td>
         <td><details><summary>Missing Authorization vulnerability in Metagauss EventPrime eventprime-event-cal...</summary><p>Missing Authorization vulnerability in Metagauss EventPrime eventprime-event-calendar-management allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects EventPrime: from n/a through &lt;= 4.2.6.0.</p></details></td>
@@ -5153,18 +5253,18 @@ If you are using multiple wildcard parameters, you can check the regex output wi
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-59707" target="_blank" rel="noopener">CVE-2025-59707</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>9.8</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-290</td>
         <td>&nbsp;</td>
         <td><details><summary>In N2W before 4.3.2 and 4.4.x before 4.4.1, there is potential remote code execu...</summary><p>In N2W before 4.3.2 and 4.4.x before 4.4.1, there is potential remote code execution and account credentials theft because of a spoofing vulnerability.</p></details></td>
         <td>2026-03-25</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-59706" target="_blank" rel="noopener">CVE-2025-59706</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>9.8</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-290</td>
         <td>&nbsp;</td>
         <td><details><summary>In N2W before 4.3.2 and 4.4.0 before 4.4.1, improper validation of API request p...</summary><p>In N2W before 4.3.2 and 4.4.0 before 4.4.1, improper validation of API request parameters enables remote code execution.</p></details></td>
         <td>2026-03-25</td>
@@ -5342,9 +5442,9 @@ If you are using multiple wildcard parameters, you can check the regex output wi
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-28892" target="_blank" rel="noopener">CVE-2026-28892</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>5.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>NVD-CWE-noinfo</td>
         <td>&nbsp;</td>
         <td><details><summary>A permissions issue was addressed by removing the vulnerable code. This issue is...</summary><p>A permissions issue was addressed by removing the vulnerable code. This issue is fixed in macOS Sequoia 15.7.5, macOS Sonoma 14.8.5, macOS Tahoe 26.4. An app may be able to modify protected parts of the file system.</p></details></td>
         <td>2026-03-25</td>
@@ -5441,9 +5541,9 @@ If you are using multiple wildcard parameters, you can check the regex output wi
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-28877" target="_blank" rel="noopener">CVE-2026-28877</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>5.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>NVD-CWE-noinfo</td>
         <td>&nbsp;</td>
         <td><details><summary>An authorization issue was addressed with improved state management. This issue ...</summary><p>An authorization issue was addressed with improved state management. This issue is fixed in iOS 26.4 and iPadOS 26.4, macOS Sequoia 15.7.5, macOS Tahoe 26.4, visionOS 26.4, watchOS 26.4. An app may be able to access sensitive user data.</p></details></td>
         <td>2026-03-25</td>
@@ -5486,9 +5586,9 @@ If you are using multiple wildcard parameters, you can check the regex output wi
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-28870" target="_blank" rel="noopener">CVE-2026-28870</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>5.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>NVD-CWE-noinfo</td>
         <td>&nbsp;</td>
         <td><details><summary>An information leakage was addressed with additional validation. This issue is f...</summary><p>An information leakage was addressed with additional validation. This issue is fixed in iOS 26.4 and iPadOS 26.4, macOS Tahoe 26.4, tvOS 26.4, visionOS 26.4, watchOS 26.4. An app may be able to access sensitive user data.</p></details></td>
         <td>2026-03-25</td>
@@ -5542,7 +5642,7 @@ If you are using multiple wildcard parameters, you can check the regex output wi
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-28863" target="_blank" rel="noopener">CVE-2026-28863</a></td>
         <td>6.5</td>
         <td><span class="severity medium">MEDIUM</span></td>
-        <td>N/A</td>
+        <td>NVD-CWE-noinfo</td>
         <td>&nbsp;</td>
         <td><details><summary>A permissions issue was addressed with additional restrictions. This issue is fi...</summary><p>A permissions issue was addressed with additional restrictions. This issue is fixed in iOS 26.4 and iPadOS 26.4, tvOS 26.4, visionOS 26.4, watchOS 26.4. An app may be able to fingerprint the user.</p></details></td>
         <td>2026-03-25</td>
@@ -5720,9 +5820,9 @@ If you are using multiple wildcard parameters, you can check the regex output wi
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-28831" target="_blank" rel="noopener">CVE-2026-28831</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>5.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>NVD-CWE-noinfo</td>
         <td>&nbsp;</td>
         <td><details><summary>An authorization issue was addressed with improved state management. This issue ...</summary><p>An authorization issue was addressed with improved state management. This issue is fixed in macOS Sequoia 15.7.5, macOS Sonoma 14.8.5, macOS Tahoe 26.4. An app may be able to access sensitive user data.</p></details></td>
         <td>2026-03-25</td>
@@ -5864,9 +5964,9 @@ If you are using multiple wildcard parameters, you can check the regex output wi
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-20698" target="_blank" rel="noopener">CVE-2026-20698</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>7.8</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-787</td>
         <td>&nbsp;</td>
         <td><details><summary>The issue was addressed with improved memory handling. This issue is fixed in iO...</summary><p>The issue was addressed with improved memory handling. This issue is fixed in iOS 26.4 and iPadOS 26.4, macOS Tahoe 26.4, tvOS 26.4, visionOS 26.4, watchOS 26.4. An app may be able to cause unexpected system termination or corrupt kernel memory.</p></details></td>
         <td>2026-03-25</td>
@@ -5891,9 +5991,9 @@ If you are using multiple wildcard parameters, you can check the regex output wi
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-20694" target="_blank" rel="noopener">CVE-2026-20694</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>5.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-59</td>
         <td>&nbsp;</td>
         <td><details><summary>This issue was addressed with improved handling of symlinks. This issue is fixed...</summary><p>This issue was addressed with improved handling of symlinks. This issue is fixed in iOS 26.3 and iPadOS 26.3, macOS Sequoia 15.7.4, macOS Sequoia 15.7.5, macOS Sonoma 14.8.4, macOS Sonoma 14.8.5, macOS Tahoe 26.3, macOS Tahoe 26.4. An app may be able to access user-sensitive data.</p></details></td>
         <td>2026-03-25</td>
@@ -5909,9 +6009,9 @@ If you are using multiple wildcard parameters, you can check the regex output wi
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-20692" target="_blank" rel="noopener">CVE-2026-20692</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>5.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>NVD-CWE-noinfo</td>
         <td>&nbsp;</td>
         <td><details><summary>A privacy issue was addressed with improved handling of user preferences. This i...</summary><p>A privacy issue was addressed with improved handling of user preferences. This issue is fixed in iOS 26.4 and iPadOS 26.4, macOS Sequoia 15.7.5, macOS Sonoma 14.8.5, macOS Tahoe 26.4. &quot;Hide IP Address&quot; and &quot;Block All Remote Content&quot; may not apply to all mail content.</p></details></td>
         <td>2026-03-25</td>
@@ -5972,9 +6072,9 @@ If you are using multiple wildcard parameters, you can check the regex output wi
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-20670" target="_blank" rel="noopener">CVE-2026-20670</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>5.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>NVD-CWE-noinfo</td>
         <td>&nbsp;</td>
         <td><details><summary>An authorization issue was addressed with improved state management. This issue ...</summary><p>An authorization issue was addressed with improved state management. This issue is fixed in macOS Sonoma 14.8.4, macOS Tahoe 26.3. An app may be able to access sensitive user data.</p></details></td>
         <td>2026-03-25</td>
