@@ -11,11 +11,11 @@
     <header>
       <h1>vuln-tracker</h1>
       <p class="subtitle">CVEs from the National Vulnerability Database — current and previous month</p>
-      <p class="last-updated">Last updated: 2026-03-25 22:42 UTC</p>
+      <p class="last-updated">Last updated: 2026-03-26 02:51 UTC</p>
     </header>
     <main>
     <section>
-      <h2>Current Month — March 2026 <span class="count">(4731)</span></h2>
+      <h2>Current Month — March 2026 <span class="count">(4764)</span></h2>
       <div class="table-wrapper">
         <table>
           <thead>
@@ -30,6 +30,339 @@
             </tr>
           </thead>
           <tbody>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4833" target="_blank" rel="noopener">CVE-2026-4833</a></td>
+        <td>4.8</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-404</td>
+        <td>&nbsp;</td>
+        <td><details><summary>A weakness has been identified in Orc discount up to 3.0.1.2. This issue affects...</summary><p>A weakness has been identified in Orc discount up to 3.0.1.2. This issue affects the function compile of the file markdown.c of the component Markdown Handler. This manipulation causes uncontrolled recursion. The attack is restricted to local execution. The exploit has been made available to the public and could be used for attacks. The project maintainer confirms: &quot;[I]f you feed it an infinitely deep blockquote input it will crash. (...) [T]his is a duplicate of an old bug that I&#x27;ve been working on.&quot;</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4831" target="_blank" rel="noopener">CVE-2026-4831</a></td>
+        <td>6.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-287</td>
+        <td>&nbsp;</td>
+        <td><details><summary>A security flaw has been discovered in kalcaddle kodbox 1.64. Impacted is the fu...</summary><p>A security flaw has been discovered in kalcaddle kodbox 1.64. Impacted is the function can of the file /workspace/source-code/app/controller/explorer/auth.class.php of the component Password-protected Share Handler. Performing a manipulation results in improper authentication. The attack is possible to be carried out remotely. The complexity of an attack is rather high. The exploitability is considered difficult. The exploit has been released to the public and may be used for attacks. The vendor was contacted early about this disclosure but did not respond in any way.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4484" target="_blank" rel="noopener">CVE-2026-4484</a></td>
+        <td>9.8</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td><details><summary>The Masteriyo LMS plugin for WordPress is vulnerable to Privilege Escalation in ...</summary><p>The Masteriyo LMS plugin for WordPress is vulnerable to Privilege Escalation in all versions up to, and including, 2.1.6. This is due to the plugin allowing a user to update the user role through the &#x27;InstructorsController::prepare_object_for_database&#x27; function. This makes it possible for authenticated attackers, with Student-level access and above, to elevate their privileges to that of an administrator.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4830" target="_blank" rel="noopener">CVE-2026-4830</a></td>
+        <td>6.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-284</td>
+        <td>&nbsp;</td>
+        <td><details><summary>A vulnerability was identified in kalcaddle kodbox 1.64. This issue affects the ...</summary><p>A vulnerability was identified in kalcaddle kodbox 1.64. This issue affects the function Add of the file app/controller/explorer/userShare.class.php of the component Public Share Handler. Such manipulation leads to unrestricted upload. The attack can be executed remotely. This attack is characterized by high complexity. The exploitability is assessed as difficult. The exploit is publicly available and might be used. The vendor was contacted early about this disclosure but did not respond in any way.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33942" target="_blank" rel="noopener">CVE-2026-33942</a></td>
+        <td>8.1</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-502</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Saloon is a PHP library that gives users tools to build API integrations and SDK...</summary><p>Saloon is a PHP library that gives users tools to build API integrations and SDKs. Versions prior to 4.0.0 used PHP&#x27;s unserialize() in AccessTokenAuthenticator::unserialize() to restore OAuth token state from cache or storage, with allowed_classes =&gt; true. An attacker who can control the serialized string (e.g. by overwriting a cached token file or via another injection) can supply a serialized &quot;gadget&quot; object. When unserialize() runs, PHP instantiates that object and runs its magic methods (__wakeup, __destruct, etc.), leading to object injection. In environments with common dependencies (e.g. Monolog), this can be chained to remote code execution (RCE). The fix in version 4.0.0 removes PHP serialization from the AccessTokenAuthenticator class requiring users to store and resolve the authenticator manually.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33526" target="_blank" rel="noopener">CVE-2026-33526</a></td>
+        <td>9.2</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-416</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Squid is a caching proxy for the Web. Prior to version 7.5, due to heap Use-Afte...</summary><p>Squid is a caching proxy for the Web. Prior to version 7.5, due to heap Use-After-Free, Squid is vulnerable to Denial of Service when handling ICP traffic. This problem allows a remote attacker to perform a reliable and repeatable Denial of Service attack against the Squid service using ICP protocol. This attack is limited to Squid deployments that explicitly enable ICP support (i.e. configure non-zero `icp_port`). This problem _cannot_ be mitigated by denying ICP queries using `icp_access` rules. Version 7.5 contains a patch.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33515" target="_blank" rel="noopener">CVE-2026-33515</a></td>
+        <td>6.9</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-125</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Squid is a caching proxy for the Web. Prior to version 7.5, due to improper inpu...</summary><p>Squid is a caching proxy for the Web. Prior to version 7.5, due to improper input validation, Squid is vulnerable to out of bounds read when handling ICP traffic. This problem allows a remote attacker to receive small amounts of memory potentially containing sensitive information when responding with errors to invalid ICP requests. This attack is limited to Squid deployments that explicitly enable ICP support (i.e. configure non-zero `icp_port`). This problem cannot be mitigated by denying ICP queries using `icp_access` rules. Version 7.5 contains a patch.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33287" target="_blank" rel="noopener">CVE-2026-33287</a></td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-20</td>
+        <td>&nbsp;</td>
+        <td><details><summary>LiquidJS is a Shopify / GitHub Pages compatible template engine in pure JavaScri...</summary><p>LiquidJS is a Shopify / GitHub Pages compatible template engine in pure JavaScript. Prior to version 10.25.1, the `replace_first` filter in LiquidJS uses JavaScript&#x27;s `String.prototype.replace()` which interprets `$&amp;` as a back reference to the matched substring. The filter only charges `memoryLimit` for the input string length, not the amplified output. An attacker can achieve exponential memory amplification (up to 625,000:1) while staying within the `memoryLimit` budget, leading to denial of service. Version 10.25.1 patches the issue.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33285" target="_blank" rel="noopener">CVE-2026-33285</a></td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-20</td>
+        <td>&nbsp;</td>
+        <td><details><summary>LiquidJS is a Shopify / GitHub Pages compatible template engine in pure JavaScri...</summary><p>LiquidJS is a Shopify / GitHub Pages compatible template engine in pure JavaScript. Prior to version 10.25.1, LiquidJS&#x27;s `memoryLimit` security mechanism can be completely bypassed by using reverse range expressions (e.g., `(100000000..1)`), allowing an attacker to allocate unlimited memory. Combined with a string flattening operation (e.g., `replace` filter), this causes a V8 Fatal error that crashes the Node.js process, resulting in complete denial of service from a single HTTP request. Version 10.25.1 patches the issue.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33183" target="_blank" rel="noopener">CVE-2026-33183</a></td>
+        <td>8.0</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-22</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Saloon is a PHP library that gives users tools to build API integrations and SDK...</summary><p>Saloon is a PHP library that gives users tools to build API integrations and SDKs. Prior to version 4.0.0, fixture names were used to build file paths under the configured fixture directory without validation. A name containing path segments (e.g. ../traversal or ../../etc/passwd) resulted in a path outside that directory. When the application read a fixture (e.g. for mocking) or wrote one (e.g. when recording responses), it could read or write files anywhere the process had access. If the fixture name was derived from user or attacker-controlled input (e.g. request parameters or config), this constituted a path traversal vulnerability and could lead to disclosure of sensitive files or overwriting of critical files. The fix in version 4.0.0 adds validation in the fixture layer (rejecting names with /, \, .., or null bytes, and restricting to a safe character set) and defense-in-depth in the storage layer (ensuring the resolved path remains under the base directory before any read or write).</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33182" target="_blank" rel="noopener">CVE-2026-33182</a></td>
+        <td>6.6</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-522</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Saloon is a PHP library that gives users tools to build API integrations and SDK...</summary><p>Saloon is a PHP library that gives users tools to build API integrations and SDKs. Prior to version 4.0.0, when building the request URL, Saloon combined the connector&#x27;s base URL with the request endpoint. If the endpoint was a valid absolute URL, the code used that URL as-is and ignored the base URL. The request—and any authentication headers, cookies, or tokens attached by the connector—was then sent to the attacker-controlled host. If the endpoint could be influenced by user input or configuration (e.g. redirect_uri, callback URL), this allowed server-side request forgery (SSRF) and/or credential leakage to a third-party host. The fix in version 4.0.0 is to reject absolute URLs in the endpoint: URLHelper::join() throws InvalidArgumentException when the endpoint is a valid absolute URL, unless explicitly allowed, requiring callers to opt-in to the functionality on a per-connector or per-request basis.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32748" target="_blank" rel="noopener">CVE-2026-32748</a></td>
+        <td>8.7</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-413</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Squid is a caching proxy for the Web. Prior to version 7.5, due to premature rel...</summary><p>Squid is a caching proxy for the Web. Prior to version 7.5, due to premature release of resource during expected lifetime and heap Use-After-Free bugs, Squid is vulnerable to Denial of Service when handling ICP traffic. This problem allows a remote attacker to perform a reliable and repeatable Denial of Service attack against the Squid service using ICP protocol. This attack is limited to Squid deployments that explicitly enable ICP support (i.e. configure non-zero `icp_port`). This problem _cannot_ be mitigated by denying ICP queries using `icp_access` rules. This bug is fixed in Squid version 7.5.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4826" target="_blank" rel="noopener">CVE-2026-4826</a></td>
+        <td>5.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-74</td>
+        <td>&nbsp;</td>
+        <td><details><summary>A vulnerability was determined in SourceCodester Sales and Inventory System 1.0....</summary><p>A vulnerability was determined in SourceCodester Sales and Inventory System 1.0. This vulnerability affects unknown code of the file /update_stock.php of the component HTTP GET Parameter Handler. This manipulation of the argument sid causes sql injection. Remote exploitation of the attack is possible. The exploit has been publicly disclosed and may be utilized. If you want to get best quality of vulnerability data, you may have to visit VulDB.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4758" target="_blank" rel="noopener">CVE-2026-4758</a></td>
+        <td>8.8</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-22</td>
+        <td>&nbsp;</td>
+        <td><details><summary>The WP Job Portal plugin for WordPress is vulnerable to arbitrary file deletion ...</summary><p>The WP Job Portal plugin for WordPress is vulnerable to arbitrary file deletion due to insufficient file path validation in the &#x27;WPJOBPORTALcustomfields::removeFileCustom&#x27; function in all versions up to, and including, 2.4.9. This makes it possible for authenticated attackers, with Subscriber-level access and above, to delete arbitrary files on the server, which can easily lead to remote code execution when the right file is deleted (such as wp-config.php).</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34056" target="_blank" rel="noopener">CVE-2026-34056</a></td>
+        <td>7.7</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-285</td>
+        <td>&nbsp;</td>
+        <td><details><summary>OpenEMR is a free and open source electronic health records and medical practice...</summary><p>OpenEMR is a free and open source electronic health records and medical practice management application. A Broken Access Control vulnerability in OpenEMR up to and including version 8.0.0.3 allows low-privilege users to view and download Ensora eRx error logs without proper authorization checks. This flaw compromises system confidentiality by exposing sensitive information, potentially leading to unauthorized data disclosure and misuse. As of time of publication, no known patches versions are available.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34055" target="_blank" rel="noopener">CVE-2026-34055</a></td>
+        <td>8.1</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-639</td>
+        <td>&nbsp;</td>
+        <td><details><summary>OpenEMR is a free and open source electronic health records and medical practice...</summary><p>OpenEMR is a free and open source electronic health records and medical practice management application. Prior to version 8.0.0.3, the legacy patient notes functions in `library/pnotes.inc.php` perform updates and deletes using `WHERE id = ?` without verifying that the note belongs to a patient the user is authorized to access. Multiple web UI callers pass user-controlled note IDs directly to these functions. This is the same class of vulnerability as CVE-2026-25745 (REST API IDOR), but affects the web UI code paths. Version 8.0.0.3 patches the issue.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34053" target="_blank" rel="noopener">CVE-2026-34053</a></td>
+        <td>7.1</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td><details><summary>OpenEMR is a free and open source electronic health records and medical practice...</summary><p>OpenEMR is a free and open source electronic health records and medical practice management application. Prior to version 8.0.0.3, missing authorization in the AJAX deletion endpoint `interface/forms/procedure_order/handle_deletions.php` allows any authenticated user, regardless of role, to irreversibly delete procedure orders, answers, and specimens belonging to any patient in the system. Version 8.0.0.3 patches the issue.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34051" target="_blank" rel="noopener">CVE-2026-34051</a></td>
+        <td>5.4</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-285</td>
+        <td>&nbsp;</td>
+        <td><details><summary>OpenEMR is a free and open source electronic health records and medical practice...</summary><p>OpenEMR is a free and open source electronic health records and medical practice management application. Versions prior to 8.0.0.3 have an improper access control on the Import/Export functionality, allowing unauthorized users to perform import and export actions through direct request manipulation despite UI restrictions. This can lead to unauthorized data access, bulk data extraction, and manipulation of system data. Version 8.0.0.3 contains a fix.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33934" target="_blank" rel="noopener">CVE-2026-33934</a></td>
+        <td>4.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-639</td>
+        <td>&nbsp;</td>
+        <td><details><summary>OpenEMR is a free and open source electronic health records and medical practice...</summary><p>OpenEMR is a free and open source electronic health records and medical practice management application. Versions prior to 8.0.0.3 have a missing authorization check in `portal/sign/lib/show-signature.php` that allows any authenticated patient portal user to retrieve the drawn signature image of any staff member by supplying an arbitrary `user` value in the POST body. The companion write endpoint (`save-signature.php`) was already hardened against this same issue, but the read endpoint was not updated to match. Version 8.0.0.3 patches the issue.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33933" target="_blank" rel="noopener">CVE-2026-33933</a></td>
+        <td>6.1</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td><details><summary>OpenEMR is a free and open source electronic health records and medical practice...</summary><p>OpenEMR is a free and open source electronic health records and medical practice management application. Starting in version 7.0.2.1 and prior to version 8.0.0.3, a reflected cross-site scripting (XSS) vulnerability in the custom template editor allows an attacker to execute arbitrary JavaScript in an authenticated staff member&#x27;s browser session by sending them a crafted URL. The attacker does not need an OpenEMR account. Version 8.0.0.3 patches the issue.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33932" target="_blank" rel="noopener">CVE-2026-33932</a></td>
+        <td>7.6</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td><details><summary>OpenEMR is a free and open source electronic health records and medical practice...</summary><p>OpenEMR is a free and open source electronic health records and medical practice management application. Prior to version 8.0.0.3, a stored cross-site scripting vulnerability in the CCDA document preview allows an attacker who can upload or send a CCDA document to execute arbitrary JavaScript in a clinician&#x27;s browser session when the document is previewed. The XSL stylesheet sanitizes attributes for all other narrative elements but not for `linkHtml`, allowing `href=&quot;javascript:...&quot;` and event handler attributes to pass through unchanged. Version 8.0.0.3 patches the issue.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33931" target="_blank" rel="noopener">CVE-2026-33931</a></td>
+        <td>6.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-639</td>
+        <td>&nbsp;</td>
+        <td><details><summary>OpenEMR is a free and open source electronic health records and medical practice...</summary><p>OpenEMR is a free and open source electronic health records and medical practice management application. Prior to version 8.0.0.3, an Insecure Direct Object Reference (IDOR) vulnerability in the patient portal payment page allows any authenticated portal patient to access other patients&#x27; payment records — including invoice/billing data (PHI) and payment card metadata — by manipulating the `recid` query parameter in `portal/portal_payment.php`. Version 8.0.0.3 patches the issue.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33918" target="_blank" rel="noopener">CVE-2026-33918</a></td>
+        <td>7.6</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td><details><summary>OpenEMR is a free and open source electronic health records and medical practice...</summary><p>OpenEMR is a free and open source electronic health records and medical practice management application. Prior to version 8.0.0.3, the billing file-download endpoint `interface/billing/get_claim_file.php` only verifies that the caller has a valid session and CSRF token, but does not check any ACL permissions. This allows any authenticated OpenEMR user — regardless of whether they have billing privileges — to download and permanently delete electronic claim batch files containing protected health information (PHI). Version 8.0.0.3 patches the issue.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33917" target="_blank" rel="noopener">CVE-2026-33917</a></td>
+        <td>8.8</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-89</td>
+        <td>&nbsp;</td>
+        <td><details><summary>OpenEMR is a free and open source electronic health records and medical practice...</summary><p>OpenEMR is a free and open source electronic health records and medical practice management application. Versions prior to 8.0.0.3 contais a SQL injection vulnerability in the ajax_save CAMOS form that can be exploited by authenticated attackers. The vulnerability exists due to insufficient input validation in the ajax_save page in the CAMOS form. Version 8.0.0.3 patches the issue.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33915" target="_blank" rel="noopener">CVE-2026-33915</a></td>
+        <td>5.4</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td><details><summary>OpenEMR is a free and open source electronic health records and medical practice...</summary><p>OpenEMR is a free and open source electronic health records and medical practice management application. Prior to version 8.0.0.3, five insurance company REST API routes are missing the `RestConfig::request_authorization_check()` call that every other data-modifying route in the standard API uses. This allows any authenticated API user to create and modify insurance company records even if their OpenEMR user account does not have administrative ACL permissions. Version 8.0.0.3 patches the issue.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33914" target="_blank" rel="noopener">CVE-2026-33914</a></td>
+        <td>7.2</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-89</td>
+        <td>&nbsp;</td>
+        <td><details><summary>OpenEMR is a free and open source electronic health records and medical practice...</summary><p>OpenEMR is a free and open source electronic health records and medical practice management application. Prior to version 8.0.0.3, the PostCalendar module contains a blind SQL injection vulnerability in the `categoriesUpdate` administrative function. The `dels` POST parameter is read via `pnVarCleanFromInput()`, which only strips HTML tags and performs no SQL escaping. The value is then interpolated directly into a raw SQL `DELETE` statement that is executed unsanitized via Doctrine DBAL&#x27;s `executeStatement()`. Version 8.0.0.3 patches the issue.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-30892" target="_blank" rel="noopener">CVE-2026-30892</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-269</td>
+        <td>&nbsp;</td>
+        <td><details><summary>crun is an open source OCI Container Runtime fully written in C. In versions 1.1...</summary><p>crun is an open source OCI Container Runtime fully written in C. In versions 1.19 through 1.26, the  `crun exec` option `-u` (`--user`) is incorrectly parsed. The value `1` is interpreted as UID 0 and GID 0 when it should have been UID 1 and  GID 0. The process thus runs with higher privileges than expected. Version 1.27 patches the issue.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4825" target="_blank" rel="noopener">CVE-2026-4825</a></td>
+        <td>5.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-74</td>
+        <td>&nbsp;</td>
+        <td><details><summary>A vulnerability was found in SourceCodester Sales and Inventory System 1.0. This...</summary><p>A vulnerability was found in SourceCodester Sales and Inventory System 1.0. This affects an unknown part of the file /update_sales.php of the component HTTP GET Parameter Handler. The manipulation of the argument sid results in sql injection. The attack may be launched remotely. The exploit has been made public and could be used.</p></details></td>
+        <td>2026-03-25</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33913" target="_blank" rel="noopener">CVE-2026-33913</a></td>
+        <td>7.7</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-611</td>
+        <td>&nbsp;</td>
+        <td><details><summary>OpenEMR is a free and open source electronic health records and medical practice...</summary><p>OpenEMR is a free and open source electronic health records and medical practice management application. Prior to version 8.0.0.3, an authenticated user with access to the Carecoordination module can upload a crafted CCDA document containing `&lt;xi:include href=&quot;file:///etc/passwd&quot; parse=&quot;text&quot;/&gt;` to read arbitrary files from the server. Version 8.0.0.3 patches the issue.</p></details></td>
+        <td>2026-03-25</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33912" target="_blank" rel="noopener">CVE-2026-33912</a></td>
+        <td>5.4</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td><details><summary>OpenEMR is a free and open source electronic health records and medical practice...</summary><p>OpenEMR is a free and open source electronic health records and medical practice management application. Prior to version 8.0.0.3, an authenticated attacker could craft a malicious form that, when submitted by a victim, executes arbitrary JavaScript in the victim&#x27;s browser session. Version 8.0.0.3 patches the issue.</p></details></td>
+        <td>2026-03-25</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33911" target="_blank" rel="noopener">CVE-2026-33911</a></td>
+        <td>5.4</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td><details><summary>OpenEMR is a free and open source electronic health records and medical practice...</summary><p>OpenEMR is a free and open source electronic health records and medical practice management application. Prior to version 8.0.0.3, the POST parameter `title` is reflected back in a JSON response built with `json_encode()`. Because the response is served with a `text/html` Content-Type, the browser interprets injected HTML/script tags rather than treating the output as JSON. An authenticated attacker can craft a request that executes arbitrary JavaScript in a victim&#x27;s session. Version 8.0.0.3 contains a fix.</p></details></td>
+        <td>2026-03-25</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33910" target="_blank" rel="noopener">CVE-2026-33910</a></td>
+        <td>7.2</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-89</td>
+        <td>&nbsp;</td>
+        <td><details><summary>OpenEMR is a free and open source electronic health records and medical practice...</summary><p>OpenEMR is a free and open source electronic health records and medical practice management application. Versions up to and including 8.0.0.2 contain a SQL injection vulnerability in the patient selection feature that can be exploited by authenticated attackers. The vulnerability exists due to insufficient input validation in the patient selection feature. Version 8.0.0.3 contains a patch.</p></details></td>
+        <td>2026-03-25</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33909" target="_blank" rel="noopener">CVE-2026-33909</a></td>
+        <td>5.9</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-89</td>
+        <td>&nbsp;</td>
+        <td><details><summary>OpenEMR is a free and open source electronic health records and medical practice...</summary><p>OpenEMR is a free and open source electronic health records and medical practice management application. Prior to version 8.0.0.3, several variables in the MedEx recall/reminder processing code are concatenated directly into SQL queries without parameterization or type casting, enabling SQL injection. Version 8.0.0.3 contains a patch.</p></details></td>
+        <td>2026-03-25</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33348" target="_blank" rel="noopener">CVE-2026-33348</a></td>
+        <td>8.7</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td><details><summary>OpenEMR is a free and open source electronic health records and medical practice...</summary><p>OpenEMR is a free and open source electronic health records and medical practice management application. Users with the `Notes - my encounters` role can fill Eye Exam forms in patient encounters. The answers to the form are displayed on the encounter page and in the visit history for the users with the same role. Versions prior to 8.0.0.3 have a stored cross-site scripting (XSS) vulnerability in the function to display the form answers, allowing any authenticated attacker with the specific role to insert arbitrary JavaScript into the system by entering malicious payloads to the form answers. The JavaScript code is later executed by any user with the form role when viewing the form answers in the patient encounter pages or visit history. Version 8.0.0.3 contains a patch.</p></details></td>
+        <td>2026-03-25</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32120" target="_blank" rel="noopener">CVE-2026-32120</a></td>
+        <td>6.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-639</td>
+        <td>&nbsp;</td>
+        <td><details><summary>OpenEMR is a free and open source electronic health records and medical practice...</summary><p>OpenEMR is a free and open source electronic health records and medical practice management application. Prior to version 8.0.0.3, an Insecure Direct Object Reference (IDOR) vulnerability in the fee sheet product save logic (`library/FeeSheet.class.php`) allows any authenticated user with fee sheet ACL access to delete, modify, or read `drug_sales` records belonging to arbitrary patients by manipulating the hidden `prod[][sale_id]` form field. The `save()` method uses the user-supplied `sale_id` in five SQL queries (SELECT, UPDATE, DELETE) without verifying that the record belongs to the current patient and encounter. Version 8.0.0.3 contains a patch.</p></details></td>
+        <td>2026-03-25</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-29187" target="_blank" rel="noopener">CVE-2026-29187</a></td>
+        <td>8.1</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-89</td>
+        <td>&nbsp;</td>
+        <td><details><summary>OpenEMR is a free and open source electronic health records and medical practice...</summary><p>OpenEMR is a free and open source electronic health records and medical practice management application. Prior to version 8.0.0.3, a Blind SQL Injection vulnerability exists in the Patient Search functionality (/interface/new/new_search_popup.php). The vulnerability allows an authenticated attacker to execute arbitrary SQL commands by manipulating the HTTP parameter keys rather than the values. Version 8.0.0.3 contains a patch.</p></details></td>
+        <td>2026-03-25</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-2535" target="_blank" rel="noopener">CVE-2025-2535</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Rejected reason: This CVE ID has been rejected or withdrawn by its CVE Numbering...</summary><p>Rejected reason: This CVE ID has been rejected or withdrawn by its CVE Numbering Authority.</p></details></td>
+        <td>2026-03-25</td>
+      </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4824" target="_blank" rel="noopener">CVE-2026-4824</a></td>
         <td>7.3</td>
@@ -1548,7 +1881,7 @@
         <td><span class="severity medium">MEDIUM</span></td>
         <td>CWE-377</td>
         <td>&nbsp;</td>
-        <td><details><summary>Requests is a HTTP library. Prior to version 2.33.0, the function `requests.util...</summary><p>Requests is a HTTP library. Prior to version 2.33.0, the function `requests.utils.extract_zipped_paths()` (which is used by `HTTPAdapter.cert_verify()` to load the CA bundle, often from the `certifi` package&#x27;s zipapp structure) uses a predictable, non-unique filename (the basename of the file, e.g., `cacert.pem`) when attempting to extract files into the system&#x27;s temporary directory (`/tmp`). The vulnerable logic performs a check to see if the target file already exists in `/tmp` and re-uses the existing file if found, instead of securely checking the file&#x27;s content or ensuring atomic, unique extraction. This allows a Local Attacker to pre-create a malicious CA bundle file (e.g., `/tmp/cacert.pem`) before a vulnerable application (running with potentially higher privileges) initializes the `requests` library. Version 2.33.0 contains a patch.</p></details></td>
+        <td><details><summary>Requests is a HTTP library. Prior to version 2.33.0, the `requests.utils.extract...</summary><p>Requests is a HTTP library. Prior to version 2.33.0, the `requests.utils.extract_zipped_paths()` utility function uses a predictable filename when extracting files from zip archives into the system temporary directory. If the target file already exists, it is reused without validation. A local attacker with write access to the temp directory could pre-create a malicious file that would be loaded in place of the legitimate one. Standard usage of the Requests library is not affected by this vulnerability. Only applications that call `extract_zipped_paths()` directly are impacted. Starting in version 2.33.0, the library extracts files to a non-deterministic location. If developers are unable to upgrade, they can set `TMPDIR` in their environment to a directory with restricted write access.</p></details></td>
         <td>2026-03-25</td>
       </tr>
       <tr>
@@ -11242,54 +11575,6 @@
         <td>CWE-79</td>
         <td>&nbsp;</td>
         <td><details><summary>DooTask v1.6.27 has a Cross-Site Scripting (XSS) vulnerability in the /manage/pr...</summary><p>DooTask v1.6.27 has a Cross-Site Scripting (XSS) vulnerability in the /manage/project/&lt;id&gt; page via the input field projectDesc.</p></details></td>
-        <td>2026-03-20</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-22902" target="_blank" rel="noopener">CVE-2026-22902</a></td>
-        <td>5.7</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-78</td>
-        <td>&nbsp;</td>
-        <td><details><summary>A command injection vulnerability has been reported to affect QuNetSwitch. If a ...</summary><p>A command injection vulnerability has been reported to affect QuNetSwitch. If a local attacker gains an administrator account, they can then exploit the vulnerability to execute arbitrary commands.
-
-We have already fixed the vulnerability in the following version:
-QuNetSwitch 2.0.5.0906 and later</p></details></td>
-        <td>2026-03-20</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-22901" target="_blank" rel="noopener">CVE-2026-22901</a></td>
-        <td>6.3</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-78</td>
-        <td>&nbsp;</td>
-        <td><details><summary>A command injection vulnerability has been reported to affect QuNetSwitch. If a ...</summary><p>A command injection vulnerability has been reported to affect QuNetSwitch. If a remote attacker gains a user account, they can then exploit the vulnerability to execute arbitrary commands.
-
-We have already fixed the vulnerability in the following version:
-QuNetSwitch 2.0.5.0906 and later</p></details></td>
-        <td>2026-03-20</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-22900" target="_blank" rel="noopener">CVE-2026-22900</a></td>
-        <td>6.8</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-798</td>
-        <td>&nbsp;</td>
-        <td><details><summary>A use of hard-coded credentials vulnerability has been reported to affect QuNetS...</summary><p>A use of hard-coded credentials vulnerability has been reported to affect QuNetSwitch. The remote attackers can then exploit the vulnerability to gain unauthorized access.
-
-We have already fixed the vulnerability in the following version:
-QuNetSwitch 2.0.5.0906 and later</p></details></td>
-        <td>2026-03-20</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-22897" target="_blank" rel="noopener">CVE-2026-22897</a></td>
-        <td>8.1</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-78</td>
-        <td>&nbsp;</td>
-        <td><details><summary>A command injection vulnerability has been reported to affect QuNetSwitch. The r...</summary><p>A command injection vulnerability has been reported to affect QuNetSwitch. The remote attackers can then exploit the vulnerability to execute arbitrary commands.
-
-We have already fixed the vulnerability in the following version:
-QuNetSwitch 2.0.4.0415 and later</p></details></td>
         <td>2026-03-20</td>
       </tr>
       <tr>
