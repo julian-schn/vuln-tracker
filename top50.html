@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>vuln-tracker — Top 50</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>vuln-tracker — Top 50</h1>
+      <p class="subtitle">The 50 most important CVEs from the current and previous month, ranked by KEV status then CVSS score</p>
+      <p class="last-updated">Last updated: 2026-03-26 19:28 UTC</p>
+    </header>
+    <nav>
+      <a href="index.html">&larr; All CVEs</a>
+      <span class="nav-sep">|</span>
+      <span class="nav-data">Data:
+        <a href="data/top50.tonl">top50.tonl</a>
+        <a href="data/top50.md">top50.md</a>
+      </span>
+    </nav>
+    <main>
+      <section>
+        <h2>Top 50 <span class="count">(50)</span></h2>
+        <div class="table-wrapper">
+          <table>
+            <thead>
+              <tr>
+                <th>CVE ID</th>
+                <th>Score</th>
+                <th>Severity</th>
+                <th>CWE</th>
+                <th>KEV</th>
+                <th>Description</th>
+                <th>Published</th>
+              </tr>
+            </thead>
+            <tbody>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-22769" target="_blank" rel="noopener">CVE-2026-22769</a></td>
+        <td>10.0</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-798</td>
+        <td><span class="kev-yes">&#10003;</span></td>
+        <td><details><summary>Dell RecoverPoint for Virtual Machines, versions prior to 6.0.3.1 HF1, contain a...</summary><p>Dell RecoverPoint for Virtual Machines, versions prior to 6.0.3.1 HF1, contain a hardcoded credential vulnerability. This is considered critical as an unauthenticated remote attacker with knowledge of the hardcoded credential could potentially exploit this vulnerability leading to unauthorized access to the underlying operating system and root-level persistence. Dell recommends that customers upgrade or apply one of the remediations as soon as possible.</p></details></td>
+        <td>2026-02-17</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-1731" target="_blank" rel="noopener">CVE-2026-1731</a></td>
+        <td>9.9</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-78</td>
+        <td><span class="kev-yes">&#10003;</span></td>
+        <td><details><summary>BeyondTrust Remote Support (RS) and certain older versions of Privileged Remote ...</summary><p>BeyondTrust Remote Support (RS) and certain older versions of Privileged Remote Access (PRA) contain a critical pre-authentication remote code execution vulnerability. By sending specially crafted requests, an unauthenticated remote attacker may be able to execute operating system commands in the context of the site user.</p></details></td>
+        <td>2026-02-06</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33634" target="_blank" rel="noopener">CVE-2026-33634</a></td>
+        <td>9.4</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-506</td>
+        <td><span class="kev-yes">&#10003;</span></td>
+        <td><details><summary>Trivy is a security scanner. On March 19, 2026, a threat actor used compromised ...</summary><p>Trivy is a security scanner. On March 19, 2026, a threat actor used compromised credentials to publish a malicious Trivy v0.69.4 release, force-push 76 of 77 version tags in `aquasecurity/trivy-action` to credential-stealing malware, and replace all 7 tags in `aquasecurity/setup-trivy` with malicious commits. This incident is a continuation of the supply chain attack that began in late February 2026. Following the initial disclosure on March 1, credential rotation was performed but was not atomic (not all credentials were revoked simultaneously). The attacker could have use a valid token to exfiltrate newly rotated secrets during the rotation window (which lasted a few days). This could have allowed the attacker to retain access and execute the March 19 attack. Affected components include the `aquasecurity/trivy` Go / Container image version 0.69.4, the `aquasecurity/trivy-action` GitHub Action versions 0.0.1 – 0.34.2 (76/77), and the`aquasecurity/setup-trivy` GitHub Action versions 0.2.0 – 0.2.6, prior to the recreation of 0.2.6 with a safe commit. Known safe versions include versions 0.69.2 and 0.69.3 of the Trivy binary, version 0.35.0 of trivy-action, and version 0.2.6 of setup-trivy. Additionally, take other mitigations to ensure the safety of secrets. If there is any possibility that a compromised version ran in one&#x27;s environment, all secrets accessible to affected pipelines must be treated as exposed and rotated immediately. Check whether one&#x27;s organization pulled or executed Trivy v0.69.4 from any source. Remove any affected artifacts immediately. Review all workflows using `aquasecurity/trivy-action` or `aquasecurity/setup-trivy`. Those who referenced a version tag rather than a full commit SHA should check workflow run logs from March 19–20, 2026 for signs of compromise. Look for repositories named `tpcp-docs` in one&#x27;s GitHub organization. The presence of such a repository may indicate that the fallback exfiltration mechanism was triggered and secrets were successfully stolen. Pin GitHub Actions to full, immutable commit SHA hashes, don&#x27;t use mutable version tags.</p></details></td>
+        <td>2026-03-23</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33017" target="_blank" rel="noopener">CVE-2026-33017</a></td>
+        <td>9.3</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-94</td>
+        <td><span class="kev-yes">&#10003;</span></td>
+        <td><details><summary>Langflow is a tool for building and deploying AI-powered agents and workflows. I...</summary><p>Langflow is a tool for building and deploying AI-powered agents and workflows. In versions prior to 1.9.0, the POST /api/v1/build_public_tmp/{flow_id}/flow endpoint allows building public flows without requiring authentication. When the optional data parameter is supplied, the endpoint uses attacker-controlled flow data (containing arbitrary Python code in node definitions) instead of the stored flow data from the database. This code is passed to exec() with zero sandboxing, resulting in unauthenticated remote code execution. This is distinct from CVE-2025-3248, which fixed /api/v1/validate/code by adding authentication. The build_public_tmp endpoint is designed to be unauthenticated (for public flows) but incorrectly accepts attacker-supplied flow data containing arbitrary executable code. This issue has been fixed in version 1.9.0.</p></details></td>
+        <td>2026-03-20</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-2441" target="_blank" rel="noopener">CVE-2026-2441</a></td>
+        <td>8.8</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-416</td>
+        <td><span class="kev-yes">&#10003;</span></td>
+        <td><details><summary>Use after free in CSS in Google Chrome prior to 145.0.7632.75 allowed a remote a...</summary><p>Use after free in CSS in Google Chrome prior to 145.0.7632.75 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: High)</p></details></td>
+        <td>2026-02-13</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-21513" target="_blank" rel="noopener">CVE-2026-21513</a></td>
+        <td>8.8</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-693</td>
+        <td><span class="kev-yes">&#10003;</span></td>
+        <td><details><summary>Protection mechanism failure in MSHTML Framework allows an unauthorized attacker...</summary><p>Protection mechanism failure in MSHTML Framework allows an unauthorized attacker to bypass a security feature over a network.</p></details></td>
+        <td>2026-02-10</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-21510" target="_blank" rel="noopener">CVE-2026-21510</a></td>
+        <td>8.8</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-693</td>
+        <td><span class="kev-yes">&#10003;</span></td>
+        <td><details><summary>Protection mechanism failure in Windows Shell allows an unauthorized attacker to...</summary><p>Protection mechanism failure in Windows Shell allows an unauthorized attacker to bypass a security feature over a network.</p></details></td>
+        <td>2026-02-10</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-3910" target="_blank" rel="noopener">CVE-2026-3910</a></td>
+        <td>8.8</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-94</td>
+        <td><span class="kev-yes">&#10003;</span></td>
+        <td><details><summary>Inappropriate implementation in V8 in Google Chrome prior to 146.0.7680.75 allow...</summary><p>Inappropriate implementation in V8 in Google Chrome prior to 146.0.7680.75 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: High)</p></details></td>
+        <td>2026-03-13</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-3909" target="_blank" rel="noopener">CVE-2026-3909</a></td>
+        <td>8.8</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-787</td>
+        <td><span class="kev-yes">&#10003;</span></td>
+        <td><details><summary>Out of bounds write in Skia in Google Chrome prior to 146.0.7680.75 allowed a re...</summary><p>Out of bounds write in Skia in Google Chrome prior to 146.0.7680.75 allowed a remote attacker to perform out of bounds memory access via a crafted HTML page. (Chromium security severity: High)</p></details></td>
+        <td>2026-03-13</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-25108" target="_blank" rel="noopener">CVE-2026-25108</a></td>
+        <td>8.7</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-78</td>
+        <td><span class="kev-yes">&#10003;</span></td>
+        <td><details><summary>FileZen contains an OS command injection vulnerability. When FileZen Antivirus C...</summary><p>FileZen contains an OS command injection vulnerability. When FileZen Antivirus Check Option is enabled, a logged-in user may send a specially crafted HTTP request to execute an arbitrary OS command.</p></details></td>
+        <td>2026-02-13</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-1603" target="_blank" rel="noopener">CVE-2026-1603</a></td>
+        <td>8.6</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-288</td>
+        <td><span class="kev-yes">&#10003;</span></td>
+        <td><details><summary>An authentication bypass in Ivanti Endpoint Manager before version 2024 SU5 allo...</summary><p>An authentication bypass in Ivanti Endpoint Manager before version 2024 SU5 allows a remote unauthenticated attacker to leak specific stored credential data.</p></details></td>
+        <td>2026-02-10</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-20700" target="_blank" rel="noopener">CVE-2026-20700</a></td>
+        <td>7.8</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-119</td>
+        <td><span class="kev-yes">&#10003;</span></td>
+        <td><details><summary>A memory corruption issue was addressed with improved state management. This iss...</summary><p>A memory corruption issue was addressed with improved state management. This issue is fixed in iOS 26.3 and iPadOS 26.3, macOS Tahoe 26.3, tvOS 26.3, visionOS 26.3, watchOS 26.3. An attacker with memory write capability may be able to execute arbitrary code. Apple is aware of a report that this issue may have been exploited in an extremely sophisticated attack against specific targeted individuals on versions of iOS before iOS 26. CVE-2025-14174 and CVE-2025-43529 were also issued in response to this report.</p></details></td>
+        <td>2026-02-11</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-21533" target="_blank" rel="noopener">CVE-2026-21533</a></td>
+        <td>7.8</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-269</td>
+        <td><span class="kev-yes">&#10003;</span></td>
+        <td><details><summary>Improper privilege management in Windows Remote Desktop allows an authorized att...</summary><p>Improper privilege management in Windows Remote Desktop allows an authorized attacker to elevate privileges locally.</p></details></td>
+        <td>2026-02-10</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-21519" target="_blank" rel="noopener">CVE-2026-21519</a></td>
+        <td>7.8</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-843</td>
+        <td><span class="kev-yes">&#10003;</span></td>
+        <td><details><summary>Access of resource using incompatible type (&#x27;type confusion&#x27;) in Desktop Window ...</summary><p>Access of resource using incompatible type (&#x27;type confusion&#x27;) in Desktop Window Manager allows an authorized attacker to elevate privileges locally.</p></details></td>
+        <td>2026-02-10</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-21514" target="_blank" rel="noopener">CVE-2026-21514</a></td>
+        <td>7.8</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-807</td>
+        <td><span class="kev-yes">&#10003;</span></td>
+        <td><details><summary>Reliance on untrusted inputs in a security decision in Microsoft Office Word all...</summary><p>Reliance on untrusted inputs in a security decision in Microsoft Office Word allows an unauthorized attacker to bypass a security feature locally.</p></details></td>
+        <td>2026-02-10</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-21385" target="_blank" rel="noopener">CVE-2026-21385</a></td>
+        <td>7.8</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-190</td>
+        <td><span class="kev-yes">&#10003;</span></td>
+        <td><details><summary>Memory corruption while using alignments for memory allocation.</summary><p>Memory corruption while using alignments for memory allocation.</p></details></td>
+        <td>2026-03-02</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-15556" target="_blank" rel="noopener">CVE-2025-15556</a></td>
+        <td>7.7</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-494</td>
+        <td><span class="kev-yes">&#10003;</span></td>
+        <td><details><summary>Notepad++ versions prior to 8.8.9, when using the WinGUp updater, contain an upd...</summary><p>Notepad++ versions prior to 8.8.9, when using the WinGUp updater, contain an update integrity verification vulnerability where downloaded update metadata and installers are not cryptographically verified. An attacker able to intercept or redirect update traffic can cause the updater to download and execute an attacker-controlled installer, resulting in arbitrary code execution with the privileges of the user.</p></details></td>
+        <td>2026-02-03</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-21525" target="_blank" rel="noopener">CVE-2026-21525</a></td>
+        <td>6.2</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-476</td>
+        <td><span class="kev-yes">&#10003;</span></td>
+        <td><details><summary>Null pointer dereference in Windows Remote Access Connection Manager allows an u...</summary><p>Null pointer dereference in Windows Remote Access Connection Manager allows an unauthorized attacker to deny service locally.</p></details></td>
+        <td>2026-02-10</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-28409" target="_blank" rel="noopener">CVE-2026-28409</a></td>
+        <td>10.0</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-78</td>
+        <td>&nbsp;</td>
+        <td><details><summary>WeGIA is a web manager for charitable institutions. Prior to version 3.6.5, a cr...</summary><p>WeGIA is a web manager for charitable institutions. Prior to version 3.6.5, a critical Remote Code Execution (RCE) vulnerability exists in the WeGIA application&#x27;s database restoration functionality. An attacker with administrative access (which can be obtained via the previously reported Authentication Bypass) can execute arbitrary OS commands on the server by uploading a backup file with a specifically crafted filename. Version 3.6.5 fixes the issue.</p></details></td>
+        <td>2026-02-27</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-27613" target="_blank" rel="noopener">CVE-2026-27613</a></td>
+        <td>10.0</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-78</td>
+        <td>&nbsp;</td>
+        <td><details><summary>TinyWeb is a web server (HTTP, HTTPS) written in Delphi for Win32. A vulnerabili...</summary><p>TinyWeb is a web server (HTTP, HTTPS) written in Delphi for Win32. A vulnerability in versions prior to 2.01 allows unauthenticated remote attackers to bypass the web server&#x27;s CGI parameter security controls. Depending on the server configuration and the specific CGI executable in use, the impact is either source code disclosure or remote code execution (RCE). Anyone hosting CGI scripts (particularly interpreted languages like PHP) using vulnerable versions of TinyWeb is impacted. The problem has been patched in version 2.01. If upgrading is not immediately possible, ensure `STRICT_CGI_PARAMS` is enabled (it is defined by default in `define.inc`) and/or do not use CGI executables that natively accept dangerous command-line flags (such as `php-cgi.exe`). If hosting PHP, consider placing the server behind a Web Application Firewall (WAF) that explicitly blocks URL query string parameters that begin with a hyphen (`-`) or contain encoded double quotes (`%22`).</p></details></td>
+        <td>2026-02-25</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-27597" target="_blank" rel="noopener">CVE-2026-27597</a></td>
+        <td>10.0</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-94</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Enclave is a secure JavaScript sandbox designed for safe AI agent code execution...</summary><p>Enclave is a secure JavaScript sandbox designed for safe AI agent code execution. Prior to version 2.11.1, it is possible to escape the security boundraries set by `@enclave-vm/core`, which can be used to achieve remote code execution (RCE). The issue has been fixed in version 2.11.1.</p></details></td>
+        <td>2026-02-25</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-26222" target="_blank" rel="noopener">CVE-2026-26222</a></td>
+        <td>10.0</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-502</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Altec DocLink (now maintained by Beyond Limits Inc.) version 4.0.336.0 exposes i...</summary><p>Altec DocLink (now maintained by Beyond Limits Inc.) version 4.0.336.0 exposes insecure .NET Remoting endpoints over TCP and HTTP/SOAP via Altec.RDCHostService.exe using the ObjectURI &quot;doclinkServer.soap&quot;. The service does not require authentication and is vulnerable to unsafe object unmarshalling, allowing remote attackers to read arbitrary files from the underlying system by specifying local file paths. Additionally, attackers can coerce SMB authentication via UNC paths and write arbitrary files to server locations. Because writable paths may be web-accessible under IIS, this can result in unauthenticated remote code execution or denial of service through file overwrite.</p></details></td>
+        <td>2026-02-24</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-2778" target="_blank" rel="noopener">CVE-2026-2778</a></td>
+        <td>10.0</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>NVD-CWE-noinfo</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Sandbox escape due to incorrect boundary conditions in the DOM: Core &amp; HTML comp...</summary><p>Sandbox escape due to incorrect boundary conditions in the DOM: Core &amp; HTML component. This vulnerability affects Firefox &lt; 148, Firefox ESR &lt; 115.33, Firefox ESR &lt; 140.8, Thunderbird &lt; 148, and Thunderbird &lt; 140.8.</p></details></td>
+        <td>2026-02-24</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-2776" target="_blank" rel="noopener">CVE-2026-2776</a></td>
+        <td>10.0</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>NVD-CWE-noinfo</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Sandbox escape due to incorrect boundary conditions in the Telemetry component i...</summary><p>Sandbox escape due to incorrect boundary conditions in the Telemetry component in External Software. This vulnerability affects Firefox &lt; 148, Firefox ESR &lt; 115.33, Firefox ESR &lt; 140.8, Thunderbird &lt; 148, and Thunderbird &lt; 140.8.</p></details></td>
+        <td>2026-02-24</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-2768" target="_blank" rel="noopener">CVE-2026-2768</a></td>
+        <td>10.0</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>NVD-CWE-noinfo</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Sandbox escape in the Storage: IndexedDB component. This vulnerability affects F...</summary><p>Sandbox escape in the Storage: IndexedDB component. This vulnerability affects Firefox &lt; 148, Firefox ESR &lt; 140.8, Thunderbird &lt; 148, and Thunderbird &lt; 140.8.</p></details></td>
+        <td>2026-02-24</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-2761" target="_blank" rel="noopener">CVE-2026-2761</a></td>
+        <td>10.0</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>NVD-CWE-noinfo</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Sandbox escape in the Graphics: WebRender component. This vulnerability affects ...</summary><p>Sandbox escape in the Graphics: WebRender component. This vulnerability affects Firefox &lt; 148, Firefox ESR &lt; 115.33, Firefox ESR &lt; 140.8, Thunderbird &lt; 148, and Thunderbird &lt; 140.8.</p></details></td>
+        <td>2026-02-24</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-2760" target="_blank" rel="noopener">CVE-2026-2760</a></td>
+        <td>10.0</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>NVD-CWE-noinfo</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Sandbox escape due to incorrect boundary conditions in the Graphics: WebRender c...</summary><p>Sandbox escape due to incorrect boundary conditions in the Graphics: WebRender component. This vulnerability affects Firefox &lt; 148, Firefox ESR &lt; 115.33, Firefox ESR &lt; 140.8, Thunderbird &lt; 148, and Thunderbird &lt; 140.8.</p></details></td>
+        <td>2026-02-24</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2021-35402" target="_blank" rel="noopener">CVE-2021-35402</a></td>
+        <td>10.0</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-78</td>
+        <td>&nbsp;</td>
+        <td><details><summary>PROLiNK PRC2402M 20190909 before 2021-06-13 allows live_api.cgi?page=satellite_l...</summary><p>PROLiNK PRC2402M 20190909 before 2021-06-13 allows live_api.cgi?page=satellite_list OS command injection via shell metacharacters in the ip parameter (for satellite_status).</p></details></td>
+        <td>2026-02-20</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-30416" target="_blank" rel="noopener">CVE-2025-30416</a></td>
+        <td>10.0</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Sensitive data disclosure and manipulation due to missing authorization. The fol...</summary><p>Sensitive data disclosure and manipulation due to missing authorization. The following products are affected: Acronis Cyber Protect 16 (Linux, Windows) before build 39938, Acronis Cyber Protect 15 (Linux, Windows) before build 41800.</p></details></td>
+        <td>2026-02-20</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-30412" target="_blank" rel="noopener">CVE-2025-30412</a></td>
+        <td>10.0</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-1390</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Sensitive data disclosure and manipulation due to improper authentication. The f...</summary><p>Sensitive data disclosure and manipulation due to improper authentication. The following products are affected: Acronis Cyber Protect 16 (Linux, Windows) before build 39938, Acronis Cyber Protect 15 (Linux, Windows) before build 41800.</p></details></td>
+        <td>2026-02-20</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-30411" target="_blank" rel="noopener">CVE-2025-30411</a></td>
+        <td>10.0</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-1390</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Sensitive data disclosure and manipulation due to improper authentication. The f...</summary><p>Sensitive data disclosure and manipulation due to improper authentication. The following products are affected: Acronis Cyber Protect 16 (Linux, Windows) before build 39938, Acronis Cyber Protect 15 (Linux, Windows) before build 41800.</p></details></td>
+        <td>2026-02-20</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-2731" target="_blank" rel="noopener">CVE-2026-2731</a></td>
+        <td>10.0</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-22</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Path traversal and content injection in JobRunnerBackground.aspx in DynamicWeb 8...</summary><p>Path traversal and content injection in JobRunnerBackground.aspx in DynamicWeb 8 (all) and 9 (&lt;9.19.7 and &lt;9.20.3) allows unauthenticated attackers to execute code via simple web requests</p></details></td>
+        <td>2026-02-19</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-15586" target="_blank" rel="noopener">CVE-2025-15586</a></td>
+        <td>10.0</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-287</td>
+        <td>&nbsp;</td>
+        <td><details><summary>OGP-Website installs prior git commit 52f865a4fba763594453068acf8fa9e3fc38d663 a...</summary><p>OGP-Website installs prior git commit 52f865a4fba763594453068acf8fa9e3fc38d663 are affected by a type juggling flaw which if exploited can result in authentication bypass without knowledge of the victim account&#x27;s password.</p></details></td>
+        <td>2026-02-19</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-14009" target="_blank" rel="noopener">CVE-2025-14009</a></td>
+        <td>10.0</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-94</td>
+        <td>&nbsp;</td>
+        <td><details><summary>A critical vulnerability exists in the NLTK downloader component of nltk/nltk, a...</summary><p>A critical vulnerability exists in the NLTK downloader component of nltk/nltk, affecting all versions. The _unzip_iter function in nltk/downloader.py uses zipfile.extractall() without performing path validation or security checks. This allows attackers to craft malicious zip packages that, when downloaded and extracted by NLTK, can execute arbitrary code. The vulnerability arises because NLTK assumes all downloaded packages are trusted and extracts them without validation. If a malicious package contains Python files, such as __init__.py, these files are executed automatically upon import, leading to remote code execution. This issue can result in full system compromise, including file system access, network access, and potential persistence mechanisms.</p></details></td>
+        <td>2026-02-18</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-2577" target="_blank" rel="noopener">CVE-2026-2577</a></td>
+        <td>10.0</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-306</td>
+        <td>&nbsp;</td>
+        <td><details><summary>The WhatsApp bridge component in Nanobot binds the WebSocket server to all netwo...</summary><p>The WhatsApp bridge component in Nanobot binds the WebSocket server to all network interfaces (0.0.0.0) on port 3001 by default and does not require authentication for incoming connections. An unauthenticated remote attacker with network access to the bridge can connect to the WebSocket server to hijack the WhatsApp session. This allows the attacker to send messages on behalf of the user, intercept all incoming messages and media in real-time, and capture authentication QR codes.</p></details></td>
+        <td>2026-02-16</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-26333" target="_blank" rel="noopener">CVE-2026-26333</a></td>
+        <td>10.0</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-306</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Calero VeraSMART versions prior to 2022 R1 expose an unauthenticated .NET Remoti...</summary><p>Calero VeraSMART versions prior to 2022 R1 expose an unauthenticated .NET Remoting HTTP service on TCP port 8001. The service publishes default ObjectURIs (including EndeavorServer.rem and RemoteFileReceiver.rem) and permits the use of SOAP and binary formatters with TypeFilterLevel set to Full. An unauthenticated remote attacker can invoke the exposed remoting endpoints to perform arbitrary file read and write operations via the WebClient class. This allows retrieval of sensitive files such as WebRoot\\web.config, which may disclose IIS machineKey validation and decryption keys. An attacker can use these keys to generate a malicious ASP.NET ViewState payload and achieve remote code execution within the IIS application context. Additionally, supplying a UNC path can trigger outbound SMB authentication from the service account, potentially exposing NTLMv2 hashes for relay or offline cracking.</p></details></td>
+        <td>2026-02-13</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-69770" target="_blank" rel="noopener">CVE-2025-69770</a></td>
+        <td>10.0</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-22</td>
+        <td>&nbsp;</td>
+        <td><details><summary>A zip slip vulnerability in the /DesignTools/SkinList.aspx endpoint of MojoPorta...</summary><p>A zip slip vulnerability in the /DesignTools/SkinList.aspx endpoint of MojoPortal CMS v2.9.0.1 allows attackers to execute arbitrary commands via uploading a crafted zip file.</p></details></td>
+        <td>2026-02-13</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-26221" target="_blank" rel="noopener">CVE-2026-26221</a></td>
+        <td>10.0</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-502</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Hyland OnBase contains an unauthenticated .NET Remoting exposure in the OnBase W...</summary><p>Hyland OnBase contains an unauthenticated .NET Remoting exposure in the OnBase Workflow Timer Service (Hyland.Core.Workflow.NTService.exe). An attacker who can reach the service can send crafted .NET Remoting requests to default HTTP channel endpoints on TCP/8900 (e.g., TimerServiceAPI.rem and TimerServiceEvents.rem for Workflow) to trigger unsafe object unmarshalling, enabling arbitrary file read/write. By writing attacker-controlled content into web-accessible locations or chaining with other OnBase features, this can lead to remote code execution. The same primitive can be abused by supplying a UNC path to coerce outbound NTLM authentication (SMB coercion) to an attacker-controlled host.</p></details></td>
+        <td>2026-02-13</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-26216" target="_blank" rel="noopener">CVE-2026-26216</a></td>
+        <td>10.0</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-94</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Crawl4AI versions prior to 0.8.0 contain a remote code execution vulnerability i...</summary><p>Crawl4AI versions prior to 0.8.0 contain a remote code execution vulnerability in the Docker API deployment. The /crawl endpoint accepts a hooks parameter containing Python code that is executed using exec(). The __import__ builtin was included in the allowed builtins, allowing unauthenticated remote attackers to import arbitrary modules and execute system commands. Successful exploitation allows full server compromise, including arbitrary command execution, file read and write access, sensitive data exfiltration, and lateral movement within internal networks.</p></details></td>
+        <td>2026-02-12</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-64075" target="_blank" rel="noopener">CVE-2025-64075</a></td>
+        <td>10.0</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-22</td>
+        <td>&nbsp;</td>
+        <td><details><summary>A path traversal vulnerability in the check_token function of Shenzhen Zhibotong...</summary><p>A path traversal vulnerability in the check_token function of Shenzhen Zhibotong Electronics ZBT WE2001 23.09.27 allows remote attackers to bypass authentication and perform administrative actions by supplying a crafted session cookie value.</p></details></td>
+        <td>2026-02-11</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-25893" target="_blank" rel="noopener">CVE-2026-25893</a></td>
+        <td>10.0</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-285</td>
+        <td>&nbsp;</td>
+        <td><details><summary>FUXA is a web-based Process Visualization (SCADA/HMI/Dashboard) software. Prior ...</summary><p>FUXA is a web-based Process Visualization (SCADA/HMI/Dashboard) software. Prior to 1.2.10, an authentication bypass vulnerability in FUXA allows an unauthenticated, remote attacker to gain administrative access via the heartbeat refresh API and execute arbitrary code on the server. This issue has been patched in FUXA version 1.2.10.</p></details></td>
+        <td>2026-02-09</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-25885" target="_blank" rel="noopener">CVE-2026-25885</a></td>
+        <td>10.0</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-285</td>
+        <td>&nbsp;</td>
+        <td><details><summary>PolarLearn is a free and open-source learning program. In 0-PRERELEASE-16 and ea...</summary><p>PolarLearn is a free and open-source learning program. In 0-PRERELEASE-16 and earlier, the group chat WebSocket at wss://polarlearn.nl/api/v1/ws can be used without logging in. An unauthenticated client can subscribe to any group chat by providing a group UUID, and can also send messages to any group. The server accepts the message and stores it in the group’s chatContent, so this is not just a visual spam issue.</p></details></td>
+        <td>2026-02-09</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-25632" target="_blank" rel="noopener">CVE-2026-25632</a></td>
+        <td>10.0</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-502</td>
+        <td>&nbsp;</td>
+        <td><details><summary>EPyT-Flow is a Python package designed for the easy generation of hydraulic and ...</summary><p>EPyT-Flow is a Python package designed for the easy generation of hydraulic and water quality scenario data of water distribution networks. Prior to 0.16.1, EPyT-Flow’s REST API parses attacker-controlled JSON request bodies using a custom deserializer (my_load_from_json) that supports a type field. When type is present, the deserializer dynamically imports an attacker-specified module/class and instantiates it with attacker-supplied arguments. This allows invoking dangerous classes such as subprocess.Popen, which can lead to OS command execution during JSON parsing. This also affects the loading of JSON files. This vulnerability is fixed in 0.16.1.</p></details></td>
+        <td>2026-02-06</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-25641" target="_blank" rel="noopener">CVE-2026-25641</a></td>
+        <td>10.0</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-367</td>
+        <td>&nbsp;</td>
+        <td><details><summary>SandboxJS is a JavaScript sandboxing library. Prior to 0.8.29, there is a sandbo...</summary><p>SandboxJS is a JavaScript sandboxing library. Prior to 0.8.29, there is a sandbox escape vulnerability due to a mismatch between the key on which the validation is performed and the key used for accessing properties. Even though the key used in property accesses is annotated as string, this is never enforced. So, attackers can pass malicious objects that coerce to different string values when used, e.g., one for the time the key is sanitized using hasOwnProperty(key) and a different one for when the key is used for the actual property access. This vulnerability is fixed in 0.8.29.</p></details></td>
+        <td>2026-02-06</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-25587" target="_blank" rel="noopener">CVE-2026-25587</a></td>
+        <td>10.0</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-94</td>
+        <td>&nbsp;</td>
+        <td><details><summary>SandboxJS is a JavaScript sandboxing library. Prior to 0.8.29, as Map is in SAFE...</summary><p>SandboxJS is a JavaScript sandboxing library. Prior to 0.8.29, as Map is in SAFE_PROTOYPES, it&#x27;s prototype can be obtained via Map.prototype. By overwriting Map.prototype.has the sandbox can be escaped. This vulnerability is fixed in 0.8.29.</p></details></td>
+        <td>2026-02-06</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-25586" target="_blank" rel="noopener">CVE-2026-25586</a></td>
+        <td>10.0</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-74</td>
+        <td>&nbsp;</td>
+        <td><details><summary>SandboxJS is a JavaScript sandboxing library. Prior to 0.8.29, a sandbox escape ...</summary><p>SandboxJS is a JavaScript sandboxing library. Prior to 0.8.29, a sandbox escape is possible by shadowing hasOwnProperty on a sandbox object, which disables prototype whitelist enforcement in the property-access path. This permits direct access to __proto__ and other blocked prototype properties, enabling host Object.prototype pollution and persistent cross-sandbox impact. This vulnerability is fixed in 0.8.29.</p></details></td>
+        <td>2026-02-06</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-25520" target="_blank" rel="noopener">CVE-2026-25520</a></td>
+        <td>10.0</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-74</td>
+        <td>&nbsp;</td>
+        <td><details><summary>SandboxJS is a JavaScript sandboxing library. Prior to 0.8.29, The return values...</summary><p>SandboxJS is a JavaScript sandboxing library. Prior to 0.8.29, The return values of functions aren&#x27;t wrapped. Object.values/Object.entries can be used to get an Array containing the host&#x27;s Function constructor, by using Array.prototype.at you can obtain the hosts Function constructor, which can be used to execute arbitrary code outside of the sandbox. This vulnerability is fixed in 0.8.29.</p></details></td>
+        <td>2026-02-06</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-68121" target="_blank" rel="noopener">CVE-2025-68121</a></td>
+        <td>10.0</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-295</td>
+        <td>&nbsp;</td>
+        <td><details><summary>During session resumption in crypto/tls, if the underlying Config has its Client...</summary><p>During session resumption in crypto/tls, if the underlying Config has its ClientCAs or RootCAs fields mutated between the initial handshake and the resumed handshake, the resumed handshake may succeed when it should have failed. This may happen when a user calls Config.Clone and mutates the returned Config, or uses Config.GetConfigForClient. This can cause a client to resume a session with a server that it would not have resumed with during the initial handshake, or cause a server to resume a session with a client that it would not have resumed with during the initial handshake.</p></details></td>
+        <td>2026-02-05</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-59818" target="_blank" rel="noopener">CVE-2025-59818</a></td>
+        <td>10.0</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-77</td>
+        <td>&nbsp;</td>
+        <td><details><summary>This vulnerability allows authenticated attackers to execute arbitrary commands ...</summary><p>This vulnerability allows authenticated attackers to execute arbitrary commands on the underlying system using the file name of an uploaded file.</p></details></td>
+        <td>2026-02-04</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-1633" target="_blank" rel="noopener">CVE-2026-1633</a></td>
+        <td>10.0</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-306</td>
+        <td>&nbsp;</td>
+        <td><details><summary>The Synectix LAN 232 TRIO 3-Port serial to ethernet adapter exposes its web mana...</summary><p>The Synectix LAN 232 TRIO 3-Port serial to ethernet adapter exposes its web management interface without requiring authentication, allowing unauthenticated users to modify critical device settings or factory reset the device.</p></details></td>
+        <td>2026-02-04</td>
+      </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>This product uses the NVD API but is not endorsed or certified by the NVD.</p>
+    </footer>
+  </div>
+</body>
+</html>

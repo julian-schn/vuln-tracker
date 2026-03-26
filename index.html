@@ -11,11 +11,21 @@
     <header>
       <h1>vuln-tracker</h1>
       <p class="subtitle">CVEs from the National Vulnerability Database — current and previous month</p>
-      <p class="last-updated">Last updated: 2026-03-26 19:16 UTC</p>
+      <p class="last-updated">Last updated: 2026-03-26 19:28 UTC</p>
     </header>
+    <nav>
+      <a href="top50.html">&#9733; Top 50</a>
+      <span class="nav-sep">|</span>
+      <span class="nav-data">Data:
+        <a href="data/current.tonl">current.tonl</a>
+        <a href="data/current.md">current.md</a>
+        <a href="data/previous.tonl">previous.tonl</a>
+        <a href="data/previous.md">previous.md</a>
+      </span>
+    </nav>
     <main>
     <section>
-      <h2>Current Month — March 2026 <span class="count">(4924)</span></h2>
+      <h2>Current Month — March 2026 <span class="count">(4939)</span></h2>
       <div class="table-wrapper">
         <table>
           <thead>
@@ -30,6 +40,194 @@
             </tr>
           </thead>
           <tbody>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4926" target="_blank" rel="noopener">CVE-2026-4926</a></td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-400</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Impact:
+
+A bad regular expression is generated any time you have multiple sequen...</summary><p>Impact:
+
+A bad regular expression is generated any time you have multiple sequential optional groups (curly brace syntax), such as `{a}{b}{c}:z`. The generated regex grows exponentially with the number of groups, causing denial of service.
+
+Patches:
+
+Fixed in version 8.4.0.
+
+Workarounds:
+
+Limit the number of sequential optional groups in route patterns. Avoid passing user-controlled input as route patterns.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4923" target="_blank" rel="noopener">CVE-2026-4923</a></td>
+        <td>5.9</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-1333</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Impact:
+
+When using multiple wildcards, combined with at least one parameter, a ...</summary><p>Impact:
+
+When using multiple wildcards, combined with at least one parameter, a regular expression can be generated that is vulnerable to ReDoS. This backtracking vulnerability requires the second wildcard to be somewhere other than the end of the path.
+
+Unsafe examples:
+
+/*foo-*bar-:baz
+/*a-:b-*c-:d
+/x/*a-:b/*c/y
+
+Safe examples:
+
+/*foo-:bar
+/*foo-:bar-*baz
+
+Patches:
+
+Upgrade to version 8.4.0.
+
+Workarounds:
+
+If you are using multiple wildcard parameters, you can check the regex output with a tool such as https://makenowjust-labs.github.io/recheck/playground/ to confirm whether a path is vulnerable.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-3190" target="_blank" rel="noopener">CVE-2026-3190</a></td>
+        <td>4.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-280</td>
+        <td>&nbsp;</td>
+        <td><details><summary>A flaw was found in Keycloak. The User-Managed Access (UMA) 2.0 Protection API e...</summary><p>A flaw was found in Keycloak. The User-Managed Access (UMA) 2.0 Protection API endpoint for permission tickets fails to enforce the `uma_protection` role check. This allows any authenticated user with a token issued for a resource server client, even without the `uma_protection` role, to enumerate all permission tickets in the system. This vulnerability partial leads to information disclosure.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-3121" target="_blank" rel="noopener">CVE-2026-3121</a></td>
+        <td>6.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-266</td>
+        <td>&nbsp;</td>
+        <td><details><summary>A flaw was found in Keycloak. An administrator with `manage-clients` permission ...</summary><p>A flaw was found in Keycloak. An administrator with `manage-clients` permission can exploit a misconfiguration where this permission is equivalent to `manage-permissions`. This allows the administrator to escalate privileges and gain control over roles, users, or other administrative functions within the realm. This privilege escalation can occur when admin permissions are enabled at the realm level.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33506" target="_blank" rel="noopener">CVE-2026-33506</a></td>
+        <td>8.8</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-87</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Ory Polis, formerly known as BoxyHQ Jackson, bridges or proxies a SAML login flo...</summary><p>Ory Polis, formerly known as BoxyHQ Jackson, bridges or proxies a SAML login flow to OAuth 2.0 or OpenID Connect. Versions prior to 26.2.0 contain a DOM-based Cross-Site Scripting (XSS) vulnerability in Ory Polis&#x27;s login functionality. The application improperly trusts a URL parameter (`callbackUrl`), which is passed to `router.push`. An attacker can craft a malicious link that, when opened by an authenticated user (or an unauthenticated user that later logs in), performs a client-side redirect and executes arbitrary JavaScript in the context of their browser. This could lead to credential theft, internal network pivoting, and unauthorized actions performed on behalf of the victim. Version 26.2.0 contains a patch for the issue.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33505" target="_blank" rel="noopener">CVE-2026-33505</a></td>
+        <td>7.2</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-89</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Ory Keto is am open source authorization server for managing permissions at scal...</summary><p>Ory Keto is am open source authorization server for managing permissions at scale. Prior to version 26.2.0, the GetRelationships API in Ory Keto is vulnerable to SQL injection due to flaws in its pagination implementation. Pagination tokens are encrypted using the secret configured in `secrets.pagination`. An attacker who knows this secret can craft their own tokens, including malicious tokens that lead to SQL injection. If this configuration value is not set, Keto falls back to a hard-coded default pagination encryption secret. Because this default value is publicly known, attackers can generate valid and malicious pagination tokens manually for installations where this secret is not set. This issue can be exploited when GetRelationships API is directly or indirectly accessible to the attacker, the attacker can pass a raw pagination token to the affected API, and the configuration value `secrets.pagination` is not set or known to the attacker. An attacker can execute arbitrary SQL queries through forged pagination tokens. As a first line of defense, immediately configure a custom value for `secrets.pagination` by generating a cryptographically secure random secret. Next, upgrade Keto to a fixed version, 26.2.0 or later, as soon as possible.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33491" target="_blank" rel="noopener">CVE-2026-33491</a></td>
+        <td>7.8</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-121</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Zen C is a systems programming language that compiles to human-readable GNU C/C1...</summary><p>Zen C is a systems programming language that compiles to human-readable GNU C/C11. Prior to version 0.4.4, a stack-based buffer overflow vulnerability in the Zen C compiler allows attackers to cause a compiler crash or potentially execute arbitrary code by providing a specially crafted Zen C source file (`.zc`) with excessively long struct, function, or trait identifiers. Users are advised to update to Zen C version v0.4.4 or later to receive a patch.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33153" target="_blank" rel="noopener">CVE-2026-33153</a></td>
+        <td>7.7</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-89</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Tandoor Recipes is an application for managing recipes, planning meals, and buil...</summary><p>Tandoor Recipes is an application for managing recipes, planning meals, and building shopping lists. In versions prior to 2.6.0, the Recipe API endpoint exposes a hidden `?debug=true` query parameter that returns the complete raw SQL query being executed, including all table names, column names, JOIN relationships, WHERE conditions (revealing access control logic), and multi-tenant space IDs. This parameter works even when Django&#x27;s `DEBUG=False` (production mode) and is accessible to any authenticated user regardless of their privilege level. This allows a low-privilege attacker to map the entire database schema and reverse-engineer the authorization model. Version 2.6.0 patches the issue.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33152" target="_blank" rel="noopener">CVE-2026-33152</a></td>
+        <td>9.1</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-307</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Tandoor Recipes is an application for managing recipes, planning meals, and buil...</summary><p>Tandoor Recipes is an application for managing recipes, planning meals, and building shopping lists. In versions prior to 2.6.0, Tandoor Recipes configures Django REST Framework with BasicAuthentication as one of the default authentication backends. The AllAuth rate limiting configuration (ACCOUNT_RATE_LIMITS: login: 5/m/ip) only applies to the HTML-based login endpoint at /accounts/login/. Any API endpoint that accepts authenticated requests can be targeted via Authorization: Basic headers with zero rate limiting, zero account lockout, and unlimited attempts. An attacker can perform high-speed password guessing against any known username. Version 2.6.0 patches the issue.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33149" target="_blank" rel="noopener">CVE-2026-33149</a></td>
+        <td>8.1</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-644</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Tandoor Recipes is an application for managing recipes, planning meals, and buil...</summary><p>Tandoor Recipes is an application for managing recipes, planning meals, and building shopping lists. Versions up to and including 2.5.3 set ALLOWED_HOSTS = &#x27;*&#x27; by default, which causes Django to accept any value in the HTTP Host header without validation. The application uses request.build_absolute_uri() to generate absolute URLs in multiple contexts, including invite link emails, API pagination, and OpenAPI schema generation. An attacker who can send requests to the application with a crafted Host header can manipulate all server-generated absolute URLs. The most critical impact is invite link poisoning: when an admin creates an invite and the application sends the invite email, the link points to the attacker&#x27;s server instead of the real application. When the victim clicks the link, the invite token is sent to the attacker, who can then use it at the real application. As of time of publication, it is unknown if a patched version is available.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33148" target="_blank" rel="noopener">CVE-2026-33148</a></td>
+        <td>6.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-74</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Tandoor Recipes is an application for managing recipes, planning meals, and buil...</summary><p>Tandoor Recipes is an application for managing recipes, planning meals, and building shopping lists. In versions prior to 2.6.0, the FDC (USDA FoodData Central) search endpoint constructs an upstream API URL by directly interpolating the user-supplied `query` parameter into the URL string without URL-encoding. An attacker can inject additional URL parameters by including `&amp;` characters in the query value. This allows overriding the API key, manipulating upstream query behavior, and causing server crashes (HTTP 500) via malformed requests — a Denial of Service condition. Version 2.6.0 patches the issue.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-30463" target="_blank" rel="noopener">CVE-2026-30463</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Daylight Studio FuelCMS v1.5.2 was discovered to contain a SQL injection vulnera...</summary><p>Daylight Studio FuelCMS v1.5.2 was discovered to contain a SQL injection vulnerability via the /controllers/Login.php component.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-30458" target="_blank" rel="noopener">CVE-2026-30458</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td><details><summary>An issue in Daylight Studio FuelCMS v1.5.2 allows attackers to exfiltrate users&#x27;...</summary><p>An issue in Daylight Studio FuelCMS v1.5.2 allows attackers to exfiltrate users&#x27; password reset tokens via a mail splitting attack.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-30457" target="_blank" rel="noopener">CVE-2026-30457</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td><details><summary>An issue in the /parser/dwoo component of Daylight Studio FuelCMS v1.5.2 allows ...</summary><p>An issue in the /parser/dwoo component of Daylight Studio FuelCMS v1.5.2 allows attackers to execute arbitrary code via crafted PHP code.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-29969" target="_blank" rel="noopener">CVE-2026-29969</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td><details><summary>A cross-site scripting (XSS) vulnerability in the wff_cols_pref.css.aspx endpoin...</summary><p>A cross-site scripting (XSS) vulnerability in the wff_cols_pref.css.aspx endpoint of staffwiki v7.0.1.19219 allows attackers to execute arbitrary Javascript in the context of the user&#x27;s browser via a crafted HTTP request.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-29055" target="_blank" rel="noopener">CVE-2026-29055</a></td>
+        <td>5.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-1230</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Tandoor Recipes is an application for managing recipes, planning meals, and buil...</summary><p>Tandoor Recipes is an application for managing recipes, planning meals, and building shopping lists. In versions prior to 2.6.0, the image processing pipeline in Tandoor Recipes explicitly skips EXIF metadata stripping, image rescaling, and size validation for WebP and GIF image formats. A developer TODO comment in the source code acknowledges this as a known issue. As a result, when users upload recipe photos in WebP format (the default format for modern smartphone cameras), their sensitive EXIF data — including GPS coordinates, camera model, timestamps, and software information — is stored and served to all users who can view the recipe. Version 2.6.0 fixes the issue.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-28503" target="_blank" rel="noopener">CVE-2026-28503</a></td>
+        <td>5.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-639</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Tandoor Recipes is an application for managing recipes, planning meals, and buil...</summary><p>Tandoor Recipes is an application for managing recipes, planning meals, and building shopping lists. In versions prior to 2.6.0, the `SyncViewSet.query_synced_folder()` action in `cookbook/views/api.py` (line 903) fetches a Sync object using `get_object_or_404(Sync, pk=pk)` without including `space=request.space` in the filter. This allows an admin user in Space A to trigger sync operations (Dropbox/Nextcloud/Local import) on Sync configurations belonging to Space B, and view the resulting sync logs. Version 2.6.0 patches the issue.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-26213" target="_blank" rel="noopener">CVE-2026-26213</a></td>
         <td>8.7</td>
@@ -145,31 +343,6 @@
         <td>CWE-918</td>
         <td>&nbsp;</td>
         <td><details><summary>Firecrawl version 2.8.0 and prior contain a server-side request forgery (SSRF) p...</summary><p>Firecrawl version 2.8.0 and prior contain a server-side request forgery (SSRF) protection bypass vulnerability in the Playwright scraping service where network policy validation is applied only to the initial user-supplied URL and not to subsequent redirect destinations. Attackers can supply an externally valid URL that passes validation and returns an HTTP redirect to an internal or restricted resource, allowing the browser to follow the redirect and fetch the final destination without revalidation, thereby gaining access to internal network services and sensitive endpoints. This issue is distinct from CVE-2024-56800, which describes redirect-based SSRF generally. This vulnerability specifically arises from a post-redirect enforcement gap in implemented SSRF protections, where validation is applied only to the initial request and not to the final redirected destination.</p></details></td>
-        <td>2026-03-26</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4867" target="_blank" rel="noopener">CVE-2026-4867</a></td>
-        <td>7.5</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-1333</td>
-        <td>&nbsp;</td>
-        <td><details><summary>Impact:
-
-A bad regular expression is generated any time you have three or more p...</summary><p>Impact:
-
-A bad regular expression is generated any time you have three or more parameters within a single segment, separated by something that is not a period (.). For example, /:a-:b-:c or /:a-:b-:c-:d. The backtrack protection added in path-to-regexp@0.1.12 only prevents ambiguity for two parameters. With three or more, the generated lookahead does not block single separator characters, so capture groups overlap and cause catastrophic backtracking.
-
-Patches:
-
-Upgrade to path-to-regexp@0.1.13
-
-Custom regex patterns in route definitions (e.g., /:a-:b([^-/]+)-:c([^-/]+)) are not affected because they override the default capture group.
-
-Workarounds:
-
-All versions can be patched by providing a custom regular expression for parameters after the first in a single segment. As long as the custom regular expression does not match the text before the parameter, you will be safe. For example, change /:a-:b-:c to /:a-:b([^-/]+)-:c([^-/]+).
-
-If paths cannot be rewritten and versions cannot be upgraded, another alternative is to limit the URL length.</p></details></td>
         <td>2026-03-26</td>
       </tr>
       <tr>
@@ -363,9 +536,9 @@ If paths cannot be rewritten and versions cannot be upgraded, another alternativ
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-29905" target="_blank" rel="noopener">CVE-2026-29905</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>6.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-20</td>
         <td>&nbsp;</td>
         <td><details><summary>Kirby CMS through 5.1.4 allows an authenticated user with &#x27;Editor&#x27; permissions t...</summary><p>Kirby CMS through 5.1.4 allows an authenticated user with &#x27;Editor&#x27; permissions to cause a persistent Denial of Service (DoS) via a malformed image upload. The application fails to properly validate the return value of the PHP getimagesize() function. When the system attempts to process this file for metadata or thumbnail generation, it triggers a fatal TypeError.</p></details></td>
         <td>2026-03-26</td>
@@ -462,9 +635,9 @@ If paths cannot be rewritten and versions cannot be upgraded, another alternativ
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-30162" target="_blank" rel="noopener">CVE-2026-30162</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>6.1</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
         <td>&nbsp;</td>
         <td><details><summary>Cross Site Scripting (xss) vulnerability in Timo 2.0.3 via crafted links in the ...</summary><p>Cross Site Scripting (xss) vulnerability in Timo 2.0.3 via crafted links in the title field.</p></details></td>
         <td>2026-03-26</td>
@@ -480,8 +653,8 @@ If paths cannot be rewritten and versions cannot be upgraded, another alternativ
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-29934" target="_blank" rel="noopener">CVE-2026-29934</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>6.1</td>
+        <td><span class="severity medium">MEDIUM</span></td>
         <td>N/A</td>
         <td>&nbsp;</td>
         <td><details><summary>A reflected cross-site scripting (XSS) vulnerability in the /admin/menus compone...</summary><p>A reflected cross-site scripting (XSS) vulnerability in the /admin/menus component of Lightcms v2.0 allows attackers to execute arbitrary Javascript in the context of the user&#x27;s browser via modifying the referer value in the request header.</p></details></td>
@@ -2604,8 +2777,8 @@ If paths cannot be rewritten and versions cannot be upgraded, another alternativ
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32524" target="_blank" rel="noopener">CVE-2026-32524</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>9.1</td>
+        <td><span class="severity critical">CRITICAL</span></td>
         <td>CWE-434</td>
         <td>&nbsp;</td>
         <td><details><summary>Unrestricted Upload of File with Dangerous Type vulnerability in Jordy Meow Phot...</summary><p>Unrestricted Upload of File with Dangerous Type vulnerability in Jordy Meow Photo Engine wplr-sync allows Upload a Web Shell to a Web Server.This issue affects Photo Engine: from n/a through &lt;= 6.4.9.</p></details></td>
@@ -2622,8 +2795,8 @@ If paths cannot be rewritten and versions cannot be upgraded, another alternativ
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32522" target="_blank" rel="noopener">CVE-2026-32522</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>8.6</td>
+        <td><span class="severity high">HIGH</span></td>
         <td>CWE-22</td>
         <td>&nbsp;</td>
         <td><details><summary>Improper Limitation of a Pathname to a Restricted Directory (&#x27;Path Traversal&#x27;) v...</summary><p>Improper Limitation of a Pathname to a Restricted Directory (&#x27;Path Traversal&#x27;) vulnerability in vanquish WooCommerce Support Ticket System woocommerce-support-ticket-system allows Path Traversal.This issue affects WooCommerce Support Ticket System: from n/a through &lt; 18.5.</p></details></td>
@@ -2640,8 +2813,8 @@ If paths cannot be rewritten and versions cannot be upgraded, another alternativ
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32520" target="_blank" rel="noopener">CVE-2026-32520</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>9.8</td>
+        <td><span class="severity critical">CRITICAL</span></td>
         <td>CWE-266</td>
         <td>&nbsp;</td>
         <td><details><summary>Incorrect Privilege Assignment vulnerability in Andrew Munro / AffiliateWP Rewar...</summary><p>Incorrect Privilege Assignment vulnerability in Andrew Munro / AffiliateWP RewardsWP rewardswp allows Privilege Escalation.This issue affects RewardsWP: from n/a through &lt;= 1.0.4.</p></details></td>
@@ -2676,8 +2849,8 @@ If paths cannot be rewritten and versions cannot be upgraded, another alternativ
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32516" target="_blank" rel="noopener">CVE-2026-32516</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>8.5</td>
+        <td><span class="severity high">HIGH</span></td>
         <td>CWE-89</td>
         <td>&nbsp;</td>
         <td><details><summary>Improper Neutralization of Special Elements used in an SQL Command (&#x27;SQL Injecti...</summary><p>Improper Neutralization of Special Elements used in an SQL Command (&#x27;SQL Injection&#x27;) vulnerability in kamleshyadav Miraculous Core Plugin miraculouscore allows Blind SQL Injection.This issue affects Miraculous Core Plugin: from n/a through &lt; 2.1.2.</p></details></td>
@@ -2784,8 +2957,8 @@ If paths cannot be rewritten and versions cannot be upgraded, another alternativ
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32504" target="_blank" rel="noopener">CVE-2026-32504</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>8.1</td>
+        <td><span class="severity high">HIGH</span></td>
         <td>CWE-98</td>
         <td>&nbsp;</td>
         <td><details><summary>Improper Control of Filename for Include/Require Statement in PHP Program (&#x27;PHP ...</summary><p>Improper Control of Filename for Include/Require Statement in PHP Program (&#x27;PHP Remote File Inclusion&#x27;) vulnerability in CreativeWS VintWood vintwood allows PHP Local File Inclusion.This issue affects VintWood: from n/a through &lt;= 1.1.8.</p></details></td>
@@ -2811,8 +2984,8 @@ If paths cannot be rewritten and versions cannot be upgraded, another alternativ
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32501" target="_blank" rel="noopener">CVE-2026-32501</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>7.1</td>
+        <td><span class="severity high">HIGH</span></td>
         <td>CWE-862</td>
         <td>&nbsp;</td>
         <td><details><summary>Missing Authorization vulnerability in wp-configurator WP Configurator Pro wp-co...</summary><p>Missing Authorization vulnerability in wp-configurator WP Configurator Pro wp-configurator-pro allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects WP Configurator Pro: from n/a through &lt;= 3.7.9.</p></details></td>
@@ -2820,8 +2993,8 @@ If paths cannot be rewritten and versions cannot be upgraded, another alternativ
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32500" target="_blank" rel="noopener">CVE-2026-32500</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>8.1</td>
+        <td><span class="severity high">HIGH</span></td>
         <td>CWE-98</td>
         <td>&nbsp;</td>
         <td><details><summary>Improper Control of Filename for Include/Require Statement in PHP Program (&#x27;PHP ...</summary><p>Improper Control of Filename for Include/Require Statement in PHP Program (&#x27;PHP Remote File Inclusion&#x27;) vulnerability in CreativeWS MetaMax metamax allows PHP Local File Inclusion.This issue affects MetaMax: from n/a through &lt;= 1.1.4.</p></details></td>
@@ -2865,8 +3038,8 @@ If paths cannot be rewritten and versions cannot be upgraded, another alternativ
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32495" target="_blank" rel="noopener">CVE-2026-32495</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
         <td>CWE-862</td>
         <td>&nbsp;</td>
         <td><details><summary>Missing Authorization vulnerability in Link Software LLC WP Terms Popup wp-terms...</summary><p>Missing Authorization vulnerability in Link Software LLC WP Terms Popup wp-terms-popup allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects WP Terms Popup: from n/a through &lt;= 2.10.0.</p></details></td>
@@ -2937,8 +3110,8 @@ If paths cannot be rewritten and versions cannot be upgraded, another alternativ
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32485" target="_blank" rel="noopener">CVE-2026-32485</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
         <td>CWE-862</td>
         <td>&nbsp;</td>
         <td><details><summary>Missing Authorization vulnerability in weDevs WP User Frontend wp-user-frontend ...</summary><p>Missing Authorization vulnerability in weDevs WP User Frontend wp-user-frontend allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects WP User Frontend: from n/a through &lt;= 4.2.8.</p></details></td>
@@ -2973,8 +3146,8 @@ If paths cannot be rewritten and versions cannot be upgraded, another alternativ
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32441" target="_blank" rel="noopener">CVE-2026-32441</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>7.7</td>
+        <td><span class="severity high">HIGH</span></td>
         <td>CWE-862</td>
         <td>&nbsp;</td>
         <td><details><summary>Missing Authorization vulnerability in WebToffee Comments Import &amp; Export commen...</summary><p>Missing Authorization vulnerability in WebToffee Comments Import &amp; Export comments-import-export-woocommerce allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects Comments Import &amp; Export: from n/a through &lt;= 2.4.9.</p></details></td>
@@ -5057,49 +5230,6 @@ If paths cannot be rewritten and versions cannot be upgraded, another alternativ
         <td>CWE-330</td>
         <td>&nbsp;</td>
         <td><details><summary>An issue in Eufy Homebase 2 version 3.3.4.1h allows a local attacker to obtain s...</summary><p>An issue in Eufy Homebase 2 version 3.3.4.1h allows a local attacker to obtain sensitive information via the cryptographic scheme.</p></details></td>
-        <td>2026-03-25</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-31788" target="_blank" rel="noopener">CVE-2026-31788</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
-        <td>&nbsp;</td>
-        <td><details><summary>In the Linux kernel, the following vulnerability has been resolved:
-
-xen/privcmd...</summary><p>In the Linux kernel, the following vulnerability has been resolved:
-
-xen/privcmd: restrict usage in unprivileged domU
-
-The Xen privcmd driver allows to issue arbitrary hypercalls from
-user space processes. This is normally no problem, as access is
-usually limited to root and the hypervisor will deny any hypercalls
-affecting other domains.
-
-In case the guest is booted using secure boot, however, the privcmd
-driver would be enabling a root user process to modify e.g. kernel
-memory contents, thus breaking the secure boot feature.
-
-The only known case where an unprivileged domU is really needing to
-use the privcmd driver is the case when it is acting as the device
-model for another guest. In this case all hypercalls issued via the
-privcmd driver will target that other guest.
-
-Fortunately the privcmd driver can already be locked down to allow
-only hypercalls targeting a specific domain, but this mode can be
-activated from user land only today.
-
-The target domain can be obtained from Xenstore, so when not running
-in dom0 restrict the privcmd driver to that target domain from the
-beginning, resolving the potential problem of breaking secure boot.
-
-This is XSA-482
-
----
-V2:
-- defer reading from Xenstore if Xenstore isn&#x27;t ready yet (Jan Beulich)
-- wait in open() if target domain isn&#x27;t known yet
-- issue message in case no target domain found (Jan Beulich)</p></details></td>
         <td>2026-03-25</td>
       </tr>
       <tr>
