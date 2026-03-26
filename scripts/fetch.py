@@ -29,7 +29,12 @@ CURRENT_TONL   = DATA_DIR / "current.tonl"
 PREVIOUS_TONL  = DATA_DIR / "previous.tonl"
 CURRENT_MD     = DATA_DIR / "current.md"
 PREVIOUS_MD    = DATA_DIR / "previous.md"
+TOP50_TONL     = DATA_DIR / "top50.tonl"
+TOP50_MD       = DATA_DIR / "top50.md"
 INDEX_HTML     = ROOT_DIR / "index.html"
+TOP50_HTML     = ROOT_DIR / "top50.html"
+
+TOP50_COUNT    = 50
 
 TONL_HEADER    = "#version 1.0\n#delimiter \"|\"\n"
 TONL_SCHEMA    = "cves[COUNT]{cveId:str|published:str|lastModified:str|cvssScore:f64|severity:str|cweId:str|cweName:str|kev:bool|description:str|nvdUrl:str}:"
@@ -375,9 +380,94 @@ def render_html(current: dict, previous: dict, timestamp: str, now: datetime) ->
       <p class="subtitle">CVEs from the National Vulnerability Database — current and previous month</p>
       <p class="last-updated">Last updated: {html.escape(timestamp)}</p>
     </header>
+    <nav>
+      <a href="top50.html">&#9733; Top {TOP50_COUNT}</a>
+      <span class="nav-sep">|</span>
+      <span class="nav-data">Data:
+        <a href="data/current.tonl">current.tonl</a>
+        <a href="data/current.md">current.md</a>
+        <a href="data/previous.tonl">previous.tonl</a>
+        <a href="data/previous.md">previous.md</a>
+      </span>
+    </nav>
     <main>
 {current_section}
 {previous_section}
+    </main>
+    <footer>
+      <p>This product uses the NVD API but is not endorsed or certified by the NVD.</p>
+    </footer>
+  </div>
+</body>
+</html>
+"""
+
+# ---------------------------------------------------------------------------
+# Top-N selection
+# ---------------------------------------------------------------------------
+
+def get_top50(current: dict, previous: dict) -> dict:
+    """Return the top TOP50_COUNT CVEs ranked by KEV status then CVSS score."""
+    combined = {**previous, **current}  # current wins on duplicate cveId
+    ranked = sorted(
+        combined.values(),
+        key=lambda r: (r["kev"], r["cvssScore"]),
+        reverse=True,
+    )
+    return {r["cveId"]: r for r in ranked[:TOP50_COUNT]}
+
+
+def render_html_top50(records: dict, timestamp: str) -> str:
+    sorted_recs = sorted(records.values(), key=lambda r: (r["kev"], r["cvssScore"]), reverse=True)
+    rows = "\n".join(render_table_row(r) for r in sorted_recs)
+    if not rows:
+        rows = "      <tr><td colspan=\"7\">No data available.</td></tr>"
+
+    return f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>vuln-tracker — Top {TOP50_COUNT}</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>vuln-tracker — Top {TOP50_COUNT}</h1>
+      <p class="subtitle">The {TOP50_COUNT} most important CVEs from the current and previous month, ranked by KEV status then CVSS score</p>
+      <p class="last-updated">Last updated: {html.escape(timestamp)}</p>
+    </header>
+    <nav>
+      <a href="index.html">&larr; All CVEs</a>
+      <span class="nav-sep">|</span>
+      <span class="nav-data">Data:
+        <a href="data/top50.tonl">top50.tonl</a>
+        <a href="data/top50.md">top50.md</a>
+      </span>
+    </nav>
+    <main>
+      <section>
+        <h2>Top {TOP50_COUNT} <span class="count">({len(sorted_recs)})</span></h2>
+        <div class="table-wrapper">
+          <table>
+            <thead>
+              <tr>
+                <th>CVE ID</th>
+                <th>Score</th>
+                <th>Severity</th>
+                <th>CWE</th>
+                <th>KEV</th>
+                <th>Description</th>
+                <th>Published</th>
+              </tr>
+            </thead>
+            <tbody>
+{rows}
+            </tbody>
+          </table>
+        </div>
+      </section>
     </main>
     <footer>
       <p>This product uses the NVD API but is not endorsed or certified by the NVD.</p>
@@ -457,6 +547,12 @@ def main():
     print("Writing Markdown...")
     write_markdown(CURRENT_MD,  current_records,  f"CVEs — {current_label}")
     write_markdown(PREVIOUS_MD, previous_records, f"CVEs — {previous_label}")
+
+    top50 = get_top50(current_records, previous_records)
+    print(f"Writing Top {TOP50_COUNT} ({len(top50)} entries)...")
+    write_tonl(TOP50_TONL, top50)
+    write_markdown(TOP50_MD, top50, f"Top {TOP50_COUNT} CVEs — {current_label} & {previous_label}")
+    TOP50_HTML.write_text(render_html_top50(top50, timestamp), encoding="utf-8")
 
     timestamp = now_utc.strftime("%Y-%m-%d %H:%M UTC")
     print("Generating index.html...")

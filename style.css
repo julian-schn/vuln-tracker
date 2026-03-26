@@ -41,6 +41,45 @@ header h1 {
   font-size: 0.85rem;
 }
 
+/* --- Nav --- */
+nav {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+  padding: 0.5rem 0.75rem;
+  background: #f5f5f5;
+  border-radius: 4px;
+  font-size: 0.875rem;
+}
+
+nav a {
+  font-weight: 500;
+}
+
+.nav-sep {
+  color: #ccc;
+}
+
+.nav-data {
+  color: #888;
+}
+
+.nav-data a {
+  margin-left: 0.4rem;
+  font-weight: 400;
+  font-size: 0.82em;
+  color: #666;
+}
+
+@media (prefers-color-scheme: dark) {
+  nav { background: #242424; }
+  .nav-sep { color: #444; }
+  .nav-data { color: #666; }
+  .nav-data a { color: #7aadff; }
+}
+
 /* --- Sections --- */
 section {
   margin-bottom: 2.5rem;
