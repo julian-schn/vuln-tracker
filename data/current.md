@@ -1,9 +1,21 @@
 # CVEs — March 2026
 
-_5056 vulnerabilities_
+_5070 vulnerabilities_
 
 | CVE ID | Score | Severity | CWE | KEV | Published | Description |
 |--------|-------|----------|-----|-----|-----------|-------------|
+| [CVE-2026-3457](https://nvd.nist.gov/vuln/detail/CVE-2026-3457) | 7.0 | HIGH | CWE-79 | No | 2026-03-27 | Improper Neutralization of Input During Web Page Generation (XSS or 'Cross-site Scripting') vulnerability in Thales Sent... |
+| [CVE-2026-27860](https://nvd.nist.gov/vuln/detail/CVE-2026-27860) | 3.7 | LOW | CWE-90 | No | 2026-03-27 | If auth_username_chars is empty, it is possible to inject arbitrary LDAP filter to Dovecot's LDAP authentication. This l... |
+| [CVE-2026-27859](https://nvd.nist.gov/vuln/detail/CVE-2026-27859) | 5.3 | MEDIUM | CWE-400 | No | 2026-03-27 | A mail message containing excessive amount of RFC 2231 MIME parameters causes LMTP to use too much CPU. A suitably forma... |
+| [CVE-2026-27858](https://nvd.nist.gov/vuln/detail/CVE-2026-27858) | 7.5 | HIGH | CWE-400 | No | 2026-03-27 | Attacker can send a specifically crafted message before authentication that causes managesieve to allocate large amount... |
+| [CVE-2026-27857](https://nvd.nist.gov/vuln/detail/CVE-2026-27857) | 4.3 | MEDIUM | CWE-400 | No | 2026-03-27 | Sending "NOOP (((...)))" command with 4000 parenthesis open+close results in ~1MB extra memory usage. Longer commands wi... |
+| [CVE-2026-27856](https://nvd.nist.gov/vuln/detail/CVE-2026-27856) | 7.4 | HIGH | CWE-287 | No | 2026-03-27 | Doveadm credentials are verified using direct comparison which is susceptible to timing oracle attack. An attacker can u... |
+| [CVE-2026-27855](https://nvd.nist.gov/vuln/detail/CVE-2026-27855) | 6.8 | MEDIUM | CWE-294 | No | 2026-03-27 | Dovecot OTP authentication is vulnerable to replay attack under specific conditions. If auth cache is enabled, and usern... |
+| [CVE-2026-24031](https://nvd.nist.gov/vuln/detail/CVE-2026-24031) | 7.7 | HIGH | CWE-89 | No | 2026-03-27 | Dovecot SQL based authentication can be bypassed when auth_username_chars is cleared by admin. This vulnerability allows... |
+| [CVE-2026-0394](https://nvd.nist.gov/vuln/detail/CVE-2026-0394) | 5.3 | MEDIUM | CWE-22 | No | 2026-03-27 | When dovecot has been configured to use per-domain passwd files, and they are placed one path component above /etc, or s... |
+| [CVE-2025-59032](https://nvd.nist.gov/vuln/detail/CVE-2025-59032) | 7.5 | HIGH | CWE-20 | No | 2026-03-27 | ManageSieve AUTHENTICATE command crashes when using literal as SASL initial response. This can be used to crash ManageSi... |
+| [CVE-2025-59031](https://nvd.nist.gov/vuln/detail/CVE-2025-59031) | 4.3 | MEDIUM | CWE-200 | No | 2026-03-27 | Dovecot has provided a script to use for attachment to text conversion. This script unsafely handles zip-style attachmen... |
+| [CVE-2025-59028](https://nvd.nist.gov/vuln/detail/CVE-2025-59028) | 5.3 | MEDIUM | CWE-20 | No | 2026-03-27 | When sending invalid base64 SASL data, login process is disconnected from the auth server, causing all active authentica... |
 | [CVE-2026-4948](https://nvd.nist.gov/vuln/detail/CVE-2026-4948) | 5.5 | MEDIUM | CWE-279 | No | 2026-03-27 | A flaw was found in firewalld. A local unprivileged user can exploit this vulnerability by mis-authorizing two runtime D... |
 | [CVE-2026-34353](https://nvd.nist.gov/vuln/detail/CVE-2026-34353) | 5.9 | MEDIUM | CWE-190 | No | 2026-03-27 | In OCaml through 4.14.3, Bigarray.reshape allows an integer overflow, and resultant reading of arbitrary memory, when un... |
 | [CVE-2026-33559](https://nvd.nist.gov/vuln/detail/CVE-2026-33559) | 5.1 | MEDIUM | CWE-79 | No | 2026-03-27 | WordPress Plugin "OpenStreetMap" provided by MiKa contains a cross-site scripting vulnerability. On the site with the af... |
@@ -2504,6 +2516,8 @@ _5056 vulnerabilities_
 | [CVE-2025-13459](https://nvd.nist.gov/vuln/detail/CVE-2025-13459) | 2.7 | LOW | CWE-841 | No | 2026-03-16 | IBM Aspera Console 3.3.0 through 3.4.8 could allow a privileged user to cause a denial of service due to improper enforc... |
 | [CVE-2025-13212](https://nvd.nist.gov/vuln/detail/CVE-2025-13212) | 5.3 | MEDIUM | CWE-799 | No | 2026-03-16 | IBM Aspera Console 3.3.0 through 3.4.8 could allow an authenticated user to cause a denial of service in the email servi... |
 | [CVE-2025-12736](https://nvd.nist.gov/vuln/detail/CVE-2025-12736) | 6.5 | MEDIUM | CWE-908 | No | 2026-03-16 | in OpenHarmony v5.0.3 and prior versions allow a local attacker case sensitive information leak through use of uninitial... |
+| [CVE-2025-10685](https://nvd.nist.gov/vuln/detail/CVE-2025-10685) | 7.7 | HIGH | CWE-122 | No | 2026-03-16 | Heap-based buffer overflow vulnerability in Softing Industrial Automation GmbH smartLink SW-PN and smartLink SW-HT (Webs... |
+| [CVE-2025-10461](https://nvd.nist.gov/vuln/detail/CVE-2025-10461) | 5.3 | MEDIUM | CWE-20 | No | 2026-03-16 | Global file reads caused by improper URL checks in webserver in Softing Industrial Automation GmbH smartLinks on docker... |
 | [CVE-2017-20224](https://nvd.nist.gov/vuln/detail/CVE-2017-20224) | 9.3 | CRITICAL | CWE-434 | No | 2026-03-16 | Telesquare SKT LTE Router SDT-CS3B1 version 1.2.0 contains an arbitrary file upload vulnerability that allows unauthenti... |
 | [CVE-2017-20223](https://nvd.nist.gov/vuln/detail/CVE-2017-20223) | 9.3 | CRITICAL | CWE-639 | No | 2026-03-16 | Telesquare SKT LTE Router SDT-CS3B1 firmware version 1.2.0 contains an insecure direct object reference vulnerability th... |
 | [CVE-2017-20222](https://nvd.nist.gov/vuln/detail/CVE-2017-20222) | 8.7 | HIGH | CWE-306 | No | 2026-03-16 | Telesquare SKT LTE Router SDT-CS3B1 software version 1.2.0 contains an unauthenticated remote reboot vulnerability that... |

@@ -11,7 +11,7 @@
     <header>
       <h1>vuln-tracker</h1>
       <p class="subtitle">CVEs from the National Vulnerability Database — current and previous month</p>
-      <p class="last-updated">Last updated: 2026-03-27 09:01 UTC</p>
+      <p class="last-updated">Last updated: 2026-03-27 10:54 UTC</p>
     </header>
     <nav>
       <a href="top50.html">&#9733; Top 50</a>
@@ -25,7 +25,7 @@
     </nav>
     <main>
     <section>
-      <h2>Current Month — March 2026 <span class="count">(5056)</span></h2>
+      <h2>Current Month — March 2026 <span class="count">(5070)</span></h2>
       <div class="table-wrapper">
         <table>
           <thead>
@@ -40,6 +40,115 @@
             </tr>
           </thead>
           <tbody>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-3457" target="_blank" rel="noopener">CVE-2026-3457</a></td>
+        <td>7.0</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Improper Neutralization of Input During Web Page Generation (XSS or &#x27;Cross-site ...</summary><p>Improper Neutralization of Input During Web Page Generation (XSS or &#x27;Cross-site Scripting&#x27;) vulnerability in Thales Sentinel LDK Runtime on Windows allows Stored XSS.This issue affects Sentinel LDK Runtime: before 10.22.</p></details></td>
+        <td>2026-03-27</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-27860" target="_blank" rel="noopener">CVE-2026-27860</a></td>
+        <td>3.7</td>
+        <td><span class="severity low">LOW</span></td>
+        <td>CWE-90</td>
+        <td>&nbsp;</td>
+        <td><details><summary>If auth_username_chars is empty, it is possible to inject arbitrary LDAP filter ...</summary><p>If auth_username_chars is empty, it is possible to inject arbitrary LDAP filter to Dovecot&#x27;s LDAP authentication. This leads to potentially bypassing restrictions and allows probing of LDAP structure. Do not clear out auth_username_chars, or install fixed version. No publicly available exploits are known.</p></details></td>
+        <td>2026-03-27</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-27859" target="_blank" rel="noopener">CVE-2026-27859</a></td>
+        <td>5.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-400</td>
+        <td>&nbsp;</td>
+        <td><details><summary>A mail message containing excessive amount of RFC 2231 MIME parameters causes LM...</summary><p>A mail message containing excessive amount of RFC 2231 MIME parameters causes LMTP to use too much CPU. A suitably formatted mail message causes mail delivery process to consume large amounts of CPU time. Use MTA capabilities to limit RFC 2231 MIME parameters in mail messages, or upgrade to fixed version where the processing is limited. No publicly available exploits are known.</p></details></td>
+        <td>2026-03-27</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-27858" target="_blank" rel="noopener">CVE-2026-27858</a></td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-400</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Attacker can send a specifically crafted message before authentication that caus...</summary><p>Attacker can send a specifically crafted message before authentication that causes managesieve to allocate large amount of memory.
+ Attacker can force managesieve-login to be unavailable by repeatedly crashing the process. Protect access to managesieve protocol, or install fixed version. No publicly available exploits are known.</p></details></td>
+        <td>2026-03-27</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-27857" target="_blank" rel="noopener">CVE-2026-27857</a></td>
+        <td>4.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-400</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Sending &quot;NOOP (((...)))&quot; command with 4000 parenthesis open+close results in ~1M...</summary><p>Sending &quot;NOOP (((...)))&quot; command with 4000 parenthesis open+close results in ~1MB extra memory usage. Longer commands will result in client disconnection. This 1 MB can be left allocated for longer time periods by not sending the command ending LF. So attacker could connect possibly from even a single IP and create 1000 connections to allocate 1 GB of memory, which would likely result in reaching VSZ limit and killing the process and its other proxied connections. Attacker could connect possibly from even a single IP and create 1000 connections to allocate 1 GB of memory, which would likely result in reaching VSZ limit and killing the process and its other proxied connections. Install fixed version, there is no other remediation. No publicly available exploits are known.</p></details></td>
+        <td>2026-03-27</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-27856" target="_blank" rel="noopener">CVE-2026-27856</a></td>
+        <td>7.4</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-287</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Doveadm credentials are verified using direct comparison which is susceptible to...</summary><p>Doveadm credentials are verified using direct comparison which is susceptible to timing oracle attack. An attacker can use this to determine the configured credentials. Figuring out the credential will lead into full access to the affected component. Limit access to the doveadm http service port, install fixed version. No publicly available exploits are known.</p></details></td>
+        <td>2026-03-27</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-27855" target="_blank" rel="noopener">CVE-2026-27855</a></td>
+        <td>6.8</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-294</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Dovecot OTP authentication is vulnerable to replay attack under specific conditi...</summary><p>Dovecot OTP authentication is vulnerable to replay attack under specific conditions. If auth cache is enabled, and username is altered in passdb, then OTP credentials can be cached so that same OTP reply is valid. An attacker able to observe an OTP exchange is able to log in as the user. If authentication happens over unsecure connection, switch to SCRAM protocol. Alternatively ensure the communcations are secured, and if possible switch to OAUTH2 or SCRAM. No publicly available exploits are known.</p></details></td>
+        <td>2026-03-27</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-24031" target="_blank" rel="noopener">CVE-2026-24031</a></td>
+        <td>7.7</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-89</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Dovecot SQL based authentication can be bypassed when auth_username_chars is cle...</summary><p>Dovecot SQL based authentication can be bypassed when auth_username_chars is cleared by admin. This vulnerability allows bypassing authentication for any user and user enumeration. Do not clear auth_username_chars. If this is not possible, install latest fixed version. No publicly available exploits are known.</p></details></td>
+        <td>2026-03-27</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-0394" target="_blank" rel="noopener">CVE-2026-0394</a></td>
+        <td>5.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-22</td>
+        <td>&nbsp;</td>
+        <td><details><summary>When dovecot has been configured to use per-domain passwd files, and they are pl...</summary><p>When dovecot has been configured to use per-domain passwd files, and they are placed one path component above /etc, or slash has been added to allowed characters, path traversal can happen if the domain component is directory partial. This allows inadvertently reading /etc/passwd (or some other path which ends with passwd). If this file contains passwords, it can be used to authenticate wrongly, or if this is userdb, it can unexpectly make system users appear valid users.  Upgrade to fixed version, or use different authentication scheme that does not rely on paths. Alternatively you can also ensure that the per-domain passwd files are in some other location, such as /etc/dovecot/auth/%d. No publicly available exploits are known.</p></details></td>
+        <td>2026-03-27</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-59032" target="_blank" rel="noopener">CVE-2025-59032</a></td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-20</td>
+        <td>&nbsp;</td>
+        <td><details><summary>ManageSieve AUTHENTICATE command crashes when using literal as SASL initial resp...</summary><p>ManageSieve AUTHENTICATE command crashes when using literal as SASL initial response. This can be used to crash ManageSieve service repeatedly, making it unavailable for other users. Control access to ManageSieve port, or disable the service if it&#x27;s not needed. Alternatively upgrade to a fixed version. No publicly available exploits are known.</p></details></td>
+        <td>2026-03-27</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-59031" target="_blank" rel="noopener">CVE-2025-59031</a></td>
+        <td>4.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-200</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Dovecot has provided a script to use for attachment to text conversion. This scr...</summary><p>Dovecot has provided a script to use for attachment to text conversion. This script unsafely handles zip-style attachments. Attacker can use specially crafted OOXML documents to cause unintended files on the system to be indexed and subsequently ending up in FTS indexes. Do not use the provided script, instead, use something else like FTS tika. No publicly available exploits are known.</p></details></td>
+        <td>2026-03-27</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-59028" target="_blank" rel="noopener">CVE-2025-59028</a></td>
+        <td>5.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-20</td>
+        <td>&nbsp;</td>
+        <td><details><summary>When sending invalid base64 SASL data, login process is disconnected from the au...</summary><p>When sending invalid base64 SASL data, login process is disconnected from the auth server, causing all active authentication sessions to fail. Invalid BASE64 data can be used to DoS a vulnerable server to break concurrent logins. Install fixed version or disable concurrency in login processes (heavy perfomance penalty on large deployments). No publicly available exploits are known.</p></details></td>
+        <td>2026-03-27</td>
+      </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4948" target="_blank" rel="noopener">CVE-2026-4948</a></td>
         <td>5.5</td>
@@ -22538,6 +22647,36 @@
         <td>CWE-908</td>
         <td>&nbsp;</td>
         <td><details><summary>in OpenHarmony v5.0.3 and prior versions allow a local attacker case sensitive i...</summary><p>in OpenHarmony v5.0.3 and prior versions allow a local attacker case sensitive information leak through use of uninitialized resource.</p></details></td>
+        <td>2026-03-16</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-10685" target="_blank" rel="noopener">CVE-2025-10685</a></td>
+        <td>7.7</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-122</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Heap-based buffer overflow vulnerability in Softing Industrial Automation GmbH s...</summary><p>Heap-based buffer overflow vulnerability in Softing Industrial Automation GmbH smartLink SW-PN and smartLink SW-HT (Webserver modules) allows overflow buffers.This issue affects:
+
+smartLink SW-PN: through 1.03
+
+smartLink SW-HT: through 1.42</p></details></td>
+        <td>2026-03-16</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-10461" target="_blank" rel="noopener">CVE-2025-10461</a></td>
+        <td>5.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-20</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Global file reads caused by improper URL checks in webserver in Softing Industri...</summary><p>Global file reads caused by improper URL checks in webserver in Softing Industrial Automation GmbH smartLinks on docker (filesystem modules) allows file access.
+
+
+
+This issue affects
+
+smartLink SW-HT: through 1.42
+
+smartLink SW-PN: through 1.03.</p></details></td>
         <td>2026-03-16</td>
       </tr>
       <tr>
