@@ -1,6 +1,6 @@
 # CVEs — March 2026
 
-_5059 vulnerabilities_
+_5056 vulnerabilities_
 
 | CVE ID | Score | Severity | CWE | KEV | Published | Description |
 |--------|-------|----------|-----|-----|-----------|-------------|
@@ -14,9 +14,6 @@ _5059 vulnerabilities_
 | [CVE-2026-27650](https://nvd.nist.gov/vuln/detail/CVE-2026-27650) | 8.6 | HIGH | CWE-78 | No | 2026-03-27 | OS Command Injection vulnerability exists in BUFFALO Wi-Fi router products. If this vulnerability is exploited, an arbit... |
 | [CVE-2026-22744](https://nvd.nist.gov/vuln/detail/CVE-2026-22744) | 7.5 | HIGH | N/A | No | 2026-03-27 | In RedisFilterExpressionConverter of spring-ai-redis-store, when a user-controlled string is passed as a filter value fo... |
 | [CVE-2026-22743](https://nvd.nist.gov/vuln/detail/CVE-2026-22743) | 7.5 | HIGH | N/A | No | 2026-03-27 | Spring AI's spring-ai-neo4j-store contains a Cypher injection vulnerability in Neo4jVectorFilterExpressionConverter. Whe... |
-| [CVE-2026-22742](https://nvd.nist.gov/vuln/detail/CVE-2026-22742) | 8.6 | HIGH | N/A | No | 2026-03-27 | Spring AI's spring-ai-bedrock-converse contains a Server-Side Request Forgery (SSRF) vulnerability in BedrockProxyChatMo... |
-| [CVE-2026-22738](https://nvd.nist.gov/vuln/detail/CVE-2026-22738) | 9.8 | CRITICAL | N/A | No | 2026-03-27 | In Spring AI, a SpEL injection vulnerability exists in SimpleVectorStore when a user-supplied value is used as a filter... |
-| [CVE-2024-14028](https://nvd.nist.gov/vuln/detail/CVE-2024-14028) | 6.5 | MEDIUM | CWE-416 | No | 2026-03-27 | Use after free vulnerability in Softing smartLink HW-DP or smartLink HW-PN webserver allows HTTP DoS. This issue affects... |
 | [CVE-2026-4910](https://nvd.nist.gov/vuln/detail/CVE-2026-4910) | 6.9 | MEDIUM | CWE-74 | No | 2026-03-27 | A security vulnerability has been detected in Shenzhen Ruiming Technology Streamax Crocus bis 1.3.44. Affected is an unk... |
 | [CVE-2026-3098](https://nvd.nist.gov/vuln/detail/CVE-2026-3098) | 6.5 | MEDIUM | CWE-862 | No | 2026-03-27 | The Smart Slider 3 plugin for WordPress is vulnerable to Arbitrary File Read in all versions up to, and including, 3.5.1... |
 | [CVE-2026-4909](https://nvd.nist.gov/vuln/detail/CVE-2026-4909) | 4.8 | MEDIUM | CWE-79 | No | 2026-03-27 | A weakness has been identified in code-projects Exam Form Submission 1.0/7.php. This impacts an unknown function of the... |
