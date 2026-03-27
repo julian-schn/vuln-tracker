@@ -1,20 +1,18 @@
 # CVEs — March 2026
 
-_5078 vulnerabilities_
+_5076 vulnerabilities_
 
 | CVE ID | Score | Severity | CWE | KEV | Published | Description |
 |--------|-------|----------|-----|-----|-----------|-------------|
-| [CVE-2026-4982](https://nvd.nist.gov/vuln/detail/CVE-2026-4982) | 7.3 | HIGH | CWE-20 | No | 2026-03-27 | A user with permission "update world" in any Venueless world is able to exfiltrate chat messages from direct messages or... |
+| [CVE-2026-32859](https://nvd.nist.gov/vuln/detail/CVE-2026-32859) | 5.1 | MEDIUM | CWE-79 | No | 2026-03-27 | ByteDance Deer-Flow versions prior to commit 5dbb362 contain a stored cross-site scripting vulnerability in the artifact... |
+| [CVE-2026-32695](https://nvd.nist.gov/vuln/detail/CVE-2026-32695) | 6.3 | MEDIUM | CWE-74 | No | 2026-03-27 | Traefik is an HTTP reverse proxy and load balancer. Prior to versions 3.6.11 and 3.7.0-ea.2, Traefik's Knative provider... |
+| [CVE-2025-13478](https://nvd.nist.gov/vuln/detail/CVE-2025-13478) | 8.4 | HIGH | CWE-522 | No | 2026-03-27 | Cache misconfiguration vulnerability in OpenText Identity Manager on Windows, Linux allows remote authenticated users to... |
 | [CVE-2026-4340](https://nvd.nist.gov/vuln/detail/CVE-2026-4340) | 0.0 | NONE | N/A | No | 2026-03-27 | Rejected reason: ** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. Reason: This candidate was issued in error. Notes: All r... |
 | [CVE-2026-4622](https://nvd.nist.gov/vuln/detail/CVE-2026-4622) | 7.1 | HIGH | CWE-78 | No | 2026-03-27 | OS Command Injection vulnerability in NEC Platforms, Ltd. Aterm Series allows a attacker to execute arbitrary OS command... |
 | [CVE-2026-4621](https://nvd.nist.gov/vuln/detail/CVE-2026-4621) | 6.3 | MEDIUM | CWE-912 | No | 2026-03-27 | Hidden Functionality vulnerability in NEC Platforms, Ltd. Aterm Series allows a attacker to enable telnet via network. |
 | [CVE-2026-4620](https://nvd.nist.gov/vuln/detail/CVE-2026-4620) | 7.1 | HIGH | CWE-78 | No | 2026-03-27 | OS Command Injection vulnerability in NEC Platforms, Ltd. Aterm Series allows a attacker to execute arbitrary OS command... |
 | [CVE-2026-4619](https://nvd.nist.gov/vuln/detail/CVE-2026-4619) | 6.0 | MEDIUM | CWE-22 | No | 2026-03-27 | Path Traversal vulnerability in NEC Platforms, Ltd. Aterm Series allows a attacker to wtite over any file via network. |
 | [CVE-2026-4309](https://nvd.nist.gov/vuln/detail/CVE-2026-4309) | 6.3 | MEDIUM | CWE-862 | No | 2026-03-27 | Missing Authorization vulnerability in NEC Platforms, Ltd. Aterm Series allows a attacker to get a specific device infor... |
-| [CVE-2026-25101](https://nvd.nist.gov/vuln/detail/CVE-2026-25101) | 4.8 | MEDIUM | CWE-384 | No | 2026-03-27 | Bludit allows user's session identifier to be set before authentication. The value of this session ID stays the same aft... |
-| [CVE-2026-25100](https://nvd.nist.gov/vuln/detail/CVE-2026-25100) | 4.8 | MEDIUM | CWE-79 | No | 2026-03-27 | Bludit is vulnerable to Stored Cross-Site Scripting (XSS) in its image upload functionality. An authenticated attacker w... |
-| [CVE-2026-25099](https://nvd.nist.gov/vuln/detail/CVE-2026-25099) | 8.7 | HIGH | CWE-434 | No | 2026-03-27 | Bludit’s API plugin allows an authenticated attacker with a valid API token to upload files of any type and extension wi... |
-| [CVE-2023-7339](https://nvd.nist.gov/vuln/detail/CVE-2023-7339) | 6.5 | MEDIUM | CWE-121 | No | 2026-03-27 | Stack-based buffer overflow vulnerability in Softing Industrial Automation GmbH gateways allows overflow buffers. This i... |
 | [CVE-2026-3457](https://nvd.nist.gov/vuln/detail/CVE-2026-3457) | 7.0 | HIGH | CWE-79 | No | 2026-03-27 | Improper Neutralization of Input During Web Page Generation (XSS or 'Cross-site Scripting') vulnerability in Thales Sent... |
 | [CVE-2026-27860](https://nvd.nist.gov/vuln/detail/CVE-2026-27860) | 3.7 | LOW | CWE-90 | No | 2026-03-27 | If auth_username_chars is empty, it is possible to inject arbitrary LDAP filter to Dovecot's LDAP authentication. This l... |
 | [CVE-2026-27859](https://nvd.nist.gov/vuln/detail/CVE-2026-27859) | 5.3 | MEDIUM | CWE-400 | No | 2026-03-27 | A mail message containing excessive amount of RFC 2231 MIME parameters causes LMTP to use too much CPU. A suitably forma... |
@@ -513,7 +511,7 @@ _5078 vulnerabilities_
 | [CVE-2026-27073](https://nvd.nist.gov/vuln/detail/CVE-2026-27073) | 7.5 | HIGH | CWE-798 | No | 2026-03-25 | Use of Hard-coded Credentials vulnerability in Addi Addi &#8211; Cuotas que se adaptan a ti buy-now-pay-later-addi allow... |
 | [CVE-2026-27071](https://nvd.nist.gov/vuln/detail/CVE-2026-27071) | 9.1 | CRITICAL | CWE-862 | No | 2026-03-25 | Missing Authorization vulnerability in Arraytics WPCafe wp-cafe allows Exploiting Incorrectly Configured Access Control... |
 | [CVE-2026-27054](https://nvd.nist.gov/vuln/detail/CVE-2026-27054) | 7.1 | HIGH | CWE-79 | No | 2026-03-25 | Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in PenciDesign Penci... |
-| [CVE-2026-27051](https://nvd.nist.gov/vuln/detail/CVE-2026-27051) | 0.0 | NONE | CWE-266 | No | 2026-03-25 | Incorrect Privilege Assignment vulnerability in uxper Golo golo allows Privilege Escalation.This issue affects Golo: fro... |
+| [CVE-2026-27051](https://nvd.nist.gov/vuln/detail/CVE-2026-27051) | 9.8 | CRITICAL | CWE-266 | No | 2026-03-25 | Incorrect Privilege Assignment vulnerability in uxper Golo golo allows Privilege Escalation.This issue affects Golo: fro... |
 | [CVE-2026-27049](https://nvd.nist.gov/vuln/detail/CVE-2026-27049) | 9.8 | CRITICAL | CWE-288 | No | 2026-03-25 | Authentication Bypass Using an Alternate Path or Channel vulnerability in NooTheme Jobica Core jobica-core allows Authen... |
 | [CVE-2026-27048](https://nvd.nist.gov/vuln/detail/CVE-2026-27048) | 8.1 | HIGH | CWE-98 | No | 2026-03-25 | Improper Control of Filename for Include/Require Statement in PHP Program ('PHP Remote File Inclusion') vulnerability in... |
 | [CVE-2026-27047](https://nvd.nist.gov/vuln/detail/CVE-2026-27047) | 8.1 | HIGH | CWE-98 | No | 2026-03-25 | Improper Control of Filename for Include/Require Statement in PHP Program ('PHP Remote File Inclusion') vulnerability in... |
@@ -529,7 +527,7 @@ _5078 vulnerabilities_
 | [CVE-2026-25464](https://nvd.nist.gov/vuln/detail/CVE-2026-25464) | 8.1 | HIGH | CWE-98 | No | 2026-03-25 | Improper Control of Filename for Include/Require Statement in PHP Program ('PHP Remote File Inclusion') vulnerability in... |
 | [CVE-2026-25462](https://nvd.nist.gov/vuln/detail/CVE-2026-25462) | 6.5 | MEDIUM | CWE-862 | No | 2026-03-25 | Missing Authorization vulnerability in avalex avalex avalex allows Exploiting Incorrectly Configured Access Control Secu... |
 | [CVE-2026-25461](https://nvd.nist.gov/vuln/detail/CVE-2026-25461) | 7.1 | HIGH | CWE-79 | No | 2026-03-25 | Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in purethemes Listeo... |
-| [CVE-2026-25460](https://nvd.nist.gov/vuln/detail/CVE-2026-25460) | 0.0 | NONE | CWE-862 | No | 2026-03-25 | Missing Authorization vulnerability in LiquidThemes Ave Core ave-core allows Exploiting Incorrectly Configured Access Co... |
+| [CVE-2026-25460](https://nvd.nist.gov/vuln/detail/CVE-2026-25460) | 6.3 | MEDIUM | CWE-862 | No | 2026-03-25 | Missing Authorization vulnerability in LiquidThemes Ave Core ave-core allows Exploiting Incorrectly Configured Access Co... |
 | [CVE-2026-25458](https://nvd.nist.gov/vuln/detail/CVE-2026-25458) | 8.1 | HIGH | CWE-98 | No | 2026-03-25 | Improper Control of Filename for Include/Require Statement in PHP Program ('PHP Remote File Inclusion') vulnerability in... |
 | [CVE-2026-25457](https://nvd.nist.gov/vuln/detail/CVE-2026-25457) | 8.1 | HIGH | CWE-98 | No | 2026-03-25 | Improper Control of Filename for Include/Require Statement in PHP Program ('PHP Remote File Inclusion') vulnerability in... |
 | [CVE-2026-25456](https://nvd.nist.gov/vuln/detail/CVE-2026-25456) | 7.5 | HIGH | CWE-862 | No | 2026-03-25 | Missing Authorization vulnerability in Aarsiv Groups Automated FedEx live/manual rates with shipping labels a2z-fedex-sh... |
