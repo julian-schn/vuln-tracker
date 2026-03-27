@@ -1,13 +1,23 @@
 # CVEs — March 2026
 
-_5070 vulnerabilities_
+_5078 vulnerabilities_
 
 | CVE ID | Score | Severity | CWE | KEV | Published | Description |
 |--------|-------|----------|-----|-----|-----------|-------------|
+| [CVE-2026-4982](https://nvd.nist.gov/vuln/detail/CVE-2026-4982) | 7.3 | HIGH | CWE-20 | No | 2026-03-27 | A user with permission "update world" in any Venueless world is able to exfiltrate chat messages from direct messages or... |
+| [CVE-2026-4340](https://nvd.nist.gov/vuln/detail/CVE-2026-4340) | 0.0 | NONE | N/A | No | 2026-03-27 | Rejected reason: ** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. Reason: This candidate was issued in error. Notes: All r... |
+| [CVE-2026-4622](https://nvd.nist.gov/vuln/detail/CVE-2026-4622) | 7.1 | HIGH | CWE-78 | No | 2026-03-27 | OS Command Injection vulnerability in NEC Platforms, Ltd. Aterm Series allows a attacker to execute arbitrary OS command... |
+| [CVE-2026-4621](https://nvd.nist.gov/vuln/detail/CVE-2026-4621) | 6.3 | MEDIUM | CWE-912 | No | 2026-03-27 | Hidden Functionality vulnerability in NEC Platforms, Ltd. Aterm Series allows a attacker to enable telnet via network. |
+| [CVE-2026-4620](https://nvd.nist.gov/vuln/detail/CVE-2026-4620) | 7.1 | HIGH | CWE-78 | No | 2026-03-27 | OS Command Injection vulnerability in NEC Platforms, Ltd. Aterm Series allows a attacker to execute arbitrary OS command... |
+| [CVE-2026-4619](https://nvd.nist.gov/vuln/detail/CVE-2026-4619) | 6.0 | MEDIUM | CWE-22 | No | 2026-03-27 | Path Traversal vulnerability in NEC Platforms, Ltd. Aterm Series allows a attacker to wtite over any file via network. |
+| [CVE-2026-4309](https://nvd.nist.gov/vuln/detail/CVE-2026-4309) | 6.3 | MEDIUM | CWE-862 | No | 2026-03-27 | Missing Authorization vulnerability in NEC Platforms, Ltd. Aterm Series allows a attacker to get a specific device infor... |
+| [CVE-2026-25101](https://nvd.nist.gov/vuln/detail/CVE-2026-25101) | 4.8 | MEDIUM | CWE-384 | No | 2026-03-27 | Bludit allows user's session identifier to be set before authentication. The value of this session ID stays the same aft... |
+| [CVE-2026-25100](https://nvd.nist.gov/vuln/detail/CVE-2026-25100) | 4.8 | MEDIUM | CWE-79 | No | 2026-03-27 | Bludit is vulnerable to Stored Cross-Site Scripting (XSS) in its image upload functionality. An authenticated attacker w... |
+| [CVE-2026-25099](https://nvd.nist.gov/vuln/detail/CVE-2026-25099) | 8.7 | HIGH | CWE-434 | No | 2026-03-27 | Bludit’s API plugin allows an authenticated attacker with a valid API token to upload files of any type and extension wi... |
+| [CVE-2023-7339](https://nvd.nist.gov/vuln/detail/CVE-2023-7339) | 6.5 | MEDIUM | CWE-121 | No | 2026-03-27 | Stack-based buffer overflow vulnerability in Softing Industrial Automation GmbH gateways allows overflow buffers. This i... |
 | [CVE-2026-3457](https://nvd.nist.gov/vuln/detail/CVE-2026-3457) | 7.0 | HIGH | CWE-79 | No | 2026-03-27 | Improper Neutralization of Input During Web Page Generation (XSS or 'Cross-site Scripting') vulnerability in Thales Sent... |
 | [CVE-2026-27860](https://nvd.nist.gov/vuln/detail/CVE-2026-27860) | 3.7 | LOW | CWE-90 | No | 2026-03-27 | If auth_username_chars is empty, it is possible to inject arbitrary LDAP filter to Dovecot's LDAP authentication. This l... |
 | [CVE-2026-27859](https://nvd.nist.gov/vuln/detail/CVE-2026-27859) | 5.3 | MEDIUM | CWE-400 | No | 2026-03-27 | A mail message containing excessive amount of RFC 2231 MIME parameters causes LMTP to use too much CPU. A suitably forma... |
-| [CVE-2026-27858](https://nvd.nist.gov/vuln/detail/CVE-2026-27858) | 7.5 | HIGH | CWE-400 | No | 2026-03-27 | Attacker can send a specifically crafted message before authentication that causes managesieve to allocate large amount... |
 | [CVE-2026-27857](https://nvd.nist.gov/vuln/detail/CVE-2026-27857) | 4.3 | MEDIUM | CWE-400 | No | 2026-03-27 | Sending "NOOP (((...)))" command with 4000 parenthesis open+close results in ~1MB extra memory usage. Longer commands wi... |
 | [CVE-2026-27856](https://nvd.nist.gov/vuln/detail/CVE-2026-27856) | 7.4 | HIGH | CWE-287 | No | 2026-03-27 | Doveadm credentials are verified using direct comparison which is susceptible to timing oracle attack. An attacker can u... |
 | [CVE-2026-27855](https://nvd.nist.gov/vuln/detail/CVE-2026-27855) | 6.8 | MEDIUM | CWE-294 | No | 2026-03-27 | Dovecot OTP authentication is vulnerable to replay attack under specific conditions. If auth cache is enabled, and usern... |
@@ -2516,8 +2526,6 @@ _5070 vulnerabilities_
 | [CVE-2025-13459](https://nvd.nist.gov/vuln/detail/CVE-2025-13459) | 2.7 | LOW | CWE-841 | No | 2026-03-16 | IBM Aspera Console 3.3.0 through 3.4.8 could allow a privileged user to cause a denial of service due to improper enforc... |
 | [CVE-2025-13212](https://nvd.nist.gov/vuln/detail/CVE-2025-13212) | 5.3 | MEDIUM | CWE-799 | No | 2026-03-16 | IBM Aspera Console 3.3.0 through 3.4.8 could allow an authenticated user to cause a denial of service in the email servi... |
 | [CVE-2025-12736](https://nvd.nist.gov/vuln/detail/CVE-2025-12736) | 6.5 | MEDIUM | CWE-908 | No | 2026-03-16 | in OpenHarmony v5.0.3 and prior versions allow a local attacker case sensitive information leak through use of uninitial... |
-| [CVE-2025-10685](https://nvd.nist.gov/vuln/detail/CVE-2025-10685) | 7.7 | HIGH | CWE-122 | No | 2026-03-16 | Heap-based buffer overflow vulnerability in Softing Industrial Automation GmbH smartLink SW-PN and smartLink SW-HT (Webs... |
-| [CVE-2025-10461](https://nvd.nist.gov/vuln/detail/CVE-2025-10461) | 5.3 | MEDIUM | CWE-20 | No | 2026-03-16 | Global file reads caused by improper URL checks in webserver in Softing Industrial Automation GmbH smartLinks on docker... |
 | [CVE-2017-20224](https://nvd.nist.gov/vuln/detail/CVE-2017-20224) | 9.3 | CRITICAL | CWE-434 | No | 2026-03-16 | Telesquare SKT LTE Router SDT-CS3B1 version 1.2.0 contains an arbitrary file upload vulnerability that allows unauthenti... |
 | [CVE-2017-20223](https://nvd.nist.gov/vuln/detail/CVE-2017-20223) | 9.3 | CRITICAL | CWE-639 | No | 2026-03-16 | Telesquare SKT LTE Router SDT-CS3B1 firmware version 1.2.0 contains an insecure direct object reference vulnerability th... |
 | [CVE-2017-20222](https://nvd.nist.gov/vuln/detail/CVE-2017-20222) | 8.7 | HIGH | CWE-306 | No | 2026-03-16 | Telesquare SKT LTE Router SDT-CS3B1 software version 1.2.0 contains an unauthenticated remote reboot vulnerability that... |
