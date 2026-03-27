@@ -1,9 +1,22 @@
 # CVEs — March 2026
 
-_5046 vulnerabilities_
+_5059 vulnerabilities_
 
 | CVE ID | Score | Severity | CWE | KEV | Published | Description |
 |--------|-------|----------|-----|-----|-----------|-------------|
+| [CVE-2026-4948](https://nvd.nist.gov/vuln/detail/CVE-2026-4948) | 5.5 | MEDIUM | CWE-279 | No | 2026-03-27 | A flaw was found in firewalld. A local unprivileged user can exploit this vulnerability by mis-authorizing two runtime D... |
+| [CVE-2026-34353](https://nvd.nist.gov/vuln/detail/CVE-2026-34353) | 5.9 | MEDIUM | CWE-190 | No | 2026-03-27 | In OCaml through 4.14.3, Bigarray.reshape allows an integer overflow, and resultant reading of arbitrary memory, when un... |
+| [CVE-2026-33559](https://nvd.nist.gov/vuln/detail/CVE-2026-33559) | 5.1 | MEDIUM | CWE-79 | No | 2026-03-27 | WordPress Plugin "OpenStreetMap" provided by MiKa contains a cross-site scripting vulnerability. On the site with the af... |
+| [CVE-2026-33366](https://nvd.nist.gov/vuln/detail/CVE-2026-33366) | 6.9 | MEDIUM | CWE-306 | No | 2026-03-27 | Missing authentication for critical function vulnerability in BUFFALO Wi-Fi router products may allow an attacker to for... |
+| [CVE-2026-33280](https://nvd.nist.gov/vuln/detail/CVE-2026-33280) | 8.6 | HIGH | CWE-912 | No | 2026-03-27 | Hidden functionality issue exists in BUFFALO Wi-Fi router products, which may allow an attacker to gain access to the pr... |
+| [CVE-2026-32678](https://nvd.nist.gov/vuln/detail/CVE-2026-32678) | 8.7 | HIGH | CWE-288 | No | 2026-03-27 | Authentication bypass issue exists in BUFFALO Wi-Fi router products, which may allow an attacker to alter critical confi... |
+| [CVE-2026-32669](https://nvd.nist.gov/vuln/detail/CVE-2026-32669) | 8.7 | HIGH | CWE-94 | No | 2026-03-27 | Code injection vulnerability exists in BUFFALO Wi-Fi router products. If this vulnerability is exploited, an arbitrary c... |
+| [CVE-2026-27650](https://nvd.nist.gov/vuln/detail/CVE-2026-27650) | 8.6 | HIGH | CWE-78 | No | 2026-03-27 | OS Command Injection vulnerability exists in BUFFALO Wi-Fi router products. If this vulnerability is exploited, an arbit... |
+| [CVE-2026-22744](https://nvd.nist.gov/vuln/detail/CVE-2026-22744) | 7.5 | HIGH | N/A | No | 2026-03-27 | In RedisFilterExpressionConverter of spring-ai-redis-store, when a user-controlled string is passed as a filter value fo... |
+| [CVE-2026-22743](https://nvd.nist.gov/vuln/detail/CVE-2026-22743) | 7.5 | HIGH | N/A | No | 2026-03-27 | Spring AI's spring-ai-neo4j-store contains a Cypher injection vulnerability in Neo4jVectorFilterExpressionConverter. Whe... |
+| [CVE-2026-22742](https://nvd.nist.gov/vuln/detail/CVE-2026-22742) | 8.6 | HIGH | N/A | No | 2026-03-27 | Spring AI's spring-ai-bedrock-converse contains a Server-Side Request Forgery (SSRF) vulnerability in BedrockProxyChatMo... |
+| [CVE-2026-22738](https://nvd.nist.gov/vuln/detail/CVE-2026-22738) | 9.8 | CRITICAL | N/A | No | 2026-03-27 | In Spring AI, a SpEL injection vulnerability exists in SimpleVectorStore when a user-supplied value is used as a filter... |
+| [CVE-2024-14028](https://nvd.nist.gov/vuln/detail/CVE-2024-14028) | 6.5 | MEDIUM | CWE-416 | No | 2026-03-27 | Use after free vulnerability in Softing smartLink HW-DP or smartLink HW-PN webserver allows HTTP DoS. This issue affects... |
 | [CVE-2026-4910](https://nvd.nist.gov/vuln/detail/CVE-2026-4910) | 6.9 | MEDIUM | CWE-74 | No | 2026-03-27 | A security vulnerability has been detected in Shenzhen Ruiming Technology Streamax Crocus bis 1.3.44. Affected is an unk... |
 | [CVE-2026-3098](https://nvd.nist.gov/vuln/detail/CVE-2026-3098) | 6.5 | MEDIUM | CWE-862 | No | 2026-03-27 | The Smart Slider 3 plugin for WordPress is vulnerable to Arbitrary File Read in all versions up to, and including, 3.5.1... |
 | [CVE-2026-4909](https://nvd.nist.gov/vuln/detail/CVE-2026-4909) | 4.8 | MEDIUM | CWE-79 | No | 2026-03-27 | A weakness has been identified in code-projects Exam Form Submission 1.0/7.php. This impacts an unknown function of the... |
