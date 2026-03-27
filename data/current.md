@@ -1,9 +1,13 @@
 # CVEs — March 2026
 
-_5043 vulnerabilities_
+_5046 vulnerabilities_
 
 | CVE ID | Score | Severity | CWE | KEV | Published | Description |
 |--------|-------|----------|-----|-----|-----------|-------------|
+| [CVE-2026-4910](https://nvd.nist.gov/vuln/detail/CVE-2026-4910) | 6.9 | MEDIUM | CWE-74 | No | 2026-03-27 | A security vulnerability has been detected in Shenzhen Ruiming Technology Streamax Crocus bis 1.3.44. Affected is an unk... |
+| [CVE-2026-3098](https://nvd.nist.gov/vuln/detail/CVE-2026-3098) | 6.5 | MEDIUM | CWE-862 | No | 2026-03-27 | The Smart Slider 3 plugin for WordPress is vulnerable to Arbitrary File Read in all versions up to, and including, 3.5.1... |
+| [CVE-2026-4909](https://nvd.nist.gov/vuln/detail/CVE-2026-4909) | 4.8 | MEDIUM | CWE-79 | No | 2026-03-27 | A weakness has been identified in code-projects Exam Form Submission 1.0/7.php. This impacts an unknown function of the... |
+| [CVE-2026-4908](https://nvd.nist.gov/vuln/detail/CVE-2026-4908) | 6.9 | MEDIUM | CWE-74 | No | 2026-03-27 | A security flaw has been discovered in code-projects Simple Laundry System 1.0. This affects an unknown function of the... |
 | [CVE-2026-4907](https://nvd.nist.gov/vuln/detail/CVE-2026-4907) | 5.3 | MEDIUM | CWE-918 | No | 2026-03-27 | A vulnerability was identified in Page-Replica Page Replica up to e4a7f52e75093ee318b4d5a9a9db6751050d2ad0. The impacted... |
 | [CVE-2026-4906](https://nvd.nist.gov/vuln/detail/CVE-2026-4906) | 7.4 | HIGH | CWE-119 | No | 2026-03-27 | A vulnerability was determined in Tenda AC5 15.03.06.47. The affected element is the function decodePwd of the file /gof... |
 | [CVE-2026-33935](https://nvd.nist.gov/vuln/detail/CVE-2026-33935) | 7.7 | HIGH | CWE-307 | No | 2026-03-27 | MyTube is a self-hosted downloader and player for several video websites Prior to version 1.8.72, an unauthenticated att... |
@@ -25,7 +29,6 @@ _5043 vulnerabilities_
 | [CVE-2026-4905](https://nvd.nist.gov/vuln/detail/CVE-2026-4905) | 7.4 | HIGH | CWE-119 | No | 2026-03-27 | A vulnerability was found in Tenda AC5 15.03.06.47. Impacted is the function formWifiWpsOOB of the file /goform/WifiWpsO... |
 | [CVE-2026-4904](https://nvd.nist.gov/vuln/detail/CVE-2026-4904) | 7.4 | HIGH | CWE-119 | No | 2026-03-27 | A vulnerability has been found in Tenda AC5 15.03.06.47. This issue affects the function formSetCfm of the file /goform/... |
 | [CVE-2026-33945](https://nvd.nist.gov/vuln/detail/CVE-2026-33945) | 9.9 | CRITICAL | CWE-22 | No | 2026-03-27 | Incus is a system container and virtual machine manager. Incus instances have an option to provide credentials to system... |
-| [CVE-2026-33898](https://nvd.nist.gov/vuln/detail/CVE-2026-33898) | 8.8 | HIGH | CWE-287 | No | 2026-03-27 | Incus is a system container and virtual machine manager. Prior to version 6.23.0, the web server spawned by `incus webui... |
 | [CVE-2026-33697](https://nvd.nist.gov/vuln/detail/CVE-2026-33697) | 7.5 | HIGH | CWE-322 | No | 2026-03-27 | Cocos AI is a confidential computing system for AI. The current implementation of attested TLS (aTLS) in CoCoS is vulner... |
 | [CVE-2026-29071](https://nvd.nist.gov/vuln/detail/CVE-2026-29071) | 3.1 | LOW | CWE-639 | No | 2026-03-27 | Open WebUI is a self-hosted artificial intelligence platform designed to operate entirely offline. Prior to version 0.8.... |
 | [CVE-2026-29070](https://nvd.nist.gov/vuln/detail/CVE-2026-29070) | 5.4 | MEDIUM | CWE-862 | No | 2026-03-27 | Open WebUI is a self-hosted artificial intelligence platform designed to operate entirely offline. Prior to version 0.8.... |
@@ -670,7 +673,7 @@ _5043 vulnerabilities_
 | [CVE-2026-4363](https://nvd.nist.gov/vuln/detail/CVE-2026-4363) | 3.7 | LOW | CWE-863 | No | 2026-03-25 | GitLab has remediated an issue in GitLab EE affecting all versions from 18.1 before 18.8.7, 18.9 before 18.9.3, and 18.1... |
 | [CVE-2026-3126](https://nvd.nist.gov/vuln/detail/CVE-2026-3126) | 0.0 | NONE | N/A | No | 2026-03-25 | Rejected reason: This CVE ID has been rejected or withdrawn by its CVE Numbering Authority. |
 | [CVE-2026-33268](https://nvd.nist.gov/vuln/detail/CVE-2026-33268) | 6.9 | MEDIUM | CWE-400 | No | 2026-03-25 | Nanoleaf Lines 12.3.2 does not authenticate firmware file uploads. A remote, unauthenticated attacker can upload firmwar... |
-| [CVE-2026-26830](https://nvd.nist.gov/vuln/detail/CVE-2026-26830) | 9.8 | CRITICAL | N/A | No | 2026-03-25 | pdf-image (npm package) through version 2.0.0 allows OS command injection via the pdfFilePath parameter. The constructGe... |
+| [CVE-2026-26830](https://nvd.nist.gov/vuln/detail/CVE-2026-26830) | 9.8 | CRITICAL | CWE-94 | No | 2026-03-25 | pdf-image (npm package) through version 2.0.0 allows OS command injection via the pdfFilePath parameter. The constructGe... |
 | [CVE-2026-23514](https://nvd.nist.gov/vuln/detail/CVE-2026-23514) | 8.8 | HIGH | CWE-282 | No | 2026-03-25 | Kiteworks is a private data network (PDN). Versions 9.2.0 and 9.2.1 of Kiteworks Core have an access control vulnerabili... |
 | [CVE-2025-59707](https://nvd.nist.gov/vuln/detail/CVE-2025-59707) | 9.8 | CRITICAL | CWE-290 | No | 2026-03-25 | In N2W before 4.3.2 and 4.4.x before 4.4.1, there is potential remote code execution and account credentials theft becau... |
 | [CVE-2025-59706](https://nvd.nist.gov/vuln/detail/CVE-2025-59706) | 9.8 | CRITICAL | CWE-290 | No | 2026-03-25 | In N2W before 4.3.2 and 4.4.0 before 4.4.1, improper validation of API request parameters enables remote code execution. |

@@ -11,7 +11,7 @@
     <header>
       <h1>vuln-tracker</h1>
       <p class="subtitle">CVEs from the National Vulnerability Database — current and previous month</p>
-      <p class="last-updated">Last updated: 2026-03-27 02:53 UTC</p>
+      <p class="last-updated">Last updated: 2026-03-27 05:44 UTC</p>
     </header>
     <nav>
       <a href="top50.html">&#9733; Top 50</a>
@@ -25,7 +25,7 @@
     </nav>
     <main>
     <section>
-      <h2>Current Month — March 2026 <span class="count">(5043)</span></h2>
+      <h2>Current Month — March 2026 <span class="count">(5046)</span></h2>
       <div class="table-wrapper">
         <table>
           <thead>
@@ -40,6 +40,42 @@
             </tr>
           </thead>
           <tbody>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4910" target="_blank" rel="noopener">CVE-2026-4910</a></td>
+        <td>6.9</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-74</td>
+        <td>&nbsp;</td>
+        <td><details><summary>A security vulnerability has been detected in Shenzhen Ruiming Technology Stream...</summary><p>A security vulnerability has been detected in Shenzhen Ruiming Technology Streamax Crocus bis 1.3.44. Affected is an unknown function of the file /RemoteFormat.do of the component Endpoint. Such manipulation of the argument State leads to sql injection. It is possible to launch the attack remotely. The exploit has been disclosed publicly and may be used. The vendor was contacted early about this disclosure but did not respond in any way.</p></details></td>
+        <td>2026-03-27</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-3098" target="_blank" rel="noopener">CVE-2026-3098</a></td>
+        <td>6.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td><details><summary>The Smart Slider 3 plugin for WordPress is vulnerable to Arbitrary File Read in ...</summary><p>The Smart Slider 3 plugin for WordPress is vulnerable to Arbitrary File Read in all versions up to, and including, 3.5.1.33 via the &#x27;actionExportAll&#x27; function. This makes it possible for authenticated attackers, with Subscriber-level access and above, to read the contents of arbitrary files on the server, which can contain sensitive information.</p></details></td>
+        <td>2026-03-27</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4909" target="_blank" rel="noopener">CVE-2026-4909</a></td>
+        <td>4.8</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td><details><summary>A weakness has been identified in code-projects Exam Form Submission 1.0/7.php. ...</summary><p>A weakness has been identified in code-projects Exam Form Submission 1.0/7.php. This impacts an unknown function of the file /admin/update_s7.php. This manipulation of the argument sname causes cross site scripting. It is possible to initiate the attack remotely. The exploit has been made available to the public and could be used for attacks.</p></details></td>
+        <td>2026-03-27</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4908" target="_blank" rel="noopener">CVE-2026-4908</a></td>
+        <td>6.9</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-74</td>
+        <td>&nbsp;</td>
+        <td><details><summary>A security flaw has been discovered in code-projects Simple Laundry System 1.0. ...</summary><p>A security flaw has been discovered in code-projects Simple Laundry System 1.0. This affects an unknown function of the file /modstaffinfo.php of the component Parameter Handler. The manipulation of the argument userid results in sql injection. The attack may be performed from remote. The exploit has been released to the public and may be used for attacks.</p></details></td>
+        <td>2026-03-27</td>
+      </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4907" target="_blank" rel="noopener">CVE-2026-4907</a></td>
         <td>5.3</td>
@@ -227,16 +263,6 @@
         <td>CWE-22</td>
         <td>&nbsp;</td>
         <td><details><summary>Incus is a system container and virtual machine manager. Incus instances have an...</summary><p>Incus is a system container and virtual machine manager. Incus instances have an option to provide credentials to systemd in the guest. For containers, this is handled through a shared directory. Prior to version 6.23.0, an attacker can set a configuration key named something like `systemd.credential.../../../../../../root/.bashrc` to cause Incus to write outside of the `credentials` directory associated with the container. This makes use of the fact that the Incus syntax for such credentials is `systemd.credential.XYZ` where `XYZ` can itself contain more periods. While it&#x27;s not possible to read any data this way, it&#x27;s possible to write to arbitrary files as root, enabling both privilege escalation and denial of service attacks. Version 6.23.0 fixes the issue.</p></details></td>
-        <td>2026-03-27</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33898" target="_blank" rel="noopener">CVE-2026-33898</a></td>
-        <td>8.8</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-287</td>
-        <td>&nbsp;</td>
-        <td><details><summary>Incus is a system container and virtual machine manager. Prior to version 6.23.0...</summary><p>Incus is a system container and virtual machine manager. Prior to version 6.23.0, the web server spawned by `incus webui` incorrectly validates the authentication token such that an invalid value will be accepted. `incus webui` runs a local web server on a random localhost port. For authentication, it provides the user with a URL containing an authentication token. When accessed with that token, Incus creates a cookie persisting that token without needing to include it in subsequent HTTP requests. While the Incus client correctly validates the value of the cookie, it does not correctly validate the token when passed int the URL.
-This allows for an attacker able to locate and talk to the temporary web server on localhost to have as much access to Incus as the user who ran `incus webui`. This can lead to privilege escalation by another local user or an access to the user&#x27;s Incus instances and possibly system resources by a remote attack able to trick the local user into interacting with the Incus UI web server. Version 6.23.0 patches the issue.</p></details></td>
         <td>2026-03-27</td>
       </tr>
       <tr>
@@ -6039,7 +6065,7 @@ This allows for an attacker able to locate and talk to the temporary web server 
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-26830" target="_blank" rel="noopener">CVE-2026-26830</a></td>
         <td>9.8</td>
         <td><span class="severity critical">CRITICAL</span></td>
-        <td>N/A</td>
+        <td>CWE-94</td>
         <td>&nbsp;</td>
         <td><details><summary>pdf-image (npm package) through version 2.0.0 allows OS command injection via th...</summary><p>pdf-image (npm package) through version 2.0.0 allows OS command injection via the pdfFilePath parameter. The constructGetInfoCommand and constructConvertCommandForPage functions use util.format() to interpolate user-controlled file paths into shell command strings that are executed via child_process.exec()</p></details></td>
         <td>2026-03-25</td>
