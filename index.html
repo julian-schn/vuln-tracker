@@ -11,7 +11,7 @@
     <header>
       <h1>vuln-tracker</h1>
       <p class="subtitle">CVEs from the National Vulnerability Database — current and previous month</p>
-      <p class="last-updated">Last updated: 2026-03-26 22:37 UTC</p>
+      <p class="last-updated">Last updated: 2026-03-27 02:53 UTC</p>
     </header>
     <nav>
       <a href="top50.html">&#9733; Top 50</a>
@@ -25,7 +25,7 @@
     </nav>
     <main>
     <section>
-      <h2>Current Month — March 2026 <span class="count">(5016)</span></h2>
+      <h2>Current Month — March 2026 <span class="count">(5043)</span></h2>
       <div class="table-wrapper">
         <table>
           <thead>
@@ -40,6 +40,322 @@
             </tr>
           </thead>
           <tbody>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4907" target="_blank" rel="noopener">CVE-2026-4907</a></td>
+        <td>5.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-918</td>
+        <td>&nbsp;</td>
+        <td><details><summary>A vulnerability was identified in Page-Replica Page Replica up to e4a7f52e75093e...</summary><p>A vulnerability was identified in Page-Replica Page Replica up to e4a7f52e75093ee318b4d5a9a9db6751050d2ad0. The impacted element is the function sitemap.fetch of the file /sitemap of the component Endpoint. The manipulation of the argument url leads to server-side request forgery. The attack is possible to be carried out remotely. The exploit is publicly available and might be used. This product adopts a rolling release strategy to maintain continuous delivery. Therefore, version details for affected or updated releases cannot be specified. The vendor was contacted early about this disclosure but did not respond in any way.</p></details></td>
+        <td>2026-03-27</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4906" target="_blank" rel="noopener">CVE-2026-4906</a></td>
+        <td>7.4</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-119</td>
+        <td>&nbsp;</td>
+        <td><details><summary>A vulnerability was determined in Tenda AC5 15.03.06.47. The affected element is...</summary><p>A vulnerability was determined in Tenda AC5 15.03.06.47. The affected element is the function decodePwd of the file /goform/WizardHandle of the component POST Request Handler. Executing a manipulation of the argument WANT/WANS can lead to stack-based buffer overflow. The attack can be executed remotely. The exploit has been publicly disclosed and may be utilized.</p></details></td>
+        <td>2026-03-27</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33935" target="_blank" rel="noopener">CVE-2026-33935</a></td>
+        <td>7.7</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-307</td>
+        <td>&nbsp;</td>
+        <td><details><summary>MyTube is a self-hosted downloader and player for several video websites Prior t...</summary><p>MyTube is a self-hosted downloader and player for several video websites Prior to version 1.8.72, an unauthenticated attacker can lock out administrator and visitor accounts from password-based authentication by triggering failed login attempts. The application exposes three password verification endpoints, all of which are publicly accessible. All three endpoints share a single file-backed login attempt state stored in `login-attempts.json`. When any endpoint records a failed authentication attempt via `recordFailedAttempt()`, the shared login attempt state is updated, increasing the `failedAttempts` counter and adjusting the associated timestamps and cooldown values. Before verifying a password, each endpoint calls `canAttemptLogin()`. This function checks the shared JSON file to determine whether a cooldown period is active. If the cooldown has not expired, the request is rejected before the password is validated. Because the failed attempt counter and cooldown timer are globally shared, failed authentication attempts against any endpoint affect all other endpoints. An attacker can exploit this by repeatedly sending invalid authentication requests to any of these endpoints, incrementing the shared counter and waiting for the cooldown period between attempts. By doing so, the attacker can progressively increase the lockout duration until it reaches 24 hours, effectively preventing legitimate users from authenticating. Once the maximum lockout is reached, the attacker can maintain the denial of service indefinitely by waiting for the cooldown to expire and sending another failed attempt, which immediately triggers another 24-hour lockout if no successful login occurred in the meantime. Version 1.8.72 fixes the vulnerability.</p></details></td>
+        <td>2026-03-27</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33890" target="_blank" rel="noopener">CVE-2026-33890</a></td>
+        <td>8.9</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-284</td>
+        <td>&nbsp;</td>
+        <td><details><summary>MyTube is a self-hosted downloader and player for several video websites Prior t...</summary><p>MyTube is a self-hosted downloader and player for several video websites Prior to version 1.8.71, an unauthenticated attacker can register an arbitrary passkey and subsequently authenticate with it to obtain a full admin session. The application exposes passkey registration endpoints without requiring prior authentication. Any successfully authenticated passkey is automatically granted an administrator token, allowing full administrative access to the application. This enables a complete compromise of the application without requiring any existing credentials. Version 1.8.71 fixes the issue.</p></details></td>
+        <td>2026-03-27</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33747" target="_blank" rel="noopener">CVE-2026-33747</a></td>
+        <td>8.4</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-22</td>
+        <td>&nbsp;</td>
+        <td><details><summary>BuildKit is a toolkit for converting source code to build artifacts in an effici...</summary><p>BuildKit is a toolkit for converting source code to build artifacts in an efficient, expressive and repeatable manner. Prior to version 0.28.1, when using a custom BuildKit frontend, the frontend can craft an API message that causes files to be written outside of the BuildKit state directory for the execution context. The issue has been fixed in v0.28.1. The vulnerability requires using an untrusted BuildKit frontend set with `#syntax` or `--build-arg BUILDKIT_SYNTAX`. Using these options with a well-known frontend image like `docker/dockerfile` is not affected.</p></details></td>
+        <td>2026-03-27</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33745" target="_blank" rel="noopener">CVE-2026-33745</a></td>
+        <td>7.4</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-200</td>
+        <td>&nbsp;</td>
+        <td><details><summary>cpp-httplib is a C++11 single-file header-only cross platform HTTP/HTTPS library...</summary><p>cpp-httplib is a C++11 single-file header-only cross platform HTTP/HTTPS library. Prior to 0.39.0, the cpp-httplib HTTP client forwards stored Basic Auth, Bearer Token, and Digest Auth credentials to arbitrary hosts when following cross-origin HTTP redirects (301/302/307/308). A malicious or compromised server can redirect the client to an attacker-controlled host, which then receives the plaintext credentials in the `Authorization` header. Version 0.39.0 fixes the issue.</p></details></td>
+        <td>2026-03-27</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33744" target="_blank" rel="noopener">CVE-2026-33744</a></td>
+        <td>7.8</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-94</td>
+        <td>&nbsp;</td>
+        <td><details><summary>BentoML is a Python library for building online serving systems optimized for AI...</summary><p>BentoML is a Python library for building online serving systems optimized for AI apps and model inference. Prior to 1.4.37, the `docker.system_packages` field in `bentofile.yaml` accepts arbitrary strings that are interpolated directly into Dockerfile `RUN` commands without sanitization. Since `system_packages` is semantically a list of OS package names (data), users do not expect values to be interpreted as shell commands. A malicious `bentofile.yaml` achieves arbitrary command execution during `bentoml containerize` / `docker build`. Version 1.4.37 fixes the issue.</p></details></td>
+        <td>2026-03-27</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33735" target="_blank" rel="noopener">CVE-2026-33735</a></td>
+        <td>7.4</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-285</td>
+        <td>&nbsp;</td>
+        <td><details><summary>MyTube is a self-hosted downloader and player for several video websites Prior t...</summary><p>MyTube is a self-hosted downloader and player for several video websites Prior to version 1.8.69, an authorization bypass in the `/api/settings/import-database` endpoint allows attackers with low-privilege credentials to upload and replace the application&#x27;s SQLite database entirely, leading to a full compromise of the application. The bypass is relevant for other POST routes as well. Version 1.8.69 fixes the issue.</p></details></td>
+        <td>2026-03-27</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33730" target="_blank" rel="noopener">CVE-2026-33730</a></td>
+        <td>6.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-639</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Open Source Point of Sale (opensourcepos) is a web based point of sale applicati...</summary><p>Open Source Point of Sale (opensourcepos) is a web based point of sale application written in PHP using CodeIgniter framework. Prior to version 3.4.2, an Insecure Direct Object Reference (IDOR) vulnerability allows an authenticated low-privileged user to access the password change functionality of other users, including administrators, by manipulating the `employee_id` parameter. The application does not verify object ownership or enforce authorization checks. Version 3.4.2 adds object-level authorization checks to validate that the current user owns the employee_id being accessed.</p></details></td>
+        <td>2026-03-27</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33729" target="_blank" rel="noopener">CVE-2026-33729</a></td>
+        <td>5.8</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-20</td>
+        <td>&nbsp;</td>
+        <td><details><summary>OpenFGA is a high-performance and flexible authorization/permission engine built...</summary><p>OpenFGA is a high-performance and flexible authorization/permission engine built for developers and inspired by Google Zanzibar. In versions prior to 1.13.1, under specific conditions, models using conditions with caching enabled can result in two different check requests producing the same cache key. This can result in OpenFGA reusing an earlier cached result for a different request. Users are affected if the model has relations which rely on condition evaluation andncaching is enabled. OpenFGA v1.13.1 contains a patch.</p></details></td>
+        <td>2026-03-27</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33728" target="_blank" rel="noopener">CVE-2026-33728</a></td>
+        <td>9.3</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-502</td>
+        <td>&nbsp;</td>
+        <td><details><summary>dd-trace-java is a Datadog APM client for Java. In versions of dd-trace-java 0.4...</summary><p>dd-trace-java is a Datadog APM client for Java. In versions of dd-trace-java 0.40.0 through prior to 1.60.2, the RMI instrumentation registered a custom endpoint that deserialized incoming data without applying serialization filters. On JDK version 16 and earlier, an attacker with network access to a JMX or RMI port on an instrumented JVM could exploit this to potentially achieve remote code execution. All three of the following conditions must be true to exploit this vulnerability: First, dd-trace-java is attached as a Java agent (`-javaagent`) on Java 16 or earlier. Second, a JMX/RMI port has been explicitly configured via `-Dcom.sun.management.jmxremote.port` and is network-reachable, Third, a gadget-chain-compatible library is present on the classpath. For JDK &gt;= 17, no action is required, but upgrading is strongly encouraged. For JDK &gt;= 8u121 &lt; JDK 17, upgrade to dd-trace-java version 1.60.3 or later. For JDK &lt; 8u121 and earlier where serialization filters are not available, apply the workaround. The workaround is to set the following environment variable to disable the RMI integration: `DD_INTEGRATION_RMI_ENABLED=false`.</p></details></td>
+        <td>2026-03-27</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33726" target="_blank" rel="noopener">CVE-2026-33726</a></td>
+        <td>5.4</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-284</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Cilium is a networking, observability, and security solution with an eBPF-based ...</summary><p>Cilium is a networking, observability, and security solution with an eBPF-based dataplane. Prior to versions 1.17.14, 1.18.8, and 1.19.2, Ingress Network Policies are not enforced for traffic from pods to L7 Services (Envoy, GAMMA) with a local backend on the same node, when Per-Endpoint Routing is enabled and BPF Host Routing is disabled. Per-Endpoint Routing is disabled by default, but is automatically enabled in deployments using cloud IPAM, including Cilium ENI on EKS (`eni.enabled`), AlibabaCloud ENI (`alibabacloud.enabled`), Azure IPAM (`azure.enabled`, but not AKS BYOCNI), and some GKE deployments (`gke.enabled`; managed offerings such as GKE Dataplane V2 may use different defaults). It is typically not enabled in tunneled deployments, and chaining deployments are not affected. In practice, Amazon EKS with Cilium ENI mode is likely the most common affected environment. Versions 1.17.14, 1.18.8, and 1.19.2 contain a patch. There is currently no officially verified or comprehensive workaround for this issue. The only option would be to disable per-endpoint routes, but this will likely cause disruptions to ongoing connections, and potential conflicts if running in cloud providers.</p></details></td>
+        <td>2026-03-27</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33725" target="_blank" rel="noopener">CVE-2026-33725</a></td>
+        <td>7.2</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-502</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Metabase is an open source business intelligence and embedded analytics tool. In...</summary><p>Metabase is an open source business intelligence and embedded analytics tool. In Metabase Enterprise prior to versions 1.54.22, 1.55.22, 1.56.22, 1.57.16, 1.58.10, and 1.59.4, authenticated admins on Metabase Enterprise Edition can achieve Remote Code Execution (RCE) and Arbitrary File Read via the `POST /api/ee/serialization/import` endpoint. A crafted serialization archive injects an `INIT` property into the H2 JDBC spec, which can execute arbitrary SQL during a database sync. We confirmed this was possible on Metabase Cloud. This only affects Metabase Enterprise. Metabase OSS lacks the affected codepaths. All versions of Metabase Enterprise that have serialization, which dates back to at least version 1.47, are affected. Metabase Enterprise versions 1.54.22, 1.55.22, 1.56.22, 1.57.16, 1.58.10, and 1.59.4 patch the issue. As a workaround, disable the serialization import endpoint in their Metabase instance to prevent access to the vulnerable codepaths.</p></details></td>
+        <td>2026-03-27</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33721" target="_blank" rel="noopener">CVE-2026-33721</a></td>
+        <td>5.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-787</td>
+        <td>&nbsp;</td>
+        <td><details><summary>MapServer is a system for developing web-based GIS applications. Starting in ver...</summary><p>MapServer is a system for developing web-based GIS applications. Starting in version 4.2 and prior to version 8.6.1, a heap-buffer-overflow write in MapServer’s SLD (Styled Layer Descriptor) parser lets a remote, unauthenticated attacker crash the MapServer process by sending a crafted SLD with more than 100 Threshold elements inside a ColorMap/Categorize structure (commonly reachable via WMS GetMap with SLD_BODY). Version 8.6.1 patches the issue.</p></details></td>
+        <td>2026-03-27</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33718" target="_blank" rel="noopener">CVE-2026-33718</a></td>
+        <td>7.6</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-78</td>
+        <td>&nbsp;</td>
+        <td><details><summary>OpenHands is software for AI-driven development. Starting in version 1.5.0, a Co...</summary><p>OpenHands is software for AI-driven development. Starting in version 1.5.0, a Command Injection vulnerability exists in the `get_git_diff()` method at `openhands/runtime/utils/git_handler.py:134`. The `path` parameter from the `/api/conversations/{conversation_id}/git/diff` API endpoint is passed unsanitized to a shell command, allowing authenticated attackers to execute arbitrary commands in the agent sandbox. The user is already allowed to instruct the agent to execute commands, but this bypasses the normal channels. Version 1.5.0 fixes the issue.</p></details></td>
+        <td>2026-03-27</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33701" target="_blank" rel="noopener">CVE-2026-33701</a></td>
+        <td>9.3</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-502</td>
+        <td>&nbsp;</td>
+        <td><details><summary>OpenTelemetry Java Instrumentation provides OpenTelemetry auto-instrumentation a...</summary><p>OpenTelemetry Java Instrumentation provides OpenTelemetry auto-instrumentation and instrumentation libraries for Java. In versions prior to 2.26.1, the RMI instrumentation registered a custom endpoint that deserialized incoming data without applying serialization filters. On JDK version 16 and earlier, an attacker with network access to a JMX or RMI port on an instrumented JVM could exploit this to potentially achieve remote code execution. All three of the following conditions must be true to exploit this vulnerability: First, OpenTelemetry Java instrumentation is attached as a Java agent (`-javaagent`) on Java 16 or earlier. Second, JMX/RMI port has been explicitly configured via `-Dcom.sun.management.jmxremote.port` and is network-reachable. Third, gadget-chain-compatible library is present on the classpath. This results in arbitrary remote code execution with the privileges of the user running the instrumented JVM. For JDK &gt;= 17, no action is required, but upgrading is strongly encouraged. For JDK &lt; 17, upgrade to version 2.26.1 or later. As a workaround, set the system property `-Dotel.instrumentation.rmi.enabled=false` to disable the RMI integration.</p></details></td>
+        <td>2026-03-27</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33699" target="_blank" rel="noopener">CVE-2026-33699</a></td>
+        <td>4.6</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-835</td>
+        <td>&nbsp;</td>
+        <td><details><summary>pypdf is a free and open-source pure-python PDF library. Versions prior to 6.9.2...</summary><p>pypdf is a free and open-source pure-python PDF library. Versions prior to 6.9.2 have a vulnerability in which an attacker can craft a PDF which leads to an infinite loop. This requires reading a file in non-strict mode. This has been fixed in pypdf 6.9.2. If users cannot upgrade yet, consider applying the changes from the patch manually.</p></details></td>
+        <td>2026-03-27</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33693" target="_blank" rel="noopener">CVE-2026-33693</a></td>
+        <td>6.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-918</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Lemmy is a link aggregator and forum for the fediverse. Prior to version 0.7.0-b...</summary><p>Lemmy is a link aggregator and forum for the fediverse. Prior to version 0.7.0-beta.9, the `v4_is_invalid()` function in `activitypub-federation-rust` (`src/utils.rs`) does not check for `Ipv4Addr::UNSPECIFIED` (0.0.0.0). An unauthenticated attacker controlling a remote domain can point it to 0.0.0.0, bypass the SSRF protection introduced by the fix for CVE-2025-25194 (GHSA-7723-35v7-qcxw), and reach localhost services on the target server. Version 0.7.0-beta.9 patches the issue.</p></details></td>
+        <td>2026-03-27</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4905" target="_blank" rel="noopener">CVE-2026-4905</a></td>
+        <td>7.4</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-119</td>
+        <td>&nbsp;</td>
+        <td><details><summary>A vulnerability was found in Tenda AC5 15.03.06.47. Impacted is the function for...</summary><p>A vulnerability was found in Tenda AC5 15.03.06.47. Impacted is the function formWifiWpsOOB of the file /goform/WifiWpsOOB of the component POST Request Handler. Performing a manipulation of the argument index results in stack-based buffer overflow. Remote exploitation of the attack is possible. The exploit has been made public and could be used.</p></details></td>
+        <td>2026-03-27</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4904" target="_blank" rel="noopener">CVE-2026-4904</a></td>
+        <td>7.4</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-119</td>
+        <td>&nbsp;</td>
+        <td><details><summary>A vulnerability has been found in Tenda AC5 15.03.06.47. This issue affects the ...</summary><p>A vulnerability has been found in Tenda AC5 15.03.06.47. This issue affects the function formSetCfm of the file /goform/setcfm of the component POST Request Handler. Such manipulation of the argument funcpara1 leads to stack-based buffer overflow. The attack may be launched remotely. The exploit has been disclosed to the public and may be used.</p></details></td>
+        <td>2026-03-27</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33945" target="_blank" rel="noopener">CVE-2026-33945</a></td>
+        <td>9.9</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-22</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Incus is a system container and virtual machine manager. Incus instances have an...</summary><p>Incus is a system container and virtual machine manager. Incus instances have an option to provide credentials to systemd in the guest. For containers, this is handled through a shared directory. Prior to version 6.23.0, an attacker can set a configuration key named something like `systemd.credential.../../../../../../root/.bashrc` to cause Incus to write outside of the `credentials` directory associated with the container. This makes use of the fact that the Incus syntax for such credentials is `systemd.credential.XYZ` where `XYZ` can itself contain more periods. While it&#x27;s not possible to read any data this way, it&#x27;s possible to write to arbitrary files as root, enabling both privilege escalation and denial of service attacks. Version 6.23.0 fixes the issue.</p></details></td>
+        <td>2026-03-27</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33898" target="_blank" rel="noopener">CVE-2026-33898</a></td>
+        <td>8.8</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-287</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Incus is a system container and virtual machine manager. Prior to version 6.23.0...</summary><p>Incus is a system container and virtual machine manager. Prior to version 6.23.0, the web server spawned by `incus webui` incorrectly validates the authentication token such that an invalid value will be accepted. `incus webui` runs a local web server on a random localhost port. For authentication, it provides the user with a URL containing an authentication token. When accessed with that token, Incus creates a cookie persisting that token without needing to include it in subsequent HTTP requests. While the Incus client correctly validates the value of the cookie, it does not correctly validate the token when passed int the URL.
+This allows for an attacker able to locate and talk to the temporary web server on localhost to have as much access to Incus as the user who ran `incus webui`. This can lead to privilege escalation by another local user or an access to the user&#x27;s Incus instances and possibly system resources by a remote attack able to trick the local user into interacting with the Incus UI web server. Version 6.23.0 patches the issue.</p></details></td>
+        <td>2026-03-27</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33697" target="_blank" rel="noopener">CVE-2026-33697</a></td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-322</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Cocos AI is a confidential computing system for AI. The current implementation o...</summary><p>Cocos AI is a confidential computing system for AI. The current implementation of attested TLS (aTLS) in CoCoS is vulnerable to a relay attack affecting all versions from v0.4.0 through v0.8.2. This vulnerability is present in both the AMD SEV-SNP and Intel TDX deployment targets supported by CoCoS. In the affected design, an attacker may be able to extract the ephemeral TLS private key used during the intra-handshake attestation. Because the attestation evidence is bound to the ephemeral key but not to the TLS channel, possession of that key is sufficient to relay or divert the attested TLS session. A client will accept the connection under false assumptions about the endpoint it is communicating with — the attestation report cannot distinguish the genuine attested service from the attacker&#x27;s relay. This undermines the intended authentication guarantees of attested TLS. A successful attack may allow an attacker to impersonate an attested CoCoS service and access data or operations that the client intended to send only to the genuine attested endpoint. Exploitation requires the attacker to first extract the ephemeral TLS private key, which is possible through physical access to the server hardware, transient execution attacks, or side-channel attacks. Note that the aTLS implementation was fully redesigned in v0.7.0, but the redesign does not address this vulnerability. The relay attack weakness is architectural and affects all releases in the v0.4.0–v0.8.2 range. This vulnerability class was formally analyzed and demonstrated across multiple attested TLS implementations, including CoCoS, by researchers whose findings were disclosed to the IETF TLS Working Group. Formal verification was conducted using ProVerif. As of time of publication, there is no patch available. No complete workaround is available. The following hardening measures reduce but do not eliminate the risk: Keep TEE firmware and microcode up to date to reduce the key-extraction surface; define strict attestation policies that validate all available report fields, including firmware versions, TCB levels, and platform configuration registers; and/or enable mutual aTLS with CA-signed certificates where deployment architecture permits.</p></details></td>
+        <td>2026-03-27</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-29071" target="_blank" rel="noopener">CVE-2026-29071</a></td>
+        <td>3.1</td>
+        <td><span class="severity low">LOW</span></td>
+        <td>CWE-639</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Open WebUI is a self-hosted artificial intelligence platform designed to operate...</summary><p>Open WebUI is a self-hosted artificial intelligence platform designed to operate entirely offline. Prior to version 0.8.6, any authenticated user can read other users&#x27; private memories via `/api/v1/retrieval/query/collection`. Version 0.8.6 patches the issue.</p></details></td>
+        <td>2026-03-27</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-29070" target="_blank" rel="noopener">CVE-2026-29070</a></td>
+        <td>5.4</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Open WebUI is a self-hosted artificial intelligence platform designed to operate...</summary><p>Open WebUI is a self-hosted artificial intelligence platform designed to operate entirely offline. Prior to version 0.8.6, an access control check is missing when deleting a file from a knowledge base. The only check being done is that the user has write access to the knowledge base (or is admin), but NOT that the file actually belongs to this knowledge base. It is thus possible to delete arbitrary files from arbitrary knowledge bases (as long as one knows the file id). Version 0.8.6 patches the issue.</p></details></td>
+        <td>2026-03-27</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-28788" target="_blank" rel="noopener">CVE-2026-28788</a></td>
+        <td>7.1</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-639</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Open WebUI is a self-hosted artificial intelligence platform designed to operate...</summary><p>Open WebUI is a self-hosted artificial intelligence platform designed to operate entirely offline. Prior to version 0.8.6, any authenticated user can overwrite any file&#x27;s content by ID through the `POST /api/v1/retrieval/process/files/batch` endpoint. The endpoint performs no ownership check, so a regular user with read access to a shared knowledge base can obtain file UUIDs via `GET /api/v1/knowledge/{id}/files` and then overwrite those files, escalating from read to write. The overwritten content is served to the LLM via RAG, meaning the attacker controls what the model tells other users. Version 0.8.6 patches the issue.</p></details></td>
+        <td>2026-03-27</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-28786" target="_blank" rel="noopener">CVE-2026-28786</a></td>
+        <td>4.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-22</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Open WebUI is a self-hosted artificial intelligence platform designed to operate...</summary><p>Open WebUI is a self-hosted artificial intelligence platform designed to operate entirely offline. Prior to version 0.8.6, an unsanitized filename field in the speech-to-text transcription endpoint allows any authenticated non-admin user to trigger a `FileNotFoundError` whose message — including the server&#x27;s absolute `DATA_DIR` path — is returned verbatim in the HTTP 400 response body, confirming information disclosure on all default deployments. Version 0.8.6 patches the issue.</p></details></td>
+        <td>2026-03-27</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-27893" target="_blank" rel="noopener">CVE-2026-27893</a></td>
+        <td>8.8</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-693</td>
+        <td>&nbsp;</td>
+        <td><details><summary>vLLM is an inference and serving engine for large language models (LLMs). Starti...</summary><p>vLLM is an inference and serving engine for large language models (LLMs). Starting in version 0.10.1 and prior to version 0.18.0, two model implementation files hardcode `trust_remote_code=True` when loading sub-components, bypassing the user&#x27;s explicit `--trust-remote-code=False` security opt-out. This enables remote code execution via malicious model repositories even when the user has explicitly disabled remote code trust. Version 0.18.0 patches the issue.</p></details></td>
+        <td>2026-03-27</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4903" target="_blank" rel="noopener">CVE-2026-4903</a></td>
+        <td>7.4</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-119</td>
+        <td>&nbsp;</td>
+        <td><details><summary>A flaw has been found in Tenda AC5 15.03.06.47. This vulnerability affects the f...</summary><p>A flaw has been found in Tenda AC5 15.03.06.47. This vulnerability affects the function formQuickIndex of the file /goform/QuickIndex of the component POST Request Handler. This manipulation of the argument PPPOEPassword causes stack-based buffer overflow. The attack may be initiated remotely. The exploit has been published and may be used.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4902" target="_blank" rel="noopener">CVE-2026-4902</a></td>
+        <td>7.4</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-119</td>
+        <td>&nbsp;</td>
+        <td><details><summary>A vulnerability was detected in Tenda AC5 15.03.06.47. This affects the function...</summary><p>A vulnerability was detected in Tenda AC5 15.03.06.47. This affects the function fromAddressNat of the file /goform/addressNat of the component POST Request Handler. The manipulation of the argument page results in stack-based buffer overflow. The attack can be launched remotely. The exploit is now public and may be used.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34352" target="_blank" rel="noopener">CVE-2026-34352</a></td>
+        <td>8.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-732</td>
+        <td>&nbsp;</td>
+        <td><details><summary>In TigerVNC before 1.16.2, Image.cxx in x0vncserver allows other users to observ...</summary><p>In TigerVNC before 1.16.2, Image.cxx in x0vncserver allows other users to observe or manipulate the screen contents, or cause an application crash, because of incorrect permissions.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33897" target="_blank" rel="noopener">CVE-2026-33897</a></td>
+        <td>9.9</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-1336</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Incus is a system container and virtual machine manager. Prior to version 6.23.0...</summary><p>Incus is a system container and virtual machine manager. Prior to version 6.23.0, instance template files can be used to cause arbitrary read or writes as root on the host server. Incus allows for pongo2 templates within instances which can be used at various times in the instance lifecycle to template files inside of the instance. This particular implementation of pongo2 within Incus allowed for file read/write but with the expectation that the pongo2 chroot feature would isolate all such access to the instance&#x27;s filesystem. This was allowed such that a template could theoretically read a file and then generate a new version of said file. Unfortunately the chroot isolation mechanism is entirely skipped by pongo2 leading to easy access to the entire system&#x27;s filesystem with root privileges. Version 6.23.0 patches the issue.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33743" target="_blank" rel="noopener">CVE-2026-33743</a></td>
+        <td>6.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-770</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Incus is a system container and virtual machine manager. Prior to version 6.23.0...</summary><p>Incus is a system container and virtual machine manager. Prior to version 6.23.0, a specially crafted storage bucket backup can be used by an user with access to Incus&#x27; storage bucket feature to crash the Incus daemon. Repeated use of this attack can be used to keep the server offline causing a denial of service of the control plane API. This does not impact any running workload, existing containers and virtual machines will keep operating. Version 6.23.0 fixes the issue.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33711" target="_blank" rel="noopener">CVE-2026-33711</a></td>
+        <td>4.7</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-61</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Incus is a system container and virtual machine manager. Incus provides an API t...</summary><p>Incus is a system container and virtual machine manager. Incus provides an API to retrieve VM screenshots. That API relies on the use of a temporary file for QEMU to write the screenshot to which is then picked up and sent to the user prior to deletion. As versions prior to 6.23.0 use predictable paths under /tmp for this, an attacker with local access to the system can abuse this mechanism by creating their own symlinks ahead of time. On the vast majority of Linux systems, this will result in a &quot;Permission denied&quot; error when requesting a screenshot. That&#x27;s because the Linux kernel has a security feature designed to block such attacks, `protected_symlinks`. On the rare systems with this purposefully disabled, it&#x27;s then possible to trick Incus intro truncating and altering the mode and permissions of arbitrary files on the filesystem, leading to a potential denial of service or possible local privilege escalation. Version 6.23.0 fixes the issue.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33542" target="_blank" rel="noopener">CVE-2026-33542</a></td>
+        <td>5.7</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-295</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Incus is a system container and virtual machine manager. Prior to version 6.23.0...</summary><p>Incus is a system container and virtual machine manager. Prior to version 6.23.0, a lack of validation of the image fingerprint when downloading from simplestreams image servers opens the door to image cache poisoning and under very narrow circumstances exposes other tenants to running attacker controlled images rather than the expected one. Version 6.23.0 patches the issue.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4900" target="_blank" rel="noopener">CVE-2026-4900</a></td>
         <td>5.5</td>
@@ -65,17 +381,6 @@
         <td>CWE-79</td>
         <td>&nbsp;</td>
         <td><details><summary>A vulnerability was identified in code-projects Online Food Ordering System 1.0....</summary><p>A vulnerability was identified in code-projects Online Food Ordering System 1.0. Affected by this vulnerability is an unknown functionality of the file /dbfood/contact.php. The manipulation of the argument Name leads to cross site scripting. It is possible to initiate the attack remotely. The exploit is publicly available and might be used.</p></details></td>
-        <td>2026-03-26</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4346" target="_blank" rel="noopener">CVE-2026-4346</a></td>
-        <td>5.1</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-312</td>
-        <td>&nbsp;</td>
-        <td><details><summary>The vulnerability affecting TL-WR850N v3 allows cleartext storage of administrat...</summary><p>The vulnerability affecting TL-WR850N v3 allows cleartext storage of administrative and Wi-Fi credentials in a region of the device’s flash memory while the serial interface remains enabled and protected by weak authentication.  An attacker with physical access and the ability to connect to the serial port can recover sensitive information, including the router’s management password and wireless network key.
-
-Successful exploitation can lead to full administrative control of the device and unauthorized access to the associated wireless network.</p></details></td>
         <td>2026-03-26</td>
       </tr>
       <tr>
@@ -187,16 +492,6 @@ Successful exploitation can lead to full administrative control of the device an
         <td>2026-03-26</td>
       </tr>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33658" target="_blank" rel="noopener">CVE-2026-33658</a></td>
-        <td>2.3</td>
-        <td><span class="severity low">LOW</span></td>
-        <td>CWE-770</td>
-        <td>&nbsp;</td>
-        <td><details><summary>Active Storage allows users to attach cloud and local files in Rails application...</summary><p>Active Storage allows users to attach cloud and local files in Rails applications. Prior to versions 8.1.2.1, 8.0.4.1, and 7.2.3.1
-Active Storage&#x27;s proxy controller does not limit the number of byte ranges in an HTTP Range header. A request with thousands of small ranges causes disproportionate CPU usage compared to a normal request for the same file, possibly resulting in a DoS vulnerability. Versions 8.1.2.1, 8.0.4.1, and 7.2.3.1 contain a patch.</p></details></td>
-        <td>2026-03-26</td>
-      </tr>
-      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33653" target="_blank" rel="noopener">CVE-2026-33653</a></td>
         <td>4.6</td>
         <td><span class="severity medium">MEDIUM</span></td>
@@ -206,34 +501,12 @@ Active Storage&#x27;s proxy controller does not limit the number of byte ranges 
         <td>2026-03-26</td>
       </tr>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-28377" target="_blank" rel="noopener">CVE-2026-28377</a></td>
-        <td>7.5</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>N/A</td>
-        <td>&nbsp;</td>
-        <td><details><summary>A vulnerability in Grafana Tempo exposes the S3 SSE-C encryption key in plaintex...</summary><p>A vulnerability in Grafana Tempo exposes the S3 SSE-C encryption key in plaintext through the /status/config endpoint, potentially allowing unauthorized users to obtain the key used to encrypt trace data stored in S3.
-
-Thanks to william_goodfellow for reporting this vulnerability.</p></details></td>
-        <td>2026-03-26</td>
-      </tr>
-      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-1556" target="_blank" rel="noopener">CVE-2026-1556</a></td>
         <td>6.9</td>
         <td><span class="severity medium">MEDIUM</span></td>
         <td>CWE-200</td>
         <td>&nbsp;</td>
         <td><details><summary>Information disclosure in the file URI processing of File (Field) Paths in Drupa...</summary><p>Information disclosure in the file URI processing of File (Field) Paths in Drupal File (Field) Paths 7.x prior to 7.1.3 on Drupal 7.x allows authenticated users to disclose other users’ private files via filename‑collision uploads. This can cause hook_node_insert() consumers (for example, email attachment modules) to receive the wrong file URI, bypassing normal access controls on private files.</p></details></td>
-        <td>2026-03-26</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-0748" target="_blank" rel="noopener">CVE-2026-0748</a></td>
-        <td>5.3</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-284</td>
-        <td>&nbsp;</td>
-        <td><details><summary>In the Drupal 7 Internationalization (i18n) module, the i18n_node submodule allo...</summary><p>In the Drupal 7 Internationalization (i18n) module, the i18n_node submodule allows a user with both &quot;Translate content&quot; and &quot;Administer content translations&quot; permissions to view and attach unpublished nodes via the translation UI and its autocomplete widget. This bypasses intended access controls and discloses unpublished node titles and IDs. 
-
-Exploit affects versions 7.x-1.0 up to and including 7.x-1.35.</p></details></td>
         <td>2026-03-26</td>
       </tr>
       <tr>
@@ -261,18 +534,6 @@ Exploit affects versions 7.x-1.0 up to and including 7.x-1.35.</p></details></td
         <td>CWE-352</td>
         <td>&nbsp;</td>
         <td><details><summary>Cross-Site Request Forgery (CSRF) vulnerability in Drupal Automated Logout allow...</summary><p>Cross-Site Request Forgery (CSRF) vulnerability in Drupal Automated Logout allows Cross Site Request Forgery.This issue affects Automated Logout: from 0.0.0 before 1.7.0, from 2.0.0 before 2.0.2.</p></details></td>
-        <td>2026-03-26</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-3622" target="_blank" rel="noopener">CVE-2026-3622</a></td>
-        <td>7.1</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-125</td>
-        <td>&nbsp;</td>
-        <td><details><summary>The vulnerability exists in the UPnP component of TL-WR841N v14, where improper ...</summary><p>The vulnerability exists in the UPnP component of TL-WR841N v14, where improper input validation leads to an out-of-bounds read, potentially causing a crash of the UPnP service.  
-
-Successful exploitation can cause the UPnP service to crash, resulting in a Denial-of-Service condition. 
-This vulnerability affects TL-WR841N v14 &lt; EN_0.9.1 4.19 Build 260303 Rel.42399n (V14_260303) and &lt; US_0.9.1.4.19 Build 260312 Rel. 49108n (V14_0304).</p></details></td>
         <td>2026-03-26</td>
       </tr>
       <tr>
@@ -573,47 +834,12 @@ This vulnerability affects TL-WR841N v14 &lt; EN_0.9.1 4.19 Build 260303 Rel.42
         <td>2026-03-26</td>
       </tr>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-0966" target="_blank" rel="noopener">CVE-2026-0966</a></td>
-        <td>6.5</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-124</td>
-        <td>&nbsp;</td>
-        <td><details><summary>The API function `ssh_get_hexa()` is vulnerable, when 0-lenght
-input is provided...</summary><p>The API function `ssh_get_hexa()` is vulnerable, when 0-lenght
-input is provided to this function. This function is used internally
-in `ssh_get_fingerprint_hash()` and `ssh_print_hexa()` (deprecated),
-which is vulnerable to the same input (length is provided by the
-calling application).
-
-The function is also used internally in the gssapi code for logging
-the OIDs received by the server during GSSAPI authentication. This
-could be triggered remotely, when the server allows GSSAPI authentication
-and logging verbosity is set at least to SSH_LOG_PACKET (3). This
-could cause self-DoS of the per-connection daemon process.</p></details></td>
-        <td>2026-03-26</td>
-      </tr>
-      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-0965" target="_blank" rel="noopener">CVE-2026-0965</a></td>
         <td>3.3</td>
         <td><span class="severity low">LOW</span></td>
         <td>CWE-73</td>
         <td>&nbsp;</td>
         <td><details><summary>A flaw was found in libssh where it can attempt to open arbitrary files during c...</summary><p>A flaw was found in libssh where it can attempt to open arbitrary files during configuration parsing. A local attacker can exploit this by providing a malicious configuration file or when the system is misconfigured. This vulnerability could lead to a Denial of Service (DoS) by causing the system to try and access dangerous files, such as block devices or large system files, which can disrupt normal operations.</p></details></td>
-        <td>2026-03-26</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-0964" target="_blank" rel="noopener">CVE-2026-0964</a></td>
-        <td>5.0</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-22</td>
-        <td>&nbsp;</td>
-        <td><details><summary>A malicious SCP server can send unexpected paths that could make the
-client appl...</summary><p>A malicious SCP server can send unexpected paths that could make the
-client application override local files outside of working directory.
-This could be misused to create malicious executable or configuration
-files and make the user execute them under specific consequences.
-
-This is the same issue as in OpenSSH, tracked as CVE-2019-6111.</p></details></td>
         <td>2026-03-26</td>
       </tr>
       <tr>
@@ -7679,18 +7905,6 @@ This is the same issue as in OpenSSH, tracked as CVE-2019-6111.</p></details></t
         <td>CWE-639</td>
         <td>&nbsp;</td>
         <td><details><summary>Vikunja is an open-source self-hosted task management platform. Prior to version...</summary><p>Vikunja is an open-source self-hosted task management platform. Prior to version 2.2.0, an authenticated user can read any task comment by ID, regardless of whether they have access to the task the comment belongs to, by substituting the task ID in the API URL with a task they do have access to. Version 2.2.0 fixes the issue.</p></details></td>
-        <td>2026-03-24</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32647" target="_blank" rel="noopener">CVE-2026-32647</a></td>
-        <td>8.5</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-125</td>
-        <td>&nbsp;</td>
-        <td><details><summary>NGINX Open Source and NGINX Plus have a vulnerability in the ngx_http_mp4_module...</summary><p>NGINX Open Source and NGINX Plus have a vulnerability in the ngx_http_mp4_module module, which might allow an attacker to trigger a buffer over-read or over-write to the NGINX worker memory resulting in its termination or possibly code execution, using a specially crafted MP4 file. This issue affects NGINX Open Source and NGINX Plus if it is built with the ngx_http_mp4_module module and the mp4 directive is used in the configuration file. Additionally, the attack is possible only if an attacker can trigger the processing of a specially crafted MP4 file with the ngx_http_mp4_module module. 
-
-
-Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.</p></details></td>
         <td>2026-03-24</td>
       </tr>
       <tr>
