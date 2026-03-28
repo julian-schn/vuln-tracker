@@ -1,9 +1,12 @@
 # CVEs — March 2026
 
-_5288 vulnerabilities_
+_5291 vulnerabilities_
 
 | CVE ID | Score | Severity | CWE | KEV | Published | Description |
 |--------|-------|----------|-----|-----|-----------|-------------|
+| [CVE-2026-5001](https://nvd.nist.gov/vuln/detail/CVE-2026-5001) | 6.9 | MEDIUM | CWE-284 | No | 2026-03-28 | A flaw has been found in PromtEngineer localGPT up to 4d41c7d1713b16b216d8e062e51a5dd88b20b054. The affected element is... |
+| [CVE-2026-5000](https://nvd.nist.gov/vuln/detail/CVE-2026-5000) | 6.9 | MEDIUM | CWE-287 | No | 2026-03-28 | A vulnerability was detected in PromtEngineer localGPT up to 4d41c7d1713b16b216d8e062e51a5dd88b20b054. Impacted is the f... |
+| [CVE-2026-4999](https://nvd.nist.gov/vuln/detail/CVE-2026-4999) | 5.3 | MEDIUM | CWE-22 | No | 2026-03-28 | A security vulnerability has been detected in z-9527 admin up to 72aaf2dd05cf4ec2e98f390668b41e128eec5ad2. This issue af... |
 | [CVE-2026-4998](https://nvd.nist.gov/vuln/detail/CVE-2026-4998) | 6.9 | MEDIUM | CWE-74 | No | 2026-03-28 | A weakness has been identified in Sinaptik AI PandasAI up to 3.0.0. This vulnerability affects the function CodeExecutor... |
 | [CVE-2026-4997](https://nvd.nist.gov/vuln/detail/CVE-2026-4997) | 5.5 | MEDIUM | CWE-22 | No | 2026-03-28 | A security flaw has been discovered in Sinaptik AI PandasAI up to 3.0.0. This affects the function is_sql_query_safe of... |
 | [CVE-2026-4996](https://nvd.nist.gov/vuln/detail/CVE-2026-4996) | 6.9 | MEDIUM | CWE-74 | No | 2026-03-28 | A vulnerability was identified in Sinaptik AI PandasAI up to 0.1.4. Affected by this issue is the function delete_questi... |
