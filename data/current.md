@@ -1,9 +1,37 @@
 # CVEs — March 2026
 
-_5258 vulnerabilities_
+_5286 vulnerabilities_
 
 | CVE ID | Score | Severity | CWE | KEV | Published | Description |
 |--------|-------|----------|-----|-----|-----------|-------------|
+| [CVE-2026-4996](https://nvd.nist.gov/vuln/detail/CVE-2026-4996) | 6.9 | MEDIUM | CWE-74 | No | 2026-03-28 | A vulnerability was identified in Sinaptik AI PandasAI up to 0.1.4. Affected by this issue is the function delete_questi... |
+| [CVE-2026-2595](https://nvd.nist.gov/vuln/detail/CVE-2026-2595) | 5.4 | MEDIUM | CWE-79 | No | 2026-03-28 | The Quads Ads Manager for Google AdSense plugin for WordPress is vulnerable to Stored Cross-Site Scripting in versions u... |
+| [CVE-2018-25225](https://nvd.nist.gov/vuln/detail/CVE-2018-25225) | 8.6 | HIGH | CWE-306 | No | 2026-03-28 | SIPP 3.3 contains a stack-based buffer overflow vulnerability that allows local unauthenticated attackers to execute arb... |
+| [CVE-2018-25224](https://nvd.nist.gov/vuln/detail/CVE-2018-25224) | 8.6 | HIGH | CWE-306 | No | 2026-03-28 | PMS 0.42 contains a stack-based buffer overflow vulnerability that allows local unauthenticated attackers to execute arb... |
+| [CVE-2018-25223](https://nvd.nist.gov/vuln/detail/CVE-2018-25223) | 9.3 | CRITICAL | CWE-787 | No | 2026-03-28 | Crashmail 1.6 contains a stack-based buffer overflow vulnerability that allows remote attackers to execute arbitrary cod... |
+| [CVE-2018-25222](https://nvd.nist.gov/vuln/detail/CVE-2018-25222) | 8.6 | HIGH | CWE-787 | No | 2026-03-28 | SC v7.16 contains a stack-based buffer overflow vulnerability that allows local attackers to execute arbitrary code by s... |
+| [CVE-2018-25221](https://nvd.nist.gov/vuln/detail/CVE-2018-25221) | 9.3 | CRITICAL | CWE-787 | No | 2026-03-28 | EChat Server 3.1 contains a buffer overflow vulnerability in the chat.ghp endpoint that allows remote attackers to execu... |
+| [CVE-2018-25220](https://nvd.nist.gov/vuln/detail/CVE-2018-25220) | 9.3 | CRITICAL | CWE-787 | No | 2026-03-28 | Bochs 2.6-5 contains a stack-based buffer overflow vulnerability that allows attackers to execute arbitrary code by supp... |
+| [CVE-2017-20229](https://nvd.nist.gov/vuln/detail/CVE-2017-20229) | 9.3 | CRITICAL | CWE-787 | No | 2026-03-28 | MAWK 1.3.3-17 and prior contains a stack-based buffer overflow vulnerability that allows attackers to execute arbitrary... |
+| [CVE-2017-20228](https://nvd.nist.gov/vuln/detail/CVE-2017-20228) | 8.6 | HIGH | CWE-787 | No | 2026-03-28 | Flat Assembler 1.71.21 contains a stack-based buffer overflow vulnerability that allows local attackers to execute arbit... |
+| [CVE-2017-20227](https://nvd.nist.gov/vuln/detail/CVE-2017-20227) | 9.3 | CRITICAL | CWE-787 | No | 2026-03-28 | JAD Java Decompiler 1.5.8e-1kali1 and prior contains a stack-based buffer overflow vulnerability that allows attackers t... |
+| [CVE-2017-20226](https://nvd.nist.gov/vuln/detail/CVE-2017-20226) | 8.6 | HIGH | CWE-787 | No | 2026-03-28 | Mapscrn 2.0.3 contains a stack-based buffer overflow vulnerability that allows local attackers to execute arbitrary code... |
+| [CVE-2017-20225](https://nvd.nist.gov/vuln/detail/CVE-2017-20225) | 9.3 | CRITICAL | CWE-787 | No | 2026-03-28 | TiEmu 2.08 and prior contains a stack-based buffer overflow vulnerability that allows attackers to execute arbitrary cod... |
+| [CVE-2016-20049](https://nvd.nist.gov/vuln/detail/CVE-2016-20049) | 9.3 | CRITICAL | CWE-787 | No | 2026-03-28 | JAD 1.5.8e-1kali1 and prior contains a stack-based buffer overflow vulnerability that allows attackers to execute arbitr... |
+| [CVE-2016-20048](https://nvd.nist.gov/vuln/detail/CVE-2016-20048) | 8.6 | HIGH | CWE-22 | No | 2026-03-28 | iSelect 1.4.0-2+b1 contains a local buffer overflow vulnerability that allows local attackers to execute arbitrary code... |
+| [CVE-2016-20047](https://nvd.nist.gov/vuln/detail/CVE-2016-20047) | 8.6 | HIGH | CWE-787 | No | 2026-03-28 | EKG Gadu 1.9~pre+r2855-3+b1 contains a local buffer overflow vulnerability in the username handling that allows local at... |
+| [CVE-2016-20046](https://nvd.nist.gov/vuln/detail/CVE-2016-20046) | 8.6 | HIGH | CWE-787 | No | 2026-03-28 | zFTP Client 20061220+dfsg3-4.1 contains a buffer overflow vulnerability in the NAME parameter handling of FTP connection... |
+| [CVE-2016-20045](https://nvd.nist.gov/vuln/detail/CVE-2016-20045) | 8.6 | HIGH | CWE-787 | No | 2026-03-28 | HNB Organizer 1.9.18-10 contains a local buffer overflow vulnerability that allows local attackers to execute arbitrary... |
+| [CVE-2016-20044](https://nvd.nist.gov/vuln/detail/CVE-2016-20044) | 8.6 | HIGH | CWE-787 | No | 2026-03-28 | PInfo 0.6.9-5.1 contains a local buffer overflow vulnerability that allows local attackers to execute arbitrary code by... |
+| [CVE-2016-20043](https://nvd.nist.gov/vuln/detail/CVE-2016-20043) | 8.6 | HIGH | CWE-787 | No | 2026-03-28 | NRSS RSS Reader 0.3.9-1 contains a stack buffer overflow vulnerability that allows local attackers to execute arbitrary... |
+| [CVE-2016-20042](https://nvd.nist.gov/vuln/detail/CVE-2016-20042) | 8.6 | HIGH | CWE-787 | No | 2026-03-28 | TRN 3.6-23 contains a stack buffer overflow vulnerability that allows local attackers to execute arbitrary code by suppl... |
+| [CVE-2016-20041](https://nvd.nist.gov/vuln/detail/CVE-2016-20041) | 8.6 | HIGH | CWE-22 | No | 2026-03-28 | Yasr 0.6.9-5 contains a buffer overflow vulnerability that allows local attackers to crash the application or execute ar... |
+| [CVE-2016-20040](https://nvd.nist.gov/vuln/detail/CVE-2016-20040) | 8.6 | HIGH | CWE-22 | No | 2026-03-28 | TiEmu 3.03-nogdb+dfsg-3 contains a buffer overflow vulnerability in the ROM parameter handling that allows local attacke... |
+| [CVE-2016-20039](https://nvd.nist.gov/vuln/detail/CVE-2016-20039) | 8.6 | HIGH | CWE-787 | No | 2026-03-28 | Multi Emulator Super System 0.154-3.1 contains a buffer overflow vulnerability in the gamma parameter handling that allo... |
+| [CVE-2016-20038](https://nvd.nist.gov/vuln/detail/CVE-2016-20038) | 8.6 | HIGH | CWE-787 | No | 2026-03-28 | yTree 1.94-1.1 contains a stack-based buffer overflow vulnerability that allows local attackers to execute arbitrary cod... |
+| [CVE-2016-20037](https://nvd.nist.gov/vuln/detail/CVE-2016-20037) | 8.6 | HIGH | CWE-787 | No | 2026-03-28 | xwpe 1.5.30a-2.1 and prior contains a stack-based buffer overflow vulnerability that allows local attackers to execute a... |
+| [CVE-2026-4995](https://nvd.nist.gov/vuln/detail/CVE-2026-4995) | 5.1 | MEDIUM | CWE-79 | No | 2026-03-28 | A vulnerability was determined in wandb OpenUI up to 1.0. Affected by this vulnerability is an unknown functionality of... |
+| [CVE-2025-9497](https://nvd.nist.gov/vuln/detail/CVE-2025-9497) | 5.5 | MEDIUM | CWE-798 | No | 2026-03-28 | Use of Hard-coded Credentials vulnerability in Microchip Time Provider 4100 allows Malicious Manual Software Update.This... |
 | [CVE-2026-4994](https://nvd.nist.gov/vuln/detail/CVE-2026-4994) | 5.1 | MEDIUM | CWE-200 | No | 2026-03-28 | A vulnerability was found in wandb OpenUI up to 1.0/3.5-turb. Affected is the function generic_exception_handler of the... |
 | [CVE-2026-4993](https://nvd.nist.gov/vuln/detail/CVE-2026-4993) | 1.9 | LOW | CWE-259 | No | 2026-03-28 | A vulnerability has been found in wandb OpenUI up to 0.0.0.0/1.0. This impacts an unknown function of the file backend/o... |
 | [CVE-2026-2442](https://nvd.nist.gov/vuln/detail/CVE-2026-2442) | 5.3 | MEDIUM | CWE-93 | No | 2026-03-28 | The Page Builder: Pagelayer – Drag and Drop website builder plugin for WordPress is vulnerable to Improper Neutralizatio... |
