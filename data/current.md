@@ -1,9 +1,10 @@
 # CVEs — March 2026
 
-_5252 vulnerabilities_
+_5253 vulnerabilities_
 
 | CVE ID | Score | Severity | CWE | KEV | Published | Description |
 |--------|-------|----------|-----|-----|-----------|-------------|
+| [CVE-2025-12886](https://nvd.nist.gov/vuln/detail/CVE-2025-12886) | 7.2 | HIGH | CWE-918 | No | 2026-03-28 | The Oxygen Theme theme for WordPress is vulnerable to Server-Side Request Forgery in all versions up to, and including,... |
 | [CVE-2026-4987](https://nvd.nist.gov/vuln/detail/CVE-2026-4987) | 7.5 | HIGH | CWE-20 | No | 2026-03-28 | The SureForms – Contact Form, Payment Form & Other Custom Form Builder plugin for WordPress is vulnerable to Payment Amo... |
 | [CVE-2026-1679](https://nvd.nist.gov/vuln/detail/CVE-2026-1679) | 7.3 | HIGH | CWE-120 | No | 2026-03-28 | The eswifi socket offload driver copies user-provided payloads into a fixed buffer without checking available space; ove... |
 | [CVE-2026-4992](https://nvd.nist.gov/vuln/detail/CVE-2026-4992) | 5.3 | MEDIUM | CWE-79 | No | 2026-03-27 | A flaw has been found in wandb OpenUI up to 1.0. This affects the function create_share/get_share of the file backend/op... |
@@ -329,8 +330,8 @@ _5252 vulnerabilities_
 | [CVE-2026-33149](https://nvd.nist.gov/vuln/detail/CVE-2026-33149) | 8.1 | HIGH | CWE-644 | No | 2026-03-26 | Tandoor Recipes is an application for managing recipes, planning meals, and building shopping lists. Versions up to and... |
 | [CVE-2026-33148](https://nvd.nist.gov/vuln/detail/CVE-2026-33148) | 6.5 | MEDIUM | CWE-74 | No | 2026-03-26 | Tandoor Recipes is an application for managing recipes, planning meals, and building shopping lists. In versions prior t... |
 | [CVE-2026-30463](https://nvd.nist.gov/vuln/detail/CVE-2026-30463) | 7.7 | HIGH | CWE-89 | No | 2026-03-26 | Daylight Studio FuelCMS v1.5.2 was discovered to contain a SQL injection vulnerability via the /controllers/Login.php co... |
-| [CVE-2026-30458](https://nvd.nist.gov/vuln/detail/CVE-2026-30458) | 0.0 | NONE | N/A | No | 2026-03-26 | An issue in Daylight Studio FuelCMS v1.5.2 allows attackers to exfiltrate users' password reset tokens via a mail splitt... |
-| [CVE-2026-30457](https://nvd.nist.gov/vuln/detail/CVE-2026-30457) | 0.0 | NONE | N/A | No | 2026-03-26 | An issue in the /parser/dwoo component of Daylight Studio FuelCMS v1.5.2 allows attackers to execute arbitrary code via... |
+| [CVE-2026-30458](https://nvd.nist.gov/vuln/detail/CVE-2026-30458) | 9.1 | CRITICAL | CWE-620 | No | 2026-03-26 | An issue in Daylight Studio FuelCMS v1.5.2 allows attackers to exfiltrate users' password reset tokens via a mail splitt... |
+| [CVE-2026-30457](https://nvd.nist.gov/vuln/detail/CVE-2026-30457) | 9.8 | CRITICAL | CWE-94 | No | 2026-03-26 | An issue in the /parser/dwoo component of Daylight Studio FuelCMS v1.5.2 allows attackers to execute arbitrary code via... |
 | [CVE-2026-29969](https://nvd.nist.gov/vuln/detail/CVE-2026-29969) | 0.0 | NONE | N/A | No | 2026-03-26 | A cross-site scripting (XSS) vulnerability in the wff_cols_pref.css.aspx endpoint of staffwiki v7.0.1.19219 allows attac... |
 | [CVE-2026-29055](https://nvd.nist.gov/vuln/detail/CVE-2026-29055) | 5.3 | MEDIUM | CWE-1230 | No | 2026-03-26 | Tandoor Recipes is an application for managing recipes, planning meals, and building shopping lists. In versions prior t... |
 | [CVE-2026-28503](https://nvd.nist.gov/vuln/detail/CVE-2026-28503) | 5.5 | MEDIUM | CWE-639 | No | 2026-03-26 | Tandoor Recipes is an application for managing recipes, planning meals, and building shopping lists. In versions prior t... |
