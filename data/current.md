@@ -1,9 +1,11 @@
 # CVEs — March 2026
 
-_5254 vulnerabilities_
+_5256 vulnerabilities_
 
 | CVE ID | Score | Severity | CWE | KEV | Published | Description |
 |--------|-------|----------|-----|-----|-----------|-------------|
+| [CVE-2026-23399](https://nvd.nist.gov/vuln/detail/CVE-2026-23399) | 0.0 | NONE | N/A | No | 2026-03-28 | In the Linux kernel, the following vulnerability has been resolved:  nf_tables: nft_dynset: fix possible stateful expres... |
+| [CVE-2026-1307](https://nvd.nist.gov/vuln/detail/CVE-2026-1307) | 6.5 | MEDIUM | CWE-200 | No | 2026-03-28 | The Ninja Forms - The Contact Form Builder That Grows With You plugin for WordPress is vulnerable to Sensitive Informati... |
 | [CVE-2025-15445](https://nvd.nist.gov/vuln/detail/CVE-2025-15445) | 0.0 | NONE | N/A | No | 2026-03-28 | The Restaurant Cafeteria WordPress theme through 0.4.6 exposes insecure admin-ajax actions without nonce or capability c... |
 | [CVE-2025-12886](https://nvd.nist.gov/vuln/detail/CVE-2025-12886) | 7.2 | HIGH | CWE-918 | No | 2026-03-28 | The Oxygen Theme theme for WordPress is vulnerable to Server-Side Request Forgery in all versions up to, and including,... |
 | [CVE-2026-4987](https://nvd.nist.gov/vuln/detail/CVE-2026-4987) | 7.5 | HIGH | CWE-20 | No | 2026-03-28 | The SureForms – Contact Form, Payment Form & Other Custom Form Builder plugin for WordPress is vulnerable to Payment Amo... |

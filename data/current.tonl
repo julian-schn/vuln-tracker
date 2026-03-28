@@ -1,7 +1,31 @@
 #version 1.0
 #delimiter "|"
 
-cves[5254]{cveId:str|published:str|lastModified:str|cvssScore:f64|severity:str|cweId:str|cweName:str|kev:bool|description:str|nvdUrl:str}:
+cves[5256]{cveId:str|published:str|lastModified:str|cvssScore:f64|severity:str|cweId:str|cweName:str|kev:bool|description:str|nvdUrl:str}:
+  CVE-2026-23399|2026-03-28T08:15:56.720|2026-03-28T08:15:56.720|0.0|NONE|N/A|N/A|false|"In the Linux kernel, the following vulnerability has been resolved:
+
+nf_tables: nft_dynset: fix possible stateful expression memleak in error path
+
+If cloning the second stateful expression in the element via GFP_ATOMIC
+fails, then the first stateful expression remains in place without being
+released.
+
+   unreferenced object (percpu) 0x607b97e9cab8 (size 16):
+     comm ""softirq"", pid 0, jiffies 4294931867
+     hex dump (first 16 bytes on cpu 3):
+       00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+     backtrace (crc 0):
+       pcpu_alloc_noprof+0x453/0xd80
+       nft_counter_clone+0x9c/0x190 [nf_tables]
+       nft_expr_clone+0x8f/0x1b0 [nf_tables]
+       nft_dynset_new+0x2cb/0x5f0 [nf_tables]
+       nft_rhash_update+0x236/0x11c0 [nf_tables]
+       nft_dynset_eval+0x11f/0x670 [nf_tables]
+       nft_do_chain+0x253/0x1700 [nf_tables]
+       nft_do_chain_ipv4+0x18d/0x270 [nf_tables]
+       nf_hook_slow+0xaa/0x1e0
+       ip_local_deliver+0x209/0x330"|https://nvd.nist.gov/vuln/detail/CVE-2026-23399
+  CVE-2026-1307|2026-03-28T07:15:55.950|2026-03-28T07:15:55.950|6.5|MEDIUM|CWE-200|N/A|false|The Ninja Forms - The Contact Form Builder That Grows With You plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 3.14.1 via a callback function for the admin_enqueue_scripts action handler in blocks/bootstrap.php. This makes it possible for authenticated attackers, with Contributor-level access and above, to gain access to an authorization token to view form submissions for arbitrary forms, which could potentially contain sensitive information.|https://nvd.nist.gov/vuln/detail/CVE-2026-1307
   CVE-2025-15445|2026-03-28T06:16:00.137|2026-03-28T06:16:00.137|0.0|NONE|N/A|N/A|false|The Restaurant Cafeteria WordPress theme through 0.4.6 exposes insecure admin-ajax actions without nonce or capability checks, allowing any logged-in user, like subscriber, to perform privileged operations. An attacker can install and activate a  from a user-supplied URL, leading to arbitrary PHP code execution, and also import demo content that rewrites site configuration, including Restaurant Cafeteria WordPress theme through 0.4.6_mods, pages, menus, and front page settings.|https://nvd.nist.gov/vuln/detail/CVE-2025-15445
   CVE-2025-12886|2026-03-28T04:16:49.323|2026-03-28T04:16:49.323|7.2|HIGH|CWE-918|N/A|false|The Oxygen Theme theme for WordPress is vulnerable to Server-Side Request Forgery in all versions up to, and including, 6.0.8 via the laborator_calc_route AJAX action. This makes it possible for unauthenticated attackers to make web requests to arbitrary locations originating from the web application and can be used to query and modify information from internal services.|https://nvd.nist.gov/vuln/detail/CVE-2025-12886
   CVE-2026-4987|2026-03-28T02:16:14.793|2026-03-28T02:16:14.793|7.5|HIGH|CWE-20|N/A|false|The SureForms – Contact Form, Payment Form & Other Custom Form Builder plugin for WordPress is vulnerable to Payment Amount Bypass in all versions up to, and including, 2.5.2. This is due to the create_payment_intent() function performing a payment validation solely based on the value of a user-controlled parameter. This makes it possible for unauthenticated attackers to bypass configured form payment-amount validation and create underpriced payment/subscription intents by setting form_id to 0.|https://nvd.nist.gov/vuln/detail/CVE-2026-4987
