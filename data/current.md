@@ -1,9 +1,11 @@
 # CVEs — March 2026
 
-_5286 vulnerabilities_
+_5288 vulnerabilities_
 
 | CVE ID | Score | Severity | CWE | KEV | Published | Description |
 |--------|-------|----------|-----|-----|-----------|-------------|
+| [CVE-2026-4998](https://nvd.nist.gov/vuln/detail/CVE-2026-4998) | 6.9 | MEDIUM | CWE-74 | No | 2026-03-28 | A weakness has been identified in Sinaptik AI PandasAI up to 3.0.0. This vulnerability affects the function CodeExecutor... |
+| [CVE-2026-4997](https://nvd.nist.gov/vuln/detail/CVE-2026-4997) | 5.5 | MEDIUM | CWE-22 | No | 2026-03-28 | A security flaw has been discovered in Sinaptik AI PandasAI up to 3.0.0. This affects the function is_sql_query_safe of... |
 | [CVE-2026-4996](https://nvd.nist.gov/vuln/detail/CVE-2026-4996) | 6.9 | MEDIUM | CWE-74 | No | 2026-03-28 | A vulnerability was identified in Sinaptik AI PandasAI up to 0.1.4. Affected by this issue is the function delete_questi... |
 | [CVE-2026-2595](https://nvd.nist.gov/vuln/detail/CVE-2026-2595) | 5.4 | MEDIUM | CWE-79 | No | 2026-03-28 | The Quads Ads Manager for Google AdSense plugin for WordPress is vulnerable to Stored Cross-Site Scripting in versions u... |
 | [CVE-2018-25225](https://nvd.nist.gov/vuln/detail/CVE-2018-25225) | 8.6 | HIGH | CWE-306 | No | 2026-03-28 | SIPP 3.3 contains a stack-based buffer overflow vulnerability that allows local unauthenticated attackers to execute arb... |
