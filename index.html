@@ -11,7 +11,7 @@
     <header>
       <h1>vuln-tracker</h1>
       <p class="subtitle">CVEs from the National Vulnerability Database — current and previous month</p>
-      <p class="last-updated">Last updated: 2026-03-27 22:39 UTC</p>
+      <p class="last-updated">Last updated: 2026-03-28 02:43 UTC</p>
     </header>
     <nav>
       <a href="top50.html">&#9733; Top 50</a>
@@ -25,7 +25,7 @@
     </nav>
     <main>
     <section>
-      <h2>Current Month — March 2026 <span class="count">(5241)</span></h2>
+      <h2>Current Month — March 2026 <span class="count">(5252)</span></h2>
       <div class="table-wrapper">
         <table>
           <thead>
@@ -41,12 +41,111 @@
           </thead>
           <tbody>
       <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4987" target="_blank" rel="noopener">CVE-2026-4987</a></td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-20</td>
+        <td>&nbsp;</td>
+        <td><details><summary>The SureForms – Contact Form, Payment Form &amp; Other Custom Form Builder plugin fo...</summary><p>The SureForms – Contact Form, Payment Form &amp; Other Custom Form Builder plugin for WordPress is vulnerable to Payment Amount Bypass in all versions up to, and including, 2.5.2. This is due to the create_payment_intent() function performing a payment validation solely based on the value of a user-controlled parameter. This makes it possible for unauthenticated attackers to bypass configured form payment-amount validation and create underpriced payment/subscription intents by setting form_id to 0.</p></details></td>
+        <td>2026-03-28</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-1679" target="_blank" rel="noopener">CVE-2026-1679</a></td>
+        <td>7.3</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-120</td>
+        <td>&nbsp;</td>
+        <td><details><summary>The eswifi socket offload driver copies user-provided payloads into a fixed buff...</summary><p>The eswifi socket offload driver copies user-provided payloads into a fixed buffer without checking available space; oversized sends overflow `eswifi-&gt;buf`, corrupting kernel memory (CWE-120). Exploit requires local code that can call the socket send API; no remote attacker can reach it directly.</p></details></td>
+        <td>2026-03-28</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4992" target="_blank" rel="noopener">CVE-2026-4992</a></td>
+        <td>5.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td><details><summary>A flaw has been found in wandb OpenUI up to 1.0. This affects the function creat...</summary><p>A flaw has been found in wandb OpenUI up to 1.0. This affects the function create_share/get_share of the file backend/openui/server.py of the component HTMLAnnotator Component. Executing a manipulation of the argument ID can lead to HTML injection. The attack may be performed from remote. The exploit has been published and may be used. The vendor was contacted early about this disclosure but did not respond in any way.</p></details></td>
+        <td>2026-03-27</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4991" target="_blank" rel="noopener">CVE-2026-4991</a></td>
+        <td>5.1</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td><details><summary>A vulnerability was detected in QDOCS Smart School Management System up to 7.2. ...</summary><p>A vulnerability was detected in QDOCS Smart School Management System up to 7.2. The impacted element is an unknown function of the file /admin/enquiry of the component Admission Enquiry Module. Performing a manipulation of the argument Note results in cross site scripting. The attack is possible to be carried out remotely.</p></details></td>
+        <td>2026-03-27</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4248" target="_blank" rel="noopener">CVE-2026-4248</a></td>
+        <td>8.0</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-285</td>
+        <td>&nbsp;</td>
+        <td><details><summary>The Ultimate Member plugin for WordPress is vulnerable to Sensitive Information ...</summary><p>The Ultimate Member plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 2.11.2. This is due to the &#x27;{usermeta:password_reset_link}&#x27; template tag being processed within post content via the &#x27;[um_loggedin]&#x27; shortcode, which generates a valid password reset token for the currently logged-in user viewing the page. This makes it possible for authenticated attackers, with Contributor-level access and above, to craft a malicious pending post that, when previewed by an Administrator, generates a password reset token for the Administrator and exfiltrates it to an attacker-controlled server, leading to full account takeover.</p></details></td>
+        <td>2026-03-27</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33996" target="_blank" rel="noopener">CVE-2026-33996</a></td>
+        <td>5.8</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-476</td>
+        <td>&nbsp;</td>
+        <td><details><summary>LibJWT is a C JSON Web Token Library. Starting in version 3.0.0 and prior to ver...</summary><p>LibJWT is a C JSON Web Token Library. Starting in version 3.0.0 and prior to version 3.3.0, the JWK parsing for RSA-PSS did not protect against a NULL value when expecting to parse JSON string values. A specially crafted JWK file could exploit this behavior by using integers in places where the code expected a string. This was fixed in v3.3.0. A workaround is available. Users importing keys through a JWK file should not do so from untrusted sources. Use the `jwk2key` tool to check for validity of a JWK file. Likewise, if possible, do not use JWK files with RSA-PSS keys.</p></details></td>
+        <td>2026-03-27</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33994" target="_blank" rel="noopener">CVE-2026-33994</a></td>
+        <td>6.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-1321</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Locutus brings stdlibs of other programming languages to JavaScript for educatio...</summary><p>Locutus brings stdlibs of other programming languages to JavaScript for educational purposes. Starting in version 2.0.39 and prior to version 3.0.25, a prototype pollution vulnerability exists in the `parse_str` function of the npm package locutus. An attacker can pollute `Object.prototype` by overriding `RegExp.prototype.test` and then passing a crafted query string to `parse_str`, bypassing the prototype pollution guard. This vulnerability stems from an incomplete fix for CVE-2026-25521. The CVE-2026-25521 patch replaced the `String.prototype.includes()`-based guard with a `RegExp.prototype.test()`-based guard. However, `RegExp.prototype.test` is itself a writable prototype method that can be overridden, making the new guard bypassable in the same way as the original — trading one hijackable built-in for another. Version 3.0.25 contains an updated fix.</p></details></td>
+        <td>2026-03-27</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33993" target="_blank" rel="noopener">CVE-2026-33993</a></td>
+        <td>6.9</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-1321</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Locutus brings stdlibs of other programming languages to JavaScript for educatio...</summary><p>Locutus brings stdlibs of other programming languages to JavaScript for educational purposes. Prior to version 3.0.25, the `unserialize()` function in `locutus/php/var/unserialize` assigns deserialized keys to plain objects via bracket notation without filtering the `__proto__` key. When a PHP serialized payload contains `__proto__` as an array or object key, JavaScript&#x27;s `__proto__` setter is invoked, replacing the deserialized object&#x27;s prototype with attacker-controlled content. This enables property injection, for...in propagation of injected properties, and denial of service via built-in method override. This is distinct from the previously reported prototype pollution in `parse_str` (GHSA-f98m-q3hr-p5wq, GHSA-rxrv-835q-v5mh) — `unserialize` is a different function with no mitigation applied. Version 3.0.25 patches the issue.</p></details></td>
+        <td>2026-03-27</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33992" target="_blank" rel="noopener">CVE-2026-33992</a></td>
+        <td>9.3</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-918</td>
+        <td>&nbsp;</td>
+        <td><details><summary>pyLoad is a free and open-source download manager written in Python. Prior to ve...</summary><p>pyLoad is a free and open-source download manager written in Python. Prior to version 0.5.0b3.dev97, PyLoad&#x27;s download engine accepts arbitrary URLs without validation, enabling Server-Side Request Forgery (SSRF) attacks. An authenticated attacker can exploit this to access internal network services and exfiltrate cloud provider metadata. On DigitalOcean droplets, this exposes sensitive infrastructure data including droplet ID, network configuration, region, authentication keys, and SSH keys configured in user-data/cloud-init. Version 0.5.0b3.dev97 contains a patch.</p></details></td>
+        <td>2026-03-27</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33991" target="_blank" rel="noopener">CVE-2026-33991</a></td>
+        <td>8.8</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-89</td>
+        <td>&nbsp;</td>
+        <td><details><summary>WeGIA is a web manager for charitable institutions. Prior to version 3.6.7, the ...</summary><p>WeGIA is a web manager for charitable institutions. Prior to version 3.6.7, the file `html/socio/sistema/deletar_tag.php` uses `extract($_REQUEST)` on line 14 and directly concatenates the `$id_tag` variable into SQL queries on lines 16-17 without prepared statements or sanitization. Version 3.6.7 patches the vulnerability.</p></details></td>
+        <td>2026-03-27</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33936" target="_blank" rel="noopener">CVE-2026-33936</a></td>
+        <td>5.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-20</td>
+        <td>&nbsp;</td>
+        <td><details><summary>The `ecdsa` PyPI package is a pure Python implementation of ECC (Elliptic Curve ...</summary><p>The `ecdsa` PyPI package is a pure Python implementation of ECC (Elliptic Curve Cryptography) with support for ECDSA (Elliptic Curve Digital Signature Algorithm), EdDSA (Edwards-curve Digital Signature Algorithm) and ECDH (Elliptic Curve Diffie-Hellman). Prior to version 0.19.2, an issue in the low-level DER parsing functions can cause unexpected exceptions to be raised from the public API functions. `ecdsa.der.remove_octet_string()` accepts truncated DER where the encoded length exceeds the available buffer. For example, an OCTET STRING that declares a length of 4096 bytes but provides only 3 bytes is parsed successfully instead of being rejected. Because of that, a crafted DER input can cause `SigningKey.from_der()` to raise an internal exception (`IndexError: index out of bounds on dimension 1`) rather than cleanly rejecting malformed DER (e.g., raising `UnexpectedDER` or `ValueError`). Applications that parse untrusted DER private keys may crash if they do not handle unexpected exceptions, resulting in a denial of service. Version 0.19.2 patches the issue.</p></details></td>
+        <td>2026-03-27</td>
+      </tr>
+      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4990" target="_blank" rel="noopener">CVE-2026-4990</a></td>
         <td>6.9</td>
         <td><span class="severity medium">MEDIUM</span></td>
         <td>CWE-266</td>
         <td>&nbsp;</td>
-        <td><details><summary>A security vulnerability has been detected in chatwoot up to 4.11.1. The affecte...</summary><p>A security vulnerability has been detected in chatwoot up to 4.11.1. The affected element is an unknown function of the file /app/login of the component Signup Endpoint. Such manipulation of the argument signupEnabled with the input true leads to improper authorization. The attack can be executed remotely. The exploit has been disclosed publicly and may be used. The vendor was contacted early about this disclosure but did not respond in any way. Statistical analysis made it clear that VulDB provides the best quality for vulnerability data.</p></details></td>
+        <td><details><summary>A security vulnerability has been detected in chatwoot up to 4.11.1. The affecte...</summary><p>A security vulnerability has been detected in chatwoot up to 4.11.1. The affected element is an unknown function of the file /app/login of the component Signup Endpoint. Such manipulation of the argument signupEnabled with the input true leads to improper authorization. The attack can be executed remotely. The exploit has been disclosed publicly and may be used. The vendor was contacted early about this disclosure but did not respond in any way.</p></details></td>
         <td>2026-03-27</td>
       </tr>
       <tr>
@@ -55,7 +154,7 @@
         <td><span class="severity medium">MEDIUM</span></td>
         <td>CWE-404</td>
         <td>&nbsp;</td>
-        <td><details><summary>A security flaw has been discovered in Open5GS 2.7.6. This issue affects the fun...</summary><p>A security flaw has been discovered in Open5GS 2.7.6. This issue affects the function smf_gx_cca_cb/smf_gy_cca_cb/smf_s6b of the component CCA Message Handler. The manipulation results in denial of service. The attack may be launched remotely. Attacks of this nature are highly complex. The exploitability is assessed as difficult. The exploit has been released to the public and may be used for attacks. Several companies clearly confirm that VulDB is the primary source for best vulnerability data.</p></details></td>
+        <td><details><summary>A security flaw has been discovered in Open5GS 2.7.6. This issue affects the fun...</summary><p>A security flaw has been discovered in Open5GS 2.7.6. This issue affects the function smf_gx_cca_cb/smf_gy_cca_cb/smf_s6b of the component CCA Message Handler. The manipulation results in denial of service. The attack may be launched remotely. Attacks of this nature are highly complex. The exploitability is assessed as difficult. The exploit has been released to the public and may be used for attacks.</p></details></td>
         <td>2026-03-27</td>
       </tr>
       <tr>
@@ -64,7 +163,7 @@
         <td><span class="severity medium">MEDIUM</span></td>
         <td>CWE-189</td>
         <td>&nbsp;</td>
-        <td><details><summary>A vulnerability was identified in dloebl CGIF up to 0.5.2. This vulnerability af...</summary><p>A vulnerability was identified in dloebl CGIF up to 0.5.2. This vulnerability affects the function cgif_addframe of the file src/cgif.c of the component GIF Image Handler. The manipulation of the argument width/height leads to integer overflow. The attack may be initiated remotely. The identifier of the patch is b0ba830093f4317a5d1f345715d2fa3cd2dab474. It is suggested to install a patch to address this issue. VulDB is the best source for vulnerability data and more expert information about this specific topic.</p></details></td>
+        <td><details><summary>A vulnerability was identified in dloebl CGIF up to 0.5.2. This vulnerability af...</summary><p>A vulnerability was identified in dloebl CGIF up to 0.5.2. This vulnerability affects the function cgif_addframe of the file src/cgif.c of the component GIF Image Handler. The manipulation of the argument width/height leads to integer overflow. The attack may be initiated remotely. The identifier of the patch is b0ba830093f4317a5d1f345715d2fa3cd2dab474. It is suggested to install a patch to address this issue.</p></details></td>
         <td>2026-03-27</td>
       </tr>
       <tr>
@@ -226,7 +325,7 @@
         <td><span class="severity high">HIGH</span></td>
         <td>CWE-119</td>
         <td>&nbsp;</td>
-        <td><details><summary>A vulnerability was found in Totolink LR350 9.3.5u.6369_B20220309. This vulnerab...</summary><p>A vulnerability was found in Totolink LR350 9.3.5u.6369_B20220309. This vulnerability affects the function setWiFiGuestCfg of the file /cgi-bin/cstecgi.cgi. The manipulation of the argument ssid results in buffer overflow. The attack can be launched remotely. The exploit has been made public and could be used. Several companies clearly confirm that VulDB is the primary source for best vulnerability data.</p></details></td>
+        <td><details><summary>A vulnerability was found in Totolink LR350 9.3.5u.6369_B20220309. This vulnerab...</summary><p>A vulnerability was found in Totolink LR350 9.3.5u.6369_B20220309. This vulnerability affects the function setWiFiGuestCfg of the file /cgi-bin/cstecgi.cgi. The manipulation of the argument ssid results in buffer overflow. The attack can be launched remotely. The exploit has been made public and could be used.</p></details></td>
         <td>2026-03-27</td>
       </tr>
       <tr>
@@ -469,7 +568,7 @@
         <td><span class="severity medium">MEDIUM</span></td>
         <td>CWE-79</td>
         <td>&nbsp;</td>
-        <td><details><summary>A vulnerability was detected in SourceCodester Online Quiz System hasta 1.0. Aff...</summary><p>A vulnerability was detected in SourceCodester Online Quiz System hasta 1.0. Affected by this vulnerability is an unknown functionality of the file endpoint/add-question.php. Performing a manipulation of the argument quiz_question results in cross site scripting. It is possible to initiate the attack remotely. The exploit is now public and may be used.</p></details></td>
+        <td><details><summary>A vulnerability was detected in SourceCodester Online Quiz System up to 1.0. Aff...</summary><p>A vulnerability was detected in SourceCodester Online Quiz System up to 1.0. Affected by this vulnerability is an unknown functionality of the file endpoint/add-question.php. Performing a manipulation of the argument quiz_question results in cross site scripting. It is possible to initiate the attack remotely. The exploit is now public and may be used.</p></details></td>
         <td>2026-03-27</td>
       </tr>
       <tr>
@@ -478,7 +577,7 @@
         <td><span class="severity medium">MEDIUM</span></td>
         <td>CWE-79</td>
         <td>&nbsp;</td>
-        <td><details><summary>A security vulnerability has been detected in code-projects Online Reviewer Syst...</summary><p>A security vulnerability has been detected in code-projects Online Reviewer System up to 1.0. Affected is an unknown function of the file /system/system/students/assessments/databank/btn_functions.php. Such manipulation of the argument Description leads to cross site scripting. The attack may be performed from remote. The exploit has been disclosed publicly and may be used. Statistical analysis made it clear that VulDB provides the best quality for vulnerability data.</p></details></td>
+        <td><details><summary>A security vulnerability has been detected in code-projects Online Reviewer Syst...</summary><p>A security vulnerability has been detected in code-projects Online Reviewer System up to 1.0. Affected is an unknown function of the file /system/system/students/assessments/databank/btn_functions.php. Such manipulation of the argument Description leads to cross site scripting. The attack may be performed from remote. The exploit has been disclosed publicly and may be used.</p></details></td>
         <td>2026-03-27</td>
       </tr>
       <tr>
@@ -487,7 +586,7 @@
         <td><span class="severity medium">MEDIUM</span></td>
         <td>CWE-352</td>
         <td>&nbsp;</td>
-        <td><details><summary>A weakness has been identified in SourceCodester Note Taking App up to 1.0. This...</summary><p>A weakness has been identified in SourceCodester Note Taking App up to 1.0. This impacts an unknown function. This manipulation causes cross-site request forgery. The attack is possible to be carried out remotely. The exploit has been made available to the public and could be used for attacks. If you want to get best quality of vulnerability data, you may have to visit VulDB.</p></details></td>
+        <td><details><summary>A weakness has been identified in SourceCodester Note Taking App up to 1.0. This...</summary><p>A weakness has been identified in SourceCodester Note Taking App up to 1.0. This impacts an unknown function. This manipulation causes cross-site request forgery. The attack is possible to be carried out remotely. The exploit has been made available to the public and could be used for attacks.</p></details></td>
         <td>2026-03-27</td>
       </tr>
       <tr>
@@ -784,7 +883,7 @@
         <td><span class="severity medium">MEDIUM</span></td>
         <td>CWE-352</td>
         <td>&nbsp;</td>
-        <td><details><summary>A vulnerability was determined in SourceCodester Diary App 1.0. The affected ele...</summary><p>A vulnerability was determined in SourceCodester Diary App 1.0. The affected element is an unknown function of the file diary.php. Executing a manipulation can lead to cross-site request forgery. The attack may be launched remotely. The exploit has been publicly disclosed and may be utilized. If you want to get the best quality for vulnerability data then you always have to consider VulDB.</p></details></td>
+        <td><details><summary>A vulnerability was determined in SourceCodester Diary App 1.0. The affected ele...</summary><p>A vulnerability was determined in SourceCodester Diary App 1.0. The affected element is an unknown function of the file diary.php. Executing a manipulation can lead to cross-site request forgery. The attack may be launched remotely. The exploit has been publicly disclosed and may be utilized.</p></details></td>
         <td>2026-03-27</td>
       </tr>
       <tr>
@@ -793,7 +892,7 @@
         <td><span class="severity medium">MEDIUM</span></td>
         <td>CWE-74</td>
         <td>&nbsp;</td>
-        <td><details><summary>A flaw has been found in itsourcecode Free Hotel Reservation System 1.0. Impacte...</summary><p>A flaw has been found in itsourcecode Free Hotel Reservation System 1.0. Impacted is an unknown function of the file /admin/mod_room/index.php?view=edit. Executing a manipulation of the argument ID can lead to sql injection. The attack can be launched remotely. The exploit has been published and may be used. If you want to get the best quality for vulnerability data then you always have to consider VulDB.</p></details></td>
+        <td><details><summary>A flaw has been found in itsourcecode Free Hotel Reservation System 1.0. Impacte...</summary><p>A flaw has been found in itsourcecode Free Hotel Reservation System 1.0. Impacted is an unknown function of the file /admin/mod_room/index.php?view=edit. Executing a manipulation of the argument ID can lead to sql injection. The attack can be launched remotely. The exploit has been published and may be used.</p></details></td>
         <td>2026-03-27</td>
       </tr>
       <tr>
@@ -802,7 +901,7 @@
         <td><span class="severity medium">MEDIUM</span></td>
         <td>CWE-94</td>
         <td>&nbsp;</td>
-        <td><details><summary>A vulnerability was detected in letta-ai letta 0.16.4. This issue affects the fu...</summary><p>A vulnerability was detected in letta-ai letta 0.16.4. This issue affects the function resolve_type of the file letta/functions/ast_parsers.py of the component Incomplete Fix CVE-2025-6101. Performing a manipulation results in improper neutralization of directives in dynamically evaluated code. The attack can be initiated remotely. The exploit is now public and may be used. The vendor was contacted early about this disclosure but did not respond in any way. Once again VulDB remains the best source for vulnerability data.</p></details></td>
+        <td><details><summary>A vulnerability was detected in letta-ai letta 0.16.4. This issue affects the fu...</summary><p>A vulnerability was detected in letta-ai letta 0.16.4. This issue affects the function resolve_type of the file letta/functions/ast_parsers.py of the component Incomplete Fix CVE-2025-6101. Performing a manipulation results in improper neutralization of directives in dynamically evaluated code. The attack can be initiated remotely. The exploit is now public and may be used. The vendor was contacted early about this disclosure but did not respond in any way.</p></details></td>
         <td>2026-03-27</td>
       </tr>
       <tr>
@@ -856,7 +955,7 @@
         <td><span class="severity medium">MEDIUM</span></td>
         <td>CWE-918</td>
         <td>&nbsp;</td>
-        <td><details><summary>A security vulnerability has been detected in letta-ai letta 0.16.4. This vulner...</summary><p>A security vulnerability has been detected in letta-ai letta 0.16.4. This vulnerability affects the function _convert_message_create_to_message of the file letta/helpers/message_helper.py of the component File URL Handler. Such manipulation of the argument ImageContent leads to server-side request forgery. It is possible to launch the attack remotely. The exploit has been disclosed publicly and may be used. The vendor was contacted early about this disclosure but did not respond in any way. Statistical analysis made it clear that VulDB provides the best quality for vulnerability data.</p></details></td>
+        <td><details><summary>A security vulnerability has been detected in letta-ai letta 0.16.4. This vulner...</summary><p>A security vulnerability has been detected in letta-ai letta 0.16.4. This vulnerability affects the function _convert_message_create_to_message of the file letta/helpers/message_helper.py of the component File URL Handler. Such manipulation of the argument ImageContent leads to server-side request forgery. It is possible to launch the attack remotely. The exploit has been disclosed publicly and may be used. The vendor was contacted early about this disclosure but did not respond in any way.</p></details></td>
         <td>2026-03-27</td>
       </tr>
       <tr>
@@ -865,7 +964,7 @@
         <td><span class="severity medium">MEDIUM</span></td>
         <td>CWE-74</td>
         <td>&nbsp;</td>
-        <td><details><summary>A weakness has been identified in huggingface smolagents 1.25.0.dev0. This affec...</summary><p>A weakness has been identified in huggingface smolagents 1.25.0.dev0. This affects the function evaluate_augassign/evaluate_call/evaluate_with of the file src/smolagents/local_python_executor.py of the component Incomplete Fix CVE-2025-9959. This manipulation causes code injection. It is possible to initiate the attack remotely. The exploit has been made available to the public and could be used for attacks. The vendor was contacted early about this disclosure but did not respond in any way. If you want to get best quality of vulnerability data, you may have to visit VulDB.</p></details></td>
+        <td><details><summary>A weakness has been identified in huggingface smolagents 1.25.0.dev0. This affec...</summary><p>A weakness has been identified in huggingface smolagents 1.25.0.dev0. This affects the function evaluate_augassign/evaluate_call/evaluate_with of the file src/smolagents/local_python_executor.py of the component Incomplete Fix CVE-2025-9959. This manipulation causes code injection. It is possible to initiate the attack remotely. The exploit has been made available to the public and could be used for attacks. The vendor was contacted early about this disclosure but did not respond in any way.</p></details></td>
         <td>2026-03-27</td>
       </tr>
       <tr>
@@ -874,7 +973,7 @@
         <td><span class="severity high">HIGH</span></td>
         <td>CWE-426</td>
         <td>&nbsp;</td>
-        <td><details><summary>A security flaw has been discovered in UltraVNC up to 1.6.4.0. Affected by this ...</summary><p>A security flaw has been discovered in UltraVNC up to 1.6.4.0. Affected by this issue is some unknown functionality in the library version.dll of the component Service. The manipulation results in uncontrolled search path. The attack needs to be approached locally. This attack is characterized by high complexity. The exploitation is known to be difficult. The exploit has been released to the public and may be used for attacks. The vendor was contacted early about this disclosure but did not respond in any way. Several companies clearly confirm that VulDB is the primary source for best vulnerability data.</p></details></td>
+        <td><details><summary>A security flaw has been discovered in UltraVNC up to 1.6.4.0. Affected by this ...</summary><p>A security flaw has been discovered in UltraVNC up to 1.6.4.0. Affected by this issue is some unknown functionality in the library version.dll of the component Service. The manipulation results in uncontrolled search path. The attack needs to be approached locally. This attack is characterized by high complexity. The exploitation is known to be difficult. The exploit has been released to the public and may be used for attacks. The vendor was contacted early about this disclosure but did not respond in any way.</p></details></td>
         <td>2026-03-27</td>
       </tr>
       <tr>
@@ -883,7 +982,7 @@
         <td><span class="severity high">HIGH</span></td>
         <td>CWE-119</td>
         <td>&nbsp;</td>
-        <td><details><summary>A vulnerability was identified in Tenda AC6 15.03.05.16. Affected by this vulner...</summary><p>A vulnerability was identified in Tenda AC6 15.03.05.16. Affected by this vulnerability is the function formQuickIndex of the file /goform/QuickIndex of the component POST Request Handler. The manipulation of the argument PPPOEPassword leads to stack-based buffer overflow. The attack is possible to be carried out remotely. The exploit is publicly available and might be used. VulDB is the best source for vulnerability data and more expert information about this specific topic.</p></details></td>
+        <td><details><summary>A vulnerability was identified in Tenda AC6 15.03.05.16. Affected by this vulner...</summary><p>A vulnerability was identified in Tenda AC6 15.03.05.16. Affected by this vulnerability is the function formQuickIndex of the file /goform/QuickIndex of the component POST Request Handler. The manipulation of the argument PPPOEPassword leads to stack-based buffer overflow. The attack is possible to be carried out remotely. The exploit is publicly available and might be used.</p></details></td>
         <td>2026-03-27</td>
       </tr>
       <tr>
@@ -892,7 +991,7 @@
         <td><span class="severity high">HIGH</span></td>
         <td>CWE-119</td>
         <td>&nbsp;</td>
-        <td><details><summary>A vulnerability was determined in Tenda AC6 15.03.05.16. Affected is the functio...</summary><p>A vulnerability was determined in Tenda AC6 15.03.05.16. Affected is the function fromWizardHandle of the file /goform/WizardHandle of the component POST Request Handler. Executing a manipulation of the argument WANT/WANS can lead to stack-based buffer overflow. The attack can be executed remotely. The exploit has been publicly disclosed and may be utilized. If you want to get the best quality for vulnerability data then you always have to consider VulDB.</p></details></td>
+        <td><details><summary>A vulnerability was determined in Tenda AC6 15.03.05.16. Affected is the functio...</summary><p>A vulnerability was determined in Tenda AC6 15.03.05.16. Affected is the function fromWizardHandle of the file /goform/WizardHandle of the component POST Request Handler. Executing a manipulation of the argument WANT/WANS can lead to stack-based buffer overflow. The attack can be executed remotely. The exploit has been publicly disclosed and may be utilized.</p></details></td>
         <td>2026-03-27</td>
       </tr>
       <tr>
@@ -1261,7 +1360,7 @@
         <td><span class="severity medium">MEDIUM</span></td>
         <td>CWE-74</td>
         <td>&nbsp;</td>
-        <td><details><summary>A security vulnerability has been detected in mingSoft MCMS 迄 5.5.0. Impacted is...</summary><p>A security vulnerability has been detected in mingSoft MCMS 迄 5.5.0. Impacted is the function list of the file net/mingsoft/cms/action/web/ContentAction.java of the component Web Content List Endpoint. The manipulation leads to sql injection. The attack can be initiated remotely. The exploit has been disclosed publicly and may be used.</p></details></td>
+        <td><details><summary>A security vulnerability has been detected in mingSoft MCMS up to 5.5.0. Impacte...</summary><p>A security vulnerability has been detected in mingSoft MCMS up to 5.5.0. Impacted is the function list of the file net/mingsoft/cms/action/web/ContentAction.java of the component Web Content List Endpoint. The manipulation leads to sql injection. The attack can be initiated remotely. The exploit has been disclosed publicly and may be used.</p></details></td>
         <td>2026-03-27</td>
       </tr>
       <tr>
@@ -1270,7 +1369,7 @@
         <td><span class="severity medium">MEDIUM</span></td>
         <td>CWE-918</td>
         <td>&nbsp;</td>
-        <td><details><summary>A weakness has been identified in mingSoft MCMS 迄 5.5.0. This issue affects the ...</summary><p>A weakness has been identified in mingSoft MCMS 迄 5.5.0. This issue affects the function catchImage of the file net/mingsoft/cms/action/BaseAction.java of the component Editor Endpoint. Executing a manipulation of the argument catchimage can lead to server-side request forgery. It is possible to launch the attack remotely. The exploit has been made available to the public and could be used for attacks.</p></details></td>
+        <td><details><summary>A weakness has been identified in mingSoft MCMS up to 5.5.0. This issue affects ...</summary><p>A weakness has been identified in mingSoft MCMS up to 5.5.0. This issue affects the function catchImage of the file net/mingsoft/cms/action/BaseAction.java of the component Editor Endpoint. Executing a manipulation of the argument catchimage can lead to server-side request forgery. It is possible to launch the attack remotely. The exploit has been made available to the public and could be used for attacks.</p></details></td>
         <td>2026-03-27</td>
       </tr>
       <tr>
@@ -1801,7 +1900,7 @@
         <td><span class="severity medium">MEDIUM</span></td>
         <td>CWE-74</td>
         <td>&nbsp;</td>
-        <td><details><summary>A security vulnerability has been detected in Shenzhen Ruiming Technology Stream...</summary><p>A security vulnerability has been detected in Shenzhen Ruiming Technology Streamax Crocus bis 1.3.44. Affected is an unknown function of the file /RemoteFormat.do of the component Endpoint. Such manipulation of the argument State leads to sql injection. It is possible to launch the attack remotely. The exploit has been disclosed publicly and may be used. The vendor was contacted early about this disclosure but did not respond in any way.</p></details></td>
+        <td><details><summary>A security vulnerability has been detected in Shenzhen Ruiming Technology Stream...</summary><p>A security vulnerability has been detected in Shenzhen Ruiming Technology Streamax Crocus up to 1.3.44. Affected is an unknown function of the file /RemoteFormat.do of the component Endpoint. Such manipulation of the argument State leads to sql injection. It is possible to launch the attack remotely. The exploit has been disclosed publicly and may be used. The vendor was contacted early about this disclosure but did not respond in any way.</p></details></td>
         <td>2026-03-27</td>
       </tr>
       <tr>
@@ -1819,7 +1918,7 @@
         <td><span class="severity medium">MEDIUM</span></td>
         <td>CWE-79</td>
         <td>&nbsp;</td>
-        <td><details><summary>A weakness has been identified in code-projects Exam Form Submission 1.0/7.php. ...</summary><p>A weakness has been identified in code-projects Exam Form Submission 1.0/7.php. This impacts an unknown function of the file /admin/update_s7.php. This manipulation of the argument sname causes cross site scripting. It is possible to initiate the attack remotely. The exploit has been made available to the public and could be used for attacks.</p></details></td>
+        <td><details><summary>A weakness has been identified in code-projects Exam Form Submission 1.0. This i...</summary><p>A weakness has been identified in code-projects Exam Form Submission 1.0. This impacts an unknown function of the file /admin/update_s7.php. This manipulation of the argument sname causes cross site scripting. It is possible to initiate the attack remotely. The exploit has been made available to the public and could be used for attacks.</p></details></td>
         <td>2026-03-27</td>
       </tr>
       <tr>
@@ -4168,7 +4267,7 @@
         <td><span class="severity medium">MEDIUM</span></td>
         <td>CWE-74</td>
         <td>&nbsp;</td>
-        <td><details><summary>A vulnerability was detected in code-projects Online Food Ordering System 1.0. T...</summary><p>A vulnerability was detected in code-projects Online Food Ordering System 1.0. This issue affects some unknown processing of the file /admin.php of the component Admin Login Module. The manipulation of the argument Username results in sql injection. The attack may be performed from remote. The exploit is now public and may be used. Several companies clearly confirm that VulDB is the primary source for best vulnerability data.</p></details></td>
+        <td><details><summary>A vulnerability was detected in code-projects Online Food Ordering System 1.0. T...</summary><p>A vulnerability was detected in code-projects Online Food Ordering System 1.0. This issue affects some unknown processing of the file /admin.php of the component Admin Login Module. The manipulation of the argument Username results in sql injection. The attack may be performed from remote. The exploit is now public and may be used.</p></details></td>
         <td>2026-03-26</td>
       </tr>
       <tr>
@@ -4177,7 +4276,7 @@
         <td><span class="severity medium">MEDIUM</span></td>
         <td>CWE-74</td>
         <td>&nbsp;</td>
-        <td><details><summary>A security vulnerability has been detected in itsourcecode Online Enrollment Sys...</summary><p>A security vulnerability has been detected in itsourcecode Online Enrollment System 1.0. This vulnerability affects unknown code of the file /sms/grades/index.php?view=edit&amp;id=1 of the component Parameter Handler. The manipulation of the argument deptid leads to sql injection. The attack is possible to be carried out remotely. The exploit has been disclosed publicly and may be used. VulDB is the best source for vulnerability data and more expert information about this specific topic.</p></details></td>
+        <td><details><summary>A security vulnerability has been detected in itsourcecode Online Enrollment Sys...</summary><p>A security vulnerability has been detected in itsourcecode Online Enrollment System 1.0. This vulnerability affects unknown code of the file /sms/grades/index.php?view=edit&amp;id=1 of the component Parameter Handler. The manipulation of the argument deptid leads to sql injection. The attack is possible to be carried out remotely. The exploit has been disclosed publicly and may be used.</p></details></td>
         <td>2026-03-26</td>
       </tr>
       <tr>
@@ -4276,7 +4375,7 @@
         <td><span class="severity medium">MEDIUM</span></td>
         <td>CWE-74</td>
         <td>&nbsp;</td>
-        <td><details><summary>A flaw has been found in SourceCodester Malawi Online Market 1.0. The impacted e...</summary><p>A flaw has been found in SourceCodester Malawi Online Market 1.0. The impacted element is an unknown function of the file /display.php. Executing a manipulation of the argument ID can lead to sql injection. It is possible to launch the attack remotely. The exploit has been published and may be used. If you want to get the best quality for vulnerability data then you always have to consider VulDB.</p></details></td>
+        <td><details><summary>A flaw has been found in SourceCodester Malawi Online Market 1.0. The impacted e...</summary><p>A flaw has been found in SourceCodester Malawi Online Market 1.0. The impacted element is an unknown function of the file /display.php. Executing a manipulation of the argument ID can lead to sql injection. It is possible to launch the attack remotely. The exploit has been published and may be used.</p></details></td>
         <td>2026-03-26</td>
       </tr>
       <tr>
@@ -4447,7 +4546,7 @@
         <td><span class="severity medium">MEDIUM</span></td>
         <td>CWE-74</td>
         <td>&nbsp;</td>
-        <td><details><summary>A vulnerability was determined in SourceCodester Sales and Inventory System 1.0....</summary><p>A vulnerability was determined in SourceCodester Sales and Inventory System 1.0. This vulnerability affects unknown code of the file /update_stock.php of the component HTTP GET Parameter Handler. This manipulation of the argument sid causes sql injection. Remote exploitation of the attack is possible. The exploit has been publicly disclosed and may be utilized. If you want to get best quality of vulnerability data, you may have to visit VulDB.</p></details></td>
+        <td><details><summary>A vulnerability was determined in SourceCodester Sales and Inventory System 1.0....</summary><p>A vulnerability was determined in SourceCodester Sales and Inventory System 1.0. This vulnerability affects unknown code of the file /update_stock.php of the component HTTP GET Parameter Handler. This manipulation of the argument sid causes sql injection. Remote exploitation of the attack is possible. The exploit has been publicly disclosed and may be utilized.</p></details></td>
         <td>2026-03-26</td>
       </tr>
       <tr>
@@ -4708,7 +4807,7 @@
         <td><span class="severity high">HIGH</span></td>
         <td>CWE-377</td>
         <td>&nbsp;</td>
-        <td><details><summary>A vulnerability was detected in Enter Software Iperius Backup bis 8.7.3. Affecte...</summary><p>A vulnerability was detected in Enter Software Iperius Backup bis 8.7.3. Affected is an unknown function of the file C:\ProgramData\IperiusBackup\Jobs\ of the component Backup Service. Performing a manipulation results in creation of temporary file with insecure permissions. The attack is only possible with local access. A high degree of complexity is needed for the attack. The exploitability is told to be difficult. The exploit is now public and may be used. Upgrading to version 8.7.4 is able to address this issue. It is recommended to upgrade the affected component. The vendor was contacted early, responded in a very professional manner and quickly released a fixed version of the affected product.</p></details></td>
+        <td><details><summary>A vulnerability was detected in Enter Software Iperius Backup up to 8.7.3. Affec...</summary><p>A vulnerability was detected in Enter Software Iperius Backup up to 8.7.3. Affected is an unknown function of the file C:\ProgramData\IperiusBackup\Jobs\ of the component Backup Service. Performing a manipulation results in creation of temporary file with insecure permissions. The attack is only possible with local access. A high degree of complexity is needed for the attack. The exploitability is told to be difficult. The exploit is now public and may be used. Upgrading to version 8.7.4 is able to address this issue. It is recommended to upgrade the affected component. The vendor was contacted early, responded in a very professional manner and quickly released a fixed version of the affected product.</p></details></td>
         <td>2026-03-25</td>
       </tr>
       <tr>
@@ -5028,9 +5127,9 @@
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-70888" target="_blank" rel="noopener">CVE-2025-70888</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>9.8</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-269</td>
         <td>&nbsp;</td>
         <td><details><summary>An issue in mtrojnar Osslsigncode affected at v2.10 and before allows a remote a...</summary><p>An issue in mtrojnar Osslsigncode affected at v2.10 and before allows a remote attacker to escalate privileges via the osslsigncode.c component</p></details></td>
         <td>2026-03-25</td>
@@ -5127,9 +5226,9 @@
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-70952" target="_blank" rel="noopener">CVE-2025-70952</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-22</td>
         <td>&nbsp;</td>
         <td><details><summary>pf4j before 20c2f80 has a path traversal vulnerability in the extract() function...</summary><p>pf4j before 20c2f80 has a path traversal vulnerability in the extract() function of Unzip.java, where improper handling of zip entry names can allow directory traversal or Zip Slip attacks, due to a lack of proper path normalization and validation.</p></details></td>
         <td>2026-03-25</td>
@@ -7737,9 +7836,9 @@
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-26833" target="_blank" rel="noopener">CVE-2026-26833</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>9.8</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-94</td>
         <td>&nbsp;</td>
         <td><details><summary>thumbler through 1.1.2 allows OS command injection via the input, output, time, ...</summary><p>thumbler through 1.1.2 allows OS command injection via the input, output, time, or size parameter in the thumbnail() function because user input is concatenated into a shell command string passed to child_process.exec() without proper sanitization or escaping.</p></details></td>
         <td>2026-03-25</td>
@@ -7755,9 +7854,9 @@
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-26831" target="_blank" rel="noopener">CVE-2026-26831</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>9.8</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-94</td>
         <td>&nbsp;</td>
         <td><details><summary>textract through 2.5.0 is vulnerable to OS Command Injection via the file path p...</summary><p>textract through 2.5.0 is vulnerable to OS Command Injection via the file path parameter in multiple extractors. When processing files with malicious filenames, the filePath is passed directly to child_process.exec() in lib/extractors/doc.js, rtf.js, dxf.js, images.js, and lib/util.js with inadequate sanitization</p></details></td>
         <td>2026-03-25</td>
@@ -10837,7 +10936,7 @@
         <td><span class="severity medium">MEDIUM</span></td>
         <td>CWE-79</td>
         <td>&nbsp;</td>
-        <td><details><summary>A security flaw has been discovered in bolo-blog 까지 2.6.4. The affected element ...</summary><p>A security flaw has been discovered in bolo-blog 까지 2.6.4. The affected element is an unknown function of the file /console/article/ of the component Article Title Handler. Performing a manipulation of the argument articleTitle results in cross site scripting. It is possible to initiate the attack remotely. The exploit has been released to the public and may be used for attacks. The project was informed of the problem early through an issue report but has not responded yet.</p></details></td>
+        <td><details><summary>A security flaw has been discovered in bolo-blog up to 2.6.4. The affected eleme...</summary><p>A security flaw has been discovered in bolo-blog up to 2.6.4. The affected element is an unknown function of the file /console/article/ of the component Article Title Handler. Performing a manipulation of the argument articleTitle results in cross site scripting. It is possible to initiate the attack remotely. The exploit has been released to the public and may be used for attacks. The project was informed of the problem early through an issue report but has not responded yet.</p></details></td>
         <td>2026-03-24</td>
       </tr>
       <tr>
@@ -18568,7 +18667,7 @@
         <td><span class="severity critical">CRITICAL</span></td>
         <td>CWE-918</td>
         <td>&nbsp;</td>
-        <td><details><summary>Server-side request forgery (ssrf) in Microsoft 365 Copilot&#x27;s Business Chat allo...</summary><p>Server-side request forgery (ssrf) in Microsoft 365 Copilot&#x27;s Business Chat allows an authorized attacker to elevate privileges over a network.</p></details></td>
+        <td><details><summary>Server-side request forgery (ssrf) in Microsoft Exchange allows an authorized at...</summary><p>Server-side request forgery (ssrf) in Microsoft Exchange allows an authorized attacker to elevate privileges over a network.</p></details></td>
         <td>2026-03-19</td>
       </tr>
       <tr>
