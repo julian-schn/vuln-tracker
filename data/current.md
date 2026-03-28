@@ -1,9 +1,12 @@
 # CVEs — March 2026
 
-_5300 vulnerabilities_
+_5303 vulnerabilities_
 
 | CVE ID | Score | Severity | CWE | KEV | Published | Description |
 |--------|-------|----------|-----|-----|-----------|-------------|
+| [CVE-2026-5016](https://nvd.nist.gov/vuln/detail/CVE-2026-5016) | 6.9 | MEDIUM | CWE-918 | No | 2026-03-28 | A vulnerability was identified in elecV2 elecV2P up to 3.8.3. This affects the function eAxios of the file /mock of the... |
+| [CVE-2026-5015](https://nvd.nist.gov/vuln/detail/CVE-2026-5015) | 5.3 | MEDIUM | CWE-79 | No | 2026-03-28 | A vulnerability was determined in elecV2 elecV2P up to 3.8.3. The impacted element is an unknown function of the file /l... |
+| [CVE-2026-5014](https://nvd.nist.gov/vuln/detail/CVE-2026-5014) | 5.5 | MEDIUM | CWE-22 | No | 2026-03-28 | A vulnerability was found in elecV2 elecV2P up to 3.8.3. The affected element is the function path.join of the file /log... |
 | [CVE-2026-5013](https://nvd.nist.gov/vuln/detail/CVE-2026-5013) | 5.5 | MEDIUM | CWE-22 | No | 2026-03-28 | A vulnerability has been found in elecV2 elecV2P up to 3.8.3. Impacted is the function path.join of the file /store/:key... |
 | [CVE-2026-5012](https://nvd.nist.gov/vuln/detail/CVE-2026-5012) | 6.9 | MEDIUM | CWE-77 | No | 2026-03-28 | A flaw has been found in elecV2 elecV2P up to 3.8.3. This issue affects the function pm2run of the file /rpc. Executing... |
 | [CVE-2026-5011](https://nvd.nist.gov/vuln/detail/CVE-2026-5011) | 5.3 | MEDIUM | CWE-74 | No | 2026-03-28 | A vulnerability was detected in elecV2 elecV2P up to 3.8.3. This vulnerability affects the function runJSFile of the fil... |
