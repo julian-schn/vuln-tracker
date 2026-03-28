@@ -1,10 +1,12 @@
 # CVEs — March 2026
 
-_5256 vulnerabilities_
+_5258 vulnerabilities_
 
 | CVE ID | Score | Severity | CWE | KEV | Published | Description |
 |--------|-------|----------|-----|-----|-----------|-------------|
-| [CVE-2026-23399](https://nvd.nist.gov/vuln/detail/CVE-2026-23399) | 0.0 | NONE | N/A | No | 2026-03-28 | In the Linux kernel, the following vulnerability has been resolved:  nf_tables: nft_dynset: fix possible stateful expres... |
+| [CVE-2026-4994](https://nvd.nist.gov/vuln/detail/CVE-2026-4994) | 5.1 | MEDIUM | CWE-200 | No | 2026-03-28 | A vulnerability was found in wandb OpenUI up to 1.0/3.5-turb. Affected is the function generic_exception_handler of the... |
+| [CVE-2026-4993](https://nvd.nist.gov/vuln/detail/CVE-2026-4993) | 1.9 | LOW | CWE-259 | No | 2026-03-28 | A vulnerability has been found in wandb OpenUI up to 0.0.0.0/1.0. This impacts an unknown function of the file backend/o... |
+| [CVE-2026-2442](https://nvd.nist.gov/vuln/detail/CVE-2026-2442) | 5.3 | MEDIUM | CWE-93 | No | 2026-03-28 | The Page Builder: Pagelayer – Drag and Drop website builder plugin for WordPress is vulnerable to Improper Neutralizatio... |
 | [CVE-2026-1307](https://nvd.nist.gov/vuln/detail/CVE-2026-1307) | 6.5 | MEDIUM | CWE-200 | No | 2026-03-28 | The Ninja Forms - The Contact Form Builder That Grows With You plugin for WordPress is vulnerable to Sensitive Informati... |
 | [CVE-2025-15445](https://nvd.nist.gov/vuln/detail/CVE-2025-15445) | 0.0 | NONE | N/A | No | 2026-03-28 | The Restaurant Cafeteria WordPress theme through 0.4.6 exposes insecure admin-ajax actions without nonce or capability c... |
 | [CVE-2025-12886](https://nvd.nist.gov/vuln/detail/CVE-2025-12886) | 7.2 | HIGH | CWE-918 | No | 2026-03-28 | The Oxygen Theme theme for WordPress is vulnerable to Server-Side Request Forgery in all versions up to, and including,... |
