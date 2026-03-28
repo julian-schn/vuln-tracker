@@ -1,9 +1,10 @@
 # CVEs — March 2026
 
-_5253 vulnerabilities_
+_5254 vulnerabilities_
 
 | CVE ID | Score | Severity | CWE | KEV | Published | Description |
 |--------|-------|----------|-----|-----|-----------|-------------|
+| [CVE-2025-15445](https://nvd.nist.gov/vuln/detail/CVE-2025-15445) | 0.0 | NONE | N/A | No | 2026-03-28 | The Restaurant Cafeteria WordPress theme through 0.4.6 exposes insecure admin-ajax actions without nonce or capability c... |
 | [CVE-2025-12886](https://nvd.nist.gov/vuln/detail/CVE-2025-12886) | 7.2 | HIGH | CWE-918 | No | 2026-03-28 | The Oxygen Theme theme for WordPress is vulnerable to Server-Side Request Forgery in all versions up to, and including,... |
 | [CVE-2026-4987](https://nvd.nist.gov/vuln/detail/CVE-2026-4987) | 7.5 | HIGH | CWE-20 | No | 2026-03-28 | The SureForms – Contact Form, Payment Form & Other Custom Form Builder plugin for WordPress is vulnerable to Payment Amo... |
 | [CVE-2026-1679](https://nvd.nist.gov/vuln/detail/CVE-2026-1679) | 7.3 | HIGH | CWE-120 | No | 2026-03-28 | The eswifi socket offload driver copies user-provided payloads into a fixed buffer without checking available space; ove... |
