@@ -1,9 +1,12 @@
 # CVEs — March 2026
 
-_5291 vulnerabilities_
+_5294 vulnerabilities_
 
 | CVE ID | Score | Severity | CWE | KEV | Published | Description |
 |--------|-------|----------|-----|-----|-----------|-------------|
+| [CVE-2026-5004](https://nvd.nist.gov/vuln/detail/CVE-2026-5004) | 7.4 | HIGH | CWE-119 | No | 2026-03-28 | A vulnerability was determined in Wavlink WL-WN579X3-C 231124. This impacts the function sub_4019FC of the file /cgi-bin... |
+| [CVE-2026-5003](https://nvd.nist.gov/vuln/detail/CVE-2026-5003) | 5.5 | MEDIUM | CWE-200 | No | 2026-03-28 | A vulnerability was found in PromtEngineer localGPT up to 4d41c7d1713b16b216d8e062e51a5dd88b20b054. This affects the fun... |
+| [CVE-2026-5002](https://nvd.nist.gov/vuln/detail/CVE-2026-5002) | 6.9 | MEDIUM | CWE-74 | No | 2026-03-28 | A vulnerability has been found in PromtEngineer localGPT up to 4d41c7d1713b16b216d8e062e51a5dd88b20b054. The impacted el... |
 | [CVE-2026-5001](https://nvd.nist.gov/vuln/detail/CVE-2026-5001) | 6.9 | MEDIUM | CWE-284 | No | 2026-03-28 | A flaw has been found in PromtEngineer localGPT up to 4d41c7d1713b16b216d8e062e51a5dd88b20b054. The affected element is... |
 | [CVE-2026-5000](https://nvd.nist.gov/vuln/detail/CVE-2026-5000) | 6.9 | MEDIUM | CWE-287 | No | 2026-03-28 | A vulnerability was detected in PromtEngineer localGPT up to 4d41c7d1713b16b216d8e062e51a5dd88b20b054. Impacted is the f... |
 | [CVE-2026-4999](https://nvd.nist.gov/vuln/detail/CVE-2026-4999) | 5.3 | MEDIUM | CWE-22 | No | 2026-03-28 | A security vulnerability has been detected in z-9527 admin up to 72aaf2dd05cf4ec2e98f390668b41e128eec5ad2. This issue af... |
