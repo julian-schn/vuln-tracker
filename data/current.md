@@ -1,14 +1,16 @@
 # CVEs — March 2026
 
-_5309 vulnerabilities_
+_5311 vulnerabilities_
 
 | CVE ID | Score | Severity | CWE | KEV | Published | Description |
 |--------|-------|----------|-----|-----|-----------|-------------|
+| [CVE-2026-5031](https://nvd.nist.gov/vuln/detail/CVE-2026-5031) | 5.3 | MEDIUM | CWE-99 | No | 2026-03-29 | A vulnerability was found in BichitroGan ISP Billing Software 2025.3.20. Impacted is an unknown function of the file /?_... |
+| [CVE-2026-5030](https://nvd.nist.gov/vuln/detail/CVE-2026-5030) | 5.3 | MEDIUM | CWE-74 | No | 2026-03-29 | A vulnerability has been found in Totolink NR1800X 9.1.0u.6279_B20210910. This issue affects the function NTPSyncWithHos... |
+| [CVE-2026-5024](https://nvd.nist.gov/vuln/detail/CVE-2026-5024) | 7.4 | HIGH | CWE-119 | No | 2026-03-29 | A vulnerability was found in D-Link DIR-513 1.10. This issue affects the function formSetEmail of the file /goform/formS... |
 | [CVE-2026-5023](https://nvd.nist.gov/vuln/detail/CVE-2026-5023) | 4.8 | MEDIUM | CWE-77 | No | 2026-03-29 | A vulnerability has been found in DeDeveloper23 codebase-mcp up to 3ec749d237dd8eabbeef48657cf917275792fde6. This vulner... |
 | [CVE-2026-5021](https://nvd.nist.gov/vuln/detail/CVE-2026-5021) | 7.4 | HIGH | CWE-119 | No | 2026-03-29 | A flaw has been found in Tenda F453 1.0.0.3. This affects the function fromPPTPUserSetting of the file /goform/PPTPUserS... |
 | [CVE-2026-2602](https://nvd.nist.gov/vuln/detail/CVE-2026-2602) | 6.4 | MEDIUM | CWE-79 | No | 2026-03-29 | The Twentig plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'featuredImageSizeWidth' parameter... |
 | [CVE-2026-5020](https://nvd.nist.gov/vuln/detail/CVE-2026-5020) | 5.3 | MEDIUM | CWE-74 | No | 2026-03-29 | A vulnerability was detected in Totolink A3600R 4.1.2cu.5182_B20201102. Affected by this issue is the function setNotice... |
-| [CVE-2026-4851](https://nvd.nist.gov/vuln/detail/CVE-2026-4851) | 0.0 | NONE | CWE-95 | No | 2026-03-29 | GRID::Machine versions through 0.127 for Perl allows arbitrary code execution via unsafe deserialization.  GRID::Machine... |
 | [CVE-2026-5019](https://nvd.nist.gov/vuln/detail/CVE-2026-5019) | 6.9 | MEDIUM | CWE-74 | No | 2026-03-29 | A security vulnerability has been detected in code-projects Simple Food Order System 1.0. Affected by this vulnerability... |
 | [CVE-2026-5018](https://nvd.nist.gov/vuln/detail/CVE-2026-5018) | 6.9 | MEDIUM | CWE-74 | No | 2026-03-28 | A weakness has been identified in code-projects Simple Food Order System 1.0. Affected is an unknown function of the fil... |
 | [CVE-2026-5017](https://nvd.nist.gov/vuln/detail/CVE-2026-5017) | 6.9 | MEDIUM | CWE-74 | No | 2026-03-28 | A security flaw has been discovered in code-projects Simple Food Order System 1.0. This impacts an unknown function of t... |
