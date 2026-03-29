@@ -1,9 +1,11 @@
 # CVEs — March 2026
 
-_5311 vulnerabilities_
+_5313 vulnerabilities_
 
 | CVE ID | Score | Severity | CWE | KEV | Published | Description |
 |--------|-------|----------|-----|-----|-----------|-------------|
+| [CVE-2026-5034](https://nvd.nist.gov/vuln/detail/CVE-2026-5034) | 6.9 | MEDIUM | CWE-74 | No | 2026-03-29 | A flaw has been found in code-projects Accounting System 1.0. Affected by this issue is some unknown functionality of th... |
+| [CVE-2026-5033](https://nvd.nist.gov/vuln/detail/CVE-2026-5033) | 6.9 | MEDIUM | CWE-74 | No | 2026-03-29 | A vulnerability was detected in code-projects Accounting System 1.0. Affected by this vulnerability is an unknown functi... |
 | [CVE-2026-5031](https://nvd.nist.gov/vuln/detail/CVE-2026-5031) | 5.3 | MEDIUM | CWE-99 | No | 2026-03-29 | A vulnerability was found in BichitroGan ISP Billing Software 2025.3.20. Impacted is an unknown function of the file /?_... |
 | [CVE-2026-5030](https://nvd.nist.gov/vuln/detail/CVE-2026-5030) | 5.3 | MEDIUM | CWE-74 | No | 2026-03-29 | A vulnerability has been found in Totolink NR1800X 9.1.0u.6279_B20210910. This issue affects the function NTPSyncWithHos... |
 | [CVE-2026-5024](https://nvd.nist.gov/vuln/detail/CVE-2026-5024) | 7.4 | HIGH | CWE-119 | No | 2026-03-29 | A vulnerability was found in D-Link DIR-513 1.10. This issue affects the function formSetEmail of the file /goform/formS... |
