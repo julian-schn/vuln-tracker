@@ -11,7 +11,7 @@
     <header>
       <h1>vuln-tracker</h1>
       <p class="subtitle">CVEs from the National Vulnerability Database — current and previous month</p>
-      <p class="last-updated">Last updated: 2026-03-29 14:39 UTC</p>
+      <p class="last-updated">Last updated: 2026-03-29 16:42 UTC</p>
     </header>
     <nav>
       <a href="top50.html">&#9733; Top 50</a>
@@ -25,7 +25,7 @@
     </nav>
     <main>
     <section>
-      <h2>Current Month — March 2026 <span class="count">(5342)</span></h2>
+      <h2>Current Month — March 2026 <span class="count">(5341)</span></h2>
       <div class="table-wrapper">
         <table>
           <thead>
@@ -40,6 +40,15 @@
             </tr>
           </thead>
           <tbody>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5046" target="_blank" rel="noopener">CVE-2026-5046</a></td>
+        <td>7.4</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-119</td>
+        <td>&nbsp;</td>
+        <td><details><summary>A flaw has been found in Tenda FH1201 1.2.0.14(408). Affected is the function fo...</summary><p>A flaw has been found in Tenda FH1201 1.2.0.14(408). Affected is the function formWrlExtraSet of the file /goform/WrlExtraSet of the component Parameter Handler. Executing a manipulation of the argument GO can lead to stack-based buffer overflow. The attack may be performed from remote. The exploit has been published and may be used.</p></details></td>
+        <td>2026-03-29</td>
+      </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5045" target="_blank" rel="noopener">CVE-2026-5045</a></td>
         <td>7.4</td>
@@ -227,43 +236,6 @@
         <td>CWE-863</td>
         <td>&nbsp;</td>
         <td><details><summary>OpenClaw before 2026.3.12 contains an insufficient access control vulnerability ...</summary><p>OpenClaw before 2026.3.12 contains an insufficient access control vulnerability in the /config and /debug command handlers that allows command-authorized non-owners to access owner-only surfaces. Attackers with command authorization can read or modify privileged configuration settings restricted to owners by exploiting missing owner-level permission checks.</p></details></td>
-        <td>2026-03-29</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-23400" target="_blank" rel="noopener">CVE-2026-23400</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
-        <td>&nbsp;</td>
-        <td><details><summary>In the Linux kernel, the following vulnerability has been resolved:
-
-rust_binder...</summary><p>In the Linux kernel, the following vulnerability has been resolved:
-
-rust_binder: call set_notification_done() without proc lock
-
-Consider the following sequence of events on a death listener:
-1. The remote process dies and sends a BR_DEAD_BINDER message.
-2. The local process invokes the BC_CLEAR_DEATH_NOTIFICATION command.
-3. The local process then invokes the BC_DEAD_BINDER_DONE.
-Then, the kernel will reply to the BC_DEAD_BINDER_DONE command with a
-BR_CLEAR_DEATH_NOTIFICATION_DONE reply using push_work_if_looper().
-
-However, this can result in a deadlock if the current thread is not a
-looper. This is because dead_binder_done() still holds the proc lock
-during set_notification_done(), which called push_work_if_looper().
-Normally, push_work_if_looper() takes the thread lock, which is fine to
-take under the proc lock. But if the current thread is not a looper,
-then it falls back to delivering the reply to the process work queue,
-which involves taking the proc lock. Since the proc lock is already
-held, this is a deadlock.
-
-Fix this by releasing the proc lock during set_notification_done(). It
-was not intentional that it was held during that function to begin with.
-
-I don&#x27;t think this ever happens in Android because BC_DEAD_BINDER_DONE
-is only invoked in response to BR_DEAD_BINDER messages, and the kernel
-always delivers BR_DEAD_BINDER to a looper. So there&#x27;s no scenario where
-Android userspace will call BC_DEAD_BINDER_DONE on a non-looper thread.</p></details></td>
         <td>2026-03-29</td>
       </tr>
       <tr>
@@ -24573,17 +24545,6 @@ Android userspace will call BC_DEAD_BINDER_DONE on a non-looper thread.</p></det
         <td>CWE-78</td>
         <td>&nbsp;</td>
         <td><details><summary>OpenLiteSpeed and LSWS Enterprise provided by LiteSpeed Technologies contain an ...</summary><p>OpenLiteSpeed and LSWS Enterprise provided by LiteSpeed Technologies contain an OS command injection vulnerability. An arbitrary OS command may be executed by an attacker with the administrative privilege.</p></details></td>
-        <td>2026-03-16</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-2921" target="_blank" rel="noopener">CVE-2026-2921</a></td>
-        <td>7.8</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-190</td>
-        <td>&nbsp;</td>
-        <td><details><summary>GStreamer RIFF Palette Integer Overflow Remote Code Execution Vulnerability. Thi...</summary><p>GStreamer RIFF Palette Integer Overflow Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of GStreamer. Interaction with this library is required to exploit this vulnerability but attack vectors may vary depending on the implementation.
-
-The specific flaw exists within the handling of palette data in AVI files. The issue results from the lack of proper validation of user-supplied data, which can result in an integer overflow before writing to memory. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-28854.</p></details></td>
         <td>2026-03-16</td>
       </tr>
       <tr>
