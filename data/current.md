@@ -1,9 +1,11 @@
 # CVEs — March 2026
 
-_5313 vulnerabilities_
+_5315 vulnerabilities_
 
 | CVE ID | Score | Severity | CWE | KEV | Published | Description |
 |--------|-------|----------|-----|-----|-----------|-------------|
+| [CVE-2026-5036](https://nvd.nist.gov/vuln/detail/CVE-2026-5036) | 7.4 | HIGH | CWE-119 | No | 2026-03-29 | A vulnerability was found in Tenda 4G06 04.06.01.29. This vulnerability affects the function fromDhcpListClient of the f... |
+| [CVE-2026-5035](https://nvd.nist.gov/vuln/detail/CVE-2026-5035) | 6.9 | MEDIUM | CWE-74 | No | 2026-03-29 | A vulnerability has been found in code-projects Accounting System 1.0. This affects an unknown part of the file /view_wo... |
 | [CVE-2026-5034](https://nvd.nist.gov/vuln/detail/CVE-2026-5034) | 6.9 | MEDIUM | CWE-74 | No | 2026-03-29 | A flaw has been found in code-projects Accounting System 1.0. Affected by this issue is some unknown functionality of th... |
 | [CVE-2026-5033](https://nvd.nist.gov/vuln/detail/CVE-2026-5033) | 6.9 | MEDIUM | CWE-74 | No | 2026-03-29 | A vulnerability was detected in code-projects Accounting System 1.0. Affected by this vulnerability is an unknown functi... |
 | [CVE-2026-5031](https://nvd.nist.gov/vuln/detail/CVE-2026-5031) | 5.3 | MEDIUM | CWE-99 | No | 2026-03-29 | A vulnerability was found in BichitroGan ISP Billing Software 2025.3.20. Impacted is an unknown function of the file /?_... |
