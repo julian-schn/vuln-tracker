@@ -1,9 +1,11 @@
 # CVEs — March 2026
 
-_5317 vulnerabilities_
+_5319 vulnerabilities_
 
 | CVE ID | Score | Severity | CWE | KEV | Published | Description |
 |--------|-------|----------|-----|-----|-----------|-------------|
+| [CVE-2026-5043](https://nvd.nist.gov/vuln/detail/CVE-2026-5043) | 7.4 | HIGH | CWE-119 | No | 2026-03-29 | A weakness has been identified in Belkin F9K1122 1.00.33. The impacted element is the function formSetPassword of the fi... |
+| [CVE-2026-5042](https://nvd.nist.gov/vuln/detail/CVE-2026-5042) | 7.4 | HIGH | CWE-119 | No | 2026-03-29 | A security flaw has been discovered in Belkin F9K1122 1.00.33. The affected element is the function formCrossBandSwitch... |
 | [CVE-2026-5041](https://nvd.nist.gov/vuln/detail/CVE-2026-5041) | 5.1 | MEDIUM | CWE-74 | No | 2026-03-29 | A vulnerability was identified in code-projects Chamber of Commerce Membership Management System 1.0. Impacted is the fu... |
 | [CVE-2026-5037](https://nvd.nist.gov/vuln/detail/CVE-2026-5037) | 4.8 | MEDIUM | CWE-119 | No | 2026-03-29 | A vulnerability was determined in mxml up to 4.0.4. This issue affects the function index_sort of the file mxml-index.c... |
 | [CVE-2026-5036](https://nvd.nist.gov/vuln/detail/CVE-2026-5036) | 7.4 | HIGH | CWE-119 | No | 2026-03-29 | A vulnerability was found in Tenda 4G06 04.06.01.29. This vulnerability affects the function fromDhcpListClient of the f... |
