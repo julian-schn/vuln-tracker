@@ -1,9 +1,10 @@
 # CVEs — March 2026
 
-_5346 vulnerabilities_
+_5347 vulnerabilities_
 
 | CVE ID | Score | Severity | CWE | KEV | Published | Description |
 |--------|-------|----------|-----|-----|-----------|-------------|
+| [CVE-2026-4176](https://nvd.nist.gov/vuln/detail/CVE-2026-4176) | 0.0 | NONE | N/A | No | 2026-03-29 | Perl versions from 5.9.4 before 5.40.4-RC1, from 5.41.0 before 5.42.2-RC1, from 5.43.0 before 5.43.9 contain a vulnerabl... |
 | [CVE-2026-4946](https://nvd.nist.gov/vuln/detail/CVE-2026-4946) | 8.8 | HIGH | CWE-78 | No | 2026-03-29 | Ghidra versions prior to 12.0.3 improperly process annotation directives embedded in automatically extracted binary data... |
 | [CVE-2026-0562](https://nvd.nist.gov/vuln/detail/CVE-2026-0562) | 8.3 | HIGH | CWE-863 | No | 2026-03-29 | A critical security vulnerability in parisneo/lollms versions up to 2.2.0 allows any authenticated user to accept or rej... |
 | [CVE-2026-0560](https://nvd.nist.gov/vuln/detail/CVE-2026-0560) | 7.5 | HIGH | CWE-918 | No | 2026-03-29 | A Server-Side Request Forgery (SSRF) vulnerability exists in parisneo/lollms versions prior to 2.2.0, specifically in th... |
