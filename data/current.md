@@ -1,9 +1,11 @@
 # CVEs — March 2026
 
-_5315 vulnerabilities_
+_5317 vulnerabilities_
 
 | CVE ID | Score | Severity | CWE | KEV | Published | Description |
 |--------|-------|----------|-----|-----|-----------|-------------|
+| [CVE-2026-5041](https://nvd.nist.gov/vuln/detail/CVE-2026-5041) | 5.1 | MEDIUM | CWE-74 | No | 2026-03-29 | A vulnerability was identified in code-projects Chamber of Commerce Membership Management System 1.0. Impacted is the fu... |
+| [CVE-2026-5037](https://nvd.nist.gov/vuln/detail/CVE-2026-5037) | 4.8 | MEDIUM | CWE-119 | No | 2026-03-29 | A vulnerability was determined in mxml up to 4.0.4. This issue affects the function index_sort of the file mxml-index.c... |
 | [CVE-2026-5036](https://nvd.nist.gov/vuln/detail/CVE-2026-5036) | 7.4 | HIGH | CWE-119 | No | 2026-03-29 | A vulnerability was found in Tenda 4G06 04.06.01.29. This vulnerability affects the function fromDhcpListClient of the f... |
 | [CVE-2026-5035](https://nvd.nist.gov/vuln/detail/CVE-2026-5035) | 6.9 | MEDIUM | CWE-74 | No | 2026-03-29 | A vulnerability has been found in code-projects Accounting System 1.0. This affects an unknown part of the file /view_wo... |
 | [CVE-2026-5034](https://nvd.nist.gov/vuln/detail/CVE-2026-5034) | 6.9 | MEDIUM | CWE-74 | No | 2026-03-29 | A flaw has been found in code-projects Accounting System 1.0. Affected by this issue is some unknown functionality of th... |
