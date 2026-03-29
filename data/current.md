@@ -1,9 +1,13 @@
 # CVEs — March 2026
 
-_5341 vulnerabilities_
+_5345 vulnerabilities_
 
 | CVE ID | Score | Severity | CWE | KEV | Published | Description |
 |--------|-------|----------|-----|-----|-----------|-------------|
+| [CVE-2026-0562](https://nvd.nist.gov/vuln/detail/CVE-2026-0562) | 8.3 | HIGH | CWE-863 | No | 2026-03-29 | A critical security vulnerability in parisneo/lollms versions up to 2.2.0 allows any authenticated user to accept or rej... |
+| [CVE-2026-0560](https://nvd.nist.gov/vuln/detail/CVE-2026-0560) | 7.5 | HIGH | CWE-918 | No | 2026-03-29 | A Server-Side Request Forgery (SSRF) vulnerability exists in parisneo/lollms versions prior to 2.2.0, specifically in th... |
+| [CVE-2026-0558](https://nvd.nist.gov/vuln/detail/CVE-2026-0558) | 7.5 | HIGH | CWE-287 | No | 2026-03-29 | A vulnerability in parisneo/lollms, up to and including version 2.2.0, allows unauthenticated users to upload and proces... |
+| [CVE-2026-34005](https://nvd.nist.gov/vuln/detail/CVE-2026-34005) | 8.8 | HIGH | CWE-78 | No | 2026-03-29 | In Sofia on Xiongmai DVR/NVR (AHB7008T-MH-V2 and NBD7024H-P) 4.03.R11 devices, root OS command injection can occur via s... |
 | [CVE-2026-5046](https://nvd.nist.gov/vuln/detail/CVE-2026-5046) | 7.4 | HIGH | CWE-119 | No | 2026-03-29 | A flaw has been found in Tenda FH1201 1.2.0.14(408). Affected is the function formWrlExtraSet of the file /goform/WrlExt... |
 | [CVE-2026-5045](https://nvd.nist.gov/vuln/detail/CVE-2026-5045) | 7.4 | HIGH | CWE-119 | No | 2026-03-29 | A vulnerability was detected in Tenda FH1201 1.2.0.14(408). This impacts the function WrlclientSet of the file /goform/W... |
 | [CVE-2026-5044](https://nvd.nist.gov/vuln/detail/CVE-2026-5044) | 7.4 | HIGH | CWE-119 | No | 2026-03-29 | A security vulnerability has been detected in Belkin F9K1122 1.00.33. This affects the function formSetSystemSettings of... |
