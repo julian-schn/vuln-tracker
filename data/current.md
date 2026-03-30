@@ -1,9 +1,19 @@
 # CVEs — March 2026
 
-_5355 vulnerabilities_
+_5367 vulnerabilities_
 
 | CVE ID | Score | Severity | CWE | KEV | Published | Description |
 |--------|-------|----------|-----|-----|-----------|-------------|
+| [CVE-2026-5121](https://nvd.nist.gov/vuln/detail/CVE-2026-5121) | 0.0 | NONE | N/A | No | 2026-03-30 | A flaw was found in libarchive. On 32-bit systems, an integer overflow vulnerability exists in the zisofs block pointer... |
+| [CVE-2026-4416](https://nvd.nist.gov/vuln/detail/CVE-2026-4416) | 8.5 | HIGH | CWE-502 | No | 2026-03-30 | The Performance Library component of Gigabyte Control Center has an Insecure Deserialization vulnerability. Authenticate... |
+| [CVE-2026-4415](https://nvd.nist.gov/vuln/detail/CVE-2026-4415) | 9.2 | CRITICAL | CWE-23 | No | 2026-03-30 | Gigabyte Control Center developed by GIGABYTE has an Arbitrary File Write vulnerability. When the pairing feature is ena... |
+| [CVE-2026-3945](https://nvd.nist.gov/vuln/detail/CVE-2026-3945) | 8.7 | HIGH | CWE-190 | No | 2026-03-30 | An integer overflow vulnerability in the HTTP chunked transfer encoding parser in tinyproxy up to and including version... |
+| [CVE-2026-2328](https://nvd.nist.gov/vuln/detail/CVE-2026-2328) | 7.5 | HIGH | CWE-790 | No | 2026-03-30 | An unauthenticated remote attacker can exploit insufficient input validation to access backend components beyond their i... |
+| [CVE-2026-25704](https://nvd.nist.gov/vuln/detail/CVE-2026-25704) | 5.8 | MEDIUM | CWE-271 | No | 2026-03-30 | A Privilege Dropping / Lowering Errors/Time-of-check Time-of-use (TOCTOU) Race Condition vulnerability in  cosmic-greete... |
+| [CVE-2025-3716](https://nvd.nist.gov/vuln/detail/CVE-2025-3716) | 5.3 | MEDIUM | CWE-204 | No | 2026-03-30 | User enumeration in ESET Protect (on-prem) via Response Timing. |
+| [CVE-2025-15379](https://nvd.nist.gov/vuln/detail/CVE-2025-15379) | 10.0 | CRITICAL | CWE-77 | No | 2026-03-30 | A command injection vulnerability exists in MLflow's model serving container initialization code, specifically in the `_... |
+| [CVE-2026-5119](https://nvd.nist.gov/vuln/detail/CVE-2026-5119) | 5.9 | MEDIUM | CWE-319 | No | 2026-03-30 | A flaw was found in libsoup. When establishing HTTPS tunnels through a configured HTTP proxy, sensitive session cookies... |
+| [CVE-2026-5107](https://nvd.nist.gov/vuln/detail/CVE-2026-5107) | 2.3 | LOW | CWE-266 | No | 2026-03-30 | A vulnerability has been found in FRRouting FRR up to 10.5.1. This affects the function process_type2_route of the file... |
 | [CVE-2026-5106](https://nvd.nist.gov/vuln/detail/CVE-2026-5106) | 4.8 | MEDIUM | CWE-79 | No | 2026-03-30 | A flaw has been found in code-projects Exam Form Submission 1.0. The impacted element is an unknown function of the file... |
 | [CVE-2026-5105](https://nvd.nist.gov/vuln/detail/CVE-2026-5105) | 5.3 | MEDIUM | CWE-74 | No | 2026-03-30 | A vulnerability was detected in Totolink A3300R 17.0.0cu.557_b20221024. The affected element is the function setVpnPassC... |
 | [CVE-2026-5104](https://nvd.nist.gov/vuln/detail/CVE-2026-5104) | 5.3 | MEDIUM | CWE-74 | No | 2026-03-30 | A security vulnerability has been detected in Totolink A3300R 17.0.0cu.557_b20221024. Impacted is the function setStatic... |
@@ -13,6 +23,7 @@ _5355 vulnerabilities_
 | [CVE-2026-5102](https://nvd.nist.gov/vuln/detail/CVE-2026-5102) | 5.3 | MEDIUM | CWE-74 | No | 2026-03-30 | A security flaw has been discovered in Totolink A3300R 17.0.0cu.557_b20221024. This vulnerability affects the function s... |
 | [CVE-2026-2370](https://nvd.nist.gov/vuln/detail/CVE-2026-2370) | 8.1 | HIGH | CWE-233 | No | 2026-03-30 | GitLab has remediated an issue in GitLab CE/EE affecting all versions from 14.3 before 18.8.7, 18.9 before 18.9.3, and 1... |
 | [CVE-2026-5101](https://nvd.nist.gov/vuln/detail/CVE-2026-5101) | 5.3 | MEDIUM | CWE-74 | No | 2026-03-29 | A vulnerability was identified in Totolink A3300R 17.0.0cu.557_b20221024. This affects the function setLanCfg of the fil... |
+| [CVE-2026-4176](https://nvd.nist.gov/vuln/detail/CVE-2026-4176) | 0.0 | NONE | N/A | No | 2026-03-29 | Perl versions from 5.9.4 before 5.40.4-RC1, from 5.41.0 before 5.42.2-RC1, from 5.43.0 before 5.43.9 contain a vulnerabl... |
 | [CVE-2026-4946](https://nvd.nist.gov/vuln/detail/CVE-2026-4946) | 8.8 | HIGH | CWE-78 | No | 2026-03-29 | Ghidra versions prior to 12.0.3 improperly process annotation directives embedded in automatically extracted binary data... |
 | [CVE-2026-0562](https://nvd.nist.gov/vuln/detail/CVE-2026-0562) | 8.3 | HIGH | CWE-863 | No | 2026-03-29 | A critical security vulnerability in parisneo/lollms versions up to 2.2.0 allows any authenticated user to accept or rej... |
 | [CVE-2026-0560](https://nvd.nist.gov/vuln/detail/CVE-2026-0560) | 7.5 | HIGH | CWE-918 | No | 2026-03-29 | A Server-Side Request Forgery (SSRF) vulnerability exists in parisneo/lollms versions prior to 2.2.0, specifically in th... |
@@ -993,6 +1004,7 @@ _5355 vulnerabilities_
 | [CVE-2024-51348](https://nvd.nist.gov/vuln/detail/CVE-2024-51348) | 8.8 | HIGH | CWE-121 | No | 2026-03-25 | A stack-based buffer overflow vulnerability in the P2P API service in BS Producten Petcam with firmware 33.1.0.0818 allo... |
 | [CVE-2024-51347](https://nvd.nist.gov/vuln/detail/CVE-2024-51347) | 7.2 | HIGH | CWE-120 | No | 2026-03-25 | A buffer overflow vulnerability in the dgiot binary in LSC Smart Indoor IP Camera V7.6.32. The flaw exists in the handli... |
 | [CVE-2024-51346](https://nvd.nist.gov/vuln/detail/CVE-2024-51346) | 7.7 | HIGH | CWE-330 | No | 2026-03-25 | An issue in Eufy Homebase 2 version 3.3.4.1h allows a local attacker to obtain sensitive information via the cryptograph... |
+| [CVE-2026-31788](https://nvd.nist.gov/vuln/detail/CVE-2026-31788) | 0.0 | NONE | N/A | No | 2026-03-25 | In the Linux kernel, the following vulnerability has been resolved:  xen/privcmd: restrict usage in unprivileged domU  T... |
 | [CVE-2026-32326](https://nvd.nist.gov/vuln/detail/CVE-2026-32326) | 6.9 | MEDIUM | CWE-306 | No | 2026-03-25 | SHARP routers do not perform authentication for some web APIs. The device information may be retrieved without authentic... |
 | [CVE-2026-33253](https://nvd.nist.gov/vuln/detail/CVE-2026-33253) | 8.4 | HIGH | CWE-428 | No | 2026-03-25 | SANUPS SOFTWARE provided by SANYO DENKI CO., LTD. registers Windows services with unquoted file paths. A user with the w... |
 | [CVE-2026-2343](https://nvd.nist.gov/vuln/detail/CVE-2026-2343) | 5.3 | MEDIUM | N/A | No | 2026-03-25 | The PeproDev Ultimate Invoice WordPress plugin through 2.2.5 has a bulk download invoices action that generates ZIP arch... |
@@ -1472,7 +1484,7 @@ _5355 vulnerabilities_
 | [CVE-2026-33478](https://nvd.nist.gov/vuln/detail/CVE-2026-33478) | 10.0 | CRITICAL | CWE-78 | No | 2026-03-23 | WWBN AVideo is an open source video platform. In versions up to and including 26.0, multiple vulnerabilities in AVideo's... |
 | [CVE-2026-33354](https://nvd.nist.gov/vuln/detail/CVE-2026-33354) | 7.6 | HIGH | CWE-73 | No | 2026-03-23 | WWBN AVideo is an open source video platform. In versions up to and including 26.0, `POST /objects/aVideoEncoder.json.ph... |
 | [CVE-2026-4647](https://nvd.nist.gov/vuln/detail/CVE-2026-4647) | 6.1 | MEDIUM | CWE-125 | No | 2026-03-23 | A flaw was found in the GNU Binutils BFD library, a widely used component for handling binary files such as object files... |
-| [CVE-2026-4645](https://nvd.nist.gov/vuln/detail/CVE-2026-4645) | 7.5 | HIGH | CWE-835 | No | 2026-03-23 | A flaw was found in the `github.com/antchfx/xpath` component. A remote attacker could exploit this vulnerability by subm... |
+| [CVE-2026-4645](https://nvd.nist.gov/vuln/detail/CVE-2026-4645) | 0.0 | NONE | N/A | No | 2026-03-23 | Rejected reason: Duplicate of CVE-2026-32287 |
 | [CVE-2026-4589](https://nvd.nist.gov/vuln/detail/CVE-2026-4589) | 5.3 | MEDIUM | CWE-918 | No | 2026-03-23 | A vulnerability was identified in kalcaddle kodbox 1.64. The affected element is the function PathDriverUrl of the file... |
 | [CVE-2026-33352](https://nvd.nist.gov/vuln/detail/CVE-2026-33352) | 9.8 | CRITICAL | CWE-89 | No | 2026-03-23 | WWBN AVideo is an open source video platform. Prior to version 26.0, an unauthenticated SQL injection vulnerability exis... |
 | [CVE-2026-33351](https://nvd.nist.gov/vuln/detail/CVE-2026-33351) | 9.1 | CRITICAL | CWE-918 | No | 2026-03-23 | WWBN AVideo is an open source video platform. Prior to version 26.0, a Server-Side Request Forgery (SSRF) vulnerability... |
@@ -2211,7 +2223,7 @@ _5355 vulnerabilities_
 | [CVE-2026-32866](https://nvd.nist.gov/vuln/detail/CVE-2026-32866) | 5.1 | MEDIUM | CWE-79 | No | 2026-03-19 | OPEXUS eComplaint and eCASE before 10.2.0.0 do not correctly sanitize the contents of first and last name fields in a us... |
 | [CVE-2026-32865](https://nvd.nist.gov/vuln/detail/CVE-2026-32865) | 9.2 | CRITICAL | CWE-200 | No | 2026-03-19 | OPEXUS eComplaint and eCASE before version 10.1.0.0 include the secret verification code in the HTTP response when reque... |
 | [CVE-2026-30404](https://nvd.nist.gov/vuln/detail/CVE-2026-30404) | 7.5 | HIGH | CWE-918 | No | 2026-03-19 | The backend database management connection test feature in wgcloud v3.6.3 has a server-side request forgery (SSRF) vulne... |
-| [CVE-2026-4427](https://nvd.nist.gov/vuln/detail/CVE-2026-4427) | 7.5 | HIGH | CWE-129 | No | 2026-03-19 | A flaw was found in pgproto3. A malicious or compromised PostgreSQL server can exploit this by sending a DataRow message... |
+| [CVE-2026-4427](https://nvd.nist.gov/vuln/detail/CVE-2026-4427) | 0.0 | NONE | N/A | No | 2026-03-19 | Rejected reason: Duplicate of CVE-2026-32286 |
 | [CVE-2026-4426](https://nvd.nist.gov/vuln/detail/CVE-2026-4426) | 6.5 | MEDIUM | CWE-1335 | No | 2026-03-19 | A flaw was found in libarchive. An Undefined Behavior vulnerability exists in the zisofs decompression logic, caused by... |
 | [CVE-2026-4424](https://nvd.nist.gov/vuln/detail/CVE-2026-4424) | 7.5 | HIGH | CWE-125 | No | 2026-03-19 | A flaw was found in libarchive. This heap out-of-bounds read vulnerability exists in the RAR archive processing logic du... |
 | [CVE-2026-32843](https://nvd.nist.gov/vuln/detail/CVE-2026-32843) | 5.1 | MEDIUM | CWE-79 | No | 2026-03-19 | Location Aware Sensor System by Linkit ONE, up to commit f06bd20 (2023-04-26), contains a reflected cross-site scripting... |

@@ -11,7 +11,7 @@
     <header>
       <h1>vuln-tracker</h1>
       <p class="subtitle">CVEs from the National Vulnerability Database — current and previous month</p>
-      <p class="last-updated">Last updated: 2026-03-30 06:01 UTC</p>
+      <p class="last-updated">Last updated: 2026-03-30 09:20 UTC</p>
     </header>
     <nav>
       <a href="top50.html">&#9733; Top 50</a>
@@ -25,7 +25,7 @@
     </nav>
     <main>
     <section>
-      <h2>Current Month — March 2026 <span class="count">(5355)</span></h2>
+      <h2>Current Month — March 2026 <span class="count">(5367)</span></h2>
       <div class="table-wrapper">
         <table>
           <thead>
@@ -40,6 +40,101 @@
             </tr>
           </thead>
           <tbody>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5121" target="_blank" rel="noopener">CVE-2026-5121</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td><details><summary>A flaw was found in libarchive. On 32-bit systems, an integer overflow vulnerabi...</summary><p>A flaw was found in libarchive. On 32-bit systems, an integer overflow vulnerability exists in the zisofs block pointer allocation logic. A remote attacker can exploit this by providing a specially crafted ISO9660 image, which can lead to a heap buffer overflow. This could potentially allow for arbitrary code execution on the affected system.</p></details></td>
+        <td>2026-03-30</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4416" target="_blank" rel="noopener">CVE-2026-4416</a></td>
+        <td>8.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-502</td>
+        <td>&nbsp;</td>
+        <td><details><summary>The Performance Library component of Gigabyte Control Center has an Insecure Des...</summary><p>The Performance Library component of Gigabyte Control Center has an Insecure Deserialization vulnerability. Authenticated local attackers can send a malicious serialized payload to the EasyTune Engine service, resulting in privilege escalation.</p></details></td>
+        <td>2026-03-30</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4415" target="_blank" rel="noopener">CVE-2026-4415</a></td>
+        <td>9.2</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-23</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Gigabyte Control Center developed by GIGABYTE has an Arbitrary File Write vulner...</summary><p>Gigabyte Control Center developed by GIGABYTE has an Arbitrary File Write vulnerability. When the pairing feature is enabled, unauthenticated remote attackers can write arbitrary files to any location on the underlying operating system, leading to arbitrary code execution or privilege escalation.</p></details></td>
+        <td>2026-03-30</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-3945" target="_blank" rel="noopener">CVE-2026-3945</a></td>
+        <td>8.7</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-190</td>
+        <td>&nbsp;</td>
+        <td><details><summary>An integer overflow vulnerability in the HTTP chunked transfer encoding parser i...</summary><p>An integer overflow vulnerability in the HTTP chunked transfer encoding parser in tinyproxy up to and including version 1.11.3 allows an unauthenticated remote attacker to cause a denial of service (DoS). The issue occurs because chunk size values are parsed using strtol() without properly validating overflow conditions (e.g., errno == ERANGE). A crafted chunk size such as 0x7fffffffffffffff (LONG_MAX) bypasses the existing validation check (chunklen &lt; 0), leading to a signed integer overflow during arithmetic operations (chunklen + 2). This results in incorrect size calculations, causing the proxy to attempt reading an extremely large amount of request-body data and holding worker connections open indefinitely. An attacker can exploit this behavior to exhaust all available worker slots, preventing new connections from being accepted and causing complete service unavailability. Upstream addressed this issue in commit bb7edc4; however, the latest stable release (1.11.3) remains affected at the time of publication.</p></details></td>
+        <td>2026-03-30</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-2328" target="_blank" rel="noopener">CVE-2026-2328</a></td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-790</td>
+        <td>&nbsp;</td>
+        <td><details><summary>An unauthenticated remote attacker can exploit insufficient input validation to ...</summary><p>An unauthenticated remote attacker can exploit insufficient input validation to access backend components beyond their intended scope via path traversal, resulting in exposure of sensitive information.</p></details></td>
+        <td>2026-03-30</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-25704" target="_blank" rel="noopener">CVE-2026-25704</a></td>
+        <td>5.8</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-271</td>
+        <td>&nbsp;</td>
+        <td><details><summary>A Privilege Dropping / Lowering Errors/Time-of-check Time-of-use (TOCTOU) Race C...</summary><p>A Privilege Dropping / Lowering Errors/Time-of-check Time-of-use (TOCTOU) Race Condition vulnerability in  cosmic-greeter can allow an attacker to regain privileges that should have been dropped and abuse them in the racy checking logic.
+
+
+
+
+This issue affects cosmic-greeter before https://github.Com/pop-os/cosmic-greeter/pull/426.</p></details></td>
+        <td>2026-03-30</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-3716" target="_blank" rel="noopener">CVE-2025-3716</a></td>
+        <td>5.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-204</td>
+        <td>&nbsp;</td>
+        <td><details><summary>User enumeration in ESET Protect (on-prem) via Response Timing.</summary><p>User enumeration in ESET Protect (on-prem) via Response Timing.</p></details></td>
+        <td>2026-03-30</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-15379" target="_blank" rel="noopener">CVE-2025-15379</a></td>
+        <td>10.0</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-77</td>
+        <td>&nbsp;</td>
+        <td><details><summary>A command injection vulnerability exists in MLflow&#x27;s model serving container ini...</summary><p>A command injection vulnerability exists in MLflow&#x27;s model serving container initialization code, specifically in the `_install_model_dependencies_to_env()` function. When deploying a model with `env_manager=LOCAL`, MLflow reads dependency specifications from the model artifact&#x27;s `python_env.yaml` file and directly interpolates them into a shell command without sanitization. This allows an attacker to supply a malicious model artifact and achieve arbitrary command execution on systems that deploy the model. The vulnerability affects versions 3.8.0 and is fixed in version 3.8.2.</p></details></td>
+        <td>2026-03-30</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5119" target="_blank" rel="noopener">CVE-2026-5119</a></td>
+        <td>5.9</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-319</td>
+        <td>&nbsp;</td>
+        <td><details><summary>A flaw was found in libsoup. When establishing HTTPS tunnels through a configure...</summary><p>A flaw was found in libsoup. When establishing HTTPS tunnels through a configured HTTP proxy, sensitive session cookies are transmitted in cleartext within the initial HTTP CONNECT request. A network-positioned attacker or a malicious HTTP proxy can intercept these cookies, leading to potential session hijacking or user impersonation.</p></details></td>
+        <td>2026-03-30</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5107" target="_blank" rel="noopener">CVE-2026-5107</a></td>
+        <td>2.3</td>
+        <td><span class="severity low">LOW</span></td>
+        <td>CWE-266</td>
+        <td>&nbsp;</td>
+        <td><details><summary>A vulnerability has been found in FRRouting FRR up to 10.5.1. This affects the f...</summary><p>A vulnerability has been found in FRRouting FRR up to 10.5.1. This affects the function process_type2_route of the file bgpd/bgp_evpn.c of the component EVPN Type-2 Route Handler. The manipulation leads to improper access controls. The attack can be initiated remotely. The attack is considered to have high complexity. The exploitability is reported as difficult. The identifier of the patch is 7676cad65114aa23adde583d91d9d29e2debd045. To fix this issue, it is recommended to deploy a patch.</p></details></td>
+        <td>2026-03-30</td>
+      </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5106" target="_blank" rel="noopener">CVE-2026-5106</a></td>
         <td>4.8</td>
@@ -119,6 +214,17 @@
         <td>CWE-74</td>
         <td>&nbsp;</td>
         <td><details><summary>A vulnerability was identified in Totolink A3300R 17.0.0cu.557_b20221024. This a...</summary><p>A vulnerability was identified in Totolink A3300R 17.0.0cu.557_b20221024. This affects the function setLanCfg of the file /cgi-bin/cstecgi.cgi of the component Parameter Handler. The manipulation of the argument lanIp leads to command injection. Remote exploitation of the attack is possible. The exploit is publicly available and might be used.</p></details></td>
+        <td>2026-03-29</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4176" target="_blank" rel="noopener">CVE-2026-4176</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Perl versions from 5.9.4 before 5.40.4-RC1, from 5.41.0 before 5.42.2-RC1, from ...</summary><p>Perl versions from 5.9.4 before 5.40.4-RC1, from 5.41.0 before 5.42.2-RC1, from 5.43.0 before 5.43.9 contain a vulnerable version of Compress::Raw::Zlib.
+
+Compress::Raw::Zlib is included in the Perl package as a dual-life core module, and is vulnerable to CVE-2026-3381 due to a vendored version of zlib which has several vulnerabilities, including CVE-2026-27171. The bundled Compress::Raw::Zlib was updated to version 2.221 in Perl blead commit c75ae9cc164205e1b6d6dbd57bd2c65c8593fe94.</p></details></td>
         <td>2026-03-29</td>
       </tr>
       <tr>
@@ -8942,6 +9048,49 @@
         <td>2026-03-25</td>
       </tr>
       <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-31788" target="_blank" rel="noopener">CVE-2026-31788</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td><details><summary>In the Linux kernel, the following vulnerability has been resolved:
+
+xen/privcmd...</summary><p>In the Linux kernel, the following vulnerability has been resolved:
+
+xen/privcmd: restrict usage in unprivileged domU
+
+The Xen privcmd driver allows to issue arbitrary hypercalls from
+user space processes. This is normally no problem, as access is
+usually limited to root and the hypervisor will deny any hypercalls
+affecting other domains.
+
+In case the guest is booted using secure boot, however, the privcmd
+driver would be enabling a root user process to modify e.g. kernel
+memory contents, thus breaking the secure boot feature.
+
+The only known case where an unprivileged domU is really needing to
+use the privcmd driver is the case when it is acting as the device
+model for another guest. In this case all hypercalls issued via the
+privcmd driver will target that other guest.
+
+Fortunately the privcmd driver can already be locked down to allow
+only hypercalls targeting a specific domain, but this mode can be
+activated from user land only today.
+
+The target domain can be obtained from Xenstore, so when not running
+in dom0 restrict the privcmd driver to that target domain from the
+beginning, resolving the potential problem of breaking secure boot.
+
+This is XSA-482
+
+---
+V2:
+- defer reading from Xenstore if Xenstore isn&#x27;t ready yet (Jan Beulich)
+- wait in open() if target domain isn&#x27;t known yet
+- issue message in case no target domain found (Jan Beulich)</p></details></td>
+        <td>2026-03-25</td>
+      </tr>
+      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32326" target="_blank" rel="noopener">CVE-2026-32326</a></td>
         <td>6.9</td>
         <td><span class="severity medium">MEDIUM</span></td>
@@ -13254,11 +13403,11 @@
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4645" target="_blank" rel="noopener">CVE-2026-4645</a></td>
-        <td>7.5</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-835</td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>N/A</td>
         <td>&nbsp;</td>
-        <td><details><summary>A flaw was found in the `github.com/antchfx/xpath` component. A remote attacker ...</summary><p>A flaw was found in the `github.com/antchfx/xpath` component. A remote attacker could exploit this vulnerability by submitting crafted Boolean XPath expressions that evaluate to true. This can cause an infinite loop in the `logicalQuery.Select` function, leading to 100% CPU utilization and a Denial of Service (DoS) condition for the affected system.</p></details></td>
+        <td><details><summary>Rejected reason: Duplicate of CVE-2026-32287</summary><p>Rejected reason: Duplicate of CVE-2026-32287</p></details></td>
         <td>2026-03-23</td>
       </tr>
       <tr>
@@ -19905,11 +20054,11 @@
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4427" target="_blank" rel="noopener">CVE-2026-4427</a></td>
-        <td>7.5</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-129</td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>N/A</td>
         <td>&nbsp;</td>
-        <td><details><summary>A flaw was found in pgproto3. A malicious or compromised PostgreSQL server can e...</summary><p>A flaw was found in pgproto3. A malicious or compromised PostgreSQL server can exploit this by sending a DataRow message with a negative field length. This input validation vulnerability can lead to a denial of service (DoS) due to a slice bounds out of range panic.</p></details></td>
+        <td><details><summary>Rejected reason: Duplicate of CVE-2026-32286</summary><p>Rejected reason: Duplicate of CVE-2026-32286</p></details></td>
         <td>2026-03-19</td>
       </tr>
       <tr>
@@ -62326,9 +62475,11 @@
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-25315" target="_blank" rel="noopener">CVE-2026-25315</a></td>
         <td>5.3</td>
         <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-862</td>
+        <td>CWE-358</td>
         <td>&nbsp;</td>
-        <td><details><summary>Missing Authorization vulnerability in hcaptcha hCaptcha for WP hcaptcha-for-for...</summary><p>Missing Authorization vulnerability in hcaptcha hCaptcha for WP hcaptcha-for-forms-and-more allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects hCaptcha for WP: from n/a through &lt;= 4.22.0.</p></details></td>
+        <td><details><summary>Improperly implemented security check vulnerability in KAGG hCaptcha for WP allo...</summary><p>Improperly implemented security check vulnerability in KAGG hCaptcha for WP allows CAPTCHA Functionality Bypass.This issue affects hCaptcha for WP: from n/a through 4.21.1.
+
+The vulnerability is limited to the CAPTCHA mechanism intended to protect a publicly accessible form from automated abuse. It does not impact WordPress-level authentication or authorization controls.</p></details></td>
         <td>2026-02-19</td>
       </tr>
       <tr>
