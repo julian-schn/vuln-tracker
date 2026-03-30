@@ -1,10 +1,17 @@
 # CVEs — March 2026
 
-_5347 vulnerabilities_
+_5354 vulnerabilities_
 
 | CVE ID | Score | Severity | CWE | KEV | Published | Description |
 |--------|-------|----------|-----|-----|-----------|-------------|
-| [CVE-2026-4176](https://nvd.nist.gov/vuln/detail/CVE-2026-4176) | 0.0 | NONE | N/A | No | 2026-03-29 | Perl versions from 5.9.4 before 5.40.4-RC1, from 5.41.0 before 5.42.2-RC1, from 5.43.0 before 5.43.9 contain a vulnerabl... |
+| [CVE-2026-5104](https://nvd.nist.gov/vuln/detail/CVE-2026-5104) | 5.3 | MEDIUM | CWE-74 | No | 2026-03-30 | A security vulnerability has been detected in Totolink A3300R 17.0.0cu.557_b20221024. Impacted is the function setStatic... |
+| [CVE-2026-5103](https://nvd.nist.gov/vuln/detail/CVE-2026-5103) | 5.3 | MEDIUM | CWE-74 | No | 2026-03-30 | A weakness has been identified in Totolink A3300R 17.0.0cu.557_b20221024. This issue affects the function setUPnPCfg of... |
+| [CVE-2026-3124](https://nvd.nist.gov/vuln/detail/CVE-2026-3124) | 7.5 | HIGH | CWE-639 | No | 2026-03-30 | The Download Monitor plugin for WordPress is vulnerable to Insecure Direct Object Reference in all versions up to, and i... |
+| [CVE-2025-15036](https://nvd.nist.gov/vuln/detail/CVE-2025-15036) | 9.6 | CRITICAL | CWE-29 | No | 2026-03-30 | A path traversal vulnerability exists in the `extract_archive_to_dir` function within the `mlflow/pyfunc/dbconnect_artif... |
+| [CVE-2026-5102](https://nvd.nist.gov/vuln/detail/CVE-2026-5102) | 5.3 | MEDIUM | CWE-74 | No | 2026-03-30 | A security flaw has been discovered in Totolink A3300R 17.0.0cu.557_b20221024. This vulnerability affects the function s... |
+| [CVE-2026-2370](https://nvd.nist.gov/vuln/detail/CVE-2026-2370) | 8.1 | HIGH | CWE-233 | No | 2026-03-30 | GitLab has remediated an issue in GitLab CE/EE affecting all versions from 14.3 before 18.8.7, 18.9 before 18.9.3, and 1... |
+| [CVE-2025-7741](https://nvd.nist.gov/vuln/detail/CVE-2025-7741) | 2.1 | LOW | CWE-259 | No | 2026-03-30 | Hardcoded Password Vulnerability have been found in CENTUM. Affected products contain a hardcoded password for the user... |
+| [CVE-2026-5101](https://nvd.nist.gov/vuln/detail/CVE-2026-5101) | 5.3 | MEDIUM | CWE-74 | No | 2026-03-29 | A vulnerability was identified in Totolink A3300R 17.0.0cu.557_b20221024. This affects the function setLanCfg of the fil... |
 | [CVE-2026-4946](https://nvd.nist.gov/vuln/detail/CVE-2026-4946) | 8.8 | HIGH | CWE-78 | No | 2026-03-29 | Ghidra versions prior to 12.0.3 improperly process annotation directives embedded in automatically extracted binary data... |
 | [CVE-2026-0562](https://nvd.nist.gov/vuln/detail/CVE-2026-0562) | 8.3 | HIGH | CWE-863 | No | 2026-03-29 | A critical security vulnerability in parisneo/lollms versions up to 2.2.0 allows any authenticated user to accept or rej... |
 | [CVE-2026-0560](https://nvd.nist.gov/vuln/detail/CVE-2026-0560) | 7.5 | HIGH | CWE-918 | No | 2026-03-29 | A Server-Side Request Forgery (SSRF) vulnerability exists in parisneo/lollms versions prior to 2.2.0, specifically in th... |
