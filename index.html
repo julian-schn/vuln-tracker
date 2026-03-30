@@ -11,7 +11,7 @@
     <header>
       <h1>vuln-tracker</h1>
       <p class="subtitle">CVEs from the National Vulnerability Database — current and previous month</p>
-      <p class="last-updated">Last updated: 2026-03-30 20:54 UTC</p>
+      <p class="last-updated">Last updated: 2026-03-30 22:43 UTC</p>
     </header>
     <nav>
       <a href="top50.html">&#9733; Top 50</a>
@@ -25,7 +25,7 @@
     </nav>
     <main>
     <section>
-      <h2>Current Month — March 2026 <span class="count">(5451)</span></h2>
+      <h2>Current Month — March 2026 <span class="count">(5472)</span></h2>
       <div class="table-wrapper">
         <table>
           <thead>
@@ -40,6 +40,262 @@
             </tr>
           </thead>
           <tbody>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5153" target="_blank" rel="noopener">CVE-2026-5153</a></td>
+        <td>5.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-74</td>
+        <td>&nbsp;</td>
+        <td><details><summary>A flaw has been found in Tenda CH22 1.0.0.1. The affected element is the functio...</summary><p>A flaw has been found in Tenda CH22 1.0.0.1. The affected element is the function FormWriteFacMac of the file /goform/WriteFacMac. Executing a manipulation of the argument mac can lead to command injection. The attack may be launched remotely. The exploit has been published and may be used.</p></details></td>
+        <td>2026-03-30</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4257" target="_blank" rel="noopener">CVE-2026-4257</a></td>
+        <td>9.8</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-94</td>
+        <td>&nbsp;</td>
+        <td><details><summary>The Contact Form by Supsystic plugin for WordPress is vulnerable to Server-Side ...</summary><p>The Contact Form by Supsystic plugin for WordPress is vulnerable to Server-Side Template Injection (SSTI) leading to Remote Code Execution (RCE) in all versions up to, and including, 1.7.36. This is due to the plugin using the Twig `Twig_Loader_String` template engine without sandboxing, combined with the `cfsPreFill` prefill functionality that allows unauthenticated users to inject arbitrary Twig expressions into form field values via GET parameters. This makes it possible for unauthenticated attackers to execute arbitrary PHP functions and OS commands on the server by leveraging Twig&#x27;s `registerUndefinedFilterCallback()` method to register arbitrary PHP callbacks.</p></details></td>
+        <td>2026-03-30</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33995" target="_blank" rel="noopener">CVE-2026-33995</a></td>
+        <td>5.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-415</td>
+        <td>&nbsp;</td>
+        <td><details><summary>FreeRDP is a free implementation of the Remote Desktop Protocol. Prior to versio...</summary><p>FreeRDP is a free implementation of the Remote Desktop Protocol. Prior to version 3.24.2, a double-free vulnerability in kerberos_AcceptSecurityContext() and kerberos_InitializeSecurityContextA() (WinPR, winpr/libwinpr/sspi/Kerberos/kerberos.c) can cause a crash in any FreeRDP clients on systems where Kerberos and/or Kerberos U2U is configured (Samba AD member, or krb5 for NFS). The crash is triggered during NLA connection teardown and requires a failed authentication attempt. This issue has been patched in version 3.24.2.</p></details></td>
+        <td>2026-03-30</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33987" target="_blank" rel="noopener">CVE-2026-33987</a></td>
+        <td>7.1</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-122</td>
+        <td>&nbsp;</td>
+        <td><details><summary>FreeRDP is a free implementation of the Remote Desktop Protocol. Prior to versio...</summary><p>FreeRDP is a free implementation of the Remote Desktop Protocol. Prior to version 3.24.2, in persistent_cache_read_entry_v3() in libfreerdp/cache/persistent.c, persistent-&gt;bmpSize is updated before winpr_aligned_recalloc(). If realloc fails, bmpSize is inflated while bmpData points to the old buffer. This issue has been patched in version 3.24.2.</p></details></td>
+        <td>2026-03-30</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33986" target="_blank" rel="noopener">CVE-2026-33986</a></td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-122</td>
+        <td>&nbsp;</td>
+        <td><details><summary>FreeRDP is a free implementation of the Remote Desktop Protocol. Prior to versio...</summary><p>FreeRDP is a free implementation of the Remote Desktop Protocol. Prior to version 3.24.2, in yuv_ensure_buffer() in libfreerdp/codec/h264.c, h264-&gt;width and h264-&gt;height are updated before the reallocation loop. If any winpr_aligned_recalloc() call fails, the function returns FALSE but width/height are already inflated. This issue has been patched in version 3.24.2.</p></details></td>
+        <td>2026-03-30</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33985" target="_blank" rel="noopener">CVE-2026-33985</a></td>
+        <td>5.9</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-125</td>
+        <td>&nbsp;</td>
+        <td><details><summary>FreeRDP is a free implementation of the Remote Desktop Protocol. Prior to versio...</summary><p>FreeRDP is a free implementation of the Remote Desktop Protocol. Prior to version 3.24.2, pixel data from adjacent heap memory is rendered to screen, potentially leaking sensitive data to the attacker. This issue has been patched in version 3.24.2.</p></details></td>
+        <td>2026-03-30</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33984" target="_blank" rel="noopener">CVE-2026-33984</a></td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-122</td>
+        <td>&nbsp;</td>
+        <td><details><summary>FreeRDP is a free implementation of the Remote Desktop Protocol. Prior to versio...</summary><p>FreeRDP is a free implementation of the Remote Desktop Protocol. Prior to version 3.24.2, in resize_vbar_entry() in libfreerdp/codec/clear.c, vBarEntry-&gt;size is updated to vBarEntry-&gt;count before the winpr_aligned_recalloc() call. If realloc fails, size is inflated while pixels still points to the old, smaller buffer. On a subsequent call where count &lt;= size (the inflated value), realloc is skipped. The caller then writes count * bpp bytes of attacker-controlled pixel data into the undersized buffer, causing a heap buffer overflow. This issue has been patched in version 3.24.2.</p></details></td>
+        <td>2026-03-30</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33983" target="_blank" rel="noopener">CVE-2026-33983</a></td>
+        <td>6.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-190</td>
+        <td>&nbsp;</td>
+        <td><details><summary>FreeRDP is a free implementation of the Remote Desktop Protocol. Prior to versio...</summary><p>FreeRDP is a free implementation of the Remote Desktop Protocol. Prior to version 3.24.2, progressive_decompress_tile_upgrade() detects a mismatch via progressive_rfx_quant_cmp_equal() but only emits WLog_WARN, execution continues. The wrapped value (247) is used as a shift exponent, causing undefined behavior and an approximately 80 billion iteration loop (CPU DoS). This issue has been patched in version 3.24.2.</p></details></td>
+        <td>2026-03-30</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33982" target="_blank" rel="noopener">CVE-2026-33982</a></td>
+        <td>7.1</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-125</td>
+        <td>&nbsp;</td>
+        <td><details><summary>FreeRDP is a free implementation of the Remote Desktop Protocol. Prior to versio...</summary><p>FreeRDP is a free implementation of the Remote Desktop Protocol. Prior to version 3.24.2, there is a heap-buffer-overflow READ vulnerability at 24 bytes before the allocation, in winpr_aligned_offset_recalloc(). This issue has been patched in version 3.24.2.</p></details></td>
+        <td>2026-03-30</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33977" target="_blank" rel="noopener">CVE-2026-33977</a></td>
+        <td>6.9</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-617</td>
+        <td>&nbsp;</td>
+        <td><details><summary>FreeRDP is a free implementation of the Remote Desktop Protocol. Prior to versio...</summary><p>FreeRDP is a free implementation of the Remote Desktop Protocol. Prior to version 3.24.2, a malicious RDP server can crash the FreeRDP client by sending audio data in IMA ADPCM format with an invalid initial step index value (&gt;= 89). The unvalidated step index is read directly from the network and used to index into a 89-entry lookup table, triggering a WINPR_ASSERT() failure and process abort via SIGABRT. This affects any FreeRDP client that has audio redirection (RDPSND) enabled, which is the default configuration. This issue has been patched in version 3.24.2.</p></details></td>
+        <td>2026-03-30</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33952" target="_blank" rel="noopener">CVE-2026-33952</a></td>
+        <td>6.0</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-617</td>
+        <td>&nbsp;</td>
+        <td><details><summary>FreeRDP is a free implementation of the Remote Desktop Protocol. Prior to versio...</summary><p>FreeRDP is a free implementation of the Remote Desktop Protocol. Prior to version 3.24.2, an unvalidated auth_length field read from the network triggers a WINPR_ASSERT() failure in rts_read_auth_verifier_no_checks(), causing any FreeRDP client connecting through a malicious RDP Gateway to crash with SIGABRT. This is a pre-authentication denial of service affecting all FreeRDP clients using RPC-over-HTTP gateway transport. The assertion is active in default release builds (WITH_VERBOSE_WINPR_ASSERT=ON). This issue has been patched in version 3.24.2.</p></details></td>
+        <td>2026-03-30</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32794" target="_blank" rel="noopener">CVE-2026-32794</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-295</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Improper Certificate Validation vulnerability in Apache Airflow Provider for Dat...</summary><p>Improper Certificate Validation vulnerability in Apache Airflow Provider for Databricks. Provider code did not validate certificates for connections to Databricks back-end which could result in a man-of-a-middle attack that traffic is intercepted and manipulated or credentials exfiltrated w/o notice.
+
+This issue affects Apache Airflow Provider for Databricks: from 1.10.0 before 1.12.0.
+
+Users are recommended to upgrade to version 1.12.0, which fixes the issue.</p></details></td>
+        <td>2026-03-30</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5152" target="_blank" rel="noopener">CVE-2026-5152</a></td>
+        <td>7.4</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-119</td>
+        <td>&nbsp;</td>
+        <td><details><summary>A vulnerability was detected in Tenda CH22 1.0.0.1. Impacted is the function for...</summary><p>A vulnerability was detected in Tenda CH22 1.0.0.1. Impacted is the function formCreateFileName of the file /goform/createFileName. Performing a manipulation of the argument fileNameMit results in stack-based buffer overflow. The attack may be initiated remotely. The exploit is now public and may be used.</p></details></td>
+        <td>2026-03-30</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4789" target="_blank" rel="noopener">CVE-2026-4789</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Kyverno, versions 1.16.0 and later, are vulnerable to SSRF due to unrestricted C...</summary><p>Kyverno, versions 1.16.0 and later, are vulnerable to SSRF due to unrestricted CEL HTTP functions.</p></details></td>
+        <td>2026-03-30</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34558" target="_blank" rel="noopener">CVE-2026-34558</a></td>
+        <td>9.1</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td><details><summary>CI4MS is a CodeIgniter 4-based CMS skeleton that delivers a production-ready, mo...</summary><p>CI4MS is a CodeIgniter 4-based CMS skeleton that delivers a production-ready, modular architecture with RBAC authorization and theme support. Prior to version 0.31.0.0, the application fails to properly sanitize user-controlled input within the Methods Management functionality when creating or managing application methods/pages. Multiple input fields accept attacker-controlled JavaScript payloads that are stored server-side without sanitization or output encoding. These stored values are later rendered directly into administrative interfaces and global navigation components without proper encoding, resulting in Stored DOM-Based Cross-Site Scripting (XSS). This issue has been patched in version 0.31.0.0.</p></details></td>
+        <td>2026-03-30</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34557" target="_blank" rel="noopener">CVE-2026-34557</a></td>
+        <td>9.1</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td><details><summary>CI4MS is a CodeIgniter 4-based CMS skeleton that delivers a production-ready, mo...</summary><p>CI4MS is a CodeIgniter 4-based CMS skeleton that delivers a production-ready, modular architecture with RBAC authorization and theme support. Prior to version 0.31.0.0, the application fails to properly sanitize user-controlled input within group and role management functionality. Multiple input fields (three distinct group-related fields) can be injected with malicious JavaScript payloads, which are then stored server-side. These stored payloads are later rendered unsafely within privileged administrative views without proper output encoding, leading to stored cross-site scripting (XSS) within the role and permission management context. This issue has been patched in version 0.31.0.0.</p></details></td>
+        <td>2026-03-30</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32884" target="_blank" rel="noopener">CVE-2026-32884</a></td>
+        <td>5.9</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-295</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Botan is a C++ cryptography library. Prior to version 3.11.0, during processing ...</summary><p>Botan is a C++ cryptography library. Prior to version 3.11.0, during processing of an X.509 certificate path using name constraints which restrict the set of allowable DNS names, if no subject alternative name is defined in the end-entity certificate Botan would check that the CN was allowed by the DNS name constraints, even though this check is technically not required by RFC 5280. However this check failed to account for the possibility of a mixed-case CN. Thus a certificate with CN=Sub.EVIL.COM and no subject alternative name would bypasses an excludedSubtrees constraint for evil.com because the comparison is case-sensitive. This issue has been patched in version 3.11.0.</p></details></td>
+        <td>2026-03-30</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32883" target="_blank" rel="noopener">CVE-2026-32883</a></td>
+        <td>5.9</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-347</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Botan is a C++ cryptography library. From version 3.0.0 to before version 3.11.0...</summary><p>Botan is a C++ cryptography library. From version 3.0.0 to before version 3.11.0, during X509 path validation, OCSP responses were checked for an appropriate status code, but critically omitted verifying the signature of the OCSP response itself. This issue has been patched in version 3.11.0.</p></details></td>
+        <td>2026-03-30</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32877" target="_blank" rel="noopener">CVE-2026-32877</a></td>
+        <td>8.2</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-125</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Botan is a C++ cryptography library. From version 2.3.0 to before version 3.11.0...</summary><p>Botan is a C++ cryptography library. From version 2.3.0 to before version 3.11.0, during SM2 decryption, the code that checked the authentication code value (C3) failed to check that the encoded value was of the expected length prior to comparison. An invalid ciphertext can cause a heap over-read of up to 31 bytes, resulting in a crash or potentially other undefined behavior. This issue has been patched in version 3.11.0.</p></details></td>
+        <td>2026-03-30</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32696" target="_blank" rel="noopener">CVE-2026-32696</a></td>
+        <td>3.1</td>
+        <td><span class="severity low">LOW</span></td>
+        <td>CWE-476</td>
+        <td>&nbsp;</td>
+        <td><details><summary>NanoMQ MQTT Broker (NanoMQ) is an all-around Edge Messaging Platform. In NanoMQ ...</summary><p>NanoMQ MQTT Broker (NanoMQ) is an all-around Edge Messaging Platform. In NanoMQ version 0.24.6, after enabling auth.http_auth (HTTP authentication), when a client connects to the broker using MQTT CONNECT without providing username/password, and the configuration params uses the placeholders %u / %P (e.g., username=&quot;%u&quot;, password=&quot;%P&quot;), the HTTP request construction phase enters auth_http.c:set_data(). This results in calling strlen() on a NULL pointer, causing a SIGSEGV crash. This crash can be triggered remotely, resulting in a denial of service. This issue has been patched in version 0.24.7.</p></details></td>
+        <td>2026-03-30</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-31946" target="_blank" rel="noopener">CVE-2026-31946</a></td>
+        <td>9.8</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-287</td>
+        <td>&nbsp;</td>
+        <td><details><summary>OpenOlat is an open source web-based e-learning platform for teaching, learning,...</summary><p>OpenOlat is an open source web-based e-learning platform for teaching, learning, assessment and communication. From version 10.5.4 to before version 20.2.5, OpenOLAT&#x27;s OpenID Connect implicit flow implementation does not verify JWT signatures. The JSONWebToken.parse() method silently discards the signature segment of the compact JWT (header.payload.signature), and the getAccessToken() methods in both OpenIdConnectApi and OpenIdConnectFullConfigurableApi only validate claim-level fields (issuer, audience, state, nonce) without any cryptographic signature verification against the Identity Provider&#x27;s JWKS endpoint. This issue has been patched in version 20.2.5.</p></details></td>
+        <td>2026-03-30</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-30313" target="_blank" rel="noopener">CVE-2026-30313</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td><details><summary>DSAI-Cline&#x27;s command auto-approval module contains a critical OS command injecti...</summary><p>DSAI-Cline&#x27;s command auto-approval module contains a critical OS command injection vulnerability that renders its whitelist security mechanism completely ineffective. The system relies on string-based parsing to validate commands; while it intercepts dangerous operators such as ;, &amp;&amp;, ||, |, and command substitution patterns, it fails to account for raw newline characters embedded within the input. An attacker can construct a payload by embedding a literal newline between a whitelisted command and malicious code (e.g., git log malicious_command), forcing DSAI-Cline to misidentify it as a safe operation and automatically approve it. The underlying PowerShell interpreter treats the newline as a command separator, executing both commands sequentially, resulting in Remote Code Execution without any user interaction.</p></details></td>
+        <td>2026-03-30</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-30308" target="_blank" rel="noopener">CVE-2026-30308</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td><details><summary>In its design for automatic terminal command execution, HAI Build Code Generator...</summary><p>In its design for automatic terminal command execution, HAI Build Code Generator offers two options: Execute safe commands and Execute all commands. The description for the former states that commands determined by the model to be safe will be automatically executed, whereas if the model judges a command to be potentially destructive, it still requires user approval. However, this design is highly susceptible to prompt injection attacks. An attacker can employ a generic template to wrap any malicious command and mislead the model into misclassifying it as a &#x27;safe&#x27; command, thereby bypassing the user approval requirement and resulting in arbitrary command execution.</p></details></td>
+        <td>2026-03-30</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-30306" target="_blank" rel="noopener">CVE-2026-30306</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td><details><summary>In its design for automatic terminal command execution, SakaDev offers two optio...</summary><p>In its design for automatic terminal command execution, SakaDev offers two options: Execute safe commands and execute all commands. The description for the former states that commands determined by the model to be safe will be automatically executed, whereas if the model judges a command to be potentially destructive, it still requires user approval. However, this design is highly susceptible to prompt injection attacks. An attacker can employ a generic template to wrap any malicious command and mislead the model into misclassifying it as a &#x27;safe&#x27; command, thereby bypassing the user approval requirement and resulting in arbitrary command execution.</p></details></td>
+        <td>2026-03-30</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-28228" target="_blank" rel="noopener">CVE-2026-28228</a></td>
+        <td>8.8</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-1336</td>
+        <td>&nbsp;</td>
+        <td><details><summary>OpenOlat is an open source web-based e-learning platform for teaching, learning,...</summary><p>OpenOlat is an open source web-based e-learning platform for teaching, learning, assessment and communication. Prior to versions 19.1.31, 20.1.18, and 20.2.5, an authenticated user with the Author role can inject Velocity directives into a reminder email template. When the reminder is processed (either triggered manually or via the daily cron job), the injected directives are evaluated server-side. By chaining Velocity&#x27;s #set directive with Java reflection, an attacker can instantiate arbitrary Java classes such as java.lang.ProcessBuilder and execute operating system commands with the privileges of the Tomcat process (typically root in containerized deployments). This issue has been patched in versions 19.1.31, 20.1.18, and 20.2.5.</p></details></td>
+        <td>2026-03-30</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-27599" target="_blank" rel="noopener">CVE-2026-27599</a></td>
+        <td>4.7</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td><details><summary>CI4MS is a CodeIgniter 4-based CMS skeleton that delivers a production-ready, mo...</summary><p>CI4MS is a CodeIgniter 4-based CMS skeleton that delivers a production-ready, modular architecture with RBAC authorization and theme support. Prior to version 0.31.0.0, the application fails to properly sanitize user-controlled input within System Settings – Mail Settings. Several configuration fields, including Mail Server, Mail Port, Email Address, Email Password, Mail Protocol, and TLS settings, accept attacker-controlled input that is stored server-side and later rendered without proper output encoding. This issue has been patched in version 0.31.0.0.</p></details></td>
+        <td>2026-03-30</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-27018" target="_blank" rel="noopener">CVE-2026-27018</a></td>
+        <td>8.8</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-22</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Gotenberg is an API for converting document formats. Prior to version 8.29.0, th...</summary><p>Gotenberg is an API for converting document formats. Prior to version 8.29.0, the fix introduced for CVE-2024-21527 can be bypassed using mixed-case or uppercase URL schemes. This issue has been patched in version 8.29.0.</p></details></td>
+        <td>2026-03-30</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-25627" target="_blank" rel="noopener">CVE-2026-25627</a></td>
+        <td>6.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-125</td>
+        <td>&nbsp;</td>
+        <td><details><summary>NanoMQ MQTT Broker (NanoMQ) is an all-around Edge Messaging Platform. Prior to v...</summary><p>NanoMQ MQTT Broker (NanoMQ) is an all-around Edge Messaging Platform. Prior to version 0.24.8, NanoMQ’s MQTT-over-WebSocket transport can be crashed by sending an MQTT packet with a deliberately large Remaining Length in the fixed header while providing a much shorter actual payload. The code path copies Remaining Length bytes without verifying that the current receive buffer contains that many bytes, resulting in an out-of-bounds read (ASAN reports OOB / crash). This is remotely triggerable over the WebSocket listener. This issue has been patched in version 0.24.8.</p></details></td>
+        <td>2026-03-30</td>
+      </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5150" target="_blank" rel="noopener">CVE-2026-5150</a></td>
         <td>6.9</td>
@@ -128,95 +384,6 @@
         <td>CWE-94</td>
         <td>&nbsp;</td>
         <td><details><summary>Tautulli is a Python based monitoring and tracking tool for Plex Media Server. P...</summary><p>Tautulli is a Python based monitoring and tracking tool for Plex Media Server. Prior to version 2.17.0, the str_eval() function in notification_handler.py implements a sandboxed eval() for notification text templates. The sandbox attempts to restrict callable names by inspecting code.co_names of the compiled code object. However, co_names only contains names from the outer code object. When a lambda expression is used, it creates a nested code object whose attribute accesses are stored in code.co_consts, NOT in code.co_names. The sandbox never inspects nested code objects. This issue has been patched in version 2.17.0.</p></details></td>
-        <td>2026-03-30</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-21717" target="_blank" rel="noopener">CVE-2026-21717</a></td>
-        <td>5.9</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>N/A</td>
-        <td>&nbsp;</td>
-        <td><details><summary>A flaw in V8&#x27;s string hashing mechanism causes integer-like strings to be hashed...</summary><p>A flaw in V8&#x27;s string hashing mechanism causes integer-like strings to be hashed to their numeric value, making hash collisions trivially predictable. By crafting a request that causes many such collisions in V8&#x27;s internal string table, an attacker can significantly degrade performance of the Node.js process.
-
-The most common trigger is any endpoint that calls `JSON.parse()` on attacker-controlled input, as JSON parsing automatically internalizes short strings into the affected hash table.
-
-This vulnerability affects **20.x, 22.x, 24.x, and 25.x**.</p></details></td>
-        <td>2026-03-30</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-21716" target="_blank" rel="noopener">CVE-2026-21716</a></td>
-        <td>3.3</td>
-        <td><span class="severity low">LOW</span></td>
-        <td>N/A</td>
-        <td>&nbsp;</td>
-        <td><details><summary>An incomplete fix for CVE-2024-36137 leaves `FileHandle.chmod()` and `FileHandle...</summary><p>An incomplete fix for CVE-2024-36137 leaves `FileHandle.chmod()` and `FileHandle.chown()` in the promises API without the required permission checks, while their callback-based equivalents (`fs.fchmod()`, `fs.fchown()`) were correctly patched.
-
-As a result, code running under `--permission` with restricted `--allow-fs-write` can still use promise-based `FileHandle` methods to modify file permissions and ownership on already-open file descriptors, bypassing the intended write restrictions.
-
-This vulnerability affects **20.x, 22.x, 24.x, and 25.x** processes using the Permission Model where `--allow-fs-write` is intentionally restricted.</p></details></td>
-        <td>2026-03-30</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-21715" target="_blank" rel="noopener">CVE-2026-21715</a></td>
-        <td>3.3</td>
-        <td><span class="severity low">LOW</span></td>
-        <td>N/A</td>
-        <td>&nbsp;</td>
-        <td><details><summary>A flaw in Node.js Permission Model filesystem enforcement leaves `fs.realpathSyn...</summary><p>A flaw in Node.js Permission Model filesystem enforcement leaves `fs.realpathSync.native()` without the required read permission checks, while all comparable filesystem functions correctly enforce them.
-
-As a result, code running under `--permission` with restricted `--allow-fs-read` can still use `fs.realpathSync.native()` to check file existence, resolve symlink targets, and enumerate filesystem paths outside of permitted directories.
-
-This vulnerability affects **20.x, 22.x, 24.x, and 25.x** processes using the Permission Model where `--allow-fs-read` is intentionally restricted.</p></details></td>
-        <td>2026-03-30</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-21714" target="_blank" rel="noopener">CVE-2026-21714</a></td>
-        <td>5.3</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>N/A</td>
-        <td>&nbsp;</td>
-        <td><details><summary>A memory leak occurs in Node.js HTTP/2 servers when a client sends WINDOW_UPDATE...</summary><p>A memory leak occurs in Node.js HTTP/2 servers when a client sends WINDOW_UPDATE frames on stream 0 (connection-level) that cause the flow control window to exceed the maximum value of 2³¹-1. The server correctly sends a GOAWAY frame, but the Http2Session object is never cleaned up.
-
-This vulnerability affects HTTP2 users on Node.js 20, 22, 24 and 25.</p></details></td>
-        <td>2026-03-30</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-21713" target="_blank" rel="noopener">CVE-2026-21713</a></td>
-        <td>5.9</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>N/A</td>
-        <td>&nbsp;</td>
-        <td><details><summary>A flaw in Node.js HMAC verification uses a non-constant-time comparison when val...</summary><p>A flaw in Node.js HMAC verification uses a non-constant-time comparison when validating user-provided signatures, potentially leaking timing information proportional to the number of matching bytes. Under certain threat models where high-resolution timing measurements are possible, this behavior could be exploited as a timing oracle to infer HMAC values.
-
-Node.js already provides timing-safe comparison primitives used elsewhere in the codebase, indicating this is an oversight rather than an intentional design decision.
-
-This vulnerability affects **20.x, 22.x, 24.x, and 25.x**.</p></details></td>
-        <td>2026-03-30</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-21711" target="_blank" rel="noopener">CVE-2026-21711</a></td>
-        <td>5.3</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>N/A</td>
-        <td>&nbsp;</td>
-        <td><details><summary>A flaw in Node.js Permission Model network enforcement leaves Unix Domain Socket...</summary><p>A flaw in Node.js Permission Model network enforcement leaves Unix Domain Socket (UDS) server operations without the required permission checks, while all comparable network paths correctly enforce them.
-
-As a result, code running under `--permission` without `--allow-net` can create and expose local IPC endpoints, allowing communication with other processes on the same host outside of the intended network restriction boundary.
-
-This vulnerability affects Node.js **25.x** processes using the Permission Model where `--allow-net` is intentionally omitted to restrict network access. Note that `--allow-net` is currently an experimental feature.</p></details></td>
-        <td>2026-03-30</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-21710" target="_blank" rel="noopener">CVE-2026-21710</a></td>
-        <td>7.5</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>N/A</td>
-        <td>&nbsp;</td>
-        <td><details><summary>A flaw in Node.js HTTP request handling causes an uncaught `TypeError` when a re...</summary><p>A flaw in Node.js HTTP request handling causes an uncaught `TypeError` when a request is received with a header named `__proto__` and the application accesses `req.headersDistinct`.
-
-When this occurs, `dest[&quot;__proto__&quot;]` resolves to `Object.prototype` rather than `undefined`, causing `.push()` to be called on a non-array. This exception is thrown synchronously inside a property getter and cannot be intercepted by `error` event listeners, meaning it cannot be handled without wrapping every `req.headersDistinct` access in a `try/catch`.
-
-* This vulnerability affects all Node.js HTTP servers on **20.x, 22.x, 24.x, and v25.x**</p></details></td>
         <td>2026-03-30</td>
       </tr>
       <tr>
@@ -50020,7 +50187,7 @@ When this occurs, `dest[&quot;__proto__&quot;]` resolves to `Object.prototype` r
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-3277" target="_blank" rel="noopener">CVE-2026-3277</a></td>
-        <td>6.8</td>
+        <td>6.5</td>
         <td><span class="severity medium">MEDIUM</span></td>
         <td>CWE-312</td>
         <td>&nbsp;</td>
