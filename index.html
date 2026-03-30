@@ -11,7 +11,7 @@
     <header>
       <h1>vuln-tracker</h1>
       <p class="subtitle">CVEs from the National Vulnerability Database — current and previous month</p>
-      <p class="last-updated">Last updated: 2026-03-30 17:03 UTC</p>
+      <p class="last-updated">Last updated: 2026-03-30 19:08 UTC</p>
     </header>
     <nav>
       <a href="top50.html">&#9733; Top 50</a>
@@ -25,7 +25,7 @@
     </nav>
     <main>
     <section>
-      <h2>Current Month — March 2026 <span class="count">(5413)</span></h2>
+      <h2>Current Month — March 2026 <span class="count">(5429)</span></h2>
       <div class="table-wrapper">
         <table>
           <thead>
@@ -41,14 +41,178 @@
           </thead>
           <tbody>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5170" target="_blank" rel="noopener">CVE-2026-5170</a></td>
-        <td>6.0</td>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5126" target="_blank" rel="noopener">CVE-2026-5126</a></td>
+        <td>5.3</td>
         <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-918</td>
+        <td>&nbsp;</td>
+        <td><details><summary>A flaw has been found in SourceCodester RSS Feed Parser 1.0. Affected by this is...</summary><p>A flaw has been found in SourceCodester RSS Feed Parser 1.0. Affected by this issue is the function file_get_contents. This manipulation causes server-side request forgery. The attack is possible to be carried out remotely. The exploit has been published and may be used.</p></details></td>
+        <td>2026-03-30</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5125" target="_blank" rel="noopener">CVE-2026-5125</a></td>
+        <td>4.8</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-77</td>
+        <td>&nbsp;</td>
+        <td><details><summary>A vulnerability was detected in raine consult-llm-mcp up to 2.5.3. Affected by t...</summary><p>A vulnerability was detected in raine consult-llm-mcp up to 2.5.3. Affected by this vulnerability is the function child_process.execSync of the file src/server.ts. The manipulation of the argument git_diff.base_ref/git_diff.files results in os command injection. The attack is only possible with local access. The exploit is now public and may be used. Upgrading to version 2.5.4 addresses this issue. The patch is identified as 4abf297b34e5e8a9cb364b35f52c5f0ca1d599d3. Upgrading the affected component is recommended.</p></details></td>
+        <td>2026-03-30</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4046" target="_blank" rel="noopener">CVE-2026-4046</a></td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
         <td>CWE-617</td>
         <td>&nbsp;</td>
-        <td><details><summary>A user with access to the cluster with a limited set of privilege actions can tr...</summary><p>A user with access to the cluster with a limited set of privilege actions can trigger a crash of a mongod process during the limited and unpredictable window when the cluster is being promoted from a replica set to a sharded cluster. This may cause a denial of service by taking down the primary of the replica set.
+        <td><details><summary>The iconv() function in the GNU C Library versions 2.43 and earlier may crash du...</summary><p>The iconv() function in the GNU C Library versions 2.43 and earlier may crash due to an assertion failure when converting inputs from the IBM1390 or IBM1399 character sets, which may be used to remotely crash an application.
 
-This issue affects MongoDB Server v8.2 versions prior to 8.2.2, MongoDB Server v8.0 versions between 8.0.18, MongoDB Server v7.0 versions between 7.0.31.</p></details></td>
+
+
+This vulnerability can be trivially mitigated by removing the IBM1390 and IBM1399 character sets from systems that do not need them.</p></details></td>
+        <td>2026-03-30</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33032" target="_blank" rel="noopener">CVE-2026-33032</a></td>
+        <td>9.8</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-306</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Nginx UI is a web user interface for the Nginx web server. In versions 2.3.5 and...</summary><p>Nginx UI is a web user interface for the Nginx web server. In versions 2.3.5 and prior, the nginx-ui MCP (Model Context Protocol) integration exposes two HTTP endpoints: /mcp and /mcp_message. While /mcp requires both IP whitelisting and authentication (AuthRequired() middleware), the /mcp_message endpoint only applies IP whitelisting - and the default IP whitelist is empty, which the middleware treats as &quot;allow all&quot;. This means any network attacker can invoke all MCP tools without authentication, including restarting nginx, creating/modifying/deleting nginx configuration files, and triggering automatic config reloads - achieving complete nginx service takeover. At time of publication, there are no publicly available patches.</p></details></td>
+        <td>2026-03-30</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33030" target="_blank" rel="noopener">CVE-2026-33030</a></td>
+        <td>8.8</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-78</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Nginx UI is a web user interface for the Nginx web server. In versions 2.3.3 and...</summary><p>Nginx UI is a web user interface for the Nginx web server. In versions 2.3.3 and prior, Nginx-UI contains an Insecure Direct Object Reference (IDOR) vulnerability that allows any authenticated user to access, modify, and delete resources belonging to other users. The application&#x27;s base Model struct lacks a user_id field, and all resource endpoints perform queries by ID without verifying user ownership, enabling complete authorization bypass in multi-user environments. At time of publication, there are no publicly available patches.</p></details></td>
+        <td>2026-03-30</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33029" target="_blank" rel="noopener">CVE-2026-33029</a></td>
+        <td>6.9</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-20</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Nginx UI is a web user interface for the Nginx web server. Prior to version 2.3....</summary><p>Nginx UI is a web user interface for the Nginx web server. Prior to version 2.3.4, an input validation vulnerability in the logrotate configuration allows an authenticated user to cause a complete Denial of Service (DoS). By submitting a negative integer for the rotation interval, the backend enters an infinite loop or an invalid state, rendering the web interface unresponsive. This issue has been patched in version 2.3.4.</p></details></td>
+        <td>2026-03-30</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33028" target="_blank" rel="noopener">CVE-2026-33028</a></td>
+        <td>7.1</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-362</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Nginx UI is a web user interface for the Nginx web server. Prior to version 2.3....</summary><p>Nginx UI is a web user interface for the Nginx web server. Prior to version 2.3.4, the nginx-ui application is vulnerable to a Race Condition. Due to the complete absence of synchronization mechanisms (Mutex) and non-atomic file writes, concurrent requests lead to the severe corruption of the primary configuration file (app.ini). This vulnerability results in a persistent Denial of Service (DoS) and introduces a non-deterministic path for Remote Code Execution (RCE) through configuration cross-contamination. This issue has been patched in version 2.3.4.</p></details></td>
+        <td>2026-03-30</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33027" target="_blank" rel="noopener">CVE-2026-33027</a></td>
+        <td>6.9</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-22</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Nginx UI is a web user interface for the Nginx web server. Prior to version 2.3....</summary><p>Nginx UI is a web user interface for the Nginx web server. Prior to version 2.3.4, the nginx-ui configuration improperly handles URL-encoded traversal sequences. When specially crafted paths are supplied, the backend resolves them to the base Nginx configuration directory and executes the operation on the base directory (/etc/nginx). In particular, this allows an authenticated user to remove the entire /etc/nginx directory, resulting in a partial Denial of Service. This issue has been patched in version 2.3.4.</p></details></td>
+        <td>2026-03-30</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-30077" target="_blank" rel="noopener">CVE-2026-30077</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td><details><summary>OpenAirInterface V2.2.0 AMF crashes when it fails to decode the message. Not all...</summary><p>OpenAirInterface V2.2.0 AMF crashes when it fails to decode the message. Not all decode failures result in a crash. But the crash is consistent for particular inputs. An example input in hex stream is 80 00 00 0E 00 00 01 00 0F 80 02 02 40 00 58 00 01 88.</p></details></td>
+        <td>2026-03-30</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-29872" target="_blank" rel="noopener">CVE-2026-29872</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td><details><summary>A cross-session information disclosure vulnerability exists in the awesome-llm-a...</summary><p>A cross-session information disclosure vulnerability exists in the awesome-llm-apps project in commit e46690f99c3f08be80a9877fab52acacf7ab8251 (2026-01-19). The affected Streamlit-based GitHub MCP Agent stores user-supplied API tokens in process-wide environment variables using os.environ without proper session isolation. Because Streamlit serves multiple concurrent users from a single Python process, credentials provided by one user remain accessible to subsequent unauthenticated users. An attacker can exploit this issue to retrieve sensitive information such as GitHub Personal Access Tokens or LLM API keys, potentially leading to unauthorized access to private resources and financial abuse.</p></details></td>
+        <td>2026-03-30</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-66215" target="_blank" rel="noopener">CVE-2025-66215</a></td>
+        <td>3.8</td>
+        <td><span class="severity low">LOW</span></td>
+        <td>CWE-121</td>
+        <td>&nbsp;</td>
+        <td><details><summary>OpenSC is an open source smart card tools and middleware. Prior to version 0.27....</summary><p>OpenSC is an open source smart card tools and middleware. Prior to version 0.27.0, an attacker with physical access to the computer at the time user or administrator uses a token can cause a stack-buffer-overflow WRITE in card-oberthur. The attack requires crafted USB device or smart card that would present the system with specially crafted responses to the APDUs. This issue has been patched in version 0.27.0.</p></details></td>
+        <td>2026-03-30</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-66038" target="_blank" rel="noopener">CVE-2025-66038</a></td>
+        <td>3.9</td>
+        <td><span class="severity low">LOW</span></td>
+        <td>CWE-126</td>
+        <td>&nbsp;</td>
+        <td><details><summary>OpenSC is an open source smart card tools and middleware. Prior to version 0.27....</summary><p>OpenSC is an open source smart card tools and middleware. Prior to version 0.27.0, sc_compacttlv_find_tag searches a compact-TLV buffer for a given tag. In compact-TLV, a single byte encodes the tag (high nibble) and value length (low nibble). With a 1-byte buffer {0x0A}, the encoded element claims tag=0 and length=10 but no value bytes follow. Calling sc_compacttlv_find_tag with search tag 0x00 returns a pointer equal to buf+1 and outlen=10 without verifying that the claimed value length fits within the remaining buffer. In cases where the sc_compacttlv_find_tag is provided untrusted data (such as being read from cards/files), attackers may be able to influence it to return out-of-bounds pointers leading to downstream memory corruption when subsequent code tries to dereference the pointer. This issue has been patched in version 0.27.0.</p></details></td>
+        <td>2026-03-30</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-66037" target="_blank" rel="noopener">CVE-2025-66037</a></td>
+        <td>3.9</td>
+        <td><span class="severity low">LOW</span></td>
+        <td>CWE-125</td>
+        <td>&nbsp;</td>
+        <td><details><summary>OpenSC is an open source smart card tools and middleware. Prior to version 0.27....</summary><p>OpenSC is an open source smart card tools and middleware. Prior to version 0.27.0, feeding a crafted input to the fuzz_pkcs15_reader harness causes OpenSC to perform an out-of-bounds heap read in the X.509/SPKI handling path. Specifically, sc_pkcs15_pubkey_from_spki_fields() allocates a zero-length buffer and then reads one byte past the end of that allocation. This issue has been patched in version 0.27.0.</p></details></td>
+        <td>2026-03-30</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-49010" target="_blank" rel="noopener">CVE-2025-49010</a></td>
+        <td>3.8</td>
+        <td><span class="severity low">LOW</span></td>
+        <td>CWE-121</td>
+        <td>&nbsp;</td>
+        <td><details><summary>OpenSC is an open source smart card tools and middleware. Prior to version 0.27....</summary><p>OpenSC is an open source smart card tools and middleware. Prior to version 0.27.0, an attacker with physical access to the computer at the time user or administrator uses a token can cause a stack-buffer-overflow write in GET RESPONSE. The attack requires crafted USB device or smart card that would present the system with specially crafted responses to the APDUs. This issue has been patched in version 0.27.0.</p></details></td>
+        <td>2026-03-30</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5124" target="_blank" rel="noopener">CVE-2026-5124</a></td>
+        <td>6.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-266</td>
+        <td>&nbsp;</td>
+        <td><details><summary>A security vulnerability has been detected in osrg GoBGP up to 4.3.0. Affected i...</summary><p>A security vulnerability has been detected in osrg GoBGP up to 4.3.0. Affected is the function BGPHeader.DecodeFromBytes of the file pkg/packet/bgp/bgp.go of the component BGP Header Handler. The manipulation leads to improper access controls. Remote exploitation of the attack is possible. The attack is considered to have high complexity. The exploitability is told to be difficult. The identifier of the patch is f0f24a2a901cbf159260698211ab15c583ced131. To fix this issue, it is recommended to deploy a patch.</p></details></td>
+        <td>2026-03-30</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-29954" target="_blank" rel="noopener">CVE-2026-29954</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td><details><summary>In KubePlus 4.1.4, the mutating webhook and kubeconfiggenerator components have ...</summary><p>In KubePlus 4.1.4, the mutating webhook and kubeconfiggenerator components have an SSRF vulnerability when processing the chartURL field of ResourceComposition resources. The field is only URL-encoded without validating the target address. More critically, when kubeconfiggenerator uses wget to download charts, the chartURL is directly concatenated into the command, allowing attackers to inject wget&#x27;s `--header` option to achieve arbitrary HTTP header injection.</p></details></td>
+        <td>2026-03-30</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-29909" target="_blank" rel="noopener">CVE-2026-29909</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td><details><summary>MRCMS V3.1.2 contains an unauthenticated directory enumeration vulnerability in ...</summary><p>MRCMS V3.1.2 contains an unauthenticated directory enumeration vulnerability in the file management module. The /admin/file/list.do endpoint lacks authentication controls and proper input validation, allowing remote attackers to enumerate directory contents on the server without any credentials.</p></details></td>
+        <td>2026-03-30</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-27508" target="_blank" rel="noopener">CVE-2026-27508</a></td>
+        <td>5.1</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Smoothwall Express versions prior to 3.1 Update 13 contain a reflected cross-sit...</summary><p>Smoothwall Express versions prior to 3.1 Update 13 contain a reflected cross-site scripting vulnerability in the /redirect.cgi endpoint due to improper sanitation of the url parameter. Attackers can craft malicious URLs with javascript: schemes that execute arbitrary JavaScript in victims&#x27; browsers when clicked through the unsanitized link.</p></details></td>
+        <td>2026-03-30</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-26352" target="_blank" rel="noopener">CVE-2026-26352</a></td>
+        <td>5.1</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Smoothwall Express versions prior to 3.1 Update 13 contain a stored cross-site s...</summary><p>Smoothwall Express versions prior to 3.1 Update 13 contain a stored cross-site scripting vulnerability in the /cgi-bin/vpnmain.cgi script due to improper sanitation of the VPN_IP parameter. Authenticated attackers can inject arbitrary JavaScript through VPN configuration settings that executes when the affected page is viewed by other users.</p></details></td>
         <td>2026-03-30</td>
       </tr>
       <tr>
@@ -625,17 +789,6 @@ This issue affects MongoDB Server v8.2 versions prior to 8.2.2, MongoDB Server v
         <td>CWE-74</td>
         <td>&nbsp;</td>
         <td><details><summary>A vulnerability was identified in Totolink A3300R 17.0.0cu.557_b20221024. This a...</summary><p>A vulnerability was identified in Totolink A3300R 17.0.0cu.557_b20221024. This affects the function setLanCfg of the file /cgi-bin/cstecgi.cgi of the component Parameter Handler. The manipulation of the argument lanIp leads to command injection. Remote exploitation of the attack is possible. The exploit is publicly available and might be used.</p></details></td>
-        <td>2026-03-29</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4176" target="_blank" rel="noopener">CVE-2026-4176</a></td>
-        <td>9.8</td>
-        <td><span class="severity critical">CRITICAL</span></td>
-        <td>N/A</td>
-        <td>&nbsp;</td>
-        <td><details><summary>Perl versions from 5.9.4 before 5.40.4-RC1, from 5.41.0 before 5.42.2-RC1, from ...</summary><p>Perl versions from 5.9.4 before 5.40.4-RC1, from 5.41.0 before 5.42.2-RC1, from 5.43.0 before 5.43.9 contain a vulnerable version of Compress::Raw::Zlib.
-
-Compress::Raw::Zlib is included in the Perl package as a dual-life core module, and is vulnerable to CVE-2026-3381 due to a vendored version of zlib which has several vulnerabilities, including CVE-2026-27171. The bundled Compress::Raw::Zlib was updated to version 2.221 in Perl blead commit c75ae9cc164205e1b6d6dbd57bd2c65c8593fe94.</p></details></td>
         <td>2026-03-29</td>
       </tr>
       <tr>
@@ -2377,9 +2530,9 @@ Compress::Raw::Zlib is included in the Perl package as a dual-life core module, 
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-30567" target="_blank" rel="noopener">CVE-2026-30567</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>6.1</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
         <td>&nbsp;</td>
         <td><details><summary>A Reflected Cross-Site Scripting (XSS) vulnerability exists in SourceCodester Sa...</summary><p>A Reflected Cross-Site Scripting (XSS) vulnerability exists in SourceCodester Sales and Inventory System 1.0 in the view_product.php file via the &quot;limit&quot; parameter. The application fails to sanitize the input, allowing remote attackers to inject arbitrary web script or HTML via a crafted URL.</p></details></td>
         <td>2026-03-27</td>
@@ -2530,27 +2683,27 @@ Compress::Raw::Zlib is included in the Perl package as a dual-life core module, 
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-30571" target="_blank" rel="noopener">CVE-2026-30571</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>6.1</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
         <td>&nbsp;</td>
         <td><details><summary>A Reflected Cross-Site Scripting (XSS) vulnerability exists in SourceCodester Sa...</summary><p>A Reflected Cross-Site Scripting (XSS) vulnerability exists in SourceCodester Sales and Inventory System 1.0 in the view_category.php file via the &quot;limit&quot; parameter. The application fails to sanitize the input, allowing remote attackers to inject arbitrary web script or HTML via a crafted URL.</p></details></td>
         <td>2026-03-27</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-30570" target="_blank" rel="noopener">CVE-2026-30570</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>6.1</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
         <td>&nbsp;</td>
         <td><details><summary>A Reflected Cross-Site Scripting (XSS) vulnerability exists in SourceCodester Sa...</summary><p>A Reflected Cross-Site Scripting (XSS) vulnerability exists in SourceCodester Sales and Inventory System 1.0 in the view_sales.php file via the &quot;limit&quot; parameter. The application fails to sanitize the input, allowing remote attackers to inject arbitrary web script or HTML via a crafted URL</p></details></td>
         <td>2026-03-27</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-30569" target="_blank" rel="noopener">CVE-2026-30569</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>6.1</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
         <td>&nbsp;</td>
         <td><details><summary>A Reflected Cross-Site Scripting (XSS) vulnerability exists in SourceCodester Sa...</summary><p>A Reflected Cross-Site Scripting (XSS) vulnerability exists in SourceCodester Sales and Inventory System 1.0. The vulnerability is located in the view_stock_availability.php file via the &quot;limit&quot; parameter. The application fails to sanitize the input, allowing remote attackers to inject arbitrary web script or HTML via a crafted URL.</p></details></td>
         <td>2026-03-27</td>
@@ -2701,9 +2854,9 @@ Compress::Raw::Zlib is included in the Perl package as a dual-life core module, 
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-30527" target="_blank" rel="noopener">CVE-2026-30527</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>5.4</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
         <td>&nbsp;</td>
         <td><details><summary>A Stored Cross-Site Scripting (XSS) vulnerability exists in SourceCodester Onlin...</summary><p>A Stored Cross-Site Scripting (XSS) vulnerability exists in SourceCodester Online Food Ordering System v1.0 in the Category management module within the admin panel. The application fails to properly sanitize user input supplied to the &quot;Category Name&quot; field when creating or updating a category. When an administrator or user visits the Category list page (or any page where this category is rendered), the injected JavaScript executes immediately in their browser.</p></details></td>
         <td>2026-03-27</td>
@@ -17619,18 +17772,6 @@ Compress::Raw::Zlib is included in the Perl package as a dual-life core module, 
         <td>CWE-94</td>
         <td>&nbsp;</td>
         <td><details><summary>SysAK v2.0 and before is vulnerable to command execution via aaa;cat /etc/passwd...</summary><p>SysAK v2.0 and before is vulnerable to command execution via aaa;cat /etc/passwd.</p></details></td>
-        <td>2026-03-20</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4434" target="_blank" rel="noopener">CVE-2026-4434</a></td>
-        <td>8.1</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-295</td>
-        <td>&nbsp;</td>
-        <td><details><summary>Improper certificate validation in the PAM propagation WinRM connections
- allows...</summary><p>Improper certificate validation in the PAM propagation WinRM connections
- allows a network attacker to perform a man-in-the-middle attack via 
-disabled TLS certificate verification.</p></details></td>
         <td>2026-03-20</td>
       </tr>
       <tr>
@@ -48769,7 +48910,7 @@ disabled TLS certificate verification.</p></details></td>
       </div>
     </section>
     <section>
-      <h2>Previous Month — February 2026 <span class="count">(4153)</span></h2>
+      <h2>Previous Month — February 2026 <span class="count">(4152)</span></h2>
       <div class="table-wrapper">
         <table>
           <thead>
@@ -52373,31 +52514,6 @@ disabled TLS certificate verification.</p></details></td>
         <td>CWE-89</td>
         <td>&nbsp;</td>
         <td><details><summary>OpenSIPS versions 3.1 before 3.6.4 containing the auth_jwt module (prior to comm...</summary><p>OpenSIPS versions 3.1 before 3.6.4 containing the auth_jwt module (prior to commit 3822d33) contain a SQL injection vulnerability in the jwt_db_authorize() function in modules/auth_jwt/authorize.c when db_mode is enabled and a SQL database backend is used. The function extracts the tag claim from a JWT without prior signature verification and incorporates the unescaped value directly into a SQL query. An attacker can supply a crafted JWT with a malicious tag claim to manipulate the query result and bypass JWT authentication, allowing impersonation of arbitrary identities.</p></details></td>
-        <td>2026-02-25</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-21902" target="_blank" rel="noopener">CVE-2026-21902</a></td>
-        <td>9.3</td>
-        <td><span class="severity critical">CRITICAL</span></td>
-        <td>CWE-732</td>
-        <td>&nbsp;</td>
-        <td><details><summary>An Incorrect Permission Assignment for Critical Resource vulnerability in the On...</summary><p>An Incorrect Permission Assignment for Critical Resource vulnerability in the On-Box Anomaly detection framework of Juniper Networks Junos OS Evolved on PTX Series allows an unauthenticated, network-based attacker to execute code as root.
-
-The On-Box Anomaly detection framework should only be reachable by other internal processes over the internal routing instance, but not over an externally exposed port. With the ability to access and manipulate the service to execute code as root a remote attacker can take complete control of the device.
-Please note that this service is enabled by default as no specific configuration is required.
-
-This issue affects Junos OS Evolved on PTX Series:
-
-
-
-  *  25.4 versions before 25.4R1-S1-EVO, 25.4R2-EVO.
-
-
-
-
-This issue does not affect Junos OS Evolved versions before 25.4R1-EVO.
-
-This issue does not affect Junos OS.</p></details></td>
         <td>2026-02-25</td>
       </tr>
       <tr>
