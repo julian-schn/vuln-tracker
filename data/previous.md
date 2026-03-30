@@ -1,6 +1,6 @@
 # CVEs — February 2026
 
-_4152 vulnerabilities_
+_4153 vulnerabilities_
 
 | CVE ID | Score | Severity | CWE | KEV | Published | Description |
 |--------|-------|----------|-----|-----|-----------|-------------|
@@ -403,6 +403,7 @@ _4152 vulnerabilities_
 | [CVE-2026-27794](https://nvd.nist.gov/vuln/detail/CVE-2026-27794) | 6.6 | MEDIUM | CWE-502 | No | 2026-02-25 | LangGraph Checkpoint defines the base interface for LangGraph checkpointers. Prior to version 4.0.0, a Remote Code Execu... |
 | [CVE-2026-27739](https://nvd.nist.gov/vuln/detail/CVE-2026-27739) | 9.2 | CRITICAL | CWE-918 | No | 2026-02-25 | The Angular SSR is a server-rise rendering tool for Angular applications. Versions prior to 21.2.0-rc.1, 21.1.5, 20.3.17... |
 | [CVE-2026-25554](https://nvd.nist.gov/vuln/detail/CVE-2026-25554) | 8.3 | HIGH | CWE-89 | No | 2026-02-25 | OpenSIPS versions 3.1 before 3.6.4 containing the auth_jwt module (prior to commit 3822d33) contain a SQL injection vuln... |
+| [CVE-2026-21902](https://nvd.nist.gov/vuln/detail/CVE-2026-21902) | 9.3 | CRITICAL | CWE-732 | No | 2026-02-25 | An Incorrect Permission Assignment for Critical Resource vulnerability in the On-Box Anomaly detection framework of Juni... |
 | [CVE-2026-3193](https://nvd.nist.gov/vuln/detail/CVE-2026-3193) | 2.3 | LOW | CWE-352 | No | 2026-02-25 | A vulnerability was detected in Chia Blockchain 2.1.0. Impacted is an unknown function of the file /send_transaction. Th... |
 | [CVE-2026-3192](https://nvd.nist.gov/vuln/detail/CVE-2026-3192) | 6.3 | MEDIUM | CWE-287 | No | 2026-02-25 | A security vulnerability has been detected in Chia Blockchain 2.1.0. This issue affects the function _authenticate of th... |
 | [CVE-2026-3189](https://nvd.nist.gov/vuln/detail/CVE-2026-3189) | 2.3 | LOW | CWE-918 | No | 2026-02-25 | A weakness has been identified in feiyuchuixue sz-boot-parent up to 1.3.2-beta. This vulnerability affects unknown code... |
