@@ -1,15 +1,15 @@
 # CVEs — March 2026
 
-_5367 vulnerabilities_
+_5365 vulnerabilities_
 
 | CVE ID | Score | Severity | CWE | KEV | Published | Description |
 |--------|-------|----------|-----|-----|-----------|-------------|
+| [CVE-2026-5128](https://nvd.nist.gov/vuln/detail/CVE-2026-5128) | 10.0 | CRITICAL | CWE-200 | No | 2026-03-30 | A sensitive information exposure vulnerability exists in ArthurFiorette steam-trader 2.1.1. An unauthenticated attacker... |
 | [CVE-2026-5121](https://nvd.nist.gov/vuln/detail/CVE-2026-5121) | 0.0 | NONE | N/A | No | 2026-03-30 | A flaw was found in libarchive. On 32-bit systems, an integer overflow vulnerability exists in the zisofs block pointer... |
 | [CVE-2026-4416](https://nvd.nist.gov/vuln/detail/CVE-2026-4416) | 8.5 | HIGH | CWE-502 | No | 2026-03-30 | The Performance Library component of Gigabyte Control Center has an Insecure Deserialization vulnerability. Authenticate... |
 | [CVE-2026-4415](https://nvd.nist.gov/vuln/detail/CVE-2026-4415) | 9.2 | CRITICAL | CWE-23 | No | 2026-03-30 | Gigabyte Control Center developed by GIGABYTE has an Arbitrary File Write vulnerability. When the pairing feature is ena... |
 | [CVE-2026-3945](https://nvd.nist.gov/vuln/detail/CVE-2026-3945) | 8.7 | HIGH | CWE-190 | No | 2026-03-30 | An integer overflow vulnerability in the HTTP chunked transfer encoding parser in tinyproxy up to and including version... |
 | [CVE-2026-2328](https://nvd.nist.gov/vuln/detail/CVE-2026-2328) | 7.5 | HIGH | CWE-790 | No | 2026-03-30 | An unauthenticated remote attacker can exploit insufficient input validation to access backend components beyond their i... |
-| [CVE-2026-25704](https://nvd.nist.gov/vuln/detail/CVE-2026-25704) | 5.8 | MEDIUM | CWE-271 | No | 2026-03-30 | A Privilege Dropping / Lowering Errors/Time-of-check Time-of-use (TOCTOU) Race Condition vulnerability in  cosmic-greete... |
 | [CVE-2025-3716](https://nvd.nist.gov/vuln/detail/CVE-2025-3716) | 5.3 | MEDIUM | CWE-204 | No | 2026-03-30 | User enumeration in ESET Protect (on-prem) via Response Timing. |
 | [CVE-2025-15379](https://nvd.nist.gov/vuln/detail/CVE-2025-15379) | 10.0 | CRITICAL | CWE-77 | No | 2026-03-30 | A command injection vulnerability exists in MLflow's model serving container initialization code, specifically in the `_... |
 | [CVE-2026-5119](https://nvd.nist.gov/vuln/detail/CVE-2026-5119) | 5.9 | MEDIUM | CWE-319 | No | 2026-03-30 | A flaw was found in libsoup. When establishing HTTPS tunnels through a configured HTTP proxy, sensitive session cookies... |
@@ -23,7 +23,6 @@ _5367 vulnerabilities_
 | [CVE-2026-5102](https://nvd.nist.gov/vuln/detail/CVE-2026-5102) | 5.3 | MEDIUM | CWE-74 | No | 2026-03-30 | A security flaw has been discovered in Totolink A3300R 17.0.0cu.557_b20221024. This vulnerability affects the function s... |
 | [CVE-2026-2370](https://nvd.nist.gov/vuln/detail/CVE-2026-2370) | 8.1 | HIGH | CWE-233 | No | 2026-03-30 | GitLab has remediated an issue in GitLab CE/EE affecting all versions from 14.3 before 18.8.7, 18.9 before 18.9.3, and 1... |
 | [CVE-2026-5101](https://nvd.nist.gov/vuln/detail/CVE-2026-5101) | 5.3 | MEDIUM | CWE-74 | No | 2026-03-29 | A vulnerability was identified in Totolink A3300R 17.0.0cu.557_b20221024. This affects the function setLanCfg of the fil... |
-| [CVE-2026-4176](https://nvd.nist.gov/vuln/detail/CVE-2026-4176) | 0.0 | NONE | N/A | No | 2026-03-29 | Perl versions from 5.9.4 before 5.40.4-RC1, from 5.41.0 before 5.42.2-RC1, from 5.43.0 before 5.43.9 contain a vulnerabl... |
 | [CVE-2026-4946](https://nvd.nist.gov/vuln/detail/CVE-2026-4946) | 8.8 | HIGH | CWE-78 | No | 2026-03-29 | Ghidra versions prior to 12.0.3 improperly process annotation directives embedded in automatically extracted binary data... |
 | [CVE-2026-0562](https://nvd.nist.gov/vuln/detail/CVE-2026-0562) | 8.3 | HIGH | CWE-863 | No | 2026-03-29 | A critical security vulnerability in parisneo/lollms versions up to 2.2.0 allows any authenticated user to accept or rej... |
 | [CVE-2026-0560](https://nvd.nist.gov/vuln/detail/CVE-2026-0560) | 7.5 | HIGH | CWE-918 | No | 2026-03-29 | A Server-Side Request Forgery (SSRF) vulnerability exists in parisneo/lollms versions prior to 2.2.0, specifically in th... |
@@ -1004,7 +1003,6 @@ _5367 vulnerabilities_
 | [CVE-2024-51348](https://nvd.nist.gov/vuln/detail/CVE-2024-51348) | 8.8 | HIGH | CWE-121 | No | 2026-03-25 | A stack-based buffer overflow vulnerability in the P2P API service in BS Producten Petcam with firmware 33.1.0.0818 allo... |
 | [CVE-2024-51347](https://nvd.nist.gov/vuln/detail/CVE-2024-51347) | 7.2 | HIGH | CWE-120 | No | 2026-03-25 | A buffer overflow vulnerability in the dgiot binary in LSC Smart Indoor IP Camera V7.6.32. The flaw exists in the handli... |
 | [CVE-2024-51346](https://nvd.nist.gov/vuln/detail/CVE-2024-51346) | 7.7 | HIGH | CWE-330 | No | 2026-03-25 | An issue in Eufy Homebase 2 version 3.3.4.1h allows a local attacker to obtain sensitive information via the cryptograph... |
-| [CVE-2026-31788](https://nvd.nist.gov/vuln/detail/CVE-2026-31788) | 0.0 | NONE | N/A | No | 2026-03-25 | In the Linux kernel, the following vulnerability has been resolved:  xen/privcmd: restrict usage in unprivileged domU  T... |
 | [CVE-2026-32326](https://nvd.nist.gov/vuln/detail/CVE-2026-32326) | 6.9 | MEDIUM | CWE-306 | No | 2026-03-25 | SHARP routers do not perform authentication for some web APIs. The device information may be retrieved without authentic... |
 | [CVE-2026-33253](https://nvd.nist.gov/vuln/detail/CVE-2026-33253) | 8.4 | HIGH | CWE-428 | No | 2026-03-25 | SANUPS SOFTWARE provided by SANYO DENKI CO., LTD. registers Windows services with unquoted file paths. A user with the w... |
 | [CVE-2026-2343](https://nvd.nist.gov/vuln/detail/CVE-2026-2343) | 5.3 | MEDIUM | N/A | No | 2026-03-25 | The PeproDev Ultimate Invoice WordPress plugin through 2.2.5 has a bulk download invoices action that generates ZIP arch... |

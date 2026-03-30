@@ -11,7 +11,7 @@
     <header>
       <h1>vuln-tracker</h1>
       <p class="subtitle">CVEs from the National Vulnerability Database — current and previous month</p>
-      <p class="last-updated">Last updated: 2026-03-30 09:20 UTC</p>
+      <p class="last-updated">Last updated: 2026-03-30 11:09 UTC</p>
     </header>
     <nav>
       <a href="top50.html">&#9733; Top 50</a>
@@ -25,7 +25,7 @@
     </nav>
     <main>
     <section>
-      <h2>Current Month — March 2026 <span class="count">(5367)</span></h2>
+      <h2>Current Month — March 2026 <span class="count">(5365)</span></h2>
       <div class="table-wrapper">
         <table>
           <thead>
@@ -40,6 +40,15 @@
             </tr>
           </thead>
           <tbody>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5128" target="_blank" rel="noopener">CVE-2026-5128</a></td>
+        <td>10.0</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-200</td>
+        <td>&nbsp;</td>
+        <td><details><summary>A sensitive information exposure vulnerability exists in ArthurFiorette steam-tr...</summary><p>A sensitive information exposure vulnerability exists in ArthurFiorette steam-trader 2.1.1. An unauthenticated attacker can send a request to the /users API endpoint to retrieve highly sensitive Steam account data, including the account username, password, identity secret, and shared secret. In addition, application logs expose authentication artifacts such as access tokens, refresh tokens, and session identifiers. This information allows an attacker to generate valid Steam Guard (2FA) codes, hijack authenticated sessions, and obtain full control over the affected Steam account, including unauthorized access to inventory and trading functionality. No fix is available because the repository is archived and no longer maintained.</p></details></td>
+        <td>2026-03-30</td>
+      </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5121" target="_blank" rel="noopener">CVE-2026-5121</a></td>
         <td>0.0</td>
@@ -83,20 +92,6 @@
         <td>CWE-790</td>
         <td>&nbsp;</td>
         <td><details><summary>An unauthenticated remote attacker can exploit insufficient input validation to ...</summary><p>An unauthenticated remote attacker can exploit insufficient input validation to access backend components beyond their intended scope via path traversal, resulting in exposure of sensitive information.</p></details></td>
-        <td>2026-03-30</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-25704" target="_blank" rel="noopener">CVE-2026-25704</a></td>
-        <td>5.8</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-271</td>
-        <td>&nbsp;</td>
-        <td><details><summary>A Privilege Dropping / Lowering Errors/Time-of-check Time-of-use (TOCTOU) Race C...</summary><p>A Privilege Dropping / Lowering Errors/Time-of-check Time-of-use (TOCTOU) Race Condition vulnerability in  cosmic-greeter can allow an attacker to regain privileges that should have been dropped and abuse them in the racy checking logic.
-
-
-
-
-This issue affects cosmic-greeter before https://github.Com/pop-os/cosmic-greeter/pull/426.</p></details></td>
         <td>2026-03-30</td>
       </tr>
       <tr>
@@ -214,17 +209,6 @@ This issue affects cosmic-greeter before https://github.Com/pop-os/cosmic-greete
         <td>CWE-74</td>
         <td>&nbsp;</td>
         <td><details><summary>A vulnerability was identified in Totolink A3300R 17.0.0cu.557_b20221024. This a...</summary><p>A vulnerability was identified in Totolink A3300R 17.0.0cu.557_b20221024. This affects the function setLanCfg of the file /cgi-bin/cstecgi.cgi of the component Parameter Handler. The manipulation of the argument lanIp leads to command injection. Remote exploitation of the attack is possible. The exploit is publicly available and might be used.</p></details></td>
-        <td>2026-03-29</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4176" target="_blank" rel="noopener">CVE-2026-4176</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
-        <td>&nbsp;</td>
-        <td><details><summary>Perl versions from 5.9.4 before 5.40.4-RC1, from 5.41.0 before 5.42.2-RC1, from ...</summary><p>Perl versions from 5.9.4 before 5.40.4-RC1, from 5.41.0 before 5.42.2-RC1, from 5.43.0 before 5.43.9 contain a vulnerable version of Compress::Raw::Zlib.
-
-Compress::Raw::Zlib is included in the Perl package as a dual-life core module, and is vulnerable to CVE-2026-3381 due to a vendored version of zlib which has several vulnerabilities, including CVE-2026-27171. The bundled Compress::Raw::Zlib was updated to version 2.221 in Perl blead commit c75ae9cc164205e1b6d6dbd57bd2c65c8593fe94.</p></details></td>
         <td>2026-03-29</td>
       </tr>
       <tr>
@@ -9045,49 +9029,6 @@ Compress::Raw::Zlib is included in the Perl package as a dual-life core module, 
         <td>CWE-330</td>
         <td>&nbsp;</td>
         <td><details><summary>An issue in Eufy Homebase 2 version 3.3.4.1h allows a local attacker to obtain s...</summary><p>An issue in Eufy Homebase 2 version 3.3.4.1h allows a local attacker to obtain sensitive information via the cryptographic scheme.</p></details></td>
-        <td>2026-03-25</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-31788" target="_blank" rel="noopener">CVE-2026-31788</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
-        <td>&nbsp;</td>
-        <td><details><summary>In the Linux kernel, the following vulnerability has been resolved:
-
-xen/privcmd...</summary><p>In the Linux kernel, the following vulnerability has been resolved:
-
-xen/privcmd: restrict usage in unprivileged domU
-
-The Xen privcmd driver allows to issue arbitrary hypercalls from
-user space processes. This is normally no problem, as access is
-usually limited to root and the hypervisor will deny any hypercalls
-affecting other domains.
-
-In case the guest is booted using secure boot, however, the privcmd
-driver would be enabling a root user process to modify e.g. kernel
-memory contents, thus breaking the secure boot feature.
-
-The only known case where an unprivileged domU is really needing to
-use the privcmd driver is the case when it is acting as the device
-model for another guest. In this case all hypercalls issued via the
-privcmd driver will target that other guest.
-
-Fortunately the privcmd driver can already be locked down to allow
-only hypercalls targeting a specific domain, but this mode can be
-activated from user land only today.
-
-The target domain can be obtained from Xenstore, so when not running
-in dom0 restrict the privcmd driver to that target domain from the
-beginning, resolving the potential problem of breaking secure boot.
-
-This is XSA-482
-
----
-V2:
-- defer reading from Xenstore if Xenstore isn&#x27;t ready yet (Jan Beulich)
-- wait in open() if target domain isn&#x27;t known yet
-- issue message in case no target domain found (Jan Beulich)</p></details></td>
         <td>2026-03-25</td>
       </tr>
       <tr>
@@ -48389,7 +48330,7 @@ V2:
       </div>
     </section>
     <section>
-      <h2>Previous Month — February 2026 <span class="count">(4153)</span></h2>
+      <h2>Previous Month — February 2026 <span class="count">(4152)</span></h2>
       <div class="table-wrapper">
         <table>
           <thead>
@@ -62469,17 +62410,6 @@ V2:
         <td>CWE-502</td>
         <td>&nbsp;</td>
         <td><details><summary>Deserialization of Untrusted Data vulnerability in Brainstorm Force CartFlows ca...</summary><p>Deserialization of Untrusted Data vulnerability in Brainstorm Force CartFlows cartflows allows Object Injection.This issue affects CartFlows: from n/a through &lt;= 2.1.19.</p></details></td>
-        <td>2026-02-19</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-25315" target="_blank" rel="noopener">CVE-2026-25315</a></td>
-        <td>5.3</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-358</td>
-        <td>&nbsp;</td>
-        <td><details><summary>Improperly implemented security check vulnerability in KAGG hCaptcha for WP allo...</summary><p>Improperly implemented security check vulnerability in KAGG hCaptcha for WP allows CAPTCHA Functionality Bypass.This issue affects hCaptcha for WP: from n/a through 4.21.1.
-
-The vulnerability is limited to the CAPTCHA mechanism intended to protect a publicly accessible form from automated abuse. It does not impact WordPress-level authentication or authorization controls.</p></details></td>
         <td>2026-02-19</td>
       </tr>
       <tr>

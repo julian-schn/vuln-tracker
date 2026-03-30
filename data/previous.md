@@ -1,6 +1,6 @@
 # CVEs — February 2026
 
-_4153 vulnerabilities_
+_4152 vulnerabilities_
 
 | CVE ID | Score | Severity | CWE | KEV | Published | Description |
 |--------|-------|----------|-----|-----|-----------|-------------|
@@ -1567,7 +1567,6 @@ _4153 vulnerabilities_
 | [CVE-2026-25319](https://nvd.nist.gov/vuln/detail/CVE-2026-25319) | 4.3 | MEDIUM | CWE-352 | No | 2026-02-19 | Cross-Site Request Forgery (CSRF) vulnerability in wpzita Zita Elementor Site Library zita-site-library allows Cross Sit... |
 | [CVE-2026-25318](https://nvd.nist.gov/vuln/detail/CVE-2026-25318) | 4.3 | MEDIUM | CWE-862 | No | 2026-02-19 | Missing Authorization vulnerability in Wisernotify team WiserReview Product Reviews for WooCommerce wiser-review allows... |
 | [CVE-2026-25316](https://nvd.nist.gov/vuln/detail/CVE-2026-25316) | 7.2 | HIGH | CWE-502 | No | 2026-02-19 | Deserialization of Untrusted Data vulnerability in Brainstorm Force CartFlows cartflows allows Object Injection.This iss... |
-| [CVE-2026-25315](https://nvd.nist.gov/vuln/detail/CVE-2026-25315) | 5.3 | MEDIUM | CWE-358 | No | 2026-02-19 | Improperly implemented security check vulnerability in KAGG hCaptcha for WP allows CAPTCHA Functionality Bypass.This iss... |
 | [CVE-2026-25314](https://nvd.nist.gov/vuln/detail/CVE-2026-25314) | 4.3 | MEDIUM | CWE-862 | No | 2026-02-19 | Missing Authorization vulnerability in WP Messiah TOP Table Of Contents top-table-of-contents allows Exploiting Incorrec... |
 | [CVE-2026-25313](https://nvd.nist.gov/vuln/detail/CVE-2026-25313) | 4.3 | MEDIUM | CWE-862 | No | 2026-02-19 | Missing Authorization vulnerability in Shahjahan Jewel FluentForm fluentform allows Exploiting Incorrectly Configured Ac... |
 | [CVE-2026-25311](https://nvd.nist.gov/vuln/detail/CVE-2026-25311) | 5.4 | MEDIUM | CWE-862 | No | 2026-02-19 | Missing Authorization vulnerability in 10up Autoshare for Twitter autoshare-for-twitter allows Exploiting Incorrectly Co... |
