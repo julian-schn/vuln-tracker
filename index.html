@@ -11,7 +11,7 @@
     <header>
       <h1>vuln-tracker</h1>
       <p class="subtitle">CVEs from the National Vulnerability Database — current and previous month</p>
-      <p class="last-updated">Last updated: 2026-03-30 22:43 UTC</p>
+      <p class="last-updated">Last updated: 2026-03-31 02:52 UTC</p>
     </header>
     <nav>
       <a href="top50.html">&#9733; Top 50</a>
@@ -25,7 +25,7 @@
     </nav>
     <main>
     <section>
-      <h2>Current Month — March 2026 <span class="count">(5472)</span></h2>
+      <h2>Current Month — March 2026 <span class="count">(5491)</span></h2>
       <div class="table-wrapper">
         <table>
           <thead>
@@ -40,6 +40,179 @@
             </tr>
           </thead>
           <tbody>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5176" target="_blank" rel="noopener">CVE-2026-5176</a></td>
+        <td>6.9</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-74</td>
+        <td>&nbsp;</td>
+        <td><details><summary>A security flaw has been discovered in Totolink A3300R 17.0.0cu.557_b20221024. A...</summary><p>A security flaw has been discovered in Totolink A3300R 17.0.0cu.557_b20221024. Affected is the function setSyslogCfg of the file /cgi-bin/cstecgi.cgi. Performing a manipulation of the argument provided results in command injection. The attack may be initiated remotely. The exploit has been released to the public and may be used for attacks.</p></details></td>
+        <td>2026-03-31</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4020" target="_blank" rel="noopener">CVE-2026-4020</a></td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-200</td>
+        <td>&nbsp;</td>
+        <td><details><summary>The Gravity SMTP plugin for WordPress is vulnerable to Sensitive Information Exp...</summary><p>The Gravity SMTP plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 2.1.4. This is due to a REST API endpoint registered at /wp-json/gravitysmtp/v1/tests/mock-data with a permission_callback that unconditionally returns true, allowing any unauthenticated visitor to access it. When the ?page=gravitysmtp-settings query parameter is appended, the plugin&#x27;s register_connector_data() method populates internal connector data, causing the endpoint to return approximately 365 KB of JSON containing the full System Report. This makes it possible for unauthenticated attackers to retrieve detailed system configuration data including PHP version, loaded extensions, web server version, document root path, database server type and version, WordPress version, all active plugins with versions, active theme, WordPress configuration details, database table names, and any API keys/tokens configured in the plugin.</p></details></td>
+        <td>2026-03-31</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-3300" target="_blank" rel="noopener">CVE-2026-3300</a></td>
+        <td>9.8</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-94</td>
+        <td>&nbsp;</td>
+        <td><details><summary>The Everest Forms Pro plugin for WordPress is vulnerable to Remote Code Executio...</summary><p>The Everest Forms Pro plugin for WordPress is vulnerable to Remote Code Execution via PHP Code Injection in all versions up to, and including, 1.9.12. This is due to the Calculation Addon&#x27;s process_filter() function concatenating user-submitted form field values into a PHP code string without proper escaping before passing it to eval(). The sanitize_text_field() function applied to input does not escape single quotes or other PHP code context characters. This makes it possible for unauthenticated attackers to inject and execute arbitrary PHP code on the server by submitting a crafted value in any string-type form field (text, email, URL, select, radio) when a form uses the &quot;Complex Calculation&quot; feature.</p></details></td>
+        <td>2026-03-31</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5115" target="_blank" rel="noopener">CVE-2026-5115</a></td>
+        <td>3.6</td>
+        <td><span class="severity low">LOW</span></td>
+        <td>CWE-319</td>
+        <td>&nbsp;</td>
+        <td><details><summary>The PaperCut NG/MF (specifically, the embedded application for Konica Minolta de...</summary><p>The PaperCut NG/MF (specifically, the embedded application for Konica Minolta devices) is vulnerable to session hijacking. The PaperCut NG/MF Embedded application is a software interface that runs directly on the touch screen of a multi-function device.
+
+It was internally discovered that the communication channel between the embedded application and the server was insecure, which could leak data including sensitive information that may be used to mount an  attack on the device. Such an attack could potentially be used to steal data or to perform a phishing attack on the end user.</p></details></td>
+        <td>2026-03-31</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4794" target="_blank" rel="noopener">CVE-2026-4794</a></td>
+        <td>2.1</td>
+        <td><span class="severity low">LOW</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Multiple cross-site scripting (XSS) vulnerabilities in PaperCut NG/MF before 25....</summary><p>Multiple cross-site scripting (XSS) vulnerabilities in PaperCut NG/MF before 25.0.10 allow authenticated administrator users to inject arbitrary web script or HTML code via different UI fields. This could be used to compromise other admininistrator&#x27;s sessions or perform unauthorized actions via the administrator&#x27;s authenticated context (e.g. requires an active login session).</p></details></td>
+        <td>2026-03-31</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32734" target="_blank" rel="noopener">CVE-2026-32734</a></td>
+        <td>7.1</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td><details><summary>baserCMS is a website development framework. Prior to version 5.2.3, baserCMS ha...</summary><p>baserCMS is a website development framework. Prior to version 5.2.3, baserCMS has DOM-based cross-site scripting in tag creation. This issue has been patched in version 5.2.3.</p></details></td>
+        <td>2026-03-31</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-30940" target="_blank" rel="noopener">CVE-2026-30940</a></td>
+        <td>7.2</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-22</td>
+        <td>&nbsp;</td>
+        <td><details><summary>baserCMS is a website development framework. Prior to version 5.2.3, a path trav...</summary><p>baserCMS is a website development framework. Prior to version 5.2.3, a path traversal vulnerability exists in the theme file management API (/baser/api/admin/bc-theme-file/theme_files/add.json) that allows arbitrary file write. An authenticated administrator can include ../ sequences in the path parameter to create a PHP file in an arbitrary directory outside the theme directory, which may result in remote code execution (RCE). This issue has been patched in version 5.2.3.</p></details></td>
+        <td>2026-03-31</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-30880" target="_blank" rel="noopener">CVE-2026-30880</a></td>
+        <td>9.2</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-78</td>
+        <td>&nbsp;</td>
+        <td><details><summary>baserCMS is a website development framework. Prior to version 5.2.3, baserCMS ha...</summary><p>baserCMS is a website development framework. Prior to version 5.2.3, baserCMS has an OS command injection vulnerability in the installer. This issue has been patched in version 5.2.3.</p></details></td>
+        <td>2026-03-31</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-30879" target="_blank" rel="noopener">CVE-2026-30879</a></td>
+        <td>6.9</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td><details><summary>baserCMS is a website development framework. Prior to version 5.2.3, baserCMS ha...</summary><p>baserCMS is a website development framework. Prior to version 5.2.3, baserCMS has a cross-site scripting vulnerability in blog posts. This issue has been patched in version 5.2.3.</p></details></td>
+        <td>2026-03-31</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-30878" target="_blank" rel="noopener">CVE-2026-30878</a></td>
+        <td>5.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-285</td>
+        <td>&nbsp;</td>
+        <td><details><summary>baserCMS is a website development framework. Prior to version 5.2.3, a public ma...</summary><p>baserCMS is a website development framework. Prior to version 5.2.3, a public mail submission API allows unauthenticated users to submit mail form entries even when the corresponding form is not accepting submissions. This bypasses administrative controls intended to stop form intake and enables spam or abuse via the API. This issue has been patched in version 5.2.3.</p></details></td>
+        <td>2026-03-31</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-30877" target="_blank" rel="noopener">CVE-2026-30877</a></td>
+        <td>9.1</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-78</td>
+        <td>&nbsp;</td>
+        <td><details><summary>baserCMS is a website development framework. Prior to version 5.2.3, there is an...</summary><p>baserCMS is a website development framework. Prior to version 5.2.3, there is an OS command injection vulnerability in the update functionality. Due to this issue, an authenticated user with administrator privileges in baserCMS can execute arbitrary OS commands on the server with the privileges of the user account running baserCMS. This issue has been patched in version 5.2.3.</p></details></td>
+        <td>2026-03-31</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-27697" target="_blank" rel="noopener">CVE-2026-27697</a></td>
+        <td>6.9</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-89</td>
+        <td>&nbsp;</td>
+        <td><details><summary>baserCMS is a website development framework. Prior to version 5.2.3, baserCMS ha...</summary><p>baserCMS is a website development framework. Prior to version 5.2.3, baserCMS has a SQL injection vulnerability in blog posts. This issue has been patched in version 5.2.3.</p></details></td>
+        <td>2026-03-31</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-21861" target="_blank" rel="noopener">CVE-2026-21861</a></td>
+        <td>9.1</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-78</td>
+        <td>&nbsp;</td>
+        <td><details><summary>baserCMS is a website development framework. Prior to version 5.2.3, baserCMS co...</summary><p>baserCMS is a website development framework. Prior to version 5.2.3, baserCMS contains an OS command injection vulnerability in the core update functionality. An authenticated administrator can execute arbitrary OS commands on the server due to improper handling of user-controlled input that is directly passed to exec() without sufficient validation or escaping. This issue has been patched in version 5.2.3.</p></details></td>
+        <td>2026-03-31</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-32957" target="_blank" rel="noopener">CVE-2025-32957</a></td>
+        <td>8.7</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-434</td>
+        <td>&nbsp;</td>
+        <td><details><summary>baserCMS is a website development framework. Prior to version 5.2.3, the applica...</summary><p>baserCMS is a website development framework. Prior to version 5.2.3, the application&#x27;s restore function allows users to upload a .zip file, which is then automatically extracted. A PHP file inside the archive is included using require_once without validating or restricting the filename. An attacker can craft a malicious PHP file within the zip and achieve arbitrary code execution when it is included. This issue has been patched in version 5.2.3.</p></details></td>
+        <td>2026-03-31</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5157" target="_blank" rel="noopener">CVE-2026-5157</a></td>
+        <td>5.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td><details><summary>A vulnerability was identified in code-projects Online Food Ordering System 1.0....</summary><p>A vulnerability was identified in code-projects Online Food Ordering System 1.0. Affected is an unknown function of the file /form/order.php of the component Order Module. Such manipulation of the argument cust_id leads to cross site scripting. The attack may be performed from remote. The exploit is publicly available and might be used.</p></details></td>
+        <td>2026-03-31</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5156" target="_blank" rel="noopener">CVE-2026-5156</a></td>
+        <td>7.4</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-119</td>
+        <td>&nbsp;</td>
+        <td><details><summary>A vulnerability was determined in Tenda CH22 1.0.0.1. This impacts the function ...</summary><p>A vulnerability was determined in Tenda CH22 1.0.0.1. This impacts the function formQuickIndex of the file /goform/QuickIndex of the component Parameter Handler. This manipulation of the argument mit_linktype causes stack-based buffer overflow. The attack is possible to be carried out remotely. The exploit has been publicly disclosed and may be utilized.</p></details></td>
+        <td>2026-03-31</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5155" target="_blank" rel="noopener">CVE-2026-5155</a></td>
+        <td>7.4</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-119</td>
+        <td>&nbsp;</td>
+        <td><details><summary>A vulnerability was found in Tenda CH22 1.0.0.1. This affects the function fromA...</summary><p>A vulnerability was found in Tenda CH22 1.0.0.1. This affects the function fromAdvSetWan of the file /goform/AdvSetWan of the component Parameter Handler. The manipulation of the argument wanmode results in stack-based buffer overflow. The attack can be executed remotely. The exploit has been made public and could be used.</p></details></td>
+        <td>2026-03-30</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5154" target="_blank" rel="noopener">CVE-2026-5154</a></td>
+        <td>7.4</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-119</td>
+        <td>&nbsp;</td>
+        <td><details><summary>A vulnerability has been found in Tenda CH22 1.0.0.1/1.If. The impacted element ...</summary><p>A vulnerability has been found in Tenda CH22 1.0.0.1/1.If. The impacted element is the function fromSetCfm of the file /goform/setcfm of the component Parameter Handler. The manipulation of the argument funcname leads to stack-based buffer overflow. Remote exploitation of the attack is possible. The exploit has been disclosed to the public and may be used.</p></details></td>
+        <td>2026-03-30</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5130" target="_blank" rel="noopener">CVE-2026-5130</a></td>
+        <td>8.8</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-565</td>
+        <td>&nbsp;</td>
+        <td><details><summary>The Debugger &amp; Troubleshooter plugin for WordPress was vulnerable to Unauthentic...</summary><p>The Debugger &amp; Troubleshooter plugin for WordPress was vulnerable to Unauthenticated Privilege Escalation in versions up to and including 1.3.2. This was due to the plugin accepting the wp_debug_troubleshoot_simulate_user cookie value directly as a user ID without any cryptographic validation or authorization checks. The cookie value was used to override the determine_current_user filter, which allowed unauthenticated attackers to impersonate any user by simply setting the cookie to their target user ID. This made it possible for unauthenticated attackers to gain administrator-level access and perform any privileged actions including creating new administrator accounts, modifying site content, installing plugins, or taking complete control of the WordPress site. The vulnerability was fixed in version 1.4.0 by implementing a cryptographic token-based validation system where only administrators can initiate user simulation, and the cookie contains a random 64-character token that must be validated against database-stored mappings rather than accepting arbitrary user IDs.</p></details></td>
+        <td>2026-03-30</td>
+      </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5153" target="_blank" rel="noopener">CVE-2026-5153</a></td>
         <td>5.3</td>
@@ -25914,7 +26087,7 @@ Users are recommended to upgrade to version 1.12.0, which fixes the issue.</p></
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-21005" target="_blank" rel="noopener">CVE-2026-21005</a></td>
         <td>7.1</td>
         <td><span class="severity high">HIGH</span></td>
-        <td>N/A</td>
+        <td>CWE-22</td>
         <td>&nbsp;</td>
         <td><details><summary>Path traversal in Smart Switch prior to version 3.7.69.15 allows adjacent attack...</summary><p>Path traversal in Smart Switch prior to version 3.7.69.15 allows adjacent attackers to overwrite arbitrary files with Smart Switch privilege.</p></details></td>
         <td>2026-03-16</td>
@@ -25923,7 +26096,7 @@ Users are recommended to upgrade to version 1.12.0, which fixes the issue.</p></
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-21004" target="_blank" rel="noopener">CVE-2026-21004</a></td>
         <td>6.9</td>
         <td><span class="severity medium">MEDIUM</span></td>
-        <td>N/A</td>
+        <td>CWE-287</td>
         <td>&nbsp;</td>
         <td><details><summary>Improper authentication in Smart Switch prior to version 3.7.69.15 allows adjace...</summary><p>Improper authentication in Smart Switch prior to version 3.7.69.15 allows adjacent attackers to trigger a denial of service.</p></details></td>
         <td>2026-03-16</td>
@@ -25959,7 +26132,7 @@ Users are recommended to upgrade to version 1.12.0, which fixes the issue.</p></
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-20999" target="_blank" rel="noopener">CVE-2026-20999</a></td>
         <td>7.1</td>
         <td><span class="severity high">HIGH</span></td>
-        <td>N/A</td>
+        <td>CWE-294</td>
         <td>&nbsp;</td>
         <td><details><summary>Authentication bypass by replay in Smart Switch prior to version 3.7.69.15 allow...</summary><p>Authentication bypass by replay in Smart Switch prior to version 3.7.69.15 allows remote attackers to trigger privileged functions.</p></details></td>
         <td>2026-03-16</td>
@@ -25968,7 +26141,7 @@ Users are recommended to upgrade to version 1.12.0, which fixes the issue.</p></
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-20998" target="_blank" rel="noopener">CVE-2026-20998</a></td>
         <td>7.1</td>
         <td><span class="severity high">HIGH</span></td>
-        <td>N/A</td>
+        <td>NVD-CWE-noinfo</td>
         <td>&nbsp;</td>
         <td><details><summary>Improper authentication in Smart Switch prior to version 3.7.69.15 allows remote...</summary><p>Improper authentication in Smart Switch prior to version 3.7.69.15 allows remote attackers to bypass authentication.</p></details></td>
         <td>2026-03-16</td>
@@ -25977,7 +26150,7 @@ Users are recommended to upgrade to version 1.12.0, which fixes the issue.</p></
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-20997" target="_blank" rel="noopener">CVE-2026-20997</a></td>
         <td>5.3</td>
         <td><span class="severity medium">MEDIUM</span></td>
-        <td>N/A</td>
+        <td>CWE-347</td>
         <td>&nbsp;</td>
         <td><details><summary>Improper verification of cryptographic signature in Smart Switch prior to versio...</summary><p>Improper verification of cryptographic signature in Smart Switch prior to version 3.7.69.15 allows remote attackers to potentially bypass authentication.</p></details></td>
         <td>2026-03-16</td>
@@ -25986,7 +26159,7 @@ Users are recommended to upgrade to version 1.12.0, which fixes the issue.</p></
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-20996" target="_blank" rel="noopener">CVE-2026-20996</a></td>
         <td>7.1</td>
         <td><span class="severity high">HIGH</span></td>
-        <td>N/A</td>
+        <td>CWE-327</td>
         <td>&nbsp;</td>
         <td><details><summary>Use of a broken or risky cryptographic algorithm in Smart Switch prior to versio...</summary><p>Use of a broken or risky cryptographic algorithm in Smart Switch prior to version 3.7.69.15 allows remote attackers to configure a downgraded scheme for authentication.</p></details></td>
         <td>2026-03-16</td>
@@ -25995,7 +26168,7 @@ Users are recommended to upgrade to version 1.12.0, which fixes the issue.</p></
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-20995" target="_blank" rel="noopener">CVE-2026-20995</a></td>
         <td>5.3</td>
         <td><span class="severity medium">MEDIUM</span></td>
-        <td>N/A</td>
+        <td>CWE-306</td>
         <td>&nbsp;</td>
         <td><details><summary>Exposure of sensitive functionality to an unauthorized actor in Smart Switch pri...</summary><p>Exposure of sensitive functionality to an unauthorized actor in Smart Switch prior to version 3.7.69.15 allows remote attackers to set a specific configuration.</p></details></td>
         <td>2026-03-16</td>
@@ -29676,7 +29849,7 @@ Users are recommended to upgrade to version 1.12.0, which fixes the issue.</p></
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-21671" target="_blank" rel="noopener">CVE-2026-21671</a></td>
         <td>9.1</td>
         <td><span class="severity critical">CRITICAL</span></td>
-        <td>N/A</td>
+        <td>CWE-94</td>
         <td>&nbsp;</td>
         <td><details><summary>A vulnerability allowing an authenticated user with the Backup Administrator rol...</summary><p>A vulnerability allowing an authenticated user with the Backup Administrator role to perform remote code execution (RCE) in high availability (HA) deployments of Veeam Backup &amp; Replication.</p></details></td>
         <td>2026-03-12</td>
@@ -29685,7 +29858,7 @@ Users are recommended to upgrade to version 1.12.0, which fixes the issue.</p></
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-21670" target="_blank" rel="noopener">CVE-2026-21670</a></td>
         <td>7.7</td>
         <td><span class="severity high">HIGH</span></td>
-        <td>N/A</td>
+        <td>CWE-522</td>
         <td>&nbsp;</td>
         <td><details><summary>A vulnerability allowing a low-privileged user to extract saved SSH credentials.</summary><p>A vulnerability allowing a low-privileged user to extract saved SSH credentials.</p></details></td>
         <td>2026-03-12</td>
@@ -29694,7 +29867,7 @@ Users are recommended to upgrade to version 1.12.0, which fixes the issue.</p></
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-21669" target="_blank" rel="noopener">CVE-2026-21669</a></td>
         <td>9.9</td>
         <td><span class="severity critical">CRITICAL</span></td>
-        <td>N/A</td>
+        <td>CWE-94</td>
         <td>&nbsp;</td>
         <td><details><summary>A vulnerability allowing an authenticated domain user to perform remote code exe...</summary><p>A vulnerability allowing an authenticated domain user to perform remote code execution (RCE) on the Backup Server.</p></details></td>
         <td>2026-03-12</td>
@@ -29703,7 +29876,7 @@ Users are recommended to upgrade to version 1.12.0, which fixes the issue.</p></
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-21668" target="_blank" rel="noopener">CVE-2026-21668</a></td>
         <td>8.8</td>
         <td><span class="severity high">HIGH</span></td>
-        <td>N/A</td>
+        <td>CWE-862</td>
         <td>&nbsp;</td>
         <td><details><summary>A vulnerability allowing an authenticated domain user to bypass restrictions and...</summary><p>A vulnerability allowing an authenticated domain user to bypass restrictions and manipulate arbitrary files on a Backup Repository.</p></details></td>
         <td>2026-03-12</td>
@@ -49297,7 +49470,7 @@ Users are recommended to upgrade to version 1.12.0, which fixes the issue.</p></
       </div>
     </section>
     <section>
-      <h2>Previous Month — February 2026 <span class="count">(4153)</span></h2>
+      <h2>Previous Month — February 2026 <span class="count">(4152)</span></h2>
       <div class="table-wrapper">
         <table>
           <thead>
@@ -50183,18 +50356,6 @@ Users are recommended to upgrade to version 1.12.0, which fixes the issue.</p></
         <td>CWE-459</td>
         <td>&nbsp;</td>
         <td><details><summary>Multer is a node.js middleware for handling `multipart/form-data`. A vulnerabili...</summary><p>Multer is a node.js middleware for handling `multipart/form-data`. A vulnerability in Multer prior to version 2.1.0 allows an attacker to trigger a Denial of Service (DoS) by sending malformed requests, potentially causing resource exhaustion. Users should upgrade to version 2.1.0 to receive a patch. No known workarounds are available.</p></details></td>
-        <td>2026-02-27</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-3277" target="_blank" rel="noopener">CVE-2026-3277</a></td>
-        <td>6.5</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-312</td>
-        <td>&nbsp;</td>
-        <td><details><summary>The OpenID Connect (OIDC) authentication configuration in PowerShell 
-Universal ...</summary><p>The OpenID Connect (OIDC) authentication configuration in PowerShell 
-Universal before 2026.1.3 stores the OIDC client secret in cleartext in 
-the .universal/authentication.ps1 script, which allows an attacker with read access to that file to obtain the OIDC client credentials</p></details></td>
         <td>2026-02-27</td>
       </tr>
       <tr>

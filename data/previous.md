@@ -1,6 +1,6 @@
 # CVEs — February 2026
 
-_4153 vulnerabilities_
+_4152 vulnerabilities_
 
 | CVE ID | Score | Severity | CWE | KEV | Published | Description |
 |--------|-------|----------|-----|-----|-----------|-------------|
@@ -101,7 +101,6 @@ _4153 vulnerabilities_
 | [CVE-2026-24488](https://nvd.nist.gov/vuln/detail/CVE-2026-24488) | 6.5 | MEDIUM | CWE-22 | No | 2026-02-27 | OpenEMR is a free and open source electronic health records and medical practice management application. In versions up... |
 | [CVE-2025-69437](https://nvd.nist.gov/vuln/detail/CVE-2025-69437) | 8.7 | HIGH | CWE-79 | No | 2026-02-27 | PublicCMS v5.202506.d and earlier is vulnerable to stored XSS. Uploaded PDFs can contain JavaScript payloads and bypass... |
 | [CVE-2026-3304](https://nvd.nist.gov/vuln/detail/CVE-2026-3304) | 8.7 | HIGH | CWE-459 | No | 2026-02-27 | Multer is a node.js middleware for handling `multipart/form-data`. A vulnerability in Multer prior to version 2.1.0 allo... |
-| [CVE-2026-3277](https://nvd.nist.gov/vuln/detail/CVE-2026-3277) | 6.5 | MEDIUM | CWE-312 | No | 2026-02-27 | The OpenID Connect (OIDC) authentication configuration in PowerShell  Universal before 2026.1.3 stores the OIDC client s... |
 | [CVE-2026-2750](https://nvd.nist.gov/vuln/detail/CVE-2026-2750) | 9.1 | CRITICAL | CWE-20 | No | 2026-02-27 | Improper Input Validation vulnerability in Centreon Centreon Open Tickets on Central Server on Linux (Centreon Open Tick... |
 | [CVE-2026-2749](https://nvd.nist.gov/vuln/detail/CVE-2026-2749) | 9.9 | CRITICAL | CWE-22 | No | 2026-02-27 | Vulnerability in Centreon Centreon Open Tickets on Central Server on Linux (Centroen Open Ticket modules).This issue aff... |
 | [CVE-2026-2359](https://nvd.nist.gov/vuln/detail/CVE-2026-2359) | 8.7 | HIGH | CWE-772 | No | 2026-02-27 | Multer is a node.js middleware for handling `multipart/form-data`. A vulnerability in Multer prior to version 2.1.0 allo... |
