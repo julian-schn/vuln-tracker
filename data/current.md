@@ -1,9 +1,17 @@
 # CVEs — March 2026
 
-_5510 vulnerabilities_
+_5518 vulnerabilities_
 
 | CVE ID | Score | Severity | CWE | KEV | Published | Description |
 |--------|-------|----------|-----|-----|-----------|-------------|
+| [CVE-2026-5185](https://nvd.nist.gov/vuln/detail/CVE-2026-5185) | 4.8 | MEDIUM | CWE-119 | No | 2026-03-31 | A security flaw has been discovered in Nothings stb_image up to 2.30. This affects the function stbi__gif_load_next of t... |
+| [CVE-2026-5184](https://nvd.nist.gov/vuln/detail/CVE-2026-5184) | 5.3 | MEDIUM | CWE-74 | No | 2026-03-31 | A vulnerability was identified in TRENDnet TEW-713RE up to 1.02. The impacted element is an unknown function of the file... |
+| [CVE-2026-3881](https://nvd.nist.gov/vuln/detail/CVE-2026-3881) | 0.0 | NONE | N/A | No | 2026-03-31 | The Performance Monitor WordPress plugin through 1.0.6 does not validate a parameter before making a request to it, whic... |
+| [CVE-2026-5183](https://nvd.nist.gov/vuln/detail/CVE-2026-5183) | 5.3 | MEDIUM | CWE-74 | No | 2026-03-31 | A vulnerability was determined in TRENDnet TEW-713RE up to 1.02. The affected element is the function sub_421494 of the... |
+| [CVE-2026-5182](https://nvd.nist.gov/vuln/detail/CVE-2026-5182) | 6.9 | MEDIUM | CWE-74 | No | 2026-03-31 | A vulnerability was found in SourceCodester Teacher Record System 1.0. Impacted is an unknown function of the file Teach... |
+| [CVE-2026-34881](https://nvd.nist.gov/vuln/detail/CVE-2026-34881) | 5.0 | MEDIUM | CWE-918 | No | 2026-03-31 | OpenStack Glance <29.1.1, >=30.0.0 <30.1.1, ==31.0.0 is affected by Server-Side Request Forgery (SSRF). By use of HTTP r... |
+| [CVE-2026-1877](https://nvd.nist.gov/vuln/detail/CVE-2026-1877) | 6.1 | MEDIUM | CWE-79 | No | 2026-03-31 | The Auto Post Scheduler plugin for WordPress is vulnerable to Cross-Site Request Forgery in all versions up to, and incl... |
+| [CVE-2026-1834](https://nvd.nist.gov/vuln/detail/CVE-2026-1834) | 6.4 | MEDIUM | CWE-80 | No | 2026-03-31 | The Ibtana – WordPress Website Builder plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the plugin'... |
 | [CVE-2026-5181](https://nvd.nist.gov/vuln/detail/CVE-2026-5181) | 5.3 | MEDIUM | CWE-284 | No | 2026-03-31 | A vulnerability has been found in SourceCodester Simple Doctors Appointment System up to 1.0. This issue affects some un... |
 | [CVE-2026-5180](https://nvd.nist.gov/vuln/detail/CVE-2026-5180) | 6.9 | MEDIUM | CWE-74 | No | 2026-03-31 | A flaw has been found in SourceCodester Simple Doctors Appointment System 1.0. This vulnerability affects unknown code o... |
 | [CVE-2026-5179](https://nvd.nist.gov/vuln/detail/CVE-2026-5179) | 6.9 | MEDIUM | CWE-74 | No | 2026-03-31 | A vulnerability was detected in SourceCodester Simple Doctors Appointment System 1.0. This affects an unknown part of th... |
