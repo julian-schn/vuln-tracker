@@ -11,7 +11,7 @@
     <header>
       <h1>vuln-tracker</h1>
       <p class="subtitle">CVEs from the National Vulnerability Database — current and previous month</p>
-      <p class="last-updated">Last updated: 2026-03-31 19:10 UTC</p>
+      <p class="last-updated">Last updated: 2026-03-31 20:50 UTC</p>
     </header>
     <nav>
       <a href="top50.html">&#9733; Top 50</a>
@@ -25,7 +25,7 @@
     </nav>
     <main>
     <section>
-      <h2>Current Month — March 2026 <span class="count">(5659)</span></h2>
+      <h2>Current Month — March 2026 <span class="count">(5672)</span></h2>
       <div class="table-wrapper">
         <table>
           <thead>
@@ -41,23 +41,186 @@
           </thead>
           <tbody>
       <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5211" target="_blank" rel="noopener">CVE-2026-5211</a></td>
+        <td>7.4</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-119</td>
+        <td>&nbsp;</td>
+        <td><details><summary>A flaw has been found in D-Link DNS-120, DNR-202L, DNS-315L, DNS-320, DNS-320L, ...</summary><p>A flaw has been found in D-Link DNS-120, DNR-202L, DNS-315L, DNS-320, DNS-320L, DNS-320LW, DNS-321, DNR-322L, DNS-323, DNS-325, DNS-326, DNS-327L, DNR-326, DNS-340L, DNS-343, DNS-345, DNS-726-4, DNS-1100-4, DNS-1200-05 and DNS-1550-04 up to 20260205. This vulnerability affects the function UPnP_AV_Server_Path_Del of the file /cgi-bin/app_mgr.cgi. Executing a manipulation of the argument f_dir can lead to stack-based buffer overflow. The attack can be executed remotely. The exploit has been published and may be used.</p></details></td>
+        <td>2026-03-31</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4800" target="_blank" rel="noopener">CVE-2026-4800</a></td>
+        <td>8.1</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-94</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Impact:
+
+The fix for CVE-2021-23337 (https://github.com/advisories/GHSA-35jh-r3h...</summary><p>Impact:
+
+The fix for CVE-2021-23337 (https://github.com/advisories/GHSA-35jh-r3h4-6jhm) added validation for the variable option in _.template but did not apply the same validation to options.imports key names. Both paths flow into the same Function() constructor sink.
+
+When an application passes untrusted input as options.imports key names, an attacker can inject default-parameter expressions that execute arbitrary code at template compilation time.
+
+Additionally, _.template uses assignInWith to merge imports, which enumerates inherited properties via for..in. If Object.prototype has been polluted by any other vector, the polluted keys are copied into the imports object and passed to Function().
+
+Patches:
+
+Users should upgrade to version 4.18.0.
+
+Workarounds:
+
+Do not pass untrusted input as key names in options.imports. Only use developer-controlled, static key names.</p></details></td>
+        <td>2026-03-31</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34784" target="_blank" rel="noopener">CVE-2026-34784</a></td>
+        <td>8.2</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-285</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Parse Server is an open source backend that can be deployed to any infrastructur...</summary><p>Parse Server is an open source backend that can be deployed to any infrastructure that can run Node.js. Prior to versions 8.6.71 and 9.7.1-alpha.1, file downloads via HTTP Range requests bypass the afterFind(Parse.File) trigger and its validators on storage adapters that support streaming (e.g. the default GridFS adapter). This allows access to files that should be protected by afterFind trigger authorization logic or built-in validators such as requireUser. This issue has been patched in versions 8.6.71 and 9.7.1-alpha.1.</p></details></td>
+        <td>2026-03-31</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34365" target="_blank" rel="noopener">CVE-2026-34365</a></td>
+        <td>7.6</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-918</td>
+        <td>&nbsp;</td>
+        <td><details><summary>InvoiceShelf is an open-source web &amp; mobile app that helps track expenses, payme...</summary><p>InvoiceShelf is an open-source web &amp; mobile app that helps track expenses, payments and create professional invoices and estimates. Prior to version 2.2.0, a Server-Side Request Forgery (SSRF) vulnerability exists in the Estimate PDF generation module. User-supplied HTML in the estimate Notes field is passed unsanitised to the Dompdf rendering library, which will fetch any remote resources referenced in the markup. The vulnerability is exploitable directly via the PDF preview and customer view endpoints regardless of whether automated email attachments are enabled. This issue has been patched in version 2.2.0.</p></details></td>
+        <td>2026-03-31</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34215" target="_blank" rel="noopener">CVE-2026-34215</a></td>
+        <td>8.2</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-200</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Parse Server is an open source backend that can be deployed to any infrastructur...</summary><p>Parse Server is an open source backend that can be deployed to any infrastructure that can run Node.js. Prior to versions 8.6.63 and 9.7.0-alpha.7, the verify password endpoint returns unsanitized authentication data, including MFA TOTP secrets, recovery codes, and OAuth access tokens. An attacker who knows a user&#x27;s password can extract the MFA secret to generate valid MFA codes, defeating multi-factor authentication protection. This issue has been patched in versions 8.6.63 and 9.7.0-alpha.7.</p></details></td>
+        <td>2026-03-31</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34206" target="_blank" rel="noopener">CVE-2026-34206</a></td>
+        <td>6.1</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Captcha Protect is a Traefik middleware to add an anti-bot challenge to individu...</summary><p>Captcha Protect is a Traefik middleware to add an anti-bot challenge to individual IPs in a subnet when traffic spikes are detected from that subnet. Prior to version 1.12.2, a reflected cross-site scripting (XSS) vulnerability exists in github.com/libops/captcha-protect. The challenge page accepted a client-supplied destination value and rendered it into HTML using Go&#x27;s text/template. Because text/template does not perform contextual HTML escaping, an attacker could supply a crafted destination value that breaks out of the hidden input attribute and injects arbitrary script into the challenge page. This issue has been patched in version 1.12.2.</p></details></td>
+        <td>2026-03-31</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34204" target="_blank" rel="noopener">CVE-2026-34204</a></td>
+        <td>7.1</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-287</td>
+        <td>&nbsp;</td>
+        <td><details><summary>MinIO is a high-performance object storage system. Prior to version RELEASE.2026...</summary><p>MinIO is a high-performance object storage system. Prior to version RELEASE.2026-03-26T21-24-40Z, a flaw in extractMetadataFromMime() allows any authenticated user with s3:PutObject permission to inject internal server-side encryption metadata into objects by sending crafted X-Minio-Replication-* headers on a normal PutObject request. This issue has been patched in version RELEASE.2026-03-26T21-24-40Z.</p></details></td>
+        <td>2026-03-31</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34203" target="_blank" rel="noopener">CVE-2026-34203</a></td>
+        <td>2.7</td>
+        <td><span class="severity low">LOW</span></td>
+        <td>CWE-521</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Nautobot is a Network Source of Truth and Network Automation Platform. Prior to ...</summary><p>Nautobot is a Network Source of Truth and Network Automation Platform. Prior to versions 2.4.30 and 3.0.10, user creation and editing via the REST API fails to apply the password validation rules defined by Django&#x27;s AUTH_PASSWORD_VALIDATORS setting (which defaults to an empty list, i.e., no specific rules, but can be configured in Nautobot&#x27;s nautobot_config.py to apply various rules if desired). This can potentially allow for the creation or modification of users to have passwords that are weak or otherwise do not comply with configured standards. This issue has been patched in versions 2.4.30 and 3.0.10.</p></details></td>
+        <td>2026-03-31</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-30290" target="_blank" rel="noopener">CVE-2026-30290</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td><details><summary>An arbitrary file overwrite vulnerability in InTouch Contacts &amp; Caller ID APP v6...</summary><p>An arbitrary file overwrite vulnerability in InTouch Contacts &amp; Caller ID APP v6.38.1 allows attackers to overwrite critical internal files via the file import process, leading to arbitrary code execution or information exposure.</p></details></td>
+        <td>2026-03-31</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-30285" target="_blank" rel="noopener">CVE-2026-30285</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td><details><summary>An arbitrary file overwrite vulnerability in Zora: Post, Trade, Earn Crypto v2.6...</summary><p>An arbitrary file overwrite vulnerability in Zora: Post, Trade, Earn Crypto v2.60.0 allows attackers to overwrite critical internal files via the file import process, leading to arbitrary code execution or information exposure.</p></details></td>
+        <td>2026-03-31</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-30280" target="_blank" rel="noopener">CVE-2026-30280</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td><details><summary>An arbitrary file overwrite vulnerability in RAREPROB SOLUTIONS PRIVATE LIMITED ...</summary><p>An arbitrary file overwrite vulnerability in RAREPROB SOLUTIONS PRIVATE LIMITED Video player Play All Videos v1.0.135 allows attackers to overwrite critical internal files via the file import process, leading to arbtrary code execution or information exposure.</p></details></td>
+        <td>2026-03-31</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-2950" target="_blank" rel="noopener">CVE-2026-2950</a></td>
+        <td>6.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-1321</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Impact:
+
+Lodash versions 4.17.23 and earlier are vulnerable to prototype polluti...</summary><p>Impact:
+
+Lodash versions 4.17.23 and earlier are vulnerable to prototype pollution in the _.unset and _.omit functions. The fix for (CVE-2025-13465: https://github.com/lodash/lodash/security/advisories/GHSA-xxjr-mmjv-4gpg) only guards against string key members, so an attacker can bypass the check by passing array-wrapped path segments. This allows deletion of properties from built-in prototypes such as Object.prototype, Number.prototype, and String.prototype.
+
+The issue permits deletion of prototype properties but does not allow overwriting their original behavior.
+
+Patches:
+
+This issue is patched in 4.18.0.
+
+Workarounds:
+
+None. Upgrade to the patched version.</p></details></td>
+        <td>2026-03-31</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5210" target="_blank" rel="noopener">CVE-2026-5210</a></td>
+        <td>6.9</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-73</td>
+        <td>&nbsp;</td>
+        <td><details><summary>A vulnerability was detected in SourceCodester Leave Application System 1.0. Thi...</summary><p>A vulnerability was detected in SourceCodester Leave Application System 1.0. This affects an unknown part. Performing a manipulation of the argument page results in file inclusion. Remote exploitation of the attack is possible. The exploit is now public and may be used.</p></details></td>
+        <td>2026-03-31</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5209" target="_blank" rel="noopener">CVE-2026-5209</a></td>
+        <td>4.8</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td><details><summary>A security vulnerability has been detected in SourceCodester Leave Application S...</summary><p>A security vulnerability has been detected in SourceCodester Leave Application System 1.0. Affected by this issue is some unknown functionality of the component User Management Handler. Such manipulation leads to cross site scripting. The attack may be launched remotely. The exploit has been disclosed publicly and may be used.</p></details></td>
+        <td>2026-03-31</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-3356" target="_blank" rel="noopener">CVE-2026-3356</a></td>
+        <td>9.3</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-306</td>
+        <td>&nbsp;</td>
+        <td><details><summary>The MS27102A Remote Spectrum Monitor is vulnerable to an authentication bypass t...</summary><p>The MS27102A Remote Spectrum Monitor is vulnerable to an authentication bypass that allows unauthorized users to access and manipulate its management interface. Because the device provides no mechanism to enable or configure authentication, the issue is inherent to its design rather than a deployment error.</p></details></td>
+        <td>2026-03-31</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-30521" target="_blank" rel="noopener">CVE-2026-30521</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td><details><summary>A Business Logic vulnerability exists in SourceCodester Loan Management System v...</summary><p>A Business Logic vulnerability exists in SourceCodester Loan Management System v1.0 due to improper server-side validation. The application allows administrators to create &quot;Loan Plans&quot; with specific interest rates. While the frontend interface prevents users from entering negative numbers, this constraint is not enforced on the backend. An authenticated attacker can bypass the client-side restriction by manipulating the HTTP POST request to submit a negative value for the interest_percentage. This results in the creation of loan plans with negative interest rates.</p></details></td>
+        <td>2026-03-31</td>
+      </tr>
+      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5206" target="_blank" rel="noopener">CVE-2026-5206</a></td>
         <td>5.3</td>
         <td><span class="severity medium">MEDIUM</span></td>
         <td>CWE-74</td>
         <td>&nbsp;</td>
         <td><details><summary>A security vulnerability has been detected in code-projects Simple Gym Managemen...</summary><p>A security vulnerability has been detected in code-projects Simple Gym Management System 1.0. This vulnerability affects unknown code of the component Payment Handler. The manipulation of the argument Payment_id/Amount/customer_id/payment_type/customer_name leads to sql injection. Remote exploitation of the attack is possible. The exploit has been disclosed publicly and may be used.</p></details></td>
-        <td>2026-03-31</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5190" target="_blank" rel="noopener">CVE-2026-5190</a></td>
-        <td>7.7</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-787</td>
-        <td>&nbsp;</td>
-        <td><details><summary>Out-of-bounds write in the streaming decoder component in aws-c-event-stream bef...</summary><p>Out-of-bounds write in the streaming decoder component in aws-c-event-stream before 0.6.0 might allow a third party operating a server to cause memory corruption leading to arbitrary code execution on a client application that processes crafted event-stream messages.
-
-To remediate this issue, users should upgrade to version 0.6.0 or later.</p></details></td>
         <td>2026-03-31</td>
       </tr>
       <tr>
@@ -277,19 +440,6 @@ To remediate this issue, users should upgrade to version 0.6.0 or later.</p></de
         <td>2026-03-31</td>
       </tr>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-2123" target="_blank" rel="noopener">CVE-2026-2123</a></td>
-        <td>8.6</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-280</td>
-        <td>&nbsp;</td>
-        <td><details><summary>A security audit identified a privilege escalation
-vulnerability in Operations A...</summary><p>A security audit identified a privilege escalation
-vulnerability in Operations Agent(&lt;=OA 12.29) on Windows. Under specific conditions
-Operations Agent may run executables from specific writeable locations.Thanks to Manuel Rickli &amp; Philippe Leiser of
-Oneconsult AG for reporting this vulnerability</p></details></td>
-        <td>2026-03-31</td>
-      </tr>
-      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-62184" target="_blank" rel="noopener">CVE-2025-62184</a></td>
         <td>4.8</td>
         <td><span class="severity medium">MEDIUM</span></td>
@@ -395,6 +545,23 @@ Oneconsult AG for reporting this vulnerability</p></details></td>
         <td>CWE-22</td>
         <td>&nbsp;</td>
         <td><details><summary>A vulnerability was found in CMS Made Simple up to 2.2.22. This impacts the func...</summary><p>A vulnerability was found in CMS Made Simple up to 2.2.22. This impacts the function _copyFilesToFolder in the library modules/UserGuide/lib/class.UserGuideImporterExporter.php of the component UserGuide Module XML Import. The manipulation results in path traversal. It is possible to launch the attack remotely. The exploit has been made public and could be used. This issue has been reported early to the project. They confirmed, that &quot;this has already been discovered and fixed for the next release.&quot;</p></details></td>
+        <td>2026-03-31</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5087" target="_blank" rel="noopener">CVE-2026-5087</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-338</td>
+        <td>&nbsp;</td>
+        <td><details><summary>PAGI::Middleware::Session::Store::Cookie versions through 0.001003 for Perl gene...</summary><p>PAGI::Middleware::Session::Store::Cookie versions through 0.001003 for Perl generates random bytes insecurely.
+
+PAGI::Middleware::Session::Store::Cookie attempts to read bytes from the /dev/urandom device directly. If that fails (for example, on systems without the device, such as Windows), then it will emit a warning that recommends the user install Crypt::URandom, and then return a string of random bytes generated by the built-in rand function, which is unsuitable for cryptographic applications.
+
+This modules does not use the Crypt::URandom module, and installing it will not fix the problem.
+
+The random bytes are used for generating an initialisation vector (IV) to encrypt the cookie.
+
+A predictable IV may make it easier for malicious users to decrypt and tamper with the session data that is stored in the cookie.</p></details></td>
         <td>2026-03-31</td>
       </tr>
       <tr>
@@ -1160,6 +1327,19 @@ Oneconsult AG for reporting this vulnerability</p></details></td>
         <td>CWE-79</td>
         <td>&nbsp;</td>
         <td><details><summary>Improper Neutralization of Input During Web Page Generation (&#x27;Cross-site Scripti...</summary><p>Improper Neutralization of Input During Web Page Generation (&#x27;Cross-site Scripting&#x27;) vulnerability in Extend Themes Kubio AI Page Builder allows Stored XSS.This issue affects Kubio AI Page Builder: from n/a through 2.7.0.</p></details></td>
+        <td>2026-03-31</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-15618" target="_blank" rel="noopener">CVE-2025-15618</a></td>
+        <td>9.1</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-338</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Business::OnlinePayment::StoredTransaction versions through 0.01 for Perl uses a...</summary><p>Business::OnlinePayment::StoredTransaction versions through 0.01 for Perl uses an insecure secret key.
+
+Business::OnlinePayment::StoredTransaction generates a secret key by using a MD5 hash of a single call to the built-in rand function, which is unsuitable for cryptographic use.
+
+This key is intended for encrypting credit card transaction data.</p></details></td>
         <td>2026-03-31</td>
       </tr>
       <tr>
@@ -2018,17 +2198,6 @@ Oneconsult AG for reporting this vulnerability</p></details></td>
         <td>2026-03-30</td>
       </tr>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-21714" target="_blank" rel="noopener">CVE-2026-21714</a></td>
-        <td>5.3</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-401</td>
-        <td>&nbsp;</td>
-        <td><details><summary>A memory leak occurs in Node.js HTTP/2 servers when a client sends WINDOW_UPDATE...</summary><p>A memory leak occurs in Node.js HTTP/2 servers when a client sends WINDOW_UPDATE frames on stream 0 (connection-level) that cause the flow control window to exceed the maximum value of 2³¹-1. The server correctly sends a GOAWAY frame, but the Http2Session object is never cleaned up.
-
-This vulnerability affects HTTP2 users on Node.js 20, 22, 24 and 25.</p></details></td>
-        <td>2026-03-30</td>
-      </tr>
-      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5147" target="_blank" rel="noopener">CVE-2026-5147</a></td>
         <td>6.9</td>
         <td><span class="severity medium">MEDIUM</span></td>
@@ -2849,8 +3018,8 @@ This vulnerability affects HTTP2 users on Node.js 20, 22, 24 and 25.</p></detail
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-0558" target="_blank" rel="noopener">CVE-2026-0558</a></td>
-        <td>7.5</td>
-        <td><span class="severity high">HIGH</span></td>
+        <td>9.8</td>
+        <td><span class="severity critical">CRITICAL</span></td>
         <td>CWE-287</td>
         <td>&nbsp;</td>
         <td><details><summary>A vulnerability in parisneo/lollms, up to and including version 2.2.0, allows un...</summary><p>A vulnerability in parisneo/lollms, up to and including version 2.2.0, allows unauthenticated users to upload and process files through the `/api/files/extract-text` endpoint. This endpoint does not enforce authentication, unlike other file-related endpoints, and lacks the `Depends(get_current_active_user)` dependency. This issue can lead to denial of service (DoS) through resource exhaustion, information disclosure, and violation of the application&#x27;s documented security policies.</p></details></td>
@@ -3199,6 +3368,30 @@ This vulnerability affects HTTP2 users on Node.js 20, 22, 24 and 25.</p></detail
         <td>2026-03-29</td>
       </tr>
       <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4851" target="_blank" rel="noopener">CVE-2026-4851</a></td>
+        <td>9.8</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-95</td>
+        <td>&nbsp;</td>
+        <td><details><summary>GRID::Machine versions through 0.127 for Perl allows arbitrary code execution vi...</summary><p>GRID::Machine versions through 0.127 for Perl allows arbitrary code execution via unsafe deserialization.
+
+GRID::Machine provides Remote Procedure Calls (RPC) over SSH for Perl. The client connects to remote hosts to execute code on them. A compromised or malicious remote host can execute arbitrary code back on the client through unsafe deserialization in the RPC protocol.
+
+read_operation() in lib/GRID/Machine/Message.pm deserialises values from the remote side using eval()
+
+  $arg .= &#x27;$VAR1&#x27;;
+  my $val = eval &quot;no strict; $arg&quot;; # line 40-41
+
+$arg is raw bytes from the protocol pipe. A compromised remote host can embed arbitrary perl in the Dumper-formatted response:
+
+  $VAR1 = do { system(&quot;...&quot;); };
+
+This executes on the client silently on every RPC call, as the return values remain correct.
+
+This functionality is by design but the trust requirement for the remote host is not documented in the distribution.</p></details></td>
+        <td>2026-03-29</td>
+      </tr>
+      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5019" target="_blank" rel="noopener">CVE-2026-5019</a></td>
         <td>6.9</td>
         <td><span class="severity medium">MEDIUM</span></td>
@@ -3286,6 +3479,36 @@ This vulnerability affects HTTP2 users on Node.js 20, 22, 24 and 25.</p></detail
         <td>CWE-77</td>
         <td>&nbsp;</td>
         <td><details><summary>A vulnerability was identified in kazuph mcp-docs-rag up to 0.5.0. Affected is t...</summary><p>A vulnerability was identified in kazuph mcp-docs-rag up to 0.5.0. Affected is the function cloneRepository of the file src/index.ts of the component add_git_repository/add_text_file. The manipulation leads to os command injection. The attack needs to be performed locally. The exploit is publicly available and might be used. The project was informed of the problem early through an issue report but has not responded yet.</p></details></td>
+        <td>2026-03-28</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-3256" target="_blank" rel="noopener">CVE-2026-3256</a></td>
+        <td>9.8</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-338</td>
+        <td>&nbsp;</td>
+        <td><details><summary>HTTP::Session versions through 0.53 for Perl defaults to using insecurely genera...</summary><p>HTTP::Session versions through 0.53 for Perl defaults to using insecurely generated session ids.
+
+HTTP::Session defaults to using HTTP::Session::ID::SHA1 to generate session ids using a SHA-1 hash seeded with the built-in rand function, the high resolution epoch time, and the PID. The PID will come from a small set of numbers, and the epoch time may be guessed, if it is not leaked from the HTTP Date header. The built-in rand function is unsuitable for cryptographic usage.
+
+The distribution includes HTTP::session::ID::MD5 which contains a similar flaw, but uses the MD5 hash instead.</p></details></td>
+        <td>2026-03-28</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-15604" target="_blank" rel="noopener">CVE-2025-15604</a></td>
+        <td>9.8</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-338</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Amon2 versions before 6.17 for Perl use an insecure random_string implementation...</summary><p>Amon2 versions before 6.17 for Perl use an insecure random_string implementation for security functions.
+
+In versions 6.06 through 6.16, the random_string function will attempt to read bytes from the /dev/urandom device, but if that is unavailable then it generates bytes by concatenating a SHA-1 hash seeded with the built-in rand() function, the PID, and the high resolution epoch time.  The PID will come from a small set of numbers, and the epoch time may be guessed, if it is not leaked from the HTTP Date header. The built-in rand function is unsuitable for cryptographic usage.
+
+Before version 6.06, there was no fallback when /dev/urandom was not available.
+
+Before version 6.04, the random_string function used the built-in rand() function to generate a mixed-case alphanumeric string.
+
+This function may be used for generating session ids, generating secrets for signing or encrypting cookie session data and generating tokens used for Cross Site Request Forgery (CSRF) protection.</p></details></td>
         <td>2026-03-28</td>
       </tr>
       <tr>
@@ -5206,28 +5429,6 @@ This vulnerability affects HTTP2 users on Node.js 20, 22, 24 and 25.</p></detail
         <td>2026-03-27</td>
       </tr>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-27877" target="_blank" rel="noopener">CVE-2026-27877</a></td>
-        <td>6.5</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>NVD-CWE-noinfo</td>
-        <td>&nbsp;</td>
-        <td><details><summary>When using public dashboards and direct data-sources, all direct data-sources&#x27; p...</summary><p>When using public dashboards and direct data-sources, all direct data-sources&#x27; passwords are exposed despite not being used in dashboards.
-
-No passwords of proxied data-sources are exposed. We encourage all direct data-sources to be converted to proxied data-sources as far as possible to improve your deployments&#x27; security.</p></details></td>
-        <td>2026-03-27</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-27876" target="_blank" rel="noopener">CVE-2026-27876</a></td>
-        <td>9.1</td>
-        <td><span class="severity critical">CRITICAL</span></td>
-        <td>CWE-94</td>
-        <td>&nbsp;</td>
-        <td><details><summary>A chained attack via SQL Expressions and a Grafana Enterprise plugin can lead to...</summary><p>A chained attack via SQL Expressions and a Grafana Enterprise plugin can lead to a remote arbitrary code execution impact (RCE). This is enabled by a feature in Grafana (OSS), so all users are always recommended to update to avoid future attack vectors going this path.
-
-Only instances with the sqlExpressions feature toggle enabled are vulnerable.</p></details></td>
-        <td>2026-03-27</td>
-      </tr>
-      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-1496" target="_blank" rel="noopener">CVE-2026-1496</a></td>
         <td>9.3</td>
         <td><span class="severity critical">CRITICAL</span></td>
@@ -5912,17 +6113,6 @@ Only instances with the sqlExpressions feature toggle enabled are vulnerable.</p
         <td>2026-03-26</td>
       </tr>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4346" target="_blank" rel="noopener">CVE-2026-4346</a></td>
-        <td>5.1</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-312</td>
-        <td>&nbsp;</td>
-        <td><details><summary>The vulnerability affecting TL-WR850N v3 allows cleartext storage of administrat...</summary><p>The vulnerability affecting TL-WR850N v3 allows cleartext storage of administrative and Wi-Fi credentials in a region of the device’s flash memory while the serial interface remains enabled and protected by weak authentication.  An attacker with physical access and the ability to connect to the serial port can recover sensitive information, including the router’s management password and wireless network key.
-
-Successful exploitation can lead to full administrative control of the device and unauthorized access to the associated wireless network.</p></details></td>
-        <td>2026-03-26</td>
-      </tr>
-      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-3650" target="_blank" rel="noopener">CVE-2026-3650</a></td>
         <td>8.7</td>
         <td><span class="severity high">HIGH</span></td>
@@ -6040,17 +6230,6 @@ Successful exploitation can lead to full administrative control of the device an
         <td>2026-03-26</td>
       </tr>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-28377" target="_blank" rel="noopener">CVE-2026-28377</a></td>
-        <td>7.5</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-326</td>
-        <td>&nbsp;</td>
-        <td><details><summary>A vulnerability in Grafana Tempo exposes the S3 SSE-C encryption key in plaintex...</summary><p>A vulnerability in Grafana Tempo exposes the S3 SSE-C encryption key in plaintext through the /status/config endpoint, potentially allowing unauthorized users to obtain the key used to encrypt trace data stored in S3.
-
-Thanks to william_goodfellow for reporting this vulnerability.</p></details></td>
-        <td>2026-03-26</td>
-      </tr>
-      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-1556" target="_blank" rel="noopener">CVE-2026-1556</a></td>
         <td>6.9</td>
         <td><span class="severity medium">MEDIUM</span></td>
@@ -6084,18 +6263,6 @@ Thanks to william_goodfellow for reporting this vulnerability.</p></details></td
         <td>CWE-352</td>
         <td>&nbsp;</td>
         <td><details><summary>Cross-Site Request Forgery (CSRF) vulnerability in Drupal Automated Logout allow...</summary><p>Cross-Site Request Forgery (CSRF) vulnerability in Drupal Automated Logout allows Cross Site Request Forgery.This issue affects Automated Logout: from 0.0.0 before 1.7.0, from 2.0.0 before 2.0.2.</p></details></td>
-        <td>2026-03-26</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-3622" target="_blank" rel="noopener">CVE-2026-3622</a></td>
-        <td>7.1</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-125</td>
-        <td>&nbsp;</td>
-        <td><details><summary>The vulnerability exists in the UPnP component of TL-WR841N v14, where improper ...</summary><p>The vulnerability exists in the UPnP component of TL-WR841N v14, where improper input validation leads to an out-of-bounds read, potentially causing a crash of the UPnP service.  
-
-Successful exploitation can cause the UPnP service to crash, resulting in a Denial-of-Service condition. 
-This vulnerability affects TL-WR841N v14 &lt; EN_0.9.1 4.19 Build 260303 Rel.42399n (V14_260303) and &lt; US_0.9.1.4.19 Build 260312 Rel. 49108n (V14_0304).</p></details></td>
         <td>2026-03-26</td>
       </tr>
       <tr>
