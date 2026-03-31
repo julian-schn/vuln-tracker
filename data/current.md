@@ -1,13 +1,33 @@
 # CVEs — March 2026
 
-_5491 vulnerabilities_
+_5510 vulnerabilities_
 
 | CVE ID | Score | Severity | CWE | KEV | Published | Description |
 |--------|-------|----------|-----|-----|-----------|-------------|
+| [CVE-2026-5181](https://nvd.nist.gov/vuln/detail/CVE-2026-5181) | 5.3 | MEDIUM | CWE-284 | No | 2026-03-31 | A vulnerability has been found in SourceCodester Simple Doctors Appointment System up to 1.0. This issue affects some un... |
+| [CVE-2026-5180](https://nvd.nist.gov/vuln/detail/CVE-2026-5180) | 6.9 | MEDIUM | CWE-74 | No | 2026-03-31 | A flaw has been found in SourceCodester Simple Doctors Appointment System 1.0. This vulnerability affects unknown code o... |
+| [CVE-2026-5179](https://nvd.nist.gov/vuln/detail/CVE-2026-5179) | 6.9 | MEDIUM | CWE-74 | No | 2026-03-31 | A vulnerability was detected in SourceCodester Simple Doctors Appointment System 1.0. This affects an unknown part of th... |
+| [CVE-2026-4146](https://nvd.nist.gov/vuln/detail/CVE-2026-4146) | 6.1 | MEDIUM | CWE-79 | No | 2026-03-31 | The Loco Translate plugin for WordPress is vulnerable to Reflected Cross-Site Scripting via the ‘update_href’ parameter... |
+| [CVE-2026-1797](https://nvd.nist.gov/vuln/detail/CVE-2026-1797) | 5.3 | MEDIUM | CWE-862 | No | 2026-03-31 | The Appointment Booking and Scheduler Plugin – Truebooker plugin for WordPress is vulnerable to Sensitive Information Ex... |
+| [CVE-2026-1710](https://nvd.nist.gov/vuln/detail/CVE-2026-1710) | 6.5 | MEDIUM | CWE-285 | No | 2026-03-31 | The WooPayments: Integrated WooCommerce Payments plugin for WordPress is vulnerable to unauthorized modification of data... |
+| [CVE-2026-5178](https://nvd.nist.gov/vuln/detail/CVE-2026-5178) | 5.3 | MEDIUM | CWE-74 | No | 2026-03-31 | A security vulnerability has been detected in Totolink A3300R 17.0.0cu.557_b20221024. Affected by this issue is the func... |
+| [CVE-2026-5177](https://nvd.nist.gov/vuln/detail/CVE-2026-5177) | 5.3 | MEDIUM | CWE-74 | No | 2026-03-31 | A weakness has been identified in Totolink A3300R 17.0.0cu.557_b20221024. Affected by this vulnerability is the function... |
+| [CVE-2026-34073](https://nvd.nist.gov/vuln/detail/CVE-2026-34073) | 1.7 | LOW | CWE-295 | No | 2026-03-31 | cryptography is a package designed to expose cryptographic primitives and recipes to Python developers. Prior to version... |
+| [CVE-2026-34070](https://nvd.nist.gov/vuln/detail/CVE-2026-34070) | 7.5 | HIGH | CWE-22 | No | 2026-03-31 | LangChain is a framework for building agents and LLM-powered applications. Prior to version 1.2.22, multiple functions i... |
+| [CVE-2026-34060](https://nvd.nist.gov/vuln/detail/CVE-2026-34060) | 7.1 | HIGH | CWE-94 | No | 2026-03-31 | Ruby LSP is an implementation of the language server protocol for Ruby. Prior to Shopify.ruby-lsp version 0.10.2 and rub... |
+| [CVE-2026-34054](https://nvd.nist.gov/vuln/detail/CVE-2026-34054) | 7.8 | HIGH | CWE-427 | No | 2026-03-31 | vcpkg is a free and open-source C/C++ package manager. Prior to version 3.6.1#3, vcpkg's Windows builds of OpenSSL set o... |
+| [CVE-2026-34043](https://nvd.nist.gov/vuln/detail/CVE-2026-34043) | 5.9 | MEDIUM | CWE-400 | No | 2026-03-31 | Serialize JavaScript to a superset of JSON that includes regular expressions and functions. Prior to version 7.0.5, ther... |
+| [CVE-2026-34042](https://nvd.nist.gov/vuln/detail/CVE-2026-34042) | 8.2 | HIGH | CWE-862 | No | 2026-03-31 | act is a project which allows for local running of github actions. Prior to version 0.2.86, act's built in actions/cache... |
+| [CVE-2026-34041](https://nvd.nist.gov/vuln/detail/CVE-2026-34041) | 7.7 | HIGH | CWE-74 | No | 2026-03-31 | act is a project which allows for local running of github actions. Prior to version 0.2.86, act unconditionally processe... |
+| [CVE-2026-34040](https://nvd.nist.gov/vuln/detail/CVE-2026-34040) | 8.8 | HIGH | CWE-288 | No | 2026-03-31 | Moby is an open source container framework. Prior to version 29.3.1, a security vulnerability has been detected that all... |
+| [CVE-2026-34036](https://nvd.nist.gov/vuln/detail/CVE-2026-34036) | 6.5 | MEDIUM | CWE-98 | No | 2026-03-31 | Dolibarr is an enterprise resource planning (ERP) and customer relationship management (CRM) software package. In versio... |
+| [CVE-2026-33997](https://nvd.nist.gov/vuln/detail/CVE-2026-33997) | 6.8 | MEDIUM | CWE-193 | No | 2026-03-31 | Moby is an open source container framework. Prior to version 29.3.1, a security vulnerability has been detected that all... |
+| [CVE-2026-32727](https://nvd.nist.gov/vuln/detail/CVE-2026-32727) | 8.1 | HIGH | CWE-22 | No | 2026-03-31 | SciTokens is a reference library for generating and using SciTokens. Prior to version 1.9.7, the Enforcer is vulnerable... |
+| [CVE-2026-32716](https://nvd.nist.gov/vuln/detail/CVE-2026-32716) | 8.1 | HIGH | CWE-285 | No | 2026-03-31 | SciTokens is a reference library for generating and using SciTokens. Prior to version 1.9.6, the Enforcer incorrectly va... |
+| [CVE-2026-32714](https://nvd.nist.gov/vuln/detail/CVE-2026-32714) | 9.8 | CRITICAL | CWE-89 | No | 2026-03-31 | SciTokens is a reference library for generating and using SciTokens. Prior to version 1.9.6, the KeyCache class in scito... |
 | [CVE-2026-5176](https://nvd.nist.gov/vuln/detail/CVE-2026-5176) | 6.9 | MEDIUM | CWE-74 | No | 2026-03-31 | A security flaw has been discovered in Totolink A3300R 17.0.0cu.557_b20221024. Affected is the function setSyslogCfg of... |
 | [CVE-2026-4020](https://nvd.nist.gov/vuln/detail/CVE-2026-4020) | 7.5 | HIGH | CWE-200 | No | 2026-03-31 | The Gravity SMTP plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and includi... |
 | [CVE-2026-3300](https://nvd.nist.gov/vuln/detail/CVE-2026-3300) | 9.8 | CRITICAL | CWE-94 | No | 2026-03-31 | The Everest Forms Pro plugin for WordPress is vulnerable to Remote Code Execution via PHP Code Injection in all versions... |
-| [CVE-2026-5115](https://nvd.nist.gov/vuln/detail/CVE-2026-5115) | 3.6 | LOW | CWE-319 | No | 2026-03-31 | The PaperCut NG/MF (specifically, the embedded application for Konica Minolta devices) is vulnerable to session hijackin... |
 | [CVE-2026-4794](https://nvd.nist.gov/vuln/detail/CVE-2026-4794) | 2.1 | LOW | CWE-79 | No | 2026-03-31 | Multiple cross-site scripting (XSS) vulnerabilities in PaperCut NG/MF before 25.0.10 allow authenticated administrator u... |
 | [CVE-2026-32734](https://nvd.nist.gov/vuln/detail/CVE-2026-32734) | 7.1 | HIGH | CWE-79 | No | 2026-03-31 | baserCMS is a website development framework. Prior to version 5.2.3, baserCMS has DOM-based cross-site scripting in tag... |
 | [CVE-2026-30940](https://nvd.nist.gov/vuln/detail/CVE-2026-30940) | 7.2 | HIGH | CWE-22 | No | 2026-03-31 | baserCMS is a website development framework. Prior to version 5.2.3, a path traversal vulnerability exists in the theme... |
@@ -34,7 +54,6 @@ _5491 vulnerabilities_
 | [CVE-2026-33982](https://nvd.nist.gov/vuln/detail/CVE-2026-33982) | 7.1 | HIGH | CWE-125 | No | 2026-03-30 | FreeRDP is a free implementation of the Remote Desktop Protocol. Prior to version 3.24.2, there is a heap-buffer-overflo... |
 | [CVE-2026-33977](https://nvd.nist.gov/vuln/detail/CVE-2026-33977) | 6.9 | MEDIUM | CWE-617 | No | 2026-03-30 | FreeRDP is a free implementation of the Remote Desktop Protocol. Prior to version 3.24.2, a malicious RDP server can cra... |
 | [CVE-2026-33952](https://nvd.nist.gov/vuln/detail/CVE-2026-33952) | 6.0 | MEDIUM | CWE-617 | No | 2026-03-30 | FreeRDP is a free implementation of the Remote Desktop Protocol. Prior to version 3.24.2, an unvalidated auth_length fie... |
-| [CVE-2026-32794](https://nvd.nist.gov/vuln/detail/CVE-2026-32794) | 0.0 | NONE | CWE-295 | No | 2026-03-30 | Improper Certificate Validation vulnerability in Apache Airflow Provider for Databricks. Provider code did not validate... |
 | [CVE-2026-5152](https://nvd.nist.gov/vuln/detail/CVE-2026-5152) | 7.4 | HIGH | CWE-119 | No | 2026-03-30 | A vulnerability was detected in Tenda CH22 1.0.0.1. Impacted is the function formCreateFileName of the file /goform/crea... |
 | [CVE-2026-4789](https://nvd.nist.gov/vuln/detail/CVE-2026-4789) | 0.0 | NONE | N/A | No | 2026-03-30 | Kyverno, versions 1.16.0 and later, are vulnerable to SSRF due to unrestricted CEL HTTP functions. |
 | [CVE-2026-34558](https://nvd.nist.gov/vuln/detail/CVE-2026-34558) | 9.1 | CRITICAL | CWE-79 | No | 2026-03-30 | CI4MS is a CodeIgniter 4-based CMS skeleton that delivers a production-ready, modular architecture with RBAC authorizati... |
