@@ -1,9 +1,13 @@
 # CVEs — March 2026
 
-_5562 vulnerabilities_
+_5563 vulnerabilities_
 
 | CVE ID | Score | Severity | CWE | KEV | Published | Description |
 |--------|-------|----------|-----|-----|-----------|-------------|
+| [CVE-2026-3308](https://nvd.nist.gov/vuln/detail/CVE-2026-3308) | 0.0 | NONE | N/A | No | 2026-03-31 | An integer overflow vulnerability in 'pdf-image.c' in Artifex's MuPDF version 1.27.0 allows an attacker to maliciously c... |
+| [CVE-2026-34156](https://nvd.nist.gov/vuln/detail/CVE-2026-34156) | 9.9 | CRITICAL | CWE-913 | No | 2026-03-31 | NocoBase is an AI-powered no-code/low-code platform for building business applications and enterprise solutions. Prior t... |
+| [CVE-2026-34155](https://nvd.nist.gov/vuln/detail/CVE-2026-34155) | 7.2 | HIGH | CWE-196 | No | 2026-03-31 | RAUC controls the update process on embedded Linux systems. Prior to version 1.15.2, RAUC bundles using the 'plain' form... |
+| [CVE-2026-30310](https://nvd.nist.gov/vuln/detail/CVE-2026-30310) | 0.0 | NONE | N/A | No | 2026-03-31 | In its design for automatic terminal command execution, Sixth offers two options: Execute safe commands and Execute all... |
 | [CVE-2026-5198](https://nvd.nist.gov/vuln/detail/CVE-2026-5198) | 6.9 | MEDIUM | CWE-74 | No | 2026-03-31 | A vulnerability was determined in code-projects Student Membership System 1.0. The impacted element is an unknown functi... |
 | [CVE-2026-4267](https://nvd.nist.gov/vuln/detail/CVE-2026-4267) | 7.2 | HIGH | CWE-79 | No | 2026-03-31 | The Query Monitor – The developer tools panel for WordPress plugin for WordPress is vulnerable to Reflected Cross-Site S... |
 | [CVE-2026-3191](https://nvd.nist.gov/vuln/detail/CVE-2026-3191) | 5.4 | MEDIUM | CWE-352 | No | 2026-03-31 | The Minify HTML plugin for WordPress is vulnerable to Cross-Site Request Forgery in all versions up to, and including, 2... |
@@ -22,20 +26,17 @@ _5562 vulnerabilities_
 | [CVE-2026-32920](https://nvd.nist.gov/vuln/detail/CVE-2026-32920) | 8.6 | HIGH | CWE-829 | No | 2026-03-31 | OpenClaw before 2026.3.12 automatically discovers and loads plugins from .OpenClaw/extensions/ without explicit trust ve... |
 | [CVE-2026-32917](https://nvd.nist.gov/vuln/detail/CVE-2026-32917) | 9.2 | CRITICAL | CWE-78 | No | 2026-03-31 | OpenClaw before 2026.3.13 contains a remote command injection vulnerability in the iMessage attachment staging flow that... |
 | [CVE-2026-32916](https://nvd.nist.gov/vuln/detail/CVE-2026-32916) | 9.2 | CRITICAL | CWE-266 | No | 2026-03-31 | OpenClaw versions 2026.3.7 before 2026.3.11 contain an authorization bypass vulnerability where plugin subagent routes e... |
-| [CVE-2026-27854](https://nvd.nist.gov/vuln/detail/CVE-2026-27854) | 4.8 | MEDIUM | N/A | No | 2026-03-31 | An attacker might be able to trigger a use-after-free by sending crafted DNS queries to a DNSdist using the DNSQuestion:... |
-| [CVE-2026-27853](https://nvd.nist.gov/vuln/detail/CVE-2026-27853) | 5.9 | MEDIUM | N/A | No | 2026-03-31 | An attacker might be able to trigger an out-of-bounds write by sending crafted DNS responses to a DNSdist using the DNSQ... |
-| [CVE-2026-24030](https://nvd.nist.gov/vuln/detail/CVE-2026-24030) | 5.3 | MEDIUM | N/A | No | 2026-03-31 | An attacker might be able to trick DNSdist into allocating too much memory while processing DNS over QUIC or DNS over HT... |
-| [CVE-2026-24029](https://nvd.nist.gov/vuln/detail/CVE-2026-24029) | 6.5 | MEDIUM | N/A | No | 2026-03-31 | When the early_acl_drop (earlyACLDrop in Lua) option is disabled (default is enabled) on a DNS over HTTPs frontend using... |
-| [CVE-2026-24028](https://nvd.nist.gov/vuln/detail/CVE-2026-24028) | 5.3 | MEDIUM | N/A | No | 2026-03-31 | An attacker might be able to trigger an out-of-bounds read by sending a crafted DNS response packet, when custom Lua cod... |
-| [CVE-2026-0397](https://nvd.nist.gov/vuln/detail/CVE-2026-0397) | 3.1 | LOW | N/A | No | 2026-03-31 | When the internal webserver is enabled (default is disabled), an attacker might be able to trick an administrator logged... |
-| [CVE-2026-0396](https://nvd.nist.gov/vuln/detail/CVE-2026-0396) | 3.1 | LOW | N/A | No | 2026-03-31 | An attacker might be able to inject HTML content into the internal web dashboard by sending crafted DNS queries to a DNS... |
+| [CVE-2026-27854](https://nvd.nist.gov/vuln/detail/CVE-2026-27854) | 4.8 | MEDIUM | CWE-416 | No | 2026-03-31 | An attacker might be able to trigger a use-after-free by sending crafted DNS queries to a DNSdist using the DNSQuestion:... |
+| [CVE-2026-27853](https://nvd.nist.gov/vuln/detail/CVE-2026-27853) | 5.9 | MEDIUM | CWE-787 | No | 2026-03-31 | An attacker might be able to trigger an out-of-bounds write by sending crafted DNS responses to a DNSdist using the DNSQ... |
+| [CVE-2026-24030](https://nvd.nist.gov/vuln/detail/CVE-2026-24030) | 5.3 | MEDIUM | CWE-789 | No | 2026-03-31 | An attacker might be able to trick DNSdist into allocating too much memory while processing DNS over QUIC or DNS over HT... |
+| [CVE-2026-24029](https://nvd.nist.gov/vuln/detail/CVE-2026-24029) | 6.5 | MEDIUM | CWE-863 | No | 2026-03-31 | When the early_acl_drop (earlyACLDrop in Lua) option is disabled (default is enabled) on a DNS over HTTPs frontend using... |
+| [CVE-2026-24028](https://nvd.nist.gov/vuln/detail/CVE-2026-24028) | 5.3 | MEDIUM | CWE-126 | No | 2026-03-31 | An attacker might be able to trigger an out-of-bounds read by sending a crafted DNS response packet, when custom Lua cod... |
+| [CVE-2026-0397](https://nvd.nist.gov/vuln/detail/CVE-2026-0397) | 3.1 | LOW | CWE-942 | No | 2026-03-31 | When the internal webserver is enabled (default is disabled), an attacker might be able to trick an administrator logged... |
+| [CVE-2026-0396](https://nvd.nist.gov/vuln/detail/CVE-2026-0396) | 3.1 | LOW | CWE-80 | No | 2026-03-31 | An attacker might be able to inject HTML content into the internal web dashboard by sending crafted DNS queries to a DNS... |
 | [CVE-2025-14213](https://nvd.nist.gov/vuln/detail/CVE-2025-14213) | 8.3 | HIGH | CWE-20 | No | 2026-03-31 | Cato Networks’ Socket versions prior to 25 contain a command injection vulnerability that allows an authenticated attack... |
-| [CVE-2024-14031](https://nvd.nist.gov/vuln/detail/CVE-2024-14031) | 0.0 | NONE | N/A | No | 2026-03-31 | Sereal::Encoder versions from 4.000 through 4.009_002 for Perl is vulnerable to a buffer overwrite flaw in the Zstandard... |
-| [CVE-2024-14030](https://nvd.nist.gov/vuln/detail/CVE-2024-14030) | 0.0 | NONE | N/A | No | 2026-03-31 | Sereal::Decoder versions from 4.000 through 4.009_002 for Perl is vulnerable to a buffer overwrite flaw in the Zstandard... |
 | [CVE-2026-4400](https://nvd.nist.gov/vuln/detail/CVE-2026-4400) | 7.0 | HIGH | CWE-639 | No | 2026-03-31 | Insecure Direct Object Reference (IDOR) vulnerability in 1millionbot Millie chat that allows private conversations of ot... |
 | [CVE-2026-4399](https://nvd.nist.gov/vuln/detail/CVE-2026-4399) | 8.7 | HIGH | N/A | No | 2026-03-31 | Prompt injection vulnerability in 1millionbot Millie chatbot that occurs when a user manages to evade chat restrictions... |
 | [CVE-2026-34887](https://nvd.nist.gov/vuln/detail/CVE-2026-34887) | 6.5 | MEDIUM | CWE-79 | No | 2026-03-31 | Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Extend Themes Kubi... |
-| [CVE-2025-15618](https://nvd.nist.gov/vuln/detail/CVE-2025-15618) | 0.0 | NONE | CWE-338 | No | 2026-03-31 | Business::OnlinePayment::StoredTransaction versions through 0.01 for Perl uses an insecure secret key.  Business::Online... |
 | [CVE-2026-5197](https://nvd.nist.gov/vuln/detail/CVE-2026-5197) | 5.3 | MEDIUM | CWE-74 | No | 2026-03-31 | A vulnerability was found in code-projects Student Membership System 1.0. The affected element is an unknown function of... |
 | [CVE-2026-4317](https://nvd.nist.gov/vuln/detail/CVE-2026-4317) | 9.3 | CRITICAL | CWE-89 | No | 2026-03-31 | SQL inyection (SQLi) vulnerability in Umami Software web application through an improperly sanitized parameter, which co... |
 | [CVE-2026-5201](https://nvd.nist.gov/vuln/detail/CVE-2026-5201) | 7.5 | HIGH | CWE-122 | No | 2026-03-31 | A flaw was found in the gdk-pixbuf library. This heap-based buffer overflow vulnerability occurs in the JPEG image loade... |
@@ -105,6 +106,7 @@ _5562 vulnerabilities_
 | [CVE-2026-33982](https://nvd.nist.gov/vuln/detail/CVE-2026-33982) | 7.1 | HIGH | CWE-125 | No | 2026-03-30 | FreeRDP is a free implementation of the Remote Desktop Protocol. Prior to version 3.24.2, there is a heap-buffer-overflo... |
 | [CVE-2026-33977](https://nvd.nist.gov/vuln/detail/CVE-2026-33977) | 6.9 | MEDIUM | CWE-617 | No | 2026-03-30 | FreeRDP is a free implementation of the Remote Desktop Protocol. Prior to version 3.24.2, a malicious RDP server can cra... |
 | [CVE-2026-33952](https://nvd.nist.gov/vuln/detail/CVE-2026-33952) | 6.0 | MEDIUM | CWE-617 | No | 2026-03-30 | FreeRDP is a free implementation of the Remote Desktop Protocol. Prior to version 3.24.2, an unvalidated auth_length fie... |
+| [CVE-2026-32794](https://nvd.nist.gov/vuln/detail/CVE-2026-32794) | 4.8 | MEDIUM | CWE-295 | No | 2026-03-30 | Improper Certificate Validation vulnerability in Apache Airflow Provider for Databricks. Provider code did not validate... |
 | [CVE-2026-5152](https://nvd.nist.gov/vuln/detail/CVE-2026-5152) | 7.4 | HIGH | CWE-119 | No | 2026-03-30 | A vulnerability was detected in Tenda CH22 1.0.0.1. Impacted is the function formCreateFileName of the file /goform/crea... |
 | [CVE-2026-4789](https://nvd.nist.gov/vuln/detail/CVE-2026-4789) | 0.0 | NONE | N/A | No | 2026-03-30 | Kyverno, versions 1.16.0 and later, are vulnerable to SSRF due to unrestricted CEL HTTP functions. |
 | [CVE-2026-34558](https://nvd.nist.gov/vuln/detail/CVE-2026-34558) | 9.1 | CRITICAL | CWE-79 | No | 2026-03-30 | CI4MS is a CodeIgniter 4-based CMS skeleton that delivers a production-ready, modular architecture with RBAC authorizati... |
@@ -5497,7 +5499,6 @@ _5562 vulnerabilities_
 | [CVE-2026-1628](https://nvd.nist.gov/vuln/detail/CVE-2026-1628) | 4.6 | MEDIUM | CWE-829 | No | 2026-03-02 | Mattermost Desktop App versions <=5.13.3 fail to attach listeners restricting navigation to external sites within the Ma... |
 | [CVE-2026-3432](https://nvd.nist.gov/vuln/detail/CVE-2026-3432) | 9.3 | CRITICAL | CWE-862 | No | 2026-03-02 | On SimStudio version below to 0.5.74, the `/api/auth/oauth/token` endpoint contains a code path that bypasses all author... |
 | [CVE-2026-3431](https://nvd.nist.gov/vuln/detail/CVE-2026-3431) | 9.8 | CRITICAL | CWE-862 | No | 2026-03-02 | On SimStudio version below to 0.5.74, the MongoDB tool endpoints accept arbitrary connection parameters from the caller... |
-| [CVE-2025-12462](https://nvd.nist.gov/vuln/detail/CVE-2025-12462) | 9.3 | CRITICAL | CWE-89 | No | 2026-03-02 | A Blind SQL injection vulnerability has been identified in DobryCMS.  A remote unauthenticated attacker is able to injec... |
 | [CVE-2025-58406](https://nvd.nist.gov/vuln/detail/CVE-2025-58406) | 5.3 | MEDIUM | CWE-693 | No | 2026-03-02 | The CGM CLININET application respond without essential security HTTP headers, exposing users to client‑side attacks such... |
 | [CVE-2025-58405](https://nvd.nist.gov/vuln/detail/CVE-2025-58405) | 5.3 | MEDIUM | CWE-1021 | No | 2026-03-02 | The CGM CLININET application does not implement any mechanisms that prevent clickjacking attacks, neither HTTP security... |
 | [CVE-2025-58402](https://nvd.nist.gov/vuln/detail/CVE-2025-58402) | 7.1 | HIGH | CWE-639 | No | 2026-03-02 | The CGM CLININET application uses direct, sequential object identifiers "MessageID" without proper authorization checks.... |
