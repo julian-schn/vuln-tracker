@@ -11,7 +11,7 @@
     <header>
       <h1>vuln-tracker</h1>
       <p class="subtitle">CVEs from the National Vulnerability Database — current and previous month</p>
-      <p class="last-updated">Last updated: 2026-03-31 20:50 UTC</p>
+      <p class="last-updated">Last updated: 2026-03-31 22:40 UTC</p>
     </header>
     <nav>
       <a href="top50.html">&#9733; Top 50</a>
@@ -25,7 +25,7 @@
     </nav>
     <main>
     <section>
-      <h2>Current Month — March 2026 <span class="count">(5672)</span></h2>
+      <h2>Current Month — March 2026 <span class="count">(5719)</span></h2>
       <div class="table-wrapper">
         <table>
           <thead>
@@ -41,37 +41,506 @@
           </thead>
           <tbody>
       <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5215" target="_blank" rel="noopener">CVE-2026-5215</a></td>
+        <td>5.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-266</td>
+        <td>&nbsp;</td>
+        <td><details><summary>A vulnerability was identified in D-Link DNS-120, DNR-202L, DNS-315L, DNS-320, D...</summary><p>A vulnerability was identified in D-Link DNS-120, DNR-202L, DNS-315L, DNS-320, DNS-320L, DNS-320LW, DNS-321, DNR-322L, DNS-323, DNS-325, DNS-326, DNS-327L, DNR-326, DNS-340L, DNS-343, DNS-345, DNS-726-4, DNS-1100-4, DNS-1200-05 and DNS-1550-04 up to 20260205. The impacted element is the function cgi_get_ipv6 of the file /cgi-bin/network_mgr.cgi. Such manipulation leads to improper access controls. The exploit is publicly available and might be used.</p></details></td>
+        <td>2026-03-31</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5214" target="_blank" rel="noopener">CVE-2026-5214</a></td>
+        <td>7.4</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-119</td>
+        <td>&nbsp;</td>
+        <td><details><summary>A vulnerability was found in D-Link DNS-120, DNR-202L, DNS-315L, DNS-320, DNS-32...</summary><p>A vulnerability was found in D-Link DNS-120, DNR-202L, DNS-315L, DNS-320, DNS-320L, DNS-320LW, DNS-321, DNR-322L, DNS-323, DNS-325, DNS-326, DNS-327L, DNR-326, DNS-340L, DNS-343, DNS-345, DNS-726-4, DNS-1100-4, DNS-1200-05 and DNS-1550-04 up to 20260205. Impacted is the function cgi_addgroup_get_group_quota_minsize of the file /cgi-bin/account_mgr.cgi. The manipulation of the argument Name results in stack-based buffer overflow. The attack may be performed from remote. The exploit has been made public and could be used.</p></details></td>
+        <td>2026-03-31</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34605" target="_blank" rel="noopener">CVE-2026-34605</a></td>
+        <td>8.6</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td><details><summary>SiYuan is a personal knowledge management system. From version 3.6.0 to before v...</summary><p>SiYuan is a personal knowledge management system. From version 3.6.0 to before version 3.6.2, the SanitizeSVG function introduced in version 3.6.0 to fix XSS in the unauthenticated /api/icon/getDynamicIcon endpoint can be bypassed by using namespace-prefixed element names such as &lt;x:script xmlns:x=&quot;http://www.w3.org/2000/svg&quot;&gt;. The Go HTML5 parser records the element&#x27;s tag as &quot;x:script&quot; rather than &quot;script&quot;, so the tag check passes it through. The SVG is served with Content-Type: image/svg+xml and no Content Security Policy; when a browser opens the response directly, its XML parser resolves the prefix to the SVG namespace and executes the embedded script. This issue has been patched in version 3.6.2.</p></details></td>
+        <td>2026-03-31</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34585" target="_blank" rel="noopener">CVE-2026-34585</a></td>
+        <td>8.6</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td><details><summary>SiYuan is a personal knowledge management system. Prior to version 3.6.2, a vuln...</summary><p>SiYuan is a personal knowledge management system. Prior to version 3.6.2, a vulnerability allows crafted block attribute values to bypass server-side attribute escaping when an HTML entity is mixed with raw special characters. An attacker can embed a malicious IAL value inside a .sy document, package it as a .sy.zip, and have the victim import it through the normal Import -&gt; SiYuan .sy.zip workflow. Once the note is opened, the malicious attribute breaks out of its original HTML context and injects an event handler, resulting in stored XSS. In the Electron desktop client, this XSS reaches remote code execution because injected JavaScript runs with access to Node/Electron APIs. This issue has been patched in version 3.6.2.</p></details></td>
+        <td>2026-03-31</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34542" target="_blank" rel="noopener">CVE-2026-34542</a></td>
+        <td>6.2</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-121</td>
+        <td>&nbsp;</td>
+        <td><details><summary>iccDEV provides a set of libraries and tools for working with ICC color manageme...</summary><p>iccDEV provides a set of libraries and tools for working with ICC color management profiles. Prior to version 2.3.1.6, a crafted ICC profile can trigger a stack-buffer-overflow (SBO) in CIccCalculatorFunc::Apply() when processed via iccApplyNamedCmm. Under AddressSanitizer, the failure is reported as a 4-byte write stack-buffer-overflow in IccProfLib/IccMpeCalc.cpp:3873, reachable through the MPE calculator / curve set initialization path. This issue has been patched in version 2.3.1.6.</p></details></td>
+        <td>2026-03-31</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34541" target="_blank" rel="noopener">CVE-2026-34541</a></td>
+        <td>6.2</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-476</td>
+        <td>&nbsp;</td>
+        <td><details><summary>iccDEV provides a set of libraries and tools for working with ICC color manageme...</summary><p>iccDEV provides a set of libraries and tools for working with ICC color management profiles. Prior to version 2.3.1.6, a crafted ICC profile can trigger Undefined Behavior (UB) via a null-pointer member call in CIccCombinedConnectionConditions::CIccCombinedConnectionConditions() (reported by UBSan as “member call on null pointer of type CIccTagSpectralViewingConditions”). The issue is reachable when running iccApplyNamedCmm with -PCC using a malformed .icc profile. This issue has been patched in version 2.3.1.6.</p></details></td>
+        <td>2026-03-31</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34540" target="_blank" rel="noopener">CVE-2026-34540</a></td>
+        <td>6.2</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-122</td>
+        <td>&nbsp;</td>
+        <td><details><summary>iccDEV provides a set of libraries and tools for working with ICC color manageme...</summary><p>iccDEV provides a set of libraries and tools for working with ICC color management profiles. Prior to version 2.3.1.6, a crafted ICC profile can trigger a heap-buffer-overflow (HBO) in icMemDump() when iccDumpProfile attempts to dump/describe malformed tag contents. The issue is observable under AddressSanitizer as an out-of-bounds heap read in icMemDump(...) at IccProfLib/IccUtil.cpp:1002, reachable via CIccTagUnknown::Describe(). This issue has been patched in version 2.3.1.6.</p></details></td>
+        <td>2026-03-31</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34539" target="_blank" rel="noopener">CVE-2026-34539</a></td>
+        <td>6.2</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-122</td>
+        <td>&nbsp;</td>
+        <td><details><summary>iccDEV provides a set of libraries and tools for working with ICC color manageme...</summary><p>iccDEV provides a set of libraries and tools for working with ICC color management profiles. Prior to version 2.3.1.6, a crafted ICC profile and TIFF input can trigger a heap-buffer-overflow (HBO) in CTiffImg::WriteLine(). The issue is observable under AddressSanitizer as an out-of-bounds heap read when running iccSpecSepToTiff on a malicious .icc + .tif pair, leading to a crash during TIFF strip writing. This issue has been patched in version 2.3.1.6.</p></details></td>
+        <td>2026-03-31</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34537" target="_blank" rel="noopener">CVE-2026-34537</a></td>
+        <td>6.2</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-758</td>
+        <td>&nbsp;</td>
+        <td><details><summary>iccDEV provides a set of libraries and tools for working with ICC color manageme...</summary><p>iccDEV provides a set of libraries and tools for working with ICC color management profiles. Prior to version 2.3.1.6, a crafted ICC profile can trigger Undefined Behavior (UB) in CIccOpDefEnvVar::Exec() due to invalid enum values being loaded for icSigCmmEnvVar. The issue is observable under UBSan as a “load of value … not a valid value for type icSigCmmEnvVar”, indicating an invalid enum/type value being consumed during ICC profile processing. This issue has been patched in version 2.3.1.6.</p></details></td>
+        <td>2026-03-31</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34536" target="_blank" rel="noopener">CVE-2026-34536</a></td>
+        <td>6.2</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-674</td>
+        <td>&nbsp;</td>
+        <td><details><summary>iccDEV provides a set of libraries and tools for working with ICC color manageme...</summary><p>iccDEV provides a set of libraries and tools for working with ICC color management profiles. Prior to version 2.3.1.6, a crafted ICC profile can trigger a stack overflow (SO) in SIccCalcOp::ArgsUsed(). The issue is observable under AddressSanitizer as a stack-overflow when iccApplyProfiles processes a malicious profile, with the crash occurring while computing argument usage during calculator underflow/overflow checks. This issue has been patched in version 2.3.1.6.</p></details></td>
+        <td>2026-03-31</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34535" target="_blank" rel="noopener">CVE-2026-34535</a></td>
+        <td>6.2</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-122</td>
+        <td>&nbsp;</td>
+        <td><details><summary>iccDEV provides a set of libraries and tools for working with ICC color manageme...</summary><p>iccDEV provides a set of libraries and tools for working with ICC color management profiles. Prior to version 2.3.1.6, a crafted ICC profile can trigger a segmentation fault (SEGV) in CIccTagArray::Cleanup(). The issue is observable under UBSan/ASan as misaligned member access / misaligned pointer loads followed by an invalid read leading to process crash when running iccRoundTrip on a malicious profile. This issue has been patched in version 2.3.1.6.</p></details></td>
+        <td>2026-03-31</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34534" target="_blank" rel="noopener">CVE-2026-34534</a></td>
+        <td>6.2</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-122</td>
+        <td>&nbsp;</td>
+        <td><details><summary>iccDEV provides a set of libraries and tools for working with ICC color manageme...</summary><p>iccDEV provides a set of libraries and tools for working with ICC color management profiles. Prior to version 2.3.1.6, a crafted ICC profile can trigger a heap-buffer-overflow (HBO) in CIccMpeSpectralMatrix::Describe(). The issue is observable under AddressSanitizer as an out-of-bounds heap read when running iccDumpProfile on a malicious profile. This issue has been patched in version 2.3.1.6.</p></details></td>
+        <td>2026-03-31</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34533" target="_blank" rel="noopener">CVE-2026-34533</a></td>
+        <td>6.2</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-758</td>
+        <td>&nbsp;</td>
+        <td><details><summary>iccDEV provides a set of libraries and tools for working with ICC color manageme...</summary><p>iccDEV provides a set of libraries and tools for working with ICC color management profiles. Prior to version 2.3.1.6, a crafted ICC profile can trigger Undefined Behavior (UB) in CIccCalculatorFunc::ApplySequence() due to invalid enum values being loaded for icChannelFuncSignature. The issue is observable under UBSan as a “load of value … not a valid value for type icChannelFuncSignature”, indicating a type/enum value confusion scenario during ICC profile processing. This issue has been patched in version 2.3.1.6.</p></details></td>
+        <td>2026-03-31</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34453" target="_blank" rel="noopener">CVE-2026-34453</a></td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-863</td>
+        <td>&nbsp;</td>
+        <td><details><summary>SiYuan is a personal knowledge management system. Prior to version 3.6.2, the pu...</summary><p>SiYuan is a personal knowledge management system. Prior to version 3.6.2, the publish service exposes bookmarked blocks from password-protected documents to unauthenticated visitors. In publish/read-only mode, /api/bookmark/getBookmark filters bookmark results by calling FilterBlocksByPublishAccess(nil, ...). Because the filter treats a nil context as authorized, it skips the publish password check and returns bookmarked blocks from documents configured as Protected. As a result, anyone who can access the publish service can retrieve content from protected documents without providing the required password, as long as at least one block in the document is bookmarked. This issue has been patched in version 3.6.2.</p></details></td>
+        <td>2026-03-31</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34452" target="_blank" rel="noopener">CVE-2026-34452</a></td>
+        <td>5.8</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-59</td>
+        <td>&nbsp;</td>
+        <td><details><summary>The Claude SDK for Python provides access to the Claude API from Python applicat...</summary><p>The Claude SDK for Python provides access to the Claude API from Python applications. From version 0.86.0 to before version 0.87.0, the async local filesystem memory tool in the Anthropic Python SDK validated that model-supplied paths resolved inside the sandboxed memory directory, but then returned the unresolved path for subsequent file operations. A local attacker able to write to the memory directory could retarget a symlink between validation and use, causing reads or writes to escape the sandbox. The synchronous memory tool implementation was not affected. This issue has been patched in version 0.87.0.</p></details></td>
+        <td>2026-03-31</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34451" target="_blank" rel="noopener">CVE-2026-34451</a></td>
+        <td>6.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-22</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Claude SDK for TypeScript provides access to the Claude API from server-side Typ...</summary><p>Claude SDK for TypeScript provides access to the Claude API from server-side TypeScript or JavaScript applications. From version 0.79.0 to before version 0.81.0, the local filesystem memory tool in the Anthropic TypeScript SDK validated model-supplied paths using a string prefix check that did not append a trailing path separator. A model steered by prompt injection could supply a crafted path that resolved to a sibling directory sharing the memory root&#x27;s name as a prefix, allowing reads and writes outside the sandboxed memory directory. This issue has been patched in version 0.81.0.</p></details></td>
+        <td>2026-03-31</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34450" target="_blank" rel="noopener">CVE-2026-34450</a></td>
+        <td>4.8</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-276</td>
+        <td>&nbsp;</td>
+        <td><details><summary>The Claude SDK for Python provides access to the Claude API from Python applicat...</summary><p>The Claude SDK for Python provides access to the Claude API from Python applications. From version 0.86.0 to before version 0.87.0, the local filesystem memory tool in the Anthropic Python SDK created memory files with mode 0o666, leaving them world-readable on systems with a standard umask and world-writable in environments with a permissive umask such as many Docker base images. A local attacker on a shared host could read persisted agent state, and in containerized deployments could modify memory files to influence subsequent model behavior. Both the synchronous and asynchronous memory tool implementations were affected. This issue has been patched in version 0.87.0.</p></details></td>
+        <td>2026-03-31</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34449" target="_blank" rel="noopener">CVE-2026-34449</a></td>
+        <td>9.6</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-942</td>
+        <td>&nbsp;</td>
+        <td><details><summary>SiYuan is a personal knowledge management system. Prior to version 3.6.2, a mali...</summary><p>SiYuan is a personal knowledge management system. Prior to version 3.6.2, a malicious website can achieve Remote Code Execution (RCE) on any desktop running SiYuan by exploiting the permissive CORS policy (Access-Control-Allow-Origin: * + Access-Control-Allow-Private-Network: true) to inject a JavaScript snippet via the API. The injected snippet executes in Electron&#x27;s Node.js context with full OS access the next time the user opens SiYuan&#x27;s UI. No user interaction is required beyond visiting the malicious website while SiYuan is running. This issue has been patched in version 3.6.2.</p></details></td>
+        <td>2026-03-31</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34448" target="_blank" rel="noopener">CVE-2026-34448</a></td>
+        <td>9.0</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td><details><summary>SiYuan is a personal knowledge management system. Prior to version 3.6.2, an att...</summary><p>SiYuan is a personal knowledge management system. Prior to version 3.6.2, an attacker who can place a malicious URL in an Attribute View mAsse field can trigger stored XSS when a victim opens the Gallery or Kanban view with “Cover From -&gt; Asset Field” enabled. The vulnerable code accepts arbitrary http(s) URLs without extensions as images, stores the attacker-controlled string in coverURL, and injects it directly into an &lt;img src=&quot;...&quot;&gt; attribute without escaping. In the Electron desktop client, the injected JavaScript executes with nodeIntegration enabled and contextIsolation disabled, so the XSS reaches arbitrary OS command execution under the victim’s account. This issue has been patched in version 3.6.2.</p></details></td>
+        <td>2026-03-31</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34443" target="_blank" rel="noopener">CVE-2026-34443</a></td>
+        <td>6.9</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-918</td>
+        <td>&nbsp;</td>
+        <td><details><summary>FreeScout is a free help desk and shared inbox built with PHP&#x27;s Laravel framewor...</summary><p>FreeScout is a free help desk and shared inbox built with PHP&#x27;s Laravel framework. Prior to version 1.8.211, checkIpByMask() in app/Misc/Helper.php checks whether the input IP contains a / character. Plain IP addresses never contain /, so the function always returns false without checking any CIDR ranges. The entire 10.0.0.0/8 and 172.16.0.0/12 private ranges are unprotected. This issue has been patched in version 1.8.211.</p></details></td>
+        <td>2026-03-31</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34442" target="_blank" rel="noopener">CVE-2026-34442</a></td>
+        <td>5.4</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-20</td>
+        <td>&nbsp;</td>
+        <td><details><summary>FreeScout is a free help desk and shared inbox built with PHP&#x27;s Laravel framewor...</summary><p>FreeScout is a free help desk and shared inbox built with PHP&#x27;s Laravel framework. Prior to version 1.8.211, host header manipulation in FreeScout version (http://localhost:8080/system/status) allows an attacker to inject an arbitrary domain into generated absolute URLs. This leads to External Resource Loading and Open Redirect behavior. When the application constructs links and assets using the unvalidated Host header, user requests can be redirected to attacker-controlled domains and external resources may be loaded from malicious servers. This issue has been patched in version 1.8.211.</p></details></td>
+        <td>2026-03-31</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34441" target="_blank" rel="noopener">CVE-2026-34441</a></td>
+        <td>4.8</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-444</td>
+        <td>&nbsp;</td>
+        <td><details><summary>cpp-httplib is a C++11 single-file header-only cross platform HTTP/HTTPS library...</summary><p>cpp-httplib is a C++11 single-file header-only cross platform HTTP/HTTPS library. Prior to version 0.40.0, cpp-httplib is vulnerable to HTTP Request Smuggling. The server&#x27;s static file handler serves GET responses without consuming the request body. On HTTP/1.1 keep-alive connections, the unread body bytes remain on the TCP stream and are interpreted as the start of a new HTTP request. An attacker can embed an arbitrary HTTP request inside the body of a GET request, which the server processes as a separate request. This issue has been patched in version 0.40.0.</p></details></td>
+        <td>2026-03-31</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34406" target="_blank" rel="noopener">CVE-2026-34406</a></td>
+        <td>9.4</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-915</td>
+        <td>&nbsp;</td>
+        <td><details><summary>APTRS (Automated Penetration Testing Reporting System) is a Python and Django-ba...</summary><p>APTRS (Automated Penetration Testing Reporting System) is a Python and Django-based automated reporting tool designed for penetration testers and security organizations. Prior to version 2.0.1, the edit_user endpoint (POST /api/auth/edituser/&lt;pk&gt;) allows Any user who can reach that endpoint and submit crafted permission to escalate their own account (or any other account) to superuser by including &quot;is_superuser&quot;: true in the request body. The root cause is that CustomUserSerializer explicitly includes is_superuser in its fields list but omits it from read_only_fields, making it a writable field. The edit_user view performs no additional validation to prevent non-superusers from modifying this field. Once is_superuser is set to true, gaining unrestricted access to all application functionality without requiring re-authentication. This issue has been patched in version 2.0.1.</p></details></td>
+        <td>2026-03-31</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34405" target="_blank" rel="noopener">CVE-2026-34405</a></td>
+        <td>6.1</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Nuxt OG Image generates OG Images with Vue templates in Nuxt. Prior to version 6...</summary><p>Nuxt OG Image generates OG Images with Vue templates in Nuxt. Prior to version 6.2.5, the image‑generation component by the URI: /_og/d/ (and, in older versions, /og-image/) contains a vulnerability that allows injection of arbitrary attributes into the HTML page body. This issue has been patched in version 6.2.5.</p></details></td>
+        <td>2026-03-31</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34404" target="_blank" rel="noopener">CVE-2026-34404</a></td>
+        <td>6.9</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-400</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Nuxt OG Image generates OG Images with Vue templates in Nuxt. Prior to version 6...</summary><p>Nuxt OG Image generates OG Images with Vue templates in Nuxt. Prior to version 6.2.5, the image‑generation component by the URI: /_og/d/ (and, in older versions, /og-image/) contains a Denial of Service (DoS) vulnerability. The issue arises because there is no restriction on the width and height parameters of the generated image. The vulnerability was reproduced using the standard configuration and the default templates. This issue has been patched in version 6.2.5.</p></details></td>
+        <td>2026-03-31</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34401" target="_blank" rel="noopener">CVE-2026-34401</a></td>
+        <td>6.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-611</td>
+        <td>&nbsp;</td>
+        <td><details><summary>XML Notepad is a Windows program that provides a simple intuitive User Interface...</summary><p>XML Notepad is a Windows program that provides a simple intuitive User Interface for browsing and editing XML documents. Prior to version 2.9.0.21, XML Notepad does not disable DTD processing by default which means external entities are resolved automatically. There is a well known attack related to malicious DTD files where an attacker to craft a malicious XML file that loads a DTD that causes XML Notepad to make outbound HTTP/SMB requests, potentially leaking local file contents or capturing the victim&#x27;s NTLM credentials. This issue has been patched in version 2.9.0.21.</p></details></td>
+        <td>2026-03-31</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34400" target="_blank" rel="noopener">CVE-2026-34400</a></td>
+        <td>6.9</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-89</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Alerta is a monitoring tool. Prior to version 9.1.0, the Query string search API...</summary><p>Alerta is a monitoring tool. Prior to version 9.1.0, the Query string search API (q=) was vulnerable to SQL injection via the Postgres query parser, which built WHERE clauses by interpolating user-supplied search terms directly into SQL strings via f-strings. This issue has been patched in version 9.1.0.</p></details></td>
+        <td>2026-03-31</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5213" target="_blank" rel="noopener">CVE-2026-5213</a></td>
+        <td>7.4</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-119</td>
+        <td>&nbsp;</td>
+        <td><details><summary>A vulnerability was determined in D-Link DNS-120, DNR-202L, DNS-315L, DNS-320, D...</summary><p>A vulnerability was determined in D-Link DNS-120, DNR-202L, DNS-315L, DNS-320, DNS-320L, DNS-320LW, DNS-321, DNR-322L, DNS-323, DNS-325, DNS-326, DNS-327L, DNR-326, DNS-340L, DNS-343, DNS-345, DNS-726-4, DNS-1100-4, DNS-1200-05 and DNS-1550-04 up to 20260205. The affected element is the function cgi_adduser_to_session of the file /cgi-bin/account_mgr.cgi. This manipulation of the argument read_list causes stack-based buffer overflow. It is possible to initiate the attack remotely. The exploit has been publicly disclosed and may be utilized.</p></details></td>
+        <td>2026-03-31</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5212" target="_blank" rel="noopener">CVE-2026-5212</a></td>
+        <td>7.4</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-119</td>
+        <td>&nbsp;</td>
+        <td><details><summary>A vulnerability has been found in D-Link DNS-120, DNR-202L, DNS-315L, DNS-320, D...</summary><p>A vulnerability has been found in D-Link DNS-120, DNR-202L, DNS-315L, DNS-320, DNS-320L, DNS-320LW, DNS-321, DNR-322L, DNS-323, DNS-325, DNS-326, DNS-327L, DNR-326, DNS-340L, DNS-343, DNS-345, DNS-726-4, DNS-1100-4, DNS-1200-05 and DNS-1550-04 up to 20260205. This issue affects the function Webdav_Upload_File of the file /cgi-bin/webdav_mgr.cgi. The manipulation of the argument f_file leads to stack-based buffer overflow. The attack is possible to be carried out remotely. The exploit has been disclosed to the public and may be used.</p></details></td>
+        <td>2026-03-31</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-3470" target="_blank" rel="noopener">CVE-2026-3470</a></td>
+        <td>3.8</td>
+        <td><span class="severity low">LOW</span></td>
+        <td>CWE-20</td>
+        <td>&nbsp;</td>
+        <td><details><summary>A vulnerability exists in the SonicWall Email Security appliance due to improper...</summary><p>A vulnerability exists in the SonicWall Email Security appliance due to improper input sanitization that may lead to data corruption, allowing a remote authenticated attacker as admin user could exploit this issue by providing crafted input that corrupts application database.</p></details></td>
+        <td>2026-03-31</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-3469" target="_blank" rel="noopener">CVE-2026-3469</a></td>
+        <td>2.7</td>
+        <td><span class="severity low">LOW</span></td>
+        <td>CWE-20</td>
+        <td>&nbsp;</td>
+        <td><details><summary>A denial-of-service (DoS) vulnerability exists due to improper input validation ...</summary><p>A denial-of-service (DoS) vulnerability exists due to improper input validation in the SonicWall Email Security appliance, allowing a remote authenticated attacker as admin user to cause the application to become unresponsive.</p></details></td>
+        <td>2026-03-31</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-3468" target="_blank" rel="noopener">CVE-2026-3468</a></td>
+        <td>4.8</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td><details><summary>A stored Cross-Site Scripting (XSS) vulnerability has been identified in the Son...</summary><p>A stored Cross-Site Scripting (XSS) vulnerability has been identified in the SonicWall Email Security appliance due to improper neutralization of user-supplied input during web page generation, allowing a remote authenticated attacker as admin user to potentially execute arbitrary JavaScript code.</p></details></td>
+        <td>2026-03-31</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34740" target="_blank" rel="noopener">CVE-2026-34740</a></td>
+        <td>6.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-918</td>
+        <td>&nbsp;</td>
+        <td><details><summary>WWBN AVideo is an open source video platform. In versions 26.0 and prior, the EP...</summary><p>WWBN AVideo is an open source video platform. In versions 26.0 and prior, the EPG (Electronic Program Guide) link feature in AVideo allows authenticated users with upload permissions to store arbitrary URLs that the server fetches on every EPG page visit. The URL is validated only with PHP&#x27;s FILTER_VALIDATE_URL, which accepts internal network addresses. Although AVideo has a dedicated isSSRFSafeURL() function for preventing SSRF, it is not called in this code path. This results in a stored server-side request forgery vulnerability that can be used to scan internal networks, access cloud metadata services, and interact with internal services. At time of publication, there are no publicly available patches.</p></details></td>
+        <td>2026-03-31</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34739" target="_blank" rel="noopener">CVE-2026-34739</a></td>
+        <td>6.1</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td><details><summary>WWBN AVideo is an open source video platform. In versions 26.0 and prior, the Us...</summary><p>WWBN AVideo is an open source video platform. In versions 26.0 and prior, the User_Location plugin&#x27;s testIP.php page reflects the ip request parameter directly into an HTML input element without applying htmlspecialchars() or any other output encoding. This allows an attacker to inject arbitrary HTML and JavaScript via a crafted URL. Although the page is restricted to admin users, AVideo&#x27;s SameSite=None cookie configuration allows cross-origin exploitation, meaning an attacker can lure an admin to a malicious link that executes JavaScript in their authenticated session. At time of publication, there are no publicly available patches.</p></details></td>
+        <td>2026-03-31</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34738" target="_blank" rel="noopener">CVE-2026-34738</a></td>
+        <td>4.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-285</td>
+        <td>&nbsp;</td>
+        <td><details><summary>WWBN AVideo is an open source video platform. In versions 26.0 and prior, AVideo...</summary><p>WWBN AVideo is an open source video platform. In versions 26.0 and prior, AVideo&#x27;s video processing pipeline accepts an overrideStatus request parameter that allows any uploader to set a video&#x27;s status to any valid state, including &quot;active&quot; (a). This bypasses the admin-controlled moderation and draft workflows. The setStatus() method validates the status code against a list of known values but does not verify that the caller has permission to set that particular status. As a result, any user with upload permissions can publish videos directly, circumventing content review processes. At time of publication, there are no publicly available patches.</p></details></td>
+        <td>2026-03-31</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34737" target="_blank" rel="noopener">CVE-2026-34737</a></td>
+        <td>6.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td><details><summary>WWBN AVideo is an open source video platform. In versions 26.0 and prior, the St...</summary><p>WWBN AVideo is an open source video platform. In versions 26.0 and prior, the StripeYPT plugin includes a test.php debug endpoint that is accessible to any logged-in user, not just administrators. This endpoint processes Stripe webhook-style payloads and triggers subscription operations, including cancellation. Due to a bug in the retrieveSubscriptions() method that cancels subscriptions instead of merely retrieving them, any authenticated user can cancel arbitrary Stripe subscriptions by providing a subscription ID. At time of publication, there are no publicly available patches.</p></details></td>
+        <td>2026-03-31</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34733" target="_blank" rel="noopener">CVE-2026-34733</a></td>
+        <td>6.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-284</td>
+        <td>&nbsp;</td>
+        <td><details><summary>WWBN AVideo is an open source video platform. In versions 26.0 and prior, the AV...</summary><p>WWBN AVideo is an open source video platform. In versions 26.0 and prior, the AVideo installation script install/deleteSystemdPrivate.php contains a PHP operator precedence bug in its CLI-only access guard. The script is intended to run exclusively from the command line, but the guard condition !php_sapi_name() === &#x27;cli&#x27; never evaluates to true due to how PHP resolves operator precedence. The ! (logical NOT) operator binds more tightly than === (strict comparison), causing the expression to always evaluate to false, which means the die() statement never executes. As a result, the script is accessible via HTTP without authentication and will delete files from the server&#x27;s temp directory while also disclosing the temp directory contents in its response. At time of publication, there are no publicly available patches.</p></details></td>
+        <td>2026-03-31</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34732" target="_blank" rel="noopener">CVE-2026-34732</a></td>
+        <td>5.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-306</td>
+        <td>&nbsp;</td>
+        <td><details><summary>WWBN AVideo is an open source video platform. In versions 26.0 and prior, the AV...</summary><p>WWBN AVideo is an open source video platform. In versions 26.0 and prior, the AVideo CreatePlugin template for list.json.php does not include any authentication or authorization check. While the companion templates add.json.php and delete.json.php both require admin privileges, the list.json.php template was shipped without this guard. Every plugin that uses the CreatePlugin code generator inherits this omission, resulting in 21 unauthenticated data listing endpoints across the platform. These endpoints expose sensitive data including user PII, payment transaction logs, IP addresses, user agents, and internal system records. At time of publication, there are no publicly available patches.</p></details></td>
+        <td>2026-03-31</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34731" target="_blank" rel="noopener">CVE-2026-34731</a></td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-306</td>
+        <td>&nbsp;</td>
+        <td><details><summary>WWBN AVideo is an open source video platform. In versions 26.0 and prior, the AV...</summary><p>WWBN AVideo is an open source video platform. In versions 26.0 and prior, the AVideo on_publish_done.php endpoint in the Live plugin allows unauthenticated users to terminate any active live stream. The endpoint processes RTMP callback events to mark streams as finished in the database, but performs no authentication or authorization checks before doing so. An attacker can enumerate active stream keys from the unauthenticated stats.json.php endpoint, then send crafted POST requests to on_publish_done.php to terminate any live broadcast. This enables denial-of-service against all live streaming functionality on the platform. At time of publication, there are no publicly available patches.</p></details></td>
+        <td>2026-03-31</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34716" target="_blank" rel="noopener">CVE-2026-34716</a></td>
+        <td>6.4</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td><details><summary>WWBN AVideo is an open source video platform. In versions 26.0 and prior, the AV...</summary><p>WWBN AVideo is an open source video platform. In versions 26.0 and prior, the AVideo YPTSocket plugin&#x27;s caller feature renders incoming call notifications using the jQuery Toast Plugin, passing the caller&#x27;s display name directly as the heading parameter. The toast plugin constructs the heading as raw HTML (&#x27;&lt;h2&gt;&#x27; + heading + &#x27;&lt;/h2&gt;&#x27;) and inserts it into the DOM via jQuery&#x27;s .html() method, which parses and executes any embedded HTML or script content. An attacker can set their display name to an XSS payload and trigger code execution on any online user&#x27;s browser simply by initiating a call - no victim interaction is required beyond being connected to the WebSocket. At time of publication, there are no publicly available patches.</p></details></td>
+        <td>2026-03-31</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34613" target="_blank" rel="noopener">CVE-2026-34613</a></td>
+        <td>6.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-352</td>
+        <td>&nbsp;</td>
+        <td><details><summary>WWBN AVideo is an open source video platform. In versions 26.0 and prior, the AV...</summary><p>WWBN AVideo is an open source video platform. In versions 26.0 and prior, the AVideo endpoint objects/pluginSwitch.json.php allows administrators to enable or disable any installed plugin. The endpoint checks for an active admin session but does not validate a CSRF token. Additionally, the plugins database table is explicitly listed in ignoreTableSecurityCheck(), which means the ORM-level Referer/Origin domain validation in ObjectYPT::save() is also bypassed. Combined with SameSite=None on session cookies, an attacker can disable critical security plugins (such as LoginControl for 2FA, subscription enforcement, or access control plugins) by luring an admin to a malicious page. At time of publication, there are no publicly available patches.</p></details></td>
+        <td>2026-03-31</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34611" target="_blank" rel="noopener">CVE-2026-34611</a></td>
+        <td>6.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-352</td>
+        <td>&nbsp;</td>
+        <td><details><summary>WWBN AVideo is an open source video platform. In versions 26.0 and prior, the AV...</summary><p>WWBN AVideo is an open source video platform. In versions 26.0 and prior, the AVideo endpoint objects/emailAllUsers.json.php allows administrators to send HTML emails to every registered user on the platform. While the endpoint verifies admin session status, it does not validate a CSRF token. Because AVideo sets SameSite=None on session cookies, a cross-origin POST request from an attacker-controlled page will include the admin&#x27;s session cookie automatically. An attacker who lures an admin to a malicious page can send an arbitrary HTML email to every user on the platform, appearing to originate from the instance&#x27;s legitimate SMTP address. At time of publication, there are no publicly available patches.</p></details></td>
+        <td>2026-03-31</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34586" target="_blank" rel="noopener">CVE-2026-34586</a></td>
+        <td>6.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-863</td>
+        <td>&nbsp;</td>
+        <td><details><summary>PdfDing is a selfhosted PDF manager, viewer and editor offering a seamless user ...</summary><p>PdfDing is a selfhosted PDF manager, viewer and editor offering a seamless user experience on multiple devices. Prior to version 1.7.1, check_shared_access_allowed() validates only session existence — it does not check SharedPdf.inactive (expiration / max views) or SharedPdf.deleted. The Serve and Download endpoints rely solely on this function, allowing previously-authorized users to access shared PDF content after expiration, view limit, or soft-deletion. This issue has been patched in version 1.7.1.</p></details></td>
+        <td>2026-03-31</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34396" target="_blank" rel="noopener">CVE-2026-34396</a></td>
+        <td>6.1</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td><details><summary>WWBN AVideo is an open source video platform. In versions 26.0 and prior, the AV...</summary><p>WWBN AVideo is an open source video platform. In versions 26.0 and prior, the AVideo admin panel renders plugin configuration values in HTML forms without applying htmlspecialchars() or any other output encoding. The jsonToFormElements() function in admin/functions.php directly interpolates user-controlled values into textarea contents, option elements, and input attributes. An attacker who can set a plugin configuration value (either as a compromised admin or by chaining with CSRF on admin/save.json.php) can inject arbitrary JavaScript that executes whenever any administrator visits the plugin configuration page. At time of publication, there are no publicly available patches.</p></details></td>
+        <td>2026-03-31</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34395" target="_blank" rel="noopener">CVE-2026-34395</a></td>
+        <td>6.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td><details><summary>WWBN AVideo is an open source video platform. In versions 26.0 and prior, the pl...</summary><p>WWBN AVideo is an open source video platform. In versions 26.0 and prior, the plugin/YPTWallet/view/users.json.php endpoint returns all platform users with their personal information and wallet balances to any authenticated user. The endpoint checks User::isLogged() but does not check User::isAdmin(), so any registered user can dump the full user database. At time of publication, there are no publicly available patches.</p></details></td>
+        <td>2026-03-31</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34394" target="_blank" rel="noopener">CVE-2026-34394</a></td>
+        <td>8.1</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-352</td>
+        <td>&nbsp;</td>
+        <td><details><summary>WWBN AVideo is an open source video platform. In versions 26.0 and prior, AVideo...</summary><p>WWBN AVideo is an open source video platform. In versions 26.0 and prior, AVideo&#x27;s admin plugin configuration endpoint (admin/save.json.php) lacks any CSRF token validation. There is no call to isGlobalTokenValid() or verifyToken() before processing the request. Combined with the application&#x27;s explicit SameSite=None cookie policy, an attacker can forge cross-origin POST requests from a malicious page to overwrite arbitrary plugin settings on a victim administrator&#x27;s session. Because the plugins table is included in the ignoreTableSecurityCheck() array in objects/Object.php, standard table-level access controls are also bypassed. This allows a complete takeover of platform functionality by reconfiguring payment processors, authentication providers, cloud storage credentials, and more. At time of publication, there are no publicly available patches.</p></details></td>
+        <td>2026-03-31</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34384" target="_blank" rel="noopener">CVE-2026-34384</a></td>
+        <td>4.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-352</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Admidio is an open-source user management solution. Prior to version 5.0.8, the ...</summary><p>Admidio is an open-source user management solution. Prior to version 5.0.8, the create_user, assign_member, and assign_user action modes in modules/registration.php approve pending user registrations via GET request without validating a CSRF token. Unlike the delete_user mode in the same file (which correctly validates the token), these three approval actions read their parameters from $_GET and perform irreversible state changes without any protection. An attacker who has submitted a pending registration can extract their own user UUID from the registration confirmation email URL, then trick any user with the rol_approve_users right into visiting a crafted URL that automatically approves the registration. This bypasses the manual registration approval workflow entirely. This issue has been patched in version 5.0.8.</p></details></td>
+        <td>2026-03-31</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34383" target="_blank" rel="noopener">CVE-2026-34383</a></td>
+        <td>4.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-20</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Admidio is an open-source user management solution. Prior to version 5.0.8, the ...</summary><p>Admidio is an open-source user management solution. Prior to version 5.0.8, the inventory module&#x27;s item_save endpoint accepts a user-controllable POST parameter imported that, when set to true, completely bypasses both CSRF token validation and server-side form validation. An authenticated user can craft a direct POST request to save arbitrary inventory item data without CSRF protection and without the field value checks that the FormPresenter validation normally enforces. This issue has been patched in version 5.0.8.</p></details></td>
+        <td>2026-03-31</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34382" target="_blank" rel="noopener">CVE-2026-34382</a></td>
+        <td>4.6</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-352</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Admidio is an open-source user management solution. From version 5.0.0 to before...</summary><p>Admidio is an open-source user management solution. From version 5.0.0 to before version 5.0.8, the delete mode handler in mylist_function.php permanently deletes list configurations without validating a CSRF token. An attacker who can lure an authenticated user to a malicious page can silently destroy that user&#x27;s list configurations — including organization-wide shared lists when the victim holds administrator rights. This issue has been patched in version 5.0.8.</p></details></td>
+        <td>2026-03-31</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34381" target="_blank" rel="noopener">CVE-2026-34381</a></td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-284</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Admidio is an open-source user management solution. From version 5.0.0 to before...</summary><p>Admidio is an open-source user management solution. From version 5.0.0 to before version 5.0.8, Admidio relies on adm_my_files/.htaccess to deny direct HTTP access to uploaded documents. The Docker image ships with AllowOverride None in the Apache configuration, which causes Apache to silently ignore all .htaccess files. As a result, any file uploaded to the documents module regardless of the role-based permissions configured in the UI, is directly accessible over HTTP without authentication by anyone who knows the file path. The file path is disclosed in the upload response JSON. This issue has been patched in version 5.0.8.</p></details></td>
+        <td>2026-03-31</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34372" target="_blank" rel="noopener">CVE-2026-34372</a></td>
+        <td>5.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-288</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Sulu is an open-source PHP content management system based on the Symfony framew...</summary><p>Sulu is an open-source PHP content management system based on the Symfony framework. From versions 1.0.0 to before 2.6.22, and 3.0.0 to before 3.0.5, a user which has permission for the Sulu Admin via at least one role could have access to the sub-entities of contacts via the admin API without even have permission for contacts. This issue has been patched in versions 2.6.22 and 3.0.5.</p></details></td>
+        <td>2026-03-31</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34367" target="_blank" rel="noopener">CVE-2026-34367</a></td>
+        <td>7.6</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-918</td>
+        <td>&nbsp;</td>
+        <td><details><summary>InvoiceShelf is an open-source web &amp; mobile app that helps track expenses, payme...</summary><p>InvoiceShelf is an open-source web &amp; mobile app that helps track expenses, payments and create professional invoices and estimates. Prior to version 2.2.0, a Server-Side Request Forgery (SSRF) vulnerability exists in the Invoice PDF generation module. User-supplied HTML in the invoice Notes field is passed unsanitised to the Dompdf rendering library, which will fetch any remote resources referenced in the markup. This can be triggered via the PDF preview and email delivery endpoints. This issue has been patched in version 2.2.0.</p></details></td>
+        <td>2026-03-31</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34366" target="_blank" rel="noopener">CVE-2026-34366</a></td>
+        <td>7.6</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-918</td>
+        <td>&nbsp;</td>
+        <td><details><summary>InvoiceShelf is an open-source web &amp; mobile app that helps track expenses, payme...</summary><p>InvoiceShelf is an open-source web &amp; mobile app that helps track expenses, payments and create professional invoices and estimates. Prior to version 2.2.0, a Server-Side Request Forgery (SSRF) vulnerability exists in the Payment receipt PDF generation module. User-supplied HTML in the payment Notes field is passed unsanitised to the Dompdf rendering library, which will fetch any remote resources referenced in the markup. The vulnerability is exploitable directly via the PDF receipt endpoint, regardless of whether automated email attachments are enabled. This issue has been patched in version 2.2.0.</p></details></td>
+        <td>2026-03-31</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-1579" target="_blank" rel="noopener">CVE-2026-1579</a></td>
+        <td>9.3</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-306</td>
+        <td>&nbsp;</td>
+        <td><details><summary>The MAVLink communication protocol does not require cryptographic 
+authenticatio...</summary><p>The MAVLink communication protocol does not require cryptographic 
+authentication by default. When MAVLink 2.0 message signing is not 
+enabled, any message -- including SERIAL_CONTROL, which provides 
+interactive shell access -- can be sent by an unauthenticated party with
+ access to the MAVLink interface. PX4 provides MAVLink 2.0 message 
+signing as the cryptographic authentication mechanism for all MAVLink 
+communication. When signing is enabled, unsigned messages are rejected 
+at the protocol level.</p></details></td>
+        <td>2026-03-31</td>
+      </tr>
+      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5211" target="_blank" rel="noopener">CVE-2026-5211</a></td>
         <td>7.4</td>
         <td><span class="severity high">HIGH</span></td>
         <td>CWE-119</td>
         <td>&nbsp;</td>
         <td><details><summary>A flaw has been found in D-Link DNS-120, DNR-202L, DNS-315L, DNS-320, DNS-320L, ...</summary><p>A flaw has been found in D-Link DNS-120, DNR-202L, DNS-315L, DNS-320, DNS-320L, DNS-320LW, DNS-321, DNR-322L, DNS-323, DNS-325, DNS-326, DNS-327L, DNR-326, DNS-340L, DNS-343, DNS-345, DNS-726-4, DNS-1100-4, DNS-1200-05 and DNS-1550-04 up to 20260205. This vulnerability affects the function UPnP_AV_Server_Path_Del of the file /cgi-bin/app_mgr.cgi. Executing a manipulation of the argument f_dir can lead to stack-based buffer overflow. The attack can be executed remotely. The exploit has been published and may be used.</p></details></td>
-        <td>2026-03-31</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4800" target="_blank" rel="noopener">CVE-2026-4800</a></td>
-        <td>8.1</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-94</td>
-        <td>&nbsp;</td>
-        <td><details><summary>Impact:
-
-The fix for CVE-2021-23337 (https://github.com/advisories/GHSA-35jh-r3h...</summary><p>Impact:
-
-The fix for CVE-2021-23337 (https://github.com/advisories/GHSA-35jh-r3h4-6jhm) added validation for the variable option in _.template but did not apply the same validation to options.imports key names. Both paths flow into the same Function() constructor sink.
-
-When an application passes untrusted input as options.imports key names, an attacker can inject default-parameter expressions that execute arbitrary code at template compilation time.
-
-Additionally, _.template uses assignInWith to merge imports, which enumerates inherited properties via for..in. If Object.prototype has been polluted by any other vector, the polluted keys are copied into the imports object and passed to Function().
-
-Patches:
-
-Users should upgrade to version 4.18.0.
-
-Workarounds:
-
-Do not pass untrusted input as key names in options.imports. Only use developer-controlled, static key names.</p></details></td>
         <td>2026-03-31</td>
       </tr>
       <tr>
@@ -153,29 +622,6 @@ Do not pass untrusted input as key names in options.imports. Only use developer-
         <td>N/A</td>
         <td>&nbsp;</td>
         <td><details><summary>An arbitrary file overwrite vulnerability in RAREPROB SOLUTIONS PRIVATE LIMITED ...</summary><p>An arbitrary file overwrite vulnerability in RAREPROB SOLUTIONS PRIVATE LIMITED Video player Play All Videos v1.0.135 allows attackers to overwrite critical internal files via the file import process, leading to arbtrary code execution or information exposure.</p></details></td>
-        <td>2026-03-31</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-2950" target="_blank" rel="noopener">CVE-2026-2950</a></td>
-        <td>6.5</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-1321</td>
-        <td>&nbsp;</td>
-        <td><details><summary>Impact:
-
-Lodash versions 4.17.23 and earlier are vulnerable to prototype polluti...</summary><p>Impact:
-
-Lodash versions 4.17.23 and earlier are vulnerable to prototype pollution in the _.unset and _.omit functions. The fix for (CVE-2025-13465: https://github.com/lodash/lodash/security/advisories/GHSA-xxjr-mmjv-4gpg) only guards against string key members, so an attacker can bypass the check by passing array-wrapped path segments. This allows deletion of properties from built-in prototypes such as Object.prototype, Number.prototype, and String.prototype.
-
-The issue permits deletion of prototype properties but does not allow overwriting their original behavior.
-
-Patches:
-
-This issue is patched in 4.18.0.
-
-Workarounds:
-
-None. Upgrade to the patched version.</p></details></td>
         <td>2026-03-31</td>
       </tr>
       <tr>
@@ -378,9 +824,9 @@ None. Upgrade to the patched version.</p></details></td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-30520" target="_blank" rel="noopener">CVE-2026-30520</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>4.8</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-89</td>
         <td>&nbsp;</td>
         <td><details><summary>A Blind SQL Injection vulnerability exists in SourceCodester Loan Management Sys...</summary><p>A Blind SQL Injection vulnerability exists in SourceCodester Loan Management System v1.0. The vulnerability is located in the ajax.php file (specifically the save_loan action). The application fails to properly sanitize user input supplied to the &quot;borrower_id&quot; parameter in a POST request, allowing an authenticated attacker to inject malicious SQL commands.</p></details></td>
         <td>2026-03-31</td>
@@ -545,23 +991,6 @@ None. Upgrade to the patched version.</p></details></td>
         <td>CWE-22</td>
         <td>&nbsp;</td>
         <td><details><summary>A vulnerability was found in CMS Made Simple up to 2.2.22. This impacts the func...</summary><p>A vulnerability was found in CMS Made Simple up to 2.2.22. This impacts the function _copyFilesToFolder in the library modules/UserGuide/lib/class.UserGuideImporterExporter.php of the component UserGuide Module XML Import. The manipulation results in path traversal. It is possible to launch the attack remotely. The exploit has been made public and could be used. This issue has been reported early to the project. They confirmed, that &quot;this has already been discovered and fixed for the next release.&quot;</p></details></td>
-        <td>2026-03-31</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5087" target="_blank" rel="noopener">CVE-2026-5087</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>CWE-338</td>
-        <td>&nbsp;</td>
-        <td><details><summary>PAGI::Middleware::Session::Store::Cookie versions through 0.001003 for Perl gene...</summary><p>PAGI::Middleware::Session::Store::Cookie versions through 0.001003 for Perl generates random bytes insecurely.
-
-PAGI::Middleware::Session::Store::Cookie attempts to read bytes from the /dev/urandom device directly. If that fails (for example, on systems without the device, such as Windows), then it will emit a warning that recommends the user install Crypt::URandom, and then return a string of random bytes generated by the built-in rand function, which is unsuitable for cryptographic applications.
-
-This modules does not use the Crypt::URandom module, and installing it will not fix the problem.
-
-The random bytes are used for generating an initialisation vector (IV) to encrypt the cookie.
-
-A predictable IV may make it easier for malicious users to decrypt and tamper with the session data that is stored in the cookie.</p></details></td>
         <td>2026-03-31</td>
       </tr>
       <tr>
@@ -1327,19 +1756,6 @@ A predictable IV may make it easier for malicious users to decrypt and tamper wi
         <td>CWE-79</td>
         <td>&nbsp;</td>
         <td><details><summary>Improper Neutralization of Input During Web Page Generation (&#x27;Cross-site Scripti...</summary><p>Improper Neutralization of Input During Web Page Generation (&#x27;Cross-site Scripting&#x27;) vulnerability in Extend Themes Kubio AI Page Builder allows Stored XSS.This issue affects Kubio AI Page Builder: from n/a through 2.7.0.</p></details></td>
-        <td>2026-03-31</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-15618" target="_blank" rel="noopener">CVE-2025-15618</a></td>
-        <td>9.1</td>
-        <td><span class="severity critical">CRITICAL</span></td>
-        <td>CWE-338</td>
-        <td>&nbsp;</td>
-        <td><details><summary>Business::OnlinePayment::StoredTransaction versions through 0.01 for Perl uses a...</summary><p>Business::OnlinePayment::StoredTransaction versions through 0.01 for Perl uses an insecure secret key.
-
-Business::OnlinePayment::StoredTransaction generates a secret key by using a MD5 hash of a single call to the built-in rand function, which is unsuitable for cryptographic use.
-
-This key is intended for encrypting credit card transaction data.</p></details></td>
         <td>2026-03-31</td>
       </tr>
       <tr>
@@ -3368,30 +3784,6 @@ This key is intended for encrypting credit card transaction data.</p></details><
         <td>2026-03-29</td>
       </tr>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4851" target="_blank" rel="noopener">CVE-2026-4851</a></td>
-        <td>9.8</td>
-        <td><span class="severity critical">CRITICAL</span></td>
-        <td>CWE-95</td>
-        <td>&nbsp;</td>
-        <td><details><summary>GRID::Machine versions through 0.127 for Perl allows arbitrary code execution vi...</summary><p>GRID::Machine versions through 0.127 for Perl allows arbitrary code execution via unsafe deserialization.
-
-GRID::Machine provides Remote Procedure Calls (RPC) over SSH for Perl. The client connects to remote hosts to execute code on them. A compromised or malicious remote host can execute arbitrary code back on the client through unsafe deserialization in the RPC protocol.
-
-read_operation() in lib/GRID/Machine/Message.pm deserialises values from the remote side using eval()
-
-  $arg .= &#x27;$VAR1&#x27;;
-  my $val = eval &quot;no strict; $arg&quot;; # line 40-41
-
-$arg is raw bytes from the protocol pipe. A compromised remote host can embed arbitrary perl in the Dumper-formatted response:
-
-  $VAR1 = do { system(&quot;...&quot;); };
-
-This executes on the client silently on every RPC call, as the return values remain correct.
-
-This functionality is by design but the trust requirement for the remote host is not documented in the distribution.</p></details></td>
-        <td>2026-03-29</td>
-      </tr>
-      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5019" target="_blank" rel="noopener">CVE-2026-5019</a></td>
         <td>6.9</td>
         <td><span class="severity medium">MEDIUM</span></td>
@@ -3479,36 +3871,6 @@ This functionality is by design but the trust requirement for the remote host is
         <td>CWE-77</td>
         <td>&nbsp;</td>
         <td><details><summary>A vulnerability was identified in kazuph mcp-docs-rag up to 0.5.0. Affected is t...</summary><p>A vulnerability was identified in kazuph mcp-docs-rag up to 0.5.0. Affected is the function cloneRepository of the file src/index.ts of the component add_git_repository/add_text_file. The manipulation leads to os command injection. The attack needs to be performed locally. The exploit is publicly available and might be used. The project was informed of the problem early through an issue report but has not responded yet.</p></details></td>
-        <td>2026-03-28</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-3256" target="_blank" rel="noopener">CVE-2026-3256</a></td>
-        <td>9.8</td>
-        <td><span class="severity critical">CRITICAL</span></td>
-        <td>CWE-338</td>
-        <td>&nbsp;</td>
-        <td><details><summary>HTTP::Session versions through 0.53 for Perl defaults to using insecurely genera...</summary><p>HTTP::Session versions through 0.53 for Perl defaults to using insecurely generated session ids.
-
-HTTP::Session defaults to using HTTP::Session::ID::SHA1 to generate session ids using a SHA-1 hash seeded with the built-in rand function, the high resolution epoch time, and the PID. The PID will come from a small set of numbers, and the epoch time may be guessed, if it is not leaked from the HTTP Date header. The built-in rand function is unsuitable for cryptographic usage.
-
-The distribution includes HTTP::session::ID::MD5 which contains a similar flaw, but uses the MD5 hash instead.</p></details></td>
-        <td>2026-03-28</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-15604" target="_blank" rel="noopener">CVE-2025-15604</a></td>
-        <td>9.8</td>
-        <td><span class="severity critical">CRITICAL</span></td>
-        <td>CWE-338</td>
-        <td>&nbsp;</td>
-        <td><details><summary>Amon2 versions before 6.17 for Perl use an insecure random_string implementation...</summary><p>Amon2 versions before 6.17 for Perl use an insecure random_string implementation for security functions.
-
-In versions 6.06 through 6.16, the random_string function will attempt to read bytes from the /dev/urandom device, but if that is unavailable then it generates bytes by concatenating a SHA-1 hash seeded with the built-in rand() function, the PID, and the high resolution epoch time.  The PID will come from a small set of numbers, and the epoch time may be guessed, if it is not leaked from the HTTP Date header. The built-in rand function is unsuitable for cryptographic usage.
-
-Before version 6.06, there was no fallback when /dev/urandom was not available.
-
-Before version 6.04, the random_string function used the built-in rand() function to generate a mixed-case alphanumeric string.
-
-This function may be used for generating session ids, generating secrets for signing or encrypting cookie session data and generating tokens used for Cross Site Request Forgery (CSRF) protection.</p></details></td>
         <td>2026-03-28</td>
       </tr>
       <tr>
