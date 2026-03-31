@@ -1,9 +1,10 @@
 # CVEs — March 2026
 
-_5518 vulnerabilities_
+_5519 vulnerabilities_
 
 | CVE ID | Score | Severity | CWE | KEV | Published | Description |
 |--------|-------|----------|-----|-----|-----------|-------------|
+| [CVE-2026-5186](https://nvd.nist.gov/vuln/detail/CVE-2026-5186) | 4.8 | MEDIUM | CWE-119 | No | 2026-03-31 | A weakness has been identified in Nothings stb up to 2.30. This impacts the function stbi__load_gif_main of the file stb... |
 | [CVE-2026-5185](https://nvd.nist.gov/vuln/detail/CVE-2026-5185) | 4.8 | MEDIUM | CWE-119 | No | 2026-03-31 | A security flaw has been discovered in Nothings stb_image up to 2.30. This affects the function stbi__gif_load_next of t... |
 | [CVE-2026-5184](https://nvd.nist.gov/vuln/detail/CVE-2026-5184) | 5.3 | MEDIUM | CWE-74 | No | 2026-03-31 | A vulnerability was identified in TRENDnet TEW-713RE up to 1.02. The impacted element is an unknown function of the file... |
 | [CVE-2026-3881](https://nvd.nist.gov/vuln/detail/CVE-2026-3881) | 0.0 | NONE | N/A | No | 2026-03-31 | The Performance Monitor WordPress plugin through 1.0.6 does not validate a parameter before making a request to it, whic... |
