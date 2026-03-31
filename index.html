@@ -11,7 +11,7 @@
     <header>
       <h1>vuln-tracker</h1>
       <p class="subtitle">CVEs from the National Vulnerability Database — current and previous month</p>
-      <p class="last-updated">Last updated: 2026-03-31 09:08 UTC</p>
+      <p class="last-updated">Last updated: 2026-03-31 11:00 UTC</p>
     </header>
     <nav>
       <a href="top50.html">&#9733; Top 50</a>
@@ -25,7 +25,7 @@
     </nav>
     <main>
     <section>
-      <h2>Current Month — March 2026 <span class="count">(5519)</span></h2>
+      <h2>Current Month — March 2026 <span class="count">(5532)</span></h2>
       <div class="table-wrapper">
         <table>
           <thead>
@@ -40,6 +40,133 @@
             </tr>
           </thead>
           <tbody>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5197" target="_blank" rel="noopener">CVE-2026-5197</a></td>
+        <td>5.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-74</td>
+        <td>&nbsp;</td>
+        <td><details><summary>A vulnerability was found in code-projects Student Membership System 1.0. The af...</summary><p>A vulnerability was found in code-projects Student Membership System 1.0. The affected element is an unknown function of the file /delete_user.php. The manipulation of the argument ID results in sql injection. The attack may be launched remotely. The exploit has been made public and could be used.</p></details></td>
+        <td>2026-03-31</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4317" target="_blank" rel="noopener">CVE-2026-4317</a></td>
+        <td>9.3</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-89</td>
+        <td>&nbsp;</td>
+        <td><details><summary>SQL inyection (SQLi) vulnerability in Umami Software web application through an ...</summary><p>SQL inyection (SQLi) vulnerability in Umami Software web application through an improperly sanitized parameter, which could allow an authenticated attacker to execute arbitrary SQL commands in the database.Specifically, they could manipulate the value of the &#x27;timezone&#x27; request parameter by including malicious characters and SQL payload. The application would interpolate these values directly into the SQL query without first performing proper filtering or sanitization (e.g., using functions such as &#x27;prisma.rawQuery&#x27;, &#x27;prisma.$queryRawUnsafe&#x27; or raw queries with &#x27;ClickHouse&#x27;). The successful explotation of this vulnerability could allow an authenticated attacker to compromiso the data of the database and execute dangerous functions.</p></details></td>
+        <td>2026-03-31</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5201" target="_blank" rel="noopener">CVE-2026-5201</a></td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-122</td>
+        <td>&nbsp;</td>
+        <td><details><summary>A flaw was found in the gdk-pixbuf library. This heap-based buffer overflow vuln...</summary><p>A flaw was found in the gdk-pixbuf library. This heap-based buffer overflow vulnerability occurs in the JPEG image loader due to improper validation of color component counts when processing a specially crafted JPEG image. A remote attacker can exploit this flaw without user interaction, for example, via thumbnail generation. Successful exploitation leads to application crashes and denial of service (DoS) conditions.</p></details></td>
+        <td>2026-03-31</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5196" target="_blank" rel="noopener">CVE-2026-5196</a></td>
+        <td>5.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-74</td>
+        <td>&nbsp;</td>
+        <td><details><summary>A vulnerability has been found in code-projects Student Membership System 1.0. I...</summary><p>A vulnerability has been found in code-projects Student Membership System 1.0. Impacted is an unknown function of the file /delete_member.php. The manipulation of the argument ID leads to sql injection. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used.</p></details></td>
+        <td>2026-03-31</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5195" target="_blank" rel="noopener">CVE-2026-5195</a></td>
+        <td>6.9</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-74</td>
+        <td>&nbsp;</td>
+        <td><details><summary>A flaw has been found in code-projects Student Membership System 1.0. This issue...</summary><p>A flaw has been found in code-projects Student Membership System 1.0. This issue affects some unknown processing of the component User Registration Handler. Executing a manipulation can lead to sql injection. The attack can be launched remotely.</p></details></td>
+        <td>2026-03-31</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-3107" target="_blank" rel="noopener">CVE-2026-3107</a></td>
+        <td>9.3</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Stored Cross-Site Scripting (XSS) in Teampass versions prior to 3.1.5.16, affect...</summary><p>Stored Cross-Site Scripting (XSS) in Teampass versions prior to 3.1.5.16, affecting the password manager&#x27;s password import functionality at the endpoint &#x27;redacted/index.php?page=items&#x27;. The application fails to properly sanitize and encode user-input data during the import process, allowing malicious JavaScript payloads to be persistently stored in the database. When other users view the imported passwords, the payload is automatically executed in their browsers, resulting in a stored XSS condition at the endpoint &#x27;redacted/index.php?page=items&#x27;. Exploiting this vulnerability allows an attacker to execute arbitrary JavaScript code in the context of multiple users and the administrator, which can lead to session hijacking, credential theft, privilege abuse, and compromise of application integrity.</p></details></td>
+        <td>2026-03-31</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-3106" target="_blank" rel="noopener">CVE-2026-3106</a></td>
+        <td>9.3</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Blind Cross-Site Scripting (XSS) in Teampass, versions prior to 3.1.5.16, within...</summary><p>Blind Cross-Site Scripting (XSS) in Teampass, versions prior to 3.1.5.16, within the password manager login functionality in the &#x27;contraseña&#x27; parameter of the login form &#x27;redacted/index.php&#x27;. During failed authentication attempts, the application does not properly clean or encode the information entered by the user in the username field. As a result, arbitrary JavaScript code is automatically executed in the administrator&#x27;s browser when viewing failed login entries, resulting in a blind XSS condition.</p></details></td>
+        <td>2026-03-31</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-41357" target="_blank" rel="noopener">CVE-2025-41357</a></td>
+        <td>5.1</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Reflected Cross-Site Scripting (XSS) vulnerability in Anon Proxy Server v0.104. ...</summary><p>Reflected Cross-Site Scripting (XSS) vulnerability in Anon Proxy Server v0.104. This vulnerability allows an attacker to execute JavaScript code in the victim&#x27;s browser by sending him/her a malicious URL. This vulnerability can be exploited to steal sensitive user data, such as session cookies, or to perform actions on behalf of the user.
+It affects &#x27;host&#x27; parameter in &#x27;/diagdns.php&#x27; endpoint.</p></details></td>
+        <td>2026-03-31</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-41356" target="_blank" rel="noopener">CVE-2025-41356</a></td>
+        <td>5.1</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Reflected Cross-Site Scripting (XSS) vulnerability in Anon Proxy Server v0.104. ...</summary><p>Reflected Cross-Site Scripting (XSS) vulnerability in Anon Proxy Server v0.104. This vulnerability allows an attacker to execute JavaScript code in the victim&#x27;s browser by sending him/her a malicious URL. This vulnerability can be exploited to steal sensitive user data, such as session cookies, or to perform actions on behalf of the user. It affects 
+&#x27;host&#x27; parameter in &#x27;/diagconnect.php&#x27;
+
+ endpoint.</p></details></td>
+        <td>2026-03-31</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-41355" target="_blank" rel="noopener">CVE-2025-41355</a></td>
+        <td>5.1</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Reflected Cross-Site Scripting (XSS) vulnerability in Anon Proxy Server 
+v0.104....</summary><p>Reflected Cross-Site Scripting (XSS) vulnerability in Anon Proxy Server 
+v0.104. This vulnerability allows an attacker to execute JavaScript code
+ in the victim&#x27;s browser by sending him/her a malicious URL. This 
+vulnerability can be exploited to steal sensitive user data, such as 
+session cookies, or to perform actions on behalf of the user. It affects 
+&#x27;port&#x27; and &#x27;proxyPort&#x27; parameters in &#x27;/anon.php&#x27; endpoint.</p></details></td>
+        <td>2026-03-31</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-10559" target="_blank" rel="noopener">CVE-2025-10559</a></td>
+        <td>7.1</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-22</td>
+        <td>&nbsp;</td>
+        <td><details><summary>A Path Traversal vulnerability affecting Factory Resource Management in DELMIA F...</summary><p>A Path Traversal vulnerability affecting Factory Resource Management in DELMIA Factory Resource Manager from Release 3DEXPERIENCE R2023x through Release 3DEXPERIENCE R2025x allows an attacker to read or write files in specific directories on the server.</p></details></td>
+        <td>2026-03-31</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-10553" target="_blank" rel="noopener">CVE-2025-10553</a></td>
+        <td>8.7</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td><details><summary>A Stored Cross-site Scripting (XSS) vulnerability affecting Factory Resource Man...</summary><p>A Stored Cross-site Scripting (XSS) vulnerability affecting Factory Resource Management in DELMIA Factory Resource Manager from Release 3DEXPERIENCE R2023x through Release 3DEXPERIENCE R2025x allows an attacker to execute arbitrary script code in user&#x27;s browser session.</p></details></td>
+        <td>2026-03-31</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-10551" target="_blank" rel="noopener">CVE-2025-10551</a></td>
+        <td>8.7</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td><details><summary>A Stored Cross-site Scripting (XSS) vulnerability affecting Document Management ...</summary><p>A Stored Cross-site Scripting (XSS) vulnerability affecting Document Management in ENOVIA Collaborative Industry Innovator from Release 3DEXPERIENCE R2023x through Release 3DEXPERIENCE R2025x allows an attacker to execute arbitrary script code in user&#x27;s browser session.</p></details></td>
+        <td>2026-03-31</td>
+      </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5186" target="_blank" rel="noopener">CVE-2026-5186</a></td>
         <td>4.8</td>

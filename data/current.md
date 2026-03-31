@@ -1,9 +1,22 @@
 # CVEs — March 2026
 
-_5519 vulnerabilities_
+_5532 vulnerabilities_
 
 | CVE ID | Score | Severity | CWE | KEV | Published | Description |
 |--------|-------|----------|-----|-----|-----------|-------------|
+| [CVE-2026-5197](https://nvd.nist.gov/vuln/detail/CVE-2026-5197) | 5.3 | MEDIUM | CWE-74 | No | 2026-03-31 | A vulnerability was found in code-projects Student Membership System 1.0. The affected element is an unknown function of... |
+| [CVE-2026-4317](https://nvd.nist.gov/vuln/detail/CVE-2026-4317) | 9.3 | CRITICAL | CWE-89 | No | 2026-03-31 | SQL inyection (SQLi) vulnerability in Umami Software web application through an improperly sanitized parameter, which co... |
+| [CVE-2026-5201](https://nvd.nist.gov/vuln/detail/CVE-2026-5201) | 7.5 | HIGH | CWE-122 | No | 2026-03-31 | A flaw was found in the gdk-pixbuf library. This heap-based buffer overflow vulnerability occurs in the JPEG image loade... |
+| [CVE-2026-5196](https://nvd.nist.gov/vuln/detail/CVE-2026-5196) | 5.3 | MEDIUM | CWE-74 | No | 2026-03-31 | A vulnerability has been found in code-projects Student Membership System 1.0. Impacted is an unknown function of the fi... |
+| [CVE-2026-5195](https://nvd.nist.gov/vuln/detail/CVE-2026-5195) | 6.9 | MEDIUM | CWE-74 | No | 2026-03-31 | A flaw has been found in code-projects Student Membership System 1.0. This issue affects some unknown processing of the... |
+| [CVE-2026-3107](https://nvd.nist.gov/vuln/detail/CVE-2026-3107) | 9.3 | CRITICAL | CWE-79 | No | 2026-03-31 | Stored Cross-Site Scripting (XSS) in Teampass versions prior to 3.1.5.16, affecting the password manager's password impo... |
+| [CVE-2026-3106](https://nvd.nist.gov/vuln/detail/CVE-2026-3106) | 9.3 | CRITICAL | CWE-79 | No | 2026-03-31 | Blind Cross-Site Scripting (XSS) in Teampass, versions prior to 3.1.5.16, within the password manager login functionalit... |
+| [CVE-2025-41357](https://nvd.nist.gov/vuln/detail/CVE-2025-41357) | 5.1 | MEDIUM | CWE-79 | No | 2026-03-31 | Reflected Cross-Site Scripting (XSS) vulnerability in Anon Proxy Server v0.104. This vulnerability allows an attacker to... |
+| [CVE-2025-41356](https://nvd.nist.gov/vuln/detail/CVE-2025-41356) | 5.1 | MEDIUM | CWE-79 | No | 2026-03-31 | Reflected Cross-Site Scripting (XSS) vulnerability in Anon Proxy Server v0.104. This vulnerability allows an attacker to... |
+| [CVE-2025-41355](https://nvd.nist.gov/vuln/detail/CVE-2025-41355) | 5.1 | MEDIUM | CWE-79 | No | 2026-03-31 | Reflected Cross-Site Scripting (XSS) vulnerability in Anon Proxy Server  v0.104. This vulnerability allows an attacker t... |
+| [CVE-2025-10559](https://nvd.nist.gov/vuln/detail/CVE-2025-10559) | 7.1 | HIGH | CWE-22 | No | 2026-03-31 | A Path Traversal vulnerability affecting Factory Resource Management in DELMIA Factory Resource Manager from Release 3DE... |
+| [CVE-2025-10553](https://nvd.nist.gov/vuln/detail/CVE-2025-10553) | 8.7 | HIGH | CWE-79 | No | 2026-03-31 | A Stored Cross-site Scripting (XSS) vulnerability affecting Factory Resource Management in DELMIA Factory Resource Manag... |
+| [CVE-2025-10551](https://nvd.nist.gov/vuln/detail/CVE-2025-10551) | 8.7 | HIGH | CWE-79 | No | 2026-03-31 | A Stored Cross-site Scripting (XSS) vulnerability affecting Document Management in ENOVIA Collaborative Industry Innovat... |
 | [CVE-2026-5186](https://nvd.nist.gov/vuln/detail/CVE-2026-5186) | 4.8 | MEDIUM | CWE-119 | No | 2026-03-31 | A weakness has been identified in Nothings stb up to 2.30. This impacts the function stbi__load_gif_main of the file stb... |
 | [CVE-2026-5185](https://nvd.nist.gov/vuln/detail/CVE-2026-5185) | 4.8 | MEDIUM | CWE-119 | No | 2026-03-31 | A security flaw has been discovered in Nothings stb_image up to 2.30. This affects the function stbi__gif_load_next of t... |
 | [CVE-2026-5184](https://nvd.nist.gov/vuln/detail/CVE-2026-5184) | 5.3 | MEDIUM | CWE-74 | No | 2026-03-31 | A vulnerability was identified in TRENDnet TEW-713RE up to 1.02. The impacted element is an unknown function of the file... |
