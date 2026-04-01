@@ -44,12 +44,12 @@ TONL_HEADER    = "#version 1.0\n#delimiter \"|\""
 TONL_SCHEMA    = (
     "cves[COUNT]{cveId:str|published:str|lastModified:str|cvssScore:f64|severity:str"
     "|cweId:str|cweName:str|kev:bool|description:str|nvdUrl:str"
-    "|epssScore:f64|epssPercentile:f64}:"
+    "|epssScore:f64|epssPercentile:f64|vapScore:f64}:"
 )
 FIELD_NAMES    = [
     "cveId", "published", "lastModified", "cvssScore", "severity",
     "cweId", "cweName", "kev", "description", "nvdUrl",
-    "epssScore", "epssPercentile",
+    "epssScore", "epssPercentile", "vapScore",
 ]
 
 HEADERS        = {"User-Agent": "vuln-tracker/1.0"}
@@ -107,13 +107,16 @@ def load_tonl(path: Path) -> dict:
             continue
         fields = tonl_parse_row(stripped)
         if len(fields) == 10:
-            fields.extend(["0.0", "0.0"])
+            fields.extend(["0.0", "0.0", "0.0"])
+        elif len(fields) == 12:
+            fields.append("0.0")
         elif len(fields) != len(FIELD_NAMES):
             continue
         rec = dict(zip(FIELD_NAMES, fields))
         rec["cvssScore"]      = float(rec["cvssScore"])
         rec["epssScore"]      = float(rec["epssScore"])
         rec["epssPercentile"] = float(rec["epssPercentile"])
+        rec["vapScore"]       = float(rec["vapScore"])
         rec["kev"] = rec["kev"].lower() == "true"
         records[rec["cveId"]] = rec
     return records
@@ -132,7 +135,7 @@ def write_tonl(path: Path, records: dict) -> None:
             f"|{q(rec['cweId'])}|{q(rec['cweName'])}"
             f"|{str(rec['kev']).lower()}"
             f"|{q(rec['description'])}|{q(rec['nvdUrl'])}"
-            f"|{rec['epssScore']:.5f}|{rec['epssPercentile']:.5f}"
+            f"|{rec['epssScore']:.5f}|{rec['epssPercentile']:.5f}|{rec['vapScore']:.4f}"
         )
         lines.append(row)
     path.write_text('\n'.join(lines) + '\n', encoding="utf-8")
@@ -147,8 +150,8 @@ def write_markdown(path: Path, records: dict, title: str, sort_key=None) -> None
         "",
         f"_{len(sorted_recs)} vulnerabilities_",
         "",
-        "| CVE ID | CVSS | Severity | CWE | KEV | EPSS | Published | Description |",
-        "|--------|------|----------|-----|-----|------|-----------|-------------|",
+        "| CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |",
+        "|--------|------|----------|-----|-----|------|-----|-----------|-------------|",
     ]
     for rec in sorted_recs:
         desc = rec["description"].replace("|", "\\|").replace("\n", " ")
@@ -156,6 +159,7 @@ def write_markdown(path: Path, records: dict, title: str, sort_key=None) -> None
             desc = desc[:120].rstrip() + "..."
         kev  = "Yes" if rec["kev"] else "No"
         epss = f"{rec['epssScore'] * 100:.1f}%" if rec["epssScore"] > 0.0 else "—"
+        vap  = f"{rec['vapScore']:.2f}"
         lines.append(
             f"| [{rec['cveId']}]({rec['nvdUrl']}) "
             f"| {rec['cvssScore']:.1f} "
@@ -163,6 +167,7 @@ def write_markdown(path: Path, records: dict, title: str, sort_key=None) -> None
             f"| {rec['cweId']} "
             f"| {kev} "
             f"| {epss} "
+            f"| {vap} "
             f"| {rec['published'][:10]} "
             f"| {desc} |"
         )
@@ -266,6 +271,7 @@ def enrich_with_epss(records: dict) -> None:
         else:
             rec["epssScore"]      = 0.0
             rec["epssPercentile"] = 0.0
+        rec["vapScore"] = compute_vap(rec)
 
 # ---------------------------------------------------------------------------
 # CVE parsing
@@ -331,6 +337,7 @@ def parse_cve(item: dict) -> dict:
         "nvdUrl":          NVD_DETAIL_URL + cve_id,
         "epssScore":       0.0,
         "epssPercentile":  0.0,
+        "vapScore":        0.0,
     }
 
 # ---------------------------------------------------------------------------
@@ -365,6 +372,14 @@ def get_prev_month_str(now: datetime) -> str:
     return f"{year}-{month:02d}"
 
 # ---------------------------------------------------------------------------
+# VAP score
+# ---------------------------------------------------------------------------
+
+def compute_vap(rec: dict) -> float:
+    """VAP = 70% CVSS (0-10) + 30% EPSS normalised to 0-10. Result range: 0-10."""
+    return 0.70 * rec["cvssScore"] + 0.30 * rec["epssScore"] * 10
+
+# ---------------------------------------------------------------------------
 # HTML generation
 # ---------------------------------------------------------------------------
 
@@ -384,6 +399,8 @@ def render_table_row(rec: dict) -> str:
     else:
         epss_cell = "&mdash;"
 
+    vap_cell = f"{rec['vapScore']:.2f}"
+
     return (
         f"      <tr>\n"
         f"        <td><a href=\"{nvd_url}\" target=\"_blank\" rel=\"noopener\">{cve_id}</a></td>\n"
@@ -392,6 +409,7 @@ def render_table_row(rec: dict) -> str:
         f"        <td>{cwe}</td>\n"
         f"        <td>{kev_cell}</td>\n"
         f"        <td>{epss_cell}</td>\n"
+        f"        <td>{vap_cell}</td>\n"
         f"        <td><details><summary>{desc_summary}</summary><p>{desc_full}</p></details></td>\n"
         f"        <td>{published}</td>\n"
         f"      </tr>"
@@ -403,7 +421,7 @@ def render_section(title: str, records: dict) -> str:
     count = len(sorted_recs)
     rows = "\n".join(render_table_row(r) for r in sorted_recs)
     if not rows:
-        rows = "      <tr><td colspan=\"8\">No vulnerabilities recorded for this period.</td></tr>"
+        rows = "      <tr><td colspan=\"9\">No vulnerabilities recorded for this period.</td></tr>"
     return f"""    <section>
       <h2>{html.escape(title)} <span class="count">({count})</span></h2>
       <div class="table-wrapper">
@@ -416,6 +434,7 @@ def render_section(title: str, records: dict) -> str:
               <th>CWE</th>
               <th>KEV</th>
               <th>EPSS</th>
+              <th>VAP</th>
               <th>Description</th>
               <th>Published</th>
             </tr>
@@ -478,21 +497,21 @@ def render_html(current: dict, previous: dict, timestamp: str, now: datetime) ->
 # ---------------------------------------------------------------------------
 
 def get_top50(current: dict, previous: dict) -> dict:
-    """Return the top TOP50_COUNT CVEs ranked by KEV status, EPSS percentile, then CVSS score."""
+    """Return the top TOP50_COUNT CVEs ranked by VAP score."""
     combined = {**previous, **current}  # current wins on duplicate cveId
     ranked = sorted(
         combined.values(),
-        key=lambda r: (r["kev"], r["epssPercentile"], r["cvssScore"]),
+        key=lambda r: r["vapScore"],
         reverse=True,
     )
     return {r["cveId"]: r for r in ranked[:TOP50_COUNT]}
 
 
 def render_html_top50(records: dict, timestamp: str) -> str:
-    sorted_recs = sorted(records.values(), key=lambda r: (r["kev"], r["epssPercentile"], r["cvssScore"]), reverse=True)
+    sorted_recs = sorted(records.values(), key=lambda r: r["vapScore"], reverse=True)
     rows = "\n".join(render_table_row(r) for r in sorted_recs)
     if not rows:
-        rows = "      <tr><td colspan=\"8\">No data available.</td></tr>"
+        rows = "      <tr><td colspan=\"9\">No data available.</td></tr>"
 
     return f"""<!DOCTYPE html>
 <html lang="en">
@@ -506,7 +525,7 @@ def render_html_top50(records: dict, timestamp: str) -> str:
   <div class="container">
     <header>
       <h1>vuln-tracker — Top {TOP50_COUNT}</h1>
-      <p class="subtitle">The {TOP50_COUNT} most important CVEs from the current and previous month, ranked by KEV status, EPSS percentile, then CVSS score</p>
+      <p class="subtitle">The {TOP50_COUNT} most important CVEs from the current and previous month, ranked by VAP score (70% CVSS + 30% EPSS)</p>
       <p class="last-updated">Last updated: {html.escape(timestamp)}</p>
     </header>
     <nav>
@@ -530,6 +549,7 @@ def render_html_top50(records: dict, timestamp: str) -> str:
                 <th>CWE</th>
                 <th>KEV</th>
                 <th>EPSS</th>
+                <th>VAP</th>
                 <th>Description</th>
                 <th>Published</th>
               </tr>
@@ -632,7 +652,7 @@ def main():
     print(f"Writing Top {TOP50_COUNT} ({len(top50)} entries)...")
     write_tonl(TOP50_TONL, top50)
     write_markdown(TOP50_MD, top50, f"Top {TOP50_COUNT} CVEs — {current_label} & {previous_label}",
-                   sort_key=lambda r: (r["kev"], r["epssPercentile"], r["cvssScore"]))
+                   sort_key=lambda r: r["vapScore"])
     TOP50_HTML.write_text(render_html_top50(top50, timestamp), encoding="utf-8")
 
     print("Generating index.html...")
