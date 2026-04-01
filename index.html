@@ -11,7 +11,7 @@
     <header>
       <h1>vuln-tracker</h1>
       <p class="subtitle">CVEs from the National Vulnerability Database — current and previous month</p>
-      <p class="last-updated">Last updated: 2026-04-01 19:12 UTC</p>
+      <p class="last-updated">Last updated: 2026-04-01 20:53 UTC</p>
     </header>
     <nav>
       <a href="top50.html">&#9733; Top 50</a>
@@ -25,7 +25,7 @@
     </nav>
     <main>
     <section>
-      <h2>Current Month — April 2026 <span class="count">(145)</span></h2>
+      <h2>Current Month — April 2026 <span class="count">(141)</span></h2>
       <div class="table-wrapper">
         <table>
           <thead>
@@ -43,29 +43,178 @@
           </thead>
           <tbody>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5199" target="_blank" rel="noopener">CVE-2026-5199</a></td>
-        <td>2.3</td>
-        <td><span class="severity low">LOW</span></td>
-        <td>CWE-639</td>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5311" target="_blank" rel="noopener">CVE-2026-5311</a></td>
+        <td>5.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-266</td>
         <td>&nbsp;</td>
         <td>&mdash;</td>
-        <td>1.61</td>
-        <td><details><summary>A writer role user in an attacker-controlled namespace could signal, delete, and...</summary><p>A writer role user in an attacker-controlled namespace could signal, delete, and reset workflows or activities in a victim namespace on the same cluster. Exploitation requires the attacker to know or guess specific victim workflow ID(s) and, for signal operations, signal names. This was due to a bug introduced in Temporal Server v1.29.0 which inadvertently allowed an attacker to control the namespace name value instead of using the server&#x27;s own trusted name value within the batch activity code. The batch activity validated the namespace ID but did not cross-check the namespace name against the worker&#x27;s bound namespace, allowing the per-namespace worker&#x27;s privileged credentials to operate on an arbitrary namespace. Exploitation requires a server configuration where internal components have cross-namespace authorization, such as deployment of the internal-frontend service or equivalent TLS-based authorization for internal identities.
-
-
-
-
-This vulnerability also impacted Temporal Cloud when the attacker and victim namespaces were on the same cell, with the same preconditions as self-hosted clusters.</p></details></td>
+        <td>3.85</td>
+        <td><details><summary>A security flaw has been discovered in D-Link DNS-120, DNR-202L, DNS-315L, DNS-3...</summary><p>A security flaw has been discovered in D-Link DNS-120, DNR-202L, DNS-315L, DNS-320, DNS-320L, DNS-320LW, DNS-321, DNR-322L, DNS-323, DNS-325, DNS-326, DNS-327L, DNR-326, DNS-340L, DNS-343, DNS-345, DNS-726-4, DNS-1100-4, DNS-1200-05 and DNS-1550-04 up to 20260205. Affected is the function Webdav_Access_List of the file /cgi-bin/file_center.cgi. Performing a manipulation of the argument cmd results in improper access controls. It is possible to initiate the attack remotely. The exploit has been released to the public and may be used for attacks.</p></details></td>
         <td>2026-04-01</td>
       </tr>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34875" target="_blank" rel="noopener">CVE-2026-34875</a></td>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34872" target="_blank" rel="noopener">CVE-2026-34872</a></td>
+        <td>9.1</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-347</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.37</td>
+        <td><details><summary>An issue was discovered in Mbed TLS 3.5.x and 3.6.x through 3.6.5 and TF-PSA-Cry...</summary><p>An issue was discovered in Mbed TLS 3.5.x and 3.6.x through 3.6.5 and TF-PSA-Crypto 1.0. There is a lack of contributory behavior in FFDH due to improper input validation. Using finite-field Diffie-Hellman, the other party can force the shared secret into a small set of values (lack of contributory behavior). This is a problem for protocols that depend on contributory behavior (which is not the case for TLS). The attack can be carried by the peer, or depending on the protocol by an active network attacker (person in the middle).</p></details></td>
+        <td>2026-04-01</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34750" target="_blank" rel="noopener">CVE-2026-34750</a></td>
+        <td>6.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-22</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.55</td>
+        <td><details><summary>Payload is a free and open source headless content management system. Prior to v...</summary><p>Payload is a free and open source headless content management system. Prior to version 3.78.0 in @payloadcms/storage-azure, @payloadcms/storage-gcs, @payloadcms/storage-r2, and @payloadcms/storage-s3, the client-upload signed-URL endpoints for S3, GCS, Azure, and R2 did not properly sanitize filenames. An attacker could craft filenames to escape the intended storage location. This issue has been patched in version 3.78.0 for @payloadcms/storage-azure, @payloadcms/storage-gcs, @payloadcms/storage-r2, and @payloadcms/storage-s3.</p></details></td>
+        <td>2026-04-01</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34749" target="_blank" rel="noopener">CVE-2026-34749</a></td>
+        <td>5.4</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-352</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.78</td>
+        <td><details><summary>Payload is a free and open source headless content management system. Prior to v...</summary><p>Payload is a free and open source headless content management system. Prior to version 3.79.1, a Cross-Site Request Forgery (CSRF) vulnerability exists in the authentication flow. Under certain conditions, the configured CSRF protection could be bypassed, allowing cross-site requests to be made. This issue has been patched in version 3.79.1.</p></details></td>
+        <td>2026-04-01</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34748" target="_blank" rel="noopener">CVE-2026-34748</a></td>
+        <td>8.7</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.09</td>
+        <td><details><summary>Payload is a free and open source headless content management system. Prior to v...</summary><p>Payload is a free and open source headless content management system. Prior to version 3.78.0 in @payloadcms/next, a stored Cross-Site Scripting (XSS) vulnerability existed in the admin panel. An authenticated user with write access to a collection could save content that, when viewed by another user, would execute in their browser. This issue has been patched in version 3.78.0.</p></details></td>
+        <td>2026-04-01</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34747" target="_blank" rel="noopener">CVE-2026-34747</a></td>
+        <td>8.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-89</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.95</td>
+        <td><details><summary>Payload is a free and open source headless content management system. Prior to v...</summary><p>Payload is a free and open source headless content management system. Prior to version 3.79.1, certain request inputs were not properly validated. An attacker could craft requests that influence SQL query execution, potentially exposing or modifying data in collections. This issue has been patched in version 3.79.1.</p></details></td>
+        <td>2026-04-01</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34746" target="_blank" rel="noopener">CVE-2026-34746</a></td>
+        <td>7.7</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-918</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.39</td>
+        <td><details><summary>Payload is a free and open source headless content management system. Prior to v...</summary><p>Payload is a free and open source headless content management system. Prior to version 3.79.1, an authenticated Server-Side Request Forgery (SSRF) vulnerability exists in the upload functionality. Authenticated users with create or update access to an upload-enabled collection could cause the server to make outbound HTTP requests to arbitrary URLs. This issue has been patched in version 3.79.1.</p></details></td>
+        <td>2026-04-01</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34456" target="_blank" rel="noopener">CVE-2026-34456</a></td>
+        <td>9.1</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-284</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.37</td>
+        <td><details><summary>Reviactyl is an open-source game server management panel built using Laravel, Re...</summary><p>Reviactyl is an open-source game server management panel built using Laravel, React, FilamentPHP, Vite, and Go. From version 26.2.0-beta.1 to before version 26.2.0-beta.5, a vulnerability in the OAuth authentication flow allowed automatic linking of social accounts based solely on matching email addresses. An attacker could create or control a social account (e.g., Google, GitHub, Discord) using a victim’s email address and gain full access to the victim&#x27;s account without knowing their password. This results in a full account takeover with no prior authentication required. This issue has been patched in version 26.2.0-beta.5.</p></details></td>
+        <td>2026-04-01</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34455" target="_blank" rel="noopener">CVE-2026-34455</a></td>
+        <td>8.7</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-89</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.09</td>
+        <td><details><summary>Hi.Events is an open-source event management and ticket selling platform. From v...</summary><p>Hi.Events is an open-source event management and ticket selling platform. From version 0.8.0-beta.1 to before version 1.7.1-beta, multiple repository classes pass the user-supplied sort_by query parameter directly to Eloquent&#x27;s orderBy() without validation, enabling SQL injection. The application uses PostgreSQL which supports stacked queries. This issue has been patched in version 1.7.1-beta.</p></details></td>
+        <td>2026-04-01</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-66442" target="_blank" rel="noopener">CVE-2025-66442</a></td>
+        <td>5.1</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-385</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.57</td>
+        <td><details><summary>In Mbed TLS through 4.0.0, there is a compiler-induced timing side channel (in R...</summary><p>In Mbed TLS through 4.0.0, there is a compiler-induced timing side channel (in RSA and CBC/ECB decryption) that only occurs with LLVM&#x27;s select-optimize feature. TF-PSA-Crypto through 1.0.0 is also affected.</p></details></td>
+        <td>2026-04-01</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35000" target="_blank" rel="noopener">CVE-2026-35000</a></td>
+        <td>7.1</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-184</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.97</td>
+        <td><details><summary>ChangeDetection.io versions prior to 0.54.7 contain a protection bypass vulnerab...</summary><p>ChangeDetection.io versions prior to 0.54.7 contain a protection bypass vulnerability in the SafeXPath3Parser implementation that allows attackers to read arbitrary local files by using unblocked XPath 3.0/3.1 functions such as json-doc() and similar file-access primitives. Attackers can exploit the incomplete blocklist of dangerous XPath functions to access sensitive data from the local filesystem.</p></details></td>
+        <td>2026-04-01</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34874" target="_blank" rel="noopener">CVE-2026-34874</a></td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-476</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.25</td>
+        <td><details><summary>An issue was discovered in Mbed TLS through 3.6.5 and 4.x through 4.0.0. There i...</summary><p>An issue was discovered in Mbed TLS through 3.6.5 and 4.x through 4.0.0. There is a NULL pointer dereference in distinguished name parsing that allows an attacker to write to address 0.</p></details></td>
+        <td>2026-04-01</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34871" target="_blank" rel="noopener">CVE-2026-34871</a></td>
         <td>0.0</td>
         <td><span class="severity none">NONE</span></td>
         <td>N/A</td>
         <td>&nbsp;</td>
         <td>&mdash;</td>
         <td>0.00</td>
+        <td><details><summary>An issue was discovered in Mbed TLS before 3.6.6 and 4.x before 4.1.0 and TF-PSA...</summary><p>An issue was discovered in Mbed TLS before 3.6.6 and 4.x before 4.1.0 and TF-PSA-Crypto before 1.1.0. There is a Predictable Seed in a Pseudo-Random Number Generator (PRNG).</p></details></td>
+        <td>2026-04-01</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-25835" target="_blank" rel="noopener">CVE-2026-25835</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Mbed TLS before 3.6.6 and TF-PSA-Crypto before 1.1.0 misuse seeds in a Pseudo-Ra...</summary><p>Mbed TLS before 3.6.6 and TF-PSA-Crypto before 1.1.0 misuse seeds in a Pseudo-Random Number Generator (PRNG).</p></details></td>
+        <td>2026-04-01</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-25833" target="_blank" rel="noopener">CVE-2026-25833</a></td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-121</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.25</td>
+        <td><details><summary>Mbed TLS 3.5.0 to 3.6.5 fixed in 3.6.6 and 4.1.0 has a buffer overflow in the x5...</summary><p>Mbed TLS 3.5.0 to 3.6.5 fixed in 3.6.6 and 4.1.0 has a buffer overflow in the x509_inet_pton_ipv6() function</p></details></td>
+        <td>2026-04-01</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34875" target="_blank" rel="noopener">CVE-2026-34875</a></td>
+        <td>9.8</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-120</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.86</td>
         <td><details><summary>An issue was discovered in Mbed TLS through 3.6.5 and TF-PSA-Crypto 1.0.0. A buf...</summary><p>An issue was discovered in Mbed TLS through 3.6.5 and TF-PSA-Crypto 1.0.0. A buffer overflow can occur in public key export for FFDH keys.</p></details></td>
         <td>2026-04-01</td>
       </tr>
@@ -203,24 +352,13 @@ This vulnerability also impacted Temporal Cloud when the attacker and victim nam
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-25834" target="_blank" rel="noopener">CVE-2026-25834</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>6.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-295</td>
         <td>&nbsp;</td>
         <td>&mdash;</td>
-        <td>0.00</td>
+        <td>4.55</td>
         <td><details><summary>Mbed TLS v3.3.0 up to 3.6.5 and 4.0.0 allows Algorithm Downgrade.</summary><p>Mbed TLS v3.3.0 up to 3.6.5 and 4.0.0 allows Algorithm Downgrade.</p></details></td>
-        <td>2026-04-01</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5310" target="_blank" rel="noopener">CVE-2026-5310</a></td>
-        <td>2.0</td>
-        <td><span class="severity low">LOW</span></td>
-        <td>CWE-320</td>
-        <td>&nbsp;</td>
-        <td>&mdash;</td>
-        <td>1.40</td>
-        <td><details><summary>A vulnerability was identified in Enter Software Iperius Backup up to 8.7.2. Thi...</summary><p>A vulnerability was identified in Enter Software Iperius Backup up to 8.7.2. This impacts an unknown function of the file IperiusAccounts.ini. Such manipulation leads to use of hard-coded cryptographic key . The attack must be carried out locally. This attack is characterized by high complexity. The exploitability is said to be difficult. The exploit is publicly available and might be used. Upgrading to version 8.7.4 will fix this issue. It is suggested to upgrade the affected component. The vendor was contacted early, responded in a very professional manner and quickly released a fixed version of the affected product.</p></details></td>
         <td>2026-04-01</td>
       </tr>
       <tr>
@@ -280,290 +418,82 @@ This vulnerability also impacted Temporal Cloud when the attacker and victim nam
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-30643" target="_blank" rel="noopener">CVE-2026-30643</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>9.8</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-94</td>
         <td>&nbsp;</td>
         <td>&mdash;</td>
-        <td>0.00</td>
+        <td>6.86</td>
         <td><details><summary>An issue was discovered in DedeCMS 5.7.118 allowing attackers to execute code vi...</summary><p>An issue was discovered in DedeCMS 5.7.118 allowing attackers to execute code via crafted setup tag values in a module upload.</p></details></td>
         <td>2026-04-01</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-30273" target="_blank" rel="noopener">CVE-2026-30273</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>7.3</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-89</td>
         <td>&nbsp;</td>
         <td>&mdash;</td>
-        <td>0.00</td>
+        <td>5.11</td>
         <td><details><summary>pandas-ai v3.0.0 was discovered to contain a SQL injection vulnerability via the...</summary><p>pandas-ai v3.0.0 was discovered to contain a SQL injection vulnerability via the pandasai.agent.base._execute_sql_query component.</p></details></td>
         <td>2026-04-01</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-2265" target="_blank" rel="noopener">CVE-2026-2265</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>6.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
         <td>N/A</td>
         <td>&nbsp;</td>
         <td>&mdash;</td>
-        <td>0.00</td>
+        <td>4.55</td>
         <td><details><summary>An unauthenticated remote code execution (RCE) vulnerability exists in applicati...</summary><p>An unauthenticated remote code execution (RCE) vulnerability exists in applications that use the Replicator node package manager (npm) version 1.0.5 to deserialize untrusted user input and execute the resulting object.</p></details></td>
         <td>2026-04-01</td>
       </tr>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-20174" target="_blank" rel="noopener">CVE-2026-20174</a></td>
-        <td>4.9</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-22</td>
-        <td>&nbsp;</td>
-        <td>&mdash;</td>
-        <td>3.43</td>
-        <td><details><summary>A vulnerability in the Metadata update feature of Cisco Nexus Dashboard Insights...</summary><p>A vulnerability in the Metadata update feature of Cisco Nexus Dashboard Insights could allow an authenticated, remote attacker to write arbitrary files to an affected system.
-
-This vulnerability is due to insufficient validation of the metadata update file. An attacker could exploit this vulnerability by crafting a metadata update file and manually uploading it to an affected device. A successful exploit could allow the attacker to write arbitrary files to the underlying operating system as the&amp;nbsp;root user. To exploit this vulnerability, the attacker must have valid administrative credentials.
-Note: Manual uploading of metadata files is typical for Air-Gap environments but not for Cisco Intersight Cloud connected devices. However, the manual upload option exists for both deployments.</p></details></td>
-        <td>2026-04-01</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-20160" target="_blank" rel="noopener">CVE-2026-20160</a></td>
-        <td>9.8</td>
-        <td><span class="severity critical">CRITICAL</span></td>
-        <td>CWE-668</td>
-        <td>&nbsp;</td>
-        <td>&mdash;</td>
-        <td>6.86</td>
-        <td><details><summary>A vulnerability in Cisco Smart Software Manager On-Prem (SSM On-Prem) could allo...</summary><p>A vulnerability in Cisco Smart Software Manager On-Prem (SSM On-Prem) could allow an unauthenticated, remote attacker to execute arbitrary commands on the underlying operating system of an affected SSM On-Prem host.
-
-This vulnerability is due to the unintentional exposure of an&amp;nbsp;internal service. An attacker could exploit this vulnerability by sending a crafted request to the API of the exposed service. A successful exploit could allow the attacker to execute commands on the underlying operating system with root-level privileges.</p></details></td>
-        <td>2026-04-01</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-20155" target="_blank" rel="noopener">CVE-2026-20155</a></td>
-        <td>8.0</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-862</td>
-        <td>&nbsp;</td>
-        <td>&mdash;</td>
-        <td>5.60</td>
-        <td><details><summary>A vulnerability in the web-based management interface of Cisco Evolved Programma...</summary><p>A vulnerability in the web-based management interface of Cisco Evolved Programmable Network Manager (EPNM) could allow an authenticated, remote attacker with low privileges to access sensitive information that they are not authorized to access.
-
-This vulnerability is due to improper authorization checks on a REST API endpoint of an affected device.&amp;nbsp;An attacker could exploit this vulnerability by querying the affected endpoint. A successful exploit could allow the attacker to view session information of active Cisco EPNM users, including users with administrative privileges, which could result in the affected device being compromised.</p></details></td>
-        <td>2026-04-01</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-20151" target="_blank" rel="noopener">CVE-2026-20151</a></td>
-        <td>7.3</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-201</td>
-        <td>&nbsp;</td>
-        <td>&mdash;</td>
-        <td>5.11</td>
-        <td><details><summary>A vulnerability in the web interface of Cisco Smart Software Manager On-Prem (SS...</summary><p>A vulnerability in the web interface of Cisco Smart Software Manager On-Prem (SSM On-Prem) could allow an authenticated, remote attacker to elevate privileges on an affected system.
-
-This vulnerability is due to the improper transmission of sensitive user information. An attacker could exploit this vulnerability by sending a crafted message to an affected Cisco SSM On-Prem host and retrieving session credentials from subsequent status messages. A successful exploit could allow the attacker to elevate privileges on the affected system from low to administrative.
-To exploit this vulnerability, the attacker must have valid credentials for a user account with at least the role of System User.
-Note: This vulnerability exposes information only about users who logged in to the Cisco SSM On-Prem host using the web interface and who are currently logged in. SSH sessions are not affected.</p></details></td>
-        <td>2026-04-01</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-20097" target="_blank" rel="noopener">CVE-2026-20097</a></td>
-        <td>6.5</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-787</td>
-        <td>&nbsp;</td>
-        <td>&mdash;</td>
-        <td>4.55</td>
-        <td><details><summary>A vulnerability in the web-based management interface of Cisco IMC could allow a...</summary><p>A vulnerability in the web-based management interface of Cisco IMC could allow an authenticated, remote attacker with admin-level privileges to execute arbitrary code as the root user.&amp;nbsp;This vulnerability is due to improper validation of user-supplied input to the web-based management interface. An attacker could exploit this vulnerability by sending crafted HTTP requests to an affected device. A successful exploit could allow the attacker to execute arbitrary code on the underlying operating system as the root user.
-
-Cisco has assigned this vulnerability a SIR of High rather than Medium as the score indicates because additional security implications could occur when the attacker becomes root.</p></details></td>
-        <td>2026-04-01</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-20096" target="_blank" rel="noopener">CVE-2026-20096</a></td>
-        <td>6.5</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-77</td>
-        <td>&nbsp;</td>
-        <td>&mdash;</td>
-        <td>4.55</td>
-        <td><details><summary>A vulnerability in the web-based management interface of Cisco IMC could allow a...</summary><p>A vulnerability in the web-based management interface of Cisco IMC could allow an authenticated, remote attacker with admin-level privileges to perform command injection attacks on an affected system and&amp;nbsp;execute arbitrary commands as the root user.
-
-This vulnerability is due to improper validation of user-supplied input. An attacker could exploit this vulnerability by sending crafted commands to the web-based management interface of the affected software. A successful exploit could allow the attacker to execute arbitrary commands on the underlying operating system as the root user. Cisco has assigned this vulnerability a Security Impact Rating (SIR) of High, rather than Medium as the score indicates, because additional security implications could occur once the attacker has become root.</p></details></td>
-        <td>2026-04-01</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-20095" target="_blank" rel="noopener">CVE-2026-20095</a></td>
-        <td>6.5</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-77</td>
-        <td>&nbsp;</td>
-        <td>&mdash;</td>
-        <td>4.55</td>
-        <td><details><summary>A vulnerability in the web-based management interface of Cisco IMC could allow a...</summary><p>A vulnerability in the web-based management interface of Cisco IMC could allow an authenticated, remote attacker with admin-level privileges to perform command injection attacks on an affected system and&amp;nbsp;execute arbitrary commands as the root user.
-
-This vulnerability is due to improper validation of user-supplied input. An attacker could exploit this vulnerability by sending crafted commands to the web-based management interface of the affected software. A successful exploit could allow the attacker to execute arbitrary commands on the underlying operating system as the root user. Cisco has assigned this vulnerability a Security Impact Rating (SIR) of High, rather than Medium as the score indicates, because additional security implications could occur once the attacker has become root.</p></details></td>
-        <td>2026-04-01</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-20094" target="_blank" rel="noopener">CVE-2026-20094</a></td>
-        <td>8.8</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-77</td>
-        <td>&nbsp;</td>
-        <td>&mdash;</td>
-        <td>6.16</td>
-        <td><details><summary>A vulnerability in the web-based management interface of Cisco IMC could allow a...</summary><p>A vulnerability in the web-based management interface of Cisco IMC could allow an authenticated, remote attacker with read-only privileges to perform command injection attacks on an affected system and execute arbitrary commands as the root user.
-
-This vulnerability is due to improper validation of user-supplied input. An attacker could exploit this vulnerability by sending crafted commands to the web-based management interface of the affected software. A successful exploit could allow the attacker to execute arbitrary commands on the underlying operating system as the root user.</p></details></td>
-        <td>2026-04-01</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-20093" target="_blank" rel="noopener">CVE-2026-20093</a></td>
-        <td>9.8</td>
-        <td><span class="severity critical">CRITICAL</span></td>
-        <td>CWE-20</td>
-        <td>&nbsp;</td>
-        <td>&mdash;</td>
-        <td>6.86</td>
-        <td><details><summary>A vulnerability in the change password functionality of Cisco Integrated Managem...</summary><p>A vulnerability in the change password functionality of Cisco Integrated Management Controller (IMC) could allow an unauthenticated, remote attacker to bypass authentication and gain access to the system as&amp;nbsp;Admin.
-
-This vulnerability is due to incorrect handling of password change requests. An attacker could exploit this vulnerability by sending a crafted HTTP request to an affected device. A successful exploit could allow the attacker to bypass authentication, alter the passwords of any user on the system, including an&amp;nbsp;Admin user, and gain access to the system as that user.</p></details></td>
-        <td>2026-04-01</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-20090" target="_blank" rel="noopener">CVE-2026-20090</a></td>
-        <td>4.8</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-79</td>
-        <td>&nbsp;</td>
-        <td>&mdash;</td>
-        <td>3.36</td>
-        <td><details><summary>A vulnerability in the web-based management interface of Cisco IMC could allow a...</summary><p>A vulnerability in the web-based management interface of Cisco IMC could allow an authenticated, remote attacker with administrative privileges to conduct a stored XSS attack against a user of the interface.
-
-This vulnerability is due to insufficient validation of user input. An attacker could exploit this vulnerability by persuading a user of an affected interface to click a crafted link. A successful exploit could allow the attacker to execute arbitrary script code in the browser of the targeted user or access sensitive, browser-based information.</p></details></td>
-        <td>2026-04-01</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-20089" target="_blank" rel="noopener">CVE-2026-20089</a></td>
-        <td>4.8</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-79</td>
-        <td>&nbsp;</td>
-        <td>&mdash;</td>
-        <td>3.36</td>
-        <td><details><summary>A vulnerability in the web-based management interface of Cisco IMC could allow a...</summary><p>A vulnerability in the web-based management interface of Cisco IMC could allow an authenticated, remote attacker with administrative privileges to conduct a stored XSS attack against a user of the interface.
-
-This vulnerability is due to insufficient validation of user input. An attacker could exploit this vulnerability by persuading a user of an affected interface to click a crafted link. A successful exploit could allow the attacker to execute arbitrary script code in the browser of the targeted user or access sensitive, browser-based information.</p></details></td>
-        <td>2026-04-01</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-20088" target="_blank" rel="noopener">CVE-2026-20088</a></td>
-        <td>4.8</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-79</td>
-        <td>&nbsp;</td>
-        <td>&mdash;</td>
-        <td>3.36</td>
-        <td><details><summary>A vulnerability in the web-based management interface of Cisco IMC could allow a...</summary><p>A vulnerability in the web-based management interface of Cisco IMC could allow an authenticated, remote attacker with administrative privileges to conduct a stored XSS attack against a user of the interface.
-
-This vulnerability is due to insufficient validation of user input. An attacker could exploit this vulnerability by persuading a user of an affected interface to click a crafted link. A successful exploit could allow the attacker to execute arbitrary script code in the browser of the targeted user or access sensitive, browser-based information.</p></details></td>
-        <td>2026-04-01</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-20087" target="_blank" rel="noopener">CVE-2026-20087</a></td>
-        <td>4.8</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-79</td>
-        <td>&nbsp;</td>
-        <td>&mdash;</td>
-        <td>3.36</td>
-        <td><details><summary>A vulnerability in the web-based management interface of Cisco IMC could allow a...</summary><p>A vulnerability in the web-based management interface of Cisco IMC could allow an authenticated, remote attacker with administrative privileges to conduct a stored XSS attack against a user of the interface.
-
-This vulnerability is due to insufficient validation of user input. An attacker could exploit this vulnerability by persuading a user of an affected interface to click a crafted link. A successful exploit could allow the attacker to execute arbitrary script code in the browser of the targeted user or access sensitive, browser-based information.</p></details></td>
-        <td>2026-04-01</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-20085" target="_blank" rel="noopener">CVE-2026-20085</a></td>
-        <td>6.1</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-79</td>
-        <td>&nbsp;</td>
-        <td>&mdash;</td>
-        <td>4.27</td>
-        <td><details><summary>A vulnerability in the web-based management interface of Cisco IMC could allow a...</summary><p>A vulnerability in the web-based management interface of Cisco IMC could allow an unauthenticated, remote attacker to conduct a reflected XSS attack against a user of the interface.
-
-This vulnerability is due to insufficient validation of user input. An attacker could exploit this vulnerability by persuading a user of an affected interface to click a crafted link. A successful exploit could allow the attacker to execute arbitrary script code in the browser of the targeted user or access sensitive, browser-based information.</p></details></td>
-        <td>2026-04-01</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-20042" target="_blank" rel="noopener">CVE-2026-20042</a></td>
-        <td>6.5</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-295</td>
-        <td>&nbsp;</td>
-        <td>&mdash;</td>
-        <td>4.55</td>
-        <td><details><summary>A vulnerability in the configuration backup feature of Cisco Nexus Dashboard cou...</summary><p>A vulnerability in the configuration backup feature of Cisco Nexus Dashboard could allow an attacker who has the encryption password and access to Full or Config-only backup files to access sensitive information.
-
-This vulnerability exists because authentication details are included in the encrypted backup files. An attacker with a valid backup file and encryption password from an affected device could decrypt the backup file. The attacker could then use the authentication details in the backup file to access internal-only APIs on the affected device. A successful exploit could allow the attacker to execute arbitrary commands on the underlying operating system as the root user.</p></details></td>
-        <td>2026-04-01</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-20041" target="_blank" rel="noopener">CVE-2026-20041</a></td>
-        <td>6.1</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-918</td>
-        <td>&nbsp;</td>
-        <td>&mdash;</td>
-        <td>4.27</td>
-        <td><details><summary>A vulnerability in Cisco Nexus Dashboard and Cisco Nexus Dashboard Insights coul...</summary><p>A vulnerability in Cisco Nexus Dashboard and Cisco Nexus Dashboard Insights could allow an unauthenticated, remote attacker to conduct a server-side request forgery (SSRF) attack through an affected device.
-
-This vulnerability is due to improper input validation for specific HTTP requests. An attacker could exploit this vulnerability by persuading an authenticated user of the device management interface to click a crafted link. A successful exploit could allow the attacker to send arbitrary network requests that are sourced from the affected device to an attacker-controlled server. The attacker could then execute arbitrary script code in the context of the affected interface or access sensitive browser-based information.</p></details></td>
-        <td>2026-04-01</td>
-      </tr>
-      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2024-43028" target="_blank" rel="noopener">CVE-2024-43028</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>9.8</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-77</td>
         <td>&nbsp;</td>
         <td>&mdash;</td>
-        <td>0.00</td>
+        <td>6.86</td>
         <td><details><summary>A command injection vulnerability in the component /jmreport/show of jeecg boot ...</summary><p>A command injection vulnerability in the component /jmreport/show of jeecg boot v3.0.0 to v3.5.3 allows attackers to execute arbitrary code via a crafted HTTP request.</p></details></td>
         <td>2026-04-01</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2024-40489" target="_blank" rel="noopener">CVE-2024-40489</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>9.8</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-94</td>
         <td>&nbsp;</td>
         <td>&mdash;</td>
-        <td>0.00</td>
+        <td>6.86</td>
         <td><details><summary>There is an injection vulnerability in jeecg boot versions 3.0.0 to 3.5.3 due to...</summary><p>There is an injection vulnerability in jeecg boot versions 3.0.0 to 3.5.3 due to lax character filtering, which allows attackers to execute arbitrary code on components through specially crafted HTTP requests.</p></details></td>
         <td>2026-04-01</td>
       </tr>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4989" target="_blank" rel="noopener">CVE-2026-4989</a></td>
-        <td>4.3</td>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4927" target="_blank" rel="noopener">CVE-2026-4927</a></td>
+        <td>6.5</td>
         <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-918</td>
+        <td>CWE-201</td>
         <td>&nbsp;</td>
         <td>&mdash;</td>
-        <td>3.01</td>
-        <td><details><summary>Improper input validation in the gateway health check feature in Devolutions Ser...</summary><p>Improper input validation in the gateway health check feature in Devolutions Server allows a low-privileged authenticated user to perform server-side request forgery (SSRF), potentially leading to information disclosure, via a crafted API request.
-This issue affects Server: from 2026.1.1 through 2026.1.11, from 2025.3.1 through 2025.3.17.</p></details></td>
+        <td>4.55</td>
+        <td><details><summary>Exposure of sensitive information in the users MFA feature in Devolutions Server...</summary><p>Exposure of sensitive information in the users MFA feature in Devolutions Server allows users with user management privileges to obtain other users OTP keys via an authenticated API request.
+
+
+
+This issue affects Server: from 2026.1.6 through 2026.1.11.</p></details></td>
         <td>2026-04-01</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4829" target="_blank" rel="noopener">CVE-2026-4829</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>5.4</td>
+        <td><span class="severity medium">MEDIUM</span></td>
         <td>CWE-287</td>
         <td>&nbsp;</td>
         <td>&mdash;</td>
-        <td>0.00</td>
+        <td>3.78</td>
         <td><details><summary>Improper authentication in the external OAuth authentication flow in Devolutions...</summary><p>Improper authentication in the external OAuth authentication flow in Devolutions Server 2026.1.11 and earlier allows an authenticated user to authenticate as other users, including administrators, via reuse of a session code from an external authentication flow.</p></details></td>
         <td>2026-04-01</td>
       </tr>
@@ -586,7 +516,7 @@ This issue affects Server: from 2026.1.1 through 2026.1.11, from 2025.3.1 throug
         <td>&nbsp;</td>
         <td>&mdash;</td>
         <td>5.18</td>
-        <td><details><summary>Lakeside SysTrack Agent 11 before 11.5.0.15 has a race condition with resultant ...</summary><p>Lakeside SysTrack Agent 11 before 11.5.0.15 has a race condition with resultant Local Privilege Escalation to SYSTEM. The fixed versions are 11.2.1.28, 11.3.0.38, 11.4.0.24, and 11.5.0.15.</p></details></td>
+        <td><details><summary>Lakeside SysTrack Agent 11 before 11.5.0.15 has a race condition with resultant ...</summary><p>Lakeside SysTrack Agent 11 before 11.5.0.15 has a race condition with resultant local privilege escalation to SYSTEM. The fixed versions are 11.2.1.28, 11.3.0.38, 11.4.0.24, and 11.5.0.15.</p></details></td>
         <td>2026-04-01</td>
       </tr>
       <tr>
@@ -602,23 +532,23 @@ This issue affects Server: from 2026.1.1 through 2026.1.11, from 2025.3.1 throug
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-31027" target="_blank" rel="noopener">CVE-2026-31027</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>9.8</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-120</td>
         <td>&nbsp;</td>
         <td>&mdash;</td>
-        <td>0.00</td>
+        <td>6.86</td>
         <td><details><summary>TOTOlink A3600R v5.9c.4959 contains a buffer overflow vulnerability in the setAp...</summary><p>TOTOlink A3600R v5.9c.4959 contains a buffer overflow vulnerability in the setAppEasyWizardConfig interface of /lib/cste_modules/app.so. The vulnerability occurs because the rootSsid parameter is not properly validated for length, allowing remote attackers to trigger a buffer overflow, potentially leading to arbitrary code execution or denial of service.</p></details></td>
         <td>2026-04-01</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-67807" target="_blank" rel="noopener">CVE-2025-67807</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>4.7</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-204</td>
         <td>&nbsp;</td>
         <td>&mdash;</td>
-        <td>0.00</td>
+        <td>3.29</td>
         <td><details><summary>The login mechanism of Sage DPW 2025_06_004 displays distinct responses for vali...</summary><p>The login mechanism of Sage DPW 2025_06_004 displays distinct responses for valid and invalid usernames, allowing enumeration of existing accounts in versions before 2021_06_000. On-premise administrators can toggle this behaviour in newer versions.</p></details></td>
         <td>2026-04-01</td>
       </tr>
@@ -679,34 +609,34 @@ This issue affects Server: from 2026.1.1 through 2026.1.11, from 2025.3.1 throug
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-30292" target="_blank" rel="noopener">CVE-2026-30292</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>8.4</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-73</td>
         <td>&nbsp;</td>
         <td>&mdash;</td>
-        <td>0.00</td>
+        <td>5.88</td>
         <td><details><summary>An arbitrary file overwrite vulnerability in Docudepot PDF Reader: PDF Viewer AP...</summary><p>An arbitrary file overwrite vulnerability in Docudepot PDF Reader: PDF Viewer APP v1.0.34 allows attackers to overwrite critical internal files via the file import process, leading to arbitrary code execution or information exposure.</p></details></td>
         <td>2026-04-01</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-30291" target="_blank" rel="noopener">CVE-2026-30291</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>8.4</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-73</td>
         <td>&nbsp;</td>
         <td>&mdash;</td>
-        <td>0.00</td>
+        <td>5.88</td>
         <td><details><summary>An arbitrary file overwrite vulnerability in Ora Tools PDF Reader &#x27; Reader &amp; Edi...</summary><p>An arbitrary file overwrite vulnerability in Ora Tools PDF Reader &#x27; Reader &amp; Editor APPv4.3.5 allows attackers to overwrite critical internal files via the file import process, leading to arbitrary code execution or information exposure.</p></details></td>
         <td>2026-04-01</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-29598" target="_blank" rel="noopener">CVE-2026-29598</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>5.4</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
         <td>&nbsp;</td>
         <td>&mdash;</td>
-        <td>0.00</td>
+        <td>3.78</td>
         <td><details><summary>Multiple stored cross-site scripting (XSS) vulnerabilities in the submit_add_use...</summary><p>Multiple stored cross-site scripting (XSS) vulnerabilities in the submit_add_user.asp endpoint of DDSN Interactive Acora CMS v10.7.1 allow attackers to execute arbitrary web scripts or HTML via injecting a crafted payload into the First Name and Last Name parameters.</p></details></td>
         <td>2026-04-01</td>
       </tr>
@@ -719,19 +649,6 @@ This issue affects Server: from 2026.1.1 through 2026.1.11, from 2025.3.1 throug
         <td>&mdash;</td>
         <td>4.48</td>
         <td><details><summary>The King Addons for Elementor plugin for WordPress is vulnerable to multiple Con...</summary><p>The King Addons for Elementor plugin for WordPress is vulnerable to multiple Contributor+ DOM-Based Stored Cross-Site Scripting vulnerabilities in all versions up to, and including, 51.1.38. This is due to insufficient input sanitization and output escaping across multiple widgets and features. The plugin uses esc_attr() and esc_url() within JavaScript inline event handlers (onclick attributes), which allows HTML entities to be decoded by the DOM, enabling attackers to break out of the JavaScript context. Additionally, several JavaScript files use unsafe DOM manipulation methods (template literals, .html(), and window.location.href with unvalidated URLs) with user-controlled data. This makes it possible for authenticated attackers, with Contributor-level access and above, to inject arbitrary web scripts via Elementor widget settings that execute when a user accesses the injected page or when an administrator previews the page in Elementor&#x27;s editor. The vulnerability was partially patched in version 5.1.51.</p></details></td>
-        <td>2026-04-01</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5271" target="_blank" rel="noopener">CVE-2026-5271</a></td>
-        <td>5.6</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-427</td>
-        <td>&nbsp;</td>
-        <td>&mdash;</td>
-        <td>3.92</td>
-        <td><details><summary>pymanager included the current working directory in sys.path meaning modules cou...</summary><p>pymanager included the current working directory in sys.path meaning modules could be shadowed by modules in the current working directory. As a result, if a user executes a pymanager-generated command (e.g., pip, pytest)
- from an attacker-controlled directory, a malicious module in that 
-directory can be imported and executed instead of the intended package.</p></details></td>
         <td>2026-04-01</td>
       </tr>
       <tr>
@@ -835,12 +752,12 @@ directory can be imported and executed instead of the intended package.</p></det
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-30287" target="_blank" rel="noopener">CVE-2026-30287</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>8.4</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-73</td>
         <td>&nbsp;</td>
         <td>&mdash;</td>
-        <td>0.00</td>
+        <td>5.88</td>
         <td><details><summary>An arbitrary file overwrite vulnerability in Deep Thought Industries ACE Scanner...</summary><p>An arbitrary file overwrite vulnerability in Deep Thought Industries ACE Scanner PDF Scanner v1.4.5 allows attackers to overwrite critical internal files via the file import process, leading to arbitrary code execution or information exposure.</p></details></td>
         <td>2026-04-01</td>
       </tr>
@@ -1685,7 +1602,7 @@ directory can be imported and executed instead of the intended package.</p></det
       </div>
     </section>
     <section>
-      <h2>Previous Month — March 2026 <span class="count">(5735)</span></h2>
+      <h2>Previous Month — March 2026 <span class="count">(5733)</span></h2>
       <div class="table-wrapper">
         <table>
           <thead>
@@ -2595,12 +2512,12 @@ directory can be imported and executed instead of the intended package.</p></det
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-30521" target="_blank" rel="noopener">CVE-2026-30521</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>6.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>NVD-CWE-noinfo</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p4</small></td>
-        <td>0.00</td>
+        <td>4.55</td>
         <td><details><summary>A Business Logic vulnerability exists in SourceCodester Loan Management System v...</summary><p>A Business Logic vulnerability exists in SourceCodester Loan Management System v1.0 due to improper server-side validation. The application allows administrators to create &quot;Loan Plans&quot; with specific interest rates. While the frontend interface prevents users from entering negative numbers, this constraint is not enforced on the backend. An authenticated attacker can bypass the client-side restriction by manipulating the HTTP POST request to submit a negative value for the interest_percentage. This results in the creation of loan plans with negative interest rates.</p></details></td>
         <td>2026-03-31</td>
       </tr>
@@ -3178,34 +3095,34 @@ directory can be imported and executed instead of the intended package.</p></det
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-30284" target="_blank" rel="noopener">CVE-2026-30284</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>8.6</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-73</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p4</small></td>
-        <td>0.00</td>
+        <td>6.02</td>
         <td><details><summary>An arbitrary file overwrite vulnerability in UXGROUP LLC Voice Recorder v10.0 al...</summary><p>An arbitrary file overwrite vulnerability in UXGROUP LLC Voice Recorder v10.0 allows attackers to overwrite critical internal files via the file import process, leading to arbitrary code execution or information exposure.</p></details></td>
         <td>2026-03-31</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-30281" target="_blank" rel="noopener">CVE-2026-30281</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>9.8</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-73</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p4</small></td>
-        <td>0.00</td>
+        <td>6.86</td>
         <td><details><summary>An arbitrary file overwrite vulnerability in MaruNuri LLC v2.0.23 allows attacke...</summary><p>An arbitrary file overwrite vulnerability in MaruNuri LLC v2.0.23 allows attackers to overwrite critical internal files via the file import process, leading to arbitrary code execution or information exposure.</p></details></td>
         <td>2026-03-31</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-30276" target="_blank" rel="noopener">CVE-2026-30276</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>9.8</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-73</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p4</small></td>
-        <td>0.00</td>
+        <td>6.86</td>
         <td><details><summary>An arbitrary file overwrite vulnerability in DeftPDF Document Translator v54.0 a...</summary><p>An arbitrary file overwrite vulnerability in DeftPDF Document Translator v54.0 allows attackers to overwrite critical internal files via the file import process, leading to arbitrary code execution or information exposure.</p></details></td>
         <td>2026-03-31</td>
       </tr>
@@ -3508,34 +3425,34 @@ directory can be imported and executed instead of the intended package.</p></det
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-30314" target="_blank" rel="noopener">CVE-2026-30314</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>9.8</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-78</td>
         <td>&nbsp;</td>
         <td>0.1% <small>p33</small></td>
-        <td>0.00</td>
+        <td>6.86</td>
         <td><details><summary>Ridvay Code&#x27;s command auto-approval module contains a critical OS command inject...</summary><p>Ridvay Code&#x27;s command auto-approval module contains a critical OS command injection vulnerability that renders its whitelist security mechanism completely ineffective. The system relies on fragile regular expressions to parse command structures; while it attempts to intercept dangerous operations, it fails to account for standard Shell command substitution Ridvay Code (specifically$(...)and backticks ...). An attacker can construct a command such as git log --grep=&quot;$(malicious_command)&quot;, forcing Syntx to misidentify it as a safe git operation and automatically approve it. The underlying Shell prioritizes the execution of the malicious code injected within the arguments, resulting in Remote Code Execution without any user interaction.</p></details></td>
         <td>2026-03-31</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-30312" target="_blank" rel="noopener">CVE-2026-30312</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>9.8</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-78</td>
         <td>&nbsp;</td>
         <td>0.2% <small>p36</small></td>
-        <td>0.00</td>
+        <td>6.86</td>
         <td><details><summary>DSAI-Cline&#x27;s command auto-approval module contains a critical OS command injecti...</summary><p>DSAI-Cline&#x27;s command auto-approval module contains a critical OS command injection vulnerability that renders its whitelist security mechanism completely ineffective. The system relies on string-based parsing to validate commands; while it intercepts dangerous operators such as ;, &amp;&amp;, ||, |, and command substitution patterns, it fails to account for raw newline characters embedded within the input. An attacker can construct a payload by embedding a literal newline between a whitelisted command and malicious code (e.g., git log malicious_command), forcing DSAI-Cline to misidentify it as a safe operation and automatically approve it. The underlying PowerShell interpreter treats the newline as a command separator, executing both commands sequentially, resulting in Remote Code Execution without any user interaction.</p></details></td>
         <td>2026-03-31</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-30311" target="_blank" rel="noopener">CVE-2026-30311</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>9.8</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-78</td>
         <td>&nbsp;</td>
         <td>0.1% <small>p33</small></td>
-        <td>0.00</td>
+        <td>6.86</td>
         <td><details><summary>Ridvay Code&#x27;s command auto-approval module contains a critical OS command inject...</summary><p>Ridvay Code&#x27;s command auto-approval module contains a critical OS command injection vulnerability that renders its whitelist security mechanism completely ineffective. The system relies on fragile regular expressions to parse command structures; while it attempts to intercept dangerous operations, it fails to account for standard Shell command substitution Ridvay Code (specifically$(...)and backticks ...). An attacker can construct a command such as git log --grep=&quot;$(malicious_command)&quot;, forcing Syntx to misidentify it as a safe git operation and automatically approve it. The underlying Shell prioritizes the execution of the malicious code injected within the arguments, resulting in Remote Code Execution without any user interaction.</p></details></td>
         <td>2026-03-31</td>
       </tr>
@@ -3618,12 +3535,12 @@ directory can be imported and executed instead of the intended package.</p></det
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-30310" target="_blank" rel="noopener">CVE-2026-30310</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>9.8</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-77</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p2</small></td>
-        <td>0.00</td>
+        <td>6.86</td>
         <td><details><summary>In its design for automatic terminal command execution, Sixth offers two options...</summary><p>In its design for automatic terminal command execution, Sixth offers two options: Execute safe commands and Execute all commands. The description for the former states that commands determined by the model to be safe will be automatically executed, whereas if the model judges a command to be potentially destructive, it still requires user approval. However, this design is highly susceptible to prompt injection attacks. An attacker can employ a generic template to wrap any malicious command and mislead the model into misclassifying it as a &#x27;safe&#x27; command, thereby bypassing the user approval requirement and resulting in arbitrary command execution.</p></details></td>
         <td>2026-03-31</td>
       </tr>
@@ -3911,32 +3828,6 @@ directory can be imported and executed instead of the intended package.</p></det
         <td>0.5% <small>p65</small></td>
         <td>5.82</td>
         <td><details><summary>Cato Networks’ Socket versions prior to 25 contain a command injection vulnerabi...</summary><p>Cato Networks’ Socket versions prior to 25 contain a command injection vulnerability that allows an authenticated attacker with access to the Socket web interface (UI) to execute arbitrary operating system commands as the root user on the Socket’s internal system.</p></details></td>
-        <td>2026-03-31</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2024-14031" target="_blank" rel="noopener">CVE-2024-14031</a></td>
-        <td>8.1</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>N/A</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p12</small></td>
-        <td>5.67</td>
-        <td><details><summary>Sereal::Encoder versions from 4.000 through 4.009_002 for Perl embeds a vulnerab...</summary><p>Sereal::Encoder versions from 4.000 through 4.009_002 for Perl embeds a vulnerable version of the Zstandard library.
-
-Sereal::Encoder embeds a version of the Zstandard (zstd) library that is vulnerable to CVE-2019-11922.  This is a race condition in the one-pass compression functions of Zstandard prior to version 1.3.8 could allow an attacker to write bytes out of bounds if an output buffer smaller than the recommended size was used.</p></details></td>
-        <td>2026-03-31</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2024-14030" target="_blank" rel="noopener">CVE-2024-14030</a></td>
-        <td>8.1</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>N/A</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p12</small></td>
-        <td>5.67</td>
-        <td><details><summary>Sereal::Decoder versions from 4.000 through 4.009_002 for Perl embeds a vulnerab...</summary><p>Sereal::Decoder versions from 4.000 through 4.009_002 for Perl embeds a vulnerable version of the Zstandard library.
-
-Sereal::Decoder embeds a version of the Zstandard (zstd) library that is vulnerable to CVE-2019-11922.  This is a race condition in the one-pass compression functions of Zstandard prior to version 1.3.8 could allow an attacker to write bytes out of bounds if an output buffer smaller than the recommended size was used.</p></details></td>
         <td>2026-03-31</td>
       </tr>
       <tr>
@@ -4744,12 +4635,12 @@ Sereal::Decoder embeds a version of the Zstandard (zstd) library that is vulnera
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4789" target="_blank" rel="noopener">CVE-2026-4789</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>9.8</td>
+        <td><span class="severity critical">CRITICAL</span></td>
         <td>N/A</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p0</small></td>
-        <td>0.00</td>
+        <td>6.86</td>
         <td><details><summary>Kyverno, versions 1.16.0 and later, are vulnerable to SSRF due to unrestricted C...</summary><p>Kyverno, versions 1.16.0 and later, are vulnerable to SSRF due to unrestricted CEL HTTP functions.</p></details></td>
         <td>2026-03-30</td>
       </tr>
@@ -4832,23 +4723,23 @@ Sereal::Decoder embeds a version of the Zstandard (zstd) library that is vulnera
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-30313" target="_blank" rel="noopener">CVE-2026-30313</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>9.8</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-94</td>
         <td>&nbsp;</td>
         <td>0.2% <small>p36</small></td>
-        <td>0.00</td>
+        <td>6.86</td>
         <td><details><summary>DSAI-Cline&#x27;s command auto-approval module contains a critical OS command injecti...</summary><p>DSAI-Cline&#x27;s command auto-approval module contains a critical OS command injection vulnerability that renders its whitelist security mechanism completely ineffective. The system relies on string-based parsing to validate commands; while it intercepts dangerous operators such as ;, &amp;&amp;, ||, |, and command substitution patterns, it fails to account for raw newline characters embedded within the input. An attacker can construct a payload by embedding a literal newline between a whitelisted command and malicious code (e.g., git log malicious_command), forcing DSAI-Cline to misidentify it as a safe operation and automatically approve it. The underlying PowerShell interpreter treats the newline as a command separator, executing both commands sequentially, resulting in Remote Code Execution without any user interaction.</p></details></td>
         <td>2026-03-30</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-30308" target="_blank" rel="noopener">CVE-2026-30308</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>9.8</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-94</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p2</small></td>
-        <td>0.00</td>
+        <td>6.86</td>
         <td><details><summary>In its design for automatic terminal command execution, HAI Build Code Generator...</summary><p>In its design for automatic terminal command execution, HAI Build Code Generator offers two options: Execute safe commands and Execute all commands. The description for the former states that commands determined by the model to be safe will be automatically executed, whereas if the model judges a command to be potentially destructive, it still requires user approval. However, this design is highly susceptible to prompt injection attacks. An attacker can employ a generic template to wrap any malicious command and mislead the model into misclassifying it as a &#x27;safe&#x27; command, thereby bypassing the user approval requirement and resulting in arbitrary command execution.</p></details></td>
         <td>2026-03-30</td>
       </tr>
@@ -5393,34 +5284,34 @@ Sereal::Decoder embeds a version of the Zstandard (zstd) library that is vulnera
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-2287" target="_blank" rel="noopener">CVE-2026-2287</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>9.8</td>
+        <td><span class="severity critical">CRITICAL</span></td>
         <td>N/A</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p4</small></td>
-        <td>0.00</td>
+        <td>6.86</td>
         <td><details><summary>CrewAI does not properly check that Docker is still running during runtime, and ...</summary><p>CrewAI does not properly check that Docker is still running during runtime, and will fall back to a sandbox setting that allows for RCE exploitation.</p></details></td>
         <td>2026-03-30</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-2286" target="_blank" rel="noopener">CVE-2026-2286</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>9.8</td>
+        <td><span class="severity critical">CRITICAL</span></td>
         <td>N/A</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p4</small></td>
-        <td>0.00</td>
+        <td>6.86</td>
         <td><details><summary>CrewAI contains a server-side request forgery vulnerability that enables content...</summary><p>CrewAI contains a server-side request forgery vulnerability that enables content acquisition from internal and cloud services, facilitated by the RAG search tools not properly validating URLs provided at runtime.</p></details></td>
         <td>2026-03-30</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-2285" target="_blank" rel="noopener">CVE-2026-2285</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
         <td>N/A</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p7</small></td>
-        <td>0.00</td>
+        <td>5.25</td>
         <td><details><summary>CrewAI contains a arbitrary local file read vulnerability in the JSON loader too...</summary><p>CrewAI contains a arbitrary local file read vulnerability in the JSON loader tool that reads files without path validation, enabling access to files on the server.</p></details></td>
         <td>2026-03-30</td>
       </tr>
