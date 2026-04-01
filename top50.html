@@ -11,7 +11,7 @@
     <header>
       <h1>vuln-tracker — Top 50</h1>
       <p class="subtitle">The 50 most important CVEs from the current and previous month, ranked by VAP score (70% CVSS + 30% EPSS)</p>
-      <p class="last-updated">Last updated: 2026-04-01 13:49 UTC</p>
+      <p class="last-updated">Last updated: 2026-04-01 15:12 UTC</p>
     </header>
     <nav>
       <a href="index.html">&larr; All CVEs</a>
@@ -52,6 +52,17 @@
         <td>2026-03-06</td>
       </tr>
       <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-3055" target="_blank" rel="noopener">CVE-2026-3055</a></td>
+        <td>9.3</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-125</td>
+        <td><span class="kev-yes">&#10003;</span></td>
+        <td>44.3% <small>p97</small></td>
+        <td>7.84</td>
+        <td><details><summary>Insufficient input validation in NetScaler ADC and NetScaler Gateway when config...</summary><p>Insufficient input validation in NetScaler ADC and NetScaler Gateway when configured as a SAML IDP leading to memory overread</p></details></td>
+        <td>2026-03-23</td>
+      </tr>
+      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-1492" target="_blank" rel="noopener">CVE-2026-1492</a></td>
         <td>9.8</td>
         <td><span class="severity critical">CRITICAL</span></td>
@@ -63,15 +74,26 @@
         <td>2026-03-03</td>
       </tr>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-3055" target="_blank" rel="noopener">CVE-2026-3055</a></td>
-        <td>9.3</td>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-28289" target="_blank" rel="noopener">CVE-2026-28289</a></td>
+        <td>10.0</td>
         <td><span class="severity critical">CRITICAL</span></td>
-        <td>CWE-125</td>
-        <td><span class="kev-yes">&#10003;</span></td>
-        <td>36.7% <small>p97</small></td>
-        <td>7.61</td>
-        <td><details><summary>Insufficient input validation in NetScaler ADC and NetScaler Gateway when config...</summary><p>Insufficient input validation in NetScaler ADC and NetScaler Gateway when configured as a SAML IDP leading to memory overread</p></details></td>
-        <td>2026-03-23</td>
+        <td>CWE-434</td>
+        <td>&nbsp;</td>
+        <td>16.5% <small>p94</small></td>
+        <td>7.50</td>
+        <td><details><summary>FreeScout is a free help desk and shared inbox built with PHP&#x27;s Laravel framewor...</summary><p>FreeScout is a free help desk and shared inbox built with PHP&#x27;s Laravel framework. A patch bypass vulnerability for CVE-2026-27636 in FreeScout 1.8.206 and earlier allows any authenticated user with file upload permissions to achieve Remote Code Execution (RCE) on the server by uploading a malicious .htaccess file using a zero-width space character prefix to bypass the security check. The vulnerability exists in the sanitizeUploadedFileName() function in app/Http/Helper.php. The function contains a Time-of-Check to Time-of-Use (TOCTOU) flaw where the dot-prefix check occurs before sanitization removes invisible characters. This vulnerability is fixed in 1.8.207.</p></details></td>
+        <td>2026-03-03</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4257" target="_blank" rel="noopener">CVE-2026-4257</a></td>
+        <td>9.8</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-94</td>
+        <td>&nbsp;</td>
+        <td>12.8% <small>p93</small></td>
+        <td>7.24</td>
+        <td><details><summary>The Contact Form by Supsystic plugin for WordPress is vulnerable to Server-Side ...</summary><p>The Contact Form by Supsystic plugin for WordPress is vulnerable to Server-Side Template Injection (SSTI) leading to Remote Code Execution (RCE) in all versions up to, and including, 1.7.36. This is due to the plugin using the Twig `Twig_Loader_String` template engine without sandboxing, combined with the `cfsPreFill` prefill functionality that allows unauthenticated users to inject arbitrary Twig expressions into form field values via GET parameters. This makes it possible for unauthenticated attackers to execute arbitrary PHP functions and OS commands on the server by leveraging Twig&#x27;s `registerUndefinedFilterCallback()` method to register arbitrary PHP callbacks.</p></details></td>
+        <td>2026-03-30</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33634" target="_blank" rel="noopener">CVE-2026-33634</a></td>
@@ -94,6 +116,17 @@
         <td>7.13</td>
         <td><details><summary>Qwik is a performance focused javascript framework. qwik &lt;=1.19.0 is vulnerable ...</summary><p>Qwik is a performance focused javascript framework. qwik &lt;=1.19.0 is vulnerable to RCE due to an unsafe deserialization vulnerability in the server$ RPC mechanism that allows any unauthenticated user to execute arbitrary code on the server with a single HTTP request. Affects any deployment where require() is available at runtime. This vulnerability is fixed in 1.19.1.</p></details></td>
         <td>2026-03-03</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34156" target="_blank" rel="noopener">CVE-2026-34156</a></td>
+        <td>9.9</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-913</td>
+        <td>&nbsp;</td>
+        <td>5.2% <small>p89</small></td>
+        <td>7.09</td>
+        <td><details><summary>NocoBase is an AI-powered no-code/low-code platform for building business applic...</summary><p>NocoBase is an AI-powered no-code/low-code platform for building business applications and enterprise solutions. Prior to version 2.0.28, NocoBase&#x27;s Workflow Script Node executes user-supplied JavaScript inside a Node.js vm sandbox with a custom require allowlist (controlled by WORKFLOW_SCRIPT_MODULES env var). However, the console object passed into the sandbox context exposes host-realm WritableWorkerStdio stream objects via console._stdout and console._stderr. An authenticated attacker can traverse the prototype chain to escape the sandbox and achieve Remote Code Execution as root. This issue has been patched in version 2.0.28.</p></details></td>
+        <td>2026-03-31</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33478" target="_blank" rel="noopener">CVE-2026-33478</a></td>
@@ -134,7 +167,7 @@
         <td><span class="severity critical">CRITICAL</span></td>
         <td>CWE-20</td>
         <td>&nbsp;</td>
-        <td>0.5% <small>p64</small></td>
+        <td>0.5% <small>p65</small></td>
         <td>7.01</td>
         <td><details><summary>NLTK versions &lt;=3.9.2 are vulnerable to arbitrary code execution due to improper...</summary><p>NLTK versions &lt;=3.9.2 are vulnerable to arbitrary code execution due to improper input validation in the StanfordSegmenter module. The module dynamically loads external Java .jar files without verification or sandboxing. An attacker can supply or replace the JAR file, enabling the execution of arbitrary Java bytecode at import time. This vulnerability can be exploited through methods such as model poisoning, MITM attacks, or dependency poisoning, leading to remote code execution. The issue arises from the direct execution of the JAR file via subprocess with unvalidated classpath input, allowing malicious classes to execute when loaded by the JVM.</p></details></td>
         <td>2026-03-05</td>
@@ -228,6 +261,17 @@
         <td>2026-03-11</td>
       </tr>
       <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34162" target="_blank" rel="noopener">CVE-2026-34162</a></td>
+        <td>10.0</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-306</td>
+        <td>&nbsp;</td>
+        <td>0.1% <small>p25</small></td>
+        <td>7.00</td>
+        <td><details><summary>FastGPT is an AI Agent building platform. Prior to version 4.14.9.5, the FastGPT...</summary><p>FastGPT is an AI Agent building platform. Prior to version 4.14.9.5, the FastGPT HTTP tools testing endpoint (/api/core/app/httpTools/runTool) is exposed without any authentication. This endpoint acts as a full HTTP proxy — it accepts a user-supplied baseUrl, toolPath, HTTP method, custom headers, and body, then makes a server-side HTTP request and returns the complete response to the caller. This issue has been patched in version 4.14.9.5.</p></details></td>
+        <td>2026-03-31</td>
+      </tr>
+      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32169" target="_blank" rel="noopener">CVE-2026-32169</a></td>
         <td>10.0</td>
         <td><span class="severity critical">CRITICAL</span></td>
@@ -272,6 +316,17 @@
         <td>2026-03-05</td>
       </tr>
       <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33494" target="_blank" rel="noopener">CVE-2026-33494</a></td>
+        <td>10.0</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-23</td>
+        <td>&nbsp;</td>
+        <td>0.1% <small>p17</small></td>
+        <td>7.00</td>
+        <td><details><summary>ORY Oathkeeper is an Identity &amp; Access Proxy (IAP) and Access Control Decision A...</summary><p>ORY Oathkeeper is an Identity &amp; Access Proxy (IAP) and Access Control Decision API that authorizes HTTP requests based on sets of Access Rules. Versions prior to 26.2.0 are vulnerable to an authorization bypass via HTTP path traversal. An attacker can craft a URL containing path traversal sequences (e.g. `/public/../admin/secrets`) that resolves to a protected path after normalization, but is matched against a permissive rule because the raw, un-normalized path is used during rule evaluation. Version 26.2.0 contains a patch.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-30966" target="_blank" rel="noopener">CVE-2026-30966</a></td>
         <td>10.0</td>
         <td><span class="severity critical">CRITICAL</span></td>
@@ -283,26 +338,15 @@
         <td>2026-03-10</td>
       </tr>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33494" target="_blank" rel="noopener">CVE-2026-33494</a></td>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4370" target="_blank" rel="noopener">CVE-2026-4370</a></td>
         <td>10.0</td>
         <td><span class="severity critical">CRITICAL</span></td>
-        <td>CWE-23</td>
+        <td>CWE-295</td>
         <td>&nbsp;</td>
-        <td>0.0% <small>p13</small></td>
+        <td>0.0% <small>p10</small></td>
         <td>7.00</td>
-        <td><details><summary>ORY Oathkeeper is an Identity &amp; Access Proxy (IAP) and Access Control Decision A...</summary><p>ORY Oathkeeper is an Identity &amp; Access Proxy (IAP) and Access Control Decision API that authorizes HTTP requests based on sets of Access Rules. Versions prior to 26.2.0 are vulnerable to an authorization bypass via HTTP path traversal. An attacker can craft a URL containing path traversal sequences (e.g. `/public/../admin/secrets`) that resolves to a protected path after normalization, but is matched against a permissive rule because the raw, un-normalized path is used during rule evaluation. Version 26.2.0 contains a patch.</p></details></td>
-        <td>2026-03-26</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-28289" target="_blank" rel="noopener">CVE-2026-28289</a></td>
-        <td>10.0</td>
-        <td><span class="severity critical">CRITICAL</span></td>
-        <td>CWE-434</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p13</small></td>
-        <td>7.00</td>
-        <td><details><summary>FreeScout is a free help desk and shared inbox built with PHP&#x27;s Laravel framewor...</summary><p>FreeScout is a free help desk and shared inbox built with PHP&#x27;s Laravel framework. A patch bypass vulnerability for CVE-2026-27636 in FreeScout 1.8.206 and earlier allows any authenticated user with file upload permissions to achieve Remote Code Execution (RCE) on the server by uploading a malicious .htaccess file using a zero-width space character prefix to bypass the security check. The vulnerability exists in the sanitizeUploadedFileName() function in app/Http/Helper.php. The function contains a Time-of-Check to Time-of-Use (TOCTOU) flaw where the dot-prefix check occurs before sanitization removes invisible characters. This vulnerability is fixed in 1.8.207.</p></details></td>
-        <td>2026-03-03</td>
+        <td><details><summary>A vulnerability was identified in Juju from version 3.2.0 until 3.6.19 and from ...</summary><p>A vulnerability was identified in Juju from version 3.2.0 until 3.6.19 and from version 4.0 until 4.0.4, where the internal Dqlite database cluster fails to perform proper TLS client and server authentication. Specifically, the Juju controller&#x27;s database endpoint does not validate client certificates when a new node attempts to join the cluster. An unauthenticated attacker with network reachability to the Juju controller&#x27;s Dqlite port can exploit this flaw to join the database cluster. Once joined, the attacker gains full read and write access to the underlying database, allowing for total data compromise.</p></details></td>
+        <td>2026-04-01</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-22557" target="_blank" rel="noopener">CVE-2026-22557</a></td>
@@ -415,28 +459,6 @@
         <td>2026-03-19</td>
       </tr>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34162" target="_blank" rel="noopener">CVE-2026-34162</a></td>
-        <td>10.0</td>
-        <td><span class="severity critical">CRITICAL</span></td>
-        <td>CWE-306</td>
-        <td>&nbsp;</td>
-        <td>&mdash;</td>
-        <td>7.00</td>
-        <td><details><summary>FastGPT is an AI Agent building platform. Prior to version 4.14.9.5, the FastGPT...</summary><p>FastGPT is an AI Agent building platform. Prior to version 4.14.9.5, the FastGPT HTTP tools testing endpoint (/api/core/app/httpTools/runTool) is exposed without any authentication. This endpoint acts as a full HTTP proxy — it accepts a user-supplied baseUrl, toolPath, HTTP method, custom headers, and body, then makes a server-side HTTP request and returns the complete response to the caller. This issue has been patched in version 4.14.9.5.</p></details></td>
-        <td>2026-03-31</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4370" target="_blank" rel="noopener">CVE-2026-4370</a></td>
-        <td>10.0</td>
-        <td><span class="severity critical">CRITICAL</span></td>
-        <td>CWE-295</td>
-        <td>&nbsp;</td>
-        <td>&mdash;</td>
-        <td>7.00</td>
-        <td><details><summary>A vulnerability was identified in Juju from version 3.2.0 until 3.6.19 and from ...</summary><p>A vulnerability was identified in Juju from version 3.2.0 until 3.6.19 and from version 4.0 until 4.0.4, where the internal Dqlite database cluster fails to perform proper TLS client and server authentication. Specifically, the Juju controller&#x27;s database endpoint does not validate client certificates when a new node attempts to join the cluster. An unauthenticated attacker with network reachability to the Juju controller&#x27;s Dqlite port can exploit this flaw to join the database cluster. Once joined, the attacker gains full read and write access to the underlying database, allowing for total data compromise.</p></details></td>
-        <td>2026-04-01</td>
-      </tr>
-      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-27944" target="_blank" rel="noopener">CVE-2026-27944</a></td>
         <td>9.8</td>
         <td><span class="severity critical">CRITICAL</span></td>
@@ -464,8 +486,8 @@
         <td><span class="severity critical">CRITICAL</span></td>
         <td>CWE-78</td>
         <td>&nbsp;</td>
-        <td>0.8% <small>p73</small></td>
-        <td>6.95</td>
+        <td>0.8% <small>p74</small></td>
+        <td>6.96</td>
         <td><details><summary>OneUptime is an open-source monitoring and observability platform. Prior to vers...</summary><p>OneUptime is an open-source monitoring and observability platform. Prior to version 10.0.35, a low-privileged authenticated user (ProjectMember) can achieve remote command execution on the Probe container/host by abusing Synthetic Monitor Playwright script execution. Synthetic monitor code is executed in VMRunner.runCodeInNodeVM with a live Playwright page object in context. The sandbox relies on a denylist of blocked properties/methods, but it is incomplete. Specifically, _browserType and launchServer are not blocked, so attacker code can traverse `page.context().browser()._browserType.launchServer(...)` and spawn arbitrary processes. Version 10.0.35 contains a patch.</p></details></td>
         <td>2026-03-26</td>
       </tr>
@@ -567,28 +589,6 @@
         <td>6.93</td>
         <td><details><summary>Winter is a free, open-source content management system (CMS) based on the Larav...</summary><p>Winter is a free, open-source content management system (CMS) based on the Laravel PHP framework. Prior to 1.0.477, 1.1.12, and 1.2.12, Winter CMS allowed authenticated backend users to escalate their accounts level of access to the system by modifying the roles / permissions assigned to their account through specially crafted requests to the backend while logged in. To actively exploit this security issue, an attacker would need access to the Backend with a user account with any level of access. This vulnerability is fixed in 1.0.477, 1.1.12, and 1.2.12.</p></details></td>
         <td>2026-03-11</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33309" target="_blank" rel="noopener">CVE-2026-33309</a></td>
-        <td>9.9</td>
-        <td><span class="severity critical">CRITICAL</span></td>
-        <td>CWE-22</td>
-        <td>&nbsp;</td>
-        <td>0.1% <small>p22</small></td>
-        <td>6.93</td>
-        <td><details><summary>Langflow is a tool for building and deploying AI-powered agents and workflows. V...</summary><p>Langflow is a tool for building and deploying AI-powered agents and workflows. Versions 1.2.0 through 1.8.1 have a bypass of the patch for CVE-2025-68478 (External Control of File Name), leading to the root architectural issue within `LocalStorageService` remaining unresolved. Because the underlying storage layer lacks boundary containment checks, the system relies entirely on the HTTP-layer `ValidatedFileName` dependency. This defense-in-depth failure leaves the `POST /api/v2/files/` endpoint vulnerable to Arbitrary File Write. The multipart upload filename bypasses the path-parameter guard, allowing authenticated attackers to write files anywhere on the host system, leading to Remote Code Execution (RCE). Version 1.9.0 contains an updated fix.</p></details></td>
-        <td>2026-03-24</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-25345" target="_blank" rel="noopener">CVE-2026-25345</a></td>
-        <td>9.9</td>
-        <td><span class="severity critical">CRITICAL</span></td>
-        <td>CWE-1284</td>
-        <td>&nbsp;</td>
-        <td>0.1% <small>p21</small></td>
-        <td>6.93</td>
-        <td><details><summary>Improper Validation of Specified Quantity in Input vulnerability in GalleryCreat...</summary><p>Improper Validation of Specified Quantity in Input vulnerability in GalleryCreator SimpLy Gallery simply-gallery-block allows Accessing Functionality Not Properly Constrained by ACLs.This issue affects SimpLy Gallery: from n/a through &lt;= 3.3.2.</p></details></td>
-        <td>2026-03-25</td>
       </tr>
             </tbody>
           </table>
