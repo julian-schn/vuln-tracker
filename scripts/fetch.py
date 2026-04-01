@@ -147,8 +147,8 @@ def write_markdown(path: Path, records: dict, title: str, sort_key=None) -> None
         "",
         f"_{len(sorted_recs)} vulnerabilities_",
         "",
-        "| CVE ID | Score | Severity | CWE | KEV | EPSS | Published | Description |",
-        "|--------|-------|----------|-----|-----|------|-----------|-------------|",
+        "| CVE ID | CVSS | Severity | CWE | KEV | EPSS | Published | Description |",
+        "|--------|------|----------|-----|-----|------|-----------|-------------|",
     ]
     for rec in sorted_recs:
         desc = rec["description"].replace("|", "\\|").replace("\n", " ")
@@ -411,7 +411,7 @@ def render_section(title: str, records: dict) -> str:
           <thead>
             <tr>
               <th>CVE ID</th>
-              <th>Score</th>
+              <th>CVSS</th>
               <th>Severity</th>
               <th>CWE</th>
               <th>KEV</th>
@@ -525,7 +525,7 @@ def render_html_top50(records: dict, timestamp: str) -> str:
             <thead>
               <tr>
                 <th>CVE ID</th>
-                <th>Score</th>
+                <th>CVSS</th>
                 <th>Severity</th>
                 <th>CWE</th>
                 <th>KEV</th>
