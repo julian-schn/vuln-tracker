@@ -1,13 +1,12 @@
 # CVEs — April 2026
 
-_77 vulnerabilities_
+_76 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
 | [CVE-2026-29014](https://nvd.nist.gov/vuln/detail/CVE-2026-29014) | 9.3 | CRITICAL | CWE-94 | No | — | 6.51 | 2026-04-01 | MetInfo CMS versions 7.9, 8.0, and 8.1 contain an unauthenticated PHP code injection vulnerability that allows remote at... |
 | [CVE-2026-22768](https://nvd.nist.gov/vuln/detail/CVE-2026-22768) | 7.3 | HIGH | CWE-732 | No | — | 5.11 | 2026-04-01 | Dell AppSync, version(s) 4.6.0, contain(s) an Incorrect Permission Assignment for Critical Resource vulnerability. A low... |
 | [CVE-2026-22767](https://nvd.nist.gov/vuln/detail/CVE-2026-22767) | 7.3 | HIGH | CWE-61 | No | — | 5.11 | 2026-04-01 | Dell AppSync, version(s) 4.6.0, contain(s) an UNIX Symbolic Link (Symlink) Following vulnerability. A low privileged att... |
-| [CVE-2026-25601](https://nvd.nist.gov/vuln/detail/CVE-2026-25601) | 6.4 | MEDIUM | CWE-798 | No | — | 4.48 | 2026-04-01 | A vulnerability was identified in MEPIS RM, an industrial software product developed by Metronik. The application contai... |
 | [CVE-2026-24096](https://nvd.nist.gov/vuln/detail/CVE-2026-24096) | 5.3 | MEDIUM | CWE-280 | No | — | 3.71 | 2026-04-01 | Insufficient permission validation on multiple REST API Quick Setup endpoints in Checkmk 2.5.0 (beta) before version 2.5... |
 | [CVE-2026-0932](https://nvd.nist.gov/vuln/detail/CVE-2026-0932) | 6.9 | MEDIUM | CWE-918 | No | — | 4.83 | 2026-04-01 | Blind server-side request forgery (SSRF) vulnerability in legacy connection methods of document co-authoring features in... |
 | [CVE-2026-23899](https://nvd.nist.gov/vuln/detail/CVE-2026-23899) | 8.6 | HIGH | CWE-284 | No | — | 6.02 | 2026-04-01 | An improper access check allows unauthorized access to webservice endpoints. |

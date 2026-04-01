@@ -1,18 +1,10 @@
 #version 1.0
 #delimiter "|"
 
-cves[77]{cveId:str|published:str|lastModified:str|cvssScore:f64|severity:str|cweId:str|cweName:str|kev:bool|description:str|nvdUrl:str|epssScore:f64|epssPercentile:f64|vapScore:f64}:
+cves[76]{cveId:str|published:str|lastModified:str|cvssScore:f64|severity:str|cweId:str|cweName:str|kev:bool|description:str|nvdUrl:str|epssScore:f64|epssPercentile:f64|vapScore:f64}:
   CVE-2026-29014|2026-04-01T13:16:35.063|2026-04-01T13:16:35.063|9.3|CRITICAL|CWE-94|N/A|false|MetInfo CMS versions 7.9, 8.0, and 8.1 contain an unauthenticated PHP code injection vulnerability that allows remote attackers to execute arbitrary code by sending crafted requests with malicious PHP code. Attackers can exploit insufficient input neutralization in the execution path to achieve remote code execution and gain full control over the affected server.|https://nvd.nist.gov/vuln/detail/CVE-2026-29014|0.00000|0.00000|6.5100
   CVE-2026-22768|2026-04-01T13:16:33.950|2026-04-01T13:16:33.950|7.3|HIGH|CWE-732|N/A|false|Dell AppSync, version(s) 4.6.0, contain(s) an Incorrect Permission Assignment for Critical Resource vulnerability. A low privileged attacker with local access could potentially exploit this vulnerability, leading to Elevation of privileges.|https://nvd.nist.gov/vuln/detail/CVE-2026-22768|0.00000|0.00000|5.1100
   CVE-2026-22767|2026-04-01T13:16:33.150|2026-04-01T13:16:33.150|7.3|HIGH|CWE-61|N/A|false|Dell AppSync, version(s) 4.6.0, contain(s) an UNIX Symbolic Link (Symlink) Following vulnerability. A low privileged attacker with local access could potentially exploit this vulnerability, leading to Information tampering.|https://nvd.nist.gov/vuln/detail/CVE-2026-22767|0.00000|0.00000|5.1100
-  CVE-2026-25601|2026-04-01T12:16:02.587|2026-04-01T12:16:02.587|6.4|MEDIUM|CWE-798|N/A|false|"A vulnerability was identified in MEPIS RM, an industrial
-software product developed by Metronik. The application contained a hardcoded
-cryptographic key within the Mx.Web.ComponentModel.dll component. When the
-option to store domain passwords was enabled, this key was used to encrypt user
-passwords before storing them in the application’s database. An attacker with
-sufficient privileges to access the database could extract the encrypted
-passwords, decrypt them using the embedded key, and gain unauthorized access to
-the associated ICS/OT environment."|https://nvd.nist.gov/vuln/detail/CVE-2026-25601|0.00000|0.00000|4.4800
   CVE-2026-24096|2026-04-01T11:15:58.423|2026-04-01T11:15:58.423|5.3|MEDIUM|CWE-280|N/A|false|Insufficient permission validation on multiple REST API Quick Setup endpoints in Checkmk 2.5.0 (beta) before version 2.5.0b2 and 2.4.0 before version 2.4.0p25 allows low-privileged users to perform unauthorized actions or obtain sensitive information|https://nvd.nist.gov/vuln/detail/CVE-2026-24096|0.00000|0.00000|3.7100
   CVE-2026-0932|2026-04-01T11:15:58.263|2026-04-01T11:15:58.263|6.9|MEDIUM|CWE-918|N/A|false|Blind server-side request forgery (SSRF) vulnerability in legacy connection methods of document co-authoring features in M-Files Server before 26.3 allow an unauthenticated attacker to cause the server to send HTTP GET requests to arbitrary URLs.|https://nvd.nist.gov/vuln/detail/CVE-2026-0932|0.00000|0.00000|4.8300
   CVE-2026-23899|2026-04-01T10:16:16.543|2026-04-01T10:16:16.543|8.6|HIGH|CWE-284|N/A|false|An improper access check allows unauthorized access to webservice endpoints.|https://nvd.nist.gov/vuln/detail/CVE-2026-23899|0.00000|0.00000|6.0200

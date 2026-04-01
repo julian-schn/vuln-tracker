@@ -1,6 +1,6 @@
 # CVEs — March 2026
 
-_5734 vulnerabilities_
+_5733 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
@@ -5331,7 +5331,6 @@ _5734 vulnerabilities_
 | [CVE-2025-62879](https://nvd.nist.gov/vuln/detail/CVE-2025-62879) | 6.8 | MEDIUM | CWE-532 | No | 0.0% | 4.76 | 2026-03-04 | A vulnerability has been identified within the Rancher Backup Operator, resulting in the leakage of S3 tokens (both acce... |
 | [CVE-2025-59787](https://nvd.nist.gov/vuln/detail/CVE-2025-59787) | 5.3 | MEDIUM | CWE-703 | No | 0.0% | 3.71 | 2026-03-04 | 2N Access Commander application version 3.4.2 and prior returns HTTP 500 Internal Server Error responses when receiving... |
 | [CVE-2025-59786](https://nvd.nist.gov/vuln/detail/CVE-2025-59786) | 6.0 | MEDIUM | CWE-613 | No | 0.1% | 4.20 | 2026-03-04 | 2N Access Commander version 3.4.2 and prior improperly invalidates session tokens, allowing multiple session cookies to... |
-| [CVE-2025-12801](https://nvd.nist.gov/vuln/detail/CVE-2025-12801) | 6.5 | MEDIUM | CWE-279 | No | 0.0% | 4.55 | 2026-03-04 | A vulnerability was recently discovered in the rpc.mountd daemon in the nfs-utils package for Linux, that allows a NFSv3... |
 | [CVE-2025-70342](https://nvd.nist.gov/vuln/detail/CVE-2025-70342) | 6.6 | MEDIUM | CWE-732 | No | 0.0% | 4.62 | 2026-03-04 | erase-install prior to v40.4 commit 2c31239 writes swiftDialog credential output to a hardcoded path /var/tmp/dialog.jso... |
 | [CVE-2025-70341](https://nvd.nist.gov/vuln/detail/CVE-2025-70341) | 7.8 | HIGH | CWE-94 | No | 0.0% | 5.46 | 2026-03-04 | Insecure permissions in App-Auto-Patch v3.4.2 create a race condition which allows attackers to write arbitrary files. |
 | [CVE-2026-3103](https://nvd.nist.gov/vuln/detail/CVE-2026-3103) | 5.3 | MEDIUM | CWE-863 | No | 0.0% | 3.71 | 2026-03-04 | A logic error in the remove_password() function in Checkmk GmbH's Checkmk versions <2.4.0p23, <2.3.0p43, and 2.2.0 (EOL)... |
