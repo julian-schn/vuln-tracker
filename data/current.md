@@ -1,9 +1,16 @@
 # CVEs — April 2026
 
-_52 vulnerabilities_
+_59 vulnerabilities_
 
 | CVE ID | Score | Severity | CWE | KEV | Published | Description |
 |--------|-------|----------|-----|-----|-----------|-------------|
+| [CVE-2026-5258](https://nvd.nist.gov/vuln/detail/CVE-2026-5258) | 6.9 | MEDIUM | CWE-22 | No | 2026-04-01 | A vulnerability was found in Sanster IOPaint 1.5.3. Impacted is the function _get_file of the file iopaint/file_manager/... |
+| [CVE-2026-4748](https://nvd.nist.gov/vuln/detail/CVE-2026-4748) | 0.0 | NONE | CWE-480 | No | 2026-04-01 | A regression in the way hashes were calculated caused rules containing the address range syntax (x.x.x.x - y.y.y.y) that... |
+| [CVE-2026-5257](https://nvd.nist.gov/vuln/detail/CVE-2026-5257) | 6.9 | MEDIUM | CWE-74 | No | 2026-04-01 | A vulnerability has been found in code-projects Simple Laundry System 1.0. This issue affects some unknown processing of... |
+| [CVE-2026-5256](https://nvd.nist.gov/vuln/detail/CVE-2026-5256) | 6.9 | MEDIUM | CWE-74 | No | 2026-04-01 | A flaw has been found in code-projects Simple Laundry System 1.0. This vulnerability affects unknown code of the file /m... |
+| [CVE-2026-5255](https://nvd.nist.gov/vuln/detail/CVE-2026-5255) | 5.3 | MEDIUM | CWE-79 | No | 2026-04-01 | A vulnerability was detected in code-projects Simple Laundry System 1.0. This affects an unknown part of the file /delst... |
+| [CVE-2026-2696](https://nvd.nist.gov/vuln/detail/CVE-2026-2696) | 0.0 | NONE | N/A | No | 2026-04-01 | The Export All URLs WordPress plugin before 5.1 generates CSV filenames containing posts URLS (including private posts)... |
+| [CVE-2025-15484](https://nvd.nist.gov/vuln/detail/CVE-2025-15484) | 0.0 | NONE | N/A | No | 2026-04-01 | The Order Notification for WooCommerce  WordPress plugin before 3.6.3 overrides WooCommerce's permission checks to grant... |
 | [CVE-2026-5292](https://nvd.nist.gov/vuln/detail/CVE-2026-5292) | 0.0 | NONE | CWE-125 | No | 2026-04-01 | Out of bounds read in WebCodecs in Google Chrome prior to 146.0.7680.178 allowed a remote attacker to perform an out of... |
 | [CVE-2026-5291](https://nvd.nist.gov/vuln/detail/CVE-2026-5291) | 0.0 | NONE | N/A | No | 2026-04-01 | Inappropriate implementation in WebGL in Google Chrome prior to 146.0.7680.178 allowed a remote attacker to obtain poten... |
 | [CVE-2026-5290](https://nvd.nist.gov/vuln/detail/CVE-2026-5290) | 0.0 | NONE | CWE-416 | No | 2026-04-01 | Use after free in Compositing in Google Chrome prior to 146.0.7680.178 allowed a remote attacker who had compromised the... |
