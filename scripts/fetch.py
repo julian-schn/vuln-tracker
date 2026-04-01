@@ -17,10 +17,14 @@ import requests
 # Constants
 # ---------------------------------------------------------------------------
 
-NVD_API_URL   = "https://services.nvd.nist.gov/rest/json/cves/2.0"
+NVD_API_URL    = "https://services.nvd.nist.gov/rest/json/cves/2.0"
 NVD_DETAIL_URL = "https://nvd.nist.gov/vuln/detail/"
 PAGE_SIZE      = 2000
 SLEEP_BETWEEN  = 7  # seconds between paginated requests (rate limit: 5/30s)
+
+EPSS_API_URL    = "https://api.first.org/data/v1/epss"
+EPSS_BATCH_SIZE = 100
+EPSS_SLEEP      = 1  # seconds between EPSS batch requests
 
 ROOT_DIR       = Path(__file__).parent.parent
 DATA_DIR       = ROOT_DIR / "data"
@@ -37,9 +41,16 @@ TOP50_HTML     = ROOT_DIR / "top50.html"
 TOP50_COUNT    = 50
 
 TONL_HEADER    = "#version 1.0\n#delimiter \"|\""
-TONL_SCHEMA    = "cves[COUNT]{cveId:str|published:str|lastModified:str|cvssScore:f64|severity:str|cweId:str|cweName:str|kev:bool|description:str|nvdUrl:str}:"
-FIELD_NAMES    = ["cveId", "published", "lastModified", "cvssScore", "severity",
-                  "cweId", "cweName", "kev", "description", "nvdUrl"]
+TONL_SCHEMA    = (
+    "cves[COUNT]{cveId:str|published:str|lastModified:str|cvssScore:f64|severity:str"
+    "|cweId:str|cweName:str|kev:bool|description:str|nvdUrl:str"
+    "|epssScore:f64|epssPercentile:f64}:"
+)
+FIELD_NAMES    = [
+    "cveId", "published", "lastModified", "cvssScore", "severity",
+    "cweId", "cweName", "kev", "description", "nvdUrl",
+    "epssScore", "epssPercentile",
+]
 
 HEADERS        = {"User-Agent": "vuln-tracker/1.0"}
 
@@ -95,10 +106,14 @@ def load_tonl(path: Path) -> dict:
         if not stripped or stripped.startswith('#') or stripped.startswith('cves['):
             continue
         fields = tonl_parse_row(stripped)
-        if len(fields) != len(FIELD_NAMES):
+        if len(fields) == 10:
+            fields.extend(["0.0", "0.0"])
+        elif len(fields) != len(FIELD_NAMES):
             continue
         rec = dict(zip(FIELD_NAMES, fields))
-        rec["cvssScore"] = float(rec["cvssScore"])
+        rec["cvssScore"]      = float(rec["cvssScore"])
+        rec["epssScore"]      = float(rec["epssScore"])
+        rec["epssPercentile"] = float(rec["epssPercentile"])
         rec["kev"] = rec["kev"].lower() == "true"
         records[rec["cveId"]] = rec
     return records
@@ -117,6 +132,7 @@ def write_tonl(path: Path, records: dict) -> None:
             f"|{q(rec['cweId'])}|{q(rec['cweName'])}"
             f"|{str(rec['kev']).lower()}"
             f"|{q(rec['description'])}|{q(rec['nvdUrl'])}"
+            f"|{rec['epssScore']:.5f}|{rec['epssPercentile']:.5f}"
         )
         lines.append(row)
     path.write_text('\n'.join(lines) + '\n', encoding="utf-8")
@@ -131,20 +147,22 @@ def write_markdown(path: Path, records: dict, title: str, sort_key=None) -> None
         "",
         f"_{len(sorted_recs)} vulnerabilities_",
         "",
-        "| CVE ID | Score | Severity | CWE | KEV | Published | Description |",
-        "|--------|-------|----------|-----|-----|-----------|-------------|",
+        "| CVE ID | Score | Severity | CWE | KEV | EPSS | Published | Description |",
+        "|--------|-------|----------|-----|-----|------|-----------|-------------|",
     ]
     for rec in sorted_recs:
         desc = rec["description"].replace("|", "\\|").replace("\n", " ")
         if len(desc) > 120:
             desc = desc[:120].rstrip() + "..."
-        kev = "Yes" if rec["kev"] else "No"
+        kev  = "Yes" if rec["kev"] else "No"
+        epss = f"{rec['epssScore'] * 100:.1f}%" if rec["epssScore"] > 0.0 else "—"
         lines.append(
             f"| [{rec['cveId']}]({rec['nvdUrl']}) "
             f"| {rec['cvssScore']:.1f} "
             f"| {rec['severity']} "
             f"| {rec['cweId']} "
             f"| {kev} "
+            f"| {epss} "
             f"| {rec['published'][:10]} "
             f"| {desc} |"
         )
@@ -207,6 +225,48 @@ def fetch_all_cves(params_base: dict) -> list:
 
     return results
 
+
+def fetch_epss_scores(cve_ids: list) -> dict:
+    """Fetch EPSS scores for a list of CVE IDs in batches of EPSS_BATCH_SIZE."""
+    result = {}
+    total = len(cve_ids)
+    for batch_start in range(0, total, EPSS_BATCH_SIZE):
+        batch = cve_ids[batch_start : batch_start + EPSS_BATCH_SIZE]
+        resp = requests.get(
+            EPSS_API_URL,
+            params={"cve": ",".join(batch)},
+            headers=HEADERS,
+            timeout=30,
+        )
+        if resp.status_code != 200:
+            print(f"EPSS API error: HTTP {resp.status_code} (batch starting {batch[0]})")
+            sys.exit(1)
+        for entry in resp.json().get("data", []):
+            result[entry["cve"]] = {
+                "epssScore":      float(entry.get("epss", 0.0)),
+                "epssPercentile": float(entry.get("percentile", 0.0)),
+            }
+        fetched = min(batch_start + EPSS_BATCH_SIZE, total)
+        if fetched < total:
+            print(f"  EPSS: {fetched}/{total} CVEs fetched, sleeping {EPSS_SLEEP}s...")
+            time.sleep(EPSS_SLEEP)
+    return result
+
+
+def enrich_with_epss(records: dict) -> None:
+    """Fetch EPSS scores for all records and update them in place."""
+    if not records:
+        return
+    print(f"  Fetching EPSS scores for {len(records)} CVEs...")
+    scores = fetch_epss_scores(list(records.keys()))
+    for cve_id, rec in records.items():
+        if cve_id in scores:
+            rec["epssScore"]      = scores[cve_id]["epssScore"]
+            rec["epssPercentile"] = scores[cve_id]["epssPercentile"]
+        else:
+            rec["epssScore"]      = 0.0
+            rec["epssPercentile"] = 0.0
+
 # ---------------------------------------------------------------------------
 # CVE parsing
 # ---------------------------------------------------------------------------
@@ -268,7 +328,9 @@ def parse_cve(item: dict) -> dict:
         "cweName":      "N/A",
         "kev":          kev,
         "description":  description,
-        "nvdUrl":       NVD_DETAIL_URL + cve_id,
+        "nvdUrl":          NVD_DETAIL_URL + cve_id,
+        "epssScore":       0.0,
+        "epssPercentile":  0.0,
     }
 
 # ---------------------------------------------------------------------------
@@ -317,6 +379,11 @@ def render_table_row(rec: dict) -> str:
     published = html.escape(rec["published"][:10])
     kev_cell  = '<span class="kev-yes">&#10003;</span>' if rec["kev"] else "&nbsp;"
 
+    if rec["epssScore"] > 0.0:
+        epss_cell = f"{rec['epssScore'] * 100:.1f}% <small>p{int(rec['epssPercentile'] * 100)}</small>"
+    else:
+        epss_cell = "&mdash;"
+
     return (
         f"      <tr>\n"
         f"        <td><a href=\"{nvd_url}\" target=\"_blank\" rel=\"noopener\">{cve_id}</a></td>\n"
@@ -324,6 +391,7 @@ def render_table_row(rec: dict) -> str:
         f"        <td><span class=\"severity {sev_lower}\">{html.escape(rec['severity'])}</span></td>\n"
         f"        <td>{cwe}</td>\n"
         f"        <td>{kev_cell}</td>\n"
+        f"        <td>{epss_cell}</td>\n"
         f"        <td><details><summary>{desc_summary}</summary><p>{desc_full}</p></details></td>\n"
         f"        <td>{published}</td>\n"
         f"      </tr>"
@@ -335,7 +403,7 @@ def render_section(title: str, records: dict) -> str:
     count = len(sorted_recs)
     rows = "\n".join(render_table_row(r) for r in sorted_recs)
     if not rows:
-        rows = "      <tr><td colspan=\"7\">No vulnerabilities recorded for this period.</td></tr>"
+        rows = "      <tr><td colspan=\"8\">No vulnerabilities recorded for this period.</td></tr>"
     return f"""    <section>
       <h2>{html.escape(title)} <span class="count">({count})</span></h2>
       <div class="table-wrapper">
@@ -347,6 +415,7 @@ def render_section(title: str, records: dict) -> str:
               <th>Severity</th>
               <th>CWE</th>
               <th>KEV</th>
+              <th>EPSS</th>
               <th>Description</th>
               <th>Published</th>
             </tr>
@@ -409,21 +478,21 @@ def render_html(current: dict, previous: dict, timestamp: str, now: datetime) ->
 # ---------------------------------------------------------------------------
 
 def get_top50(current: dict, previous: dict) -> dict:
-    """Return the top TOP50_COUNT CVEs ranked by KEV status then CVSS score."""
+    """Return the top TOP50_COUNT CVEs ranked by KEV status, EPSS percentile, then CVSS score."""
     combined = {**previous, **current}  # current wins on duplicate cveId
     ranked = sorted(
         combined.values(),
-        key=lambda r: (r["kev"], r["cvssScore"]),
+        key=lambda r: (r["kev"], r["epssPercentile"], r["cvssScore"]),
         reverse=True,
     )
     return {r["cveId"]: r for r in ranked[:TOP50_COUNT]}
 
 
 def render_html_top50(records: dict, timestamp: str) -> str:
-    sorted_recs = sorted(records.values(), key=lambda r: (r["kev"], r["cvssScore"]), reverse=True)
+    sorted_recs = sorted(records.values(), key=lambda r: (r["kev"], r["epssPercentile"], r["cvssScore"]), reverse=True)
     rows = "\n".join(render_table_row(r) for r in sorted_recs)
     if not rows:
-        rows = "      <tr><td colspan=\"7\">No data available.</td></tr>"
+        rows = "      <tr><td colspan=\"8\">No data available.</td></tr>"
 
     return f"""<!DOCTYPE html>
 <html lang="en">
@@ -437,7 +506,7 @@ def render_html_top50(records: dict, timestamp: str) -> str:
   <div class="container">
     <header>
       <h1>vuln-tracker — Top {TOP50_COUNT}</h1>
-      <p class="subtitle">The {TOP50_COUNT} most important CVEs from the current and previous month, ranked by KEV status then CVSS score</p>
+      <p class="subtitle">The {TOP50_COUNT} most important CVEs from the current and previous month, ranked by KEV status, EPSS percentile, then CVSS score</p>
       <p class="last-updated">Last updated: {html.escape(timestamp)}</p>
     </header>
     <nav>
@@ -460,6 +529,7 @@ def render_html_top50(records: dict, timestamp: str) -> str:
                 <th>Severity</th>
                 <th>CWE</th>
                 <th>KEV</th>
+                <th>EPSS</th>
                 <th>Description</th>
                 <th>Published</th>
               </tr>
@@ -539,6 +609,12 @@ def main():
         current_records  = merge_records(load_tonl(CURRENT_TONL),  current_new)
         previous_records = merge_records(load_tonl(PREVIOUS_TONL), previous_new)
 
+    # --- Enrich with EPSS ---
+    print("Enriching current records with EPSS scores...")
+    enrich_with_epss(current_records)
+    print("Enriching previous records with EPSS scores...")
+    enrich_with_epss(previous_records)
+
     # --- Write outputs (all-or-nothing order: data first, then HTML, then state) ---
     timestamp      = now_utc.strftime("%Y-%m-%d %H:%M UTC")
     current_label  = now_utc.strftime("%B %Y")
@@ -556,7 +632,7 @@ def main():
     print(f"Writing Top {TOP50_COUNT} ({len(top50)} entries)...")
     write_tonl(TOP50_TONL, top50)
     write_markdown(TOP50_MD, top50, f"Top {TOP50_COUNT} CVEs — {current_label} & {previous_label}",
-                   sort_key=lambda r: (r["kev"], r["cvssScore"]))
+                   sort_key=lambda r: (r["kev"], r["epssPercentile"], r["cvssScore"]))
     TOP50_HTML.write_text(render_html_top50(top50, timestamp), encoding="utf-8")
 
     print("Generating index.html...")
