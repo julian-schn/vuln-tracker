@@ -1,11 +1,13 @@
 # CVEs — April 2026
 
-_59 vulnerabilities_
+_61 vulnerabilities_
 
 | CVE ID | Score | Severity | CWE | KEV | Published | Description |
 |--------|-------|----------|-----|-----|-----------|-------------|
+| [CVE-2026-5259](https://nvd.nist.gov/vuln/detail/CVE-2026-5259) | 5.3 | MEDIUM | CWE-918 | No | 2026-04-01 | A vulnerability was determined in AutohomeCorp frostmourne up to 1.0. The affected element is an unknown function of the... |
+| [CVE-2026-28265](https://nvd.nist.gov/vuln/detail/CVE-2026-28265) | 4.4 | MEDIUM | CWE-35 | No | 2026-04-01 | PowerStore, contains a Path Traversal vulnerability in the Service user. A low privileged attacker with local access cou... |
+| [CVE-2026-27101](https://nvd.nist.gov/vuln/detail/CVE-2026-27101) | 4.7 | MEDIUM | CWE-22 | No | 2026-04-01 | Dell Secure Connect Gateway (SCG) 5.0 Appliance and Application version(s) 5.28.00.xx to 5.32.00.xx, contain(s) an Impro... |
 | [CVE-2026-5258](https://nvd.nist.gov/vuln/detail/CVE-2026-5258) | 6.9 | MEDIUM | CWE-22 | No | 2026-04-01 | A vulnerability was found in Sanster IOPaint 1.5.3. Impacted is the function _get_file of the file iopaint/file_manager/... |
-| [CVE-2026-4748](https://nvd.nist.gov/vuln/detail/CVE-2026-4748) | 0.0 | NONE | CWE-480 | No | 2026-04-01 | A regression in the way hashes were calculated caused rules containing the address range syntax (x.x.x.x - y.y.y.y) that... |
 | [CVE-2026-5257](https://nvd.nist.gov/vuln/detail/CVE-2026-5257) | 6.9 | MEDIUM | CWE-74 | No | 2026-04-01 | A vulnerability has been found in code-projects Simple Laundry System 1.0. This issue affects some unknown processing of... |
 | [CVE-2026-5256](https://nvd.nist.gov/vuln/detail/CVE-2026-5256) | 6.9 | MEDIUM | CWE-74 | No | 2026-04-01 | A flaw has been found in code-projects Simple Laundry System 1.0. This vulnerability affects unknown code of the file /m... |
 | [CVE-2026-5255](https://nvd.nist.gov/vuln/detail/CVE-2026-5255) | 5.3 | MEDIUM | CWE-79 | No | 2026-04-01 | A vulnerability was detected in code-projects Simple Laundry System 1.0. This affects an unknown part of the file /delst... |

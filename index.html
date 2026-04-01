@@ -11,7 +11,7 @@
     <header>
       <h1>vuln-tracker</h1>
       <p class="subtitle">CVEs from the National Vulnerability Database — current and previous month</p>
-      <p class="last-updated">Last updated: 2026-04-01 07:47 UTC</p>
+      <p class="last-updated">Last updated: 2026-04-01 09:15 UTC</p>
     </header>
     <nav>
       <a href="top50.html">&#9733; Top 50</a>
@@ -25,7 +25,7 @@
     </nav>
     <main>
     <section>
-      <h2>Current Month — April 2026 <span class="count">(59)</span></h2>
+      <h2>Current Month — April 2026 <span class="count">(61)</span></h2>
       <div class="table-wrapper">
         <table>
           <thead>
@@ -41,25 +41,39 @@
           </thead>
           <tbody>
       <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5259" target="_blank" rel="noopener">CVE-2026-5259</a></td>
+        <td>5.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-918</td>
+        <td>&nbsp;</td>
+        <td><details><summary>A vulnerability was determined in AutohomeCorp frostmourne up to 1.0. The affect...</summary><p>A vulnerability was determined in AutohomeCorp frostmourne up to 1.0. The affected element is an unknown function of the file frostmourne-monitor/src/main/java/com/autohome/frostmourne/monitor/controller/AlarmController.java of the component Alarm Preview. Executing a manipulation can lead to server-side request forgery. The attack may be performed from remote. The exploit has been publicly disclosed and may be utilized.</p></details></td>
+        <td>2026-04-01</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-28265" target="_blank" rel="noopener">CVE-2026-28265</a></td>
+        <td>4.4</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-35</td>
+        <td>&nbsp;</td>
+        <td><details><summary>PowerStore, contains a Path Traversal vulnerability in the Service user. A low p...</summary><p>PowerStore, contains a Path Traversal vulnerability in the Service user. A low privileged attacker with local access could potentially exploit this vulnerability, leading to modification of arbitrary system files.</p></details></td>
+        <td>2026-04-01</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-27101" target="_blank" rel="noopener">CVE-2026-27101</a></td>
+        <td>4.7</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-22</td>
+        <td>&nbsp;</td>
+        <td><details><summary>Dell Secure Connect Gateway (SCG) 5.0 Appliance and Application version(s) 5.28....</summary><p>Dell Secure Connect Gateway (SCG) 5.0 Appliance and Application version(s) 5.28.00.xx to 5.32.00.xx, contain(s) an Improper Limitation of a Pathname to a Restricted Directory (&#x27;Path Traversal&#x27;) vulnerability. A high privileged attacker within the management network could potentially exploit this vulnerability, leading to remote execution.</p></details></td>
+        <td>2026-04-01</td>
+      </tr>
+      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5258" target="_blank" rel="noopener">CVE-2026-5258</a></td>
         <td>6.9</td>
         <td><span class="severity medium">MEDIUM</span></td>
         <td>CWE-22</td>
         <td>&nbsp;</td>
         <td><details><summary>A vulnerability was found in Sanster IOPaint 1.5.3. Impacted is the function _ge...</summary><p>A vulnerability was found in Sanster IOPaint 1.5.3. Impacted is the function _get_file of the file iopaint/file_manager/file_manager.py of the component File Manager. Performing a manipulation of the argument filename results in path traversal. The attack is possible to be carried out remotely. The exploit has been made public and could be used. The vendor was contacted early about this disclosure but did not respond in any way.</p></details></td>
-        <td>2026-04-01</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4748" target="_blank" rel="noopener">CVE-2026-4748</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>CWE-480</td>
-        <td>&nbsp;</td>
-        <td><details><summary>A regression in the way hashes were calculated caused rules containing the addre...</summary><p>A regression in the way hashes were calculated caused rules containing the address range syntax (x.x.x.x - y.y.y.y) that only differ in the address range(s) involved to be silently dropped as duplicates.  Only the first of such rules is actually loaded into pf.  Ranges expressed using the address[/mask-bits] syntax were not affected.
-
-Some keywords representing actions taken on a packet-matching rule, such as &#x27;log&#x27;, &#x27;return tll&#x27;, or &#x27;dnpipe&#x27;, may suffer from the same issue.  It is unlikely that users have such configurations, as these rules would always be redundant.
-
-Affected rules are silently ignored, which can lead to unexpected behaviour including over- and underblocking.</p></details></td>
         <td>2026-04-01</td>
       </tr>
       <tr>
