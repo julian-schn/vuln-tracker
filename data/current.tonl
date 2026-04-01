@@ -1,382 +1,88 @@
 #version 1.0
 #delimiter "|"
 
-cves[83]{cveId:str|published:str|lastModified:str|cvssScore:f64|severity:str|cweId:str|cweName:str|kev:bool|description:str|nvdUrl:str|epssScore:f64|epssPercentile:f64}:
-  CVE-2026-23899|2026-04-01T10:16:16.543|2026-04-01T10:16:16.543|8.6|HIGH|CWE-284|N/A|false|An improper access check allows unauthorized access to webservice endpoints.|https://nvd.nist.gov/vuln/detail/CVE-2026-23899|0.00000|0.00000
-  CVE-2026-23898|2026-04-01T10:16:16.397|2026-04-01T10:16:16.397|8.6|HIGH|CWE-73|N/A|false|Lack of input validation leads to an arbitrary file deletion vulnerability in the autoupdate server mechanism.|https://nvd.nist.gov/vuln/detail/CVE-2026-23898|0.00000|0.00000
-  CVE-2026-21632|2026-04-01T10:16:16.250|2026-04-01T10:16:16.250|5.9|MEDIUM|CWE-79|N/A|false|Lack of output escaping for article titles leads to XSS vectors in various locations.|https://nvd.nist.gov/vuln/detail/CVE-2026-21632|0.00000|0.00000
-  CVE-2026-21631|2026-04-01T10:16:16.097|2026-04-01T10:16:16.097|5.9|MEDIUM|CWE-79|N/A|false|Lack of output escaping leads to a XSS vector in the multilingual associations component.|https://nvd.nist.gov/vuln/detail/CVE-2026-21631|0.00000|0.00000
-  CVE-2026-21630|2026-04-01T10:16:15.943|2026-04-01T10:16:15.943|6.9|MEDIUM|CWE-89|N/A|false|Improperly built order clauses lead to a SQL injection vulnerability in the articles webservice endpoint.|https://nvd.nist.gov/vuln/detail/CVE-2026-21630|0.00000|0.00000
-  CVE-2026-21629|2026-04-01T10:16:15.790|2026-04-01T10:16:15.790|6.3|MEDIUM|CWE-284|N/A|false|The ajax component was excluded from the default logged-in-user check in the administrative area. This behavior was potentially unexpected by 3rd party developers.|https://nvd.nist.gov/vuln/detail/CVE-2026-21629|0.00000|0.00000
-  CVE-2026-1879|2026-04-01T10:16:15.490|2026-04-01T10:16:15.490|5.3|MEDIUM|CWE-284|N/A|false|A vulnerability was detected in Harvard University IQSS Dataverse up to 6.8. This affects an unknown function of the file /ThemeAndWidgets.xhtml of the component Theme Customization. Performing a manipulation of the argument uploadLogo results in unrestricted upload. Remote exploitation of the attack is possible. The exploit is now public and may be used. Upgrading to version 6.10 mitigates this issue. You should upgrade the affected component. The vendor was contacted early, responded in a very professional manner and quickly released a fixed version of the affected product.|https://nvd.nist.gov/vuln/detail/CVE-2026-1879|0.00000|0.00000
-  CVE-2024-53828|2026-04-01T10:16:14.190|2026-04-01T10:16:14.190|5.3|MEDIUM|CWE-228|N/A|false|"Ericsson Packet Core Controller (PCC) versions prior
-to 1.38 contain a vulnerability where an attacker sending a large volume of
-specially crafted messages may cause service degradation."|https://nvd.nist.gov/vuln/detail/CVE-2024-53828|0.00000|0.00000
-  CVE-2026-5261|2026-04-01T09:16:17.920|2026-04-01T09:16:17.920|6.9|MEDIUM|CWE-284|N/A|false|A vulnerability was identified in Shandong Hoteam InforCenter PLM up to 8.3.8. The impacted element is the function uploadFileToIIS of the file /Base/BaseHandler.ashx. The manipulation of the argument File leads to unrestricted upload. It is possible to initiate the attack remotely. The exploit is publicly available and might be used. The vendor was contacted early about this disclosure but did not respond in any way.|https://nvd.nist.gov/vuln/detail/CVE-2026-5261|0.00000|0.00000
-  CVE-2026-4370|2026-04-01T09:16:17.717|2026-04-01T09:16:17.717|10.0|CRITICAL|CWE-295|N/A|false|A vulnerability was identified in Juju from version 3.2.0 until 3.6.19 and from version 4.0 until 4.0.4, where the internal Dqlite database cluster fails to perform proper TLS client and server authentication. Specifically, the Juju controller's database endpoint does not validate client certificates when a new node attempts to join the cluster. An unauthenticated attacker with network reachability to the Juju controller's Dqlite port can exploit this flaw to join the database cluster. Once joined, the attacker gains full read and write access to the underlying database, allowing for total data compromise.|https://nvd.nist.gov/vuln/detail/CVE-2026-4370|0.00000|0.00000
-  CVE-2026-34889|2026-04-01T09:16:17.457|2026-04-01T09:16:17.457|6.5|MEDIUM|CWE-79|N/A|false|Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Brainstorm Force Ultimate Addons for WPBakery Page Builder allows DOM-Based XSS.This issue affects Ultimate Addons for WPBakery Page Builder: from n/a before 3.21.4.|https://nvd.nist.gov/vuln/detail/CVE-2026-34889|0.00000|0.00000
-  CVE-2026-23411|2026-04-01T09:16:17.270|2026-04-01T09:16:17.270|0.0|NONE|N/A|N/A|false|"In the Linux kernel, the following vulnerability has been resolved:
-
-apparmor: fix race between freeing data and fs accessing it
-
-AppArmor was putting the reference to i_private data on its end after
-removing the original entry from the file system. However the inode
-can aand does live beyond that point and it is possible that some of
-the fs call back functions will be invoked after the reference has
-been put, which results in a race between freeing the data and
-accessing it through the fs.
-
-While the rawdata/loaddata is the most likely candidate to fail the
-race, as it has the fewest references. If properly crafted it might be
-possible to trigger a race for the other types stored in i_private.
-
-Fix this by moving the put of i_private referenced data to the correct
-place which is during inode eviction."|https://nvd.nist.gov/vuln/detail/CVE-2026-23411|0.00000|0.00000
-  CVE-2026-23410|2026-04-01T09:16:17.093|2026-04-01T09:16:17.093|0.0|NONE|N/A|N/A|false|"In the Linux kernel, the following vulnerability has been resolved:
-
-apparmor: fix race on rawdata dereference
-
-There is a race condition that leads to a use-after-free situation:
-because the rawdata inodes are not refcounted, an attacker can start
-open()ing one of the rawdata files, and at the same time remove the
-last reference to this rawdata (by removing the corresponding profile,
-for example), which frees its struct aa_loaddata; as a result, when
-seq_rawdata_open() is reached, i_private is a dangling pointer and
-freed memory is accessed.
-
-The rawdata inodes weren't refcounted to avoid a circular refcount and
-were supposed to be held by the profile rawdata reference.  However
-during profile removal there is a window where the vfs and profile
-destruction race, resulting in the use after free.
-
-Fix this by moving to a double refcount scheme. Where the profile
-refcount on rawdata is used to break the circular dependency. Allowing
-for freeing of the rawdata once all inode references to the rawdata
-are put."|https://nvd.nist.gov/vuln/detail/CVE-2026-23410|0.00000|0.00000
-  CVE-2026-23409|2026-04-01T09:16:16.913|2026-04-01T09:16:16.913|0.0|NONE|N/A|N/A|false|"In the Linux kernel, the following vulnerability has been resolved:
-
-apparmor: fix differential encoding verification
-
-Differential encoding allows loops to be created if it is abused. To
-prevent this the unpack should verify that a diff-encode chain
-terminates.
-
-Unfortunately the differential encode verification had two bugs.
-
-1. it conflated states that had gone through check and already been
-   marked, with states that were currently being checked and marked.
-   This means that loops in the current chain being verified are treated
-   as a chain that has already been verified.
-
-2. the order bailout on already checked states compared current chain
-   check iterators j,k instead of using the outer loop iterator i.
-   Meaning a step backwards in states in the current chain verification
-   was being mistaken for moving to an already verified state.
-
-Move to a double mark scheme where already verified states get a
-different mark, than the current chain being kept. This enables us
-to also drop the backwards verification check that was the cause of
-the second error as any already verified state is already marked."|https://nvd.nist.gov/vuln/detail/CVE-2026-23409|0.00000|0.00000
-  CVE-2026-23408|2026-04-01T09:16:16.747|2026-04-01T09:16:16.747|0.0|NONE|N/A|N/A|false|"In the Linux kernel, the following vulnerability has been resolved:
-
-apparmor: Fix double free of ns_name in aa_replace_profiles()
-
-if ns_name is NULL after
-1071         error = aa_unpack(udata, &lh, &ns_name);
-
-and if ent->ns_name contains an ns_name in
-1089                 } else if (ent->ns_name) {
-
-then ns_name is assigned the ent->ns_name
-1095                         ns_name = ent->ns_name;
-
-however ent->ns_name is freed at
-1262                 aa_load_ent_free(ent);
-
-and then again when freeing ns_name at
-1270         kfree(ns_name);
-
-Fix this by NULLing out ent->ns_name after it is transferred to ns_name
-
-"")"|https://nvd.nist.gov/vuln/detail/CVE-2026-23408|0.00000|0.00000
-  CVE-2026-23407|2026-04-01T09:16:16.527|2026-04-01T09:16:16.527|0.0|NONE|N/A|N/A|false|"In the Linux kernel, the following vulnerability has been resolved:
-
-apparmor: fix missing bounds check on DEFAULT table in verify_dfa()
-
-The verify_dfa() function only checks DEFAULT_TABLE bounds when the state
-is not differentially encoded.
-
-When the verification loop traverses the differential encoding chain,
-it reads k = DEFAULT_TABLE[j] and uses k as an array index without
-validation. A malformed DFA with DEFAULT_TABLE[j] >= state_count,
-therefore, causes both out-of-bounds reads and writes.
-
-[   57.179855] ==================================================================
-[   57.180549] BUG: KASAN: slab-out-of-bounds in verify_dfa+0x59a/0x660
-[   57.180904] Read of size 4 at addr ffff888100eadec4 by task su/993
-
-[   57.181554] CPU: 1 UID: 0 PID: 993 Comm: su Not tainted 6.19.0-rc7-next-20260127 #1 PREEMPT(lazy)
-[   57.181558] Hardware name: QEMU Standard PC (Q35 + ICH9, 2009), BIOS 1.16.3-debian-1.16.3-2 04/01/2014
-[   57.181563] Call Trace:
-[   57.181572]  <TASK>
-[   57.181577]  dump_stack_lvl+0x5e/0x80
-[   57.181596]  print_report+0xc8/0x270
-[   57.181605]  ? verify_dfa+0x59a/0x660
-[   57.181608]  kasan_report+0x118/0x150
-[   57.181620]  ? verify_dfa+0x59a/0x660
-[   57.181623]  verify_dfa+0x59a/0x660
-[   57.181627]  aa_dfa_unpack+0x1610/0x1740
-[   57.181629]  ? __kmalloc_cache_noprof+0x1d0/0x470
-[   57.181640]  unpack_pdb+0x86d/0x46b0
-[   57.181647]  ? srso_alias_return_thunk+0x5/0xfbef5
-[   57.181653]  ? srso_alias_return_thunk+0x5/0xfbef5
-[   57.181656]  ? aa_unpack_nameX+0x1a8/0x300
-[   57.181659]  aa_unpack+0x20b0/0x4c30
-[   57.181662]  ? srso_alias_return_thunk+0x5/0xfbef5
-[   57.181664]  ? stack_depot_save_flags+0x33/0x700
-[   57.181681]  ? kasan_save_track+0x4f/0x80
-[   57.181683]  ? kasan_save_track+0x3e/0x80
-[   57.181686]  ? __kasan_kmalloc+0x93/0xb0
-[   57.181688]  ? __kvmalloc_node_noprof+0x44a/0x780
-[   57.181693]  ? aa_simple_write_to_buffer+0x54/0x130
-[   57.181697]  ? policy_update+0x154/0x330
-[   57.181704]  aa_replace_profiles+0x15a/0x1dd0
-[   57.181707]  ? srso_alias_return_thunk+0x5/0xfbef5
-[   57.181710]  ? __kvmalloc_node_noprof+0x44a/0x780
-[   57.181712]  ? aa_loaddata_alloc+0x77/0x140
-[   57.181715]  ? srso_alias_return_thunk+0x5/0xfbef5
-[   57.181717]  ? _copy_from_user+0x2a/0x70
-[   57.181730]  policy_update+0x17a/0x330
-[   57.181733]  profile_replace+0x153/0x1a0
-[   57.181735]  ? rw_verify_area+0x93/0x2d0
-[   57.181740]  vfs_write+0x235/0xab0
-[   57.181745]  ksys_write+0xb0/0x170
-[   57.181748]  do_syscall_64+0x8e/0x660
-[   57.181762]  entry_SYSCALL_64_after_hwframe+0x76/0x7e
-[   57.181765] RIP: 0033:0x7f6192792eb2
-
-Remove the MATCH_FLAG_DIFF_ENCODE condition to validate all DEFAULT_TABLE
-entries unconditionally."|https://nvd.nist.gov/vuln/detail/CVE-2026-23407|0.00000|0.00000
-  CVE-2026-23406|2026-04-01T09:16:16.327|2026-04-01T09:16:16.327|0.0|NONE|N/A|N/A|false|"In the Linux kernel, the following vulnerability has been resolved:
-
-apparmor: fix side-effect bug in match_char() macro usage
-
-The match_char() macro evaluates its character parameter multiple
-times when traversing differential encoding chains. When invoked
-with *str++, the string pointer advances on each iteration of the
-inner do-while loop, causing the DFA to check different characters
-at each iteration and therefore skip input characters.
-This results in out-of-bounds reads when the pointer advances past
-the input buffer boundary.
-
-[   94.984676] ==================================================================
-[   94.985301] BUG: KASAN: slab-out-of-bounds in aa_dfa_match+0x5ae/0x760
-[   94.985655] Read of size 1 at addr ffff888100342000 by task file/976
-
-[   94.986319] CPU: 7 UID: 1000 PID: 976 Comm: file Not tainted 6.19.0-rc7-next-20260127 #1 PREEMPT(lazy)
-[   94.986322] Hardware name: QEMU Standard PC (Q35 + ICH9, 2009), BIOS 1.16.3-debian-1.16.3-2 04/01/2014
-[   94.986329] Call Trace:
-[   94.986341]  <TASK>
-[   94.986347]  dump_stack_lvl+0x5e/0x80
-[   94.986374]  print_report+0xc8/0x270
-[   94.986384]  ? aa_dfa_match+0x5ae/0x760
-[   94.986388]  kasan_report+0x118/0x150
-[   94.986401]  ? aa_dfa_match+0x5ae/0x760
-[   94.986405]  aa_dfa_match+0x5ae/0x760
-[   94.986408]  __aa_path_perm+0x131/0x400
-[   94.986418]  aa_path_perm+0x219/0x2f0
-[   94.986424]  apparmor_file_open+0x345/0x570
-[   94.986431]  security_file_open+0x5c/0x140
-[   94.986442]  do_dentry_open+0x2f6/0x1120
-[   94.986450]  vfs_open+0x38/0x2b0
-[   94.986453]  ? may_open+0x1e2/0x2b0
-[   94.986466]  path_openat+0x231b/0x2b30
-[   94.986469]  ? __x64_sys_openat+0xf8/0x130
-[   94.986477]  do_file_open+0x19d/0x360
-[   94.986487]  do_sys_openat2+0x98/0x100
-[   94.986491]  __x64_sys_openat+0xf8/0x130
-[   94.986499]  do_syscall_64+0x8e/0x660
-[   94.986515]  ? count_memcg_events+0x15f/0x3c0
-[   94.986526]  ? srso_alias_return_thunk+0x5/0xfbef5
-[   94.986540]  ? handle_mm_fault+0x1639/0x1ef0
-[   94.986551]  ? vma_start_read+0xf0/0x320
-[   94.986558]  ? srso_alias_return_thunk+0x5/0xfbef5
-[   94.986561]  ? srso_alias_return_thunk+0x5/0xfbef5
-[   94.986563]  ? fpregs_assert_state_consistent+0x50/0xe0
-[   94.986572]  ? srso_alias_return_thunk+0x5/0xfbef5
-[   94.986574]  ? arch_exit_to_user_mode_prepare+0x9/0xb0
-[   94.986587]  ? srso_alias_return_thunk+0x5/0xfbef5
-[   94.986588]  ? irqentry_exit+0x3c/0x590
-[   94.986595]  entry_SYSCALL_64_after_hwframe+0x76/0x7e
-[   94.986597] RIP: 0033:0x7fda4a79c3ea
-
-Fix by extracting the character value before invoking match_char,
-ensuring single evaluation per outer loop."|https://nvd.nist.gov/vuln/detail/CVE-2026-23406|0.00000|0.00000
-  CVE-2026-23405|2026-04-01T09:16:16.153|2026-04-01T09:16:16.153|0.0|NONE|N/A|N/A|false|"In the Linux kernel, the following vulnerability has been resolved:
-
-apparmor: fix: limit the number of levels of policy namespaces
-
-Currently the number of policy namespaces is not bounded relying on
-the user namespace limit. However policy namespaces aren't strictly
-tied to user namespaces and it is possible to create them and nest
-them arbitrarily deep which can be used to exhaust system resource.
-
-Hard cap policy namespaces to the same depth as user namespaces."|https://nvd.nist.gov/vuln/detail/CVE-2026-23405|0.00000|0.00000
-  CVE-2026-23404|2026-04-01T09:16:15.977|2026-04-01T09:16:15.977|0.0|NONE|N/A|N/A|false|"In the Linux kernel, the following vulnerability has been resolved:
-
-apparmor: replace recursive profile removal with iterative approach
-
-The profile removal code uses recursion when removing nested profiles,
-which can lead to kernel stack exhaustion and system crashes.
-
-Reproducer:
-  $ pf='a'; for ((i=0; i<1024; i++)); do
-      echo -e ""profile $pf { \n }"" | apparmor_parser -K -a;
-      pf=""$pf//x"";
-  done
-  $ echo -n a > /sys/kernel/security/apparmor/.remove
-
-Replace the recursive __aa_profile_list_release() approach with an
-iterative approach in __remove_profile(). The function repeatedly
-finds and removes leaf profiles until the entire subtree is removed,
-maintaining the same removal semantic without recursion."|https://nvd.nist.gov/vuln/detail/CVE-2026-23404|0.00000|0.00000
-  CVE-2026-23403|2026-04-01T09:16:15.803|2026-04-01T09:16:15.803|0.0|NONE|N/A|N/A|false|"In the Linux kernel, the following vulnerability has been resolved:
-
-apparmor: fix memory leak in verify_header
-
-The function sets `*ns = NULL` on every call, leaking the namespace
-string allocated in previous iterations when multiple profiles are
-unpacked. This also breaks namespace consistency checking since *ns
-is always NULL when the comparison is made.
-
-Remove the incorrect assignment.
-The caller (aa_unpack) initializes *ns to NULL once before the loop,
-which is sufficient."|https://nvd.nist.gov/vuln/detail/CVE-2026-23403|0.00000|0.00000
-  CVE-2026-23402|2026-04-01T09:16:15.670|2026-04-01T09:16:15.670|0.0|NONE|N/A|N/A|false|"In the Linux kernel, the following vulnerability has been resolved:
-
-KVM: x86/mmu: Only WARN in direct MMUs when overwriting shadow-present SPTE
-
-Adjust KVM's sanity check against overwriting a shadow-present SPTE with a
-another SPTE with a different target PFN to only apply to direct MMUs,
-i.e. only to MMUs without shadowed gPTEs.  While it's impossible for KVM
-to overwrite a shadow-present SPTE in response to a guest write, writes
-from outside the scope of KVM, e.g. from host userspace, aren't detected
-by KVM's write tracking and so can break KVM's shadow paging rules.
-
-  ------------[ cut here ]------------
-  pfn != spte_to_pfn(*sptep)
-  WARNING: arch/x86/kvm/mmu/mmu.c:3069 at mmu_set_spte+0x1e4/0x440 [kvm], CPU#0: vmx_ept_stale_r/872
-  Modules linked in: kvm_intel kvm irqbypass
-  CPU: 0 UID: 1000 PID: 872 Comm: vmx_ept_stale_r Not tainted 7.0.0-rc2-eafebd2d2ab0-sink-vm #319 PREEMPT
-  Hardware name: QEMU Standard PC (Q35 + ICH9, 2009), BIOS 0.0.0 02/06/2015
-  RIP: 0010:mmu_set_spte+0x1e4/0x440 [kvm]
-  Call Trace:
-   <TASK>
-   ept_page_fault+0x535/0x7f0 [kvm]
-   kvm_mmu_do_page_fault+0xee/0x1f0 [kvm]
-   kvm_mmu_page_fault+0x8d/0x620 [kvm]
-   vmx_handle_exit+0x18c/0x5a0 [kvm_intel]
-   kvm_arch_vcpu_ioctl_run+0xc55/0x1c20 [kvm]
-   kvm_vcpu_ioctl+0x2d5/0x980 [kvm]
-   __x64_sys_ioctl+0x8a/0xd0
-   do_syscall_64+0xb5/0x730
-   entry_SYSCALL_64_after_hwframe+0x4b/0x53
-   </TASK>
-  ---[ end trace 0000000000000000 ]---"|https://nvd.nist.gov/vuln/detail/CVE-2026-23402|0.00000|0.00000
-  CVE-2026-23401|2026-04-01T09:16:15.260|2026-04-01T09:16:15.260|0.0|NONE|N/A|N/A|false|"In the Linux kernel, the following vulnerability has been resolved:
-
-KVM: x86/mmu: Drop/zap existing present SPTE even when creating an MMIO SPTE
-
-When installing an emulated MMIO SPTE, do so *after* dropping/zapping the
-existing SPTE (if it's shadow-present).  While commit a54aa15c6bda3 was
-right about it being impossible to convert a shadow-present SPTE to an
-MMIO SPTE due to a _guest_ write, it failed to account for writes to guest
-memory that are outside the scope of KVM.
-
-E.g. if host userspace modifies a shadowed gPTE to switch from a memslot
-to emulted MMIO and then the guest hits a relevant page fault, KVM will
-install the MMIO SPTE without first zapping the shadow-present SPTE.
-
-  ------------[ cut here ]------------
-  is_shadow_present_pte(*sptep)
-  WARNING: arch/x86/kvm/mmu/mmu.c:484 at mark_mmio_spte+0xb2/0xc0 [kvm], CPU#0: vmx_ept_stale_r/4292
-  Modules linked in: kvm_intel kvm irqbypass
-  CPU: 0 UID: 1000 PID: 4292 Comm: vmx_ept_stale_r Not tainted 7.0.0-rc2-eafebd2d2ab0-sink-vm #319 PREEMPT
-  Hardware name: QEMU Standard PC (Q35 + ICH9, 2009), BIOS 0.0.0 02/06/2015
-  RIP: 0010:mark_mmio_spte+0xb2/0xc0 [kvm]
-  Call Trace:
-   <TASK>
-   mmu_set_spte+0x237/0x440 [kvm]
-   ept_page_fault+0x535/0x7f0 [kvm]
-   kvm_mmu_do_page_fault+0xee/0x1f0 [kvm]
-   kvm_mmu_page_fault+0x8d/0x620 [kvm]
-   vmx_handle_exit+0x18c/0x5a0 [kvm_intel]
-   kvm_arch_vcpu_ioctl_run+0xc55/0x1c20 [kvm]
-   kvm_vcpu_ioctl+0x2d5/0x980 [kvm]
-   __x64_sys_ioctl+0x8a/0xd0
-   do_syscall_64+0xb5/0x730
-   entry_SYSCALL_64_after_hwframe+0x4b/0x53
-  RIP: 0033:0x47fa3f
-   </TASK>
-  ---[ end trace 0000000000000000 ]---"|https://nvd.nist.gov/vuln/detail/CVE-2026-23401|0.00000|0.00000
-  CVE-2026-5259|2026-04-01T08:16:05.723|2026-04-01T08:16:05.723|5.3|MEDIUM|CWE-918|N/A|false|A vulnerability was determined in AutohomeCorp frostmourne up to 1.0. The affected element is an unknown function of the file frostmourne-monitor/src/main/java/com/autohome/frostmourne/monitor/controller/AlarmController.java of the component Alarm Preview. Executing a manipulation can lead to server-side request forgery. The attack may be performed from remote. The exploit has been publicly disclosed and may be utilized.|https://nvd.nist.gov/vuln/detail/CVE-2026-5259|0.00000|0.00000
-  CVE-2026-28265|2026-04-01T08:16:05.490|2026-04-01T08:16:05.490|4.4|MEDIUM|CWE-35|N/A|false|PowerStore, contains a Path Traversal vulnerability in the Service user. A low privileged attacker with local access could potentially exploit this vulnerability, leading to modification of arbitrary system files.|https://nvd.nist.gov/vuln/detail/CVE-2026-28265|0.00000|0.00000
-  CVE-2026-27101|2026-04-01T08:16:05.270|2026-04-01T08:16:05.270|4.7|MEDIUM|CWE-22|N/A|false|Dell Secure Connect Gateway (SCG) 5.0 Appliance and Application version(s) 5.28.00.xx to 5.32.00.xx, contain(s) an Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal') vulnerability. A high privileged attacker within the management network could potentially exploit this vulnerability, leading to remote execution.|https://nvd.nist.gov/vuln/detail/CVE-2026-27101|0.00000|0.00000
-  CVE-2026-5258|2026-04-01T07:16:02.930|2026-04-01T07:16:02.930|6.9|MEDIUM|CWE-22|N/A|false|A vulnerability was found in Sanster IOPaint 1.5.3. Impacted is the function _get_file of the file iopaint/file_manager/file_manager.py of the component File Manager. Performing a manipulation of the argument filename results in path traversal. The attack is possible to be carried out remotely. The exploit has been made public and could be used. The vendor was contacted early about this disclosure but did not respond in any way.|https://nvd.nist.gov/vuln/detail/CVE-2026-5258|0.00000|0.00000
-  CVE-2026-5257|2026-04-01T06:16:16.363|2026-04-01T06:16:16.363|6.9|MEDIUM|CWE-74|N/A|false|A vulnerability has been found in code-projects Simple Laundry System 1.0. This issue affects some unknown processing of the file /delstaffinfo.php of the component Parameter Handler. Such manipulation of the argument userid leads to sql injection. The attack can be executed remotely. The exploit has been disclosed to the public and may be used.|https://nvd.nist.gov/vuln/detail/CVE-2026-5257|0.00000|0.00000
-  CVE-2026-5256|2026-04-01T06:16:16.123|2026-04-01T06:16:16.123|6.9|MEDIUM|CWE-74|N/A|false|A flaw has been found in code-projects Simple Laundry System 1.0. This vulnerability affects unknown code of the file /modify.php of the component Parameter Handler. This manipulation of the argument firstName causes sql injection. Remote exploitation of the attack is possible. The exploit has been published and may be used.|https://nvd.nist.gov/vuln/detail/CVE-2026-5256|0.00000|0.00000
-  CVE-2026-5255|2026-04-01T06:16:15.503|2026-04-01T06:16:15.503|5.3|MEDIUM|CWE-79|N/A|false|A vulnerability was detected in code-projects Simple Laundry System 1.0. This affects an unknown part of the file /delstaffinfo.php of the component Parameter Handler. The manipulation of the argument userid results in cross site scripting. The attack may be launched remotely. The exploit is now public and may be used.|https://nvd.nist.gov/vuln/detail/CVE-2026-5255|0.00000|0.00000
-  CVE-2026-2696|2026-04-01T06:16:15.380|2026-04-01T06:16:15.380|0.0|NONE|N/A|N/A|false|The Export All URLs WordPress plugin before 5.1 generates CSV filenames containing posts URLS (including private posts) in a predictable pattern using a random 6-digit number. These files are stored in the publicly accessible wp-content/uploads/ directory. As a result, any unauthenticated user can brute-force the filenames to gain access to sensitive data contained within the exported files.|https://nvd.nist.gov/vuln/detail/CVE-2026-2696|0.00000|0.00000
-  CVE-2025-15484|2026-04-01T06:16:14.133|2026-04-01T06:16:14.133|0.0|NONE|N/A|N/A|false|The Order Notification for WooCommerce  WordPress plugin before 3.6.3 overrides WooCommerce's permission checks to grant full access to all unauthenticated requests, enabling complete read/write access to store resources like products, coupons, and customers.|https://nvd.nist.gov/vuln/detail/CVE-2025-15484|0.00000|0.00000
-  CVE-2026-5292|2026-04-01T05:16:02.853|2026-04-01T05:16:02.853|0.0|NONE|CWE-125|N/A|false|Out of bounds read in WebCodecs in Google Chrome prior to 146.0.7680.178 allowed a remote attacker to perform an out of bounds memory read via a crafted HTML page. (Chromium security severity: Medium)|https://nvd.nist.gov/vuln/detail/CVE-2026-5292|0.00000|0.00000
-  CVE-2026-5291|2026-04-01T05:16:02.743|2026-04-01T05:16:02.743|0.0|NONE|N/A|N/A|false|Inappropriate implementation in WebGL in Google Chrome prior to 146.0.7680.178 allowed a remote attacker to obtain potentially sensitive information from process memory via a crafted HTML page. (Chromium security severity: Medium)|https://nvd.nist.gov/vuln/detail/CVE-2026-5291|0.00000|0.00000
-  CVE-2026-5290|2026-04-01T05:16:02.607|2026-04-01T05:16:02.607|0.0|NONE|CWE-416|N/A|false|Use after free in Compositing in Google Chrome prior to 146.0.7680.178 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: High)|https://nvd.nist.gov/vuln/detail/CVE-2026-5290|0.00000|0.00000
-  CVE-2026-5289|2026-04-01T05:16:02.480|2026-04-01T05:16:02.480|0.0|NONE|CWE-416|N/A|false|Use after free in Navigation in Google Chrome prior to 146.0.7680.178 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: High)|https://nvd.nist.gov/vuln/detail/CVE-2026-5289|0.00000|0.00000
-  CVE-2026-5288|2026-04-01T05:16:02.343|2026-04-01T05:16:02.343|0.0|NONE|CWE-416|N/A|false|Use after free in WebView in Google Chrome on Android prior to 146.0.7680.178 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: High)|https://nvd.nist.gov/vuln/detail/CVE-2026-5288|0.00000|0.00000
-  CVE-2026-5287|2026-04-01T05:16:02.213|2026-04-01T05:16:02.213|0.0|NONE|CWE-416|N/A|false|Use after free in PDF in Google Chrome prior to 146.0.7680.178 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted PDF file. (Chromium security severity: High)|https://nvd.nist.gov/vuln/detail/CVE-2026-5287|0.00000|0.00000
-  CVE-2026-5286|2026-04-01T05:16:02.080|2026-04-01T05:16:02.080|0.0|NONE|CWE-416|N/A|false|Use after free in Dawn in Google Chrome prior to 146.0.7680.178 allowed a remote attacker to execute arbitrary code via a crafted HTML page. (Chromium security severity: High)|https://nvd.nist.gov/vuln/detail/CVE-2026-5286|0.00000|0.00000
-  CVE-2026-5285|2026-04-01T05:16:01.953|2026-04-01T05:16:01.953|0.0|NONE|CWE-416|N/A|false|Use after free in WebGL in Google Chrome prior to 146.0.7680.178 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: High)|https://nvd.nist.gov/vuln/detail/CVE-2026-5285|0.00000|0.00000
-  CVE-2026-5284|2026-04-01T05:16:01.817|2026-04-01T05:16:01.817|0.0|NONE|CWE-416|N/A|false|Use after free in Dawn in Google Chrome prior to 146.0.7680.178 allowed a remote attacker who had compromised the renderer process to execute arbitrary code via a crafted HTML page. (Chromium security severity: High)|https://nvd.nist.gov/vuln/detail/CVE-2026-5284|0.00000|0.00000
-  CVE-2026-5283|2026-04-01T05:16:01.717|2026-04-01T05:16:01.717|0.0|NONE|N/A|N/A|false|Inappropriate implementation in ANGLE in Google Chrome prior to 146.0.7680.178 allowed a remote attacker to leak cross-origin data via a crafted HTML page. (Chromium security severity: High)|https://nvd.nist.gov/vuln/detail/CVE-2026-5283|0.00000|0.00000
-  CVE-2026-5282|2026-04-01T05:16:01.577|2026-04-01T05:16:01.577|0.0|NONE|CWE-125|N/A|false|Out of bounds read in WebCodecs in Google Chrome prior to 146.0.7680.178 allowed a remote attacker to perform an out of bounds memory read via a crafted HTML page. (Chromium security severity: High)|https://nvd.nist.gov/vuln/detail/CVE-2026-5282|0.00000|0.00000
-  CVE-2026-5281|2026-04-01T05:16:01.440|2026-04-01T05:16:01.440|0.0|NONE|CWE-416|N/A|false|Use after free in Dawn in Google Chrome prior to 146.0.7680.178 allowed a remote attacker who had compromised the renderer process to execute arbitrary code via a crafted HTML page. (Chromium security severity: High)|https://nvd.nist.gov/vuln/detail/CVE-2026-5281|0.00000|0.00000
-  CVE-2026-5280|2026-04-01T05:16:01.310|2026-04-01T05:16:01.310|0.0|NONE|CWE-416|N/A|false|Use after free in WebCodecs in Google Chrome prior to 146.0.7680.178 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: High)|https://nvd.nist.gov/vuln/detail/CVE-2026-5280|0.00000|0.00000
-  CVE-2026-5279|2026-04-01T05:16:01.200|2026-04-01T05:16:01.200|0.0|NONE|N/A|N/A|false|Object corruption in V8 in Google Chrome prior to 146.0.7680.178 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: High)|https://nvd.nist.gov/vuln/detail/CVE-2026-5279|0.00000|0.00000
-  CVE-2026-5278|2026-04-01T05:16:01.070|2026-04-01T05:16:01.070|0.0|NONE|CWE-416|N/A|false|Use after free in Web MIDI in Google Chrome on Android prior to 146.0.7680.178 allowed a remote attacker to execute arbitrary code via a crafted HTML page. (Chromium security severity: High)|https://nvd.nist.gov/vuln/detail/CVE-2026-5278|0.00000|0.00000
-  CVE-2026-5277|2026-04-01T05:16:00.933|2026-04-01T05:16:00.933|0.0|NONE|CWE-472|N/A|false|Integer overflow in ANGLE in Google Chrome on Windows prior to 146.0.7680.178 allowed a remote attacker who had compromised the renderer process to perform an out of bounds memory write via a crafted HTML page. (Chromium security severity: High)|https://nvd.nist.gov/vuln/detail/CVE-2026-5277|0.00000|0.00000
-  CVE-2026-5276|2026-04-01T05:16:00.830|2026-04-01T05:16:00.830|0.0|NONE|N/A|N/A|false|Insufficient policy enforcement in WebUSB in Google Chrome prior to 146.0.7680.178 allowed a remote attacker to obtain potentially sensitive information from process memory via a crafted HTML page. (Chromium security severity: High)|https://nvd.nist.gov/vuln/detail/CVE-2026-5276|0.00000|0.00000
-  CVE-2026-5275|2026-04-01T05:16:00.693|2026-04-01T05:16:00.693|0.0|NONE|CWE-122|N/A|false|Heap buffer overflow in ANGLE in Google Chrome on Mac prior to 146.0.7680.178 allowed a remote attacker to execute arbitrary code via a crafted HTML page. (Chromium security severity: High)|https://nvd.nist.gov/vuln/detail/CVE-2026-5275|0.00000|0.00000
-  CVE-2026-5274|2026-04-01T05:16:00.560|2026-04-01T05:16:00.560|0.0|NONE|CWE-472|N/A|false|Integer overflow in Codecs in Google Chrome prior to 146.0.7680.178 allowed a remote attacker to perform arbitrary read/write via a crafted HTML page. (Chromium security severity: High)|https://nvd.nist.gov/vuln/detail/CVE-2026-5274|0.00000|0.00000
-  CVE-2026-5273|2026-04-01T05:16:00.427|2026-04-01T05:16:00.427|0.0|NONE|CWE-416|N/A|false|Use after free in CSS in Google Chrome prior to 146.0.7680.178 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: High)|https://nvd.nist.gov/vuln/detail/CVE-2026-5273|0.00000|0.00000
-  CVE-2026-5272|2026-04-01T05:16:00.287|2026-04-01T05:16:00.287|0.0|NONE|CWE-122|N/A|false|Heap buffer overflow in GPU in Google Chrome prior to 146.0.7680.178 allowed a remote attacker to execute arbitrary code via a crafted HTML page. (Chromium security severity: High)|https://nvd.nist.gov/vuln/detail/CVE-2026-5272|0.00000|0.00000
-  CVE-2026-5254|2026-04-01T05:15:59.983|2026-04-01T05:15:59.983|5.1|MEDIUM|CWE-79|N/A|false|A security vulnerability has been detected in welovemedia FFmate up to 2.0.15. Affected by this issue is some unknown functionality of the file /ui/app/components/AppJsonTreeView.vue of the component Webhook Handler. The manipulation leads to cross site scripting. The attack may be initiated remotely. The exploit has been disclosed publicly and may be used. The vendor was contacted early about this disclosure but did not respond in any way.|https://nvd.nist.gov/vuln/detail/CVE-2026-5254|0.00000|0.00000
-  CVE-2026-5253|2026-04-01T04:17:12.690|2026-04-01T04:17:12.690|5.1|MEDIUM|CWE-79|N/A|false|A weakness has been identified in bufanyun HotGo 1.0/2.0. Affected by this vulnerability is an unknown functionality of the file /web/src/layout/components/Header/MessageList.vue of the component editNotice Endpoint. Executing a manipulation can lead to cross site scripting. The attack can be launched remotely. The exploit has been made available to the public and could be used for attacks. The vendor was contacted early about this disclosure but did not respond in any way.|https://nvd.nist.gov/vuln/detail/CVE-2026-5253|0.00000|0.00000
-  CVE-2026-5252|2026-04-01T04:17:11.457|2026-04-01T04:17:11.457|5.1|MEDIUM|CWE-79|N/A|false|A security flaw has been discovered in z-9527 admin 1.0/2.0. Affected is an unknown function of the file /server/routes/message.js of the component Message Create Endpoint. Performing a manipulation results in cross site scripting. The attack can be initiated remotely. The exploit has been released to the public and may be used for attacks. The vendor was contacted early about this disclosure but did not respond in any way.|https://nvd.nist.gov/vuln/detail/CVE-2026-5252|0.00000|0.00000
-  CVE-2026-5251|2026-04-01T03:15:59.050|2026-04-01T03:15:59.050|5.3|MEDIUM|CWE-913|N/A|false|A vulnerability was identified in z-9527 admin 1.0/2.0. This impacts an unknown function of the file /server/routes/user.js of the component User Update Endpoint. Such manipulation of the argument isAdmin with the input 1 leads to dynamically-determined object attributes. It is possible to launch the attack remotely. The exploit is publicly available and might be used. The vendor was contacted early about this disclosure but did not respond in any way.|https://nvd.nist.gov/vuln/detail/CVE-2026-5251|0.00000|0.00000
-  CVE-2026-5249|2026-04-01T02:16:03.890|2026-04-01T02:16:03.890|5.1|MEDIUM|CWE-79|N/A|false|A vulnerability was found in gougucms 4.08.18. This impacts an unknown function of the file \gougucms-master\app\admin\view\user\record.html of the component Record Endpoint. Performing a manipulation of the argument value.content results in cross site scripting. It is possible to initiate the attack remotely. The exploit has been made public and could be used. The vendor was contacted early about this disclosure but did not respond in any way.|https://nvd.nist.gov/vuln/detail/CVE-2026-5249|0.00000|0.00000
-  CVE-2026-4947|2026-04-01T02:16:03.740|2026-04-01T02:16:03.740|7.1|HIGH|CWE-284|N/A|false|Addressed a potential insecure direct object reference (IDOR) vulnerability in the signing invitation acceptance process. Under certain conditions, this issue could have allowed an attacker to access or modify unauthorized resources by manipulating user-supplied object identifiers, potentially leading to forged signatures and compromising the integrity and authenticity of documents undergoing the signing process. The issue was caused by insufficient authorization validation on referenced resources during request processing.|https://nvd.nist.gov/vuln/detail/CVE-2026-4947|0.00000|0.00000
-  CVE-2026-4374|2026-04-01T02:16:03.540|2026-04-01T02:16:03.540|8.8|HIGH|CWE-611|N/A|false|Improper Restriction of XML External Entity Reference vulnerability in RTI Connext Professional (Routing Service,Observability Collector,Recording Service,Queueing Service,Cloud Discovery Service) allows Serialized Data External Linking, Data Serializat...|https://nvd.nist.gov/vuln/detail/CVE-2026-4374|0.00000|0.00000
-  CVE-2026-3831|2026-04-01T02:16:03.357|2026-04-01T02:16:03.357|4.3|MEDIUM|CWE-862|N/A|false|The Database for Contact Form 7, WPforms, Elementor forms plugin for WordPress is vulnerable to unauthorized access of data due to a missing capability check on the entries_shortcode() function in all versions up to, and including, 1.4.9. This makes it possible for authenticated attackers, with Contributor-level access and above, to extract all form submissions - including names, emails, phone numbers.|https://nvd.nist.gov/vuln/detail/CVE-2026-3831|0.00000|0.00000
-  CVE-2026-3780|2026-04-01T02:16:03.183|2026-04-01T02:16:03.183|7.3|HIGH|CWE-426|N/A|false|The application's installer runs with elevated privileges but resolves system executables and DLLs using untrusted search paths that can include user-writable directories, allowing a local attacker to place malicious binaries with the same names and have them loaded or executed instead of the legitimate system files, resulting in local privilege escalation.|https://nvd.nist.gov/vuln/detail/CVE-2026-3780|0.00000|0.00000
-  CVE-2026-3779|2026-04-01T02:16:03.043|2026-04-01T04:16:54.060|7.8|HIGH|CWE-416|N/A|false|The application's list box calculate array logic keeps stale references to page or form objects after they are deleted or re-created, which allows crafted documents to trigger a use-after-free when the calculation runs and can potentially lead to arbitrary code execution.|https://nvd.nist.gov/vuln/detail/CVE-2026-3779|0.00000|0.00000
-  CVE-2026-3778|2026-04-01T02:16:02.897|2026-04-01T02:16:02.897|6.2|MEDIUM|CWE-674|N/A|false|The application does not detect or guard against cyclic PDF object references while handling JavaScript in PDF. When pages and annotations are crafted that reference each other in a loop, passing the document to APIs (e.g., SOAP) that perform deep traversal can cause uncontrolled recursion, stack exhaustion, and application crashes.|https://nvd.nist.gov/vuln/detail/CVE-2026-3778|0.00000|0.00000
-  CVE-2026-3777|2026-04-01T02:16:02.737|2026-04-01T02:16:02.737|5.5|MEDIUM|CWE-416|N/A|false|The application does not properly validate the lifetime and validity of internal view cache pointers after JavaScript changes the document zoom and page state. When a script modifies the zoom property and then triggers a page change, the original view object may be destroyed while stale pointers are still kept and later dereferenced, which under crafted JavaScript and document structures can lead to a use-after-free condition and potentially allow arbitrary code execution.|https://nvd.nist.gov/vuln/detail/CVE-2026-3777|0.00000|0.00000
-  CVE-2026-3776|2026-04-01T02:16:02.590|2026-04-01T02:16:02.590|5.5|MEDIUM|CWE-476|N/A|false|The application does not validate the presence of required appearance (AP) data before accessing stamp annotation resources. When a PDF contains a stamp annotation missing its AP entry, the code continues to dereference the associated object without a prior null or validity check, which allows a crafted document to trigger a null pointer dereference and crash the application, resulting in denial of service.|https://nvd.nist.gov/vuln/detail/CVE-2026-3776|0.00000|0.00000
-  CVE-2026-3775|2026-04-01T02:16:02.440|2026-04-01T02:16:02.440|7.8|HIGH|CWE-427|N/A|false|The application's update service, when checking for updates, loads certain system libraries from a search path that includes directories writable by low‑privileged users and is not strictly restricted to trusted system locations. Because these libraries may be resolved and loaded from user‑writable locations, a local attacker can place a malicious library there and have it loaded with SYSTEM privileges, resulting in local privilege escalation and arbitrary code execution.|https://nvd.nist.gov/vuln/detail/CVE-2026-3775|0.00000|0.00000
-  CVE-2026-3774|2026-04-01T02:16:02.287|2026-04-01T02:16:02.287|4.7|MEDIUM|CWE-200|N/A|false|The application allows PDF JavaScript and document/print actions (such as WillPrint/DidPrint) to update form fields, annotations, or optional content groups (OCGs) immediately before or after redaction, encryption, or printing. These script‑driven updates are not fully covered by the existing redaction, encryption, and printing logic, which, under specific document structures and user workflows, may cause a small amount of sensitive content to remain unremoved or unencrypted as expected, or result in printed output that slightly differs from what was reviewed on screen.|https://nvd.nist.gov/vuln/detail/CVE-2026-3774|0.00000|0.00000
-  CVE-2026-5248|2026-04-01T01:16:41.990|2026-04-01T01:16:41.990|5.3|MEDIUM|CWE-913|N/A|false|A vulnerability has been found in gougucms 4.08.18. This affects the function reg_submit of the file gougucms-master\app\home\controller\Login.php of the component User Registration Handler. Such manipulation of the argument level leads to dynamically-determined object attributes. The attack may be performed from remote. The exploit has been disclosed to the public and may be used. The vendor was contacted early about this disclosure but did not respond in any way.|https://nvd.nist.gov/vuln/detail/CVE-2026-5248|0.00000|0.00000
-  CVE-2026-35057|2026-04-01T01:16:41.790|2026-04-01T03:15:58.883|5.1|MEDIUM|CWE-79|N/A|false|XenForo before 2.3.10 and before 2.2.19 is vulnerable to stored cross-site scripting (XSS) in structured text mentions, primarily affecting legacy profile post content. An attacker can inject malicious scripts through crafted mentions that are stored and executed when other users view the content.|https://nvd.nist.gov/vuln/detail/CVE-2026-35057|0.00000|0.00000
-  CVE-2026-35056|2026-04-01T01:16:41.593|2026-04-01T01:16:41.593|8.7|HIGH|CWE-94|N/A|false|XenForo before 2.3.9 and before 2.2.18 allows remote code execution (RCE) by authenticated, but malicious, admin users. An attacker with admin panel access can execute arbitrary code on the server.|https://nvd.nist.gov/vuln/detail/CVE-2026-35056|0.00000|0.00000
-  CVE-2026-35055|2026-04-01T01:16:41.397|2026-04-01T01:16:41.397|5.1|MEDIUM|CWE-79|N/A|false|XenForo before 2.3.9 and before 2.2.18 is vulnerable to cross-site scripting (XSS) related to lightbox usage in posts. An attacker can inject malicious scripts that execute when users interact with post content displayed in the lightbox.|https://nvd.nist.gov/vuln/detail/CVE-2026-35055|0.00000|0.00000
-  CVE-2026-35054|2026-04-01T01:16:41.200|2026-04-01T01:16:41.200|5.1|MEDIUM|CWE-79|N/A|false|XenForo before 2.3.9 is vulnerable to stored cross-site scripting (XSS) related to BB code rendering. An attacker can inject malicious scripts through BB code that are stored and executed when other users view the content.|https://nvd.nist.gov/vuln/detail/CVE-2026-35054|0.00000|0.00000
-  CVE-2026-2394|2026-04-01T01:16:40.990|2026-04-01T01:16:40.990|6.3|MEDIUM|CWE-126|N/A|false|Buffer Over-read vulnerability in RTI Connext Professional (Core Libraries) allows Overread Buffers.This issue affects Connext Professional: from 7.4.0 before 7.7.0, from 7.0.0 before 7.3.1.1, from 6.1.0 before 6.1.*, from 6.0.0 before 6.0.*, from 5.3.0 before 5.3.*, from 4.3x before 5.2.*.|https://nvd.nist.gov/vuln/detail/CVE-2026-2394|0.00000|0.00000
-  CVE-2025-71282|2026-04-01T01:16:40.797|2026-04-01T01:16:40.797|8.7|HIGH|CWE-209|N/A|false|XenForo before 2.3.7 discloses filesystem paths through exception messages triggered by open_basedir restrictions. This allows an attacker to obtain information about the server's directory structure.|https://nvd.nist.gov/vuln/detail/CVE-2025-71282|0.00000|0.00000
-  CVE-2025-71281|2026-04-01T01:16:40.590|2026-04-01T01:16:40.590|8.7|HIGH|CWE-94|N/A|false|XenForo before 2.3.7 does not properly restrict methods callable from within templates. A loose prefix match was used instead of a stricter first-word match for methods accessible through callbacks and variable method calls in templates, potentially allowing unauthorized method invocations.|https://nvd.nist.gov/vuln/detail/CVE-2025-71281|0.00000|0.00000
-  CVE-2025-71280|2026-04-01T01:16:40.393|2026-04-01T01:16:40.393|6.9|MEDIUM|CWE-200|N/A|false|XenForo before 2.3.7 allows information disclosure via local account page caching on shared systems. On systems where multiple users share a browser or machine, cached account pages could expose sensitive user information to other local users.|https://nvd.nist.gov/vuln/detail/CVE-2025-71280|0.00000|0.00000
-  CVE-2025-71279|2026-04-01T01:16:40.200|2026-04-01T01:16:40.200|9.3|CRITICAL|CWE-287|N/A|false|XenForo before 2.3.7 contains a security issue affecting Passkeys that have been added to user accounts. An attacker may be able to compromise the security of Passkey-based authentication.|https://nvd.nist.gov/vuln/detail/CVE-2025-71279|0.00000|0.00000
-  CVE-2025-71278|2026-04-01T01:16:40.000|2026-04-01T01:16:40.000|8.7|HIGH|CWE-863|N/A|false|XenForo before 2.3.5 allows OAuth2 client applications to request unauthorized scopes. This affects any customer using OAuth2 clients on any version of XenForo 2.3 prior to 2.3.5, potentially allowing client applications to gain access beyond their intended authorization level.|https://nvd.nist.gov/vuln/detail/CVE-2025-71278|0.00000|0.00000
-  CVE-2025-13855|2026-04-01T01:16:39.360|2026-04-01T01:16:39.360|7.6|HIGH|CWE-89|N/A|false|IBM Storage Protect Server 8.2.0 IBM Storage Protect Plus Server is vulnerable to SQL injection. A remote attacker could send specially crafted SQL statements, which could allow the attacker to view, add, modify, or delete information in the back-end database.|https://nvd.nist.gov/vuln/detail/CVE-2025-13855|0.00000|0.00000
-  CVE-2024-58342|2026-04-01T01:16:39.100|2026-04-01T01:16:39.100|5.3|MEDIUM|CWE-601|N/A|false|XenForo before 2.2.17 and 2.3.1 allows open redirect via a specially crafted URL. The getDynamicRedirect() function does not adequately validate the redirect target, allowing attackers to redirect users to arbitrary external sites using crafted URLs containing newlines, user credentials, or host mismatches.|https://nvd.nist.gov/vuln/detail/CVE-2024-58342|0.00000|0.00000
-  CVE-2026-5240|2026-04-01T00:16:02.427|2026-04-01T00:16:02.427|5.3|MEDIUM|CWE-79|N/A|false|A security vulnerability has been detected in code-projects BloodBank Managing System 1.0. This affects an unknown part of the file /admin_state.php. The manipulation of the argument statename leads to cross site scripting. It is possible to initiate the attack remotely. The exploit has been disclosed publicly and may be used.|https://nvd.nist.gov/vuln/detail/CVE-2026-5240|0.00000|0.00000
-  CVE-2026-5238|2026-04-01T00:16:02.087|2026-04-01T00:16:02.087|6.9|MEDIUM|CWE-74|N/A|false|A weakness has been identified in itsourcecode Payroll Management System 1.0. Affected by this issue is some unknown functionality of the file /view_employee.php of the component Parameter Handler. Executing a manipulation of the argument ID can lead to sql injection. The attack may be performed from remote. The exploit has been made available to the public and could be used for attacks.|https://nvd.nist.gov/vuln/detail/CVE-2026-5238|0.00000|0.00000
-  CVE-2026-4668|2026-04-01T00:16:01.887|2026-04-01T00:16:01.887|6.5|MEDIUM|CWE-89|N/A|false|The Booking for Appointments and Events Calendar - Amelia plugin for WordPress is vulnerable to SQL Injection via the `sort` parameter in the payments listing endpoint in all versions up to, and including, 2.1.2. This is due to insufficient escaping on the user-supplied `sort` parameter and lack of sufficient preparation on the existing SQL query in `PaymentRepository.php`, where the sort field is interpolated directly into an ORDER BY clause without sanitization or whitelist validation. PDO prepared statements do not protect ORDER BY column names. GET requests also skip Amelia's nonce validation entirely. This makes it possible for authenticated attackers, with Manager-level (`wpamelia-manager`) access and above, to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database via time-based blind SQL injection.|https://nvd.nist.gov/vuln/detail/CVE-2026-4668|0.00000|0.00000
+cves[77]{cveId:str|published:str|lastModified:str|cvssScore:f64|severity:str|cweId:str|cweName:str|kev:bool|description:str|nvdUrl:str|epssScore:f64|epssPercentile:f64|vapScore:f64}:
+  CVE-2026-29014|2026-04-01T13:16:35.063|2026-04-01T13:16:35.063|9.3|CRITICAL|CWE-94|N/A|false|MetInfo CMS versions 7.9, 8.0, and 8.1 contain an unauthenticated PHP code injection vulnerability that allows remote attackers to execute arbitrary code by sending crafted requests with malicious PHP code. Attackers can exploit insufficient input neutralization in the execution path to achieve remote code execution and gain full control over the affected server.|https://nvd.nist.gov/vuln/detail/CVE-2026-29014|0.00000|0.00000|6.5100
+  CVE-2026-22768|2026-04-01T13:16:33.950|2026-04-01T13:16:33.950|7.3|HIGH|CWE-732|N/A|false|Dell AppSync, version(s) 4.6.0, contain(s) an Incorrect Permission Assignment for Critical Resource vulnerability. A low privileged attacker with local access could potentially exploit this vulnerability, leading to Elevation of privileges.|https://nvd.nist.gov/vuln/detail/CVE-2026-22768|0.00000|0.00000|5.1100
+  CVE-2026-22767|2026-04-01T13:16:33.150|2026-04-01T13:16:33.150|7.3|HIGH|CWE-61|N/A|false|Dell AppSync, version(s) 4.6.0, contain(s) an UNIX Symbolic Link (Symlink) Following vulnerability. A low privileged attacker with local access could potentially exploit this vulnerability, leading to Information tampering.|https://nvd.nist.gov/vuln/detail/CVE-2026-22767|0.00000|0.00000|5.1100
+  CVE-2026-25601|2026-04-01T12:16:02.587|2026-04-01T12:16:02.587|6.4|MEDIUM|CWE-798|N/A|false|"A vulnerability was identified in MEPIS RM, an industrial
+software product developed by Metronik. The application contained a hardcoded
+cryptographic key within the Mx.Web.ComponentModel.dll component. When the
+option to store domain passwords was enabled, this key was used to encrypt user
+passwords before storing them in the application’s database. An attacker with
+sufficient privileges to access the database could extract the encrypted
+passwords, decrypt them using the embedded key, and gain unauthorized access to
+the associated ICS/OT environment."|https://nvd.nist.gov/vuln/detail/CVE-2026-25601|0.00000|0.00000|4.4800
+  CVE-2026-24096|2026-04-01T11:15:58.423|2026-04-01T11:15:58.423|5.3|MEDIUM|CWE-280|N/A|false|Insufficient permission validation on multiple REST API Quick Setup endpoints in Checkmk 2.5.0 (beta) before version 2.5.0b2 and 2.4.0 before version 2.4.0p25 allows low-privileged users to perform unauthorized actions or obtain sensitive information|https://nvd.nist.gov/vuln/detail/CVE-2026-24096|0.00000|0.00000|3.7100
+  CVE-2026-0932|2026-04-01T11:15:58.263|2026-04-01T11:15:58.263|6.9|MEDIUM|CWE-918|N/A|false|Blind server-side request forgery (SSRF) vulnerability in legacy connection methods of document co-authoring features in M-Files Server before 26.3 allow an unauthenticated attacker to cause the server to send HTTP GET requests to arbitrary URLs.|https://nvd.nist.gov/vuln/detail/CVE-2026-0932|0.00000|0.00000|4.8300
+  CVE-2026-23899|2026-04-01T10:16:16.543|2026-04-01T10:16:16.543|8.6|HIGH|CWE-284|N/A|false|An improper access check allows unauthorized access to webservice endpoints.|https://nvd.nist.gov/vuln/detail/CVE-2026-23899|0.00000|0.00000|6.0200
+  CVE-2026-23898|2026-04-01T10:16:16.397|2026-04-01T10:16:16.397|8.6|HIGH|CWE-73|N/A|false|Lack of input validation leads to an arbitrary file deletion vulnerability in the autoupdate server mechanism.|https://nvd.nist.gov/vuln/detail/CVE-2026-23898|0.00000|0.00000|6.0200
+  CVE-2026-21632|2026-04-01T10:16:16.250|2026-04-01T10:16:16.250|5.9|MEDIUM|CWE-79|N/A|false|Lack of output escaping for article titles leads to XSS vectors in various locations.|https://nvd.nist.gov/vuln/detail/CVE-2026-21632|0.00000|0.00000|4.1300
+  CVE-2026-21631|2026-04-01T10:16:16.097|2026-04-01T10:16:16.097|5.9|MEDIUM|CWE-79|N/A|false|Lack of output escaping leads to a XSS vector in the multilingual associations component.|https://nvd.nist.gov/vuln/detail/CVE-2026-21631|0.00000|0.00000|4.1300
+  CVE-2026-21630|2026-04-01T10:16:15.943|2026-04-01T10:16:15.943|6.9|MEDIUM|CWE-89|N/A|false|Improperly built order clauses lead to a SQL injection vulnerability in the articles webservice endpoint.|https://nvd.nist.gov/vuln/detail/CVE-2026-21630|0.00000|0.00000|4.8300
+  CVE-2026-21629|2026-04-01T10:16:15.790|2026-04-01T10:16:15.790|6.3|MEDIUM|CWE-284|N/A|false|The ajax component was excluded from the default logged-in-user check in the administrative area. This behavior was potentially unexpected by 3rd party developers.|https://nvd.nist.gov/vuln/detail/CVE-2026-21629|0.00000|0.00000|4.4100
+  CVE-2026-1879|2026-04-01T10:16:15.490|2026-04-01T10:16:15.490|5.3|MEDIUM|CWE-284|N/A|false|A vulnerability was detected in Harvard University IQSS Dataverse up to 6.8. This affects an unknown function of the file /ThemeAndWidgets.xhtml of the component Theme Customization. Performing a manipulation of the argument uploadLogo results in unrestricted upload. Remote exploitation of the attack is possible. The exploit is now public and may be used. Upgrading to version 6.10 mitigates this issue. You should upgrade the affected component. The vendor was contacted early, responded in a very professional manner and quickly released a fixed version of the affected product.|https://nvd.nist.gov/vuln/detail/CVE-2026-1879|0.00000|0.00000|3.7100
+  CVE-2026-5261|2026-04-01T09:16:17.920|2026-04-01T09:16:17.920|6.9|MEDIUM|CWE-284|N/A|false|A vulnerability was identified in Shandong Hoteam InforCenter PLM up to 8.3.8. The impacted element is the function uploadFileToIIS of the file /Base/BaseHandler.ashx. The manipulation of the argument File leads to unrestricted upload. It is possible to initiate the attack remotely. The exploit is publicly available and might be used. The vendor was contacted early about this disclosure but did not respond in any way.|https://nvd.nist.gov/vuln/detail/CVE-2026-5261|0.00000|0.00000|4.8300
+  CVE-2026-4370|2026-04-01T09:16:17.717|2026-04-01T09:16:17.717|10.0|CRITICAL|CWE-295|N/A|false|A vulnerability was identified in Juju from version 3.2.0 until 3.6.19 and from version 4.0 until 4.0.4, where the internal Dqlite database cluster fails to perform proper TLS client and server authentication. Specifically, the Juju controller's database endpoint does not validate client certificates when a new node attempts to join the cluster. An unauthenticated attacker with network reachability to the Juju controller's Dqlite port can exploit this flaw to join the database cluster. Once joined, the attacker gains full read and write access to the underlying database, allowing for total data compromise.|https://nvd.nist.gov/vuln/detail/CVE-2026-4370|0.00000|0.00000|7.0000
+  CVE-2026-34889|2026-04-01T09:16:17.457|2026-04-01T09:16:17.457|6.5|MEDIUM|CWE-79|N/A|false|Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Brainstorm Force Ultimate Addons for WPBakery Page Builder allows DOM-Based XSS.This issue affects Ultimate Addons for WPBakery Page Builder: from n/a before 3.21.4.|https://nvd.nist.gov/vuln/detail/CVE-2026-34889|0.00000|0.00000|4.5500
+  CVE-2026-5259|2026-04-01T08:16:05.723|2026-04-01T08:16:05.723|5.3|MEDIUM|CWE-918|N/A|false|A vulnerability was determined in AutohomeCorp frostmourne up to 1.0. The affected element is an unknown function of the file frostmourne-monitor/src/main/java/com/autohome/frostmourne/monitor/controller/AlarmController.java of the component Alarm Preview. Executing a manipulation can lead to server-side request forgery. The attack may be performed from remote. The exploit has been publicly disclosed and may be utilized.|https://nvd.nist.gov/vuln/detail/CVE-2026-5259|0.00000|0.00000|3.7100
+  CVE-2026-28265|2026-04-01T08:16:05.490|2026-04-01T08:16:05.490|4.4|MEDIUM|CWE-35|N/A|false|PowerStore, contains a Path Traversal vulnerability in the Service user. A low privileged attacker with local access could potentially exploit this vulnerability, leading to modification of arbitrary system files.|https://nvd.nist.gov/vuln/detail/CVE-2026-28265|0.00000|0.00000|3.0800
+  CVE-2026-27101|2026-04-01T08:16:05.270|2026-04-01T08:16:05.270|4.7|MEDIUM|CWE-22|N/A|false|Dell Secure Connect Gateway (SCG) 5.0 Appliance and Application version(s) 5.28.00.xx to 5.32.00.xx, contain(s) an Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal') vulnerability. A high privileged attacker within the management network could potentially exploit this vulnerability, leading to remote execution.|https://nvd.nist.gov/vuln/detail/CVE-2026-27101|0.00000|0.00000|3.2900
+  CVE-2026-5258|2026-04-01T07:16:02.930|2026-04-01T07:16:02.930|6.9|MEDIUM|CWE-22|N/A|false|A vulnerability was found in Sanster IOPaint 1.5.3. Impacted is the function _get_file of the file iopaint/file_manager/file_manager.py of the component File Manager. Performing a manipulation of the argument filename results in path traversal. The attack is possible to be carried out remotely. The exploit has been made public and could be used. The vendor was contacted early about this disclosure but did not respond in any way.|https://nvd.nist.gov/vuln/detail/CVE-2026-5258|0.00000|0.00000|4.8300
+  CVE-2026-5257|2026-04-01T06:16:16.363|2026-04-01T06:16:16.363|6.9|MEDIUM|CWE-74|N/A|false|A vulnerability has been found in code-projects Simple Laundry System 1.0. This issue affects some unknown processing of the file /delstaffinfo.php of the component Parameter Handler. Such manipulation of the argument userid leads to sql injection. The attack can be executed remotely. The exploit has been disclosed to the public and may be used.|https://nvd.nist.gov/vuln/detail/CVE-2026-5257|0.00000|0.00000|4.8300
+  CVE-2026-5256|2026-04-01T06:16:16.123|2026-04-01T06:16:16.123|6.9|MEDIUM|CWE-74|N/A|false|A flaw has been found in code-projects Simple Laundry System 1.0. This vulnerability affects unknown code of the file /modify.php of the component Parameter Handler. This manipulation of the argument firstName causes sql injection. Remote exploitation of the attack is possible. The exploit has been published and may be used.|https://nvd.nist.gov/vuln/detail/CVE-2026-5256|0.00000|0.00000|4.8300
+  CVE-2026-5255|2026-04-01T06:16:15.503|2026-04-01T06:16:15.503|5.3|MEDIUM|CWE-79|N/A|false|A vulnerability was detected in code-projects Simple Laundry System 1.0. This affects an unknown part of the file /delstaffinfo.php of the component Parameter Handler. The manipulation of the argument userid results in cross site scripting. The attack may be launched remotely. The exploit is now public and may be used.|https://nvd.nist.gov/vuln/detail/CVE-2026-5255|0.00000|0.00000|3.7100
+  CVE-2026-2696|2026-04-01T06:16:15.380|2026-04-01T06:16:15.380|0.0|NONE|N/A|N/A|false|The Export All URLs WordPress plugin before 5.1 generates CSV filenames containing posts URLS (including private posts) in a predictable pattern using a random 6-digit number. These files are stored in the publicly accessible wp-content/uploads/ directory. As a result, any unauthenticated user can brute-force the filenames to gain access to sensitive data contained within the exported files.|https://nvd.nist.gov/vuln/detail/CVE-2026-2696|0.00000|0.00000|0.0000
+  CVE-2025-15484|2026-04-01T06:16:14.133|2026-04-01T06:16:14.133|0.0|NONE|N/A|N/A|false|The Order Notification for WooCommerce  WordPress plugin before 3.6.3 overrides WooCommerce's permission checks to grant full access to all unauthenticated requests, enabling complete read/write access to store resources like products, coupons, and customers.|https://nvd.nist.gov/vuln/detail/CVE-2025-15484|0.00000|0.00000|0.0000
+  CVE-2026-5292|2026-04-01T05:16:02.853|2026-04-01T05:16:02.853|0.0|NONE|CWE-125|N/A|false|Out of bounds read in WebCodecs in Google Chrome prior to 146.0.7680.178 allowed a remote attacker to perform an out of bounds memory read via a crafted HTML page. (Chromium security severity: Medium)|https://nvd.nist.gov/vuln/detail/CVE-2026-5292|0.00000|0.00000|0.0000
+  CVE-2026-5291|2026-04-01T05:16:02.743|2026-04-01T05:16:02.743|0.0|NONE|N/A|N/A|false|Inappropriate implementation in WebGL in Google Chrome prior to 146.0.7680.178 allowed a remote attacker to obtain potentially sensitive information from process memory via a crafted HTML page. (Chromium security severity: Medium)|https://nvd.nist.gov/vuln/detail/CVE-2026-5291|0.00000|0.00000|0.0000
+  CVE-2026-5290|2026-04-01T05:16:02.607|2026-04-01T05:16:02.607|0.0|NONE|CWE-416|N/A|false|Use after free in Compositing in Google Chrome prior to 146.0.7680.178 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: High)|https://nvd.nist.gov/vuln/detail/CVE-2026-5290|0.00000|0.00000|0.0000
+  CVE-2026-5289|2026-04-01T05:16:02.480|2026-04-01T05:16:02.480|0.0|NONE|CWE-416|N/A|false|Use after free in Navigation in Google Chrome prior to 146.0.7680.178 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: High)|https://nvd.nist.gov/vuln/detail/CVE-2026-5289|0.00000|0.00000|0.0000
+  CVE-2026-5288|2026-04-01T05:16:02.343|2026-04-01T05:16:02.343|0.0|NONE|CWE-416|N/A|false|Use after free in WebView in Google Chrome on Android prior to 146.0.7680.178 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: High)|https://nvd.nist.gov/vuln/detail/CVE-2026-5288|0.00000|0.00000|0.0000
+  CVE-2026-5287|2026-04-01T05:16:02.213|2026-04-01T05:16:02.213|0.0|NONE|CWE-416|N/A|false|Use after free in PDF in Google Chrome prior to 146.0.7680.178 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted PDF file. (Chromium security severity: High)|https://nvd.nist.gov/vuln/detail/CVE-2026-5287|0.00000|0.00000|0.0000
+  CVE-2026-5286|2026-04-01T05:16:02.080|2026-04-01T05:16:02.080|0.0|NONE|CWE-416|N/A|false|Use after free in Dawn in Google Chrome prior to 146.0.7680.178 allowed a remote attacker to execute arbitrary code via a crafted HTML page. (Chromium security severity: High)|https://nvd.nist.gov/vuln/detail/CVE-2026-5286|0.00000|0.00000|0.0000
+  CVE-2026-5285|2026-04-01T05:16:01.953|2026-04-01T05:16:01.953|0.0|NONE|CWE-416|N/A|false|Use after free in WebGL in Google Chrome prior to 146.0.7680.178 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: High)|https://nvd.nist.gov/vuln/detail/CVE-2026-5285|0.00000|0.00000|0.0000
+  CVE-2026-5284|2026-04-01T05:16:01.817|2026-04-01T05:16:01.817|0.0|NONE|CWE-416|N/A|false|Use after free in Dawn in Google Chrome prior to 146.0.7680.178 allowed a remote attacker who had compromised the renderer process to execute arbitrary code via a crafted HTML page. (Chromium security severity: High)|https://nvd.nist.gov/vuln/detail/CVE-2026-5284|0.00000|0.00000|0.0000
+  CVE-2026-5283|2026-04-01T05:16:01.717|2026-04-01T05:16:01.717|0.0|NONE|N/A|N/A|false|Inappropriate implementation in ANGLE in Google Chrome prior to 146.0.7680.178 allowed a remote attacker to leak cross-origin data via a crafted HTML page. (Chromium security severity: High)|https://nvd.nist.gov/vuln/detail/CVE-2026-5283|0.00000|0.00000|0.0000
+  CVE-2026-5282|2026-04-01T05:16:01.577|2026-04-01T05:16:01.577|0.0|NONE|CWE-125|N/A|false|Out of bounds read in WebCodecs in Google Chrome prior to 146.0.7680.178 allowed a remote attacker to perform an out of bounds memory read via a crafted HTML page. (Chromium security severity: High)|https://nvd.nist.gov/vuln/detail/CVE-2026-5282|0.00000|0.00000|0.0000
+  CVE-2026-5281|2026-04-01T05:16:01.440|2026-04-01T05:16:01.440|0.0|NONE|CWE-416|N/A|false|Use after free in Dawn in Google Chrome prior to 146.0.7680.178 allowed a remote attacker who had compromised the renderer process to execute arbitrary code via a crafted HTML page. (Chromium security severity: High)|https://nvd.nist.gov/vuln/detail/CVE-2026-5281|0.00000|0.00000|0.0000
+  CVE-2026-5280|2026-04-01T05:16:01.310|2026-04-01T05:16:01.310|0.0|NONE|CWE-416|N/A|false|Use after free in WebCodecs in Google Chrome prior to 146.0.7680.178 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: High)|https://nvd.nist.gov/vuln/detail/CVE-2026-5280|0.00000|0.00000|0.0000
+  CVE-2026-5279|2026-04-01T05:16:01.200|2026-04-01T05:16:01.200|0.0|NONE|N/A|N/A|false|Object corruption in V8 in Google Chrome prior to 146.0.7680.178 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: High)|https://nvd.nist.gov/vuln/detail/CVE-2026-5279|0.00000|0.00000|0.0000
+  CVE-2026-5278|2026-04-01T05:16:01.070|2026-04-01T05:16:01.070|0.0|NONE|CWE-416|N/A|false|Use after free in Web MIDI in Google Chrome on Android prior to 146.0.7680.178 allowed a remote attacker to execute arbitrary code via a crafted HTML page. (Chromium security severity: High)|https://nvd.nist.gov/vuln/detail/CVE-2026-5278|0.00000|0.00000|0.0000
+  CVE-2026-5277|2026-04-01T05:16:00.933|2026-04-01T05:16:00.933|0.0|NONE|CWE-472|N/A|false|Integer overflow in ANGLE in Google Chrome on Windows prior to 146.0.7680.178 allowed a remote attacker who had compromised the renderer process to perform an out of bounds memory write via a crafted HTML page. (Chromium security severity: High)|https://nvd.nist.gov/vuln/detail/CVE-2026-5277|0.00000|0.00000|0.0000
+  CVE-2026-5276|2026-04-01T05:16:00.830|2026-04-01T05:16:00.830|0.0|NONE|N/A|N/A|false|Insufficient policy enforcement in WebUSB in Google Chrome prior to 146.0.7680.178 allowed a remote attacker to obtain potentially sensitive information from process memory via a crafted HTML page. (Chromium security severity: High)|https://nvd.nist.gov/vuln/detail/CVE-2026-5276|0.00000|0.00000|0.0000
+  CVE-2026-5275|2026-04-01T05:16:00.693|2026-04-01T05:16:00.693|0.0|NONE|CWE-122|N/A|false|Heap buffer overflow in ANGLE in Google Chrome on Mac prior to 146.0.7680.178 allowed a remote attacker to execute arbitrary code via a crafted HTML page. (Chromium security severity: High)|https://nvd.nist.gov/vuln/detail/CVE-2026-5275|0.00000|0.00000|0.0000
+  CVE-2026-5274|2026-04-01T05:16:00.560|2026-04-01T05:16:00.560|0.0|NONE|CWE-472|N/A|false|Integer overflow in Codecs in Google Chrome prior to 146.0.7680.178 allowed a remote attacker to perform arbitrary read/write via a crafted HTML page. (Chromium security severity: High)|https://nvd.nist.gov/vuln/detail/CVE-2026-5274|0.00000|0.00000|0.0000
+  CVE-2026-5273|2026-04-01T05:16:00.427|2026-04-01T05:16:00.427|0.0|NONE|CWE-416|N/A|false|Use after free in CSS in Google Chrome prior to 146.0.7680.178 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: High)|https://nvd.nist.gov/vuln/detail/CVE-2026-5273|0.00000|0.00000|0.0000
+  CVE-2026-5272|2026-04-01T05:16:00.287|2026-04-01T05:16:00.287|0.0|NONE|CWE-122|N/A|false|Heap buffer overflow in GPU in Google Chrome prior to 146.0.7680.178 allowed a remote attacker to execute arbitrary code via a crafted HTML page. (Chromium security severity: High)|https://nvd.nist.gov/vuln/detail/CVE-2026-5272|0.00000|0.00000|0.0000
+  CVE-2026-5254|2026-04-01T05:15:59.983|2026-04-01T05:15:59.983|5.1|MEDIUM|CWE-79|N/A|false|A security vulnerability has been detected in welovemedia FFmate up to 2.0.15. Affected by this issue is some unknown functionality of the file /ui/app/components/AppJsonTreeView.vue of the component Webhook Handler. The manipulation leads to cross site scripting. The attack may be initiated remotely. The exploit has been disclosed publicly and may be used. The vendor was contacted early about this disclosure but did not respond in any way.|https://nvd.nist.gov/vuln/detail/CVE-2026-5254|0.00000|0.00000|3.5700
+  CVE-2026-5253|2026-04-01T04:17:12.690|2026-04-01T04:17:12.690|5.1|MEDIUM|CWE-79|N/A|false|A weakness has been identified in bufanyun HotGo 1.0/2.0. Affected by this vulnerability is an unknown functionality of the file /web/src/layout/components/Header/MessageList.vue of the component editNotice Endpoint. Executing a manipulation can lead to cross site scripting. The attack can be launched remotely. The exploit has been made available to the public and could be used for attacks. The vendor was contacted early about this disclosure but did not respond in any way.|https://nvd.nist.gov/vuln/detail/CVE-2026-5253|0.00000|0.00000|3.5700
+  CVE-2026-5252|2026-04-01T04:17:11.457|2026-04-01T04:17:11.457|5.1|MEDIUM|CWE-79|N/A|false|A security flaw has been discovered in z-9527 admin 1.0/2.0. Affected is an unknown function of the file /server/routes/message.js of the component Message Create Endpoint. Performing a manipulation results in cross site scripting. The attack can be initiated remotely. The exploit has been released to the public and may be used for attacks. The vendor was contacted early about this disclosure but did not respond in any way.|https://nvd.nist.gov/vuln/detail/CVE-2026-5252|0.00000|0.00000|3.5700
+  CVE-2026-5251|2026-04-01T03:15:59.050|2026-04-01T03:15:59.050|5.3|MEDIUM|CWE-913|N/A|false|A vulnerability was identified in z-9527 admin 1.0/2.0. This impacts an unknown function of the file /server/routes/user.js of the component User Update Endpoint. Such manipulation of the argument isAdmin with the input 1 leads to dynamically-determined object attributes. It is possible to launch the attack remotely. The exploit is publicly available and might be used. The vendor was contacted early about this disclosure but did not respond in any way.|https://nvd.nist.gov/vuln/detail/CVE-2026-5251|0.00000|0.00000|3.7100
+  CVE-2026-5249|2026-04-01T02:16:03.890|2026-04-01T02:16:03.890|5.1|MEDIUM|CWE-79|N/A|false|A vulnerability was found in gougucms 4.08.18. This impacts an unknown function of the file \gougucms-master\app\admin\view\user\record.html of the component Record Endpoint. Performing a manipulation of the argument value.content results in cross site scripting. It is possible to initiate the attack remotely. The exploit has been made public and could be used. The vendor was contacted early about this disclosure but did not respond in any way.|https://nvd.nist.gov/vuln/detail/CVE-2026-5249|0.00000|0.00000|3.5700
+  CVE-2026-4947|2026-04-01T02:16:03.740|2026-04-01T02:16:03.740|7.1|HIGH|CWE-284|N/A|false|Addressed a potential insecure direct object reference (IDOR) vulnerability in the signing invitation acceptance process. Under certain conditions, this issue could have allowed an attacker to access or modify unauthorized resources by manipulating user-supplied object identifiers, potentially leading to forged signatures and compromising the integrity and authenticity of documents undergoing the signing process. The issue was caused by insufficient authorization validation on referenced resources during request processing.|https://nvd.nist.gov/vuln/detail/CVE-2026-4947|0.00000|0.00000|4.9700
+  CVE-2026-4374|2026-04-01T02:16:03.540|2026-04-01T02:16:03.540|8.8|HIGH|CWE-611|N/A|false|Improper Restriction of XML External Entity Reference vulnerability in RTI Connext Professional (Routing Service,Observability Collector,Recording Service,Queueing Service,Cloud Discovery Service) allows Serialized Data External Linking, Data Serializat...|https://nvd.nist.gov/vuln/detail/CVE-2026-4374|0.00000|0.00000|6.1600
+  CVE-2026-3831|2026-04-01T02:16:03.357|2026-04-01T02:16:03.357|4.3|MEDIUM|CWE-862|N/A|false|The Database for Contact Form 7, WPforms, Elementor forms plugin for WordPress is vulnerable to unauthorized access of data due to a missing capability check on the entries_shortcode() function in all versions up to, and including, 1.4.9. This makes it possible for authenticated attackers, with Contributor-level access and above, to extract all form submissions - including names, emails, phone numbers.|https://nvd.nist.gov/vuln/detail/CVE-2026-3831|0.00000|0.00000|3.0100
+  CVE-2026-3780|2026-04-01T02:16:03.183|2026-04-01T02:16:03.183|7.3|HIGH|CWE-426|N/A|false|The application's installer runs with elevated privileges but resolves system executables and DLLs using untrusted search paths that can include user-writable directories, allowing a local attacker to place malicious binaries with the same names and have them loaded or executed instead of the legitimate system files, resulting in local privilege escalation.|https://nvd.nist.gov/vuln/detail/CVE-2026-3780|0.00000|0.00000|5.1100
+  CVE-2026-3779|2026-04-01T02:16:03.043|2026-04-01T04:16:54.060|7.8|HIGH|CWE-416|N/A|false|The application's list box calculate array logic keeps stale references to page or form objects after they are deleted or re-created, which allows crafted documents to trigger a use-after-free when the calculation runs and can potentially lead to arbitrary code execution.|https://nvd.nist.gov/vuln/detail/CVE-2026-3779|0.00000|0.00000|5.4600
+  CVE-2026-3778|2026-04-01T02:16:02.897|2026-04-01T02:16:02.897|6.2|MEDIUM|CWE-674|N/A|false|The application does not detect or guard against cyclic PDF object references while handling JavaScript in PDF. When pages and annotations are crafted that reference each other in a loop, passing the document to APIs (e.g., SOAP) that perform deep traversal can cause uncontrolled recursion, stack exhaustion, and application crashes.|https://nvd.nist.gov/vuln/detail/CVE-2026-3778|0.00000|0.00000|4.3400
+  CVE-2026-3777|2026-04-01T02:16:02.737|2026-04-01T02:16:02.737|5.5|MEDIUM|CWE-416|N/A|false|The application does not properly validate the lifetime and validity of internal view cache pointers after JavaScript changes the document zoom and page state. When a script modifies the zoom property and then triggers a page change, the original view object may be destroyed while stale pointers are still kept and later dereferenced, which under crafted JavaScript and document structures can lead to a use-after-free condition and potentially allow arbitrary code execution.|https://nvd.nist.gov/vuln/detail/CVE-2026-3777|0.00000|0.00000|3.8500
+  CVE-2026-3776|2026-04-01T02:16:02.590|2026-04-01T02:16:02.590|5.5|MEDIUM|CWE-476|N/A|false|The application does not validate the presence of required appearance (AP) data before accessing stamp annotation resources. When a PDF contains a stamp annotation missing its AP entry, the code continues to dereference the associated object without a prior null or validity check, which allows a crafted document to trigger a null pointer dereference and crash the application, resulting in denial of service.|https://nvd.nist.gov/vuln/detail/CVE-2026-3776|0.00000|0.00000|3.8500
+  CVE-2026-3775|2026-04-01T02:16:02.440|2026-04-01T02:16:02.440|7.8|HIGH|CWE-427|N/A|false|The application's update service, when checking for updates, loads certain system libraries from a search path that includes directories writable by low‑privileged users and is not strictly restricted to trusted system locations. Because these libraries may be resolved and loaded from user‑writable locations, a local attacker can place a malicious library there and have it loaded with SYSTEM privileges, resulting in local privilege escalation and arbitrary code execution.|https://nvd.nist.gov/vuln/detail/CVE-2026-3775|0.00000|0.00000|5.4600
+  CVE-2026-3774|2026-04-01T02:16:02.287|2026-04-01T02:16:02.287|4.7|MEDIUM|CWE-200|N/A|false|The application allows PDF JavaScript and document/print actions (such as WillPrint/DidPrint) to update form fields, annotations, or optional content groups (OCGs) immediately before or after redaction, encryption, or printing. These script‑driven updates are not fully covered by the existing redaction, encryption, and printing logic, which, under specific document structures and user workflows, may cause a small amount of sensitive content to remain unremoved or unencrypted as expected, or result in printed output that slightly differs from what was reviewed on screen.|https://nvd.nist.gov/vuln/detail/CVE-2026-3774|0.00000|0.00000|3.2900
+  CVE-2026-5248|2026-04-01T01:16:41.990|2026-04-01T01:16:41.990|5.3|MEDIUM|CWE-913|N/A|false|A vulnerability has been found in gougucms 4.08.18. This affects the function reg_submit of the file gougucms-master\app\home\controller\Login.php of the component User Registration Handler. Such manipulation of the argument level leads to dynamically-determined object attributes. The attack may be performed from remote. The exploit has been disclosed to the public and may be used. The vendor was contacted early about this disclosure but did not respond in any way.|https://nvd.nist.gov/vuln/detail/CVE-2026-5248|0.00000|0.00000|3.7100
+  CVE-2026-35057|2026-04-01T01:16:41.790|2026-04-01T03:15:58.883|5.1|MEDIUM|CWE-79|N/A|false|XenForo before 2.3.10 and before 2.2.19 is vulnerable to stored cross-site scripting (XSS) in structured text mentions, primarily affecting legacy profile post content. An attacker can inject malicious scripts through crafted mentions that are stored and executed when other users view the content.|https://nvd.nist.gov/vuln/detail/CVE-2026-35057|0.00000|0.00000|3.5700
+  CVE-2026-35056|2026-04-01T01:16:41.593|2026-04-01T01:16:41.593|8.7|HIGH|CWE-94|N/A|false|XenForo before 2.3.9 and before 2.2.18 allows remote code execution (RCE) by authenticated, but malicious, admin users. An attacker with admin panel access can execute arbitrary code on the server.|https://nvd.nist.gov/vuln/detail/CVE-2026-35056|0.00000|0.00000|6.0900
+  CVE-2026-35055|2026-04-01T01:16:41.397|2026-04-01T01:16:41.397|5.1|MEDIUM|CWE-79|N/A|false|XenForo before 2.3.9 and before 2.2.18 is vulnerable to cross-site scripting (XSS) related to lightbox usage in posts. An attacker can inject malicious scripts that execute when users interact with post content displayed in the lightbox.|https://nvd.nist.gov/vuln/detail/CVE-2026-35055|0.00000|0.00000|3.5700
+  CVE-2026-35054|2026-04-01T01:16:41.200|2026-04-01T01:16:41.200|5.1|MEDIUM|CWE-79|N/A|false|XenForo before 2.3.9 is vulnerable to stored cross-site scripting (XSS) related to BB code rendering. An attacker can inject malicious scripts through BB code that are stored and executed when other users view the content.|https://nvd.nist.gov/vuln/detail/CVE-2026-35054|0.00000|0.00000|3.5700
+  CVE-2026-2394|2026-04-01T01:16:40.990|2026-04-01T01:16:40.990|6.3|MEDIUM|CWE-126|N/A|false|Buffer Over-read vulnerability in RTI Connext Professional (Core Libraries) allows Overread Buffers.This issue affects Connext Professional: from 7.4.0 before 7.7.0, from 7.0.0 before 7.3.1.1, from 6.1.0 before 6.1.*, from 6.0.0 before 6.0.*, from 5.3.0 before 5.3.*, from 4.3x before 5.2.*.|https://nvd.nist.gov/vuln/detail/CVE-2026-2394|0.00000|0.00000|4.4100
+  CVE-2025-71282|2026-04-01T01:16:40.797|2026-04-01T01:16:40.797|8.7|HIGH|CWE-209|N/A|false|XenForo before 2.3.7 discloses filesystem paths through exception messages triggered by open_basedir restrictions. This allows an attacker to obtain information about the server's directory structure.|https://nvd.nist.gov/vuln/detail/CVE-2025-71282|0.00000|0.00000|6.0900
+  CVE-2025-71281|2026-04-01T01:16:40.590|2026-04-01T01:16:40.590|8.7|HIGH|CWE-94|N/A|false|XenForo before 2.3.7 does not properly restrict methods callable from within templates. A loose prefix match was used instead of a stricter first-word match for methods accessible through callbacks and variable method calls in templates, potentially allowing unauthorized method invocations.|https://nvd.nist.gov/vuln/detail/CVE-2025-71281|0.00000|0.00000|6.0900
+  CVE-2025-71280|2026-04-01T01:16:40.393|2026-04-01T01:16:40.393|6.9|MEDIUM|CWE-200|N/A|false|XenForo before 2.3.7 allows information disclosure via local account page caching on shared systems. On systems where multiple users share a browser or machine, cached account pages could expose sensitive user information to other local users.|https://nvd.nist.gov/vuln/detail/CVE-2025-71280|0.00000|0.00000|4.8300
+  CVE-2025-71279|2026-04-01T01:16:40.200|2026-04-01T01:16:40.200|9.3|CRITICAL|CWE-287|N/A|false|XenForo before 2.3.7 contains a security issue affecting Passkeys that have been added to user accounts. An attacker may be able to compromise the security of Passkey-based authentication.|https://nvd.nist.gov/vuln/detail/CVE-2025-71279|0.00000|0.00000|6.5100
+  CVE-2025-71278|2026-04-01T01:16:40.000|2026-04-01T01:16:40.000|8.7|HIGH|CWE-863|N/A|false|XenForo before 2.3.5 allows OAuth2 client applications to request unauthorized scopes. This affects any customer using OAuth2 clients on any version of XenForo 2.3 prior to 2.3.5, potentially allowing client applications to gain access beyond their intended authorization level.|https://nvd.nist.gov/vuln/detail/CVE-2025-71278|0.00000|0.00000|6.0900
+  CVE-2025-13855|2026-04-01T01:16:39.360|2026-04-01T01:16:39.360|7.6|HIGH|CWE-89|N/A|false|IBM Storage Protect Server 8.2.0 IBM Storage Protect Plus Server is vulnerable to SQL injection. A remote attacker could send specially crafted SQL statements, which could allow the attacker to view, add, modify, or delete information in the back-end database.|https://nvd.nist.gov/vuln/detail/CVE-2025-13855|0.00000|0.00000|5.3200
+  CVE-2024-58342|2026-04-01T01:16:39.100|2026-04-01T01:16:39.100|5.3|MEDIUM|CWE-601|N/A|false|XenForo before 2.2.17 and 2.3.1 allows open redirect via a specially crafted URL. The getDynamicRedirect() function does not adequately validate the redirect target, allowing attackers to redirect users to arbitrary external sites using crafted URLs containing newlines, user credentials, or host mismatches.|https://nvd.nist.gov/vuln/detail/CVE-2024-58342|0.00000|0.00000|3.7100
+  CVE-2026-5240|2026-04-01T00:16:02.427|2026-04-01T00:16:02.427|5.3|MEDIUM|CWE-79|N/A|false|A security vulnerability has been detected in code-projects BloodBank Managing System 1.0. This affects an unknown part of the file /admin_state.php. The manipulation of the argument statename leads to cross site scripting. It is possible to initiate the attack remotely. The exploit has been disclosed publicly and may be used.|https://nvd.nist.gov/vuln/detail/CVE-2026-5240|0.00000|0.00000|3.7100
+  CVE-2026-5238|2026-04-01T00:16:02.087|2026-04-01T00:16:02.087|6.9|MEDIUM|CWE-74|N/A|false|A weakness has been identified in itsourcecode Payroll Management System 1.0. Affected by this issue is some unknown functionality of the file /view_employee.php of the component Parameter Handler. Executing a manipulation of the argument ID can lead to sql injection. The attack may be performed from remote. The exploit has been made available to the public and could be used for attacks.|https://nvd.nist.gov/vuln/detail/CVE-2026-5238|0.00000|0.00000|4.8300
+  CVE-2026-4668|2026-04-01T00:16:01.887|2026-04-01T00:16:01.887|6.5|MEDIUM|CWE-89|N/A|false|The Booking for Appointments and Events Calendar - Amelia plugin for WordPress is vulnerable to SQL Injection via the `sort` parameter in the payments listing endpoint in all versions up to, and including, 2.1.2. This is due to insufficient escaping on the user-supplied `sort` parameter and lack of sufficient preparation on the existing SQL query in `PaymentRepository.php`, where the sort field is interpolated directly into an ORDER BY clause without sanitization or whitelist validation. PDO prepared statements do not protect ORDER BY column names. GET requests also skip Amelia's nonce validation entirely. This makes it possible for authenticated attackers, with Manager-level (`wpamelia-manager`) access and above, to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database via time-based blind SQL injection.|https://nvd.nist.gov/vuln/detail/CVE-2026-4668|0.00000|0.00000|4.5500
