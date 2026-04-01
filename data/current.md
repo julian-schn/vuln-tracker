@@ -1,9 +1,33 @@
 # CVEs — April 2026
 
-_28 vulnerabilities_
+_52 vulnerabilities_
 
 | CVE ID | Score | Severity | CWE | KEV | Published | Description |
 |--------|-------|----------|-----|-----|-----------|-------------|
+| [CVE-2026-5292](https://nvd.nist.gov/vuln/detail/CVE-2026-5292) | 0.0 | NONE | CWE-125 | No | 2026-04-01 | Out of bounds read in WebCodecs in Google Chrome prior to 146.0.7680.178 allowed a remote attacker to perform an out of... |
+| [CVE-2026-5291](https://nvd.nist.gov/vuln/detail/CVE-2026-5291) | 0.0 | NONE | N/A | No | 2026-04-01 | Inappropriate implementation in WebGL in Google Chrome prior to 146.0.7680.178 allowed a remote attacker to obtain poten... |
+| [CVE-2026-5290](https://nvd.nist.gov/vuln/detail/CVE-2026-5290) | 0.0 | NONE | CWE-416 | No | 2026-04-01 | Use after free in Compositing in Google Chrome prior to 146.0.7680.178 allowed a remote attacker who had compromised the... |
+| [CVE-2026-5289](https://nvd.nist.gov/vuln/detail/CVE-2026-5289) | 0.0 | NONE | CWE-416 | No | 2026-04-01 | Use after free in Navigation in Google Chrome prior to 146.0.7680.178 allowed a remote attacker who had compromised the... |
+| [CVE-2026-5288](https://nvd.nist.gov/vuln/detail/CVE-2026-5288) | 0.0 | NONE | CWE-416 | No | 2026-04-01 | Use after free in WebView in Google Chrome on Android prior to 146.0.7680.178 allowed a remote attacker who had compromi... |
+| [CVE-2026-5287](https://nvd.nist.gov/vuln/detail/CVE-2026-5287) | 0.0 | NONE | CWE-416 | No | 2026-04-01 | Use after free in PDF in Google Chrome prior to 146.0.7680.178 allowed a remote attacker to execute arbitrary code insid... |
+| [CVE-2026-5286](https://nvd.nist.gov/vuln/detail/CVE-2026-5286) | 0.0 | NONE | CWE-416 | No | 2026-04-01 | Use after free in Dawn in Google Chrome prior to 146.0.7680.178 allowed a remote attacker to execute arbitrary code via... |
+| [CVE-2026-5285](https://nvd.nist.gov/vuln/detail/CVE-2026-5285) | 0.0 | NONE | CWE-416 | No | 2026-04-01 | Use after free in WebGL in Google Chrome prior to 146.0.7680.178 allowed a remote attacker to execute arbitrary code ins... |
+| [CVE-2026-5284](https://nvd.nist.gov/vuln/detail/CVE-2026-5284) | 0.0 | NONE | CWE-416 | No | 2026-04-01 | Use after free in Dawn in Google Chrome prior to 146.0.7680.178 allowed a remote attacker who had compromised the render... |
+| [CVE-2026-5283](https://nvd.nist.gov/vuln/detail/CVE-2026-5283) | 0.0 | NONE | N/A | No | 2026-04-01 | Inappropriate implementation in ANGLE in Google Chrome prior to 146.0.7680.178 allowed a remote attacker to leak cross-o... |
+| [CVE-2026-5282](https://nvd.nist.gov/vuln/detail/CVE-2026-5282) | 0.0 | NONE | CWE-125 | No | 2026-04-01 | Out of bounds read in WebCodecs in Google Chrome prior to 146.0.7680.178 allowed a remote attacker to perform an out of... |
+| [CVE-2026-5281](https://nvd.nist.gov/vuln/detail/CVE-2026-5281) | 0.0 | NONE | CWE-416 | No | 2026-04-01 | Use after free in Dawn in Google Chrome prior to 146.0.7680.178 allowed a remote attacker who had compromised the render... |
+| [CVE-2026-5280](https://nvd.nist.gov/vuln/detail/CVE-2026-5280) | 0.0 | NONE | CWE-416 | No | 2026-04-01 | Use after free in WebCodecs in Google Chrome prior to 146.0.7680.178 allowed a remote attacker to execute arbitrary code... |
+| [CVE-2026-5279](https://nvd.nist.gov/vuln/detail/CVE-2026-5279) | 0.0 | NONE | N/A | No | 2026-04-01 | Object corruption in V8 in Google Chrome prior to 146.0.7680.178 allowed a remote attacker to execute arbitrary code ins... |
+| [CVE-2026-5278](https://nvd.nist.gov/vuln/detail/CVE-2026-5278) | 0.0 | NONE | CWE-416 | No | 2026-04-01 | Use after free in Web MIDI in Google Chrome on Android prior to 146.0.7680.178 allowed a remote attacker to execute arbi... |
+| [CVE-2026-5277](https://nvd.nist.gov/vuln/detail/CVE-2026-5277) | 0.0 | NONE | CWE-472 | No | 2026-04-01 | Integer overflow in ANGLE in Google Chrome on Windows prior to 146.0.7680.178 allowed a remote attacker who had compromi... |
+| [CVE-2026-5276](https://nvd.nist.gov/vuln/detail/CVE-2026-5276) | 0.0 | NONE | N/A | No | 2026-04-01 | Insufficient policy enforcement in WebUSB in Google Chrome prior to 146.0.7680.178 allowed a remote attacker to obtain p... |
+| [CVE-2026-5275](https://nvd.nist.gov/vuln/detail/CVE-2026-5275) | 0.0 | NONE | CWE-122 | No | 2026-04-01 | Heap buffer overflow in ANGLE in Google Chrome on Mac prior to 146.0.7680.178 allowed a remote attacker to execute arbit... |
+| [CVE-2026-5274](https://nvd.nist.gov/vuln/detail/CVE-2026-5274) | 0.0 | NONE | CWE-472 | No | 2026-04-01 | Integer overflow in Codecs in Google Chrome prior to 146.0.7680.178 allowed a remote attacker to perform arbitrary read/... |
+| [CVE-2026-5273](https://nvd.nist.gov/vuln/detail/CVE-2026-5273) | 0.0 | NONE | CWE-416 | No | 2026-04-01 | Use after free in CSS in Google Chrome prior to 146.0.7680.178 allowed a remote attacker to execute arbitrary code insid... |
+| [CVE-2026-5272](https://nvd.nist.gov/vuln/detail/CVE-2026-5272) | 0.0 | NONE | CWE-122 | No | 2026-04-01 | Heap buffer overflow in GPU in Google Chrome prior to 146.0.7680.178 allowed a remote attacker to execute arbitrary code... |
+| [CVE-2026-5254](https://nvd.nist.gov/vuln/detail/CVE-2026-5254) | 5.1 | MEDIUM | CWE-79 | No | 2026-04-01 | A security vulnerability has been detected in welovemedia FFmate up to 2.0.15. Affected by this issue is some unknown fu... |
+| [CVE-2026-5253](https://nvd.nist.gov/vuln/detail/CVE-2026-5253) | 5.1 | MEDIUM | CWE-79 | No | 2026-04-01 | A weakness has been identified in bufanyun HotGo 1.0/2.0. Affected by this vulnerability is an unknown functionality of... |
+| [CVE-2026-5252](https://nvd.nist.gov/vuln/detail/CVE-2026-5252) | 5.1 | MEDIUM | CWE-79 | No | 2026-04-01 | A security flaw has been discovered in z-9527 admin 1.0/2.0. Affected is an unknown function of the file /server/routes/... |
 | [CVE-2026-5251](https://nvd.nist.gov/vuln/detail/CVE-2026-5251) | 5.3 | MEDIUM | CWE-913 | No | 2026-04-01 | A vulnerability was identified in z-9527 admin 1.0/2.0. This impacts an unknown function of the file /server/routes/user... |
 | [CVE-2026-5249](https://nvd.nist.gov/vuln/detail/CVE-2026-5249) | 5.1 | MEDIUM | CWE-79 | No | 2026-04-01 | A vulnerability was found in gougucms 4.08.18. This impacts an unknown function of the file \gougucms-master\app\admin\v... |
 | [CVE-2026-4947](https://nvd.nist.gov/vuln/detail/CVE-2026-4947) | 7.1 | HIGH | CWE-284 | No | 2026-04-01 | Addressed a potential insecure direct object reference (IDOR) vulnerability in the signing invitation acceptance process... |
