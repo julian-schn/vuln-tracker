@@ -1,6 +1,6 @@
 # CVEs — March 2026
 
-_5735 vulnerabilities_
+_5736 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
@@ -1371,7 +1371,7 @@ _5735 vulnerabilities_
 | [CVE-2024-51348](https://nvd.nist.gov/vuln/detail/CVE-2024-51348) | 8.8 | HIGH | CWE-121 | No | 0.2% | 6.17 | 2026-03-25 | A stack-based buffer overflow vulnerability in the P2P API service in BS Producten Petcam with firmware 33.1.0.0818 allo... |
 | [CVE-2024-51347](https://nvd.nist.gov/vuln/detail/CVE-2024-51347) | 7.2 | HIGH | CWE-120 | No | 0.1% | 5.04 | 2026-03-25 | A buffer overflow vulnerability in the dgiot binary in LSC Smart Indoor IP Camera V7.6.32. The flaw exists in the handli... |
 | [CVE-2024-51346](https://nvd.nist.gov/vuln/detail/CVE-2024-51346) | 7.7 | HIGH | CWE-330 | No | 0.0% | 5.39 | 2026-03-25 | An issue in Eufy Homebase 2 version 3.3.4.1h allows a local attacker to obtain sensitive information via the cryptograph... |
-| [CVE-2026-23395](https://nvd.nist.gov/vuln/detail/CVE-2026-23395) | 8.8 | HIGH | N/A | No | 0.0% | 6.16 | 2026-03-25 | In the Linux kernel, the following vulnerability has been resolved:  Bluetooth: L2CAP: Fix accepting multiple L2CAP_ECRE... |
+| [CVE-2026-23360](https://nvd.nist.gov/vuln/detail/CVE-2026-23360) | 0.0 | NONE | N/A | No | 0.0% | 0.00 | 2026-03-25 | In the Linux kernel, the following vulnerability has been resolved:  nvme: fix admin queue leak on controller reset  Whe... |
 | [CVE-2026-32326](https://nvd.nist.gov/vuln/detail/CVE-2026-32326) | 6.9 | MEDIUM | CWE-306 | No | 0.0% | 4.83 | 2026-03-25 | SHARP routers do not perform authentication for some web APIs. The device information may be retrieved without authentic... |
 | [CVE-2026-33253](https://nvd.nist.gov/vuln/detail/CVE-2026-33253) | 8.4 | HIGH | CWE-428 | No | 0.0% | 5.88 | 2026-03-25 | SANUPS SOFTWARE provided by SANYO DENKI CO., LTD. registers Windows services with unquoted file paths. A user with the w... |
 | [CVE-2026-2343](https://nvd.nist.gov/vuln/detail/CVE-2026-2343) | 5.3 | MEDIUM | N/A | No | 0.0% | 3.71 | 2026-03-25 | The PeproDev Ultimate Invoice WordPress plugin through 2.2.5 has a bulk download invoices action that generates ZIP arch... |
@@ -2313,7 +2313,6 @@ _5735 vulnerabilities_
 | [CVE-2026-2432](https://nvd.nist.gov/vuln/detail/CVE-2026-2432) | 4.4 | MEDIUM | CWE-79 | No | 0.0% | 3.08 | 2026-03-20 | The CM Custom Reports – Flexible reporting to track what matters most plugin for WordPress is vulnerable to Stored Cross... |
 | [CVE-2026-2421](https://nvd.nist.gov/vuln/detail/CVE-2026-2421) | 6.5 | MEDIUM | CWE-22 | No | 0.5% | 4.57 | 2026-03-20 | The ilGhera Carta Docente for WooCommerce plugin for WordPress is vulnerable to Path Traversal in all versions up to, an... |
 | [CVE-2026-27625](https://nvd.nist.gov/vuln/detail/CVE-2026-27625) | 8.1 | HIGH | CWE-22 | No | 0.1% | 5.67 | 2026-03-20 | Stirling-PDF is a locally hosted web application that performs various operations on PDF files. In versions prior to 2.5... |
-| [CVE-2026-23278](https://nvd.nist.gov/vuln/detail/CVE-2026-23278) | 7.8 | HIGH | N/A | No | 0.0% | 5.46 | 2026-03-20 | In the Linux kernel, the following vulnerability has been resolved:  netfilter: nf_tables: always walk all pending catch... |
 | [CVE-2026-33065](https://nvd.nist.gov/vuln/detail/CVE-2026-33065) | 6.9 | MEDIUM | CWE-209 | No | 0.0% | 4.83 | 2026-03-20 | Free5GC is an open-source Linux Foundation project for 5th generation (5G) mobile core networks. In versions prior to 1.... |
 | [CVE-2026-33064](https://nvd.nist.gov/vuln/detail/CVE-2026-33064) | 8.7 | HIGH | CWE-478 | No | 0.2% | 6.10 | 2026-03-20 | Free5GC is an open-source Linux Foundation project for 5th generation (5G) mobile core networks. Versions prior to 1.4.2... |
 | [CVE-2026-33061](https://nvd.nist.gov/vuln/detail/CVE-2026-33061) | 5.8 | MEDIUM | CWE-79 | No | 0.0% | 4.06 | 2026-03-20 | Jexactyl is a customisable game management panel and billing system. Commits after 025e8dbb0daaa04054276bda814d922cf4af5... |
@@ -2729,6 +2728,7 @@ _5735 vulnerabilities_
 | [CVE-2026-26948](https://nvd.nist.gov/vuln/detail/CVE-2026-26948) | 4.9 | MEDIUM | CWE-1258 | No | 0.1% | 3.43 | 2026-03-18 | Dell Integrated Dell Remote Access Controller 9, 14G versions prior to 7.00.00.174, 15G and 16G versions prior to 7.10.9... |
 | [CVE-2026-26945](https://nvd.nist.gov/vuln/detail/CVE-2026-26945) | 5.3 | MEDIUM | CWE-114 | No | 0.1% | 3.71 | 2026-03-18 | Dell Integrated Dell Remote Access Controller 9, 14G versions prior to 7.00.00.181, 15G and 16G versions prior to 7.20.1... |
 | [CVE-2026-26740](https://nvd.nist.gov/vuln/detail/CVE-2026-26740) | 8.2 | HIGH | CWE-787 | No | 0.1% | 5.74 | 2026-03-18 | Buffer Overflow vulnerability in giflib v.5.2.2 allows a remote attacker to cause a denial of service via the EGifGCBToE... |
+| [CVE-2026-23255](https://nvd.nist.gov/vuln/detail/CVE-2026-23255) | 0.0 | NONE | N/A | No | 0.0% | 0.00 | 2026-03-18 | In the Linux kernel, the following vulnerability has been resolved:  net: add proper RCU protection to /proc/net/ptype... |
 | [CVE-2026-32610](https://nvd.nist.gov/vuln/detail/CVE-2026-32610) | 8.1 | HIGH | CWE-942 | No | 0.0% | 5.67 | 2026-03-18 | Glances is an open-source system cross-platform monitoring tool. Prior to version 4.5.2, the Glances REST API web server... |
 | [CVE-2026-30695](https://nvd.nist.gov/vuln/detail/CVE-2026-30695) | 6.1 | MEDIUM | CWE-79 | No | 0.0% | 4.27 | 2026-03-18 | A Cross-Site Scripting (XSS) vulnerability exists in the web-based configuration interface of Zucchetti Axess access con... |
 | [CVE-2026-30345](https://nvd.nist.gov/vuln/detail/CVE-2026-30345) | 7.5 | HIGH | CWE-23 | No | 0.0% | 5.25 | 2026-03-18 | A zip slip vulnerability in the Admin import functionality of CTFd v3.8.1-18-gdb5a18c4 allows attackers to write arbitra... |
@@ -4351,6 +4351,7 @@ _5735 vulnerabilities_
 | [CVE-2025-70046](https://nvd.nist.gov/vuln/detail/CVE-2025-70046) | 9.8 | CRITICAL | CWE-829 | No | 0.1% | 6.86 | 2026-03-09 | An issue pertaining to CWE-829: Inclusion of Functionality from Untrusted Control Sphere was discovered in Miazzy oa-fro... |
 | [CVE-2025-70042](https://nvd.nist.gov/vuln/detail/CVE-2025-70042) | 9.8 | CRITICAL | CWE-918 | No | 0.1% | 6.86 | 2026-03-09 | An issue pertaining to CWE-918: Server-Side Request Forgery was discovered in oslabs-beta ThermaKube master. |
 | [CVE-2025-70040](https://nvd.nist.gov/vuln/detail/CVE-2025-70040) | 5.3 | MEDIUM | CWE-532 | No | 0.0% | 3.71 | 2026-03-09 | An issue pertaining to CWE-532: Insertion of Sensitive Information into Log File was discovered in LupinLin1 jimeng-web-... |
+| [CVE-2024-14027](https://nvd.nist.gov/vuln/detail/CVE-2024-14027) | 0.0 | NONE | N/A | No | 0.0% | 0.00 | 2026-03-09 | In the Linux kernel, the following vulnerability has been resolved:  fs/xattr: missing fdput() in fremovexattr error pat... |
 | [CVE-2025-70250](https://nvd.nist.gov/vuln/detail/CVE-2025-70250) | 7.5 | HIGH | CWE-121 | No | 0.1% | 5.25 | 2026-03-09 | Stack buffer overflow vulnerability in D-Link DIR-513 v1.10 via the curTime parameter to goform/formdumpeasysetup. |
 | [CVE-2025-70243](https://nvd.nist.gov/vuln/detail/CVE-2025-70243) | 7.5 | HIGH | CWE-121 | No | 0.1% | 5.25 | 2026-03-09 | Stack buffer overflow vulnerability in D-Link DIR-513 v1.10 via the curTime parameter to goform/formSetWAN_Wizard534. |
 | [CVE-2025-70238](https://nvd.nist.gov/vuln/detail/CVE-2025-70238) | 7.5 | HIGH | CWE-121 | No | 0.1% | 5.25 | 2026-03-09 | Stack buffer overflow vulnerability in D-Link DIR-513 v1.10 via the curTime parameter to goform/formSetWAN_Wizard52. |

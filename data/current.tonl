@@ -1,15 +1,165 @@
 #version 1.0
 #delimiter "|"
 
-cves[240]{cveId:str|published:str|lastModified:str|cvssScore:f64|severity:str|cweId:str|cweName:str|kev:bool|description:str|nvdUrl:str|epssScore:f64|epssPercentile:f64|vapScore:f64}:
+cves[259]{cveId:str|published:str|lastModified:str|cvssScore:f64|severity:str|cweId:str|cweName:str|kev:bool|description:str|nvdUrl:str|epssScore:f64|epssPercentile:f64|vapScore:f64}:
+  CVE-2026-5331|2026-04-02T13:16:27.870|2026-04-02T13:16:27.870|5.1|MEDIUM|CWE-22|N/A|false|A vulnerability was determined in OpenCart 4.1.0.3. This affects an unknown part of the file installer.php of the component Extension Installer Page. Executing a manipulation can lead to path traversal. The attack may be launched remotely. The exploit has been publicly disclosed and may be utilized. The vendor was contacted early about this disclosure but did not respond in any way.|https://nvd.nist.gov/vuln/detail/CVE-2026-5331|0.00000|0.00000|3.5700
+  CVE-2026-5330|2026-04-02T13:16:27.633|2026-04-02T13:16:27.633|6.9|MEDIUM|CWE-266|N/A|false|A vulnerability was found in SourceCodester/mayuri_k Best Courier Management System 1.0. Affected by this issue is some unknown functionality of the file /ajax.php?action=delete_user of the component User Delete Handler. Performing a manipulation of the argument ID results in improper access controls. The attack may be initiated remotely. The exploit has been made public and could be used.|https://nvd.nist.gov/vuln/detail/CVE-2026-5330|0.00000|0.00000|4.8300
+  CVE-2026-5328|2026-04-02T13:16:27.400|2026-04-02T13:16:27.400|5.3|MEDIUM|CWE-74|N/A|false|A weakness has been identified in shsuishang modulithshop up to 829bac71f507e84684c782b9b062b8bf3b5585d6. The impacted element is the function listItem of the file src/main/java/com/suisung/shopsuite/pt/service/impl/ProductIndexServiceImpl.java of the component ProductItemDao Interface. Executing a manipulation of the argument sidx/sort can lead to sql injection. The attack may be performed from remote. The exploit has been made available to the public and could be used for attacks. This product utilizes a rolling release system for continuous delivery, and as such, version information for affected or updated releases is not disclosed. This patch is called 42bcb9463425d1be906c3b290cf29885eb5a2324. A patch should be applied to remediate this issue.|https://nvd.nist.gov/vuln/detail/CVE-2026-5328|0.00000|0.00000|3.7100
+  CVE-2026-4636|2026-04-02T13:16:27.210|2026-04-02T13:16:27.210|8.1|HIGH|CWE-551|N/A|false|A flaw was found in Keycloak. An authenticated user with the uma_protection role can bypass User-Managed Access (UMA) policy validation. This allows the attacker to include resource identifiers owned by other users in a policy creation request, even if the URL path specifies an attacker-owned resource. Consequently, the attacker gains unauthorized permissions to victim-owned resources, enabling them to obtain a Requesting Party Token (RPT) and access sensitive information or perform unauthorized actions.|https://nvd.nist.gov/vuln/detail/CVE-2026-4636|0.00000|0.00000|5.6700
+  CVE-2026-4634|2026-04-02T13:16:27.027|2026-04-02T13:16:27.027|7.5|HIGH|CWE-1050|N/A|false|A flaw was found in Keycloak. An unauthenticated attacker can exploit this vulnerability by sending a specially crafted POST request with an excessively long scope parameter to the OpenID Connect (OIDC) token endpoint. This leads to high resource consumption and prolonged processing times, ultimately resulting in a Denial of Service (DoS) for the Keycloak server.|https://nvd.nist.gov/vuln/detail/CVE-2026-4634|0.00000|0.00000|5.2500
+  CVE-2026-4325|2026-04-02T13:16:26.863|2026-04-02T13:16:26.863|5.3|MEDIUM|CWE-653|N/A|false|A flaw was found in Keycloak. The SingleUseObjectProvider, a global key-value store, lacks proper type and namespace isolation. This vulnerability allows an attacker to delete arbitrary single-use entries, which can enable the replay of consumed action tokens, such as password reset links. This could lead to unauthorized access or account compromise.|https://nvd.nist.gov/vuln/detail/CVE-2026-4325|0.00000|0.00000|3.7100
+  CVE-2026-4282|2026-04-02T13:16:26.680|2026-04-02T13:16:26.680|7.4|HIGH|CWE-653|N/A|false|A flaw was found in Keycloak. The SingleUseObjectProvider, a global key-value store, lacks proper type and namespace isolation. This vulnerability allows an unauthenticated attacker to forge authorization codes. Successful exploitation can lead to the creation of admin-capable access tokens, resulting in privilege escalation.|https://nvd.nist.gov/vuln/detail/CVE-2026-4282|0.00000|0.00000|5.1800
+  CVE-2026-3872|2026-04-02T13:16:26.390|2026-04-02T13:16:26.390|7.3|HIGH|CWE-601|N/A|false|A flaw was found in Keycloak. This issue allows an attacker, who controls another path on the same web server, to bypass the allowed path in redirect Uniform Resource Identifiers (URIs) that use a wildcard. A successful attack may lead to the theft of an access token, resulting in information disclosure.|https://nvd.nist.gov/vuln/detail/CVE-2026-3872|0.00000|0.00000|5.1100
+  CVE-2026-34890|2026-04-02T13:16:26.207|2026-04-02T13:16:26.207|6.5|MEDIUM|CWE-79|N/A|false|Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Mark O’Donnell MSTW League Manager allows DOM-Based XSS.This issue affects MSTW League Manager: from n/a through 2.10.|https://nvd.nist.gov/vuln/detail/CVE-2026-34890|0.00000|0.00000|4.5500
+  CVE-2026-5327|2026-04-02T12:16:21.260|2026-04-02T12:16:21.260|5.3|MEDIUM|CWE-74|N/A|false|A security flaw has been discovered in efforthye fast-filesystem-mcp up to 3.5.1. The affected element is the function handleGetDiskUsage of the file src/index.ts. Performing a manipulation results in command injection. The attack is possible to be carried out remotely. The exploit has been released to the public and may be used for attacks. The project was informed of the problem early through an issue report but has not responded yet.|https://nvd.nist.gov/vuln/detail/CVE-2026-5327|0.00000|0.00000|3.7100
+  CVE-2026-23417|2026-04-02T12:16:21.097|2026-04-02T12:16:21.097|0.0|NONE|N/A|N/A|false|"In the Linux kernel, the following vulnerability has been resolved:
+
+bpf: Fix constant blinding for PROBE_MEM32 stores
+
+BPF_ST | BPF_PROBE_MEM32 immediate stores are not handled by
+bpf_jit_blind_insn(), allowing user-controlled 32-bit immediates to
+survive unblinded into JIT-compiled native code when bpf_jit_harden >= 1.
+
+The root cause is that convert_ctx_accesses() rewrites BPF_ST|BPF_MEM
+to BPF_ST|BPF_PROBE_MEM32 for arena pointer stores during verification,
+before bpf_jit_blind_constants() runs during JIT compilation. The
+blinding switch only matches BPF_ST|BPF_MEM (mode 0x60), not
+BPF_ST|BPF_PROBE_MEM32 (mode 0xa0). The instruction falls through
+unblinded.
+
+Add BPF_ST|BPF_PROBE_MEM32 cases to bpf_jit_blind_insn() alongside the
+existing BPF_ST|BPF_MEM cases. The blinding transformation is identical:
+load the blinded immediate into BPF_REG_AX via mov+xor, then convert
+the immediate store to a register store (BPF_STX).
+
+The rewritten STX instruction must preserve the BPF_PROBE_MEM32 mode so
+the architecture JIT emits the correct arena addressing (R12-based on
+x86-64). Cannot use the BPF_STX_MEM() macro here because it hardcodes
+BPF_MEM mode; construct the instruction directly instead."|https://nvd.nist.gov/vuln/detail/CVE-2026-23417|0.00000|0.00000|0.0000
+  CVE-2026-23416|2026-04-02T12:16:20.960|2026-04-02T12:16:20.960|0.0|NONE|N/A|N/A|false|"In the Linux kernel, the following vulnerability has been resolved:
+
+mm/mseal: update VMA end correctly on merge
+
+Previously we stored the end of the current VMA in curr_end, and then upon
+iterating to the next VMA updated curr_start to curr_end to advance to the
+next VMA.
+
+However, this doesn't take into account the fact that a VMA might be
+updated due to a merge by vma_modify_flags(), which can result in curr_end
+being stale and thus, upon setting curr_start to curr_end, ending up with
+an incorrect curr_start on the next iteration.
+
+Resolve the issue by setting curr_end to vma->vm_end unconditionally to
+ensure this value remains updated should this occur.
+
+While we're here, eliminate this entire class of bug by simply setting
+const curr_[start/end] to be clamped to the input range and VMAs, which
+also happens to simplify the logic."|https://nvd.nist.gov/vuln/detail/CVE-2026-23416|0.00000|0.00000|0.0000
+  CVE-2026-23415|2026-04-02T12:16:20.810|2026-04-02T12:16:20.810|0.0|NONE|N/A|N/A|false|"In the Linux kernel, the following vulnerability has been resolved:
+
+futex: Fix UaF between futex_key_to_node_opt() and vma_replace_policy()
+
+During futex_key_to_node_opt() execution, vma->vm_policy is read under
+speculative mmap lock and RCU. Concurrently, mbind() may call
+vma_replace_policy() which frees the old mempolicy immediately via
+kmem_cache_free().
+
+This creates a race where __futex_key_to_node() dereferences a freed
+mempolicy pointer, causing a use-after-free read of mpol->mode.
+
+[  151.412631] BUG: KASAN: slab-use-after-free in __futex_key_to_node (kernel/futex/core.c:349)
+[  151.414046] Read of size 2 at addr ffff888001c49634 by task e/87
+
+[  151.415969] Call Trace:
+
+[  151.416732]  __asan_load2 (mm/kasan/generic.c:271)
+[  151.416777]  __futex_key_to_node (kernel/futex/core.c:349)
+[  151.416822]  get_futex_key (kernel/futex/core.c:374 kernel/futex/core.c:386 kernel/futex/core.c:593)
+
+Fix by adding rcu to __mpol_put()."|https://nvd.nist.gov/vuln/detail/CVE-2026-23415|0.00000|0.00000|0.0000
+  CVE-2026-23414|2026-04-02T12:16:20.633|2026-04-02T12:16:20.633|0.0|NONE|N/A|N/A|false|"In the Linux kernel, the following vulnerability has been resolved:
+
+tls: Purge async_hold in tls_decrypt_async_wait()
+
+The async_hold queue pins encrypted input skbs while
+the AEAD engine references their scatterlist data. Once
+tls_decrypt_async_wait() returns, every AEAD operation
+has completed and the engine no longer references those
+skbs, so they can be freed unconditionally.
+
+A subsequent patch adds batch async decryption to
+tls_sw_read_sock(), introducing a new call site that
+must drain pending AEAD operations and release held
+skbs. Move __skb_queue_purge(&ctx->async_hold) into
+tls_decrypt_async_wait() so the purge is centralized
+and every caller -- recvmsg's drain path, the -EBUSY
+fallback in tls_do_decryption(), and the new read_sock
+batch path -- releases held skbs on synchronization
+without each site managing the purge independently.
+
+This fixes a leak when tls_strp_msg_hold() fails part-way through,
+after having added some cloned skbs to the async_hold
+queue. tls_decrypt_sg() will then call tls_decrypt_async_wait() to
+process all pending decrypts, and drop back to synchronous mode, but
+tls_sw_recvmsg() only flushes the async_hold queue when one record has
+been processed in ""fully-async"" mode, which may not be the case here.
+
+[pabeni@redhat.com: added leak comment]"|https://nvd.nist.gov/vuln/detail/CVE-2026-23414|0.00000|0.00000|0.0000
+  CVE-2026-23413|2026-04-02T12:16:20.440|2026-04-02T12:16:20.440|0.0|NONE|N/A|N/A|false|"In the Linux kernel, the following vulnerability has been resolved:
+
+clsact: Fix use-after-free in init/destroy rollback asymmetry
+
+Fix a use-after-free in the clsact qdisc upon init/destroy rollback asymmetry.
+The latter is achieved by first fully initializing a clsact instance, and
+then in a second step having a replacement failure for the new clsact qdisc
+instance. clsact_init() initializes ingress first and then takes care of the
+egress part. This can fail midway, for example, via tcf_block_get_ext(). Upon
+failure, the kernel will trigger the clsact_destroy() callback.
+
+Commit 1cb6f0bae504 (""bpf: Fix too early release of tcx_entry"") details the
+way how the transition is happening. If tcf_block_get_ext on the q->ingress_block
+ends up failing, we took the tcx_miniq_inc reference count on the ingress
+side, but not yet on the egress side. clsact_destroy() tests whether the
+{ingress,egress}_entry was non-NULL. However, even in midway failure on the
+replacement, both are in fact non-NULL with a valid egress_entry from the
+previous clsact instance.
+
+What we really need to test for is whether the qdisc instance-specific ingress
+or egress side previously got initialized. This adds a small helper for checking
+the miniq initialization called mini_qdisc_pair_inited, and utilizes that upon
+clsact_destroy() in order to fix the use-after-free scenario. Convert the
+ingress_destroy() side as well so both are consistent to each other."|https://nvd.nist.gov/vuln/detail/CVE-2026-23413|0.00000|0.00000|0.0000
+  CVE-2026-23412|2026-04-02T12:16:20.270|2026-04-02T12:16:20.270|0.0|NONE|N/A|N/A|false|"In the Linux kernel, the following vulnerability has been resolved:
+
+netfilter: bpf: defer hook memory release until rcu readers are done
+
+Yiming Qian reports UaF when concurrent process is dumping hooks via
+nfnetlink_hooks:
+
+BUG: KASAN: slab-use-after-free in nfnl_hook_dump_one.isra.0+0xe71/0x10f0
+Read of size 8 at addr ffff888003edbf88 by task poc/79
+Call Trace:
+ <TASK>
+ nfnl_hook_dump_one.isra.0+0xe71/0x10f0
+ netlink_dump+0x554/0x12b0
+ nfnl_hook_get+0x176/0x230
+ [..]
+
+Defer release until after concurrent readers have completed."|https://nvd.nist.gov/vuln/detail/CVE-2026-23412|0.00000|0.00000|0.0000
+  CVE-2026-5326|2026-04-02T11:16:23.010|2026-04-02T11:16:23.010|5.5|MEDIUM|CWE-285|N/A|false|A vulnerability was identified in SourceCodester Leave Application System 1.0. Impacted is an unknown function of the file /index.php?page=manage_user of the component User Information Handler. Such manipulation of the argument ID leads to authorization bypass. The attack can be executed remotely. The exploit is publicly available and might be used.|https://nvd.nist.gov/vuln/detail/CVE-2026-5326|0.00000|0.00000|3.8500
+  CVE-2026-32145|2026-04-02T11:16:21.870|2026-04-02T11:16:21.870|8.7|HIGH|CWE-770|N/A|false|"Allocation of Resources Without Limits or Throttling vulnerability in gleam-wisp wisp allows a denial of service via multipart form body parsing.
+
+The multipart_body function bypasses configured max_body_size and max_files_size limits. When a multipart boundary is not present in a chunk, the parser takes the MoreRequiredForBody path, which appends the chunk to the output but passes the quota unchanged to the recursive call. Only the final chunk containing the boundary is counted via decrement_quota. The same pattern exists in multipart_headers, where MoreRequiredForHeaders recurses without calling decrement_body_quota.
+
+An unauthenticated attacker can exhaust server memory or disk by sending arbitrarily large multipart form submissions in a single HTTP request.
+
+This issue affects wisp: from 0.2.0 before 2.2.2."|https://nvd.nist.gov/vuln/detail/CVE-2026-32145|0.00000|0.00000|6.0900
   CVE-2026-5246|2026-04-02T10:16:17.763|2026-04-02T10:16:17.763|6.3|MEDIUM|CWE-285|N/A|false|A vulnerability was determined in Cesanta Mongoose up to 7.20. Affected is the function mg_tls_verify_cert_signature of the file mongoose.c of the component P-384 Public Key Handler. Executing a manipulation can lead to authorization bypass. The attack can be executed remotely. Attacks of this nature are highly complex. The exploitability is told to be difficult. The exploit has been publicly disclosed and may be utilized. Upgrading to version 7.21 is able to address this issue. This patch is called 0d882f1b43ff2308b7486a56a9d60cd6dba8a3f1. The affected component should be upgraded. The vendor was contacted early, responded in a very professional manner and quickly released a fixed version of the affected product.|https://nvd.nist.gov/vuln/detail/CVE-2026-5246|0.00000|0.00000|4.4100
   CVE-2026-5245|2026-04-02T10:16:17.443|2026-04-02T10:16:17.443|6.3|MEDIUM|CWE-119|N/A|false|A vulnerability was found in Cesanta Mongoose up to 7.20. This impacts the function handle_mdns_record of the file mongoose.c of the component mDNS Record Handler. Performing a manipulation of the argument buf results in stack-based buffer overflow. Remote exploitation of the attack is possible. A high degree of complexity is needed for the attack. The exploitability is said to be difficult. The exploit has been made public and could be used. Upgrading to version 7.21 will fix this issue. The patch is named 0d882f1b43ff2308b7486a56a9d60cd6dba8a3f1. You should upgrade the affected component. The vendor was contacted early, responded in a very professional manner and quickly released a fixed version of the affected product.|https://nvd.nist.gov/vuln/detail/CVE-2026-5245|0.00000|0.00000|4.4100
   CVE-2026-33617|2026-04-02T10:16:17.260|2026-04-02T10:16:17.260|5.3|MEDIUM|CWE-497|N/A|false|An unauthenticated remote attacker can access a configuration file containing database credentials. This can result in a some loss of confidentiality, but there is no endpoint exposed to use these credentials.|https://nvd.nist.gov/vuln/detail/CVE-2026-33617|0.00000|0.00000|3.7100
   CVE-2026-33616|2026-04-02T10:16:17.080|2026-04-02T10:16:17.080|7.5|HIGH|CWE-89|N/A|false|An unauthenticated remote attacker can exploit an unauthenticated blind SQL Injection vulnerability in the mb24api endpoint due to improper neutralization of special elements in a SQL SELECT command. This can result in a total loss of confidentiality.|https://nvd.nist.gov/vuln/detail/CVE-2026-33616|0.00000|0.00000|5.2500
   CVE-2026-33615|2026-04-02T10:16:16.910|2026-04-02T10:16:16.910|9.1|CRITICAL|CWE-89|N/A|false|An unauthenticated remote attacker can exploit an unauthenticated SQL Injection vulnerability in the setinfo endpoint due to improper neutralization of special elements in a SQL UPDATE command. This can result in a total loss of integrity and availability.|https://nvd.nist.gov/vuln/detail/CVE-2026-33615|0.00000|0.00000|6.3700
   CVE-2026-33614|2026-04-02T10:16:16.723|2026-04-02T10:16:16.723|7.5|HIGH|CWE-89|N/A|false|An unauthenticated remote attacker can exploit an unauthenticated SQL Injection vulnerability in the getinfo endpoint due to improper neutralization of special elements in a SQL SELECT command. This can result in a total loss of confidentiality.|https://nvd.nist.gov/vuln/detail/CVE-2026-33614|0.00000|0.00000|5.2500
-  CVE-2026-33613|2026-04-02T10:16:15.727|2026-04-02T10:16:15.727|7.2|HIGH|CWE-78|N/A|false|"Due to the improper neutralisation of special elements used in an OS command, a remote attacker can exploit an RCE vulnerability in the generateSrpArray function, resulting in full system compromise.
-This vulnerability can only be attacked if the attacker has some other way to write arbitrary data to the user table."|https://nvd.nist.gov/vuln/detail/CVE-2026-33613|0.00000|0.00000|5.0400
   CVE-2026-29144|2026-04-02T09:16:23.293|2026-04-02T09:16:23.293|7.8|HIGH|CWE-20|N/A|false|SEPPmail Secure Email Gateway before version 15.0.3 allows an attacker to bypass subject sanitization and forge security tags using Unicode lookalike characters.|https://nvd.nist.gov/vuln/detail/CVE-2026-29144|0.00000|0.00000|5.4600
   CVE-2026-29143|2026-04-02T09:16:23.123|2026-04-02T09:16:23.123|7.8|HIGH|CWE-20|N/A|false|SEPPmail Secure Email Gateway before version 15.0.3 does not properly authenticate the inner message of S/MIME-encrypted MIME entities, allowing an attacker to control trusted headers.|https://nvd.nist.gov/vuln/detail/CVE-2026-29143|0.00000|0.00000|5.4600
   CVE-2026-29142|2026-04-02T09:16:22.957|2026-04-02T09:16:22.957|6.3|MEDIUM|CWE-325|N/A|false|SEPPmail Secure Email Gateway before version 15.0.3 allows an attacker to forge a GINA-encrypted email.|https://nvd.nist.gov/vuln/detail/CVE-2026-29142|0.00000|0.00000|4.4100
@@ -182,6 +332,73 @@ This vulnerability can only be attacked if the attacker has some other way to wr
   CVE-2026-5261|2026-04-01T09:16:17.920|2026-04-01T14:23:37.727|6.9|MEDIUM|CWE-284|N/A|false|A vulnerability was identified in Shandong Hoteam InforCenter PLM up to 8.3.8. The impacted element is the function uploadFileToIIS of the file /Base/BaseHandler.ashx. The manipulation of the argument File leads to unrestricted upload. It is possible to initiate the attack remotely. The exploit is publicly available and might be used. The vendor was contacted early about this disclosure but did not respond in any way.|https://nvd.nist.gov/vuln/detail/CVE-2026-5261|0.00038|0.11319|4.8311
   CVE-2026-4370|2026-04-01T09:16:17.717|2026-04-01T14:23:37.727|10.0|CRITICAL|CWE-295|N/A|false|A vulnerability was identified in Juju from version 3.2.0 until 3.6.19 and from version 4.0 until 4.0.4, where the internal Dqlite database cluster fails to perform proper TLS client and server authentication. Specifically, the Juju controller's database endpoint does not validate client certificates when a new node attempts to join the cluster. An unauthenticated attacker with network reachability to the Juju controller's Dqlite port can exploit this flaw to join the database cluster. Once joined, the attacker gains full read and write access to the underlying database, allowing for total data compromise.|https://nvd.nist.gov/vuln/detail/CVE-2026-4370|0.00035|0.10118|7.0011
   CVE-2026-34889|2026-04-01T09:16:17.457|2026-04-01T14:23:37.727|6.5|MEDIUM|CWE-79|N/A|false|Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Brainstorm Force Ultimate Addons for WPBakery Page Builder allows DOM-Based XSS.This issue affects Ultimate Addons for WPBakery Page Builder: from n/a before 3.21.4.|https://nvd.nist.gov/vuln/detail/CVE-2026-34889|0.00033|0.09522|4.5510
+  CVE-2026-23402|2026-04-01T09:16:15.670|2026-04-02T12:16:20.130|0.0|NONE|N/A|N/A|false|"In the Linux kernel, the following vulnerability has been resolved:
+
+KVM: x86/mmu: Only WARN in direct MMUs when overwriting shadow-present SPTE
+
+Adjust KVM's sanity check against overwriting a shadow-present SPTE with a
+another SPTE with a different target PFN to only apply to direct MMUs,
+i.e. only to MMUs without shadowed gPTEs.  While it's impossible for KVM
+to overwrite a shadow-present SPTE in response to a guest write, writes
+from outside the scope of KVM, e.g. from host userspace, aren't detected
+by KVM's write tracking and so can break KVM's shadow paging rules.
+
+  ------------[ cut here ]------------
+  pfn != spte_to_pfn(*sptep)
+  WARNING: arch/x86/kvm/mmu/mmu.c:3069 at mmu_set_spte+0x1e4/0x440 [kvm], CPU#0: vmx_ept_stale_r/872
+  Modules linked in: kvm_intel kvm irqbypass
+  CPU: 0 UID: 1000 PID: 872 Comm: vmx_ept_stale_r Not tainted 7.0.0-rc2-eafebd2d2ab0-sink-vm #319 PREEMPT
+  Hardware name: QEMU Standard PC (Q35 + ICH9, 2009), BIOS 0.0.0 02/06/2015
+  RIP: 0010:mmu_set_spte+0x1e4/0x440 [kvm]
+  Call Trace:
+   <TASK>
+   ept_page_fault+0x535/0x7f0 [kvm]
+   kvm_mmu_do_page_fault+0xee/0x1f0 [kvm]
+   kvm_mmu_page_fault+0x8d/0x620 [kvm]
+   vmx_handle_exit+0x18c/0x5a0 [kvm_intel]
+   kvm_arch_vcpu_ioctl_run+0xc55/0x1c20 [kvm]
+   kvm_vcpu_ioctl+0x2d5/0x980 [kvm]
+   __x64_sys_ioctl+0x8a/0xd0
+   do_syscall_64+0xb5/0x730
+   entry_SYSCALL_64_after_hwframe+0x4b/0x53
+   </TASK>
+  ---[ end trace 0000000000000000 ]---"|https://nvd.nist.gov/vuln/detail/CVE-2026-23402|0.00018|0.04717|0.0005
+  CVE-2026-23401|2026-04-01T09:16:15.260|2026-04-02T12:16:19.970|0.0|NONE|N/A|N/A|false|"In the Linux kernel, the following vulnerability has been resolved:
+
+KVM: x86/mmu: Drop/zap existing present SPTE even when creating an MMIO SPTE
+
+When installing an emulated MMIO SPTE, do so *after* dropping/zapping the
+existing SPTE (if it's shadow-present).  While commit a54aa15c6bda3 was
+right about it being impossible to convert a shadow-present SPTE to an
+MMIO SPTE due to a _guest_ write, it failed to account for writes to guest
+memory that are outside the scope of KVM.
+
+E.g. if host userspace modifies a shadowed gPTE to switch from a memslot
+to emulted MMIO and then the guest hits a relevant page fault, KVM will
+install the MMIO SPTE without first zapping the shadow-present SPTE.
+
+  ------------[ cut here ]------------
+  is_shadow_present_pte(*sptep)
+  WARNING: arch/x86/kvm/mmu/mmu.c:484 at mark_mmio_spte+0xb2/0xc0 [kvm], CPU#0: vmx_ept_stale_r/4292
+  Modules linked in: kvm_intel kvm irqbypass
+  CPU: 0 UID: 1000 PID: 4292 Comm: vmx_ept_stale_r Not tainted 7.0.0-rc2-eafebd2d2ab0-sink-vm #319 PREEMPT
+  Hardware name: QEMU Standard PC (Q35 + ICH9, 2009), BIOS 0.0.0 02/06/2015
+  RIP: 0010:mark_mmio_spte+0xb2/0xc0 [kvm]
+  Call Trace:
+   <TASK>
+   mmu_set_spte+0x237/0x440 [kvm]
+   ept_page_fault+0x535/0x7f0 [kvm]
+   kvm_mmu_do_page_fault+0xee/0x1f0 [kvm]
+   kvm_mmu_page_fault+0x8d/0x620 [kvm]
+   vmx_handle_exit+0x18c/0x5a0 [kvm_intel]
+   kvm_arch_vcpu_ioctl_run+0xc55/0x1c20 [kvm]
+   kvm_vcpu_ioctl+0x2d5/0x980 [kvm]
+   __x64_sys_ioctl+0x8a/0xd0
+   do_syscall_64+0xb5/0x730
+   entry_SYSCALL_64_after_hwframe+0x4b/0x53
+  RIP: 0033:0x47fa3f
+   </TASK>
+  ---[ end trace 0000000000000000 ]---"|https://nvd.nist.gov/vuln/detail/CVE-2026-23401|0.00018|0.04717|0.0005
   CVE-2026-5259|2026-04-01T08:16:05.723|2026-04-01T14:23:37.727|5.3|MEDIUM|CWE-918|N/A|false|A vulnerability was determined in AutohomeCorp frostmourne up to 1.0. The affected element is an unknown function of the file frostmourne-monitor/src/main/java/com/autohome/frostmourne/monitor/controller/AlarmController.java of the component Alarm Preview. Executing a manipulation can lead to server-side request forgery. The attack may be performed from remote. The exploit has been publicly disclosed and may be utilized.|https://nvd.nist.gov/vuln/detail/CVE-2026-5259|0.00034|0.09723|3.7110
   CVE-2026-28265|2026-04-01T08:16:05.490|2026-04-01T14:23:37.727|4.4|MEDIUM|CWE-35|N/A|false|PowerStore, contains a Path Traversal vulnerability in the Service user. A low privileged attacker with local access could potentially exploit this vulnerability, leading to modification of arbitrary system files.|https://nvd.nist.gov/vuln/detail/CVE-2026-28265|0.00012|0.01794|3.0804
   CVE-2026-27101|2026-04-01T08:16:05.270|2026-04-01T14:23:37.727|4.7|MEDIUM|CWE-22|N/A|false|Dell Secure Connect Gateway (SCG) 5.0 Appliance and Application version(s) 5.28.00.xx to 5.32.00.xx, contain(s) an Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal') vulnerability. A high privileged attacker within the management network could potentially exploit this vulnerability, leading to remote execution.|https://nvd.nist.gov/vuln/detail/CVE-2026-27101|0.00218|0.44378|3.2965
@@ -202,7 +419,7 @@ This vulnerability can only be attacked if the attacker has some other way to wr
   CVE-2026-5284|2026-04-01T05:16:01.817|2026-04-01T17:09:14.033|7.5|HIGH|CWE-416|N/A|false|Use after free in Dawn in Google Chrome prior to 146.0.7680.178 allowed a remote attacker who had compromised the renderer process to execute arbitrary code via a crafted HTML page. (Chromium security severity: High)|https://nvd.nist.gov/vuln/detail/CVE-2026-5284|0.00038|0.11256|5.2511
   CVE-2026-5283|2026-04-01T05:16:01.717|2026-04-01T16:35:30.117|6.5|MEDIUM|CWE-285|N/A|false|Inappropriate implementation in ANGLE in Google Chrome prior to 146.0.7680.178 allowed a remote attacker to leak cross-origin data via a crafted HTML page. (Chromium security severity: High)|https://nvd.nist.gov/vuln/detail/CVE-2026-5283|0.00035|0.10169|4.5511
   CVE-2026-5282|2026-04-01T05:16:01.577|2026-04-01T16:35:57.513|8.1|HIGH|CWE-125|N/A|false|Out of bounds read in WebCodecs in Google Chrome prior to 146.0.7680.178 allowed a remote attacker to perform an out of bounds memory read via a crafted HTML page. (Chromium security severity: High)|https://nvd.nist.gov/vuln/detail/CVE-2026-5282|0.00032|0.09271|5.6710
-  CVE-2026-5281|2026-04-01T05:16:01.440|2026-04-01T20:16:29.780|8.8|HIGH|CWE-416|N/A|false|Use after free in Dawn in Google Chrome prior to 146.0.7680.178 allowed a remote attacker who had compromised the renderer process to execute arbitrary code via a crafted HTML page. (Chromium security severity: High)|https://nvd.nist.gov/vuln/detail/CVE-2026-5281|0.00038|0.11256|6.1611
+  CVE-2026-5281|2026-04-01T05:16:01.440|2026-04-02T13:16:01.903|8.8|HIGH|CWE-416|N/A|true|Use after free in Dawn in Google Chrome prior to 146.0.7680.178 allowed a remote attacker who had compromised the renderer process to execute arbitrary code via a crafted HTML page. (Chromium security severity: High)|https://nvd.nist.gov/vuln/detail/CVE-2026-5281|0.00038|0.11256|6.1611
   CVE-2026-5280|2026-04-01T05:16:01.310|2026-04-02T00:16:24.620|8.8|HIGH|CWE-416|N/A|false|Use after free in WebCodecs in Google Chrome prior to 146.0.7680.178 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: High)|https://nvd.nist.gov/vuln/detail/CVE-2026-5280|0.00033|0.09630|6.1610
   CVE-2026-5279|2026-04-01T05:16:01.200|2026-04-02T00:16:24.443|8.8|HIGH|CWE-120|N/A|false|Object corruption in V8 in Google Chrome prior to 146.0.7680.178 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: High)|https://nvd.nist.gov/vuln/detail/CVE-2026-5279|0.00038|0.11256|6.1611
   CVE-2026-5278|2026-04-01T05:16:01.070|2026-04-01T17:09:45.597|8.8|HIGH|CWE-416|N/A|false|Use after free in Web MIDI in Google Chrome on Android prior to 146.0.7680.178 allowed a remote attacker to execute arbitrary code via a crafted HTML page. (Chromium security severity: High)|https://nvd.nist.gov/vuln/detail/CVE-2026-5278|0.00033|0.09630|6.1610
