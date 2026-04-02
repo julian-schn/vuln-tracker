@@ -1,9 +1,13 @@
 # CVEs — April 2026
 
-_214 vulnerabilities_
+_218 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
+| [CVE-2026-5244](https://nvd.nist.gov/vuln/detail/CVE-2026-5244) | 6.9 | MEDIUM | CWE-119 | No | — | 4.83 | 2026-04-02 | A vulnerability has been found in Cesanta Mongoose up to 7.20. This affects the function mg_tls_recv_cert of the file mo... |
+| [CVE-2026-5032](https://nvd.nist.gov/vuln/detail/CVE-2026-5032) | 7.5 | HIGH | CWE-200 | No | — | 5.25 | 2026-04-02 | The W3 Total Cache plugin for WordPress is vulnerable to information exposure in all versions up to, and including, 2.9.... |
+| [CVE-2026-0688](https://nvd.nist.gov/vuln/detail/CVE-2026-0688) | 6.4 | MEDIUM | CWE-918 | No | — | 4.48 | 2026-04-02 | The Webmention plugin for WordPress is vulnerable to Server-Side Request Forgery in all versions up to, and including, 5... |
+| [CVE-2026-0686](https://nvd.nist.gov/vuln/detail/CVE-2026-0686) | 7.2 | HIGH | CWE-918 | No | — | 5.04 | 2026-04-02 | The Webmention plugin for WordPress is vulnerable to Server-Side Request Forgery in all versions up to, and including, 5... |
 | [CVE-2026-5325](https://nvd.nist.gov/vuln/detail/CVE-2026-5325) | 5.1 | MEDIUM | CWE-79 | No | — | 3.57 | 2026-04-02 | A vulnerability was determined in SourceCodester Simple Customer Relationship Management System 1.0. This issue affects... |
 | [CVE-2026-5323](https://nvd.nist.gov/vuln/detail/CVE-2026-5323) | 4.8 | MEDIUM | CWE-918 | No | — | 3.36 | 2026-04-02 | A vulnerability was found in priyankark a11y-mcp up to 1.0.5. This vulnerability affects the function A11yServer of the... |
 | [CVE-2026-5322](https://nvd.nist.gov/vuln/detail/CVE-2026-5322) | 6.9 | MEDIUM | CWE-74 | No | — | 4.83 | 2026-04-02 | A vulnerability has been found in AlejandroArciniegas mcp-data-vis bc597e391f184d2187062fd567599a3cb72adf51/de5a51525a69... |
