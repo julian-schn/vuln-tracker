@@ -1,6 +1,6 @@
 # CVEs — March 2026
 
-_5734 vulnerabilities_
+_5735 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
@@ -1371,6 +1371,7 @@ _5734 vulnerabilities_
 | [CVE-2024-51348](https://nvd.nist.gov/vuln/detail/CVE-2024-51348) | 8.8 | HIGH | CWE-121 | No | 0.2% | 6.17 | 2026-03-25 | A stack-based buffer overflow vulnerability in the P2P API service in BS Producten Petcam with firmware 33.1.0.0818 allo... |
 | [CVE-2024-51347](https://nvd.nist.gov/vuln/detail/CVE-2024-51347) | 7.2 | HIGH | CWE-120 | No | 0.1% | 5.04 | 2026-03-25 | A buffer overflow vulnerability in the dgiot binary in LSC Smart Indoor IP Camera V7.6.32. The flaw exists in the handli... |
 | [CVE-2024-51346](https://nvd.nist.gov/vuln/detail/CVE-2024-51346) | 7.7 | HIGH | CWE-330 | No | 0.0% | 5.39 | 2026-03-25 | An issue in Eufy Homebase 2 version 3.3.4.1h allows a local attacker to obtain sensitive information via the cryptograph... |
+| [CVE-2026-23395](https://nvd.nist.gov/vuln/detail/CVE-2026-23395) | 8.8 | HIGH | N/A | No | 0.0% | 6.16 | 2026-03-25 | In the Linux kernel, the following vulnerability has been resolved:  Bluetooth: L2CAP: Fix accepting multiple L2CAP_ECRE... |
 | [CVE-2026-32326](https://nvd.nist.gov/vuln/detail/CVE-2026-32326) | 6.9 | MEDIUM | CWE-306 | No | 0.0% | 4.83 | 2026-03-25 | SHARP routers do not perform authentication for some web APIs. The device information may be retrieved without authentic... |
 | [CVE-2026-33253](https://nvd.nist.gov/vuln/detail/CVE-2026-33253) | 8.4 | HIGH | CWE-428 | No | 0.0% | 5.88 | 2026-03-25 | SANUPS SOFTWARE provided by SANYO DENKI CO., LTD. registers Windows services with unquoted file paths. A user with the w... |
 | [CVE-2026-2343](https://nvd.nist.gov/vuln/detail/CVE-2026-2343) | 5.3 | MEDIUM | N/A | No | 0.0% | 3.71 | 2026-03-25 | The PeproDev Ultimate Invoice WordPress plugin through 2.2.5 has a bulk download invoices action that generates ZIP arch... |
@@ -2312,6 +2313,7 @@ _5734 vulnerabilities_
 | [CVE-2026-2432](https://nvd.nist.gov/vuln/detail/CVE-2026-2432) | 4.4 | MEDIUM | CWE-79 | No | 0.0% | 3.08 | 2026-03-20 | The CM Custom Reports – Flexible reporting to track what matters most plugin for WordPress is vulnerable to Stored Cross... |
 | [CVE-2026-2421](https://nvd.nist.gov/vuln/detail/CVE-2026-2421) | 6.5 | MEDIUM | CWE-22 | No | 0.5% | 4.57 | 2026-03-20 | The ilGhera Carta Docente for WooCommerce plugin for WordPress is vulnerable to Path Traversal in all versions up to, an... |
 | [CVE-2026-27625](https://nvd.nist.gov/vuln/detail/CVE-2026-27625) | 8.1 | HIGH | CWE-22 | No | 0.1% | 5.67 | 2026-03-20 | Stirling-PDF is a locally hosted web application that performs various operations on PDF files. In versions prior to 2.5... |
+| [CVE-2026-23278](https://nvd.nist.gov/vuln/detail/CVE-2026-23278) | 7.8 | HIGH | N/A | No | 0.0% | 5.46 | 2026-03-20 | In the Linux kernel, the following vulnerability has been resolved:  netfilter: nf_tables: always walk all pending catch... |
 | [CVE-2026-33065](https://nvd.nist.gov/vuln/detail/CVE-2026-33065) | 6.9 | MEDIUM | CWE-209 | No | 0.0% | 4.83 | 2026-03-20 | Free5GC is an open-source Linux Foundation project for 5th generation (5G) mobile core networks. In versions prior to 1.... |
 | [CVE-2026-33064](https://nvd.nist.gov/vuln/detail/CVE-2026-33064) | 8.7 | HIGH | CWE-478 | No | 0.2% | 6.10 | 2026-03-20 | Free5GC is an open-source Linux Foundation project for 5th generation (5G) mobile core networks. Versions prior to 1.4.2... |
 | [CVE-2026-33061](https://nvd.nist.gov/vuln/detail/CVE-2026-33061) | 5.8 | MEDIUM | CWE-79 | No | 0.0% | 4.06 | 2026-03-20 | Jexactyl is a customisable game management panel and billing system. Commits after 025e8dbb0daaa04054276bda814d922cf4af5... |
@@ -2463,7 +2465,6 @@ _5734 vulnerabilities_
 | [CVE-2026-29098](https://nvd.nist.gov/vuln/detail/CVE-2026-29098) | 4.9 | MEDIUM | CWE-23 | No | 0.1% | 3.43 | 2026-03-19 | SuiteCRM is an open-source, enterprise-ready Customer Relationship Management (CRM) software application. Prior to versi... |
 | [CVE-2026-29097](https://nvd.nist.gov/vuln/detail/CVE-2026-29097) | 7.1 | HIGH | CWE-918 | No | 0.0% | 4.97 | 2026-03-19 | SuiteCRM is an open-source, enterprise-ready Customer Relationship Management (CRM) software application. Versions prior... |
 | [CVE-2026-29096](https://nvd.nist.gov/vuln/detail/CVE-2026-29096) | 8.1 | HIGH | CWE-89 | No | 0.0% | 5.67 | 2026-03-19 | SuiteCRM is an open-source, enterprise-ready Customer Relationship Management (CRM) software application. Prior to versi... |
-| [CVE-2026-22732](https://nvd.nist.gov/vuln/detail/CVE-2026-22732) | 9.1 | CRITICAL | CWE-425 | No | 0.0% | 6.37 | 2026-03-19 | When applications specify HTTP response headers for servlet applications using Spring Security, there is the possibility... |
 | [CVE-2026-4342](https://nvd.nist.gov/vuln/detail/CVE-2026-4342) | 8.8 | HIGH | CWE-20 | No | 0.0% | 6.16 | 2026-03-19 | A security issue was discovered in ingress-nginx where a combination of Ingress annotations can be used to inject config... |
 | [CVE-2026-4159](https://nvd.nist.gov/vuln/detail/CVE-2026-4159) | 1.2 | LOW | CWE-125 | No | 0.0% | 0.84 | 2026-03-19 | 1-byte OOB heap read in wc_PKCS7_DecodeEnvelopedData via zero-length encrypted content. A vulnerability existed in wolfS... |
 | [CVE-2026-33410](https://nvd.nist.gov/vuln/detail/CVE-2026-33410) | 5.4 | MEDIUM | CWE-863 | No | 0.0% | 3.78 | 2026-03-19 | Discourse is an open-source discussion platform. Versions prior to 2026.3.0-latest.1, 2026.2.1, and 2026.1.2 have two au... |

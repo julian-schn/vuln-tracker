@@ -1,9 +1,31 @@
 # CVEs — April 2026
 
-_218 vulnerabilities_
+_240 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
+| [CVE-2026-5246](https://nvd.nist.gov/vuln/detail/CVE-2026-5246) | 6.3 | MEDIUM | CWE-285 | No | — | 4.41 | 2026-04-02 | A vulnerability was determined in Cesanta Mongoose up to 7.20. Affected is the function mg_tls_verify_cert_signature of... |
+| [CVE-2026-5245](https://nvd.nist.gov/vuln/detail/CVE-2026-5245) | 6.3 | MEDIUM | CWE-119 | No | — | 4.41 | 2026-04-02 | A vulnerability was found in Cesanta Mongoose up to 7.20. This impacts the function handle_mdns_record of the file mongo... |
+| [CVE-2026-33617](https://nvd.nist.gov/vuln/detail/CVE-2026-33617) | 5.3 | MEDIUM | CWE-497 | No | — | 3.71 | 2026-04-02 | An unauthenticated remote attacker can access a configuration file containing database credentials. This can result in a... |
+| [CVE-2026-33616](https://nvd.nist.gov/vuln/detail/CVE-2026-33616) | 7.5 | HIGH | CWE-89 | No | — | 5.25 | 2026-04-02 | An unauthenticated remote attacker can exploit an unauthenticated blind SQL Injection vulnerability in the mb24api endpo... |
+| [CVE-2026-33615](https://nvd.nist.gov/vuln/detail/CVE-2026-33615) | 9.1 | CRITICAL | CWE-89 | No | — | 6.37 | 2026-04-02 | An unauthenticated remote attacker can exploit an unauthenticated SQL Injection vulnerability in the setinfo endpoint du... |
+| [CVE-2026-33614](https://nvd.nist.gov/vuln/detail/CVE-2026-33614) | 7.5 | HIGH | CWE-89 | No | — | 5.25 | 2026-04-02 | An unauthenticated remote attacker can exploit an unauthenticated SQL Injection vulnerability in the getinfo endpoint du... |
+| [CVE-2026-33613](https://nvd.nist.gov/vuln/detail/CVE-2026-33613) | 7.2 | HIGH | CWE-78 | No | — | 5.04 | 2026-04-02 | Due to the improper neutralisation of special elements used in an OS command, a remote attacker can exploit an RCE vulne... |
+| [CVE-2026-29144](https://nvd.nist.gov/vuln/detail/CVE-2026-29144) | 7.8 | HIGH | CWE-20 | No | — | 5.46 | 2026-04-02 | SEPPmail Secure Email Gateway before version 15.0.3 allows an attacker to bypass subject sanitization and forge security... |
+| [CVE-2026-29143](https://nvd.nist.gov/vuln/detail/CVE-2026-29143) | 7.8 | HIGH | CWE-20 | No | — | 5.46 | 2026-04-02 | SEPPmail Secure Email Gateway before version 15.0.3 does not properly authenticate the inner message of S/MIME-encrypted... |
+| [CVE-2026-29142](https://nvd.nist.gov/vuln/detail/CVE-2026-29142) | 6.3 | MEDIUM | CWE-325 | No | — | 4.41 | 2026-04-02 | SEPPmail Secure Email Gateway before version 15.0.3 allows an attacker to forge a GINA-encrypted email. |
+| [CVE-2026-29141](https://nvd.nist.gov/vuln/detail/CVE-2026-29141) | 7.7 | HIGH | CWE-20 | No | — | 5.39 | 2026-04-02 | SEPPmail Secure Email Gateway before version 15.0.3 allows an attacker to bypass subject sanitization and forge tags suc... |
+| [CVE-2026-29140](https://nvd.nist.gov/vuln/detail/CVE-2026-29140) | 7.7 | HIGH | CWE-295 | No | — | 5.39 | 2026-04-02 | SEPPmail Secure Email Gateway before version 15.0.3 allows an attacker to cause attacker-controlled certificates to be u... |
+| [CVE-2026-29139](https://nvd.nist.gov/vuln/detail/CVE-2026-29139) | 7.8 | HIGH | CWE-288 | No | — | 5.46 | 2026-04-02 | SEPPmail Secure Email Gateway before version 15.0.3 allows account takeover by abusing GINA account initialization to re... |
+| [CVE-2026-29138](https://nvd.nist.gov/vuln/detail/CVE-2026-29138) | 6.3 | MEDIUM | CWE-90 | No | — | 4.41 | 2026-04-02 | SEPPmail Secure Email Gateway before version 15.0.3 allows attackers with a specially crafted email address to claim ano... |
+| [CVE-2026-29137](https://nvd.nist.gov/vuln/detail/CVE-2026-29137) | 5.3 | MEDIUM | CWE-20 | No | — | 3.71 | 2026-04-02 | SEPPmail Secure Email Gateway before version 15.0.3 allows an attacker to hide security tags from users by crafting a lo... |
+| [CVE-2026-29136](https://nvd.nist.gov/vuln/detail/CVE-2026-29136) | 5.3 | MEDIUM | CWE-79 | No | — | 3.71 | 2026-04-02 | SEPPmail Secure Email Gateway before version 15.0.3 allows an attacker to inject HTML into notification emails about new... |
+| [CVE-2026-29135](https://nvd.nist.gov/vuln/detail/CVE-2026-29135) | 5.3 | MEDIUM | CWE-20 | No | — | 3.71 | 2026-04-02 | SEPPmail Secure Email Gateway before version 15.0.3 allows an attacker to craft a password-tag that bypasses subject san... |
+| [CVE-2026-29134](https://nvd.nist.gov/vuln/detail/CVE-2026-29134) | 5.3 | MEDIUM | CWE-807 | No | — | 3.71 | 2026-04-02 | SEPPmail Secure Email Gateway before version 15.0.3 allows an external user to modify GINA webdomain metadata and bypass... |
+| [CVE-2026-29133](https://nvd.nist.gov/vuln/detail/CVE-2026-29133) | 5.3 | MEDIUM | CWE-20 | No | — | 3.71 | 2026-04-02 | SEPPmail Secure Email Gateway before version 15.0.3 allows an attacker to upload PGP keys with UIDs that do not match th... |
+| [CVE-2026-29132](https://nvd.nist.gov/vuln/detail/CVE-2026-29132) | 6.3 | MEDIUM | CWE-306 | No | — | 4.41 | 2026-04-02 | SEPPmail Secure Email Gateway before version 15.0.3 allows an attacker with access to a victim's GINA account to bypass... |
+| [CVE-2026-29131](https://nvd.nist.gov/vuln/detail/CVE-2026-29131) | 4.9 | MEDIUM | CWE-90 | No | — | 3.43 | 2026-04-02 | SEPPmail Secure Email Gateway before version 15.0.3 allows attackers with a specially crafted email address to read the... |
+| [CVE-2026-0634](https://nvd.nist.gov/vuln/detail/CVE-2026-0634) | 0.0 | NONE | CWE-88 | No | — | 0.00 | 2026-04-02 | Code execution in AssistFeedbackService of TECNO Pova7 Pro 5G on Android allows local apps to execute arbitrary code as... |
 | [CVE-2026-5244](https://nvd.nist.gov/vuln/detail/CVE-2026-5244) | 6.9 | MEDIUM | CWE-119 | No | — | 4.83 | 2026-04-02 | A vulnerability has been found in Cesanta Mongoose up to 7.20. This affects the function mg_tls_recv_cert of the file mo... |
 | [CVE-2026-5032](https://nvd.nist.gov/vuln/detail/CVE-2026-5032) | 7.5 | HIGH | CWE-200 | No | — | 5.25 | 2026-04-02 | The W3 Total Cache plugin for WordPress is vulnerable to information exposure in all versions up to, and including, 2.9.... |
 | [CVE-2026-0688](https://nvd.nist.gov/vuln/detail/CVE-2026-0688) | 6.4 | MEDIUM | CWE-918 | No | — | 4.48 | 2026-04-02 | The Webmention plugin for WordPress is vulnerable to Server-Side Request Forgery in all versions up to, and including, 5... |
