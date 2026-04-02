@@ -1,10 +1,16 @@
 # CVEs — April 2026
 
-_431 vulnerabilities_
+_435 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
-| [CVE-2026-5420](https://nvd.nist.gov/vuln/detail/CVE-2026-5420) | 2.0 | LOW | CWE-320 | No | — | 1.40 | 2026-04-02 | A security flaw has been discovered in Shinrays Games Goods Triple App up to 1.200. The affected element is an unknown f... |
+| [CVE-2022-4986](https://nvd.nist.gov/vuln/detail/CVE-2022-4986) | 8.7 | HIGH | CWE-400 | No | — | 6.09 | 2026-04-02 | Hirschmann EagleSDV contains a denial-of-service vulnerability that causes the device to crash during session establishm... |
+| [CVE-2026-35467](https://nvd.nist.gov/vuln/detail/CVE-2026-35467) | 0.0 | NONE | CWE-522 | No | — | 0.00 | 2026-04-02 | The stored API keys in temporary browser client is not marked as protected allowing for JavScript console or other error... |
+| [CVE-2026-35466](https://nvd.nist.gov/vuln/detail/CVE-2026-35466) | 0.0 | NONE | CWE-79 | No | — | 0.00 | 2026-04-02 | XSS vulnerability in cveInterface.js allows for inject HTML to be passed to display, as cveInterface trusts input from C... |
+| [CVE-2026-30252](https://nvd.nist.gov/vuln/detail/CVE-2026-30252) | 0.0 | NONE | N/A | No | — | 0.00 | 2026-04-02 | Multiple reflected cross-site scripting (XSS) vulnerabilities in the login.php endpoint of Interzen Consulting S.r.l Zen... |
+| [CVE-2026-30251](https://nvd.nist.gov/vuln/detail/CVE-2026-30251) | 0.0 | NONE | N/A | No | — | 0.00 | 2026-04-02 | A reflected cross-site scripting (XSS) vulnerability in the login_newpwd.php endpoint of Interzen Consulting S.r.l ZenSh... |
+| [CVE-2025-15620](https://nvd.nist.gov/vuln/detail/CVE-2025-15620) | 9.2 | CRITICAL | CWE-306 | No | — | 6.44 | 2026-04-02 | HiOS Switch Platform contains a denial-of-service vulnerability in the web interface that allows remote attackers to reb... |
+| [CVE-2024-14033](https://nvd.nist.gov/vuln/detail/CVE-2024-14033) | 8.7 | HIGH | CWE-400 | No | — | 6.09 | 2026-04-02 | Hirschmann Industrial IT products (BAT-R, BAT-F, BAT450-F, BAT867-R, BAT867-F, WLC, BAT Controller Virtual) contain a he... |
 | [CVE-2026-35383](https://nvd.nist.gov/vuln/detail/CVE-2026-35383) | 6.9 | MEDIUM | CWE-540 | No | — | 4.83 | 2026-04-02 | Bentley Systems iTwin Platform exposed a Cesium ion access token in the source of some web pages. An unauthenticated att... |
 | [CVE-2026-35053](https://nvd.nist.gov/vuln/detail/CVE-2026-35053) | 9.2 | CRITICAL | CWE-306 | No | — | 6.44 | 2026-04-02 | OneUptime is an open-source monitoring and observability platform. Prior to version 10.0.42, the Worker service's Manual... |
 | [CVE-2026-34932](https://nvd.nist.gov/vuln/detail/CVE-2026-34932) | 8.5 | HIGH | CWE-79 | No | — | 5.95 | 2026-04-02 | hoppscotch is an open source API development ecosystem. Prior to version 2026.3.0, there is a stored XSS vulnerability t... |
@@ -22,7 +28,6 @@ _431 vulnerabilities_
 | [CVE-2026-34760](https://nvd.nist.gov/vuln/detail/CVE-2026-34760) | 5.9 | MEDIUM | CWE-20 | No | — | 4.13 | 2026-04-02 | vLLM is an inference and serving engine for large language models (LLMs). From version 0.5.5 to before version 0.18.0, L... |
 | [CVE-2024-14034](https://nvd.nist.gov/vuln/detail/CVE-2024-14034) | 9.3 | CRITICAL | CWE-287 | No | — | 6.51 | 2026-04-02 | Hirschmann HiEOS devices contain an authentication bypass vulnerability in the HTTP(S) management module that allows una... |
 | [CVE-2023-7343](https://nvd.nist.gov/vuln/detail/CVE-2023-7343) | 8.5 | HIGH | CWE-269 | No | — | 5.95 | 2026-04-02 | HiSecOS web server contains a privilege escalation vulnerability that allows authenticated users with operator or audito... |
-| [CVE-2026-5429](https://nvd.nist.gov/vuln/detail/CVE-2026-5429) | 7.1 | HIGH | CWE-79 | No | — | 4.97 | 2026-04-02 | Unsanitized input during web page generation in the Kiro Agent webview in Kiro IDE before version 0.8.140 allows a remot... |
 | [CVE-2026-5418](https://nvd.nist.gov/vuln/detail/CVE-2026-5418) | 6.9 | MEDIUM | CWE-918 | No | — | 4.83 | 2026-04-02 | A vulnerability was identified in appsmithorg appsmith up to 1.97. Impacted is the function computeDisallowedHosts of th... |
 | [CVE-2026-5417](https://nvd.nist.gov/vuln/detail/CVE-2026-5417) | 5.1 | MEDIUM | CWE-918 | No | — | 3.57 | 2026-04-02 | A vulnerability was determined in Dataease SQLbot up to 1.6.0. This issue affects the function get_es_data_by_http of th... |
 | [CVE-2026-34759](https://nvd.nist.gov/vuln/detail/CVE-2026-34759) | 9.2 | CRITICAL | CWE-862 | No | — | 6.44 | 2026-04-02 | OneUptime is an open-source monitoring and observability platform. Prior to version 10.0.42, multiple notification API e... |
@@ -110,8 +115,6 @@ _431 vulnerabilities_
 | [CVE-2026-26961](https://nvd.nist.gov/vuln/detail/CVE-2026-26961) | 3.7 | LOW | CWE-436 | No | — | 2.59 | 2026-04-02 | Rack is a modular Ruby web server interface. Prior to versions 2.2.23, 3.1.21, and 3.2.6, Rack::Multipart::Parser extrac... |
 | [CVE-2026-26895](https://nvd.nist.gov/vuln/detail/CVE-2026-26895) | 5.3 | MEDIUM | CWE-203 | No | — | 3.71 | 2026-04-02 | User enumeration vulnerability in /pwreset.php in osTicket v1.18.2 allows remote attackers to enumerate valid usernames... |
 | [CVE-2026-25212](https://nvd.nist.gov/vuln/detail/CVE-2026-25212) | 9.9 | CRITICAL | CWE-250 | No | — | 6.93 | 2026-04-02 | An issue was discovered in Percona PMM before 3.7. Because an internal database user retains specific superuser privileg... |
-| [CVE-2025-65114](https://nvd.nist.gov/vuln/detail/CVE-2025-65114) | 7.5 | HIGH | CWE-444 | No | — | 5.25 | 2026-04-02 | Apache Traffic Server allows request smuggling if chunked messages are malformed.   This issue affects Apache Traffic Se... |
-| [CVE-2025-58136](https://nvd.nist.gov/vuln/detail/CVE-2025-58136) | 7.5 | HIGH | CWE-670 | No | — | 5.25 | 2026-04-02 | A bug in POST request handling causes a crash under a certain condition.  This issue affects Apache Traffic Server: from... |
 | [CVE-2026-5351](https://nvd.nist.gov/vuln/detail/CVE-2026-5351) | 5.3 | MEDIUM | CWE-77 | No | — | 3.71 | 2026-04-02 | A weakness has been identified in Trendnet TEW-657BRM 1.00.1. This affects the function add_wps_client of the file /setu... |
 | [CVE-2026-5350](https://nvd.nist.gov/vuln/detail/CVE-2026-5350) | 7.4 | HIGH | CWE-119 | No | — | 5.18 | 2026-04-02 | A security flaw has been discovered in Trendnet TEW-657BRM 1.00.1. The impacted element is the function update_pcdb of t... |
 | [CVE-2026-5349](https://nvd.nist.gov/vuln/detail/CVE-2026-5349) | 7.4 | HIGH | CWE-119 | No | — | 5.18 | 2026-04-02 | A vulnerability was identified in Trendnet TEW-657BRM 1.00.1. The affected element is the function add_apcdb of the file... |
@@ -378,6 +381,7 @@ _431 vulnerabilities_
 | [CVE-2026-28265](https://nvd.nist.gov/vuln/detail/CVE-2026-28265) | 4.4 | MEDIUM | CWE-35 | No | 0.0% | 3.08 | 2026-04-01 | PowerStore, contains a Path Traversal vulnerability in the Service user. A low privileged attacker with local access cou... |
 | [CVE-2026-27101](https://nvd.nist.gov/vuln/detail/CVE-2026-27101) | 4.7 | MEDIUM | CWE-22 | No | 0.2% | 3.30 | 2026-04-01 | Dell Secure Connect Gateway (SCG) 5.0 Appliance and Application version(s) 5.28.00.xx to 5.32.00.xx, contain(s) an Impro... |
 | [CVE-2026-5258](https://nvd.nist.gov/vuln/detail/CVE-2026-5258) | 6.9 | MEDIUM | CWE-22 | No | 0.1% | 4.83 | 2026-04-01 | A vulnerability was found in Sanster IOPaint 1.5.3. Impacted is the function _get_file of the file iopaint/file_manager/... |
+| [CVE-2026-4748](https://nvd.nist.gov/vuln/detail/CVE-2026-4748) | 7.5 | HIGH | CWE-480 | No | 0.0% | 5.25 | 2026-04-01 | A regression in the way hashes were calculated caused rules containing the address range syntax (x.x.x.x - y.y.y.y) that... |
 | [CVE-2026-5257](https://nvd.nist.gov/vuln/detail/CVE-2026-5257) | 6.9 | MEDIUM | CWE-74 | No | 0.0% | 4.83 | 2026-04-01 | A vulnerability has been found in code-projects Simple Laundry System 1.0. This issue affects some unknown processing of... |
 | [CVE-2026-5256](https://nvd.nist.gov/vuln/detail/CVE-2026-5256) | 6.9 | MEDIUM | CWE-74 | No | 0.0% | 4.83 | 2026-04-01 | A flaw has been found in code-projects Simple Laundry System 1.0. This vulnerability affects unknown code of the file /m... |
 | [CVE-2026-5255](https://nvd.nist.gov/vuln/detail/CVE-2026-5255) | 5.3 | MEDIUM | CWE-79 | No | 0.0% | 3.71 | 2026-04-01 | A vulnerability was detected in code-projects Simple Laundry System 1.0. This affects an unknown part of the file /delst... |
