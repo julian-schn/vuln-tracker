@@ -1,6 +1,6 @@
 # CVEs — March 2026
 
-_5734 vulnerabilities_
+_5735 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
@@ -224,7 +224,7 @@ _5734 vulnerabilities_
 | [CVE-2026-3881](https://nvd.nist.gov/vuln/detail/CVE-2026-3881) | 5.8 | MEDIUM | CWE-918 | No | 0.0% | 4.06 | 2026-03-31 | The Performance Monitor WordPress plugin through 1.0.6 does not validate a parameter before making a request to it, whic... |
 | [CVE-2026-5183](https://nvd.nist.gov/vuln/detail/CVE-2026-5183) | 5.3 | MEDIUM | CWE-74 | No | 0.8% | 3.74 | 2026-03-31 | A vulnerability was determined in TRENDnet TEW-713RE up to 1.02. The affected element is the function sub_421494 of the... |
 | [CVE-2026-5182](https://nvd.nist.gov/vuln/detail/CVE-2026-5182) | 6.9 | MEDIUM | CWE-74 | No | 0.0% | 4.83 | 2026-03-31 | A vulnerability was found in SourceCodester Teacher Record System 1.0. Impacted is an unknown function of the file Teach... |
-| [CVE-2026-34881](https://nvd.nist.gov/vuln/detail/CVE-2026-34881) | 5.0 | MEDIUM | CWE-918 | No | 0.0% | 3.50 | 2026-03-31 | OpenStack Glance <29.1.1, >=30.0.0 <30.1.1, ==31.0.0 is affected by Server-Side Request Forgery (SSRF). By use of HTTP r... |
+| [CVE-2026-34881](https://nvd.nist.gov/vuln/detail/CVE-2026-34881) | 5.0 | MEDIUM | CWE-918 | No | 0.0% | 3.50 | 2026-03-31 | OpenStack Glance before 29.1.1, 30.x before 30.1.1, and 31.0.0 is affected by Server-Side Request Forgery (SSRF). By use... |
 | [CVE-2026-1877](https://nvd.nist.gov/vuln/detail/CVE-2026-1877) | 6.1 | MEDIUM | CWE-79 | No | 0.0% | 4.27 | 2026-03-31 | The Auto Post Scheduler plugin for WordPress is vulnerable to Cross-Site Request Forgery in all versions up to, and incl... |
 | [CVE-2026-1834](https://nvd.nist.gov/vuln/detail/CVE-2026-1834) | 6.4 | MEDIUM | CWE-80 | No | 0.0% | 4.48 | 2026-03-31 | The Ibtana – WordPress Website Builder plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the plugin'... |
 | [CVE-2026-5181](https://nvd.nist.gov/vuln/detail/CVE-2026-5181) | 5.3 | MEDIUM | CWE-284 | No | 0.0% | 3.71 | 2026-03-31 | A vulnerability has been found in SourceCodester Simple Doctors Appointment System up to 1.0. This issue affects some un... |
@@ -277,6 +277,7 @@ _5734 vulnerabilities_
 | [CVE-2026-33982](https://nvd.nist.gov/vuln/detail/CVE-2026-33982) | 7.1 | HIGH | CWE-125 | No | 0.0% | 4.97 | 2026-03-30 | FreeRDP is a free implementation of the Remote Desktop Protocol. Prior to version 3.24.2, there is a heap-buffer-overflo... |
 | [CVE-2026-33977](https://nvd.nist.gov/vuln/detail/CVE-2026-33977) | 6.9 | MEDIUM | CWE-617 | No | 0.0% | 4.83 | 2026-03-30 | FreeRDP is a free implementation of the Remote Desktop Protocol. Prior to version 3.24.2, a malicious RDP server can cra... |
 | [CVE-2026-33952](https://nvd.nist.gov/vuln/detail/CVE-2026-33952) | 6.0 | MEDIUM | CWE-617 | No | 0.0% | 4.20 | 2026-03-30 | FreeRDP is a free implementation of the Remote Desktop Protocol. Prior to version 3.24.2, an unvalidated auth_length fie... |
+| [CVE-2026-32794](https://nvd.nist.gov/vuln/detail/CVE-2026-32794) | 4.8 | MEDIUM | CWE-295 | No | 0.0% | 3.36 | 2026-03-30 | Improper Certificate Validation vulnerability in Apache Airflow Provider for Databricks. Provider code did not validate... |
 | [CVE-2026-5152](https://nvd.nist.gov/vuln/detail/CVE-2026-5152) | 7.4 | HIGH | CWE-119 | No | 0.1% | 5.18 | 2026-03-30 | A vulnerability was detected in Tenda CH22 1.0.0.1. Impacted is the function formCreateFileName of the file /goform/crea... |
 | [CVE-2026-4789](https://nvd.nist.gov/vuln/detail/CVE-2026-4789) | 9.8 | CRITICAL | N/A | No | 0.0% | 6.86 | 2026-03-30 | Kyverno, versions 1.16.0 and later, are vulnerable to SSRF due to unrestricted CEL HTTP functions. |
 | [CVE-2026-34558](https://nvd.nist.gov/vuln/detail/CVE-2026-34558) | 9.1 | CRITICAL | CWE-79 | No | 0.0% | 6.37 | 2026-03-30 | CI4MS is a CodeIgniter 4-based CMS skeleton that delivers a production-ready, modular architecture with RBAC authorizati... |
@@ -327,7 +328,6 @@ _5734 vulnerabilities_
 | [CVE-2026-29909](https://nvd.nist.gov/vuln/detail/CVE-2026-29909) | 5.3 | MEDIUM | CWE-20 | No | 0.0% | 3.71 | 2026-03-30 | MRCMS V3.1.2 contains an unauthenticated directory enumeration vulnerability in the file management module. The /admin/f... |
 | [CVE-2026-27508](https://nvd.nist.gov/vuln/detail/CVE-2026-27508) | 5.1 | MEDIUM | CWE-79 | No | 0.0% | 3.57 | 2026-03-30 | Smoothwall Express versions prior to 3.1 Update 13 contain a reflected cross-site scripting vulnerability in the /redire... |
 | [CVE-2026-26352](https://nvd.nist.gov/vuln/detail/CVE-2026-26352) | 5.1 | MEDIUM | CWE-79 | No | 0.0% | 3.57 | 2026-03-30 | Smoothwall Express versions prior to 3.1 Update 13 contain a stored cross-site scripting vulnerability in the /cgi-bin/v... |
-| [CVE-2026-5170](https://nvd.nist.gov/vuln/detail/CVE-2026-5170) | 6.0 | MEDIUM | CWE-617 | No | 0.0% | 4.20 | 2026-03-30 | A user with access to the cluster with a limited set of privilege actions can trigger a crash of a mongod process during... |
 | [CVE-2026-5123](https://nvd.nist.gov/vuln/detail/CVE-2026-5123) | 6.3 | MEDIUM | CWE-189 | No | 0.0% | 4.41 | 2026-03-30 | A weakness has been identified in osrg GoBGP up to 4.3.0. This impacts the function DecodeFromBytes of the file pkg/pack... |
 | [CVE-2026-34472](https://nvd.nist.gov/vuln/detail/CVE-2026-34472) | 7.1 | HIGH | CWE-200 | No | 0.0% | 4.97 | 2026-03-30 | Unauthenticated credential disclosure in the wizard interface in ZTE ZXHN H188A V6.0.10P2_TE and V6.0.10P3N3_TE allows u... |
 | [CVE-2026-33643](https://nvd.nist.gov/vuln/detail/CVE-2026-33643) | 7.4 | HIGH | CWE-89 | No | 0.0% | 5.18 | 2026-03-30 | SQL Injection vulnerability in SchemaHero 0.23.0 via the column parameter to the mysqlColumnAsInsert function in file pl... |
@@ -863,7 +863,7 @@ _5734 vulnerabilities_
 | [CVE-2026-33397](https://nvd.nist.gov/vuln/detail/CVE-2026-33397) | 6.9 | MEDIUM | CWE-601 | No | 0.1% | 4.83 | 2026-03-26 | The Angular SSR is a server-rise rendering tool for Angular applications. Versions on the 22.x branch prior to 22.0.0-ne... |
 | [CVE-2026-30162](https://nvd.nist.gov/vuln/detail/CVE-2026-30162) | 6.1 | MEDIUM | CWE-79 | No | 0.0% | 4.27 | 2026-03-26 | Cross Site Scripting (xss) vulnerability in Timo 2.0.3 via crafted links in the title field. |
 | [CVE-2026-29976](https://nvd.nist.gov/vuln/detail/CVE-2026-29976) | 6.2 | MEDIUM | CWE-120 | No | 0.0% | 4.34 | 2026-03-26 | Buffer Overflow vulnerability in ZerBea hcxpcapngtool v. 7.0.1-43-g2ee308e allows a local attacker to obtain sensitive i... |
-| [CVE-2026-29934](https://nvd.nist.gov/vuln/detail/CVE-2026-29934) | 6.1 | MEDIUM | N/A | No | 0.0% | 4.27 | 2026-03-26 | A reflected cross-site scripting (XSS) vulnerability in the /admin/menus component of Lightcms v2.0 allows attackers to... |
+| [CVE-2026-29934](https://nvd.nist.gov/vuln/detail/CVE-2026-29934) | 6.1 | MEDIUM | CWE-79 | No | 0.0% | 4.27 | 2026-03-26 | A reflected cross-site scripting (XSS) vulnerability in the /admin/menus component of Lightcms v2.0 allows attackers to... |
 | [CVE-2026-29933](https://nvd.nist.gov/vuln/detail/CVE-2026-29933) | 6.1 | MEDIUM | CWE-79 | No | 0.0% | 4.27 | 2026-03-26 | A reflected cross-site scripting (XSS) vulnerability in the /index/login.html component of YZMCMS v7.4 allows attackers... |
 | [CVE-2026-28298](https://nvd.nist.gov/vuln/detail/CVE-2026-28298) | 5.9 | MEDIUM | CWE-79 | No | 0.1% | 4.13 | 2026-03-26 | SolarWinds Observability Self-Hosted was found to be affected by a stored cross-site scripting vulnerability, which when... |
 | [CVE-2026-28297](https://nvd.nist.gov/vuln/detail/CVE-2026-28297) | 6.1 | MEDIUM | CWE-79 | No | 0.1% | 4.27 | 2026-03-26 | SolarWinds Observability Self-Hosted was found to be affected by a stored cross-site scripting vulnerability, which when... |
@@ -5492,6 +5492,7 @@ _5734 vulnerabilities_
 | [CVE-2026-3351](https://nvd.nist.gov/vuln/detail/CVE-2026-3351) | 2.1 | LOW | CWE-862 | No | 0.0% | 1.47 | 2026-03-03 | Improper authorization in the API endpoint GET /1.0/certificates in Canonical LXD 6.6 on Linux allows an authenticated,... |
 | [CVE-2026-3463](https://nvd.nist.gov/vuln/detail/CVE-2026-3463) | 4.8 | MEDIUM | CWE-119 | No | 0.0% | 3.36 | 2026-03-03 | A weakness has been identified in xlnt-community xlnt up to 1.6.1. Impacted is the function xlnt::detail::binary_writer:... |
 | [CVE-2026-2568](https://nvd.nist.gov/vuln/detail/CVE-2026-2568) | 7.2 | HIGH | CWE-79 | No | 0.1% | 5.04 | 2026-03-03 | The WP Zendesk for Contact Form 7, WPForms, Elementor, Formidable and Ninja Forms plugin for WordPress is vulnerable to... |
+| [CVE-2026-22886](https://nvd.nist.gov/vuln/detail/CVE-2026-22886) | 9.8 | CRITICAL | CWE-1391 | No | 0.2% | 6.87 | 2026-03-03 | OpenMQ exposes a TCP-based management service (imqbrokerd) that by default requires authentication. However, the product... |
 | [CVE-2025-15598](https://nvd.nist.gov/vuln/detail/CVE-2025-15598) | 6.3 | MEDIUM | CWE-345 | No | 0.0% | 4.41 | 2026-03-03 | A vulnerability was found in Dataease SQLBot up to 1.5.1. This impacts the function validateEmbedded of the file backend... |
 | [CVE-2026-1876](https://nvd.nist.gov/vuln/detail/CVE-2026-1876) | 8.7 | HIGH | CWE-404 | No | 0.2% | 6.10 | 2026-03-03 | Improper Resource Shutdown or Release vulnerability in Mitsubishi Electric Corporation MELSEC iQ-F Series FX5-ENET/IP Et... |
 | [CVE-2026-1875](https://nvd.nist.gov/vuln/detail/CVE-2026-1875) | 8.7 | HIGH | CWE-404 | No | 0.2% | 6.10 | 2026-03-03 | Improper Resource Shutdown or Release vulnerability in Mitsubishi Electric Corporation MELSEC iQ-F Series FX5-EIP EtherN... |
