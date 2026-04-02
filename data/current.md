@@ -1,9 +1,13 @@
 # CVEs — April 2026
 
-_206 vulnerabilities_
+_209 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
+| [CVE-2026-5321](https://nvd.nist.gov/vuln/detail/CVE-2026-5321) | 5.3 | MEDIUM | CWE-346 | No | — | 3.71 | 2026-04-02 | A flaw has been found in vanna-ai vanna up to 2.0.2. Affected by this issue is some unknown functionality of the compone... |
+| [CVE-2026-5320](https://nvd.nist.gov/vuln/detail/CVE-2026-5320) | 6.9 | MEDIUM | CWE-287 | No | — | 4.83 | 2026-04-02 | A vulnerability was detected in vanna-ai vanna up to 2.0.2. Affected by this vulnerability is an unknown functionality o... |
+| [CVE-2026-5319](https://nvd.nist.gov/vuln/detail/CVE-2026-5319) | 5.3 | MEDIUM | CWE-79 | No | — | 3.71 | 2026-04-02 | A security vulnerability has been detected in itsourcecode Payroll Management System up to 1.0. Affected is an unknown f... |
+| [CVE-2026-5318](https://nvd.nist.gov/vuln/detail/CVE-2026-5318) | 5.3 | MEDIUM | CWE-119 | No | — | 3.71 | 2026-04-02 | A weakness has been identified in LibRaw up to 0.22.0. This impacts the function HuffTable::initval of the file src/deco... |
 | [CVE-2026-5317](https://nvd.nist.gov/vuln/detail/CVE-2026-5317) | 5.3 | MEDIUM | CWE-119 | No | — | 3.71 | 2026-04-02 | A security flaw has been discovered in Nothings stb up to 1.22. This affects the function start_decoder of the file stb_... |
 | [CVE-2026-1243](https://nvd.nist.gov/vuln/detail/CVE-2026-1243) | 5.4 | MEDIUM | N/A | No | — | 3.78 | 2026-04-02 | IBM Content Navigator 3.0.15, 3.1.0, and 3.2.0 is vulnerable to cross-site scripting. This vulnerability allows an authe... |
 | [CVE-2026-5316](https://nvd.nist.gov/vuln/detail/CVE-2026-5316) | 5.3 | MEDIUM | CWE-400 | No | — | 3.71 | 2026-04-02 | A vulnerability was identified in Nothings stb up to 1.22. The impacted element is the function setup_free of the file s... |
@@ -123,7 +127,6 @@ _206 vulnerabilities_
 | [CVE-2026-30291](https://nvd.nist.gov/vuln/detail/CVE-2026-30291) | 8.4 | HIGH | CWE-73 | No | — | 5.88 | 2026-04-01 | An arbitrary file overwrite vulnerability in Ora Tools PDF Reader ' Reader & Editor APPv4.3.5 allows attackers to overwr... |
 | [CVE-2026-29598](https://nvd.nist.gov/vuln/detail/CVE-2026-29598) | 5.4 | MEDIUM | CWE-79 | No | — | 3.78 | 2026-04-01 | Multiple stored cross-site scripting (XSS) vulnerabilities in the submit_add_user.asp endpoint of DDSN Interactive Acora... |
 | [CVE-2025-13535](https://nvd.nist.gov/vuln/detail/CVE-2025-13535) | 6.4 | MEDIUM | CWE-79 | No | — | 4.48 | 2026-04-01 | The King Addons for Elementor plugin for WordPress is vulnerable to multiple Contributor+ DOM-Based Stored Cross-Site Sc... |
-| [CVE-2026-5271](https://nvd.nist.gov/vuln/detail/CVE-2026-5271) | 5.6 | MEDIUM | CWE-427 | No | — | 3.92 | 2026-04-01 | pymanager included the current working directory in sys.path meaning modules could be shadowed by modules in the current... |
 | [CVE-2026-3877](https://nvd.nist.gov/vuln/detail/CVE-2026-3877) | 7.3 | HIGH | CWE-79 | No | — | 5.11 | 2026-04-01 | A reflected cross-site scripting (XSS) vulnerability in the dashboard search functionality of the VertiGIS FM solution a... |
 | [CVE-2026-35094](https://nvd.nist.gov/vuln/detail/CVE-2026-35094) | 3.3 | LOW | CWE-825 | No | — | 2.31 | 2026-04-01 | A flaw was found in libinput. An attacker capable of deploying a Lua plugin file in specific system directories can expl... |
 | [CVE-2026-35093](https://nvd.nist.gov/vuln/detail/CVE-2026-35093) | 8.8 | HIGH | CWE-94 | No | — | 6.16 | 2026-04-01 | A flaw was found in libinput. A local attacker who can place a specially crafted Lua bytecode file in certain system or... |
