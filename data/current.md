@@ -1,9 +1,14 @@
 # CVEs — April 2026
 
-_209 vulnerabilities_
+_214 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
+| [CVE-2026-5325](https://nvd.nist.gov/vuln/detail/CVE-2026-5325) | 5.1 | MEDIUM | CWE-79 | No | — | 3.57 | 2026-04-02 | A vulnerability was determined in SourceCodester Simple Customer Relationship Management System 1.0. This issue affects... |
+| [CVE-2026-5323](https://nvd.nist.gov/vuln/detail/CVE-2026-5323) | 4.8 | MEDIUM | CWE-918 | No | — | 3.36 | 2026-04-02 | A vulnerability was found in priyankark a11y-mcp up to 1.0.5. This vulnerability affects the function A11yServer of the... |
+| [CVE-2026-5322](https://nvd.nist.gov/vuln/detail/CVE-2026-5322) | 6.9 | MEDIUM | CWE-74 | No | — | 4.83 | 2026-04-02 | A vulnerability has been found in AlejandroArciniegas mcp-data-vis bc597e391f184d2187062fd567599a3cb72adf51/de5a51525a69... |
+| [CVE-2026-4347](https://nvd.nist.gov/vuln/detail/CVE-2026-4347) | 8.1 | HIGH | CWE-22 | No | — | 5.67 | 2026-04-02 | The MW WP Form plugin for WordPress is vulnerable to arbitrary file moving due to insufficient file path validation via... |
+| [CVE-2026-1540](https://nvd.nist.gov/vuln/detail/CVE-2026-1540) | 0.0 | NONE | N/A | No | — | 0.00 | 2026-04-02 | The Spam Protect for Contact Form 7 WordPress plugin before 1.2.10 allows logging to a PHP file, which could allow an at... |
 | [CVE-2026-5321](https://nvd.nist.gov/vuln/detail/CVE-2026-5321) | 5.3 | MEDIUM | CWE-346 | No | — | 3.71 | 2026-04-02 | A flaw has been found in vanna-ai vanna up to 2.0.2. Affected by this issue is some unknown functionality of the compone... |
 | [CVE-2026-5320](https://nvd.nist.gov/vuln/detail/CVE-2026-5320) | 6.9 | MEDIUM | CWE-287 | No | — | 4.83 | 2026-04-02 | A vulnerability was detected in vanna-ai vanna up to 2.0.2. Affected by this vulnerability is an unknown functionality o... |
 | [CVE-2026-5319](https://nvd.nist.gov/vuln/detail/CVE-2026-5319) | 5.3 | MEDIUM | CWE-79 | No | — | 3.71 | 2026-04-02 | A security vulnerability has been detected in itsourcecode Payroll Management System up to 1.0. Affected is an unknown f... |
