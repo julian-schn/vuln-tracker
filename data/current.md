@@ -1,12 +1,14 @@
 # CVEs — April 2026
 
-_459 vulnerabilities_
+_460 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
+| [CVE-2026-5458](https://nvd.nist.gov/vuln/detail/CVE-2026-5458) | 1.9 | LOW | CWE-320 | No | — | 1.33 | 2026-04-03 | A weakness has been identified in Noelse Individuals & Pro App up to 2.1.7 on Android. This impacts an unknown function... |
+| [CVE-2026-5457](https://nvd.nist.gov/vuln/detail/CVE-2026-5457) | 1.9 | LOW | CWE-320 | No | — | 1.33 | 2026-04-03 | A security flaw has been discovered in PropertyGuru AgentNet Singapore App up to 23.7.10 on Android. This affects an unk... |
+| [CVE-2026-5456](https://nvd.nist.gov/vuln/detail/CVE-2026-5456) | 1.9 | LOW | CWE-320 | No | — | 1.33 | 2026-04-03 | A vulnerability was identified in Align Technology My Invisalign App 3.12.4 on Android. The impacted element is an unkno... |
+| [CVE-2026-5455](https://nvd.nist.gov/vuln/detail/CVE-2026-5455) | 1.9 | LOW | CWE-320 | No | — | 1.33 | 2026-04-03 | A vulnerability was determined in Dialogue App up to 4.3.2 on Android. The affected element is an unknown function of th... |
 | [CVE-2026-5463](https://nvd.nist.gov/vuln/detail/CVE-2026-5463) | 9.3 | CRITICAL | CWE-77 | No | — | 6.51 | 2026-04-03 | Command injection vulnerability in console.run_module_with_output() in pymetasploit3 through version 1.0.6 allows attack... |
-| [CVE-2026-5454](https://nvd.nist.gov/vuln/detail/CVE-2026-5454) | 1.9 | LOW | CWE-320 | No | — | 1.33 | 2026-04-03 | A vulnerability was found in GRID Organiser App up to 1.0.5 on Android. Impacted is an unknown function of the file file... |
-| [CVE-2026-5453](https://nvd.nist.gov/vuln/detail/CVE-2026-5453) | 1.9 | LOW | CWE-320 | No | — | 1.33 | 2026-04-03 | A vulnerability has been found in Rico só vantagem pra investir App up to 4.58.32.12421 on Android. This issue affects s... |
 | [CVE-2026-35549](https://nvd.nist.gov/vuln/detail/CVE-2026-35549) | 6.5 | MEDIUM | CWE-789 | No | — | 4.55 | 2026-04-03 | An issue was discovered in MariaDB Server before 11.4.10, 11.5.x through 11.8.x before 11.8.6, and 12.x before 12.2.2. I... |
 | [CVE-2026-35545](https://nvd.nist.gov/vuln/detail/CVE-2026-35545) | 5.3 | MEDIUM | CWE-669 | No | — | 3.71 | 2026-04-03 | An issue was discovered in Roundcube Webmail before 1.5.15 and 1.6.15. The remote image blocking feature can be bypassed... |
 | [CVE-2026-35544](https://nvd.nist.gov/vuln/detail/CVE-2026-35544) | 5.3 | MEDIUM | CWE-669 | No | — | 3.71 | 2026-04-03 | An issue was discovered in Roundcube Webmail before 1.5.14 and 1.6.14. Insufficient Cascading Style Sheets (CSS) sanitiz... |
@@ -16,7 +18,6 @@ _459 vulnerabilities_
 | [CVE-2026-35540](https://nvd.nist.gov/vuln/detail/CVE-2026-35540) | 5.4 | MEDIUM | CWE-669 | No | — | 3.78 | 2026-04-03 | An issue was discovered in Roundcube Webmail 1.6.0 before 1.6.14. Insufficient Cascading Style Sheets (CSS) sanitization... |
 | [CVE-2026-35539](https://nvd.nist.gov/vuln/detail/CVE-2026-35539) | 6.1 | MEDIUM | CWE-79 | No | — | 4.27 | 2026-04-03 | An issue was discovered in Roundcube Webmail before 1.5.14 and 1.6.14. XSS exists because of insufficient HTML attachmen... |
 | [CVE-2026-35538](https://nvd.nist.gov/vuln/detail/CVE-2026-35538) | 3.1 | LOW | CWE-88 | No | — | 2.17 | 2026-04-03 | An issue was discovered in Roundcube Webmail before 1.5.14 and 1.6.14. Unsanitized IMAP SEARCH command arguments could l... |
-| [CVE-2026-5452](https://nvd.nist.gov/vuln/detail/CVE-2026-5452) | 1.9 | LOW | CWE-320 | No | — | 1.33 | 2026-04-03 | A flaw has been found in UCC CampusConnect App up to 14.3.5 on Android. This vulnerability affects unknown code of the f... |
 | [CVE-2026-35537](https://nvd.nist.gov/vuln/detail/CVE-2026-35537) | 3.7 | LOW | CWE-502 | No | — | 2.59 | 2026-04-03 | An issue was discovered in Roundcube Webmail before 1.5.14 and 1.6.14. Unsafe deserialization in the redis/memcache sess... |
 | [CVE-2026-35536](https://nvd.nist.gov/vuln/detail/CVE-2026-35536) | 7.2 | HIGH | CWE-159 | No | — | 5.04 | 2026-04-03 | In Tornado before 6.5.5, cookie attribute injection could occur because the domain, path, and samesite arguments to .Req... |
 | [CVE-2026-35535](https://nvd.nist.gov/vuln/detail/CVE-2026-35535) | 7.4 | HIGH | CWE-271 | No | — | 5.18 | 2026-04-03 | In Sudo through 1.9.17p2 before 3e474c2, a failure of a setuid, setgid, or setgroups call, during a privilege drop befor... |
