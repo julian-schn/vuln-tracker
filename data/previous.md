@@ -1,6 +1,6 @@
 # CVEs — March 2026
 
-_5736 vulnerabilities_
+_5735 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
@@ -111,7 +111,6 @@ _5736 vulnerabilities_
 | [CVE-2026-30279](https://nvd.nist.gov/vuln/detail/CVE-2026-30279) | 8.4 | HIGH | CWE-22 | No | 0.0% | 5.88 | 2026-03-31 | An arbitrary file overwrite vulnerability in Squareapps LLC My Location Travel Timeline v11.80 allows attackers to overw... |
 | [CVE-2026-30278](https://nvd.nist.gov/vuln/detail/CVE-2026-30278) | 9.8 | CRITICAL | CWE-22 | No | 0.1% | 6.86 | 2026-03-31 | An arbitrary file overwrite vulnerability in FLY is FUN Aviation Navigation v35.33 allows attackers to overwrite critica... |
 | [CVE-2026-30277](https://nvd.nist.gov/vuln/detail/CVE-2026-30277) | 8.4 | HIGH | CWE-22 | No | 0.0% | 5.88 | 2026-03-31 | An arbitrary file overwrite vulnerability in PDF Reader App : TA/UTAX Mobile Print v3.7.2.251001 allows attackers to ove... |
-| [CVE-2026-2123](https://nvd.nist.gov/vuln/detail/CVE-2026-2123) | 8.6 | HIGH | CWE-280 | No | 0.0% | 6.02 | 2026-03-31 | A security audit identified a privilege escalation vulnerability in Operations Agent(<=OA 12.29) on Windows. Under speci... |
 | [CVE-2025-62184](https://nvd.nist.gov/vuln/detail/CVE-2025-62184) | 4.8 | MEDIUM | CWE-79 | No | 0.0% | 3.36 | 2026-03-31 | Pega Platform versions 8.1.0 through 25.1.0 are affected by a Stored Cross-site Scripting vulnerability in a user interf... |
 | [CVE-2026-5205](https://nvd.nist.gov/vuln/detail/CVE-2026-5205) | 5.3 | MEDIUM | CWE-918 | No | 0.0% | 3.71 | 2026-03-31 | A vulnerability was identified in chatwoot up to 4.11.2. Affected by this vulnerability is the function Webhooks::Trigge... |
 | [CVE-2026-34361](https://nvd.nist.gov/vuln/detail/CVE-2026-34361) | 9.3 | CRITICAL | CWE-552 | No | 0.0% | 6.51 | 2026-03-31 | HAPI FHIR is a complete implementation of the HL7 FHIR standard for healthcare interoperability in Java. Prior to versio... |
@@ -124,6 +123,7 @@ _5736 vulnerabilities_
 | [CVE-2026-24148](https://nvd.nist.gov/vuln/detail/CVE-2026-24148) | 8.3 | HIGH | CWE-1188 | No | 0.0% | 5.81 | 2026-03-31 | NVIDIA Jetson for JetPack contains a vulnerability in the system initialization logic, where an unprivileged attacker co... |
 | [CVE-2026-5204](https://nvd.nist.gov/vuln/detail/CVE-2026-5204) | 7.4 | HIGH | CWE-119 | No | 0.1% | 5.18 | 2026-03-31 | A vulnerability was determined in Tenda CH22 1.0.0.1. Affected is the function formWebTypeLibrary of the file /goform/we... |
 | [CVE-2026-5203](https://nvd.nist.gov/vuln/detail/CVE-2026-5203) | 5.1 | MEDIUM | CWE-22 | No | 0.0% | 3.57 | 2026-03-31 | A vulnerability was found in CMS Made Simple up to 2.2.22. This impacts the function _copyFilesToFolder in the library m... |
+| [CVE-2026-5087](https://nvd.nist.gov/vuln/detail/CVE-2026-5087) | 7.5 | HIGH | CWE-338 | No | 0.0% | 5.25 | 2026-03-31 | PAGI::Middleware::Session::Store::Cookie versions through 0.001003 for Perl generates random bytes insecurely.  PAGI::Mi... |
 | [CVE-2026-4819](https://nvd.nist.gov/vuln/detail/CVE-2026-4819) | 4.9 | MEDIUM | CWE-522 | No | 0.0% | 3.43 | 2026-03-31 | In Search Guard FLX versions from 1.0.0 up to 4.0.1, the audit logging feature might log user credentials from users log... |
 | [CVE-2026-4818](https://nvd.nist.gov/vuln/detail/CVE-2026-4818) | 6.8 | MEDIUM | CWE-285 | No | 0.0% | 4.76 | 2026-03-31 | In Search Guard FLX versions from 3.0.0 up to 4.0.1, there exists an issue which allows users without the necessary priv... |
 | [CVE-2026-34595](https://nvd.nist.gov/vuln/detail/CVE-2026-34595) | 5.3 | MEDIUM | CWE-843 | No | 0.0% | 3.71 | 2026-03-31 | Parse Server is an open source backend that can be deployed to any infrastructure that can run Node.js. Prior to version... |
@@ -252,7 +252,6 @@ _5736 vulnerabilities_
 | [CVE-2026-5176](https://nvd.nist.gov/vuln/detail/CVE-2026-5176) | 6.9 | MEDIUM | CWE-74 | No | 3.0% | 4.92 | 2026-03-31 | A security flaw has been discovered in Totolink A3300R 17.0.0cu.557_b20221024. Affected is the function setSyslogCfg of... |
 | [CVE-2026-4020](https://nvd.nist.gov/vuln/detail/CVE-2026-4020) | 7.5 | HIGH | CWE-200 | No | 4.5% | 5.38 | 2026-03-31 | The Gravity SMTP plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and includi... |
 | [CVE-2026-3300](https://nvd.nist.gov/vuln/detail/CVE-2026-3300) | 9.8 | CRITICAL | CWE-94 | No | 0.2% | 6.87 | 2026-03-31 | The Everest Forms Pro plugin for WordPress is vulnerable to Remote Code Execution via PHP Code Injection in all versions... |
-| [CVE-2026-5115](https://nvd.nist.gov/vuln/detail/CVE-2026-5115) | 3.6 | LOW | CWE-319 | No | 0.0% | 2.52 | 2026-03-31 | The PaperCut NG/MF (specifically, the embedded application for Konica Minolta devices) is vulnerable to session hijackin... |
 | [CVE-2026-4794](https://nvd.nist.gov/vuln/detail/CVE-2026-4794) | 2.1 | LOW | CWE-79 | No | 0.0% | 1.47 | 2026-03-31 | Multiple cross-site scripting (XSS) vulnerabilities in PaperCut NG/MF before 25.0.10 allow authenticated administrator u... |
 | [CVE-2026-32734](https://nvd.nist.gov/vuln/detail/CVE-2026-32734) | 7.1 | HIGH | CWE-79 | No | 0.0% | 4.97 | 2026-03-31 | baserCMS is a website development framework. Prior to version 5.2.3, baserCMS has DOM-based cross-site scripting in tag... |
 | [CVE-2026-30940](https://nvd.nist.gov/vuln/detail/CVE-2026-30940) | 7.2 | HIGH | CWE-22 | No | 0.2% | 5.05 | 2026-03-31 | baserCMS is a website development framework. Prior to version 5.2.3, a path traversal vulnerability exists in the theme... |
@@ -782,7 +781,7 @@ _5736 vulnerabilities_
 | [CVE-2026-2239](https://nvd.nist.gov/vuln/detail/CVE-2026-2239) | 2.8 | LOW | CWE-170 | No | 0.0% | 1.96 | 2026-03-26 | A flaw was found in GIMP. Heap-buffer-overflow vulnerability exists in the fread_pascal_string function when processing... |
 | [CVE-2026-2100](https://nvd.nist.gov/vuln/detail/CVE-2026-2100) | 5.3 | MEDIUM | CWE-824 | No | 0.1% | 3.71 | 2026-03-26 | A flaw was found in p11-kit. A remote attacker could exploit this vulnerability by calling the C_DeriveKey function on a... |
 | [CVE-2026-21724](https://nvd.nist.gov/vuln/detail/CVE-2026-21724) | 5.4 | MEDIUM | CWE-285 | No | 0.0% | 3.78 | 2026-03-26 | A vulnerability has been discovered in Grafana OSS where an authorization bypass in the provisioning contact points API... |
-| [CVE-2026-0968](https://nvd.nist.gov/vuln/detail/CVE-2026-0968) | 3.1 | LOW | CWE-476 | No | 0.0% | 2.17 | 2026-03-26 | A flaw was found in libssh in which a malicious SFTP (SSH File Transfer Protocol) server can exploit this by sending a m... |
+| [CVE-2026-0968](https://nvd.nist.gov/vuln/detail/CVE-2026-0968) | 9.8 | CRITICAL | CWE-476 | No | 0.0% | 6.86 | 2026-03-26 | A flaw was found in libssh in which a malicious SFTP (SSH File Transfer Protocol) server can exploit this by sending a m... |
 | [CVE-2026-0967](https://nvd.nist.gov/vuln/detail/CVE-2026-0967) | 5.5 | MEDIUM | CWE-1333 | No | 0.1% | 3.85 | 2026-03-26 | A flaw was found in libssh. A remote attacker, by controlling client configuration files or known_hosts files, could cra... |
 | [CVE-2026-0965](https://nvd.nist.gov/vuln/detail/CVE-2026-0965) | 3.3 | LOW | CWE-73 | No | 0.0% | 2.31 | 2026-03-26 | A flaw was found in libssh where it can attempt to open arbitrary files during configuration parsing. A local attacker c... |
 | [CVE-2026-33632](https://nvd.nist.gov/vuln/detail/CVE-2026-33632) | 8.4 | HIGH | CWE-862 | No | 0.0% | 5.88 | 2026-03-26 | ClearanceKit intercepts file-system access events on macOS and enforces per-process access policies. Prior to version 4.... |

@@ -11,7 +11,7 @@
     <header>
       <h1>vuln-tracker</h1>
       <p class="subtitle">CVEs from the National Vulnerability Database — current and previous month</p>
-      <p class="last-updated">Last updated: 2026-04-03 18:57 UTC</p>
+      <p class="last-updated">Last updated: 2026-04-03 20:44 UTC</p>
     </header>
     <nav>
       <a href="top50.html">&#9733; Top 50</a>
@@ -25,7 +25,7 @@
     </nav>
     <main>
     <section>
-      <h2>Current Month — April 2026 <span class="count">(494)</span></h2>
+      <h2>Current Month — April 2026 <span class="count">(504)</span></h2>
       <div class="table-wrapper">
         <table>
           <thead>
@@ -42,6 +42,61 @@
             </tr>
           </thead>
           <tbody>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5484" target="_blank" rel="noopener">CVE-2026-5484</a></td>
+        <td>5.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-266</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.85</td>
+        <td><details><summary>A weakness has been identified in BookStackApp BookStack up to 26.03. Affected i...</summary><p>A weakness has been identified in BookStackApp BookStack up to 26.03. Affected is the function chapterToMarkdown of the file app/Exports/ExportFormatter.php of the component Chapter Export Handler. Executing a manipulation of the argument pages can lead to improper access controls. It is possible to launch the attack remotely. The exploit has been made available to the public and could be used for attacks. Upgrading to version 26.03.1 is able to address this issue. This patch is called 8a59895ba063040cc8dafd82e94024c406df3d04. It is advisable to upgrade the affected component. The vendor was contacted early, responded in a very professional manner and quickly released a fixed version of the affected product.</p></details></td>
+        <td>2026-04-03</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-28798" target="_blank" rel="noopener">CVE-2026-28798</a></td>
+        <td>9.0</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-918</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.30</td>
+        <td><details><summary>ZimaOS is a fork of CasaOS, an operating system for Zima devices and x86-64 syst...</summary><p>ZimaOS is a fork of CasaOS, an operating system for Zima devices and x86-64 systems with UEFI. Prior to version 1.5.3, a proxy endpoint (/v1/sys/proxy) exposed by ZimaOS&#x27;s web interface can be abused (via an externally reachable domain using a Cloudflare Tunnel) to make requests to internal localhost services. This results in unauthenticated access to internal-only endpoints and sensitive local services when the product is reachable from the Internet through a Cloudflare Tunnel. This issue has been patched in version 1.5.3.</p></details></td>
+        <td>2026-04-03</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-25726" target="_blank" rel="noopener">CVE-2026-25726</a></td>
+        <td>8.1</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-338</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.67</td>
+        <td><details><summary>Cloudreve is a self-hosted file management and sharing system. Prior to version ...</summary><p>Cloudreve is a self-hosted file management and sharing system. Prior to version 4.13.0, the application uses the weak pseudo-random number generator math/rand seeded with time.Now().UnixNano() to generate critical security secrets, including the secret_key, and hash_id_salt. These secrets are generated upon first startup and persisted in the database. An attacker can exploit this by obtaining the administrator&#x27;s account creation time (via public API endpoints) to narrow the search window for the PRNG seed, and use known hashid to validate the seed. By brute-forcing the seed (demonstrated to take &lt;3 hours on general consumer PC), an attacker can predict the secret_key. This allows them to forge valid JSON Web Tokens (JWTs) for any user, including administrators, leading to full account takeover and privilege escalation. This issue has been patched in version 4.13.0.</p></details></td>
+        <td>2026-04-03</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-3184" target="_blank" rel="noopener">CVE-2026-3184</a></td>
+        <td>3.7</td>
+        <td><span class="severity low">LOW</span></td>
+        <td>CWE-289</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>2.59</td>
+        <td><details><summary>A flaw was found in util-linux. Improper hostname canonicalization in the `login...</summary><p>A flaw was found in util-linux. Improper hostname canonicalization in the `login(1)` utility, when invoked with the `-h` option, can modify the supplied remote hostname before setting `PAM_RHOST`. A remote attacker could exploit this by providing a specially crafted hostname, potentially bypassing host-based Pluggable Authentication Modules (PAM) access control rules that rely on fully qualified domain names. This could lead to unauthorized access.</p></details></td>
+        <td>2026-04-03</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-2625" target="_blank" rel="noopener">CVE-2026-2625</a></td>
+        <td>4.0</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-347</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>2.80</td>
+        <td><details><summary>A flaw was found in rust-rpm-sequoia. An attacker can exploit this vulnerability...</summary><p>A flaw was found in rust-rpm-sequoia. An attacker can exploit this vulnerability by providing a specially crafted Red Hat Package Manager (RPM) file. During the RPM signature verification process, this crafted file can trigger an error in the OpenPGP signature parsing code, leading to an unconditional termination of the rpm process. This issue results in an application level denial of service, making the system unable to process RPM files for signature verification.</p></details></td>
+        <td>2026-04-03</td>
+      </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5476" target="_blank" rel="noopener">CVE-2026-5476</a></td>
         <td>2.1</td>
@@ -4366,6 +4421,87 @@
         <td>2026-04-01</td>
       </tr>
       <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5175" target="_blank" rel="noopener">CVE-2026-5175</a></td>
+        <td>5.0</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>0.0% <small>p11</small></td>
+        <td>3.50</td>
+        <td><details><summary>Improper access control in the multi-factor authentication (MFA) management API ...</summary><p>Improper access control in the multi-factor authentication (MFA) management API in Devolutions Server allows an authenticated attacker to delete their own configured MFA factors and reduce account protection to password-only authentication via crafted HTTP requests. 
+
+
+
+
+
+
+
+This issue affects Server: from 2026.1.6 through 2026.1.11.</p></details></td>
+        <td>2026-04-01</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4989" target="_blank" rel="noopener">CVE-2026-4989</a></td>
+        <td>4.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-918</td>
+        <td>&nbsp;</td>
+        <td>0.0% <small>p6</small></td>
+        <td>3.01</td>
+        <td><details><summary>Improper input validation in the gateway health check feature in Devolutions Ser...</summary><p>Improper input validation in the gateway health check feature in Devolutions Server allows a low-privileged authenticated user to perform server-side request forgery (SSRF), potentially leading to information disclosure, via a crafted API request.
+This issue affects Server: from 2026.1.1 through 2026.1.11, from 2025.3.1 through 2025.3.17.</p></details></td>
+        <td>2026-04-01</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4927" target="_blank" rel="noopener">CVE-2026-4927</a></td>
+        <td>6.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-201</td>
+        <td>&nbsp;</td>
+        <td>0.0% <small>p8</small></td>
+        <td>4.55</td>
+        <td><details><summary>Exposure of sensitive information in the users MFA feature in Devolutions Server...</summary><p>Exposure of sensitive information in the users MFA feature in Devolutions Server allows users with user management privileges to obtain other users OTP keys via an authenticated API request.
+
+
+
+This issue affects Server: from 2026.1.6 through 2026.1.11.</p></details></td>
+        <td>2026-04-01</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4925" target="_blank" rel="noopener">CVE-2026-4925</a></td>
+        <td>5.0</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>0.0% <small>p12</small></td>
+        <td>3.50</td>
+        <td><details><summary>Improper access control in the users MFA feature in Devolutions Server allows an...</summary><p>Improper access control in the users MFA feature in Devolutions Server allows an authenticated user to bypass administrator-enforced restrictions and remove their own multi-factor authentication (MFA) configuration via a crafted request.
+
+
+
+
+
+This issue affects Server: from 2026.1.6 through 2026.1.11.</p></details></td>
+        <td>2026-04-01</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4924" target="_blank" rel="noopener">CVE-2026-4924</a></td>
+        <td>8.2</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-1390</td>
+        <td>&nbsp;</td>
+        <td>0.0% <small>p12</small></td>
+        <td>5.74</td>
+        <td><details><summary>Improper
+ authentication in the two-factor authentication (2FA) feature in 
+Devo...</summary><p>Improper
+ authentication in the two-factor authentication (2FA) feature in 
+Devolutions Server 2026.1.11 and earlier allows a remote attacker with valid 
+credentials to bypass multifactor authentication and gain unauthorized 
+access to the victim account via reuse of a partially authenticated 
+session token.</p></details></td>
+        <td>2026-04-01</td>
+      </tr>
+      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4829" target="_blank" rel="noopener">CVE-2026-4829</a></td>
         <td>5.4</td>
         <td><span class="severity medium">MEDIUM</span></td>
@@ -5481,7 +5617,7 @@
       </div>
     </section>
     <section>
-      <h2>Previous Month — March 2026 <span class="count">(5736)</span></h2>
+      <h2>Previous Month — March 2026 <span class="count">(5735)</span></h2>
       <div class="table-wrapper">
         <table>
           <thead>
@@ -6676,21 +6812,6 @@
         <td>2026-03-31</td>
       </tr>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-2123" target="_blank" rel="noopener">CVE-2026-2123</a></td>
-        <td>8.6</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-280</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p2</small></td>
-        <td>6.02</td>
-        <td><details><summary>A security audit identified a privilege escalation
-vulnerability in Operations A...</summary><p>A security audit identified a privilege escalation
-vulnerability in Operations Agent(&lt;=OA 12.29) on Windows. Under specific conditions
-Operations Agent may run executables from specific writeable locations.Thanks to Manuel Rickli &amp; Philippe Leiser of
-Oneconsult AG for reporting this vulnerability</p></details></td>
-        <td>2026-03-31</td>
-      </tr>
-      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-62184" target="_blank" rel="noopener">CVE-2025-62184</a></td>
         <td>4.8</td>
         <td><span class="severity medium">MEDIUM</span></td>
@@ -6820,6 +6941,25 @@ Oneconsult AG for reporting this vulnerability</p></details></td>
         <td>0.0% <small>p11</small></td>
         <td>3.57</td>
         <td><details><summary>A vulnerability was found in CMS Made Simple up to 2.2.22. This impacts the func...</summary><p>A vulnerability was found in CMS Made Simple up to 2.2.22. This impacts the function _copyFilesToFolder in the library modules/UserGuide/lib/class.UserGuideImporterExporter.php of the component UserGuide Module XML Import. The manipulation results in path traversal. It is possible to launch the attack remotely. The exploit has been made public and could be used. This issue has been reported early to the project. They confirmed, that &quot;this has already been discovered and fixed for the next release.&quot;</p></details></td>
+        <td>2026-03-31</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5087" target="_blank" rel="noopener">CVE-2026-5087</a></td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-338</td>
+        <td>&nbsp;</td>
+        <td>0.0% <small>p8</small></td>
+        <td>5.25</td>
+        <td><details><summary>PAGI::Middleware::Session::Store::Cookie versions through 0.001003 for Perl gene...</summary><p>PAGI::Middleware::Session::Store::Cookie versions through 0.001003 for Perl generates random bytes insecurely.
+
+PAGI::Middleware::Session::Store::Cookie attempts to read bytes from the /dev/urandom device directly. If that fails (for example, on systems without the device, such as Windows), then it will emit a warning that recommends the user install Crypt::URandom, and then return a string of random bytes generated by the built-in rand function, which is unsuitable for cryptographic applications.
+
+This modules does not use the Crypt::URandom module, and installing it will not fix the problem.
+
+The random bytes are used for generating an initialisation vector (IV) to encrypt the cookie.
+
+A predictable IV may make it easier for malicious users to decrypt and tamper with the session data that is stored in the cookie.</p></details></td>
         <td>2026-03-31</td>
       </tr>
       <tr>
@@ -8228,19 +8368,6 @@ Oneconsult AG for reporting this vulnerability</p></details></td>
         <td>0.2% <small>p44</small></td>
         <td>6.87</td>
         <td><details><summary>The Everest Forms Pro plugin for WordPress is vulnerable to Remote Code Executio...</summary><p>The Everest Forms Pro plugin for WordPress is vulnerable to Remote Code Execution via PHP Code Injection in all versions up to, and including, 1.9.12. This is due to the Calculation Addon&#x27;s process_filter() function concatenating user-submitted form field values into a PHP code string without proper escaping before passing it to eval(). The sanitize_text_field() function applied to input does not escape single quotes or other PHP code context characters. This makes it possible for unauthenticated attackers to inject and execute arbitrary PHP code on the server by submitting a crafted value in any string-type form field (text, email, URL, select, radio) when a form uses the &quot;Complex Calculation&quot; feature.</p></details></td>
-        <td>2026-03-31</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5115" target="_blank" rel="noopener">CVE-2026-5115</a></td>
-        <td>3.6</td>
-        <td><span class="severity low">LOW</span></td>
-        <td>CWE-319</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p1</small></td>
-        <td>2.52</td>
-        <td><details><summary>The PaperCut NG/MF (specifically, the embedded application for Konica Minolta de...</summary><p>The PaperCut NG/MF (specifically, the embedded application for Konica Minolta devices) is vulnerable to session hijacking. The PaperCut NG/MF Embedded application is a software interface that runs directly on the touch screen of a multi-function device.
-
-It was internally discovered that the communication channel between the embedded application and the server was insecure, which could leak data including sensitive information that may be used to mount an  attack on the device. Such an attack could potentially be used to steal data or to perform a phishing attack on the end user.</p></details></td>
         <td>2026-03-31</td>
       </tr>
       <tr>
@@ -14064,12 +14191,12 @@ It was internally discovered that the communication channel between the embedded
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-0968" target="_blank" rel="noopener">CVE-2026-0968</a></td>
-        <td>3.1</td>
-        <td><span class="severity low">LOW</span></td>
+        <td>9.8</td>
+        <td><span class="severity critical">CRITICAL</span></td>
         <td>CWE-476</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p13</small></td>
-        <td>2.17</td>
+        <td>6.86</td>
         <td><details><summary>A flaw was found in libssh in which a malicious SFTP (SSH File Transfer Protocol...</summary><p>A flaw was found in libssh in which a malicious SFTP (SSH File Transfer Protocol) server can exploit this by sending a malformed &#x27;longname&#x27; field within an `SSH_FXP_NAME` message during a file listing operation. This missing null check can lead to reading beyond allocated memory on the heap. This can cause unexpected behavior or lead to a denial of service (DoS) due to application crashes.</p></details></td>
         <td>2026-03-26</td>
       </tr>

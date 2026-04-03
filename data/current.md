@@ -1,9 +1,14 @@
 # CVEs — April 2026
 
-_494 vulnerabilities_
+_504 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
+| [CVE-2026-5484](https://nvd.nist.gov/vuln/detail/CVE-2026-5484) | 5.5 | MEDIUM | CWE-266 | No | — | 3.85 | 2026-04-03 | A weakness has been identified in BookStackApp BookStack up to 26.03. Affected is the function chapterToMarkdown of the... |
+| [CVE-2026-28798](https://nvd.nist.gov/vuln/detail/CVE-2026-28798) | 9.0 | CRITICAL | CWE-918 | No | — | 6.30 | 2026-04-03 | ZimaOS is a fork of CasaOS, an operating system for Zima devices and x86-64 systems with UEFI. Prior to version 1.5.3, a... |
+| [CVE-2026-25726](https://nvd.nist.gov/vuln/detail/CVE-2026-25726) | 8.1 | HIGH | CWE-338 | No | — | 5.67 | 2026-04-03 | Cloudreve is a self-hosted file management and sharing system. Prior to version 4.13.0, the application uses the weak ps... |
+| [CVE-2026-3184](https://nvd.nist.gov/vuln/detail/CVE-2026-3184) | 3.7 | LOW | CWE-289 | No | — | 2.59 | 2026-04-03 | A flaw was found in util-linux. Improper hostname canonicalization in the `login(1)` utility, when invoked with the `-h`... |
+| [CVE-2026-2625](https://nvd.nist.gov/vuln/detail/CVE-2026-2625) | 4.0 | MEDIUM | CWE-347 | No | — | 2.80 | 2026-04-03 | A flaw was found in rust-rpm-sequoia. An attacker can exploit this vulnerability by providing a specially crafted Red Ha... |
 | [CVE-2026-5476](https://nvd.nist.gov/vuln/detail/CVE-2026-5476) | 2.1 | LOW | CWE-189 | No | — | 1.47 | 2026-04-03 | A vulnerability was identified in NASA cFS up to 7.0.0 on 32-bit. Affected is the function CFE_TBL_ValidateCodecLoadSize... |
 | [CVE-2026-5475](https://nvd.nist.gov/vuln/detail/CVE-2026-5475) | 5.1 | MEDIUM | CWE-119 | No | — | 3.57 | 2026-04-03 | A vulnerability was determined in NASA cFS up to 7.0.0. This impacts the function CFE_SB_TransmitMsg of the file cfe_sb_... |
 | [CVE-2026-32186](https://nvd.nist.gov/vuln/detail/CVE-2026-32186) | 0.0 | NONE | CWE-918 | No | — | 0.00 | 2026-04-03 | Microsoft Bing Elevation of Privilege Vulnerability |
@@ -397,6 +402,11 @@ _494 vulnerabilities_
 | [CVE-2026-2265](https://nvd.nist.gov/vuln/detail/CVE-2026-2265) | 6.5 | MEDIUM | N/A | No | 0.1% | 4.55 | 2026-04-01 | An unauthenticated remote code execution (RCE) vulnerability exists in applications that use the Replicator node package... |
 | [CVE-2024-43028](https://nvd.nist.gov/vuln/detail/CVE-2024-43028) | 9.8 | CRITICAL | CWE-77 | No | 0.2% | 6.87 | 2026-04-01 | A command injection vulnerability in the component /jmreport/show of jeecg boot v3.0.0 to v3.5.3 allows attackers to exe... |
 | [CVE-2024-40489](https://nvd.nist.gov/vuln/detail/CVE-2024-40489) | 9.8 | CRITICAL | CWE-94 | No | 0.3% | 6.87 | 2026-04-01 | There is an injection vulnerability in jeecg boot versions 3.0.0 to 3.5.3 due to lax character filtering, which allows a... |
+| [CVE-2026-5175](https://nvd.nist.gov/vuln/detail/CVE-2026-5175) | 5.0 | MEDIUM | CWE-862 | No | 0.0% | 3.50 | 2026-04-01 | Improper access control in the multi-factor authentication (MFA) management API in Devolutions Server allows an authenti... |
+| [CVE-2026-4989](https://nvd.nist.gov/vuln/detail/CVE-2026-4989) | 4.3 | MEDIUM | CWE-918 | No | 0.0% | 3.01 | 2026-04-01 | Improper input validation in the gateway health check feature in Devolutions Server allows a low-privileged authenticate... |
+| [CVE-2026-4927](https://nvd.nist.gov/vuln/detail/CVE-2026-4927) | 6.5 | MEDIUM | CWE-201 | No | 0.0% | 4.55 | 2026-04-01 | Exposure of sensitive information in the users MFA feature in Devolutions Server allows users with user management privi... |
+| [CVE-2026-4925](https://nvd.nist.gov/vuln/detail/CVE-2026-4925) | 5.0 | MEDIUM | CWE-862 | No | 0.0% | 3.50 | 2026-04-01 | Improper access control in the users MFA feature in Devolutions Server allows an authenticated user to bypass administra... |
+| [CVE-2026-4924](https://nvd.nist.gov/vuln/detail/CVE-2026-4924) | 8.2 | HIGH | CWE-1390 | No | 0.0% | 5.74 | 2026-04-01 | Improper  authentication in the two-factor authentication (2FA) feature in  Devolutions Server 2026.1.11 and earlier all... |
 | [CVE-2026-4829](https://nvd.nist.gov/vuln/detail/CVE-2026-4829) | 5.4 | MEDIUM | CWE-287 | No | 0.0% | 3.78 | 2026-04-01 | Improper authentication in the external OAuth authentication flow in Devolutions Server 2026.1.11 and earlier allows an... |
 | [CVE-2026-4828](https://nvd.nist.gov/vuln/detail/CVE-2026-4828) | 8.2 | HIGH | CWE-1390 | No | 0.0% | 5.74 | 2026-04-01 | Improper authentication in the OAuth login functionality in Devolutions Server 2026.1.11 and earlier allows a remote att... |
 | [CVE-2026-35099](https://nvd.nist.gov/vuln/detail/CVE-2026-35099) | 7.4 | HIGH | CWE-362 | No | 0.0% | 5.18 | 2026-04-01 | Lakeside SysTrack Agent 11 before 11.5.0.15 has a race condition with resultant local privilege escalation to SYSTEM. Th... |
