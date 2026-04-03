@@ -11,7 +11,7 @@
     <header>
       <h1>vuln-tracker — Top 50</h1>
       <p class="subtitle">The 50 most important CVEs from the current and previous month, ranked by VAP score (70% CVSS + 30% EPSS)</p>
-      <p class="last-updated">Last updated: 2026-04-03 13:16 UTC</p>
+      <p class="last-updated">Last updated: 2026-04-03 14:51 UTC</p>
     </header>
     <nav>
       <a href="index.html">&larr; All CVEs</a>
@@ -90,8 +90,8 @@
         <td><span class="severity critical">CRITICAL</span></td>
         <td>CWE-94</td>
         <td>&nbsp;</td>
-        <td>12.8% <small>p93</small></td>
-        <td>7.24</td>
+        <td>15.8% <small>p94</small></td>
+        <td>7.33</td>
         <td><details><summary>The Contact Form by Supsystic plugin for WordPress is vulnerable to Server-Side ...</summary><p>The Contact Form by Supsystic plugin for WordPress is vulnerable to Server-Side Template Injection (SSTI) leading to Remote Code Execution (RCE) in all versions up to, and including, 1.7.36. This is due to the plugin using the Twig `Twig_Loader_String` template engine without sandboxing, combined with the `cfsPreFill` prefill functionality that allows unauthenticated users to inject arbitrary Twig expressions into form field values via GET parameters. This makes it possible for unauthenticated attackers to execute arbitrary PHP functions and OS commands on the server by leveraging Twig&#x27;s `registerUndefinedFilterCallback()` method to register arbitrary PHP callbacks.</p></details></td>
         <td>2026-03-30</td>
       </tr>
@@ -151,17 +151,6 @@
         <td>2026-03-04</td>
       </tr>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-30302" target="_blank" rel="noopener">CVE-2026-30302</a></td>
-        <td>10.0</td>
-        <td><span class="severity critical">CRITICAL</span></td>
-        <td>CWE-78</td>
-        <td>&nbsp;</td>
-        <td>0.6% <small>p69</small></td>
-        <td>7.02</td>
-        <td><details><summary>The command auto-approval module in CodeRider-Kilo contains an OS Command Inject...</summary><p>The command auto-approval module in CodeRider-Kilo contains an OS Command Injection vulnerability, rendering its whitelist security mechanism ineffective. The vulnerability stems from the incorrect use of an incompatible command parser (the Unix-based shell-quote library) to analyze commands on the Windows platform, coupled with a failure to correctly handle Windows CMD-specific escape sequences (^). Attackers can exploit this discrepancy between the parsing logic and the execution environment by constructing payloads such as git log ^&quot; &amp; malicious_command ^&quot;. The CodeRider-Kilo parser is deceived by the escape characters, misinterpreting the malicious command connector (&amp;) as being within a protected string argument and thus auto-approving the command. However, the underlying Windows CMD interpreter ignores the escaped quotes, parsing and executing the subsequent malicious command directly. This allows attackers to achieve arbitrary Remote Code Execution (RCE) after bypassing what appears to be a legitimate Git whitelist check.</p></details></td>
-        <td>2026-03-27</td>
-      </tr>
-      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-2743" target="_blank" rel="noopener">CVE-2026-2743</a></td>
         <td>10.0</td>
         <td><span class="severity critical">CRITICAL</span></td>
@@ -184,6 +173,17 @@
         <td>2026-03-05</td>
       </tr>
       <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-30302" target="_blank" rel="noopener">CVE-2026-30302</a></td>
+        <td>10.0</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-78</td>
+        <td>&nbsp;</td>
+        <td>0.5% <small>p63</small></td>
+        <td>7.01</td>
+        <td><details><summary>The command auto-approval module in CodeRider-Kilo contains an OS Command Inject...</summary><p>The command auto-approval module in CodeRider-Kilo contains an OS Command Injection vulnerability, rendering its whitelist security mechanism ineffective. The vulnerability stems from the incorrect use of an incompatible command parser (the Unix-based shell-quote library) to analyze commands on the Windows platform, coupled with a failure to correctly handle Windows CMD-specific escape sequences (^). Attackers can exploit this discrepancy between the parsing logic and the execution environment by constructing payloads such as git log ^&quot; &amp; malicious_command ^&quot;. The CodeRider-Kilo parser is deceived by the escape characters, misinterpreting the malicious command connector (&amp;) as being within a protected string argument and thus auto-approving the command. However, the underlying Windows CMD interpreter ignores the escaped quotes, parsing and executing the subsequent malicious command directly. This allows attackers to achieve arbitrary Remote Code Execution (RCE) after bypassing what appears to be a legitimate Git whitelist check.</p></details></td>
+        <td>2026-03-27</td>
+      </tr>
+      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-31957" target="_blank" rel="noopener">CVE-2026-31957</a></td>
         <td>10.0</td>
         <td><span class="severity critical">CRITICAL</span></td>
@@ -193,6 +193,17 @@
         <td>7.01</td>
         <td><details><summary>Himmelblau is an interoperability suite for Microsoft Azure Entra ID and Intune....</summary><p>Himmelblau is an interoperability suite for Microsoft Azure Entra ID and Intune. From 3.0.0 to before 3.1.0, if Himmelblau is deployed without a configured tenant domain in himmelblau.conf, authentication is not tenant-scoped. In this mode, Himmelblau can accept authentication attempts for arbitrary Entra ID domains by dynamically registering providers at runtime. This behavior is intended for initial/local bootstrap scenarios, but it can create risk in remote authentication environments. This vulnerability is fixed in 3.1.0.</p></details></td>
         <td>2026-03-11</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32871" target="_blank" rel="noopener">CVE-2026-32871</a></td>
+        <td>10.0</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-918</td>
+        <td>&nbsp;</td>
+        <td>0.3% <small>p50</small></td>
+        <td>7.01</td>
+        <td><details><summary>FastMCP is a Pythonic way to build MCP servers and clients. Prior to version 3.2...</summary><p>FastMCP is a Pythonic way to build MCP servers and clients. Prior to version 3.2.0, the OpenAPIProvider in FastMCP exposes internal APIs to MCP clients by parsing OpenAPI specifications. The RequestDirector class is responsible for constructing HTTP requests to the backend service. A vulnerability exists in the _build_url() method. When an OpenAPI operation defines path parameters (e.g., /api/v1/users/{user_id}), the system directly substitutes parameter values into the URL template string without URL-encoding. Subsequently, urllib.parse.urljoin() resolves the final URL. Since urljoin() interprets ../ sequences as directory traversal, an attacker controlling a path parameter can perform path traversal attacks to escape the intended API prefix and access arbitrary backend endpoints. This results in authenticated SSRF, as requests are sent with the authorization headers configured in the MCP provider. This issue has been patched in version 3.2.0.</p></details></td>
+        <td>2026-04-02</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-21628" target="_blank" rel="noopener">CVE-2026-21628</a></td>
@@ -316,6 +327,17 @@
         <td>2026-03-13</td>
       </tr>
       <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4370" target="_blank" rel="noopener">CVE-2026-4370</a></td>
+        <td>10.0</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-295</td>
+        <td>&nbsp;</td>
+        <td>0.1% <small>p18</small></td>
+        <td>7.00</td>
+        <td><details><summary>A vulnerability was identified in Juju from version 3.2.0 until 3.6.19 and from ...</summary><p>A vulnerability was identified in Juju from version 3.2.0 until 3.6.19 and from version 4.0 until 4.0.4, where the internal Dqlite database cluster fails to perform proper TLS client and server authentication. Specifically, the Juju controller&#x27;s database endpoint does not validate client certificates when a new node attempts to join the cluster. An unauthenticated attacker with network reachability to the Juju controller&#x27;s Dqlite port can exploit this flaw to join the database cluster. Once joined, the attacker gains full read and write access to the underlying database, allowing for total data compromise.</p></details></td>
+        <td>2026-04-01</td>
+      </tr>
+      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-28353" target="_blank" rel="noopener">CVE-2026-28353</a></td>
         <td>10.0</td>
         <td><span class="severity critical">CRITICAL</span></td>
@@ -349,15 +371,37 @@
         <td>2026-03-10</td>
       </tr>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4370" target="_blank" rel="noopener">CVE-2026-4370</a></td>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33107" target="_blank" rel="noopener">CVE-2026-33107</a></td>
         <td>10.0</td>
         <td><span class="severity critical">CRITICAL</span></td>
-        <td>CWE-295</td>
+        <td>CWE-918</td>
         <td>&nbsp;</td>
-        <td>0.0% <small>p10</small></td>
+        <td>0.1% <small>p16</small></td>
         <td>7.00</td>
-        <td><details><summary>A vulnerability was identified in Juju from version 3.2.0 until 3.6.19 and from ...</summary><p>A vulnerability was identified in Juju from version 3.2.0 until 3.6.19 and from version 4.0 until 4.0.4, where the internal Dqlite database cluster fails to perform proper TLS client and server authentication. Specifically, the Juju controller&#x27;s database endpoint does not validate client certificates when a new node attempts to join the cluster. An unauthenticated attacker with network reachability to the Juju controller&#x27;s Dqlite port can exploit this flaw to join the database cluster. Once joined, the attacker gains full read and write access to the underlying database, allowing for total data compromise.</p></details></td>
-        <td>2026-04-01</td>
+        <td><details><summary>Server-side request forgery (ssrf) in Azure Databricks allows an unauthorized at...</summary><p>Server-side request forgery (ssrf) in Azure Databricks allows an unauthorized attacker to elevate privileges over a network.</p></details></td>
+        <td>2026-04-03</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33105" target="_blank" rel="noopener">CVE-2026-33105</a></td>
+        <td>10.0</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-285</td>
+        <td>&nbsp;</td>
+        <td>0.1% <small>p16</small></td>
+        <td>7.00</td>
+        <td><details><summary>Improper authorization in Microsoft Azure Kubernetes Service allows an unauthori...</summary><p>Improper authorization in Microsoft Azure Kubernetes Service allows an unauthorized attacker to elevate privileges over a network.</p></details></td>
+        <td>2026-04-03</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32213" target="_blank" rel="noopener">CVE-2026-32213</a></td>
+        <td>10.0</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-285</td>
+        <td>&nbsp;</td>
+        <td>0.1% <small>p16</small></td>
+        <td>7.00</td>
+        <td><details><summary>Improper authorization in Azure AI Foundry allows an unauthorized attacker to el...</summary><p>Improper authorization in Azure AI Foundry allows an unauthorized attacker to elevate privileges over a network.</p></details></td>
+        <td>2026-04-03</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-22557" target="_blank" rel="noopener">CVE-2026-22557</a></td>
@@ -470,50 +514,6 @@
         <td>2026-03-19</td>
       </tr>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33107" target="_blank" rel="noopener">CVE-2026-33107</a></td>
-        <td>10.0</td>
-        <td><span class="severity critical">CRITICAL</span></td>
-        <td>CWE-918</td>
-        <td>&nbsp;</td>
-        <td>&mdash;</td>
-        <td>7.00</td>
-        <td><details><summary>Server-side request forgery (ssrf) in Azure Databricks allows an unauthorized at...</summary><p>Server-side request forgery (ssrf) in Azure Databricks allows an unauthorized attacker to elevate privileges over a network.</p></details></td>
-        <td>2026-04-03</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33105" target="_blank" rel="noopener">CVE-2026-33105</a></td>
-        <td>10.0</td>
-        <td><span class="severity critical">CRITICAL</span></td>
-        <td>CWE-285</td>
-        <td>&nbsp;</td>
-        <td>&mdash;</td>
-        <td>7.00</td>
-        <td><details><summary>Improper authorization in Microsoft Azure Kubernetes Service allows an unauthori...</summary><p>Improper authorization in Microsoft Azure Kubernetes Service allows an unauthorized attacker to elevate privileges over a network.</p></details></td>
-        <td>2026-04-03</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32213" target="_blank" rel="noopener">CVE-2026-32213</a></td>
-        <td>10.0</td>
-        <td><span class="severity critical">CRITICAL</span></td>
-        <td>CWE-285</td>
-        <td>&nbsp;</td>
-        <td>&mdash;</td>
-        <td>7.00</td>
-        <td><details><summary>Improper authorization in Azure AI Foundry allows an unauthorized attacker to el...</summary><p>Improper authorization in Azure AI Foundry allows an unauthorized attacker to elevate privileges over a network.</p></details></td>
-        <td>2026-04-03</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32871" target="_blank" rel="noopener">CVE-2026-32871</a></td>
-        <td>10.0</td>
-        <td><span class="severity critical">CRITICAL</span></td>
-        <td>CWE-918</td>
-        <td>&nbsp;</td>
-        <td>&mdash;</td>
-        <td>7.00</td>
-        <td><details><summary>FastMCP is a Pythonic way to build MCP servers and clients. Prior to version 3.2...</summary><p>FastMCP is a Pythonic way to build MCP servers and clients. Prior to version 3.2.0, the OpenAPIProvider in FastMCP exposes internal APIs to MCP clients by parsing OpenAPI specifications. The RequestDirector class is responsible for constructing HTTP requests to the backend service. A vulnerability exists in the _build_url() method. When an OpenAPI operation defines path parameters (e.g., /api/v1/users/{user_id}), the system directly substitutes parameter values into the URL template string without URL-encoding. Subsequently, urllib.parse.urljoin() resolves the final URL. Since urljoin() interprets ../ sequences as directory traversal, an attacker controlling a path parameter can perform path traversal attacks to escape the intended API prefix and access arbitrary backend endpoints. This results in authenticated SSRF, as requests are sent with the authorization headers configured in the MCP provider. This issue has been patched in version 3.2.0.</p></details></td>
-        <td>2026-04-02</td>
-      </tr>
-      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-27944" target="_blank" rel="noopener">CVE-2026-27944</a></td>
         <td>9.8</td>
         <td><span class="severity critical">CRITICAL</span></td>
@@ -547,6 +547,17 @@
         <td>2026-03-26</td>
       </tr>
       <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34838" target="_blank" rel="noopener">CVE-2026-34838</a></td>
+        <td>9.9</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-502</td>
+        <td>&nbsp;</td>
+        <td>0.5% <small>p63</small></td>
+        <td>6.94</td>
+        <td><details><summary>Group-Office is an enterprise customer relationship management and groupware too...</summary><p>Group-Office is an enterprise customer relationship management and groupware tool. Prior to versions 6.8.156, 25.0.90, and 26.0.12, a vulnerability in the AbstractSettingsCollection model leads to insecure deserialization when these settings are loaded. By injecting a serialized FileCookieJar object into a setting string, an authenticated attacker can achieve Arbitrary File Write, leading directly to Remote Code Execution (RCE) on the server. This issue has been patched in versions 6.8.156, 25.0.90, and 26.0.12.</p></details></td>
+        <td>2026-04-02</td>
+      </tr>
+      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32306" target="_blank" rel="noopener">CVE-2026-32306</a></td>
         <td>9.9</td>
         <td><span class="severity critical">CRITICAL</span></td>
@@ -575,17 +586,6 @@
         <td>CWE-284</td>
         <td>&nbsp;</td>
         <td>0.3% <small>p53</small></td>
-        <td>6.94</td>
-        <td><details><summary>A vulnerability allowing an authenticated domain user to perform remote code exe...</summary><p>A vulnerability allowing an authenticated domain user to perform remote code execution (RCE) on the Backup Server.</p></details></td>
-        <td>2026-03-12</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-21669" target="_blank" rel="noopener">CVE-2026-21669</a></td>
-        <td>9.9</td>
-        <td><span class="severity critical">CRITICAL</span></td>
-        <td>CWE-94</td>
-        <td>&nbsp;</td>
-        <td>0.3% <small>p48</small></td>
         <td>6.94</td>
         <td><details><summary>A vulnerability allowing an authenticated domain user to perform remote code exe...</summary><p>A vulnerability allowing an authenticated domain user to perform remote code execution (RCE) on the Backup Server.</p></details></td>
         <td>2026-03-12</td>
