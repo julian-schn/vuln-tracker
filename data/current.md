@@ -1,9 +1,17 @@
 # CVEs — April 2026
 
-_457 vulnerabilities_
+_465 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
+| [CVE-2026-5467](https://nvd.nist.gov/vuln/detail/CVE-2026-5467) | 5.3 | MEDIUM | CWE-601 | No | — | 3.71 | 2026-04-03 | A vulnerability was identified in Casdoor 2.356.0. Affected by this issue is some unknown functionality of the component... |
+| [CVE-2026-4108](https://nvd.nist.gov/vuln/detail/CVE-2026-4108) | 7.3 | HIGH | CWE-79 | No | — | 5.11 | 2026-04-03 | Zohocorp ManageEngine Exchange Reporter Plus versions before 5802 are vulnerable to Stored XSS in Non-Owner Mailbox Perm... |
+| [CVE-2026-4107](https://nvd.nist.gov/vuln/detail/CVE-2026-4107) | 7.3 | HIGH | CWE-79 | No | — | 5.11 | 2026-04-03 | Zohocorp ManageEngine Exchange Reporter Plus versions before 5802 are vulnerable to Stored XSS in Folder Message Count a... |
+| [CVE-2026-3880](https://nvd.nist.gov/vuln/detail/CVE-2026-3880) | 7.3 | HIGH | CWE-79 | No | — | 5.11 | 2026-04-03 | Zohocorp ManageEngine Exchange Reporter Plus versions before 5802 are vulnerable to Stored XSS in Public Folder Client P... |
+| [CVE-2026-3879](https://nvd.nist.gov/vuln/detail/CVE-2026-3879) | 7.3 | HIGH | CWE-79 | No | — | 5.11 | 2026-04-03 | Zohocorp ManageEngine Exchange Reporter Plus versions before 5802 are vulnerable to Stored XSS in Equipment Mailbox Deta... |
+| [CVE-2026-28703](https://nvd.nist.gov/vuln/detail/CVE-2026-28703) | 7.3 | HIGH | CWE-79 | No | — | 5.11 | 2026-04-03 | Zohocorp ManageEngine Exchange Reporter Plus versions before 5802 are vulnerable to Stored XSS in Mails Exchanged Betwee... |
+| [CVE-2026-28756](https://nvd.nist.gov/vuln/detail/CVE-2026-28756) | 7.3 | HIGH | CWE-79 | No | — | 5.11 | 2026-04-03 | Zohocorp ManageEngine Exchange Reporter Plus versions before 5802 are vulnerable to Stored XSS in Permissions based on D... |
+| [CVE-2026-28754](https://nvd.nist.gov/vuln/detail/CVE-2026-28754) | 7.3 | HIGH | CWE-79 | No | — | 5.11 | 2026-04-03 | Zohocorp ManageEngine Exchange Reporter Plus versions before 5802 are vulnerable to Stored XSS in Distribution Lists rep... |
 | [CVE-2026-4350](https://nvd.nist.gov/vuln/detail/CVE-2026-4350) | 8.1 | HIGH | CWE-22 | No | — | 5.67 | 2026-04-03 | The Perfmatters plugin for WordPress is vulnerable to arbitrary file deletion via path traversal in all versions up to,... |
 | [CVE-2026-5463](https://nvd.nist.gov/vuln/detail/CVE-2026-5463) | 9.3 | CRITICAL | CWE-77 | No | — | 6.51 | 2026-04-03 | Command injection vulnerability in console.run_module_with_output() in pymetasploit3 through version 1.0.6 allows attack... |
 | [CVE-2026-35549](https://nvd.nist.gov/vuln/detail/CVE-2026-35549) | 6.5 | MEDIUM | CWE-789 | No | — | 4.55 | 2026-04-03 | An issue was discovered in MariaDB Server before 11.4.10, 11.5.x through 11.8.x before 11.8.6, and 12.x before 12.2.2. I... |
