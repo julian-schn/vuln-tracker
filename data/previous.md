@@ -1,6 +1,6 @@
 # CVEs — March 2026
 
-_5735 vulnerabilities_
+_5733 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
@@ -670,7 +670,6 @@ _5735 vulnerabilities_
 | [CVE-2026-4620](https://nvd.nist.gov/vuln/detail/CVE-2026-4620) | 7.1 | HIGH | CWE-78 | No | 0.4% | 4.98 | 2026-03-27 | OS Command Injection vulnerability in NEC Platforms, Ltd. Aterm Series allows a attacker to execute arbitrary OS command... |
 | [CVE-2026-4619](https://nvd.nist.gov/vuln/detail/CVE-2026-4619) | 6.0 | MEDIUM | CWE-22 | No | 0.1% | 4.20 | 2026-03-27 | Path Traversal vulnerability in NEC Platforms, Ltd. Aterm Series allows a attacker to wtite over any file via network. |
 | [CVE-2026-4309](https://nvd.nist.gov/vuln/detail/CVE-2026-4309) | 6.3 | MEDIUM | CWE-862 | No | 0.1% | 4.41 | 2026-03-27 | Missing Authorization vulnerability in NEC Platforms, Ltd. Aterm Series allows a attacker to get a specific device infor... |
-| [CVE-2026-25101](https://nvd.nist.gov/vuln/detail/CVE-2026-25101) | 4.8 | MEDIUM | CWE-384 | No | 0.0% | 3.36 | 2026-03-27 | Bludit allows user's session identifier to be set before authentication. The value of this session ID stays the same aft... |
 | [CVE-2026-3457](https://nvd.nist.gov/vuln/detail/CVE-2026-3457) | 7.0 | HIGH | CWE-79 | No | 0.0% | 4.90 | 2026-03-27 | Improper Neutralization of Input During Web Page Generation (XSS or 'Cross-site Scripting') vulnerability in Thales Sent... |
 | [CVE-2026-27860](https://nvd.nist.gov/vuln/detail/CVE-2026-27860) | 3.7 | LOW | CWE-90 | No | 0.1% | 2.59 | 2026-03-27 | If auth_username_chars is empty, it is possible to inject arbitrary LDAP filter to Dovecot's LDAP authentication. This l... |
 | [CVE-2026-27859](https://nvd.nist.gov/vuln/detail/CVE-2026-27859) | 5.3 | MEDIUM | CWE-400 | No | 0.1% | 3.71 | 2026-03-27 | A mail message containing excessive amount of RFC 2231 MIME parameters causes LMTP to use too much CPU. A suitably forma... |
@@ -2257,7 +2256,6 @@ _5735 vulnerabilities_
 | [CVE-2026-4491](https://nvd.nist.gov/vuln/detail/CVE-2026-4491) | 7.4 | HIGH | CWE-119 | No | 0.0% | 5.18 | 2026-03-20 | A vulnerability has been found in Tenda A18 Pro 02.03.02.28. Impacted is the function fromSetIpMacBind of the file /gofo... |
 | [CVE-2026-4490](https://nvd.nist.gov/vuln/detail/CVE-2026-4490) | 7.4 | HIGH | CWE-119 | No | 0.0% | 5.18 | 2026-03-20 | A flaw has been found in Tenda A18 Pro 02.03.02.28. This issue affects the function setSchedWifi of the file /goform/ope... |
 | [CVE-2026-29828](https://nvd.nist.gov/vuln/detail/CVE-2026-29828) | 6.1 | MEDIUM | CWE-79 | No | 0.0% | 4.27 | 2026-03-20 | DooTask v1.6.27 has a Cross-Site Scripting (XSS) vulnerability in the /manage/project/<id> page via the input field proj... |
-| [CVE-2025-15608](https://nvd.nist.gov/vuln/detail/CVE-2025-15608) | 7.7 | HIGH | CWE-121 | No | 0.1% | 5.39 | 2026-03-20 | This vulnerability in AX53 v1 results from insufficient input sanitization in the device’s probe handling logic, where u... |
 | [CVE-2025-15607](https://nvd.nist.gov/vuln/detail/CVE-2025-15607) | 7.3 | HIGH | CWE-77 | No | 0.9% | 5.14 | 2026-03-20 | A command injection vulnerability on AX53 v1 occurs in mscd debug functionality due to insufficient input handling, allo... |
 | [CVE-2026-4489](https://nvd.nist.gov/vuln/detail/CVE-2026-4489) | 7.4 | HIGH | CWE-119 | No | 0.0% | 5.18 | 2026-03-20 | A vulnerability was detected in Tenda A18 Pro 02.03.02.28. This vulnerability affects the function form_fast_setting_wif... |
 | [CVE-2026-4488](https://nvd.nist.gov/vuln/detail/CVE-2026-4488) | 7.4 | HIGH | CWE-119 | No | 0.0% | 5.18 | 2026-03-20 | A vulnerability was identified in UTT HiPER 1250GW up to 3.2.7-210907-180535. Affected is the function strcpy of the fil... |

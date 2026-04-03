@@ -11,7 +11,7 @@
     <header>
       <h1>vuln-tracker — Top 50</h1>
       <p class="subtitle">The 50 most important CVEs from the current and previous month, ranked by VAP score (70% CVSS + 30% EPSS)</p>
-      <p class="last-updated">Last updated: 2026-04-02 22:37 UTC</p>
+      <p class="last-updated">Last updated: 2026-04-03 02:51 UTC</p>
     </header>
     <nav>
       <a href="index.html">&larr; All CVEs</a>
@@ -481,6 +481,39 @@
         <td>2026-04-02</td>
       </tr>
       <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32213" target="_blank" rel="noopener">CVE-2026-32213</a></td>
+        <td>10.0</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-285</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>7.00</td>
+        <td><details><summary>Improper authorization in Azure AI Foundry allows an unauthorized attacker to el...</summary><p>Improper authorization in Azure AI Foundry allows an unauthorized attacker to elevate privileges over a network.</p></details></td>
+        <td>2026-04-03</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33105" target="_blank" rel="noopener">CVE-2026-33105</a></td>
+        <td>10.0</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-285</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>7.00</td>
+        <td><details><summary>Improper authorization in Microsoft Azure Kubernetes Service allows an unauthori...</summary><p>Improper authorization in Microsoft Azure Kubernetes Service allows an unauthorized attacker to elevate privileges over a network.</p></details></td>
+        <td>2026-04-03</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33107" target="_blank" rel="noopener">CVE-2026-33107</a></td>
+        <td>10.0</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-918</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>7.00</td>
+        <td><details><summary>Server-side request forgery (ssrf) in Azure Databricks allows an unauthorized at...</summary><p>Server-side request forgery (ssrf) in Azure Databricks allows an unauthorized attacker to elevate privileges over a network.</p></details></td>
+        <td>2026-04-03</td>
+      </tr>
+      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-27944" target="_blank" rel="noopener">CVE-2026-27944</a></td>
         <td>9.8</td>
         <td><span class="severity critical">CRITICAL</span></td>
@@ -556,39 +589,6 @@
         <td>6.94</td>
         <td><details><summary>A vulnerability allowing an authenticated domain user to perform remote code exe...</summary><p>A vulnerability allowing an authenticated domain user to perform remote code execution (RCE) on the Backup Server.</p></details></td>
         <td>2026-03-12</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-30957" target="_blank" rel="noopener">CVE-2026-30957</a></td>
-        <td>9.9</td>
-        <td><span class="severity critical">CRITICAL</span></td>
-        <td>CWE-749</td>
-        <td>&nbsp;</td>
-        <td>0.2% <small>p46</small></td>
-        <td>6.94</td>
-        <td><details><summary>OneUptime is a solution for monitoring and managing online services. Prior to 10...</summary><p>OneUptime is a solution for monitoring and managing online services. Prior to 10.0.21, OneUptime Synthetic Monitors allow a low-privileged authenticated project user to execute arbitrary commands on the oneuptime-probe server/container. The root cause is that untrusted Synthetic Monitor code is executed inside Node&#x27;s vm while live host-realm Playwright browser and page objects are exposed to it. A malicious user can call Playwright APIs on the injected browser object and cause the probe to spawn an attacker-controlled executable. This is a server-side remote code execution issue. It does not require a separate vm sandbox escape. This vulnerability is fixed in 10.0.21.</p></details></td>
-        <td>2026-03-10</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32938" target="_blank" rel="noopener">CVE-2026-32938</a></td>
-        <td>9.9</td>
-        <td><span class="severity critical">CRITICAL</span></td>
-        <td>CWE-22</td>
-        <td>&nbsp;</td>
-        <td>0.2% <small>p45</small></td>
-        <td>6.94</td>
-        <td><details><summary>SiYuan is a personal knowledge management system. In versions 3.6.0 and below, t...</summary><p>SiYuan is a personal knowledge management system. In versions 3.6.0 and below, the /api/lute/html2BlockDOM on the desktop copies local files pointed to by file:// links in pasted HTML into the workspace assets directory without validating paths against a sensitive-path list. Together with GET /assets/*path, which only requires authentication, a publish-service visitor can cause the desktop kernel to copy any readable sensitive file and then read it via GET, leading to exfiltration of sensitive files. This issue has been fixed in version 3.6.1.</p></details></td>
-        <td>2026-03-20</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-30860" target="_blank" rel="noopener">CVE-2026-30860</a></td>
-        <td>9.9</td>
-        <td><span class="severity critical">CRITICAL</span></td>
-        <td>CWE-89</td>
-        <td>&nbsp;</td>
-        <td>0.2% <small>p39</small></td>
-        <td>6.94</td>
-        <td><details><summary>WeKnora is an LLM-powered framework designed for deep document understanding and...</summary><p>WeKnora is an LLM-powered framework designed for deep document understanding and semantic retrieval. Prior to version 0.2.12, a remote code execution (RCE) vulnerability exists in the application&#x27;s database query functionality. The validation system fails to recursively inspect child nodes within PostgreSQL array expressions and row expressions, allowing attackers to bypass SQL injection protections. By smuggling dangerous PostgreSQL functions inside these expressions and chaining them with large object operations and library loading capabilities, an unauthenticated attacker can achieve arbitrary code execution on the database server with database user privileges. This issue has been patched in version 0.2.12.</p></details></td>
-        <td>2026-03-07</td>
       </tr>
             </tbody>
           </table>
