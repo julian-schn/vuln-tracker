@@ -1,6 +1,6 @@
 # CVEs — March 2026
 
-_5735 vulnerabilities_
+_5736 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
@@ -111,6 +111,7 @@ _5735 vulnerabilities_
 | [CVE-2026-30279](https://nvd.nist.gov/vuln/detail/CVE-2026-30279) | 8.4 | HIGH | CWE-22 | No | 0.0% | 5.88 | 2026-03-31 | An arbitrary file overwrite vulnerability in Squareapps LLC My Location Travel Timeline v11.80 allows attackers to overw... |
 | [CVE-2026-30278](https://nvd.nist.gov/vuln/detail/CVE-2026-30278) | 9.8 | CRITICAL | CWE-22 | No | 0.1% | 6.86 | 2026-03-31 | An arbitrary file overwrite vulnerability in FLY is FUN Aviation Navigation v35.33 allows attackers to overwrite critica... |
 | [CVE-2026-30277](https://nvd.nist.gov/vuln/detail/CVE-2026-30277) | 8.4 | HIGH | CWE-22 | No | 0.0% | 5.88 | 2026-03-31 | An arbitrary file overwrite vulnerability in PDF Reader App : TA/UTAX Mobile Print v3.7.2.251001 allows attackers to ove... |
+| [CVE-2026-2123](https://nvd.nist.gov/vuln/detail/CVE-2026-2123) | 8.6 | HIGH | CWE-280 | No | 0.0% | 6.02 | 2026-03-31 | A security audit identified a privilege escalation vulnerability in Operations Agent(<=OA 12.29) on Windows. Under speci... |
 | [CVE-2025-62184](https://nvd.nist.gov/vuln/detail/CVE-2025-62184) | 4.8 | MEDIUM | CWE-79 | No | 0.0% | 3.36 | 2026-03-31 | Pega Platform versions 8.1.0 through 25.1.0 are affected by a Stored Cross-site Scripting vulnerability in a user interf... |
 | [CVE-2026-5205](https://nvd.nist.gov/vuln/detail/CVE-2026-5205) | 5.3 | MEDIUM | CWE-918 | No | 0.0% | 3.71 | 2026-03-31 | A vulnerability was identified in chatwoot up to 4.11.2. Affected by this vulnerability is the function Webhooks::Trigge... |
 | [CVE-2026-34361](https://nvd.nist.gov/vuln/detail/CVE-2026-34361) | 9.3 | CRITICAL | CWE-552 | No | 0.0% | 6.51 | 2026-03-31 | HAPI FHIR is a complete implementation of the HL7 FHIR standard for healthcare interoperability in Java. Prior to versio... |
@@ -251,6 +252,7 @@ _5735 vulnerabilities_
 | [CVE-2026-5176](https://nvd.nist.gov/vuln/detail/CVE-2026-5176) | 6.9 | MEDIUM | CWE-74 | No | 3.0% | 4.92 | 2026-03-31 | A security flaw has been discovered in Totolink A3300R 17.0.0cu.557_b20221024. Affected is the function setSyslogCfg of... |
 | [CVE-2026-4020](https://nvd.nist.gov/vuln/detail/CVE-2026-4020) | 7.5 | HIGH | CWE-200 | No | 4.5% | 5.38 | 2026-03-31 | The Gravity SMTP plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and includi... |
 | [CVE-2026-3300](https://nvd.nist.gov/vuln/detail/CVE-2026-3300) | 9.8 | CRITICAL | CWE-94 | No | 0.2% | 6.87 | 2026-03-31 | The Everest Forms Pro plugin for WordPress is vulnerable to Remote Code Execution via PHP Code Injection in all versions... |
+| [CVE-2026-5115](https://nvd.nist.gov/vuln/detail/CVE-2026-5115) | 3.6 | LOW | CWE-319 | No | 0.0% | 2.52 | 2026-03-31 | The PaperCut NG/MF (specifically, the embedded application for Konica Minolta devices) is vulnerable to session hijackin... |
 | [CVE-2026-4794](https://nvd.nist.gov/vuln/detail/CVE-2026-4794) | 2.1 | LOW | CWE-79 | No | 0.0% | 1.47 | 2026-03-31 | Multiple cross-site scripting (XSS) vulnerabilities in PaperCut NG/MF before 25.0.10 allow authenticated administrator u... |
 | [CVE-2026-32734](https://nvd.nist.gov/vuln/detail/CVE-2026-32734) | 7.1 | HIGH | CWE-79 | No | 0.0% | 4.97 | 2026-03-31 | baserCMS is a website development framework. Prior to version 5.2.3, baserCMS has DOM-based cross-site scripting in tag... |
 | [CVE-2026-30940](https://nvd.nist.gov/vuln/detail/CVE-2026-30940) | 7.2 | HIGH | CWE-22 | No | 0.2% | 5.05 | 2026-03-31 | baserCMS is a website development framework. Prior to version 5.2.3, a path traversal vulnerability exists in the theme... |
@@ -278,7 +280,7 @@ _5735 vulnerabilities_
 | [CVE-2026-33977](https://nvd.nist.gov/vuln/detail/CVE-2026-33977) | 6.9 | MEDIUM | CWE-617 | No | 0.0% | 4.83 | 2026-03-30 | FreeRDP is a free implementation of the Remote Desktop Protocol. Prior to version 3.24.2, a malicious RDP server can cra... |
 | [CVE-2026-33952](https://nvd.nist.gov/vuln/detail/CVE-2026-33952) | 6.0 | MEDIUM | CWE-617 | No | 0.0% | 4.20 | 2026-03-30 | FreeRDP is a free implementation of the Remote Desktop Protocol. Prior to version 3.24.2, an unvalidated auth_length fie... |
 | [CVE-2026-5152](https://nvd.nist.gov/vuln/detail/CVE-2026-5152) | 7.4 | HIGH | CWE-119 | No | 0.1% | 5.18 | 2026-03-30 | A vulnerability was detected in Tenda CH22 1.0.0.1. Impacted is the function formCreateFileName of the file /goform/crea... |
-| [CVE-2026-4789](https://nvd.nist.gov/vuln/detail/CVE-2026-4789) | 9.8 | CRITICAL | N/A | No | 0.0% | 6.86 | 2026-03-30 | Kyverno, versions 1.16.0 and later, are vulnerable to SSRF due to unrestricted CEL HTTP functions. |
+| [CVE-2026-4789](https://nvd.nist.gov/vuln/detail/CVE-2026-4789) | 9.8 | CRITICAL | CWE-918 | No | 0.0% | 6.86 | 2026-03-30 | Kyverno, versions 1.16.0 and later, are vulnerable to SSRF due to unrestricted CEL HTTP functions. |
 | [CVE-2026-34558](https://nvd.nist.gov/vuln/detail/CVE-2026-34558) | 9.1 | CRITICAL | CWE-79 | No | 0.0% | 6.37 | 2026-03-30 | CI4MS is a CodeIgniter 4-based CMS skeleton that delivers a production-ready, modular architecture with RBAC authorizati... |
 | [CVE-2026-34557](https://nvd.nist.gov/vuln/detail/CVE-2026-34557) | 9.1 | CRITICAL | CWE-79 | No | 0.0% | 6.37 | 2026-03-30 | CI4MS is a CodeIgniter 4-based CMS skeleton that delivers a production-ready, modular architecture with RBAC authorizati... |
 | [CVE-2026-32884](https://nvd.nist.gov/vuln/detail/CVE-2026-32884) | 5.9 | MEDIUM | CWE-295 | No | 0.0% | 4.13 | 2026-03-30 | Botan is a C++ cryptography library. Prior to version 3.11.0, during processing of an X.509 certificate path using name... |
@@ -1371,7 +1373,6 @@ _5735 vulnerabilities_
 | [CVE-2024-51348](https://nvd.nist.gov/vuln/detail/CVE-2024-51348) | 8.8 | HIGH | CWE-121 | No | 0.2% | 6.17 | 2026-03-25 | A stack-based buffer overflow vulnerability in the P2P API service in BS Producten Petcam with firmware 33.1.0.0818 allo... |
 | [CVE-2024-51347](https://nvd.nist.gov/vuln/detail/CVE-2024-51347) | 7.2 | HIGH | CWE-120 | No | 0.1% | 5.04 | 2026-03-25 | A buffer overflow vulnerability in the dgiot binary in LSC Smart Indoor IP Camera V7.6.32. The flaw exists in the handli... |
 | [CVE-2024-51346](https://nvd.nist.gov/vuln/detail/CVE-2024-51346) | 7.7 | HIGH | CWE-330 | No | 0.0% | 5.39 | 2026-03-25 | An issue in Eufy Homebase 2 version 3.3.4.1h allows a local attacker to obtain sensitive information via the cryptograph... |
-| [CVE-2026-23333](https://nvd.nist.gov/vuln/detail/CVE-2026-23333) | 0.0 | NONE | N/A | No | 0.0% | 0.00 | 2026-03-25 | In the Linux kernel, the following vulnerability has been resolved:  netfilter: nft_set_rbtree: validate open interval o... |
 | [CVE-2026-23320](https://nvd.nist.gov/vuln/detail/CVE-2026-23320) | 0.0 | NONE | N/A | No | 0.0% | 0.00 | 2026-03-25 | Rejected reason: This CVE ID has been rejected or withdrawn by its CVE Numbering Authority. |
 | [CVE-2026-32326](https://nvd.nist.gov/vuln/detail/CVE-2026-32326) | 6.9 | MEDIUM | CWE-306 | No | 0.0% | 4.83 | 2026-03-25 | SHARP routers do not perform authentication for some web APIs. The device information may be retrieved without authentic... |
 | [CVE-2026-33253](https://nvd.nist.gov/vuln/detail/CVE-2026-33253) | 8.4 | HIGH | CWE-428 | No | 0.0% | 5.88 | 2026-03-25 | SANUPS SOFTWARE provided by SANYO DENKI CO., LTD. registers Windows services with unquoted file paths. A user with the w... |
