@@ -1,6 +1,6 @@
 # CVEs — March 2026
 
-_5735 vulnerabilities_
+_5734 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
@@ -123,7 +123,6 @@ _5735 vulnerabilities_
 | [CVE-2026-24148](https://nvd.nist.gov/vuln/detail/CVE-2026-24148) | 8.3 | HIGH | CWE-1188 | No | 0.0% | 5.81 | 2026-03-31 | NVIDIA Jetson for JetPack contains a vulnerability in the system initialization logic, where an unprivileged attacker co... |
 | [CVE-2026-5204](https://nvd.nist.gov/vuln/detail/CVE-2026-5204) | 7.4 | HIGH | CWE-119 | No | 0.1% | 5.18 | 2026-03-31 | A vulnerability was determined in Tenda CH22 1.0.0.1. Affected is the function formWebTypeLibrary of the file /goform/we... |
 | [CVE-2026-5203](https://nvd.nist.gov/vuln/detail/CVE-2026-5203) | 5.1 | MEDIUM | CWE-22 | No | 0.0% | 3.57 | 2026-03-31 | A vulnerability was found in CMS Made Simple up to 2.2.22. This impacts the function _copyFilesToFolder in the library m... |
-| [CVE-2026-5087](https://nvd.nist.gov/vuln/detail/CVE-2026-5087) | 7.5 | HIGH | CWE-338 | No | 0.0% | 5.25 | 2026-03-31 | PAGI::Middleware::Session::Store::Cookie versions through 0.001003 for Perl generates random bytes insecurely.  PAGI::Mi... |
 | [CVE-2026-4819](https://nvd.nist.gov/vuln/detail/CVE-2026-4819) | 4.9 | MEDIUM | CWE-522 | No | 0.0% | 3.43 | 2026-03-31 | In Search Guard FLX versions from 1.0.0 up to 4.0.1, the audit logging feature might log user credentials from users log... |
 | [CVE-2026-4818](https://nvd.nist.gov/vuln/detail/CVE-2026-4818) | 6.8 | MEDIUM | CWE-285 | No | 0.0% | 4.76 | 2026-03-31 | In Search Guard FLX versions from 3.0.0 up to 4.0.1, there exists an issue which allows users without the necessary priv... |
 | [CVE-2026-34595](https://nvd.nist.gov/vuln/detail/CVE-2026-34595) | 5.3 | MEDIUM | CWE-843 | No | 0.0% | 3.71 | 2026-03-31 | Parse Server is an open source backend that can be deployed to any infrastructure that can run Node.js. Prior to version... |
