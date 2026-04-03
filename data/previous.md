@@ -1,6 +1,6 @@
 # CVEs — March 2026
 
-_5733 vulnerabilities_
+_5735 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
@@ -342,7 +342,7 @@ _5733 vulnerabilities_
 | [CVE-2026-2285](https://nvd.nist.gov/vuln/detail/CVE-2026-2285) | 7.5 | HIGH | N/A | No | 0.1% | 5.25 | 2026-03-30 | CrewAI contains a arbitrary local file read vulnerability in the JSON loader tool that reads files without path validati... |
 | [CVE-2026-2275](https://nvd.nist.gov/vuln/detail/CVE-2026-2275) | 9.6 | CRITICAL | CWE-749 | No | 0.0% | 6.72 | 2026-03-30 | The CrewAI CodeInterpreter tool falls back to SandboxPython when it cannot reach Docker, which can enable RCE through ar... |
 | [CVE-2026-29953](https://nvd.nist.gov/vuln/detail/CVE-2026-29953) | 7.4 | HIGH | CWE-89 | No | 0.0% | 5.18 | 2026-03-30 | SQL Injection vulnerability in SchemaHero 0.23.0 via the column parameter to the columnAsInsert function in file plugins... |
-| [CVE-2026-29597](https://nvd.nist.gov/vuln/detail/CVE-2026-29597) | 6.5 | MEDIUM | CWE-284 | No | 0.0% | 4.55 | 2026-03-30 | Incorrect access control in the file_details.asp endpoint of DDSN Interactive Acora CMS v10.7.1 allows attackers with ed... |
+| [CVE-2026-29597](https://nvd.nist.gov/vuln/detail/CVE-2026-29597) | 6.5 | MEDIUM | CWE-284 | No | 0.0% | 4.55 | 2026-03-30 | DDSN Interactive cm3 Acora CMS version 10.7.1 contains an improper access control vulnerability. An editor-privileged us... |
 | [CVE-2026-21712](https://nvd.nist.gov/vuln/detail/CVE-2026-21712) | 5.7 | MEDIUM | N/A | No | 0.0% | 3.99 | 2026-03-30 | A flaw in Node.js URL processing causes an assertion failure in native code when `url.format()` is called with a malform... |
 | [CVE-2026-5165](https://nvd.nist.gov/vuln/detail/CVE-2026-5165) | 6.7 | MEDIUM | CWE-825 | No | 0.0% | 4.69 | 2026-03-30 | A flaw was found in virtio-win, specifically within the VirtIO Block (BLK) device. When the device undergoes a reset, it... |
 | [CVE-2026-5164](https://nvd.nist.gov/vuln/detail/CVE-2026-5164) | 6.7 | MEDIUM | CWE-120 | No | 0.0% | 4.69 | 2026-03-30 | A flaw was found in virtio-win. The `RhelDoUnMap()` function does not properly validate the number of descriptors provid... |
@@ -1371,6 +1371,8 @@ _5733 vulnerabilities_
 | [CVE-2024-51348](https://nvd.nist.gov/vuln/detail/CVE-2024-51348) | 8.8 | HIGH | CWE-121 | No | 0.2% | 6.17 | 2026-03-25 | A stack-based buffer overflow vulnerability in the P2P API service in BS Producten Petcam with firmware 33.1.0.0818 allo... |
 | [CVE-2024-51347](https://nvd.nist.gov/vuln/detail/CVE-2024-51347) | 7.2 | HIGH | CWE-120 | No | 0.1% | 5.04 | 2026-03-25 | A buffer overflow vulnerability in the dgiot binary in LSC Smart Indoor IP Camera V7.6.32. The flaw exists in the handli... |
 | [CVE-2024-51346](https://nvd.nist.gov/vuln/detail/CVE-2024-51346) | 7.7 | HIGH | CWE-330 | No | 0.0% | 5.39 | 2026-03-25 | An issue in Eufy Homebase 2 version 3.3.4.1h allows a local attacker to obtain sensitive information via the cryptograph... |
+| [CVE-2026-23333](https://nvd.nist.gov/vuln/detail/CVE-2026-23333) | 0.0 | NONE | N/A | No | 0.0% | 0.00 | 2026-03-25 | In the Linux kernel, the following vulnerability has been resolved:  netfilter: nft_set_rbtree: validate open interval o... |
+| [CVE-2026-23320](https://nvd.nist.gov/vuln/detail/CVE-2026-23320) | 0.0 | NONE | N/A | No | 0.0% | 0.00 | 2026-03-25 | Rejected reason: This CVE ID has been rejected or withdrawn by its CVE Numbering Authority. |
 | [CVE-2026-32326](https://nvd.nist.gov/vuln/detail/CVE-2026-32326) | 6.9 | MEDIUM | CWE-306 | No | 0.0% | 4.83 | 2026-03-25 | SHARP routers do not perform authentication for some web APIs. The device information may be retrieved without authentic... |
 | [CVE-2026-33253](https://nvd.nist.gov/vuln/detail/CVE-2026-33253) | 8.4 | HIGH | CWE-428 | No | 0.0% | 5.88 | 2026-03-25 | SANUPS SOFTWARE provided by SANYO DENKI CO., LTD. registers Windows services with unquoted file paths. A user with the w... |
 | [CVE-2026-2343](https://nvd.nist.gov/vuln/detail/CVE-2026-2343) | 5.3 | MEDIUM | N/A | No | 0.0% | 3.71 | 2026-03-25 | The PeproDev Ultimate Invoice WordPress plugin through 2.2.5 has a bulk download invoices action that generates ZIP arch... |
