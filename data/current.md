@@ -1,12 +1,10 @@
 # CVEs — April 2026
 
-_459 vulnerabilities_
+_457 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
-| [CVE-2026-5462](https://nvd.nist.gov/vuln/detail/CVE-2026-5462) | 1.9 | LOW | CWE-320 | No | — | 1.33 | 2026-04-03 | A vulnerability was identified in Wahoo Fitness SYSTM App up to 7.2.1 on Android. Impacted is an unknown function of the... |
 | [CVE-2026-4350](https://nvd.nist.gov/vuln/detail/CVE-2026-4350) | 8.1 | HIGH | CWE-22 | No | — | 5.67 | 2026-04-03 | The Perfmatters plugin for WordPress is vulnerable to arbitrary file deletion via path traversal in all versions up to,... |
-| [CVE-2025-7024](https://nvd.nist.gov/vuln/detail/CVE-2025-7024) | 5.6 | MEDIUM | CWE-276 | No | — | 3.92 | 2026-04-03 | Incorrect Default Permissions vulnerability in AIRBUS PSS TETRA Connectivity Server on Windows Server OS allows Privileg... |
 | [CVE-2026-5463](https://nvd.nist.gov/vuln/detail/CVE-2026-5463) | 9.3 | CRITICAL | CWE-77 | No | — | 6.51 | 2026-04-03 | Command injection vulnerability in console.run_module_with_output() in pymetasploit3 through version 1.0.6 allows attack... |
 | [CVE-2026-35549](https://nvd.nist.gov/vuln/detail/CVE-2026-35549) | 6.5 | MEDIUM | CWE-789 | No | — | 4.55 | 2026-04-03 | An issue was discovered in MariaDB Server before 11.4.10, 11.5.x through 11.8.x before 11.8.6, and 12.x before 12.2.2. I... |
 | [CVE-2026-35545](https://nvd.nist.gov/vuln/detail/CVE-2026-35545) | 5.3 | MEDIUM | CWE-669 | No | — | 3.71 | 2026-04-03 | An issue was discovered in Roundcube Webmail before 1.5.15 and 1.6.15. The remote image blocking feature can be bypassed... |
