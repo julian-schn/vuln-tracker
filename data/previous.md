@@ -1,6 +1,6 @@
 # CVEs — March 2026
 
-_5735 vulnerabilities_
+_5734 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
@@ -2607,7 +2607,6 @@ _5735 vulnerabilities_
 | [CVE-2025-71257](https://nvd.nist.gov/vuln/detail/CVE-2025-71257) | 6.9 | MEDIUM | CWE-306 | No | 3.4% | 4.93 | 2026-03-19 | BMC FootPrints ITSM versions 20.20.02 through 20.24.01.001 contain an authentication bypass vulnerability due to imprope... |
 | [CVE-2026-3658](https://nvd.nist.gov/vuln/detail/CVE-2026-3658) | 7.5 | HIGH | CWE-89 | No | 0.1% | 5.25 | 2026-03-19 | The Appointment Booking Calendar — Simply Schedule Appointments Booking Plugin plugin for WordPress is vulnerable to SQL... |
 | [CVE-2026-3511](https://nvd.nist.gov/vuln/detail/CVE-2026-3511) | 8.6 | HIGH | CWE-611 | No | 0.1% | 6.02 | 2026-03-19 | Improper Restriction of XML External Entity Reference vulnerability in XMLUtils.java in Slovensko.Digital Autogram allow... |
-| [CVE-2006-10003](https://nvd.nist.gov/vuln/detail/CVE-2006-10003) | 9.8 | CRITICAL | CWE-122 | No | 0.1% | 6.86 | 2026-03-19 | XML::Parser versions through 2.47 for Perl has an off-by-one heap buffer overflow in st_serial_stack.  In the case (stac... |
 | [CVE-2025-14716](https://nvd.nist.gov/vuln/detail/CVE-2025-14716) | 6.5 | MEDIUM | CWE-287 | No | 0.1% | 4.55 | 2026-03-19 | Improper Authentication vulnerability in Secomea GateManager (webserver modules) allows Authentication Bypass.This issue... |
 | [CVE-2026-27070](https://nvd.nist.gov/vuln/detail/CVE-2026-27070) | 7.1 | HIGH | CWE-79 | No | 0.0% | 4.97 | 2026-03-19 | Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in WPEverest Everest... |
 | [CVE-2026-27068](https://nvd.nist.gov/vuln/detail/CVE-2026-27068) | 0.0 | NONE | CWE-79 | No | 0.0% | 0.00 | 2026-03-19 | Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Ryan Howard Websit... |

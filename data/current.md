@@ -1,9 +1,15 @@
 # CVEs — April 2026
 
-_594 vulnerabilities_
+_600 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
+| [CVE-2026-3666](https://nvd.nist.gov/vuln/detail/CVE-2026-3666) | 8.8 | HIGH | CWE-22 | No | — | 6.16 | 2026-04-04 | The wpForo Forum plugin for WordPress is vulnerable to arbitrary file deletion in all versions up to, and including, 2.4... |
+| [CVE-2026-3309](https://nvd.nist.gov/vuln/detail/CVE-2026-3309) | 6.5 | MEDIUM | CWE-94 | No | — | 4.55 | 2026-04-04 | The Paid Membership Plugin, Ecommerce, User Registration Form, Login Form, User Profile & Restrict Content – ProfilePres... |
+| [CVE-2026-2936](https://nvd.nist.gov/vuln/detail/CVE-2026-2936) | 7.2 | HIGH | CWE-79 | No | — | 5.04 | 2026-04-04 | The Visitor Traffic Real Time Statistics plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'page... |
+| [CVE-2026-1233](https://nvd.nist.gov/vuln/detail/CVE-2026-1233) | 7.5 | HIGH | CWE-798 | No | — | 5.25 | 2026-04-04 | The Text to Speech for WP (AI Voices by Mementor) plugin for WordPress is vulnerable to sensitive information exposure i... |
+| [CVE-2026-0626](https://nvd.nist.gov/vuln/detail/CVE-2026-0626) | 6.4 | MEDIUM | CWE-79 | No | — | 4.48 | 2026-04-04 | The WPFunnels – Easy Funnel Builder To Optimize Buyer Journeys And Get More Leads & Sales plugin for WordPress is vulner... |
+| [CVE-2025-14938](https://nvd.nist.gov/vuln/detail/CVE-2025-14938) | 5.3 | MEDIUM | CWE-434 | No | — | 3.71 | 2026-04-04 | The Listeo Core plugin for WordPress is vulnerable to unauthenticated arbitrary media upload in all versions up to, and... |
 | [CVE-2026-5425](https://nvd.nist.gov/vuln/detail/CVE-2026-5425) | 7.2 | HIGH | CWE-79 | No | — | 5.04 | 2026-04-04 | The Widgets for Social Photo Feed plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'feed_data'... |
 | [CVE-2026-3445](https://nvd.nist.gov/vuln/detail/CVE-2026-3445) | 7.1 | HIGH | CWE-862 | No | — | 4.97 | 2026-04-04 | The Paid Membership Plugin, Ecommerce, User Registration Form, Login Form, User Profile & Restrict Content – ProfilePres... |
 | [CVE-2026-2826](https://nvd.nist.gov/vuln/detail/CVE-2026-2826) | 4.3 | MEDIUM | CWE-862 | No | — | 3.01 | 2026-04-04 | The Kadence Blocks — Page Builder Toolkit for Gutenberg Editor plugin for WordPress is vulnerable to authorization bypas... |

@@ -11,7 +11,7 @@
     <header>
       <h1>vuln-tracker</h1>
       <p class="subtitle">CVEs from the National Vulnerability Database — current and previous month</p>
-      <p class="last-updated">Last updated: 2026-04-04 10:40 UTC</p>
+      <p class="last-updated">Last updated: 2026-04-04 13:09 UTC</p>
     </header>
     <nav>
       <a href="top50.html">&#9733; Top 50</a>
@@ -25,7 +25,7 @@
     </nav>
     <main>
     <section>
-      <h2>Current Month — April 2026 <span class="count">(594)</span></h2>
+      <h2>Current Month — April 2026 <span class="count">(600)</span></h2>
       <div class="table-wrapper">
         <table>
           <thead>
@@ -42,6 +42,72 @@
             </tr>
           </thead>
           <tbody>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-3666" target="_blank" rel="noopener">CVE-2026-3666</a></td>
+        <td>8.8</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-22</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.16</td>
+        <td><details><summary>The wpForo Forum plugin for WordPress is vulnerable to arbitrary file deletion i...</summary><p>The wpForo Forum plugin for WordPress is vulnerable to arbitrary file deletion in all versions up to, and including, 2.4.16. This is due to a missing file name/path validation against path traversal sequences. This makes it possible for authenticated attackers, with subscriber level access and above, to delete arbitrary files on the server by embedding a crafted path traversal string in a forum post body and then deleting the post.</p></details></td>
+        <td>2026-04-04</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-3309" target="_blank" rel="noopener">CVE-2026-3309</a></td>
+        <td>6.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-94</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.55</td>
+        <td><details><summary>The Paid Membership Plugin, Ecommerce, User Registration Form, Login Form, User ...</summary><p>The Paid Membership Plugin, Ecommerce, User Registration Form, Login Form, User Profile &amp; Restrict Content – ProfilePress plugin for WordPress is vulnerable to arbitrary shortcode execution in all versions up to, and including, 4.16.11. This is due to the plugin allowing user-supplied billing field values from the checkout process to be interpolated into shortcode template strings that are subsequently processed without proper sanitization of shortcode syntax. This makes it possible for unauthenticated attackers to execute arbitrary shortcodes by submitting crafted billing field values during the checkout process.</p></details></td>
+        <td>2026-04-04</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-2936" target="_blank" rel="noopener">CVE-2026-2936</a></td>
+        <td>7.2</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.04</td>
+        <td><details><summary>The Visitor Traffic Real Time Statistics plugin for WordPress is vulnerable to S...</summary><p>The Visitor Traffic Real Time Statistics plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the &#x27;page_title&#x27; parameter in all versions up to, and including, 8.4 due to insufficient input sanitization and output escaping. This makes it possible for unauthenticated attackers to inject arbitrary web scripts in pages that will execute whenever an admin user accesses the Traffic by Title section.</p></details></td>
+        <td>2026-04-04</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-1233" target="_blank" rel="noopener">CVE-2026-1233</a></td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-798</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.25</td>
+        <td><details><summary>The Text to Speech for WP (AI Voices by Mementor) plugin for WordPress is vulner...</summary><p>The Text to Speech for WP (AI Voices by Mementor) plugin for WordPress is vulnerable to sensitive information exposure in all versions up to, and including, 1.9.8. This is due to the plugin containing hardcoded MySQL database credentials for the vendor&#x27;s external telemetry server in the `Mementor_TTS_Remote_Telemetry` class. This makes it possible for unauthenticated attackers to extract and decode these credentials, gaining unauthorized write access to the vendor&#x27;s telemetry database.</p></details></td>
+        <td>2026-04-04</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-0626" target="_blank" rel="noopener">CVE-2026-0626</a></td>
+        <td>6.4</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.48</td>
+        <td><details><summary>The WPFunnels – Easy Funnel Builder To Optimize Buyer Journeys And Get More Lead...</summary><p>The WPFunnels – Easy Funnel Builder To Optimize Buyer Journeys And Get More Leads &amp; Sales plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the &#x27;wpf_optin_form&#x27; shortcode in all versions up to, and including, 3.7.9 due to insufficient input sanitization and output escaping of the &#x27;button_icon&#x27; parameter. This makes it possible for authenticated attackers, with contributor level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.</p></details></td>
+        <td>2026-04-04</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-14938" target="_blank" rel="noopener">CVE-2025-14938</a></td>
+        <td>5.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-434</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.71</td>
+        <td><details><summary>The Listeo Core plugin for WordPress is vulnerable to unauthenticated arbitrary ...</summary><p>The Listeo Core plugin for WordPress is vulnerable to unauthenticated arbitrary media upload in all versions up to, and including, 2.0.27 via the &quot;listeo_core_handle_dropped_media&quot; function. This is due to missing authorization and capability checks on the AJAX endpoint handling file uploads. This makes it possible for unauthenticated attackers to upload arbitrary media to the site&#x27;s media library, without achieving direct code execution.</p></details></td>
+        <td>2026-04-04</td>
+      </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5425" target="_blank" rel="noopener">CVE-2026-5425</a></td>
         <td>7.2</td>
@@ -6581,7 +6647,7 @@
       </div>
     </section>
     <section>
-      <h2>Previous Month — March 2026 <span class="count">(5735)</span></h2>
+      <h2>Previous Month — March 2026 <span class="count">(5734)</span></h2>
       <div class="table-wrapper">
         <table>
           <thead>
@@ -35229,21 +35295,6 @@
         <td>0.1% <small>p18</small></td>
         <td>6.02</td>
         <td><details><summary>Improper Restriction of XML External Entity Reference vulnerability in XMLUtils....</summary><p>Improper Restriction of XML External Entity Reference vulnerability in XMLUtils.java in Slovensko.Digital Autogram allows remote unauthenticated attacker to conduct SSRF (Server Side Request Forgery) attacks and obtain unauthorized access to local files on filesystems running the vulnerable application. Successful exploitation requires the victim to visit a specially crafted website that sends request containing a specially crafted XML document to /sign endpoint of the local HTTP server run by the application.</p></details></td>
-        <td>2026-03-19</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2006-10003" target="_blank" rel="noopener">CVE-2006-10003</a></td>
-        <td>9.8</td>
-        <td><span class="severity critical">CRITICAL</span></td>
-        <td>CWE-122</td>
-        <td>&nbsp;</td>
-        <td>0.1% <small>p21</small></td>
-        <td>6.86</td>
-        <td><details><summary>XML::Parser versions through 2.47 for Perl has an off-by-one heap buffer overflo...</summary><p>XML::Parser versions through 2.47 for Perl has an off-by-one heap buffer overflow in st_serial_stack.
-
-In the case (stackptr == stacksize - 1), the stack will NOT be expanded. Then the new value will be written at location (++stackptr), which equals stacksize and therefore falls just outside the allocated buffer.
-
-The bug can be observed when parsing an XML file with very deep element nesting</p></details></td>
         <td>2026-03-19</td>
       </tr>
       <tr>
