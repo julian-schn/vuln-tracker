@@ -1,9 +1,11 @@
 # CVEs — April 2026
 
-_580 vulnerabilities_
+_582 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
+| [CVE-2026-2949](https://nvd.nist.gov/vuln/detail/CVE-2026-2949) | 6.4 | MEDIUM | CWE-79 | No | — | 4.48 | 2026-04-04 | The Xpro Addons — 140+ Widgets for Elementor plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the I... |
+| [CVE-2026-2924](https://nvd.nist.gov/vuln/detail/CVE-2026-2924) | 6.4 | MEDIUM | CWE-79 | No | — | 4.48 | 2026-04-04 | The Gutenverse – Ultimate WordPress FSE Blocks Addons & Ecosystem plugin for WordPress is vulnerable to Stored Cross-Sit... |
 | [CVE-2026-3571](https://nvd.nist.gov/vuln/detail/CVE-2026-3571) | 6.5 | MEDIUM | CWE-862 | No | — | 4.55 | 2026-04-04 | The Pie Register – User Registration, Profiles & Content Restriction plugin for WordPress is vulnerable to unauthorized... |
 | [CVE-2026-35616](https://nvd.nist.gov/vuln/detail/CVE-2026-35616) | 9.8 | CRITICAL | CWE-284 | No | — | 6.86 | 2026-04-04 | A improper access control vulnerability in Fortinet FortiClientEMS 7.4.5 through 7.4.6 may allow an unauthenticated atta... |
 | [CVE-2026-34780](https://nvd.nist.gov/vuln/detail/CVE-2026-34780) | 8.3 | HIGH | CWE-668 | No | — | 5.81 | 2026-04-04 | Electron is a framework for writing cross-platform desktop applications using JavaScript, HTML and CSS. From versions 39... |
