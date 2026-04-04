@@ -1,9 +1,11 @@
 # CVEs — April 2026
 
-_628 vulnerabilities_
+_630 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
+| [CVE-2018-25246](https://nvd.nist.gov/vuln/detail/CVE-2018-25246) | 8.7 | HIGH | CWE-306 | No | — | 6.09 | 2026-04-04 | Wikipedia 12.0 contains a denial of service vulnerability that allows unauthenticated attackers to crash the application... |
+| [CVE-2016-20054](https://nvd.nist.gov/vuln/detail/CVE-2016-20054) | 5.3 | MEDIUM | CWE-79 | No | — | 3.71 | 2026-04-04 | Nodcms contains a cross-site request forgery vulnerability that allows attackers to perform unauthorized administrative... |
 | [CVE-2018-25255](https://nvd.nist.gov/vuln/detail/CVE-2018-25255) | 8.6 | HIGH | CWE-787 | No | — | 6.02 | 2026-04-04 | 10-Strike LANState 8.8 contains a local buffer overflow vulnerability in structured exception handling that allows local... |
 | [CVE-2018-25254](https://nvd.nist.gov/vuln/detail/CVE-2018-25254) | 9.3 | CRITICAL | CWE-787 | No | — | 6.51 | 2026-04-04 | NICO-FTP 3.0.1.19 contains a structured exception handler buffer overflow vulnerability that allows remote attackers to... |
 | [CVE-2018-25253](https://nvd.nist.gov/vuln/detail/CVE-2018-25253) | 6.9 | MEDIUM | CWE-787 | No | — | 4.83 | 2026-04-04 | Termite 3.4 contains a buffer overflow vulnerability in the User interface language settings field that allows local att... |
