@@ -1,9 +1,17 @@
 # CVEs — April 2026
 
-_582 vulnerabilities_
+_590 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
+| [CVE-2026-4896](https://nvd.nist.gov/vuln/detail/CVE-2026-4896) | 8.1 | HIGH | CWE-639 | No | — | 5.67 | 2026-04-04 | The WCFM – Frontend Manager for WooCommerce along with Bookings Subscription Listings Compatible plugin for WordPress is... |
+| [CVE-2026-2600](https://nvd.nist.gov/vuln/detail/CVE-2026-2600) | 6.4 | MEDIUM | CWE-79 | No | — | 4.48 | 2026-04-04 | The ElementsKit Elementor Addons and Templates plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the... |
+| [CVE-2026-0738](https://nvd.nist.gov/vuln/detail/CVE-2026-0738) | 6.4 | MEDIUM | CWE-79 | No | — | 4.48 | 2026-04-04 | The WP Shortcodes Plugin - Shortcodes Ultimate plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the... |
+| [CVE-2026-0737](https://nvd.nist.gov/vuln/detail/CVE-2026-0737) | 6.4 | MEDIUM | CWE-79 | No | — | 4.48 | 2026-04-04 | The WP Shortcodes Plugin - Shortcodes Ultimate plugin for WordPress is vulnerable to Stored Cross-Site Scripting in all... |
+| [CVE-2026-0664](https://nvd.nist.gov/vuln/detail/CVE-2026-0664) | 6.4 | MEDIUM | CWE-79 | No | — | 4.48 | 2026-04-04 | The Royal Addons for Elementor plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'button_text' p... |
+| [CVE-2026-0552](https://nvd.nist.gov/vuln/detail/CVE-2026-0552) | 6.4 | MEDIUM | CWE-79 | No | — | 4.48 | 2026-04-04 | The Simple Shopping Cart plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the plugin's 'wpsc_displa... |
+| [CVE-2025-15064](https://nvd.nist.gov/vuln/detail/CVE-2025-15064) | 6.4 | MEDIUM | CWE-79 | No | — | 4.48 | 2026-04-04 | The Ultimate Member – User Profile, Registration, Login, Member Directory, Content Restriction & Membership Plugin plugi... |
+| [CVE-2025-13368](https://nvd.nist.gov/vuln/detail/CVE-2025-13368) | 6.4 | MEDIUM | CWE-79 | No | — | 4.48 | 2026-04-04 | The Xpro Addons — 140+ Widgets for Elementor plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the P... |
 | [CVE-2026-2949](https://nvd.nist.gov/vuln/detail/CVE-2026-2949) | 6.4 | MEDIUM | CWE-79 | No | — | 4.48 | 2026-04-04 | The Xpro Addons — 140+ Widgets for Elementor plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the I... |
 | [CVE-2026-2924](https://nvd.nist.gov/vuln/detail/CVE-2026-2924) | 6.4 | MEDIUM | CWE-79 | No | — | 4.48 | 2026-04-04 | The Gutenverse – Ultimate WordPress FSE Blocks Addons & Ecosystem plugin for WordPress is vulnerable to Stored Cross-Sit... |
 | [CVE-2026-3571](https://nvd.nist.gov/vuln/detail/CVE-2026-3571) | 6.5 | MEDIUM | CWE-862 | No | — | 4.55 | 2026-04-04 | The Pie Register – User Registration, Profiles & Content Restriction plugin for WordPress is vulnerable to unauthorized... |
