@@ -11,7 +11,7 @@
     <header>
       <h1>vuln-tracker</h1>
       <p class="subtitle">CVEs from the National Vulnerability Database — current and previous month</p>
-      <p class="last-updated">Last updated: 2026-04-04 08:50 UTC</p>
+      <p class="last-updated">Last updated: 2026-04-04 10:40 UTC</p>
     </header>
     <nav>
       <a href="top50.html">&#9733; Top 50</a>
@@ -25,7 +25,7 @@
     </nav>
     <main>
     <section>
-      <h2>Current Month — April 2026 <span class="count">(590)</span></h2>
+      <h2>Current Month — April 2026 <span class="count">(594)</span></h2>
       <div class="table-wrapper">
         <table>
           <thead>
@@ -42,6 +42,50 @@
             </tr>
           </thead>
           <tbody>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5425" target="_blank" rel="noopener">CVE-2026-5425</a></td>
+        <td>7.2</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.04</td>
+        <td><details><summary>The Widgets for Social Photo Feed plugin for WordPress is vulnerable to Stored C...</summary><p>The Widgets for Social Photo Feed plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the &#x27;feed_data&#x27; parameter keys in all versions up to, and including, 1.7.9 due to insufficient input sanitization and output escaping. This makes it possible for unauthenticated attackers to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.</p></details></td>
+        <td>2026-04-04</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-3445" target="_blank" rel="noopener">CVE-2026-3445</a></td>
+        <td>7.1</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.97</td>
+        <td><details><summary>The Paid Membership Plugin, Ecommerce, User Registration Form, Login Form, User ...</summary><p>The Paid Membership Plugin, Ecommerce, User Registration Form, Login Form, User Profile &amp; Restrict Content – ProfilePress plugin for WordPress is vulnerable to unauthorized membership payment bypass in all versions up to, and including, 4.16.11. This is due to a missing ownership verification on the `change_plan_sub_id` parameter in the `process_checkout()` function. This makes it possible for authenticated attackers, with subscriber level access and above, to reference another user&#x27;s active subscription during checkout to manipulate proration calculations, allowing them to obtain paid lifetime membership plans without payment via the `ppress_process_checkout` AJAX action.</p></details></td>
+        <td>2026-04-04</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-2826" target="_blank" rel="noopener">CVE-2026-2826</a></td>
+        <td>4.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.01</td>
+        <td><details><summary>The Kadence Blocks — Page Builder Toolkit for Gutenberg Editor plugin for WordPr...</summary><p>The Kadence Blocks — Page Builder Toolkit for Gutenberg Editor plugin for WordPress is vulnerable to authorization bypass in all versions up to, and including, 3.6.3. This is due to the plugin not properly verifying that a user has the `upload_files` capability in the `process_pattern` REST API endpoint. This makes it possible for authenticated attackers, with contributor level access and above, to upload images to the WordPress Media Library by supplying remote image URLs that the server downloads and creates as media attachments.</p></details></td>
+        <td>2026-04-04</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-2437" target="_blank" rel="noopener">CVE-2026-2437</a></td>
+        <td>6.4</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.48</td>
+        <td><details><summary>The WP Travel Engine – Tour Booking Plugin – Tour Operator Software plugin for W...</summary><p>The WP Travel Engine – Tour Booking Plugin – Tour Operator Software plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the plugin&#x27;s &#x27;wte_trip_tax&#x27; shortcode in all versions up to, and including, 6.7.5 due to insufficient input sanitization and output escaping on user supplied attributes. This makes it possible for authenticated attackers, with contributor level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.</p></details></td>
+        <td>2026-04-04</td>
+      </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4896" target="_blank" rel="noopener">CVE-2026-4896</a></td>
         <td>8.1</td>
@@ -6537,7 +6581,7 @@
       </div>
     </section>
     <section>
-      <h2>Previous Month — March 2026 <span class="count">(5734)</span></h2>
+      <h2>Previous Month — March 2026 <span class="count">(5735)</span></h2>
       <div class="table-wrapper">
         <table>
           <thead>
@@ -35185,6 +35229,21 @@
         <td>0.1% <small>p18</small></td>
         <td>6.02</td>
         <td><details><summary>Improper Restriction of XML External Entity Reference vulnerability in XMLUtils....</summary><p>Improper Restriction of XML External Entity Reference vulnerability in XMLUtils.java in Slovensko.Digital Autogram allows remote unauthenticated attacker to conduct SSRF (Server Side Request Forgery) attacks and obtain unauthorized access to local files on filesystems running the vulnerable application. Successful exploitation requires the victim to visit a specially crafted website that sends request containing a specially crafted XML document to /sign endpoint of the local HTTP server run by the application.</p></details></td>
+        <td>2026-03-19</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2006-10003" target="_blank" rel="noopener">CVE-2006-10003</a></td>
+        <td>9.8</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-122</td>
+        <td>&nbsp;</td>
+        <td>0.1% <small>p21</small></td>
+        <td>6.86</td>
+        <td><details><summary>XML::Parser versions through 2.47 for Perl has an off-by-one heap buffer overflo...</summary><p>XML::Parser versions through 2.47 for Perl has an off-by-one heap buffer overflow in st_serial_stack.
+
+In the case (stackptr == stacksize - 1), the stack will NOT be expanded. Then the new value will be written at location (++stackptr), which equals stacksize and therefore falls just outside the allocated buffer.
+
+The bug can be observed when parsing an XML file with very deep element nesting</p></details></td>
         <td>2026-03-19</td>
       </tr>
       <tr>

@@ -1,9 +1,13 @@
 # CVEs — April 2026
 
-_590 vulnerabilities_
+_594 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
+| [CVE-2026-5425](https://nvd.nist.gov/vuln/detail/CVE-2026-5425) | 7.2 | HIGH | CWE-79 | No | — | 5.04 | 2026-04-04 | The Widgets for Social Photo Feed plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'feed_data'... |
+| [CVE-2026-3445](https://nvd.nist.gov/vuln/detail/CVE-2026-3445) | 7.1 | HIGH | CWE-862 | No | — | 4.97 | 2026-04-04 | The Paid Membership Plugin, Ecommerce, User Registration Form, Login Form, User Profile & Restrict Content – ProfilePres... |
+| [CVE-2026-2826](https://nvd.nist.gov/vuln/detail/CVE-2026-2826) | 4.3 | MEDIUM | CWE-862 | No | — | 3.01 | 2026-04-04 | The Kadence Blocks — Page Builder Toolkit for Gutenberg Editor plugin for WordPress is vulnerable to authorization bypas... |
+| [CVE-2026-2437](https://nvd.nist.gov/vuln/detail/CVE-2026-2437) | 6.4 | MEDIUM | CWE-79 | No | — | 4.48 | 2026-04-04 | The WP Travel Engine – Tour Booking Plugin – Tour Operator Software plugin for WordPress is vulnerable to Stored Cross-S... |
 | [CVE-2026-4896](https://nvd.nist.gov/vuln/detail/CVE-2026-4896) | 8.1 | HIGH | CWE-639 | No | — | 5.67 | 2026-04-04 | The WCFM – Frontend Manager for WooCommerce along with Bookings Subscription Listings Compatible plugin for WordPress is... |
 | [CVE-2026-2600](https://nvd.nist.gov/vuln/detail/CVE-2026-2600) | 6.4 | MEDIUM | CWE-79 | No | — | 4.48 | 2026-04-04 | The ElementsKit Elementor Addons and Templates plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the... |
 | [CVE-2026-0738](https://nvd.nist.gov/vuln/detail/CVE-2026-0738) | 6.4 | MEDIUM | CWE-79 | No | — | 4.48 | 2026-04-04 | The WP Shortcodes Plugin - Shortcodes Ultimate plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the... |
