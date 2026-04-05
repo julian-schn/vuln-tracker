@@ -1,11 +1,18 @@
 # CVEs — April 2026
 
-_653 vulnerabilities_
+_660 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
+| [CVE-2026-5558](https://nvd.nist.gov/vuln/detail/CVE-2026-5558) | 5.3 | MEDIUM | CWE-74 | No | — | 3.71 | 2026-04-05 | A flaw has been found in PHPGurukul PHPGurukul Online Shopping Portal Project up to 2.1. Impacted is an unknown function... |
+| [CVE-2026-5557](https://nvd.nist.gov/vuln/detail/CVE-2026-5557) | 5.3 | MEDIUM | CWE-287 | No | — | 3.71 | 2026-04-05 | A vulnerability was detected in badlogic pi-mono up to 0.58.4. This issue affects some unknown processing of the file pa... |
+| [CVE-2026-5556](https://nvd.nist.gov/vuln/detail/CVE-2026-5556) | 5.3 | MEDIUM | CWE-74 | No | — | 3.71 | 2026-04-05 | A security vulnerability has been detected in badlogic pi-mono up to 0.58.4. This vulnerability affects the function dis... |
+| [CVE-2026-5555](https://nvd.nist.gov/vuln/detail/CVE-2026-5555) | 6.9 | MEDIUM | CWE-74 | No | — | 4.83 | 2026-04-05 | A weakness has been identified in code-projects Concert Ticket Reservation System 1.0. This affects an unknown part of t... |
+| [CVE-2026-5554](https://nvd.nist.gov/vuln/detail/CVE-2026-5554) | 6.9 | MEDIUM | CWE-74 | No | — | 4.83 | 2026-04-05 | A security flaw has been discovered in code-projects Concert Ticket Reservation System 1.0. Affected by this issue is so... |
+| [CVE-2026-5553](https://nvd.nist.gov/vuln/detail/CVE-2026-5553) | 5.3 | MEDIUM | CWE-74 | No | — | 3.71 | 2026-04-05 | A vulnerability was identified in itsourcecode Online Cellphone System 1.0. Affected by this vulnerability is an unknown... |
+| [CVE-2026-5552](https://nvd.nist.gov/vuln/detail/CVE-2026-5552) | 5.3 | MEDIUM | CWE-74 | No | — | 3.71 | 2026-04-05 | A weakness has been identified in PHPGurukul Online Shopping Portal Project 2.1. This issue affects some unknown process... |
+| [CVE-2026-5551](https://nvd.nist.gov/vuln/detail/CVE-2026-5551) | 6.9 | MEDIUM | CWE-74 | No | — | 4.83 | 2026-04-05 | A security flaw has been discovered in itsourcecode Free Hotel Reservation System 1.0. This vulnerability affects unknow... |
 | [CVE-2026-5550](https://nvd.nist.gov/vuln/detail/CVE-2026-5550) | 8.7 | HIGH | CWE-119 | No | — | 6.09 | 2026-04-05 | A vulnerability was identified in Tenda AC10 16.03.10.10_multi_TDE01. This affects the function fromSysToolChangePwd of... |
-| [CVE-2026-5549](https://nvd.nist.gov/vuln/detail/CVE-2026-5549) | 5.5 | MEDIUM | CWE-320 | No | — | 3.85 | 2026-04-05 | A vulnerability was determined in Tenda AC10 16.03.10.10_multi_TDE01. Affected by this issue is some unknown functionali... |
 | [CVE-2026-5548](https://nvd.nist.gov/vuln/detail/CVE-2026-5548) | 8.7 | HIGH | CWE-119 | No | — | 6.09 | 2026-04-05 | A vulnerability was found in Tenda AC10 16.03.10.10_multi_TDE01. Affected by this vulnerability is the function fromSysT... |
 | [CVE-2026-5547](https://nvd.nist.gov/vuln/detail/CVE-2026-5547) | 5.3 | MEDIUM | CWE-77 | No | — | 3.71 | 2026-04-05 | A vulnerability has been found in Tenda AC10 16.03.10.10_multi_TDE01. Affected is the function formAddMacfilterRule of t... |
 | [CVE-2026-5544](https://nvd.nist.gov/vuln/detail/CVE-2026-5544) | 7.4 | HIGH | CWE-119 | No | — | 5.18 | 2026-04-05 | A security flaw has been discovered in UTT HiPER 1250GW up to 3.2.7-210907-180535. The impacted element is an unknown fu... |
