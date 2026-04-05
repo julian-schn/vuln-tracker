@@ -1,9 +1,10 @@
 # CVEs — April 2026
 
-_648 vulnerabilities_
+_649 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
+| [CVE-2026-5544](https://nvd.nist.gov/vuln/detail/CVE-2026-5544) | 7.4 | HIGH | CWE-119 | No | — | 5.18 | 2026-04-05 | A security flaw has been discovered in UTT HiPER 1250GW up to 3.2.7-210907-180535. The impacted element is an unknown fu... |
 | [CVE-2026-5543](https://nvd.nist.gov/vuln/detail/CVE-2026-5543) | 5.3 | MEDIUM | CWE-74 | No | — | 3.71 | 2026-04-05 | A vulnerability was identified in PHPGurukul User Registration & Login and User Management System 3.3. The affected elem... |
 | [CVE-2026-5542](https://nvd.nist.gov/vuln/detail/CVE-2026-5542) | 5.3 | MEDIUM | CWE-79 | No | — | 3.71 | 2026-04-05 | A vulnerability was determined in code-projects Simple Laundry System 1.0. Impacted is an unknown function of the file /... |
 | [CVE-2026-5541](https://nvd.nist.gov/vuln/detail/CVE-2026-5541) | 5.3 | MEDIUM | CWE-79 | No | — | 3.71 | 2026-04-05 | A vulnerability was found in code-projects Simple Laundry System 1.0. This issue affects some unknown processing of the... |
