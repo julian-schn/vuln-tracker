@@ -1,9 +1,12 @@
 # CVEs — April 2026
 
-_686 vulnerabilities_
+_689 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
+| [CVE-2026-5595](https://nvd.nist.gov/vuln/detail/CVE-2026-5595) | 5.3 | MEDIUM | CWE-22 | No | — | 3.71 | 2026-04-05 | A security vulnerability has been detected in griptape-ai griptape 0.19.4. Affected by this vulnerability is the functio... |
+| [CVE-2026-5594](https://nvd.nist.gov/vuln/detail/CVE-2026-5594) | 5.3 | MEDIUM | CWE-74 | No | — | 3.71 | 2026-04-05 | A weakness has been identified in premAI-io premsql up to 0.2.1. Affected is the function eval of the file premsql/agent... |
+| [CVE-2026-5587](https://nvd.nist.gov/vuln/detail/CVE-2026-5587) | 5.3 | MEDIUM | CWE-74 | No | — | 3.71 | 2026-04-05 | A vulnerability was identified in wbbeyourself MAC-SQL up to 31a9df5e0d520be4769be57a4b9022e5e34a14f4. This affects the... |
 | [CVE-2026-5586](https://nvd.nist.gov/vuln/detail/CVE-2026-5586) | 5.3 | MEDIUM | CWE-74 | No | — | 3.71 | 2026-04-05 | A vulnerability was determined in zhongyu09 openchatbi up to 0.2.1. The impacted element is an unknown function of the c... |
 | [CVE-2026-5585](https://nvd.nist.gov/vuln/detail/CVE-2026-5585) | 5.5 | MEDIUM | CWE-200 | No | — | 3.85 | 2026-04-05 | A vulnerability was found in Tencent AI-Infra-Guard 4.0. The affected element is an unknown function of the file common/... |
 | [CVE-2026-5584](https://nvd.nist.gov/vuln/detail/CVE-2026-5584) | 6.9 | MEDIUM | CWE-74 | No | — | 4.83 | 2026-04-05 | A vulnerability has been found in Fosowl agenticSeek 0.1.0. Impacted is the function PyInterpreter.execute of the file s... |
