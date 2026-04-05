@@ -1,9 +1,14 @@
 # CVEs — April 2026
 
-_681 vulnerabilities_
+_686 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
+| [CVE-2026-5586](https://nvd.nist.gov/vuln/detail/CVE-2026-5586) | 5.3 | MEDIUM | CWE-74 | No | — | 3.71 | 2026-04-05 | A vulnerability was determined in zhongyu09 openchatbi up to 0.2.1. The impacted element is an unknown function of the c... |
+| [CVE-2026-5585](https://nvd.nist.gov/vuln/detail/CVE-2026-5585) | 5.5 | MEDIUM | CWE-200 | No | — | 3.85 | 2026-04-05 | A vulnerability was found in Tencent AI-Infra-Guard 4.0. The affected element is an unknown function of the file common/... |
+| [CVE-2026-5584](https://nvd.nist.gov/vuln/detail/CVE-2026-5584) | 6.9 | MEDIUM | CWE-74 | No | — | 4.83 | 2026-04-05 | A vulnerability has been found in Fosowl agenticSeek 0.1.0. Impacted is the function PyInterpreter.execute of the file s... |
+| [CVE-2026-5583](https://nvd.nist.gov/vuln/detail/CVE-2026-5583) | 5.3 | MEDIUM | CWE-74 | No | — | 3.71 | 2026-04-05 | A security vulnerability has been detected in PHPGurukul Online Shopping Portal Project 2.1. This affects an unknown par... |
+| [CVE-2026-5580](https://nvd.nist.gov/vuln/detail/CVE-2026-5580) | 5.3 | MEDIUM | CWE-74 | No | — | 3.71 | 2026-04-05 | A vulnerability was identified in CodeAstro Online Classroom 1.0. Impacted is an unknown function of the file /OnlineCla... |
 | [CVE-2026-5579](https://nvd.nist.gov/vuln/detail/CVE-2026-5579) | 5.3 | MEDIUM | CWE-74 | No | — | 3.71 | 2026-04-05 | A vulnerability was determined in CodeAstro Online Classroom 1.0. This issue affects some unknown processing of the file... |
 | [CVE-2026-5578](https://nvd.nist.gov/vuln/detail/CVE-2026-5578) | 5.3 | MEDIUM | CWE-74 | No | — | 3.71 | 2026-04-05 | A vulnerability was found in CodeAstro Online Classroom 1.0. This vulnerability affects unknown code of the file /Online... |
 | [CVE-2026-5577](https://nvd.nist.gov/vuln/detail/CVE-2026-5577) | 6.9 | MEDIUM | CWE-74 | No | — | 4.83 | 2026-04-05 | A vulnerability has been found in Song-Li cross_browser up to ca690f0fe6954fd9bcda36d071b68ed8682a786a. This affects an... |
