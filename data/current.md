@@ -1,9 +1,13 @@
 # CVEs — April 2026
 
-_649 vulnerabilities_
+_653 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
+| [CVE-2026-5550](https://nvd.nist.gov/vuln/detail/CVE-2026-5550) | 8.7 | HIGH | CWE-119 | No | — | 6.09 | 2026-04-05 | A vulnerability was identified in Tenda AC10 16.03.10.10_multi_TDE01. This affects the function fromSysToolChangePwd of... |
+| [CVE-2026-5549](https://nvd.nist.gov/vuln/detail/CVE-2026-5549) | 5.5 | MEDIUM | CWE-320 | No | — | 3.85 | 2026-04-05 | A vulnerability was determined in Tenda AC10 16.03.10.10_multi_TDE01. Affected by this issue is some unknown functionali... |
+| [CVE-2026-5548](https://nvd.nist.gov/vuln/detail/CVE-2026-5548) | 8.7 | HIGH | CWE-119 | No | — | 6.09 | 2026-04-05 | A vulnerability was found in Tenda AC10 16.03.10.10_multi_TDE01. Affected by this vulnerability is the function fromSysT... |
+| [CVE-2026-5547](https://nvd.nist.gov/vuln/detail/CVE-2026-5547) | 5.3 | MEDIUM | CWE-77 | No | — | 3.71 | 2026-04-05 | A vulnerability has been found in Tenda AC10 16.03.10.10_multi_TDE01. Affected is the function formAddMacfilterRule of t... |
 | [CVE-2026-5544](https://nvd.nist.gov/vuln/detail/CVE-2026-5544) | 7.4 | HIGH | CWE-119 | No | — | 5.18 | 2026-04-05 | A security flaw has been discovered in UTT HiPER 1250GW up to 3.2.7-210907-180535. The impacted element is an unknown fu... |
 | [CVE-2026-5543](https://nvd.nist.gov/vuln/detail/CVE-2026-5543) | 5.3 | MEDIUM | CWE-74 | No | — | 3.71 | 2026-04-05 | A vulnerability was identified in PHPGurukul User Registration & Login and User Management System 3.3. The affected elem... |
 | [CVE-2026-5542](https://nvd.nist.gov/vuln/detail/CVE-2026-5542) | 5.3 | MEDIUM | CWE-79 | No | — | 3.71 | 2026-04-05 | A vulnerability was determined in code-projects Simple Laundry System 1.0. Impacted is an unknown function of the file /... |
