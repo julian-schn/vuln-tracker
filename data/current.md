@@ -1,14 +1,20 @@
 # CVEs — April 2026
 
-_675 vulnerabilities_
+_681 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
+| [CVE-2026-5579](https://nvd.nist.gov/vuln/detail/CVE-2026-5579) | 5.3 | MEDIUM | CWE-74 | No | — | 3.71 | 2026-04-05 | A vulnerability was determined in CodeAstro Online Classroom 1.0. This issue affects some unknown processing of the file... |
+| [CVE-2026-5578](https://nvd.nist.gov/vuln/detail/CVE-2026-5578) | 5.3 | MEDIUM | CWE-74 | No | — | 3.71 | 2026-04-05 | A vulnerability was found in CodeAstro Online Classroom 1.0. This vulnerability affects unknown code of the file /Online... |
+| [CVE-2026-5577](https://nvd.nist.gov/vuln/detail/CVE-2026-5577) | 6.9 | MEDIUM | CWE-74 | No | — | 4.83 | 2026-04-05 | A vulnerability has been found in Song-Li cross_browser up to ca690f0fe6954fd9bcda36d071b68ed8682a786a. This affects an... |
+| [CVE-2026-5576](https://nvd.nist.gov/vuln/detail/CVE-2026-5576) | 5.1 | MEDIUM | CWE-284 | No | — | 3.57 | 2026-04-05 | A flaw has been found in SourceCodester/jkev Record Management System 1.0. Affected by this issue is some unknown functi... |
+| [CVE-2026-5575](https://nvd.nist.gov/vuln/detail/CVE-2026-5575) | 6.9 | MEDIUM | CWE-74 | No | — | 4.83 | 2026-04-05 | A vulnerability was detected in SourceCodester/jkev Record Management System 1.0. Affected by this vulnerability is an u... |
+| [CVE-2026-5574](https://nvd.nist.gov/vuln/detail/CVE-2026-5574) | 6.9 | MEDIUM | CWE-862 | No | — | 4.83 | 2026-04-05 | A security vulnerability has been detected in Technostrobe HI-LED-WR120-G2 5.5.0.1R6.03.30. Affected is the function del... |
+| [CVE-2026-5573](https://nvd.nist.gov/vuln/detail/CVE-2026-5573) | 6.9 | MEDIUM | CWE-284 | No | — | 4.83 | 2026-04-05 | A weakness has been identified in Technostrobe HI-LED-WR120-G2 5.5.0.1R6.03.30. This impacts an unknown function of the... |
 | [CVE-2026-5572](https://nvd.nist.gov/vuln/detail/CVE-2026-5572) | 5.3 | MEDIUM | CWE-352 | No | — | 3.71 | 2026-04-05 | A security flaw has been discovered in Technostrobe HI-LED-WR120-G2 5.5.0.1R6.03.30. This affects an unknown function. P... |
 | [CVE-2026-5571](https://nvd.nist.gov/vuln/detail/CVE-2026-5571) | 5.5 | MEDIUM | CWE-200 | No | — | 3.85 | 2026-04-05 | A vulnerability was identified in Technostrobe HI-LED-WR120-G2 5.5.0.1R6.03.30. The impacted element is an unknown funct... |
 | [CVE-2026-5570](https://nvd.nist.gov/vuln/detail/CVE-2026-5570) | 6.9 | MEDIUM | CWE-287 | No | — | 4.83 | 2026-04-05 | A vulnerability was determined in Technostrobe HI-LED-WR120-G2 5.5.0.1R6.03.30. The affected element is the function ind... |
 | [CVE-2026-5569](https://nvd.nist.gov/vuln/detail/CVE-2026-5569) | 6.9 | MEDIUM | CWE-266 | No | — | 4.83 | 2026-04-05 | A vulnerability was found in Technostrobe HI-LED-WR120-G2 5.5.0.1R6.03.30. Impacted is an unknown function of the file /... |
-| [CVE-2026-5599](https://nvd.nist.gov/vuln/detail/CVE-2026-5599) | 7.3 | HIGH | CWE-653 | No | — | 5.11 | 2026-04-05 | A user with API access and "manage users" permission in any venueless  world is able to trigger deletion of user account... |
 | [CVE-2026-5568](https://nvd.nist.gov/vuln/detail/CVE-2026-5568) | 5.1 | MEDIUM | CWE-79 | No | — | 3.57 | 2026-04-05 | A vulnerability has been found in Akaunting up to 3.1.21. This issue affects some unknown processing of the component In... |
 | [CVE-2026-5567](https://nvd.nist.gov/vuln/detail/CVE-2026-5567) | 7.4 | HIGH | CWE-119 | No | — | 5.18 | 2026-04-05 | A flaw has been found in Tenda M3 1.0.0.10. This vulnerability affects the function setAdvPolicyData of the file /goform... |
 | [CVE-2026-5566](https://nvd.nist.gov/vuln/detail/CVE-2026-5566) | 7.4 | HIGH | CWE-119 | No | — | 5.18 | 2026-04-05 | A vulnerability was detected in UTT HiPER 1250GW up to 3.2.7-210907-180535. This affects the function strcpy of the file... |
