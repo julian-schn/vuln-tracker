@@ -1,9 +1,18 @@
 # CVEs — April 2026
 
-_640 vulnerabilities_
+_648 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
+| [CVE-2026-5543](https://nvd.nist.gov/vuln/detail/CVE-2026-5543) | 5.3 | MEDIUM | CWE-74 | No | — | 3.71 | 2026-04-05 | A vulnerability was identified in PHPGurukul User Registration & Login and User Management System 3.3. The affected elem... |
+| [CVE-2026-5542](https://nvd.nist.gov/vuln/detail/CVE-2026-5542) | 5.3 | MEDIUM | CWE-79 | No | — | 3.71 | 2026-04-05 | A vulnerability was determined in code-projects Simple Laundry System 1.0. Impacted is an unknown function of the file /... |
+| [CVE-2026-5541](https://nvd.nist.gov/vuln/detail/CVE-2026-5541) | 5.3 | MEDIUM | CWE-79 | No | — | 3.71 | 2026-04-05 | A vulnerability was found in code-projects Simple Laundry System 1.0. This issue affects some unknown processing of the... |
+| [CVE-2026-5540](https://nvd.nist.gov/vuln/detail/CVE-2026-5540) | 6.9 | MEDIUM | CWE-74 | No | — | 4.83 | 2026-04-05 | A vulnerability has been found in code-projects Simple Laundry System 1.0. This vulnerability affects unknown code of th... |
+| [CVE-2026-5590](https://nvd.nist.gov/vuln/detail/CVE-2026-5590) | 6.4 | MEDIUM | CWE-476 | No | — | 4.48 | 2026-04-05 | A race condition during TCP connection teardown can cause tcp_recv() to operate on a connection that has already been re... |
+| [CVE-2026-5539](https://nvd.nist.gov/vuln/detail/CVE-2026-5539) | 5.3 | MEDIUM | CWE-79 | No | — | 3.71 | 2026-04-05 | A flaw has been found in code-projects Simple Laundry System 1.0. This affects an unknown part of the file /modifymember... |
+| [CVE-2026-5538](https://nvd.nist.gov/vuln/detail/CVE-2026-5538) | 5.3 | MEDIUM | CWE-918 | No | — | 3.71 | 2026-04-05 | A vulnerability was detected in QingdaoU OnlineJudge up to 1.6.1. Affected by this issue is the function service_url of... |
+| [CVE-2026-5537](https://nvd.nist.gov/vuln/detail/CVE-2026-5537) | 5.3 | MEDIUM | CWE-74 | No | — | 3.71 | 2026-04-05 | A security vulnerability has been detected in halex CourseSEL up to 1.1.0. Affected by this vulnerability is the functio... |
+| [CVE-2026-5536](https://nvd.nist.gov/vuln/detail/CVE-2026-5536) | 6.9 | MEDIUM | CWE-20 | No | — | 4.83 | 2026-04-05 | A weakness has been identified in FedML-AI FedML up to 0.8.9. Affected is the function sendMessage of the file grpc_serv... |
 | [CVE-2026-5535](https://nvd.nist.gov/vuln/detail/CVE-2026-5535) | 5.3 | MEDIUM | CWE-22 | No | — | 3.71 | 2026-04-05 | A security flaw has been discovered in FedML-AI FedML up to 0.8.9. This impacts an unknown function of the file FileUtil... |
 | [CVE-2026-5534](https://nvd.nist.gov/vuln/detail/CVE-2026-5534) | 6.9 | MEDIUM | CWE-74 | No | — | 4.83 | 2026-04-05 | A vulnerability was identified in itsourcecode Online Enrollment System 1.0. This affects an unknown function of the fil... |
 | [CVE-2026-5533](https://nvd.nist.gov/vuln/detail/CVE-2026-5533) | 5.3 | MEDIUM | CWE-79 | No | — | 3.71 | 2026-04-05 | A vulnerability was determined in badlogic pi-mono 0.58.4. The impacted element is an unknown function of the file packa... |
@@ -12,7 +21,6 @@ _640 vulnerabilities_
 | [CVE-2026-5530](https://nvd.nist.gov/vuln/detail/CVE-2026-5530) | 5.3 | MEDIUM | CWE-918 | No | — | 3.71 | 2026-04-05 | A flaw has been found in Ollama up to 18.1. This issue affects some unknown processing of the file server/download.go of... |
 | [CVE-2026-5529](https://nvd.nist.gov/vuln/detail/CVE-2026-5529) | 5.3 | MEDIUM | CWE-266 | No | — | 3.71 | 2026-04-05 | A vulnerability was detected in Dromara lamp-cloud up to 5.8.1. This vulnerability affects the function pageUser of the... |
 | [CVE-2026-5528](https://nvd.nist.gov/vuln/detail/CVE-2026-5528) | 5.3 | MEDIUM | CWE-77 | No | — | 3.71 | 2026-04-05 | A security vulnerability has been detected in MoussaabBadla code-screenshot-mcp up to 0.1.0. This affects an unknown par... |
-| [CVE-2026-5527](https://nvd.nist.gov/vuln/detail/CVE-2026-5527) | 5.5 | MEDIUM | CWE-320 | No | — | 3.85 | 2026-04-05 | A weakness has been identified in Tenda 4G03 Pro 1.0/1.0re/01.bin/04.03.01.53. Affected by this issue is some unknown fu... |
 | [CVE-2026-5526](https://nvd.nist.gov/vuln/detail/CVE-2026-5526) | 6.9 | MEDIUM | CWE-266 | No | — | 4.83 | 2026-04-04 | A security flaw has been discovered in Tenda 4G03 Pro up to 1.0/1.1/04.03.01.53/192.168.0.1. Affected by this vulnerabil... |
 | [CVE-2018-25246](https://nvd.nist.gov/vuln/detail/CVE-2018-25246) | 8.7 | HIGH | CWE-306 | No | — | 6.09 | 2026-04-04 | Wikipedia 12.0 contains a denial of service vulnerability that allows unauthenticated attackers to crash the application... |
 | [CVE-2016-20054](https://nvd.nist.gov/vuln/detail/CVE-2016-20054) | 5.3 | MEDIUM | CWE-79 | No | — | 3.71 | 2026-04-04 | Nodcms contains a cross-site request forgery vulnerability that allows attackers to perform unauthorized administrative... |
