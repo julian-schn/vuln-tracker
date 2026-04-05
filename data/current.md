@@ -1,9 +1,15 @@
 # CVEs — April 2026
 
-_660 vulnerabilities_
+_666 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
+| [CVE-2026-5564](https://nvd.nist.gov/vuln/detail/CVE-2026-5564) | 6.9 | MEDIUM | CWE-74 | No | — | 4.83 | 2026-04-05 | A weakness has been identified in code-projects Simple Laundry System 1.0. Affected by this vulnerability is an unknown... |
+| [CVE-2026-5563](https://nvd.nist.gov/vuln/detail/CVE-2026-5563) | 5.3 | MEDIUM | CWE-74 | No | — | 3.71 | 2026-04-05 | A security flaw has been discovered in AutohomeCorp frostmourne up to 1.0. Affected is the function httpTest of the file... |
+| [CVE-2026-5562](https://nvd.nist.gov/vuln/detail/CVE-2026-5562) | 6.9 | MEDIUM | CWE-74 | No | — | 4.83 | 2026-04-05 | A vulnerability was identified in provectus kafka-ui up to 0.7.2. This impacts the function validateAccess of the file /... |
+| [CVE-2026-5561](https://nvd.nist.gov/vuln/detail/CVE-2026-5561) | 5.3 | MEDIUM | CWE-74 | No | — | 3.71 | 2026-04-05 | A vulnerability was determined in Campcodes Complete POS Management and Inventory System up to 4.0.6. This affects an un... |
+| [CVE-2026-5560](https://nvd.nist.gov/vuln/detail/CVE-2026-5560) | 5.3 | MEDIUM | CWE-74 | No | — | 3.71 | 2026-04-05 | A vulnerability was found in PHPGurukul Online Shopping Portal Project 2.1. The impacted element is an unknown function... |
+| [CVE-2026-5559](https://nvd.nist.gov/vuln/detail/CVE-2026-5559) | 5.3 | MEDIUM | CWE-791 | No | — | 3.71 | 2026-04-05 | A vulnerability has been found in AntaresMugisho PyBlade 0.1.8-alpha/0.1.9-alpha. The affected element is the function _... |
 | [CVE-2026-5558](https://nvd.nist.gov/vuln/detail/CVE-2026-5558) | 5.3 | MEDIUM | CWE-74 | No | — | 3.71 | 2026-04-05 | A flaw has been found in PHPGurukul PHPGurukul Online Shopping Portal Project up to 2.1. Impacted is an unknown function... |
 | [CVE-2026-5557](https://nvd.nist.gov/vuln/detail/CVE-2026-5557) | 5.3 | MEDIUM | CWE-287 | No | — | 3.71 | 2026-04-05 | A vulnerability was detected in badlogic pi-mono up to 0.58.4. This issue affects some unknown processing of the file pa... |
 | [CVE-2026-5556](https://nvd.nist.gov/vuln/detail/CVE-2026-5556) | 5.3 | MEDIUM | CWE-74 | No | — | 3.71 | 2026-04-05 | A security vulnerability has been detected in badlogic pi-mono up to 0.58.4. This vulnerability affects the function dis... |
