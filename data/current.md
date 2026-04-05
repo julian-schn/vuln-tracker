@@ -1,9 +1,19 @@
 # CVEs — April 2026
 
-_630 vulnerabilities_
+_640 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
+| [CVE-2026-5535](https://nvd.nist.gov/vuln/detail/CVE-2026-5535) | 5.3 | MEDIUM | CWE-22 | No | — | 3.71 | 2026-04-05 | A security flaw has been discovered in FedML-AI FedML up to 0.8.9. This impacts an unknown function of the file FileUtil... |
+| [CVE-2026-5534](https://nvd.nist.gov/vuln/detail/CVE-2026-5534) | 6.9 | MEDIUM | CWE-74 | No | — | 4.83 | 2026-04-05 | A vulnerability was identified in itsourcecode Online Enrollment System 1.0. This affects an unknown function of the fil... |
+| [CVE-2026-5533](https://nvd.nist.gov/vuln/detail/CVE-2026-5533) | 5.3 | MEDIUM | CWE-79 | No | — | 3.71 | 2026-04-05 | A vulnerability was determined in badlogic pi-mono 0.58.4. The impacted element is an unknown function of the file packa... |
+| [CVE-2026-5532](https://nvd.nist.gov/vuln/detail/CVE-2026-5532) | 5.3 | MEDIUM | CWE-77 | No | — | 3.71 | 2026-04-05 | A vulnerability was found in ScrapeGraphAI scrapegraph-ai up to 1.74.0. The affected element is the function create_sand... |
+| [CVE-2026-5531](https://nvd.nist.gov/vuln/detail/CVE-2026-5531) | 5.5 | MEDIUM | CWE-312 | No | — | 3.85 | 2026-04-05 | A vulnerability has been found in SourceCodester Student Result Management System 1.0. Impacted is an unknown function o... |
+| [CVE-2026-5530](https://nvd.nist.gov/vuln/detail/CVE-2026-5530) | 5.3 | MEDIUM | CWE-918 | No | — | 3.71 | 2026-04-05 | A flaw has been found in Ollama up to 18.1. This issue affects some unknown processing of the file server/download.go of... |
+| [CVE-2026-5529](https://nvd.nist.gov/vuln/detail/CVE-2026-5529) | 5.3 | MEDIUM | CWE-266 | No | — | 3.71 | 2026-04-05 | A vulnerability was detected in Dromara lamp-cloud up to 5.8.1. This vulnerability affects the function pageUser of the... |
+| [CVE-2026-5528](https://nvd.nist.gov/vuln/detail/CVE-2026-5528) | 5.3 | MEDIUM | CWE-77 | No | — | 3.71 | 2026-04-05 | A security vulnerability has been detected in MoussaabBadla code-screenshot-mcp up to 0.1.0. This affects an unknown par... |
+| [CVE-2026-5527](https://nvd.nist.gov/vuln/detail/CVE-2026-5527) | 5.5 | MEDIUM | CWE-320 | No | — | 3.85 | 2026-04-05 | A weakness has been identified in Tenda 4G03 Pro 1.0/1.0re/01.bin/04.03.01.53. Affected by this issue is some unknown fu... |
+| [CVE-2026-5526](https://nvd.nist.gov/vuln/detail/CVE-2026-5526) | 6.9 | MEDIUM | CWE-266 | No | — | 4.83 | 2026-04-04 | A security flaw has been discovered in Tenda 4G03 Pro up to 1.0/1.1/04.03.01.53/192.168.0.1. Affected by this vulnerabil... |
 | [CVE-2018-25246](https://nvd.nist.gov/vuln/detail/CVE-2018-25246) | 8.7 | HIGH | CWE-306 | No | — | 6.09 | 2026-04-04 | Wikipedia 12.0 contains a denial of service vulnerability that allows unauthenticated attackers to crash the application... |
 | [CVE-2016-20054](https://nvd.nist.gov/vuln/detail/CVE-2016-20054) | 5.3 | MEDIUM | CWE-79 | No | — | 3.71 | 2026-04-04 | Nodcms contains a cross-site request forgery vulnerability that allows attackers to perform unauthorized administrative... |
 | [CVE-2018-25255](https://nvd.nist.gov/vuln/detail/CVE-2018-25255) | 8.6 | HIGH | CWE-787 | No | — | 6.02 | 2026-04-04 | 10-Strike LANState 8.8 contains a local buffer overflow vulnerability in structured exception handling that allows local... |
