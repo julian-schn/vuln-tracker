@@ -11,7 +11,7 @@
     <header>
       <h1>vuln-tracker</h1>
       <p class="subtitle">CVEs from the National Vulnerability Database — current and previous month</p>
-      <p class="last-updated">Last updated: 2026-04-06 16:57 UTC</p>
+      <p class="last-updated">Last updated: 2026-04-06 19:10 UTC</p>
     </header>
     <nav>
       <a href="top50.html">&#9733; Top 50</a>
@@ -25,7 +25,7 @@
     </nav>
     <main>
     <section>
-      <h2>Current Month — April 2026 <span class="count">(866)</span></h2>
+      <h2>Current Month — April 2026 <span class="count">(908)</span></h2>
       <div class="table-wrapper">
         <table>
           <thead>
@@ -42,6 +42,491 @@
             </tr>
           </thead>
           <tbody>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5675" target="_blank" rel="noopener">CVE-2026-5675</a></td>
+        <td>5.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-74</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.71</td>
+        <td><details><summary>A vulnerability was found in itsourcecode Construction Management System 1.0. Th...</summary><p>A vulnerability was found in itsourcecode Construction Management System 1.0. This affects an unknown part of the file /borrowed_tool.php of the component Parameter Handler. The manipulation of the argument emp results in sql injection. It is possible to launch the attack remotely. The exploit has been made public and could be used.</p></details></td>
+        <td>2026-04-06</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5672" target="_blank" rel="noopener">CVE-2026-5672</a></td>
+        <td>6.9</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-74</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.83</td>
+        <td><details><summary>A vulnerability has been found in code-projects Simple IT Discussion Forum 1.0. ...</summary><p>A vulnerability has been found in code-projects Simple IT Discussion Forum 1.0. Affected by this issue is some unknown functionality of the file /edit-category.php of the component Parameter Handler. The manipulation of the argument cat_id leads to sql injection. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used.</p></details></td>
+        <td>2026-04-06</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5671" target="_blank" rel="noopener">CVE-2026-5671</a></td>
+        <td>5.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.71</td>
+        <td><details><summary>A vulnerability was determined in Cyber-III Student-Management-System up to 1a93...</summary><p>A vulnerability was determined in Cyber-III Student-Management-System up to 1a938fa61e9f735078e9b291d2e6215b4942af3f. Impacted is an unknown function of the file /admin/class%20schedule/delete_batch.php of the component Class Schedule Deletion Endpoint. Executing a manipulation of the argument batch can lead to cross site scripting. The attack can be launched remotely. The exploit has been publicly disclosed and may be utilized. This product does not use versioning. This is why information about affected and unaffected releases are unavailable. The project was informed of the problem early through an issue report but has not responded yet.</p></details></td>
+        <td>2026-04-06</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35470" target="_blank" rel="noopener">CVE-2026-35470</a></td>
+        <td>8.8</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-89</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.16</td>
+        <td><details><summary>OpenSTAManager is an open source management software for technical assistance an...</summary><p>OpenSTAManager is an open source management software for technical assistance and invoicing. Prior to 2.10.2, confronta_righe.php files across different modules in OpenSTAManager contain an SQL Injection vulnerability. The righe parameter received via $_GET[&#x27;righe&#x27;] is directly concatenated into an SQL query without any sanitization, parameterization or validation. An authenticated attacker can inject arbitrary SQL statements to extract sensitive data from the database, including user credentials, customer information, invoice data and any other stored data. This vulnerability is fixed in 2.10.2.</p></details></td>
+        <td>2026-04-06</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35209" target="_blank" rel="noopener">CVE-2026-35209</a></td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-1321</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.25</td>
+        <td><details><summary>defu is software that allows uers to assign default properties recursively. Prio...</summary><p>defu is software that allows uers to assign default properties recursively. Prior to version 6.1.5, applications that pass unsanitized user input (e.g. parsed JSON request bodies, database records, or config files from untrusted sources) as the first argument to `defu()` are vulnerable to prototype pollution. A crafted payload containing a `__proto__` key can override intended default values in the merged resul. The internal `_defu` function used `Object.assign({}, defaults)` to copy the defaults object. `Object.assign` invokes the `__proto__` setter, which replaces the resulting object&#x27;s `[[Prototype]]` with attacker-controlled values. Properties inherited from the polluted prototype then bypass the existing `__proto__` key guard in the `for...in` loop and land in the final result. Version 6.1.5 replaces `Object.assign({}, defaults)` with object spread (`{ ...defaults }`), which uses `[[DefineOwnProperty]]` and does not invoke the `__proto__` setter.</p></details></td>
+        <td>2026-04-06</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35177" target="_blank" rel="noopener">CVE-2026-35177</a></td>
+        <td>4.1</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-22</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>2.87</td>
+        <td><details><summary>Vim is an open source, command line text editor. Prior to 9.2.0280, a path trave...</summary><p>Vim is an open source, command line text editor. Prior to 9.2.0280, a path traversal bypass in Vim&#x27;s zip.vim plugin allows overwriting of arbitrary files when opening specially crafted zip archives, circumventing the previous fix for CVE-2025-53906. This vulnerability is fixed in 9.2.0280.</p></details></td>
+        <td>2026-04-06</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35175" target="_blank" rel="noopener">CVE-2026-35175</a></td>
+        <td>7.2</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.04</td>
+        <td><details><summary>Ajenti is a Linux and BSD modular server admin panel. Prior to 2.2.15, an authen...</summary><p>Ajenti is a Linux and BSD modular server admin panel. Prior to 2.2.15, an authenticated user (using the auth_users plugin authentication method) could install a custom package even if this user is not superuser. This vulnerability is fixed in 2.2.15.</p></details></td>
+        <td>2026-04-06</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35174" target="_blank" rel="noopener">CVE-2026-35174</a></td>
+        <td>9.1</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-22</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.37</td>
+        <td><details><summary>Chyrp Lite is an ultra-lightweight blogging engine. Prior to 2026.01, a path tra...</summary><p>Chyrp Lite is an ultra-lightweight blogging engine. Prior to 2026.01, a path traversal vulnerability exists in the administration console that allows an administrator or a user with Change Settings permission to change the uploads path to any folder. This vulnerability allows the user to download any file on the server, including config.json.php with database credentials and overwrite critical system files, leading to remote code execution. This vulnerability is fixed in 2026.01.</p></details></td>
+        <td>2026-04-06</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35173" target="_blank" rel="noopener">CVE-2026-35173</a></td>
+        <td>6.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-639</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.55</td>
+        <td><details><summary>Chyrp Lite is an ultra-lightweight blogging engine. Prior to 2026.01, an IDOR / ...</summary><p>Chyrp Lite is an ultra-lightweight blogging engine. Prior to 2026.01, an IDOR / Mass Assignment issue exists in the Post model that allows authenticated users with post editing permissions (Edit Post, Edit Draft, Edit Own Post, Edit Own Draft) to modify posts they do not own and do not have permission to edit. By passing internal class properties such as id into the post_attributes payload, an attacker can alter the object being instantiated. As a result, further actions are performed on another user’s post rather than the attacker’s own post, effectively enabling post takeover. This vulnerability is fixed in 2026.01.</p></details></td>
+        <td>2026-04-06</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35171" target="_blank" rel="noopener">CVE-2026-35171</a></td>
+        <td>9.8</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-94</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.86</td>
+        <td><details><summary>Kedro is a toolbox for production-ready data science. Prior to 1.3.0, Kedro allo...</summary><p>Kedro is a toolbox for production-ready data science. Prior to 1.3.0, Kedro allows the logging configuration file path to be set via the KEDRO_LOGGING_CONFIG environment variable and loads it without validation. The logging configuration schema supports the special () key, which enables arbitrary callable instantiation. An attacker can exploit this to execute arbitrary system commands during application startup. This is a critical remote code execution (RCE) vulnerability caused by unsafe use of logging.config.dictConfig() with user-controlled input. This vulnerability is fixed in 1.3.0.</p></details></td>
+        <td>2026-04-06</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35167" target="_blank" rel="noopener">CVE-2026-35167</a></td>
+        <td>7.1</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-22</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.97</td>
+        <td><details><summary>Kedro is a toolbox for production-ready data science. Prior to 1.3.0, the _get_v...</summary><p>Kedro is a toolbox for production-ready data science. Prior to 1.3.0, the _get_versioned_path() method in kedro/io/core.py constructs filesystem paths by directly interpolating user-supplied version strings without sanitization. Because version strings are used as path components, traversal sequences such as ../ are preserved and can escape the intended versioned dataset directory.
+This is reachable through multiple entry points: catalog.load(..., version=...), DataCatalog.from_config(..., load_versions=...), and the CLI via kedro run --load-versions=dataset:../../../secrets. An attacker who can influence the version string can force Kedro to load files from outside the intended version directory, enabling unauthorized file reads, data poisoning, or cross-tenant data access in shared environments. This vulnerability is fixed in 1.3.0.</p></details></td>
+        <td>2026-04-06</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35166" target="_blank" rel="noopener">CVE-2026-35166</a></td>
+        <td>5.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.71</td>
+        <td><details><summary>Hugo is a static site generator. From 0.60.0 to before 0.159.2, links and image ...</summary><p>Hugo is a static site generator. From 0.60.0 to before 0.159.2, links and image links in the default markdown to HTML renderer are not properly escaped. Hugo users who trust their Markdown content or have custom render hooks for links and images are not affected. This vulnerability is fixed in 0.159.2.</p></details></td>
+        <td>2026-04-06</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35164" target="_blank" rel="noopener">CVE-2026-35164</a></td>
+        <td>8.8</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-434</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.16</td>
+        <td><details><summary>Brave CMS is an open-source CMS. Prior to 2.0.6, an unrestricted file upload vul...</summary><p>Brave CMS is an open-source CMS. Prior to 2.0.6, an unrestricted file upload vulnerability exists in the CKEditor upload functionality. It is found in app/Http/Controllers/Dashboard/CkEditorController.php within the ckupload method. The method fails to validate uploaded file types and relies entirely on user input. This allows an authenticated user to upload executable PHP scripts and gain Remote Code Execution. This vulnerability is fixed in 2.0.6.</p></details></td>
+        <td>2026-04-06</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35052" target="_blank" rel="noopener">CVE-2026-35052</a></td>
+        <td>5.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.71</td>
+        <td><details><summary>D-Tale is the combination of a Flask back-end and a React front-end to view &amp; an...</summary><p>D-Tale is the combination of a Flask back-end and a React front-end to view &amp; analyze Pandas data structures. Prior to 3.22.0, users hosting D-Tale publicly while using a redis or shelf storage layer could be vulnerable to remote code execution allowing attackers to run malicious code on the server. This vulnerability is fixed in 3.22.0.</p></details></td>
+        <td>2026-04-06</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35050" target="_blank" rel="noopener">CVE-2026-35050</a></td>
+        <td>9.1</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-22</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.37</td>
+        <td><details><summary>text-generation-webui is an open-source web interface for running Large Language...</summary><p>text-generation-webui is an open-source web interface for running Large Language Models. Prior to 4.1.1, users can save extention settings in &quot;py&quot; format and in the app root directory. This allows to overwrite python files, for instance the &quot;download-model.py&quot; file could be overwritten. Then, this python file can be triggered to get executed from &quot;Model&quot; menu when requesting to download a new model. This vulnerability is fixed in 4.1.1.</p></details></td>
+        <td>2026-04-06</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35047" target="_blank" rel="noopener">CVE-2026-35047</a></td>
+        <td>9.3</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-434</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.51</td>
+        <td><details><summary>Brave CMS is an open-source CMS. Prior to 2.0.6, an Unrestricted File Upload vul...</summary><p>Brave CMS is an open-source CMS. Prior to 2.0.6, an Unrestricted File Upload vulnerability in the CKEditor endpoint allows attackers to upload arbitrary files, including executable scripts. This may lead to Remote Code Execution (RCE) on the server, potentially resulting in full system compromise, data exfiltration, or service disruption. All users running affected versions of BraveCMS are impacted. This vulnerability is fixed in 2.0.6.</p></details></td>
+        <td>2026-04-06</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35046" target="_blank" rel="noopener">CVE-2026-35046</a></td>
+        <td>5.4</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.78</td>
+        <td><details><summary>Tandoor Recipes is an application for managing recipes, planning meals, and buil...</summary><p>Tandoor Recipes is an application for managing recipes, planning meals, and building shopping lists. Prior to 2.6.4, Tandoor Recipes allows authenticated users to inject arbitrary &lt;style&gt; tags into recipe step instructions. The bleach.clean() sanitizer explicitly whitelists the &lt;style&gt; tag, causing the backend to persist and serve unsanitized CSS payloads via the API. Any client consuming instructions_markdown from the API and rendering it as HTML without additional sanitization will execute attacker-controlled CSS — enabling UI redressing, phishing overlays, visual defacement, and CSS-based data exfiltration. This vulnerability is fixed in 2.6.4.</p></details></td>
+        <td>2026-04-06</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35045" target="_blank" rel="noopener">CVE-2026-35045</a></td>
+        <td>8.1</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-639</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.67</td>
+        <td><details><summary>Tandoor Recipes is an application for managing recipes, planning meals, and buil...</summary><p>Tandoor Recipes is an application for managing recipes, planning meals, and building shopping lists. Prior to 2.6.4, the PUT /api/recipe/batch_update/ endpoint in Tandoor Recipes allows any authenticated user within a Space to modify any recipe in that Space, including recipes marked as private by other users. This bypasses all object-level authorization checks enforced on standard single-recipe endpoints (PUT /api/recipe/{id}/), enabling forced exposure of private recipes, unauthorized self-grant of access via the shared list, and metadata tampering. This vulnerability is fixed in 2.6.4.</p></details></td>
+        <td>2026-04-06</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35044" target="_blank" rel="noopener">CVE-2026-35044</a></td>
+        <td>8.8</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-1336</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.16</td>
+        <td><details><summary>BentoML is a Python library for building online serving systems optimized for AI...</summary><p>BentoML is a Python library for building online serving systems optimized for AI apps and model inference. Prior to 1.4.38, the Dockerfile generation function generate_containerfile() in src/bentoml/_internal/container/generate.py uses an unsandboxed jinja2.Environment with the jinja2.ext.do extension to render user-provided dockerfile_template files. When a victim imports a malicious bento archive and runs bentoml containerize, attacker-controlled Jinja2 template code executes arbitrary Python directly on the host machine, bypassing all container isolation. This vulnerability is fixed in 1.4.38.</p></details></td>
+        <td>2026-04-06</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35043" target="_blank" rel="noopener">CVE-2026-35043</a></td>
+        <td>7.8</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-78</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.46</td>
+        <td><details><summary>BentoML is a Python library for building online serving systems optimized for AI...</summary><p>BentoML is a Python library for building online serving systems optimized for AI apps and model inference. Prior to 1.4.38, the cloud deployment path in src/bentoml/_internal/cloud/deployment.py was not included in the fix for CVE-2026-33744. Line 1648 interpolates system_packages directly into a shell command using an f-string without any quoting. The generated script is uploaded to BentoCloud as setup.sh and executed on the cloud build infrastructure during deployment, making this a remote code execution on the CI/CD tier. This vulnerability is fixed in 1.4.38.</p></details></td>
+        <td>2026-04-06</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-30613" target="_blank" rel="noopener">CVE-2026-30613</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>An information disclosure vulnerability exists in AZIOT 1 Node Smart Switch (16a...</summary><p>An information disclosure vulnerability exists in AZIOT 1 Node Smart Switch (16amp)- WiFi/Bluetooth Enabled Software Version: 1.1.9 due to improper access control on the UART debug interface. An attacker with physical access can connect to the UART interface and obtain sensitive information from the serial console without authentication.</p></details></td>
+        <td>2026-04-06</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-61166" target="_blank" rel="noopener">CVE-2025-61166</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>An open redirect in Ascertia SigningHub User v10.0 allows attackers to redirect ...</summary><p>An open redirect in Ascertia SigningHub User v10.0 allows attackers to redirect users to a malicious site via a crafted URL.</p></details></td>
+        <td>2026-04-06</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-59440" target="_blank" rel="noopener">CVE-2025-59440</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>An issue was discovered in USIM in Samsung Mobile Processor, Wearable Processor,...</summary><p>An issue was discovered in USIM in Samsung Mobile Processor, Wearable Processor, and Modem Exynos 980, 990, 850, 1080, 2100, 1280, 2200, 1330, 1380, 1480, 2400, 1580, 2500, 9110, W920, W930, W1000, Modem 5123, Modem 5300, and Modem 5400. Improper handling of SIM card proactive commands leads to a Denial of Service.</p></details></td>
+        <td>2026-04-06</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-57835" target="_blank" rel="noopener">CVE-2025-57835</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>An issue was discovered in RRC in Samsung Mobile Processor, Wearable Processor, ...</summary><p>An issue was discovered in RRC in Samsung Mobile Processor, Wearable Processor, and Modem Exynos 980, 990, 850, 1080, 2100, 1280, 2200, 1330, 1380, 1480, 2400, 1580, 2500, 9110, W920, W930, W1000, Modem 5123, Modem 5300, and Modem 5400. Improper memory initialization results in an illegal memory access, causing a system crash via a malformed RRCReconfiguration message.</p></details></td>
+        <td>2026-04-06</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5670" target="_blank" rel="noopener">CVE-2026-5670</a></td>
+        <td>5.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-284</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.71</td>
+        <td><details><summary>A vulnerability was found in Cyber-III Student-Management-System up to 1a938fa61...</summary><p>A vulnerability was found in Cyber-III Student-Management-System up to 1a938fa61e9f735078e9b291d2e6215b4942af3f. This issue affects the function move_uploaded_file of the file /AssignmentSection/submission/upload.php. Performing a manipulation of the argument File results in unrestricted upload. The attack can be initiated remotely. The exploit has been made public and could be used. Continious delivery with rolling releases is used by this product. Therefore, no version details of affected nor updated releases are available. The project was informed of the problem early through an issue report but has not responded yet.</p></details></td>
+        <td>2026-04-06</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5669" target="_blank" rel="noopener">CVE-2026-5669</a></td>
+        <td>6.9</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-74</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.83</td>
+        <td><details><summary>A vulnerability has been found in Cyber-III Student-Management-System up to 1a93...</summary><p>A vulnerability has been found in Cyber-III Student-Management-System up to 1a938fa61e9f735078e9b291d2e6215b4942af3f. This vulnerability affects unknown code of the file /login.php of the component Parameter Handler. Such manipulation of the argument Password leads to sql injection. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used. This product takes the approach of rolling releases to provide continious delivery. Therefore, version details for affected and updated releases are not available. The project was informed of the problem early through an issue report but has not responded yet.</p></details></td>
+        <td>2026-04-06</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5668" target="_blank" rel="noopener">CVE-2026-5668</a></td>
+        <td>4.8</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.36</td>
+        <td><details><summary>A flaw has been found in Cyber-III Student-Management-System up to 1a938fa61e9f7...</summary><p>A flaw has been found in Cyber-III Student-Management-System up to 1a938fa61e9f735078e9b291d2e6215b4942af3f. This affects an unknown part of the file /admin/Add%20notice/add%20notice.php. This manipulation of the argument $_SERVER[&#x27;PHP_SELF&#x27;] causes cross site scripting. It is possible to initiate the attack remotely. The exploit has been published and may be used. This product is using a rolling release to provide continious delivery. Therefore, no version details for affected nor updated releases are available. The project was informed of the problem early through an issue report but has not responded yet.</p></details></td>
+        <td>2026-04-06</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35042" target="_blank" rel="noopener">CVE-2026-35042</a></td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-345</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.25</td>
+        <td><details><summary>fast-jwt provides fast JSON Web Token (JWT) implementation. In 6.1.0 and earlier...</summary><p>fast-jwt provides fast JSON Web Token (JWT) implementation. In 6.1.0 and earlier, fast-jwt does not validate the crit (Critical) Header Parameter defined in RFC 7515 §4.1.11. When a JWS token contains a crit array listing extensions that fast-jwt does not understand, the library accepts the token instead of rejecting it. This violates the MUST requirement in the RFC.</p></details></td>
+        <td>2026-04-06</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35039" target="_blank" rel="noopener">CVE-2026-35039</a></td>
+        <td>9.1</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-345</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.37</td>
+        <td><details><summary>fast-jwt provides fast JSON Web Token (JWT) implementation. From 0.0.1 to before...</summary><p>fast-jwt provides fast JSON Web Token (JWT) implementation. From 0.0.1 to before 6.1.0, setting up a custom cacheKeyBuilder method which does not properly create unique keys for different tokens can lead to cache collisions. This could cause tokens to be mis-identified during the verification process leading to valid tokens returning claims from different valid tokens and users being mis-identified as other users based on the wrong token.</p></details></td>
+        <td>2026-04-06</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35037" target="_blank" rel="noopener">CVE-2026-35037</a></td>
+        <td>7.2</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-918</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.04</td>
+        <td><details><summary>Ech0 is an open-source, self-hosted publishing platform for personal idea sharin...</summary><p>Ech0 is an open-source, self-hosted publishing platform for personal idea sharing. Prior to 4.2.8, the GET /api/website/title endpoint accepts an arbitrary URL via the website_url query parameter and makes a server-side HTTP request to it without any validation of the target host or IP address. The endpoint requires no authentication. An attacker can use this to reach internal network services, cloud metadata endpoints (169.254.169.254), and localhost-bound services, with partial response data exfiltrated via the HTML &lt;title&gt; tag extraction This vulnerability is fixed in 4.2.8.</p></details></td>
+        <td>2026-04-06</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35036" target="_blank" rel="noopener">CVE-2026-35036</a></td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-918</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.25</td>
+        <td><details><summary>Ech0 is an open-source, self-hosted publishing platform for personal idea sharin...</summary><p>Ech0 is an open-source, self-hosted publishing platform for personal idea sharing. Prior to 4.2.8, Ech0 implements link preview (editor fetches a page title) through GET /api/website/title. That is legitimate product behavior, but the implementation is unsafe: the route is unauthenticated, accepts a fully attacker-controlled URL, performs a server-side GET, reads the entire response body into memory (io.ReadAll). There is no host allowlist, no SSRF filter, and InsecureSkipVerify: true on the outbound client. Anyone who can reach the instance can force the Ech0 server to open HTTP/HTTPS URLs of their choice as seen from the server’s network position (Docker bridge, VPC, localhost from the process view). This vulnerability is fixed in 4.2.8.</p></details></td>
+        <td>2026-04-06</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35035" target="_blank" rel="noopener">CVE-2026-35035</a></td>
+        <td>7.2</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.04</td>
+        <td><details><summary>CI4MS is a CodeIgniter 4-based CMS skeleton that delivers a production-ready, mo...</summary><p>CI4MS is a CodeIgniter 4-based CMS skeleton that delivers a production-ready, modular architecture with RBAC authorization and theme support. Prior to 0.31.2.0 , the application fails to properly sanitize user-controlled input within System Settings – Company Information. Several administrative configuration fields accept attacker-controlled input that is stored server-side and later rendered without proper output encoding. These values are persisted in the database and rendered unsafely on public-facing pages only, such as the main landing page. There is no execution in the administrative dashboard—the vulnerability only impacts the public frontend. This vulnerability is fixed in 0.31.2.0.</p></details></td>
+        <td>2026-04-06</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35030" target="_blank" rel="noopener">CVE-2026-35030</a></td>
+        <td>9.4</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-287</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.58</td>
+        <td><details><summary>LiteLLM is a proxy server (AI Gateway) to call LLM APIs in OpenAI (or native) fo...</summary><p>LiteLLM is a proxy server (AI Gateway) to call LLM APIs in OpenAI (or native) format. Prior to 1.83.0, when JWT authentication is enabled (enable_jwt_auth: true), the OIDC userinfo cache uses token[:20] as the cache key. JWT headers produced by the same signing algorithm generate identical first 20 characters. This configuration option is not enabled by default. Most instances are not affected. An unauthenticated attacker can craft a token whose first 20 characters match a legitimate user&#x27;s cached token. On cache hit, the attacker inherits the legitimate user&#x27;s identity and permissions. This affects deployments with JWT/OIDC authentication enabled. Fixed in v1.83.0.</p></details></td>
+        <td>2026-04-06</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35029" target="_blank" rel="noopener">CVE-2026-35029</a></td>
+        <td>8.7</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-863</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.09</td>
+        <td><details><summary>LiteLLM is a proxy server (AI Gateway) to call LLM APIs in OpenAI (or native) fo...</summary><p>LiteLLM is a proxy server (AI Gateway) to call LLM APIs in OpenAI (or native) format. Prior to 1.83.0, the /config/update endpoint does not enforce admin role authorization. A user who is already authenticated into the platform can then use this endpoint to modify proxy configuration and environment variables, register custom pass-through endpoint handlers pointing to attacker-controlled Python code, achieving remote code execution, read arbitrary server files by setting UI_LOGO_PATH and fetching via /get_image, and take over other privileged accounts by overwriting UI_USERNAME and UI_PASSWORD environment variables. Fixed in v1.83.0.</p></details></td>
+        <td>2026-04-06</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34992" target="_blank" rel="noopener">CVE-2026-34992</a></td>
+        <td>7.1</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-311</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.97</td>
+        <td><details><summary>Antrea is a Kubernetes networking solution intended to be Kubernetes native. Pri...</summary><p>Antrea is a Kubernetes networking solution intended to be Kubernetes native. Prior to 2.4.5 and 2.5.2, a missing encryption vulnerability affects inter-Node Pod traffic. In Antrea clusters configured for dual-stack networking with IPsec encryption enabled (trafficEncryptionMode: ipsec), Antrea fails to apply encryption for IPv6 Pod traffic. While the IPv4 traffic is correctly encrypted via ESP (Encapsulating Security Payload), traffic using IPv6 is transmitted in plaintext. This occurs because the packets are encapsulated (using Geneve or VXLAN) but bypass the IPsec encryption layer. Impacted Users: users with dual-stack clusters and IPsec encryption enabled. Single-stack IPv4 or IPv6 clusters are not affected. This vulnerability is fixed in 2.4.5 and 2.5.2.</p></details></td>
+        <td>2026-04-06</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34989" target="_blank" rel="noopener">CVE-2026-34989</a></td>
+        <td>9.4</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.58</td>
+        <td><details><summary>CI4MS is a CodeIgniter 4-based CMS skeleton that delivers a production-ready, mo...</summary><p>CI4MS is a CodeIgniter 4-based CMS skeleton that delivers a production-ready, modular architecture with RBAC authorization and theme support. Prior to 31.0.0.0, the application fails to properly sanitize user-controlled input when users update their profile name (e.g., full name / username). An attacker can inject a malicious JavaScript payload into their profile name, which is then stored server-side. This stored payload is later rendered unsafely in multiple application views without proper output encoding, leading to stored cross-site scripting (XSS). This vulnerability is fixed in 31.0.0.0.</p></details></td>
+        <td>2026-04-06</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34986" target="_blank" rel="noopener">CVE-2026-34986</a></td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-248</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.25</td>
+        <td><details><summary>Go JOSE provides an implementation of the Javascript Object Signing and Encrypti...</summary><p>Go JOSE provides an implementation of the Javascript Object Signing and Encryption set of standards in Go, including support for JSON Web Encryption (JWE), JSON Web Signature (JWS), and JSON Web Token (JWT) standards. Prior to 4.1.4 and 3.0.5, decrypting a JSON Web Encryption (JWE) object will panic if the alg field indicates a key wrapping algorithm (one ending in KW, with the exception of A128GCMKW, A192GCMKW, and A256GCMKW) and the encrypted_key field is empty. The panic happens when cipher.KeyUnwrap() in key_wrap.go attempts to allocate a slice with a zero or negative length based on the length of the encrypted_key. This code path is reachable from ParseEncrypted() / ParseEncryptedJSON() / ParseEncryptedCompact() followed by Decrypt() on the resulting object. Note that the parse functions take a list of accepted key algorithms. If the accepted key algorithms do not include any key wrapping algorithms, parsing will fail and the application will be unaffected. This panic is also reachable by calling cipher.KeyUnwrap() directly with any ciphertext parameter less than 16 bytes long, but calling this function directly is less common. Panics can lead to denial of service. This vulnerability is fixed in 4.1.4 and 3.0.5.</p></details></td>
+        <td>2026-04-06</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34981" target="_blank" rel="noopener">CVE-2026-34981</a></td>
+        <td>5.8</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-918</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.06</td>
+        <td><details><summary>The whisperX API is a tool for enhancing and analyzing audio content. From 0.3.1...</summary><p>The whisperX API is a tool for enhancing and analyzing audio content. From 0.3.1 to 0.5.0, FileService.download_from_url() in app/services/file_service.py calls requests.get(url) with zero URL validation. The file extension check occurs AFTER the HTTP request is already made, and can be bypassed by appending .mp3 to any internal URL. The /speech-to-text-url endpoint is unauthenticated. This vulnerability is fixed in 0.6.0.</p></details></td>
+        <td>2026-04-06</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34977" target="_blank" rel="noopener">CVE-2026-34977</a></td>
+        <td>9.3</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-78</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.51</td>
+        <td><details><summary>Aperi&#x27;Solve is an open-source steganalysis web platform. Prior to 3.2.1, when up...</summary><p>Aperi&#x27;Solve is an open-source steganalysis web platform. Prior to 3.2.1, when uploading a JPEG, a user can specify an optional password to accompany the JPEG. This password is then directly passed into an expect command, which is then subsequently passed into a bash -c command, without any form of sanitization or validation. An unauthenticated attacker can achieve root-level RCE inside the worker container with a single HTTP request, enabling full read/write access to all user-uploaded images, analysis results, and plaintext steganography passwords stored on disk. Because the container shares a Docker network with PostgreSQL and Redis (no authentication on either), the attacker can pivot to dump the entire database or manipulate the job queue to poison results for other users. If Docker socket mounting or host volume mounts are present, this could escalate to full host compromise. This would also include defacement of the website itself. This vulnerability is fixed in 3.2.1.</p></details></td>
+        <td>2026-04-06</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34976" target="_blank" rel="noopener">CVE-2026-34976</a></td>
+        <td>10.0</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>7.00</td>
+        <td><details><summary>Dgraph is an open source distributed GraphQL database. Prior to 25.3.1, the rest...</summary><p>Dgraph is an open source distributed GraphQL database. Prior to 25.3.1, the restoreTenant admin mutation is missing from the authorization middleware config (admin.go), making it completely unauthenticated. Unlike the similar restore mutation which requires Guardian-of-Galaxy authentication, restoreTenant executes with zero middleware. This mutation accepts attacker-controlled backup source URLs (including file:// for local filesystem access), S3/MinIO credentials, encryption key file paths, and Vault credential file paths. An unauthenticated attacker can overwrite the entire database, read server-side files, and perform SSRF. This vulnerability is fixed in 25.3.1.</p></details></td>
+        <td>2026-04-06</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34975" target="_blank" rel="noopener">CVE-2026-34975</a></td>
+        <td>8.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-93</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.95</td>
+        <td><details><summary>Plunk is an open-source email platform built on top of AWS SES. Prior to 0.8.0, ...</summary><p>Plunk is an open-source email platform built on top of AWS SES. Prior to 0.8.0, a CRLF header injection vulnerability was discovered in SESService.ts, where user-supplied values for from.name, subject, custom header keys/values, and attachment filenames were interpolated directly into raw MIME messages without sanitization. An authenticated API user could inject arbitrary email headers (e.g. Bcc, Reply-To) by embedding carriage return/line feed characters in these fields, enabling silent email forwarding, reply redirection, or sender spoofing. The fix adds input validation at the schema level to reject any of these fields containing \r or \n characters, consistent with the existing validation already applied to the contentId field. This vulnerability is fixed in 0.8.0.</p></details></td>
+        <td>2026-04-06</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34841" target="_blank" rel="noopener">CVE-2026-34841</a></td>
+        <td>9.8</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-494</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.86</td>
+        <td><details><summary>Bruno is an open source IDE for exploring and testing APIs. Prior to 3.2.1, Brun...</summary><p>Bruno is an open source IDE for exploring and testing APIs. Prior to 3.2.1, Bruno was affected by a supply chain attack involving compromised versions of the axios npm package, which introduced a hidden dependency deploying a cross-platform Remote Access Trojan (RAT). Users of @usebruno/cli who ran npm install between 00:21 UTC and ~03:30 UTC on March 31, 2026 may have been impacted. Upgrade to 3.2.1</p></details></td>
+        <td>2026-04-06</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34783" target="_blank" rel="noopener">CVE-2026-34783</a></td>
+        <td>8.1</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-22</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.67</td>
+        <td><details><summary>Ferret is a declarative system for working with web data. Prior to 2.0.0-alpha.4...</summary><p>Ferret is a declarative system for working with web data. Prior to 2.0.0-alpha.4, a path traversal vulnerability in Ferret&#x27;s IO::FS::WRITE standard library function allows a malicious website to write arbitrary files to the filesystem of the machine running Ferret. When an operator scrapes a website that returns filenames containing ../ sequences, and uses those filenames to construct output paths (a standard scraping pattern), the attacker controls both the destination path and the file content. This can lead to remote code execution via cron jobs, SSH authorized_keys, shell profiles, or web shells. This vulnerability is fixed in 2.0.0-alpha.4.</p></details></td>
+        <td>2026-04-06</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-31313" target="_blank" rel="noopener">CVE-2026-31313</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>An authenticated stored cross-site scripting (XSS) vulnerability in the creation...</summary><p>An authenticated stored cross-site scripting (XSS) vulnerability in the creation/editing module of Feehi CMS v2.1.1 allows attackers to execute arbitrary web scripts or HTML via injecting a crafted payload into the Content field.</p></details></td>
+        <td>2026-04-06</td>
+      </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5704" target="_blank" rel="noopener">CVE-2026-5704</a></td>
         <td>5.0</td>
@@ -161,18 +646,6 @@
         <td>&mdash;</td>
         <td>4.55</td>
         <td><details><summary>vLLM is an inference and serving engine for large language models (LLMs). From 0...</summary><p>vLLM is an inference and serving engine for large language models (LLMs). From 0.7.0 to before 0.19.0, the VideoMediaIO.load_base64() method at vllm/multimodal/media/video.py splits video/jpeg data URLs by comma to extract individual JPEG frames, but does not enforce a frame count limit. The num_frames parameter (default: 32), which is enforced by the load_bytes() code path, is completely bypassed in the video/jpeg base64 path. An attacker can send a single API request containing thousands of comma-separated base64-encoded JPEG frames, causing the server to decode all frames into memory and crash with OOM. This vulnerability is fixed in 0.19.0.</p></details></td>
-        <td>2026-04-06</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34753" target="_blank" rel="noopener">CVE-2026-34753</a></td>
-        <td>5.4</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-918</td>
-        <td>&nbsp;</td>
-        <td>&mdash;</td>
-        <td>3.78</td>
-        <td><details><summary>vLLM is an inference and serving engine for large language models (LLMs). From 0...</summary><p>vLLM is an inference and serving engine for large language models (LLMs). From 0.16.0 to before 0.19.0, a server-side request forgery (SSRF) vulnerability in download_bytes_from_url allows any actor who can control batch input JSON to make the vLLM batch runner issue arbitrary HTTP/HTTPS requests from the server, without any URL validation or domain restrictions.
-This can be used to target internal services (e.g. cloud metadata endpoints or internal HTTP APIs) reachable from the vLLM host. This vulnerability is fixed in 0.19.0.</p></details></td>
         <td>2026-04-06</td>
       </tr>
       <tr>
@@ -5995,40 +6468,6 @@ This can be used to target internal services (e.g. cloud metadata endpoints or i
         <td>2026-04-02</td>
       </tr>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-65114" target="_blank" rel="noopener">CVE-2025-65114</a></td>
-        <td>7.5</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-444</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p8</small></td>
-        <td>5.25</td>
-        <td><details><summary>Apache Traffic Server allows request smuggling if chunked messages are malformed...</summary><p>Apache Traffic Server allows request smuggling if chunked messages are malformed. 
-
-This issue affects Apache Traffic Server: from 9.0.0 through 9.2.12, from 10.0.0 through 10.1.1.
-
-Users are recommended to upgrade to version 9.2.13 or 10.1.2, which fix the issue.</p></details></td>
-        <td>2026-04-02</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-58136" target="_blank" rel="noopener">CVE-2025-58136</a></td>
-        <td>7.5</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-670</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p12</small></td>
-        <td>5.25</td>
-        <td><details><summary>A bug in POST request handling causes a crash under a certain condition.
-
-This i...</summary><p>A bug in POST request handling causes a crash under a certain condition.
-
-This issue affects Apache Traffic Server: from 10.0.0 through 10.1.1, from 9.0.0 through 9.2.12.
-
-Users are recommended to upgrade to version 10.1.2 or 9.2.13, which fix the issue.
-
-A workaround for older versions is to set proxy.config.http.request_buffer_enabled to 0 (the default value is 0).</p></details></td>
-        <td>2026-04-02</td>
-      </tr>
-      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5351" target="_blank" rel="noopener">CVE-2026-5351</a></td>
         <td>5.3</td>
         <td><span class="severity medium">MEDIUM</span></td>
@@ -6953,6 +7392,23 @@ A workaround for older versions is to set proxy.config.http.request_buffer_enab
         <td>2026-04-02</td>
       </tr>
       <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32145" target="_blank" rel="noopener">CVE-2026-32145</a></td>
+        <td>8.7</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-770</td>
+        <td>&nbsp;</td>
+        <td>0.0% <small>p2</small></td>
+        <td>6.09</td>
+        <td><details><summary>Allocation of Resources Without Limits or Throttling vulnerability in gleam-wisp...</summary><p>Allocation of Resources Without Limits or Throttling vulnerability in gleam-wisp wisp allows a denial of service via multipart form body parsing.
+
+The multipart_body function bypasses configured max_body_size and max_files_size limits. When a multipart boundary is not present in a chunk, the parser takes the MoreRequiredForBody path, which appends the chunk to the output but passes the quota unchanged to the recursive call. Only the final chunk containing the boundary is counted via decrement_quota. The same pattern exists in multipart_headers, where MoreRequiredForHeaders recurses without calling decrement_body_quota.
+
+An unauthenticated attacker can exhaust server memory or disk by sending arbitrarily large multipart form submissions in a single HTTP request.
+
+This issue affects wisp: from 0.2.0 before 2.2.2.</p></details></td>
+        <td>2026-04-02</td>
+      </tr>
+      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5246" target="_blank" rel="noopener">CVE-2026-5246</a></td>
         <td>6.3</td>
         <td><span class="severity medium">MEDIUM</span></td>
@@ -7603,12 +8059,12 @@ A workaround for older versions is to set proxy.config.http.request_buffer_enab
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34570" target="_blank" rel="noopener">CVE-2026-34570</a></td>
-        <td>10.0</td>
-        <td><span class="severity critical">CRITICAL</span></td>
+        <td>8.8</td>
+        <td><span class="severity high">HIGH</span></td>
         <td>CWE-284</td>
         <td>&nbsp;</td>
         <td>0.1% <small>p24</small></td>
-        <td>7.00</td>
+        <td>6.16</td>
         <td><details><summary>CI4MS is a CodeIgniter 4-based CMS skeleton that delivers a production-ready, mo...</summary><p>CI4MS is a CodeIgniter 4-based CMS skeleton that delivers a production-ready, modular architecture with RBAC authorization and theme support. Prior to version 0.31.0.0, the application fails to immediately revoke active user sessions when an account is deleted. Due to a logic flaw in the backend design, account state changes are enforced only during authentication (login), not for already-established sessions. The system implicitly assumes that authenticated users remain trusted for the lifetime of their session. There is no session expiration or account expiration mechanism in place, causing deleted accounts to retain indefinite access until the user manually logs out. This behavior breaks the intended access control policy and results in persistent unauthorized access. This issue has been patched in version 0.31.0.0.</p></details></td>
         <td>2026-04-01</td>
       </tr>
@@ -9586,7 +10042,7 @@ A workaround for older versions is to set proxy.config.http.request_buffer_enab
       </div>
     </section>
     <section>
-      <h2>Previous Month — March 2026 <span class="count">(5734)</span></h2>
+      <h2>Previous Month — March 2026 <span class="count">(5743)</span></h2>
       <div class="table-wrapper">
         <table>
           <thead>
@@ -11125,7 +11581,7 @@ A workaround for older versions is to set proxy.config.http.request_buffer_enab
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-22561" target="_blank" rel="noopener">CVE-2026-22561</a></td>
         <td>4.7</td>
         <td><span class="severity medium">MEDIUM</span></td>
-        <td>N/A</td>
+        <td>CWE-427</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p1</small></td>
         <td>3.29</td>
@@ -30218,6 +30674,21 @@ A workaround for older versions is to set proxy.config.http.request_buffer_enab
         <td>2026-03-23</td>
       </tr>
       <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-28809" target="_blank" rel="noopener">CVE-2026-28809</a></td>
+        <td>6.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-611</td>
+        <td>&nbsp;</td>
+        <td>0.1% <small>p19</small></td>
+        <td>4.41</td>
+        <td><details><summary>XML External Entity (XXE) vulnerability in esaml (and its forks) allows an attac...</summary><p>XML External Entity (XXE) vulnerability in esaml (and its forks) allows an attacker to cause the system to read local files and incorporate their contents into processed SAML documents, and potentially perform SSRF via crafted SAML messages.
+
+esaml parses attacker-controlled SAML messages using xmerl_scan:string/2 before signature verification without disabling XML entity expansion. On Erlang/OTP versions before 27, Xmerl allows entities by default, enabling pre-signature XXE attacks. An attacker can cause the host to read local files (e.g., Kubernetes-mounted secrets) into the SAML document. If the attacker is not a trusted SAML SP, signature verification will fail and the document is discarded, but file contents may still be exposed through logs or error messages.
+
+This issue affects all versions of esaml, including forks by arekinath, handnot2, and dropbox. Users running on Erlang/OTP 27 or later are not affected due to Xmerl defaulting to entities disabled.</p></details></td>
+        <td>2026-03-23</td>
+      </tr>
+      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4582" target="_blank" rel="noopener">CVE-2026-4582</a></td>
         <td>2.3</td>
         <td><span class="severity low">LOW</span></td>
@@ -47092,6 +47563,77 @@ A workaround for older versions is to set proxy.config.http.request_buffer_enab
         <td>2026-03-13</td>
       </tr>
       <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-23943" target="_blank" rel="noopener">CVE-2026-23943</a></td>
+        <td>6.9</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-409</td>
+        <td>&nbsp;</td>
+        <td>0.1% <small>p16</small></td>
+        <td>4.83</td>
+        <td><details><summary>Improper Handling of Highly Compressed Data (Compression Bomb) vulnerability in ...</summary><p>Improper Handling of Highly Compressed Data (Compression Bomb) vulnerability in Erlang OTP ssh (ssh_transport modules) allows Denial of Service via Resource Depletion.
+
+The SSH transport layer advertises legacy zlib compression by default and inflates attacker-controlled payloads pre-authentication without any size limit, enabling reliable memory exhaustion DoS.
+
+Two compression algorithms are affected:
+
+* zlib: Activates immediately after key exchange, enabling unauthenticated attacks
+* zlib@openssh.com: Activates post-authentication, enabling authenticated attacks
+
+Each SSH packet can decompress ~255 MB from 256 KB of wire data (1029:1 amplification ratio). Multiple packets can rapidly exhaust available memory, causing OOM kills in memory-constrained environments.
+
+This vulnerability is associated with program files lib/ssh/src/ssh_transport.erl and program routines ssh_transport:decompress/2, ssh_transport:handle_packet_part/4.
+
+This issue affects OTP from OTP 17.0 until OTP 28.4.1, 27.3.4.9 and 26.2.5.18 corresponding to ssh from 3.0.1 until 5.5.1, 5.2.11.6 and 5.1.4.14.</p></details></td>
+        <td>2026-03-13</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-23942" target="_blank" rel="noopener">CVE-2026-23942</a></td>
+        <td>5.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-22</td>
+        <td>&nbsp;</td>
+        <td>0.0% <small>p5</small></td>
+        <td>3.71</td>
+        <td><details><summary>Improper Limitation of a Pathname to a Restricted Directory (&#x27;Path Traversal&#x27;) v...</summary><p>Improper Limitation of a Pathname to a Restricted Directory (&#x27;Path Traversal&#x27;) vulnerability in Erlang OTP (ssh_sftpd module) allows Path Traversal.
+
+This vulnerability is associated with program files lib/ssh/src/ssh_sftpd.erl and program routines ssh_sftpd:is_within_root/2.
+
+The SFTP server uses string prefix matching via lists:prefix/2 rather than proper path component validation when checking if a path is within the configured root directory. This allows authenticated users to access sibling directories that share a common name prefix with the configured root directory. For example, if root is set to /home/user1, paths like /home/user10 or /home/user1_backup would incorrectly be considered within the root.
+
+This issue affects OTP from OTP 17.0 until OTP 28.4.1, OTP 27.3.4.9 and OTP 26.2.5.18, corresponding to ssh from 3.0.1 until 5.5.1, 5.2.11.6 and 5.1.4.14.</p></details></td>
+        <td>2026-03-13</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-23941" target="_blank" rel="noopener">CVE-2026-23941</a></td>
+        <td>7.0</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-444</td>
+        <td>&nbsp;</td>
+        <td>0.0% <small>p5</small></td>
+        <td>4.90</td>
+        <td><details><summary>Inconsistent Interpretation of HTTP Requests (&#x27;HTTP Request Smuggling&#x27;) vulnerab...</summary><p>Inconsistent Interpretation of HTTP Requests (&#x27;HTTP Request Smuggling&#x27;) vulnerability in Erlang OTP (inets httpd module) allows HTTP Request Smuggling.
+
+This vulnerability is associated with program files lib/inets/src/http_server/httpd_request.erl and program routines httpd_request:parse_headers/7.
+
+The server does not reject or normalize duplicate Content-Length headers. The earliest Content-Length in the request is used for body parsing while common reverse proxies (nginx, Apache httpd, Envoy) honor the last Content-Length value. This violates RFC 9112 Section 6.3 and allows front-end/back-end desynchronization, leaving attacker-controlled bytes queued as the start of the next request.
+
+This issue affects OTP from OTP 17.0 until OTP 28.4.1, OTP 27.3.4.9 and OTP 26.2.5.18, corresponding to inets from 5.10 until 9.6.1, 9.3.2.3 and 9.1.0.5.</p></details></td>
+        <td>2026-03-13</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-23940" target="_blank" rel="noopener">CVE-2026-23940</a></td>
+        <td>7.1</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-400</td>
+        <td>&nbsp;</td>
+        <td>0.0% <small>p15</small></td>
+        <td>4.97</td>
+        <td><details><summary>Uncontrolled Resource Consumption vulnerability in hexpm hexpm/hexpm allows Exce...</summary><p>Uncontrolled Resource Consumption vulnerability in hexpm hexpm/hexpm allows Excessive Allocation. Publishing an oversized package can cause Hex.pm to run out of memory while extracting the uploaded package tarball. This can terminate the affected application instance and result in a denial of service for package publishing and potentially other package-processing functionality.
+
+This issue affects hexpm: before 495f01607d3eae4aed7ad09b2f54f31ec7a7df01; hex.pm: before 2026-03-10.</p></details></td>
+        <td>2026-03-13</td>
+      </tr>
+      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-22216" target="_blank" rel="noopener">CVE-2026-22216</a></td>
         <td>6.9</td>
         <td><span class="severity medium">MEDIUM</span></td>
@@ -53260,6 +53802,42 @@ A workaround for older versions is to set proxy.config.http.request_buffer_enab
         <td>0.2% <small>p37</small></td>
         <td>6.09</td>
         <td><details><summary>Quinn is a pure-Rust, async-compatible implementation of the IETF QUIC transport...</summary><p>Quinn is a pure-Rust, async-compatible implementation of the IETF QUIC transport protocol. Prior to 0.11.14, a remote, unauthenticated attacker can trigger a denial of service in applications using vulnerable quinn versions by sending a crafted QUIC Initial packet containing malformed quic_transport_parameters. In quinn-proto parsing logic, attacker-controlled varints are decoded with unwrap(), so truncated encodings cause Err(UnexpectedEnd) and panic. This is reachable over the network with a single packet and no prior trust or authentication. This vulnerability is fixed in 0.11.14.</p></details></td>
+        <td>2026-03-10</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-28807" target="_blank" rel="noopener">CVE-2026-28807</a></td>
+        <td>8.7</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-22</td>
+        <td>&nbsp;</td>
+        <td>0.1% <small>p32</small></td>
+        <td>6.09</td>
+        <td><details><summary>Improper Limitation of a Pathname to a Restricted Directory (&#x27;Path Traversal&#x27;) v...</summary><p>Improper Limitation of a Pathname to a Restricted Directory (&#x27;Path Traversal&#x27;) vulnerability in gleam-wisp wisp allows arbitrary file read via percent-encoded path traversal.
+
+The wisp.serve_static function is vulnerable to path traversal because sanitization runs before percent-decoding. The encoded sequence %2e%2e passes through string.replace unchanged, then uri.percent_decode converts it to .., which the OS resolves as directory traversal when the file is read.
+
+An unauthenticated attacker can read any file readable by the application process in a single HTTP request, including application source code, configuration files, secrets, and system files.
+
+This issue affects wisp: from 2.1.1 before 2.2.1.</p></details></td>
+        <td>2026-03-10</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-28806" target="_blank" rel="noopener">CVE-2026-28806</a></td>
+        <td>9.4</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-285</td>
+        <td>&nbsp;</td>
+        <td>0.0% <small>p2</small></td>
+        <td>6.58</td>
+        <td><details><summary>Improper Authorization vulnerability in nerves-hub nerves_hub_web allows cross-o...</summary><p>Improper Authorization vulnerability in nerves-hub nerves_hub_web allows cross-organization device control via device bulk actions and device update API.
+
+Missing authorization checks in the device bulk actions and device update API endpoints allow authenticated users to target devices belonging to other organizations and perform actions outside of their privilege level.
+
+An attacker can select devices outside of their organization by manipulating device identifiers and perform management actions on them, such as moving them to products they control. This may allow attackers to interfere with firmware updates, access device functionality exposed by the platform, or disrupt device connectivity.
+
+In environments where additional features such as remote console access are enabled, this could lead to full compromise of affected devices.
+
+This issue affects nerves_hub_web: from 1.0.0 before 2.4.0.</p></details></td>
         <td>2026-03-10</td>
       </tr>
       <tr>
@@ -63141,6 +63719,25 @@ A workaround for older versions is to set proxy.config.http.request_buffer_enab
         <td>2026-03-05</td>
       </tr>
       <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-21622" target="_blank" rel="noopener">CVE-2026-21622</a></td>
+        <td>9.5</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-613</td>
+        <td>&nbsp;</td>
+        <td>0.1% <small>p19</small></td>
+        <td>6.65</td>
+        <td><details><summary>Insufficient Session Expiration vulnerability in hexpm hexpm/hexpm (&#x27;Elixir.Hexp...</summary><p>Insufficient Session Expiration vulnerability in hexpm hexpm/hexpm (&#x27;Elixir.Hexpm.Accounts.PasswordReset&#x27; module) allows Account Takeover.
+
+Password reset tokens generated via the &quot;Reset your password&quot; flow do not expire. When a user requests a password reset, Hex sends an email containing a reset link with a token. This token remains valid indefinitely until used. There is no time-based expiration enforced.
+
+If a user&#x27;s historical emails are exposed through a data breach (e.g., a leaked mailbox archive), any unused password reset email contained in that dataset could be used by an attacker to reset the victim&#x27;s password. The attacker does not need current access to the victim&#x27;s email account, only access to a previously leaked copy of the reset email.
+
+This vulnerability is associated with program files lib/hexpm/accounts/password_reset.ex and program routines &#x27;Elixir.Hexpm.Accounts.PasswordReset&#x27;:can_reset?/3.
+
+This issue affects hexpm: from 617e44c71f1dd9043870205f371d375c5c4d886d before bb0e42091995945deef10556f58d046a52eb7884.</p></details></td>
+        <td>2026-03-05</td>
+      </tr>
+      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-29188" target="_blank" rel="noopener">CVE-2026-29188</a></td>
         <td>9.1</td>
         <td><span class="severity critical">CRITICAL</span></td>
@@ -63435,6 +64032,27 @@ A workaround for older versions is to set proxy.config.http.request_buffer_enab
         <td>0.1% <small>p26</small></td>
         <td>4.27</td>
         <td><details><summary>Wagtail is an open source content management system built on Django. Prior to ve...</summary><p>Wagtail is an open source content management system built on Django. Prior to versions 6.3.8, 7.0.6, 7.2.3, and 7.3.1, a stored cross-site scripting (XSS) vulnerability exists on rendering TableBlock blocks within a StreamField. A user with access to create or edit pages containing TableBlock StreamField blocks is able to set specially-crafted class attributes on the block which run arbitrary JavaScript code when the page is viewed. When viewed by a user with higher privileges, this could lead to performing actions with that user&#x27;s credentials. The vulnerability is not exploitable by an ordinary site visitor without access to the Wagtail admin, and only affects sites using TableBlock. This issue has been patched in versions 6.3.8, 7.0.6, 7.2.3, and 7.3.1.</p></details></td>
+        <td>2026-03-05</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-21621" target="_blank" rel="noopener">CVE-2026-21621</a></td>
+        <td>7.0</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-863</td>
+        <td>&nbsp;</td>
+        <td>0.0% <small>p8</small></td>
+        <td>4.90</td>
+        <td><details><summary>Incorrect Authorization vulnerability in hexpm hexpm/hexpm (&#x27;Elixir.HexpmWeb.API...</summary><p>Incorrect Authorization vulnerability in hexpm hexpm/hexpm (&#x27;Elixir.HexpmWeb.API.OAuthController&#x27; module) allows Privilege Escalation.
+
+An API key created with read-only permissions (domain: &quot;api&quot;, resource: &quot;read&quot;) can be escalated to full write access under specific conditions.
+
+When exchanging a read-only API key via the OAuth client_credentials grant, the resource qualifier is ignored. The resulting JWT receives the broad &quot;api&quot; scope instead of the expected &quot;api:read&quot; scope. This token is therefore treated as having full API access.
+
+If an attacker is able to obtain a victim&#x27;s read-only API key and a valid 2FA (TOTP) code for the victim account, they can use the incorrectly scoped JWT to create a new full-access API key with unrestricted API permissions that does not expire by default and can perform write operations such as publishing, retiring, or modifying packages.
+
+This vulnerability is associated with program files lib/hexpm_web/controllers/api/oauth_controller.ex and program routines &#x27;Elixir.HexpmWeb.API.OAuthController&#x27;:validate_scopes_against_key/2.
+
+This issue affects hexpm: from 71829cb6f6559bcceb1ef4e43a2fb8cdd3af654b before 71c127afebb7ed7cc637eb231b98feb802d62999.</p></details></td>
         <td>2026-03-05</td>
       </tr>
       <tr>
