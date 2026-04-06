@@ -1,19 +1,23 @@
 # CVEs — April 2026
 
-_772 vulnerabilities_
+_776 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
+| [CVE-2026-5673](https://nvd.nist.gov/vuln/detail/CVE-2026-5673) | 5.6 | MEDIUM | CWE-125 | No | — | 3.92 | 2026-04-06 | A flaw was found in libtheora. This heap-based out-of-bounds read vulnerability exists within the AVI (Audio Video Inter... |
+| [CVE-2026-5644](https://nvd.nist.gov/vuln/detail/CVE-2026-5644) | 4.8 | MEDIUM | CWE-79 | No | — | 3.36 | 2026-04-06 | A security flaw has been discovered in Cyber-III Student-Management-System up to 1a938fa61e9f735078e9b291d2e6215b4942af3... |
+| [CVE-2026-5643](https://nvd.nist.gov/vuln/detail/CVE-2026-5643) | 4.8 | MEDIUM | CWE-79 | No | — | 3.36 | 2026-04-06 | A vulnerability was identified in Cyber-III Student-Management-System up to 1a938fa61e9f735078e9b291d2e6215b4942af3f. Th... |
+| [CVE-2026-5642](https://nvd.nist.gov/vuln/detail/CVE-2026-5642) | 6.9 | MEDIUM | CWE-266 | No | — | 4.83 | 2026-04-06 | A vulnerability was determined in Cyber-III Student-Management-System up to 1a938fa61e9f735078e9b291d2e6215b4942af3f. Th... |
+| [CVE-2026-5641](https://nvd.nist.gov/vuln/detail/CVE-2026-5641) | 5.3 | MEDIUM | CWE-74 | No | — | 3.71 | 2026-04-06 | A vulnerability was found in PHPGurukul Online Shopping Portal Project 2.1. The impacted element is an unknown function... |
+| [CVE-2026-5640](https://nvd.nist.gov/vuln/detail/CVE-2026-5640) | 5.3 | MEDIUM | CWE-74 | No | — | 3.71 | 2026-04-06 | A vulnerability has been found in PHPGurukul Online Shopping Portal Project 2.1. The affected element is an unknown func... |
+| [CVE-2026-5639](https://nvd.nist.gov/vuln/detail/CVE-2026-5639) | 5.3 | MEDIUM | CWE-74 | No | — | 3.71 | 2026-04-06 | A flaw has been found in PHPGurukul Online Shopping Portal Project 2.1. Impacted is an unknown function of the file /adm... |
+| [CVE-2026-5638](https://nvd.nist.gov/vuln/detail/CVE-2026-5638) | 5.5 | MEDIUM | CWE-22 | No | — | 3.85 | 2026-04-06 | A vulnerability was detected in HerikLyma CPPWebFramework up to 3.1. This issue affects some unknown processing. Perform... |
+| [CVE-2026-5637](https://nvd.nist.gov/vuln/detail/CVE-2026-5637) | 6.9 | MEDIUM | CWE-74 | No | — | 4.83 | 2026-04-06 | A security vulnerability has been detected in projectworlds Car Rental System 1.0. This vulnerability affects unknown co... |
+| [CVE-2026-37977](https://nvd.nist.gov/vuln/detail/CVE-2026-37977) | 3.7 | LOW | CWE-346 | No | — | 2.59 | 2026-04-06 | A flaw was found in Keycloak. A remote attacker can exploit a Cross-Origin Resource Sharing (CORS) header injection vuln... |
 | [CVE-2026-5636](https://nvd.nist.gov/vuln/detail/CVE-2026-5636) | 5.3 | MEDIUM | CWE-74 | No | — | 3.71 | 2026-04-06 | A weakness has been identified in PHPGurukul Online Shopping Portal Project 2.1. This affects an unknown part of the fil... |
 | [CVE-2026-5635](https://nvd.nist.gov/vuln/detail/CVE-2026-5635) | 5.3 | MEDIUM | CWE-74 | No | — | 3.71 | 2026-04-06 | A security flaw has been discovered in PHPGurukul Online Shopping Portal Project 2.1. Affected by this issue is some unk... |
 | [CVE-2026-5634](https://nvd.nist.gov/vuln/detail/CVE-2026-5634) | 6.9 | MEDIUM | CWE-74 | No | — | 4.83 | 2026-04-06 | A vulnerability was identified in projectworlds Car Rental Project 1.0. Affected by this vulnerability is an unknown fun... |
 | [CVE-2026-5633](https://nvd.nist.gov/vuln/detail/CVE-2026-5633) | 6.9 | MEDIUM | CWE-918 | No | — | 4.83 | 2026-04-06 | A vulnerability was determined in assafelovic gpt-researcher up to 3.4.3. Affected is an unknown function of the compone... |
-| [CVE-2026-31410](https://nvd.nist.gov/vuln/detail/CVE-2026-31410) | 0.0 | NONE | N/A | No | — | 0.00 | 2026-04-06 | In the Linux kernel, the following vulnerability has been resolved:  ksmbd: use volume UUID in FS_OBJECT_ID_INFORMATION... |
-| [CVE-2026-31409](https://nvd.nist.gov/vuln/detail/CVE-2026-31409) | 0.0 | NONE | N/A | No | — | 0.00 | 2026-04-06 | In the Linux kernel, the following vulnerability has been resolved:  ksmbd: unset conn->binding on failed binding reques... |
-| [CVE-2026-31408](https://nvd.nist.gov/vuln/detail/CVE-2026-31408) | 0.0 | NONE | N/A | No | — | 0.00 | 2026-04-06 | In the Linux kernel, the following vulnerability has been resolved:  Bluetooth: SCO: Fix use-after-free in sco_recv_fram... |
-| [CVE-2026-31407](https://nvd.nist.gov/vuln/detail/CVE-2026-31407) | 0.0 | NONE | N/A | No | — | 0.00 | 2026-04-06 | In the Linux kernel, the following vulnerability has been resolved:  netfilter: conntrack: add missing netlink policy va... |
-| [CVE-2026-31406](https://nvd.nist.gov/vuln/detail/CVE-2026-31406) | 0.0 | NONE | N/A | No | — | 0.00 | 2026-04-06 | In the Linux kernel, the following vulnerability has been resolved:  xfrm: Fix work re-schedule after cancel in xfrm_nat... |
-| [CVE-2026-31405](https://nvd.nist.gov/vuln/detail/CVE-2026-31405) | 0.0 | NONE | N/A | No | — | 0.00 | 2026-04-06 | In the Linux kernel, the following vulnerability has been resolved:  media: dvb-net: fix OOB access in ULE extension hea... |
 | [CVE-2026-5632](https://nvd.nist.gov/vuln/detail/CVE-2026-5632) | 6.9 | MEDIUM | CWE-287 | No | — | 4.83 | 2026-04-06 | A vulnerability was found in assafelovic gpt-researcher up to 3.4.3. This impacts an unknown function of the component H... |
 | [CVE-2026-5631](https://nvd.nist.gov/vuln/detail/CVE-2026-5631) | 6.9 | MEDIUM | CWE-74 | No | — | 4.83 | 2026-04-06 | A vulnerability has been found in assafelovic gpt-researcher up to 3.4.3. This affects the function extract_command_data... |
 | [CVE-2026-5630](https://nvd.nist.gov/vuln/detail/CVE-2026-5630) | 5.3 | MEDIUM | CWE-79 | No | — | 3.71 | 2026-04-06 | A flaw has been found in assafelovic gpt-researcher up to 3.4.3. The impacted element is an unknown function of the file... |
