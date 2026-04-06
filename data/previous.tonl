@@ -1,7 +1,7 @@
 #version 1.0
 #delimiter "|"
 
-cves[5734]{cveId:str|published:str|lastModified:str|cvssScore:f64|severity:str|cweId:str|cweName:str|kev:bool|description:str|nvdUrl:str|epssScore:f64|epssPercentile:f64|vapScore:f64}:
+cves[5735]{cveId:str|published:str|lastModified:str|cvssScore:f64|severity:str|cweId:str|cweName:str|kev:bool|description:str|nvdUrl:str|epssScore:f64|epssPercentile:f64|vapScore:f64}:
   CVE-2026-5237|2026-03-31T23:17:11.627|2026-04-01T14:23:37.727|6.9|MEDIUM|CWE-74|N/A|false|A security flaw has been discovered in itsourcecode Payroll Management System 1.0. Affected by this vulnerability is an unknown functionality of the file /manage_user.php of the component Parameter Handler. Performing a manipulation of the argument ID results in sql injection. The attack is possible to be carried out remotely. The exploit has been released to the public and may be used for attacks.|https://nvd.nist.gov/vuln/detail/CVE-2026-5237|0.00030|0.08583|4.8309
   CVE-2026-5236|2026-03-31T23:17:11.393|2026-04-01T14:23:37.727|4.8|MEDIUM|CWE-119|N/A|false|A vulnerability was identified in Axiomatic Bento4 up to 1.6.0-641. Affected is the function AP4_BitReader::SkipBits of the file Ap4Dac4Atom.cpp of the component DSI v1 Parser. Such manipulation of the argument n_presentations leads to heap-based buffer overflow. The attack needs to be performed locally. The exploit is publicly available and might be used. The project was informed of the problem early through an issue report but has not responded yet.|https://nvd.nist.gov/vuln/detail/CVE-2026-5236|0.00005|0.00258|3.3601
   CVE-2026-5235|2026-03-31T23:17:11.163|2026-04-01T14:23:37.727|4.8|MEDIUM|CWE-119|N/A|false|A vulnerability was determined in Axiomatic Bento4 up to 1.6.0-641. This impacts the function AP4_BitReader::ReadCache of the file Ap4Dac4Atom.cpp of the component MP4 File Parser. This manipulation causes heap-based buffer overflow. The attack needs to be launched locally. The exploit has been publicly disclosed and may be utilized. The project was informed of the problem early through an issue report but has not responded yet.|https://nvd.nist.gov/vuln/detail/CVE-2026-5235|0.00013|0.02055|3.3604
@@ -4348,6 +4348,18 @@ cves[5734]{cveId:str|published:str|lastModified:str|cvssScore:f64|severity:str|c
   CVE-2025-70046|2026-03-09T16:16:15.597|2026-03-13T20:02:51.930|9.8|CRITICAL|CWE-829|N/A|false|An issue pertaining to CWE-829: Inclusion of Functionality from Untrusted Control Sphere was discovered in Miazzy oa-front-service master.|https://nvd.nist.gov/vuln/detail/CVE-2025-70046|0.00055|0.17372|6.8617
   CVE-2025-70042|2026-03-09T16:16:15.480|2026-03-18T18:37:49.577|9.8|CRITICAL|CWE-918|N/A|false|An issue pertaining to CWE-918: Server-Side Request Forgery was discovered in oslabs-beta ThermaKube master.|https://nvd.nist.gov/vuln/detail/CVE-2025-70042|0.00053|0.16868|6.8616
   CVE-2025-70040|2026-03-09T16:16:15.360|2026-03-11T13:53:47.157|5.3|MEDIUM|CWE-532|N/A|false|An issue pertaining to CWE-532: Insertion of Sensitive Information into Log File was discovered in LupinLin1 jimeng-web-mcp v2.1.2. This allows an attacker to obtain sensitive information.|https://nvd.nist.gov/vuln/detail/CVE-2025-70040|0.00036|0.10653|3.7111
+  CVE-2024-14027|2026-03-09T16:16:14.313|2026-04-06T08:16:36.923|0.0|NONE|N/A|N/A|false|"In the Linux kernel, the following vulnerability has been resolved:
+
+fs/xattr: missing fdput() in fremovexattr error path
+
+In the Linux kernel, the fremovexattr() syscall calls fdget() to acquire a
+file reference but returns early without calling fdput() when
+strncpy_from_user() fails on the name argument. In multi-threaded processes
+where fdget() takes the slow path, this permanently leaks one
+file reference per call, pinning the struct file and associated kernel
+objects in memory. An unprivileged local user can exploit this to cause
+kernel memory exhaustion. The issue was inadvertently fixed by commit
+a71874379ec8 (""xattr: switch to CLASS(fd)"")."|https://nvd.nist.gov/vuln/detail/CVE-2024-14027|0.00009|0.00931|0.0003
   CVE-2025-70250|2026-03-09T15:15:52.760|2026-03-11T20:01:38.527|7.5|HIGH|CWE-121|N/A|false|Stack buffer overflow vulnerability in D-Link DIR-513 v1.10 via the curTime parameter to goform/formdumpeasysetup.|https://nvd.nist.gov/vuln/detail/CVE-2025-70250|0.00058|0.18230|5.2517
   CVE-2025-70243|2026-03-09T15:15:52.617|2026-03-11T20:02:06.603|7.5|HIGH|CWE-121|N/A|false|Stack buffer overflow vulnerability in D-Link DIR-513 v1.10 via the curTime parameter to goform/formSetWAN_Wizard534.|https://nvd.nist.gov/vuln/detail/CVE-2025-70243|0.00058|0.18230|5.2517
   CVE-2025-70238|2026-03-09T15:15:52.460|2026-03-11T20:02:34.517|7.5|HIGH|CWE-121|N/A|false|Stack buffer overflow vulnerability in D-Link DIR-513 v1.10 via the curTime parameter to goform/formSetWAN_Wizard52.|https://nvd.nist.gov/vuln/detail/CVE-2025-70238|0.00058|0.18230|5.2517

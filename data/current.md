@@ -1,10 +1,27 @@
 # CVEs — April 2026
 
-_755 vulnerabilities_
+_772 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
-| [CVE-2026-5622](https://nvd.nist.gov/vuln/detail/CVE-2026-5622) | 6.3 | MEDIUM | CWE-320 | No | — | 4.41 | 2026-04-06 | A vulnerability was determined in hcengineering Huly Platform 0.7.382. Affected by this issue is some unknown functional... |
+| [CVE-2026-5636](https://nvd.nist.gov/vuln/detail/CVE-2026-5636) | 5.3 | MEDIUM | CWE-74 | No | — | 3.71 | 2026-04-06 | A weakness has been identified in PHPGurukul Online Shopping Portal Project 2.1. This affects an unknown part of the fil... |
+| [CVE-2026-5635](https://nvd.nist.gov/vuln/detail/CVE-2026-5635) | 5.3 | MEDIUM | CWE-74 | No | — | 3.71 | 2026-04-06 | A security flaw has been discovered in PHPGurukul Online Shopping Portal Project 2.1. Affected by this issue is some unk... |
+| [CVE-2026-5634](https://nvd.nist.gov/vuln/detail/CVE-2026-5634) | 6.9 | MEDIUM | CWE-74 | No | — | 4.83 | 2026-04-06 | A vulnerability was identified in projectworlds Car Rental Project 1.0. Affected by this vulnerability is an unknown fun... |
+| [CVE-2026-5633](https://nvd.nist.gov/vuln/detail/CVE-2026-5633) | 6.9 | MEDIUM | CWE-918 | No | — | 4.83 | 2026-04-06 | A vulnerability was determined in assafelovic gpt-researcher up to 3.4.3. Affected is an unknown function of the compone... |
+| [CVE-2026-31410](https://nvd.nist.gov/vuln/detail/CVE-2026-31410) | 0.0 | NONE | N/A | No | — | 0.00 | 2026-04-06 | In the Linux kernel, the following vulnerability has been resolved:  ksmbd: use volume UUID in FS_OBJECT_ID_INFORMATION... |
+| [CVE-2026-31409](https://nvd.nist.gov/vuln/detail/CVE-2026-31409) | 0.0 | NONE | N/A | No | — | 0.00 | 2026-04-06 | In the Linux kernel, the following vulnerability has been resolved:  ksmbd: unset conn->binding on failed binding reques... |
+| [CVE-2026-31408](https://nvd.nist.gov/vuln/detail/CVE-2026-31408) | 0.0 | NONE | N/A | No | — | 0.00 | 2026-04-06 | In the Linux kernel, the following vulnerability has been resolved:  Bluetooth: SCO: Fix use-after-free in sco_recv_fram... |
+| [CVE-2026-31407](https://nvd.nist.gov/vuln/detail/CVE-2026-31407) | 0.0 | NONE | N/A | No | — | 0.00 | 2026-04-06 | In the Linux kernel, the following vulnerability has been resolved:  netfilter: conntrack: add missing netlink policy va... |
+| [CVE-2026-31406](https://nvd.nist.gov/vuln/detail/CVE-2026-31406) | 0.0 | NONE | N/A | No | — | 0.00 | 2026-04-06 | In the Linux kernel, the following vulnerability has been resolved:  xfrm: Fix work re-schedule after cancel in xfrm_nat... |
+| [CVE-2026-31405](https://nvd.nist.gov/vuln/detail/CVE-2026-31405) | 0.0 | NONE | N/A | No | — | 0.00 | 2026-04-06 | In the Linux kernel, the following vulnerability has been resolved:  media: dvb-net: fix OOB access in ULE extension hea... |
+| [CVE-2026-5632](https://nvd.nist.gov/vuln/detail/CVE-2026-5632) | 6.9 | MEDIUM | CWE-287 | No | — | 4.83 | 2026-04-06 | A vulnerability was found in assafelovic gpt-researcher up to 3.4.3. This impacts an unknown function of the component H... |
+| [CVE-2026-5631](https://nvd.nist.gov/vuln/detail/CVE-2026-5631) | 6.9 | MEDIUM | CWE-74 | No | — | 4.83 | 2026-04-06 | A vulnerability has been found in assafelovic gpt-researcher up to 3.4.3. This affects the function extract_command_data... |
+| [CVE-2026-5630](https://nvd.nist.gov/vuln/detail/CVE-2026-5630) | 5.3 | MEDIUM | CWE-79 | No | — | 3.71 | 2026-04-06 | A flaw has been found in assafelovic gpt-researcher up to 3.4.3. The impacted element is an unknown function of the file... |
+| [CVE-2026-5629](https://nvd.nist.gov/vuln/detail/CVE-2026-5629) | 7.4 | HIGH | CWE-119 | No | — | 5.18 | 2026-04-06 | A vulnerability was detected in Belkin F9K1015 1.00.10. The affected element is the function formSetFirewall of the file... |
+| [CVE-2026-5628](https://nvd.nist.gov/vuln/detail/CVE-2026-5628) | 7.4 | HIGH | CWE-119 | No | — | 5.18 | 2026-04-06 | A security vulnerability has been detected in Belkin F9K1015 1.00.10. Impacted is the function formSetSystemSettings of... |
+| [CVE-2026-5625](https://nvd.nist.gov/vuln/detail/CVE-2026-5625) | 5.3 | MEDIUM | CWE-79 | No | — | 3.71 | 2026-04-06 | A weakness has been identified in assafelovic gpt-researcher up to 3.4.3. This issue affects some unknown processing of... |
+| [CVE-2026-5624](https://nvd.nist.gov/vuln/detail/CVE-2026-5624) | 5.3 | MEDIUM | CWE-352 | No | — | 3.71 | 2026-04-06 | A security flaw has been discovered in ProjectSend r2002. This vulnerability affects unknown code of the file upload.php... |
+| [CVE-2026-5623](https://nvd.nist.gov/vuln/detail/CVE-2026-5623) | 5.3 | MEDIUM | CWE-918 | No | — | 3.71 | 2026-04-06 | A vulnerability was identified in hcengineering Huly Platform 0.7.382. This affects an unknown part of the file server/f... |
 | [CVE-2026-5621](https://nvd.nist.gov/vuln/detail/CVE-2026-5621) | 4.8 | MEDIUM | CWE-77 | No | — | 3.36 | 2026-04-06 | A vulnerability was found in ChrisChinchilla Vale-MCP up to 0.1.0. Affected by this vulnerability is an unknown function... |
 | [CVE-2026-5620](https://nvd.nist.gov/vuln/detail/CVE-2026-5620) | 5.3 | MEDIUM | CWE-74 | No | — | 3.71 | 2026-04-06 | A vulnerability has been found in itsourcecode Construction Management System 1.0. Affected is an unknown function of th... |
 | [CVE-2026-5619](https://nvd.nist.gov/vuln/detail/CVE-2026-5619) | 4.8 | MEDIUM | CWE-77 | No | — | 3.36 | 2026-04-06 | A flaw has been found in Braffolk mcp-summarization-functions up to 0.1.5. This impacts an unknown function of the file... |

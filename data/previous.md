@@ -1,6 +1,6 @@
 # CVEs — March 2026
 
-_5734 vulnerabilities_
+_5735 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
@@ -4350,6 +4350,7 @@ _5734 vulnerabilities_
 | [CVE-2025-70046](https://nvd.nist.gov/vuln/detail/CVE-2025-70046) | 9.8 | CRITICAL | CWE-829 | No | 0.1% | 6.86 | 2026-03-09 | An issue pertaining to CWE-829: Inclusion of Functionality from Untrusted Control Sphere was discovered in Miazzy oa-fro... |
 | [CVE-2025-70042](https://nvd.nist.gov/vuln/detail/CVE-2025-70042) | 9.8 | CRITICAL | CWE-918 | No | 0.1% | 6.86 | 2026-03-09 | An issue pertaining to CWE-918: Server-Side Request Forgery was discovered in oslabs-beta ThermaKube master. |
 | [CVE-2025-70040](https://nvd.nist.gov/vuln/detail/CVE-2025-70040) | 5.3 | MEDIUM | CWE-532 | No | 0.0% | 3.71 | 2026-03-09 | An issue pertaining to CWE-532: Insertion of Sensitive Information into Log File was discovered in LupinLin1 jimeng-web-... |
+| [CVE-2024-14027](https://nvd.nist.gov/vuln/detail/CVE-2024-14027) | 0.0 | NONE | N/A | No | 0.0% | 0.00 | 2026-03-09 | In the Linux kernel, the following vulnerability has been resolved:  fs/xattr: missing fdput() in fremovexattr error pat... |
 | [CVE-2025-70250](https://nvd.nist.gov/vuln/detail/CVE-2025-70250) | 7.5 | HIGH | CWE-121 | No | 0.1% | 5.25 | 2026-03-09 | Stack buffer overflow vulnerability in D-Link DIR-513 v1.10 via the curTime parameter to goform/formdumpeasysetup. |
 | [CVE-2025-70243](https://nvd.nist.gov/vuln/detail/CVE-2025-70243) | 7.5 | HIGH | CWE-121 | No | 0.1% | 5.25 | 2026-03-09 | Stack buffer overflow vulnerability in D-Link DIR-513 v1.10 via the curTime parameter to goform/formSetWAN_Wizard534. |
 | [CVE-2025-70238](https://nvd.nist.gov/vuln/detail/CVE-2025-70238) | 7.5 | HIGH | CWE-121 | No | 0.1% | 5.25 | 2026-03-09 | Stack buffer overflow vulnerability in D-Link DIR-513 v1.10 via the curTime parameter to goform/formSetWAN_Wizard52. |

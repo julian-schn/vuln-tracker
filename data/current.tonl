@@ -1,8 +1,119 @@
 #version 1.0
 #delimiter "|"
 
-cves[755]{cveId:str|published:str|lastModified:str|cvssScore:f64|severity:str|cweId:str|cweName:str|kev:bool|description:str|nvdUrl:str|epssScore:f64|epssPercentile:f64|vapScore:f64}:
-  CVE-2026-5622|2026-04-06T05:16:02.650|2026-04-06T05:16:02.650|6.3|MEDIUM|CWE-320|N/A|false|"A vulnerability was determined in hcengineering Huly Platform 0.7.382. Affected by this issue is some unknown functionality of the file foundations/core/packages/token/src/token.ts of the component JWT Token Handler. This manipulation of the argument SERVER_SECRET with the input secret causes use of hard-coded cryptographic key . The attack can be initiated remotely. The attack is considered to have high complexity. The exploitation is known to be difficult. The vendor was contacted early about this disclosure but did not respond in any way."|https://nvd.nist.gov/vuln/detail/CVE-2026-5622|0.00000|0.00000|4.4100
+cves[772]{cveId:str|published:str|lastModified:str|cvssScore:f64|severity:str|cweId:str|cweName:str|kev:bool|description:str|nvdUrl:str|epssScore:f64|epssPercentile:f64|vapScore:f64}:
+  CVE-2026-5636|2026-04-06T08:16:40.140|2026-04-06T08:16:40.140|5.3|MEDIUM|CWE-74|N/A|false|A weakness has been identified in PHPGurukul Online Shopping Portal Project 2.1. This affects an unknown part of the file /cancelorder.php of the component Parameter Handler. This manipulation of the argument oid causes sql injection. The attack may be initiated remotely. The exploit has been made available to the public and could be used for attacks.|https://nvd.nist.gov/vuln/detail/CVE-2026-5636|0.00000|0.00000|3.7100
+  CVE-2026-5635|2026-04-06T08:16:39.910|2026-04-06T08:16:39.910|5.3|MEDIUM|CWE-74|N/A|false|A security flaw has been discovered in PHPGurukul Online Shopping Portal Project 2.1. Affected by this issue is some unknown functionality of the file /categorywise-products.php of the component Parameter Handler. The manipulation of the argument cid results in sql injection. The attack can be launched remotely. The exploit has been released to the public and may be used for attacks.|https://nvd.nist.gov/vuln/detail/CVE-2026-5635|0.00000|0.00000|3.7100
+  CVE-2026-5634|2026-04-06T08:16:39.700|2026-04-06T08:16:39.700|6.9|MEDIUM|CWE-74|N/A|false|A vulnerability was identified in projectworlds Car Rental Project 1.0. Affected by this vulnerability is an unknown functionality of the file /book_car.php of the component Parameter Handler. The manipulation of the argument fname leads to sql injection. The attack can be initiated remotely. The exploit is publicly available and might be used.|https://nvd.nist.gov/vuln/detail/CVE-2026-5634|0.00000|0.00000|4.8300
+  CVE-2026-5633|2026-04-06T08:16:39.487|2026-04-06T08:16:39.487|6.9|MEDIUM|CWE-918|N/A|false|A vulnerability was determined in assafelovic gpt-researcher up to 3.4.3. Affected is an unknown function of the component ws Endpoint. Executing a manipulation of the argument source_urls can lead to server-side request forgery. It is possible to launch the attack remotely. The exploit has been publicly disclosed and may be utilized. The project was informed of the problem early through an issue report but has not responded yet.|https://nvd.nist.gov/vuln/detail/CVE-2026-5633|0.00000|0.00000|4.8300
+  CVE-2026-31410|2026-04-06T08:16:39.117|2026-04-06T08:16:39.117|0.0|NONE|N/A|N/A|false|"In the Linux kernel, the following vulnerability has been resolved:
+
+ksmbd: use volume UUID in FS_OBJECT_ID_INFORMATION
+
+Use sb->s_uuid for a proper volume identifier as the primary choice.
+For filesystems that do not provide a UUID, fall back to stfs.f_fsid
+obtained from vfs_statfs()."|https://nvd.nist.gov/vuln/detail/CVE-2026-31410|0.00000|0.00000|0.0000
+  CVE-2026-31409|2026-04-06T08:16:38.943|2026-04-06T08:16:38.943|0.0|NONE|N/A|N/A|false|"In the Linux kernel, the following vulnerability has been resolved:
+
+ksmbd: unset conn->binding on failed binding request
+
+When a multichannel SMB2_SESSION_SETUP request with
+SMB2_SESSION_REQ_FLAG_BINDING fails ksmbd sets conn->binding = true
+but never clears it on the error path. This leaves the connection in
+a binding state where all subsequent ksmbd_session_lookup_all() calls
+fall back to the global sessions table. This fix it by clearing
+conn->binding = false in the error path."|https://nvd.nist.gov/vuln/detail/CVE-2026-31409|0.00000|0.00000|0.0000
+  CVE-2026-31408|2026-04-06T08:16:38.757|2026-04-06T08:16:38.757|0.0|NONE|N/A|N/A|false|"In the Linux kernel, the following vulnerability has been resolved:
+
+Bluetooth: SCO: Fix use-after-free in sco_recv_frame() due to missing sock_hold
+
+sco_recv_frame() reads conn->sk under sco_conn_lock() but immediately
+releases the lock without holding a reference to the socket. A concurrent
+close() can free the socket between the lock release and the subsequent
+sk->sk_state access, resulting in a use-after-free.
+
+Other functions in the same file (sco_sock_timeout(), sco_conn_del())
+correctly use sco_sock_hold() to safely hold a reference under the lock.
+
+Fix by using sco_sock_hold() to take a reference before releasing the
+lock, and adding sock_put() on all exit paths."|https://nvd.nist.gov/vuln/detail/CVE-2026-31408|0.00000|0.00000|0.0000
+  CVE-2026-31407|2026-04-06T08:16:38.623|2026-04-06T08:16:38.623|0.0|NONE|N/A|N/A|false|"In the Linux kernel, the following vulnerability has been resolved:
+
+netfilter: conntrack: add missing netlink policy validations
+
+Hyunwoo Kim reports out-of-bounds access in sctp and ctnetlink.
+
+These attributes are used by the kernel without any validation.
+Extend the netlink policies accordingly.
+
+Quoting the reporter:
+  nlattr_to_sctp() assigns the user-supplied CTA_PROTOINFO_SCTP_STATE
+  value directly to ct->proto.sctp.state without checking that it is
+  within the valid range. [..]
+
+  and: ... with exp->dir = 100, the access at
+  ct->master->tuplehash[100] reads 5600 bytes past the start of a
+  320-byte nf_conn object, causing a slab-out-of-bounds read confirmed by
+  UBSAN."|https://nvd.nist.gov/vuln/detail/CVE-2026-31407|0.00000|0.00000|0.0000
+  CVE-2026-31406|2026-04-06T08:16:38.457|2026-04-06T08:16:38.457|0.0|NONE|N/A|N/A|false|"In the Linux kernel, the following vulnerability has been resolved:
+
+xfrm: Fix work re-schedule after cancel in xfrm_nat_keepalive_net_fini()
+
+After cancel_delayed_work_sync() is called from
+xfrm_nat_keepalive_net_fini(), xfrm_state_fini() flushes remaining
+states via __xfrm_state_delete(), which calls
+xfrm_nat_keepalive_state_updated() to re-schedule nat_keepalive_work.
+
+The following is a simple race scenario:
+
+           cpu0                             cpu1
+
+cleanup_net() [Round 1]
+  ops_undo_list()
+    xfrm_net_exit()
+      xfrm_nat_keepalive_net_fini()
+        cancel_delayed_work_sync(nat_keepalive_work);
+      xfrm_state_fini()
+        xfrm_state_flush()
+          xfrm_state_delete(x)
+            __xfrm_state_delete(x)
+              xfrm_nat_keepalive_state_updated(x)
+                schedule_delayed_work(nat_keepalive_work);
+  rcu_barrier();
+  net_complete_free();
+  net_passive_dec(net);
+    llist_add(&net->defer_free_list, &defer_free_list);
+
+cleanup_net() [Round 2]
+  rcu_barrier();
+  net_complete_free()
+    kmem_cache_free(net_cachep, net);
+                                     nat_keepalive_work()
+                                       // on freed net
+
+To prevent this, cancel_delayed_work_sync() is replaced with
+disable_delayed_work_sync()."|https://nvd.nist.gov/vuln/detail/CVE-2026-31406|0.00000|0.00000|0.0000
+  CVE-2026-31405|2026-04-06T08:16:38.253|2026-04-06T08:16:38.253|0.0|NONE|N/A|N/A|false|"In the Linux kernel, the following vulnerability has been resolved:
+
+media: dvb-net: fix OOB access in ULE extension header tables
+
+The ule_mandatory_ext_handlers[] and ule_optional_ext_handlers[] tables
+in handle_one_ule_extension() are declared with 255 elements (valid
+indices 0-254), but the index htype is derived from network-controlled
+data as (ule_sndu_type & 0x00FF), giving a range of 0-255. When
+htype equals 255, an out-of-bounds read occurs on the function pointer
+table, and the OOB value may be called as a function pointer.
+
+Add a bounds check on htype against the array size before either table
+is accessed. Out-of-range values now cause the SNDU to be discarded."|https://nvd.nist.gov/vuln/detail/CVE-2026-31405|0.00000|0.00000|0.0000
+  CVE-2026-5632|2026-04-06T07:16:02.197|2026-04-06T07:16:02.197|6.9|MEDIUM|CWE-287|N/A|false|A vulnerability was found in assafelovic gpt-researcher up to 3.4.3. This impacts an unknown function of the component HTTP REST API Endpoint. Performing a manipulation results in missing authentication. It is possible to initiate the attack remotely. The exploit has been made public and could be used. The project was informed of the problem early through an issue report but has not responded yet.|https://nvd.nist.gov/vuln/detail/CVE-2026-5632|0.00000|0.00000|4.8300
+  CVE-2026-5631|2026-04-06T07:16:01.983|2026-04-06T07:16:01.983|6.9|MEDIUM|CWE-74|N/A|false|A vulnerability has been found in assafelovic gpt-researcher up to 3.4.3. This affects the function extract_command_data of the file backend/server/server_utils.py of the component ws Endpoint. Such manipulation of the argument args leads to code injection. The attack may be performed from remote. The exploit has been disclosed to the public and may be used. The project was informed of the problem early through an issue report but has not responded yet.|https://nvd.nist.gov/vuln/detail/CVE-2026-5631|0.00000|0.00000|4.8300
+  CVE-2026-5630|2026-04-06T07:16:01.757|2026-04-06T07:16:01.757|5.3|MEDIUM|CWE-79|N/A|false|A flaw has been found in assafelovic gpt-researcher up to 3.4.3. The impacted element is an unknown function of the file backend/server/app.py of the component Report API. This manipulation causes cross site scripting. The attack is possible to be carried out remotely. The exploit has been published and may be used. The project was informed of the problem early through an issue report but has not responded yet.|https://nvd.nist.gov/vuln/detail/CVE-2026-5630|0.00000|0.00000|3.7100
+  CVE-2026-5629|2026-04-06T06:16:22.310|2026-04-06T06:16:22.310|7.4|HIGH|CWE-119|N/A|false|A vulnerability was detected in Belkin F9K1015 1.00.10. The affected element is the function formSetFirewall of the file /goform/formSetFirewall. The manipulation of the argument webpage results in stack-based buffer overflow. The attack can be executed remotely. The exploit is now public and may be used. The vendor was contacted early about this disclosure but did not respond in any way.|https://nvd.nist.gov/vuln/detail/CVE-2026-5629|0.00000|0.00000|5.1800
+  CVE-2026-5628|2026-04-06T06:16:22.087|2026-04-06T06:16:22.087|7.4|HIGH|CWE-119|N/A|false|A security vulnerability has been detected in Belkin F9K1015 1.00.10. Impacted is the function formSetSystemSettings of the file /goform/formSetSystemSettings of the component Setting Handler. The manipulation of the argument webpage leads to stack-based buffer overflow. Remote exploitation of the attack is possible. The exploit has been disclosed publicly and may be used. The vendor was contacted early about this disclosure but did not respond in any way.|https://nvd.nist.gov/vuln/detail/CVE-2026-5628|0.00000|0.00000|5.1800
+  CVE-2026-5625|2026-04-06T06:16:21.860|2026-04-06T06:16:21.860|5.3|MEDIUM|CWE-79|N/A|false|A weakness has been identified in assafelovic gpt-researcher up to 3.4.3. This issue affects some unknown processing of the file gpt_researcher/skills/researcher.py of the component WebSocket Interface. Executing a manipulation of the argument task can lead to cross site scripting. The attack may be launched remotely. The exploit has been made available to the public and could be used for attacks. The project was informed of the problem early through an issue report but has not responded yet.|https://nvd.nist.gov/vuln/detail/CVE-2026-5625|0.00000|0.00000|3.7100
+  CVE-2026-5624|2026-04-06T06:16:21.623|2026-04-06T06:16:21.623|5.3|MEDIUM|CWE-352|N/A|false|A security flaw has been discovered in ProjectSend r2002. This vulnerability affects unknown code of the file upload.php. Performing a manipulation results in cross-site request forgery. The attack may be initiated remotely. The exploit has been released to the public and may be used for attacks. Upgrading to version r2029 is able to resolve this issue. The patch is named 2c0d25824ab571b6c219ac1a188ad9350149661b. You should upgrade the affected component.|https://nvd.nist.gov/vuln/detail/CVE-2026-5624|0.00000|0.00000|3.7100
+  CVE-2026-5623|2026-04-06T06:16:19.910|2026-04-06T06:16:19.910|5.3|MEDIUM|CWE-918|N/A|false|A vulnerability was identified in hcengineering Huly Platform 0.7.382. This affects an unknown part of the file server/front/src/index.ts of the component Import Endpoint. Such manipulation leads to server-side request forgery. The attack can be launched remotely. The exploit is publicly available and might be used. The vendor was contacted early about this disclosure but did not respond in any way.|https://nvd.nist.gov/vuln/detail/CVE-2026-5623|0.00000|0.00000|3.7100
   CVE-2026-5621|2026-04-06T05:16:02.450|2026-04-06T05:16:02.450|4.8|MEDIUM|CWE-77|N/A|false|A vulnerability was found in ChrisChinchilla Vale-MCP up to 0.1.0. Affected by this vulnerability is an unknown functionality of the file src/index.ts of the component HTTP Interface. The manipulation of the argument config_path results in os command injection. Attacking locally is a requirement. The exploit has been made public and could be used. The vendor was contacted early about this disclosure but did not respond in any way.|https://nvd.nist.gov/vuln/detail/CVE-2026-5621|0.00000|0.00000|3.3600
   CVE-2026-5620|2026-04-06T05:16:02.240|2026-04-06T05:16:02.240|5.3|MEDIUM|CWE-74|N/A|false|A vulnerability has been found in itsourcecode Construction Management System 1.0. Affected is an unknown function of the file /borrowed_equip_report.php of the component Parameter Handler. The manipulation of the argument Home leads to sql injection. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used.|https://nvd.nist.gov/vuln/detail/CVE-2026-5620|0.00000|0.00000|3.7100
   CVE-2026-5619|2026-04-06T05:16:01.590|2026-04-06T05:16:01.590|4.8|MEDIUM|CWE-77|N/A|false|A flaw has been found in Braffolk mcp-summarization-functions up to 0.1.5. This impacts an unknown function of the file src/server/mcp-server.ts of the component summarize_command. Executing a manipulation of the argument command can lead to os command injection. The attack requires local access. The exploit has been published and may be used. The vendor was contacted early about this disclosure but did not respond in any way.|https://nvd.nist.gov/vuln/detail/CVE-2026-5619|0.00000|0.00000|3.3600
