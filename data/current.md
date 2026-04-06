@@ -1,9 +1,16 @@
 # CVEs — April 2026
 
-_776 vulnerabilities_
+_783 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
+| [CVE-2026-3524](https://nvd.nist.gov/vuln/detail/CVE-2026-3524) | 8.8 | HIGH | CWE-862 | No | — | 6.16 | 2026-04-06 | Mattermost Plugin Legal Hold versions <=1.1.4 fail to halt request processing after a failed authorization check in Serv... |
+| [CVE-2026-5650](https://nvd.nist.gov/vuln/detail/CVE-2026-5650) | 5.5 | MEDIUM | CWE-200 | No | — | 3.85 | 2026-04-06 | A vulnerability was found in code-projects Online Application System for Admission 1.0. Impacted is an unknown function... |
+| [CVE-2026-5649](https://nvd.nist.gov/vuln/detail/CVE-2026-5649) | 5.3 | MEDIUM | CWE-74 | No | — | 3.71 | 2026-04-06 | A vulnerability has been found in code-projects Online Application System for Admission 1.0. This issue affects some unk... |
+| [CVE-2026-5648](https://nvd.nist.gov/vuln/detail/CVE-2026-5648) | 6.9 | MEDIUM | CWE-74 | No | — | 4.83 | 2026-04-06 | A flaw has been found in code-projects Simple Laundry System 1.0. This vulnerability affects unknown code of the file /u... |
+| [CVE-2026-5647](https://nvd.nist.gov/vuln/detail/CVE-2026-5647) | 4.8 | MEDIUM | CWE-79 | No | — | 3.36 | 2026-04-06 | A vulnerability was detected in code-projects Online Shoe Store 1.0. This affects an unknown part of the file /admin/adm... |
+| [CVE-2026-5646](https://nvd.nist.gov/vuln/detail/CVE-2026-5646) | 6.9 | MEDIUM | CWE-74 | No | — | 4.83 | 2026-04-06 | A security vulnerability has been detected in code-projects Easy Blog Site 1.0. Affected by this issue is some unknown f... |
+| [CVE-2026-5645](https://nvd.nist.gov/vuln/detail/CVE-2026-5645) | 6.9 | MEDIUM | CWE-74 | No | — | 4.83 | 2026-04-06 | A weakness has been identified in projectworlds Car Rental System 1.0. Affected by this vulnerability is an unknown func... |
 | [CVE-2026-5673](https://nvd.nist.gov/vuln/detail/CVE-2026-5673) | 5.6 | MEDIUM | CWE-125 | No | — | 3.92 | 2026-04-06 | A flaw was found in libtheora. This heap-based out-of-bounds read vulnerability exists within the AVI (Audio Video Inter... |
 | [CVE-2026-5644](https://nvd.nist.gov/vuln/detail/CVE-2026-5644) | 4.8 | MEDIUM | CWE-79 | No | — | 3.36 | 2026-04-06 | A security flaw has been discovered in Cyber-III Student-Management-System up to 1a938fa61e9f735078e9b291d2e6215b4942af3... |
 | [CVE-2026-5643](https://nvd.nist.gov/vuln/detail/CVE-2026-5643) | 4.8 | MEDIUM | CWE-79 | No | — | 3.36 | 2026-04-06 | A vulnerability was identified in Cyber-III Student-Management-System up to 1a938fa61e9f735078e9b291d2e6215b4942af3f. Th... |
