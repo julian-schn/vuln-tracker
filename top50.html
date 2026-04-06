@@ -11,7 +11,7 @@
     <header>
       <h1>vuln-tracker — Top 50</h1>
       <p class="subtitle">The 50 most important CVEs from the current and previous month, ranked by VAP score (70% CVSS + 30% EPSS)</p>
-      <p class="last-updated">Last updated: 2026-04-06 13:23 UTC</p>
+      <p class="last-updated">Last updated: 2026-04-06 14:55 UTC</p>
     </header>
     <nav>
       <a href="index.html">&larr; All CVEs</a>
@@ -123,8 +123,8 @@
         <td><span class="severity critical">CRITICAL</span></td>
         <td>CWE-913</td>
         <td>&nbsp;</td>
-        <td>5.2% <small>p89</small></td>
-        <td>7.09</td>
+        <td>5.8% <small>p90</small></td>
+        <td>7.10</td>
         <td><details><summary>NocoBase is an AI-powered no-code/low-code platform for building business applic...</summary><p>NocoBase is an AI-powered no-code/low-code platform for building business applications and enterprise solutions. Prior to version 2.0.28, NocoBase&#x27;s Workflow Script Node executes user-supplied JavaScript inside a Node.js vm sandbox with a custom require allowlist (controlled by WORKFLOW_SCRIPT_MODULES env var). However, the console object passed into the sandbox context exposes host-realm WritableWorkerStdio stream objects via console._stdout and console._stderr. An authenticated attacker can traverse the prototype chain to escape the sandbox and achieve Remote Code Execution as root. This issue has been patched in version 2.0.28.</p></details></td>
         <td>2026-03-31</td>
       </tr>
@@ -156,7 +156,7 @@
         <td><span class="severity critical">CRITICAL</span></td>
         <td>CWE-22</td>
         <td>&nbsp;</td>
-        <td>0.5% <small>p66</small></td>
+        <td>0.6% <small>p68</small></td>
         <td>7.02</td>
         <td><details><summary>Arbitrary File Write via Path Traversal upload to Remote Code Execution in SeppM...</summary><p>Arbitrary File Write via Path Traversal upload to Remote Code Execution in SeppMail User Web Interface. The affected feature is the large file transfer (LFT). This issue affects SeppMail: 15.0.2.1 and before</p></details></td>
         <td>2026-03-05</td>
@@ -167,8 +167,8 @@
         <td><span class="severity critical">CRITICAL</span></td>
         <td>CWE-20</td>
         <td>&nbsp;</td>
-        <td>0.5% <small>p65</small></td>
-        <td>7.01</td>
+        <td>0.5% <small>p66</small></td>
+        <td>7.02</td>
         <td><details><summary>NLTK versions &lt;=3.9.2 are vulnerable to arbitrary code execution due to improper...</summary><p>NLTK versions &lt;=3.9.2 are vulnerable to arbitrary code execution due to improper input validation in the StanfordSegmenter module. The module dynamically loads external Java .jar files without verification or sandboxing. An attacker can supply or replace the JAR file, enabling the execution of arbitrary Java bytecode at import time. This vulnerability can be exploited through methods such as model poisoning, MITM attacks, or dependency poisoning, leading to remote code execution. The issue arises from the direct execution of the JAR file via subprocess with unvalidated classpath input, allowing malicious classes to execute when loaded by the JVM.</p></details></td>
         <td>2026-03-05</td>
       </tr>
@@ -193,6 +193,17 @@
         <td>7.01</td>
         <td><details><summary>FastMCP is a Pythonic way to build MCP servers and clients. Prior to version 3.2...</summary><p>FastMCP is a Pythonic way to build MCP servers and clients. Prior to version 3.2.0, the OpenAPIProvider in FastMCP exposes internal APIs to MCP clients by parsing OpenAPI specifications. The RequestDirector class is responsible for constructing HTTP requests to the backend service. A vulnerability exists in the _build_url() method. When an OpenAPI operation defines path parameters (e.g., /api/v1/users/{user_id}), the system directly substitutes parameter values into the URL template string without URL-encoding. Subsequently, urllib.parse.urljoin() resolves the final URL. Since urljoin() interprets ../ sequences as directory traversal, an attacker controlling a path parameter can perform path traversal attacks to escape the intended API prefix and access arbitrary backend endpoints. This results in authenticated SSRF, as requests are sent with the authorization headers configured in the MCP provider. This issue has been patched in version 3.2.0.</p></details></td>
         <td>2026-04-02</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-21628" target="_blank" rel="noopener">CVE-2026-21628</a></td>
+        <td>10.0</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-434</td>
+        <td>&nbsp;</td>
+        <td>0.3% <small>p48</small></td>
+        <td>7.01</td>
+        <td><details><summary>A improperly secured file management feature allows uploads of dangerous data ty...</summary><p>A improperly secured file management feature allows uploads of dangerous data types for unauthenticated users, leading to remote code execution.</p></details></td>
+        <td>2026-03-05</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-31957" target="_blank" rel="noopener">CVE-2026-31957</a></td>
@@ -228,17 +239,6 @@
         <td>2026-03-30</td>
       </tr>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-21628" target="_blank" rel="noopener">CVE-2026-21628</a></td>
-        <td>10.0</td>
-        <td><span class="severity critical">CRITICAL</span></td>
-        <td>CWE-434</td>
-        <td>&nbsp;</td>
-        <td>0.2% <small>p46</small></td>
-        <td>7.01</td>
-        <td><details><summary>A improperly secured file management feature allows uploads of dangerous data ty...</summary><p>A improperly secured file management feature allows uploads of dangerous data types for unauthenticated users, leading to remote code execution.</p></details></td>
-        <td>2026-03-05</td>
-      </tr>
-      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-3611" target="_blank" rel="noopener">CVE-2026-3611</a></td>
         <td>10.0</td>
         <td><span class="severity critical">CRITICAL</span></td>
@@ -255,7 +255,7 @@
         <td><span class="severity critical">CRITICAL</span></td>
         <td>CWE-306</td>
         <td>&nbsp;</td>
-        <td>0.1% <small>p32</small></td>
+        <td>0.2% <small>p35</small></td>
         <td>7.00</td>
         <td><details><summary>FastGPT is an AI Agent building platform. Prior to version 4.14.9.5, the FastGPT...</summary><p>FastGPT is an AI Agent building platform. Prior to version 4.14.9.5, the FastGPT HTTP tools testing endpoint (/api/core/app/httpTools/runTool) is exposed without any authentication. This endpoint acts as a full HTTP proxy — it accepts a user-supplied baseUrl, toolPath, HTTP method, custom headers, and body, then makes a server-side HTTP request and returns the complete response to the caller. This issue has been patched in version 4.14.9.5.</p></details></td>
         <td>2026-03-31</td>
@@ -327,6 +327,17 @@
         <td>2026-03-11</td>
       </tr>
       <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-28353" target="_blank" rel="noopener">CVE-2026-28353</a></td>
+        <td>10.0</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-506</td>
+        <td>&nbsp;</td>
+        <td>0.1% <small>p19</small></td>
+        <td>7.00</td>
+        <td><details><summary>Trivy Vulnerability Scanner is a VS Code extension that helps find vulnerabiliti...</summary><p>Trivy Vulnerability Scanner is a VS Code extension that helps find vulnerabilities. In Trivy VSCode Extension version 1.8.12, which was distributed via OpenVSX marketplace was compromised and contained malicious code designed to leverage local AI coding agent to collect and exfiltrate sensitive information. Users using the affected artifact are advised to immediately remove it and rotate environment secrets. The malicious artifact has been removed from the marketplace. No other affected artifacts have been identified.</p></details></td>
+        <td>2026-03-05</td>
+      </tr>
+      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-26954" target="_blank" rel="noopener">CVE-2026-26954</a></td>
         <td>10.0</td>
         <td><span class="severity critical">CRITICAL</span></td>
@@ -347,17 +358,6 @@
         <td>7.00</td>
         <td><details><summary>A vulnerability was identified in Juju from version 3.2.0 until 3.6.19 and from ...</summary><p>A vulnerability was identified in Juju from version 3.2.0 until 3.6.19 and from version 4.0 until 4.0.4, where the internal Dqlite database cluster fails to perform proper TLS client and server authentication. Specifically, the Juju controller&#x27;s database endpoint does not validate client certificates when a new node attempts to join the cluster. An unauthenticated attacker with network reachability to the Juju controller&#x27;s Dqlite port can exploit this flaw to join the database cluster. Once joined, the attacker gains full read and write access to the underlying database, allowing for total data compromise.</p></details></td>
         <td>2026-04-01</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-28353" target="_blank" rel="noopener">CVE-2026-28353</a></td>
-        <td>10.0</td>
-        <td><span class="severity critical">CRITICAL</span></td>
-        <td>CWE-506</td>
-        <td>&nbsp;</td>
-        <td>0.1% <small>p18</small></td>
-        <td>7.00</td>
-        <td><details><summary>Trivy Vulnerability Scanner is a VS Code extension that helps find vulnerabiliti...</summary><p>Trivy Vulnerability Scanner is a VS Code extension that helps find vulnerabilities. In Trivy VSCode Extension version 1.8.12, which was distributed via OpenVSX marketplace was compromised and contained malicious code designed to leverage local AI coding agent to collect and exfiltrate sensitive information. Users using the affected artifact are advised to immediately remove it and rotate environment secrets. The malicious artifact has been removed from the marketplace. No other affected artifacts have been identified.</p></details></td>
-        <td>2026-03-05</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33494" target="_blank" rel="noopener">CVE-2026-33494</a></td>
@@ -387,7 +387,7 @@
         <td><span class="severity critical">CRITICAL</span></td>
         <td>CWE-918</td>
         <td>&nbsp;</td>
-        <td>0.1% <small>p16</small></td>
+        <td>0.0% <small>p13</small></td>
         <td>7.00</td>
         <td><details><summary>Server-side request forgery (ssrf) in Azure Databricks allows an unauthorized at...</summary><p>Server-side request forgery (ssrf) in Azure Databricks allows an unauthorized attacker to elevate privileges over a network.</p></details></td>
         <td>2026-04-03</td>
@@ -398,7 +398,7 @@
         <td><span class="severity critical">CRITICAL</span></td>
         <td>CWE-285</td>
         <td>&nbsp;</td>
-        <td>0.1% <small>p16</small></td>
+        <td>0.0% <small>p13</small></td>
         <td>7.00</td>
         <td><details><summary>Improper authorization in Microsoft Azure Kubernetes Service allows an unauthori...</summary><p>Improper authorization in Microsoft Azure Kubernetes Service allows an unauthorized attacker to elevate privileges over a network.</p></details></td>
         <td>2026-04-03</td>
@@ -409,7 +409,7 @@
         <td><span class="severity critical">CRITICAL</span></td>
         <td>CWE-285</td>
         <td>&nbsp;</td>
-        <td>0.1% <small>p16</small></td>
+        <td>0.0% <small>p13</small></td>
         <td>7.00</td>
         <td><details><summary>Improper authorization in Azure AI Foundry allows an unauthorized attacker to el...</summary><p>Improper authorization in Azure AI Foundry allows an unauthorized attacker to elevate privileges over a network.</p></details></td>
         <td>2026-04-03</td>
@@ -530,8 +530,8 @@
         <td><span class="severity critical">CRITICAL</span></td>
         <td>CWE-306</td>
         <td>&nbsp;</td>
-        <td>3.9% <small>p88</small></td>
-        <td>6.98</td>
+        <td>4.2% <small>p88</small></td>
+        <td>6.99</td>
         <td><details><summary>Nginx UI is a web user interface for the Nginx web server. Prior to version 2.3....</summary><p>Nginx UI is a web user interface for the Nginx web server. Prior to version 2.3.3, the /api/backup endpoint is accessible without authentication and discloses the encryption keys required to decrypt the backup in the X-Backup-Security response header. This allows an unauthenticated attacker to download a full system backup containing sensitive data (user credentials, session tokens, SSL private keys, Nginx configurations) and decrypt it immediately. This issue has been patched in version 2.3.3.</p></details></td>
         <td>2026-03-05</td>
       </tr>
