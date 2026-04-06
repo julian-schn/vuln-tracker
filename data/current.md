@@ -1,12 +1,31 @@
 # CVEs — April 2026
 
-_736 vulnerabilities_
+_755 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
+| [CVE-2026-5622](https://nvd.nist.gov/vuln/detail/CVE-2026-5622) | 6.3 | MEDIUM | CWE-320 | No | — | 4.41 | 2026-04-06 | A vulnerability was determined in hcengineering Huly Platform 0.7.382. Affected by this issue is some unknown functional... |
+| [CVE-2026-5621](https://nvd.nist.gov/vuln/detail/CVE-2026-5621) | 4.8 | MEDIUM | CWE-77 | No | — | 3.36 | 2026-04-06 | A vulnerability was found in ChrisChinchilla Vale-MCP up to 0.1.0. Affected by this vulnerability is an unknown function... |
+| [CVE-2026-5620](https://nvd.nist.gov/vuln/detail/CVE-2026-5620) | 5.3 | MEDIUM | CWE-74 | No | — | 3.71 | 2026-04-06 | A vulnerability has been found in itsourcecode Construction Management System 1.0. Affected is an unknown function of th... |
+| [CVE-2026-5619](https://nvd.nist.gov/vuln/detail/CVE-2026-5619) | 4.8 | MEDIUM | CWE-77 | No | — | 3.36 | 2026-04-06 | A flaw has been found in Braffolk mcp-summarization-functions up to 0.1.5. This impacts an unknown function of the file... |
+| [CVE-2026-5618](https://nvd.nist.gov/vuln/detail/CVE-2026-5618) | 6.3 | MEDIUM | CWE-918 | No | — | 4.41 | 2026-04-06 | A vulnerability was detected in kalcaddle kodbox up to 1.64. This affects an unknown function of the component shareMake... |
+| [CVE-2026-5616](https://nvd.nist.gov/vuln/detail/CVE-2026-5616) | 6.9 | MEDIUM | CWE-287 | No | — | 4.83 | 2026-04-06 | A security vulnerability has been detected in JeecgBoot 3.9.0/3.9.1. The impacted element is an unknown function of the... |
+| [CVE-2026-5615](https://nvd.nist.gov/vuln/detail/CVE-2026-5615) | 5.3 | MEDIUM | CWE-79 | No | — | 3.71 | 2026-04-06 | A weakness has been identified in givanz Vvvebjs up to 2.0.5. The affected element is an unknown function of the file up... |
+| [CVE-2026-5614](https://nvd.nist.gov/vuln/detail/CVE-2026-5614) | 7.4 | HIGH | CWE-119 | No | — | 5.18 | 2026-04-06 | A security flaw has been discovered in Belkin F9K1015 1.00.10. Impacted is the function formSetPassword of the file /gof... |
+| [CVE-2026-5613](https://nvd.nist.gov/vuln/detail/CVE-2026-5613) | 7.4 | HIGH | CWE-119 | No | — | 5.18 | 2026-04-06 | A vulnerability was identified in Belkin F9K1015 1.00.10. This issue affects the function formReboot of the file /goform... |
+| [CVE-2026-5612](https://nvd.nist.gov/vuln/detail/CVE-2026-5612) | 7.4 | HIGH | CWE-119 | No | — | 5.18 | 2026-04-06 | A vulnerability was determined in Belkin F9K1015 1.00.10. This vulnerability affects the function formWlEncrypt of the f... |
+| [CVE-2026-5611](https://nvd.nist.gov/vuln/detail/CVE-2026-5611) | 7.4 | HIGH | CWE-119 | No | — | 5.18 | 2026-04-06 | A vulnerability was found in Belkin F9K1015 1.00.10. This affects the function formCrossBandSwitch of the file /goform/f... |
+| [CVE-2026-5610](https://nvd.nist.gov/vuln/detail/CVE-2026-5610) | 7.4 | HIGH | CWE-119 | No | — | 5.18 | 2026-04-06 | A vulnerability has been found in Belkin F9K1015 1.00.10. Affected by this issue is the function formWISP5G of the file... |
+| [CVE-2026-5609](https://nvd.nist.gov/vuln/detail/CVE-2026-5609) | 7.4 | HIGH | CWE-119 | No | — | 5.18 | 2026-04-06 | A flaw has been found in Tenda i12 1.0.0.11(3862). Affected by this vulnerability is the function formwrlSSIDset of the... |
+| [CVE-2026-5608](https://nvd.nist.gov/vuln/detail/CVE-2026-5608) | 7.4 | HIGH | CWE-119 | No | — | 5.18 | 2026-04-06 | A vulnerability was detected in Belkin F9K1122 1.00.33. Affected is the function formWlanSetup of the file /goform/formW... |
+| [CVE-2026-5607](https://nvd.nist.gov/vuln/detail/CVE-2026-5607) | 5.3 | MEDIUM | CWE-918 | No | — | 3.71 | 2026-04-06 | A security vulnerability has been detected in imprvhub mcp-browser-agent up to 0.8.0. This impacts the function CallTool... |
+| [CVE-2026-5606](https://nvd.nist.gov/vuln/detail/CVE-2026-5606) | 5.3 | MEDIUM | CWE-74 | No | — | 3.71 | 2026-04-06 | A security flaw has been discovered in PHPGurukul Online Shopping Portal Project 2.1. The affected element is an unknown... |
+| [CVE-2026-5605](https://nvd.nist.gov/vuln/detail/CVE-2026-5605) | 7.4 | HIGH | CWE-119 | No | — | 5.18 | 2026-04-06 | A weakness has been identified in Tenda CH22 1.0.0.1. This affects the function formWrlExtraSet of the file /goform/WrlE... |
+| [CVE-2026-5604](https://nvd.nist.gov/vuln/detail/CVE-2026-5604) | 7.4 | HIGH | CWE-119 | No | — | 5.18 | 2026-04-05 | A security flaw has been discovered in Tenda CH22 1.0.0.1. The impacted element is the function formCertLocalPrecreate o... |
+| [CVE-2026-5603](https://nvd.nist.gov/vuln/detail/CVE-2026-5603) | 4.8 | MEDIUM | CWE-77 | No | — | 3.36 | 2026-04-05 | A vulnerability was identified in elgentos magento2-dev-mcp up to 1.0.2. The affected element is the function executeMag... |
+| [CVE-2026-5602](https://nvd.nist.gov/vuln/detail/CVE-2026-5602) | 4.8 | MEDIUM | CWE-77 | No | — | 3.36 | 2026-04-05 | A vulnerability was determined in Nor2-io heim-mcp up to 0.1.3. Impacted is the function registerTools of the file src/t... |
 | [CVE-2026-5601](https://nvd.nist.gov/vuln/detail/CVE-2026-5601) | 5.5 | MEDIUM | CWE-200 | No | — | 3.85 | 2026-04-05 | A vulnerability was found in Acrel Electrical Prepaid Cloud Platform 1.0. This issue affects some unknown processing of... |
 | [CVE-2026-5597](https://nvd.nist.gov/vuln/detail/CVE-2026-5597) | 5.3 | MEDIUM | CWE-22 | No | — | 3.71 | 2026-04-05 | A flaw has been found in griptape-ai griptape 0.19.4. This affects an unknown part of the file griptape\tools\computer\t... |
-| [CVE-2026-4272](https://nvd.nist.gov/vuln/detail/CVE-2026-4272) | 8.1 | HIGH | CWE-306 | No | — | 5.67 | 2026-04-05 | Missing Authentication for Critical Function vulnerability in Honeywell Handheld Scanners allows Authentication Abuse.Th... |
 | [CVE-2026-35679](https://nvd.nist.gov/vuln/detail/CVE-2026-35679) | 3.5 | LOW | CWE-358 | No | — | 2.45 | 2026-04-05 | Zcash zcashd before 6.12.0 allows invalid transactions to be accepted under certain conditions, which potentially could... |
 | [CVE-2026-5596](https://nvd.nist.gov/vuln/detail/CVE-2026-5596) | 5.3 | MEDIUM | CWE-74 | No | — | 3.71 | 2026-04-05 | A vulnerability was detected in griptape-ai griptape 0.19.4. Affected by this issue is some unknown functionality of the... |
 | [CVE-2019-25704](https://nvd.nist.gov/vuln/detail/CVE-2019-25704) | 8.8 | HIGH | CWE-89 | No | — | 6.16 | 2026-04-05 | Kados R10 GreenBee contains an SQL injection vulnerability that allows attackers to manipulate database queries by injec... |
