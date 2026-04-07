@@ -11,7 +11,7 @@
     <header>
       <h1>vuln-tracker — Top 50</h1>
       <p class="subtitle">The 50 most important CVEs from the current and previous month, ranked by VAP score (70% CVSS + 30% EPSS)</p>
-      <p class="last-updated">Last updated: 2026-04-07 13:43 UTC</p>
+      <p class="last-updated">Last updated: 2026-04-07 15:15 UTC</p>
     </header>
     <nav>
       <a href="index.html">&larr; All CVEs</a>
@@ -46,8 +46,8 @@
         <td><span class="severity critical">CRITICAL</span></td>
         <td>CWE-78</td>
         <td>&nbsp;</td>
-        <td>43.0% <small>p97</small></td>
-        <td>8.15</td>
+        <td>50.9% <small>p97</small></td>
+        <td>8.39</td>
         <td><details><summary>AVideo is a video-sharing Platform software. Prior to version 7.0, an unauthenti...</summary><p>AVideo is a video-sharing Platform software. Prior to version 7.0, an unauthenticated attacker can execute arbitrary OS commands on the server by injecting shell command substitution into the base64Url GET parameter. This can lead to full server compromise, data exfiltration (e.g., configuration secrets, internal keys, credentials), and service disruption. This issue has been patched in version 7.0.</p></details></td>
         <td>2026-03-06</td>
       </tr>
@@ -138,6 +138,17 @@
         <td>7.06</td>
         <td><details><summary>WWBN AVideo is an open source video platform. In versions up to and including 26...</summary><p>WWBN AVideo is an open source video platform. In versions up to and including 26.0, multiple vulnerabilities in AVideo&#x27;s CloneSite plugin chain together to allow a completely unauthenticated attacker to achieve remote code execution. The `clones.json.php` endpoint exposes clone secret keys without authentication, which can be used to trigger a full database dump via `cloneServer.json.php`. The dump contains admin password hashes stored as MD5, which are trivially crackable. With admin access, the attacker exploits an OS command injection in the rsync command construction in `cloneClient.json.php` to execute arbitrary system commands. Commit c85d076375fab095a14170df7ddb27058134d38c contains a patch.</p></details></td>
         <td>2026-03-23</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35616" target="_blank" rel="noopener">CVE-2026-35616</a></td>
+        <td>9.8</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-284</td>
+        <td><span class="kev-yes">&#10003;</span></td>
+        <td>6.0% <small>p90</small></td>
+        <td>7.04</td>
+        <td><details><summary>A improper access control vulnerability in Fortinet FortiClientEMS 7.4.5 through...</summary><p>A improper access control vulnerability in Fortinet FortiClientEMS 7.4.5 through 7.4.6 may allow an unauthenticated attacker to execute unauthorized code or commands via crafted requests.</p></details></td>
+        <td>2026-04-04</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-28775" target="_blank" rel="noopener">CVE-2026-28775</a></td>
@@ -305,6 +316,17 @@
         <td>2026-03-19</td>
       </tr>
       <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4370" target="_blank" rel="noopener">CVE-2026-4370</a></td>
+        <td>10.0</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-295</td>
+        <td>&nbsp;</td>
+        <td>0.1% <small>p21</small></td>
+        <td>7.00</td>
+        <td><details><summary>A vulnerability was identified in Juju from version 3.2.0 until 3.6.19 and from ...</summary><p>A vulnerability was identified in Juju from version 3.2.0 until 3.6.19 and from version 4.0 until 4.0.4, where the internal Dqlite database cluster fails to perform proper TLS client and server authentication. Specifically, the Juju controller&#x27;s database endpoint does not validate client certificates when a new node attempts to join the cluster. An unauthenticated attacker with network reachability to the Juju controller&#x27;s Dqlite port can exploit this flaw to join the database cluster. Once joined, the attacker gains full read and write access to the underlying database, allowing for total data compromise.</p></details></td>
+        <td>2026-04-01</td>
+      </tr>
+      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-27897" target="_blank" rel="noopener">CVE-2026-27897</a></td>
         <td>10.0</td>
         <td><span class="severity critical">CRITICAL</span></td>
@@ -338,15 +360,15 @@
         <td>2026-03-13</td>
       </tr>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4370" target="_blank" rel="noopener">CVE-2026-4370</a></td>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34208" target="_blank" rel="noopener">CVE-2026-34208</a></td>
         <td>10.0</td>
         <td><span class="severity critical">CRITICAL</span></td>
-        <td>CWE-295</td>
+        <td>CWE-693</td>
         <td>&nbsp;</td>
         <td>0.1% <small>p18</small></td>
         <td>7.00</td>
-        <td><details><summary>A vulnerability was identified in Juju from version 3.2.0 until 3.6.19 and from ...</summary><p>A vulnerability was identified in Juju from version 3.2.0 until 3.6.19 and from version 4.0 until 4.0.4, where the internal Dqlite database cluster fails to perform proper TLS client and server authentication. Specifically, the Juju controller&#x27;s database endpoint does not validate client certificates when a new node attempts to join the cluster. An unauthenticated attacker with network reachability to the Juju controller&#x27;s Dqlite port can exploit this flaw to join the database cluster. Once joined, the attacker gains full read and write access to the underlying database, allowing for total data compromise.</p></details></td>
-        <td>2026-04-01</td>
+        <td><details><summary>SandboxJS is a JavaScript sandboxing library. Prior to 0.8.36, SandboxJS blocks ...</summary><p>SandboxJS is a JavaScript sandboxing library. Prior to 0.8.36, SandboxJS blocks direct assignment to global objects (for example Math.random = ...), but this protection can be bypassed through an exposed callable constructor path: this.constructor.call(target, attackerObject). Because this.constructor resolves to the internal SandboxGlobal function and Function.prototype.call is allowed, attacker code can write arbitrary properties into host global objects and persist those mutations across sandbox instances in the same process. This vulnerability is fixed in 0.8.36.</p></details></td>
+        <td>2026-04-06</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33494" target="_blank" rel="noopener">CVE-2026-33494</a></td>
@@ -371,12 +393,23 @@
         <td>2026-03-10</td>
       </tr>
       <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-54328" target="_blank" rel="noopener">CVE-2025-54328</a></td>
+        <td>10.0</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-121</td>
+        <td>&nbsp;</td>
+        <td>0.1% <small>p17</small></td>
+        <td>7.00</td>
+        <td><details><summary>An issue was discovered in SMS in Samsung Mobile Processor, Wearable Processor, ...</summary><p>An issue was discovered in SMS in Samsung Mobile Processor, Wearable Processor, and Modem Exynos 980, 990, 850, 1080, 2100, 1280, 2200, 1330, 1380, 1480, 2400, 1580, 2500, 9110, W920, W930, W1000, Modem 5123, Modem 5300, and Modem 5400. A Stack-based Buffer Overflow occurs while parsing SMS RP-DATA messages.</p></details></td>
+        <td>2026-04-06</td>
+      </tr>
+      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33107" target="_blank" rel="noopener">CVE-2026-33107</a></td>
         <td>10.0</td>
         <td><span class="severity critical">CRITICAL</span></td>
         <td>CWE-918</td>
         <td>&nbsp;</td>
-        <td>0.0% <small>p13</small></td>
+        <td>0.1% <small>p15</small></td>
         <td>7.00</td>
         <td><details><summary>Server-side request forgery (ssrf) in Azure Databricks allows an unauthorized at...</summary><p>Server-side request forgery (ssrf) in Azure Databricks allows an unauthorized attacker to elevate privileges over a network.</p></details></td>
         <td>2026-04-03</td>
@@ -387,7 +420,7 @@
         <td><span class="severity critical">CRITICAL</span></td>
         <td>CWE-285</td>
         <td>&nbsp;</td>
-        <td>0.0% <small>p13</small></td>
+        <td>0.1% <small>p15</small></td>
         <td>7.00</td>
         <td><details><summary>Improper authorization in Microsoft Azure Kubernetes Service allows an unauthori...</summary><p>Improper authorization in Microsoft Azure Kubernetes Service allows an unauthorized attacker to elevate privileges over a network.</p></details></td>
         <td>2026-04-03</td>
@@ -398,10 +431,21 @@
         <td><span class="severity critical">CRITICAL</span></td>
         <td>CWE-285</td>
         <td>&nbsp;</td>
-        <td>0.0% <small>p13</small></td>
+        <td>0.1% <small>p15</small></td>
         <td>7.00</td>
         <td><details><summary>Improper authorization in Azure AI Foundry allows an unauthorized attacker to el...</summary><p>Improper authorization in Azure AI Foundry allows an unauthorized attacker to elevate privileges over a network.</p></details></td>
         <td>2026-04-03</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34976" target="_blank" rel="noopener">CVE-2026-34976</a></td>
+        <td>10.0</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>0.0% <small>p10</small></td>
+        <td>7.00</td>
+        <td><details><summary>Dgraph is an open source distributed GraphQL database. Prior to 25.3.1, the rest...</summary><p>Dgraph is an open source distributed GraphQL database. Prior to 25.3.1, the restoreTenant admin mutation is missing from the authorization middleware config (admin.go), making it completely unauthenticated. Unlike the similar restore mutation which requires Guardian-of-Galaxy authentication, restoreTenant executes with zero middleware. This mutation accepts attacker-controlled backup source URLs (including file:// for local filesystem access), S3/MinIO credentials, encryption key file paths, and Vault credential file paths. An unauthenticated attacker can overwrite the entire database, read server-side files, and perform SSRF. This vulnerability is fixed in 25.3.1.</p></details></td>
+        <td>2026-04-06</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-22557" target="_blank" rel="noopener">CVE-2026-22557</a></td>
@@ -514,37 +558,15 @@
         <td>2026-03-19</td>
       </tr>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-54328" target="_blank" rel="noopener">CVE-2025-54328</a></td>
-        <td>10.0</td>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-29014" target="_blank" rel="noopener">CVE-2026-29014</a></td>
+        <td>9.3</td>
         <td><span class="severity critical">CRITICAL</span></td>
-        <td>CWE-121</td>
+        <td>CWE-94</td>
         <td>&nbsp;</td>
-        <td>&mdash;</td>
+        <td>16.2% <small>p94</small></td>
         <td>7.00</td>
-        <td><details><summary>An issue was discovered in SMS in Samsung Mobile Processor, Wearable Processor, ...</summary><p>An issue was discovered in SMS in Samsung Mobile Processor, Wearable Processor, and Modem Exynos 980, 990, 850, 1080, 2100, 1280, 2200, 1330, 1380, 1480, 2400, 1580, 2500, 9110, W920, W930, W1000, Modem 5123, Modem 5300, and Modem 5400. A Stack-based Buffer Overflow occurs while parsing SMS RP-DATA messages.</p></details></td>
-        <td>2026-04-06</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34976" target="_blank" rel="noopener">CVE-2026-34976</a></td>
-        <td>10.0</td>
-        <td><span class="severity critical">CRITICAL</span></td>
-        <td>CWE-862</td>
-        <td>&nbsp;</td>
-        <td>&mdash;</td>
-        <td>7.00</td>
-        <td><details><summary>Dgraph is an open source distributed GraphQL database. Prior to 25.3.1, the rest...</summary><p>Dgraph is an open source distributed GraphQL database. Prior to 25.3.1, the restoreTenant admin mutation is missing from the authorization middleware config (admin.go), making it completely unauthenticated. Unlike the similar restore mutation which requires Guardian-of-Galaxy authentication, restoreTenant executes with zero middleware. This mutation accepts attacker-controlled backup source URLs (including file:// for local filesystem access), S3/MinIO credentials, encryption key file paths, and Vault credential file paths. An unauthenticated attacker can overwrite the entire database, read server-side files, and perform SSRF. This vulnerability is fixed in 25.3.1.</p></details></td>
-        <td>2026-04-06</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34208" target="_blank" rel="noopener">CVE-2026-34208</a></td>
-        <td>10.0</td>
-        <td><span class="severity critical">CRITICAL</span></td>
-        <td>CWE-693</td>
-        <td>&nbsp;</td>
-        <td>&mdash;</td>
-        <td>7.00</td>
-        <td><details><summary>SandboxJS is a JavaScript sandboxing library. Prior to 0.8.36, SandboxJS blocks ...</summary><p>SandboxJS is a JavaScript sandboxing library. Prior to 0.8.36, SandboxJS blocks direct assignment to global objects (for example Math.random = ...), but this protection can be bypassed through an exposed callable constructor path: this.constructor.call(target, attackerObject). Because this.constructor resolves to the internal SandboxGlobal function and Function.prototype.call is allowed, attacker code can write arbitrary properties into host global objects and persist those mutations across sandbox instances in the same process. This vulnerability is fixed in 0.8.36.</p></details></td>
-        <td>2026-04-06</td>
+        <td><details><summary>MetInfo CMS versions 7.9, 8.0, and 8.1 contain an unauthenticated PHP code injec...</summary><p>MetInfo CMS versions 7.9, 8.0, and 8.1 contain an unauthenticated PHP code injection vulnerability that allows remote attackers to execute arbitrary code by sending crafted requests with malicious PHP code. Attackers can exploit insufficient input neutralization in the execution path to achieve remote code execution and gain full control over the affected server.</p></details></td>
+        <td>2026-04-01</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-27944" target="_blank" rel="noopener">CVE-2026-27944</a></td>
@@ -567,28 +589,6 @@
         <td>6.96</td>
         <td><details><summary>A vulnerability allowing a Backup Viewer to perform remote code execution (RCE) ...</summary><p>A vulnerability allowing a Backup Viewer to perform remote code execution (RCE) as the postgres user.</p></details></td>
         <td>2026-03-12</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33396" target="_blank" rel="noopener">CVE-2026-33396</a></td>
-        <td>9.9</td>
-        <td><span class="severity critical">CRITICAL</span></td>
-        <td>CWE-78</td>
-        <td>&nbsp;</td>
-        <td>0.8% <small>p74</small></td>
-        <td>6.96</td>
-        <td><details><summary>OneUptime is an open-source monitoring and observability platform. Prior to vers...</summary><p>OneUptime is an open-source monitoring and observability platform. Prior to version 10.0.35, a low-privileged authenticated user (ProjectMember) can achieve remote command execution on the Probe container/host by abusing Synthetic Monitor Playwright script execution. Synthetic monitor code is executed in VMRunner.runCodeInNodeVM with a live Playwright page object in context. The sandbox relies on a denylist of blocked properties/methods, but it is incomplete. Specifically, _browserType and launchServer are not blocked, so attacker code can traverse `page.context().browser()._browserType.launchServer(...)` and spawn arbitrary processes. Version 10.0.35 contains a patch.</p></details></td>
-        <td>2026-03-26</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34838" target="_blank" rel="noopener">CVE-2026-34838</a></td>
-        <td>9.9</td>
-        <td><span class="severity critical">CRITICAL</span></td>
-        <td>CWE-502</td>
-        <td>&nbsp;</td>
-        <td>0.5% <small>p63</small></td>
-        <td>6.94</td>
-        <td><details><summary>Group-Office is an enterprise customer relationship management and groupware too...</summary><p>Group-Office is an enterprise customer relationship management and groupware tool. Prior to versions 6.8.156, 25.0.90, and 26.0.12, a vulnerability in the AbstractSettingsCollection model leads to insecure deserialization when these settings are loaded. By injecting a serialized FileCookieJar object into a setting string, an authenticated attacker can achieve Arbitrary File Write, leading directly to Remote Code Execution (RCE) on the server. This issue has been patched in versions 6.8.156, 25.0.90, and 26.0.12.</p></details></td>
-        <td>2026-04-02</td>
       </tr>
             </tbody>
           </table>
