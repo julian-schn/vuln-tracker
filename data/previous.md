@@ -1,6 +1,6 @@
 # CVEs — March 2026
 
-_5734 vulnerabilities_
+_5740 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
@@ -72,7 +72,9 @@ _5734 vulnerabilities_
 | [CVE-2026-34372](https://nvd.nist.gov/vuln/detail/CVE-2026-34372) | 5.3 | MEDIUM | CWE-288 | No | 0.0% | 3.71 | 2026-03-31 | Sulu is an open-source PHP content management system based on the Symfony framework. From versions 1.0.0 to before 2.6.2... |
 | [CVE-2026-34367](https://nvd.nist.gov/vuln/detail/CVE-2026-34367) | 7.6 | HIGH | CWE-918 | No | 0.0% | 5.32 | 2026-03-31 | InvoiceShelf is an open-source web & mobile app that helps track expenses, payments and create professional invoices and... |
 | [CVE-2026-34366](https://nvd.nist.gov/vuln/detail/CVE-2026-34366) | 7.6 | HIGH | CWE-918 | No | 0.0% | 5.32 | 2026-03-31 | InvoiceShelf is an open-source web & mobile app that helps track expenses, payments and create professional invoices and... |
+| [CVE-2026-1579](https://nvd.nist.gov/vuln/detail/CVE-2026-1579) | 9.3 | CRITICAL | CWE-306 | No | 0.1% | 6.51 | 2026-03-31 | The MAVLink communication protocol does not require cryptographic  authentication by default. When MAVLink 2.0 message s... |
 | [CVE-2026-5211](https://nvd.nist.gov/vuln/detail/CVE-2026-5211) | 7.4 | HIGH | CWE-119 | No | 0.0% | 5.18 | 2026-03-31 | A flaw has been found in D-Link DNS-120, DNR-202L, DNS-315L, DNS-320, DNS-320L, DNS-320LW, DNS-321, DNR-322L, DNS-323, D... |
+| [CVE-2026-4800](https://nvd.nist.gov/vuln/detail/CVE-2026-4800) | 8.1 | HIGH | CWE-94 | No | 0.1% | 5.67 | 2026-03-31 | Impact:  The fix for CVE-2021-23337 (https://github.com/advisories/GHSA-35jh-r3h4-6jhm) added validation for the variabl... |
 | [CVE-2026-34784](https://nvd.nist.gov/vuln/detail/CVE-2026-34784) | 8.2 | HIGH | CWE-285 | No | 0.0% | 5.74 | 2026-03-31 | Parse Server is an open source backend that can be deployed to any infrastructure that can run Node.js. Prior to version... |
 | [CVE-2026-34365](https://nvd.nist.gov/vuln/detail/CVE-2026-34365) | 7.6 | HIGH | CWE-918 | No | 0.0% | 5.32 | 2026-03-31 | InvoiceShelf is an open-source web & mobile app that helps track expenses, payments and create professional invoices and... |
 | [CVE-2026-34215](https://nvd.nist.gov/vuln/detail/CVE-2026-34215) | 8.2 | HIGH | CWE-200 | No | 0.0% | 5.74 | 2026-03-31 | Parse Server is an open source backend that can be deployed to any infrastructure that can run Node.js. Prior to version... |
@@ -82,6 +84,7 @@ _5734 vulnerabilities_
 | [CVE-2026-30290](https://nvd.nist.gov/vuln/detail/CVE-2026-30290) | 8.4 | HIGH | CWE-22 | No | 0.0% | 5.88 | 2026-03-31 | An arbitrary file overwrite vulnerability in InTouch Contacts & Caller ID APP v6.38.1 allows attackers to overwrite crit... |
 | [CVE-2026-30285](https://nvd.nist.gov/vuln/detail/CVE-2026-30285) | 9.8 | CRITICAL | CWE-22 | No | 0.1% | 6.86 | 2026-03-31 | An arbitrary file overwrite vulnerability in Zora: Post, Trade, Earn Crypto v2.60.0 allows attackers to overwrite critic... |
 | [CVE-2026-30280](https://nvd.nist.gov/vuln/detail/CVE-2026-30280) | 5.3 | MEDIUM | CWE-434 | No | 0.0% | 3.71 | 2026-03-31 | An arbitrary file overwrite vulnerability in RAREPROB SOLUTIONS PRIVATE LIMITED Video player Play All Videos v1.0.135 al... |
+| [CVE-2026-2950](https://nvd.nist.gov/vuln/detail/CVE-2026-2950) | 6.5 | MEDIUM | CWE-1321 | No | 0.1% | 4.55 | 2026-03-31 | Impact:  Lodash versions 4.17.23 and earlier are vulnerable to prototype pollution in the _.unset and _.omit functions.... |
 | [CVE-2026-5210](https://nvd.nist.gov/vuln/detail/CVE-2026-5210) | 6.9 | MEDIUM | CWE-73 | No | 0.1% | 4.83 | 2026-03-31 | A vulnerability was detected in SourceCodester Leave Application System 1.0. This affects an unknown part. Performing a... |
 | [CVE-2026-5209](https://nvd.nist.gov/vuln/detail/CVE-2026-5209) | 4.8 | MEDIUM | CWE-79 | No | 0.0% | 3.36 | 2026-03-31 | A security vulnerability has been detected in SourceCodester Leave Application System 1.0. Affected by this issue is som... |
 | [CVE-2026-3356](https://nvd.nist.gov/vuln/detail/CVE-2026-3356) | 9.3 | CRITICAL | CWE-306 | No | 0.1% | 6.51 | 2026-03-31 | The MS27102A Remote Spectrum Monitor is vulnerable to an authentication bypass that allows unauthorized users to access... |
@@ -215,6 +218,9 @@ _5734 vulnerabilities_
 | [CVE-2026-5195](https://nvd.nist.gov/vuln/detail/CVE-2026-5195) | 6.9 | MEDIUM | CWE-74 | No | 0.0% | 4.83 | 2026-03-31 | A flaw has been found in code-projects Student Membership System 1.0. This issue affects some unknown processing of the... |
 | [CVE-2026-3107](https://nvd.nist.gov/vuln/detail/CVE-2026-3107) | 9.3 | CRITICAL | CWE-79 | No | 0.1% | 6.51 | 2026-03-31 | Stored Cross-Site Scripting (XSS) in Teampass versions prior to 3.1.5.16, affecting the password manager's password impo... |
 | [CVE-2026-3106](https://nvd.nist.gov/vuln/detail/CVE-2026-3106) | 9.3 | CRITICAL | CWE-79 | No | 0.1% | 6.51 | 2026-03-31 | Blind Cross-Site Scripting (XSS) in Teampass, versions prior to 3.1.5.16, within the password manager login functionalit... |
+| [CVE-2025-41357](https://nvd.nist.gov/vuln/detail/CVE-2025-41357) | 5.1 | MEDIUM | CWE-79 | No | 0.1% | 3.57 | 2026-03-31 | Reflected Cross-Site Scripting (XSS) vulnerability in Anon Proxy Server v0.104. This vulnerability allows an attacker to... |
+| [CVE-2025-41356](https://nvd.nist.gov/vuln/detail/CVE-2025-41356) | 5.1 | MEDIUM | CWE-79 | No | 0.1% | 3.57 | 2026-03-31 | Reflected Cross-Site Scripting (XSS) vulnerability in Anon Proxy Server v0.104. This vulnerability allows an attacker to... |
+| [CVE-2025-41355](https://nvd.nist.gov/vuln/detail/CVE-2025-41355) | 5.1 | MEDIUM | CWE-79 | No | 0.1% | 3.57 | 2026-03-31 | Reflected Cross-Site Scripting (XSS) vulnerability in Anon Proxy Server  v0.104. This vulnerability allows an attacker t... |
 | [CVE-2025-10559](https://nvd.nist.gov/vuln/detail/CVE-2025-10559) | 7.1 | HIGH | CWE-22 | No | 0.0% | 4.97 | 2026-03-31 | A Path Traversal vulnerability affecting Factory Resource Management in DELMIA Factory Resource Manager from Release 3DE... |
 | [CVE-2025-10553](https://nvd.nist.gov/vuln/detail/CVE-2025-10553) | 8.7 | HIGH | CWE-79 | No | 0.0% | 6.09 | 2026-03-31 | A Stored Cross-site Scripting (XSS) vulnerability affecting Factory Resource Management in DELMIA Factory Resource Manag... |
 | [CVE-2025-10551](https://nvd.nist.gov/vuln/detail/CVE-2025-10551) | 8.7 | HIGH | CWE-79 | No | 0.0% | 6.09 | 2026-03-31 | A Stored Cross-site Scripting (XSS) vulnerability affecting Document Management in ENOVIA Collaborative Industry Innovat... |
@@ -2706,7 +2712,7 @@ _5734 vulnerabilities_
 | [CVE-2026-31967](https://nvd.nist.gov/vuln/detail/CVE-2026-31967) | 6.9 | MEDIUM | CWE-125 | No | 0.0% | 4.83 | 2026-03-18 | HTSlib is a library for reading and writing bioinformatics file formats. CRAM is a compressed format which stores DNA se... |
 | [CVE-2026-31966](https://nvd.nist.gov/vuln/detail/CVE-2026-31966) | 6.9 | MEDIUM | CWE-125 | No | 0.0% | 4.83 | 2026-03-18 | HTSlib is a library for reading and writing bioinformatics file formats. CRAM is a compressed format which stores DNA se... |
 | [CVE-2026-0866](https://nvd.nist.gov/vuln/detail/CVE-2026-0866) | 0.0 | NONE | N/A | No | — | 0.00 | 2026-03-18 | Rejected reason: After the publication of the PoC by the researcher and further analysis, we have determined that this i... |
-| [CVE-2026-3479](https://nvd.nist.gov/vuln/detail/CVE-2026-3479) | 2.1 | LOW | CWE-22 | No | 0.0% | 1.47 | 2026-03-18 | pkgutil.get_data() did not validate the resource argument as documented, allowing path traversals. |
+| [CVE-2026-3479](https://nvd.nist.gov/vuln/detail/CVE-2026-3479) | 0.0 | NONE | CWE-22 | No | 0.0% | 0.00 | 2026-03-18 | DISPUTED: The project has clarified that the documentation was incorrect, and that pkgutil.get_data() has the same secur... |
 | [CVE-2026-31965](https://nvd.nist.gov/vuln/detail/CVE-2026-31965) | 6.9 | MEDIUM | CWE-125 | No | 0.1% | 4.83 | 2026-03-18 | HTSlib is a library for reading and writing bioinformatics file formats. CRAM is a compressed format which stores DNA se... |
 | [CVE-2026-31964](https://nvd.nist.gov/vuln/detail/CVE-2026-31964) | 6.9 | MEDIUM | CWE-476 | No | 0.1% | 4.83 | 2026-03-18 | HTSlib is a library for reading and writing bioinformatics file formats. CRAM is a compressed format which stores DNA se... |
 | [CVE-2026-31963](https://nvd.nist.gov/vuln/detail/CVE-2026-31963) | 8.8 | HIGH | CWE-122 | No | 0.0% | 6.16 | 2026-03-18 | HTSlib is a library for reading and writing bioinformatics file formats. CRAM is a compressed format which stores DNA se... |
