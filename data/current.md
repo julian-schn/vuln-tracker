@@ -1,12 +1,16 @@
 # CVEs — April 2026
 
-_984 vulnerabilities_
+_988 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
-| [CVE-2026-5709](https://nvd.nist.gov/vuln/detail/CVE-2026-5709) | 7.7 | HIGH | CWE-78 | No | — | 5.39 | 2026-04-06 | Unsanitized input in the FileBrowser API in AWS Research and Engineering Studio (RES) version 2024.10 through 2025.12.01... |
-| [CVE-2026-5708](https://nvd.nist.gov/vuln/detail/CVE-2026-5708) | 8.7 | HIGH | CWE-915 | No | — | 6.09 | 2026-04-06 | Unsanitized control of user-modifiable attributes in the session creation component in AWS Research and Engineering Stud... |
-| [CVE-2026-5707](https://nvd.nist.gov/vuln/detail/CVE-2026-5707) | 8.7 | HIGH | CWE-78 | No | — | 6.09 | 2026-04-06 | Unsanitized input in an OS command in the virtual desktop session name handling in AWS Research and Engineering Studio (... |
+| [CVE-2025-13044](https://nvd.nist.gov/vuln/detail/CVE-2025-13044) | 6.2 | MEDIUM | CWE-340 | No | — | 4.34 | 2026-04-07 | IBM Concert 1.0.0 through 2.2.0 creates temporary files with predictable names, which allows local users to overwrite ar... |
+| [CVE-2026-5705](https://nvd.nist.gov/vuln/detail/CVE-2026-5705) | 5.3 | MEDIUM | CWE-79 | No | — | 3.71 | 2026-04-07 | A vulnerability was identified in code-projects Online Hotel Booking 1.0. Affected by this vulnerability is an unknown f... |
+| [CVE-2026-5692](https://nvd.nist.gov/vuln/detail/CVE-2026-5692) | 6.9 | MEDIUM | CWE-77 | No | — | 4.83 | 2026-04-07 | A vulnerability was found in Totolink A7100RU 7.4cu.2313_b20191024. This impacts the function setGameSpeedCfg of the fil... |
+| [CVE-2026-5691](https://nvd.nist.gov/vuln/detail/CVE-2026-5691) | 6.9 | MEDIUM | CWE-77 | No | — | 4.83 | 2026-04-06 | A vulnerability has been found in Totolink A7100RU 7.4cu.2313_b20191024. This affects the function setFirewallType of th... |
+| [CVE-2026-5690](https://nvd.nist.gov/vuln/detail/CVE-2026-5690) | 6.9 | MEDIUM | CWE-77 | No | — | 4.83 | 2026-04-06 | A flaw has been found in Totolink A7100RU 7.4cu.2313_b20191024. The impacted element is the function setRemoteCfg of the... |
+| [CVE-2026-5689](https://nvd.nist.gov/vuln/detail/CVE-2026-5689) | 6.9 | MEDIUM | CWE-77 | No | — | 4.83 | 2026-04-06 | A vulnerability was detected in Totolink A7100RU 7.4cu.2313_b20191024. The affected element is the function setNtpCfg of... |
+| [CVE-2026-5688](https://nvd.nist.gov/vuln/detail/CVE-2026-5688) | 6.9 | MEDIUM | CWE-77 | No | — | 4.83 | 2026-04-06 | A security vulnerability has been detected in Totolink A7100RU 7.4cu.2313_b20191024. Impacted is the function setDdnsCfg... |
 | [CVE-2026-5687](https://nvd.nist.gov/vuln/detail/CVE-2026-5687) | 7.4 | HIGH | CWE-119 | No | — | 5.18 | 2026-04-06 | A weakness has been identified in Tenda CX12L 16.03.53.12. This issue affects the function fromNatStaticSetting of the f... |
 | [CVE-2026-5686](https://nvd.nist.gov/vuln/detail/CVE-2026-5686) | 7.4 | HIGH | CWE-119 | No | — | 5.18 | 2026-04-06 | A security flaw has been discovered in Tenda CX12L 16.03.53.12. This vulnerability affects the function fromRouteStatic... |
 | [CVE-2026-5685](https://nvd.nist.gov/vuln/detail/CVE-2026-5685) | 7.4 | HIGH | CWE-119 | No | — | 5.18 | 2026-04-06 | A vulnerability was identified in Tenda CX12L 16.03.53.12. This affects the function fromAddressNat of the file /goform/... |
