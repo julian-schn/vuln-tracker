@@ -11,7 +11,7 @@
     <header>
       <h1>vuln-tracker</h1>
       <p class="subtitle">CVEs from the National Vulnerability Database — current and previous month</p>
-      <p class="last-updated">Last updated: 2026-04-07 20:55 UTC</p>
+      <p class="last-updated">Last updated: 2026-04-07 22:45 UTC</p>
     </header>
     <nav>
       <a href="top50.html">&#9733; Top 50</a>
@@ -25,7 +25,7 @@
     </nav>
     <main>
     <section>
-      <h2>Current Month — April 2026 <span class="count">(1214)</span></h2>
+      <h2>Current Month — April 2026 <span class="count">(1244)</span></h2>
       <div class="table-wrapper">
         <table>
           <thead>
@@ -42,6 +42,507 @@
             </tr>
           </thead>
           <tbody>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4065" target="_blank" rel="noopener">CVE-2026-4065</a></td>
+        <td>5.4</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.78</td>
+        <td><details><summary>The Smart Slider 3 plugin for WordPress is vulnerable to unauthorized access and...</summary><p>The Smart Slider 3 plugin for WordPress is vulnerable to unauthorized access and modification of data due to missing capability checks on multiple wp_ajax_smart-slider3 controller actions in all versions up to, and including, 3.5.1.33. The display_admin_ajax() method does not call checkForCap() (which requires unfiltered_html capability), and several controller actions only validate the nonce (validateToken()) without calling validatePermission(). This makes it possible for authenticated attackers, with Contributor-level access and above, to enumerate slider metadata and create, modify, and delete image storage records by obtaining the nextend_nonce exposed on post editor pages.</p></details></td>
+        <td>2026-04-07</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39937" target="_blank" rel="noopener">CVE-2026-39937</a></td>
+        <td>8.8</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-212</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.16</td>
+        <td><details><summary>Improper removal of sensitive information before storage or transfer vulnerabili...</summary><p>Improper removal of sensitive information before storage or transfer vulnerability in The Wikimedia Foundation Mediawiki - CentralAuth Extension allows Resource Leak Exposure.This issue affects non release branches.</p></details></td>
+        <td>2026-04-07</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39934" target="_blank" rel="noopener">CVE-2026-39934</a></td>
+        <td>6.9</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-835</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.83</td>
+        <td><details><summary>Loop with unreachable exit condition (&#x27;infinite loop&#x27;) vulnerability in The Wiki...</summary><p>Loop with unreachable exit condition (&#x27;infinite loop&#x27;) vulnerability in The Wikimedia Foundation Mediawiki - GrowthExperiments Extension allows Leveraging Time-of-Check and Time-of-Use (TOCTOU) Race Conditions.This issue affects Mediawiki - GrowthExperiments Extension: 1.45.2, 1.44.4, 1.43.7.</p></details></td>
+        <td>2026-04-07</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39933" target="_blank" rel="noopener">CVE-2026-39933</a></td>
+        <td>10.0</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>7.00</td>
+        <td><details><summary>Improper neutralization of input during web page generation (&#x27;cross-site scripti...</summary><p>Improper neutralization of input during web page generation (&#x27;cross-site scripting&#x27;) vulnerability in The Wikimedia Foundation Mediawiki - GlobalWatchlist Extension allows Cross-Site Scripting (XSS).This issue affects non release branches.</p></details></td>
+        <td>2026-04-07</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39847" target="_blank" rel="noopener">CVE-2026-39847</a></td>
+        <td>9.1</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-22</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.37</td>
+        <td><details><summary>Emmett is a full-stack Python web framework designed with simplicity. From 2.5.0...</summary><p>Emmett is a full-stack Python web framework designed with simplicity. From 2.5.0 to before 2.8.1, the RSGI static handler for Emmett&#x27;s internal assets (/__emmett__ paths) is vulnerable to path traversal attacks. An attacker can use ../ sequences (eg /__emmett__/../rsgi/handlers.py) to read arbitrary files outside the assets directory. This vulnerability is fixed in 2.8.1.</p></details></td>
+        <td>2026-04-07</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39846" target="_blank" rel="noopener">CVE-2026-39846</a></td>
+        <td>9.0</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.30</td>
+        <td><details><summary>SiYuan is a personal knowledge management system. Prior to 3.6.4, a malicious no...</summary><p>SiYuan is a personal knowledge management system. Prior to 3.6.4, a malicious note synced to another user can trigger remote code execution in the SiYuan Electron desktop client. The root cause is that table caption content is stored without safe escaping and later unescaped into rendered HTML, creating a stored XSS sink. Because the desktop renderer runs with nodeIntegration enabled and contextIsolation disabled, attacker-controlled JavaScript executes with access to Node.js APIs. In practice, an attacker can import a crafted note into a synced workspace, wait for the victim to sync, and achieve code execution when the victim opens the note. This vulnerability is fixed in 3.6.4.</p></details></td>
+        <td>2026-04-07</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35568" target="_blank" rel="noopener">CVE-2026-35568</a></td>
+        <td>7.6</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-346</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.32</td>
+        <td><details><summary>MCP Java SDK is the official Java SDK for Model Context Protocol servers and cli...</summary><p>MCP Java SDK is the official Java SDK for Model Context Protocol servers and clients. Prior to 1.0.0, the java-sdk contains a DNS rebinding vulnerability. This vulnerability allows an attacker to access a locally or network-private java-sdk MCP server via a victims browser that is either local, or network adjacent. This allows an attacker to make any tool call to the server as if they were a locally running MCP connected AI agent. This vulnerability is fixed in 1.0.0.</p></details></td>
+        <td>2026-04-07</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35406" target="_blank" rel="noopener">CVE-2026-35406</a></td>
+        <td>6.2</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-400</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.34</td>
+        <td><details><summary>Aardvark-dns is an authoritative dns server for A/AAAA container records. From 1...</summary><p>Aardvark-dns is an authoritative dns server for A/AAAA container records. From 1.16.0 to 1.17.0, a truncated TCP DNS query followed by a connection reset causes aardvark-dns to enter an unrecoverable infinite error loop at 100% CPU. This vulnerability is fixed in 1.17.1.</p></details></td>
+        <td>2026-04-07</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34781" target="_blank" rel="noopener">CVE-2026-34781</a></td>
+        <td>2.8</td>
+        <td><span class="severity low">LOW</span></td>
+        <td>CWE-476</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>1.96</td>
+        <td><details><summary>Electron is a framework for writing cross-platform desktop applications using Ja...</summary><p>Electron is a framework for writing cross-platform desktop applications using JavaScript, HTML and CSS. Prior to 39.8.5, 40.8.5, 41.1.0, and 42.0.0-alpha.5, apps that call clipboard.readImage() may be vulnerable to a denial of service. If the system clipboard contains image data that fails to decode, the resulting null bitmap is passed unchecked to image construction, triggering a controlled abort and crashing the process. Apps are only affected if they call clipboard.readImage(). Apps that do not read images from the clipboard are not affected. This issue does not allow memory corruption or code execution. This vulnerability is fixed in 39.8.5, 40.8.5, 41.1.0, and 42.0.0-alpha.5.</p></details></td>
+        <td>2026-04-07</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34765" target="_blank" rel="noopener">CVE-2026-34765</a></td>
+        <td>6.0</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-668</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.20</td>
+        <td><details><summary>Electron is a framework for writing cross-platform desktop applications using Ja...</summary><p>Electron is a framework for writing cross-platform desktop applications using JavaScript, HTML and CSS. Prior to 39.8.5, 40.8.5, 41.1.0, and 42.0.0-alpha.5, when a renderer calls window.open() with a target name, Electron did not correctly scope the named-window lookup to the opener&#x27;s browsing context group. A renderer could navigate an existing child window that was opened by a different, unrelated renderer if both used the same target name. If that existing child was created with more permissive webPreferences (via setWindowOpenHandler&#x27;s overrideBrowserWindowOptions), content loaded by the second renderer inherits those permissions. Apps are only affected if they open multiple top-level windows with differing trust levels and use setWindowOpenHandler to grant child windows elevated webPreferences such as a privileged preload script. Apps that do not elevate child window privileges, or that use a single top-level window, are not affected. Apps that additionally grant nodeIntegration: true or sandbox: false to child windows (contrary to the security recommendations) may be exposed to arbitrary code execution. This vulnerability is fixed in 39.8.5, 40.8.5, 41.1.0, and 42.0.0-alpha.5.</p></details></td>
+        <td>2026-04-07</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34582" target="_blank" rel="noopener">CVE-2026-34582</a></td>
+        <td>8.7</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-841</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.09</td>
+        <td><details><summary>Botan is a C++ cryptography library. Prior to version 3.11.1, the TLS 1.3 implem...</summary><p>Botan is a C++ cryptography library. Prior to version 3.11.1, the TLS 1.3 implementation allowed ApplicationData records to be processed prior to the Finished message being received. A server which is attempting to enforce client authentication via certificates can by bypassed by a client which entirely omits Certificate, CertificateVerify, and the Finished message and instead sends application data records. This vulnerability is fixed in 3.11.1.</p></details></td>
+        <td>2026-04-07</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34580" target="_blank" rel="noopener">CVE-2026-34580</a></td>
+        <td>9.3</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-295</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.51</td>
+        <td><details><summary>Botan is a C++ cryptography library. In 3.11.0, the function Certificate_Store::...</summary><p>Botan is a C++ cryptography library. In 3.11.0, the function Certificate_Store::certificate_known had a misleading name; it would return true if any certificate in the store had a DN (and subject key identifier, if set) matching that of the argument. It did not check that the cert it found and the cert it was passed were actually the same certificate. In 3.11.0 an extension of path validation logic was made which assumed that certificate_known only returned true if the certificates were in fact identical. The impact is that if an end entity certificate is presented, and its DN (and subject key identifier, if set) match that of any trusted root, the end entity certificate is accepted immediately as if it itself were a trusted root. , This vulnerability is fixed in 3.11.1.</p></details></td>
+        <td>2026-04-07</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34371" target="_blank" rel="noopener">CVE-2026-34371</a></td>
+        <td>6.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-22</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.41</td>
+        <td><details><summary>LibreChat is a ChatGPT clone with additional features. Prior to 0.8.4, LibreChat...</summary><p>LibreChat is a ChatGPT clone with additional features. Prior to 0.8.4, LibreChat trusts the name field returned by the execute_code sandbox when persisting code-generated artifacts. On deployments using the default local file strategy, a malicious artifact filename containing traversal sequences (for example, ../../../../../app/client/dist/poc.txt) is concatenated into the server-side destination path and written with fs.writeFileSync() without sanitization. This gives any user who can trigger execute_code an arbitrary file write primitive as the LibreChat server user. This vulnerability is fixed in 0.8.4.</p></details></td>
+        <td>2026-04-07</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34079" target="_blank" rel="noopener">CVE-2026-34079</a></td>
+        <td>8.7</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-22</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.09</td>
+        <td><details><summary>Flatpak is a Linux application sandboxing and distribution framework. Prior to 1...</summary><p>Flatpak is a Linux application sandboxing and distribution framework. Prior to 1.16.4, the caching for ld.so removes outdated cache files without properly checking that the app controlled path to the outdated cache is in the cache directory. This allows Flatpak apps  to delete arbitrary files on the host. This vulnerability is fixed in 1.16.4.</p></details></td>
+        <td>2026-04-07</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34078" target="_blank" rel="noopener">CVE-2026-34078</a></td>
+        <td>9.3</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-61</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.51</td>
+        <td><details><summary>Flatpak is a Linux application sandboxing and distribution framework. Prior to 1...</summary><p>Flatpak is a Linux application sandboxing and distribution framework. Prior to 1.16.4, the Flatpak portal accepts paths in the sandbox-expose options which can be app-controlled symlinks pointing at arbitrary paths. Flatpak run mounts the resolved host path in the sandbox. This gives apps access to all host files and can be used as a primitive to gain code execution in the host context. This vulnerability is fixed in 1.16.4.</p></details></td>
+        <td>2026-04-07</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-31790" target="_blank" rel="noopener">CVE-2026-31790</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-754</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Issue summary: Applications using RSASVE key encapsulation to establish
+a secret...</summary><p>Issue summary: Applications using RSASVE key encapsulation to establish
+a secret encryption key can send contents of an uninitialized memory buffer to
+a malicious peer.
+
+Impact summary: The uninitialized buffer might contain sensitive data from the
+previous execution of the application process which leads to sensitive data
+leakage to an attacker.
+
+RSA_public_encrypt() returns the number of bytes written on success and -1
+on error. The affected code tests only whether the return value is non-zero.
+As a result, if RSA encryption fails, encapsulation can still return success to
+the caller, set the output lengths, and leave the caller to use the contents of
+the ciphertext buffer as if a valid KEM ciphertext had been produced.
+
+If applications use EVP_PKEY_encapsulate() with RSA/RSASVE on an
+attacker-supplied invalid RSA public key without first validating that key,
+then this may cause stale or uninitialized contents of the caller-provided
+ciphertext buffer to be disclosed to the attacker in place of the KEM
+ciphertext.
+
+As a workaround calling EVP_PKEY_public_check() or
+EVP_PKEY_public_check_quick() before EVP_PKEY_encapsulate() will mitigate
+the issue.
+
+The FIPS modules in 3.6, 3.5, 3.4, 3.3, 3.1 and 3.0 are affected by this issue.</p></details></td>
+        <td>2026-04-07</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-31789" target="_blank" rel="noopener">CVE-2026-31789</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-787</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Issue summary: Converting an excessively large OCTET STRING value to
+a hexadecim...</summary><p>Issue summary: Converting an excessively large OCTET STRING value to
+a hexadecimal string leads to a heap buffer overflow on 32 bit platforms.
+
+Impact summary: A heap buffer overflow may lead to a crash or possibly
+an attacker controlled code execution or other undefined behavior.
+
+If an attacker can supply a crafted X.509 certificate with an excessively
+large OCTET STRING value in extensions such as the Subject Key Identifier
+(SKID) or Authority Key Identifier (AKID) which are being converted to hex,
+the size of the buffer needed for the result is calculated as multiplication
+of the input length by 3. On 32 bit platforms, this multiplication may overflow
+resulting in the allocation of a smaller buffer and a heap buffer overflow.
+
+Applications and services that print or log contents of untrusted X.509
+certificates are vulnerable to this issue. As the certificates would have
+to have sizes of over 1 Gigabyte, printing or logging such certificates
+is a fairly unlikely operation and only 32 bit platforms are affected,
+this issue was assigned Low severity.
+
+The FIPS modules in 3.6, 3.5, 3.4, 3.3 and 3.0 are not affected by this
+issue, as the affected code is outside the OpenSSL FIPS module boundary.</p></details></td>
+        <td>2026-04-07</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-28390" target="_blank" rel="noopener">CVE-2026-28390</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-476</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Issue summary: During processing of a crafted CMS EnvelopedData message
+with Key...</summary><p>Issue summary: During processing of a crafted CMS EnvelopedData message
+with KeyTransportRecipientInfo a NULL pointer dereference can happen.
+
+Impact summary: Applications that process attacker-controlled CMS data may
+crash before authentication or cryptographic operations occur resulting in
+Denial of Service.
+
+When a CMS EnvelopedData message that uses KeyTransportRecipientInfo with
+RSA-OAEP encryption is processed, the optional parameters field of
+RSA-OAEP SourceFunc algorithm identifier is examined without checking
+for its presence. This results in a NULL pointer dereference if the field
+is missing.
+
+Applications and services that call CMS_decrypt() on untrusted input
+(e.g., S/MIME processing or CMS-based protocols) are vulnerable.
+
+The FIPS modules in 3.6, 3.5, 3.4, 3.3 and 3.0 are not affected by this
+issue, as the affected code is outside the OpenSSL FIPS module boundary.</p></details></td>
+        <td>2026-04-07</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-28389" target="_blank" rel="noopener">CVE-2026-28389</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-476</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Issue summary: During processing of a crafted CMS EnvelopedData message
+with Key...</summary><p>Issue summary: During processing of a crafted CMS EnvelopedData message
+with KeyAgreeRecipientInfo a NULL pointer dereference can happen.
+
+Impact summary: Applications that process attacker-controlled CMS data may
+crash before authentication or cryptographic operations occur resulting in
+Denial of Service.
+
+When a CMS EnvelopedData message that uses KeyAgreeRecipientInfo is
+processed, the optional parameters field of KeyEncryptionAlgorithmIdentifier
+is examined without checking for its presence. This results in a NULL
+pointer dereference if the field is missing.
+
+Applications and services that call CMS_decrypt() on untrusted input
+(e.g., S/MIME processing or CMS-based protocols) are vulnerable.
+
+The FIPS modules in 3.6, 3.5, 3.4, 3.3 and 3.0 are not affected by this
+issue, as the affected code is outside the OpenSSL FIPS module boundary.</p></details></td>
+        <td>2026-04-07</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-28388" target="_blank" rel="noopener">CVE-2026-28388</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-476</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Issue summary: When a delta CRL that contains a Delta CRL Indicator extension
+is...</summary><p>Issue summary: When a delta CRL that contains a Delta CRL Indicator extension
+is processed a NULL pointer dereference might happen if the required CRL
+Number extension is missing.
+
+Impact summary: A NULL pointer dereference can trigger a crash which
+leads to a Denial of Service for an application.
+
+When CRL processing and delta CRL processing is enabled during X.509
+certificate verification, the delta CRL processing does not check
+whether the CRL Number extension is NULL before dereferencing it.
+When a malformed delta CRL file is being processed, this parameter
+can be NULL, causing a NULL pointer dereference.
+
+Exploiting this issue requires the X509_V_FLAG_USE_DELTAS flag to be enabled in
+the verification context, the certificate being verified to contain a
+freshestCRL extension or the base CRL to have the EXFLAG_FRESHEST flag set, and
+an attacker to provide a malformed CRL to an application that processes it.
+
+The vulnerability is limited to Denial of Service and cannot be escalated to
+achieve code execution or memory disclosure. For that reason the issue was
+assessed as Low severity according to our Security Policy.
+
+The FIPS modules in 3.6, 3.5, 3.4, 3.3 and 3.0 are not affected by this issue,
+as the affected code is outside the OpenSSL FIPS module boundary.</p></details></td>
+        <td>2026-04-07</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-28387" target="_blank" rel="noopener">CVE-2026-28387</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-416</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Issue summary: An uncommon configuration of clients performing DANE TLSA-based
+s...</summary><p>Issue summary: An uncommon configuration of clients performing DANE TLSA-based
+server authentication, when paired with uncommon server DANE TLSA records, may
+result in a use-after-free and/or double-free on the client side.
+
+Impact summary: A use after free can have a range of potential consequences
+such as the corruption of valid data, crashes or execution of arbitrary code.
+
+However, the issue only affects clients that make use of TLSA records with both
+the PKIX-TA(0/PKIX-EE(1) certificate usages and the DANE-TA(2) certificate
+usage.
+
+By far the most common deployment of DANE is in SMTP MTAs for which RFC7672
+recommends that clients treat as &#x27;unusable&#x27; any TLSA records that have the PKIX
+certificate usages.  These SMTP (or other similar) clients are not vulnerable
+to this issue.  Conversely, any clients that support only the PKIX usages, and
+ignore the DANE-TA(2) usage are also not vulnerable.
+
+The client would also need to be communicating with a server that publishes a
+TLSA RRset with both types of TLSA records.
+
+No FIPS modules are affected by this issue, the problem code is outside the
+FIPS module boundary.</p></details></td>
+        <td>2026-04-07</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-28386" target="_blank" rel="noopener">CVE-2026-28386</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-125</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Issue summary: Applications using AES-CFB128 encryption or decryption on
+systems...</summary><p>Issue summary: Applications using AES-CFB128 encryption or decryption on
+systems with AVX-512 and VAES support can trigger an out-of-bounds read
+of up to 15 bytes when processing partial cipher blocks.
+
+Impact summary: This out-of-bounds read may trigger a crash which leads to
+Denial of Service for an application if the input buffer ends at a memory
+page boundary and the following page is unmapped. There is no information
+disclosure as the over-read bytes are not written to output.
+
+The vulnerable code path is only reached when processing partial blocks
+(when a previous call left an incomplete block and the current call provides
+fewer bytes than needed to complete it). Additionally, the input buffer
+must be positioned at a page boundary with the following page unmapped.
+CFB mode is not used in TLS/DTLS protocols, which use CBC, GCM, CCM, or
+ChaCha20-Poly1305 instead. For these reasons the issue was assessed as
+Low severity according to our Security Policy.
+
+Only x86-64 systems with AVX-512 and VAES instruction support are affected.
+Other architectures and systems without VAES support use different code
+paths that are not affected.
+
+OpenSSL FIPS module in 3.6 version is affected by this issue.</p></details></td>
+        <td>2026-04-07</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39401" target="_blank" rel="noopener">CVE-2026-39401</a></td>
+        <td>5.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.71</td>
+        <td><details><summary>Cronicle is a multi-server task scheduler and runner, with a web based front-end...</summary><p>Cronicle is a multi-server task scheduler and runner, with a web based front-end UI. Prior to 0.9.111, jb child processes can include an update_event key in their JSON output. The server applies this directly to the parent event&#x27;s stored configuration without any authorization check. A low-privilege user who can create and run events can modify any event property, including webhook URLs and notification emails. This vulnerability is fixed in 0.9.111.</p></details></td>
+        <td>2026-04-07</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39400" target="_blank" rel="noopener">CVE-2026-39400</a></td>
+        <td>5.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.71</td>
+        <td><details><summary>Cronicle is a multi-server task scheduler and runner, with a web based front-end...</summary><p>Cronicle is a multi-server task scheduler and runner, with a web based front-end UI. Prior to 0.9.111, a non-admin user with create_events and run_events privileges can inject arbitrary JavaScript through job output fields (html.content, html.title, table.header, table.rows, table.caption). The server stores this data without sanitization, and the client renders it via innerHTML on the Job Details page. This vulnerability is fixed in 0.9.111.</p></details></td>
+        <td>2026-04-07</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39397" target="_blank" rel="noopener">CVE-2026-39397</a></td>
+        <td>9.4</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.58</td>
+        <td><details><summary>@delmaredigital/payload-puck is a PayloadCMS plugin for integrating Puck visual ...</summary><p>@delmaredigital/payload-puck is a PayloadCMS plugin for integrating Puck visual page builder. Prior to 0.6.23, all /api/puck/* CRUD endpoint handlers registered by createPuckPlugin() called Payload&#x27;s local API with the default overrideAccess: true, bypassing all collection-level access control. The access option passed to createPuckPlugin() and any access rules defined on Puck-registered collections were silently ignored on these endpoints. This vulnerability is fixed in 0.6.23.</p></details></td>
+        <td>2026-04-07</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35533" target="_blank" rel="noopener">CVE-2026-35533</a></td>
+        <td>7.7</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-284</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.39</td>
+        <td><details><summary>mise manages dev tools like node, python, cmake, and terraform. From 2026.2.18 t...</summary><p>mise manages dev tools like node, python, cmake, and terraform. From 2026.2.18 through 2026.4.5, mise loads trust-control settings from a local project .mise.toml before the trust check runs. An attacker who can place a malicious .mise.toml in a repository can make that same file appear trusted and then reach dangerous directives such as [env] _.source, templates, hooks, or tasks.</p></details></td>
+        <td>2026-04-07</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34080" target="_blank" rel="noopener">CVE-2026-34080</a></td>
+        <td>6.8</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-1289</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.76</td>
+        <td><details><summary>xdg-dbus-proxy is a filtering proxy for D-Bus connections. Prior to 0.1.7, a pol...</summary><p>xdg-dbus-proxy is a filtering proxy for D-Bus connections. Prior to 0.1.7, a policy parser vulnerability allows bypassing eavesdrop restrictions. The proxy checks for eavesdrop=true in policy rules but fails to handle eavesdrop =&#x27;true&#x27; (with a space before the equals sign) and similar cases. Clients can intercept D-Bus messages they should not have access to. This vulnerability is fixed in 0.1.7.</p></details></td>
+        <td>2026-04-07</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34045" target="_blank" rel="noopener">CVE-2026-34045</a></td>
+        <td>8.2</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-209</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.74</td>
+        <td><details><summary>Podman Desktop is a graphical tool for developing on containers and Kubernetes. ...</summary><p>Podman Desktop is a graphical tool for developing on containers and Kubernetes. Prior to 1.26.2, an unauthenticated HTTP server exposed by Podman Desktop allows any network attacker to remotely trigger denial-of-service conditions and extract sensitive information. By abusing missing connection limits and timeouts, an attacker can exhaust file descriptors and kernel memory, leading to application crash or full host freeze. Additionally, verbose error responses disclose internal paths and system details (including usernames on Windows), aiding further exploitation. The issue requires no authentication or user interaction and is exploitable over the network. This vulnerability is fixed in 1.26.2.</p></details></td>
+        <td>2026-04-07</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33439" target="_blank" rel="noopener">CVE-2026-33439</a></td>
+        <td>9.3</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-502</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.51</td>
+        <td><details><summary>Open Access Management (OpenAM) is an access management solution. Prior to 16.0....</summary><p>Open Access Management (OpenAM) is an access management solution. Prior to 16.0.6, OpenIdentityPlatform OpenAM is vulnerable to pre-authentication Remote Code Execution (RCE) via unsafe Java deserialization of the jato.clientSession HTTP parameter. This bypasses the WhitelistObjectInputStream mitigation that was applied to the jato.pageSession parameter after CVE-2021-35464. An unauthenticated attacker can achieve arbitrary command execution on the server by sending a crafted serialized Java object as the jato.clientSession GET/POST parameter to any JATO ViewBean endpoint whose JSP contains &lt;jato:form&gt; tags (e.g., the Password Reset pages). This vulnerability is fixed in 16.0.6.</p></details></td>
+        <td>2026-04-07</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32712" target="_blank" rel="noopener">CVE-2026-32712</a></td>
+        <td>5.4</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.78</td>
+        <td><details><summary>Open Source Point of Sale is a web based point-of-sale application written in PH...</summary><p>Open Source Point of Sale is a web based point-of-sale application written in PHP using CodeIgniter framework. Prior to 3.4.3, a Stored Cross-Site Scripting (XSS) vulnerability exists in the Daily Sales management table. The customer_name column is configured with escape: false in the bootstrap-table column configuration, causing customer names to be rendered as raw HTML. An attacker with customer management permissions can inject arbitrary JavaScript into a customer&#x27;s first_name or last_name field, which executes in the browser of any user viewing the Daily Sales page. This vulnerability is fixed in 3.4.3.</p></details></td>
+        <td>2026-04-07</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-29181" target="_blank" rel="noopener">CVE-2026-29181</a></td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-770</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.25</td>
+        <td><details><summary>OpenTelemetry-Go is the Go implementation of OpenTelemetry. From 1.36.0 to 1.40....</summary><p>OpenTelemetry-Go is the Go implementation of OpenTelemetry. From 1.36.0 to 1.40.0, multi-value baggage: header extraction parses each header field-value independently and aggregates members across values. This allows an attacker to amplify cpu and allocations by sending many baggage: header lines, even when each individual value is within the 8192-byte per-value parse limit. This vulnerability is fixed in 1.41.0.</p></details></td>
+        <td>2026-04-07</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-27949" target="_blank" rel="noopener">CVE-2026-27949</a></td>
+        <td>2.0</td>
+        <td><span class="severity low">LOW</span></td>
+        <td>CWE-200</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>1.40</td>
+        <td><details><summary>Plane is an an open-source project management tool. Prior to 1.3.0, a vulnerabil...</summary><p>Plane is an an open-source project management tool. Prior to 1.3.0, a vulnerability was identified in Plane&#x27;s authentication flow where a user&#x27;s email address is included as a query parameter in the URL during error handling (e.g., when an invalid magic code is submitted). Transmitting personally identifiable information (PII) via GET request query strings is classified as an insecure design practice. The affected code path is located in the authentication utility module (packages/utils/src/auth.ts). This vulnerability is fixed in 1.3.0.</p></details></td>
+        <td>2026-04-07</td>
+      </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5741" target="_blank" rel="noopener">CVE-2026-5741</a></td>
         <td>6.9</td>
@@ -1738,12 +2239,12 @@
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-24818" target="_blank" rel="noopener">CVE-2025-24818</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>8.0</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-77</td>
         <td>&nbsp;</td>
         <td>&mdash;</td>
-        <td>0.00</td>
+        <td>5.60</td>
         <td><details><summary>Nokia MantaRay NM is vulnerable to an OS command injection vulnerability due to ...</summary><p>Nokia MantaRay NM is vulnerable to an OS command injection vulnerability due to improper neutralization of special elements used in an OS command in Log Search application.</p></details></td>
         <td>2026-04-07</td>
       </tr>
@@ -2031,6 +2532,23 @@
         <td>&mdash;</td>
         <td>5.25</td>
         <td><details><summary>libp2p-rust is the official rust language Implementation of the libp2p networkin...</summary><p>libp2p-rust is the official rust language Implementation of the libp2p networking stack. Prior to 0.17.1, libp2p-rendezvous server has no limit on how many namespaces a single peer can register.  A malicious peer can just keep registering unique namespaces in a loop and the server happily accepts every single one allocating memory for each registration with no pushback. Keep doing this long enough (or with multiple sybil peers) and the server process gets OOM killed. This vulnerability is fixed in 0.17.1.</p></details></td>
+        <td>2026-04-07</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33034" target="_blank" rel="noopener">CVE-2026-33034</a></td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-770</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.25</td>
+        <td><details><summary>An issue was discovered in 6.0 before 6.0.4, 5.2 before 5.2.13, and 4.2 before 4...</summary><p>An issue was discovered in 6.0 before 6.0.4, 5.2 before 5.2.13, and 4.2 before 4.2.30.
+ASGI requests with a missing or understated `Content-Length` header could
+bypass the `DATA_UPLOAD_MAX_MEMORY_SIZE` limit when reading
+`HttpRequest.body`, allowing remote attackers to load an unbounded request body into
+memory.
+Earlier, unsupported Django series (such as 5.0.x, 4.1.x, and 3.2.x) were not evaluated and may also be affected.
+Django would like to thank Superior for reporting this issue.</p></details></td>
         <td>2026-04-07</td>
       </tr>
       <tr>
@@ -3850,12 +4368,12 @@
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-31313" target="_blank" rel="noopener">CVE-2026-31313</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>5.4</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p4</small></td>
-        <td>0.00</td>
+        <td>3.78</td>
         <td><details><summary>An authenticated stored cross-site scripting (XSS) vulnerability in the creation...</summary><p>An authenticated stored cross-site scripting (XSS) vulnerability in the creation/editing module of Feehi CMS v2.1.1 allows attackers to execute arbitrary web scripts or HTML via injecting a crafted payload into the Content field.</p></details></td>
         <td>2026-04-06</td>
       </tr>
@@ -4136,34 +4654,34 @@
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-31354" target="_blank" rel="noopener">CVE-2026-31354</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>5.4</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p3</small></td>
-        <td>0.00</td>
+        <td>3.78</td>
         <td><details><summary>Multiple authenticated stored cross-site scripting (XSS) vulnerabilities in the ...</summary><p>Multiple authenticated stored cross-site scripting (XSS) vulnerabilities in the Permissions module of Feehi CMS v2.1.1 allows attackers to execute arbitrary web scripts or HTML via injecting a crafted payload into the Group, Category or Description parameters.</p></details></td>
         <td>2026-04-06</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-31353" target="_blank" rel="noopener">CVE-2026-31353</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>5.4</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p4</small></td>
-        <td>0.00</td>
+        <td>3.78</td>
         <td><details><summary>An authenticated stored cross-site scripting (XSS) vulnerability in the Category...</summary><p>An authenticated stored cross-site scripting (XSS) vulnerability in the Category module of Feehi CMS v2.1.1 allows attackers to execute arbitrary web scripts or HTML via injecting a crafted payload into the Name parameter.</p></details></td>
         <td>2026-04-06</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-31352" target="_blank" rel="noopener">CVE-2026-31352</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>5.4</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p4</small></td>
-        <td>0.00</td>
+        <td>3.78</td>
         <td><details><summary>An authenticated stored cross-site scripting (XSS) vulnerability in the Role Man...</summary><p>An authenticated stored cross-site scripting (XSS) vulnerability in the Role Management module of Feehi CMS v2.1.1 allows attackers to execute arbitrary web scripts or HTML via injecting a crafted payload into the Role Name parameter.</p></details></td>
         <td>2026-04-06</td>
       </tr>
@@ -4180,12 +4698,12 @@
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-31350" target="_blank" rel="noopener">CVE-2026-31350</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>5.4</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p4</small></td>
-        <td>0.00</td>
+        <td>3.78</td>
         <td><details><summary>An authenticated stored cross-site scripting (XSS) vulnerability in Feehi CMS v2...</summary><p>An authenticated stored cross-site scripting (XSS) vulnerability in Feehi CMS v2.1.1 allows attackers to execute arbitrary web scripts or HTML via injecting a crafted payload into the Page Sign parameter.</p></details></td>
         <td>2026-04-06</td>
       </tr>
@@ -12418,19 +12936,6 @@
         <td>2026-04-01</td>
       </tr>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5271" target="_blank" rel="noopener">CVE-2026-5271</a></td>
-        <td>5.6</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-427</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p4</small></td>
-        <td>3.92</td>
-        <td><details><summary>pymanager included the current working directory in sys.path meaning modules cou...</summary><p>pymanager included the current working directory in sys.path meaning modules could be shadowed by modules in the current working directory. As a result, if a user executes a pymanager-generated command (e.g., pip, pytest)
- from an attacker-controlled directory, a malicious module in that 
-directory can be imported and executed instead of the intended package.</p></details></td>
-        <td>2026-04-01</td>
-      </tr>
-      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-3877" target="_blank" rel="noopener">CVE-2026-3877</a></td>
         <td>7.3</td>
         <td><span class="severity high">HIGH</span></td>
@@ -12541,25 +13046,6 @@ directory can be imported and executed instead of the intended package.</p></det
         <td>2026-04-01</td>
       </tr>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-0522" target="_blank" rel="noopener">CVE-2026-0522</a></td>
-        <td>7.4</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-610</td>
-        <td>&nbsp;</td>
-        <td>0.4% <small>p61</small></td>
-        <td>5.19</td>
-        <td><details><summary>A local file inclusion vulnerability in the upload/download flow of the VertiGIS...</summary><p>A local file inclusion vulnerability in the upload/download flow of the VertiGIS FM application allows authenticated attackers to read arbitrary files from the server by manipulating a file&#x27;s path during its upload. When the file is subsequently downloaded, the file in the attacker controlled path is returned. Due to the application&#x27;s ASP.NET architecture, this could potentially lead to remote code execution when the &quot;web.config&quot; file is obtained. Furthermore, the application resolves UNC paths which may enable NTLM-relaying attacks.
-
-
-
-
-
-
-
-This issue affects VertiGIS FM: 10.5.00119 (0d29d428).</p></details></td>
-        <td>2026-04-01</td>
-      </tr>
-      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-29014" target="_blank" rel="noopener">CVE-2026-29014</a></td>
         <td>9.3</td>
         <td><span class="severity critical">CRITICAL</span></td>
@@ -12590,25 +13076,6 @@ This issue affects VertiGIS FM: 10.5.00119 (0d29d428).</p></details></td>
         <td>0.0% <small>p2</small></td>
         <td>5.11</td>
         <td><details><summary>Dell AppSync, version(s) 4.6.0, contain(s) an UNIX Symbolic Link (Symlink) Follo...</summary><p>Dell AppSync, version(s) 4.6.0, contain(s) an UNIX Symbolic Link (Symlink) Following vulnerability. A low privileged attacker with local access could potentially exploit this vulnerability, leading to Information tampering.</p></details></td>
-        <td>2026-04-01</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-25601" target="_blank" rel="noopener">CVE-2026-25601</a></td>
-        <td>6.4</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-798</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p0</small></td>
-        <td>4.48</td>
-        <td><details><summary>A vulnerability was identified in MEPIS RM, an industrial
-software product devel...</summary><p>A vulnerability was identified in MEPIS RM, an industrial
-software product developed by Metronik. The application contained a hardcoded
-cryptographic key within the Mx.Web.ComponentModel.dll component. When the
-option to store domain passwords was enabled, this key was used to encrypt user
-passwords before storing them in the application’s database. An attacker with
-sufficient privileges to access the database could extract the encrypted
-passwords, decrypt them using the embedded key, and gain unauthorized access to
-the associated ICS/OT environment.</p></details></td>
         <td>2026-04-01</td>
       </tr>
       <tr>
@@ -48189,7 +48656,7 @@ the associated ICS/OT environment.</p></details></td>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-0385" target="_blank" rel="noopener">CVE-2026-0385</a></td>
         <td>5.0</td>
         <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-290</td>
+        <td>CWE-451</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p13</small></td>
         <td>3.50</td>
