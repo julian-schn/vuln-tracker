@@ -1,9 +1,17 @@
 # CVEs — April 2026
 
-_994 vulnerabilities_
+_1002 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
+| [CVE-2026-5465](https://nvd.nist.gov/vuln/detail/CVE-2026-5465) | 8.8 | HIGH | CWE-639 | No | — | 6.16 | 2026-04-07 | The Booking for Appointments and Events Calendar – Amelia plugin for WordPress is vulnerable to Insecure Direct Object R... |
+| [CVE-2026-4079](https://nvd.nist.gov/vuln/detail/CVE-2026-4079) | 0.0 | NONE | N/A | No | — | 0.00 | 2026-04-07 | The SQL Chart Builder WordPress plugin before 2.3.8 does not properly escape user input as it is concatened to SQL queri... |
+| [CVE-2026-1900](https://nvd.nist.gov/vuln/detail/CVE-2026-1900) | 0.0 | NONE | N/A | No | — | 0.00 | 2026-04-07 | The Link Whisper Free WordPress plugin before 0.9.1 has a publicly accessible REST endpoint that allows unauthenticated... |
+| [CVE-2026-1114](https://nvd.nist.gov/vuln/detail/CVE-2026-1114) | 9.8 | CRITICAL | CWE-284 | No | — | 6.86 | 2026-04-07 | In parisneo/lollms version 2.1.0, the application's session management is vulnerable to improper access control due to t... |
+| [CVE-2025-15611](https://nvd.nist.gov/vuln/detail/CVE-2025-15611) | 0.0 | NONE | N/A | No | — | 0.00 | 2026-04-07 | The Popup Box  WordPress plugin before 5.5.0 does not properly validate nonces in the add_or_edit_popupbox() function be... |
+| [CVE-2026-1839](https://nvd.nist.gov/vuln/detail/CVE-2026-1839) | 6.5 | MEDIUM | CWE-502 | No | — | 4.55 | 2026-04-07 | A vulnerability in the HuggingFace Transformers library, specifically in the `Trainer` class, allows for arbitrary code... |
+| [CVE-2025-65116](https://nvd.nist.gov/vuln/detail/CVE-2025-65116) | 5.5 | MEDIUM | CWE-763 | No | — | 3.85 | 2026-04-07 | Buffer Overflow Vulnerability in JP1/IT Desktop Management 2 - Manager on Windows, JP1/IT Desktop Management 2 - Operati... |
+| [CVE-2025-65115](https://nvd.nist.gov/vuln/detail/CVE-2025-65115) | 8.8 | HIGH | CWE-73 | No | — | 6.16 | 2026-04-07 | Remote Code Execution Vulnerability in JP1/IT Desktop Management 2 - Manager on Windows, JP1/IT Desktop Management 2 - O... |
 | [CVE-2026-0740](https://nvd.nist.gov/vuln/detail/CVE-2026-0740) | 9.8 | CRITICAL | CWE-434 | No | — | 6.86 | 2026-04-07 | The Ninja Forms - File Uploads plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type val... |
 | [CVE-2026-20446](https://nvd.nist.gov/vuln/detail/CVE-2026-20446) | 0.0 | NONE | CWE-787 | No | — | 0.00 | 2026-04-07 | In sec boot, there is a possible out of bounds write due to an integer overflow. This could lead to local denial of serv... |
 | [CVE-2026-20433](https://nvd.nist.gov/vuln/detail/CVE-2026-20433) | 0.0 | NONE | CWE-787 | No | — | 0.00 | 2026-04-07 | In Modem, there is a possible out of bounds write due to a missing bounds check. This could lead to remote escalation of... |
