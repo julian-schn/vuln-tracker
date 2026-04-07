@@ -1,9 +1,10 @@
 # CVEs — April 2026
 
-_1002 vulnerabilities_
+_1003 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
+| [CVE-2026-3177](https://nvd.nist.gov/vuln/detail/CVE-2026-3177) | 5.3 | MEDIUM | CWE-345 | No | — | 3.71 | 2026-04-07 | The Charitable – Donation Plugin for WordPress – Fundraising with Recurring Donations & More plugin for WordPress is vul... |
 | [CVE-2026-5465](https://nvd.nist.gov/vuln/detail/CVE-2026-5465) | 8.8 | HIGH | CWE-639 | No | — | 6.16 | 2026-04-07 | The Booking for Appointments and Events Calendar – Amelia plugin for WordPress is vulnerable to Insecure Direct Object R... |
 | [CVE-2026-4079](https://nvd.nist.gov/vuln/detail/CVE-2026-4079) | 0.0 | NONE | N/A | No | — | 0.00 | 2026-04-07 | The SQL Chart Builder WordPress plugin before 2.3.8 does not properly escape user input as it is concatened to SQL queri... |
 | [CVE-2026-1900](https://nvd.nist.gov/vuln/detail/CVE-2026-1900) | 0.0 | NONE | N/A | No | — | 0.00 | 2026-04-07 | The Link Whisper Free WordPress plugin before 0.9.1 has a publicly accessible REST endpoint that allows unauthenticated... |
