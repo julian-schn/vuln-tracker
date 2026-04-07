@@ -1,6 +1,6 @@
 # CVEs — March 2026
 
-_5736 vulnerabilities_
+_5733 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
@@ -311,7 +311,6 @@ _5736 vulnerabilities_
 | [CVE-2026-29924](https://nvd.nist.gov/vuln/detail/CVE-2026-29924) | 7.6 | HIGH | CWE-611 | No | 0.1% | 5.32 | 2026-03-30 | Grav CMS v1.7.x and before is vulnerable to XML External Entity (XXE) through the SVG file upload functionality in the a... |
 | [CVE-2026-5126](https://nvd.nist.gov/vuln/detail/CVE-2026-5126) | 5.3 | MEDIUM | CWE-918 | No | 0.0% | 3.71 | 2026-03-30 | A flaw has been found in SourceCodester RSS Feed Parser 1.0. Affected by this issue is the function file_get_contents. T... |
 | [CVE-2026-5125](https://nvd.nist.gov/vuln/detail/CVE-2026-5125) | 4.8 | MEDIUM | CWE-77 | No | 0.3% | 3.37 | 2026-03-30 | A vulnerability was detected in raine consult-llm-mcp up to 2.5.3. Affected by this vulnerability is the function child_... |
-| [CVE-2026-4046](https://nvd.nist.gov/vuln/detail/CVE-2026-4046) | 7.5 | HIGH | CWE-617 | No | 0.1% | 5.25 | 2026-03-30 | The iconv() function in the GNU C Library versions 2.43 and earlier may crash due to an assertion failure when convertin... |
 | [CVE-2026-33032](https://nvd.nist.gov/vuln/detail/CVE-2026-33032) | 9.8 | CRITICAL | CWE-306 | No | 0.1% | 6.86 | 2026-03-30 | Nginx UI is a web user interface for the Nginx web server. In versions 2.3.5 and prior, the nginx-ui MCP (Model Context... |
 | [CVE-2026-33030](https://nvd.nist.gov/vuln/detail/CVE-2026-33030) | 8.8 | HIGH | CWE-78 | No | 0.0% | 6.16 | 2026-03-30 | Nginx UI is a web user interface for the Nginx web server. In versions 2.3.3 and prior, Nginx-UI contains an Insecure Di... |
 | [CVE-2026-33029](https://nvd.nist.gov/vuln/detail/CVE-2026-33029) | 6.9 | MEDIUM | CWE-20 | No | 0.1% | 4.83 | 2026-03-30 | Nginx UI is a web user interface for the Nginx web server. Prior to version 2.3.4, an input validation vulnerability in... |
@@ -2265,7 +2264,6 @@ _5736 vulnerabilities_
 | [CVE-2026-32986](https://nvd.nist.gov/vuln/detail/CVE-2026-32986) | 5.1 | MEDIUM | CWE-79 | No | 0.0% | 3.57 | 2026-03-20 | Textpattern CMS version 4.9.0 contains a second-order cross-site scripting vulnerability that allows attackers to inject... |
 | [CVE-2025-67260](https://nvd.nist.gov/vuln/detail/CVE-2025-67260) | 8.8 | HIGH | CWE-434 | No | 0.1% | 6.16 | 2026-03-20 | The Terrapack software, from ASTER TEC / ASTER S.p.A., with the indicated components and versions has a file upload vuln... |
 | [CVE-2025-46597](https://nvd.nist.gov/vuln/detail/CVE-2025-46597) | 7.5 | HIGH | CWE-190 | No | 0.0% | 5.25 | 2026-03-20 | Bitcoin Core 0.13.0 through 29.x has an integer overflow. |
-| [CVE-2026-4519](https://nvd.nist.gov/vuln/detail/CVE-2026-4519) | 7.0 | HIGH | CWE-20 | No | 0.0% | 4.90 | 2026-03-20 | The webbrowser.open() API would accept leading dashes in the URL which  could be handled as command line options for cer... |
 | [CVE-2026-4487](https://nvd.nist.gov/vuln/detail/CVE-2026-4487) | 7.4 | HIGH | CWE-119 | No | 0.0% | 5.18 | 2026-03-20 | A vulnerability was determined in UTT HiPER 1200GW up to 2.5.3-170306. This impacts the function strcpy of the file /gof... |
 | [CVE-2026-33312](https://nvd.nist.gov/vuln/detail/CVE-2026-33312) | 5.3 | MEDIUM | CWE-863 | No | 0.0% | 3.71 | 2026-03-20 | Vikunja is an open-source self-hosted task management platform. Starting in version 0.20.2 and prior to version 2.2.0, t... |
 | [CVE-2026-29794](https://nvd.nist.gov/vuln/detail/CVE-2026-29794) | 5.3 | MEDIUM | CWE-807 | No | 0.1% | 3.71 | 2026-03-20 | Vikunja is an open-source self-hosted task management platform. Starting in version 0.8 and prior to version 2.2.0, unau... |
@@ -2708,7 +2706,6 @@ _5736 vulnerabilities_
 | [CVE-2026-31967](https://nvd.nist.gov/vuln/detail/CVE-2026-31967) | 6.9 | MEDIUM | CWE-125 | No | 0.0% | 4.83 | 2026-03-18 | HTSlib is a library for reading and writing bioinformatics file formats. CRAM is a compressed format which stores DNA se... |
 | [CVE-2026-31966](https://nvd.nist.gov/vuln/detail/CVE-2026-31966) | 6.9 | MEDIUM | CWE-125 | No | 0.0% | 4.83 | 2026-03-18 | HTSlib is a library for reading and writing bioinformatics file formats. CRAM is a compressed format which stores DNA se... |
 | [CVE-2026-0866](https://nvd.nist.gov/vuln/detail/CVE-2026-0866) | 0.0 | NONE | N/A | No | — | 0.00 | 2026-03-18 | Rejected reason: After the publication of the PoC by the researcher and further analysis, we have determined that this i... |
-| [CVE-2026-3479](https://nvd.nist.gov/vuln/detail/CVE-2026-3479) | 0.0 | NONE | CWE-22 | No | 0.0% | 0.00 | 2026-03-18 | DISPUTED: The project has clarified that the documentation was incorrect, and that pkgutil.get_data() has the same secur... |
 | [CVE-2026-31965](https://nvd.nist.gov/vuln/detail/CVE-2026-31965) | 6.9 | MEDIUM | CWE-125 | No | 0.1% | 4.83 | 2026-03-18 | HTSlib is a library for reading and writing bioinformatics file formats. CRAM is a compressed format which stores DNA se... |
 | [CVE-2026-31964](https://nvd.nist.gov/vuln/detail/CVE-2026-31964) | 6.9 | MEDIUM | CWE-476 | No | 0.1% | 4.83 | 2026-03-18 | HTSlib is a library for reading and writing bioinformatics file formats. CRAM is a compressed format which stores DNA se... |
 | [CVE-2026-31963](https://nvd.nist.gov/vuln/detail/CVE-2026-31963) | 8.8 | HIGH | CWE-122 | No | 0.0% | 6.16 | 2026-03-18 | HTSlib is a library for reading and writing bioinformatics file formats. CRAM is a compressed format which stores DNA se... |
