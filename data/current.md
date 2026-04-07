@@ -1,9 +1,15 @@
 # CVEs — April 2026
 
-_988 vulnerabilities_
+_994 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
+| [CVE-2026-0740](https://nvd.nist.gov/vuln/detail/CVE-2026-0740) | 9.8 | CRITICAL | CWE-434 | No | — | 6.86 | 2026-04-07 | The Ninja Forms - File Uploads plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type val... |
+| [CVE-2026-20446](https://nvd.nist.gov/vuln/detail/CVE-2026-20446) | 0.0 | NONE | CWE-787 | No | — | 0.00 | 2026-04-07 | In sec boot, there is a possible out of bounds write due to an integer overflow. This could lead to local denial of serv... |
+| [CVE-2026-20433](https://nvd.nist.gov/vuln/detail/CVE-2026-20433) | 0.0 | NONE | CWE-787 | No | — | 0.00 | 2026-04-07 | In Modem, there is a possible out of bounds write due to a missing bounds check. This could lead to remote escalation of... |
+| [CVE-2026-20432](https://nvd.nist.gov/vuln/detail/CVE-2026-20432) | 0.0 | NONE | CWE-787 | No | — | 0.00 | 2026-04-07 | In Modem, there is a possible out of bounds write due to a missing bounds check. This could lead to remote escalation of... |
+| [CVE-2026-20431](https://nvd.nist.gov/vuln/detail/CVE-2026-20431) | 0.0 | NONE | CWE-770 | No | — | 0.00 | 2026-04-07 | In Modem, there is a possible system crash due to a logic error. This could lead to remote denial of service, if a UE ha... |
+| [CVE-2026-5719](https://nvd.nist.gov/vuln/detail/CVE-2026-5719) | 5.3 | MEDIUM | CWE-74 | No | — | 3.71 | 2026-04-07 | A flaw has been found in itsourcecode Construction Management System 1.0. This affects an unknown function of the file /... |
 | [CVE-2025-13044](https://nvd.nist.gov/vuln/detail/CVE-2025-13044) | 6.2 | MEDIUM | CWE-340 | No | — | 4.34 | 2026-04-07 | IBM Concert 1.0.0 through 2.2.0 creates temporary files with predictable names, which allows local users to overwrite ar... |
 | [CVE-2026-5705](https://nvd.nist.gov/vuln/detail/CVE-2026-5705) | 5.3 | MEDIUM | CWE-79 | No | — | 3.71 | 2026-04-07 | A vulnerability was identified in code-projects Online Hotel Booking 1.0. Affected by this vulnerability is an unknown f... |
 | [CVE-2026-5692](https://nvd.nist.gov/vuln/detail/CVE-2026-5692) | 6.9 | MEDIUM | CWE-77 | No | — | 4.83 | 2026-04-07 | A vulnerability was found in Totolink A7100RU 7.4cu.2313_b20191024. This impacts the function setGameSpeedCfg of the fil... |

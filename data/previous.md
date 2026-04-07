@@ -1,6 +1,6 @@
 # CVEs — March 2026
 
-_5735 vulnerabilities_
+_5734 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
@@ -3077,7 +3077,6 @@ _5735 vulnerabilities_
 | [CVE-2026-3476](https://nvd.nist.gov/vuln/detail/CVE-2026-3476) | 7.8 | HIGH | CWE-94 | No | 0.0% | 5.46 | 2026-03-16 | A Code Injection vulnerability affecting SOLIDWORKS Desktop from Release 2025 through Release 2026 could allow an attack... |
 | [CVE-2026-3442](https://nvd.nist.gov/vuln/detail/CVE-2026-3442) | 6.1 | MEDIUM | CWE-125 | No | 0.0% | 4.27 | 2026-03-16 | A flaw was found in GNU Binutils. This vulnerability, a heap-based buffer overflow, specifically an out-of-bounds read,... |
 | [CVE-2026-3441](https://nvd.nist.gov/vuln/detail/CVE-2026-3441) | 6.1 | MEDIUM | CWE-125 | No | 0.0% | 4.27 | 2026-03-16 | A flaw was found in GNU Binutils. This heap-based buffer overflow vulnerability, specifically an out-of-bounds read in t... |
-| [CVE-2026-3227](https://nvd.nist.gov/vuln/detail/CVE-2026-3227) | 8.5 | HIGH | CWE-78 | No | 0.8% | 5.98 | 2026-03-16 | A command injection vulnerability was identified in TP-Link TL-WR802N v4, TL-WR841N v14, and TL-WR840N v6 due to imprope... |
 | [CVE-2026-3111](https://nvd.nist.gov/vuln/detail/CVE-2026-3111) | 6.9 | MEDIUM | CWE-284 | No | 0.1% | 4.83 | 2026-03-16 | Insecure Direct Object Reference (IDOR) vulnerability in Campus Educativa specifically at the endpoint '/archivos/usuari... |
 | [CVE-2026-3110](https://nvd.nist.gov/vuln/detail/CVE-2026-3110) | 8.7 | HIGH | CWE-284 | No | 0.1% | 6.09 | 2026-03-16 | Insecure Direct Object Reference (IDOR) vulnerability in Campus Educativa specifically at the endpoint '/administracion/... |
 | [CVE-2026-3024](https://nvd.nist.gov/vuln/detail/CVE-2026-3024) | 4.8 | MEDIUM | CWE-79 | No | 0.0% | 3.36 | 2026-03-16 | Stored Cross-Site Scripting (XSS) vulnerability in the Wakyma web application, specifically in the endpoint 'vets.wakyma... |
