@@ -11,7 +11,7 @@
     <header>
       <h1>vuln-tracker</h1>
       <p class="subtitle">CVEs from the National Vulnerability Database — current and previous month</p>
-      <p class="last-updated">Last updated: 2026-04-07 17:08 UTC</p>
+      <p class="last-updated">Last updated: 2026-04-07 19:13 UTC</p>
     </header>
     <nav>
       <a href="top50.html">&#9733; Top 50</a>
@@ -25,7 +25,7 @@
     </nav>
     <main>
     <section>
-      <h2>Current Month — April 2026 <span class="count">(1095)</span></h2>
+      <h2>Current Month — April 2026 <span class="count">(1166)</span></h2>
       <div class="table-wrapper">
         <table>
           <thead>
@@ -42,6 +42,875 @@
             </tr>
           </thead>
           <tbody>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39344" target="_blank" rel="noopener">CVE-2026-39344</a></td>
+        <td>8.1</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.67</td>
+        <td><details><summary>ChurchCRM is an open-source church management system. Prior to 7.1.0, there is a...</summary><p>ChurchCRM is an open-source church management system. Prior to 7.1.0, there is a Reflected Cross-Site Scripting (XSS) vulnerability on the login page, which is caused by the lack of sanitization or encoding of the username parameter received from the URL. The username parameter value is directly displayed in the login page input element without filter, allowing attackers to insert malicious JavaScript scripts. If successful, script can be executed on the client side, potentially stealing sensitive data such as session cookies or replacing the display to show the attacker&#x27;s login form. This vulnerability is fixed in 7.1.0.</p></details></td>
+        <td>2026-04-07</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39343" target="_blank" rel="noopener">CVE-2026-39343</a></td>
+        <td>7.2</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-89</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.04</td>
+        <td><details><summary>ChurchCRM is an open-source church management system. Prior to 7.1.0, a SQL inje...</summary><p>ChurchCRM is an open-source church management system. Prior to 7.1.0, a SQL injection vulnerability exists in the EditEventTypes.php file, which is only accessible to administrators. The EN_tyid POST parameter is not sanitized before being used in a SQL query, allowing an administrator to execute arbitrary SQL commands directly against the database. This vulnerability is fixed in 7.1.0.</p></details></td>
+        <td>2026-04-07</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39342" target="_blank" rel="noopener">CVE-2026-39342</a></td>
+        <td>9.4</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-89</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.58</td>
+        <td><details><summary>ChurchCRM is an open-source church management system. Prior to 7.1.0, the search...</summary><p>ChurchCRM is an open-source church management system. Prior to 7.1.0, the searchwhat parameter via QueryView.php with the QueryID=15 is vulnerable to a SQL injection. The authenticated user requires access to Data/Reports &gt; Query Menu and access to the &quot;Advanced Search&quot; query. This vulnerability is fixed in 7.1.0.</p></details></td>
+        <td>2026-04-07</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39341" target="_blank" rel="noopener">CVE-2026-39341</a></td>
+        <td>8.1</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-89</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.67</td>
+        <td><details><summary>ChurchCRM is an open-source church management system. Prior to 7.1.0, The applic...</summary><p>ChurchCRM is an open-source church management system. Prior to 7.1.0, The application is vulnerable to time-based SQL injection due to an improper input validation. Endpoint Reports/ConfirmReportEmail.php?familyId= is not correctly sanitising user input, specifically, the sanitised input is not used to create the SQL query. This vulnerability is fixed in 7.1.0.</p></details></td>
+        <td>2026-04-07</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39340" target="_blank" rel="noopener">CVE-2026-39340</a></td>
+        <td>8.1</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-89</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.67</td>
+        <td><details><summary>ChurchCRM is an open-source church management system. Prior to 7.1.0, a SQL inje...</summary><p>ChurchCRM is an open-source church management system. Prior to 7.1.0, a SQL injection vulnerability exists in PropertyTypeEditor.php, part of the administration functionality for managing property type categories (People → Person Properties / Family Properties). The vulnerability was introduced when legacyFilterInput() which both strips HTML and escapes SQL — was replaced with sanitizeText(), which strips HTML only. User-supplied values from the Name and Description fields are concatenated directly into raw INSERT and UPDATE queries with no SQL escaping. This allows any authenticated user with the MenuOptions role (a non-admin staff permission) to perform time-based blind injection and exfiltrate any data from the database, including password hashes of all users. This vulnerability is fixed in 7.1.0.</p></details></td>
+        <td>2026-04-07</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39339" target="_blank" rel="noopener">CVE-2026-39339</a></td>
+        <td>9.1</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-284</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.37</td>
+        <td><details><summary>ChurchCRM is an open-source church management system. Prior to 7.1.0, a  critica...</summary><p>ChurchCRM is an open-source church management system. Prior to 7.1.0, a  critical authentication bypass vulnerability in ChurchCRM&#x27;s API middleware (ChurchCRM/Slim/Middleware/AuthMiddleware.php) allows unauthenticated attackers to access all protected API endpoints by including &quot;api/public&quot; anywhere in the request URL, leading to complete exposure of church member data and system information. This vulnerability is fixed in 7.1.0.</p></details></td>
+        <td>2026-04-07</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39338" target="_blank" rel="noopener">CVE-2026-39338</a></td>
+        <td>8.6</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.02</td>
+        <td><details><summary>ChurchCRM is an open-source church management system. Prior to 7.1.0, a Blind Re...</summary><p>ChurchCRM is an open-source church management system. Prior to 7.1.0, a Blind Reflected Cross-Site Scripting vulnerability exists in the search parameter accepted by the ChurchCRM dashboard. The application fails to sanitize or encode user-supplied input prior to rendering it within the browser&#x27;s DOM. Although the application ultimately returns an HTTP 500 error due to the malformed API request caused by the payload, the browser&#x27;s JavaScript engine parses and executes the injected &lt;script&gt; tags before the error response is returned — resulting in successful code execution regardless of the server-side error. This vulnerability is fixed in 7.1.0.</p></details></td>
+        <td>2026-04-07</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39337" target="_blank" rel="noopener">CVE-2026-39337</a></td>
+        <td>10.0</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-94</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>7.00</td>
+        <td><details><summary>ChurchCRM is an open-source church management system. Prior to 7.1.0, critical p...</summary><p>ChurchCRM is an open-source church management system. Prior to 7.1.0, critical pre-authentication remote code execution vulnerability in ChurchCRM&#x27;s setup wizard allows unauthenticated attackers to inject arbitrary PHP code during the initial installation process, leading to complete server compromise. The &quot;$dbPassword&quot; variable is not sanitized. This vulnerability exists due to an incomplete fix for CVE-2025-62521. This vulnerability is fixed in 7.1.0.</p></details></td>
+        <td>2026-04-07</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39336" target="_blank" rel="noopener">CVE-2026-39336</a></td>
+        <td>6.1</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.27</td>
+        <td><details><summary>ChurchCRM is an open-source church management system. Prior to 7.1.0, a stored c...</summary><p>ChurchCRM is an open-source church management system. Prior to 7.1.0, a stored cross-site scripting issue affects the Directory Reports form fields set from config, Person editor defaults rendered into address fields, and external self-registration form defaults. This is primarily an admin-to-admin stored XSS path where writable configuration fields are abused. This vulnerability is fixed in 7.1.0.</p></details></td>
+        <td>2026-04-07</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39335" target="_blank" rel="noopener">CVE-2026-39335</a></td>
+        <td>6.1</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.27</td>
+        <td><details><summary>ChurchCRM is an open-source church management system. Prior to 7.1.1, there is S...</summary><p>ChurchCRM is an open-source church management system. Prior to 7.1.1, there is Stored XSS in group remove control and family editor state/country. This is primarily an admin-to-admin stored XSS path when writable entity fields are abused. This vulnerability is fixed in 7.1.1.</p></details></td>
+        <td>2026-04-07</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39334" target="_blank" rel="noopener">CVE-2026-39334</a></td>
+        <td>8.8</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-89</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.16</td>
+        <td><details><summary>ChurchCRM is an open-source church management system. Prior to 7.1.0, an SQL inj...</summary><p>ChurchCRM is an open-source church management system. Prior to 7.1.0, an SQL injection vulnerability was found in the endpoint /SettingsIndividual.php in ChurchCRM 7.0.5. Authenticated users without any specific privileges can inject arbitrary SQL statements through the type array parameter via the index and thus extract and modify information from the database. This vulnerability is fixed in 7.1.0.</p></details></td>
+        <td>2026-04-07</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39333" target="_blank" rel="noopener">CVE-2026-39333</a></td>
+        <td>8.7</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.09</td>
+        <td><details><summary>ChurchCRM is an open-source church management system. Prior to 7.1.0, he FindFun...</summary><p>ChurchCRM is an open-source church management system. Prior to 7.1.0, he FindFundRaiser.php endpoint reflects user-supplied input (DateStart and DateEnd) into HTML input field attributes without proper output encoding for the HTML attribute context. An authenticated attacker can craft a malicious URL that executes arbitrary JavaScript when visited by another authenticated user. This constitutes a reflected XSS vulnerability. This vulnerability is fixed in 7.1.0.</p></details></td>
+        <td>2026-04-07</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39332" target="_blank" rel="noopener">CVE-2026-39332</a></td>
+        <td>8.7</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.09</td>
+        <td><details><summary>ChurchCRM is an open-source church management system. Prior to 7.1.0, a reflecte...</summary><p>ChurchCRM is an open-source church management system. Prior to 7.1.0, a reflected Cross-Site Scripting (XSS) vulnerability in GeoPage.php allows any authenticated user to inject arbitrary JavaScript into the browser of another authenticated user. Because the payload fires automatically via autofocus with no user interaction required, an attacker can steal session cookies and fully take over any victim account, including administrator accounts, by tricking them into submitting a crafted form. This vulnerability is fixed in 7.1.0.</p></details></td>
+        <td>2026-04-07</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39331" target="_blank" rel="noopener">CVE-2026-39331</a></td>
+        <td>8.1</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-639</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.67</td>
+        <td><details><summary>ChurchCRM is an open-source church management system. Prior to 7.1.0, an authent...</summary><p>ChurchCRM is an open-source church management system. Prior to 7.1.0, an authenticated API user can modify any family record&#x27;s state without proper authorization by simply changing the {familyId} parameter in requests, regardless of whether they possess the required EditRecords privilege. /family/{familyId}/verify, /family/{familyId}/verify/url, /family/{familyId}/verify/now, /family/{familyId}/activate/{status}, and /family/{familyId}/geocode lack role-based access control, allowing users to deactivate/reactivate arbitrary families, spam verification emails, and mark families as verified and trigger geocoding. This vulnerability is fixed in 7.1.0.</p></details></td>
+        <td>2026-04-07</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39330" target="_blank" rel="noopener">CVE-2026-39330</a></td>
+        <td>8.8</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-89</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.16</td>
+        <td><details><summary>ChurchCRM is an open-source church management system. Prior to 7.1.0, an SQL inj...</summary><p>ChurchCRM is an open-source church management system. Prior to 7.1.0, an SQL injection vulnerability was found in the endpoint /PropertyAssign.php in ChurchCRM. Authenticated users with the role Manage Groups &amp; Roles (ManageGroups) and Edit Records (isEditRecordsEnabled) can inject arbitrary SQL statements through the Value parameter and thus extract and modify information from the database. This vulnerability is fixed in 7.1.0.</p></details></td>
+        <td>2026-04-07</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39329" target="_blank" rel="noopener">CVE-2026-39329</a></td>
+        <td>8.8</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-89</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.16</td>
+        <td><details><summary>ChurchCRM is an open-source church management system. Prior to 7.1.0, an SQL inj...</summary><p>ChurchCRM is an open-source church management system. Prior to 7.1.0, an SQL injection vulnerability was identified in /EventNames.php in ChurchCRM. Authenticated users with AddEvent privileges can inject SQL via the newEvtTypeCntLst parameter during event type creation. The vulnerable flow reaches an ON DUPLICATE KEY UPDATE clause where unescaped user input is interpolated directly. This vulnerability is fixed in 7.1.0.</p></details></td>
+        <td>2026-04-07</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39328" target="_blank" rel="noopener">CVE-2026-39328</a></td>
+        <td>8.9</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.23</td>
+        <td><details><summary>ChurchCRM is an open-source church management system. Prior to 7.1.0, a stored c...</summary><p>ChurchCRM is an open-source church management system. Prior to 7.1.0, a stored cross-site scripting vulnerability exists in ChurchCRM&#x27;s person profile editing functionality. Non-administrative users who have the EditSelf permission can inject malicious JavaScript into their Facebook, LinkedIn, and X profile fields. Due to a 50-character field limit, the payload is distributed across all three fields and chains their onfocus event handlers to execute in sequence. When any user, including administrators, views the attacker&#x27;s profile, their session cookies are exfiltrated to a remote server. This vulnerability is fixed in 7.1.0.</p></details></td>
+        <td>2026-04-07</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39327" target="_blank" rel="noopener">CVE-2026-39327</a></td>
+        <td>8.8</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-89</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.16</td>
+        <td><details><summary>ChurchCRM is an open-source church management system. Prior to 7.1.0, an SQL inj...</summary><p>ChurchCRM is an open-source church management system. Prior to 7.1.0, an SQL injection vulnerability was found in the endpoint /MemberRoleChange.php in ChurchCRM 7.0.5. Authenticated users with the role Manage Groups &amp; Roles (ManageGroups) can inject arbitrary SQL statements through the NewRole parameter and thus extract and modify information from the database. This vulnerability is fixed in 7.1.0.</p></details></td>
+        <td>2026-04-07</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39326" target="_blank" rel="noopener">CVE-2026-39326</a></td>
+        <td>8.8</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-89</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.16</td>
+        <td><details><summary>ChurchCRM is an open-source church management system. Prior to 7.1.0, an SQL inj...</summary><p>ChurchCRM is an open-source church management system. Prior to 7.1.0, an SQL injection vulnerability was found in the endpoint /PropertyTypeEditor.php in ChurchCRM. Authenticated users with the role isMenuOptionsEnabled can inject arbitrary SQL statements through the Name and Description parameters and thus extract and modify information from the database. This vulnerability is fixed in 7.1.0.</p></details></td>
+        <td>2026-04-07</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39325" target="_blank" rel="noopener">CVE-2026-39325</a></td>
+        <td>7.2</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-89</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.04</td>
+        <td><details><summary>ChurchCRM is an open-source church management system. Prior to 7.1.0, an SQL inj...</summary><p>ChurchCRM is an open-source church management system. Prior to 7.1.0, an SQL injection vulnerability was found in the endpoint /SettingsUser.php in ChurchCRM 7.0.5. Authenticated administrative users can inject arbitrary SQL statements through the type array parameter via the index and thus extract and modify information from the database. This vulnerability is fixed in 7.1.0.</p></details></td>
+        <td>2026-04-07</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39324" target="_blank" rel="noopener">CVE-2026-39324</a></td>
+        <td>9.3</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-287</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.51</td>
+        <td><details><summary>Rack::Session is a session management implementation for Rack. From 2.0.0 to bef...</summary><p>Rack::Session is a session management implementation for Rack. From 2.0.0 to before 2.1.2, Rack::Session::Cookie incorrectly handles decryption failures when configured with secrets:. If cookie decryption fails, the implementation falls back to a default decoder instead of rejecting the cookie. This allows an unauthenticated attacker to supply a crafted session cookie that is accepted as valid session data without knowledge of any configured secret. Because this mechanism is used to load session state, an attacker can manipulate session contents and potentially gain unauthorized access. This vulnerability is fixed in 2.1.2.</p></details></td>
+        <td>2026-04-07</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39323" target="_blank" rel="noopener">CVE-2026-39323</a></td>
+        <td>8.8</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-89</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.16</td>
+        <td><details><summary>ChurchCRM is an open-source church management system. Prior to 7.1.0, a critical...</summary><p>ChurchCRM is an open-source church management system. Prior to 7.1.0, a critical SQL injection vulnerability exists in ChurchCRM&#x27;s PropertyTypeEditor.php where the Name and Description POST parameters are sanitized only with strip_tags() before direct concatenation into SQL queries. This allows authenticated users with &quot;Manage Properties&quot; permission to execute arbitrary SQL commands including data exfiltration, modification, and deletion. Injected data persists in the database and is reflected across multiple application pages without output encoding. This vulnerability is fixed in 7.1.0.</p></details></td>
+        <td>2026-04-07</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39321" target="_blank" rel="noopener">CVE-2026-39321</a></td>
+        <td>6.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-208</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.41</td>
+        <td><details><summary>Parse Server is an open source backend that can be deployed to any infrastructur...</summary><p>Parse Server is an open source backend that can be deployed to any infrastructure that can run Node.js. Prior to 9.8.0-alpha.6 and 8.6.74, he login endpoint response time differs measurably depending on whether the submitted username or email exists in the database. When a user is not found, the server responds immediately. When a user exists but the password is wrong, a bcrypt comparison runs first, adding significant latency. This timing difference allows an unauthenticated attacker to enumerate valid usernames. This vulnerability is fixed in 9.8.0-alpha.6 and 8.6.74.</p></details></td>
+        <td>2026-04-07</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39319" target="_blank" rel="noopener">CVE-2026-39319</a></td>
+        <td>8.8</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-89</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.16</td>
+        <td><details><summary>ChurchCRM is an open-source church management system. Prior to 7.1.0, a second o...</summary><p>ChurchCRM is an open-source church management system. Prior to 7.1.0, a second order SQL injection vulnerability was found in the endpoint /FundRaiserEditor.php in ChurchCRM. A user has to be authenticated but doesn&#x27;t need any privileges. These users can inject arbitrary SQL statements through the iCurrentFundraiser PHP session parameter and thus extract and modify information from the database. This vulnerability is fixed in 7.1.0.</p></details></td>
+        <td>2026-04-07</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39318" target="_blank" rel="noopener">CVE-2026-39318</a></td>
+        <td>8.8</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-89</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.16</td>
+        <td><details><summary>ChurchCRM is an open-source church management system. Prior to 7.1.0, the GroupP...</summary><p>ChurchCRM is an open-source church management system. Prior to 7.1.0, the GroupPropsFormRowOps.php file contains a SQL injection vulnerability. User input in the Field parameter is directly inserted into SQL queries without proper sanitization. The mysqli_real_escape_string() function does not escape backtick characters, allowing attackers to break out of SQL identifier context and execute arbitrary SQL statements. This vulnerability is fixed in 7.1.0.</p></details></td>
+        <td>2026-04-07</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39317" target="_blank" rel="noopener">CVE-2026-39317</a></td>
+        <td>8.8</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-89</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.16</td>
+        <td><details><summary>ChurchCRM is an open-source church management system. Prior to 7.1.0, a SQL inje...</summary><p>ChurchCRM is an open-source church management system. Prior to 7.1.0, a SQL injection vulnerability exists in ChurchCRM&#x27;s SettingsIndividual.php where user-controlled array keys from the type POST parameter are used directly in SQL queries without sanitization. This allows any authenticated user to extract sensitive data from the database. This vulnerability is fixed in 7.1.0.</p></details></td>
+        <td>2026-04-07</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35576" target="_blank" rel="noopener">CVE-2026-35576</a></td>
+        <td>8.7</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.09</td>
+        <td><details><summary>ChurchCRM is an open-source church management system. Prior to 7.0.0, a stored c...</summary><p>ChurchCRM is an open-source church management system. Prior to 7.0.0, a stored cross-site scripting (XSS) vulnerability exists in ChurchCRM within the Person Property Management subsystem. This issue persists in versions patched for CVE-2023-38766 and allows an authenticated user to inject arbitrary JavaScript code via dynamically assigned person properties. The malicious payload is persistently stored and executed when other users view the affected person profile or access the printable view, potentially leading to session hijacking or full account compromise. This vulnerability is fixed in 7.0.0.</p></details></td>
+        <td>2026-04-07</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35575" target="_blank" rel="noopener">CVE-2026-35575</a></td>
+        <td>8.0</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.60</td>
+        <td><details><summary>ChurchCRM is an open-source church management system. Prior to 6.5.3, a Stored C...</summary><p>ChurchCRM is an open-source church management system. Prior to 6.5.3, a Stored Cross-Site Scripting (Stored XSS) vulnerability in the admin panel’s group-creation feature allows any user with group-creation privileges to inject malicious JavaScript that executes automatically when an administrator views the page. This enables attackers to steal the administrator’s session cookies, potentially leading to full administrative account takeover. This vulnerability is fixed in 6.5.3.</p></details></td>
+        <td>2026-04-07</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35573" target="_blank" rel="noopener">CVE-2026-35573</a></td>
+        <td>9.1</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-22</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.37</td>
+        <td><details><summary>ChurchCRM is an open-source church management system. Prior to 6.5.3, a path tra...</summary><p>ChurchCRM is an open-source church management system. Prior to 6.5.3, a path traversal vulnerability in ChurchCRM&#x27;s backup restore functionality allows authenticated administrators to upload arbitrary files and achieve remote code execution by overwriting Apache .htaccess configuration files. The vulnerability exists in src/ChurchCRM/Backup/RestoreJob.php. The $rawUploadedFile[&#x27;name&#x27;] parameter is user-controlled and allows uploading files with arbitrary names to /var/www/html/tmp_attach/ChurchCRMBackups/. This vulnerability is fixed in 6.5.3.</p></details></td>
+        <td>2026-04-07</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35572" target="_blank" rel="noopener">CVE-2026-35572</a></td>
+        <td>7.0</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-918</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.90</td>
+        <td><details><summary>ChurchCRM is an open-source church management system. Prior to 6.5.3, it is poss...</summary><p>ChurchCRM is an open-source church management system. Prior to 6.5.3, it is possible to trigger server-side HTTP/HTTPS requests to arbitrary hosts (SSRF) by supplying a crafted URL in the Referer request header. The server subsequently makes an outbound request to the attacker-controlled domain, confirmed via OAST. This vulnerability is fixed in 6.5.3.</p></details></td>
+        <td>2026-04-07</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-31272" target="_blank" rel="noopener">CVE-2026-31272</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>MRCMS 3.1.2 contains an access control vulnerability. The save() method in src/m...</summary><p>MRCMS 3.1.2 contains an access control vulnerability. The save() method in src/main/java/org/marker/mushroom/controller/UserController.java lacks proper authorization validation, enabling direct addition of super administrator accounts without authentication.</p></details></td>
+        <td>2026-04-07</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-31271" target="_blank" rel="noopener">CVE-2026-31271</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>megagao production_ssm v1.0 contains an authorization bypass vulnerability in th...</summary><p>megagao production_ssm v1.0 contains an authorization bypass vulnerability in the user addition functionality. The insert() method in UserController.java lacks authentication checks, allowing unauthenticated attackers to create super administrator accounts by directly accessing the /user/insert endpoint. This leads to complete system compromise.</p></details></td>
+        <td>2026-04-07</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-24175" target="_blank" rel="noopener">CVE-2026-24175</a></td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-248</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.25</td>
+        <td><details><summary>NVIDIA Triton Inference Server contains a vulnerability where an attacker could ...</summary><p>NVIDIA Triton Inference Server contains a vulnerability where an attacker could cause a server crash by sending a malformed request header to the server. A successful exploit of this vulnerability might lead to denial of service.</p></details></td>
+        <td>2026-04-07</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-24174" target="_blank" rel="noopener">CVE-2026-24174</a></td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-681</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.25</td>
+        <td><details><summary>NVIDIA Triton Inference Server contains a vulnerability where an attacker could ...</summary><p>NVIDIA Triton Inference Server contains a vulnerability where an attacker could cause a server crash by sending a malformed request to the server. A successful exploit of this vulnerability might lead to denial of service.</p></details></td>
+        <td>2026-04-07</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-24173" target="_blank" rel="noopener">CVE-2026-24173</a></td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-190</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.25</td>
+        <td><details><summary>NVIDIA Triton Inference Server contains a vulnerability where an attacker could ...</summary><p>NVIDIA Triton Inference Server contains a vulnerability where an attacker could cause a server crash by sending a malformed request to the server. A successful exploit of this vulnerability might lead to denial of service.</p></details></td>
+        <td>2026-04-07</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-24156" target="_blank" rel="noopener">CVE-2026-24156</a></td>
+        <td>7.3</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-502</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.11</td>
+        <td><details><summary>NVIDIA DALI contains a vulnerability where an attacker could cause a deserializa...</summary><p>NVIDIA DALI contains a vulnerability where an attacker could cause a deserialization of untrusted data. A successful exploit of this vulnerability might lead to arbitrary code execution.</p></details></td>
+        <td>2026-04-07</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-24147" target="_blank" rel="noopener">CVE-2026-24147</a></td>
+        <td>4.8</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-22</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.36</td>
+        <td><details><summary>NVIDIA Triton Inference Server contains a vulnerability in triton server where a...</summary><p>NVIDIA Triton Inference Server contains a vulnerability in triton server where an attacker may cause an information disclosure by uploading a model configuration. A successful exploit of this vulnerability may lead to information disclosure or denial of service.</p></details></td>
+        <td>2026-04-07</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-24146" target="_blank" rel="noopener">CVE-2026-24146</a></td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-789</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.25</td>
+        <td><details><summary>NVIDIA Triton Inference Server contains a vulnerability where insufficient input...</summary><p>NVIDIA Triton Inference Server contains a vulnerability where insufficient input validation and a large number of outputs could cause a server crash. A successful exploit of this vulnerability might lead to denial of service.</p></details></td>
+        <td>2026-04-07</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-22682" target="_blank" rel="noopener">CVE-2026-22682</a></td>
+        <td>8.4</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-863</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.88</td>
+        <td><details><summary>OpenHarness prior to commit 166fcfe contains an improper access control vulnerab...</summary><p>OpenHarness prior to commit 166fcfe contains an improper access control vulnerability in built-in file tools due to inconsistent parameter handling in permission enforcement, allowing attackers who can influence agent tool execution to read arbitrary local files outside the intended repository scope. Attackers can exploit the path parameter not being passed to the PermissionChecker in read_file, write_file, edit_file, and notebook_edit tools to bypass deny rules and access sensitive files such as configuration files, credentials, and SSH material, or create and overwrite files in restricted host paths in full_auto mode.</p></details></td>
+        <td>2026-04-07</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-22680" target="_blank" rel="noopener">CVE-2026-22680</a></td>
+        <td>6.9</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.83</td>
+        <td><details><summary>OpenViking versions prior to 0.3.3 contain a missing authorization vulnerability...</summary><p>OpenViking versions prior to 0.3.3 contain a missing authorization vulnerability in the task polling endpoints that allows unauthorized attackers to enumerate or retrieve background task metadata created by other users. Attackers can access the /api/v1/tasks and /api/v1/tasks/{task_id} routes without authentication to expose task type, task status, resource identifiers, archive URIs, result payloads, and error information, potentially causing cross-tenant interference in multi-tenant deployments.</p></details></td>
+        <td>2026-04-07</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4631" target="_blank" rel="noopener">CVE-2026-4631</a></td>
+        <td>9.8</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-78</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.86</td>
+        <td><details><summary>Cockpit&#x27;s remote login feature passes user-supplied hostnames and usernames from...</summary><p>Cockpit&#x27;s remote login feature passes user-supplied hostnames and usernames from the web interface to the SSH client without validation or sanitization. An attacker with network access to the Cockpit web service can craft a single HTTP request to the login endpoint that injects malicious SSH options or shell commands, achieving code execution on the Cockpit host without valid credentials. The injection occurs during the authentication flow before any credential verification takes place, meaning no login is required to exploit the vulnerability.</p></details></td>
+        <td>2026-04-07</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39384" target="_blank" rel="noopener">CVE-2026-39384</a></td>
+        <td>7.6</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-639</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.32</td>
+        <td><details><summary>FreeScout is a free help desk and shared inbox built with PHP&#x27;s Laravel framewor...</summary><p>FreeScout is a free help desk and shared inbox built with PHP&#x27;s Laravel framework. Prior to 1.8.212, FreeScout does not take the limit_user_customer_visibility parameter into account when merging customers. This vulnerability is fixed in 1.8.212.</p></details></td>
+        <td>2026-04-07</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39316" target="_blank" rel="noopener">CVE-2026-39316</a></td>
+        <td>4.0</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-416</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>2.80</td>
+        <td><details><summary>OpenPrinting CUPS is an open source printing system for Linux and other Unix-lik...</summary><p>OpenPrinting CUPS is an open source printing system for Linux and other Unix-like operating systems. In versions 2.4.16 and prior, a use-after-free vulnerability exists in the CUPS scheduler (cupsd) when temporary printers are automatically deleted. cupsdDeleteTemporaryPrinters() in scheduler/printers.c calls cupsdDeletePrinter() without first expiring subscriptions that reference the printer, leaving cupsd_subscription_t.dest as a dangling pointer to freed heap memory. The dangling pointer is subsequently dereferenced at multiple code sites, causing a crash (denial of service) of the cupsd daemon. With heap grooming, this can be leveraged for code execution.</p></details></td>
+        <td>2026-04-07</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39314" target="_blank" rel="noopener">CVE-2026-39314</a></td>
+        <td>4.0</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-191</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>2.80</td>
+        <td><details><summary>OpenPrinting CUPS is an open source printing system for Linux and other Unix-lik...</summary><p>OpenPrinting CUPS is an open source printing system for Linux and other Unix-like operating systems. In versions 2.4.16 and prior, an integer underflow vulnerability in _ppdCreateFromIPP() (cups/ppd-cache.c) allows any unprivileged local user to crash the cupsd root process by supplying a negative job-password-supported IPP attribute. The bounds check only caps the upper bound, so a negative value passes validation, is cast to size_t (wrapping to ~2^64), and is used as the length argument to memset() on a 33-byte stack buffer. This causes an immediate SIGSEGV in the cupsd root process. Combined with systemd&#x27;s Restart=on-failure, an attacker can repeat the crash for sustained denial of service.</p></details></td>
+        <td>2026-04-07</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39312" target="_blank" rel="noopener">CVE-2026-39312</a></td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-789</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.25</td>
+        <td><details><summary>SoftEtherVPN is a an open-source cross-platform multi-protocol VPN Program. In 5...</summary><p>SoftEtherVPN is a an open-source cross-platform multi-protocol VPN Program. In 5.2.5188 and earlier, a pre-authentication denial-of-service vulnerability exists in SoftEther VPN Developer Edition 5.2.5188 (and likely earlier versions of Developer Edition). An unauthenticated remote attacker can crash the vpnserver process by sending a single malformed EAP-TLS packet over raw L2TP (UDP/1701), terminating all active VPN sessions.</p></details></td>
+        <td>2026-04-07</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39308" target="_blank" rel="noopener">CVE-2026-39308</a></td>
+        <td>7.1</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-22</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.97</td>
+        <td><details><summary>PraisonAI is a multi-agent teams system. Prior to 1.5.113, PraisonAI&#x27;s recipe re...</summary><p>PraisonAI is a multi-agent teams system. Prior to 1.5.113, PraisonAI&#x27;s recipe registry publish endpoint writes uploaded recipe bundles to a filesystem path derived from the bundle&#x27;s internal manifest.json before it verifies that the manifest name and version match the HTTP route. A malicious publisher can place ../ traversal sequences in the bundle manifest and cause the registry server to create files outside the configured registry root even though the request is ultimately rejected with HTTP 400. This is an arbitrary file write / path traversal issue on the registry host. It affects deployments that expose the recipe registry publish flow. If the registry is intentionally run without a token, any network client that can reach the service can trigger it. If a token is configured, any user with publish access can still exploit it. This vulnerability is fixed in 1.5.113.</p></details></td>
+        <td>2026-04-07</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39307" target="_blank" rel="noopener">CVE-2026-39307</a></td>
+        <td>8.1</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-22</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.67</td>
+        <td><details><summary>PraisonAI is a multi-agent teams system. Prior to 1.5.113, The PraisonAI templat...</summary><p>PraisonAI is a multi-agent teams system. Prior to 1.5.113, The PraisonAI templates installation feature is vulnerable to a &quot;Zip Slip&quot; Arbitrary File Write attack. When downloading and extracting template archives from external sources (e.g., GitHub), the application uses Python&#x27;s zipfile.extractall() without verifying if the files within the archive resolve outside of the intended extraction directory. This vulnerability is fixed in 1.5.113.</p></details></td>
+        <td>2026-04-07</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39306" target="_blank" rel="noopener">CVE-2026-39306</a></td>
+        <td>7.3</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-22</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.11</td>
+        <td><details><summary>PraisonAI is a multi-agent teams system. Prior to 1.5.113, PraisonAI&#x27;s recipe re...</summary><p>PraisonAI is a multi-agent teams system. Prior to 1.5.113, PraisonAI&#x27;s recipe registry pull flow extracts attacker-controlled .praison tar archives with tar.extractall() and does not validate archive member paths before extraction. A malicious publisher can upload a recipe bundle that contains ../ traversal entries and any user who later pulls that recipe will write files outside the output directory they selected. This is a path traversal / arbitrary file write vulnerability on the client side of the recipe registry workflow. It affects both the local registry pull path and the HTTP registry pull path. The checksum verification does not prevent exploitation because the malicious traversal payload is part of the signed bundle itself. This vulnerability is fixed in 1.5.113.</p></details></td>
+        <td>2026-04-07</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39305" target="_blank" rel="noopener">CVE-2026-39305</a></td>
+        <td>9.0</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-22</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.30</td>
+        <td><details><summary>PraisonAI is a multi-agent teams system. Prior to 1.5.113, the Action Orchestrat...</summary><p>PraisonAI is a multi-agent teams system. Prior to 1.5.113, the Action Orchestrator feature contains a Path Traversal vulnerability that allows an attacker (or compromised agent) to write to arbitrary files outside of the configured workspace directory. By supplying relative path segments (../) in the target path, malicious actions can overwrite sensitive system files or drop executable payloads on the host. This vulnerability is fixed in 1.5.113.</p></details></td>
+        <td>2026-04-07</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35615" target="_blank" rel="noopener">CVE-2026-35615</a></td>
+        <td>9.2</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-22</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.44</td>
+        <td><details><summary>PraisonAI is a multi-agent teams system. Prior to 1.5.113, _validate_path() call...</summary><p>PraisonAI is a multi-agent teams system. Prior to 1.5.113, _validate_path() calls os.path.normpath() first, which collapses .. sequences, then checks for &#x27;..&#x27; in normalized. Since .. is already collapsed, the check always passes. This makes the check completely useless and allows trivial path traversal to any file on the system. This vulnerability is fixed in 1.5.113.</p></details></td>
+        <td>2026-04-07</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35614" target="_blank" rel="noopener">CVE-2026-35614</a></td>
+        <td>9.3</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-89</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.51</td>
+        <td><details><summary>Frappe is a full-stack web application framework. Prior to 16.14.0 and 15.104.0,...</summary><p>Frappe is a full-stack web application framework. Prior to 16.14.0 and 15.104.0, Frappe has a SQL injection in bulk_update. This vulnerability is fixed in 16.14.0 and 15.104.0.</p></details></td>
+        <td>2026-04-07</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35613" target="_blank" rel="noopener">CVE-2026-35613</a></td>
+        <td>5.1</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-22</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.57</td>
+        <td><details><summary>coursevault-preview is a utility for previewing course material files from a con...</summary><p>coursevault-preview is a utility for previewing course material files from a configured directory. coursevault-preview versions prior to 0.1.1 contain a path traversal vulnerability in the resolveSafe utility. The boundary check used String.prototype.startsWith(baseDir) on a normalized path, which does not enforce a directory boundary. An attacker who controls the relativePath argument to affected CoursevaultPreview methods may be able to read files outside the configured baseDir when a sibling directory exists whose name shares the same string prefix. This vulnerability is fixed in 0.1.1.</p></details></td>
+        <td>2026-04-07</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35611" target="_blank" rel="noopener">CVE-2026-35611</a></td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-1333</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.25</td>
+        <td><details><summary>Addressable is an alternative implementation to the URI implementation that is p...</summary><p>Addressable is an alternative implementation to the URI implementation that is part of Ruby&#x27;s standard library. From 2.3.0 to before 2.9.0, within the URI template implementation in Addressable, two classes of URI template generate regular expressions vulnerable to catastrophic backtracking. Templates using the * (explode) modifier with any expansion operator (e.g., {foo*}, {+var*}, {#var*}, {/var*}, {.var*}, {;var*}, {?var*}, {&amp;var*}) generate patterns with nested unbounded quantifiers that are O(2^n) when matched against a maliciously crafted URI. Templates using multiple variables with the + or # operators (e.g., {+v1,v2,v3}) generate patterns with O(n^k) complexity due to the comma separator being within the matched character class, causing ambiguous backtracking across k variables. When matched against a maliciously crafted URI, this can result in catastrophic backtracking and uncontrolled resource consumption, leading to denial of service. This vulnerability is fixed in 2.9.0.</p></details></td>
+        <td>2026-04-07</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35610" target="_blank" rel="noopener">CVE-2026-35610</a></td>
+        <td>8.8</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-285</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.16</td>
+        <td><details><summary>PolarLearn is a free and open-source learning program. In 0-PRERELEASE-14 and ea...</summary><p>PolarLearn is a free and open-source learning program. In 0-PRERELEASE-14 and earlier, setCustomPassword(userId, password) and deleteUser(userId)  in the account-management module used an inverted admin check. Because of the inverted condition, authenticated non-admin users were allowed to execute both actions, while real admins were rejected. This is a direct privilege-escalation issue in the application.</p></details></td>
+        <td>2026-04-07</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35608" target="_blank" rel="noopener">CVE-2026-35608</a></td>
+        <td>5.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.71</td>
+        <td><details><summary>QuickDrop is an easy-to-use file sharing application. Prior to 1.5.3, a stored X...</summary><p>QuickDrop is an easy-to-use file sharing application. Prior to 1.5.3, a stored XSS vulnerability exists in the file preview endpoint. The application allows SVG files to be uploaded via the /api/file/upload-chunk endpoint. An attacker can upload a specially crafted SVG file containing a JavaScript payload. When any user views the file preview, the script executes in the context of the application&#x27;s domain. This vulnerability is fixed in 1.5.3.</p></details></td>
+        <td>2026-04-07</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35607" target="_blank" rel="noopener">CVE-2026-35607</a></td>
+        <td>8.1</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-269</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.67</td>
+        <td><details><summary>File Browser is a file managing interface for uploading, deleting, previewing, r...</summary><p>File Browser is a file managing interface for uploading, deleting, previewing, renaming, and editing files within a specified directory. Prior to 2.63.1, the fix in commit b6a4fb1 (&quot;self-registered users don&#x27;t get execute perms&quot;) stripped Execute permission and Commands from users created via the signup handler. The same fix was not applied to the proxy auth handler. Users auto-created on first successful proxy-auth login are granted execution capabilities from global defaults, even though the signup path was explicitly changed to prevent execution rights from being inherited by automatically provisioned accounts. This vulnerability is fixed in 2.63.1.</p></details></td>
+        <td>2026-04-07</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35606" target="_blank" rel="noopener">CVE-2026-35606</a></td>
+        <td>5.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.71</td>
+        <td><details><summary>File Browser is a file managing interface for uploading, deleting, previewing, r...</summary><p>File Browser is a file managing interface for uploading, deleting, previewing, renaming, and editing files within a specified directory. Prior to 2.63.1, the resourceGetHandler in http/resource.go returns full text file content without checking the Perm.Download permission flag. All three other content-serving endpoints (/api/raw, /api/preview, /api/subtitle) correctly verify this permission before serving content. A user with download: false can read any text file within their scope through two bypass paths. This vulnerability is fixed in 2.63.1.</p></details></td>
+        <td>2026-04-07</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35605" target="_blank" rel="noopener">CVE-2026-35605</a></td>
+        <td>6.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-22</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.41</td>
+        <td><details><summary>File Browser is a file managing interface for uploading, deleting, previewing, r...</summary><p>File Browser is a file managing interface for uploading, deleting, previewing, renaming, and editing files within a specified directory. Prior to 2.63.1, the Matches() function in rules/rules.go uses strings.HasPrefix() without a trailing directory separator when matching paths against access rules. A rule for /uploads also matches /uploads_backup/, granting or denying access to unintended directories.  This vulnerability is fixed in 2.63.1.</p></details></td>
+        <td>2026-04-07</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35604" target="_blank" rel="noopener">CVE-2026-35604</a></td>
+        <td>8.2</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-863</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.74</td>
+        <td><details><summary>File Browser is a file managing interface for uploading, deleting, previewing, r...</summary><p>File Browser is a file managing interface for uploading, deleting, previewing, renaming, and editing files within a specified directory. Prior to 2.63.1, when an admin revokes a user&#x27;s Share and Download permissions, existing share links created by that user remain fully accessible to unauthenticated users. The public share download handler does not re-check the share owner&#x27;s current permissions. This vulnerability is fixed in 2.63.1.</p></details></td>
+        <td>2026-04-07</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35592" target="_blank" rel="noopener">CVE-2026-35592</a></td>
+        <td>5.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-22</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.71</td>
+        <td><details><summary>pyLoad is a free and open-source download manager written in Python. Prior to 0....</summary><p>pyLoad is a free and open-source download manager written in Python. Prior to 0.5.0b3.dev97, the _safe_extractall() function in src/pyload/plugins/extractors/UnTar.py uses os.path.commonprefix() for its path traversal check, which performs character-level string comparison rather than path-level comparison. This allows a specially crafted tar archive to write files outside the intended extraction directory. The correct function os.path.commonpath() was added to the codebase in the CVE-2026-32808 fix (commit 5f4f0fa) but was never applied to _safe_extractall(), making this an incomplete fix. This vulnerability is fixed in 0.5.0b3.dev97.</p></details></td>
+        <td>2026-04-07</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35586" target="_blank" rel="noopener">CVE-2026-35586</a></td>
+        <td>6.8</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-863</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.76</td>
+        <td><details><summary>pyLoad is a free and open-source download manager written in Python. Prior to 0....</summary><p>pyLoad is a free and open-source download manager written in Python. Prior to 0.5.0b3.dev97, the ADMIN_ONLY_CORE_OPTIONS authorization set in set_config_value() uses incorrect option names ssl_cert and ssl_key, while the actual configuration option names are ssl_certfile and ssl_keyfile. This name mismatch causes the admin-only check to always evaluate to False, allowing any user with SETTINGS permission to overwrite the SSL certificate and key file paths. Additionally, the ssl_certchain option was never added to the admin-only set at all. This vulnerability is fixed in 0.5.0b3.dev97.</p></details></td>
+        <td>2026-04-07</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35585" target="_blank" rel="noopener">CVE-2026-35585</a></td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-78</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.25</td>
+        <td><details><summary>File Browser is a file managing interface for uploading, deleting, previewing, r...</summary><p>File Browser is a file managing interface for uploading, deleting, previewing, renaming, and editing files within a specified directory. From 2.0.0 through 2.63.1, the hook system in File Browser — which executes administrator-defined shell commands on file events such as upload, rename, and delete — is vulnerable to OS command injection. Variable substitution for values like $FILE and $USERNAME is performed via os.Expand without sanitization. An attacker with file write permission can craft a malicious filename containing shell metacharacters, causing the server to execute arbitrary OS commands when the hook fires. This results in Remote Code Execution (RCE). This feature has been disabled by default for all installations from v2.33.8 onwards, including for existent installations.</p></details></td>
+        <td>2026-04-07</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35584" target="_blank" rel="noopener">CVE-2026-35584</a></td>
+        <td>6.9</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-306</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.83</td>
+        <td><details><summary>FreeScout is a free help desk and shared inbox built with PHP&#x27;s Laravel framewor...</summary><p>FreeScout is a free help desk and shared inbox built with PHP&#x27;s Laravel framework. Prior to 1.8.212, the endpoint GET /thread/read/{conversation_id}/{thread_id} does not require authentication and does not validate whether the given thread_id belongs to the given conversation_id. This allows any unauthenticated attacker to mark any thread as read by passing arbitrary IDs, enumerate valid thread IDs via HTTP response codes (200 vs 404), and manipulate opened_at timestamps across conversations (IDOR). This vulnerability is fixed in 1.8.212.</p></details></td>
+        <td>2026-04-07</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35583" target="_blank" rel="noopener">CVE-2026-35583</a></td>
+        <td>5.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-22</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.71</td>
+        <td><details><summary>Emissary is a P2P based data-driven workflow engine. Prior to 8.39.0, the config...</summary><p>Emissary is a P2P based data-driven workflow engine. Prior to 8.39.0, the configuration API endpoint (/api/configuration/{name}) validated configuration names using a blacklist approach that checked for \, /, .., and trailing .. This could potentially be bypassed using URL-encoded variants, double-encoding, or Unicode normalization to achieve path traversal and read configuration files outside the intended directory. This vulnerability is fixed in 8.39.0.</p></details></td>
+        <td>2026-04-07</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35581" target="_blank" rel="noopener">CVE-2026-35581</a></td>
+        <td>7.2</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-78</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.04</td>
+        <td><details><summary>Emissary is a P2P based data-driven workflow engine. Prior to 8.39.0, the Execut...</summary><p>Emissary is a P2P based data-driven workflow engine. Prior to 8.39.0, the Executrix utility class constructed shell commands by concatenating configuration-derived values — including the PLACE_NAME parameter — with insufficient sanitization. Only spaces were replaced with underscores, allowing shell metacharacters (;, |, $, `, (, ), etc.) to pass through into /bin/sh -c command execution. This vulnerability is fixed in 8.39.0.</p></details></td>
+        <td>2026-04-07</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35580" target="_blank" rel="noopener">CVE-2026-35580</a></td>
+        <td>9.1</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-77</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.37</td>
+        <td><details><summary>Emissary is a P2P based data-driven workflow engine. Prior to 8.39.0, GitHub Act...</summary><p>Emissary is a P2P based data-driven workflow engine. Prior to 8.39.0, GitHub Actions workflow files contained shell injection points where user-controlled workflow_dispatch inputs were interpolated directly into shell commands via ${{ }} expression syntax. An attacker with repository write access could inject arbitrary shell commands, leading to repository poisoning and supply chain compromise affecting all downstream users. This vulnerability is fixed in 8.39.0.</p></details></td>
+        <td>2026-04-07</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35578" target="_blank" rel="noopener">CVE-2026-35578</a></td>
+        <td>5.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-601</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.71</td>
+        <td><details><summary>ChurchCRM is an open-source church management system. Prior to 7.0.0, it was pos...</summary><p>ChurchCRM is an open-source church management system. Prior to 7.0.0, it was possible in many places across the ChurchCRM application to create a link that, when visited by an authenticated user, would redirect them to any URL chosen by an attacker if they clicked &#x27;Cancel&#x27; button on the page. For this write-up the DonatedItemEditor.php will be used as an example, however wherever all instances of &#x27;linkBack&#x27; should be assessed. This vulnerability is fixed in 7.0.0.</p></details></td>
+        <td>2026-04-07</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35574" target="_blank" rel="noopener">CVE-2026-35574</a></td>
+        <td>7.3</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.11</td>
+        <td><details><summary>ChurchCRM is an open-source church management system. Prior to 6.5.3, a stored C...</summary><p>ChurchCRM is an open-source church management system. Prior to 6.5.3, a stored Cross-Site Scripting (XSS) vulnerability in ChurchCRM&#x27;s Note Editor allows authenticated users with note-adding permissions to execute arbitrary JavaScript code in the context of other users&#x27; browsers, including administrators. This can lead to session hijacking, privilege escalation, and unauthorized access to sensitive church member data. This vulnerability is fixed in 6.5.3.</p></details></td>
+        <td>2026-04-07</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35523" target="_blank" rel="noopener">CVE-2026-35523</a></td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-306</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.25</td>
+        <td><details><summary>Strawberry GraphQL is a library for creating GraphQL APIs. Strawberry up until v...</summary><p>Strawberry GraphQL is a library for creating GraphQL APIs. Strawberry up until version 0.312.3 is vulnerable to an authentication bypass on WebSocket subscription endpoints. The legacy graphql-ws subprotocol handler does not verify that a connection_init handshake has been completed before processing start (subscription) messages. This allows a remote attacker to skip the on_ws_connect authentication hook entirely by connecting with the graphql-ws subprotocol and sending a start message directly, without ever sending connection_init.  This vulnerability is fixed in 0.312.3.</p></details></td>
+        <td>2026-04-07</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32588" target="_blank" rel="noopener">CVE-2026-32588</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-400</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Authenticated DoS over CQL in Apache Cassandra 4.0, 4.1, 5.0 allows authenticate...</summary><p>Authenticated DoS over CQL in Apache Cassandra 4.0, 4.1, 5.0 allows authenticated user to raise query latencies via repeated password changes.
+Users are recommended to upgrade to version 4.0.20, 4.1.11, 5.0.7, which fixes this issue.</p></details></td>
+        <td>2026-04-07</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-27315" target="_blank" rel="noopener">CVE-2026-27315</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-532</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Sensitive Information Leak in cqlsh in Apache Cassandra 4.0 allows access to sen...</summary><p>Sensitive Information Leak in cqlsh in Apache Cassandra 4.0 allows access to sensitive information, like passwords, from previously executed cqlsh command via  ~/.cassandra/cqlsh_history local file access.
+
+Users are recommended to upgrade to version 4.0.20, which fixes this issue.
+
+--
+Description: Cassandra&#x27;s command-line tool, cqlsh, provides a command history feature that allows users to recall previously executed commands using the up/down arrow keys. These history records are saved in the ~/.cassandra/cqlsh_history file in the user&#x27;s home directory.
+
+However, cqlsh does not redact sensitive information when saving command history. This means that if a user executes operations involving passwords (such as logging in or creating users) within cqlsh, these passwords are permanently stored in cleartext in the history file on the disk.</p></details></td>
+        <td>2026-04-07</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-27314" target="_blank" rel="noopener">CVE-2026-27314</a></td>
+        <td>8.8</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-267</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.16</td>
+        <td><details><summary>Privilege escalation in Apache Cassandra 5.0 on an mTLS environment using Mutual...</summary><p>Privilege escalation in Apache Cassandra 5.0 on an mTLS environment using MutualTlsAuthenticator allows a user with only CREATE permission to associate their own certificate identity with an arbitrary role,
+including a superuser role, and authenticate as that role via ADD IDENTITY.
+
+Users are recommended to upgrade to version 5.0.7+, which fixes this issue.</p></details></td>
+        <td>2026-04-07</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-23696" target="_blank" rel="noopener">CVE-2026-23696</a></td>
+        <td>9.4</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-89</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.58</td>
+        <td><details><summary>Windmill CE and EE versions 1.276.0 through 1.603.2 contain an SQL injection vul...</summary><p>Windmill CE and EE versions 1.276.0 through 1.603.2 contain an SQL injection vulnerability in the folder ownership management functionality that allows authenticated attackers to inject SQL through the owner parameter. An attacker can use the injection to read sensitive data such as the JWT signing secret and administrative user identifiers, forge an administrative token, and then execute arbitrary code via the workflow execution endpoints.</p></details></td>
+        <td>2026-04-07</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-22683" target="_blank" rel="noopener">CVE-2026-22683</a></td>
+        <td>8.7</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.09</td>
+        <td><details><summary>Windmill versions 1.56.0 through 1.614.0 contain a missing authorization vulnera...</summary><p>Windmill versions 1.56.0 through 1.614.0 contain a missing authorization vulnerability that allows users with the Operator role to perform prohibited entity creation and modification actions via the backend API. Although Operators are documented and priced as unable to create or modify entities, the API does not enforce the Operator restriction on workspace endpoints, allowing an Operator to create and update scripts, flows, apps, and raw_apps. Since Operators can also execute scripts via the jobs API, this allows direct privilege escalation to remote code execution within the Windmill deployment. This vulnerability has existed since the introduction of the Operator role in version 1.56.0.</p></details></td>
+        <td>2026-04-07</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-70844" target="_blank" rel="noopener">CVE-2025-70844</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>yaffa v2.0.0 is vulnerable to Cross Site Scripting (XSS). An attacker can inject...</summary><p>yaffa v2.0.0 is vulnerable to Cross Site Scripting (XSS). An attacker can inject malicious JavaScript into the &quot;Add Account Group&quot; function on the account-group page, allowing execution of arbitrary script in the context of users who view the affected page.</p></details></td>
+        <td>2026-04-07</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-14944" target="_blank" rel="noopener">CVE-2025-14944</a></td>
+        <td>5.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.71</td>
+        <td><details><summary>The Backup Migration plugin for WordPress is vulnerable to Missing Authorization...</summary><p>The Backup Migration plugin for WordPress is vulnerable to Missing Authorization in all versions up to, and including, 2.0.0. This is due to a missing capability check on the &#x27;initializeOfflineAjax&#x27; function and lack of proper nonce verification. The endpoint only validates against hardcoded tokens which are publicly exposed in the plugin&#x27;s JavaScript. This makes it possible for unauthenticated attackers to trigger the backup upload queue processing, potentially causing unexpected backup transfers to configured cloud storage targets and resource exhaustion.</p></details></td>
+        <td>2026-04-07</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-14821" target="_blank" rel="noopener">CVE-2025-14821</a></td>
+        <td>7.8</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-427</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.46</td>
+        <td><details><summary>A flaw was found in libssh. This vulnerability allows local man-in-the-middle at...</summary><p>A flaw was found in libssh. This vulnerability allows local man-in-the-middle attacks, security downgrades of SSH (Secure Shell) connections, and manipulation of trusted host information, posing a significant risk to the confidentiality, integrity, and availability of SSH communications via an insecure default configuration on Windows systems where the library automatically loads configuration files from the C:\etc directory, which can be created and modified by unprivileged local users.</p></details></td>
+        <td>2026-04-07</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2024-36058" target="_blank" rel="noopener">CVE-2024-36058</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>The Send Basket functionality in Koha Library before 23.05.10 is susceptible to ...</summary><p>The Send Basket functionality in Koha Library before 23.05.10 is susceptible to Time-Based SQL Injection because it fails to sanitize the POST parameter bib_list in /cgi-bin/koha/opac-sendbasket.pl, allowing library users to read arbitrary data from the database.</p></details></td>
+        <td>2026-04-07</td>
+      </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5745" target="_blank" rel="noopener">CVE-2026-5745</a></td>
         <td>5.5</td>
@@ -352,12 +1221,12 @@
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-24819" target="_blank" rel="noopener">CVE-2025-24819</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>5.7</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-23</td>
         <td>&nbsp;</td>
         <td>&mdash;</td>
-        <td>0.00</td>
+        <td>3.99</td>
         <td><details><summary>Nokia MantaRay NM is vulnerable to a Relative Path Traversal vulnerability due t...</summary><p>Nokia MantaRay NM is vulnerable to a Relative Path Traversal vulnerability due to improper validation of input parameter on the file system in Software Manager application.</p></details></td>
         <td>2026-04-07</td>
       </tr>
@@ -417,18 +1286,6 @@
         <td>2026-04-07</td>
       </tr>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5382" target="_blank" rel="noopener">CVE-2026-5382</a></td>
-        <td>3.0</td>
-        <td><span class="severity low">LOW</span></td>
-        <td>CWE-863</td>
-        <td>&nbsp;</td>
-        <td>&mdash;</td>
-        <td>2.10</td>
-        <td><details><summary>An issue that could expose records outside of the authorized organization scope ...</summary><p>An issue that could expose records outside of the authorized organization scope through the MCP endpoints has been resolved. This is an instance of CWE-863: Incorrect Authorization, and has an estimated CVSS score of 
-CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:C/C:L/I:N/A:N (3.0 Low). This issue was fixed in version 4.0.260206.0 of the runZero Platform.</p></details></td>
-        <td>2026-04-07</td>
-      </tr>
-      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5381" target="_blank" rel="noopener">CVE-2026-5381</a></td>
         <td>2.2</td>
         <td><span class="severity low">LOW</span></td>
@@ -437,18 +1294,6 @@ CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:C/C:L/I:N/A:N (3.0 Low). This issue was fixed in 
         <td>&mdash;</td>
         <td>1.54</td>
         <td><details><summary>An issue that could expose task information outside of the authorized organizati...</summary><p>An issue that could expose task information outside of the authorized organization scope has been resolved. This is an instance of CWE-863: Incorrect Authorization, and has an estimated CVSS score of CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:L/I:N/A:N (2.2 Low). This issue was fixed in version 4.0.260205.0 of the runZero Platform.</p></details></td>
-        <td>2026-04-07</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5380" target="_blank" rel="noopener">CVE-2026-5380</a></td>
-        <td>5.3</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-863</td>
-        <td>&nbsp;</td>
-        <td>&mdash;</td>
-        <td>3.71</td>
-        <td><details><summary>An issue that could allow an authorized user to view the clear-text secrets for ...</summary><p>An issue that could allow an authorized user to view the clear-text secrets for a subset of credential types and fields has been resolved. This is an instance of CWE-522: Insufficiently Protected Credentials, and has an estimated CVSS score of
-CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:N/A:N (5.3 Medium). This issue was fixed in version 4.0.260204.2 of the runZero Platform.</p></details></td>
         <td>2026-04-07</td>
       </tr>
       <tr>
@@ -540,43 +1385,13 @@ CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:N/A:N (5.3 Medium). This issue was fixed 
         <td>2026-04-07</td>
       </tr>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4292" target="_blank" rel="noopener">CVE-2026-4292</a></td>
-        <td>2.7</td>
-        <td><span class="severity low">LOW</span></td>
-        <td>CWE-862</td>
-        <td>&nbsp;</td>
-        <td>&mdash;</td>
-        <td>1.89</td>
-        <td><details><summary>An issue was discovered in 6.0 before 6.0.4, 5.2 before 5.2.13, and 4.2 before 4...</summary><p>An issue was discovered in 6.0 before 6.0.4, 5.2 before 5.2.13, and 4.2 before 4.2.30.
-Admin changelist forms using `ModelAdmin.list_editable` incorrectly allowed new
-instances to be created via forged `POST` data.
-Earlier, unsupported Django series (such as 5.0.x, 4.1.x, and 3.2.x) were not evaluated and may also be affected.
-Django would like to thank Cantina for reporting this issue.</p></details></td>
-        <td>2026-04-07</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4277" target="_blank" rel="noopener">CVE-2026-4277</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>CWE-862</td>
-        <td>&nbsp;</td>
-        <td>&mdash;</td>
-        <td>0.00</td>
-        <td><details><summary>An issue was discovered in 6.0 before 6.0.4, 5.2 before 5.2.13, and 4.2 before 4...</summary><p>An issue was discovered in 6.0 before 6.0.4, 5.2 before 5.2.13, and 4.2 before 4.2.30.
-Add permissions on inline model instances were not validated on submission of
-forged `POST` data in `GenericInlineModelAdmin`.
-Earlier, unsupported Django series (such as 5.0.x, 4.1.x, and 3.2.x) were not evaluated and may also be affected.
-Django would like to thank N05ec@LZU-DSLab for reporting this issue.</p></details></td>
-        <td>2026-04-07</td>
-      </tr>
-      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-3902" target="_blank" rel="noopener">CVE-2026-3902</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
         <td>CWE-290</td>
         <td>&nbsp;</td>
         <td>&mdash;</td>
-        <td>0.00</td>
+        <td>5.25</td>
         <td><details><summary>An issue was discovered in 6.0 before 6.0.4, 5.2 before 5.2.13, and 4.2 before 4...</summary><p>An issue was discovered in 6.0 before 6.0.4, 5.2 before 5.2.13, and 4.2 before 4.2.30.
 `ASGIRequest` allows a remote attacker to spoof headers by exploiting an ambiguous mapping of two header variants (with hyphens or with underscores) to a single version with underscores.
 Earlier, unsupported Django series (such as 5.0.x, 4.1.x, and 3.2.x) were not evaluated and may also be affected.
@@ -727,37 +1542,6 @@ Django would like to thank Tarek Nakkouch for reporting this issue.</p></details
         <td>2026-04-07</td>
       </tr>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33034" target="_blank" rel="noopener">CVE-2026-33034</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>CWE-770</td>
-        <td>&nbsp;</td>
-        <td>&mdash;</td>
-        <td>0.00</td>
-        <td><details><summary>An issue was discovered in 6.0 before 6.0.4, 5.2 before 5.2.13, and 4.2 before 4...</summary><p>An issue was discovered in 6.0 before 6.0.4, 5.2 before 5.2.13, and 4.2 before 4.2.30.
-ASGI requests with a missing or understated `Content-Length` header could
-bypass the `DATA_UPLOAD_MAX_MEMORY_SIZE` limit when reading
-`HttpRequest.body`, allowing remote attackers to load an unbounded request body into
-memory.
-Earlier, unsupported Django series (such as 5.0.x, 4.1.x, and 3.2.x) were not evaluated and may also be affected.
-Django would like to thank Superior for reporting this issue.</p></details></td>
-        <td>2026-04-07</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33033" target="_blank" rel="noopener">CVE-2026-33033</a></td>
-        <td>6.5</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-407</td>
-        <td>&nbsp;</td>
-        <td>&mdash;</td>
-        <td>4.55</td>
-        <td><details><summary>An issue was discovered in 6.0 before 6.0.4, 5.2 before 5.2.13, and 4.2 before 4...</summary><p>An issue was discovered in 6.0 before 6.0.4, 5.2 before 5.2.13, and 4.2 before 4.2.30.
-`MultiPartParser` allows remote attackers to degrade performance by submitting multipart uploads with `Content-Transfer-Encoding: base64` including excessive whitespace.
-Earlier, unsupported Django series (such as 5.0.x, 4.1.x, and 3.2.x) were not evaluated and may also be affected.
-Django would like to thank Seokchan Yoon for reporting this issue.</p></details></td>
-        <td>2026-04-07</td>
-      </tr>
-      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-30079" target="_blank" rel="noopener">CVE-2026-30079</a></td>
         <td>0.0</td>
         <td><span class="severity none">NONE</span></td>
@@ -893,23 +1677,23 @@ Kafka users are advised to upgrade to 3.9.2, 4.0.2, 4.1.2, 4.2.0, or later to ad
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5735" target="_blank" rel="noopener">CVE-2026-5735</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>9.8</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-787</td>
         <td>&nbsp;</td>
         <td>&mdash;</td>
-        <td>0.00</td>
+        <td>6.86</td>
         <td><details><summary>Memory safety bugs present in Firefox 149.0.1 and Thunderbird 149.0.1. Some of t...</summary><p>Memory safety bugs present in Firefox 149.0.1 and Thunderbird 149.0.1. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code. This vulnerability affects Firefox &lt; 149.0.2.</p></details></td>
         <td>2026-04-07</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5734" target="_blank" rel="noopener">CVE-2026-5734</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>9.8</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-787</td>
         <td>&nbsp;</td>
         <td>&mdash;</td>
-        <td>0.00</td>
+        <td>6.86</td>
         <td><details><summary>Memory safety bugs present in Firefox ESR 140.9.0, Thunderbird ESR 140.9.0, Fire...</summary><p>Memory safety bugs present in Firefox ESR 140.9.0, Thunderbird ESR 140.9.0, Firefox 149.0.1 and Thunderbird 149.0.1. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code. This vulnerability affects Firefox &lt; 149.0.2 and Firefox ESR &lt; 140.9.1.</p></details></td>
         <td>2026-04-07</td>
       </tr>
@@ -1068,21 +1852,6 @@ Kafka users are advised to upgrade to 3.9.2, 4.0.2, 4.1.2, 4.2.0, or later to ad
         <td>2026-04-07</td>
       </tr>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33227" target="_blank" rel="noopener">CVE-2026-33227</a></td>
-        <td>4.3</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-22</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p10</small></td>
-        <td>3.01</td>
-        <td><details><summary>Improper validation and restriction of a classpath path name vulnerability in Ap...</summary><p>Improper validation and restriction of a classpath path name vulnerability in Apache ActiveMQ Client, Apache ActiveMQ Broker, Apache ActiveMQ All.
-
-In two instances (when creating a Stomp consumer and also browsing messages in the Web console) an authenticated user provided &quot;key&quot; value could be constructed to traverse the classpath due to path concatenation. As a result, the application is exposed to a classpath path resource loading vulnerability that could potentially be chained together with another attack to lead to exploit.This issue affects Apache ActiveMQ Client: before 5.19.3, from 6.0.0 before 6.2.2; Apache ActiveMQ Broker: before 5.19.3, from 6.0.0 before 6.2.2; Apache ActiveMQ All: before 5.19.3, from 6.0.0 before 6.2.2.
-
-Users are recommended to upgrade to version 5.19.4 or 6.2.3, which fixes the issue. Note: 5.19.3 and 6.2.2 also fix this issue, but that is limited to non-Windows environments due to a path separator resolution bug fixed in 5.19.4 and 6.2.3.</p></details></td>
-        <td>2026-04-07</td>
-      </tr>
-      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-3177" target="_blank" rel="noopener">CVE-2026-3177</a></td>
         <td>5.3</td>
         <td><span class="severity medium">MEDIUM</span></td>
@@ -1106,23 +1875,23 @@ Users are recommended to upgrade to version 5.19.4 or 6.2.3, which fixes the iss
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4079" target="_blank" rel="noopener">CVE-2026-4079</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>6.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
         <td>N/A</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p5</small></td>
-        <td>0.00</td>
+        <td>4.55</td>
         <td><details><summary>The SQL Chart Builder WordPress plugin before 2.3.8 does not properly escape use...</summary><p>The SQL Chart Builder WordPress plugin before 2.3.8 does not properly escape user input as it is concatened to SQL queries, making it possible for attackers to conduct SQL Injection attacks against the dynamic filter functionality.</p></details></td>
         <td>2026-04-07</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-1900" target="_blank" rel="noopener">CVE-2026-1900</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>6.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
         <td>N/A</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p4</small></td>
-        <td>0.00</td>
+        <td>4.55</td>
         <td><details><summary>The Link Whisper Free WordPress plugin before 0.9.1 has a publicly accessible RE...</summary><p>The Link Whisper Free WordPress plugin before 0.9.1 has a publicly accessible REST endpoint that allows unauthenticated settings updates.</p></details></td>
         <td>2026-04-07</td>
       </tr>
@@ -1139,12 +1908,12 @@ Users are recommended to upgrade to version 5.19.4 or 6.2.3, which fixes the iss
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-15611" target="_blank" rel="noopener">CVE-2025-15611</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>5.4</td>
+        <td><span class="severity medium">MEDIUM</span></td>
         <td>N/A</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p6</small></td>
-        <td>0.00</td>
+        <td>3.78</td>
         <td><details><summary>The Popup Box  WordPress plugin before 5.5.0 does not properly validate nonces i...</summary><p>The Popup Box  WordPress plugin before 5.5.0 does not properly validate nonces in the add_or_edit_popupbox() function before saving popup data, allowing unauthenticated attackers to perform Cross-Site Request Forgery attacks. When an authenticated admin visits a malicious page, the attacker can create or modify popups with arbitrary JavaScript that executes in the admin panel and frontend.</p></details></td>
         <td>2026-04-07</td>
       </tr>
@@ -12131,7 +12900,7 @@ Users are recommended to upgrade to version 5.19.4 or 6.2.3, which fixes the iss
       </div>
     </section>
     <section>
-      <h2>Previous Month — March 2026 <span class="count">(5740)</span></h2>
+      <h2>Previous Month — March 2026 <span class="count">(5736)</span></h2>
       <div class="table-wrapper">
         <table>
           <thead>
@@ -12897,25 +13666,6 @@ Users are recommended to upgrade to version 5.19.4 or 6.2.3, which fixes the iss
         <td>2026-03-31</td>
       </tr>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-1579" target="_blank" rel="noopener">CVE-2026-1579</a></td>
-        <td>9.3</td>
-        <td><span class="severity critical">CRITICAL</span></td>
-        <td>CWE-306</td>
-        <td>&nbsp;</td>
-        <td>0.1% <small>p24</small></td>
-        <td>6.51</td>
-        <td><details><summary>The MAVLink communication protocol does not require cryptographic 
-authenticatio...</summary><p>The MAVLink communication protocol does not require cryptographic 
-authentication by default. When MAVLink 2.0 message signing is not 
-enabled, any message -- including SERIAL_CONTROL, which provides 
-interactive shell access -- can be sent by an unauthenticated party with
- access to the MAVLink interface. PX4 provides MAVLink 2.0 message 
-signing as the cryptographic authentication mechanism for all MAVLink 
-communication. When signing is enabled, unsigned messages are rejected 
-at the protocol level.</p></details></td>
-        <td>2026-03-31</td>
-      </tr>
-      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5211" target="_blank" rel="noopener">CVE-2026-5211</a></td>
         <td>7.4</td>
         <td><span class="severity high">HIGH</span></td>
@@ -12924,33 +13674,6 @@ at the protocol level.</p></details></td>
         <td>0.0% <small>p9</small></td>
         <td>5.18</td>
         <td><details><summary>A flaw has been found in D-Link DNS-120, DNR-202L, DNS-315L, DNS-320, DNS-320L, ...</summary><p>A flaw has been found in D-Link DNS-120, DNR-202L, DNS-315L, DNS-320, DNS-320L, DNS-320LW, DNS-321, DNR-322L, DNS-323, DNS-325, DNS-326, DNS-327L, DNR-326, DNS-340L, DNS-343, DNS-345, DNS-726-4, DNS-1100-4, DNS-1200-05 and DNS-1550-04 up to 20260205. This vulnerability affects the function UPnP_AV_Server_Path_Del of the file /cgi-bin/app_mgr.cgi. Executing a manipulation of the argument f_dir can lead to stack-based buffer overflow. The attack can be executed remotely. The exploit has been published and may be used.</p></details></td>
-        <td>2026-03-31</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4800" target="_blank" rel="noopener">CVE-2026-4800</a></td>
-        <td>8.1</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-94</td>
-        <td>&nbsp;</td>
-        <td>0.1% <small>p25</small></td>
-        <td>5.67</td>
-        <td><details><summary>Impact:
-
-The fix for CVE-2021-23337 (https://github.com/advisories/GHSA-35jh-r3h...</summary><p>Impact:
-
-The fix for CVE-2021-23337 (https://github.com/advisories/GHSA-35jh-r3h4-6jhm) added validation for the variable option in _.template but did not apply the same validation to options.imports key names. Both paths flow into the same Function() constructor sink.
-
-When an application passes untrusted input as options.imports key names, an attacker can inject default-parameter expressions that execute arbitrary code at template compilation time.
-
-Additionally, _.template uses assignInWith to merge imports, which enumerates inherited properties via for..in. If Object.prototype has been polluted by any other vector, the polluted keys are copied into the imports object and passed to Function().
-
-Patches:
-
-Users should upgrade to version 4.18.0.
-
-Workarounds:
-
-Do not pass untrusted input as key names in options.imports. Only use developer-controlled, static key names.</p></details></td>
         <td>2026-03-31</td>
       </tr>
       <tr>
@@ -13050,31 +13773,6 @@ Do not pass untrusted input as key names in options.imports. Only use developer-
         <td>0.0% <small>p0</small></td>
         <td>3.71</td>
         <td><details><summary>An arbitrary file overwrite vulnerability in RAREPROB SOLUTIONS PRIVATE LIMITED ...</summary><p>An arbitrary file overwrite vulnerability in RAREPROB SOLUTIONS PRIVATE LIMITED Video player Play All Videos v1.0.135 allows attackers to overwrite critical internal files via the file import process, leading to arbtrary code execution or information exposure.</p></details></td>
-        <td>2026-03-31</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-2950" target="_blank" rel="noopener">CVE-2026-2950</a></td>
-        <td>6.5</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-1321</td>
-        <td>&nbsp;</td>
-        <td>0.1% <small>p17</small></td>
-        <td>4.55</td>
-        <td><details><summary>Impact:
-
-Lodash versions 4.17.23 and earlier are vulnerable to prototype polluti...</summary><p>Impact:
-
-Lodash versions 4.17.23 and earlier are vulnerable to prototype pollution in the _.unset and _.omit functions. The fix for (CVE-2025-13465: https://github.com/lodash/lodash/security/advisories/GHSA-xxjr-mmjv-4gpg) only guards against string key members, so an attacker can bypass the check by passing array-wrapped path segments. This allows deletion of properties from built-in prototypes such as Object.prototype, Number.prototype, and String.prototype.
-
-The issue permits deletion of prototype properties but does not allow overwriting their original behavior.
-
-Patches:
-
-This issue is patched in 4.18.0.
-
-Workarounds:
-
-None. Upgrade to the patched version.</p></details></td>
         <td>2026-03-31</td>
       </tr>
       <tr>
@@ -14541,49 +15239,6 @@ None. Upgrade to the patched version.</p></details></td>
         <td>2026-03-31</td>
       </tr>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-41357" target="_blank" rel="noopener">CVE-2025-41357</a></td>
-        <td>5.1</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-79</td>
-        <td>&nbsp;</td>
-        <td>0.1% <small>p19</small></td>
-        <td>3.57</td>
-        <td><details><summary>Reflected Cross-Site Scripting (XSS) vulnerability in Anon Proxy Server v0.104. ...</summary><p>Reflected Cross-Site Scripting (XSS) vulnerability in Anon Proxy Server v0.104. This vulnerability allows an attacker to execute JavaScript code in the victim&#x27;s browser by sending him/her a malicious URL. This vulnerability can be exploited to steal sensitive user data, such as session cookies, or to perform actions on behalf of the user.
-It affects &#x27;host&#x27; parameter in &#x27;/diagdns.php&#x27; endpoint.</p></details></td>
-        <td>2026-03-31</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-41356" target="_blank" rel="noopener">CVE-2025-41356</a></td>
-        <td>5.1</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-79</td>
-        <td>&nbsp;</td>
-        <td>0.1% <small>p19</small></td>
-        <td>3.57</td>
-        <td><details><summary>Reflected Cross-Site Scripting (XSS) vulnerability in Anon Proxy Server v0.104. ...</summary><p>Reflected Cross-Site Scripting (XSS) vulnerability in Anon Proxy Server v0.104. This vulnerability allows an attacker to execute JavaScript code in the victim&#x27;s browser by sending him/her a malicious URL. This vulnerability can be exploited to steal sensitive user data, such as session cookies, or to perform actions on behalf of the user. It affects 
-&#x27;host&#x27; parameter in &#x27;/diagconnect.php&#x27;
-
- endpoint.</p></details></td>
-        <td>2026-03-31</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-41355" target="_blank" rel="noopener">CVE-2025-41355</a></td>
-        <td>5.1</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-79</td>
-        <td>&nbsp;</td>
-        <td>0.1% <small>p19</small></td>
-        <td>3.57</td>
-        <td><details><summary>Reflected Cross-Site Scripting (XSS) vulnerability in Anon Proxy Server 
-v0.104....</summary><p>Reflected Cross-Site Scripting (XSS) vulnerability in Anon Proxy Server 
-v0.104. This vulnerability allows an attacker to execute JavaScript code
- in the victim&#x27;s browser by sending him/her a malicious URL. This 
-vulnerability can be exploited to steal sensitive user data, such as 
-session cookies, or to perform actions on behalf of the user. It affects 
-&#x27;port&#x27; and &#x27;proxyPort&#x27; parameters in &#x27;/anon.php&#x27; endpoint.</p></details></td>
-        <td>2026-03-31</td>
-      </tr>
-      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-10559" target="_blank" rel="noopener">CVE-2025-10559</a></td>
         <td>7.1</td>
         <td><span class="severity high">HIGH</span></td>
@@ -15637,6 +16292,21 @@ session cookies, or to perform actions on behalf of the user. It affects
         <td>0.3% <small>p53</small></td>
         <td>3.37</td>
         <td><details><summary>A vulnerability was detected in raine consult-llm-mcp up to 2.5.3. Affected by t...</summary><p>A vulnerability was detected in raine consult-llm-mcp up to 2.5.3. Affected by this vulnerability is the function child_process.execSync of the file src/server.ts. The manipulation of the argument git_diff.base_ref/git_diff.files results in os command injection. The attack is only possible with local access. The exploit is now public and may be used. Upgrading to version 2.5.4 addresses this issue. The patch is identified as 4abf297b34e5e8a9cb364b35f52c5f0ca1d599d3. Upgrading the affected component is recommended.</p></details></td>
+        <td>2026-03-30</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4046" target="_blank" rel="noopener">CVE-2026-4046</a></td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-617</td>
+        <td>&nbsp;</td>
+        <td>0.1% <small>p16</small></td>
+        <td>5.25</td>
+        <td><details><summary>The iconv() function in the GNU C Library versions 2.43 and earlier may crash du...</summary><p>The iconv() function in the GNU C Library versions 2.43 and earlier may crash due to an assertion failure when converting inputs from the IBM1390 or IBM1399 character sets, which may be used to remotely crash an application.
+
+
+
+This vulnerability can be trivially mitigated by removing the IBM1390 and IBM1399 character sets from systems that do not need them.</p></details></td>
         <td>2026-03-30</td>
       </tr>
       <tr>
@@ -37120,6 +37790,21 @@ session cookies, or to perform actions on behalf of the user. It affects
         <td>0.0% <small>p12</small></td>
         <td>5.25</td>
         <td><details><summary>Bitcoin Core 0.13.0 through 29.x has an integer overflow.</summary><p>Bitcoin Core 0.13.0 through 29.x has an integer overflow.</p></details></td>
+        <td>2026-03-20</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4519" target="_blank" rel="noopener">CVE-2026-4519</a></td>
+        <td>7.0</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-20</td>
+        <td>&nbsp;</td>
+        <td>0.0% <small>p9</small></td>
+        <td>4.90</td>
+        <td><details><summary>The webbrowser.open() API would accept leading dashes in the URL which 
+could be...</summary><p>The webbrowser.open() API would accept leading dashes in the URL which 
+could be handled as command line options for certain web browsers. New 
+behavior rejects leading dashes. Users are recommended to sanitize URLs 
+prior to passing to webbrowser.open().</p></details></td>
         <td>2026-03-20</td>
       </tr>
       <tr>

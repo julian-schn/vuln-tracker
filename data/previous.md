@@ -1,6 +1,6 @@
 # CVEs — March 2026
 
-_5740 vulnerabilities_
+_5736 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
@@ -72,9 +72,7 @@ _5740 vulnerabilities_
 | [CVE-2026-34372](https://nvd.nist.gov/vuln/detail/CVE-2026-34372) | 5.3 | MEDIUM | CWE-288 | No | 0.0% | 3.71 | 2026-03-31 | Sulu is an open-source PHP content management system based on the Symfony framework. From versions 1.0.0 to before 2.6.2... |
 | [CVE-2026-34367](https://nvd.nist.gov/vuln/detail/CVE-2026-34367) | 7.6 | HIGH | CWE-918 | No | 0.0% | 5.32 | 2026-03-31 | InvoiceShelf is an open-source web & mobile app that helps track expenses, payments and create professional invoices and... |
 | [CVE-2026-34366](https://nvd.nist.gov/vuln/detail/CVE-2026-34366) | 7.6 | HIGH | CWE-918 | No | 0.0% | 5.32 | 2026-03-31 | InvoiceShelf is an open-source web & mobile app that helps track expenses, payments and create professional invoices and... |
-| [CVE-2026-1579](https://nvd.nist.gov/vuln/detail/CVE-2026-1579) | 9.3 | CRITICAL | CWE-306 | No | 0.1% | 6.51 | 2026-03-31 | The MAVLink communication protocol does not require cryptographic  authentication by default. When MAVLink 2.0 message s... |
 | [CVE-2026-5211](https://nvd.nist.gov/vuln/detail/CVE-2026-5211) | 7.4 | HIGH | CWE-119 | No | 0.0% | 5.18 | 2026-03-31 | A flaw has been found in D-Link DNS-120, DNR-202L, DNS-315L, DNS-320, DNS-320L, DNS-320LW, DNS-321, DNR-322L, DNS-323, D... |
-| [CVE-2026-4800](https://nvd.nist.gov/vuln/detail/CVE-2026-4800) | 8.1 | HIGH | CWE-94 | No | 0.1% | 5.67 | 2026-03-31 | Impact:  The fix for CVE-2021-23337 (https://github.com/advisories/GHSA-35jh-r3h4-6jhm) added validation for the variabl... |
 | [CVE-2026-34784](https://nvd.nist.gov/vuln/detail/CVE-2026-34784) | 8.2 | HIGH | CWE-285 | No | 0.0% | 5.74 | 2026-03-31 | Parse Server is an open source backend that can be deployed to any infrastructure that can run Node.js. Prior to version... |
 | [CVE-2026-34365](https://nvd.nist.gov/vuln/detail/CVE-2026-34365) | 7.6 | HIGH | CWE-918 | No | 0.0% | 5.32 | 2026-03-31 | InvoiceShelf is an open-source web & mobile app that helps track expenses, payments and create professional invoices and... |
 | [CVE-2026-34215](https://nvd.nist.gov/vuln/detail/CVE-2026-34215) | 8.2 | HIGH | CWE-200 | No | 0.0% | 5.74 | 2026-03-31 | Parse Server is an open source backend that can be deployed to any infrastructure that can run Node.js. Prior to version... |
@@ -84,7 +82,6 @@ _5740 vulnerabilities_
 | [CVE-2026-30290](https://nvd.nist.gov/vuln/detail/CVE-2026-30290) | 8.4 | HIGH | CWE-22 | No | 0.0% | 5.88 | 2026-03-31 | An arbitrary file overwrite vulnerability in InTouch Contacts & Caller ID APP v6.38.1 allows attackers to overwrite crit... |
 | [CVE-2026-30285](https://nvd.nist.gov/vuln/detail/CVE-2026-30285) | 9.8 | CRITICAL | CWE-22 | No | 0.1% | 6.86 | 2026-03-31 | An arbitrary file overwrite vulnerability in Zora: Post, Trade, Earn Crypto v2.60.0 allows attackers to overwrite critic... |
 | [CVE-2026-30280](https://nvd.nist.gov/vuln/detail/CVE-2026-30280) | 5.3 | MEDIUM | CWE-434 | No | 0.0% | 3.71 | 2026-03-31 | An arbitrary file overwrite vulnerability in RAREPROB SOLUTIONS PRIVATE LIMITED Video player Play All Videos v1.0.135 al... |
-| [CVE-2026-2950](https://nvd.nist.gov/vuln/detail/CVE-2026-2950) | 6.5 | MEDIUM | CWE-1321 | No | 0.1% | 4.55 | 2026-03-31 | Impact:  Lodash versions 4.17.23 and earlier are vulnerable to prototype pollution in the _.unset and _.omit functions.... |
 | [CVE-2026-5210](https://nvd.nist.gov/vuln/detail/CVE-2026-5210) | 6.9 | MEDIUM | CWE-73 | No | 0.1% | 4.83 | 2026-03-31 | A vulnerability was detected in SourceCodester Leave Application System 1.0. This affects an unknown part. Performing a... |
 | [CVE-2026-5209](https://nvd.nist.gov/vuln/detail/CVE-2026-5209) | 4.8 | MEDIUM | CWE-79 | No | 0.0% | 3.36 | 2026-03-31 | A security vulnerability has been detected in SourceCodester Leave Application System 1.0. Affected by this issue is som... |
 | [CVE-2026-3356](https://nvd.nist.gov/vuln/detail/CVE-2026-3356) | 9.3 | CRITICAL | CWE-306 | No | 0.1% | 6.51 | 2026-03-31 | The MS27102A Remote Spectrum Monitor is vulnerable to an authentication bypass that allows unauthorized users to access... |
@@ -218,9 +215,6 @@ _5740 vulnerabilities_
 | [CVE-2026-5195](https://nvd.nist.gov/vuln/detail/CVE-2026-5195) | 6.9 | MEDIUM | CWE-74 | No | 0.0% | 4.83 | 2026-03-31 | A flaw has been found in code-projects Student Membership System 1.0. This issue affects some unknown processing of the... |
 | [CVE-2026-3107](https://nvd.nist.gov/vuln/detail/CVE-2026-3107) | 9.3 | CRITICAL | CWE-79 | No | 0.1% | 6.51 | 2026-03-31 | Stored Cross-Site Scripting (XSS) in Teampass versions prior to 3.1.5.16, affecting the password manager's password impo... |
 | [CVE-2026-3106](https://nvd.nist.gov/vuln/detail/CVE-2026-3106) | 9.3 | CRITICAL | CWE-79 | No | 0.1% | 6.51 | 2026-03-31 | Blind Cross-Site Scripting (XSS) in Teampass, versions prior to 3.1.5.16, within the password manager login functionalit... |
-| [CVE-2025-41357](https://nvd.nist.gov/vuln/detail/CVE-2025-41357) | 5.1 | MEDIUM | CWE-79 | No | 0.1% | 3.57 | 2026-03-31 | Reflected Cross-Site Scripting (XSS) vulnerability in Anon Proxy Server v0.104. This vulnerability allows an attacker to... |
-| [CVE-2025-41356](https://nvd.nist.gov/vuln/detail/CVE-2025-41356) | 5.1 | MEDIUM | CWE-79 | No | 0.1% | 3.57 | 2026-03-31 | Reflected Cross-Site Scripting (XSS) vulnerability in Anon Proxy Server v0.104. This vulnerability allows an attacker to... |
-| [CVE-2025-41355](https://nvd.nist.gov/vuln/detail/CVE-2025-41355) | 5.1 | MEDIUM | CWE-79 | No | 0.1% | 3.57 | 2026-03-31 | Reflected Cross-Site Scripting (XSS) vulnerability in Anon Proxy Server  v0.104. This vulnerability allows an attacker t... |
 | [CVE-2025-10559](https://nvd.nist.gov/vuln/detail/CVE-2025-10559) | 7.1 | HIGH | CWE-22 | No | 0.0% | 4.97 | 2026-03-31 | A Path Traversal vulnerability affecting Factory Resource Management in DELMIA Factory Resource Manager from Release 3DE... |
 | [CVE-2025-10553](https://nvd.nist.gov/vuln/detail/CVE-2025-10553) | 8.7 | HIGH | CWE-79 | No | 0.0% | 6.09 | 2026-03-31 | A Stored Cross-site Scripting (XSS) vulnerability affecting Factory Resource Management in DELMIA Factory Resource Manag... |
 | [CVE-2025-10551](https://nvd.nist.gov/vuln/detail/CVE-2025-10551) | 8.7 | HIGH | CWE-79 | No | 0.0% | 6.09 | 2026-03-31 | A Stored Cross-site Scripting (XSS) vulnerability affecting Document Management in ENOVIA Collaborative Industry Innovat... |
@@ -317,6 +311,7 @@ _5740 vulnerabilities_
 | [CVE-2026-29924](https://nvd.nist.gov/vuln/detail/CVE-2026-29924) | 7.6 | HIGH | CWE-611 | No | 0.1% | 5.32 | 2026-03-30 | Grav CMS v1.7.x and before is vulnerable to XML External Entity (XXE) through the SVG file upload functionality in the a... |
 | [CVE-2026-5126](https://nvd.nist.gov/vuln/detail/CVE-2026-5126) | 5.3 | MEDIUM | CWE-918 | No | 0.0% | 3.71 | 2026-03-30 | A flaw has been found in SourceCodester RSS Feed Parser 1.0. Affected by this issue is the function file_get_contents. T... |
 | [CVE-2026-5125](https://nvd.nist.gov/vuln/detail/CVE-2026-5125) | 4.8 | MEDIUM | CWE-77 | No | 0.3% | 3.37 | 2026-03-30 | A vulnerability was detected in raine consult-llm-mcp up to 2.5.3. Affected by this vulnerability is the function child_... |
+| [CVE-2026-4046](https://nvd.nist.gov/vuln/detail/CVE-2026-4046) | 7.5 | HIGH | CWE-617 | No | 0.1% | 5.25 | 2026-03-30 | The iconv() function in the GNU C Library versions 2.43 and earlier may crash due to an assertion failure when convertin... |
 | [CVE-2026-33032](https://nvd.nist.gov/vuln/detail/CVE-2026-33032) | 9.8 | CRITICAL | CWE-306 | No | 0.1% | 6.86 | 2026-03-30 | Nginx UI is a web user interface for the Nginx web server. In versions 2.3.5 and prior, the nginx-ui MCP (Model Context... |
 | [CVE-2026-33030](https://nvd.nist.gov/vuln/detail/CVE-2026-33030) | 8.8 | HIGH | CWE-78 | No | 0.0% | 6.16 | 2026-03-30 | Nginx UI is a web user interface for the Nginx web server. In versions 2.3.3 and prior, Nginx-UI contains an Insecure Di... |
 | [CVE-2026-33029](https://nvd.nist.gov/vuln/detail/CVE-2026-33029) | 6.9 | MEDIUM | CWE-20 | No | 0.1% | 4.83 | 2026-03-30 | Nginx UI is a web user interface for the Nginx web server. Prior to version 2.3.4, an input validation vulnerability in... |
@@ -2270,6 +2265,7 @@ _5740 vulnerabilities_
 | [CVE-2026-32986](https://nvd.nist.gov/vuln/detail/CVE-2026-32986) | 5.1 | MEDIUM | CWE-79 | No | 0.0% | 3.57 | 2026-03-20 | Textpattern CMS version 4.9.0 contains a second-order cross-site scripting vulnerability that allows attackers to inject... |
 | [CVE-2025-67260](https://nvd.nist.gov/vuln/detail/CVE-2025-67260) | 8.8 | HIGH | CWE-434 | No | 0.1% | 6.16 | 2026-03-20 | The Terrapack software, from ASTER TEC / ASTER S.p.A., with the indicated components and versions has a file upload vuln... |
 | [CVE-2025-46597](https://nvd.nist.gov/vuln/detail/CVE-2025-46597) | 7.5 | HIGH | CWE-190 | No | 0.0% | 5.25 | 2026-03-20 | Bitcoin Core 0.13.0 through 29.x has an integer overflow. |
+| [CVE-2026-4519](https://nvd.nist.gov/vuln/detail/CVE-2026-4519) | 7.0 | HIGH | CWE-20 | No | 0.0% | 4.90 | 2026-03-20 | The webbrowser.open() API would accept leading dashes in the URL which  could be handled as command line options for cer... |
 | [CVE-2026-4487](https://nvd.nist.gov/vuln/detail/CVE-2026-4487) | 7.4 | HIGH | CWE-119 | No | 0.0% | 5.18 | 2026-03-20 | A vulnerability was determined in UTT HiPER 1200GW up to 2.5.3-170306. This impacts the function strcpy of the file /gof... |
 | [CVE-2026-33312](https://nvd.nist.gov/vuln/detail/CVE-2026-33312) | 5.3 | MEDIUM | CWE-863 | No | 0.0% | 3.71 | 2026-03-20 | Vikunja is an open-source self-hosted task management platform. Starting in version 0.20.2 and prior to version 2.2.0, t... |
 | [CVE-2026-29794](https://nvd.nist.gov/vuln/detail/CVE-2026-29794) | 5.3 | MEDIUM | CWE-807 | No | 0.1% | 3.71 | 2026-03-20 | Vikunja is an open-source self-hosted task management platform. Starting in version 0.8 and prior to version 2.2.0, unau... |
