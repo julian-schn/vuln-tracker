@@ -1,9 +1,16 @@
 # CVEs — April 2026
 
-_1003 vulnerabilities_
+_1010 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
+| [CVE-2026-34904](https://nvd.nist.gov/vuln/detail/CVE-2026-34904) | 7.5 | HIGH | CWE-352 | No | — | 5.25 | 2026-04-07 | Cross-Site Request Forgery (CSRF) vulnerability in Analytify Simple Social Media Share Buttons allows Cross Site Request... |
+| [CVE-2026-34903](https://nvd.nist.gov/vuln/detail/CVE-2026-34903) | 5.4 | MEDIUM | CWE-862 | No | — | 3.78 | 2026-04-07 | Missing Authorization vulnerability in OceanWP Ocean Extra allows Exploiting Incorrectly Configured Access Control Secur... |
+| [CVE-2026-34899](https://nvd.nist.gov/vuln/detail/CVE-2026-34899) | 5.3 | MEDIUM | CWE-862 | No | — | 3.71 | 2026-04-07 | Missing Authorization vulnerability in Eniture technology LTL Freight Quotes – Worldwide Express Edition allows Exploiti... |
+| [CVE-2026-34896](https://nvd.nist.gov/vuln/detail/CVE-2026-34896) | 7.5 | HIGH | CWE-352 | No | — | 5.25 | 2026-04-07 | Cross-Site Request Forgery (CSRF) vulnerability in Analytify Under Construction, Coming Soon & Maintenance Mode allows C... |
+| [CVE-2026-34197](https://nvd.nist.gov/vuln/detail/CVE-2026-34197) | 0.0 | NONE | CWE-20 | No | — | 0.00 | 2026-04-07 | Improper Input Validation, Improper Control of Generation of Code ('Code Injection') vulnerability in Apache ActiveMQ Br... |
+| [CVE-2026-33227](https://nvd.nist.gov/vuln/detail/CVE-2026-33227) | 0.0 | NONE | CWE-22 | No | — | 0.00 | 2026-04-07 | Improper validation and restriction of a classpath path name vulnerability in Apache ActiveMQ Client, Apache ActiveMQ Br... |
+| [CVE-2026-28810](https://nvd.nist.gov/vuln/detail/CVE-2026-28810) | 6.3 | MEDIUM | CWE-340 | No | — | 4.41 | 2026-04-07 | Generation of Predictable Numbers or Identifiers vulnerability in Erlang/OTP kernel (inet_res, inet_db modules) allows D... |
 | [CVE-2026-3177](https://nvd.nist.gov/vuln/detail/CVE-2026-3177) | 5.3 | MEDIUM | CWE-345 | No | — | 3.71 | 2026-04-07 | The Charitable – Donation Plugin for WordPress – Fundraising with Recurring Donations & More plugin for WordPress is vul... |
 | [CVE-2026-5465](https://nvd.nist.gov/vuln/detail/CVE-2026-5465) | 8.8 | HIGH | CWE-639 | No | — | 6.16 | 2026-04-07 | The Booking for Appointments and Events Calendar – Amelia plugin for WordPress is vulnerable to Insecure Direct Object R... |
 | [CVE-2026-4079](https://nvd.nist.gov/vuln/detail/CVE-2026-4079) | 0.0 | NONE | N/A | No | — | 0.00 | 2026-04-07 | The SQL Chart Builder WordPress plugin before 2.3.8 does not properly escape user input as it is concatened to SQL queri... |
