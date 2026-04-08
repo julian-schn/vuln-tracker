@@ -1,9 +1,32 @@
 # CVEs — April 2026
 
-_1275 vulnerabilities_
+_1298 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
+| [CVE-2026-5508](https://nvd.nist.gov/vuln/detail/CVE-2026-5508) | 6.4 | MEDIUM | CWE-79 | No | — | 4.48 | 2026-04-08 | The WowPress plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the plugin's `wowpress` shortcode in... |
+| [CVE-2026-5506](https://nvd.nist.gov/vuln/detail/CVE-2026-5506) | 6.4 | MEDIUM | CWE-79 | No | — | 4.48 | 2026-04-08 | The Wavr plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the plugin's `wave` shortcode in all vers... |
+| [CVE-2026-5169](https://nvd.nist.gov/vuln/detail/CVE-2026-5169) | 4.4 | MEDIUM | CWE-79 | No | — | 3.08 | 2026-04-08 | The Inquiry Form to Posts or Pages plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'Form Heade... |
+| [CVE-2026-5167](https://nvd.nist.gov/vuln/detail/CVE-2026-5167) | 5.3 | MEDIUM | CWE-639 | No | — | 3.71 | 2026-04-08 | The Masteriyo LMS – Online Course Builder for eLearning, LMS & Education plugin for WordPress is vulnerable to Authoriza... |
+| [CVE-2026-4871](https://nvd.nist.gov/vuln/detail/CVE-2026-4871) | 6.4 | MEDIUM | CWE-79 | No | — | 4.48 | 2026-04-08 | The Sports Club Management plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'before' and 'after... |
+| [CVE-2026-4808](https://nvd.nist.gov/vuln/detail/CVE-2026-4808) | 7.2 | HIGH | CWE-434 | No | — | 5.04 | 2026-04-08 | The Gerador de Certificados – DevApps plugin for WordPress is vulnerable to arbitrary file uploads due to missing file t... |
+| [CVE-2026-4338](https://nvd.nist.gov/vuln/detail/CVE-2026-4338) | 0.0 | NONE | N/A | No | — | 0.00 | 2026-04-08 | The ActivityPub WordPress plugin before 8.0.2 does not properly filter posts to be displayed, allowed unauthenticated us... |
+| [CVE-2026-4141](https://nvd.nist.gov/vuln/detail/CVE-2026-4141) | 4.3 | MEDIUM | CWE-352 | No | — | 3.01 | 2026-04-08 | The Quran Translations plugin for WordPress is vulnerable to Cross-Site Request Forgery in all versions up to, and inclu... |
+| [CVE-2026-3781](https://nvd.nist.gov/vuln/detail/CVE-2026-3781) | 5.4 | MEDIUM | CWE-89 | No | — | 3.78 | 2026-04-08 | The Attendance Manager plugin for WordPress is vulnerable to SQL Injection via the 'attmgr_off' parameter in all version... |
+| [CVE-2026-3618](https://nvd.nist.gov/vuln/detail/CVE-2026-3618) | 6.4 | MEDIUM | CWE-79 | No | — | 4.48 | 2026-04-08 | The Columns by BestWebSoft plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'id' shortcode attr... |
+| [CVE-2026-3594](https://nvd.nist.gov/vuln/detail/CVE-2026-3594) | 5.3 | MEDIUM | CWE-200 | No | — | 3.71 | 2026-04-08 | The Riaxe Product Customizer plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to,... |
+| [CVE-2026-3535](https://nvd.nist.gov/vuln/detail/CVE-2026-3535) | 9.8 | CRITICAL | CWE-434 | No | — | 6.86 | 2026-04-08 | The DSGVO Google Web Fonts GDPR plugin for WordPress is vulnerable to arbitrary file upload due to missing file type val... |
+| [CVE-2026-3480](https://nvd.nist.gov/vuln/detail/CVE-2026-3480) | 6.5 | MEDIUM | CWE-862 | No | — | 4.55 | 2026-04-08 | The WP Blockade plugin for WordPress is vulnerable to Missing Authorization in all versions up to and including 0.9.14.... |
+| [CVE-2026-3477](https://nvd.nist.gov/vuln/detail/CVE-2026-3477) | 5.3 | MEDIUM | CWE-862 | No | — | 3.71 | 2026-04-08 | The PZ Frontend Manager plugin for WordPress is vulnerable to Missing Authorization in all versions up to and including... |
+| [CVE-2026-3142](https://nvd.nist.gov/vuln/detail/CVE-2026-3142) | 6.4 | MEDIUM | CWE-79 | No | — | 4.48 | 2026-04-08 | The Pinterest Site Verification plugin using Meta Tag plugin for WordPress is vulnerable to Stored Cross-Site Scripting... |
+| [CVE-2026-2838](https://nvd.nist.gov/vuln/detail/CVE-2026-2838) | 4.4 | MEDIUM | CWE-79 | No | — | 3.08 | 2026-04-08 | The Whole Enquiry Cart for WooCommerce plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the ‘woowho... |
+| [CVE-2025-1794](https://nvd.nist.gov/vuln/detail/CVE-2025-1794) | 5.4 | MEDIUM | CWE-79 | No | — | 3.78 | 2026-04-08 | The AM LottiePlayer plugin for WordPress is vulnerable to Stored Cross-Site Scripting via uploaded SVG files in all vers... |
+| [CVE-2026-5083](https://nvd.nist.gov/vuln/detail/CVE-2026-5083) | 0.0 | NONE | CWE-338 | No | — | 0.00 | 2026-04-08 | Ado::Sessions versions through 0.935 for Perl generates insecure session ids.  The session id is generated from a SHA-1... |
+| [CVE-2026-5082](https://nvd.nist.gov/vuln/detail/CVE-2026-5082) | 0.0 | NONE | CWE-338 | No | — | 0.00 | 2026-04-08 | Amon2::Plugin::Web::CSRFDefender versions from 7.00 through 7.03 for Perl generate an insecure session id.  The generate... |
+| [CVE-2026-3311](https://nvd.nist.gov/vuln/detail/CVE-2026-3311) | 6.4 | MEDIUM | CWE-79 | No | — | 4.48 | 2026-04-08 | The The Plus Addons for Elementor – Addons for Elementor, Page Templates, Widgets, Mega Menu, WooCommerce plugin for Wor... |
+| [CVE-2026-33273](https://nvd.nist.gov/vuln/detail/CVE-2026-33273) | 5.1 | MEDIUM | CWE-434 | No | — | 3.57 | 2026-04-08 | Unrestricted upload of file with dangerous type issue exists in MATCHA INVOICE 2.6.6 and earlier. If this vulnerability... |
+| [CVE-2026-27787](https://nvd.nist.gov/vuln/detail/CVE-2026-27787) | 5.1 | MEDIUM | CWE-79 | No | — | 3.57 | 2026-04-08 | Cross-site scripting vulnerability exists in MATCHA SNS 1.3.9 and earlier. If this vulnerability is exploited, an arbitr... |
+| [CVE-2026-24913](https://nvd.nist.gov/vuln/detail/CVE-2026-24913) | 8.7 | HIGH | CWE-89 | No | — | 6.09 | 2026-04-08 | SQL Injection vulnerability exists in MATCHA INVOICE 2.6.6 and earlier. If this vulnerability is exploited, information... |
 | [CVE-2026-4785](https://nvd.nist.gov/vuln/detail/CVE-2026-4785) | 6.4 | MEDIUM | CWE-79 | No | — | 4.48 | 2026-04-08 | The LatePoint – Calendar Booking Plugin for Appointments and Events plugin for WordPress is vulnerable to Stored Cross-S... |
 | [CVE-2026-4341](https://nvd.nist.gov/vuln/detail/CVE-2026-4341) | 6.4 | MEDIUM | CWE-79 | No | — | 4.48 | 2026-04-08 | The Prime Slider – Addons for Elementor plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'follo... |
 | [CVE-2026-4333](https://nvd.nist.gov/vuln/detail/CVE-2026-4333) | 6.4 | MEDIUM | CWE-79 | No | — | 4.48 | 2026-04-08 | The LearnPress – WordPress LMS Plugin plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'skin' a... |
