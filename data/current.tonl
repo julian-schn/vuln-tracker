@@ -1,7 +1,36 @@
 #version 1.0
 #delimiter "|"
 
-cves[1244]{cveId:str|published:str|lastModified:str|cvssScore:f64|severity:str|cweId:str|cweName:str|kev:bool|description:str|nvdUrl:str|epssScore:f64|epssPercentile:f64|vapScore:f64}:
+cves[1263]{cveId:str|published:str|lastModified:str|cvssScore:f64|severity:str|cweId:str|cweName:str|kev:bool|description:str|nvdUrl:str|epssScore:f64|epssPercentile:f64|vapScore:f64}:
+  CVE-2026-3499|2026-04-08T02:16:04.237|2026-04-08T02:16:04.237|8.8|HIGH|CWE-352|N/A|false|The Product Feed PRO for WooCommerce by AdTribes – Product Feeds for WooCommerce plugin for WordPress is vulnerable to Cross-Site Request Forgery in versions 13.4.6 through 13.5.2.1. This is due to missing or incorrect nonce validation on the ajax_migrate_to_custom_post_type, ajax_adt_clear_custom_attributes_product_meta_keys, ajax_update_file_url_to_lower_case, ajax_use_legacy_filters_and_rules, and ajax_fix_duplicate_feed functions. This makes it possible for unauthenticated attackers to trigger feed migration, clear custom-attribute transient caches, rewrite feed file URLs to lowercase, toggle legacy filter and rule settings, and delete duplicated feed posts via a forged request granted they can trick a site administrator into performing an action such as clicking on a link.|https://nvd.nist.gov/vuln/detail/CVE-2026-3499|0.00000|0.00000|6.1600
+  CVE-2026-3296|2026-04-08T02:16:04.067|2026-04-08T02:16:04.067|9.8|CRITICAL|CWE-502|N/A|false|The Everest Forms plugin for WordPress is vulnerable to PHP Object Injection in all versions up to, and including, 3.4.3 via deserialization of untrusted input from form entry metadata. This is due to the html-admin-page-entries-view.php file calling PHP's native unserialize() on stored entry meta values without passing the allowed_classes parameter. This makes it possible for unauthenticated attackers to inject a serialized PHP object payload through any public Everest Forms form field. The payload survives sanitize_text_field() sanitization (serialization control characters are not stripped) and is stored in the wp_evf_entrymeta database table. When an administrator views entries or views an individual entry, the unsafe unserialize() call processes the stored data without class restrictions.|https://nvd.nist.gov/vuln/detail/CVE-2026-3296|0.00000|0.00000|6.8600
+  CVE-2026-33810|2026-04-08T02:16:03.950|2026-04-08T02:16:03.950|0.0|NONE|N/A|N/A|false|When verifying a certificate chain containing excluded DNS constraints, these constraints are not correctly applied to wildcard DNS SANs which use a different case than the constraint. This only affects validation of otherwise trusted certificate chains, issued by a root CA in the VerifyOptions.Roots CertPool, or in the system certificate pool.|https://nvd.nist.gov/vuln/detail/CVE-2026-33810|0.00000|0.00000|0.0000
+  CVE-2026-32289|2026-04-08T02:16:03.820|2026-04-08T02:16:03.820|0.0|NONE|N/A|N/A|false|Context was not properly tracked across template branches for JS template literals, leading to possibly incorrect escaping of content when branches were used. Additionally template actions within JS template literals did not properly track the brace depth, leading to incorrect escaping being applied. These issues could cause actions within JS template literals to be incorrectly or improperly escaped, leading to XSS vulnerabilities.|https://nvd.nist.gov/vuln/detail/CVE-2026-32289|0.00000|0.00000|0.0000
+  CVE-2026-32288|2026-04-08T02:16:03.707|2026-04-08T02:16:03.707|0.0|NONE|N/A|N/A|false|"tar.Reader can allocate an unbounded amount of memory when reading a maliciously-crafted archive containing a large number of sparse regions encoded in the ""old GNU sparse map"" format."|https://nvd.nist.gov/vuln/detail/CVE-2026-32288|0.00000|0.00000|0.0000
+  CVE-2026-32283|2026-04-08T02:16:03.580|2026-04-08T02:16:03.580|0.0|NONE|N/A|N/A|false|If one side of the TLS connection sends multiple key update messages post-handshake in a single record, the connection can deadlock, causing uncontrolled consumption of resources. This can lead to a denial of service. This only affects TLS 1.3.|https://nvd.nist.gov/vuln/detail/CVE-2026-32283|0.00000|0.00000|0.0000
+  CVE-2026-32282|2026-04-08T02:16:03.467|2026-04-08T02:16:03.467|0.0|NONE|N/A|N/A|false|On Linux, if the target of Root.Chmod is replaced with a symlink while the chmod operation is in progress, Chmod can operate on the target of the symlink, even when the target lies outside the root. The Linux fchmodat syscall silently ignores the AT_SYMLINK_NOFOLLOW flag, which Root.Chmod uses to avoid symlink traversal. Root.Chmod checks its target before acting and returns an error if the target is a symlink lying outside the root, so the impact is limited to cases where the target is replaced with a symlink between the check and operation.|https://nvd.nist.gov/vuln/detail/CVE-2026-32282|0.00000|0.00000|0.0000
+  CVE-2026-32281|2026-04-08T02:16:03.350|2026-04-08T02:16:03.350|0.0|NONE|N/A|N/A|false|Validating certificate chains which use policies is unexpectedly inefficient when certificates in the chain contain a very large number of policy mappings, possibly causing denial of service. This only affects validation of otherwise trusted certificate chains, issued by a root CA in the VerifyOptions.Roots CertPool, or in the system certificate pool.|https://nvd.nist.gov/vuln/detail/CVE-2026-32281|0.00000|0.00000|0.0000
+  CVE-2026-32280|2026-04-08T02:16:03.247|2026-04-08T02:16:03.247|0.0|NONE|N/A|N/A|false|During chain building, the amount of work that is done is not correctly limited when a large number of intermediate certificates are passed in VerifyOptions.Intermediates, which can lead to a denial of service. This affects both direct users of crypto/x509 and users of crypto/tls.|https://nvd.nist.gov/vuln/detail/CVE-2026-32280|0.00000|0.00000|0.0000
+  CVE-2026-27144|2026-04-08T02:16:03.130|2026-04-08T02:16:03.130|0.0|NONE|N/A|N/A|false|The compiler is meant to unwrap pointers which are the operands of a memory move; a no-op interface conversion prevented the compiler from making the correct determination about non-overlapping moves, potentially leading to memory corruption at runtime.|https://nvd.nist.gov/vuln/detail/CVE-2026-27144|0.00000|0.00000|0.0000
+  CVE-2026-27143|2026-04-08T02:16:03.017|2026-04-08T02:16:03.017|0.0|NONE|N/A|N/A|false|Arithmetic over induction variables in loops were not correctly checked for underflow or overflow. As a result, the compiler would allow for invalid indexing to occur at runtime, potentially leading to memory corruption.|https://nvd.nist.gov/vuln/detail/CVE-2026-27143|0.00000|0.00000|0.0000
+  CVE-2026-27140|2026-04-08T02:16:02.887|2026-04-08T02:16:02.887|0.0|NONE|N/A|N/A|false|SWIG file names containing 'cgo' and well-crafted payloads could lead to code smuggling and arbitrary code execution at build time due to trust layer bypass.|https://nvd.nist.gov/vuln/detail/CVE-2026-27140|0.00000|0.00000|0.0000
+  CVE-2025-14732|2026-04-08T02:16:02.667|2026-04-08T02:16:02.667|6.4|MEDIUM|CWE-87|N/A|false|The Elementor Website Builder – More Than Just a Page Builder plugin for WordPress is vulnerable to Stored Cross-Site Scripting via several widget parameters in all versions up to, and including, 3.35.5 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with Contributor-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.|https://nvd.nist.gov/vuln/detail/CVE-2025-14732|0.00000|0.00000|4.4800
+  CVE-2026-4788|2026-04-08T01:16:41.220|2026-04-08T01:16:41.220|8.4|HIGH|CWE-532|N/A|false|IBM Tivoli Netcool Impact 7.1.0.0 through 7.1.0.37 stores sensitive information in log files that could be read by a local user.|https://nvd.nist.gov/vuln/detail/CVE-2026-4788|0.00000|0.00000|5.8800
+  CVE-2026-3357|2026-04-08T01:16:41.057|2026-04-08T01:16:41.057|8.8|HIGH|CWE-502|N/A|false|IBM Langflow Desktop 1.6.0 through 1.8.2 Langflow could allow an authenticated user to execute arbitrary code on the system, caused by an insecure default setting which permits the deserialization of untrusted data in the FAISS component.|https://nvd.nist.gov/vuln/detail/CVE-2026-3357|0.00000|0.00000|6.1600
+  CVE-2026-1346|2026-04-08T01:16:40.750|2026-04-08T01:16:40.750|9.3|CRITICAL|CWE-250|N/A|false|IBM Verify Identity Access Container 11.0 through 11.0.2 and IBM Security Verify Access Container 10.0 through 10.0.9.1 and IBM Verify Identity Access 11.0 through 11.0.2 and IBM Security Verify Access 10.0 through 10.0.9.1 could allow a locally authenticated user to escalate their privileges to root due to execution with unnecessary privileges than required.|https://nvd.nist.gov/vuln/detail/CVE-2026-1346|0.00000|0.00000|6.5100
+  CVE-2026-1343|2026-04-08T01:16:40.503|2026-04-08T01:16:40.503|7.2|HIGH|CWE-918|N/A|false|IBM Verify Identity Access Container 11.0 through 11.0.2 and IBM Security Verify Access Container 10.0 through 10.0.9.1 and IBM Verify Identity Access 11.0 through 11.0.2 and IBM Security Verify Access 10.0 through 10.0.9.1 allows an attacker to contact internal authentication endpoints which are protected by the Reverse Proxy.|https://nvd.nist.gov/vuln/detail/CVE-2026-1343|0.00000|0.00000|5.0400
+  CVE-2026-5747|2026-04-08T00:16:05.657|2026-04-08T00:16:05.657|8.7|HIGH|CWE-369|N/A|false|"An out-of-bounds write issue in the virtio PCI transport in Amazon Firecracker 1.13.0 through 1.14.3 and 1.15.0 on x86_64 and aarch64 might allow a local guest user with root privileges to crash the Firecracker VMM process or potentially execute arbitrary code on the host via modification of virtio queue configuration registers after device activation. Achieving code execution on the host requires additional preconditions, such as the use of a custom guest kernel or specific snapshot configurations.
+
+To remediate this, users should upgrade to Firecracker 1.14.4 or 1.15.1 and later."|https://nvd.nist.gov/vuln/detail/CVE-2026-5747|0.00000|0.00000|6.0900
+  CVE-2026-4406|2026-04-08T00:16:05.490|2026-04-08T00:16:05.490|4.7|MEDIUM|CWE-79|N/A|false|The Gravity Forms plugin for WordPress is vulnerable to Reflected Cross-Site Scripting via the `form_ids` parameter in the `gform_get_config` AJAX action in all versions up to, and including, 2.9.30. This is due to the `GFCommon::send_json()` method outputting JSON-encoded data wrapped in HTML comment delimiters using `echo` and `wp_die()`, which serves the response with a `Content-Type: text/html` header instead of `application/json`. The `wp_json_encode()` function does not HTML-encode angle brackets within JSON string values, allowing injected HTML/script tags in `form_ids` array values to be parsed and executed by the browser. The required `config_nonce` is generated with `wp_create_nonce('gform_config_ajax')` and is publicly embedded on every page that renders a Gravity Forms form, making it identical for all unauthenticated visitors within the same 12-hour nonce tick. This makes it possible for unauthenticated attackers to inject arbitrary web scripts in pages that execute if they can successfully trick a user into performing an action such as clicking on a link. This vulnerability cannot be exploited against users who are authenticated on the target system, but could be used to alter the target page.|https://nvd.nist.gov/vuln/detail/CVE-2026-4406|0.00000|0.00000|3.2900
+  CVE-2026-4401|2026-04-08T00:16:05.323|2026-04-08T00:16:05.323|5.4|MEDIUM|CWE-352|N/A|false|The Download Monitor plugin for WordPress is vulnerable to Cross-Site Request Forgery in the `actions_handler()` and `bulk_actions_handler()` methods in `class-dlm-downloads-path.php` in all versions up to, and including, 5.1.10. This is due to missing nonce verification on these functions. This makes it possible for unauthenticated attackers to delete, disable, or enable approved download paths via a forged request granted they can trick a site administrator into performing an action such as clicking on a link.|https://nvd.nist.gov/vuln/detail/CVE-2026-4401|0.00000|0.00000|3.7800
+  CVE-2026-4394|2026-04-08T00:16:05.147|2026-04-08T00:16:05.147|6.1|MEDIUM|CWE-79|N/A|false|The Gravity Forms plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the Credit Card field's 'Card Type' sub-field (`input_<id>.4`) in all versions up to, and including, 2.9.30. This is due to the `get_value_entry_detail()` method in the `GF_Field_CreditCard` class outputting the card type value without escaping, combined with `get_value_save_entry()` accepting and storing unsanitized user input for the `input_<id>.4` parameter. The Card Type field is not rendered on the frontend form (it is normally derived from the card number), but the backend submission parser blindly accepts it if included in the POST request. This makes it possible for unauthenticated attackers to inject arbitrary web scripts that execute when an administrator views the form entry in the WordPress dashboard.|https://nvd.nist.gov/vuln/detail/CVE-2026-4394|0.00000|0.00000|4.2700
+  CVE-2026-2263|2026-04-08T00:16:04.980|2026-04-08T00:16:04.980|5.3|MEDIUM|CWE-862|N/A|false|The Hustle – Email Marketing, Lead Generation, Optins, Popups plugin for WordPress is vulnerable to unauthorized modification of data due to a missing capability check on the 'hustle_module_converted' AJAX action in all versions up to, and including, 7.8.10.2. This makes it possible for unauthenticated attackers to forge conversion tracking events for any Hustle module, including draft modules that are never displayed to users, thereby manipulating marketing analytics and conversion statistics.|https://nvd.nist.gov/vuln/detail/CVE-2026-2263|0.00000|0.00000|3.7100
+  CVE-2026-1342|2026-04-08T00:16:03.860|2026-04-08T00:16:03.860|8.5|HIGH|CWE-829|N/A|false|IBM Verify Identity Access Container 11.0 through 11.0.2 and IBM Security Verify Access Container 10.0 through 10.0.9.1 and IBM Verify Identity Access 11.0 through 11.0.2 and IBM Security Verify Access 10.0 through 10.0.9.1 could allow a locally authenticated user to execute malicious scripts from outside of its control sphere.|https://nvd.nist.gov/vuln/detail/CVE-2026-1342|0.00000|0.00000|5.9500
+  CVE-2026-4656|2026-04-07T23:16:27.677|2026-04-07T23:16:27.677|0.0|NONE|N/A|N/A|false|Rejected reason: This CVE ID has been rejected or withdrawn by its CVE Numbering Authority.|https://nvd.nist.gov/vuln/detail/CVE-2026-4656|0.00000|0.00000|0.0000
+  CVE-2026-39936|2026-04-07T23:16:27.530|2026-04-07T23:16:27.530|6.9|MEDIUM|CWE-79|N/A|false|Improper neutralization of input during web page generation ('cross-site scripting') vulnerability in The Wikimedia Foundation Mediawiki - Score Extension allows Cross-Site Scripting (XSS).This issue affects Mediawiki - Score Extension.|https://nvd.nist.gov/vuln/detail/CVE-2026-39936|0.00000|0.00000|4.8300
+  CVE-2026-39935|2026-04-07T23:16:27.380|2026-04-07T23:16:27.380|6.9|MEDIUM|CWE-79|N/A|false|Improper neutralization of input during web page generation ('cross-site scripting') vulnerability in The Wikimedia Foundation Mediawiki - CampaignEvents Extension allows Cross-Site Scripting (XSS).This issue affects Mediawiki - CampaignEvents Extension: 1.43.7, 1.44.4, 1.45.2.|https://nvd.nist.gov/vuln/detail/CVE-2026-39935|0.00000|0.00000|4.8300
+  CVE-2025-20628|2026-04-07T23:16:27.040|2026-04-07T23:16:27.040|6.9|MEDIUM|CWE-1220|N/A|false|An insufficient granularity of access control vulnerability exists in PingIDM (formerly ForgeRock Identity Management) where administrators cannot properly configure access rules for Remote Connector Servers (RCS) running in client mode. This means attackers can spoof a client-mode RCS (if one exists) to intercept and/or modify an identity’s security-relevant properties, such as passwords and account recovery information. This issue is exploitable only when an RCS is configured to run in client mode.|https://nvd.nist.gov/vuln/detail/CVE-2025-20628|0.00000|0.00000|4.8300
   CVE-2026-4065|2026-04-07T22:16:24.740|2026-04-07T22:16:24.740|5.4|MEDIUM|CWE-862|N/A|false|The Smart Slider 3 plugin for WordPress is vulnerable to unauthorized access and modification of data due to missing capability checks on multiple wp_ajax_smart-slider3 controller actions in all versions up to, and including, 3.5.1.33. The display_admin_ajax() method does not call checkForCap() (which requires unfiltered_html capability), and several controller actions only validate the nonce (validateToken()) without calling validatePermission(). This makes it possible for authenticated attackers, with Contributor-level access and above, to enumerate slider metadata and create, modify, and delete image storage records by obtaining the nextend_nonce exposed on post editor pages.|https://nvd.nist.gov/vuln/detail/CVE-2026-4065|0.00000|0.00000|3.7800
   CVE-2026-39937|2026-04-07T22:16:24.283|2026-04-07T22:16:24.283|8.8|HIGH|CWE-212|N/A|false|Improper removal of sensitive information before storage or transfer vulnerability in The Wikimedia Foundation Mediawiki - CentralAuth Extension allows Resource Leak Exposure.This issue affects non release branches.|https://nvd.nist.gov/vuln/detail/CVE-2026-39937|0.00000|0.00000|6.1600
   CVE-2026-39934|2026-04-07T22:16:24.137|2026-04-07T22:16:24.137|6.9|MEDIUM|CWE-835|N/A|false|Loop with unreachable exit condition ('infinite loop') vulnerability in The Wikimedia Foundation Mediawiki - GrowthExperiments Extension allows Leveraging Time-of-Check and Time-of-Use (TOCTOU) Race Conditions.This issue affects Mediawiki - GrowthExperiments Extension: 1.45.2, 1.44.4, 1.43.7.|https://nvd.nist.gov/vuln/detail/CVE-2026-39934|0.00000|0.00000|4.8300
@@ -17,155 +46,6 @@ cves[1244]{cveId:str|published:str|lastModified:str|cvssScore:f64|severity:str|c
   CVE-2026-34371|2026-04-07T22:16:22.227|2026-04-07T22:16:22.227|6.3|MEDIUM|CWE-22|N/A|false|LibreChat is a ChatGPT clone with additional features. Prior to 0.8.4, LibreChat trusts the name field returned by the execute_code sandbox when persisting code-generated artifacts. On deployments using the default local file strategy, a malicious artifact filename containing traversal sequences (for example, ../../../../../app/client/dist/poc.txt) is concatenated into the server-side destination path and written with fs.writeFileSync() without sanitization. This gives any user who can trigger execute_code an arbitrary file write primitive as the LibreChat server user. This vulnerability is fixed in 0.8.4.|https://nvd.nist.gov/vuln/detail/CVE-2026-34371|0.00000|0.00000|4.4100
   CVE-2026-34079|2026-04-07T22:16:22.080|2026-04-07T22:16:22.080|8.7|HIGH|CWE-22|N/A|false|Flatpak is a Linux application sandboxing and distribution framework. Prior to 1.16.4, the caching for ld.so removes outdated cache files without properly checking that the app controlled path to the outdated cache is in the cache directory. This allows Flatpak apps  to delete arbitrary files on the host. This vulnerability is fixed in 1.16.4.|https://nvd.nist.gov/vuln/detail/CVE-2026-34079|0.00000|0.00000|6.0900
   CVE-2026-34078|2026-04-07T22:16:21.930|2026-04-07T22:16:21.930|9.3|CRITICAL|CWE-61|N/A|false|Flatpak is a Linux application sandboxing and distribution framework. Prior to 1.16.4, the Flatpak portal accepts paths in the sandbox-expose options which can be app-controlled symlinks pointing at arbitrary paths. Flatpak run mounts the resolved host path in the sandbox. This gives apps access to all host files and can be used as a primitive to gain code execution in the host context. This vulnerability is fixed in 1.16.4.|https://nvd.nist.gov/vuln/detail/CVE-2026-34078|0.00000|0.00000|6.5100
-  CVE-2026-31790|2026-04-07T22:16:21.770|2026-04-07T22:16:21.770|0.0|NONE|CWE-754|N/A|false|"Issue summary: Applications using RSASVE key encapsulation to establish
-a secret encryption key can send contents of an uninitialized memory buffer to
-a malicious peer.
-
-Impact summary: The uninitialized buffer might contain sensitive data from the
-previous execution of the application process which leads to sensitive data
-leakage to an attacker.
-
-RSA_public_encrypt() returns the number of bytes written on success and -1
-on error. The affected code tests only whether the return value is non-zero.
-As a result, if RSA encryption fails, encapsulation can still return success to
-the caller, set the output lengths, and leave the caller to use the contents of
-the ciphertext buffer as if a valid KEM ciphertext had been produced.
-
-If applications use EVP_PKEY_encapsulate() with RSA/RSASVE on an
-attacker-supplied invalid RSA public key without first validating that key,
-then this may cause stale or uninitialized contents of the caller-provided
-ciphertext buffer to be disclosed to the attacker in place of the KEM
-ciphertext.
-
-As a workaround calling EVP_PKEY_public_check() or
-EVP_PKEY_public_check_quick() before EVP_PKEY_encapsulate() will mitigate
-the issue.
-
-The FIPS modules in 3.6, 3.5, 3.4, 3.3, 3.1 and 3.0 are affected by this issue."|https://nvd.nist.gov/vuln/detail/CVE-2026-31790|0.00000|0.00000|0.0000
-  CVE-2026-31789|2026-04-07T22:16:21.617|2026-04-07T22:16:21.617|0.0|NONE|CWE-787|N/A|false|"Issue summary: Converting an excessively large OCTET STRING value to
-a hexadecimal string leads to a heap buffer overflow on 32 bit platforms.
-
-Impact summary: A heap buffer overflow may lead to a crash or possibly
-an attacker controlled code execution or other undefined behavior.
-
-If an attacker can supply a crafted X.509 certificate with an excessively
-large OCTET STRING value in extensions such as the Subject Key Identifier
-(SKID) or Authority Key Identifier (AKID) which are being converted to hex,
-the size of the buffer needed for the result is calculated as multiplication
-of the input length by 3. On 32 bit platforms, this multiplication may overflow
-resulting in the allocation of a smaller buffer and a heap buffer overflow.
-
-Applications and services that print or log contents of untrusted X.509
-certificates are vulnerable to this issue. As the certificates would have
-to have sizes of over 1 Gigabyte, printing or logging such certificates
-is a fairly unlikely operation and only 32 bit platforms are affected,
-this issue was assigned Low severity.
-
-The FIPS modules in 3.6, 3.5, 3.4, 3.3 and 3.0 are not affected by this
-issue, as the affected code is outside the OpenSSL FIPS module boundary."|https://nvd.nist.gov/vuln/detail/CVE-2026-31789|0.00000|0.00000|0.0000
-  CVE-2026-28390|2026-04-07T22:16:21.190|2026-04-07T22:16:21.190|0.0|NONE|CWE-476|N/A|false|"Issue summary: During processing of a crafted CMS EnvelopedData message
-with KeyTransportRecipientInfo a NULL pointer dereference can happen.
-
-Impact summary: Applications that process attacker-controlled CMS data may
-crash before authentication or cryptographic operations occur resulting in
-Denial of Service.
-
-When a CMS EnvelopedData message that uses KeyTransportRecipientInfo with
-RSA-OAEP encryption is processed, the optional parameters field of
-RSA-OAEP SourceFunc algorithm identifier is examined without checking
-for its presence. This results in a NULL pointer dereference if the field
-is missing.
-
-Applications and services that call CMS_decrypt() on untrusted input
-(e.g., S/MIME processing or CMS-based protocols) are vulnerable.
-
-The FIPS modules in 3.6, 3.5, 3.4, 3.3 and 3.0 are not affected by this
-issue, as the affected code is outside the OpenSSL FIPS module boundary."|https://nvd.nist.gov/vuln/detail/CVE-2026-28390|0.00000|0.00000|0.0000
-  CVE-2026-28389|2026-04-07T22:16:21.030|2026-04-07T22:16:21.030|0.0|NONE|CWE-476|N/A|false|"Issue summary: During processing of a crafted CMS EnvelopedData message
-with KeyAgreeRecipientInfo a NULL pointer dereference can happen.
-
-Impact summary: Applications that process attacker-controlled CMS data may
-crash before authentication or cryptographic operations occur resulting in
-Denial of Service.
-
-When a CMS EnvelopedData message that uses KeyAgreeRecipientInfo is
-processed, the optional parameters field of KeyEncryptionAlgorithmIdentifier
-is examined without checking for its presence. This results in a NULL
-pointer dereference if the field is missing.
-
-Applications and services that call CMS_decrypt() on untrusted input
-(e.g., S/MIME processing or CMS-based protocols) are vulnerable.
-
-The FIPS modules in 3.6, 3.5, 3.4, 3.3 and 3.0 are not affected by this
-issue, as the affected code is outside the OpenSSL FIPS module boundary."|https://nvd.nist.gov/vuln/detail/CVE-2026-28389|0.00000|0.00000|0.0000
-  CVE-2026-28388|2026-04-07T22:16:20.863|2026-04-07T22:16:20.863|0.0|NONE|CWE-476|N/A|false|"Issue summary: When a delta CRL that contains a Delta CRL Indicator extension
-is processed a NULL pointer dereference might happen if the required CRL
-Number extension is missing.
-
-Impact summary: A NULL pointer dereference can trigger a crash which
-leads to a Denial of Service for an application.
-
-When CRL processing and delta CRL processing is enabled during X.509
-certificate verification, the delta CRL processing does not check
-whether the CRL Number extension is NULL before dereferencing it.
-When a malformed delta CRL file is being processed, this parameter
-can be NULL, causing a NULL pointer dereference.
-
-Exploiting this issue requires the X509_V_FLAG_USE_DELTAS flag to be enabled in
-the verification context, the certificate being verified to contain a
-freshestCRL extension or the base CRL to have the EXFLAG_FRESHEST flag set, and
-an attacker to provide a malformed CRL to an application that processes it.
-
-The vulnerability is limited to Denial of Service and cannot be escalated to
-achieve code execution or memory disclosure. For that reason the issue was
-assessed as Low severity according to our Security Policy.
-
-The FIPS modules in 3.6, 3.5, 3.4, 3.3 and 3.0 are not affected by this issue,
-as the affected code is outside the OpenSSL FIPS module boundary."|https://nvd.nist.gov/vuln/detail/CVE-2026-28388|0.00000|0.00000|0.0000
-  CVE-2026-28387|2026-04-07T22:16:20.700|2026-04-07T22:16:20.700|0.0|NONE|CWE-416|N/A|false|"Issue summary: An uncommon configuration of clients performing DANE TLSA-based
-server authentication, when paired with uncommon server DANE TLSA records, may
-result in a use-after-free and/or double-free on the client side.
-
-Impact summary: A use after free can have a range of potential consequences
-such as the corruption of valid data, crashes or execution of arbitrary code.
-
-However, the issue only affects clients that make use of TLSA records with both
-the PKIX-TA(0/PKIX-EE(1) certificate usages and the DANE-TA(2) certificate
-usage.
-
-By far the most common deployment of DANE is in SMTP MTAs for which RFC7672
-recommends that clients treat as 'unusable' any TLSA records that have the PKIX
-certificate usages.  These SMTP (or other similar) clients are not vulnerable
-to this issue.  Conversely, any clients that support only the PKIX usages, and
-ignore the DANE-TA(2) usage are also not vulnerable.
-
-The client would also need to be communicating with a server that publishes a
-TLSA RRset with both types of TLSA records.
-
-No FIPS modules are affected by this issue, the problem code is outside the
-FIPS module boundary."|https://nvd.nist.gov/vuln/detail/CVE-2026-28387|0.00000|0.00000|0.0000
-  CVE-2026-28386|2026-04-07T22:16:20.513|2026-04-07T22:16:20.513|0.0|NONE|CWE-125|N/A|false|"Issue summary: Applications using AES-CFB128 encryption or decryption on
-systems with AVX-512 and VAES support can trigger an out-of-bounds read
-of up to 15 bytes when processing partial cipher blocks.
-
-Impact summary: This out-of-bounds read may trigger a crash which leads to
-Denial of Service for an application if the input buffer ends at a memory
-page boundary and the following page is unmapped. There is no information
-disclosure as the over-read bytes are not written to output.
-
-The vulnerable code path is only reached when processing partial blocks
-(when a previous call left an incomplete block and the current call provides
-fewer bytes than needed to complete it). Additionally, the input buffer
-must be positioned at a page boundary with the following page unmapped.
-CFB mode is not used in TLS/DTLS protocols, which use CBC, GCM, CCM, or
-ChaCha20-Poly1305 instead. For these reasons the issue was assessed as
-Low severity according to our Security Policy.
-
-Only x86-64 systems with AVX-512 and VAES instruction support are affected.
-Other architectures and systems without VAES support use different code
-paths that are not affected.
-
-OpenSSL FIPS module in 3.6 version is affected by this issue."|https://nvd.nist.gov/vuln/detail/CVE-2026-28386|0.00000|0.00000|0.0000
   CVE-2026-39401|2026-04-07T21:17:18.547|2026-04-07T21:17:18.547|5.3|MEDIUM|CWE-862|N/A|false|Cronicle is a multi-server task scheduler and runner, with a web based front-end UI. Prior to 0.9.111, jb child processes can include an update_event key in their JSON output. The server applies this directly to the parent event's stored configuration without any authorization check. A low-privilege user who can create and run events can modify any event property, including webhook URLs and notification emails. This vulnerability is fixed in 0.9.111.|https://nvd.nist.gov/vuln/detail/CVE-2026-39401|0.00000|0.00000|3.7100
   CVE-2026-39400|2026-04-07T21:17:18.333|2026-04-07T21:17:18.333|5.3|MEDIUM|CWE-79|N/A|false|Cronicle is a multi-server task scheduler and runner, with a web based front-end UI. Prior to 0.9.111, a non-admin user with create_events and run_events privileges can inject arbitrary JavaScript through job output fields (html.content, html.title, table.header, table.rows, table.caption). The server stores this data without sanitization, and the client renders it via innerHTML on the Job Details page. This vulnerability is fixed in 0.9.111.|https://nvd.nist.gov/vuln/detail/CVE-2026-39400|0.00000|0.00000|3.7100
   CVE-2026-39397|2026-04-07T21:17:18.160|2026-04-07T21:17:18.160|9.4|CRITICAL|CWE-862|N/A|false|@delmaredigital/payload-puck is a PayloadCMS plugin for integrating Puck visual page builder. Prior to 0.6.23, all /api/puck/* CRUD endpoint handlers registered by createPuckPlugin() called Payload's local API with the default overrideAccess: true, bypassing all collection-level access control. The access option passed to createPuckPlugin() and any access rules defined on Puck-registered collections were silently ignored on these endpoints. This vulnerability is fixed in 0.6.23.|https://nvd.nist.gov/vuln/detail/CVE-2026-39397|0.00000|0.00000|6.5800
@@ -357,13 +237,6 @@ OpenSSL FIPS module in 3.6 version is affected by this issue."|https://nvd.nist.
   CVE-2026-35458|2026-04-07T15:17:43.733|2026-04-07T15:17:43.733|8.7|HIGH|CWE-1333|N/A|false|Gotenberg is an API for converting document formats. In 8.29.1 and earlier, Gotenberg uses dlclark/regexp2 to compile user-supplied scope patterns without setting a proper timeout. Users with access to features using this logic can hang workers indefinitely.|https://nvd.nist.gov/vuln/detail/CVE-2026-35458|0.00000|0.00000|6.0900
   CVE-2026-35457|2026-04-07T15:17:43.587|2026-04-07T15:17:43.587|8.2|HIGH|CWE-770|N/A|false|libp2p-rust is the official rust language Implementation of the libp2p networking stack. Prior to 0.17.1, the rendezvous server stores pagination cookies without bounds. An unauthenticated peer can repeatedly issue DISCOVER requests and force unbounded memory growth. This vulnerability is fixed in 0.17.1.|https://nvd.nist.gov/vuln/detail/CVE-2026-35457|0.00000|0.00000|5.7400
   CVE-2026-35405|2026-04-07T15:17:43.367|2026-04-07T15:17:43.367|7.5|HIGH|CWE-770|N/A|false|libp2p-rust is the official rust language Implementation of the libp2p networking stack. Prior to 0.17.1, libp2p-rendezvous server has no limit on how many namespaces a single peer can register.  A malicious peer can just keep registering unique namespaces in a loop and the server happily accepts every single one allocating memory for each registration with no pushback. Keep doing this long enough (or with multiple sybil peers) and the server process gets OOM killed. This vulnerability is fixed in 0.17.1.|https://nvd.nist.gov/vuln/detail/CVE-2026-35405|0.00000|0.00000|5.2500
-  CVE-2026-33034|2026-04-07T15:17:39.393|2026-04-07T21:17:17.200|7.5|HIGH|CWE-770|N/A|false|"An issue was discovered in 6.0 before 6.0.4, 5.2 before 5.2.13, and 4.2 before 4.2.30.
-ASGI requests with a missing or understated `Content-Length` header could
-bypass the `DATA_UPLOAD_MAX_MEMORY_SIZE` limit when reading
-`HttpRequest.body`, allowing remote attackers to load an unbounded request body into
-memory.
-Earlier, unsupported Django series (such as 5.0.x, 4.1.x, and 3.2.x) were not evaluated and may also be affected.
-Django would like to thank Superior for reporting this issue."|https://nvd.nist.gov/vuln/detail/CVE-2026-33034|0.00000|0.00000|5.2500
   CVE-2026-30079|2026-04-07T15:17:38.267|2026-04-07T15:17:38.267|0.0|NONE|N/A|N/A|false|In OpenAirInterface V2.2.0 AMF, Out of sequence messages causes incorrect state transition during UE registration procedure. This allows authentication to be bypassed completely. If a SecurityModeComplete message is sent after InitialUERegistration, a registration reject is received followed by a registration accept! This leads the UE to be registered without proper authentication.|https://nvd.nist.gov/vuln/detail/CVE-2026-30079|0.00000|0.00000|0.0000
   CVE-2026-24660|2026-04-07T15:17:37.213|2026-04-07T17:16:27.583|8.1|HIGH|CWE-190|N/A|false|A heap-based buffer overflow vulnerability exists in the x3f_load_huffman functionality of LibRaw Commit d20315b. A specially crafted malicious file can lead to a heap buffer overflow. An attacker can provide a malicious file to trigger this vulnerability.|https://nvd.nist.gov/vuln/detail/CVE-2026-24660|0.00000|0.00000|5.6700
   CVE-2026-24450|2026-04-07T15:17:37.040|2026-04-07T17:16:27.480|8.1|HIGH|CWE-190|N/A|false|An integer overflow vulnerability exists in the uncompressed_fp_dng_load_raw functionality of LibRaw Commit 8dc68e2. A specially crafted malicious file can lead to a heap buffer overflow. An attacker can provide a malicious file to trigger this vulnerability.|https://nvd.nist.gov/vuln/detail/CVE-2026-24450|0.00000|0.00000|5.6700
