@@ -1,9 +1,13 @@
 # CVEs — April 2026
 
-_1298 vulnerabilities_
+_1300 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
+| [CVE-2026-4655](https://nvd.nist.gov/vuln/detail/CVE-2026-4655) | 6.4 | MEDIUM | CWE-79 | No | — | 4.48 | 2026-04-08 | The Element Pack Addons for Elementor plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the SVG Imag... |
+| [CVE-2026-4654](https://nvd.nist.gov/vuln/detail/CVE-2026-4654) | 5.3 | MEDIUM | CWE-639 | No | — | 3.71 | 2026-04-08 | The Awesome Support – WordPress HelpDesk & Support Plugin plugin for WordPress is vulnerable to Insecure Direct Object R... |
+| [CVE-2026-4483](https://nvd.nist.gov/vuln/detail/CVE-2026-4483) | 7.0 | HIGH | CWE-782 | No | — | 4.90 | 2026-04-08 | An exposed IOCTL with an  insufficient access control vulnerability has been identified in the utility, MxGeneralIo, for... |
+| [CVE-2026-4330](https://nvd.nist.gov/vuln/detail/CVE-2026-4330) | 4.3 | MEDIUM | CWE-639 | No | — | 3.01 | 2026-04-08 | The Blog2Social: Social Media Auto Post & Scheduler plugin for WordPress is vulnerable to authorization bypass through u... |
 | [CVE-2026-5508](https://nvd.nist.gov/vuln/detail/CVE-2026-5508) | 6.4 | MEDIUM | CWE-79 | No | — | 4.48 | 2026-04-08 | The WowPress plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the plugin's `wowpress` shortcode in... |
 | [CVE-2026-5506](https://nvd.nist.gov/vuln/detail/CVE-2026-5506) | 6.4 | MEDIUM | CWE-79 | No | — | 4.48 | 2026-04-08 | The Wavr plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the plugin's `wave` shortcode in all vers... |
 | [CVE-2026-5169](https://nvd.nist.gov/vuln/detail/CVE-2026-5169) | 4.4 | MEDIUM | CWE-79 | No | — | 3.08 | 2026-04-08 | The Inquiry Form to Posts or Pages plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'Form Heade... |
@@ -21,8 +25,6 @@ _1298 vulnerabilities_
 | [CVE-2026-3142](https://nvd.nist.gov/vuln/detail/CVE-2026-3142) | 6.4 | MEDIUM | CWE-79 | No | — | 4.48 | 2026-04-08 | The Pinterest Site Verification plugin using Meta Tag plugin for WordPress is vulnerable to Stored Cross-Site Scripting... |
 | [CVE-2026-2838](https://nvd.nist.gov/vuln/detail/CVE-2026-2838) | 4.4 | MEDIUM | CWE-79 | No | — | 3.08 | 2026-04-08 | The Whole Enquiry Cart for WooCommerce plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the ‘woowho... |
 | [CVE-2025-1794](https://nvd.nist.gov/vuln/detail/CVE-2025-1794) | 5.4 | MEDIUM | CWE-79 | No | — | 3.78 | 2026-04-08 | The AM LottiePlayer plugin for WordPress is vulnerable to Stored Cross-Site Scripting via uploaded SVG files in all vers... |
-| [CVE-2026-5083](https://nvd.nist.gov/vuln/detail/CVE-2026-5083) | 0.0 | NONE | CWE-338 | No | — | 0.00 | 2026-04-08 | Ado::Sessions versions through 0.935 for Perl generates insecure session ids.  The session id is generated from a SHA-1... |
-| [CVE-2026-5082](https://nvd.nist.gov/vuln/detail/CVE-2026-5082) | 0.0 | NONE | CWE-338 | No | — | 0.00 | 2026-04-08 | Amon2::Plugin::Web::CSRFDefender versions from 7.00 through 7.03 for Perl generate an insecure session id.  The generate... |
 | [CVE-2026-3311](https://nvd.nist.gov/vuln/detail/CVE-2026-3311) | 6.4 | MEDIUM | CWE-79 | No | — | 4.48 | 2026-04-08 | The The Plus Addons for Elementor – Addons for Elementor, Page Templates, Widgets, Mega Menu, WooCommerce plugin for Wor... |
 | [CVE-2026-33273](https://nvd.nist.gov/vuln/detail/CVE-2026-33273) | 5.1 | MEDIUM | CWE-434 | No | — | 3.57 | 2026-04-08 | Unrestricted upload of file with dangerous type issue exists in MATCHA INVOICE 2.6.6 and earlier. If this vulnerability... |
 | [CVE-2026-27787](https://nvd.nist.gov/vuln/detail/CVE-2026-27787) | 5.1 | MEDIUM | CWE-79 | No | — | 3.57 | 2026-04-08 | Cross-site scripting vulnerability exists in MATCHA SNS 1.3.9 and earlier. If this vulnerability is exploited, an arbitr... |
@@ -829,7 +831,7 @@ _1298 vulnerabilities_
 | [CVE-2025-68152](https://nvd.nist.gov/vuln/detail/CVE-2025-68152) | 6.9 | MEDIUM | CWE-863 | No | 0.0% | 4.83 | 2026-04-03 | Juju is an open source application orchestration engine that enables any application operation on any infrastructure at... |
 | [CVE-2025-64340](https://nvd.nist.gov/vuln/detail/CVE-2025-64340) | 6.7 | MEDIUM | CWE-78 | No | 0.0% | 4.69 | 2026-04-03 | FastMCP is the standard framework for building MCP applications. Prior to version 3.2.0, server names containing shell m... |
 | [CVE-2026-5469](https://nvd.nist.gov/vuln/detail/CVE-2026-5469) | 5.1 | MEDIUM | CWE-918 | No | 0.0% | 3.57 | 2026-04-03 | A weakness has been identified in Casdoor 2.356.0. This vulnerability affects unknown code of the component Webhook URL... |
-| [CVE-2026-26477](https://nvd.nist.gov/vuln/detail/CVE-2026-26477) | 7.5 | HIGH | CWE-400 | No | 0.1% | 5.25 | 2026-04-03 | An issue in Dokuwiki v.2025-05-14b 'Librarian' allows a remote attacker to cause a denial of service via the media_uploa... |
+| [CVE-2026-26477](https://nvd.nist.gov/vuln/detail/CVE-2026-26477) | 4.3 | MEDIUM | CWE-770 | No | 0.1% | 3.01 | 2026-04-03 | An issue in Dokuwiki v.2025-05-14b 'Librarian' allows a remote attacker to cause a denial of service via the media_uploa... |
 | [CVE-2025-59711](https://nvd.nist.gov/vuln/detail/CVE-2025-59711) | 8.3 | HIGH | CWE-22 | No | 0.9% | 5.84 | 2026-04-03 | An issue was discovered in Biztalk360 before 11.5. Because of mishandling of user-provided input in an upload mechanism,... |
 | [CVE-2025-59710](https://nvd.nist.gov/vuln/detail/CVE-2025-59710) | 0.0 | NONE | N/A | No | 0.1% | 0.00 | 2026-04-03 | An issue was discovered in Biztalk360 before 11.5. Because of incorrect access control, any user is able to request the... |
 | [CVE-2025-59709](https://nvd.nist.gov/vuln/detail/CVE-2025-59709) | 0.0 | NONE | N/A | No | 0.1% | 0.00 | 2026-04-03 | An issue was discovered in Biztalk360 through 11.5. because of mishandling of user-provided input in a path to be read b... |
