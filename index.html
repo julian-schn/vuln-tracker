@@ -11,7 +11,7 @@
     <header>
       <h1>vuln-tracker</h1>
       <p class="subtitle">CVEs from the National Vulnerability Database — current and previous month</p>
-      <p class="last-updated">Last updated: 2026-04-08 17:11 UTC</p>
+      <p class="last-updated">Last updated: 2026-04-08 19:26 UTC</p>
     </header>
     <nav>
       <a href="top50.html">&#9733; Top 50</a>
@@ -25,7 +25,7 @@
     </nav>
     <main>
     <section>
-      <h2>Current Month — April 2026 <span class="count">(1514)</span></h2>
+      <h2>Current Month — April 2026 <span class="count">(1598)</span></h2>
       <div class="table-wrapper">
         <table>
           <thead>
@@ -42,6 +42,972 @@
             </tr>
           </thead>
           <tbody>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39851" target="_blank" rel="noopener">CVE-2026-39851</a></td>
+        <td>5.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-204</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.71</td>
+        <td><details><summary>Saleor is an e-commerce platform. From 2.10.0 to before 3.23.0a3, 3.22.47, 3.21....</summary><p>Saleor is an e-commerce platform. From 2.10.0 to before 3.23.0a3, 3.22.47, 3.21.54, and 3.20.118, the requestEmailChange() mutation was revealing the existence of user-provided email addresses in error messages. This vulnerability is fixed in 3.23.0a3, 3.22.47, 3.21.54, and 3.20.118.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35455" target="_blank" rel="noopener">CVE-2026-35455</a></td>
+        <td>7.3</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.11</td>
+        <td><details><summary>immich is a high performance self-hosted photo and video management solution. Pr...</summary><p>immich is a high performance self-hosted photo and video management solution. Prior to 2.7.0, sStored Cross-Site Scripting (XSS) in the 360° panorama viewer allows any authenticated user to execute arbitrary JavaScript in the browser of any other user who views the malicious panorama with the OCR overlay enabled. The attacker uploads an equirectangular image containing crafted text; OCR extracts it, and the panorama viewer renders it via innerHTML without sanitization. This enables session hijacking (via persistent API key creation), private photo exfiltration, and access to GPS location history and face biometric data. This vulnerability is fixed in 2.7.0.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35446" target="_blank" rel="noopener">CVE-2026-35446</a></td>
+        <td>7.7</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-552</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.39</td>
+        <td><details><summary>LORIS (Longitudinal Online Research and Imaging System) is a self-hosted web app...</summary><p>LORIS (Longitudinal Online Research and Imaging System) is a self-hosted web application that provides data- and project-management for neuroimaging research. From 24.0.0 to before 27.0.3 and 28.0.1, an incorrect order of operations in the FilesDownloadHandler could result in an attacker escaping the intended download directories. This vulnerability is fixed in 27.0.3 and 28.0.1.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35407" target="_blank" rel="noopener">CVE-2026-35407</a></td>
+        <td>5.9</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-285</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.13</td>
+        <td><details><summary>Saleor is an e-commerce platform. From 2.10.0 to before 3.23.0a3, 3.22.47, 3.21....</summary><p>Saleor is an e-commerce platform. From 2.10.0 to before 3.23.0a3, 3.22.47, 3.21.54, and 3.20.118, a business-logic and authorization flaw was found in the account email change workflow, the confirmation flow did not verify that the email change confirmation token was issued for the given authenticated user. As a result, a valid email-change token generated for one account can be replayed while authenticated as a different account. The second account’s email address is then updated to the token&#x27;s new_email, even though that token was never issued for that account. This vulnerability is fixed in 3.23.0a3, 3.22.47, 3.21.54, and 3.20.118.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35403" target="_blank" rel="noopener">CVE-2026-35403</a></td>
+        <td>6.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.55</td>
+        <td><details><summary>LORIS (Longitudinal Online Research and Imaging System) is a self-hosted web app...</summary><p>LORIS (Longitudinal Online Research and Imaging System) is a self-hosted web application that provides data- and project-management for neuroimaging research. From 15.10 to before 27.0.3 and 28.0.1, there is a potential for a cross-site scripting attack in the survey_accounts module if a user provides an invalid visit label. While the data is properly JSON encoded, the Content-Type header is not set causing the web browser to interpret the payload as HTML, opening the possibility of a cross-site scripting if a user is tricked into following an invalid link. This vulnerability is fixed in 27.0.3 and 28.0.1.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35401" target="_blank" rel="noopener">CVE-2026-35401</a></td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-770</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.25</td>
+        <td><details><summary>Saleor is an e-commerce platform. From 2.0.0 to before 3.23.0a3, 3.22.47, 3.21.5...</summary><p>Saleor is an e-commerce platform. From 2.0.0 to before 3.23.0a3, 3.22.47, 3.21.54, and 3.20.118, a malicious actor can include many GraphQL mutations or queries in a single API call using aliases or chaining multiple mutations, resulting in resource exhaustion. This vulnerability is fixed in 3.23.0a3, 3.22.47, 3.21.54, and 3.20.118.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35400" target="_blank" rel="noopener">CVE-2026-35400</a></td>
+        <td>3.5</td>
+        <td><span class="severity low">LOW</span></td>
+        <td>CWE-59</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>2.45</td>
+        <td><details><summary>LORIS (Longitudinal Online Research and Imaging System) is a self-hosted web app...</summary><p>LORIS (Longitudinal Online Research and Imaging System) is a self-hosted web application that provides data- and project-management for neuroimaging research. From 20.0.0 to before 27.0.3 and 28.0.1, an endpoint in the publication module was incorrectly trusting the baseURL submitted by a user&#x27;s POST request rather than the internal LORIS value. This could result in a theoretical attacker with publication module access forging an email to an external domain under the attacker&#x27;s control which appeared to come from LORIS. This vulnerability is fixed in 27.0.3 and 28.0.1.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35169" target="_blank" rel="noopener">CVE-2026-35169</a></td>
+        <td>8.7</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.09</td>
+        <td><details><summary>LORIS (Longitudinal Online Research and Imaging System) is a self-hosted web app...</summary><p>LORIS (Longitudinal Online Research and Imaging System) is a self-hosted web application that provides data- and project-management for neuroimaging research. From  to before 27.0.3 and 28.0.1, the help_editor module of LORIS did not properly sanitize some user supplied variables which could result in a reflected cross-site scripting attack if a user is tricked into following an invalid link. The same input vector could also allow an attacker to download arbitrary markdown files on an unpatched server. This vulnerability is fixed in 27.0.3 and 28.0.1.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35165" target="_blank" rel="noopener">CVE-2026-35165</a></td>
+        <td>6.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-639</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.41</td>
+        <td><details><summary>LORIS (Longitudinal Online Research and Imaging System) is a self-hosted web app...</summary><p>LORIS (Longitudinal Online Research and Imaging System) is a self-hosted web application that provides data- and project-management for neuroimaging research. From 21.0.0 to before 27.0.3 and 28.0.1, while the document_repository frontend was restricting file access, the backend endpoint was not correctly verifying access permissions. A user could theoretically download a file that they should not have access to, if they know or can brute force the filename. This vulnerability is fixed in 27.0.3 and 28.0.1.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34985" target="_blank" rel="noopener">CVE-2026-34985</a></td>
+        <td>6.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-639</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.41</td>
+        <td><details><summary>LORIS (Longitudinal Online Research and Imaging System) is a self-hosted web app...</summary><p>LORIS (Longitudinal Online Research and Imaging System) is a self-hosted web application that provides data- and project-management for neuroimaging research. From 16.1.0 to before 27.0.3 and 28.0.1, While the frontend of the media module filters files that the user should not have access to, the backend was not applying access checks and it would be possible for someone who should not have access to a file to access it if they know the filename. This vulnerability is fixed in 27.0.3 and 28.0.1.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34837" target="_blank" rel="noopener">CVE-2026-34837</a></td>
+        <td>5.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.71</td>
+        <td><details><summary>Zammad is a web based open source helpdesk/customer support system. Prior to 7.0...</summary><p>Zammad is a web based open source helpdesk/customer support system. Prior to 7.0.1, he REST endpoint POST /api/v1/ai_assistance/text_tools/:id contains an authorization failure. Context data (e.g., a group or organization) supplied to be used in the AI prompt were not checked if they are accessible for the current user. This leads to having data present in the AI prompt that were not authorized before being used. A user needs to have ticket.agent permission to be able to use the provided context data. This vulnerability is fixed in 7.0.1.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34782" target="_blank" rel="noopener">CVE-2026-34782</a></td>
+        <td>5.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.71</td>
+        <td><details><summary>Zammad is a web based open source helpdesk/customer support system. Prior to 7.0...</summary><p>Zammad is a web based open source helpdesk/customer support system. Prior to 7.0.1 and 6.5.4, the REST endpoint POST /api/v1/ai_assistance/text_tools/:id was not checking if a user is privileged to use the text tool, resulting in being able to use it in all situations. This vulnerability is fixed in 7.0.1 and 6.5.4.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34724" target="_blank" rel="noopener">CVE-2026-34724</a></td>
+        <td>8.7</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-94</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.09</td>
+        <td><details><summary>Zammad is a web based open source helpdesk/customer support system. Prior to 7.0...</summary><p>Zammad is a web based open source helpdesk/customer support system. Prior to 7.0.1, a server-side template injection vulnerability  which leads to RCE via AI Agent exists. Impact is limited to environments where an attacker can control or influence type_enrichment_data (typically high-privilege administrative configuration). This vulnerability is fixed in 7.0.1.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34723" target="_blank" rel="noopener">CVE-2026-34723</a></td>
+        <td>8.7</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-284</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.09</td>
+        <td><details><summary>Zammad is a web based open source helpdesk/customer support system. Prior to 7.0...</summary><p>Zammad is a web based open source helpdesk/customer support system. Prior to 7.0.1 and 6.5.4, unauthenticated remote attackers were able to access the getting started endpoint to get access to sensitive internal entity data, even after the system setup was completed. This vulnerability is fixed in 7.0.1 and 6.5.4.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34722" target="_blank" rel="noopener">CVE-2026-34722</a></td>
+        <td>6.9</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.83</td>
+        <td><details><summary>Zammad is a web based open source helpdesk/customer support system. Prior to 7.0...</summary><p>Zammad is a web based open source helpdesk/customer support system. Prior to 7.0.1 and 6.5.4, the used endpoint for ticket creation was missing authorization if the related parameter for adding links is used. This vulnerability is fixed in 7.0.1 and 6.5.4.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34721" target="_blank" rel="noopener">CVE-2026-34721</a></td>
+        <td>5.9</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-352</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.13</td>
+        <td><details><summary>Zammad is a web based open source helpdesk/customer support system. Prior to 7.0...</summary><p>Zammad is a web based open source helpdesk/customer support system. Prior to 7.0.1 and 6.5.4, the OAuth callback endpoints for Microsoft, Google, and Facebook external credentials do not validate a CSRF state parameter. This vulnerability is fixed in 7.0.1 and 6.5.4.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34720" target="_blank" rel="noopener">CVE-2026-34720</a></td>
+        <td>2.3</td>
+        <td><span class="severity low">LOW</span></td>
+        <td>CWE-346</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>1.61</td>
+        <td><details><summary>Zammad is a web based open source helpdesk/customer support system. Prior to 7.0...</summary><p>Zammad is a web based open source helpdesk/customer support system. Prior to 7.0.1 and 6.5.4, the SSO mechanism in Zammad was not verifying the header originates from a trusted SSO proxy/gateway before applying further actions on it. This vulnerability is fixed in 7.0.1 and 6.5.4.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34719" target="_blank" rel="noopener">CVE-2026-34719</a></td>
+        <td>8.3</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-918</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.81</td>
+        <td><details><summary>Zammad is a web based open source helpdesk/customer support system. Prior to 7.0...</summary><p>Zammad is a web based open source helpdesk/customer support system. Prior to 7.0.1 and 6.5.4, the webhook model was missing a proper validation for loop back addresses, or link-local addresses — only the URL scheme (HTTP/HTTPS) as well as the hostname was checked. This could end up in retrieving confidential metadata of cloud/hosting providers. The existing check is now extended and is applied when configuring webhooks as well as triggering webhook jobs. This vulnerability is fixed in 7.0.1 and 6.5.4.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34718" target="_blank" rel="noopener">CVE-2026-34718</a></td>
+        <td>5.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-80</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.71</td>
+        <td><details><summary>Zammad is a web based open source helpdesk/customer support system. Prior to 7.0...</summary><p>Zammad is a web based open source helpdesk/customer support system. Prior to 7.0.1 and 6.5.4, the HTML sanitizer for ticket articles was missing proper sanitization of data: ... URI schemes, resulting in storing such malicious content in the database of the Zammad instance. The Zammad GUI is rendering this content, due to applied CSP rules no harm was done by e.g., clicking such a link. This vulnerability is fixed in 7.0.1 and 6.5.4.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34392" target="_blank" rel="noopener">CVE-2026-34392</a></td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-552</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.25</td>
+        <td><details><summary>LORIS (Longitudinal Online Research and Imaging System) is a self-hosted web app...</summary><p>LORIS (Longitudinal Online Research and Imaging System) is a self-hosted web application that provides data- and project-management for neuroimaging research. From 20.0.0 to before 27.0.3 and 28.0.1, a bug in the static file router can allow an attacker to traverse outside of the intended directory, allowing unintended files to be downloaded through the static, css, and js endpoints. This vulnerability is fixed in 27.0.3 and 28.0.1.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34248" target="_blank" rel="noopener">CVE-2026-34248</a></td>
+        <td>2.1</td>
+        <td><span class="severity low">LOW</span></td>
+        <td>CWE-284</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>1.47</td>
+        <td><details><summary>Zammad is a web based open source helpdesk/customer support system. Prior to 7.0...</summary><p>Zammad is a web based open source helpdesk/customer support system. Prior to 7.0.1, customers in shared organizations (means they can see each other&#x27;s tickets) could see fields which are not intended for customers - including fields not intended for them at all (e.g. priority, custom ticket attributes for internal purposes). This was the case when a customer opened a ticket from another user of the same shared organization. They are not able to modify these field. This vulnerability is fixed in 7.0.1.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34166" target="_blank" rel="noopener">CVE-2026-34166</a></td>
+        <td>3.7</td>
+        <td><span class="severity low">LOW</span></td>
+        <td>CWE-400</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>2.59</td>
+        <td><details><summary>LiquidJS is a Shopify / GitHub Pages compatible template engine in pure JavaScri...</summary><p>LiquidJS is a Shopify / GitHub Pages compatible template engine in pure JavaScript. Prior to 10.25.3, the replace filter in LiquidJS incorrectly accounts for memory usage when the memoryLimit option is enabled. It charges str.length + pattern.length + replacement.length bytes to the memory limiter, but the actual output from str.split(pattern).join(replacement) can be quadratically larger when the pattern occurs many times in the input string. This allows an attacker who controls template content to bypass the memoryLimit DoS protection with approximately 2,500x amplification, potentially causing out-of-memory conditions. This vulnerability is fixed in 10.25.3.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33350" target="_blank" rel="noopener">CVE-2026-33350</a></td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-89</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.25</td>
+        <td><details><summary>LORIS (Longitudinal Online Research and Imaging System) is a self-hosted web app...</summary><p>LORIS (Longitudinal Online Research and Imaging System) is a self-hosted web application that provides data- and project-management for neuroimaging research. Prior to 27.0.3 and 28.0.1, a SQL injection has been identified in some code sections for the MRI feedback popup window of the imaging browser. Attackers can use SQL ingestion to access/alter data on the server. This vulnerability is fixed in 27.0.3 and 28.0.1.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-30818" target="_blank" rel="noopener">CVE-2026-30818</a></td>
+        <td>8.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-78</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.95</td>
+        <td><details><summary>An OS command injection vulnerability in the dnsmasq module of TP-Link Archer AX...</summary><p>An OS command injection vulnerability in the dnsmasq module of TP-Link Archer AX53 v1.0 allows an authenticated adjacent attacker to execute arbitrary code when a specially crafted configuration file is processed due to insufficient input validation. Successful exploitation may allow the attacker to modify device configuration, access sensitive information, or further compromise system integrity.
+
+This issue affects AX53 v1.0: before 1.7.1 Build 20260213.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-30817" target="_blank" rel="noopener">CVE-2026-30817</a></td>
+        <td>6.8</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-15</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.76</td>
+        <td><details><summary>An external configuration control vulnerability in the OpenVPN module of TP-Link...</summary><p>An external configuration control vulnerability in the OpenVPN module of TP-Link AX53 v1.0 allows an authenticated adjacent attacker to read arbitrary files when a malicious configuration file is processed.  Successful exploitation may allow unauthorized access to arbitrary files on the device, potentially exposing sensitive information.This issue affects AX53 v1.0: before 1.7.1 Build 20260213.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-30816" target="_blank" rel="noopener">CVE-2026-30816</a></td>
+        <td>6.8</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-15</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.76</td>
+        <td><details><summary>An external control of configuration vulnerability in the OpenVPN module of TP-L...</summary><p>An external control of configuration vulnerability in the OpenVPN module of TP-Link AX53 v1.0 allows an authenticated adjacent attacker to read arbitrary file when a malicious configuration file is processed. 
+Successful
+exploitation may allow unauthorized access to arbitrary files on the device,
+potentially exposing sensitive information.This issue affects AX53 v1.0: before 1.7.1 Build 20260213.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-30815" target="_blank" rel="noopener">CVE-2026-30815</a></td>
+        <td>8.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-78</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.95</td>
+        <td><details><summary>An OS command injection vulnerability in the OpenVPN module
+of TP-Link Archer AX...</summary><p>An OS command injection vulnerability in the OpenVPN module
+of TP-Link Archer AX53 v1.0 allows an authenticated adjacent attacker to execute system commands when a specially crafted configuration file is processed due to insufficient input validation. Successful exploitation may allow modification of configuration files, disclosure of sensitive information, or further compromise of device integrity.
+
+This issue affects AX53 v1.0: before 1.7.1 Build 20260213.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-30814" target="_blank" rel="noopener">CVE-2026-30814</a></td>
+        <td>7.3</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-121</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.11</td>
+        <td><details><summary>A stack-based buffer overflow in the tmpServer module of TP-Link Archer AX53 v1....</summary><p>A stack-based buffer overflow in the tmpServer module of TP-Link Archer AX53 v1.0 allows an authenticated adjacent attacker to trigger a segmentation fault and potentially execute arbitrary code via a specially crafted configuration file. Successful exploitation may cause a crash and could allow arbitrary code execution, enabling modification of device state, exposure of sensitive data, or further compromise of device integrity.
+
+This issue affects AX53 v1.0: before 1.7.1 Build 20260213.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-2942" target="_blank" rel="noopener">CVE-2026-2942</a></td>
+        <td>9.8</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-434</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.86</td>
+        <td><details><summary>The ProSolution WP Client plugin for WordPress is vulnerable to arbitrary file u...</summary><p>The ProSolution WP Client plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the &#x27;proSol_fileUploadProcess&#x27; function in all versions up to, and including, 1.9.9. This makes it possible for unauthenticated attackers to upload arbitrary files on the affected site&#x27;s server which may make remote code execution possible.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-27806" target="_blank" rel="noopener">CVE-2026-27806</a></td>
+        <td>7.8</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-78</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.46</td>
+        <td><details><summary>Fleet is open source device management software. Prior to 4.81.1, the Orbit agen...</summary><p>Fleet is open source device management software. Prior to 4.81.1, the Orbit agent&#x27;s FileVault disk encryption key rotation flow on collects a local user&#x27;s password via a GUI dialog and interpolates it directly into a Tcl/expect script executed via exec.Command(&quot;expect&quot;, &quot;-c&quot;, script). Because the password is inserted into Tcl brace-quoted send {%s}, a password containing } terminates the literal and injects arbitrary Tcl commands. Since Orbit runs as root, this allows a local unprivileged user to escalate to root privileges. This vulnerability is fixed in 4.81.1.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-20709" target="_blank" rel="noopener">CVE-2026-20709</a></td>
+        <td>5.8</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-1394</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.06</td>
+        <td><details><summary>Use of Default Cryptographic Key in the hardware for some Intel(R) Pentium(R) Pr...</summary><p>Use of Default Cryptographic Key in the hardware for some Intel(R) Pentium(R) Processor Silver Series, Intel(R) Celeron(R) Processor J Series, Intel(R) Celeron(R) Processor N Series may allow an escalation of privilege. Hardware reverse engineer adversary with a privileged user combined with a high complexity attack may enable escalation of privilege. This result may potentially occur via physical access when attack requirements are present with special internal knowledge and requires no user interaction. The potential vulnerability may impact the confidentiality (high), integrity (none) and availability (none) of the vulnerable system, resulting in subsequent system confidentiality (high), integrity (high) and availability (none) impacts.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-0814" target="_blank" rel="noopener">CVE-2026-0814</a></td>
+        <td>4.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.01</td>
+        <td><details><summary>The Advanced Contact form 7 DB plugin for WordPress is vulnerable to unauthorize...</summary><p>The Advanced Contact form 7 DB plugin for WordPress is vulnerable to unauthorized access of data due to a missing capability check on the &#x27;vsz_cf7_export_to_excel&#x27; function in all versions up to, and including, 2.0.9. This makes it possible for authenticated attackers, with Subscriber-level access and above, to export form submissions to excel file.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-0811" target="_blank" rel="noopener">CVE-2026-0811</a></td>
+        <td>5.4</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-352</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.78</td>
+        <td><details><summary>The Advanced Contact form 7 DB plugin for WordPress is vulnerable to Cross-Site ...</summary><p>The Advanced Contact form 7 DB plugin for WordPress is vulnerable to Cross-Site Request Forgery in all versions up to, and including, 2.0.9. This is due to missing or incorrect nonce validation on the &#x27;vsz_cf7_save_setting_callback&#x27; function. This makes it possible for unauthenticated attackers to delete form entry via a forged request granted they can trick a site administrator into performing an action such as clicking on a link.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-50673" target="_blank" rel="noopener">CVE-2025-50673</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>A buffer overflow vulnerability exists in D-Link DI-8003 16.07.26A1 due to impro...</summary><p>A buffer overflow vulnerability exists in D-Link DI-8003 16.07.26A1 due to improper handling of the http_lanport parameter in the /webgl.asp endpoint.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-50672" target="_blank" rel="noopener">CVE-2025-50672</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>A buffer overflow vulnerability exists in D-Link DI-8003 16.07.26A1 due to impro...</summary><p>A buffer overflow vulnerability exists in D-Link DI-8003 16.07.26A1 due to improper handling of parameters in the /yyxz_dlink.asp endpoint.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-50671" target="_blank" rel="noopener">CVE-2025-50671</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>A buffer overflow vulnerability exists in D-Link DI-8003 16.07.26A1 due to impro...</summary><p>A buffer overflow vulnerability exists in D-Link DI-8003 16.07.26A1 due to improper handling of parameters in the /xwgl_ref.asp endpoint. An attacker can exploit this vulnerability by sending a crafted HTTP GET request with excessively long strings in parameters name, en, user_id, shibie_name, time, act, log, and rpri.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-50670" target="_blank" rel="noopener">CVE-2025-50670</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>A buffer overflow vulnerability exists in D-Link DI-8003 16.07.26A1 due to impro...</summary><p>A buffer overflow vulnerability exists in D-Link DI-8003 16.07.26A1 due to improper handling of parameters in the /xwgl_bwr.asp endpoint. An attacker can exploit this vulnerability by sending a crafted HTTP GET request in the name, qq, and time parameters.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-50669" target="_blank" rel="noopener">CVE-2025-50669</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>A buffer overflow vulnerability exists in D-Link DI-8003 16.07.26A1 and DI-8003G...</summary><p>A buffer overflow vulnerability exists in D-Link DI-8003 16.07.26A1 and DI-8003G 19.12.10A1 due to improper handling of the wan_ping parameter in the /wan_ping.asp endpoint.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-50668" target="_blank" rel="noopener">CVE-2025-50668</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>A buffer overflow vulnerability exists in D-Link DI-8003 16.07.26A1 due to impro...</summary><p>A buffer overflow vulnerability exists in D-Link DI-8003 16.07.26A1 due to improper handling of the s parameter in the /web_list_opt.asp endpoint.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-50667" target="_blank" rel="noopener">CVE-2025-50667</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>A buffer overflow vulnerability exists in D-Link DI-8003 16.07.26A1 due to impro...</summary><p>A buffer overflow vulnerability exists in D-Link DI-8003 16.07.26A1 due to improper handling of the iface parameter in the /wan_line_detection.asp endpoint.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-50666" target="_blank" rel="noopener">CVE-2025-50666</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>A buffer overflow vulnerability exists in D-Link DI-8003 16.07.26A1 due to impro...</summary><p>A buffer overflow vulnerability exists in D-Link DI-8003 16.07.26A1 due to improper handling of multiple parameters in the /web_post.asp endpoint. An attacker can exploit this vulnerability by sending a crafted HTTP GET request in parameters such as name, en, user_id, log, and time.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-50665" target="_blank" rel="noopener">CVE-2025-50665</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>A buffer overflow vulnerability exists in D-Link DI-8003 16.07.26A1 due to impro...</summary><p>A buffer overflow vulnerability exists in D-Link DI-8003 16.07.26A1 due to improper handling of input parameters in the /web_keyword.asp endpoint. An attacker can exploit this vulnerability by sending a crafted HTTP GET request via the name, en, time, mem_gb2312, and mem_utf8 parameters.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-50664" target="_blank" rel="noopener">CVE-2025-50664</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>A buffer overflow vulnerability exists in D-Link DI-8003 16.07.26A1 due to impro...</summary><p>A buffer overflow vulnerability exists in D-Link DI-8003 16.07.26A1 due to improper handling of parameters in the /user_group.asp endpoint. The attacker can exploit this vulnerability by sending a crafted HTTP GET request with parameters name, mem, pri, and attr.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-50663" target="_blank" rel="noopener">CVE-2025-50663</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>A buffer overflow vulnerability exists in D-Link DI-8003 16.07.26A1 due to impro...</summary><p>A buffer overflow vulnerability exists in D-Link DI-8003 16.07.26A1 due to improper handling of the name parameter in the /usb_paswd.asp endpoint.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-50662" target="_blank" rel="noopener">CVE-2025-50662</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>A buffer overflow vulnerability exists in D-Link DI-8003 16.07.26A1 due to impro...</summary><p>A buffer overflow vulnerability exists in D-Link DI-8003 16.07.26A1 due to improper handling of the name parameter in the /url_group.asp endpoint.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-50661" target="_blank" rel="noopener">CVE-2025-50661</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>A buffer overflow vulnerability exists in D-Link DI-8003 16.07.26A1 due to impro...</summary><p>A buffer overflow vulnerability exists in D-Link DI-8003 16.07.26A1 due to improper handling of multiple parameters in the /url_rule.asp endpoint. An attacker can exploit this vulnerability by sending a crafted HTTP GET request with parameters name, en, ips, u, time, act, rpri, and log.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-50660" target="_blank" rel="noopener">CVE-2025-50660</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>A buffer overflow vulnerability exists in D-Link DI-8003 16.07.26A1 due to impro...</summary><p>A buffer overflow vulnerability exists in D-Link DI-8003 16.07.26A1 due to improper handling of the name parameter in the /url_member.asp endpoint.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-50659" target="_blank" rel="noopener">CVE-2025-50659</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>A buffer overflow vulnerability exists in D-Link DI-8003 16.07.26A1 due to impro...</summary><p>A buffer overflow vulnerability exists in D-Link DI-8003 16.07.26A1 due to improper handling of the custom_error parameter in the /user.asp endpoint.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-50657" target="_blank" rel="noopener">CVE-2025-50657</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>A buffer overflow vulnerability exists in D-Link DI-8003 16.07.26A1 due to impro...</summary><p>A buffer overflow vulnerability exists in D-Link DI-8003 16.07.26A1 due to improper handling of the pid parameter in the /trace.asp endpoint.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-50655" target="_blank" rel="noopener">CVE-2025-50655</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>A buffer overflow vulnerability exists in D-Link DI-8003 16.07.26A1 due to impro...</summary><p>A buffer overflow vulnerability exists in D-Link DI-8003 16.07.26A1 due to improper handling of the name parameter in the /thd_group.asp endpoint.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-50654" target="_blank" rel="noopener">CVE-2025-50654</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>A buffer overflow vulnerability exists in D-Link DI-8003 16.07.26A1 due to impro...</summary><p>A buffer overflow vulnerability exists in D-Link DI-8003 16.07.26A1 due to improper validation of the id parameter in the /thd_member.asp endpoint.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-50653" target="_blank" rel="noopener">CVE-2025-50653</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>A buffer overflow vulnerability exists in D-Link DI-8003 16.07.26A1 due to impro...</summary><p>A buffer overflow vulnerability exists in D-Link DI-8003 16.07.26A1 due to improper handling of the name and mem parameters in the /time_group.asp endpoint.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-50652" target="_blank" rel="noopener">CVE-2025-50652</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>An issue in D-Link DI-8003 16.07.26A1 related to improper handling of the id par...</summary><p>An issue in D-Link DI-8003 16.07.26A1 related to improper handling of the id parameter in the /saveparm_usb.asp endpoint.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-50650" target="_blank" rel="noopener">CVE-2025-50650</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>A buffer overflow vulnerability exists in D-Link DI-8003 16.07.26A1 due to inade...</summary><p>A buffer overflow vulnerability exists in D-Link DI-8003 16.07.26A1 due to inadequate validation of input size in the routes_static parameter in the /router.asp endpoint.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-50649" target="_blank" rel="noopener">CVE-2025-50649</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>A buffer overflow vulnerability exists in D-Link DI-8003 16.07.26A1 due to impro...</summary><p>A buffer overflow vulnerability exists in D-Link DI-8003 16.07.26A1 due to improper input validation in the vlan_name parameter in the /shut_set.asp endpoint.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-50648" target="_blank" rel="noopener">CVE-2025-50648</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>A buffer overflow vulnerability exists in D-Link DI-8003 16.07.26A1 due to inade...</summary><p>A buffer overflow vulnerability exists in D-Link DI-8003 16.07.26A1 due to inadequate input validation in the /tggl.asp endpoint.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-50647" target="_blank" rel="noopener">CVE-2025-50647</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>A buffer overflow vulnerability exists in D-Link DI-8003 16.07.26A1, specificall...</summary><p>A buffer overflow vulnerability exists in D-Link DI-8003 16.07.26A1, specifically in the handling of the wans parameter in the qos.asp endpoint.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-50646" target="_blank" rel="noopener">CVE-2025-50646</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>A buffer overflow vulnerability exists in D-Link DI-8003 16.07.26A1 due to insuf...</summary><p>A buffer overflow vulnerability exists in D-Link DI-8003 16.07.26A1 due to insufficient input validation on the name parameter in the /qos_type_asp.asp endpoint.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-50645" target="_blank" rel="noopener">CVE-2025-50645</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>A vulnerability has been discovered in D-Link DI-8003 16.07.26A1, which can lead...</summary><p>A vulnerability has been discovered in D-Link DI-8003 16.07.26A1, which can lead to a buffer overflow when the s parameter in the pppoe_list_opt.asp endpoint is manipulated. By sending a crafted request with an excessively large value for the s parameter, an attacker can trigger a buffer overflow condition.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-50644" target="_blank" rel="noopener">CVE-2025-50644</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>A buffer overflow vulnerability exists in D-Link DI-8003 16.07.26A1 due to impro...</summary><p>A buffer overflow vulnerability exists in D-Link DI-8003 16.07.26A1 due to improper validation of user input in the qj.asp endpoint.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-30650" target="_blank" rel="noopener">CVE-2025-30650</a></td>
+        <td>8.4</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-306</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.88</td>
+        <td><details><summary>A Missing Authentication for Critical Function vulnerability in command processi...</summary><p>A Missing Authentication for Critical Function vulnerability in command processing of Juniper Networks Junos OS allows a privileged local attacker to gain access to line cards running Junos OS Evolved
+
+ as root.
+
+This issue affects systems running Junos OS using Linux-based line cards. Affected line cards include:
+  *  MPC7, MPC8, MPC9, MPC10, MPC11
+  *  LC2101, LC2103
+  *  LC480, LC4800, LC9600
+  *  MX304 (built-in FPC)
+  *  MX-SPC3
+  *  SRX5K-SPC3
+  *  EX9200-40XS
+
+
+  *  FPC3-PTX-U2, FPC3-PTX-U3
+  *  FPC3-SFF-PTX
+  *  LC1101, LC1102, LC1104, LC1105
+
+
+
+
+
+This issue affects Junos OS: 
+
+
+
+  *  all versions before 22.4R3-S8, 
+  *  from 23.2 before 23.2R2-S6, 
+  *  from 23.4 before 23.4R2-S6, 
+  *  from 24.2 before 24.2R2-S3, 
+  *  from 24.4 before 24.4R2,
+  *  from 25.2 before 25.2R2.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33756" target="_blank" rel="noopener">CVE-2026-33756</a></td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-770</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.25</td>
+        <td><details><summary>Saleor is an e-commerce platform. From 2.0.0 to before 3.23.0a3, 3.22.47, 3.21.5...</summary><p>Saleor is an e-commerce platform. From 2.0.0 to before 3.23.0a3, 3.22.47, 3.21.54, and 3.20.118, Saleor supports query batching by submitting multiple GraphQL operations in a single HTTP request as a JSON array but wasn&#x27;t enforcing any upper limit on the number of operations. This allowed an unauthenticated attacker to send a single HTTP request many operations (bypassing the per query complexity limit) to exhaust resources. This vulnerability is fixed in 3.23.0a3, 3.22.47, 3.21.54, and 3.20.118.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33466" target="_blank" rel="noopener">CVE-2026-33466</a></td>
+        <td>8.1</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-22</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.67</td>
+        <td><details><summary>Improper Limitation of a Pathname to a Restricted Directory (CWE-22) in Logstash...</summary><p>Improper Limitation of a Pathname to a Restricted Directory (CWE-22) in Logstash can lead to arbitrary file write and potentially remote code execution via Relative Path Traversal (CAPEC-139). The archive extraction utilities used by Logstash do not properly validate file paths within compressed archives. An attacker who can serve a specially crafted archive to Logstash through a compromised or attacker-controlled update endpoint can write arbitrary files to the host filesystem with the privileges of the Logstash process. In certain configurations where automatic pipeline reloading is enabled, this can be escalated to remote code execution.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33459" target="_blank" rel="noopener">CVE-2026-33459</a></td>
+        <td>6.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-400</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.55</td>
+        <td><details><summary>Uncontrolled Resource Consumption (CWE-400) in Kibana can lead to denial of serv...</summary><p>Uncontrolled Resource Consumption (CWE-400) in Kibana can lead to denial of service via Excessive Allocation (CAPEC-130). An authenticated user with access to the automatic import feature can submit specially crafted requests with excessively large input values. When multiple such requests are sent concurrently, the backend services become unstable, resulting in service disruption and deployment unavailability for all users.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33458" target="_blank" rel="noopener">CVE-2026-33458</a></td>
+        <td>6.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-918</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.41</td>
+        <td><details><summary>Server-Side Request Forgery (CWE-918) in Kibana One Workflow can lead to informa...</summary><p>Server-Side Request Forgery (CWE-918) in Kibana One Workflow can lead to information disclosure. An authenticated user with workflow creation and execution privileges can bypass host allowlist restrictions in the Workflows Execution Engine, potentially exposing sensitive internal endpoints and data.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32591" target="_blank" rel="noopener">CVE-2026-32591</a></td>
+        <td>5.2</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-918</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.64</td>
+        <td><details><summary>A flaw was found in Red Hat Quay&#x27;s Proxy Cache configuration feature. When an or...</summary><p>A flaw was found in Red Hat Quay&#x27;s Proxy Cache configuration feature. When an organization administrator configures an upstream registry for proxy caching, Quay makes a network connection to the specified registry hostname without verifying that it points to a legitimate external service. An attacker with organization administrator privileges could supply a crafted hostname to force the Quay server to make requests to internal network services, cloud infrastructure endpoints, or other resources that should not be accessible from the Quay application.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32590" target="_blank" rel="noopener">CVE-2026-32590</a></td>
+        <td>7.1</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-502</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.97</td>
+        <td><details><summary>A flaw was found in Red Hat Quay&#x27;s handling of resumable container image layer u...</summary><p>A flaw was found in Red Hat Quay&#x27;s handling of resumable container image layer uploads. The upload process stores intermediate data in the database using a format that, if tampered with, could allow an attacker to execute arbitrary code on the Quay server.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32589" target="_blank" rel="noopener">CVE-2026-32589</a></td>
+        <td>7.1</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-639</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.97</td>
+        <td><details><summary>A flaw was found in Red Hat Quay&#x27;s container image upload process. An authentica...</summary><p>A flaw was found in Red Hat Quay&#x27;s container image upload process. An authenticated user with push access to any repository on the registry can interfere with image uploads in progress by other users, including those in repositories they do not have access to. This could allow the attacker to read, modify, or cancel another user&#x27;s in-progress image upload.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-52222" target="_blank" rel="noopener">CVE-2025-52222</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>D-Link DI-8003 v16.07.26A1, DI-8500 v16.07.26A1; DI-8003G v17.12.21A1, DI-8200G ...</summary><p>D-Link DI-8003 v16.07.26A1, DI-8500 v16.07.26A1; DI-8003G v17.12.21A1, DI-8200G v17.12.20A1, DI-8200 v16.07.26A1, DI-8400 v16.07.26A1, DI-8004w v16.07.26A1, DI-8100 v16.07.26A1, and DI-8100G v17.12.20A1 were discovered to contain a buffer overflow via the rd_en, rd_auth, rd_acct, http_hadmin, http_hadminpwd, rd_key, and rd_ip parameters in the radius_asp function. This vulnerability allows attackers to cause a Denial of Service (DoS) via a crafted request.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-52221" target="_blank" rel="noopener">CVE-2025-52221</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Tenda AC6 15.03.05.16_multi is vulnerable to Buffer Overflow in the formSetCfm f...</summary><p>Tenda AC6 15.03.05.16_multi is vulnerable to Buffer Overflow in the formSetCfm function via the funcname, funcpara1, and funcpara2 parameters.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-45059" target="_blank" rel="noopener">CVE-2025-45059</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>D-Link DI-8300 v16.07.26A1 was discovered to contain a buffer overflow via the f...</summary><p>D-Link DI-8300 v16.07.26A1 was discovered to contain a buffer overflow via the fn parameter in the tgfile_htm function. This vulnerability allows attackers to cause a Denial of Service (DoS) via a crafted input.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-45058" target="_blank" rel="noopener">CVE-2025-45058</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>D-Link DI-8300 v16.07.26A1 was discovered to contain a buffer overflow via the f...</summary><p>D-Link DI-8300 v16.07.26A1 was discovered to contain a buffer overflow via the fx parameter in the jingx_asp function. This vulnerability allows attackers to cause a Denial of Service (DoS) via a crafted input.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-45057" target="_blank" rel="noopener">CVE-2025-45057</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>D-Link DI-8300 v16.07.26A1 was discovered to contain a buffer overflow via the i...</summary><p>D-Link DI-8300 v16.07.26A1 was discovered to contain a buffer overflow via the ip parameter in the ip_position_asp function. This vulnerability allows attackers to cause a Denial of Service (DoS) via a crafted input.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4837" target="_blank" rel="noopener">CVE-2026-4837</a></td>
+        <td>6.6</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-95</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.62</td>
+        <td><details><summary>An eval() injection vulnerability in the Rapid7 Insight Agent beaconing logic fo...</summary><p>An eval() injection vulnerability in the Rapid7 Insight Agent beaconing logic for Linux versions could theoretically allow an attacker to achieve remote code execution as root via a crafted beacon response. Because the Agent uses mutual TLS (mTLS) to verify commands from the Rapid7 Platform, it is unlikely that the eval() function could be exploited remotely without prior, highly privileged access to the backend platform.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4498" target="_blank" rel="noopener">CVE-2026-4498</a></td>
+        <td>7.7</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-250</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.39</td>
+        <td><details><summary>Execution with Unnecessary Privileges (CWE-250) in Kibana’s Fleet plugin debug r...</summary><p>Execution with Unnecessary Privileges (CWE-250) in Kibana’s Fleet plugin debug route handlers can lead reading index data beyond their direct Elasticsearch RBAC scope via Privilege Abuse (CAPEC-122). This requires an authenticated Kibana user with Fleet sub-feature privileges (such as agents, agent policies, and settings management).</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33461" target="_blank" rel="noopener">CVE-2026-33461</a></td>
+        <td>7.7</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-863</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.39</td>
+        <td><details><summary>Incorrect Authorization (CWE-863) in Kibana can lead to information disclosure v...</summary><p>Incorrect Authorization (CWE-863) in Kibana can lead to information disclosure via Privilege Abuse (CAPEC-122). A user with limited Fleet privileges can exploit an internal API endpoint to retrieve sensitive configuration data, including private keys and authentication tokens, that should only be accessible to users with higher-level settings privileges. The endpoint composes its response by fetching full configuration objects and returning them directly, bypassing the authorization checks enforced by the dedicated settings APIs.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33460" target="_blank" rel="noopener">CVE-2026-33460</a></td>
+        <td>4.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-863</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.01</td>
+        <td><details><summary>Incorrect Authorization (CWE-863) in Kibana can lead to cross-space information ...</summary><p>Incorrect Authorization (CWE-863) in Kibana can lead to cross-space information disclosure via Privilege Abuse (CAPEC-122). A user with Fleet agent management privileges in one Kibana space can retrieve Fleet Server policy details from other spaces through an internal enrollment endpoint. The endpoint bypasses space-scoped access controls by using an unscoped internal client, returning operational identifiers, policy names, management state, and infrastructure linkage details from spaces the user is not authorized to access.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-31017" target="_blank" rel="noopener">CVE-2026-31017</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>A Server-Side Request Forgery (SSRF) vulnerability exists in the Print Format fu...</summary><p>A Server-Side Request Forgery (SSRF) vulnerability exists in the Print Format functionality of ERPNext v16.0.1 and Frappe Framework v16.1.1, where user-supplied HTML is insufficiently sanitized before being rendered into PDF. When generating PDFs from user-controlled HTML content, the application allows the inclusion of HTML elements such as &lt;iframe&gt; that reference external resources. The PDF rendering engine automatically fetches these resources on the server side. An attacker can abuse this behavior to force the server to make arbitrary HTTP requests to internal services, including cloud metadata endpoints, potentially leading to sensitive information disclosure.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-30080" target="_blank" rel="noopener">CVE-2026-30080</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>OpenAirInterface v2.2.0 accepts Security Mode Complete without any integrity pro...</summary><p>OpenAirInterface v2.2.0 accepts Security Mode Complete without any integrity protection. Configuration has supported integrity NIA1 and NIA2. But if an UE sends initial registration request with only security capability IA0, OpenAirInterface accepts and proceeds. This downgrade security context can lead to the possibility of replay attack.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-30075" target="_blank" rel="noopener">CVE-2026-30075</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>OpenAirInterface Version 2.2.0 has a Buffer Overflow vulnerability in processing...</summary><p>OpenAirInterface Version 2.2.0 has a Buffer Overflow vulnerability in processing UplinkNASTransport containing Authentication Response containing a NAS PDU with oversize response (For example 100 byte). The response is decoded by AMF and passed to the AUSF component for verification. AUSF crashes on receiving this oversize response. This can prohibit users from further registration and verification and can cause Denial of Services (DoS).</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-2377" target="_blank" rel="noopener">CVE-2026-2377</a></td>
+        <td>6.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-918</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.55</td>
+        <td><details><summary>A flaw was found in mirror-registry. Authenticated users can exploit the log exp...</summary><p>A flaw was found in mirror-registry. Authenticated users can exploit the log export feature by providing a specially crafted web address (URL). This allows the application&#x27;s backend to make arbitrary requests to internal network resources, a vulnerability known as Server-Side Request Forgery (SSRF). This could lead to unauthorized access to sensitive information or other internal systems.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-57175" target="_blank" rel="noopener">CVE-2025-57175</a></td>
+        <td>6.4</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-259</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.48</td>
+        <td><details><summary>Siklu EtherHaul 8010 siklu-uimage-nxp-enc-10_6_2-18707-ea552dc00b devices have a...</summary><p>Siklu EtherHaul 8010 siklu-uimage-nxp-enc-10_6_2-18707-ea552dc00b devices have a static root password.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-14243" target="_blank" rel="noopener">CVE-2025-14243</a></td>
+        <td>5.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-209</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.71</td>
+        <td><details><summary>A flaw was found in the OpenShift Mirror Registry. This vulnerability allows an ...</summary><p>A flaw was found in the OpenShift Mirror Registry. This vulnerability allows an unauthenticated, remote attacker to enumerate valid usernames and email addresses via different error messages during authentication failures and account creation.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2023-46945" target="_blank" rel="noopener">CVE-2023-46945</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>QD 20230821 is vulnerable to Server-side request forgery (SSRF) via a crafted re...</summary><p>QD 20230821 is vulnerable to Server-side request forgery (SSRF) via a crafted request</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33753" target="_blank" rel="noopener">CVE-2026-33753</a></td>
         <td>6.2</td>
@@ -957,12 +1923,12 @@
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39676" target="_blank" rel="noopener">CVE-2026-39676</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>5.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
         <td>CWE-862</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p4</small></td>
-        <td>0.00</td>
+        <td>3.71</td>
         <td><details><summary>Missing Authorization vulnerability in Shahjada Download Manager download-manage...</summary><p>Missing Authorization vulnerability in Shahjada Download Manager download-manager allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects Download Manager: from n/a through &lt;= 3.3.52.</p></details></td>
         <td>2026-04-08</td>
       </tr>
@@ -979,12 +1945,12 @@
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39674" target="_blank" rel="noopener">CVE-2026-39674</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>6.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
         <td>CWE-79</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p8</small></td>
-        <td>0.00</td>
+        <td>4.55</td>
         <td><details><summary>Improper Neutralization of Input During Web Page Generation (&#x27;Cross-site Scripti...</summary><p>Improper Neutralization of Input During Web Page Generation (&#x27;Cross-site Scripting&#x27;) vulnerability in Manoj Kumar MK Google Directions google-distance-calculator allows DOM-Based XSS.This issue affects MK Google Directions: from n/a through &lt;= 3.1.1.</p></details></td>
         <td>2026-04-08</td>
       </tr>
@@ -2486,12 +3452,12 @@
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4338" target="_blank" rel="noopener">CVE-2026-4338</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
         <td>N/A</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p6</small></td>
-        <td>0.00</td>
+        <td>5.25</td>
         <td><details><summary>The ActivityPub WordPress plugin before 8.0.2 does not properly filter posts to ...</summary><p>The ActivityPub WordPress plugin before 8.0.2 does not properly filter posts to be displayed, allowed unauthenticated users to access drafts/scheduled/pending posts</p></details></td>
         <td>2026-04-08</td>
       </tr>
@@ -2603,6 +3569,42 @@
         <td>0.0% <small>p8</small></td>
         <td>3.78</td>
         <td><details><summary>The AM LottiePlayer plugin for WordPress is vulnerable to Stored Cross-Site Scri...</summary><p>The AM LottiePlayer plugin for WordPress is vulnerable to Stored Cross-Site Scripting via uploaded SVG files in all versions up to, and including, 3.6.0 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with Author-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5083" target="_blank" rel="noopener">CVE-2026-5083</a></td>
+        <td>5.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-338</td>
+        <td>&nbsp;</td>
+        <td>0.0% <small>p3</small></td>
+        <td>3.71</td>
+        <td><details><summary>Ado::Sessions versions through 0.935 for Perl generates insecure session ids.
+
+T...</summary><p>Ado::Sessions versions through 0.935 for Perl generates insecure session ids.
+
+The session id is generated from a SHA-1 hash seeded with the built-in rand function, the epoch time, and the PID. The PID will come from a small set of numbers, and the epoch time may be guessed, if it is not leaked from the HTTP Date header. The built-in rand function is unsuitable for cryptographic usage.
+
+Predicable session ids could allow an attacker to gain access to systems.
+
+Note that Ado is no longer maintained, and has been removed from the CPAN index. It is still available on BackPAN.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5082" target="_blank" rel="noopener">CVE-2026-5082</a></td>
+        <td>5.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-338</td>
+        <td>&nbsp;</td>
+        <td>0.0% <small>p3</small></td>
+        <td>3.71</td>
+        <td><details><summary>Amon2::Plugin::Web::CSRFDefender versions from 7.00 through 7.03 for Perl genera...</summary><p>Amon2::Plugin::Web::CSRFDefender versions from 7.00 through 7.03 for Perl generate an insecure session id.
+
+The generate_session_id function will attempt to read bytes from the /dev/urandom device, but if that is unavailable then it generates bytes using SHA-1 hash seeded with the built-in rand() function, the PID, and the high resolution epoch time.  The PID will come from a small set of numbers, and the epoch time may be guessed, if it is not leaked from the HTTP Date header. The built-in rand function is unsuitable for cryptographic usage.
+
+Amon2::Plugin::Web::CSRFDefender versions before 7.00 were part of Amon2, which was vulnerable to insecure session ids due to CVE-2025-15604.
+
+Note that the author has deprecated this module.</p></details></td>
         <td>2026-04-08</td>
       </tr>
       <tr>
@@ -2882,12 +3884,12 @@
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32280" target="_blank" rel="noopener">CVE-2026-32280</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-770</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p0</small></td>
-        <td>0.00</td>
+        <td>5.25</td>
         <td><details><summary>During chain building, the amount of work that is done is not correctly limited ...</summary><p>During chain building, the amount of work that is done is not correctly limited when a large number of intermediate certificates are passed in VerifyOptions.Intermediates, which can lead to a denial of service. This affects both direct users of crypto/x509 and users of crypto/tls.</p></details></td>
         <td>2026-04-08</td>
       </tr>
@@ -3427,7 +4429,8 @@
         <td>&nbsp;</td>
         <td>0.0% <small>p14</small></td>
         <td>4.83</td>
-        <td><details><summary>Improper neutralization of input during web page generation (&#x27;cross-site scripti...</summary><p>Improper neutralization of input during web page generation (&#x27;cross-site scripting&#x27;) vulnerability in Wikimedia Foundation MediaWiki - ProofreadPage Extension allows XSS Targeting Non-Script Elements.This issue affects .</p></details></td>
+        <td><details><summary>Improper neutralization of input during web page generation (&#x27;cross-site scripti...</summary><p>Improper neutralization of input during web page generation (&#x27;cross-site scripting&#x27;) vulnerability in Wikimedia Foundation MediaWiki - ProofreadPage Extension allows XSS Targeting Non-Script Elements.
+The issue has been remediated on the `master` branch, and in the release branches for MediaWiki versions 1.43, 1.44, and 1.45.</p></details></td>
         <td>2026-04-07</td>
       </tr>
       <tr>
@@ -5060,12 +6063,12 @@
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-24817" target="_blank" rel="noopener">CVE-2025-24817</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>8.0</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-78</td>
         <td>&nbsp;</td>
         <td>0.1% <small>p19</small></td>
-        <td>0.00</td>
+        <td>5.60</td>
         <td><details><summary>Nokia MantaRay NM is vulnerable to an OS command injection vulnerability due to ...</summary><p>Nokia MantaRay NM is vulnerable to an OS command injection vulnerability due to improper neutralization of special elements used in an OS command in Symptom Collector application.</p></details></td>
         <td>2026-04-07</td>
       </tr>
@@ -5628,58 +6631,6 @@
         <td>0.0% <small>p4</small></td>
         <td>5.25</td>
         <td><details><summary>Cross-Site Request Forgery (CSRF) vulnerability in Analytify Under Construction,...</summary><p>Cross-Site Request Forgery (CSRF) vulnerability in Analytify Under Construction, Coming Soon &amp; Maintenance Mode allows Cross Site Request Forgery.This issue affects Under Construction, Coming Soon &amp; Maintenance Mode: from n/a through 2.1.1.</p></details></td>
-        <td>2026-04-07</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34197" target="_blank" rel="noopener">CVE-2026-34197</a></td>
-        <td>8.8</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-20</td>
-        <td>&nbsp;</td>
-        <td>0.1% <small>p28</small></td>
-        <td>6.16</td>
-        <td><details><summary>Improper Input Validation, Improper Control of Generation of Code (&#x27;Code Injecti...</summary><p>Improper Input Validation, Improper Control of Generation of Code (&#x27;Code Injection&#x27;) vulnerability in Apache ActiveMQ Broker, Apache ActiveMQ.
-
-Apache ActiveMQ Classic exposes the Jolokia JMX-HTTP bridge at /api/jolokia/ on the web console. The default Jolokia access policy permits exec operations on all ActiveMQ MBeans (org.apache.activemq:*), including
-BrokerService.addNetworkConnector(String) and BrokerService.addConnector(String).
-
-An authenticated attacker can invoke these operations with a crafted discovery URI that triggers the VM transport&#x27;s brokerConfig parameter to load a remote Spring XML application context using ResourceXmlApplicationContext.
-Because Spring&#x27;s ResourceXmlApplicationContext instantiates all singleton beans before the BrokerService validates the configuration, arbitrary code execution occurs on the broker&#x27;s JVM through bean factory methods such as Runtime.exec().
-
-
-
-This issue affects Apache ActiveMQ Broker: before 5.19.4, from 6.0.0 before 6.2.3; Apache ActiveMQ All: before 5.19.4, from 6.0.0 before 6.2.3; Apache ActiveMQ: before 5.19.4, from 6.0.0 before 6.2.3.
-
-
-
-Users are recommended to upgrade to version 5.19.4 or 6.2.3, which fixes the issue</p></details></td>
-        <td>2026-04-07</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33227" target="_blank" rel="noopener">CVE-2026-33227</a></td>
-        <td>4.3</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-22</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p13</small></td>
-        <td>3.01</td>
-        <td><details><summary>Improper validation and restriction of a classpath path name vulnerability in 
-
-...</summary><p>Improper validation and restriction of a classpath path name vulnerability in 
-
- Apache ActiveMQ Client, Apache ActiveMQ Broker, Apache ActiveMQ All, Apache ActiveMQ Web, Apache ActiveMQ.
-
-
-
-In two instances (when creating a Stomp consumer and also browsing messages in the Web console) an authenticated user provided &quot;key&quot; value could be constructed to traverse the classpath due to path concatenation. As a result, the application is exposed to a classpath path resource loading vulnerability that could potentially be chained together with another attack to lead to exploit.
-
-
-
-
-
-This issue affects Apache ActiveMQ Client: before 5.19.3, from 6.0.0 before 6.2.2; Apache ActiveMQ Broker: before 5.19.3, from 6.0.0 before 6.2.2; Apache ActiveMQ All: before 5.19.3, from 6.0.0 before 6.2.2; Apache ActiveMQ Web: before 5.19.3, from 6.0.0 before 6.2.2; Apache ActiveMQ: before 5.19.3, from 6.0.0 before 6.2.2.
-
-Users are recommended to upgrade to version 5.19.4 or 6.2.3, which fixes the issue. Note: 5.19.3 and 6.2.2 also fix this issue, but that is limited to non-Windows environments due to a path separator resolution bug fixed in 5.19.4 and 6.2.3.</p></details></td>
         <td>2026-04-07</td>
       </tr>
       <tr>
@@ -6696,13 +7647,13 @@ Users are recommended to upgrade to version 5.19.4 or 6.2.3, which fixes the iss
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33817" target="_blank" rel="noopener">CVE-2026-33817</a></td>
-        <td>6.2</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-125</td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>N/A</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p1</small></td>
-        <td>4.34</td>
-        <td><details><summary>(This report has been withdrawn with reason: &quot;Reporter and maintainer have confi...</summary><p>(This report has been withdrawn with reason: &quot;Reporter and maintainer have confirmed this as false positive&quot;). Index out-of-range when encountering a branch page with zero elements in go.etcd.io/bbolt</p></details></td>
+        <td>0.00</td>
+        <td><details><summary>Rejected reason: CVE confirmed to be a false positive</summary><p>Rejected reason: CVE confirmed to be a false positive</p></details></td>
         <td>2026-04-06</td>
       </tr>
       <tr>
@@ -6746,7 +7697,7 @@ Users are recommended to upgrade to version 5.19.4 or 6.2.3, which fixes the iss
         <td>&nbsp;</td>
         <td>0.0% <small>p0</small></td>
         <td>0.00</td>
-        <td><details><summary>StrongBox in Android before security patch level 2026-04-05 has a vulnerability ...</summary><p>StrongBox in Android before security patch level 2026-04-05 has a vulnerability of High Severity, aka A-434039170, A-467765081, A-467765894, and A-467762899.</p></details></td>
+        <td><details><summary>In importWrappedKey of KMKeymasterApplet.java, there is a possible way access ke...</summary><p>In importWrappedKey of KMKeymasterApplet.java, there is a possible way access keys that should be restricted due to improper input validation. This could lead to local information disclosure with no additional execution privileges needed. User interaction is not needed for exploitation.</p></details></td>
         <td>2026-04-06</td>
       </tr>
       <tr>
@@ -11531,7 +12482,7 @@ Users are recommended to upgrade to version 5.19.4 or 6.2.3, which fixes the iss
         <td>&nbsp;</td>
         <td>0.1% <small>p28</small></td>
         <td>3.01</td>
-        <td><details><summary>An issue in Dokuwiki v.2025-05-14b &#x27;Librarian&#x27; allows a remote attacker to cause...</summary><p>An issue in Dokuwiki v.2025-05-14b &#x27;Librarian&#x27; allows a remote attacker to cause a denial of service via the media_upload_xhr() function in the media.php file</p></details></td>
+        <td><details><summary>An issue in Dokuwiki v.2025-05-14b &quot;Librarian&quot; [56.2] allows a remote attacker t...</summary><p>An issue in Dokuwiki v.2025-05-14b &quot;Librarian&quot; [56.2] allows a remote attacker to cause a denial of service via the media_upload_xhr() function in the media.php file</p></details></td>
         <td>2026-04-03</td>
       </tr>
       <tr>
@@ -14347,7 +15298,7 @@ Users are recommended to upgrade to version 5.19.4 or 6.2.3, which fixes the iss
         <td>&nbsp;</td>
         <td>0.1% <small>p20</small></td>
         <td>5.25</td>
-        <td><details><summary>The W3 Total Cache plugin for WordPress is vulnerable to information exposure in...</summary><p>The W3 Total Cache plugin for WordPress is vulnerable to information exposure in all versions up to, and including, 2.9.3. This is due to the plugin bypassing its entire output buffering and processing pipeline when the request&#x27;s User-Agent header contains &quot;W3 Total Cache&quot;, which causes raw mfunc/mclude dynamic fragment HTML comments — including the W3TC_DYNAMIC_SECURITY security token — to be rendered in the page source. This makes it possible for unauthenticated attackers to discover the value of the W3TC_DYNAMIC_SECURITY constant by sending a crafted User-Agent header to any page that contains developer-placed dynamic fragment tags, granted the site has the fragment caching feature enabled.</p></details></td>
+        <td><details><summary>The W3 Total Cache plugin for WordPress is vulnerable to information exposure in...</summary><p>The W3 Total Cache plugin for WordPress is vulnerable to information exposure in all versions up to, and including, 2.9.3. This is due to the plugin bypassing its entire output buffering and processing pipeline when the request&#x27;s User-Agent header contains &quot;W3 Total Cache&quot;, which causes raw mfunc/mclude dynamic fragment HTML comments — including the W3TC_DYNAMIC_SECURITY security token — to be rendered in the page source. This makes it possible for unauthenticated attackers to discover the value of the W3TC_DYNAMIC_SECURITY constant by sending a crafted User-Agent header to any page that contains developer-placed dynamic fragment tags, granted the site has the fragment caching feature enabled. With the leaked W3TC_DYNAMIC_SECURITY token, an attacker can craft valid mfunc tags to execute arbitrary PHP code on the server, achieving remote code execution.</p></details></td>
         <td>2026-04-02</td>
       </tr>
       <tr>
@@ -27431,12 +28382,12 @@ Users are recommended to upgrade to version 5.19.4 or 6.2.3, which fixes the iss
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4484" target="_blank" rel="noopener">CVE-2026-4484</a></td>
-        <td>9.8</td>
-        <td><span class="severity critical">CRITICAL</span></td>
+        <td>8.8</td>
+        <td><span class="severity high">HIGH</span></td>
         <td>CWE-862</td>
         <td>&nbsp;</td>
         <td>0.1% <small>p16</small></td>
-        <td>6.86</td>
+        <td>6.16</td>
         <td><details><summary>The Masteriyo LMS plugin for WordPress is vulnerable to Privilege Escalation in ...</summary><p>The Masteriyo LMS plugin for WordPress is vulnerable to Privilege Escalation in all versions up to, and including, 2.1.6. This is due to the plugin allowing a user to update the user role through the &#x27;InstructorsController::prepare_object_for_database&#x27; function. This makes it possible for authenticated attackers, with Student-level access and above, to elevate their privileges to that of an administrator.</p></details></td>
         <td>2026-03-26</td>
       </tr>
@@ -39201,12 +40152,12 @@ Users are recommended to upgrade to version 5.19.4 or 6.2.3, which fixes the iss
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4127" target="_blank" rel="noopener">CVE-2026-4127</a></td>
-        <td>5.3</td>
+        <td>4.3</td>
         <td><span class="severity medium">MEDIUM</span></td>
         <td>CWE-862</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p12</small></td>
-        <td>3.71</td>
+        <td>3.01</td>
         <td><details><summary>The Speedup Optimization plugin for WordPress is vulnerable to Missing Authoriza...</summary><p>The Speedup Optimization plugin for WordPress is vulnerable to Missing Authorization in all versions up to and including 1.5.9. The `speedup01_ajax_enabled()` function, which handles the `wp_ajax_speedup01_enabled` AJAX action, does not perform any capability check via `current_user_can()` and also lacks nonce verification. This is in contrast to other AJAX handlers in the same plugin (e.g., `speedup01_ajax_install_iox` and `speedup01_ajax_delete_cache_file`) which properly check for `install_plugins` and `manage_options` capabilities respectively. This makes it possible for authenticated attackers, with Subscriber-level access and above, to enable or disable the site&#x27;s optimization module by sending a POST request to admin-ajax.</p></details></td>
         <td>2026-03-21</td>
       </tr>
@@ -39707,12 +40658,12 @@ Users are recommended to upgrade to version 5.19.4 or 6.2.3, which fixes the iss
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-2290" target="_blank" rel="noopener">CVE-2026-2290</a></td>
-        <td>6.5</td>
-        <td><span class="severity medium">MEDIUM</span></td>
+        <td>3.8</td>
+        <td><span class="severity low">LOW</span></td>
         <td>CWE-918</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p10</small></td>
-        <td>4.55</td>
+        <td>2.66</td>
         <td><details><summary>The Post Affiliate Pro plugin for WordPress is vulnerable to Server-Side Request...</summary><p>The Post Affiliate Pro plugin for WordPress is vulnerable to Server-Side Request Forgery in all versions up to, and including, 1.28.0. This makes it possible for authenticated attackers, with Administrator-level access, to make web requests to initiate arbitrary outbound requests from the application and read the returned response content. Successful exploitation was confirmed by receiving and observing response data from an external Collaborator endpoint.</p></details></td>
         <td>2026-03-21</td>
       </tr>
@@ -40026,12 +40977,12 @@ Users are recommended to upgrade to version 5.19.4 or 6.2.3, which fixes the iss
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-1253" target="_blank" rel="noopener">CVE-2026-1253</a></td>
-        <td>5.3</td>
+        <td>4.3</td>
         <td><span class="severity medium">MEDIUM</span></td>
         <td>CWE-862</td>
         <td>&nbsp;</td>
         <td>0.1% <small>p17</small></td>
-        <td>3.71</td>
+        <td>3.01</td>
         <td><details><summary>The Group Chat &amp; Video Chat by AtomChat plugin for WordPress is vulnerable to un...</summary><p>The Group Chat &amp; Video Chat by AtomChat plugin for WordPress is vulnerable to unauthorized modification of data due to a missing capability check on the &#x27;atomchat_update_auth_ajax&#x27; and &#x27;atomchat_update_layout_ajax&#x27; functions in all versions up to, and including, 1.1.7. This makes it possible for authenticated attackers, with Subscriber-level access and above, to update plugin options, including critical settings such as API keys, authentication keys, and layout configurations.</p></details></td>
         <td>2026-03-21</td>
       </tr>
@@ -46813,12 +47764,12 @@ Users are recommended to upgrade to version 5.19.4 or 6.2.3, which fixes the iss
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-2991" target="_blank" rel="noopener">CVE-2026-2991</a></td>
-        <td>9.8</td>
-        <td><span class="severity critical">CRITICAL</span></td>
+        <td>7.3</td>
+        <td><span class="severity high">HIGH</span></td>
         <td>CWE-287</td>
         <td>&nbsp;</td>
         <td>0.2% <small>p41</small></td>
-        <td>6.87</td>
+        <td>5.12</td>
         <td><details><summary>The KiviCare – Clinic &amp; Patient Management System (EHR) plugin for WordPress is ...</summary><p>The KiviCare – Clinic &amp; Patient Management System (EHR) plugin for WordPress is vulnerable to Authentication Bypass in all versions up to, and including, 4.1.2. This is due to the `patientSocialLogin()` function not verifying the social provider access token before authenticating a user. This makes it possible for unauthenticated attackers to log in as any patient registered on the system by providing only their email address and an arbitrary value for the access token, bypassing all credential verification. The attacker gains access to sensitive medical records, appointments, prescriptions, and billing information (PII/PHI breach). Additionally, authentication cookies are set before the role check, meaning the auth cookies for non-patient users (including administrators) are also set in the HTTP response headers, even though a 403 response is returned.</p></details></td>
         <td>2026-03-18</td>
       </tr>
