@@ -11,7 +11,7 @@
     <header>
       <h1>vuln-tracker</h1>
       <p class="subtitle">CVEs from the National Vulnerability Database — current and previous month</p>
-      <p class="last-updated">Last updated: 2026-04-08 15:17 UTC</p>
+      <p class="last-updated">Last updated: 2026-04-08 17:11 UTC</p>
     </header>
     <nav>
       <a href="top50.html">&#9733; Top 50</a>
@@ -25,7 +25,7 @@
     </nav>
     <main>
     <section>
-      <h2>Current Month — April 2026 <span class="count">(1512)</span></h2>
+      <h2>Current Month — April 2026 <span class="count">(1514)</span></h2>
       <div class="table-wrapper">
         <table>
           <thead>
@@ -42,6 +42,39 @@
             </tr>
           </thead>
           <tbody>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33753" target="_blank" rel="noopener">CVE-2026-33753</a></td>
+        <td>6.2</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-295</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.34</td>
+        <td><details><summary>rfc3161-client is a Python library implementing the Time-Stamp Protocol (TSP) de...</summary><p>rfc3161-client is a Python library implementing the Time-Stamp Protocol (TSP) described in RFC 3161. Prior to 1.0.6, an Authorization Bypass vulnerability in rfc3161-client&#x27;s signature verification allows any attacker to impersonate a trusted TimeStamping Authority (TSA). By exploiting a logic flaw in how the library extracts the leaf certificate from an unordered PKCS#7 bag of certificates, an attacker can append a spoofed certificate matching the target common_name and Extended Key Usage (EKU) requirements. This tricks the library into verifying these authorization rules against the forged certificate while validating the cryptographic signature against an actual trusted TSA (such as FreeTSA), thereby bypassing the intended TSA authorization pinning entirely. This vulnerability is fixed in 1.0.6.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33229" target="_blank" rel="noopener">CVE-2026-33229</a></td>
+        <td>8.6</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.02</td>
+        <td><details><summary>XWiki Platform is a generic wiki platform offering runtime services for applicat...</summary><p>XWiki Platform is a generic wiki platform offering runtime services for applications built on top of it. Prior to 17.4.8 and 17.10.1, an improperly protected scripting API allows any user with script right to bypass the sandboxing of the Velocity scripting API and execute, e.g., arbitrary Python scripts, allowing full access to the XWiki instance and thereby compromising the confidentiality, integrity and availability of the whole instance. Note that script right already constitutes a high level of access that we don&#x27;t recommend giving to untrusted users. This vulnerability is fixed in 17.4.8 and 17.10.1.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-31040" target="_blank" rel="noopener">CVE-2026-31040</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>A vulnerability was identified in stata-mcp prior to v1.13.0 where insufficient ...</summary><p>A vulnerability was identified in stata-mcp prior to v1.13.0 where insufficient validation of user-supplied Stata do-file content can lead to command execution.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39865" target="_blank" rel="noopener">CVE-2026-39865</a></td>
         <td>5.9</td>
@@ -175,23 +208,6 @@
         <td>2026-04-08</td>
       </tr>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5795" target="_blank" rel="noopener">CVE-2026-5795</a></td>
-        <td>7.4</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-226</td>
-        <td>&nbsp;</td>
-        <td>&mdash;</td>
-        <td>5.18</td>
-        <td><details><summary>In Eclipse Jetty, the class JASPIAuthenticator initiates the authentication chec...</summary><p>In Eclipse Jetty, the class JASPIAuthenticator initiates the authentication checks, which set two ThreadLocal variable.
-
-
-Upon returning from the initial checks, there are conditions that cause an early return from the JASPIAuthenticator code without clearing those ThreadLocals.
-
-
-A subsequent request using the same thread inherits the ThreadLocal values, leading to a broken access control and privilege escalation.</p></details></td>
-        <td>2026-04-08</td>
-      </tr>
-      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35023" target="_blank" rel="noopener">CVE-2026-35023</a></td>
         <td>5.3</td>
         <td><span class="severity medium">MEDIUM</span></td>
@@ -200,53 +216,6 @@ A subsequent request using the same thread inherits the ThreadLocal values, lead
         <td>&mdash;</td>
         <td>3.71</td>
         <td><details><summary>Wimi Teamwork On-Premises versions prior to 8.2.0 contain an insecure direct obj...</summary><p>Wimi Teamwork On-Premises versions prior to 8.2.0 contain an insecure direct object reference vulnerability in the preview.php endpoint where the item_id parameter lacks proper authorization checks. Attackers can enumerate sequential item_id values to access and retrieve image previews from other users&#x27; private or group conversations, resulting in unauthorized disclosure of sensitive information.</p></details></td>
-        <td>2026-04-08</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-31411" target="_blank" rel="noopener">CVE-2026-31411</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
-        <td>&nbsp;</td>
-        <td>&mdash;</td>
-        <td>0.00</td>
-        <td><details><summary>In the Linux kernel, the following vulnerability has been resolved:
-
-net: atm: f...</summary><p>In the Linux kernel, the following vulnerability has been resolved:
-
-net: atm: fix crash due to unvalidated vcc pointer in sigd_send()
-
-Reproducer available at [1].
-
-The ATM send path (sendmsg -&gt; vcc_sendmsg -&gt; sigd_send) reads the vcc
-pointer from msg-&gt;vcc and uses it directly without any validation. This
-pointer comes from userspace via sendmsg() and can be arbitrarily forged:
-
-    int fd = socket(AF_ATMSVC, SOCK_DGRAM, 0);
-    ioctl(fd, ATMSIGD_CTRL);  // become ATM signaling daemon
-    struct msghdr msg = { .msg_iov = &amp;iov, ... };
-    *(unsigned long *)(buf + 4) = 0xdeadbeef;  // fake vcc pointer
-    sendmsg(fd, &amp;msg, 0);  // kernel dereferences 0xdeadbeef
-
-In normal operation, the kernel sends the vcc pointer to the signaling
-daemon via sigd_enq() when processing operations like connect(), bind(),
-or listen(). The daemon is expected to return the same pointer when
-responding. However, a malicious daemon can send arbitrary pointer values.
-
-Fix this by introducing find_get_vcc() which validates the pointer by
-searching through vcc_hash (similar to how sigd_close() iterates over
-all VCCs), and acquires a reference via sock_hold() if found.
-
-Since struct atm_vcc embeds struct sock as its first member, they share
-the same lifetime. Therefore using sock_hold/sock_put is sufficient to
-keep the vcc alive while it is being used.
-
-Note that there may be a race with sigd_close() which could mark the vcc
-with various flags (e.g., ATM_VF_RELEASED) after find_get_vcc() returns.
-However, sock_hold() guarantees the memory remains valid, so this race
-only affects the logical state, not memory safety.
-
-[1]: https://gist.github.com/mrpre/1ba5949c45529c511152e2f4c755b0f3</p></details></td>
         <td>2026-04-08</td>
       </tr>
       <tr>
@@ -922,12 +891,12 @@ only affects the logical state, not memory safety.
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39682" target="_blank" rel="noopener">CVE-2026-39682</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>5.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
         <td>CWE-862</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p4</small></td>
-        <td>0.00</td>
+        <td>3.71</td>
         <td><details><summary>Missing Authorization vulnerability in Arjan Pronk linkPizza-Manager linkpizza-m...</summary><p>Missing Authorization vulnerability in Arjan Pronk linkPizza-Manager linkpizza-manager allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects linkPizza-Manager: from n/a through &lt;= 5.5.5.</p></details></td>
         <td>2026-04-08</td>
       </tr>
@@ -944,12 +913,12 @@ only affects the logical state, not memory safety.
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39680" target="_blank" rel="noopener">CVE-2026-39680</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>5.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
         <td>CWE-862</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p4</small></td>
-        <td>0.00</td>
+        <td>3.71</td>
         <td><details><summary>Missing Authorization vulnerability in MWP Development Diet Calorie Calculator d...</summary><p>Missing Authorization vulnerability in MWP Development Diet Calorie Calculator diet-calorie-calculator allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects Diet Calorie Calculator: from n/a through &lt;= 1.1.1.</p></details></td>
         <td>2026-04-08</td>
       </tr>
@@ -966,12 +935,12 @@ only affects the logical state, not memory safety.
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39678" target="_blank" rel="noopener">CVE-2026-39678</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>5.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
         <td>CWE-862</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p4</small></td>
-        <td>0.00</td>
+        <td>3.71</td>
         <td><details><summary>Missing Authorization vulnerability in DOTonPAPER Pinpoint Booking System bookin...</summary><p>Missing Authorization vulnerability in DOTonPAPER Pinpoint Booking System booking-system allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects Pinpoint Booking System: from n/a through &lt;= 2.9.9.6.5.</p></details></td>
         <td>2026-04-08</td>
       </tr>
@@ -3272,42 +3241,6 @@ only affects the logical state, not memory safety.
         <td>0.2% <small>p36</small></td>
         <td>6.51</td>
         <td><details><summary>Flatpak is a Linux application sandboxing and distribution framework. Prior to 1...</summary><p>Flatpak is a Linux application sandboxing and distribution framework. Prior to 1.16.4, the Flatpak portal accepts paths in the sandbox-expose options which can be app-controlled symlinks pointing at arbitrary paths. Flatpak run mounts the resolved host path in the sandbox. This gives apps access to all host files and can be used as a primitive to gain code execution in the host context. This vulnerability is fixed in 1.16.4.</p></details></td>
-        <td>2026-04-07</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-31790" target="_blank" rel="noopener">CVE-2026-31790</a></td>
-        <td>7.5</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-754</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p1</small></td>
-        <td>5.25</td>
-        <td><details><summary>Issue summary: Applications using RSASVE key encapsulation to establish
-a secret...</summary><p>Issue summary: Applications using RSASVE key encapsulation to establish
-a secret encryption key can send contents of an uninitialized memory buffer to
-a malicious peer.
-
-Impact summary: The uninitialized buffer might contain sensitive data from the
-previous execution of the application process which leads to sensitive data
-leakage to an attacker.
-
-RSA_public_encrypt() returns the number of bytes written on success and -1
-on error. The affected code tests only whether the return value is non-zero.
-As a result, if RSA encryption fails, encapsulation can still return success to
-the caller, set the output lengths, and leave the caller to use the contents of
-the ciphertext buffer as if a valid KEM ciphertext had been produced.
-
-If applications use EVP_PKEY_encapsulate() with RSA/RSASVE on an
-attacker-supplied invalid RSA public key without first validating that key,
-then this may cause stale or uninitialized contents of the caller-provided
-ciphertext buffer to be disclosed to the attacker in place of the KEM
-ciphertext.
-
-As a workaround calling EVP_PKEY_public_check() or
-EVP_PKEY_public_check_quick() before EVP_PKEY_encapsulate() will mitigate
-the issue.
-
-The FIPS modules in 3.6, 3.5, 3.4, 3.3, 3.1 and 3.0 are affected by this issue.</p></details></td>
         <td>2026-04-07</td>
       </tr>
       <tr>
@@ -5698,6 +5631,58 @@ The FIPS modules in 3.6, 3.5, 3.4, 3.3, 3.1 and 3.0 are affected by this issue.<
         <td>2026-04-07</td>
       </tr>
       <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34197" target="_blank" rel="noopener">CVE-2026-34197</a></td>
+        <td>8.8</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-20</td>
+        <td>&nbsp;</td>
+        <td>0.1% <small>p28</small></td>
+        <td>6.16</td>
+        <td><details><summary>Improper Input Validation, Improper Control of Generation of Code (&#x27;Code Injecti...</summary><p>Improper Input Validation, Improper Control of Generation of Code (&#x27;Code Injection&#x27;) vulnerability in Apache ActiveMQ Broker, Apache ActiveMQ.
+
+Apache ActiveMQ Classic exposes the Jolokia JMX-HTTP bridge at /api/jolokia/ on the web console. The default Jolokia access policy permits exec operations on all ActiveMQ MBeans (org.apache.activemq:*), including
+BrokerService.addNetworkConnector(String) and BrokerService.addConnector(String).
+
+An authenticated attacker can invoke these operations with a crafted discovery URI that triggers the VM transport&#x27;s brokerConfig parameter to load a remote Spring XML application context using ResourceXmlApplicationContext.
+Because Spring&#x27;s ResourceXmlApplicationContext instantiates all singleton beans before the BrokerService validates the configuration, arbitrary code execution occurs on the broker&#x27;s JVM through bean factory methods such as Runtime.exec().
+
+
+
+This issue affects Apache ActiveMQ Broker: before 5.19.4, from 6.0.0 before 6.2.3; Apache ActiveMQ All: before 5.19.4, from 6.0.0 before 6.2.3; Apache ActiveMQ: before 5.19.4, from 6.0.0 before 6.2.3.
+
+
+
+Users are recommended to upgrade to version 5.19.4 or 6.2.3, which fixes the issue</p></details></td>
+        <td>2026-04-07</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33227" target="_blank" rel="noopener">CVE-2026-33227</a></td>
+        <td>4.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-22</td>
+        <td>&nbsp;</td>
+        <td>0.0% <small>p13</small></td>
+        <td>3.01</td>
+        <td><details><summary>Improper validation and restriction of a classpath path name vulnerability in 
+
+...</summary><p>Improper validation and restriction of a classpath path name vulnerability in 
+
+ Apache ActiveMQ Client, Apache ActiveMQ Broker, Apache ActiveMQ All, Apache ActiveMQ Web, Apache ActiveMQ.
+
+
+
+In two instances (when creating a Stomp consumer and also browsing messages in the Web console) an authenticated user provided &quot;key&quot; value could be constructed to traverse the classpath due to path concatenation. As a result, the application is exposed to a classpath path resource loading vulnerability that could potentially be chained together with another attack to lead to exploit.
+
+
+
+
+
+This issue affects Apache ActiveMQ Client: before 5.19.3, from 6.0.0 before 6.2.2; Apache ActiveMQ Broker: before 5.19.3, from 6.0.0 before 6.2.2; Apache ActiveMQ All: before 5.19.3, from 6.0.0 before 6.2.2; Apache ActiveMQ Web: before 5.19.3, from 6.0.0 before 6.2.2; Apache ActiveMQ: before 5.19.3, from 6.0.0 before 6.2.2.
+
+Users are recommended to upgrade to version 5.19.4 or 6.2.3, which fixes the issue. Note: 5.19.3 and 6.2.2 also fix this issue, but that is limited to non-Windows environments due to a path separator resolution bug fixed in 5.19.4 and 6.2.3.</p></details></td>
+        <td>2026-04-07</td>
+      </tr>
+      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-3177" target="_blank" rel="noopener">CVE-2026-3177</a></td>
         <td>5.3</td>
         <td><span class="severity medium">MEDIUM</span></td>
@@ -6717,7 +6702,7 @@ The FIPS modules in 3.6, 3.5, 3.4, 3.3, 3.1 and 3.0 are affected by this issue.<
         <td>&nbsp;</td>
         <td>0.0% <small>p1</small></td>
         <td>4.34</td>
-        <td><details><summary>Index out-of-range when encountering a branch page with zero elements in go.etcd...</summary><p>Index out-of-range when encountering a branch page with zero elements in go.etcd.io/bbolt</p></details></td>
+        <td><details><summary>(This report has been withdrawn with reason: &quot;Reporter and maintainer have confi...</summary><p>(This report has been withdrawn with reason: &quot;Reporter and maintainer have confirmed this as false positive&quot;). Index out-of-range when encountering a branch page with zero elements in go.etcd.io/bbolt</p></details></td>
         <td>2026-04-06</td>
       </tr>
       <tr>
