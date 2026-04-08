@@ -11,7 +11,7 @@
     <header>
       <h1>vuln-tracker</h1>
       <p class="subtitle">CVEs from the National Vulnerability Database — current and previous month</p>
-      <p class="last-updated">Last updated: 2026-04-08 09:10 UTC</p>
+      <p class="last-updated">Last updated: 2026-04-08 11:04 UTC</p>
     </header>
     <nav>
       <a href="top50.html">&#9733; Top 50</a>
@@ -25,7 +25,7 @@
     </nav>
     <main>
     <section>
-      <h2>Current Month — April 2026 <span class="count">(1300)</span></h2>
+      <h2>Current Month — April 2026 <span class="count">(1474)</span></h2>
       <div class="table-wrapper">
         <table>
           <thead>
@@ -42,6 +42,1909 @@
             </tr>
           </thead>
           <tbody>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4303" target="_blank" rel="noopener">CVE-2026-4303</a></td>
+        <td>6.4</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.48</td>
+        <td><details><summary>The WP Visitor Statistics (Real Time Traffic) plugin for WordPress is vulnerable...</summary><p>The WP Visitor Statistics (Real Time Traffic) plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the plugin&#x27;s &#x27;wsm_showDayStatsGraph&#x27; shortcode in all versions up to, and including, 8.4 due to insufficient input sanitization and output escaping on user supplied attributes. This makes it possible for authenticated attackers, with contributor-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4300" target="_blank" rel="noopener">CVE-2026-4300</a></td>
+        <td>6.4</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.48</td>
+        <td><details><summary>The Robo Gallery plugin for WordPress is vulnerable to Stored Cross-Site Scripti...</summary><p>The Robo Gallery plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the &#x27;Loading Label&#x27; setting in all versions up to, and including, 5.1.3. The plugin uses a custom `|***...***|` marker pattern in its `fixJsFunction()` method to embed raw JavaScript function references within JSON-encoded configuration objects. When a gallery&#x27;s options are rendered on the frontend, `json_encode()` wraps all string values in double quotes. The `fixJsFunction()` method then strips the `&quot;|***` and `***|&quot;` sequences, effectively converting a JSON string value into raw JavaScript code. The Loading Label field (stored as `rbs_gallery_LoadingWord` post_meta) is an `rbstext` type field that is sanitized with `sanitize_text_field()` on save. While this strips HTML tags, it does not strip the `|***...***|` markers since they contain no HTML. When a user inputs `|***alert(document.domain)***|`, the value passes through sanitization intact, is stored in post_meta, and is later retrieved and output within an inline `&lt;script&gt;` tag via `renderMainBlock()` with the quote markers stripped — resulting in arbitrary JavaScript execution. The gallery post type uses `capability_type =&gt; &#x27;post&#x27;`, allowing Author-level users to create galleries. This makes it possible for authenticated attackers, with Author-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses a page containing the gallery shortcode.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4073" target="_blank" rel="noopener">CVE-2026-4073</a></td>
+        <td>6.4</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.48</td>
+        <td><details><summary>The pdfl.io plugin for WordPress is vulnerable to Stored Cross-Site Scripting vi...</summary><p>The pdfl.io plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the &#x27;pdflio&#x27; shortcode in all versions up to, and including, 1.0.5. This is due to insufficient input sanitization and output escaping on the &#x27;text&#x27; shortcode attribute. The output_shortcode() function directly concatenates the user-supplied $text variable into HTML output without applying esc_html() or any other escaping function. This makes it possible for authenticated attackers, with Contributor-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4025" target="_blank" rel="noopener">CVE-2026-4025</a></td>
+        <td>6.4</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.48</td>
+        <td><details><summary>The PrivateContent Free plugin for WordPress is vulnerable to Stored Cross-Site ...</summary><p>The PrivateContent Free plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the &#x27;align&#x27; shortcode attribute in the [pc-login-form] shortcode in all versions up to, and including, 1.2.0. This is due to insufficient input sanitization and output escaping on the &#x27;align&#x27; attribute. Specifically, the attribute value flows from the shortcode through pc_login_form() to pc_static::form_align(), where it is directly concatenated into an HTML class attribute without esc_attr() or any escaping. This makes it possible for authenticated attackers, with Contributor-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39716" target="_blank" rel="noopener">CVE-2026-39716</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Missing Authorization vulnerability in CKThemes Flipmart flipmart allows Exploit...</summary><p>Missing Authorization vulnerability in CKThemes Flipmart flipmart allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects Flipmart: from n/a through &lt;= 2.8.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39715" target="_blank" rel="noopener">CVE-2026-39715</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Missing Authorization vulnerability in AnyTrack AnyTrack Affiliate Link Manager ...</summary><p>Missing Authorization vulnerability in AnyTrack AnyTrack Affiliate Link Manager anytrack-affiliate-link-manager allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects AnyTrack Affiliate Link Manager: from n/a through &lt;= 1.5.5.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39714" target="_blank" rel="noopener">CVE-2026-39714</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Missing Authorization vulnerability in G5Theme G5Plus April g5plus-april allows ...</summary><p>Missing Authorization vulnerability in G5Theme G5Plus April g5plus-april allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects G5Plus April: from n/a through &lt;= 6.8.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39713" target="_blank" rel="noopener">CVE-2026-39713</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Missing Authorization vulnerability in mailercloud Mailercloud &amp;#8211; Integrate...</summary><p>Missing Authorization vulnerability in mailercloud Mailercloud &amp;#8211; Integrate webforms and synchronize website contacts mailercloud-integrate-webforms-synchronize-contacts allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects Mailercloud &amp;#8211; Integrate webforms and synchronize website contacts: from n/a through &lt;= 1.0.7.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39712" target="_blank" rel="noopener">CVE-2026-39712</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-80</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Improper Neutralization of Script-Related HTML Tags in a Web Page (Basic XSS) vu...</summary><p>Improper Neutralization of Script-Related HTML Tags in a Web Page (Basic XSS) vulnerability in tagDiv tagDiv Composer td-composer allows Code Injection.This issue affects tagDiv Composer: from n/a through &lt;= 5.4.3.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39711" target="_blank" rel="noopener">CVE-2026-39711</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-201</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Insertion of Sensitive Information Into Sent Data vulnerability in stmcan RT-The...</summary><p>Insertion of Sensitive Information Into Sent Data vulnerability in stmcan RT-Theme 18 | Extensions rt18-extensions allows Retrieve Embedded Sensitive Data.This issue affects RT-Theme 18 | Extensions: from n/a through &lt;= 2.5.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39710" target="_blank" rel="noopener">CVE-2026-39710</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-352</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Cross-Site Request Forgery (CSRF) vulnerability in stmcan RT-Theme 18 | Extensio...</summary><p>Cross-Site Request Forgery (CSRF) vulnerability in stmcan RT-Theme 18 | Extensions rt18-extensions allows Cross Site Request Forgery.This issue affects RT-Theme 18 | Extensions: from n/a through &lt;= 2.5.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39709" target="_blank" rel="noopener">CVE-2026-39709</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-201</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Insertion of Sensitive Information Into Sent Data vulnerability in thetechtribe ...</summary><p>Insertion of Sensitive Information Into Sent Data vulnerability in thetechtribe The Tribal the-tech-tribe allows Retrieve Embedded Sensitive Data.This issue affects The Tribal: from n/a through &lt;= 1.3.4.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39708" target="_blank" rel="noopener">CVE-2026-39708</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Improper Neutralization of Input During Web Page Generation (&#x27;Cross-site Scripti...</summary><p>Improper Neutralization of Input During Web Page Generation (&#x27;Cross-site Scripting&#x27;) vulnerability in uicore UiCore Elements uicore-elements allows Stored XSS.This issue affects UiCore Elements: from n/a through &lt;= 1.3.14.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39707" target="_blank" rel="noopener">CVE-2026-39707</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Missing Authorization vulnerability in ZealousWeb Accept PayPal Payments using C...</summary><p>Missing Authorization vulnerability in ZealousWeb Accept PayPal Payments using Contact Form 7 contact-form-7-paypal-extension allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects Accept PayPal Payments using Contact Form 7: from n/a through &lt;= 4.0.4.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39706" target="_blank" rel="noopener">CVE-2026-39706</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Missing Authorization vulnerability in Netro Systems Make My Trivia trivialy all...</summary><p>Missing Authorization vulnerability in Netro Systems Make My Trivia trivialy allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects Make My Trivia: from n/a through &lt;= 1.1.0.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39705" target="_blank" rel="noopener">CVE-2026-39705</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Missing Authorization vulnerability in Mulika Team MIPL WC Multisite Sync mipl-w...</summary><p>Missing Authorization vulnerability in Mulika Team MIPL WC Multisite Sync mipl-wc-multisite-sync allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects MIPL WC Multisite Sync: from n/a through &lt;= 1.4.4.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39704" target="_blank" rel="noopener">CVE-2026-39704</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Missing Authorization vulnerability in nfusionsolutions Precious Metals Automate...</summary><p>Missing Authorization vulnerability in nfusionsolutions Precious Metals Automated Product Pricing &amp;#8211; Pro precious-metals-automated-product-pricing-pro allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects Precious Metals Automated Product Pricing &amp;#8211; Pro: from n/a through &lt;= 4.0.5.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39703" target="_blank" rel="noopener">CVE-2026-39703</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Improper Neutralization of Input During Web Page Generation (&#x27;Cross-site Scripti...</summary><p>Improper Neutralization of Input During Web Page Generation (&#x27;Cross-site Scripting&#x27;) vulnerability in wpbits WPBITS Addons For Elementor Page Builder wpbits-addons-for-elementor allows Stored XSS.This issue affects WPBITS Addons For Elementor Page Builder: from n/a through &lt;= 1.8.1.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39702" target="_blank" rel="noopener">CVE-2026-39702</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Improper Neutralization of Input During Web Page Generation (&#x27;Cross-site Scripti...</summary><p>Improper Neutralization of Input During Web Page Generation (&#x27;Cross-site Scripting&#x27;) vulnerability in Wealcoder Animation Addons for Elementor animation-addons-for-elementor allows DOM-Based XSS.This issue affects Animation Addons for Elementor: from n/a through &lt;= 2.6.1.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39701" target="_blank" rel="noopener">CVE-2026-39701</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Missing Authorization vulnerability in Andrew ShopWP wpshopify allows Exploiting...</summary><p>Missing Authorization vulnerability in Andrew ShopWP wpshopify allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects ShopWP: from n/a through &lt;= 5.2.4.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39700" target="_blank" rel="noopener">CVE-2026-39700</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Missing Authorization vulnerability in WPXPO WowOptin optin allows Exploiting In...</summary><p>Missing Authorization vulnerability in WPXPO WowOptin optin allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects WowOptin: from n/a through &lt;= 1.4.32.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39699" target="_blank" rel="noopener">CVE-2026-39699</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Missing Authorization vulnerability in massiveshift AI Workflow Automation ai-wo...</summary><p>Missing Authorization vulnerability in massiveshift AI Workflow Automation ai-workflow-automation-lite allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects AI Workflow Automation: from n/a through &lt;= 1.4.2.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39698" target="_blank" rel="noopener">CVE-2026-39698</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Missing Authorization vulnerability in PublisherDesk The Publisher Desk ads.txt ...</summary><p>Missing Authorization vulnerability in PublisherDesk The Publisher Desk ads.txt the-publisher-desk-ads-txt allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects The Publisher Desk ads.txt: from n/a through &lt;= 1.5.0.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39697" target="_blank" rel="noopener">CVE-2026-39697</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Missing Authorization vulnerability in HBSS Technologies MAIO &amp;#8211; The new AI...</summary><p>Missing Authorization vulnerability in HBSS Technologies MAIO &amp;#8211; The new AI GEO / SEO tool maio-the-new-ai-geo-seo-tool allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects MAIO &amp;#8211; The new AI GEO / SEO tool: from n/a through &lt;= 6.2.8.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39696" target="_blank" rel="noopener">CVE-2026-39696</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Improper Neutralization of Input During Web Page Generation (&#x27;Cross-site Scripti...</summary><p>Improper Neutralization of Input During Web Page Generation (&#x27;Cross-site Scripting&#x27;) vulnerability in Elfsight Elfsight WhatsApp Chat CC elfsight-whatsapp-chat allows DOM-Based XSS.This issue affects Elfsight WhatsApp Chat CC: from n/a through &lt;= 1.2.0.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39695" target="_blank" rel="noopener">CVE-2026-39695</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-918</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Server-Side Request Forgery (SSRF) vulnerability in podigee Podigee podigee allo...</summary><p>Server-Side Request Forgery (SSRF) vulnerability in podigee Podigee podigee allows Server Side Request Forgery.This issue affects Podigee: from n/a through &lt;= 1.4.0.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39694" target="_blank" rel="noopener">CVE-2026-39694</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Missing Authorization vulnerability in NSquared Simply Schedule Appointments sim...</summary><p>Missing Authorization vulnerability in NSquared Simply Schedule Appointments simply-schedule-appointments allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects Simply Schedule Appointments: from n/a through &lt;= 1.6.10.2.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39693" target="_blank" rel="noopener">CVE-2026-39693</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Improper Neutralization of Input During Web Page Generation (&#x27;Cross-site Scripti...</summary><p>Improper Neutralization of Input During Web Page Generation (&#x27;Cross-site Scripting&#x27;) vulnerability in fesomia FSM Custom Featured Image Caption fsm-custom-featured-image-caption allows DOM-Based XSS.This issue affects FSM Custom Featured Image Caption: from n/a through &lt;= 1.25.1.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39692" target="_blank" rel="noopener">CVE-2026-39692</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Improper Neutralization of Input During Web Page Generation (&#x27;Cross-site Scripti...</summary><p>Improper Neutralization of Input During Web Page Generation (&#x27;Cross-site Scripting&#x27;) vulnerability in tagDiv tagDiv Composer td-composer allows Stored XSS.This issue affects tagDiv Composer: from n/a through &lt;= 5.4.3.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39691" target="_blank" rel="noopener">CVE-2026-39691</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Missing Authorization vulnerability in AdAstraCrypto Cryptocurrency Donation Box...</summary><p>Missing Authorization vulnerability in AdAstraCrypto Cryptocurrency Donation Box – Bitcoin &amp; Crypto Donations cryptocurrency-donation-box allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects Cryptocurrency Donation Box – Bitcoin &amp; Crypto Donations: from n/a through &lt;= 2.2.13.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39690" target="_blank" rel="noopener">CVE-2026-39690</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Missing Authorization vulnerability in Paul Bearne Author Avatars List/Block aut...</summary><p>Missing Authorization vulnerability in Paul Bearne Author Avatars List/Block author-avatars allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects Author Avatars List/Block: from n/a through &lt;= 2.1.25.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39689" target="_blank" rel="noopener">CVE-2026-39689</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Missing Authorization vulnerability in eshipper eShipper Commerce eshipper-comme...</summary><p>Missing Authorization vulnerability in eshipper eShipper Commerce eshipper-commerce allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects eShipper Commerce: from n/a through &lt;= 2.16.12.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39688" target="_blank" rel="noopener">CVE-2026-39688</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Missing Authorization vulnerability in Glowlogix WP Frontend Profile wp-front-en...</summary><p>Missing Authorization vulnerability in Glowlogix WP Frontend Profile wp-front-end-profile allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects WP Frontend Profile: from n/a through &lt;= 1.3.9.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39687" target="_blank" rel="noopener">CVE-2026-39687</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Missing Authorization vulnerability in Rapid Car Check Rapid Car Check Vehicle D...</summary><p>Missing Authorization vulnerability in Rapid Car Check Rapid Car Check Vehicle Data free-vehicle-data-uk allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects Rapid Car Check Vehicle Data: from n/a through &lt;= 2.0.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39686" target="_blank" rel="noopener">CVE-2026-39686</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-497</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Exposure of Sensitive System Information to an Unauthorized Control Sphere vulne...</summary><p>Exposure of Sensitive System Information to an Unauthorized Control Sphere vulnerability in bannersky BSK PDF Manager bsk-pdf-manager allows Retrieve Embedded Sensitive Data.This issue affects BSK PDF Manager: from n/a through &lt;= 3.7.2.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39685" target="_blank" rel="noopener">CVE-2026-39685</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Missing Authorization vulnerability in lvaudore The Moneytizer the-moneytizer al...</summary><p>Missing Authorization vulnerability in lvaudore The Moneytizer the-moneytizer allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects The Moneytizer: from n/a through &lt;= 10.0.10.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39684" target="_blank" rel="noopener">CVE-2026-39684</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-98</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Improper Control of Filename for Include/Require Statement in PHP Program (&#x27;PHP ...</summary><p>Improper Control of Filename for Include/Require Statement in PHP Program (&#x27;PHP Remote File Inclusion&#x27;) vulnerability in UnTheme OrganicFood organicfood allows PHP Local File Inclusion.This issue affects OrganicFood: from n/a through &lt;= 3.6.4.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39683" target="_blank" rel="noopener">CVE-2026-39683</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Improper Neutralization of Input During Web Page Generation (&#x27;Cross-site Scripti...</summary><p>Improper Neutralization of Input During Web Page Generation (&#x27;Cross-site Scripting&#x27;) vulnerability in Chief Gnome Garden Gnome Package garden-gnome-package allows DOM-Based XSS.This issue affects Garden Gnome Package: from n/a through &lt;= 2.4.1.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39682" target="_blank" rel="noopener">CVE-2026-39682</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Missing Authorization vulnerability in Arjan Pronk linkPizza-Manager linkpizza-m...</summary><p>Missing Authorization vulnerability in Arjan Pronk linkPizza-Manager linkpizza-manager allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects linkPizza-Manager: from n/a through &lt;= 5.5.5.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39681" target="_blank" rel="noopener">CVE-2026-39681</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-98</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Improper Control of Filename for Include/Require Statement in PHP Program (&#x27;PHP ...</summary><p>Improper Control of Filename for Include/Require Statement in PHP Program (&#x27;PHP Remote File Inclusion&#x27;) vulnerability in ApusTheme Homeo homeo allows PHP Local File Inclusion.This issue affects Homeo: from n/a through &lt;= 1.2.59.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39680" target="_blank" rel="noopener">CVE-2026-39680</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Missing Authorization vulnerability in MWP Development Diet Calorie Calculator d...</summary><p>Missing Authorization vulnerability in MWP Development Diet Calorie Calculator diet-calorie-calculator allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects Diet Calorie Calculator: from n/a through &lt;= 1.1.1.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39679" target="_blank" rel="noopener">CVE-2026-39679</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-98</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Improper Control of Filename for Include/Require Statement in PHP Program (&#x27;PHP ...</summary><p>Improper Control of Filename for Include/Require Statement in PHP Program (&#x27;PHP Remote File Inclusion&#x27;) vulnerability in ApusTheme Freeio freeio allows PHP Local File Inclusion.This issue affects Freeio: from n/a through &lt;= 1.3.21.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39678" target="_blank" rel="noopener">CVE-2026-39678</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Missing Authorization vulnerability in DOTonPAPER Pinpoint Booking System bookin...</summary><p>Missing Authorization vulnerability in DOTonPAPER Pinpoint Booking System booking-system allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects Pinpoint Booking System: from n/a through &lt;= 2.9.9.6.5.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39677" target="_blank" rel="noopener">CVE-2026-39677</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-98</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Improper Control of Filename for Include/Require Statement in PHP Program (&#x27;PHP ...</summary><p>Improper Control of Filename for Include/Require Statement in PHP Program (&#x27;PHP Remote File Inclusion&#x27;) vulnerability in Creatives_Planet Emphires emphires allows PHP Local File Inclusion.This issue affects Emphires: from n/a through &lt;= 3.9.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39676" target="_blank" rel="noopener">CVE-2026-39676</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Missing Authorization vulnerability in Shahjada Download Manager download-manage...</summary><p>Missing Authorization vulnerability in Shahjada Download Manager download-manager allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects Download Manager: from n/a through &lt;= 3.3.52.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39675" target="_blank" rel="noopener">CVE-2026-39675</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Missing Authorization vulnerability in webmuehle Court Reservation court-reserva...</summary><p>Missing Authorization vulnerability in webmuehle Court Reservation court-reservation allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects Court Reservation: from n/a through &lt;= 1.10.11.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39674" target="_blank" rel="noopener">CVE-2026-39674</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Improper Neutralization of Input During Web Page Generation (&#x27;Cross-site Scripti...</summary><p>Improper Neutralization of Input During Web Page Generation (&#x27;Cross-site Scripting&#x27;) vulnerability in Manoj Kumar MK Google Directions google-distance-calculator allows DOM-Based XSS.This issue affects MK Google Directions: from n/a through &lt;= 3.1.1.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39673" target="_blank" rel="noopener">CVE-2026-39673</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Missing Authorization vulnerability in shrikantkale iZooto izooto-web-push allow...</summary><p>Missing Authorization vulnerability in shrikantkale iZooto izooto-web-push allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects iZooto: from n/a through &lt;= 3.7.20.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39672" target="_blank" rel="noopener">CVE-2026-39672</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Missing Authorization vulnerability in shiptime ShipTime: Discounted Shipping Ra...</summary><p>Missing Authorization vulnerability in shiptime ShipTime: Discounted Shipping Rates shiptime-discount-shipping allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects ShipTime: Discounted Shipping Rates: from n/a through &lt;= 1.1.1.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39671" target="_blank" rel="noopener">CVE-2026-39671</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-352</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Cross-Site Request Forgery (CSRF) vulnerability in Dotstore Extra Fees Plugin fo...</summary><p>Cross-Site Request Forgery (CSRF) vulnerability in Dotstore Extra Fees Plugin for WooCommerce woo-conditional-product-fees-for-checkout allows Cross Site Request Forgery.This issue affects Extra Fees Plugin for WooCommerce: from n/a through &lt;= 4.3.3.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39670" target="_blank" rel="noopener">CVE-2026-39670</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-918</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Server-Side Request Forgery (SSRF) vulnerability in Brecht Visual Link Preview v...</summary><p>Server-Side Request Forgery (SSRF) vulnerability in Brecht Visual Link Preview visual-link-preview allows Server Side Request Forgery.This issue affects Visual Link Preview: from n/a through &lt;= 2.3.0.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39669" target="_blank" rel="noopener">CVE-2026-39669</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Missing Authorization vulnerability in NitroPack NitroPack nitropack allows Expl...</summary><p>Missing Authorization vulnerability in NitroPack NitroPack nitropack allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects NitroPack: from n/a through &lt;= 1.19.3.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39668" target="_blank" rel="noopener">CVE-2026-39668</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Missing Authorization vulnerability in g5theme Book Previewer for Woocommerce bo...</summary><p>Missing Authorization vulnerability in g5theme Book Previewer for Woocommerce book-previewer-for-woocommerce allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects Book Previewer for Woocommerce: from n/a through &lt;= 1.0.6.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39667" target="_blank" rel="noopener">CVE-2026-39667</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Improper Neutralization of Input During Web Page Generation (&#x27;Cross-site Scripti...</summary><p>Improper Neutralization of Input During Web Page Generation (&#x27;Cross-site Scripting&#x27;) vulnerability in Jongmyoung Kim Korea SNS korea-sns allows DOM-Based XSS.This issue affects Korea SNS: from n/a through &lt;= 1.7.0.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39666" target="_blank" rel="noopener">CVE-2026-39666</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Improper Neutralization of Input During Web Page Generation (&#x27;Cross-site Scripti...</summary><p>Improper Neutralization of Input During Web Page Generation (&#x27;Cross-site Scripting&#x27;) vulnerability in telepathy Hello Bar Popup Builder hellobar allows DOM-Based XSS.This issue affects Hello Bar Popup Builder: from n/a through &lt;= 1.5.1.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39665" target="_blank" rel="noopener">CVE-2026-39665</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Improper Neutralization of Input During Web Page Generation (&#x27;Cross-site Scripti...</summary><p>Improper Neutralization of Input During Web Page Generation (&#x27;Cross-site Scripting&#x27;) vulnerability in Vladimir Prelovac SEO Friendly Images seo-image allows DOM-Based XSS.This issue affects SEO Friendly Images: from n/a through &lt;= 3.0.5.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39664" target="_blank" rel="noopener">CVE-2026-39664</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Missing Authorization vulnerability in leadrebel Leadrebel leadrebel allows Expl...</summary><p>Missing Authorization vulnerability in leadrebel Leadrebel leadrebel allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects Leadrebel: from n/a through &lt;= 1.0.2.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39663" target="_blank" rel="noopener">CVE-2026-39663</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Missing Authorization vulnerability in themetechmount TrueBooker truebooker-appo...</summary><p>Missing Authorization vulnerability in themetechmount TrueBooker truebooker-appointment-booking allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects TrueBooker: from n/a through &lt;= 1.1.5.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39662" target="_blank" rel="noopener">CVE-2026-39662</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Missing Authorization vulnerability in ProWCPlugins Product Price by Formula for...</summary><p>Missing Authorization vulnerability in ProWCPlugins Product Price by Formula for WooCommerce product-price-by-formula-for-woocommerce allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects Product Price by Formula for WooCommerce: from n/a through &lt;= 2.5.6.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39660" target="_blank" rel="noopener">CVE-2026-39660</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Missing Authorization vulnerability in Automattic WP Job Manager wp-job-manager ...</summary><p>Missing Authorization vulnerability in Automattic WP Job Manager wp-job-manager allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects WP Job Manager: from n/a through &lt;= 2.4.1.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39659" target="_blank" rel="noopener">CVE-2026-39659</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Missing Authorization vulnerability in Ultimate Member Ultimate Member ultimate-...</summary><p>Missing Authorization vulnerability in Ultimate Member Ultimate Member ultimate-member allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects Ultimate Member: from n/a through &lt;= 2.11.3.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39658" target="_blank" rel="noopener">CVE-2026-39658</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Missing Authorization vulnerability in Coding Panda Panda Pods Repeater Field pa...</summary><p>Missing Authorization vulnerability in Coding Panda Panda Pods Repeater Field panda-pods-repeater-field allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects Panda Pods Repeater Field: from n/a through &lt;= 1.5.12.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39657" target="_blank" rel="noopener">CVE-2026-39657</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Missing Authorization vulnerability in leadlovers leadlovers forms leadlovers-fo...</summary><p>Missing Authorization vulnerability in leadlovers leadlovers forms leadlovers-forms allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects leadlovers forms: from n/a through &lt;= 1.0.2.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39656" target="_blank" rel="noopener">CVE-2026-39656</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Missing Authorization vulnerability in Razorpay Razorpay for WooCommerce woo-raz...</summary><p>Missing Authorization vulnerability in Razorpay Razorpay for WooCommerce woo-razorpay allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects Razorpay for WooCommerce: from n/a through &lt;= 4.8.2.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39654" target="_blank" rel="noopener">CVE-2026-39654</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Improper Neutralization of Input During Web Page Generation (&#x27;Cross-site Scripti...</summary><p>Improper Neutralization of Input During Web Page Generation (&#x27;Cross-site Scripting&#x27;) vulnerability in Ashish Ajani WP Simple HTML Sitemap wp-simple-html-sitemap allows DOM-Based XSS.This issue affects WP Simple HTML Sitemap: from n/a through &lt;= 3.8.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39653" target="_blank" rel="noopener">CVE-2026-39653</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Missing Authorization vulnerability in Deepen Bajracharya Video Conferencing wit...</summary><p>Missing Authorization vulnerability in Deepen Bajracharya Video Conferencing with Zoom video-conferencing-with-zoom-api allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects Video Conferencing with Zoom: from n/a through &lt;= 4.6.6.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39652" target="_blank" rel="noopener">CVE-2026-39652</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Missing Authorization vulnerability in igms iGMS Direct Booking igms-direct-book...</summary><p>Missing Authorization vulnerability in igms iGMS Direct Booking igms-direct-booking allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects iGMS Direct Booking: from n/a through &lt;= 1.3.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39651" target="_blank" rel="noopener">CVE-2026-39651</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Missing Authorization vulnerability in TotalSuite Total Poll Lite totalpoll-lite...</summary><p>Missing Authorization vulnerability in TotalSuite Total Poll Lite totalpoll-lite allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects Total Poll Lite: from n/a through &lt;= 4.12.0.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39650" target="_blank" rel="noopener">CVE-2026-39650</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Missing Authorization vulnerability in Unitech Web UnitechPay unitechpay-paiemen...</summary><p>Missing Authorization vulnerability in Unitech Web UnitechPay unitechpay-paiements-mobile-money allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects UnitechPay: from n/a through &lt;= 1.0.2.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39649" target="_blank" rel="noopener">CVE-2026-39649</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Missing Authorization vulnerability in themebeez Royale News royale-news allows ...</summary><p>Missing Authorization vulnerability in themebeez Royale News royale-news allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects Royale News: from n/a through &lt;= 2.2.4.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39648" target="_blank" rel="noopener">CVE-2026-39648</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Missing Authorization vulnerability in themebeez Cream Blog cream-blog allows Ex...</summary><p>Missing Authorization vulnerability in themebeez Cream Blog cream-blog allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects Cream Blog: from n/a through &lt;= 2.1.7.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39647" target="_blank" rel="noopener">CVE-2026-39647</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-918</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Server-Side Request Forgery (SSRF) vulnerability in sonaar MP3 Audio Player for ...</summary><p>Server-Side Request Forgery (SSRF) vulnerability in sonaar MP3 Audio Player for Music, Radio &amp; Podcast by Sonaar mp3-music-player-by-sonaar allows Server Side Request Forgery.This issue affects MP3 Audio Player for Music, Radio &amp; Podcast by Sonaar: from n/a through &lt;= 5.11.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39646" target="_blank" rel="noopener">CVE-2026-39646</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Improper Neutralization of Input During Web Page Generation (&#x27;Cross-site Scripti...</summary><p>Improper Neutralization of Input During Web Page Generation (&#x27;Cross-site Scripting&#x27;) vulnerability in bozdoz Leaflet Map leaflet-map allows Stored XSS.This issue affects Leaflet Map: from n/a through &lt;= 3.4.4.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39645" target="_blank" rel="noopener">CVE-2026-39645</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-918</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Server-Side Request Forgery (SSRF) vulnerability in Global Payments GlobalPaymen...</summary><p>Server-Side Request Forgery (SSRF) vulnerability in Global Payments GlobalPayments WooCommerce global-payments-woocommerce allows Server Side Request Forgery.This issue affects GlobalPayments WooCommerce: from n/a through &lt;= 1.18.0.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39644" target="_blank" rel="noopener">CVE-2026-39644</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Missing Authorization vulnerability in Roxnor Wp Ultimate Review wp-ultimate-rev...</summary><p>Missing Authorization vulnerability in Roxnor Wp Ultimate Review wp-ultimate-review allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects Wp Ultimate Review: from n/a through &lt;= 2.3.8.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39643" target="_blank" rel="noopener">CVE-2026-39643</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Missing Authorization vulnerability in Payment Plugins Payment Plugins for PayPa...</summary><p>Missing Authorization vulnerability in Payment Plugins Payment Plugins for PayPal WooCommerce pymntpl-paypal-woocommerce allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects Payment Plugins for PayPal WooCommerce: from n/a through &lt;= 2.0.13.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39641" target="_blank" rel="noopener">CVE-2026-39641</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-352</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Cross-Site Request Forgery (CSRF) vulnerability in Skywarrior Blackfyre blackfyr...</summary><p>Cross-Site Request Forgery (CSRF) vulnerability in Skywarrior Blackfyre blackfyre allows Cross Site Request Forgery.This issue affects Blackfyre: from n/a through &lt;= 2.5.4.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39640" target="_blank" rel="noopener">CVE-2026-39640</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-352</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Cross-Site Request Forgery (CSRF) vulnerability in mndpsingh287 Theme Editor the...</summary><p>Cross-Site Request Forgery (CSRF) vulnerability in mndpsingh287 Theme Editor theme-editor allows Code Injection.This issue affects Theme Editor: from n/a through &lt;= 3.2.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39639" target="_blank" rel="noopener">CVE-2026-39639</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Missing Authorization vulnerability in redpixelstudios RPS Include Content rps-i...</summary><p>Missing Authorization vulnerability in redpixelstudios RPS Include Content rps-include-content allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects RPS Include Content: from n/a through &lt;= 1.2.2.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39638" target="_blank" rel="noopener">CVE-2026-39638</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Improper Neutralization of Input During Web Page Generation (&#x27;Cross-site Scripti...</summary><p>Improper Neutralization of Input During Web Page Generation (&#x27;Cross-site Scripting&#x27;) vulnerability in Themeum Qubely qubely allows Stored XSS.This issue affects Qubely: from n/a through &lt;= 1.8.14.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39637" target="_blank" rel="noopener">CVE-2026-39637</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Missing Authorization vulnerability in SpabRice Mogi mogi allows Exploiting Inco...</summary><p>Missing Authorization vulnerability in SpabRice Mogi mogi allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects Mogi: from n/a through &lt;= 1.2.3.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39636" target="_blank" rel="noopener">CVE-2026-39636</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Improper Neutralization of Input During Web Page Generation (&#x27;Cross-site Scripti...</summary><p>Improper Neutralization of Input During Web Page Generation (&#x27;Cross-site Scripting&#x27;) vulnerability in livemesh Livemesh Addons for Elementor addons-for-elementor allows Stored XSS.This issue affects Livemesh Addons for Elementor: from n/a through &lt;= 9.0.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39635" target="_blank" rel="noopener">CVE-2026-39635</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-352</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Cross-Site Request Forgery (CSRF) vulnerability in ThemeGoods Grand Magazine gra...</summary><p>Cross-Site Request Forgery (CSRF) vulnerability in ThemeGoods Grand Magazine grandmagazine allows Cross Site Request Forgery.This issue affects Grand Magazine: from n/a through &lt;= 3.5.5.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39634" target="_blank" rel="noopener">CVE-2026-39634</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-352</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Cross-Site Request Forgery (CSRF) vulnerability in ThemeGoods Grand Portfolio gr...</summary><p>Cross-Site Request Forgery (CSRF) vulnerability in ThemeGoods Grand Portfolio grandportfolio allows Cross Site Request Forgery.This issue affects Grand Portfolio: from n/a through &lt;= 3.3.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39633" target="_blank" rel="noopener">CVE-2026-39633</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-352</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Cross-Site Request Forgery (CSRF) vulnerability in ThemeGoods Grand Car Rental g...</summary><p>Cross-Site Request Forgery (CSRF) vulnerability in ThemeGoods Grand Car Rental grandcarrental allows Cross Site Request Forgery.This issue affects Grand Car Rental: from n/a through &lt;= 3.6.9.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39632" target="_blank" rel="noopener">CVE-2026-39632</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-352</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Cross-Site Request Forgery (CSRF) vulnerability in ThemeGoods Grand Blog grandbl...</summary><p>Cross-Site Request Forgery (CSRF) vulnerability in ThemeGoods Grand Blog grandblog allows Cross Site Request Forgery.This issue affects Grand Blog: from n/a through &lt;= 3.1.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39631" target="_blank" rel="noopener">CVE-2026-39631</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Missing Authorization vulnerability in Ronik@UnlimitedWP WPSchoolPress wpschoolp...</summary><p>Missing Authorization vulnerability in Ronik@UnlimitedWP WPSchoolPress wpschoolpress allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects WPSchoolPress: from n/a through &lt;= 2.2.35.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39630" target="_blank" rel="noopener">CVE-2026-39630</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-918</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Server-Side Request Forgery (SSRF) vulnerability in Getty Images Getty Images ge...</summary><p>Server-Side Request Forgery (SSRF) vulnerability in Getty Images Getty Images getty-images allows Server Side Request Forgery.This issue affects Getty Images: from n/a through &lt;= 4.1.0.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39629" target="_blank" rel="noopener">CVE-2026-39629</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-80</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Improper Neutralization of Script-Related HTML Tags in a Web Page (Basic XSS) vu...</summary><p>Improper Neutralization of Script-Related HTML Tags in a Web Page (Basic XSS) vulnerability in kutethemes Uminex uminex allows Code Injection.This issue affects Uminex: from n/a through &lt;= 1.0.9.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39628" target="_blank" rel="noopener">CVE-2026-39628</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-80</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Improper Neutralization of Script-Related HTML Tags in a Web Page (Basic XSS) vu...</summary><p>Improper Neutralization of Script-Related HTML Tags in a Web Page (Basic XSS) vulnerability in kutethemes DukaMarket dukamarket allows Code Injection.This issue affects DukaMarket: from n/a through &lt;= 1.3.0.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39627" target="_blank" rel="noopener">CVE-2026-39627</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Missing Authorization vulnerability in wproyal Ashe ashe allows Exploiting Incor...</summary><p>Missing Authorization vulnerability in wproyal Ashe ashe allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects Ashe: from n/a through &lt;= 2.266.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39626" target="_blank" rel="noopener">CVE-2026-39626</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-80</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Improper Neutralization of Script-Related HTML Tags in a Web Page (Basic XSS) vu...</summary><p>Improper Neutralization of Script-Related HTML Tags in a Web Page (Basic XSS) vulnerability in kutethemes Armania armania allows Code Injection.This issue affects Armania: from n/a through &lt;= 1.4.8.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39625" target="_blank" rel="noopener">CVE-2026-39625</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-80</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Improper Neutralization of Script-Related HTML Tags in a Web Page (Basic XSS) vu...</summary><p>Improper Neutralization of Script-Related HTML Tags in a Web Page (Basic XSS) vulnerability in kutethemes TechOne techone allows Code Injection.This issue affects TechOne: from n/a through &lt;= 3.0.3.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39624" target="_blank" rel="noopener">CVE-2026-39624</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Missing Authorization vulnerability in kutethemes Biolife biolife allows Exploit...</summary><p>Missing Authorization vulnerability in kutethemes Biolife biolife allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects Biolife: from n/a through &lt;= 3.2.3.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39623" target="_blank" rel="noopener">CVE-2026-39623</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-98</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Improper Control of Filename for Include/Require Statement in PHP Program (&#x27;PHP ...</summary><p>Improper Control of Filename for Include/Require Statement in PHP Program (&#x27;PHP Remote File Inclusion&#x27;) vulnerability in kutethemes Biolife biolife allows PHP Local File Inclusion.This issue affects Biolife: from n/a through &lt;= 3.2.3.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39622" target="_blank" rel="noopener">CVE-2026-39622</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Missing Authorization vulnerability in acmethemes Education Base education-base ...</summary><p>Missing Authorization vulnerability in acmethemes Education Base education-base allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects Education Base: from n/a through &lt;= 3.0.8.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39621" target="_blank" rel="noopener">CVE-2026-39621</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-352</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Cross-Site Request Forgery (CSRF) vulnerability in spicethemes SpicePress spicep...</summary><p>Cross-Site Request Forgery (CSRF) vulnerability in spicethemes SpicePress spicepress allows Upload a Web Shell to a Web Server.This issue affects SpicePress: from n/a through &lt;= 2.3.2.5.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39620" target="_blank" rel="noopener">CVE-2026-39620</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-352</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Cross-Site Request Forgery (CSRF) vulnerability in priyanshumittal Appointment a...</summary><p>Cross-Site Request Forgery (CSRF) vulnerability in priyanshumittal Appointment appointment allows Upload a Web Shell to a Web Server.This issue affects Appointment: from n/a through &lt;= 3.5.5.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39619" target="_blank" rel="noopener">CVE-2026-39619</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-352</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Cross-Site Request Forgery (CSRF) vulnerability in priyanshumittal Busiprof busi...</summary><p>Cross-Site Request Forgery (CSRF) vulnerability in priyanshumittal Busiprof busiprof allows Upload a Web Shell to a Web Server.This issue affects Busiprof: from n/a through &lt;= 2.5.2.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39618" target="_blank" rel="noopener">CVE-2026-39618</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-352</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Cross-Site Request Forgery (CSRF) vulnerability in themearile NewsExo newsexo al...</summary><p>Cross-Site Request Forgery (CSRF) vulnerability in themearile NewsExo newsexo allows Cross Site Request Forgery.This issue affects NewsExo: from n/a through &lt;= 7.1.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39617" target="_blank" rel="noopener">CVE-2026-39617</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-352</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Cross-Site Request Forgery (CSRF) vulnerability in priyanshumittal Bluestreet bl...</summary><p>Cross-Site Request Forgery (CSRF) vulnerability in priyanshumittal Bluestreet bluestreet allows Cross Site Request Forgery.This issue affects Bluestreet: from n/a through &lt;= 1.7.3.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39616" target="_blank" rel="noopener">CVE-2026-39616</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-639</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Authorization Bypass Through User-Controlled Key vulnerability in dFactory Downl...</summary><p>Authorization Bypass Through User-Controlled Key vulnerability in dFactory Download Attachments download-attachments allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects Download Attachments: from n/a through &lt;= 1.4.0.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39615" target="_blank" rel="noopener">CVE-2026-39615</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Improper Neutralization of Input During Web Page Generation (&#x27;Cross-site Scripti...</summary><p>Improper Neutralization of Input During Web Page Generation (&#x27;Cross-site Scripting&#x27;) vulnerability in Shahjada Download Manager download-manager allows Stored XSS.This issue affects Download Manager: from n/a through &lt;= 3.3.53.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39614" target="_blank" rel="noopener">CVE-2026-39614</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Missing Authorization vulnerability in ilGhera JW Player for WordPress jw-player...</summary><p>Missing Authorization vulnerability in ilGhera JW Player for WordPress jw-player-7-for-wp allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects JW Player for WordPress: from n/a through &lt;= 2.3.6.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39613" target="_blank" rel="noopener">CVE-2026-39613</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-98</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Improper Control of Filename for Include/Require Statement in PHP Program (&#x27;PHP ...</summary><p>Improper Control of Filename for Include/Require Statement in PHP Program (&#x27;PHP Remote File Inclusion&#x27;) vulnerability in kutethemes Boutique kute-boutique allows PHP Local File Inclusion.This issue affects Boutique: from n/a through &lt;= 2.3.3.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39612" target="_blank" rel="noopener">CVE-2026-39612</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Missing Authorization vulnerability in kutethemes KuteShop kuteshop allows Explo...</summary><p>Missing Authorization vulnerability in kutethemes KuteShop kuteshop allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects KuteShop: from n/a through &lt;= 4.2.9.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39611" target="_blank" rel="noopener">CVE-2026-39611</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-98</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Improper Control of Filename for Include/Require Statement in PHP Program (&#x27;PHP ...</summary><p>Improper Control of Filename for Include/Require Statement in PHP Program (&#x27;PHP Remote File Inclusion&#x27;) vulnerability in kutethemes KuteShop kuteshop allows PHP Local File Inclusion.This issue affects KuteShop: from n/a through &lt;= 4.2.9.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39610" target="_blank" rel="noopener">CVE-2026-39610</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Missing Authorization vulnerability in Pankaj Kumar WpXmas-Snow wpxmas-snow allo...</summary><p>Missing Authorization vulnerability in Pankaj Kumar WpXmas-Snow wpxmas-snow allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects WpXmas-Snow: from n/a through &lt;= 1.1.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39609" target="_blank" rel="noopener">CVE-2026-39609</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Missing Authorization vulnerability in Wava.co Wava Payment wava-payment allows ...</summary><p>Missing Authorization vulnerability in Wava.co Wava Payment wava-payment allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects Wava Payment: from n/a through &lt;= 0.3.7.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39608" target="_blank" rel="noopener">CVE-2026-39608</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Missing Authorization vulnerability in iPOSPays iPOSpays Gateways WC ipospays-ga...</summary><p>Missing Authorization vulnerability in iPOSPays iPOSpays Gateways WC ipospays-gateways-wc allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects iPOSpays Gateways WC: from n/a through &lt;= 1.3.7.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39607" target="_blank" rel="noopener">CVE-2026-39607</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Missing Authorization vulnerability in Wpbens Filter Plus filter-plus allows Exp...</summary><p>Missing Authorization vulnerability in Wpbens Filter Plus filter-plus allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects Filter Plus: from n/a through &lt;= 1.1.17.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39606" target="_blank" rel="noopener">CVE-2026-39606</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Missing Authorization vulnerability in Foysal Imran BizReview bizreview allows E...</summary><p>Missing Authorization vulnerability in Foysal Imran BizReview bizreview allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects BizReview: from n/a through &lt;= 1.5.13.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39605" target="_blank" rel="noopener">CVE-2026-39605</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Missing Authorization vulnerability in Obadiah Super Custom Login super-custom-l...</summary><p>Missing Authorization vulnerability in Obadiah Super Custom Login super-custom-login allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects Super Custom Login: from n/a through &lt;= 1.1.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39604" target="_blank" rel="noopener">CVE-2026-39604</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Improper Neutralization of Input During Web Page Generation (&#x27;Cross-site Scripti...</summary><p>Improper Neutralization of Input During Web Page Generation (&#x27;Cross-site Scripting&#x27;) vulnerability in zookatron MyBookTable Bookstore mybooktable allows Stored XSS.This issue affects MyBookTable Bookstore: from n/a through &lt;= 3.6.0.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39603" target="_blank" rel="noopener">CVE-2026-39603</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-352</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Cross-Site Request Forgery (CSRF) vulnerability in ThemeGoods Grand Photography ...</summary><p>Cross-Site Request Forgery (CSRF) vulnerability in ThemeGoods Grand Photography grandphotography allows Cross Site Request Forgery.This issue affects Grand Photography: from n/a through &lt;= 5.7.8.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39602" target="_blank" rel="noopener">CVE-2026-39602</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Missing Authorization vulnerability in Rustaurius Order Tracking order-tracking ...</summary><p>Missing Authorization vulnerability in Rustaurius Order Tracking order-tracking allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects Order Tracking: from n/a through &lt;= 3.4.3.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39592" target="_blank" rel="noopener">CVE-2026-39592</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Missing Authorization vulnerability in Andy Ha DEPART depart-deposit-and-part-pa...</summary><p>Missing Authorization vulnerability in Andy Ha DEPART depart-deposit-and-part-payment-for-woo allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects DEPART: from n/a through &lt;= 1.0.7.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39588" target="_blank" rel="noopener">CVE-2026-39588</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Missing Authorization vulnerability in nmerii NM Gift Registry and Wishlist Lite...</summary><p>Missing Authorization vulnerability in nmerii NM Gift Registry and Wishlist Lite nm-gift-registry-and-wishlist-lite allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects NM Gift Registry and Wishlist Lite: from n/a through &lt;= 5.13.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39586" target="_blank" rel="noopener">CVE-2026-39586</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-201</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Insertion of Sensitive Information Into Sent Data vulnerability in Ateeq Rafeeq ...</summary><p>Insertion of Sensitive Information Into Sent Data vulnerability in Ateeq Rafeeq RepairBuddy computer-repair-shop allows Retrieve Embedded Sensitive Data.This issue affects RepairBuddy: from n/a through &lt;= 4.1132.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39585" target="_blank" rel="noopener">CVE-2026-39585</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Missing Authorization vulnerability in Arraytics Booktics booktics allows Exploi...</summary><p>Missing Authorization vulnerability in Arraytics Booktics booktics allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects Booktics: from n/a through &lt;= 1.0.16.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39575" target="_blank" rel="noopener">CVE-2026-39575</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Improper Neutralization of Input During Web Page Generation (&#x27;Cross-site Scripti...</summary><p>Improper Neutralization of Input During Web Page Generation (&#x27;Cross-site Scripting&#x27;) vulnerability in Ronald Huereca Custom Query Blocks post-type-archive-mapping allows DOM-Based XSS.This issue affects Custom Query Blocks: from n/a through &lt;= 5.5.0.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39572" target="_blank" rel="noopener">CVE-2026-39572</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-497</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Exposure of Sensitive System Information to an Unauthorized Control Sphere vulne...</summary><p>Exposure of Sensitive System Information to an Unauthorized Control Sphere vulnerability in magepeopleteam Bus Ticket Booking with Seat Reservation bus-ticket-booking-with-seat-reservation allows Retrieve Embedded Sensitive Data.This issue affects Bus Ticket Booking with Seat Reservation: from n/a through &lt; 5.6.5.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39571" target="_blank" rel="noopener">CVE-2026-39571</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-497</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Exposure of Sensitive System Information to an Unauthorized Control Sphere vulne...</summary><p>Exposure of Sensitive System Information to an Unauthorized Control Sphere vulnerability in Themefic Instantio instantio allows Retrieve Embedded Sensitive Data.This issue affects Instantio: from n/a through &lt;= 3.3.30.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39570" target="_blank" rel="noopener">CVE-2026-39570</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-201</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Insertion of Sensitive Information Into Sent Data vulnerability in AA Web Servan...</summary><p>Insertion of Sensitive Information Into Sent Data vulnerability in AA Web Servant 12 Step Meeting List 12-step-meeting-list allows Retrieve Embedded Sensitive Data.This issue affects 12 Step Meeting List: from n/a through &lt;= 3.19.9.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39569" target="_blank" rel="noopener">CVE-2026-39569</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Missing Authorization vulnerability in AA Web Servant 12 Step Meeting List 12-st...</summary><p>Missing Authorization vulnerability in AA Web Servant 12 Step Meeting List 12-step-meeting-list allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects 12 Step Meeting List: from n/a through &lt;= 3.19.9.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39566" target="_blank" rel="noopener">CVE-2026-39566</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-497</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Exposure of Sensitive System Information to an Unauthorized Control Sphere vulne...</summary><p>Exposure of Sensitive System Information to an Unauthorized Control Sphere vulnerability in Designinvento DirectoryPress directorypress allows Retrieve Embedded Sensitive Data.This issue affects DirectoryPress: from n/a through &lt;= 3.6.26.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39565" target="_blank" rel="noopener">CVE-2026-39565</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Missing Authorization vulnerability in magepeopleteam WpTravelly tour-booking-ma...</summary><p>Missing Authorization vulnerability in magepeopleteam WpTravelly tour-booking-manager allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects WpTravelly: from n/a through &lt;= 2.1.7.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39564" target="_blank" rel="noopener">CVE-2026-39564</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-201</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Insertion of Sensitive Information Into Sent Data vulnerability in sunshinephoto...</summary><p>Insertion of Sensitive Information Into Sent Data vulnerability in sunshinephotocart Sunshine Photo Cart sunshine-photo-cart allows Retrieve Embedded Sensitive Data.This issue affects Sunshine Photo Cart: from n/a through &lt; 3.6.2.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39563" target="_blank" rel="noopener">CVE-2026-39563</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Missing Authorization vulnerability in ILLID Share This Image share-this-image a...</summary><p>Missing Authorization vulnerability in ILLID Share This Image share-this-image allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects Share This Image: from n/a through &lt;= 2.12.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39562" target="_blank" rel="noopener">CVE-2026-39562</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Missing Authorization vulnerability in BoldGrid Client Invoicing by Sprout Invoi...</summary><p>Missing Authorization vulnerability in BoldGrid Client Invoicing by Sprout Invoices sprout-invoices allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects Client Invoicing by Sprout Invoices: from n/a through &lt;= 20.8.10.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39561" target="_blank" rel="noopener">CVE-2026-39561</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Missing Authorization vulnerability in WP Chill Revive.so revive-so allows Explo...</summary><p>Missing Authorization vulnerability in WP Chill Revive.so revive-so allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects Revive.so: from n/a through &lt;= 2.0.7.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39544" target="_blank" rel="noopener">CVE-2026-39544</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-98</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Improper Control of Filename for Include/Require Statement in PHP Program (&#x27;PHP ...</summary><p>Improper Control of Filename for Include/Require Statement in PHP Program (&#x27;PHP Remote File Inclusion&#x27;) vulnerability in themeStek LabtechCO labtechco allows PHP Local File Inclusion.This issue affects LabtechCO: from n/a through &lt;= 8.3.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39543" target="_blank" rel="noopener">CVE-2026-39543</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Missing Authorization vulnerability in Themefic Tourfic tourfic allows Exploitin...</summary><p>Missing Authorization vulnerability in Themefic Tourfic tourfic allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects Tourfic: from n/a through &lt;= 2.21.4.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39542" target="_blank" rel="noopener">CVE-2026-39542</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-201</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Insertion of Sensitive Information Into Sent Data vulnerability in Doofinder Doo...</summary><p>Insertion of Sensitive Information Into Sent Data vulnerability in Doofinder Doofinder for WooCommerce doofinder-for-woocommerce allows Retrieve Embedded Sensitive Data.This issue affects Doofinder for WooCommerce: from n/a through &lt;= 2.10.13.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39541" target="_blank" rel="noopener">CVE-2026-39541</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Improper Neutralization of Input During Web Page Generation (&#x27;Cross-site Scripti...</summary><p>Improper Neutralization of Input During Web Page Generation (&#x27;Cross-site Scripting&#x27;) vulnerability in Themefic Hydra Booking hydra-booking allows Stored XSS.This issue affects Hydra Booking: from n/a through &lt;= 1.1.38.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39538" target="_blank" rel="noopener">CVE-2026-39538</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-98</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Improper Control of Filename for Include/Require Statement in PHP Program (&#x27;PHP ...</summary><p>Improper Control of Filename for Include/Require Statement in PHP Program (&#x27;PHP Remote File Inclusion&#x27;) vulnerability in Mikado-Themes Mikado Core mikado-core allows PHP Local File Inclusion.This issue affects Mikado Core: from n/a through &lt;= 1.6.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39536" target="_blank" rel="noopener">CVE-2026-39536</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-497</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Exposure of Sensitive System Information to an Unauthorized Control Sphere vulne...</summary><p>Exposure of Sensitive System Information to an Unauthorized Control Sphere vulnerability in WP Chill RSVP and Event Management rsvp allows Retrieve Embedded Sensitive Data.This issue affects RSVP and Event Management: from n/a through &lt;= 2.7.16.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39535" target="_blank" rel="noopener">CVE-2026-39535</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Missing Authorization vulnerability in fullworks Display Eventbrite Events widge...</summary><p>Missing Authorization vulnerability in fullworks Display Eventbrite Events widget-for-eventbrite-api allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects Display Eventbrite Events: from n/a through &lt;= 6.5.6.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39528" target="_blank" rel="noopener">CVE-2026-39528</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Missing Authorization vulnerability in WP Delicious WP Delicious delicious-recip...</summary><p>Missing Authorization vulnerability in WP Delicious WP Delicious delicious-recipes allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects WP Delicious: from n/a through &lt;= 1.9.5.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39526" target="_blank" rel="noopener">CVE-2026-39526</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-639</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Authorization Bypass Through User-Controlled Key vulnerability in wpstream WpStr...</summary><p>Authorization Bypass Through User-Controlled Key vulnerability in wpstream WpStream wpstream allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects WpStream: from n/a through &lt; 4.11.2.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39521" target="_blank" rel="noopener">CVE-2026-39521</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-918</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Server-Side Request Forgery (SSRF) vulnerability in Nelio Software Nelio Content...</summary><p>Server-Side Request Forgery (SSRF) vulnerability in Nelio Software Nelio Content nelio-content allows Server Side Request Forgery.This issue affects Nelio Content: from n/a through &lt;= 4.3.1.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39520" target="_blank" rel="noopener">CVE-2026-39520</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Missing Authorization vulnerability in weDevs weDocs wedocs allows Exploiting In...</summary><p>Missing Authorization vulnerability in weDevs weDocs wedocs allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects weDocs: from n/a through &lt;= 2.1.18.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39517" target="_blank" rel="noopener">CVE-2026-39517</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Improper Neutralization of Input During Web Page Generation (&#x27;Cross-site Scripti...</summary><p>Improper Neutralization of Input During Web Page Generation (&#x27;Cross-site Scripting&#x27;) vulnerability in A WP Life Blog Filter blog-filter allows DOM-Based XSS.This issue affects Blog Filter: from n/a through &lt;= 1.7.6.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39516" target="_blank" rel="noopener">CVE-2026-39516</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-497</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Exposure of Sensitive System Information to an Unauthorized Control Sphere vulne...</summary><p>Exposure of Sensitive System Information to an Unauthorized Control Sphere vulnerability in POSIMYTH Nexter Blocks the-plus-addons-for-block-editor allows Retrieve Embedded Sensitive Data.This issue affects Nexter Blocks: from n/a through &lt;= 4.7.0.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39510" target="_blank" rel="noopener">CVE-2026-39510</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-639</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Authorization Bypass Through User-Controlled Key vulnerability in WP Chill Image...</summary><p>Authorization Bypass Through User-Controlled Key vulnerability in WP Chill Image Photo Gallery Final Tiles Grid final-tiles-grid-gallery-lite allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects Image Photo Gallery Final Tiles Grid: from n/a through &lt;= 3.6.11.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39509" target="_blank" rel="noopener">CVE-2026-39509</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Missing Authorization vulnerability in wpWax Directorist directorist allows Expl...</summary><p>Missing Authorization vulnerability in wpWax Directorist directorist allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects Directorist: from n/a through &lt;= 8.5.10.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39508" target="_blank" rel="noopener">CVE-2026-39508</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Improper Neutralization of Input During Web Page Generation (&#x27;Cross-site Scripti...</summary><p>Improper Neutralization of Input During Web Page Generation (&#x27;Cross-site Scripting&#x27;) vulnerability in Josh Kohlbach Advanced Coupons for WooCommerce Coupons advanced-coupons-for-woocommerce-free allows DOM-Based XSS.This issue affects Advanced Coupons for WooCommerce Coupons: from n/a through &lt;= 4.7.1.1.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39506" target="_blank" rel="noopener">CVE-2026-39506</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Missing Authorization vulnerability in Jordy Meow AI Engine (Pro) ai-engine-pro ...</summary><p>Missing Authorization vulnerability in Jordy Meow AI Engine (Pro) ai-engine-pro allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects AI Engine (Pro): from n/a through &lt; 3.4.2.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39505" target="_blank" rel="noopener">CVE-2026-39505</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Missing Authorization vulnerability in Craig Hewitt Seriously Simple Podcasting ...</summary><p>Missing Authorization vulnerability in Craig Hewitt Seriously Simple Podcasting seriously-simple-podcasting allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects Seriously Simple Podcasting: from n/a through &lt;= 3.14.2.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39504" target="_blank" rel="noopener">CVE-2026-39504</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Missing Authorization vulnerability in InstaWP InstaWP Connect instawp-connect a...</summary><p>Missing Authorization vulnerability in InstaWP InstaWP Connect instawp-connect allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects InstaWP Connect: from n/a through &lt;= 0.1.2.5.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39501" target="_blank" rel="noopener">CVE-2026-39501</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Missing Authorization vulnerability in RealMag777 FOX woocommerce-currency-switc...</summary><p>Missing Authorization vulnerability in RealMag777 FOX woocommerce-currency-switcher allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects FOX: from n/a through &lt;= 1.4.5.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39500" target="_blank" rel="noopener">CVE-2026-39500</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Improper Neutralization of Input During Web Page Generation (&#x27;Cross-site Scripti...</summary><p>Improper Neutralization of Input During Web Page Generation (&#x27;Cross-site Scripting&#x27;) vulnerability in Themesflat themesflat-addons-for-elementor themesflat-addons-for-elementor allows Stored XSS.This issue affects themesflat-addons-for-elementor: from n/a through &lt;= 2.3.2.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39497" target="_blank" rel="noopener">CVE-2026-39497</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-89</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Improper Neutralization of Special Elements used in an SQL Command (&#x27;SQL Injecti...</summary><p>Improper Neutralization of Special Elements used in an SQL Command (&#x27;SQL Injection&#x27;) vulnerability in RealMag777 FOX woocommerce-currency-switcher allows Blind SQL Injection.This issue affects FOX: from n/a through &lt;= 1.4.5.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39496" target="_blank" rel="noopener">CVE-2026-39496</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-89</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Improper Neutralization of Special Elements used in an SQL Command (&#x27;SQL Injecti...</summary><p>Improper Neutralization of Special Elements used in an SQL Command (&#x27;SQL Injection&#x27;) vulnerability in YayCommerce YayMail yaymail allows Blind SQL Injection.This issue affects YayMail: from n/a through &lt;= 4.3.3.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39495" target="_blank" rel="noopener">CVE-2026-39495</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-89</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Improper Neutralization of Special Elements used in an SQL Command (&#x27;SQL Injecti...</summary><p>Improper Neutralization of Special Elements used in an SQL Command (&#x27;SQL Injection&#x27;) vulnerability in NSquared Simply Schedule Appointments simply-schedule-appointments allows Blind SQL Injection.This issue affects Simply Schedule Appointments: from n/a through &lt;= 1.6.9.27.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39488" target="_blank" rel="noopener">CVE-2026-39488</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Missing Authorization vulnerability in SureCart SureCart surecart allows Exploit...</summary><p>Missing Authorization vulnerability in SureCart SureCart surecart allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects SureCart: from n/a through &lt;= 4.0.2.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39487" target="_blank" rel="noopener">CVE-2026-39487</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-89</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Improper Neutralization of Special Elements used in an SQL Command (&#x27;SQL Injecti...</summary><p>Improper Neutralization of Special Elements used in an SQL Command (&#x27;SQL Injection&#x27;) vulnerability in ameliabooking Amelia ameliabooking allows Blind SQL Injection.This issue affects Amelia: from n/a through &lt;= 2.1.1.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39486" target="_blank" rel="noopener">CVE-2026-39486</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-89</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Improper Neutralization of Special Elements used in an SQL Command (&#x27;SQL Injecti...</summary><p>Improper Neutralization of Special Elements used in an SQL Command (&#x27;SQL Injection&#x27;) vulnerability in WP Chill Download Monitor download-monitor allows Blind SQL Injection.This issue affects Download Monitor: from n/a through &lt;= 5.1.8.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39485" target="_blank" rel="noopener">CVE-2026-39485</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Missing Authorization vulnerability in embedplus Youtube Embed Plus youtube-embe...</summary><p>Missing Authorization vulnerability in embedplus Youtube Embed Plus youtube-embed-plus allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects Youtube Embed Plus: from n/a through &lt;= 14.2.4.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39484" target="_blank" rel="noopener">CVE-2026-39484</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-601</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>URL Redirection to Untrusted Site (&#x27;Open Redirect&#x27;) vulnerability in John Darrel...</summary><p>URL Redirection to Untrusted Site (&#x27;Open Redirect&#x27;) vulnerability in John Darrel Hide My WP Ghost hide-my-wp allows Phishing.This issue affects Hide My WP Ghost: from n/a through &lt; 7.0.00.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39483" target="_blank" rel="noopener">CVE-2026-39483</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Improper Neutralization of Input During Web Page Generation (&#x27;Cross-site Scripti...</summary><p>Improper Neutralization of Input During Web Page Generation (&#x27;Cross-site Scripting&#x27;) vulnerability in Hidekazu Ishikawa VK All in One Expansion Unit vk-all-in-one-expansion-unit allows Stored XSS.This issue affects VK All in One Expansion Unit: from n/a through &lt;= 9.113.3.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39482" target="_blank" rel="noopener">CVE-2026-39482</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Improper Neutralization of Input During Web Page Generation (&#x27;Cross-site Scripti...</summary><p>Improper Neutralization of Input During Web Page Generation (&#x27;Cross-site Scripting&#x27;) vulnerability in PublishPress Post Expirator post-expirator allows DOM-Based XSS.This issue affects Post Expirator: from n/a through &lt;= 4.9.4.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39479" target="_blank" rel="noopener">CVE-2026-39479</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-89</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Improper Neutralization of Special Elements used in an SQL Command (&#x27;SQL Injecti...</summary><p>Improper Neutralization of Special Elements used in an SQL Command (&#x27;SQL Injection&#x27;) vulnerability in Brainstorm Force OttoKit suretriggers allows Blind SQL Injection.This issue affects OttoKit: from n/a through &lt;= 1.1.20.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39477" target="_blank" rel="noopener">CVE-2026-39477</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Missing Authorization vulnerability in Brainstorm Force CartFlows cartflows allo...</summary><p>Missing Authorization vulnerability in Brainstorm Force CartFlows cartflows allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects CartFlows: from n/a through &lt;= 2.2.3.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39476" target="_blank" rel="noopener">CVE-2026-39476</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Missing Authorization vulnerability in Syed Balkhi User Feedback userfeedback-li...</summary><p>Missing Authorization vulnerability in Syed Balkhi User Feedback userfeedback-lite allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects User Feedback: from n/a through &lt;= 1.10.1.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39475" target="_blank" rel="noopener">CVE-2026-39475</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-89</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Improper Neutralization of Special Elements used in an SQL Command (&#x27;SQL Injecti...</summary><p>Improper Neutralization of Special Elements used in an SQL Command (&#x27;SQL Injection&#x27;) vulnerability in Syed Balkhi User Feedback userfeedback-lite allows Blind SQL Injection.This issue affects User Feedback: from n/a through &lt;= 1.10.1.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39473" target="_blank" rel="noopener">CVE-2026-39473</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-201</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Insertion of Sensitive Information Into Sent Data vulnerability in Pär Thernströ...</summary><p>Insertion of Sensitive Information Into Sent Data vulnerability in Pär Thernström Simple History simple-history allows Retrieve Embedded Sensitive Data.This issue affects Simple History: from n/a through &lt;= 5.24.0.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39469" target="_blank" rel="noopener">CVE-2026-39469</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-497</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Exposure of Sensitive System Information to an Unauthorized Control Sphere vulne...</summary><p>Exposure of Sensitive System Information to an Unauthorized Control Sphere vulnerability in Softaculous PageLayer pagelayer allows Retrieve Embedded Sensitive Data.This issue affects PageLayer: from n/a through &lt;= 2.0.8.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39466" target="_blank" rel="noopener">CVE-2026-39466</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-89</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Improper Neutralization of Special Elements used in an SQL Command (&#x27;SQL Injecti...</summary><p>Improper Neutralization of Special Elements used in an SQL Command (&#x27;SQL Injection&#x27;) vulnerability in WPMU DEV - Your All-in-One WordPress Platform Broken Link Checker broken-link-checker allows Blind SQL Injection.This issue affects Broken Link Checker: from n/a through &lt;= 2.4.7.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39464" target="_blank" rel="noopener">CVE-2026-39464</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-918</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Server-Side Request Forgery (SSRF) vulnerability in SeedProd Coming Soon Page, U...</summary><p>Server-Side Request Forgery (SSRF) vulnerability in SeedProd Coming Soon Page, Under Construction &amp; Maintenance Mode by SeedProd coming-soon allows Server Side Request Forgery.This issue affects Coming Soon Page, Under Construction &amp; Maintenance Mode by SeedProd: from n/a through &lt;= 6.19.8.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33088" target="_blank" rel="noopener">CVE-2026-33088</a></td>
+        <td>6.9</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-89</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.83</td>
+        <td><details><summary>Movable Type provided by Six Apart Ltd. contains an SQL Injection vulnerability ...</summary><p>Movable Type provided by Six Apart Ltd. contains an SQL Injection vulnerability which may allow an attacker to execute an arbitrary SQL statement.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-25776" target="_blank" rel="noopener">CVE-2026-25776</a></td>
+        <td>9.3</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-94</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.51</td>
+        <td><details><summary>Movable Type provided by Six Apart Ltd. contains a code injection vulnerability ...</summary><p>Movable Type provided by Six Apart Ltd. contains a code injection vulnerability which may allow an attacker to execute arbitrary Perl script.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-1396" target="_blank" rel="noopener">CVE-2026-1396</a></td>
+        <td>6.4</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.48</td>
+        <td><details><summary>The Magic Conversation For Gravity Forms plugin for WordPress is vulnerable to S...</summary><p>The Magic Conversation For Gravity Forms plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the &#x27;magic-conversation&#x27; shortcode in all versions up to, and including, 3.0.97 due to insufficient input sanitization and output escaping on user supplied attributes. This makes it possible for authenticated attackers, with contributor-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4655" target="_blank" rel="noopener">CVE-2026-4655</a></td>
         <td>6.4</td>
@@ -3296,6 +5199,26 @@
         <td>0.0% <small>p4</small></td>
         <td>5.25</td>
         <td><details><summary>Cross-Site Request Forgery (CSRF) vulnerability in Analytify Under Construction,...</summary><p>Cross-Site Request Forgery (CSRF) vulnerability in Analytify Under Construction, Coming Soon &amp; Maintenance Mode allows Cross Site Request Forgery.This issue affects Under Construction, Coming Soon &amp; Maintenance Mode: from n/a through 2.1.1.</p></details></td>
+        <td>2026-04-07</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34197" target="_blank" rel="noopener">CVE-2026-34197</a></td>
+        <td>8.8</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-20</td>
+        <td>&nbsp;</td>
+        <td>0.1% <small>p18</small></td>
+        <td>6.16</td>
+        <td><details><summary>Improper Input Validation, Improper Control of Generation of Code (&#x27;Code Injecti...</summary><p>Improper Input Validation, Improper Control of Generation of Code (&#x27;Code Injection&#x27;) vulnerability in Apache ActiveMQ Broker, Apache ActiveMQ.
+
+Apache ActiveMQ Classic exposes the Jolokia JMX-HTTP bridge at /api/jolokia/ on the web console. The default Jolokia access policy permits exec operations on all ActiveMQ MBeans (org.apache.activemq:*), including
+BrokerService.addNetworkConnector(String) and BrokerService.addConnector(String). 
+
+An authenticated attacker can invoke these operations with a crafted discovery URI that triggers the VM transport&#x27;s brokerConfig parameter to load a remote Spring XML application context using ResourceXmlApplicationContext. 
+Because Spring&#x27;s ResourceXmlApplicationContext instantiates all singleton beans before the BrokerService validates the configuration, arbitrary code execution occurs on the broker&#x27;s JVM through bean factory methods such as Runtime.exec().
+This issue affects Apache ActiveMQ Broker: before 5.19.4, from 6.0.0 before 6.2.3; Apache ActiveMQ: .
+
+Users are recommended to upgrade to version 5.19.4 or 6.2.3, which fixes the issue.</p></details></td>
         <td>2026-04-07</td>
       </tr>
       <tr>
