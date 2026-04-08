@@ -11,7 +11,7 @@
     <header>
       <h1>vuln-tracker</h1>
       <p class="subtitle">CVEs from the National Vulnerability Database — current and previous month</p>
-      <p class="last-updated">Last updated: 2026-04-08 02:55 UTC</p>
+      <p class="last-updated">Last updated: 2026-04-08 05:50 UTC</p>
     </header>
     <nav>
       <a href="top50.html">&#9733; Top 50</a>
@@ -25,7 +25,7 @@
     </nav>
     <main>
     <section>
-      <h2>Current Month — April 2026 <span class="count">(1263)</span></h2>
+      <h2>Current Month — April 2026 <span class="count">(1275)</span></h2>
       <div class="table-wrapper">
         <table>
           <thead>
@@ -42,6 +42,149 @@
             </tr>
           </thead>
           <tbody>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4785" target="_blank" rel="noopener">CVE-2026-4785</a></td>
+        <td>6.4</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.48</td>
+        <td><details><summary>The LatePoint – Calendar Booking Plugin for Appointments and Events plugin for W...</summary><p>The LatePoint – Calendar Booking Plugin for Appointments and Events plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the &#x27;button_caption&#x27; parameter in the [latepoint_resources] shortcode in versions up to and including 5.3.0. This is due to insufficient output escaping when the &#x27;items&#x27; parameter is set to &#x27;bundles&#x27;. This makes it possible for authenticated attackers, with contributor-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4341" target="_blank" rel="noopener">CVE-2026-4341</a></td>
+        <td>6.4</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.48</td>
+        <td><details><summary>The Prime Slider – Addons for Elementor plugin for WordPress is vulnerable to St...</summary><p>The Prime Slider – Addons for Elementor plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the &#x27;follow_us_text&#x27; setting of the Mount widget in all versions up to, and including, 4.1.10. This is due to insufficient input sanitization and output escaping. Specifically, the `render_social_link()` function in `modules/mount/widgets/mount.php` outputs the `follow_us_text` Elementor widget setting using `echo` without any escaping function. The setting value is stored in `_elementor_data` post meta via `update_post_meta`. This makes it possible for authenticated attackers, with Author-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4333" target="_blank" rel="noopener">CVE-2026-4333</a></td>
+        <td>6.4</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.48</td>
+        <td><details><summary>The LearnPress – WordPress LMS Plugin plugin for WordPress is vulnerable to Stor...</summary><p>The LearnPress – WordPress LMS Plugin plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the &#x27;skin&#x27; attribute of the learn_press_courses shortcode in all versions up to and including 4.3.3. This is due to insufficient input sanitization and output escaping on the &#x27;skin&#x27; shortcode attribute. The attribute value is used directly in an sprintf() call that generates HTML (class attribute and data-layout attribute) without any esc_attr() escaping. This makes it possible for authenticated attackers, with Contributor-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4299" target="_blank" rel="noopener">CVE-2026-4299</a></td>
+        <td>5.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.71</td>
+        <td><details><summary>The MainWP Child Reports plugin for WordPress is vulnerable to Missing Authoriza...</summary><p>The MainWP Child Reports plugin for WordPress is vulnerable to Missing Authorization in all versions up to and including 2.2.6. This is due to a missing capability check in the heartbeat_received() function in the Live_Update class. This makes it possible for authenticated attackers, with Subscriber-level access and above, to obtain MainWP Child Reports activity log entries (including action summaries, user information, IP addresses, and contextual data) via the WordPress Heartbeat API by sending a crafted heartbeat request with the &#x27;wp-mainwp-stream-heartbeat&#x27; data key.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4003" target="_blank" rel="noopener">CVE-2026-4003</a></td>
+        <td>9.8</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.86</td>
+        <td><details><summary>The Users manager – PN plugin for WordPress is vulnerable to Privilege Escalatio...</summary><p>The Users manager – PN plugin for WordPress is vulnerable to Privilege Escalation via Arbitrary User Meta Update in all versions up to and including 1.1.15. This is due to a flawed authorization logic check in the userspn_ajax_nopriv_server() function within the &#x27;userspn_form_save&#x27; case. The conditional only blocks unauthenticated users when the user_id is empty, but when a non-empty user_id is supplied, execution bypasses this check entirely and proceeds to update arbitrary user meta via update_user_meta() without any authentication or authorization verification. Additionally, the nonce required for this AJAX endpoint (&#x27;userspn-nonce&#x27;) is exposed to all visitors via wp_localize_script on the public wp_enqueue_scripts hook, rendering the nonce check ineffective as a security control. This makes it possible for unauthenticated attackers to update arbitrary user metadata for any user account, including the userspn_secret_token field.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-3646" target="_blank" rel="noopener">CVE-2026-3646</a></td>
+        <td>5.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.71</td>
+        <td><details><summary>The LTL Freight Quotes – R+L Carriers Edition plugin for WordPress is vulnerable...</summary><p>The LTL Freight Quotes – R+L Carriers Edition plugin for WordPress is vulnerable to Missing Authorization via the plugin&#x27;s webhook handler in all versions up to, and including, 3.3.13. This is due to missing authentication, authorization, and nonce verification on a standalone PHP file that directly processes GET parameters and updates WordPress options. This makes it possible for unauthenticated attackers to modify the plugin&#x27;s subscription plan settings, effectively downgrading the store from a paid plan to the Trial Plan, changing the store type, and manipulating subscription expiration dates, potentially disabling premium features such as Dropship and Hazardous Material handling.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-3600" target="_blank" rel="noopener">CVE-2026-3600</a></td>
+        <td>6.4</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.48</td>
+        <td><details><summary>The Investi plugin for WordPress is vulnerable to Stored Cross-Site Scripting vi...</summary><p>The Investi plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the &#x27;investi-announcements-accordion&#x27; shortcode&#x27;s &#x27;maximum-num-years&#x27; attribute in all versions up to, and including, 1.0.26. This is due to insufficient input sanitization and output escaping on user-supplied shortcode attributes. Specifically, the &#x27;maximum-num-years&#x27; attribute value is read directly from shortcode attributes and interpolated into a double-quoted HTML attribute without any escaping (no esc_attr(), htmlspecialchars(), or similar). This makes it possible for authenticated attackers, with Contributor-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-3513" target="_blank" rel="noopener">CVE-2026-3513</a></td>
+        <td>6.4</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.48</td>
+        <td><details><summary>The TableOn – WordPress Posts Table Filterable plugin for WordPress is vulnerabl...</summary><p>The TableOn – WordPress Posts Table Filterable plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the &#x27;tableon_button&#x27; shortcode in all versions up to and including 1.0.4.4. This is due to insufficient input sanitization and output escaping on user-supplied shortcode attributes such as &#x27;class&#x27;, &#x27;help_link&#x27;, &#x27;popup_title&#x27;, and &#x27;help_title&#x27;. The do_shortcode_button() function extracts these attributes without sanitization and passes them to TABLEON_HELPER::draw_html_item(), which concatenates attribute values into HTML using single quotes without escaping (line 29: $item .= &quot; {$key}=&#x27;{$value}&#x27;&quot;). This makes it possible for authenticated attackers, with Contributor-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-3239" target="_blank" rel="noopener">CVE-2026-3239</a></td>
+        <td>6.4</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.48</td>
+        <td><details><summary>The Strong Testimonials plugin for WordPress is vulnerable to Stored Cross-Site ...</summary><p>The Strong Testimonials plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the plugin&#x27;s testimonial_view shortcode in all versions up to, and including, 3.2.21 due to insufficient input sanitization and output escaping on user supplied attributes. This makes it possible for authenticated attackers, with contributor-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4379" target="_blank" rel="noopener">CVE-2026-4379</a></td>
+        <td>6.4</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.48</td>
+        <td><details><summary>The LightPress Lightbox plugin for WordPress is vulnerable to Stored Cross-Site ...</summary><p>The LightPress Lightbox plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the `group` attribute in the `[gallery]` shortcode in all versions up to, and including, 2.3.4. This is due to the plugin modifying gallery shortcode output to include the `group` attribute value without proper escaping. This makes it possible for authenticated attackers, with Contributor-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-2988" target="_blank" rel="noopener">CVE-2026-2988</a></td>
+        <td>6.4</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.48</td>
+        <td><details><summary>The Blubrry PowerPress plugin for WordPress is vulnerable to Stored Cross-Site S...</summary><p>The Blubrry PowerPress plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the &#x27;powerpress&#x27; and &#x27;podcast&#x27; shortcodes in versions up to, and including, 11.15.15 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with contributor-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5726" target="_blank" rel="noopener">CVE-2026-5726</a></td>
+        <td>7.8</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-121</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.46</td>
+        <td><details><summary>ASDA-Soft Stack-based Buffer Overflow Vulnerability</summary><p>ASDA-Soft Stack-based Buffer Overflow Vulnerability</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-1163" target="_blank" rel="noopener">CVE-2026-1163</a></td>
+        <td>4.1</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-613</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>2.87</td>
+        <td><details><summary>An insufficient session expiration vulnerability exists in the latest version of...</summary><p>An insufficient session expiration vulnerability exists in the latest version of parisneo/lollms. The application fails to invalidate active sessions after a password reset, allowing an attacker to continue using an old session token. This issue arises due to the absence of logic to reject requests after a period of inactivity and the excessively long default session duration of 31 days. The vulnerability enables an attacker to maintain persistent access to a compromised account, even after the victim resets their password.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-3499" target="_blank" rel="noopener">CVE-2026-3499</a></td>
         <td>8.8</td>
@@ -227,19 +370,6 @@
         <td>&mdash;</td>
         <td>5.04</td>
         <td><details><summary>IBM Verify Identity Access Container 11.0 through 11.0.2 and IBM Security Verify...</summary><p>IBM Verify Identity Access Container 11.0 through 11.0.2 and IBM Security Verify Access Container 10.0 through 10.0.9.1 and IBM Verify Identity Access 11.0 through 11.0.2 and IBM Security Verify Access 10.0 through 10.0.9.1 allows an attacker to contact internal authentication endpoints which are protected by the Reverse Proxy.</p></details></td>
-        <td>2026-04-08</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5747" target="_blank" rel="noopener">CVE-2026-5747</a></td>
-        <td>8.7</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-369</td>
-        <td>&nbsp;</td>
-        <td>&mdash;</td>
-        <td>6.09</td>
-        <td><details><summary>An out-of-bounds write issue in the virtio PCI transport in Amazon Firecracker 1...</summary><p>An out-of-bounds write issue in the virtio PCI transport in Amazon Firecracker 1.13.0 through 1.14.3 and 1.15.0 on x86_64 and aarch64 might allow a local guest user with root privileges to crash the Firecracker VMM process or potentially execute arbitrary code on the host via modification of virtio queue configuration registers after device activation. Achieving code execution on the host requires additional preconditions, such as the use of a custom guest kernel or specific snapshot configurations.
-
-To remediate this, users should upgrade to Firecracker 1.14.4 or 1.15.1 and later.</p></details></td>
         <td>2026-04-08</td>
       </tr>
       <tr>

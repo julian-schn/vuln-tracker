@@ -1,9 +1,22 @@
 # CVEs — April 2026
 
-_1263 vulnerabilities_
+_1275 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
+| [CVE-2026-4785](https://nvd.nist.gov/vuln/detail/CVE-2026-4785) | 6.4 | MEDIUM | CWE-79 | No | — | 4.48 | 2026-04-08 | The LatePoint – Calendar Booking Plugin for Appointments and Events plugin for WordPress is vulnerable to Stored Cross-S... |
+| [CVE-2026-4341](https://nvd.nist.gov/vuln/detail/CVE-2026-4341) | 6.4 | MEDIUM | CWE-79 | No | — | 4.48 | 2026-04-08 | The Prime Slider – Addons for Elementor plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'follo... |
+| [CVE-2026-4333](https://nvd.nist.gov/vuln/detail/CVE-2026-4333) | 6.4 | MEDIUM | CWE-79 | No | — | 4.48 | 2026-04-08 | The LearnPress – WordPress LMS Plugin plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'skin' a... |
+| [CVE-2026-4299](https://nvd.nist.gov/vuln/detail/CVE-2026-4299) | 5.3 | MEDIUM | CWE-862 | No | — | 3.71 | 2026-04-08 | The MainWP Child Reports plugin for WordPress is vulnerable to Missing Authorization in all versions up to and including... |
+| [CVE-2026-4003](https://nvd.nist.gov/vuln/detail/CVE-2026-4003) | 9.8 | CRITICAL | CWE-862 | No | — | 6.86 | 2026-04-08 | The Users manager – PN plugin for WordPress is vulnerable to Privilege Escalation via Arbitrary User Meta Update in all... |
+| [CVE-2026-3646](https://nvd.nist.gov/vuln/detail/CVE-2026-3646) | 5.3 | MEDIUM | CWE-862 | No | — | 3.71 | 2026-04-08 | The LTL Freight Quotes – R+L Carriers Edition plugin for WordPress is vulnerable to Missing Authorization via the plugin... |
+| [CVE-2026-3600](https://nvd.nist.gov/vuln/detail/CVE-2026-3600) | 6.4 | MEDIUM | CWE-79 | No | — | 4.48 | 2026-04-08 | The Investi plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'investi-announcements-accordion'... |
+| [CVE-2026-3513](https://nvd.nist.gov/vuln/detail/CVE-2026-3513) | 6.4 | MEDIUM | CWE-79 | No | — | 4.48 | 2026-04-08 | The TableOn – WordPress Posts Table Filterable plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the... |
+| [CVE-2026-3239](https://nvd.nist.gov/vuln/detail/CVE-2026-3239) | 6.4 | MEDIUM | CWE-79 | No | — | 4.48 | 2026-04-08 | The Strong Testimonials plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the plugin's testimonial_v... |
+| [CVE-2026-4379](https://nvd.nist.gov/vuln/detail/CVE-2026-4379) | 6.4 | MEDIUM | CWE-79 | No | — | 4.48 | 2026-04-08 | The LightPress Lightbox plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the `group` attribute in t... |
+| [CVE-2026-2988](https://nvd.nist.gov/vuln/detail/CVE-2026-2988) | 6.4 | MEDIUM | CWE-79 | No | — | 4.48 | 2026-04-08 | The Blubrry PowerPress plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'powerpress' and 'podca... |
+| [CVE-2026-5726](https://nvd.nist.gov/vuln/detail/CVE-2026-5726) | 7.8 | HIGH | CWE-121 | No | — | 5.46 | 2026-04-08 | ASDA-Soft Stack-based Buffer Overflow Vulnerability |
+| [CVE-2026-1163](https://nvd.nist.gov/vuln/detail/CVE-2026-1163) | 4.1 | MEDIUM | CWE-613 | No | — | 2.87 | 2026-04-08 | An insufficient session expiration vulnerability exists in the latest version of parisneo/lollms. The application fails... |
 | [CVE-2026-3499](https://nvd.nist.gov/vuln/detail/CVE-2026-3499) | 8.8 | HIGH | CWE-352 | No | — | 6.16 | 2026-04-08 | The Product Feed PRO for WooCommerce by AdTribes – Product Feeds for WooCommerce plugin for WordPress is vulnerable to C... |
 | [CVE-2026-3296](https://nvd.nist.gov/vuln/detail/CVE-2026-3296) | 9.8 | CRITICAL | CWE-502 | No | — | 6.86 | 2026-04-08 | The Everest Forms plugin for WordPress is vulnerable to PHP Object Injection in all versions up to, and including, 3.4.3... |
 | [CVE-2026-33810](https://nvd.nist.gov/vuln/detail/CVE-2026-33810) | 0.0 | NONE | N/A | No | — | 0.00 | 2026-04-08 | When verifying a certificate chain containing excluded DNS constraints, these constraints are not correctly applied to w... |
@@ -21,7 +34,6 @@ _1263 vulnerabilities_
 | [CVE-2026-3357](https://nvd.nist.gov/vuln/detail/CVE-2026-3357) | 8.8 | HIGH | CWE-502 | No | — | 6.16 | 2026-04-08 | IBM Langflow Desktop 1.6.0 through 1.8.2 Langflow could allow an authenticated user to execute arbitrary code on the sys... |
 | [CVE-2026-1346](https://nvd.nist.gov/vuln/detail/CVE-2026-1346) | 9.3 | CRITICAL | CWE-250 | No | — | 6.51 | 2026-04-08 | IBM Verify Identity Access Container 11.0 through 11.0.2 and IBM Security Verify Access Container 10.0 through 10.0.9.1... |
 | [CVE-2026-1343](https://nvd.nist.gov/vuln/detail/CVE-2026-1343) | 7.2 | HIGH | CWE-918 | No | — | 5.04 | 2026-04-08 | IBM Verify Identity Access Container 11.0 through 11.0.2 and IBM Security Verify Access Container 10.0 through 10.0.9.1... |
-| [CVE-2026-5747](https://nvd.nist.gov/vuln/detail/CVE-2026-5747) | 8.7 | HIGH | CWE-369 | No | — | 6.09 | 2026-04-08 | An out-of-bounds write issue in the virtio PCI transport in Amazon Firecracker 1.13.0 through 1.14.3 and 1.15.0 on x86_6... |
 | [CVE-2026-4406](https://nvd.nist.gov/vuln/detail/CVE-2026-4406) | 4.7 | MEDIUM | CWE-79 | No | — | 3.29 | 2026-04-08 | The Gravity Forms plugin for WordPress is vulnerable to Reflected Cross-Site Scripting via the `form_ids` parameter in t... |
 | [CVE-2026-4401](https://nvd.nist.gov/vuln/detail/CVE-2026-4401) | 5.4 | MEDIUM | CWE-352 | No | — | 3.78 | 2026-04-08 | The Download Monitor plugin for WordPress is vulnerable to Cross-Site Request Forgery in the `actions_handler()` and `bu... |
 | [CVE-2026-4394](https://nvd.nist.gov/vuln/detail/CVE-2026-4394) | 6.1 | MEDIUM | CWE-79 | No | — | 4.27 | 2026-04-08 | The Gravity Forms plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the Credit Card field's 'Card Ty... |
