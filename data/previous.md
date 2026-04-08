@@ -1,6 +1,6 @@
 # CVEs — March 2026
 
-_5733 vulnerabilities_
+_5734 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
@@ -902,7 +902,7 @@ _5733 vulnerabilities_
 | [CVE-2018-25211](https://nvd.nist.gov/vuln/detail/CVE-2018-25211) | 8.5 | HIGH | CWE-787 | No | 0.0% | 5.95 | 2026-03-26 | Allok Video Splitter 3.1.1217 contains a buffer overflow vulnerability that allows local attackers to cause a denial of... |
 | [CVE-2026-4887](https://nvd.nist.gov/vuln/detail/CVE-2026-4887) | 6.1 | MEDIUM | CWE-193 | No | 0.1% | 4.27 | 2026-03-26 | A flaw was found in GIMP. This issue is a heap buffer over-read in GIMP PCX file loader due to an off-by-one error. A re... |
 | [CVE-2026-4875](https://nvd.nist.gov/vuln/detail/CVE-2026-4875) | 5.1 | MEDIUM | CWE-284 | No | 0.0% | 3.57 | 2026-03-26 | A vulnerability was determined in itsourcecode Free Hotel Reservation System 1.0. The affected element is an unknown fun... |
-| [CVE-2026-1961](https://nvd.nist.gov/vuln/detail/CVE-2026-1961) | 8.0 | HIGH | N/A | No | 0.1% | 5.60 | 2026-03-26 | A flaw was found in Foreman. A remote attacker could exploit a command injection vulnerability in Foreman's WebSocket pr... |
+| [CVE-2026-1961](https://nvd.nist.gov/vuln/detail/CVE-2026-1961) | 8.0 | HIGH | CWE-78 | No | 0.1% | 5.60 | 2026-03-26 | A flaw was found in Foreman. A remote attacker could exploit a command injection vulnerability in Foreman's WebSocket pr... |
 | [CVE-2025-55277](https://nvd.nist.gov/vuln/detail/CVE-2025-55277) | 2.6 | LOW | CWE-1104 | No | 0.1% | 1.82 | 2026-03-26 | HCL Aftermarket DPC is affected by Use of Vulnerable/Outdated Versions vulnerability using which an attacker may make us... |
 | [CVE-2025-55276](https://nvd.nist.gov/vuln/detail/CVE-2025-55276) | 3.1 | LOW | CWE-200 | No | 0.0% | 2.17 | 2026-03-26 | HCL Aftermarket DPC is affected by Internal IP Disclosure vulnerability will give attackers a clearer map of the organiz... |
 | [CVE-2025-55275](https://nvd.nist.gov/vuln/detail/CVE-2025-55275) | 3.7 | LOW | CWE-557 | No | 0.0% | 2.59 | 2026-03-26 | HCL Aftermarket DPC is affected by Admin Session Concurrency vulnerability using which an attacker can exploit concurren... |
@@ -2956,6 +2956,7 @@ _5733 vulnerabilities_
 | [CVE-2025-69196](https://nvd.nist.gov/vuln/detail/CVE-2025-69196) | 7.4 | HIGH | CWE-863 | No | 0.0% | 5.18 | 2026-03-16 | FastMCP is the standard framework for building MCP applications. Prior to version 2.14.2, the server does not properly r... |
 | [CVE-2026-4254](https://nvd.nist.gov/vuln/detail/CVE-2026-4254) | 8.9 | HIGH | CWE-119 | No | 0.2% | 6.23 | 2026-03-16 | A weakness has been identified in Tenda AC8 up to 16.03.50.11. This vulnerability affects the function doSystemCmd of th... |
 | [CVE-2026-4253](https://nvd.nist.gov/vuln/detail/CVE-2026-4253) | 5.1 | MEDIUM | CWE-77 | No | 0.4% | 3.58 | 2026-03-16 | A security flaw has been discovered in Tenda AC8 16.03.50.11. This affects the function route_set_user_policy_rule of th... |
+| [CVE-2026-4224](https://nvd.nist.gov/vuln/detail/CVE-2026-4224) | 6.0 | MEDIUM | CWE-674 | No | 0.0% | 4.20 | 2026-03-16 | When an Expat parser with a registered ElementDeclHandler parses an inline document type definition containing a deeply... |
 | [CVE-2026-3644](https://nvd.nist.gov/vuln/detail/CVE-2026-3644) | 6.0 | MEDIUM | CWE-20 | No | 0.1% | 4.20 | 2026-03-16 | The fix for CVE-2026-0672, which rejected control characters in http.cookies.Morsel, was incomplete. The Morsel.update()... |
 | [CVE-2026-29521](https://nvd.nist.gov/vuln/detail/CVE-2026-29521) | 5.1 | MEDIUM | CWE-352 | No | 0.0% | 3.57 | 2026-03-16 | Hereta ETH-IMC408M firmware version 1.0.15 and prior contain a cross-site request forgery vulnerability that allows atta... |
 | [CVE-2026-29520](https://nvd.nist.gov/vuln/detail/CVE-2026-29520) | 5.1 | MEDIUM | CWE-79 | No | 0.0% | 3.57 | 2026-03-16 | Hereta ETH-IMC408M firmware version 1.0.15 and prior contain a reflected cross-site scripting vulnerability in the Netwo... |

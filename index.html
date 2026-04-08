@@ -11,7 +11,7 @@
     <header>
       <h1>vuln-tracker</h1>
       <p class="subtitle">CVEs from the National Vulnerability Database — current and previous month</p>
-      <p class="last-updated">Last updated: 2026-04-08 11:04 UTC</p>
+      <p class="last-updated">Last updated: 2026-04-08 13:46 UTC</p>
     </header>
     <nav>
       <a href="top50.html">&#9733; Top 50</a>
@@ -25,7 +25,7 @@
     </nav>
     <main>
     <section>
-      <h2>Current Month — April 2026 <span class="count">(1474)</span></h2>
+      <h2>Current Month — April 2026 <span class="count">(1489)</span></h2>
       <div class="table-wrapper">
         <table>
           <thead>
@@ -42,6 +42,211 @@
             </tr>
           </thead>
           <tbody>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5600" target="_blank" rel="noopener">CVE-2026-5600</a></td>
+        <td>5.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-653</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.85</td>
+        <td><details><summary>A new API endpoint introduced in pretix 2025 that is supposed to 
+return all che...</summary><p>A new API endpoint introduced in pretix 2025 that is supposed to 
+return all check-in events of a specific event in fact returns all 
+check-in events belonging to the respective organizer. This allows an 
+API consumer to access information for all other events under the same 
+organizer, even those they should not have access to.
+
+
+These records contain information on the time and result of every ticket scan as well as the ID of the matched ticket. Example:
+
+
+{
+  &quot;id&quot;: 123,
+  &quot;successful&quot;: true,
+  &quot;error_reason&quot;: null,
+  &quot;error_explanation&quot;: null,
+  &quot;position&quot;: 321,
+  &quot;datetime&quot;: &quot;2020-08-23T09:00:00+02:00&quot;,
+  &quot;list&quot;: 456,
+  &quot;created&quot;: &quot;2020-08-23T09:00:00+02:00&quot;,
+  &quot;auto_checked_in&quot;: false,
+  &quot;gate&quot;: null,
+  &quot;device&quot;: 1,
+  &quot;device_id&quot;: 1,
+  &quot;type&quot;: &quot;entry&quot;
+}
+
+
+
+An unauthorized user usually has no way to match these IDs (position) back to individual people.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5302" target="_blank" rel="noopener">CVE-2026-5302</a></td>
+        <td>6.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-942</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.41</td>
+        <td><details><summary>CORS misconfiguration in CoolerControl/coolercontrold &lt;4.0.0 allows unauthentica...</summary><p>CORS misconfiguration in CoolerControl/coolercontrold &lt;4.0.0 allows unauthenticated remote attackers to read data and send commands to the service via malicious websites</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5301" target="_blank" rel="noopener">CVE-2026-5301</a></td>
+        <td>7.6</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.32</td>
+        <td><details><summary>Stored XSS in log viewer in CoolerControl/coolercontrol-ui &lt;4.0.0 allows unauthe...</summary><p>Stored XSS in log viewer in CoolerControl/coolercontrol-ui &lt;4.0.0 allows unauthenticated attackers to take over the service via malicious JavaScript in poisoned log entries</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5300" target="_blank" rel="noopener">CVE-2026-5300</a></td>
+        <td>5.9</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-306</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.13</td>
+        <td><details><summary>Unauthenticated functionality in  CoolerControl/coolercontrold &lt;4.0.0 allows una...</summary><p>Unauthenticated functionality in  CoolerControl/coolercontrold &lt;4.0.0 allows unauthenticated attackers to view and modify potentially sensitive data via HTTP requests</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4402" target="_blank" rel="noopener">CVE-2026-4402</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Rejected reason: ** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. Reason: This can...</summary><p>Rejected reason: ** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. Reason: This candidate was issued in error. Notes: All references and descriptions in this candidate have been removed to prevent accidental usage.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-28261" target="_blank" rel="noopener">CVE-2026-28261</a></td>
+        <td>7.8</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-532</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.46</td>
+        <td><details><summary>Dell Elastic Cloud Storage, version 3.8.1.7 and prior, and Dell ObjectScale, ver...</summary><p>Dell Elastic Cloud Storage, version 3.8.1.7 and prior, and Dell ObjectScale, versions prior to 4.1.0.3 and version 4.2.0.0, contains an Insertion of Sensitive Information into Log File vulnerability. A low privileged attacker with local access could potentially exploit this vulnerability, leading to secret exposure. The attacker may be able to use the exposed secret to access the vulnerable system with privileges of the compromised account.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-27102" target="_blank" rel="noopener">CVE-2026-27102</a></td>
+        <td>6.6</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-266</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.62</td>
+        <td><details><summary>Dell PowerScale OneFS, versions 9.5.0.0 through 9.10.1.6 and versions 9.11.0.0 t...</summary><p>Dell PowerScale OneFS, versions 9.5.0.0 through 9.10.1.6 and versions 9.11.0.0 through 9.13.0.1, contains an incorrect privilege assignment vulnerability. A low privileged attacker with local access could potentially exploit this vulnerability, leading to elevation of privileges.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-24511" target="_blank" rel="noopener">CVE-2026-24511</a></td>
+        <td>4.4</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-209</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.08</td>
+        <td><details><summary>Dell PowerScale OneFS, versions 9.5.0.0 through 9.10.1.6 and versions 9.11.0.0 t...</summary><p>Dell PowerScale OneFS, versions 9.5.0.0 through 9.10.1.6 and versions 9.11.0.0 through 9.13.0.0, contains a generation of error message containing sensitive information vulnerability. A high privileged attacker with local access could potentially exploit this vulnerability, leading to information disclosure.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5208" target="_blank" rel="noopener">CVE-2026-5208</a></td>
+        <td>8.2</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-78</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.74</td>
+        <td><details><summary>Command injection in alerts in CoolerControl/coolercontrold &lt;4.0.0 allows authen...</summary><p>Command injection in alerts in CoolerControl/coolercontrold &lt;4.0.0 allows authenticated attackers to execute arbitrary code as root via injected bash commands in alert names</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-3396" target="_blank" rel="noopener">CVE-2026-3396</a></td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-89</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.25</td>
+        <td><details><summary>WCAPF – WooCommerce Ajax Product Filter plugin is vulnerable to time-based SQL I...</summary><p>WCAPF – WooCommerce Ajax Product Filter plugin is vulnerable to time-based SQL Injection via the &#x27;post-author&#x27; parameter in all versions up to, and including, 4.2.3 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query. This makes it possible for unauthenticated attackers to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-3243" target="_blank" rel="noopener">CVE-2026-3243</a></td>
+        <td>8.8</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-22</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.16</td>
+        <td><details><summary>The Advanced Members for ACF plugin for WordPress is vulnerable to arbitrary fil...</summary><p>The Advanced Members for ACF plugin for WordPress is vulnerable to arbitrary file deletion due to insufficient file path validation in the create_crop function in all versions up to, and including, 1.2.5. This makes it possible for authenticated attackers, with Subscriber-level access and above, to delete arbitrary files on the server, which can easily lead to remote code execution when the right file is deleted (such as wp-config.php). The vulnerability was partially patched in version 1.2.5.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-2481" target="_blank" rel="noopener">CVE-2026-2481</a></td>
+        <td>6.4</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.48</td>
+        <td><details><summary>The Beaver Builder Page Builder – Drag and Drop Website Builder plugin for WordP...</summary><p>The Beaver Builder Page Builder – Drag and Drop Website Builder plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the &#x27;settings[js]&#x27; parameter in versions up to, and including, 2.10.1.1 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with author-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-28264" target="_blank" rel="noopener">CVE-2026-28264</a></td>
+        <td>3.3</td>
+        <td><span class="severity low">LOW</span></td>
+        <td>CWE-732</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>2.31</td>
+        <td><details><summary>Dell PowerProtect Agent Service, version(s) prior to 20.1, contain(s) an Incorre...</summary><p>Dell PowerProtect Agent Service, version(s) prior to 20.1, contain(s) an Incorrect Permission Assignment for Critical Resource vulnerability. A low privileged attacker with local access could potentially exploit this vulnerability, leading to Information exposure.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-1865" target="_blank" rel="noopener">CVE-2026-1865</a></td>
+        <td>6.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-89</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.55</td>
+        <td><details><summary>The User Registration &amp; Membership – Free &amp; Paid Memberships, Subscriptions, Con...</summary><p>The User Registration &amp; Membership – Free &amp; Paid Memberships, Subscriptions, Content Restriction, User Profile, Custom User Registration &amp; Login Builder plugin for WordPress is vulnerable to SQL Injection via the ‘membership_ids[]’ parameter in all versions up to, and including, 5.1.2 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query.  This makes it possible for authenticated attackers, with Subscriber-level access and above, to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-1673" target="_blank" rel="noopener">CVE-2026-1673</a></td>
+        <td>4.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-352</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.01</td>
+        <td><details><summary>The BEAR – Bulk Editor and Products Manager Professional for WooCommerce by Plug...</summary><p>The BEAR – Bulk Editor and Products Manager Professional for WooCommerce by Pluginus.Net plugin for WordPress is vulnerable to Cross-Site Request Forgery in all versions up to, and including, 1.1.5. This is due to missing nonce validation on the woobe_delete_tax_term() function. This makes it possible for unauthenticated attackers to delete WooCommerce taxonomy terms (categories, tags, etc.) via a forged request granted they can trick a site administrator or shop manager into performing an action such as clicking on a link.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-1672" target="_blank" rel="noopener">CVE-2026-1672</a></td>
+        <td>6.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-352</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.55</td>
+        <td><details><summary>The BEAR – Bulk Editor and Products Manager Professional for WooCommerce by Plug...</summary><p>The BEAR – Bulk Editor and Products Manager Professional for WooCommerce by Pluginus.Net plugin for WordPress is vulnerable to Cross-Site Request Forgery in all versions up to, and including, 1.1.5. This is due to missing nonce validation on the woobe_redraw_table_row() function. This makes it possible for unauthenticated attackers to update WooCommerce product data including prices, descriptions, and other product fields via a forged request granted they can trick a site administrator or shop manager into performing an action such as clicking on a link.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4303" target="_blank" rel="noopener">CVE-2026-4303</a></td>
         <td>6.4</td>
@@ -5202,26 +5407,6 @@
         <td>2026-04-07</td>
       </tr>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34197" target="_blank" rel="noopener">CVE-2026-34197</a></td>
-        <td>8.8</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-20</td>
-        <td>&nbsp;</td>
-        <td>0.1% <small>p18</small></td>
-        <td>6.16</td>
-        <td><details><summary>Improper Input Validation, Improper Control of Generation of Code (&#x27;Code Injecti...</summary><p>Improper Input Validation, Improper Control of Generation of Code (&#x27;Code Injection&#x27;) vulnerability in Apache ActiveMQ Broker, Apache ActiveMQ.
-
-Apache ActiveMQ Classic exposes the Jolokia JMX-HTTP bridge at /api/jolokia/ on the web console. The default Jolokia access policy permits exec operations on all ActiveMQ MBeans (org.apache.activemq:*), including
-BrokerService.addNetworkConnector(String) and BrokerService.addConnector(String). 
-
-An authenticated attacker can invoke these operations with a crafted discovery URI that triggers the VM transport&#x27;s brokerConfig parameter to load a remote Spring XML application context using ResourceXmlApplicationContext. 
-Because Spring&#x27;s ResourceXmlApplicationContext instantiates all singleton beans before the BrokerService validates the configuration, arbitrary code execution occurs on the broker&#x27;s JVM through bean factory methods such as Runtime.exec().
-This issue affects Apache ActiveMQ Broker: before 5.19.4, from 6.0.0 before 6.2.3; Apache ActiveMQ: .
-
-Users are recommended to upgrade to version 5.19.4 or 6.2.3, which fixes the issue.</p></details></td>
-        <td>2026-04-07</td>
-      </tr>
-      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-3177" target="_blank" rel="noopener">CVE-2026-3177</a></td>
         <td>5.3</td>
         <td><span class="severity medium">MEDIUM</span></td>
@@ -6593,7 +6778,7 @@ Users are recommended to upgrade to version 5.19.4 or 6.2.3, which fixes the iss
         <td>&nbsp;</td>
         <td>0.0% <small>p6</small></td>
         <td>6.37</td>
-        <td><details><summary>fast-jwt provides fast JSON Web Token (JWT) implementation. From 0.0.1 to before...</summary><p>fast-jwt provides fast JSON Web Token (JWT) implementation. From 0.0.1 to before 6.1.0, setting up a custom cacheKeyBuilder method which does not properly create unique keys for different tokens can lead to cache collisions. This could cause tokens to be mis-identified during the verification process leading to valid tokens returning claims from different valid tokens and users being mis-identified as other users based on the wrong token.</p></details></td>
+        <td><details><summary>fast-jwt provides fast JSON Web Token (JWT) implementation. From 0.0.1 to before...</summary><p>fast-jwt provides fast JSON Web Token (JWT) implementation. From 0.0.1 to before 6.2.0, setting up a custom cacheKeyBuilder method which does not properly create unique keys for different tokens can lead to cache collisions. This could cause tokens to be mis-identified during the verification process leading to valid tokens returning claims from different valid tokens and users being mis-identified as other users based on the wrong token. Version 6.2.0 contains a patch.</p></details></td>
         <td>2026-04-06</td>
       </tr>
       <tr>
@@ -16270,7 +16455,7 @@ Users are recommended to upgrade to version 5.19.4 or 6.2.3, which fixes the iss
       </div>
     </section>
     <section>
-      <h2>Previous Month — March 2026 <span class="count">(5733)</span></h2>
+      <h2>Previous Month — March 2026 <span class="count">(5734)</span></h2>
       <div class="table-wrapper">
         <table>
           <thead>
@@ -26169,7 +26354,7 @@ Users are recommended to upgrade to version 5.19.4 or 6.2.3, which fixes the iss
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-1961" target="_blank" rel="noopener">CVE-2026-1961</a></td>
         <td>8.0</td>
         <td><span class="severity high">HIGH</span></td>
-        <td>N/A</td>
+        <td>CWE-78</td>
         <td>&nbsp;</td>
         <td>0.1% <small>p34</small></td>
         <td>5.60</td>
@@ -48757,6 +48942,20 @@ Users are recommended to upgrade to version 5.19.4 or 6.2.3, which fixes the iss
         <td>0.4% <small>p59</small></td>
         <td>3.58</td>
         <td><details><summary>A security flaw has been discovered in Tenda AC8 16.03.50.11. This affects the f...</summary><p>A security flaw has been discovered in Tenda AC8 16.03.50.11. This affects the function route_set_user_policy_rule of the file /cgi-bin/UploadCfg of the component Web Interface. The manipulation of the argument wans.policy.list1 results in os command injection. It is possible to launch the attack remotely. The exploit has been released to the public and may be used for attacks.</p></details></td>
+        <td>2026-03-16</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4224" target="_blank" rel="noopener">CVE-2026-4224</a></td>
+        <td>6.0</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-674</td>
+        <td>&nbsp;</td>
+        <td>0.0% <small>p4</small></td>
+        <td>4.20</td>
+        <td><details><summary>When an Expat parser with a registered ElementDeclHandler parses an inline
+docum...</summary><p>When an Expat parser with a registered ElementDeclHandler parses an inline
+document type definition containing a deeply nested content model a C stack
+overflow occurs.</p></details></td>
         <td>2026-03-16</td>
       </tr>
       <tr>
