@@ -1,9 +1,29 @@
 # CVEs — April 2026
 
-_1731 vulnerabilities_
+_1751 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
+| [CVE-2026-5847](https://nvd.nist.gov/vuln/detail/CVE-2026-5847) | 2.1 | LOW | CWE-200 | No | — | 1.47 | 2026-04-09 | A vulnerability has been found in code-projects Movie Ticketing System 1.0. Impacted is an unknown function of the file... |
+| [CVE-2026-5844](https://nvd.nist.gov/vuln/detail/CVE-2026-5844) | 7.3 | HIGH | CWE-77 | No | — | 5.11 | 2026-04-09 | A vulnerability was found in D-Link DIR-882 1.01B02. Impacted is the function sprintf of the file prog.cgi of the compon... |
+| [CVE-2026-5842](https://nvd.nist.gov/vuln/detail/CVE-2026-5842) | 6.9 | MEDIUM | CWE-285 | No | — | 4.83 | 2026-04-09 | A security vulnerability has been detected in decolua 9router up to 0.3.47. The impacted element is an unknown function... |
+| [CVE-2026-5841](https://nvd.nist.gov/vuln/detail/CVE-2026-5841) | 6.9 | MEDIUM | CWE-22 | No | — | 4.83 | 2026-04-09 | A weakness has been identified in Tenda i3 1.0.0.6(2204). The affected element is the function R7WebsSecurityHandler of... |
+| [CVE-2026-5840](https://nvd.nist.gov/vuln/detail/CVE-2026-5840) | 5.1 | MEDIUM | CWE-74 | No | — | 3.57 | 2026-04-09 | A security flaw has been discovered in PHPGurukul News Portal Project 4.1. Impacted is an unknown function of the file /... |
+| [CVE-2026-5839](https://nvd.nist.gov/vuln/detail/CVE-2026-5839) | 5.1 | MEDIUM | CWE-74 | No | — | 3.57 | 2026-04-09 | A vulnerability was identified in PHPGurukul News Portal Project 4.1. This issue affects some unknown processing of the... |
+| [CVE-2026-5838](https://nvd.nist.gov/vuln/detail/CVE-2026-5838) | 5.1 | MEDIUM | CWE-74 | No | — | 3.57 | 2026-04-09 | A vulnerability was determined in PHPGurukul News Portal Project 4.1. This vulnerability affects unknown code of the fil... |
+| [CVE-2026-5742](https://nvd.nist.gov/vuln/detail/CVE-2026-5742) | 6.4 | MEDIUM | CWE-79 | No | — | 4.48 | 2026-04-09 | The UsersWP plugin for WordPress is vulnerable to Stored Cross-Site Scripting in versions up to and including 1.2.60. Th... |
+| [CVE-2026-4336](https://nvd.nist.gov/vuln/detail/CVE-2026-4336) | 6.4 | MEDIUM | CWE-79 | No | — | 4.48 | 2026-04-09 | The Ultimate FAQ Accordion plugin for WordPress is vulnerable to Stored Cross-Site Scripting via FAQ content in all vers... |
+| [CVE-2026-1830](https://nvd.nist.gov/vuln/detail/CVE-2026-1830) | 9.8 | CRITICAL | CWE-862 | No | — | 6.86 | 2026-04-09 | The Quick Playground plugin for WordPress is vulnerable to Remote Code Execution in all versions up to, and including, 1... |
+| [CVE-2026-5837](https://nvd.nist.gov/vuln/detail/CVE-2026-5837) | 6.9 | MEDIUM | CWE-74 | No | — | 4.83 | 2026-04-09 | A vulnerability was found in PHPGurukul News Portal Project 4.1. This affects an unknown part of the file /news-details.... |
+| [CVE-2026-5836](https://nvd.nist.gov/vuln/detail/CVE-2026-5836) | 4.8 | MEDIUM | CWE-79 | No | — | 3.36 | 2026-04-09 | A vulnerability has been found in code-projects Online Shoe Store 1.0. Affected by this issue is some unknown functional... |
+| [CVE-2026-5835](https://nvd.nist.gov/vuln/detail/CVE-2026-5835) | 4.8 | MEDIUM | CWE-79 | No | — | 3.36 | 2026-04-09 | A flaw has been found in code-projects Online Shoe Store 1.0. Affected by this vulnerability is an unknown functionality... |
+| [CVE-2026-5834](https://nvd.nist.gov/vuln/detail/CVE-2026-5834) | 4.8 | MEDIUM | CWE-79 | No | — | 3.36 | 2026-04-09 | A vulnerability was detected in code-projects Online Shoe Store 1.0. Affected is an unknown function of the file /admin/... |
+| [CVE-2026-5833](https://nvd.nist.gov/vuln/detail/CVE-2026-5833) | 4.8 | MEDIUM | CWE-74 | No | — | 3.36 | 2026-04-09 | A security vulnerability has been detected in awwaiid mcp-server-taskwarrior up to 1.0.1. This impacts the function serv... |
+| [CVE-2026-5357](https://nvd.nist.gov/vuln/detail/CVE-2026-5357) | 6.4 | MEDIUM | CWE-79 | No | — | 4.48 | 2026-04-09 | The Download Manager plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'sid' parameter of the 'w... |
+| [CVE-2026-4429](https://nvd.nist.gov/vuln/detail/CVE-2026-4429) | 6.4 | MEDIUM | CWE-79 | No | — | 4.48 | 2026-04-09 | The OSM – OpenStreetMap plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'marker_name' and 'fil... |
+| [CVE-2026-4124](https://nvd.nist.gov/vuln/detail/CVE-2026-4124) | 5.4 | MEDIUM | CWE-862 | No | — | 3.78 | 2026-04-09 | The Ziggeo plugin for WordPress is vulnerable to Missing Authorization in all versions up to, and including, 3.1.1. The... |
+| [CVE-2026-3574](https://nvd.nist.gov/vuln/detail/CVE-2026-3574) | 4.4 | MEDIUM | CWE-79 | No | — | 3.08 | 2026-04-09 | The Experto Dashboard for WooCommerce plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the plugin's... |
+| [CVE-2026-3568](https://nvd.nist.gov/vuln/detail/CVE-2026-3568) | 4.3 | MEDIUM | CWE-639 | No | — | 3.01 | 2026-04-09 | The MStore API plugin for WordPress is vulnerable to  Insecure Direct Object Reference in all versions up to, and includ... |
 | [CVE-2026-5832](https://nvd.nist.gov/vuln/detail/CVE-2026-5832) | 6.9 | MEDIUM | CWE-918 | No | — | 4.83 | 2026-04-09 | A weakness has been identified in atototo api-lab-mcp up to 0.2.1. This affects the function analyze_api_spec/generate_t... |
 | [CVE-2026-5831](https://nvd.nist.gov/vuln/detail/CVE-2026-5831) | 5.3 | MEDIUM | CWE-77 | No | — | 3.71 | 2026-04-09 | A security flaw has been discovered in Agions taskflow-ai up to 2.1.8. This impacts an unknown function of the file src/... |
 | [CVE-2026-5830](https://nvd.nist.gov/vuln/detail/CVE-2026-5830) | 7.4 | HIGH | CWE-119 | No | — | 5.18 | 2026-04-09 | A vulnerability was identified in Tenda AC15 15.03.05.18. This affects the function websGetVar of the file /goform/SysTo... |
