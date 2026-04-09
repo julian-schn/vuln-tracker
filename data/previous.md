@@ -1,6 +1,6 @@
 # CVEs — March 2026
 
-_5733 vulnerabilities_
+_5735 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
@@ -3827,6 +3827,7 @@ _5733 vulnerabilities_
 | [CVE-2025-70330](https://nvd.nist.gov/vuln/detail/CVE-2025-70330) | 3.3 | LOW | CWE-125 | No | 0.0% | 2.31 | 2026-03-11 | Easy Grade Pro 4.1.0.2 contains a file parsing logic flaw in the handling of proprietary .EGP gradebook files. By modify... |
 | [CVE-2025-70027](https://nvd.nist.gov/vuln/detail/CVE-2025-70027) | 7.5 | HIGH | CWE-918 | No | 0.0% | 5.25 | 2026-03-11 | An issue pertaining to CWE-918: Server-Side Request Forgery was discovered in Sunbird-Ed SunbirdEd-portal v1.13.4. This... |
 | [CVE-2025-67298](https://nvd.nist.gov/vuln/detail/CVE-2025-67298) | 8.1 | HIGH | CWE-290 | No | 0.1% | 5.67 | 2026-03-11 | An issue in ClasroomIO before v.0.2.6 allows a remote attacker to escalate privileges via the endpoints /api/verify and... |
+| [CVE-2026-3904](https://nvd.nist.gov/vuln/detail/CVE-2026-3904) | 6.2 | MEDIUM | CWE-366 | No | 0.0% | 4.34 | 2026-03-11 | Calling NSS-backed functions that support caching via nscd may call the  nscd client side code and in the GNU C Library... |
 | [CVE-2026-3496](https://nvd.nist.gov/vuln/detail/CVE-2026-3496) | 7.5 | HIGH | CWE-89 | No | 0.1% | 5.25 | 2026-03-11 | The JetBooking plugin for WordPress is vulnerable to SQL Injection via the 'check_in_date' parameter in all versions up... |
 | [CVE-2026-32063](https://nvd.nist.gov/vuln/detail/CVE-2026-32063) | 6.9 | MEDIUM | CWE-77 | No | 0.1% | 4.83 | 2026-03-11 | OpenClaw version 2026.2.19-2 prior to 2026.2.21 contains a command injection vulnerability in systemd unit file generati... |
 | [CVE-2026-32062](https://nvd.nist.gov/vuln/detail/CVE-2026-32062) | 8.7 | HIGH | CWE-770 | No | 0.1% | 6.09 | 2026-03-11 | OpenClaw versions2026.2.21-2 prior to 2026.2.22 and @openclaw/voice-call versions 2026.2.21 prior to 2026.2.22 accept me... |
@@ -5491,6 +5492,7 @@ _5733 vulnerabilities_
 | [CVE-2026-3351](https://nvd.nist.gov/vuln/detail/CVE-2026-3351) | 2.1 | LOW | CWE-862 | No | 0.0% | 1.47 | 2026-03-03 | Improper authorization in the API endpoint GET /1.0/certificates in Canonical LXD 6.6 on Linux allows an authenticated,... |
 | [CVE-2026-3463](https://nvd.nist.gov/vuln/detail/CVE-2026-3463) | 4.8 | MEDIUM | CWE-119 | No | 0.0% | 3.36 | 2026-03-03 | A weakness has been identified in xlnt-community xlnt up to 1.6.1. Impacted is the function xlnt::detail::binary_writer:... |
 | [CVE-2026-2568](https://nvd.nist.gov/vuln/detail/CVE-2026-2568) | 7.2 | HIGH | CWE-79 | No | 0.1% | 5.04 | 2026-03-03 | The WP Zendesk for Contact Form 7, WPForms, Elementor, Formidable and Ninja Forms plugin for WordPress is vulnerable to... |
+| [CVE-2026-22886](https://nvd.nist.gov/vuln/detail/CVE-2026-22886) | 9.8 | CRITICAL | CWE-1391 | No | 0.2% | 6.87 | 2026-03-03 | OpenMQ exposes a TCP-based management service (imqbrokerd) that by default requires authentication. However, the product... |
 | [CVE-2025-15598](https://nvd.nist.gov/vuln/detail/CVE-2025-15598) | 6.3 | MEDIUM | CWE-345 | No | 0.0% | 4.41 | 2026-03-03 | A vulnerability was found in Dataease SQLBot up to 1.5.1. This impacts the function validateEmbedded of the file backend... |
 | [CVE-2026-1876](https://nvd.nist.gov/vuln/detail/CVE-2026-1876) | 8.7 | HIGH | CWE-404 | No | 0.2% | 6.10 | 2026-03-03 | Improper Resource Shutdown or Release vulnerability in Mitsubishi Electric Corporation MELSEC iQ-F Series FX5-ENET/IP Et... |
 | [CVE-2026-1875](https://nvd.nist.gov/vuln/detail/CVE-2026-1875) | 8.7 | HIGH | CWE-404 | No | 0.2% | 6.10 | 2026-03-03 | Improper Resource Shutdown or Release vulnerability in Mitsubishi Electric Corporation MELSEC iQ-F Series FX5-EIP EtherN... |
