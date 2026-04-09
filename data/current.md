@@ -1,9 +1,17 @@
 # CVEs — April 2026
 
-_1758 vulnerabilities_
+_1766 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
+| [CVE-2026-4901](https://nvd.nist.gov/vuln/detail/CVE-2026-4901) | 6.9 | MEDIUM | CWE-532 | No | — | 4.83 | 2026-04-09 | Hydrosystem Control System saves sensitive information into a log file. Critically, user credentials are logged allowing... |
+| [CVE-2026-34538](https://nvd.nist.gov/vuln/detail/CVE-2026-34538) | 0.0 | NONE | CWE-668 | No | — | 0.00 | 2026-04-09 | Apache Airflow versions 3.0.0 through 3.1.8 DagRun wait endpoint returns XCom result values even to users who only have... |
+| [CVE-2026-34185](https://nvd.nist.gov/vuln/detail/CVE-2026-34185) | 8.7 | HIGH | CWE-89 | No | — | 6.09 | 2026-04-09 | Hydrosystem Control System is vulnerable to SQL Injection across most scripts and input parameters. Because no protectio... |
+| [CVE-2026-34184](https://nvd.nist.gov/vuln/detail/CVE-2026-34184) | 8.8 | HIGH | CWE-862 | No | — | 6.16 | 2026-04-09 | Hydrosystem Control System does not enforce authorization for some directories. This allows an unauthorized attacker to... |
+| [CVE-2026-34179](https://nvd.nist.gov/vuln/detail/CVE-2026-34179) | 9.1 | CRITICAL | CWE-915 | No | — | 6.37 | 2026-04-09 | In Canonical LXD versions 4.12 through 6.7, the doCertificateUpdate function in lxd/certificates.go does not validate th... |
+| [CVE-2026-34178](https://nvd.nist.gov/vuln/detail/CVE-2026-34178) | 9.1 | CRITICAL | CWE-20 | No | — | 6.37 | 2026-04-09 | In Canonical LXD before 6.8, the backup import path validates project restrictions against backup/index.yaml in the supp... |
+| [CVE-2026-34177](https://nvd.nist.gov/vuln/detail/CVE-2026-34177) | 9.1 | CRITICAL | CWE-184 | No | — | 6.37 | 2026-04-09 | Canonical LXD versions 4.12 through 6.7 contain an incomplete denylist in isVMLowLevelOptionForbidden (lxd/project/limit... |
+| [CVE-2025-62188](https://nvd.nist.gov/vuln/detail/CVE-2025-62188) | 0.0 | NONE | CWE-200 | No | — | 0.00 | 2026-04-09 | An Exposure of Sensitive Information to an Unauthorized Actor vulnerability exists in Apache DolphinScheduler.  This vul... |
 | [CVE-2026-5854](https://nvd.nist.gov/vuln/detail/CVE-2026-5854) | 8.9 | HIGH | CWE-77 | No | — | 6.23 | 2026-04-09 | A vulnerability was detected in Totolink A7100RU 7.4cu.2313_b20191024. Affected by this issue is the function setWiFiEas... |
 | [CVE-2026-5853](https://nvd.nist.gov/vuln/detail/CVE-2026-5853) | 8.9 | HIGH | CWE-77 | No | — | 6.23 | 2026-04-09 | A security vulnerability has been detected in Totolink A7100RU 7.4cu.2313_b20191024. Affected by this vulnerability is t... |
 | [CVE-2026-5852](https://nvd.nist.gov/vuln/detail/CVE-2026-5852) | 8.9 | HIGH | CWE-77 | No | — | 6.23 | 2026-04-09 | A weakness has been identified in Totolink A7100RU 7.4cu.2313_b20191024. Affected is the function setIptvCfg of the file... |

@@ -11,7 +11,7 @@
     <header>
       <h1>vuln-tracker</h1>
       <p class="subtitle">CVEs from the National Vulnerability Database — current and previous month</p>
-      <p class="last-updated">Last updated: 2026-04-09 09:16 UTC</p>
+      <p class="last-updated">Last updated: 2026-04-09 11:05 UTC</p>
     </header>
     <nav>
       <a href="top50.html">&#9733; Top 50</a>
@@ -25,7 +25,7 @@
     </nav>
     <main>
     <section>
-      <h2>Current Month — April 2026 <span class="count">(1758)</span></h2>
+      <h2>Current Month — April 2026 <span class="count">(1766)</span></h2>
       <div class="table-wrapper">
         <table>
           <thead>
@@ -42,6 +42,141 @@
             </tr>
           </thead>
           <tbody>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4901" target="_blank" rel="noopener">CVE-2026-4901</a></td>
+        <td>6.9</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-532</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.83</td>
+        <td><details><summary>Hydrosystem Control System saves sensitive information into a log file. Critical...</summary><p>Hydrosystem Control System saves sensitive information into a log file. Critically, user credentials are logged allowing the attacker to obtain further authorized access into the system. Combined with vulnerability CVE-2026-34184, these sensitive information could be accessed by an unauthorized user.This issue was fixed in Hydrosystem Control System version 9.8.5</p></details></td>
+        <td>2026-04-09</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34538" target="_blank" rel="noopener">CVE-2026-34538</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-668</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Apache Airflow versions 3.0.0 through 3.1.8 DagRun wait endpoint returns XCom re...</summary><p>Apache Airflow versions 3.0.0 through 3.1.8 DagRun wait endpoint returns XCom result values even to users who only have DAG Run read permissions, such as the Viewer role.This behavior conflicts with the FAB RBAC model, which treats XCom as a separate protected resource, and with the security model documentation that defines the Viewer role as read-only.
+
+Airflow uses the FAB Auth Manager to manage access control on a per-resource basis. The Viewer role is intended to be read-only by default, and the security model documentation defines Viewer users as those who can inspect DAGs without accessing sensitive execution results.
+
+Users are recommended to upgrade to Apache Airflow 3.2.0 which resolves this issue.</p></details></td>
+        <td>2026-04-09</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34185" target="_blank" rel="noopener">CVE-2026-34185</a></td>
+        <td>8.7</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-89</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.09</td>
+        <td><details><summary>Hydrosystem Control System is vulnerable to SQL Injection across most scripts an...</summary><p>Hydrosystem Control System is vulnerable to SQL Injection across most scripts and input parameters. Because no protections are in place, an authenticated attacker can inject arbitrary SQL commands, potentially gaining full control over the database.This issue was fixed in Hydrosystem Control System version 9.8.5</p></details></td>
+        <td>2026-04-09</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34184" target="_blank" rel="noopener">CVE-2026-34184</a></td>
+        <td>8.8</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.16</td>
+        <td><details><summary>Hydrosystem Control System does not enforce authorization for some directories. ...</summary><p>Hydrosystem Control System does not enforce authorization for some directories. This allows an unauthorized attacker to read all files in these directories and even execute some of them. Critically the attacker could run PHP scripts directly on the connected database.This issue was fixed in Hydrosystem Control System version 9.8.5</p></details></td>
+        <td>2026-04-09</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34179" target="_blank" rel="noopener">CVE-2026-34179</a></td>
+        <td>9.1</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-915</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.37</td>
+        <td><details><summary>In Canonical LXD versions 4.12 through 6.7, the doCertificateUpdate function in ...</summary><p>In Canonical LXD versions 4.12 through 6.7, the doCertificateUpdate function in lxd/certificates.go does not validate the Type field when handling PUT/PATCH requests to /1.0/certificates/{fingerprint} for restricted TLS certificate users, allowing a remote authenticated attacker to escalate privileges to cluster admin.</p></details></td>
+        <td>2026-04-09</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34178" target="_blank" rel="noopener">CVE-2026-34178</a></td>
+        <td>9.1</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-20</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.37</td>
+        <td><details><summary>In Canonical LXD before 6.8, the backup import path validates project restrictio...</summary><p>In Canonical LXD before 6.8, the backup import path validates project restrictions against backup/index.yaml in the supplied tar archive but creates the instance from backup/container/backup.yaml, a separate file in the same archive that is never checked against project restrictions. An authenticated remote attacker with instance-creation permission in a restricted project can craft a backup archive where backup.yaml carries restricted settings such as security.privileged=true or raw.lxc directives, bypassing all project restriction enforcement and allowing full host compromise.</p></details></td>
+        <td>2026-04-09</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34177" target="_blank" rel="noopener">CVE-2026-34177</a></td>
+        <td>9.1</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-184</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.37</td>
+        <td><details><summary>Canonical LXD versions 4.12 through 6.7 contain an incomplete denylist in isVMLo...</summary><p>Canonical LXD versions 4.12 through 6.7 contain an incomplete denylist in isVMLowLevelOptionForbidden (lxd/project/limits/permissions.go), which omits raw.apparmor and raw.qemu.conf from the set of keys blocked under the restricted.virtual-machines.lowlevel=block project restriction. A remote attacker with can_edit permission on a VM instance in a restricted project can inject an AppArmor rule and a QEMU chardev configuration that bridges the LXD Unix socket into the guest VM, enabling privilege escalation to LXD cluster administrator and subsequently to host root.</p></details></td>
+        <td>2026-04-09</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-62188" target="_blank" rel="noopener">CVE-2025-62188</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-200</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>An Exposure of Sensitive Information to an Unauthorized Actor vulnerability exis...</summary><p>An Exposure of Sensitive Information to an Unauthorized Actor vulnerability exists in Apache DolphinScheduler.
+
+This vulnerability may allow unauthorized actors to access sensitive information, including database credentials.
+
+
+This issue affects Apache DolphinScheduler versions 3.1.*.
+
+
+Users are recommended to upgrade to:
+
+
+
+
+
+
+
+  *  version ≥ 3.2.0 if using 3.1.x
+
+
+
+
+
+
+As a temporary workaround, users who cannot upgrade immediately may restrict the exposed management endpoints by setting the following environment variable:
+
+
+```
+MANAGEMENT_ENDPOINTS_WEB_EXPOSURE_INCLUDE=health,metrics,prometheus
+```
+
+Alternatively, add the following configuration to the application.yaml file:
+
+
+```
+management:
+   endpoints:
+     web:
+        exposure:
+          include: health,metrics,prometheus
+```
+
+This issue has been reported as CVE-2023-48796:
+
+ https://cveprocess.apache.org/cve5/CVE-2023-48796</p></details></td>
+        <td>2026-04-09</td>
+      </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5854" target="_blank" rel="noopener">CVE-2026-5854</a></td>
         <td>8.9</td>
@@ -75015,7 +75150,7 @@
         <td>&nbsp;</td>
         <td>0.0% <small>p9</small></td>
         <td>4.55</td>
-        <td><details><summary>Missing Authorization vulnerability in Brainstorm_Force Ultimate Addons for WPBa...</summary><p>Missing Authorization vulnerability in Brainstorm_Force Ultimate Addons for WPBakery Page Builder ultimate_vc_addons allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects Ultimate Addons for WPBakery Page Builder: from n/a through &lt; 3.21.1.</p></details></td>
+        <td><details><summary>Missing Authorization vulnerability in Brainstorm Force Ultimate Addons for WPBa...</summary><p>Missing Authorization vulnerability in Brainstorm Force Ultimate Addons for WPBakery Page Builder allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects Ultimate Addons for WPBakery Page Builder: from n/a through 3.21.1.</p></details></td>
         <td>2026-03-05</td>
       </tr>
       <tr>
