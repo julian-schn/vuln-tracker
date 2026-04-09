@@ -1,9 +1,16 @@
 # CVEs — April 2026
 
-_1751 vulnerabilities_
+_1758 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
+| [CVE-2026-5854](https://nvd.nist.gov/vuln/detail/CVE-2026-5854) | 8.9 | HIGH | CWE-77 | No | — | 6.23 | 2026-04-09 | A vulnerability was detected in Totolink A7100RU 7.4cu.2313_b20191024. Affected by this issue is the function setWiFiEas... |
+| [CVE-2026-5853](https://nvd.nist.gov/vuln/detail/CVE-2026-5853) | 8.9 | HIGH | CWE-77 | No | — | 6.23 | 2026-04-09 | A security vulnerability has been detected in Totolink A7100RU 7.4cu.2313_b20191024. Affected by this vulnerability is t... |
+| [CVE-2026-5852](https://nvd.nist.gov/vuln/detail/CVE-2026-5852) | 8.9 | HIGH | CWE-77 | No | — | 6.23 | 2026-04-09 | A weakness has been identified in Totolink A7100RU 7.4cu.2313_b20191024. Affected is the function setIptvCfg of the file... |
+| [CVE-2026-5851](https://nvd.nist.gov/vuln/detail/CVE-2026-5851) | 8.9 | HIGH | CWE-77 | No | — | 6.23 | 2026-04-09 | A security flaw has been discovered in Totolink A7100RU 7.4cu.2313_b20191024. This impacts the function setUPnPCfg of th... |
+| [CVE-2026-5850](https://nvd.nist.gov/vuln/detail/CVE-2026-5850) | 8.9 | HIGH | CWE-77 | No | — | 6.23 | 2026-04-09 | A vulnerability was identified in Totolink A7100RU 7.4cu.2313_b20191024. This affects the function setVpnPassCfg of the... |
+| [CVE-2026-5849](https://nvd.nist.gov/vuln/detail/CVE-2026-5849) | 6.9 | MEDIUM | CWE-22 | No | — | 4.83 | 2026-04-09 | A vulnerability was determined in Tenda i12 1.0.0.11(3862). The impacted element is an unknown function of the component... |
+| [CVE-2026-5848](https://nvd.nist.gov/vuln/detail/CVE-2026-5848) | 5.1 | MEDIUM | CWE-74 | No | — | 3.57 | 2026-04-09 | A vulnerability was found in jeecgboot JimuReport up to 2.3.0. The affected element is the function DriverManager.getCon... |
 | [CVE-2026-5847](https://nvd.nist.gov/vuln/detail/CVE-2026-5847) | 2.1 | LOW | CWE-200 | No | — | 1.47 | 2026-04-09 | A vulnerability has been found in code-projects Movie Ticketing System 1.0. Impacted is an unknown function of the file... |
 | [CVE-2026-5844](https://nvd.nist.gov/vuln/detail/CVE-2026-5844) | 7.3 | HIGH | CWE-77 | No | — | 5.11 | 2026-04-09 | A vulnerability was found in D-Link DIR-882 1.01B02. Impacted is the function sprintf of the file prog.cgi of the compon... |
 | [CVE-2026-5842](https://nvd.nist.gov/vuln/detail/CVE-2026-5842) | 6.9 | MEDIUM | CWE-285 | No | — | 4.83 | 2026-04-09 | A security vulnerability has been detected in decolua 9router up to 0.3.47. The impacted element is an unknown function... |
