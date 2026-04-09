@@ -11,7 +11,7 @@
     <header>
       <h1>vuln-tracker</h1>
       <p class="subtitle">CVEs from the National Vulnerability Database — current and previous month</p>
-      <p class="last-updated">Last updated: 2026-04-09 15:45 UTC</p>
+      <p class="last-updated">Last updated: 2026-04-09 17:14 UTC</p>
     </header>
     <nav>
       <a href="top50.html">&#9733; Top 50</a>
@@ -25,7 +25,7 @@
     </nav>
     <main>
     <section>
-      <h2>Current Month — April 2026 <span class="count">(1798)</span></h2>
+      <h2>Current Month — April 2026 <span class="count">(1808)</span></h2>
       <div class="table-wrapper">
         <table>
           <thead>
@@ -42,6 +42,215 @@
             </tr>
           </thead>
           <tbody>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5960" target="_blank" rel="noopener">CVE-2026-5960</a></td>
+        <td>2.1</td>
+        <td><span class="severity low">LOW</span></td>
+        <td>CWE-200</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>1.47</td>
+        <td><details><summary>A weakness has been identified in code-projects Patient Record Management System...</summary><p>A weakness has been identified in code-projects Patient Record Management System 1.0. This affects an unknown part of the file /db/hcpms.sql of the component SQL Database Backup File Handler. Executing a manipulation can lead to information disclosure. The attack can be launched remotely. The exploit has been made available to the public and could be used for attacks.</p></details></td>
+        <td>2026-04-09</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4878" target="_blank" rel="noopener">CVE-2026-4878</a></td>
+        <td>6.7</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-367</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.69</td>
+        <td><details><summary>A flaw was found in libcap. A local unprivileged user can exploit a Time-of-chec...</summary><p>A flaw was found in libcap. A local unprivileged user can exploit a Time-of-check-to-time-of-use (TOCTOU) race condition in the `cap_set_file()` function. This allows an attacker with write access to a parent directory to redirect file capability updates to an attacker-controlled file. By doing so, capabilities can be injected into or stripped from unintended executables, leading to privilege escalation.</p></details></td>
+        <td>2026-04-09</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39941" target="_blank" rel="noopener">CVE-2026-39941</a></td>
+        <td>5.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.71</td>
+        <td><details><summary>ChurchCRM is an open-source church management system. Prior to 7.1.0, an XSS vul...</summary><p>ChurchCRM is an open-source church management system. Prior to 7.1.0, an XSS vulnerability allows attacker-supplied input sent via a the EName and EDesc parameters in EditEventAttendees.php to be rendered in a page without proper output encoding, enabling arbitrary JavaScript execution in victims&#x27; browsers. This vulnerability is fixed in 7.1.0.</p></details></td>
+        <td>2026-04-09</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39853" target="_blank" rel="noopener">CVE-2026-39853</a></td>
+        <td>7.8</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-121</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.46</td>
+        <td><details><summary>osslsigncode is a tool that implements Authenticode signing and timestamping. Pr...</summary><p>osslsigncode is a tool that implements Authenticode signing and timestamping. Prior to 2.12, A stack buffer overflow vulnerability exists in osslsigncode in several signature verification paths. During verification of a PKCS#7 signature, the code copies the digest value from a parsed SpcIndirectDataContent structure into a fixed-size stack buffer  (mdbuf[EVP_MAX_MD_SIZE], 64 bytes) without validating that the source length fits within the destination buffer. This pattern is present in the verification handlers for PE, MSI, CAB, and script files. An attacker can craft a malicious signed file with an oversized digest field in SpcIndirectDataContent. When a user verifies such a file with osslsigncode verify, the unbounded memcpy can overflow the stack buffer and corrupt adjacent stack state. This vulnerability is fixed in 2.12.</p></details></td>
+        <td>2026-04-09</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39843" target="_blank" rel="noopener">CVE-2026-39843</a></td>
+        <td>7.7</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-918</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.39</td>
+        <td><details><summary>Plane is an an open-source project management tool. From 0.28.0 to before 1.3.0,...</summary><p>Plane is an an open-source project management tool. From 0.28.0 to before 1.3.0, the remediation of GHSA-jcc6-f9v6-f7jw is incomplete which could lead to the same full read Server-Side Request Forgery when a normal html page contains a link tag with an href that redirects to a private IP address is supplied to Add link by an authenticated attacker with low privileges. Redirects for the main page URL are validated, but not the favicon fetch path. fetch_and_encode_favicon() still uses requests.get(favicon_url, ...) with the default redirect-following. This vulnerability is fixed in 1.3.0.</p></details></td>
+        <td>2026-04-09</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39398" target="_blank" rel="noopener">CVE-2026-39398</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Rejected reason: The affected product and advisory are not public.</summary><p>Rejected reason: The affected product and advisory are not public.</p></details></td>
+        <td>2026-04-09</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35205" target="_blank" rel="noopener">CVE-2026-35205</a></td>
+        <td>8.4</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-636</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.88</td>
+        <td><details><summary>Helm is a package manager for Charts for Kubernetes. From 4.0.0 to 4.1.3, Helm w...</summary><p>Helm is a package manager for Charts for Kubernetes. From 4.0.0 to 4.1.3, Helm will install plugins missing provenance (.prov file) when signature verification is required. This vulnerability is fixed in 4.1.4.</p></details></td>
+        <td>2026-04-09</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35204" target="_blank" rel="noopener">CVE-2026-35204</a></td>
+        <td>8.4</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-22</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.88</td>
+        <td><details><summary>Helm is a package manager for Charts for Kubernetes. From 4.0.0 to 4.1.3, a spec...</summary><p>Helm is a package manager for Charts for Kubernetes. From 4.0.0 to 4.1.3, a specially crafted Helm plugin, when installed or updated, will cause Helm to write the contents of the plugin to an arbitrary filesystem location. To prevent this, validate that the plugin.yaml of the Helm plugin does not include a version: field containing POSIX dot-dot path separators ie. &quot;/../&quot;. This vulnerability is fixed in 4.1.4.</p></details></td>
+        <td>2026-04-09</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35041" target="_blank" rel="noopener">CVE-2026-35041</a></td>
+        <td>4.2</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-1333</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>2.94</td>
+        <td><details><summary>fast-jwt provides fast JSON Web Token (JWT) implementation. From 5.0.0 to 6.2.0,...</summary><p>fast-jwt provides fast JSON Web Token (JWT) implementation. From 5.0.0 to 6.2.0, a denial-of-service condition exists in fast-jwt when the allowedAud verification option is configured using a regular expression. Because the aud claim is attacker-controlled and the library evaluates it against the supplied RegExp, a crafted JWT can trigger catastrophic backtracking in the JavaScript regex engine, resulting in significant CPU consumption during verification. This vulnerability is fixed in 6.2.1.</p></details></td>
+        <td>2026-04-09</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35040" target="_blank" rel="noopener">CVE-2026-35040</a></td>
+        <td>5.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-440</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.71</td>
+        <td><details><summary>fast-jwt provides fast JSON Web Token (JWT) implementation. Prior to 6.2.1, usin...</summary><p>fast-jwt provides fast JSON Web Token (JWT) implementation. Prior to 6.2.1, using certain modifiers on RegExp objects in the allowedAud, allowedIss, allowedSub, allowedJti, or allowedNonce options in verify functions can cause certain unintended behaviours. This is because some modifiers are stateful and will cause failures in every second verification attempt regardless of the validity of the token provided. Such modifiers are /g (global matching) and /y (sticky matching). This does NOT allow invalid tokens to be accepted, only for valid tokens to be improperly rejected in some configurations. Instead it causes 50% of valid authentication requests to fail in an alternating pattern. This vulnerability is fixed in 6.2.1.</p></details></td>
+        <td>2026-04-09</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34020" target="_blank" rel="noopener">CVE-2026-34020</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-598</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Use of GET Request Method With Sensitive Query Strings vulnerability in Apache O...</summary><p>Use of GET Request Method With Sensitive Query Strings vulnerability in Apache OpenMeetings.
+
+The REST login endpoint uses HTTP GET method with username and password passed as query parameters. Please check references regarding possible impact
+
+
+This issue affects Apache OpenMeetings: from 3.1.3 before 9.0.0.
+
+Users are recommended to upgrade to version 9.0.0, which fixes the issue.</p></details></td>
+        <td>2026-04-09</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33266" target="_blank" rel="noopener">CVE-2026-33266</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-321</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Use of Hard-coded Cryptographic Key vulnerability in Apache OpenMeetings.
+
+The r...</summary><p>Use of Hard-coded Cryptographic Key vulnerability in Apache OpenMeetings.
+
+The remember-me cookie encryption key is set to default value in openmeetings.properties and not being auto-rotated. In case OM admin hasn&#x27;t changed the default encryption key, an attacker who has stolen a cookie from a logged-in user can get full user credentials.
+
+
+This issue affects Apache OpenMeetings: from 6.1.0 before 9.0.0.
+
+Users are recommended to upgrade to version 9.0.0, which fixes the issue.</p></details></td>
+        <td>2026-04-09</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33005" target="_blank" rel="noopener">CVE-2026-33005</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-274</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Improper Handling of Insufficient Privileges vulnerability in Apache OpenMeeting...</summary><p>Improper Handling of Insufficient Privileges vulnerability in Apache OpenMeetings.
+
+Any registered user can query web service with their credentials and get files/sub-folders of any folder by ID (metadata only NOT contents). Metadata includes id, type, name and some other field. Full list of fields get be checked at FileItemDTO object.
+
+This issue affects Apache OpenMeetings: from 3.10 before 9.0.0.
+
+Users are recommended to upgrade to version 9.0.0, which fixes the issue.</p></details></td>
+        <td>2026-04-09</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-70365" target="_blank" rel="noopener">CVE-2025-70365</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>A stored cross-site scripting (XSS) vulnerability exists in Kiamo before 8.4 due...</summary><p>A stored cross-site scripting (XSS) vulnerability exists in Kiamo before 8.4 due to improper output encoding of user-supplied input in administrative interfaces. An authenticated administrative user can inject arbitrary JavaScript code that is executed in the browser of users viewing the affected pages.</p></details></td>
+        <td>2026-04-09</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-70364" target="_blank" rel="noopener">CVE-2025-70364</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>An issue was discovered in Kiamo before 8.4 allowing authenticated administrativ...</summary><p>An issue was discovered in Kiamo before 8.4 allowing authenticated administrative attackers to execute arbitrary PHP code on the server.</p></details></td>
+        <td>2026-04-09</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-15480" target="_blank" rel="noopener">CVE-2025-15480</a></td>
+        <td>2.7</td>
+        <td><span class="severity low">LOW</span></td>
+        <td>CWE-1258</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>1.89</td>
+        <td><details><summary>In Ubuntu, ubuntu-desktop-provision version 24.04.4 could leak sensitive user cr...</summary><p>In Ubuntu, ubuntu-desktop-provision version 24.04.4 could leak sensitive user credentials during crash reporting. Upon installation failure, if a user submitted a bug report to Launchpad, ubuntu-desktop-provision could include the user&#x27;s password hash in the attached logs.</p></details></td>
+        <td>2026-04-09</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-14551" target="_blank" rel="noopener">CVE-2025-14551</a></td>
+        <td>2.7</td>
+        <td><span class="severity low">LOW</span></td>
+        <td>CWE-1258</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>1.89</td>
+        <td><details><summary>In Ubuntu, Subiquity version 24.04.4 could leak sensitive user credentials durin...</summary><p>In Ubuntu, Subiquity version 24.04.4 could leak sensitive user credentials during crash reporting. Upon installation failure, if a user submitted a bug report to Launchpad, Subiquity could include certain user credentials, such as the user&#x27;s plaintext Wi-Fi password, in the attached logs.</p></details></td>
+        <td>2026-04-09</td>
+      </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5959" target="_blank" rel="noopener">CVE-2026-5959</a></td>
         <td>7.5</td>
@@ -275,12 +484,12 @@
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-45806" target="_blank" rel="noopener">CVE-2025-45806</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>6.1</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
         <td>&nbsp;</td>
         <td>&mdash;</td>
-        <td>0.00</td>
+        <td>4.27</td>
         <td><details><summary>A cross-site scripting (XSS) vulnerability in rrweb-snapshot before v2.0.0-alpha...</summary><p>A cross-site scripting (XSS) vulnerability in rrweb-snapshot before v2.0.0-alpha.18 allows attackers to execute arbitrary web scripts or HTML via a crafted payload.</p></details></td>
         <td>2026-04-09</td>
       </tr>
@@ -329,21 +538,6 @@
         <td>2026-04-09</td>
       </tr>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-57735" target="_blank" rel="noopener">CVE-2025-57735</a></td>
-        <td>9.1</td>
-        <td><span class="severity critical">CRITICAL</span></td>
-        <td>CWE-613</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p3</small></td>
-        <td>6.37</td>
-        <td><details><summary>When user logged out, the JWT token the user had authtenticated with was not inv...</summary><p>When user logged out, the JWT token the user had authtenticated with was not invalidated, which could lead to reuse of that token in case it was intercepted. In Airflow 3.2 we implemented the mechanism that implements token invalidation at logout. Users who are concerned about the logout scenario and possibility of intercepting the tokens, should upgrade to Airflow 3.2+
-
-
-
-Users are recommended to upgrade to version 3.2.0, which fixes this issue.</p></details></td>
-        <td>2026-04-09</td>
-      </tr>
-      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2024-1490" target="_blank" rel="noopener">CVE-2024-1490</a></td>
         <td>7.2</td>
         <td><span class="severity high">HIGH</span></td>
@@ -363,21 +557,6 @@ Users are recommended to upgrade to version 3.2.0, which fixes this issue.</p></
         <td>0.0% <small>p11</small></td>
         <td>4.83</td>
         <td><details><summary>Hydrosystem Control System saves sensitive information into a log file. Critical...</summary><p>Hydrosystem Control System saves sensitive information into a log file. Critically, user credentials are logged allowing the attacker to obtain further authorized access into the system. Combined with vulnerability CVE-2026-34184, these sensitive information could be accessed by an unauthorized user.This issue was fixed in Hydrosystem Control System version 9.8.5</p></details></td>
-        <td>2026-04-09</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34538" target="_blank" rel="noopener">CVE-2026-34538</a></td>
-        <td>6.5</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-668</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p3</small></td>
-        <td>4.55</td>
-        <td><details><summary>Apache Airflow versions 3.0.0 through 3.1.8 DagRun wait endpoint returns XCom re...</summary><p>Apache Airflow versions 3.0.0 through 3.1.8 DagRun wait endpoint returns XCom result values even to users who only have DAG Run read permissions, such as the Viewer role.This behavior conflicts with the FAB RBAC model, which treats XCom as a separate protected resource, and with the security model documentation that defines the Viewer role as read-only.
-
-Airflow uses the FAB Auth Manager to manage access control on a per-resource basis. The Viewer role is intended to be read-only by default, and the security model documentation defines Viewer users as those who can inspect DAGs without accessing sensitive execution results.
-
-Users are recommended to upgrade to Apache Airflow 3.2.0 which resolves this issue.</p></details></td>
         <td>2026-04-09</td>
       </tr>
       <tr>
@@ -433,60 +612,6 @@ Users are recommended to upgrade to Apache Airflow 3.2.0 which resolves this iss
         <td>0.1% <small>p28</small></td>
         <td>6.37</td>
         <td><details><summary>Canonical LXD versions 4.12 through 6.7 contain an incomplete denylist in isVMLo...</summary><p>Canonical LXD versions 4.12 through 6.7 contain an incomplete denylist in isVMLowLevelOptionForbidden (lxd/project/limits/permissions.go), which omits raw.apparmor and raw.qemu.conf from the set of keys blocked under the restricted.virtual-machines.lowlevel=block project restriction. A remote attacker with can_edit permission on a VM instance in a restricted project can inject an AppArmor rule and a QEMU chardev configuration that bridges the LXD Unix socket into the guest VM, enabling privilege escalation to LXD cluster administrator and subsequently to host root.</p></details></td>
-        <td>2026-04-09</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-62188" target="_blank" rel="noopener">CVE-2025-62188</a></td>
-        <td>7.5</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-200</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p4</small></td>
-        <td>5.25</td>
-        <td><details><summary>An Exposure of Sensitive Information to an Unauthorized Actor vulnerability exis...</summary><p>An Exposure of Sensitive Information to an Unauthorized Actor vulnerability exists in Apache DolphinScheduler.
-
-This vulnerability may allow unauthorized actors to access sensitive information, including database credentials.
-
-
-This issue affects Apache DolphinScheduler versions 3.1.*.
-
-
-Users are recommended to upgrade to:
-
-
-
-
-
-
-
-  *  version ≥ 3.2.0 if using 3.1.x
-
-
-
-
-
-
-As a temporary workaround, users who cannot upgrade immediately may restrict the exposed management endpoints by setting the following environment variable:
-
-
-```
-MANAGEMENT_ENDPOINTS_WEB_EXPOSURE_INCLUDE=health,metrics,prometheus
-```
-
-Alternatively, add the following configuration to the application.yaml file:
-
-
-```
-management:
-   endpoints:
-     web:
-        exposure:
-          include: health,metrics,prometheus
-```
-
-This issue has been reported as CVE-2023-48796:
-
- https://cveprocess.apache.org/cve5/CVE-2023-48796</p></details></td>
         <td>2026-04-09</td>
       </tr>
       <tr>
@@ -1151,12 +1276,12 @@ This issue has been reported as CVE-2023-48796:
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5914" target="_blank" rel="noopener">CVE-2026-5914</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>8.8</td>
+        <td><span class="severity high">HIGH</span></td>
         <td>CWE-843</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p0</small></td>
-        <td>0.00</td>
+        <td>6.16</td>
         <td><details><summary>Type Confusion in CSS in Google Chrome prior to 147.0.7727.55 allowed an attacke...</summary><p>Type Confusion in CSS in Google Chrome prior to 147.0.7727.55 allowed an attacker who convinced a user to install a malicious extension to potentially exploit heap corruption via a crafted Chrome Extension. (Chromium security severity: Low)</p></details></td>
         <td>2026-04-08</td>
       </tr>
@@ -1173,89 +1298,89 @@ This issue has been reported as CVE-2023-48796:
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5912" target="_blank" rel="noopener">CVE-2026-5912</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>8.8</td>
+        <td><span class="severity high">HIGH</span></td>
         <td>CWE-472</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p9</small></td>
-        <td>0.00</td>
+        <td>6.16</td>
         <td><details><summary>Integer overflow in WebRTC in Google Chrome prior to 147.0.7727.55 allowed a rem...</summary><p>Integer overflow in WebRTC in Google Chrome prior to 147.0.7727.55 allowed a remote attacker to perform an out of bounds memory write via a crafted HTML page. (Chromium security severity: Low)</p></details></td>
         <td>2026-04-08</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5911" target="_blank" rel="noopener">CVE-2026-5911</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>4.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-693</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p3</small></td>
-        <td>0.00</td>
+        <td>3.01</td>
         <td><details><summary>Policy bypass in ServiceWorkers in Google Chrome prior to 147.0.7727.55 allowed ...</summary><p>Policy bypass in ServiceWorkers in Google Chrome prior to 147.0.7727.55 allowed a remote attacker to bypass content security policy via a crafted HTML page. (Chromium security severity: Low)</p></details></td>
         <td>2026-04-08</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5910" target="_blank" rel="noopener">CVE-2026-5910</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>8.8</td>
+        <td><span class="severity high">HIGH</span></td>
         <td>CWE-472</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p10</small></td>
-        <td>0.00</td>
+        <td>6.16</td>
         <td><details><summary>Integer overflow in Media in Google Chrome prior to 147.0.7727.55 allowed a remo...</summary><p>Integer overflow in Media in Google Chrome prior to 147.0.7727.55 allowed a remote attacker to potentially exploit heap corruption via a crafted video file. (Chromium security severity: Low)</p></details></td>
         <td>2026-04-08</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5909" target="_blank" rel="noopener">CVE-2026-5909</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>8.8</td>
+        <td><span class="severity high">HIGH</span></td>
         <td>CWE-472</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p10</small></td>
-        <td>0.00</td>
+        <td>6.16</td>
         <td><details><summary>Integer overflow in Media in Google Chrome prior to 147.0.7727.55 allowed a remo...</summary><p>Integer overflow in Media in Google Chrome prior to 147.0.7727.55 allowed a remote attacker to potentially exploit heap corruption via a crafted video file. (Chromium security severity: Low)</p></details></td>
         <td>2026-04-08</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5908" target="_blank" rel="noopener">CVE-2026-5908</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>8.8</td>
+        <td><span class="severity high">HIGH</span></td>
         <td>CWE-472</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p10</small></td>
-        <td>0.00</td>
+        <td>6.16</td>
         <td><details><summary>Integer overflow in Media in Google Chrome prior to 147.0.7727.55 allowed a remo...</summary><p>Integer overflow in Media in Google Chrome prior to 147.0.7727.55 allowed a remote attacker to potentially exploit heap corruption via a crafted video file. (Chromium security severity: Low)</p></details></td>
         <td>2026-04-08</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5907" target="_blank" rel="noopener">CVE-2026-5907</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>8.1</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-125</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p10</small></td>
-        <td>0.00</td>
+        <td>5.67</td>
         <td><details><summary>Insufficient data validation in Media in Google Chrome prior to 147.0.7727.55 al...</summary><p>Insufficient data validation in Media in Google Chrome prior to 147.0.7727.55 allowed a remote attacker to perform an out of bounds memory read via a crafted video file. (Chromium security severity: Low)</p></details></td>
         <td>2026-04-08</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5906" target="_blank" rel="noopener">CVE-2026-5906</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>4.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-451</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p10</small></td>
-        <td>0.00</td>
+        <td>3.01</td>
         <td><details><summary>Incorrect security UI in Omnibox in Google Chrome on Android prior to 147.0.7727...</summary><p>Incorrect security UI in Omnibox in Google Chrome on Android prior to 147.0.7727.55 allowed a remote attacker to spoof the contents of the Omnibox (URL bar) via a crafted HTML page. (Chromium security severity: Low)</p></details></td>
         <td>2026-04-08</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5905" target="_blank" rel="noopener">CVE-2026-5905</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>6.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-451</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p7</small></td>
-        <td>0.00</td>
+        <td>4.55</td>
         <td><details><summary>Incorrect security UI in Permissions in Google Chrome on Windows prior to 147.0....</summary><p>Incorrect security UI in Permissions in Google Chrome on Windows prior to 147.0.7727.55 allowed a remote attacker to perform domain spoofing via a crafted HTML page. (Chromium security severity: Low)</p></details></td>
         <td>2026-04-08</td>
       </tr>
@@ -1679,12 +1804,12 @@ This issue has been reported as CVE-2023-48796:
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5866" target="_blank" rel="noopener">CVE-2026-5866</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>8.8</td>
+        <td><span class="severity high">HIGH</span></td>
         <td>CWE-416</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p11</small></td>
-        <td>0.00</td>
+        <td>6.16</td>
         <td><details><summary>Use after free in Media in Google Chrome prior to 147.0.7727.55 allowed a remote...</summary><p>Use after free in Media in Google Chrome prior to 147.0.7727.55 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: High)</p></details></td>
         <td>2026-04-08</td>
       </tr>
@@ -4044,12 +4169,12 @@ This issue has been reported as CVE-2023-48796:
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39684" target="_blank" rel="noopener">CVE-2026-39684</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
         <td>CWE-98</td>
         <td>&nbsp;</td>
         <td>0.1% <small>p16</small></td>
-        <td>0.00</td>
+        <td>5.25</td>
         <td><details><summary>Improper Control of Filename for Include/Require Statement in PHP Program (&#x27;PHP ...</summary><p>Improper Control of Filename for Include/Require Statement in PHP Program (&#x27;PHP Remote File Inclusion&#x27;) vulnerability in UnTheme OrganicFood organicfood allows PHP Local File Inclusion.This issue affects OrganicFood: from n/a through &lt;= 3.6.4.</p></details></td>
         <td>2026-04-08</td>
       </tr>
@@ -4198,12 +4323,12 @@ This issue has been reported as CVE-2023-48796:
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39670" target="_blank" rel="noopener">CVE-2026-39670</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>6.0</td>
+        <td><span class="severity medium">MEDIUM</span></td>
         <td>CWE-918</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p4</small></td>
-        <td>0.00</td>
+        <td>4.20</td>
         <td><details><summary>Server-Side Request Forgery (SSRF) vulnerability in Brecht Visual Link Preview v...</summary><p>Server-Side Request Forgery (SSRF) vulnerability in Brecht Visual Link Preview visual-link-preview allows Server Side Request Forgery.This issue affects Visual Link Preview: from n/a through &lt;= 2.3.0.</p></details></td>
         <td>2026-04-08</td>
       </tr>
@@ -4264,12 +4389,12 @@ This issue has been reported as CVE-2023-48796:
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39664" target="_blank" rel="noopener">CVE-2026-39664</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>5.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
         <td>CWE-862</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p4</small></td>
-        <td>0.00</td>
+        <td>3.71</td>
         <td><details><summary>Missing Authorization vulnerability in leadrebel Leadrebel leadrebel allows Expl...</summary><p>Missing Authorization vulnerability in leadrebel Leadrebel leadrebel allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects Leadrebel: from n/a through &lt;= 1.0.2.</p></details></td>
         <td>2026-04-08</td>
       </tr>
@@ -4286,12 +4411,12 @@ This issue has been reported as CVE-2023-48796:
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39662" target="_blank" rel="noopener">CVE-2026-39662</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>5.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
         <td>CWE-862</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p4</small></td>
-        <td>0.00</td>
+        <td>3.71</td>
         <td><details><summary>Missing Authorization vulnerability in ProWCPlugins Product Price by Formula for...</summary><p>Missing Authorization vulnerability in ProWCPlugins Product Price by Formula for WooCommerce product-price-by-formula-for-woocommerce allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects Product Price by Formula for WooCommerce: from n/a through &lt;= 2.5.6.</p></details></td>
         <td>2026-04-08</td>
       </tr>
@@ -4308,12 +4433,12 @@ This issue has been reported as CVE-2023-48796:
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39659" target="_blank" rel="noopener">CVE-2026-39659</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>5.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
         <td>CWE-862</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p4</small></td>
-        <td>0.00</td>
+        <td>3.71</td>
         <td><details><summary>Missing Authorization vulnerability in Ultimate Member Ultimate Member ultimate-...</summary><p>Missing Authorization vulnerability in Ultimate Member Ultimate Member ultimate-member allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects Ultimate Member: from n/a through &lt;= 2.11.3.</p></details></td>
         <td>2026-04-08</td>
       </tr>
@@ -4330,12 +4455,12 @@ This issue has been reported as CVE-2023-48796:
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39657" target="_blank" rel="noopener">CVE-2026-39657</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>5.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
         <td>CWE-862</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p4</small></td>
-        <td>0.00</td>
+        <td>3.71</td>
         <td><details><summary>Missing Authorization vulnerability in leadlovers leadlovers forms leadlovers-fo...</summary><p>Missing Authorization vulnerability in leadlovers leadlovers forms leadlovers-forms allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects leadlovers forms: from n/a through &lt;= 1.0.2.</p></details></td>
         <td>2026-04-08</td>
       </tr>
@@ -4374,12 +4499,12 @@ This issue has been reported as CVE-2023-48796:
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39652" target="_blank" rel="noopener">CVE-2026-39652</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>5.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
         <td>CWE-862</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p4</small></td>
-        <td>0.00</td>
+        <td>3.71</td>
         <td><details><summary>Missing Authorization vulnerability in igms iGMS Direct Booking igms-direct-book...</summary><p>Missing Authorization vulnerability in igms iGMS Direct Booking igms-direct-booking allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects iGMS Direct Booking: from n/a through &lt;= 1.3.</p></details></td>
         <td>2026-04-08</td>
       </tr>
@@ -4396,12 +4521,12 @@ This issue has been reported as CVE-2023-48796:
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39650" target="_blank" rel="noopener">CVE-2026-39650</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>5.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
         <td>CWE-862</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p4</small></td>
-        <td>0.00</td>
+        <td>3.71</td>
         <td><details><summary>Missing Authorization vulnerability in Unitech Web UnitechPay unitechpay-paiemen...</summary><p>Missing Authorization vulnerability in Unitech Web UnitechPay unitechpay-paiements-mobile-money allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects UnitechPay: from n/a through &lt;= 1.0.2.</p></details></td>
         <td>2026-04-08</td>
       </tr>
@@ -4418,12 +4543,12 @@ This issue has been reported as CVE-2023-48796:
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39648" target="_blank" rel="noopener">CVE-2026-39648</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>5.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
         <td>CWE-862</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p4</small></td>
-        <td>0.00</td>
+        <td>3.71</td>
         <td><details><summary>Missing Authorization vulnerability in themebeez Cream Blog cream-blog allows Ex...</summary><p>Missing Authorization vulnerability in themebeez Cream Blog cream-blog allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects Cream Blog: from n/a through &lt;= 2.1.7.</p></details></td>
         <td>2026-04-08</td>
       </tr>
@@ -4440,12 +4565,12 @@ This issue has been reported as CVE-2023-48796:
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39646" target="_blank" rel="noopener">CVE-2026-39646</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>6.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
         <td>CWE-79</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p8</small></td>
-        <td>0.00</td>
+        <td>4.55</td>
         <td><details><summary>Improper Neutralization of Input During Web Page Generation (&#x27;Cross-site Scripti...</summary><p>Improper Neutralization of Input During Web Page Generation (&#x27;Cross-site Scripting&#x27;) vulnerability in bozdoz Leaflet Map leaflet-map allows Stored XSS.This issue affects Leaflet Map: from n/a through &lt;= 3.4.4.</p></details></td>
         <td>2026-04-08</td>
       </tr>
@@ -4462,12 +4587,12 @@ This issue has been reported as CVE-2023-48796:
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39644" target="_blank" rel="noopener">CVE-2026-39644</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>5.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
         <td>CWE-862</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p4</small></td>
-        <td>0.00</td>
+        <td>3.71</td>
         <td><details><summary>Missing Authorization vulnerability in Roxnor Wp Ultimate Review wp-ultimate-rev...</summary><p>Missing Authorization vulnerability in Roxnor Wp Ultimate Review wp-ultimate-review allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects Wp Ultimate Review: from n/a through &lt;= 2.3.8.</p></details></td>
         <td>2026-04-08</td>
       </tr>
@@ -4484,12 +4609,12 @@ This issue has been reported as CVE-2023-48796:
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39641" target="_blank" rel="noopener">CVE-2026-39641</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>6.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
         <td>CWE-352</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p0</small></td>
-        <td>0.00</td>
+        <td>4.55</td>
         <td><details><summary>Cross-Site Request Forgery (CSRF) vulnerability in Skywarrior Blackfyre blackfyr...</summary><p>Cross-Site Request Forgery (CSRF) vulnerability in Skywarrior Blackfyre blackfyre allows Cross Site Request Forgery.This issue affects Blackfyre: from n/a through &lt;= 2.5.4.</p></details></td>
         <td>2026-04-08</td>
       </tr>
@@ -4506,12 +4631,12 @@ This issue has been reported as CVE-2023-48796:
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39639" target="_blank" rel="noopener">CVE-2026-39639</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>6.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
         <td>CWE-862</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p4</small></td>
-        <td>0.00</td>
+        <td>4.55</td>
         <td><details><summary>Missing Authorization vulnerability in redpixelstudios RPS Include Content rps-i...</summary><p>Missing Authorization vulnerability in redpixelstudios RPS Include Content rps-include-content allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects RPS Include Content: from n/a through &lt;= 1.2.2.</p></details></td>
         <td>2026-04-08</td>
       </tr>
@@ -4748,12 +4873,12 @@ This issue has been reported as CVE-2023-48796:
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39617" target="_blank" rel="noopener">CVE-2026-39617</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>9.6</td>
+        <td><span class="severity critical">CRITICAL</span></td>
         <td>CWE-352</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p0</small></td>
-        <td>0.00</td>
+        <td>6.72</td>
         <td><details><summary>Cross-Site Request Forgery (CSRF) vulnerability in priyanshumittal Bluestreet bl...</summary><p>Cross-Site Request Forgery (CSRF) vulnerability in priyanshumittal Bluestreet bluestreet allows Cross Site Request Forgery.This issue affects Bluestreet: from n/a through &lt;= 1.7.3.</p></details></td>
         <td>2026-04-08</td>
       </tr>
@@ -7097,7 +7222,7 @@ This issue has been reported as CVE-2023-48796:
         <td>&nbsp;</td>
         <td>0.0% <small>p7</small></td>
         <td>5.67</td>
-        <td><details><summary>ChurchCRM is an open-source church management system. Prior to 7.1.0, The applic...</summary><p>ChurchCRM is an open-source church management system. Prior to 7.1.0, The application is vulnerable to time-based SQL injection due to an improper input validation. Endpoint Reports/ConfirmReportEmail.php?familyId= is not correctly sanitising user input, specifically, the sanitised input is not used to create the SQL query. This vulnerability is fixed in 7.1.0.</p></details></td>
+        <td><details><summary>ChurchCRM is an open-source church management system. Prior to 7.1.0, the applic...</summary><p>ChurchCRM is an open-source church management system. Prior to 7.1.0, the application is vulnerable to time-based SQL injection due to an improper input validation. Endpoint Reports/ConfirmReportEmail.php?familyId= is not correctly sanitising user input, specifically, the sanitised input is not used to create the SQL query. This vulnerability is fixed in 7.1.0.</p></details></td>
         <td>2026-04-07</td>
       </tr>
       <tr>
@@ -7813,36 +7938,6 @@ This issue has been reported as CVE-2023-48796:
         <td>0.1% <small>p28</small></td>
         <td>5.25</td>
         <td><details><summary>Strawberry GraphQL is a library for creating GraphQL APIs. Strawberry up until v...</summary><p>Strawberry GraphQL is a library for creating GraphQL APIs. Strawberry up until version 0.312.3 is vulnerable to an authentication bypass on WebSocket subscription endpoints. The legacy graphql-ws subprotocol handler does not verify that a connection_init handshake has been completed before processing start (subscription) messages. This allows a remote attacker to skip the on_ws_connect authentication hook entirely by connecting with the graphql-ws subprotocol and sending a start message directly, without ever sending connection_init.  This vulnerability is fixed in 0.312.3.</p></details></td>
-        <td>2026-04-07</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32588" target="_blank" rel="noopener">CVE-2026-32588</a></td>
-        <td>6.5</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-400</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p4</small></td>
-        <td>4.55</td>
-        <td><details><summary>Authenticated DoS over CQL in Apache Cassandra 4.0, 4.1, 5.0 allows authenticate...</summary><p>Authenticated DoS over CQL in Apache Cassandra 4.0, 4.1, 5.0 allows authenticated user to raise query latencies via repeated password changes.
-Users are recommended to upgrade to version 4.0.20, 4.1.11, 5.0.7, which fixes this issue.</p></details></td>
-        <td>2026-04-07</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-27315" target="_blank" rel="noopener">CVE-2026-27315</a></td>
-        <td>5.5</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-532</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p3</small></td>
-        <td>3.85</td>
-        <td><details><summary>Sensitive Information Leak in cqlsh in Apache Cassandra 4.0 allows access to sen...</summary><p>Sensitive Information Leak in cqlsh in Apache Cassandra 4.0 allows access to sensitive information, like passwords, from previously executed cqlsh command via  ~/.cassandra/cqlsh_history local file access.
-
-Users are recommended to upgrade to version 4.0.20, which fixes this issue.
-
---
-Description: Cassandra&#x27;s command-line tool, cqlsh, provides a command history feature that allows users to recall previously executed commands using the up/down arrow keys. These history records are saved in the ~/.cassandra/cqlsh_history file in the user&#x27;s home directory.
-
-However, cqlsh does not redact sensitive information when saving command history. This means that if a user executes operations involving passwords (such as logging in or creating users) within cqlsh, these passwords are permanently stored in cleartext in the history file on the disk.</p></details></td>
         <td>2026-04-07</td>
       </tr>
       <tr>
@@ -8701,33 +8796,6 @@ However, cqlsh does not redact sensitive information when saving command history
         <td>0.0% <small>p14</small></td>
         <td>5.95</td>
         <td><details><summary>Insufficient sanitization of dashboard dashlet title links in Checkmk 2.2.0 (EOL...</summary><p>Insufficient sanitization of dashboard dashlet title links in Checkmk 2.2.0 (EOL), Checkmk 2.3.0 before 2.3.0p46, Checkmk 2.4.0 before 2.4.0p25, and Checkmk 2.5.0 (beta) before 2.5.0b3 allows an attacker with dashboard creation privileges to perform stored cross-site scripting (XSS) attacks by tricking a victim into clicking a crafted dashlet title link on a shared dashboard.</p></details></td>
-        <td>2026-04-07</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33866" target="_blank" rel="noopener">CVE-2026-33866</a></td>
-        <td>5.3</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-862</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p9</small></td>
-        <td>3.71</td>
-        <td><details><summary>MLflow is vulnerable to an authorization bypass affecting the AJAX endpoint used...</summary><p>MLflow is vulnerable to an authorization bypass affecting the AJAX endpoint used to download saved model artifacts. Due to missing access‑control validation, a user without permissions to a given experiment can directly query this endpoint and retrieve model artifacts they are not authorized to access.
-
- 
-This issue affects MLflow version through 3.10.1</p></details></td>
-        <td>2026-04-07</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33865" target="_blank" rel="noopener">CVE-2026-33865</a></td>
-        <td>5.1</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-79</td>
-        <td>&nbsp;</td>
-        <td>0.1% <small>p16</small></td>
-        <td>3.57</td>
-        <td><details><summary>MLflow is vulnerable to Stored Cross-Site Scripting (XSS) caused by unsafe parsi...</summary><p>MLflow is vulnerable to Stored Cross-Site Scripting (XSS) caused by unsafe parsing of YAML-based MLmodel artifacts in its web interface. An authenticated attacker can upload a malicious MLmodel file containing a payload that executes when another user views the artifact in the UI. This allows actions such as session hijacking or performing operations on behalf of the victim. 
-
-This issue affects MLflow version through 3.10.1</p></details></td>
         <td>2026-04-07</td>
       </tr>
       <tr>
