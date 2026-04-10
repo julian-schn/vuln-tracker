@@ -1,6 +1,6 @@
 # CVEs — March 2026
 
-_5735 vulnerabilities_
+_5734 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
@@ -1886,8 +1886,6 @@ _5735 vulnerabilities_
 | [CVE-2026-4578](https://nvd.nist.gov/vuln/detail/CVE-2026-4578) | 4.8 | MEDIUM | CWE-79 | No | 0.0% | 3.36 | 2026-03-23 | A vulnerability was determined in code-projects Exam Form Submission 1.0. The impacted element is an unknown function of... |
 | [CVE-2026-3587](https://nvd.nist.gov/vuln/detail/CVE-2026-3587) | 10.0 | CRITICAL | CWE-912 | No | 0.1% | 7.00 | 2026-03-23 | An unauthenticated remote attacker can exploit a hidden function in the CLI prompt to escape the restricted interface, l... |
 | [CVE-2026-4577](https://nvd.nist.gov/vuln/detail/CVE-2026-4577) | 4.8 | MEDIUM | CWE-79 | No | 0.0% | 3.36 | 2026-03-23 | A vulnerability was found in code-projects Exam Form Submission 1.0. The affected element is an unknown function of the... |
-| [CVE-2026-23555](https://nvd.nist.gov/vuln/detail/CVE-2026-23555) | 7.1 | HIGH | CWE-617 | No | 0.0% | 4.97 | 2026-03-23 | Any guest issuing a Xenstore command accessing a node using the (illegal) node path "/local/domain/", will crash xenstor... |
-| [CVE-2026-23554](https://nvd.nist.gov/vuln/detail/CVE-2026-23554) | 7.8 | HIGH | CWE-367 | No | 0.0% | 5.46 | 2026-03-23 | The Intel EPT paging code uses an optimization to defer flushing of any cached EPT state until the p2m lock is dropped,... |
 | [CVE-2025-6229](https://nvd.nist.gov/vuln/detail/CVE-2025-6229) | 6.4 | MEDIUM | CWE-79 | No | 0.0% | 4.48 | 2026-03-23 | The Sina Extension for Elementor (Header Builder, Footer Builter, Theme Builder, Slider, Gallery, Form, Modal, Data Tabl... |
 | [CVE-2026-4603](https://nvd.nist.gov/vuln/detail/CVE-2026-4603) | 5.1 | MEDIUM | CWE-369 | No | 0.0% | 3.57 | 2026-03-23 | Versions of the package jsrsasign before 11.1.1 are vulnerable to Division by zero due to the RSASetPublic/KEYUTIL parsi... |
 | [CVE-2026-4602](https://nvd.nist.gov/vuln/detail/CVE-2026-4602) | 7.7 | HIGH | CWE-681 | No | 0.1% | 5.39 | 2026-03-23 | Versions of the package jsrsasign before 11.1.1 are vulnerable to Incorrect Conversion between Numeric Types due to hand... |
@@ -2259,6 +2257,7 @@ _5735 vulnerabilities_
 | [CVE-2026-4491](https://nvd.nist.gov/vuln/detail/CVE-2026-4491) | 7.4 | HIGH | CWE-119 | No | 0.0% | 5.18 | 2026-03-20 | A vulnerability has been found in Tenda A18 Pro 02.03.02.28. Impacted is the function fromSetIpMacBind of the file /gofo... |
 | [CVE-2026-4490](https://nvd.nist.gov/vuln/detail/CVE-2026-4490) | 7.4 | HIGH | CWE-119 | No | 0.0% | 5.18 | 2026-03-20 | A flaw has been found in Tenda A18 Pro 02.03.02.28. This issue affects the function setSchedWifi of the file /goform/ope... |
 | [CVE-2026-29828](https://nvd.nist.gov/vuln/detail/CVE-2026-29828) | 6.1 | MEDIUM | CWE-79 | No | 0.0% | 4.27 | 2026-03-20 | DooTask v1.6.27 has a Cross-Site Scripting (XSS) vulnerability in the /manage/project/<id> page via the input field proj... |
+| [CVE-2026-22895](https://nvd.nist.gov/vuln/detail/CVE-2026-22895) | 2.2 | LOW | CWE-79 | No | 0.2% | 1.54 | 2026-03-20 | A cross-site scripting (XSS) vulnerability has been reported to affect QuFTP Service. If a remote attacker gains an admi... |
 | [CVE-2025-15607](https://nvd.nist.gov/vuln/detail/CVE-2025-15607) | 7.3 | HIGH | CWE-77 | No | 0.5% | 5.13 | 2026-03-20 | A command injection vulnerability on AX53 v1 occurs in mscd debug functionality due to insufficient input handling, allo... |
 | [CVE-2026-4489](https://nvd.nist.gov/vuln/detail/CVE-2026-4489) | 7.4 | HIGH | CWE-119 | No | 0.0% | 5.18 | 2026-03-20 | A vulnerability was detected in Tenda A18 Pro 02.03.02.28. This vulnerability affects the function form_fast_setting_wif... |
 | [CVE-2026-4488](https://nvd.nist.gov/vuln/detail/CVE-2026-4488) | 7.4 | HIGH | CWE-119 | No | 0.0% | 5.18 | 2026-03-20 | A vulnerability was identified in UTT HiPER 1250GW up to 3.2.7-210907-180535. Affected is the function strcpy of the fil... |
