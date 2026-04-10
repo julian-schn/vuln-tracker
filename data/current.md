@@ -1,9 +1,13 @@
 # CVEs — April 2026
 
-_2016 vulnerabilities_
+_2019 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
+| [CVE-2026-6057](https://nvd.nist.gov/vuln/detail/CVE-2026-6057) | 0.0 | NONE | CWE-22 | No | — | 0.00 | 2026-04-10 | FalkorDB Browser 1.9.3 contains an unauthenticated path traversal vulnerability in the file upload API that allows remot... |
+| [CVE-2026-4162](https://nvd.nist.gov/vuln/detail/CVE-2026-4162) | 7.1 | HIGH | CWE-862 | No | — | 4.97 | 2026-04-10 | The Gravity SMTP plugin for WordPress is vulnerable to Missing Authorization in versions up to, and including, 2.1.4. Th... |
+| [CVE-2021-47961](https://nvd.nist.gov/vuln/detail/CVE-2021-47961) | 8.1 | HIGH | CWE-256 | No | — | 5.67 | 2026-04-10 | A plaintext storage of a password vulnerability in Synology SSL VPN Client before 1.4.5-0684 allows remote attackers to... |
+| [CVE-2021-47960](https://nvd.nist.gov/vuln/detail/CVE-2021-47960) | 6.5 | MEDIUM | CWE-552 | No | — | 4.55 | 2026-04-10 | A files or directories accessible to external parties vulnerability in Synology SSL VPN Client before 1.4.5-0684 allows... |
 | [CVE-2026-6042](https://nvd.nist.gov/vuln/detail/CVE-2026-6042) | 4.8 | MEDIUM | CWE-404 | No | — | 3.36 | 2026-04-10 | A security flaw has been discovered in musl libc up to 1.2.6. Affected is the function iconv of the file src/locale/icon... |
 | [CVE-2026-6038](https://nvd.nist.gov/vuln/detail/CVE-2026-6038) | 6.9 | MEDIUM | CWE-74 | No | — | 4.83 | 2026-04-10 | A vulnerability was identified in code-projects Vehicle Showroom Management System 1.0. This impacts an unknown function... |
 | [CVE-2026-6037](https://nvd.nist.gov/vuln/detail/CVE-2026-6037) | 6.9 | MEDIUM | CWE-74 | No | — | 4.83 | 2026-04-10 | A vulnerability was determined in code-projects Vehicle Showroom Management System 1.0. This affects an unknown function... |
@@ -18,7 +22,6 @@ _2016 vulnerabilities_
 | [CVE-2026-6031](https://nvd.nist.gov/vuln/detail/CVE-2026-6031) | 6.9 | MEDIUM | CWE-74 | No | — | 4.83 | 2026-04-10 | A vulnerability has been found in code-projects Simple IT Discussion Forum 1.0. This affects an unknown function of the... |
 | [CVE-2026-5525](https://nvd.nist.gov/vuln/detail/CVE-2026-5525) | 6.0 | MEDIUM | CWE-121 | No | — | 4.20 | 2026-04-10 | A stack-based buffer overflow vulnerability exists in Notepad++ version 8.9.3 in the file drop handler component. When a... |
 | [CVE-2026-40212](https://nvd.nist.gov/vuln/detail/CVE-2026-40212) | 5.4 | MEDIUM | CWE-79 | No | — | 3.78 | 2026-04-10 | OpenStack Skyline before 5.0.1, 6.0.0, and 7.0.0 has a DOM-based Cross-Site Scripting (XSS) vulnerability in the console... |
-| [CVE-2026-22750](https://nvd.nist.gov/vuln/detail/CVE-2026-22750) | 7.5 | HIGH | N/A | No | — | 5.25 | 2026-04-10 | When configuring SSL bundles in Spring Cloud Gateway by using the configuration property spring.ssl.bundle, the configur... |
 | [CVE-2026-6030](https://nvd.nist.gov/vuln/detail/CVE-2026-6030) | 5.3 | MEDIUM | CWE-74 | No | — | 3.71 | 2026-04-10 | A flaw has been found in itsourcecode Construction Management System 1.0. The impacted element is an unknown function of... |
 | [CVE-2026-6029](https://nvd.nist.gov/vuln/detail/CVE-2026-6029) | 8.9 | HIGH | CWE-77 | No | — | 6.23 | 2026-04-10 | A vulnerability was detected in Totolink A7100RU 7.4cu.2313_b20191024. The affected element is the function setVpnAccoun... |
 | [CVE-2026-6028](https://nvd.nist.gov/vuln/detail/CVE-2026-6028) | 8.9 | HIGH | CWE-77 | No | — | 6.23 | 2026-04-10 | A security vulnerability has been detected in Totolink A7100RU 7.4cu.2313_b20191024. Impacted is the function setPptpSer... |
