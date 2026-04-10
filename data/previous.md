@@ -1,6 +1,6 @@
 # CVEs — March 2026
 
-_5733 vulnerabilities_
+_5734 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
@@ -5359,6 +5359,7 @@ _5733 vulnerabilities_
 | [CVE-2026-27442](https://nvd.nist.gov/vuln/detail/CVE-2026-27442) | 9.3 | CRITICAL | CWE-22 | No | 0.0% | 6.51 | 2026-03-04 | The GINA web interface in SEPPmail Secure Email Gateway before version 15.0.1 does not properly check attachment filenam... |
 | [CVE-2026-27441](https://nvd.nist.gov/vuln/detail/CVE-2026-27441) | 9.5 | CRITICAL | CWE-78 | No | 0.1% | 6.65 | 2026-03-04 | SEPPmail Secure Email Gateway before version 15.0.1 insufficiently neutralizes the PDF encryption password, allowing OS... |
 | [CVE-2026-1236](https://nvd.nist.gov/vuln/detail/CVE-2026-1236) | 6.4 | MEDIUM | CWE-79 | No | 0.0% | 4.48 | 2026-03-04 | The Envira Gallery for WordPress plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'justified_ga... |
+| [CVE-2025-66168](https://nvd.nist.gov/vuln/detail/CVE-2025-66168) | 5.4 | MEDIUM | CWE-190 | No | 0.0% | 3.78 | 2026-03-04 | WARNING:  Users of 6.x should upgrade to 6.2.4 or later as the fix was missed in previous 6.x releases.  See the  follow... |
 | [CVE-2026-29120](https://nvd.nist.gov/vuln/detail/CVE-2026-29120) | 9.2 | CRITICAL | CWE-798 | No | 0.0% | 6.44 | 2026-03-04 | The /root/anaconda-ks.cfg installation configuration file in International Datacasting Corporation (IDC) SFX Series(SFX2... |
 | [CVE-2026-29119](https://nvd.nist.gov/vuln/detail/CVE-2026-29119) | 8.8 | HIGH | CWE-798 | No | 0.3% | 6.17 | 2026-03-04 | International Datacasting Corporation (IDC) SFX Series SuperFlex(SFX2100) SatelliteReceiver contains hardcoded and insec... |
 | [CVE-2026-28778](https://nvd.nist.gov/vuln/detail/CVE-2026-28778) | 7.9 | HIGH | CWE-798 | No | 0.4% | 5.54 | 2026-03-04 | International Datacasting Corporation (IDC) SFX Series SuperFlex Satellite Receiver contains undocumented, hardcoded/ins... |

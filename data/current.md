@@ -1,9 +1,14 @@
 # CVEs — April 2026
 
-_2019 vulnerabilities_
+_2025 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
+| [CVE-2026-5774](https://nvd.nist.gov/vuln/detail/CVE-2026-5774) | 6.0 | MEDIUM | CWE-362 | No | — | 4.20 | 2026-04-10 | Improper synchronization of the userTokens map in the API server in Canonical Juju 4.0.5, 3.6.20, and 2.9.56 may allow a... |
+| [CVE-2026-5412](https://nvd.nist.gov/vuln/detail/CVE-2026-5412) | 9.9 | CRITICAL | CWE-285 | No | — | 6.93 | 2026-04-10 | In Juju versions prior to 2.9.57 and 3.6.21, an authorization issue exists in the Controller facade. An authenticated us... |
+| [CVE-2026-5777](https://nvd.nist.gov/vuln/detail/CVE-2026-5777) | 8.7 | HIGH | CWE-306 | No | — | 6.09 | 2026-04-10 | This vulnerability exists in the Atom 3x Projector due to improper exposure of the Android Debug Bridge (ADB) service ov... |
+| [CVE-2026-39304](https://nvd.nist.gov/vuln/detail/CVE-2026-39304) | 0.0 | NONE | N/A | No | — | 0.00 | 2026-04-10 | Denial of Service via Out of Memory vulnerability in Apache ActiveMQ Client, Apache ActiveMQ Broker, Apache ActiveMQ.  A... |
+| [CVE-2026-31412](https://nvd.nist.gov/vuln/detail/CVE-2026-31412) | 0.0 | NONE | N/A | No | — | 0.00 | 2026-04-10 | In the Linux kernel, the following vulnerability has been resolved:  usb: gadget: f_mass_storage: Fix potential integer... |
 | [CVE-2026-6057](https://nvd.nist.gov/vuln/detail/CVE-2026-6057) | 0.0 | NONE | CWE-22 | No | — | 0.00 | 2026-04-10 | FalkorDB Browser 1.9.3 contains an unauthenticated path traversal vulnerability in the file upload API that allows remot... |
 | [CVE-2026-4162](https://nvd.nist.gov/vuln/detail/CVE-2026-4162) | 7.1 | HIGH | CWE-862 | No | — | 4.97 | 2026-04-10 | The Gravity SMTP plugin for WordPress is vulnerable to Missing Authorization in versions up to, and including, 2.1.4. Th... |
 | [CVE-2021-47961](https://nvd.nist.gov/vuln/detail/CVE-2021-47961) | 8.1 | HIGH | CWE-256 | No | — | 5.67 | 2026-04-10 | A plaintext storage of a password vulnerability in Synology SSL VPN Client before 1.4.5-0684 allows remote attackers to... |
@@ -22,6 +27,7 @@ _2019 vulnerabilities_
 | [CVE-2026-6031](https://nvd.nist.gov/vuln/detail/CVE-2026-6031) | 6.9 | MEDIUM | CWE-74 | No | — | 4.83 | 2026-04-10 | A vulnerability has been found in code-projects Simple IT Discussion Forum 1.0. This affects an unknown function of the... |
 | [CVE-2026-5525](https://nvd.nist.gov/vuln/detail/CVE-2026-5525) | 6.0 | MEDIUM | CWE-121 | No | — | 4.20 | 2026-04-10 | A stack-based buffer overflow vulnerability exists in Notepad++ version 8.9.3 in the file drop handler component. When a... |
 | [CVE-2026-40212](https://nvd.nist.gov/vuln/detail/CVE-2026-40212) | 5.4 | MEDIUM | CWE-79 | No | — | 3.78 | 2026-04-10 | OpenStack Skyline before 5.0.1, 6.0.0, and 7.0.0 has a DOM-based Cross-Site Scripting (XSS) vulnerability in the console... |
+| [CVE-2026-22750](https://nvd.nist.gov/vuln/detail/CVE-2026-22750) | 7.5 | HIGH | CWE-15 | No | — | 5.25 | 2026-04-10 | When configuring SSL bundles in Spring Cloud Gateway by using the configuration property spring.ssl.bundle, the configur... |
 | [CVE-2026-6030](https://nvd.nist.gov/vuln/detail/CVE-2026-6030) | 5.3 | MEDIUM | CWE-74 | No | — | 3.71 | 2026-04-10 | A flaw has been found in itsourcecode Construction Management System 1.0. The impacted element is an unknown function of... |
 | [CVE-2026-6029](https://nvd.nist.gov/vuln/detail/CVE-2026-6029) | 8.9 | HIGH | CWE-77 | No | — | 6.23 | 2026-04-10 | A vulnerability was detected in Totolink A7100RU 7.4cu.2313_b20191024. The affected element is the function setVpnAccoun... |
 | [CVE-2026-6028](https://nvd.nist.gov/vuln/detail/CVE-2026-6028) | 8.9 | HIGH | CWE-77 | No | — | 6.23 | 2026-04-10 | A security vulnerability has been detected in Totolink A7100RU 7.4cu.2313_b20191024. Impacted is the function setPptpSer... |

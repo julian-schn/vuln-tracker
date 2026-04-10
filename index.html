@@ -11,7 +11,7 @@
     <header>
       <h1>vuln-tracker</h1>
       <p class="subtitle">CVEs from the National Vulnerability Database — current and previous month</p>
-      <p class="last-updated">Last updated: 2026-04-10 11:01 UTC</p>
+      <p class="last-updated">Last updated: 2026-04-10 13:24 UTC</p>
     </header>
     <nav>
       <a href="top50.html">&#9733; Top 50</a>
@@ -25,7 +25,7 @@
     </nav>
     <main>
     <section>
-      <h2>Current Month — April 2026 <span class="count">(2019)</span></h2>
+      <h2>Current Month — April 2026 <span class="count">(2025)</span></h2>
       <div class="table-wrapper">
         <table>
           <thead>
@@ -42,6 +42,91 @@
             </tr>
           </thead>
           <tbody>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5774" target="_blank" rel="noopener">CVE-2026-5774</a></td>
+        <td>6.0</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-362</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.20</td>
+        <td><details><summary>Improper synchronization of the userTokens map in the API server in Canonical Ju...</summary><p>Improper synchronization of the userTokens map in the API server in Canonical Juju 4.0.5, 3.6.20, and 2.9.56 may allow an authenticated user to possibly cause a denial of service on the server or possibly reuse a single-use discharge token.</p></details></td>
+        <td>2026-04-10</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5412" target="_blank" rel="noopener">CVE-2026-5412</a></td>
+        <td>9.9</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-285</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.93</td>
+        <td><details><summary>In Juju versions prior to 2.9.57 and 3.6.21, an authorization issue exists in th...</summary><p>In Juju versions prior to 2.9.57 and 3.6.21, an authorization issue exists in the Controller facade. An authenticated user can call the CloudSpec API method to extract the cloud credentials used to bootstrap the controller. This allows a low-privileged user to access sensitive credentials. This issue is resolved in Juju versions 2.9.57 and 3.6.21.</p></details></td>
+        <td>2026-04-10</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5777" target="_blank" rel="noopener">CVE-2026-5777</a></td>
+        <td>8.7</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-306</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.09</td>
+        <td><details><summary>This vulnerability exists in the Atom 3x Projector due to improper exposure of t...</summary><p>This vulnerability exists in the Atom 3x Projector due to improper exposure of the Android Debug Bridge (ADB) service over the local network without authentication or access controls. An unauthenticated attacker on the same network can exploit this vulnerability to obtain root-level access, leading to complete compromise of the targeted device.</p></details></td>
+        <td>2026-04-10</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39304" target="_blank" rel="noopener">CVE-2026-39304</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Denial of Service via Out of Memory vulnerability in Apache ActiveMQ Client, Apa...</summary><p>Denial of Service via Out of Memory vulnerability in Apache ActiveMQ Client, Apache ActiveMQ Broker, Apache ActiveMQ.
+
+ActiveMQ NIO SSL transports do not correctly handle TLSv1.3 handshake KeyUpdates triggered by clients. This makes it possible for a client to rapidly trigger updates which causes the broker to exhaust all its memory in the SSL engine leading to DoS.
+
+Note: TLS versions before TLSv1.3 (such as TLSv1.2) are broken but are not vulnerable to OOM. Previous TLS versions require a full handshake renegotiation which causes a connection to hang but not OOM. This is fixed as well.
+This issue affects Apache ActiveMQ Client: before 5.19.4, from 6.0.0 before 6.2.4; Apache ActiveMQ Broker: before 5.19.4, from 6.0.0 before 6.2.4; Apache ActiveMQ: before 5.19.4, from 6.0.0 before 6.2.4.
+
+Users are recommended to upgrade to version 6.2.4 or 5.19.5, which fixes the issue.</p></details></td>
+        <td>2026-04-10</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-31412" target="_blank" rel="noopener">CVE-2026-31412</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>In the Linux kernel, the following vulnerability has been resolved:
+
+usb: gadget...</summary><p>In the Linux kernel, the following vulnerability has been resolved:
+
+usb: gadget: f_mass_storage: Fix potential integer overflow in check_command_size_in_blocks()
+
+The `check_command_size_in_blocks()` function calculates the data size
+in bytes by left shifting `common-&gt;data_size_from_cmnd` by the block
+size (`common-&gt;curlun-&gt;blkbits`). However, it does not validate whether
+this shift operation will cause an integer overflow.
+
+Initially, the block size is set up in `fsg_lun_open()` , and the
+`common-&gt;data_size_from_cmnd` is set up in `do_scsi_command()`. During
+initialization, there is no integer overflow check for the interaction
+between two variables.
+
+So if a malicious USB host sends a SCSI READ or WRITE command
+requesting a large amount of data (`common-&gt;data_size_from_cmnd`), the
+left shift operation can wrap around. This results in a truncated data
+size, which can bypass boundary checks and potentially lead to memory
+corruption or out-of-bounds accesses.
+
+Fix this by using the check_shl_overflow() macro to safely perform the
+shift and catch any overflows.</p></details></td>
+        <td>2026-04-10</td>
+      </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6057" target="_blank" rel="noopener">CVE-2026-6057</a></td>
         <td>0.0</td>
@@ -238,6 +323,18 @@
         <td>&mdash;</td>
         <td>3.78</td>
         <td><details><summary>OpenStack Skyline before 5.0.1, 6.0.0, and 7.0.0 has a DOM-based Cross-Site Scri...</summary><p>OpenStack Skyline before 5.0.1, 6.0.0, and 7.0.0 has a DOM-based Cross-Site Scripting (XSS) vulnerability in the console because document.write is used unsafely, which is relevant in scenarios where administrators use the console web interface to view instance console logs.</p></details></td>
+        <td>2026-04-10</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-22750" target="_blank" rel="noopener">CVE-2026-22750</a></td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-15</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.25</td>
+        <td><details><summary>When configuring SSL bundles in Spring Cloud Gateway by using the configuration ...</summary><p>When configuring SSL bundles in Spring Cloud Gateway by using the configuration property spring.ssl.bundle, the configuration was silently ignored and the default SSL configuration was used instead.
+Note: The 4.2.x branch is no longer under open source support. If you are using Spring Cloud Gateway 4.2.0 and are not an enterprise customer, you can upgrade to any Spring Cloud Gateway 4.2.x release newer than 4.2.0  available on Maven Centeral https://repo1.maven.org/maven2/org/springframework/cloud/spring-cloud-gateway/ . Ideally if you are not an enterprise customer, you should be upgrading to 5.0.2 or 5.1.1 which are the current supported open source releases.</p></details></td>
         <td>2026-04-10</td>
       </tr>
       <tr>
@@ -22256,7 +22353,7 @@
       </div>
     </section>
     <section>
-      <h2>Previous Month — March 2026 <span class="count">(5733)</span></h2>
+      <h2>Previous Month — March 2026 <span class="count">(5734)</span></h2>
       <div class="table-wrapper">
         <table>
           <thead>
@@ -81176,6 +81273,35 @@
         <td>0.0% <small>p11</small></td>
         <td>4.48</td>
         <td><details><summary>The Envira Gallery for WordPress plugin for WordPress is vulnerable to Stored Cr...</summary><p>The Envira Gallery for WordPress plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the &#x27;justified_gallery_theme&#x27; parameter in all versions up to, and including, 1.12.3 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with Author-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.</p></details></td>
+        <td>2026-03-04</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-66168" target="_blank" rel="noopener">CVE-2025-66168</a></td>
+        <td>5.4</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-190</td>
+        <td>&nbsp;</td>
+        <td>0.0% <small>p12</small></td>
+        <td>3.78</td>
+        <td><details><summary>WARNING:
+
+Users of 6.x should upgrade to 6.2.4 or later as the fix was missed in...</summary><p>WARNING:
+
+Users of 6.x should upgrade to 6.2.4 or later as the fix was missed in previous 6.x releases.
+
+See the  following for more details:
+ https://activemq.apache.org/security-advisories.data/CVE-2026-40046-announcement.txt 
+ https://www.cve.org/CVERecord?id=CVE-2026-40046 
+
+
+
+Original Report:
+
+Apache ActiveMQ does not properly validate the remaining length field which may lead to an overflow during the decoding of malformed packets. When this integer overflow occurs, ActiveMQ may incorrectly compute the total Remaining Length and subsequently misinterpret the payload as multiple MQTT control packets which makes the broker susceptible to unexpected behavior when interacting with non-compliant clients. This behavior violates the MQTT v3.1.1 specification, which restricts Remaining Length to a maximum of 4 bytes. The scenario occurs on established connections after the authentication process. Brokers that are not enabling mqtt transport connectors are not impacted.
+
+This issue affects Apache ActiveMQ: before 5.19.2, 6.0.0 to 6.1.8, and 6.2.0
+
+Users are recommended to upgrade to version 5.19.2, 6.1.9, or 6.2.1, which fixes the issue.</p></details></td>
         <td>2026-03-04</td>
       </tr>
       <tr>
