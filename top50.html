@@ -11,7 +11,7 @@
     <header>
       <h1>vuln-tracker — Top 50</h1>
       <p class="subtitle">The 50 most important CVEs from the current and previous month, ranked by VAP score (70% CVSS + 30% EPSS)</p>
-      <p class="last-updated">Last updated: 2026-04-10 13:24 UTC</p>
+      <p class="last-updated">Last updated: 2026-04-10 14:54 UTC</p>
     </header>
     <nav>
       <a href="index.html">&larr; All CVEs</a>
@@ -52,6 +52,17 @@
         <td>2026-03-06</td>
       </tr>
       <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-3055" target="_blank" rel="noopener">CVE-2026-3055</a></td>
+        <td>9.3</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-125</td>
+        <td><span class="kev-yes">&#10003;</span></td>
+        <td>50.8% <small>p97</small></td>
+        <td>8.04</td>
+        <td><details><summary>Insufficient input validation in NetScaler ADC and NetScaler Gateway when config...</summary><p>Insufficient input validation in NetScaler ADC and NetScaler Gateway when configured as a SAML IDP leading to memory overread</p></details></td>
+        <td>2026-03-23</td>
+      </tr>
+      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-1492" target="_blank" rel="noopener">CVE-2026-1492</a></td>
         <td>9.8</td>
         <td><span class="severity critical">CRITICAL</span></td>
@@ -63,15 +74,15 @@
         <td>2026-03-03</td>
       </tr>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-3055" target="_blank" rel="noopener">CVE-2026-3055</a></td>
-        <td>9.3</td>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35616" target="_blank" rel="noopener">CVE-2026-35616</a></td>
+        <td>9.8</td>
         <td><span class="severity critical">CRITICAL</span></td>
-        <td>CWE-125</td>
+        <td>CWE-284</td>
         <td><span class="kev-yes">&#10003;</span></td>
-        <td>44.3% <small>p97</small></td>
-        <td>7.84</td>
-        <td><details><summary>Insufficient input validation in NetScaler ADC and NetScaler Gateway when config...</summary><p>Insufficient input validation in NetScaler ADC and NetScaler Gateway when configured as a SAML IDP leading to memory overread</p></details></td>
-        <td>2026-03-23</td>
+        <td>25.3% <small>p96</small></td>
+        <td>7.62</td>
+        <td><details><summary>A improper access control vulnerability in Fortinet FortiClientEMS 7.4.5 through...</summary><p>A improper access control vulnerability in Fortinet FortiClientEMS 7.4.5 through 7.4.6 may allow an unauthenticated attacker to execute unauthorized code or commands via crafted requests.</p></details></td>
+        <td>2026-04-04</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-28289" target="_blank" rel="noopener">CVE-2026-28289</a></td>
@@ -85,6 +96,28 @@
         <td>2026-03-03</td>
       </tr>
       <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-28501" target="_blank" rel="noopener">CVE-2026-28501</a></td>
+        <td>9.8</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-89</td>
+        <td>&nbsp;</td>
+        <td>20.9% <small>p95</small></td>
+        <td>7.49</td>
+        <td><details><summary>WWBN AVideo is an open source video platform. Prior to version 24.0, an unauthen...</summary><p>WWBN AVideo is an open source video platform. Prior to version 24.0, an unauthenticated SQL Injection vulnerability exists in AVideo within the objects/videos.json.php and objects/video.php components. The application fails to properly sanitize the catName parameter when it is supplied via a JSON-formatted POST request body. Because JSON input is parsed and merged into $_REQUEST after global security checks are executed, the payload bypasses the existing sanitization mechanisms. This issue has been patched in version 24.0.</p></details></td>
+        <td>2026-03-06</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33478" target="_blank" rel="noopener">CVE-2026-33478</a></td>
+        <td>10.0</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-78</td>
+        <td>&nbsp;</td>
+        <td>16.2% <small>p94</small></td>
+        <td>7.49</td>
+        <td><details><summary>WWBN AVideo is an open source video platform. In versions up to and including 26...</summary><p>WWBN AVideo is an open source video platform. In versions up to and including 26.0, multiple vulnerabilities in AVideo&#x27;s CloneSite plugin chain together to allow a completely unauthenticated attacker to achieve remote code execution. The `clones.json.php` endpoint exposes clone secret keys without authentication, which can be used to trigger a full database dump via `cloneServer.json.php`. The dump contains admin password hashes stored as MD5, which are trivially crackable. With admin access, the attacker exploits an OS command injection in the rsync command construction in `cloneClient.json.php` to execute arbitrary system commands. Commit c85d076375fab095a14170df7ddb27058134d38c contains a patch.</p></details></td>
+        <td>2026-03-23</td>
+      </tr>
+      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4257" target="_blank" rel="noopener">CVE-2026-4257</a></td>
         <td>9.8</td>
         <td><span class="severity critical">CRITICAL</span></td>
@@ -96,15 +129,15 @@
         <td>2026-03-30</td>
       </tr>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33478" target="_blank" rel="noopener">CVE-2026-33478</a></td>
-        <td>10.0</td>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-3584" target="_blank" rel="noopener">CVE-2026-3584</a></td>
+        <td>9.8</td>
         <td><span class="severity critical">CRITICAL</span></td>
-        <td>CWE-78</td>
+        <td>CWE-94</td>
         <td>&nbsp;</td>
-        <td>14.8% <small>p94</small></td>
-        <td>7.45</td>
-        <td><details><summary>WWBN AVideo is an open source video platform. In versions up to and including 26...</summary><p>WWBN AVideo is an open source video platform. In versions up to and including 26.0, multiple vulnerabilities in AVideo&#x27;s CloneSite plugin chain together to allow a completely unauthenticated attacker to achieve remote code execution. The `clones.json.php` endpoint exposes clone secret keys without authentication, which can be used to trigger a full database dump via `cloneServer.json.php`. The dump contains admin password hashes stored as MD5, which are trivially crackable. With admin access, the attacker exploits an OS command injection in the rsync command construction in `cloneClient.json.php` to execute arbitrary system commands. Commit c85d076375fab095a14170df7ddb27058134d38c contains a patch.</p></details></td>
-        <td>2026-03-23</td>
+        <td>17.1% <small>p94</small></td>
+        <td>7.37</td>
+        <td><details><summary>The Kali Forms plugin for WordPress is vulnerable to Remote Code Execution in al...</summary><p>The Kali Forms plugin for WordPress is vulnerable to Remote Code Execution in all versions up to, and including, 2.4.9 via the &#x27;form_process&#x27; function. This is due to the &#x27;prepare_post_data&#x27; function mapping user-supplied keys directly into internal placeholder storage, combined with the use of &#x27;call_user_func&#x27; on these placeholder values. This makes it possible for unauthenticated attackers to execute code on the server.</p></details></td>
+        <td>2026-03-20</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33634" target="_blank" rel="noopener">CVE-2026-33634</a></td>
@@ -149,17 +182,6 @@
         <td>7.15</td>
         <td><details><summary>NocoBase is an AI-powered no-code/low-code platform for building business applic...</summary><p>NocoBase is an AI-powered no-code/low-code platform for building business applications and enterprise solutions. Prior to version 2.0.28, NocoBase&#x27;s Workflow Script Node executes user-supplied JavaScript inside a Node.js vm sandbox with a custom require allowlist (controlled by WORKFLOW_SCRIPT_MODULES env var). However, the console object passed into the sandbox context exposes host-realm WritableWorkerStdio stream objects via console._stdout and console._stderr. An authenticated attacker can traverse the prototype chain to escape the sandbox and achieve Remote Code Execution as root. This issue has been patched in version 2.0.28.</p></details></td>
         <td>2026-03-31</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35616" target="_blank" rel="noopener">CVE-2026-35616</a></td>
-        <td>9.8</td>
-        <td><span class="severity critical">CRITICAL</span></td>
-        <td>CWE-284</td>
-        <td><span class="kev-yes">&#10003;</span></td>
-        <td>6.0% <small>p90</small></td>
-        <td>7.04</td>
-        <td><details><summary>A improper access control vulnerability in Fortinet FortiClientEMS 7.4.5 through...</summary><p>A improper access control vulnerability in Fortinet FortiClientEMS 7.4.5 through 7.4.6 may allow an unauthenticated attacker to execute unauthorized code or commands via crafted requests.</p></details></td>
-        <td>2026-04-04</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-28775" target="_blank" rel="noopener">CVE-2026-28775</a></td>
@@ -294,6 +316,17 @@
         <td>2026-03-31</td>
       </tr>
       <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34208" target="_blank" rel="noopener">CVE-2026-34208</a></td>
+        <td>10.0</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-693</td>
+        <td>&nbsp;</td>
+        <td>0.1% <small>p33</small></td>
+        <td>7.00</td>
+        <td><details><summary>SandboxJS is a JavaScript sandboxing library. Prior to 0.8.36, SandboxJS blocks ...</summary><p>SandboxJS is a JavaScript sandboxing library. Prior to 0.8.36, SandboxJS blocks direct assignment to global objects (for example Math.random = ...), but this protection can be bypassed through an exposed callable constructor path: this.constructor.call(target, attackerObject). Because this.constructor resolves to the internal SandboxGlobal function and Function.prototype.call is allowed, attacker code can write arbitrary properties into host global objects and persist those mutations across sandbox instances in the same process. This vulnerability is fixed in 0.8.36.</p></details></td>
+        <td>2026-04-06</td>
+      </tr>
+      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34938" target="_blank" rel="noopener">CVE-2026-34938</a></td>
         <td>10.0</td>
         <td><span class="severity critical">CRITICAL</span></td>
@@ -402,17 +435,6 @@
         <td>7.00</td>
         <td><details><summary>SandboxJS is a JavaScript sandboxing library. Prior to 0.8.34, it is possible to...</summary><p>SandboxJS is a JavaScript sandboxing library. Prior to 0.8.34, it is possible to obtain arrays containing Function, which allows escaping the sandbox. Given an array containing Function, and Object.fromEntries, it is possible to construct {[p]: Function} where p is any constructible property. This vulnerability is fixed in 0.8.34.</p></details></td>
         <td>2026-03-13</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34208" target="_blank" rel="noopener">CVE-2026-34208</a></td>
-        <td>10.0</td>
-        <td><span class="severity critical">CRITICAL</span></td>
-        <td>CWE-693</td>
-        <td>&nbsp;</td>
-        <td>0.1% <small>p18</small></td>
-        <td>7.00</td>
-        <td><details><summary>SandboxJS is a JavaScript sandboxing library. Prior to 0.8.36, SandboxJS blocks ...</summary><p>SandboxJS is a JavaScript sandboxing library. Prior to 0.8.36, SandboxJS blocks direct assignment to global objects (for example Math.random = ...), but this protection can be bypassed through an exposed callable constructor path: this.constructor.call(target, attackerObject). Because this.constructor resolves to the internal SandboxGlobal function and Function.prototype.call is allowed, attacker code can write arbitrary properties into host global objects and persist those mutations across sandbox instances in the same process. This vulnerability is fixed in 0.8.36.</p></details></td>
-        <td>2026-04-06</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-30966" target="_blank" rel="noopener">CVE-2026-30966</a></td>
@@ -567,28 +589,6 @@
         <td>7.00</td>
         <td><details><summary>File Browser is a file managing interface for uploading, deleting, previewing, r...</summary><p>File Browser is a file managing interface for uploading, deleting, previewing, renaming, and editing files within a specified directory. In versions 2.61.2 and below, any unauthenticated visitor can register a full administrator account when self-registration (signup = true) is enabled and the default user permissions have perm.admin = true. The signup handler blindly applies all default settings (including Perm.Admin) to the new user without any server-side guard that strips admin from self-registered accounts. The signupHandler is supposed to create unprivileged accounts for new visitors. It contains no explicit user.Perm.Admin = false reset after applying defaults. If an administrator (intentionally or accidentally) configures defaults.perm.admin = true and also enables signup, every account created via the public registration endpoint is an administrator with full control over all files, users, and server settings. This issue has been resolved in version 2.62.0.</p></details></td>
         <td>2026-03-20</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4725" target="_blank" rel="noopener">CVE-2026-4725</a></td>
-        <td>10.0</td>
-        <td><span class="severity critical">CRITICAL</span></td>
-        <td>CWE-416</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p1</small></td>
-        <td>7.00</td>
-        <td><details><summary>Sandbox escape due to use-after-free in the Graphics: Canvas2D component. This v...</summary><p>Sandbox escape due to use-after-free in the Graphics: Canvas2D component. This vulnerability affects Firefox &lt; 149 and Thunderbird &lt; 149.</p></details></td>
-        <td>2026-03-24</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-30836" target="_blank" rel="noopener">CVE-2026-30836</a></td>
-        <td>10.0</td>
-        <td><span class="severity critical">CRITICAL</span></td>
-        <td>CWE-287</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p0</small></td>
-        <td>7.00</td>
-        <td><details><summary>Step CA is an online certificate authority for secure, automated certificate man...</summary><p>Step CA is an online certificate authority for secure, automated certificate management for DevOps. Versions 0.30.0-rc6 and below do not safeguard against unauthenticated certificate issuance through the SCEP UpdateReq. This issue has been fixed in version 0.30.0.</p></details></td>
-        <td>2026-03-19</td>
       </tr>
             </tbody>
           </table>
