@@ -11,7 +11,7 @@
     <header>
       <h1>vuln-tracker</h1>
       <p class="subtitle">CVEs from the National Vulnerability Database — current and previous month</p>
-      <p class="last-updated">Last updated: 2026-04-10 22:43 UTC</p>
+      <p class="last-updated">Last updated: 2026-04-11 02:46 UTC</p>
     </header>
     <nav>
       <a href="top50.html">&#9733; Top 50</a>
@@ -25,7 +25,7 @@
     </nav>
     <main>
     <section>
-      <h2>Current Month — April 2026 <span class="count">(2160)</span></h2>
+      <h2>Current Month — April 2026 <span class="count">(2182)</span></h2>
       <div class="table-wrapper">
         <table>
           <thead>
@@ -43,52 +43,400 @@
           </thead>
           <tbody>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40199" target="_blank" rel="noopener">CVE-2026-40199</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>CWE-130</td>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5226" target="_blank" rel="noopener">CVE-2026-5226</a></td>
+        <td>6.1</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
         <td>&nbsp;</td>
         <td>&mdash;</td>
-        <td>0.00</td>
-        <td><details><summary>Net::CIDR::Lite versions before 0.23 for Perl mishandles IPv4 mapped IPv6 addres...</summary><p>Net::CIDR::Lite versions before 0.23 for Perl mishandles IPv4 mapped IPv6 addresses, which may allow IP ACL bypass.
-
-_pack_ipv6() includes the sentinel byte from _pack_ipv4() when building the packed representation of IPv4 mapped addresses like ::ffff:192.168.1.1. This produces an 18 byte value instead of 17 bytes, misaligning the IPv4 part of the address.
-
-The wrong length causes incorrect results in mask operations (bitwise AND truncates to the shorter operand) and in find() / bin_find() which use Perl string comparison (lt/gt). This can cause find() to incorrectly match or miss addresses.
-
-Example:
-
-  my $cidr = Net::CIDR::Lite-&gt;new(&quot;::ffff:192.168.1.0/120&quot;);
-  $cidr-&gt;find(&quot;::ffff:192.168.2.0&quot;);  # incorrectly returns true
-
-This is triggered by valid RFC 4291 IPv4 mapped addresses (::ffff:x.x.x.x).
-
-See also CVE-2026-40198, a related issue in the same function affecting malformed IPv6 addresses.</p></details></td>
-        <td>2026-04-10</td>
+        <td>4.27</td>
+        <td><details><summary>The Optimole – Optimize Images in Real Time plugin for WordPress is vulnerable t...</summary><p>The Optimole – Optimize Images in Real Time plugin for WordPress is vulnerable to Reflected Cross-Site Scripting via URL paths in versions up to, and including, 4.2.3 This is due to insufficient output escaping on user-supplied URL paths in the get_current_url() function, which are inserted into JavaScript code via str_replace() without proper JavaScript context escaping in the replace_content() function. This makes it possible for unauthenticated attackers to inject arbitrary web scripts in pages that execute if they can successfully trick a user into performing an action such as clicking on a link.</p></details></td>
+        <td>2026-04-11</td>
       </tr>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40198" target="_blank" rel="noopener">CVE-2026-40198</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>CWE-1286</td>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5217" target="_blank" rel="noopener">CVE-2026-5217</a></td>
+        <td>7.2</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-79</td>
         <td>&nbsp;</td>
         <td>&mdash;</td>
-        <td>0.00</td>
-        <td><details><summary>Net::CIDR::Lite versions before 0.23 for Perl does not validate IPv6 group count...</summary><p>Net::CIDR::Lite versions before 0.23 for Perl does not validate IPv6 group count, which may allow IP ACL bypass.
+        <td>5.04</td>
+        <td><details><summary>The Optimole – Optimize Images | Convert WebP &amp; AVIF | CDN &amp; Lazy Load | Image O...</summary><p>The Optimole – Optimize Images | Convert WebP &amp; AVIF | CDN &amp; Lazy Load | Image Optimization plugin for WordPress is vulnerable to Stored Cross-Site Scripting in all versions up to, and including, 4.2.2. This is due to insufficient input sanitization and output escaping on the user-supplied &#x27;s&#x27; parameter (srcset descriptor) in the unauthenticated /wp-json/optimole/v1/optimizations REST endpoint. The endpoint validates requests using an HMAC signature and timestamp, but these values are exposed directly in the frontend HTML making them accessible to any visitor. The plugin uses sanitize_text_field() on the descriptor value of rest.php, which strips HTML tags but does not escape double quotes. The poisoned descriptor is then stored via transients (backed by the WordPress options table) and later retrieved and injected verbatim into the srcset attribute of tag_replacer.php without proper escaping. This makes it possible for unauthenticated attackers to inject arbitrary web scripts into pages that will execute whenever a user accesses the injected page.</p></details></td>
+        <td>2026-04-11</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5207" target="_blank" rel="noopener">CVE-2026-5207</a></td>
+        <td>6.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-89</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.55</td>
+        <td><details><summary>The LifterLMS plugin for WordPress is vulnerable to SQL Injection via the &#x27;order...</summary><p>The LifterLMS plugin for WordPress is vulnerable to SQL Injection via the &#x27;order&#x27; parameter in all versions up to, and including, 9.2.1. This is due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query. This makes it possible for authenticated attackers, with Instructor-level access and above who have the edit_post capability on the quiz, to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database.</p></details></td>
+        <td>2026-04-11</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5144" target="_blank" rel="noopener">CVE-2026-5144</a></td>
+        <td>8.8</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-269</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.16</td>
+        <td><details><summary>The BuddyPress Groupblog plugin for WordPress is vulnerable to Privilege Escalat...</summary><p>The BuddyPress Groupblog plugin for WordPress is vulnerable to Privilege Escalation in all versions up to, and including, 1.9.3. This is due to the group blog settings handler accepting the `groupblog-blogid`, `default-member`, and `groupblog-silent-add` parameters from user input without proper authorization checks. The `groupblog-blogid` parameter allows any group admin (including Subscribers who create their own group) to associate their group with any blog on the Multisite network, including the main site (blog ID 1). The `default-member` parameter accepts any WordPress role, including `administrator`, without validation against a whitelist. When combined with `groupblog-silent-add`, any user who joins the attacker&#x27;s group is automatically added to the targeted blog with the injected role. This makes it possible for authenticated attackers, with Subscriber-level access and above, to escalate any user (including themselves via a second account) to Administrator on the main site of the Multisite network.</p></details></td>
+        <td>2026-04-11</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4979" target="_blank" rel="noopener">CVE-2026-4979</a></td>
+        <td>5.0</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-918</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.50</td>
+        <td><details><summary>The UsersWP – Front-end login form, User Registration, User Profile &amp; Members Di...</summary><p>The UsersWP – Front-end login form, User Registration, User Profile &amp; Members Directory plugin for WP plugin for WordPress is vulnerable to blind Server-Side Request Forgery in all versions up to, and including, 1.2.58. This is due to insufficient URL origin validation in the process_image_crop() method when processing avatar/banner image crop operations. The function accepts a user-controlled URL via the uwp_crop POST parameter and only validates it using esc_url() for sanitization and wp_check_filetype() for extension verification, without enforcing that the URL references a local uploads file. The URL is then passed to uwp_resizeThumbnailImage() which uses it in PHP image processing functions (getimagesize(), imagecreatefrom*()) that support URL wrappers and perform outbound HTTP requests. This makes it possible for authenticated attackers with subscriber-level access and above to coerce the WordPress server into making arbitrary HTTP requests to attacker-controlled or internal network destinations, enabling internal network scanning and potential access to sensitive services.</p></details></td>
+        <td>2026-04-11</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4895" target="_blank" rel="noopener">CVE-2026-4895</a></td>
+        <td>6.4</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.48</td>
+        <td><details><summary>The GreenShift - Animation and Page Builder Blocks plugin for WordPress is vulne...</summary><p>The GreenShift - Animation and Page Builder Blocks plugin for WordPress is vulnerable to Stored Cross-Site Scripting in versions up to, and including, 12.8.9 This is due to insufficient input sanitization and output escaping in the gspb_greenShift_block_script_assets() function. The function uses str_replace() to insert &#x27;fetchpriority=&quot;high&quot;&#x27; before &#x27;src=&#x27; attributes when processing greenshift-blocks/image blocks with the disablelazy attribute enabled. Because this replacement operates on the entire HTML string without parsing, contributors can inject the string &#x27;src=&#x27; into HTML attribute values (such as class attributes). When the str_replace executes, the double quotes in the replacement string break out of the attribute context, allowing injection of malicious HTML attributes like onfocus with JavaScript payloads. This makes it possible for authenticated attackers, with contributor-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.</p></details></td>
+        <td>2026-04-11</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-3498" target="_blank" rel="noopener">CVE-2026-3498</a></td>
+        <td>6.4</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.48</td>
+        <td><details><summary>The BlockArt Blocks plugin for WordPress is vulnerable to Stored Cross-Site Scri...</summary><p>The BlockArt Blocks plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the &#x27;clientId&#x27; block attribute in all versions up to, and including, 2.2.15. This is due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with Author-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.</p></details></td>
+        <td>2026-04-11</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-3371" target="_blank" rel="noopener">CVE-2026-3371</a></td>
+        <td>4.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-639</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.01</td>
+        <td><details><summary>The Tutor LMS – eLearning and online course solution plugin for WordPress is vul...</summary><p>The Tutor LMS – eLearning and online course solution plugin for WordPress is vulnerable to Insecure Direct Object Reference in all versions up to, and including, 3.9.7. This is due to missing authorization checks in the `save_course_content_order()` private method, which is called unconditionally by the `tutor_update_course_content_order` AJAX handler. While the handler&#x27;s `content_parent` branch includes a `can_user_manage()` check, the `save_course_content_order()` call processes attacker-supplied `tutor_topics_lessons_sorting` JSON without any ownership or capability verification. This makes it possible for authenticated attackers with Subscriber-level access or above to detach lessons from topics, reorder course content, and reassign lessons between topics in any course, including admin-owned courses, by sending a crafted AJAX request with manipulated topic and lesson IDs.</p></details></td>
+        <td>2026-04-11</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-3358" target="_blank" rel="noopener">CVE-2026-3358</a></td>
+        <td>5.4</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.78</td>
+        <td><details><summary>The Tutor LMS – eLearning and online course solution plugin for WordPress is vul...</summary><p>The Tutor LMS – eLearning and online course solution plugin for WordPress is vulnerable to unauthorized private course enrollment in all versions up to, and including, 3.9.7. This is due to missing post_status validation in the `enroll_now()` and `course_enrollment()` functions. Both enrollment endpoints verify the nonce, user authentication, and whether the course is purchasable, but fail to check if the course has a `private` post_status. This makes it possible for authenticated attackers with Subscriber-level access or above to enroll in private courses by sending a crafted POST request with the target course ID. The enrollment record is created in the database and the private course title and enrollment status are exposed in the subscriber&#x27;s dashboard, though WordPress core access control prevents the subscriber from viewing the actual course content (returns 404). Enrollment in private courses should be restricted to users with the `read_private_posts` capability.</p></details></td>
+        <td>2026-04-11</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5496" target="_blank" rel="noopener">CVE-2026-5496</a></td>
+        <td>7.8</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-843</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.46</td>
+        <td><details><summary>Labcenter Electronics Proteus PDSPRJ File Parsing Type Confusion Remote Code Exe...</summary><p>Labcenter Electronics Proteus PDSPRJ File Parsing Type Confusion Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Labcenter Electronics Proteus. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.
 
-_pack_ipv6() does not check that uncompressed IPv6 addresses (without ::) have exactly 8 hex groups. Inputs like &quot;abcd&quot;, &quot;1:2:3&quot;, or &quot;1:2:3:4:5:6:7&quot; are accepted and produce packed values of wrong length (3, 7, or 15 bytes instead of 17).
+The specific flaw exists within the parsing of PDSPRJ files. The issue results from the lack of proper validation of user-supplied data, which can result in a type confusion condition. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-25717.</p></details></td>
+        <td>2026-04-11</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5495" target="_blank" rel="noopener">CVE-2026-5495</a></td>
+        <td>7.8</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-787</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.46</td>
+        <td><details><summary>Labcenter Electronics Proteus PDSPRJ File Parsing Out-Of-Bounds Write Remote Cod...</summary><p>Labcenter Electronics Proteus PDSPRJ File Parsing Out-Of-Bounds Write Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Labcenter Electronics Proteus. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.
 
-The packed values are used internally for mask and comparison operations. find() and bin_find() use Perl string comparison (lt/gt) on these values, and comparing strings of different lengths gives wrong results. This can cause find() to incorrectly report an address as inside or outside a range.
+The specific flaw exists within the processing of PDSPRJ files. The issue results from the lack of proper validation of user-supplied data, which can result in a write past the end of an allocated buffer. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-25720.</p></details></td>
+        <td>2026-04-11</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5494" target="_blank" rel="noopener">CVE-2026-5494</a></td>
+        <td>7.8</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-787</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.46</td>
+        <td><details><summary>Labcenter Electronics Proteus PDSPRJ File Parsing Out-Of-Bounds Write Remote Cod...</summary><p>Labcenter Electronics Proteus PDSPRJ File Parsing Out-Of-Bounds Write Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Labcenter Electronics Proteus. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.
 
-Example:
+The specific flaw exists within the processing of PDSPRJ files. The issue results from the lack of proper validation of user-supplied data, which can result in a write past the end of an allocated buffer. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-25719.</p></details></td>
+        <td>2026-04-11</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5493" target="_blank" rel="noopener">CVE-2026-5493</a></td>
+        <td>7.8</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-787</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.46</td>
+        <td><details><summary>Labcenter Electronics Proteus PDSPRJ File Parsing Out-Of-Bounds Write Remote Cod...</summary><p>Labcenter Electronics Proteus PDSPRJ File Parsing Out-Of-Bounds Write Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Labcenter Electronics Proteus. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.
 
-  my $cidr = Net::CIDR::Lite-&gt;new(&quot;::/8&quot;);
-  $cidr-&gt;find(&quot;1:2:3&quot;);  # invalid input, incorrectly returns true
+The specific flaw exists within the parsing of PDSPRJ files. The issue results from the lack of proper validation of user-supplied data, which can result in a write past the end of an allocated buffer. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-25718.</p></details></td>
+        <td>2026-04-11</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5059" target="_blank" rel="noopener">CVE-2026-5059</a></td>
+        <td>9.8</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-78</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.86</td>
+        <td><details><summary>aws-mcp-server AWS CLI Command Injection Remote Code Execution Vulnerability. Th...</summary><p>aws-mcp-server AWS CLI Command Injection Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of aws-mcp-server. Authentication is not required to exploit this vulnerability.
 
-This is the same class of input validation issue as CVE-2021-47154 (IPv4 leading zeros) previously fixed in this module.
+The specific flaw exists within the handling of the allowed commands list. The issue results from the lack of proper validation of a user-supplied string before using it to execute a system call. An attacker can leverage this vulnerability to execute code in the context of the MCP server. Was ZDI-CAN-27969.</p></details></td>
+        <td>2026-04-11</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5058" target="_blank" rel="noopener">CVE-2026-5058</a></td>
+        <td>9.8</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-78</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.86</td>
+        <td><details><summary>aws-mcp-server Command Injection Remote Code Execution Vulnerability. This vulne...</summary><p>aws-mcp-server Command Injection Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of aws-mcp-server. Authentication is not required to exploit this vulnerability.
 
-See also CVE-2026-40199, a related issue in the same function affecting IPv4 mapped IPv6 addresses.</p></details></td>
-        <td>2026-04-10</td>
+The specific flaw exists within the handling of the allowed commands list. The issue results from the lack of proper validation of a user-supplied string before using it to execute a system call. An attacker can leverage this vulnerability to execute code in the context of the MCP server. Was ZDI-CAN-27968.</p></details></td>
+        <td>2026-04-11</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5055" target="_blank" rel="noopener">CVE-2026-5055</a></td>
+        <td>7.8</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-427</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.46</td>
+        <td><details><summary>NoMachine Uncontrolled Search Path Element Local Privilege Escalation Vulnerabil...</summary><p>NoMachine Uncontrolled Search Path Element Local Privilege Escalation Vulnerability. This vulnerability allows local attackers to escalate privileges on affected installations of NoMachine.  An attacker must first obtain the ability to execute low-privileged code on the target system in order to exploit this vulnerability.
+
+The specific flaw exists within the NoMachine Device Server. The product loads a library from an unsecured location. An attacker can leverage this vulnerability to escalate privileges and execute arbitrary code in the context of SYSTEM. Was ZDI-CAN-28494.</p></details></td>
+        <td>2026-04-11</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5054" target="_blank" rel="noopener">CVE-2026-5054</a></td>
+        <td>7.8</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-73</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.46</td>
+        <td><details><summary>NoMachine External Control of File Path Local Privilege Escalation Vulnerability...</summary><p>NoMachine External Control of File Path Local Privilege Escalation Vulnerability. This vulnerability allows local attackers to escalate privileges on affected installations of NoMachine. An attacker must first obtain the ability to execute low-privileged code on the target system in order to exploit this vulnerability.
+
+The specific flaw exists within the handling of command line parameters. The issue results from the lack of proper validation of a user-supplied path prior to using it in file operations. An attacker can leverage this vulnerability to escalate privileges and execute arbitrary code in the context of root. Was ZDI-CAN-28630.</p></details></td>
+        <td>2026-04-11</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5053" target="_blank" rel="noopener">CVE-2026-5053</a></td>
+        <td>7.1</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-73</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.97</td>
+        <td><details><summary>NoMachine External Control of File Path Arbitrary File Deletion Vulnerability. T...</summary><p>NoMachine External Control of File Path Arbitrary File Deletion Vulnerability. This vulnerability allows local attackers to delete arbitrary files on affected installations of NoMachine. An attacker must first obtain the ability to execute low-privileged code on the target system in order to exploit this vulnerability.
+
+The specific flaw exists within the handling of environment variables. The issue results from the lack of proper validation of a user-supplied path prior to using it in file operations. An attacker can leverage this vulnerability to delete files in the context of root. Was ZDI-CAN-28644.</p></details></td>
+        <td>2026-04-11</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4158" target="_blank" rel="noopener">CVE-2026-4158</a></td>
+        <td>7.3</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-427</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.11</td>
+        <td><details><summary>KeePassXC OpenSSL Configuration Uncontrolled Search Path Element Local Privilege...</summary><p>KeePassXC OpenSSL Configuration Uncontrolled Search Path Element Local Privilege Escalation Vulnerability. This vulnerability allows local attackers to escalate privileges on affected installations of KeePassXC. An attacker must first obtain the ability to execute low-privileged code on the target system in order to exploit this vulnerability.
+
+The specific flaw exists within the configuration of OpenSSL. The product loads configuration from an unsecured location. An attacker can leverage this vulnerability to escalate privileges and execute arbitrary code in the context of KeePassXC when run by a target user on the system. Was ZDI-CAN-29156.</p></details></td>
+        <td>2026-04-11</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4157" target="_blank" rel="noopener">CVE-2026-4157</a></td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-78</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.25</td>
+        <td><details><summary>ChargePoint Home Flex revssh Service Command Injection Remote Code Execution Vul...</summary><p>ChargePoint Home Flex revssh Service Command Injection Remote Code Execution Vulnerability. This vulnerability allows network-adjacent attackers to execute arbitrary code on affected installations of ChargePoint Home Flex devices. Authentication is not required to exploit this vulnerability.
+
+The specific flaw exists within the handling of OCPP messages. The issue results from the lack of proper validation of a user-supplied string before using it to execute a system call. An attacker can leverage this vulnerability to execute code in the context of root. Was ZDI-CAN-26338.</p></details></td>
+        <td>2026-04-11</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4156" target="_blank" rel="noopener">CVE-2026-4156</a></td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-121</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.25</td>
+        <td><details><summary>ChargePoint Home Flex OCPP getpreq Stack-based Buffer Overflow Remote Code Execu...</summary><p>ChargePoint Home Flex OCPP getpreq Stack-based Buffer Overflow Remote Code Execution Vulnerability. This vulnerability allows network-adjacent attackers to execute arbitrary code on affected installations of ChargePoint Home Flex EV chargers. Authentication is not required to exploit this vulnerability.
+
+The specific flaw exists within the handling of OCPP messages. The issue results from the lack of proper validation of the length of user-supplied data prior to copying it to a fixed-length stack-based buffer. An attacker can leverage this vulnerability to execute code in the context of root. Was ZDI-CAN-26339.</p></details></td>
+        <td>2026-04-11</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4155" target="_blank" rel="noopener">CVE-2026-4155</a></td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-540</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.25</td>
+        <td><details><summary>ChargePoint Home Flex Inclusion of Sensitive Information in Source Code Informat...</summary><p>ChargePoint Home Flex Inclusion of Sensitive Information in Source Code Information Disclosure Vulnerability. This vulnerability allows remote attackers to disclose sensitive information on affected installations of ChargePoint Home Flex charging stations. Authentication is not required to exploit this vulnerability.
+
+The specific flaw exists within the genpw script. The issue results from the inclusion of a secret cryptographic seed value within the script. An attacker can leverage this vulnerability to disclose stored credentials, leading to further compromise. Was ZDI-CAN-26340.</p></details></td>
+        <td>2026-04-11</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4154" target="_blank" rel="noopener">CVE-2026-4154</a></td>
+        <td>7.8</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-190</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.46</td>
+        <td><details><summary>GIMP XPM File Parsing Integer Overflow Remote Code Execution Vulnerability. This...</summary><p>GIMP XPM File Parsing Integer Overflow Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of GIMP. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.
+
+The specific flaw exists within the parsing of XPM files. The issue results from the lack of proper validation of user-supplied data, which can result in an integer overflow before allocating a buffer. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-28901.</p></details></td>
+        <td>2026-04-11</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4153" target="_blank" rel="noopener">CVE-2026-4153</a></td>
+        <td>7.8</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-122</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.46</td>
+        <td><details><summary>GIMP PSP File Parsing Heap-based Buffer Overflow Remote Code Execution Vulnerabi...</summary><p>GIMP PSP File Parsing Heap-based Buffer Overflow Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of GIMP. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.
+
+The specific flaw exists within the parsing of PSP files. The issue results from the lack of proper validation of the length of user-supplied data prior to copying it to a heap-based buffer. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-28874.</p></details></td>
+        <td>2026-04-11</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4152" target="_blank" rel="noopener">CVE-2026-4152</a></td>
+        <td>7.8</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-122</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.46</td>
+        <td><details><summary>GIMP JP2 File Parsing Heap-based Buffer Overflow Remote Code Execution Vulnerabi...</summary><p>GIMP JP2 File Parsing Heap-based Buffer Overflow Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of GIMP. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.
+
+The specific flaw exists within the parsing of JP2 files. The issue results from the lack of proper validation of the length of user-supplied data prior to copying it to a heap-based buffer. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-28863.</p></details></td>
+        <td>2026-04-11</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4151" target="_blank" rel="noopener">CVE-2026-4151</a></td>
+        <td>7.8</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-190</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.46</td>
+        <td><details><summary>GIMP ANI File Parsing Integer Overflow Remote Code Execution Vulnerability. This...</summary><p>GIMP ANI File Parsing Integer Overflow Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of GIMP. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.
+
+The specific flaw exists within the parsing of ANI files. The issue results from the lack of proper validation of user-supplied data, which can result in an integer overflow before allocating a buffer. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-28813.</p></details></td>
+        <td>2026-04-11</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4150" target="_blank" rel="noopener">CVE-2026-4150</a></td>
+        <td>7.8</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-190</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.46</td>
+        <td><details><summary>GIMP PSD File Parsing Integer Overflow Remote Code Execution Vulnerability. This...</summary><p>GIMP PSD File Parsing Integer Overflow Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of GIMP. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.
+
+The specific flaw exists within the parsing of PSD files. The issue results from the lack of proper validation of user-supplied data, which can result in an integer overflow before allocating a buffer. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-28807.</p></details></td>
+        <td>2026-04-11</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4149" target="_blank" rel="noopener">CVE-2026-4149</a></td>
+        <td>10.0</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-119</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>7.00</td>
+        <td><details><summary>Sonos Era 300 SMB Response Out-Of-Bounds Access Remote Code Execution Vulnerabil...</summary><p>Sonos Era 300 SMB Response Out-Of-Bounds Access Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Sonos Era 300. Authentication is not required to exploit this vulnerability.
+
+The specific flaw exists within the handling of the DataOffset field within SMB responses. The issue results from the lack of proper validation of user-supplied data, which can result in a memory access past the end of an allocated buffer. An attacker can leverage this vulnerability to execute code in the context of the kernel. Was ZDI-CAN-28345.</p></details></td>
+        <td>2026-04-11</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40354" target="_blank" rel="noopener">CVE-2026-40354</a></td>
+        <td>2.9</td>
+        <td><span class="severity low">LOW</span></td>
+        <td>CWE-61</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>2.03</td>
+        <td><details><summary>Flatpak xdg-desktop-portal before 1.20.4 and 1.21.x before 1.21.1 allows any Fla...</summary><p>Flatpak xdg-desktop-portal before 1.20.4 and 1.21.x before 1.21.1 allows any Flatpak app to trash any file in the host context via a symlink attack on g_file_trash.</p></details></td>
+        <td>2026-04-11</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-3691" target="_blank" rel="noopener">CVE-2026-3691</a></td>
+        <td>5.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-200</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.71</td>
+        <td><details><summary>OpenClaw Client PKCE Verifier Information Disclosure Vulnerability. This vulnera...</summary><p>OpenClaw Client PKCE Verifier Information Disclosure Vulnerability. This vulnerability allows remote attackers to disclose stored credentials on affected installations of OpenClaw. User interaction is required to exploit this vulnerability in that the target must initiate an OAuth authorization flow.
+
+The specific flaw exists within the implementation of OAuth authorization. The issue results from the exposure of sensitive data in the authorization URL query string. An attacker can leverage this vulnerability to disclose stored credentials, leading to further compromise. Was ZDI-CAN-29381.</p></details></td>
+        <td>2026-04-11</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-3690" target="_blank" rel="noopener">CVE-2026-3690</a></td>
+        <td>7.4</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-291</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.18</td>
+        <td><details><summary>OpenClaw Canvas Authentication Bypass Vulnerability. This vulnerability allows r...</summary><p>OpenClaw Canvas Authentication Bypass Vulnerability. This vulnerability allows remote attackers to bypass authentication on affected installations of OpenClaw. Authentication is not required to exploit this vulnerability.
+
+The specific flaw exists within the implementation of the the authentication function for canvas endpoints. The issue results from improper implementation of authentication. An attacker can leverage this vulnerability to bypass authentication on the system. Was ZDI-CAN-29311.</p></details></td>
+        <td>2026-04-11</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-3689" target="_blank" rel="noopener">CVE-2026-3689</a></td>
+        <td>6.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-22</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.55</td>
+        <td><details><summary>OpenClaw Canvas Path Traversal Information Disclosure Vulnerability. This vulner...</summary><p>OpenClaw Canvas Path Traversal Information Disclosure Vulnerability. This vulnerability allows remote attackers to disclose sensitive information on affected installations of OpenClaw. Authentication is required to exploit this vulnerability.
+
+The specific flaw exists within the handling of the path parameters provided to the canvas gateway endpoint. The issue results from the lack of proper validation of a user-supplied path prior to using it in file operations. An attacker can leverage this vulnerability to disclose information in the context of the service account. Was ZDI-CAN-29312.</p></details></td>
+        <td>2026-04-11</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33119" target="_blank" rel="noopener">CVE-2026-33119</a></td>
@@ -110,22 +458,6 @@ See also CVE-2026-40199, a related issue in the same function affecting IPv4 map
         <td>&mdash;</td>
         <td>3.01</td>
         <td><details><summary>Microsoft Edge (Chromium-based) Spoofing Vulnerability</summary><p>Microsoft Edge (Chromium-based) Spoofing Vulnerability</p></details></td>
-        <td>2026-04-10</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5724" target="_blank" rel="noopener">CVE-2026-5724</a></td>
-        <td>6.3</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-306</td>
-        <td>&nbsp;</td>
-        <td>&mdash;</td>
-        <td>4.41</td>
-        <td><details><summary>The frontend gRPC server&#x27;s streaming interceptor chain did not include the autho...</summary><p>The frontend gRPC server&#x27;s streaming interceptor chain did not include the authorization interceptor. When a ClaimMapper and Authorizer are configured, unary RPCs enforce authentication and authorization, but the streaming AdminService/StreamWorkflowReplicationMessages endpoint accepted requests without credentials. This endpoint is registered on the same port as WorkflowService and cannot be disabled independently. An attacker with network access to the frontend port could open the replication stream without authentication. Data exfiltration is possible, but  only when a configured replication target is correctly configured and the attacker has knowledge of the cluster configuration, as the history service validates cluster IDs and peer membership before returning replication data.
-
-
-
-
-Temporal Cloud is not affected.</p></details></td>
         <td>2026-04-10</td>
       </tr>
       <tr>
@@ -3341,36 +3673,6 @@ Temporal Cloud is not affected.</p></details></td>
         <td>2026-04-09</td>
       </tr>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34486" target="_blank" rel="noopener">CVE-2026-34486</a></td>
-        <td>7.5</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-311</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p0</small></td>
-        <td>5.25</td>
-        <td><details><summary>Missing Encryption of Sensitive Data vulnerability in Apache Tomcat due to the f...</summary><p>Missing Encryption of Sensitive Data vulnerability in Apache Tomcat due to the fix for CVE-2026-29146 allowing the bypass of the EncryptInterceptor.
-
-This issue affects Apache Tomcat: 11.0.20, 10.1.53, 9.0.116.
-
-Users are recommended to upgrade to version 11.0.21, 10.1.54 or 9.0.117, which fix the issue.</p></details></td>
-        <td>2026-04-09</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34483" target="_blank" rel="noopener">CVE-2026-34483</a></td>
-        <td>7.5</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-116</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p4</small></td>
-        <td>5.25</td>
-        <td><details><summary>Improper Encoding or Escaping of Output vulnerability in the JsonAccessLogValve ...</summary><p>Improper Encoding or Escaping of Output vulnerability in the JsonAccessLogValve component of Apache Tomcat.
-
-This issue affects Apache Tomcat: from 11.0.0-M1 through 11.0.20, from 10.1.0-M1 through 10.1.53, from 9.0.40 through 9.0.116.
-
-Users are recommended to upgrade to version 11.0.21, 10.1.54 or 9.0.117 , which fix the issue.</p></details></td>
-        <td>2026-04-09</td>
-      </tr>
-      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-29923" target="_blank" rel="noopener">CVE-2026-29923</a></td>
         <td>0.0</td>
         <td><span class="severity none">NONE</span></td>
@@ -4039,24 +4341,6 @@ Users are recommended to upgrade to version 11.0.21, 10.1.54 or 9.0.117 , which 
         <td>0.1% <small>p19</small></td>
         <td>3.71</td>
         <td><details><summary>fast-jwt provides fast JSON Web Token (JWT) implementation. Prior to 6.2.1, usin...</summary><p>fast-jwt provides fast JSON Web Token (JWT) implementation. Prior to 6.2.1, using certain modifiers on RegExp objects in the allowedAud, allowedIss, allowedSub, allowedJti, or allowedNonce options in verify functions can cause certain unintended behaviours. This is because some modifiers are stateful and will cause failures in every second verification attempt regardless of the validity of the token provided. Such modifiers are /g (global matching) and /y (sticky matching). This does NOT allow invalid tokens to be accepted, only for valid tokens to be improperly rejected in some configurations. Instead it causes 50% of valid authentication requests to fail in an alternating pattern. This vulnerability is fixed in 6.2.1.</p></details></td>
-        <td>2026-04-09</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34020" target="_blank" rel="noopener">CVE-2026-34020</a></td>
-        <td>7.5</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-598</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p4</small></td>
-        <td>5.25</td>
-        <td><details><summary>Use of GET Request Method With Sensitive Query Strings vulnerability in Apache O...</summary><p>Use of GET Request Method With Sensitive Query Strings vulnerability in Apache OpenMeetings.
-
-The REST login endpoint uses HTTP GET method with username and password passed as query parameters. Please check references regarding possible impact
-
-
-This issue affects Apache OpenMeetings: from 3.1.3 before 9.0.0.
-
-Users are recommended to upgrade to version 9.0.0, which fixes the issue.</p></details></td>
         <td>2026-04-09</td>
       </tr>
       <tr>
@@ -10393,131 +10677,6 @@ Users are recommended to upgrade to version 9.0.0, which fixes the issue.</p></d
         <td>0.2% <small>p36</small></td>
         <td>6.51</td>
         <td><details><summary>Flatpak is a Linux application sandboxing and distribution framework. Prior to 1...</summary><p>Flatpak is a Linux application sandboxing and distribution framework. Prior to 1.16.4, the Flatpak portal accepts paths in the sandbox-expose options which can be app-controlled symlinks pointing at arbitrary paths. Flatpak run mounts the resolved host path in the sandbox. This gives apps access to all host files and can be used as a primitive to gain code execution in the host context. This vulnerability is fixed in 1.16.4.</p></details></td>
-        <td>2026-04-07</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-28390" target="_blank" rel="noopener">CVE-2026-28390</a></td>
-        <td>7.5</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-476</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p7</small></td>
-        <td>5.25</td>
-        <td><details><summary>Issue summary: During processing of a crafted CMS EnvelopedData message
-with Key...</summary><p>Issue summary: During processing of a crafted CMS EnvelopedData message
-with KeyTransportRecipientInfo a NULL pointer dereference can happen.
-
-Impact summary: Applications that process attacker-controlled CMS data may
-crash before authentication or cryptographic operations occur resulting in
-Denial of Service.
-
-When a CMS EnvelopedData message that uses KeyTransportRecipientInfo with
-RSA-OAEP encryption is processed, the optional parameters field of
-RSA-OAEP SourceFunc algorithm identifier is examined without checking
-for its presence. This results in a NULL pointer dereference if the field
-is missing.
-
-Applications and services that call CMS_decrypt() on untrusted input
-(e.g., S/MIME processing or CMS-based protocols) are vulnerable.
-
-The FIPS modules in 3.6, 3.5, 3.4, 3.3 and 3.0 are not affected by this
-issue, as the affected code is outside the OpenSSL FIPS module boundary.</p></details></td>
-        <td>2026-04-07</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-28389" target="_blank" rel="noopener">CVE-2026-28389</a></td>
-        <td>7.5</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-476</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p7</small></td>
-        <td>5.25</td>
-        <td><details><summary>Issue summary: During processing of a crafted CMS EnvelopedData message
-with Key...</summary><p>Issue summary: During processing of a crafted CMS EnvelopedData message
-with KeyAgreeRecipientInfo a NULL pointer dereference can happen.
-
-Impact summary: Applications that process attacker-controlled CMS data may
-crash before authentication or cryptographic operations occur resulting in
-Denial of Service.
-
-When a CMS EnvelopedData message that uses KeyAgreeRecipientInfo is
-processed, the optional parameters field of KeyEncryptionAlgorithmIdentifier
-is examined without checking for its presence. This results in a NULL
-pointer dereference if the field is missing.
-
-Applications and services that call CMS_decrypt() on untrusted input
-(e.g., S/MIME processing or CMS-based protocols) are vulnerable.
-
-The FIPS modules in 3.6, 3.5, 3.4, 3.3 and 3.0 are not affected by this
-issue, as the affected code is outside the OpenSSL FIPS module boundary.</p></details></td>
-        <td>2026-04-07</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-28388" target="_blank" rel="noopener">CVE-2026-28388</a></td>
-        <td>7.5</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-476</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p1</small></td>
-        <td>5.25</td>
-        <td><details><summary>Issue summary: When a delta CRL that contains a Delta CRL Indicator extension
-is...</summary><p>Issue summary: When a delta CRL that contains a Delta CRL Indicator extension
-is processed a NULL pointer dereference might happen if the required CRL
-Number extension is missing.
-
-Impact summary: A NULL pointer dereference can trigger a crash which
-leads to a Denial of Service for an application.
-
-When CRL processing and delta CRL processing is enabled during X.509
-certificate verification, the delta CRL processing does not check
-whether the CRL Number extension is NULL before dereferencing it.
-When a malformed delta CRL file is being processed, this parameter
-can be NULL, causing a NULL pointer dereference.
-
-Exploiting this issue requires the X509_V_FLAG_USE_DELTAS flag to be enabled in
-the verification context, the certificate being verified to contain a
-freshestCRL extension or the base CRL to have the EXFLAG_FRESHEST flag set, and
-an attacker to provide a malformed CRL to an application that processes it.
-
-The vulnerability is limited to Denial of Service and cannot be escalated to
-achieve code execution or memory disclosure. For that reason the issue was
-assessed as Low severity according to our Security Policy.
-
-The FIPS modules in 3.6, 3.5, 3.4, 3.3 and 3.0 are not affected by this issue,
-as the affected code is outside the OpenSSL FIPS module boundary.</p></details></td>
-        <td>2026-04-07</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-28386" target="_blank" rel="noopener">CVE-2026-28386</a></td>
-        <td>9.1</td>
-        <td><span class="severity critical">CRITICAL</span></td>
-        <td>CWE-125</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p5</small></td>
-        <td>6.37</td>
-        <td><details><summary>Issue summary: Applications using AES-CFB128 encryption or decryption on
-systems...</summary><p>Issue summary: Applications using AES-CFB128 encryption or decryption on
-systems with AVX-512 and VAES support can trigger an out-of-bounds read
-of up to 15 bytes when processing partial cipher blocks.
-
-Impact summary: This out-of-bounds read may trigger a crash which leads to
-Denial of Service for an application if the input buffer ends at a memory
-page boundary and the following page is unmapped. There is no information
-disclosure as the over-read bytes are not written to output.
-
-The vulnerable code path is only reached when processing partial blocks
-(when a previous call left an incomplete block and the current call provides
-fewer bytes than needed to complete it). Additionally, the input buffer
-must be positioned at a page boundary with the following page unmapped.
-CFB mode is not used in TLS/DTLS protocols, which use CBC, GCM, CCM, or
-ChaCha20-Poly1305 instead. For these reasons the issue was assessed as
-Low severity according to our Security Policy.
-
-Only x86-64 systems with AVX-512 and VAES instruction support are affected.
-Other architectures and systems without VAES support use different code
-paths that are not affected.
-
-OpenSSL FIPS module in 3.6 version is affected by this issue.</p></details></td>
         <td>2026-04-07</td>
       </tr>
       <tr>
@@ -23934,7 +24093,7 @@ OpenSSL FIPS module in 3.6 version is affected by this issue.</p></details></td>
       </div>
     </section>
     <section>
-      <h2>Previous Month — March 2026 <span class="count">(5734)</span></h2>
+      <h2>Previous Month — March 2026 <span class="count">(5733)</span></h2>
       <div class="table-wrapper">
         <table>
           <thead>
@@ -48732,22 +48891,6 @@ OpenSSL FIPS module in 3.6 version is affected by this issue.</p></details></td>
         <td>0.0% <small>p9</small></td>
         <td>4.27</td>
         <td><details><summary>DooTask v1.6.27 has a Cross-Site Scripting (XSS) vulnerability in the /manage/pr...</summary><p>DooTask v1.6.27 has a Cross-Site Scripting (XSS) vulnerability in the /manage/project/&lt;id&gt; page via the input field projectDesc.</p></details></td>
-        <td>2026-03-20</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-22895" target="_blank" rel="noopener">CVE-2026-22895</a></td>
-        <td>2.2</td>
-        <td><span class="severity low">LOW</span></td>
-        <td>CWE-79</td>
-        <td>&nbsp;</td>
-        <td>0.2% <small>p35</small></td>
-        <td>1.54</td>
-        <td><details><summary>A cross-site scripting (XSS) vulnerability has been reported to affect QuFTP Ser...</summary><p>A cross-site scripting (XSS) vulnerability has been reported to affect QuFTP Service. If a remote attacker gains an administrator account, they can then exploit the vulnerability to bypass security mechanisms or read application data.
-
-We have already fixed the vulnerability in the following versions:
-QuFTP Service 1.4.3 and later
-QuFTP Service 1.5.2 and later
-QuFTP Service 1.6.2 and later</p></details></td>
         <td>2026-03-20</td>
       </tr>
       <tr>
