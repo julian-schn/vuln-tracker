@@ -11,7 +11,7 @@
     <header>
       <h1>vuln-tracker</h1>
       <p class="subtitle">CVEs from the National Vulnerability Database — current and previous month</p>
-      <p class="last-updated">Last updated: 2026-04-11 18:55 UTC</p>
+      <p class="last-updated">Last updated: 2026-04-11 20:40 UTC</p>
     </header>
     <nav>
       <a href="top50.html">&#9733; Top 50</a>
@@ -25,7 +25,7 @@
     </nav>
     <main>
     <section>
-      <h2>Current Month — April 2026 <span class="count">(2163)</span></h2>
+      <h2>Current Month — April 2026 <span class="count">(2164)</span></h2>
       <div class="table-wrapper">
         <table>
           <thead>
@@ -42,6 +42,25 @@
             </tr>
           </thead>
           <tbody>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-31845" target="_blank" rel="noopener">CVE-2026-31845</a></td>
+        <td>9.3</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.51</td>
+        <td><details><summary>A reflected cross-site scripting (XSS) vulnerability exists in Rukovoditel CRM v...</summary><p>A reflected cross-site scripting (XSS) vulnerability exists in Rukovoditel CRM version 3.6.4 and earlier in the Zadarma telephony API endpoint (/api/tel/zadarma.php). The application directly reflects user-supplied input from the &#x27;zd_echo&#x27; GET parameter into the HTTP response without proper sanitization, output encoding, or content-type restrictions.
+
+The vulnerable code is:
+
+if (isset($_GET[&#x27;zd_echo&#x27;])) exit($_GET[&#x27;zd_echo&#x27;]);
+
+An unauthenticated attacker can exploit this issue by crafting a malicious URL containing JavaScript payloads. When a victim visits the link, the payload executes in the context of the application within the victim&#x27;s browser, potentially leading to session hijacking, credential theft, phishing, or account takeover.
+
+The issue is fixed in version 3.7, which introduces proper input validation and output encoding to prevent script injection.</p></details></td>
+        <td>2026-04-11</td>
+      </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-23900" target="_blank" rel="noopener">CVE-2026-23900</a></td>
         <td>0.0</td>
