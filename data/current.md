@@ -4,7 +4,7 @@ _2164 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
-| [CVE-2026-31845](https://nvd.nist.gov/vuln/detail/CVE-2026-31845) | 9.3 | CRITICAL | CWE-79 | No | — | 6.51 | 2026-04-11 | A reflected cross-site scripting (XSS) vulnerability exists in Rukovoditel CRM version 3.6.4 and earlier in the Zadarma... |
+| [CVE-2026-6105](https://nvd.nist.gov/vuln/detail/CVE-2026-6105) | 6.9 | MEDIUM | CWE-266 | No | — | 4.83 | 2026-04-11 | A security vulnerability has been detected in perfree go-fastdfs-web up to 1.3.7. This affects an unknown part of the fi... |
 | [CVE-2026-23900](https://nvd.nist.gov/vuln/detail/CVE-2026-23900) | 0.0 | NONE | CWE-79 | No | — | 0.00 | 2026-04-11 | Various stored XSS vulnerabilities in the maps- and icon rendering logic in Phoca Maps component 5.0.0-6.0.2 have been d... |
 | [CVE-2026-5809](https://nvd.nist.gov/vuln/detail/CVE-2026-5809) | 7.1 | HIGH | CWE-73 | No | 0.0% | 4.97 | 2026-04-11 | The wpForo Forum plugin for WordPress is vulnerable to Arbitrary File Deletion in versions up to and including 3.0.2. Th... |
 | [CVE-2026-34621](https://nvd.nist.gov/vuln/detail/CVE-2026-34621) | 9.6 | CRITICAL | CWE-1321 | No | 0.2% | 6.73 | 2026-04-11 | Acrobat Reader versions 24.001.30356, 26.001.21367 and earlier are affected by an Improperly Controlled Modification of... |
