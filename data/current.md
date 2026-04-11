@@ -1,9 +1,11 @@
 # CVEs — April 2026
 
-_2160 vulnerabilities_
+_2162 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
+| [CVE-2026-5809](https://nvd.nist.gov/vuln/detail/CVE-2026-5809) | 7.1 | HIGH | CWE-73 | No | — | 4.97 | 2026-04-11 | The wpForo Forum plugin for WordPress is vulnerable to Arbitrary File Deletion in versions up to and including 3.0.2. Th... |
+| [CVE-2026-34621](https://nvd.nist.gov/vuln/detail/CVE-2026-34621) | 9.6 | CRITICAL | CWE-1321 | No | — | 6.72 | 2026-04-11 | Acrobat Reader versions 24.001.30356, 26.001.21367 and earlier are affected by an Improperly Controlled Modification of... |
 | [CVE-2026-5226](https://nvd.nist.gov/vuln/detail/CVE-2026-5226) | 6.1 | MEDIUM | CWE-79 | No | — | 4.27 | 2026-04-11 | The Optimole – Optimize Images in Real Time plugin for WordPress is vulnerable to Reflected Cross-Site Scripting via URL... |
 | [CVE-2026-5217](https://nvd.nist.gov/vuln/detail/CVE-2026-5217) | 7.2 | HIGH | CWE-79 | No | — | 5.04 | 2026-04-11 | The Optimole – Optimize Images \| Convert WebP & AVIF \| CDN & Lazy Load \| Image Optimization plugin for WordPress is v... |
 | [CVE-2026-5207](https://nvd.nist.gov/vuln/detail/CVE-2026-5207) | 6.5 | MEDIUM | CWE-89 | No | — | 4.55 | 2026-04-11 | The LifterLMS plugin for WordPress is vulnerable to SQL Injection via the 'order' parameter in all versions up to, and i... |
