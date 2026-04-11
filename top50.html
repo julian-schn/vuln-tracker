@@ -11,7 +11,7 @@
     <header>
       <h1>vuln-tracker — Top 50</h1>
       <p class="subtitle">The 50 most important CVEs from the current and previous month, ranked by VAP score (70% CVSS + 30% EPSS)</p>
-      <p class="last-updated">Last updated: 2026-04-11 13:12 UTC</p>
+      <p class="last-updated">Last updated: 2026-04-11 14:41 UTC</p>
     </header>
     <nav>
       <a href="index.html">&larr; All CVEs</a>
@@ -228,17 +228,6 @@
         <td>2026-03-27</td>
       </tr>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32871" target="_blank" rel="noopener">CVE-2026-32871</a></td>
-        <td>10.0</td>
-        <td><span class="severity critical">CRITICAL</span></td>
-        <td>CWE-918</td>
-        <td>&nbsp;</td>
-        <td>0.4% <small>p57</small></td>
-        <td>7.01</td>
-        <td><details><summary>FastMCP is a Pythonic way to build MCP servers and clients. Prior to version 3.2...</summary><p>FastMCP is a Pythonic way to build MCP servers and clients. Prior to version 3.2.0, the OpenAPIProvider in FastMCP exposes internal APIs to MCP clients by parsing OpenAPI specifications. The RequestDirector class is responsible for constructing HTTP requests to the backend service. A vulnerability exists in the _build_url() method. When an OpenAPI operation defines path parameters (e.g., /api/v1/users/{user_id}), the system directly substitutes parameter values into the URL template string without URL-encoding. Subsequently, urllib.parse.urljoin() resolves the final URL. Since urljoin() interprets ../ sequences as directory traversal, an attacker controlling a path parameter can perform path traversal attacks to escape the intended API prefix and access arbitrary backend endpoints. This results in authenticated SSRF, as requests are sent with the authorization headers configured in the MCP provider. This issue has been patched in version 3.2.0.</p></details></td>
-        <td>2026-04-02</td>
-      </tr>
-      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39337" target="_blank" rel="noopener">CVE-2026-39337</a></td>
         <td>10.0</td>
         <td><span class="severity critical">CRITICAL</span></td>
@@ -283,6 +272,17 @@
         <td>2026-03-03</td>
       </tr>
       <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40175" target="_blank" rel="noopener">CVE-2026-40175</a></td>
+        <td>10.0</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-113</td>
+        <td>&nbsp;</td>
+        <td>0.2% <small>p46</small></td>
+        <td>7.01</td>
+        <td><details><summary>Axios is a promise based HTTP client for the browser and Node.js. Prior to 1.15....</summary><p>Axios is a promise based HTTP client for the browser and Node.js. Prior to 1.15.0, the Axios library is vulnerable to a specific &quot;Gadget&quot; attack chain that allows Prototype Pollution in any third-party dependency to be escalated into Remote Code Execution (RCE) or Full Cloud Compromise (via AWS IMDSv2 bypass). This vulnerability is fixed in 1.15.0.</p></details></td>
+        <td>2026-04-10</td>
+      </tr>
+      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-15379" target="_blank" rel="noopener">CVE-2025-15379</a></td>
         <td>10.0</td>
         <td><span class="severity critical">CRITICAL</span></td>
@@ -314,6 +314,17 @@
         <td>7.00</td>
         <td><details><summary>FastGPT is an AI Agent building platform. Prior to version 4.14.9.5, the FastGPT...</summary><p>FastGPT is an AI Agent building platform. Prior to version 4.14.9.5, the FastGPT HTTP tools testing endpoint (/api/core/app/httpTools/runTool) is exposed without any authentication. This endpoint acts as a full HTTP proxy — it accepts a user-supplied baseUrl, toolPath, HTTP method, custom headers, and body, then makes a server-side HTTP request and returns the complete response to the caller. This issue has been patched in version 4.14.9.5.</p></details></td>
         <td>2026-03-31</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32871" target="_blank" rel="noopener">CVE-2026-32871</a></td>
+        <td>10.0</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-918</td>
+        <td>&nbsp;</td>
+        <td>0.2% <small>p36</small></td>
+        <td>7.00</td>
+        <td><details><summary>FastMCP is a Pythonic way to build MCP servers and clients. Prior to version 3.2...</summary><p>FastMCP is a Pythonic way to build MCP servers and clients. Prior to version 3.2.0, the OpenAPIProvider in FastMCP exposes internal APIs to MCP clients by parsing OpenAPI specifications. The RequestDirector class is responsible for constructing HTTP requests to the backend service. A vulnerability exists in the _build_url() method. When an OpenAPI operation defines path parameters (e.g., /api/v1/users/{user_id}), the system directly substitutes parameter values into the URL template string without URL-encoding. Subsequently, urllib.parse.urljoin() resolves the final URL. Since urljoin() interprets ../ sequences as directory traversal, an attacker controlling a path parameter can perform path traversal attacks to escape the intended API prefix and access arbitrary backend endpoints. This results in authenticated SSRF, as requests are sent with the authorization headers configured in the MCP provider. This issue has been patched in version 3.2.0.</p></details></td>
+        <td>2026-04-02</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34208" target="_blank" rel="noopener">CVE-2026-34208</a></td>
@@ -442,7 +453,7 @@
         <td><span class="severity critical">CRITICAL</span></td>
         <td>CWE-284</td>
         <td>&nbsp;</td>
-        <td>0.1% <small>p17</small></td>
+        <td>0.1% <small>p19</small></td>
         <td>7.00</td>
         <td><details><summary>Parse Server is an open source backend that can be deployed to any infrastructur...</summary><p>Parse Server is an open source backend that can be deployed to any infrastructure that can run Node.js. Prior to 9.5.2-alpha.7 and 8.6.20, Parse Server&#x27;s internal tables, which store Relation field mappings such as role memberships, can be directly accessed via the REST API or GraphQL API by any client using only the application key. No master key is required. An attacker can create, read, update, or delete records in any internal relationship table. Exploiting this allows the attacker to inject themselves into any Parse Role, gaining all permissions associated with that role, including full read, write, and delete access to classes protected by role-based Class-Level Permissions (CLP). Similarly, writing to any such table that backs a Relation field used in a pointerFields CLP bypasses that access control. This vulnerability is fixed in 9.5.2-alpha.7 and 8.6.20.</p></details></td>
         <td>2026-03-10</td>
@@ -464,7 +475,7 @@
         <td><span class="severity critical">CRITICAL</span></td>
         <td>CWE-918</td>
         <td>&nbsp;</td>
-        <td>0.0% <small>p14</small></td>
+        <td>0.0% <small>p12</small></td>
         <td>7.00</td>
         <td><details><summary>Server-side request forgery (ssrf) in Azure Databricks allows an unauthorized at...</summary><p>Server-side request forgery (ssrf) in Azure Databricks allows an unauthorized attacker to elevate privileges over a network.</p></details></td>
         <td>2026-04-03</td>
@@ -475,7 +486,7 @@
         <td><span class="severity critical">CRITICAL</span></td>
         <td>CWE-285</td>
         <td>&nbsp;</td>
-        <td>0.0% <small>p14</small></td>
+        <td>0.0% <small>p12</small></td>
         <td>7.00</td>
         <td><details><summary>Improper authorization in Microsoft Azure Kubernetes Service allows an unauthori...</summary><p>Improper authorization in Microsoft Azure Kubernetes Service allows an unauthorized attacker to elevate privileges over a network.</p></details></td>
         <td>2026-04-03</td>
@@ -486,7 +497,7 @@
         <td><span class="severity critical">CRITICAL</span></td>
         <td>CWE-285</td>
         <td>&nbsp;</td>
-        <td>0.0% <small>p14</small></td>
+        <td>0.0% <small>p12</small></td>
         <td>7.00</td>
         <td><details><summary>Improper authorization in Azure AI Foundry allows an unauthorized attacker to el...</summary><p>Improper authorization in Azure AI Foundry allows an unauthorized attacker to elevate privileges over a network.</p></details></td>
         <td>2026-04-03</td>
@@ -563,7 +574,7 @@
         <td><span class="severity critical">CRITICAL</span></td>
         <td>CWE-787</td>
         <td>&nbsp;</td>
-        <td>0.0% <small>p4</small></td>
+        <td>0.0% <small>p5</small></td>
         <td>7.00</td>
         <td><details><summary>There is a possible out of bounds write due to a missing bounds check. This coul...</summary><p>There is a possible out of bounds write due to a missing bounds check. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.</p></details></td>
         <td>2026-03-10</td>
@@ -574,21 +585,10 @@
         <td><span class="severity critical">CRITICAL</span></td>
         <td>CWE-120</td>
         <td>&nbsp;</td>
-        <td>0.0% <small>p4</small></td>
+        <td>0.0% <small>p5</small></td>
         <td>7.00</td>
         <td><details><summary>In DeviceId of DeviceId.java, there is a possible desync in persistence due to a...</summary><p>In DeviceId of DeviceId.java, there is a possible desync in persistence due to a missing bounds check. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.</p></details></td>
         <td>2026-03-10</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32760" target="_blank" rel="noopener">CVE-2026-32760</a></td>
-        <td>10.0</td>
-        <td><span class="severity critical">CRITICAL</span></td>
-        <td>CWE-269</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p4</small></td>
-        <td>7.00</td>
-        <td><details><summary>File Browser is a file managing interface for uploading, deleting, previewing, r...</summary><p>File Browser is a file managing interface for uploading, deleting, previewing, renaming, and editing files within a specified directory. In versions 2.61.2 and below, any unauthenticated visitor can register a full administrator account when self-registration (signup = true) is enabled and the default user permissions have perm.admin = true. The signup handler blindly applies all default settings (including Perm.Admin) to the new user without any server-side guard that strips admin from self-registered accounts. The signupHandler is supposed to create unprivileged accounts for new visitors. It contains no explicit user.Perm.Admin = false reset after applying defaults. If an administrator (intentionally or accidentally) configures defaults.perm.admin = true and also enables signup, every account created via the public registration endpoint is an administrator with full control over all files, users, and server settings. This issue has been resolved in version 2.62.0.</p></details></td>
-        <td>2026-03-20</td>
       </tr>
             </tbody>
           </table>
