@@ -1,14 +1,7 @@
 #version 1.0
 #delimiter "|"
 
-cves[2167]{cveId:str|published:str|lastModified:str|cvssScore:f64|severity:str|cweId:str|cweName:str|kev:bool|description:str|nvdUrl:str|epssScore:f64|epssPercentile:f64|vapScore:f64}:
-  CVE-2026-32146|2026-04-11T14:16:03.640|2026-04-11T14:16:03.640|6.2|MEDIUM|CWE-22|N/A|false|"Improper path validation vulnerability in the Gleam compiler's handling of git dependencies allows arbitrary file system modification during dependency download.
-
-Dependency names from gleam.toml and manifest.toml are incorporated into filesystem paths without sufficient validation or confinement to the intended dependency directory, allowing attacker-controlled paths (via relative traversal such as ../ or absolute paths) to target filesystem locations outside that directory. When resolving git dependencies (e.g. via gleam deps download), the computed path is used for filesystem operations including directory deletion and creation.
-
-This vulnerability occurs during the dependency resolution and download phase, which is generally expected to be limited to fetching and preparing dependencies within a confined directory. A malicious direct or transitive git dependency can exploit this issue to delete and overwrite arbitrary directories outside the intended dependency directory, including attacker-chosen absolute paths, potentially causing data loss. In some environments, this may be further leveraged to achieve code execution, for example by overwriting git hooks or shell configuration files.
-
-This issue affects Gleam from 1.9.0-rc1 until 1.15.3 and 1.16.0-rc1."|https://nvd.nist.gov/vuln/detail/CVE-2026-32146|0.00000|0.00000|4.3400
+cves[2163]{cveId:str|published:str|lastModified:str|cvssScore:f64|severity:str|cweId:str|cweName:str|kev:bool|description:str|nvdUrl:str|epssScore:f64|epssPercentile:f64|vapScore:f64}:
   CVE-2026-23900|2026-04-11T14:16:03.377|2026-04-11T14:16:03.377|0.0|NONE|CWE-79|N/A|false|Various stored XSS vulnerabilities in the maps- and icon rendering logic in Phoca Maps component 5.0.0-6.0.2 have been discovered.|https://nvd.nist.gov/vuln/detail/CVE-2026-23900|0.00000|0.00000|0.0000
   CVE-2026-5809|2026-04-11T08:16:05.503|2026-04-11T08:16:05.503|7.1|HIGH|CWE-73|N/A|false|The wpForo Forum plugin for WordPress is vulnerable to Arbitrary File Deletion in versions up to and including 3.0.2. This is due to a two-step logic flaw: the topic_add() and topic_edit() action handlers accept arbitrary user-supplied data[*] arrays from $_REQUEST and store them as postmeta without restricting which fields may contain array values. Because 'body' is included in the allowed topic fields list, an attacker can supply data[body][fileurl] with an arbitrary file path (e.g., wp-config.php or an absolute server path). This poisoned fileurl is persisted to the plugin's custom postmeta database table. Subsequently, when the attacker submits wpftcf_delete[]=body on a topic_edit request, the add_file() method retrieves the stored postmeta record, extracts the attacker-controlled fileurl, passes it through wpforo_fix_upload_dir() which only rewrites legitimate wpforo upload paths and returns all other paths unchanged, and then calls wp_delete_file() on the unvalidated path. This makes it possible for authenticated attackers, with subscriber-level access and above, to delete arbitrary files writable by the PHP process on the server, including critical files such as wp-config.|https://nvd.nist.gov/vuln/detail/CVE-2026-5809|0.00034|0.10165|4.9710
   CVE-2026-34621|2026-04-11T07:16:03.633|2026-04-11T07:16:03.633|9.6|CRITICAL|CWE-1321|N/A|false|Acrobat Reader versions 24.001.30356, 26.001.21367 and earlier are affected by an Improperly Controlled Modification of Object Prototype Attributes ('Prototype Pollution') vulnerability that could result in arbitrary code execution in the context of the current user. Exploitation of this issue requires user interaction in that a victim must open a malicious file.|https://nvd.nist.gov/vuln/detail/CVE-2026-34621|0.00235|0.46362|6.7270
@@ -1409,20 +1402,6 @@ This issue affects Gleam from 1.9.0-rc1 until 1.15.3 and 1.16.0-rc1."|https://nv
   CVE-2026-5635|2026-04-06T08:16:39.910|2026-04-07T13:20:35.010|5.3|MEDIUM|CWE-74|N/A|false|A security flaw has been discovered in PHPGurukul Online Shopping Portal Project 2.1. Affected by this issue is some unknown functionality of the file /categorywise-products.php of the component Parameter Handler. The manipulation of the argument cid results in sql injection. The attack can be launched remotely. The exploit has been released to the public and may be used for attacks.|https://nvd.nist.gov/vuln/detail/CVE-2026-5635|0.00009|0.00961|3.7103
   CVE-2026-5634|2026-04-06T08:16:39.700|2026-04-07T13:20:35.010|6.9|MEDIUM|CWE-74|N/A|false|A vulnerability was identified in projectworlds Car Rental Project 1.0. Affected by this vulnerability is an unknown functionality of the file /book_car.php of the component Parameter Handler. The manipulation of the argument fname leads to sql injection. The attack can be initiated remotely. The exploit is publicly available and might be used.|https://nvd.nist.gov/vuln/detail/CVE-2026-5634|0.00028|0.07962|4.8308
   CVE-2026-5633|2026-04-06T08:16:39.487|2026-04-07T13:20:35.010|6.9|MEDIUM|CWE-918|N/A|false|A vulnerability was determined in assafelovic gpt-researcher up to 3.4.3. Affected is an unknown function of the component ws Endpoint. Executing a manipulation of the argument source_urls can lead to server-side request forgery. It is possible to launch the attack remotely. The exploit has been publicly disclosed and may be utilized. The project was informed of the problem early through an issue report but has not responded yet.|https://nvd.nist.gov/vuln/detail/CVE-2026-5633|0.00041|0.12415|4.8312
-  CVE-2026-31408|2026-04-06T08:16:38.757|2026-04-11T13:16:37.030|0.0|NONE|N/A|N/A|false|"In the Linux kernel, the following vulnerability has been resolved:
-
-Bluetooth: SCO: Fix use-after-free in sco_recv_frame() due to missing sock_hold
-
-sco_recv_frame() reads conn->sk under sco_conn_lock() but immediately
-releases the lock without holding a reference to the socket. A concurrent
-close() can free the socket between the lock release and the subsequent
-sk->sk_state access, resulting in a use-after-free.
-
-Other functions in the same file (sco_sock_timeout(), sco_conn_del())
-correctly use sco_sock_hold() to safely hold a reference under the lock.
-
-Fix by using sco_sock_hold() to take a reference before releasing the
-lock, and adding sock_put() on all exit paths."|https://nvd.nist.gov/vuln/detail/CVE-2026-31408|0.00008|0.00680|0.0002
   CVE-2026-5632|2026-04-06T07:16:02.197|2026-04-07T13:20:35.010|6.9|MEDIUM|CWE-287|N/A|false|A vulnerability was found in assafelovic gpt-researcher up to 3.4.3. This impacts an unknown function of the component HTTP REST API Endpoint. Performing a manipulation results in missing authentication. It is possible to initiate the attack remotely. The exploit has been made public and could be used. The project was informed of the problem early through an issue report but has not responded yet.|https://nvd.nist.gov/vuln/detail/CVE-2026-5632|0.00066|0.20459|4.8320
   CVE-2026-5631|2026-04-06T07:16:01.983|2026-04-07T13:20:35.010|6.9|MEDIUM|CWE-74|N/A|false|A vulnerability has been found in assafelovic gpt-researcher up to 3.4.3. This affects the function extract_command_data of the file backend/server/server_utils.py of the component ws Endpoint. Such manipulation of the argument args leads to code injection. The attack may be performed from remote. The exploit has been disclosed to the public and may be used. The project was informed of the problem early through an issue report but has not responded yet.|https://nvd.nist.gov/vuln/detail/CVE-2026-5631|0.00047|0.14448|4.8314
   CVE-2026-5630|2026-04-06T07:16:01.757|2026-04-07T13:20:35.010|5.3|MEDIUM|CWE-79|N/A|false|A flaw has been found in assafelovic gpt-researcher up to 3.4.3. The impacted element is an unknown function of the file backend/server/app.py of the component Report API. This manipulation causes cross site scripting. The attack is possible to be carried out remotely. The exploit has been published and may be used. The project was informed of the problem early through an issue report but has not responded yet.|https://nvd.nist.gov/vuln/detail/CVE-2026-5630|0.00011|0.01228|3.7103
@@ -1740,7 +1719,7 @@ lock, and adding sock_put() on all exit paths."|https://nvd.nist.gov/vuln/detail
   CVE-2026-35540|2026-04-03T05:16:22.100|2026-04-07T20:52:15.220|5.4|MEDIUM|CWE-669|N/A|false|An issue was discovered in Roundcube Webmail 1.6.0 before 1.6.14. Insufficient Cascading Style Sheets (CSS) sanitization in HTML e-mail messages may lead to SSRF or Information Disclosure, e.g., if stylesheet links point to local network hosts.|https://nvd.nist.gov/vuln/detail/CVE-2026-35540|0.00043|0.13224|3.7813
   CVE-2026-35539|2026-04-03T05:16:21.920|2026-04-07T20:53:07.750|6.1|MEDIUM|CWE-79|N/A|false|An issue was discovered in Roundcube Webmail before 1.5.14 and 1.6.14. XSS exists because of insufficient HTML attachment sanitization in preview mode. A victim must preview a text/html attachment.|https://nvd.nist.gov/vuln/detail/CVE-2026-35539|0.00041|0.12484|4.2712
   CVE-2026-35538|2026-04-03T05:16:21.647|2026-04-07T20:54:28.020|3.1|LOW|CWE-88|N/A|false|An issue was discovered in Roundcube Webmail before 1.5.14 and 1.6.14. Unsanitized IMAP SEARCH command arguments could lead to IMAP injection or CSRF bypass during mail search.|https://nvd.nist.gov/vuln/detail/CVE-2026-35538|0.00041|0.12607|2.1712
-  CVE-2026-35537|2026-04-03T04:17:10.313|2026-04-03T16:10:23.730|3.7|LOW|CWE-502|N/A|false|An issue was discovered in Roundcube Webmail before 1.5.14 and 1.6.14. Unsafe deserialization in the redis/memcache session handler may lead to arbitrary file write operations by unauthenticated attackers via crafted session data.|https://nvd.nist.gov/vuln/detail/CVE-2026-35537|0.00040|0.12111|2.5912
+  CVE-2026-35537|2026-04-03T04:17:10.313|2026-04-11T15:16:22.203|3.7|LOW|CWE-502|N/A|false|An issue was discovered in Roundcube Webmail before 1.5.14 and 1.6.14. Unsafe deserialization in the redis/memcache session handler may lead to arbitrary file write operations by unauthenticated attackers via crafted session data.|https://nvd.nist.gov/vuln/detail/CVE-2026-35537|0.00040|0.12111|2.5912
   CVE-2026-35536|2026-04-03T04:16:53.550|2026-04-10T15:14:22.700|7.2|HIGH|CWE-159|N/A|false|In Tornado before 6.5.5, cookie attribute injection could occur because the domain, path, and samesite arguments to .RequestHandler.set_cookie were not checked for crafted characters.|https://nvd.nist.gov/vuln/detail/CVE-2026-35536|0.00051|0.15913|5.0415
   CVE-2026-35535|2026-04-03T03:16:18.233|2026-04-03T16:10:23.730|7.4|HIGH|CWE-271|N/A|false|In Sudo through 1.9.17p2 before 3e474c2, a failure of a setuid, setgid, or setgroups call, during a privilege drop before running the mailer, is not a fatal error and can lead to privilege escalation.|https://nvd.nist.gov/vuln/detail/CVE-2026-35535|0.00005|0.00276|5.1801
   CVE-2026-28815|2026-04-03T03:16:18.093|2026-04-03T16:10:23.730|7.5|HIGH|CWE-125|N/A|false|A remote attacker can supply a short X-Wing HPKE encapsulated key and trigger an out-of-bounds read in the C decapsulation path, potentially causing a crash or memory disclosure depending on runtime protections. This issue is fixed in swift-crypto version 4.3.1.|https://nvd.nist.gov/vuln/detail/CVE-2026-28815|0.00045|0.13888|5.2514
@@ -1946,34 +1925,6 @@ lock, and adding sock_put() on all exit paths."|https://nvd.nist.gov/vuln/detail
   CVE-2026-3872|2026-04-02T13:16:26.390|2026-04-03T16:10:52.680|7.3|HIGH|CWE-601|N/A|false|A flaw was found in Keycloak. This issue allows an attacker, who controls another path on the same web server, to bypass the allowed path in redirect Uniform Resource Identifiers (URIs) that use a wildcard. A successful attack may lead to the theft of an access token, resulting in information disclosure.|https://nvd.nist.gov/vuln/detail/CVE-2026-3872|0.00033|0.09622|5.1110
   CVE-2026-34890|2026-04-02T13:16:26.207|2026-04-03T16:10:52.680|6.5|MEDIUM|CWE-79|N/A|false|Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Mark O’Donnell MSTW League Manager allows DOM-Based XSS.This issue affects MSTW League Manager: from n/a through 2.10.|https://nvd.nist.gov/vuln/detail/CVE-2026-34890|0.00034|0.09870|4.5510
   CVE-2026-5327|2026-04-02T12:16:21.260|2026-04-03T16:10:52.680|5.3|MEDIUM|CWE-74|N/A|false|A security flaw has been discovered in efforthye fast-filesystem-mcp up to 3.5.1. The affected element is the function handleGetDiskUsage of the file src/index.ts. Performing a manipulation results in command injection. The attack is possible to be carried out remotely. The exploit has been released to the public and may be used for attacks. The project was informed of the problem early through an issue report but has not responded yet.|https://nvd.nist.gov/vuln/detail/CVE-2026-5327|0.01230|0.79183|3.7469
-  CVE-2026-23414|2026-04-02T12:16:20.633|2026-04-11T13:16:36.843|0.0|NONE|N/A|N/A|false|"In the Linux kernel, the following vulnerability has been resolved:
-
-tls: Purge async_hold in tls_decrypt_async_wait()
-
-The async_hold queue pins encrypted input skbs while
-the AEAD engine references their scatterlist data. Once
-tls_decrypt_async_wait() returns, every AEAD operation
-has completed and the engine no longer references those
-skbs, so they can be freed unconditionally.
-
-A subsequent patch adds batch async decryption to
-tls_sw_read_sock(), introducing a new call site that
-must drain pending AEAD operations and release held
-skbs. Move __skb_queue_purge(&ctx->async_hold) into
-tls_decrypt_async_wait() so the purge is centralized
-and every caller -- recvmsg's drain path, the -EBUSY
-fallback in tls_do_decryption(), and the new read_sock
-batch path -- releases held skbs on synchronization
-without each site managing the purge independently.
-
-This fixes a leak when tls_strp_msg_hold() fails part-way through,
-after having added some cloned skbs to the async_hold
-queue. tls_decrypt_sg() will then call tls_decrypt_async_wait() to
-process all pending decrypts, and drop back to synchronous mode, but
-tls_sw_recvmsg() only flushes the async_hold queue when one record has
-been processed in ""fully-async"" mode, which may not be the case here.
-
-[pabeni@redhat.com: added leak comment]"|https://nvd.nist.gov/vuln/detail/CVE-2026-23414|0.00024|0.06398|0.0007
   CVE-2026-5326|2026-04-02T11:16:23.010|2026-04-03T16:10:52.680|5.5|MEDIUM|CWE-285|N/A|false|A vulnerability was identified in SourceCodester Leave Application System 1.0. Impacted is an unknown function of the file /index.php?page=manage_user of the component User Information Handler. Such manipulation of the argument ID leads to authorization bypass. The attack can be executed remotely. The exploit is publicly available and might be used.|https://nvd.nist.gov/vuln/detail/CVE-2026-5326|0.00042|0.12761|3.8513
   CVE-2026-5246|2026-04-02T10:16:17.763|2026-04-03T16:10:52.680|6.3|MEDIUM|CWE-285|N/A|false|A vulnerability was determined in Cesanta Mongoose up to 7.20. Affected is the function mg_tls_verify_cert_signature of the file mongoose.c of the component P-384 Public Key Handler. Executing a manipulation can lead to authorization bypass. The attack can be executed remotely. Attacks of this nature are highly complex. The exploitability is told to be difficult. The exploit has been publicly disclosed and may be utilized. Upgrading to version 7.21 is able to address this issue. This patch is called 0d882f1b43ff2308b7486a56a9d60cd6dba8a3f1. The affected component should be upgraded. The vendor was contacted early, responded in a very professional manner and quickly released a fixed version of the affected product.|https://nvd.nist.gov/vuln/detail/CVE-2026-5246|0.00059|0.18670|4.4118
   CVE-2026-5245|2026-04-02T10:16:17.443|2026-04-03T16:10:52.680|6.3|MEDIUM|CWE-119|N/A|false|A vulnerability was found in Cesanta Mongoose up to 7.20. This impacts the function handle_mdns_record of the file mongoose.c of the component mDNS Record Handler. Performing a manipulation of the argument buf results in stack-based buffer overflow. Remote exploitation of the attack is possible. A high degree of complexity is needed for the attack. The exploitability is said to be difficult. The exploit has been made public and could be used. Upgrading to version 7.21 will fix this issue. The patch is named 0d882f1b43ff2308b7486a56a9d60cd6dba8a3f1. You should upgrade the affected component. The vendor was contacted early, responded in a very professional manner and quickly released a fixed version of the affected product.|https://nvd.nist.gov/vuln/detail/CVE-2026-5245|0.00076|0.22834|4.4123
@@ -2153,42 +2104,6 @@ been processed in ""fully-async"" mode, which may not be the case here.
   CVE-2026-5261|2026-04-01T09:16:17.920|2026-04-01T14:23:37.727|6.9|MEDIUM|CWE-284|N/A|false|A vulnerability was identified in Shandong Hoteam InforCenter PLM up to 8.3.8. The impacted element is the function uploadFileToIIS of the file /Base/BaseHandler.ashx. The manipulation of the argument File leads to unrestricted upload. It is possible to initiate the attack remotely. The exploit is publicly available and might be used. The vendor was contacted early about this disclosure but did not respond in any way.|https://nvd.nist.gov/vuln/detail/CVE-2026-5261|0.00050|0.15483|4.8315
   CVE-2026-4370|2026-04-01T09:16:17.717|2026-04-02T20:24:48.797|10.0|CRITICAL|CWE-295|N/A|false|A vulnerability was identified in Juju from version 3.2.0 until 3.6.19 and from version 4.0 until 4.0.4, where the internal Dqlite database cluster fails to perform proper TLS client and server authentication. Specifically, the Juju controller's database endpoint does not validate client certificates when a new node attempts to join the cluster. An unauthenticated attacker with network reachability to the Juju controller's Dqlite port can exploit this flaw to join the database cluster. Once joined, the attacker gains full read and write access to the underlying database, allowing for total data compromise.|https://nvd.nist.gov/vuln/detail/CVE-2026-4370|0.00071|0.21880|7.0021
   CVE-2026-34889|2026-04-01T09:16:17.457|2026-04-01T14:23:37.727|6.5|MEDIUM|CWE-79|N/A|false|Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Brainstorm Force Ultimate Addons for WPBakery Page Builder allows DOM-Based XSS.This issue affects Ultimate Addons for WPBakery Page Builder: from n/a before 3.21.4.|https://nvd.nist.gov/vuln/detail/CVE-2026-34889|0.00034|0.09870|4.5510
-  CVE-2026-23401|2026-04-01T09:16:15.260|2026-04-11T13:16:36.687|0.0|NONE|N/A|N/A|false|"In the Linux kernel, the following vulnerability has been resolved:
-
-KVM: x86/mmu: Drop/zap existing present SPTE even when creating an MMIO SPTE
-
-When installing an emulated MMIO SPTE, do so *after* dropping/zapping the
-existing SPTE (if it's shadow-present).  While commit a54aa15c6bda3 was
-right about it being impossible to convert a shadow-present SPTE to an
-MMIO SPTE due to a _guest_ write, it failed to account for writes to guest
-memory that are outside the scope of KVM.
-
-E.g. if host userspace modifies a shadowed gPTE to switch from a memslot
-to emulted MMIO and then the guest hits a relevant page fault, KVM will
-install the MMIO SPTE without first zapping the shadow-present SPTE.
-
-  ------------[ cut here ]------------
-  is_shadow_present_pte(*sptep)
-  WARNING: arch/x86/kvm/mmu/mmu.c:484 at mark_mmio_spte+0xb2/0xc0 [kvm], CPU#0: vmx_ept_stale_r/4292
-  Modules linked in: kvm_intel kvm irqbypass
-  CPU: 0 UID: 1000 PID: 4292 Comm: vmx_ept_stale_r Not tainted 7.0.0-rc2-eafebd2d2ab0-sink-vm #319 PREEMPT
-  Hardware name: QEMU Standard PC (Q35 + ICH9, 2009), BIOS 0.0.0 02/06/2015
-  RIP: 0010:mark_mmio_spte+0xb2/0xc0 [kvm]
-  Call Trace:
-   <TASK>
-   mmu_set_spte+0x237/0x440 [kvm]
-   ept_page_fault+0x535/0x7f0 [kvm]
-   kvm_mmu_do_page_fault+0xee/0x1f0 [kvm]
-   kvm_mmu_page_fault+0x8d/0x620 [kvm]
-   vmx_handle_exit+0x18c/0x5a0 [kvm_intel]
-   kvm_arch_vcpu_ioctl_run+0xc55/0x1c20 [kvm]
-   kvm_vcpu_ioctl+0x2d5/0x980 [kvm]
-   __x64_sys_ioctl+0x8a/0xd0
-   do_syscall_64+0xb5/0x730
-   entry_SYSCALL_64_after_hwframe+0x4b/0x53
-  RIP: 0033:0x47fa3f
-   </TASK>
-  ---[ end trace 0000000000000000 ]---"|https://nvd.nist.gov/vuln/detail/CVE-2026-23401|0.00024|0.06398|0.0007
   CVE-2026-5259|2026-04-01T08:16:05.723|2026-04-01T14:23:37.727|5.3|MEDIUM|CWE-918|N/A|false|A vulnerability was determined in AutohomeCorp frostmourne up to 1.0. The affected element is an unknown function of the file frostmourne-monitor/src/main/java/com/autohome/frostmourne/monitor/controller/AlarmController.java of the component Alarm Preview. Executing a manipulation can lead to server-side request forgery. The attack may be performed from remote. The exploit has been publicly disclosed and may be utilized.|https://nvd.nist.gov/vuln/detail/CVE-2026-5259|0.00038|0.11377|3.7111
   CVE-2026-28265|2026-04-01T08:16:05.490|2026-04-02T20:43:17.370|4.4|MEDIUM|CWE-35|N/A|false|PowerStore, contains a Path Traversal vulnerability in the Service user. A low privileged attacker with local access could potentially exploit this vulnerability, leading to modification of arbitrary system files.|https://nvd.nist.gov/vuln/detail/CVE-2026-28265|0.00014|0.02367|3.0804
   CVE-2026-27101|2026-04-01T08:16:05.270|2026-04-02T20:42:37.060|4.7|MEDIUM|CWE-22|N/A|false|Dell Secure Connect Gateway (SCG) 5.0 Appliance and Application version(s) 5.28.00.xx to 5.32.00.xx, contain(s) an Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal') vulnerability. A high privileged attacker within the management network could potentially exploit this vulnerability, leading to remote execution.|https://nvd.nist.gov/vuln/detail/CVE-2026-27101|0.00315|0.54662|3.2995

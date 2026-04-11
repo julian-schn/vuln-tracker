@@ -1,7 +1,7 @@
 #version 1.0
 #delimiter "|"
 
-cves[5736]{cveId:str|published:str|lastModified:str|cvssScore:f64|severity:str|cweId:str|cweName:str|kev:bool|description:str|nvdUrl:str|epssScore:f64|epssPercentile:f64|vapScore:f64}:
+cves[5733]{cveId:str|published:str|lastModified:str|cvssScore:f64|severity:str|cweId:str|cweName:str|kev:bool|description:str|nvdUrl:str|epssScore:f64|epssPercentile:f64|vapScore:f64}:
   CVE-2026-5237|2026-03-31T23:17:11.627|2026-04-01T14:23:37.727|6.9|MEDIUM|CWE-74|N/A|false|A security flaw has been discovered in itsourcecode Payroll Management System 1.0. Affected by this vulnerability is an unknown functionality of the file /manage_user.php of the component Parameter Handler. Performing a manipulation of the argument ID results in sql injection. The attack is possible to be carried out remotely. The exploit has been released to the public and may be used for attacks.|https://nvd.nist.gov/vuln/detail/CVE-2026-5237|0.00039|0.11978|4.8312
   CVE-2026-5236|2026-03-31T23:17:11.393|2026-04-01T14:23:37.727|4.8|MEDIUM|CWE-119|N/A|false|A vulnerability was identified in Axiomatic Bento4 up to 1.6.0-641. Affected is the function AP4_BitReader::SkipBits of the file Ap4Dac4Atom.cpp of the component DSI v1 Parser. Such manipulation of the argument n_presentations leads to heap-based buffer overflow. The attack needs to be performed locally. The exploit is publicly available and might be used. The project was informed of the problem early through an issue report but has not responded yet.|https://nvd.nist.gov/vuln/detail/CVE-2026-5236|0.00006|0.00316|3.3602
   CVE-2026-5235|2026-03-31T23:17:11.163|2026-04-01T14:23:37.727|4.8|MEDIUM|CWE-119|N/A|false|A vulnerability was determined in Axiomatic Bento4 up to 1.6.0-641. This impacts the function AP4_BitReader::ReadCache of the file Ap4Dac4Atom.cpp of the component MP4 File Parser. This manipulation causes heap-based buffer overflow. The attack needs to be launched locally. The exploit has been publicly disclosed and may be utilized. The project was informed of the problem early through an issue report but has not responded yet.|https://nvd.nist.gov/vuln/detail/CVE-2026-5235|0.00014|0.02717|3.3604
@@ -1369,32 +1369,6 @@ cves[5736]{cveId:str|published:str|lastModified:str|cvssScore:f64|severity:str|c
   CVE-2024-51348|2026-03-25T14:16:29.210|2026-03-25T16:16:06.343|8.8|HIGH|CWE-121|N/A|false|A stack-based buffer overflow vulnerability in the P2P API service in BS Producten Petcam with firmware 33.1.0.0818 allows unauthenticated attackers within network range to overwrite the instruction pointer and achieve Remote Code Execution (RCE) by sending a specially crafted HTTP request.|https://nvd.nist.gov/vuln/detail/CVE-2024-51348|0.00247|0.47968|6.1674
   CVE-2024-51347|2026-03-25T14:16:29.097|2026-03-25T18:16:24.673|7.2|HIGH|CWE-120|N/A|false|A buffer overflow vulnerability in the dgiot binary in LSC Smart Indoor IP Camera V7.6.32. The flaw exists in the handling of the Time Zone (TZ) parameter within the ONVIF configuration interface. The time zone (TZ) parameter does not have its length properly validated before being copied into a fixed-size buffer using the insecure strcpy function.|https://nvd.nist.gov/vuln/detail/CVE-2024-51347|0.00051|0.16203|5.0415
   CVE-2024-51346|2026-03-25T14:16:28.967|2026-03-25T15:41:33.977|7.7|HIGH|CWE-330|N/A|false|An issue in Eufy Homebase 2 version 3.3.4.1h allows a local attacker to obtain sensitive information via the cryptographic scheme.|https://nvd.nist.gov/vuln/detail/CVE-2024-51346|0.00015|0.02966|5.3904
-  CVE-2026-23389|2026-03-25T11:16:39.440|2026-04-11T13:16:36.550|0.0|NONE|N/A|N/A|false|"In the Linux kernel, the following vulnerability has been resolved:
-
-ice: Fix memory leak in ice_set_ringparam()
-
-In ice_set_ringparam, tx_rings and xdp_rings are allocated before
-rx_rings. If the allocation of rx_rings fails, the code jumps to
-the done label leaking both tx_rings and xdp_rings. Furthermore, if
-the setup of an individual Rx ring fails during the loop, the code jumps
-to the free_tx label which releases tx_rings but leaks xdp_rings.
-
-Fix this by introducing a free_xdp label and updating the error paths to
-ensure both xdp_rings and tx_rings are properly freed if rx_rings
-allocation or setup fails.
-
-Compile tested only. Issue found using a prototype static analysis tool
-and code review."|https://nvd.nist.gov/vuln/detail/CVE-2026-23389|0.00024|0.06607|0.0007
-  CVE-2026-23360|2026-03-25T11:16:34.907|2026-04-11T13:16:36.387|0.0|NONE|N/A|N/A|false|"In the Linux kernel, the following vulnerability has been resolved:
-
-nvme: fix admin queue leak on controller reset
-
-When nvme_alloc_admin_tag_set() is called during a controller reset,
-a previous admin queue may still exist. Release it properly before
-allocating a new one to avoid orphaning the old queue.
-
-This fixes a regression introduced by commit 03b3bcd319b3 (""nvme: fix
-admin request_queue lifetime"")."|https://nvd.nist.gov/vuln/detail/CVE-2026-23360|0.00024|0.06398|0.0007
   CVE-2026-23320|2026-03-25T11:16:28.747|2026-04-03T16:16:23.600|0.0|NONE|N/A|N/A|false|Rejected reason: This CVE ID has been rejected or withdrawn by its CVE Numbering Authority.|https://nvd.nist.gov/vuln/detail/CVE-2026-23320|0.00000|0.00000|0.0000
   CVE-2026-32326|2026-03-25T08:16:22.547|2026-03-25T15:41:33.977|6.9|MEDIUM|CWE-306|N/A|false|SHARP routers do not perform authentication for some web APIs. The device information may be retrieved without authentication. If the administrative password of the device is left as the initial one, the device may be taken over.|https://nvd.nist.gov/vuln/detail/CVE-2026-32326|0.00046|0.14118|4.8314
   CVE-2026-33253|2026-03-25T06:16:28.527|2026-03-25T15:41:33.977|8.4|HIGH|CWE-428|N/A|false|SANUPS SOFTWARE provided by SANYO DENKI CO., LTD. registers Windows services with unquoted file paths. A user with the write permission on the root directory of the system drive may execute arbitrary code with SYSTEM privilege.|https://nvd.nist.gov/vuln/detail/CVE-2026-33253|0.00017|0.04187|5.8805
@@ -2751,16 +2725,6 @@ admin request_queue lifetime"")."|https://nvd.nist.gov/vuln/detail/CVE-2026-2336
   CVE-2026-26948|2026-03-18T18:16:26.530|2026-03-19T13:25:00.570|4.9|MEDIUM|CWE-1258|N/A|false|Dell Integrated Dell Remote Access Controller 9, 14G versions prior to 7.00.00.174, 15G and 16G versions prior to 7.10.90.00, contain an Exposure of Sensitive System Information Due to Uncleared Debug Information vulnerability. A high privileged attacker with remote access could potentially exploit this vulnerability, leading to information disclosure.|https://nvd.nist.gov/vuln/detail/CVE-2026-26948|0.00051|0.16175|3.4315
   CVE-2026-26945|2026-03-18T18:16:26.347|2026-03-19T13:25:00.570|5.3|MEDIUM|CWE-114|N/A|false|Dell Integrated Dell Remote Access Controller 9, 14G versions prior to 7.00.00.181, 15G and 16G versions prior to 7.20.10.50 and Dell Integrated Dell Remote Access Controller 10, 17G versions prior to 1.20.25.00, contain a Process Control vulnerability.  A high privileged attacker with adjacent network access could potentially exploit this vulnerability, leading to code execution.|https://nvd.nist.gov/vuln/detail/CVE-2026-26945|0.00059|0.18597|3.7118
   CVE-2026-26740|2026-03-18T18:16:26.220|2026-03-21T00:09:00.920|8.2|HIGH|CWE-787|N/A|false|Buffer Overflow vulnerability in giflib v.5.2.2 allows a remote attacker to cause a denial of service via the EGifGCBToExtension overwriting an existing Graphic Control Extension block without validating its allocated size.|https://nvd.nist.gov/vuln/detail/CVE-2026-26740|0.00139|0.34050|5.7442
-  CVE-2025-71269|2026-03-18T18:16:22.110|2026-04-11T13:16:36.240|0.0|NONE|N/A|N/A|false|"In the Linux kernel, the following vulnerability has been resolved:
-
-btrfs: do not free data reservation in fallback from inline due to -ENOSPC
-
-If we fail to create an inline extent due to -ENOSPC, we will attempt to
-go through the normal COW path, reserve an extent, create an ordered
-extent, etc. However we were always freeing the reserved qgroup data,
-which is wrong since we will use data. Fix this by freeing the reserved
-qgroup data in __cow_file_range_inline() only if we are not doing the
-fallback (ret is <= 0)."|https://nvd.nist.gov/vuln/detail/CVE-2025-71269|0.00024|0.06607|0.0007
   CVE-2026-32610|2026-03-18T17:16:06.947|2026-03-21T00:16:56.353|8.1|HIGH|CWE-942|N/A|false|"Glances is an open-source system cross-platform monitoring tool. Prior to version 4.5.2, the Glances REST API web server ships with a default CORS configuration that sets `allow_origins=[""*""]` combined with `allow_credentials=True`. When both of these options are enabled together, Starlette's `CORSMiddleware` reflects the requesting `Origin` header value in the `Access-Control-Allow-Origin` response header instead of returning the literal `*` wildcard. This effectively grants any website the ability to make credentialed cross-origin API requests to the Glances server, enabling cross-site data theft of system monitoring information, configuration secrets, and command line arguments from any user who has an active browser session with a Glances instance. Version 4.5.2 fixes the issue."|https://nvd.nist.gov/vuln/detail/CVE-2026-32610|0.00032|0.09365|5.6710
   CVE-2026-30695|2026-03-18T17:16:06.817|2026-03-19T15:16:26.343|6.1|MEDIUM|CWE-79|N/A|false|A Cross-Site Scripting (XSS) vulnerability exists in the web-based configuration interface of Zucchetti Axess access control devices, including XA4, X3/X3BIO, X4, X7, and XIO / i-door / i-door+. The vulnerability is caused by improper sanitization of user-supplied input in the dirBrowse parameter of the /file_manager.cgi endpoint.|https://nvd.nist.gov/vuln/detail/CVE-2026-30695|0.00031|0.09000|4.2709
   CVE-2026-30345|2026-03-18T17:16:06.703|2026-03-19T15:16:26.007|7.5|HIGH|CWE-23|N/A|false|A zip slip vulnerability in the Admin import functionality of CTFd v3.8.1-18-gdb5a18c4 allows attackers to write arbitrary files outside the intended directories via supplying a crafted import.|https://nvd.nist.gov/vuln/detail/CVE-2026-30345|0.00049|0.15208|5.2515

@@ -11,7 +11,7 @@
     <header>
       <h1>vuln-tracker</h1>
       <p class="subtitle">CVEs from the National Vulnerability Database — current and previous month</p>
-      <p class="last-updated">Last updated: 2026-04-11 14:41 UTC</p>
+      <p class="last-updated">Last updated: 2026-04-11 16:44 UTC</p>
     </header>
     <nav>
       <a href="top50.html">&#9733; Top 50</a>
@@ -25,7 +25,7 @@
     </nav>
     <main>
     <section>
-      <h2>Current Month — April 2026 <span class="count">(2167)</span></h2>
+      <h2>Current Month — April 2026 <span class="count">(2163)</span></h2>
       <div class="table-wrapper">
         <table>
           <thead>
@@ -42,23 +42,6 @@
             </tr>
           </thead>
           <tbody>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32146" target="_blank" rel="noopener">CVE-2026-32146</a></td>
-        <td>6.2</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-22</td>
-        <td>&nbsp;</td>
-        <td>&mdash;</td>
-        <td>4.34</td>
-        <td><details><summary>Improper path validation vulnerability in the Gleam compiler&#x27;s handling of git d...</summary><p>Improper path validation vulnerability in the Gleam compiler&#x27;s handling of git dependencies allows arbitrary file system modification during dependency download.
-
-Dependency names from gleam.toml and manifest.toml are incorporated into filesystem paths without sufficient validation or confinement to the intended dependency directory, allowing attacker-controlled paths (via relative traversal such as ../ or absolute paths) to target filesystem locations outside that directory. When resolving git dependencies (e.g. via gleam deps download), the computed path is used for filesystem operations including directory deletion and creation.
-
-This vulnerability occurs during the dependency resolution and download phase, which is generally expected to be limited to fetching and preparing dependencies within a confined directory. A malicious direct or transitive git dependency can exploit this issue to delete and overwrite arbitrary directories outside the intended dependency directory, including attacker-chosen absolute paths, potentially causing data loss. In some environments, this may be further leveraged to achieve code execution, for example by overwriting git hooks or shell configuration files.
-
-This issue affects Gleam from 1.9.0-rc1 until 1.15.3 and 1.16.0-rc1.</p></details></td>
-        <td>2026-04-11</td>
-      </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-23900" target="_blank" rel="noopener">CVE-2026-23900</a></td>
         <td>0.0</td>
@@ -15460,32 +15443,6 @@ This issue affects Gleam from 1.9.0-rc1 until 1.15.3 and 1.16.0-rc1.</p></detail
         <td>2026-04-06</td>
       </tr>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-31408" target="_blank" rel="noopener">CVE-2026-31408</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p0</small></td>
-        <td>0.00</td>
-        <td><details><summary>In the Linux kernel, the following vulnerability has been resolved:
-
-Bluetooth: ...</summary><p>In the Linux kernel, the following vulnerability has been resolved:
-
-Bluetooth: SCO: Fix use-after-free in sco_recv_frame() due to missing sock_hold
-
-sco_recv_frame() reads conn-&gt;sk under sco_conn_lock() but immediately
-releases the lock without holding a reference to the socket. A concurrent
-close() can free the socket between the lock release and the subsequent
-sk-&gt;sk_state access, resulting in a use-after-free.
-
-Other functions in the same file (sco_sock_timeout(), sco_conn_del())
-correctly use sco_sock_hold() to safely hold a reference under the lock.
-
-Fix by using sco_sock_hold() to take a reference before releasing the
-lock, and adding sock_put() on all exit paths.</p></details></td>
-        <td>2026-04-06</td>
-      </tr>
-      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5632" target="_blank" rel="noopener">CVE-2026-5632</a></td>
         <td>6.9</td>
         <td><span class="severity medium">MEDIUM</span></td>
@@ -21239,46 +21196,6 @@ lock, and adding sock_put() on all exit paths.</p></details></td>
         <td>2026-04-02</td>
       </tr>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-23414" target="_blank" rel="noopener">CVE-2026-23414</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p6</small></td>
-        <td>0.00</td>
-        <td><details><summary>In the Linux kernel, the following vulnerability has been resolved:
-
-tls: Purge ...</summary><p>In the Linux kernel, the following vulnerability has been resolved:
-
-tls: Purge async_hold in tls_decrypt_async_wait()
-
-The async_hold queue pins encrypted input skbs while
-the AEAD engine references their scatterlist data. Once
-tls_decrypt_async_wait() returns, every AEAD operation
-has completed and the engine no longer references those
-skbs, so they can be freed unconditionally.
-
-A subsequent patch adds batch async decryption to
-tls_sw_read_sock(), introducing a new call site that
-must drain pending AEAD operations and release held
-skbs. Move __skb_queue_purge(&amp;ctx-&gt;async_hold) into
-tls_decrypt_async_wait() so the purge is centralized
-and every caller -- recvmsg&#x27;s drain path, the -EBUSY
-fallback in tls_do_decryption(), and the new read_sock
-batch path -- releases held skbs on synchronization
-without each site managing the purge independently.
-
-This fixes a leak when tls_strp_msg_hold() fails part-way through,
-after having added some cloned skbs to the async_hold
-queue. tls_decrypt_sg() will then call tls_decrypt_async_wait() to
-process all pending decrypts, and drop back to synchronous mode, but
-tls_sw_recvmsg() only flushes the async_hold queue when one record has
-been processed in &quot;fully-async&quot; mode, which may not be the case here.
-
-[pabeni@redhat.com: added leak comment]</p></details></td>
-        <td>2026-04-02</td>
-      </tr>
-      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5326" target="_blank" rel="noopener">CVE-2026-5326</a></td>
         <td>5.5</td>
         <td><span class="severity medium">MEDIUM</span></td>
@@ -23248,54 +23165,6 @@ been processed in &quot;fully-async&quot; mode, which may not be the case here.
         <td>2026-04-01</td>
       </tr>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-23401" target="_blank" rel="noopener">CVE-2026-23401</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p6</small></td>
-        <td>0.00</td>
-        <td><details><summary>In the Linux kernel, the following vulnerability has been resolved:
-
-KVM: x86/mm...</summary><p>In the Linux kernel, the following vulnerability has been resolved:
-
-KVM: x86/mmu: Drop/zap existing present SPTE even when creating an MMIO SPTE
-
-When installing an emulated MMIO SPTE, do so *after* dropping/zapping the
-existing SPTE (if it&#x27;s shadow-present).  While commit a54aa15c6bda3 was
-right about it being impossible to convert a shadow-present SPTE to an
-MMIO SPTE due to a _guest_ write, it failed to account for writes to guest
-memory that are outside the scope of KVM.
-
-E.g. if host userspace modifies a shadowed gPTE to switch from a memslot
-to emulted MMIO and then the guest hits a relevant page fault, KVM will
-install the MMIO SPTE without first zapping the shadow-present SPTE.
-
-  ------------[ cut here ]------------
-  is_shadow_present_pte(*sptep)
-  WARNING: arch/x86/kvm/mmu/mmu.c:484 at mark_mmio_spte+0xb2/0xc0 [kvm], CPU#0: vmx_ept_stale_r/4292
-  Modules linked in: kvm_intel kvm irqbypass
-  CPU: 0 UID: 1000 PID: 4292 Comm: vmx_ept_stale_r Not tainted 7.0.0-rc2-eafebd2d2ab0-sink-vm #319 PREEMPT
-  Hardware name: QEMU Standard PC (Q35 + ICH9, 2009), BIOS 0.0.0 02/06/2015
-  RIP: 0010:mark_mmio_spte+0xb2/0xc0 [kvm]
-  Call Trace:
-   &lt;TASK&gt;
-   mmu_set_spte+0x237/0x440 [kvm]
-   ept_page_fault+0x535/0x7f0 [kvm]
-   kvm_mmu_do_page_fault+0xee/0x1f0 [kvm]
-   kvm_mmu_page_fault+0x8d/0x620 [kvm]
-   vmx_handle_exit+0x18c/0x5a0 [kvm_intel]
-   kvm_arch_vcpu_ioctl_run+0xc55/0x1c20 [kvm]
-   kvm_vcpu_ioctl+0x2d5/0x980 [kvm]
-   __x64_sys_ioctl+0x8a/0xd0
-   do_syscall_64+0xb5/0x730
-   entry_SYSCALL_64_after_hwframe+0x4b/0x53
-  RIP: 0033:0x47fa3f
-   &lt;/TASK&gt;
-  ---[ end trace 0000000000000000 ]---</p></details></td>
-        <td>2026-04-01</td>
-      </tr>
-      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5259" target="_blank" rel="noopener">CVE-2026-5259</a></td>
         <td>5.3</td>
         <td><span class="severity medium">MEDIUM</span></td>
@@ -23971,7 +23840,7 @@ install the MMIO SPTE without first zapping the shadow-present SPTE.
       </div>
     </section>
     <section>
-      <h2>Previous Month — March 2026 <span class="count">(5736)</span></h2>
+      <h2>Previous Month — March 2026 <span class="count">(5733)</span></h2>
       <div class="table-wrapper">
         <table>
           <thead>
@@ -39026,56 +38895,6 @@ install the MMIO SPTE without first zapping the shadow-present SPTE.
         <td>2026-03-25</td>
       </tr>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-23389" target="_blank" rel="noopener">CVE-2026-23389</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p6</small></td>
-        <td>0.00</td>
-        <td><details><summary>In the Linux kernel, the following vulnerability has been resolved:
-
-ice: Fix me...</summary><p>In the Linux kernel, the following vulnerability has been resolved:
-
-ice: Fix memory leak in ice_set_ringparam()
-
-In ice_set_ringparam, tx_rings and xdp_rings are allocated before
-rx_rings. If the allocation of rx_rings fails, the code jumps to
-the done label leaking both tx_rings and xdp_rings. Furthermore, if
-the setup of an individual Rx ring fails during the loop, the code jumps
-to the free_tx label which releases tx_rings but leaks xdp_rings.
-
-Fix this by introducing a free_xdp label and updating the error paths to
-ensure both xdp_rings and tx_rings are properly freed if rx_rings
-allocation or setup fails.
-
-Compile tested only. Issue found using a prototype static analysis tool
-and code review.</p></details></td>
-        <td>2026-03-25</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-23360" target="_blank" rel="noopener">CVE-2026-23360</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p6</small></td>
-        <td>0.00</td>
-        <td><details><summary>In the Linux kernel, the following vulnerability has been resolved:
-
-nvme: fix a...</summary><p>In the Linux kernel, the following vulnerability has been resolved:
-
-nvme: fix admin queue leak on controller reset
-
-When nvme_alloc_admin_tag_set() is called during a controller reset,
-a previous admin queue may still exist. Release it properly before
-allocating a new one to avoid orphaning the old queue.
-
-This fixes a regression introduced by commit 03b3bcd319b3 (&quot;nvme: fix
-admin request_queue lifetime&quot;).</p></details></td>
-        <td>2026-03-25</td>
-      </tr>
-      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-23320" target="_blank" rel="noopener">CVE-2026-23320</a></td>
         <td>0.0</td>
         <td><span class="severity none">NONE</span></td>
@@ -53989,28 +53808,6 @@ admin request_queue lifetime&quot;).</p></details></td>
         <td>0.1% <small>p34</small></td>
         <td>5.74</td>
         <td><details><summary>Buffer Overflow vulnerability in giflib v.5.2.2 allows a remote attacker to caus...</summary><p>Buffer Overflow vulnerability in giflib v.5.2.2 allows a remote attacker to cause a denial of service via the EGifGCBToExtension overwriting an existing Graphic Control Extension block without validating its allocated size.</p></details></td>
-        <td>2026-03-18</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-71269" target="_blank" rel="noopener">CVE-2025-71269</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p6</small></td>
-        <td>0.00</td>
-        <td><details><summary>In the Linux kernel, the following vulnerability has been resolved:
-
-btrfs: do n...</summary><p>In the Linux kernel, the following vulnerability has been resolved:
-
-btrfs: do not free data reservation in fallback from inline due to -ENOSPC
-
-If we fail to create an inline extent due to -ENOSPC, we will attempt to
-go through the normal COW path, reserve an extent, create an ordered
-extent, etc. However we were always freeing the reserved qgroup data,
-which is wrong since we will use data. Fix this by freeing the reserved
-qgroup data in __cow_file_range_inline() only if we are not doing the
-fallback (ret is &lt;= 0).</p></details></td>
         <td>2026-03-18</td>
       </tr>
       <tr>

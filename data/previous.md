@@ -1,6 +1,6 @@
 # CVEs — March 2026
 
-_5736 vulnerabilities_
+_5733 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
@@ -1371,8 +1371,6 @@ _5736 vulnerabilities_
 | [CVE-2024-51348](https://nvd.nist.gov/vuln/detail/CVE-2024-51348) | 8.8 | HIGH | CWE-121 | No | 0.2% | 6.17 | 2026-03-25 | A stack-based buffer overflow vulnerability in the P2P API service in BS Producten Petcam with firmware 33.1.0.0818 allo... |
 | [CVE-2024-51347](https://nvd.nist.gov/vuln/detail/CVE-2024-51347) | 7.2 | HIGH | CWE-120 | No | 0.1% | 5.04 | 2026-03-25 | A buffer overflow vulnerability in the dgiot binary in LSC Smart Indoor IP Camera V7.6.32. The flaw exists in the handli... |
 | [CVE-2024-51346](https://nvd.nist.gov/vuln/detail/CVE-2024-51346) | 7.7 | HIGH | CWE-330 | No | 0.0% | 5.39 | 2026-03-25 | An issue in Eufy Homebase 2 version 3.3.4.1h allows a local attacker to obtain sensitive information via the cryptograph... |
-| [CVE-2026-23389](https://nvd.nist.gov/vuln/detail/CVE-2026-23389) | 0.0 | NONE | N/A | No | 0.0% | 0.00 | 2026-03-25 | In the Linux kernel, the following vulnerability has been resolved:  ice: Fix memory leak in ice_set_ringparam()  In ice... |
-| [CVE-2026-23360](https://nvd.nist.gov/vuln/detail/CVE-2026-23360) | 0.0 | NONE | N/A | No | 0.0% | 0.00 | 2026-03-25 | In the Linux kernel, the following vulnerability has been resolved:  nvme: fix admin queue leak on controller reset  Whe... |
 | [CVE-2026-23320](https://nvd.nist.gov/vuln/detail/CVE-2026-23320) | 0.0 | NONE | N/A | No | — | 0.00 | 2026-03-25 | Rejected reason: This CVE ID has been rejected or withdrawn by its CVE Numbering Authority. |
 | [CVE-2026-32326](https://nvd.nist.gov/vuln/detail/CVE-2026-32326) | 6.9 | MEDIUM | CWE-306 | No | 0.0% | 4.83 | 2026-03-25 | SHARP routers do not perform authentication for some web APIs. The device information may be retrieved without authentic... |
 | [CVE-2026-33253](https://nvd.nist.gov/vuln/detail/CVE-2026-33253) | 8.4 | HIGH | CWE-428 | No | 0.0% | 5.88 | 2026-03-25 | SANUPS SOFTWARE provided by SANYO DENKI CO., LTD. registers Windows services with unquoted file paths. A user with the w... |
@@ -2729,7 +2727,6 @@ _5736 vulnerabilities_
 | [CVE-2026-26948](https://nvd.nist.gov/vuln/detail/CVE-2026-26948) | 4.9 | MEDIUM | CWE-1258 | No | 0.1% | 3.43 | 2026-03-18 | Dell Integrated Dell Remote Access Controller 9, 14G versions prior to 7.00.00.174, 15G and 16G versions prior to 7.10.9... |
 | [CVE-2026-26945](https://nvd.nist.gov/vuln/detail/CVE-2026-26945) | 5.3 | MEDIUM | CWE-114 | No | 0.1% | 3.71 | 2026-03-18 | Dell Integrated Dell Remote Access Controller 9, 14G versions prior to 7.00.00.181, 15G and 16G versions prior to 7.20.1... |
 | [CVE-2026-26740](https://nvd.nist.gov/vuln/detail/CVE-2026-26740) | 8.2 | HIGH | CWE-787 | No | 0.1% | 5.74 | 2026-03-18 | Buffer Overflow vulnerability in giflib v.5.2.2 allows a remote attacker to cause a denial of service via the EGifGCBToE... |
-| [CVE-2025-71269](https://nvd.nist.gov/vuln/detail/CVE-2025-71269) | 0.0 | NONE | N/A | No | 0.0% | 0.00 | 2026-03-18 | In the Linux kernel, the following vulnerability has been resolved:  btrfs: do not free data reservation in fallback fro... |
 | [CVE-2026-32610](https://nvd.nist.gov/vuln/detail/CVE-2026-32610) | 8.1 | HIGH | CWE-942 | No | 0.0% | 5.67 | 2026-03-18 | Glances is an open-source system cross-platform monitoring tool. Prior to version 4.5.2, the Glances REST API web server... |
 | [CVE-2026-30695](https://nvd.nist.gov/vuln/detail/CVE-2026-30695) | 6.1 | MEDIUM | CWE-79 | No | 0.0% | 4.27 | 2026-03-18 | A Cross-Site Scripting (XSS) vulnerability exists in the web-based configuration interface of Zucchetti Axess access con... |
 | [CVE-2026-30345](https://nvd.nist.gov/vuln/detail/CVE-2026-30345) | 7.5 | HIGH | CWE-23 | No | 0.0% | 5.25 | 2026-03-18 | A zip slip vulnerability in the Admin import functionality of CTFd v3.8.1-18-gdb5a18c4 allows attackers to write arbitra... |

@@ -1,10 +1,9 @@
 # CVEs — April 2026
 
-_2167 vulnerabilities_
+_2163 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
-| [CVE-2026-32146](https://nvd.nist.gov/vuln/detail/CVE-2026-32146) | 6.2 | MEDIUM | CWE-22 | No | — | 4.34 | 2026-04-11 | Improper path validation vulnerability in the Gleam compiler's handling of git dependencies allows arbitrary file system... |
 | [CVE-2026-23900](https://nvd.nist.gov/vuln/detail/CVE-2026-23900) | 0.0 | NONE | CWE-79 | No | — | 0.00 | 2026-04-11 | Various stored XSS vulnerabilities in the maps- and icon rendering logic in Phoca Maps component 5.0.0-6.0.2 have been d... |
 | [CVE-2026-5809](https://nvd.nist.gov/vuln/detail/CVE-2026-5809) | 7.1 | HIGH | CWE-73 | No | 0.0% | 4.97 | 2026-04-11 | The wpForo Forum plugin for WordPress is vulnerable to Arbitrary File Deletion in versions up to and including 3.0.2. Th... |
 | [CVE-2026-34621](https://nvd.nist.gov/vuln/detail/CVE-2026-34621) | 9.6 | CRITICAL | CWE-1321 | No | 0.2% | 6.73 | 2026-04-11 | Acrobat Reader versions 24.001.30356, 26.001.21367 and earlier are affected by an Improperly Controlled Modification of... |
@@ -1405,7 +1404,6 @@ _2167 vulnerabilities_
 | [CVE-2026-5635](https://nvd.nist.gov/vuln/detail/CVE-2026-5635) | 5.3 | MEDIUM | CWE-74 | No | 0.0% | 3.71 | 2026-04-06 | A security flaw has been discovered in PHPGurukul Online Shopping Portal Project 2.1. Affected by this issue is some unk... |
 | [CVE-2026-5634](https://nvd.nist.gov/vuln/detail/CVE-2026-5634) | 6.9 | MEDIUM | CWE-74 | No | 0.0% | 4.83 | 2026-04-06 | A vulnerability was identified in projectworlds Car Rental Project 1.0. Affected by this vulnerability is an unknown fun... |
 | [CVE-2026-5633](https://nvd.nist.gov/vuln/detail/CVE-2026-5633) | 6.9 | MEDIUM | CWE-918 | No | 0.0% | 4.83 | 2026-04-06 | A vulnerability was determined in assafelovic gpt-researcher up to 3.4.3. Affected is an unknown function of the compone... |
-| [CVE-2026-31408](https://nvd.nist.gov/vuln/detail/CVE-2026-31408) | 0.0 | NONE | N/A | No | 0.0% | 0.00 | 2026-04-06 | In the Linux kernel, the following vulnerability has been resolved:  Bluetooth: SCO: Fix use-after-free in sco_recv_fram... |
 | [CVE-2026-5632](https://nvd.nist.gov/vuln/detail/CVE-2026-5632) | 6.9 | MEDIUM | CWE-287 | No | 0.1% | 4.83 | 2026-04-06 | A vulnerability was found in assafelovic gpt-researcher up to 3.4.3. This impacts an unknown function of the component H... |
 | [CVE-2026-5631](https://nvd.nist.gov/vuln/detail/CVE-2026-5631) | 6.9 | MEDIUM | CWE-74 | No | 0.0% | 4.83 | 2026-04-06 | A vulnerability has been found in assafelovic gpt-researcher up to 3.4.3. This affects the function extract_command_data... |
 | [CVE-2026-5630](https://nvd.nist.gov/vuln/detail/CVE-2026-5630) | 5.3 | MEDIUM | CWE-79 | No | 0.0% | 3.71 | 2026-04-06 | A flaw has been found in assafelovic gpt-researcher up to 3.4.3. The impacted element is an unknown function of the file... |
@@ -1929,7 +1927,6 @@ _2167 vulnerabilities_
 | [CVE-2026-3872](https://nvd.nist.gov/vuln/detail/CVE-2026-3872) | 7.3 | HIGH | CWE-601 | No | 0.0% | 5.11 | 2026-04-02 | A flaw was found in Keycloak. This issue allows an attacker, who controls another path on the same web server, to bypass... |
 | [CVE-2026-34890](https://nvd.nist.gov/vuln/detail/CVE-2026-34890) | 6.5 | MEDIUM | CWE-79 | No | 0.0% | 4.55 | 2026-04-02 | Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Mark O’Donnell MST... |
 | [CVE-2026-5327](https://nvd.nist.gov/vuln/detail/CVE-2026-5327) | 5.3 | MEDIUM | CWE-74 | No | 1.2% | 3.75 | 2026-04-02 | A security flaw has been discovered in efforthye fast-filesystem-mcp up to 3.5.1. The affected element is the function h... |
-| [CVE-2026-23414](https://nvd.nist.gov/vuln/detail/CVE-2026-23414) | 0.0 | NONE | N/A | No | 0.0% | 0.00 | 2026-04-02 | In the Linux kernel, the following vulnerability has been resolved:  tls: Purge async_hold in tls_decrypt_async_wait()... |
 | [CVE-2026-5326](https://nvd.nist.gov/vuln/detail/CVE-2026-5326) | 5.5 | MEDIUM | CWE-285 | No | 0.0% | 3.85 | 2026-04-02 | A vulnerability was identified in SourceCodester Leave Application System 1.0. Impacted is an unknown function of the fi... |
 | [CVE-2026-5246](https://nvd.nist.gov/vuln/detail/CVE-2026-5246) | 6.3 | MEDIUM | CWE-285 | No | 0.1% | 4.41 | 2026-04-02 | A vulnerability was determined in Cesanta Mongoose up to 7.20. Affected is the function mg_tls_verify_cert_signature of... |
 | [CVE-2026-5245](https://nvd.nist.gov/vuln/detail/CVE-2026-5245) | 6.3 | MEDIUM | CWE-119 | No | 0.1% | 4.41 | 2026-04-02 | A vulnerability was found in Cesanta Mongoose up to 7.20. This impacts the function handle_mdns_record of the file mongo... |
@@ -2109,7 +2106,6 @@ _2167 vulnerabilities_
 | [CVE-2026-5261](https://nvd.nist.gov/vuln/detail/CVE-2026-5261) | 6.9 | MEDIUM | CWE-284 | No | 0.1% | 4.83 | 2026-04-01 | A vulnerability was identified in Shandong Hoteam InforCenter PLM up to 8.3.8. The impacted element is the function uplo... |
 | [CVE-2026-4370](https://nvd.nist.gov/vuln/detail/CVE-2026-4370) | 10.0 | CRITICAL | CWE-295 | No | 0.1% | 7.00 | 2026-04-01 | A vulnerability was identified in Juju from version 3.2.0 until 3.6.19 and from version 4.0 until 4.0.4, where the inter... |
 | [CVE-2026-34889](https://nvd.nist.gov/vuln/detail/CVE-2026-34889) | 6.5 | MEDIUM | CWE-79 | No | 0.0% | 4.55 | 2026-04-01 | Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Brainstorm Force U... |
-| [CVE-2026-23401](https://nvd.nist.gov/vuln/detail/CVE-2026-23401) | 0.0 | NONE | N/A | No | 0.0% | 0.00 | 2026-04-01 | In the Linux kernel, the following vulnerability has been resolved:  KVM: x86/mmu: Drop/zap existing present SPTE even w... |
 | [CVE-2026-5259](https://nvd.nist.gov/vuln/detail/CVE-2026-5259) | 5.3 | MEDIUM | CWE-918 | No | 0.0% | 3.71 | 2026-04-01 | A vulnerability was determined in AutohomeCorp frostmourne up to 1.0. The affected element is an unknown function of the... |
 | [CVE-2026-28265](https://nvd.nist.gov/vuln/detail/CVE-2026-28265) | 4.4 | MEDIUM | CWE-35 | No | 0.0% | 3.08 | 2026-04-01 | PowerStore, contains a Path Traversal vulnerability in the Service user. A low privileged attacker with local access cou... |
 | [CVE-2026-27101](https://nvd.nist.gov/vuln/detail/CVE-2026-27101) | 4.7 | MEDIUM | CWE-22 | No | 0.3% | 3.30 | 2026-04-01 | Dell Secure Connect Gateway (SCG) 5.0 Appliance and Application version(s) 5.28.00.xx to 5.32.00.xx, contain(s) an Impro... |
