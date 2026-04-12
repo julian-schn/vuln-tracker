@@ -11,7 +11,7 @@
     <header>
       <h1>vuln-tracker</h1>
       <p class="subtitle">CVEs from the National Vulnerability Database — current and previous month</p>
-      <p class="last-updated">Last updated: 2026-04-12 16:49 UTC</p>
+      <p class="last-updated">Last updated: 2026-04-12 18:59 UTC</p>
     </header>
     <nav>
       <a href="top50.html">&#9733; Top 50</a>
@@ -24313,7 +24313,7 @@
       </div>
     </section>
     <section>
-      <h2>Previous Month — March 2026 <span class="count">(5733)</span></h2>
+      <h2>Previous Month — March 2026 <span class="count">(5734)</span></h2>
       <div class="table-wrapper">
         <table>
           <thead>
@@ -82078,6 +82078,21 @@
         <td>0.0% <small>p4</small></td>
         <td>5.81</td>
         <td><details><summary>International Data Casting (IDC) SFX2100 satellite receiver comes with the `/bin...</summary><p>International Data Casting (IDC) SFX2100 satellite receiver comes with the `/bin/date` utility installed with the setuid bit set. This configuration grants elevated privileges to any local user who can execute the binary. A local actor is able to use the GTFObins resource to preform privileged file reads as the root user on the local file system. This allows an actor to be able to read any root read-only files, such as the /etc/shadow file or other configuration/secrets carrier files.</p></details></td>
+        <td>2026-03-05</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-40931" target="_blank" rel="noopener">CVE-2025-40931</a></td>
+        <td>9.1</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-338</td>
+        <td>&nbsp;</td>
+        <td>0.0% <small>p14</small></td>
+        <td>6.37</td>
+        <td><details><summary>Apache::Session::Generate::MD5 versions through 1.94 for Perl create insecure se...</summary><p>Apache::Session::Generate::MD5 versions through 1.94 for Perl create insecure session id.
+
+Apache::Session::Generate::MD5 generates session ids insecurely. The default session id generator returns a MD5 hash seeded with the built-in rand() function, the epoch time, and the PID. The PID will come from a small set of numbers, and the epoch time may be guessed, if it is not leaked from the HTTP Date header. The built-in rand function is unsuitable for cryptographic usage. Predicable session ids could allow an attacker to gain access to systems.
+
+Note that the libapache-session-perl package in some Debian-based Linux distributions may be patched to use Crypt::URandom.</p></details></td>
         <td>2026-03-05</td>
       </tr>
       <tr>
