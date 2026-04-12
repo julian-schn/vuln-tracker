@@ -1,9 +1,10 @@
 # CVEs — April 2026
 
-_2185 vulnerabilities_
+_2186 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
+| [CVE-2026-6126](https://nvd.nist.gov/vuln/detail/CVE-2026-6126) | 6.9 | MEDIUM | CWE-287 | No | — | 4.83 | 2026-04-12 | A weakness has been identified in zhayujie chatgpt-on-wechat CowAgent 2.0.4. The affected element is an unknown function... |
 | [CVE-2026-6125](https://nvd.nist.gov/vuln/detail/CVE-2026-6125) | 5.3 | MEDIUM | CWE-74 | No | — | 3.71 | 2026-04-12 | A security flaw has been discovered in Dromara warm-flow up to 1.8.4. Impacted is the function SpelHelper.parseExpressio... |
 | [CVE-2026-6124](https://nvd.nist.gov/vuln/detail/CVE-2026-6124) | 7.4 | HIGH | CWE-119 | No | — | 5.18 | 2026-04-12 | A vulnerability was determined in Tenda F451 1.0.0.7. This vulnerability affects the function fromSafeMacFilter of the f... |
 | [CVE-2026-6123](https://nvd.nist.gov/vuln/detail/CVE-2026-6123) | 7.4 | HIGH | CWE-119 | No | — | 5.18 | 2026-04-12 | A vulnerability was found in Tenda F451 1.0.0.7. This affects the function fromAddressNat of the file /goform/addressNat... |
