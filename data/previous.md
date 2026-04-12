@@ -1,6 +1,6 @@
 # CVEs — March 2026
 
-_5734 vulnerabilities_
+_5733 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
@@ -5254,7 +5254,6 @@ _5734 vulnerabilities_
 | [CVE-2026-29124](https://nvd.nist.gov/vuln/detail/CVE-2026-29124) | 8.6 | HIGH | CWE-269 | No | 0.0% | 6.02 | 2026-03-05 | Multiple SUID root-owned binaries are found in /home/monitor/terminal, /home/monitor/kore-terminal, /home/monitor/IDE-DP... |
 | [CVE-2026-29123](https://nvd.nist.gov/vuln/detail/CVE-2026-29123) | 8.6 | HIGH | CWE-269 | No | 0.0% | 6.02 | 2026-03-05 | A SUID root-owned binary in /home/xd/terminal/XDTerminal in International Data Casting (IDC) SFX2100 on Linux allows a l... |
 | [CVE-2026-29122](https://nvd.nist.gov/vuln/detail/CVE-2026-29122) | 8.3 | HIGH | CWE-269 | No | 0.0% | 5.81 | 2026-03-05 | International Data Casting (IDC) SFX2100 satellite receiver comes with the `/bin/date` utility installed with the setuid... |
-| [CVE-2025-40931](https://nvd.nist.gov/vuln/detail/CVE-2025-40931) | 9.1 | CRITICAL | CWE-338 | No | 0.0% | 6.37 | 2026-03-05 | Apache::Session::Generate::MD5 versions through 1.94 for Perl create insecure session id.  Apache::Session::Generate::MD... |
 | [CVE-2026-29121](https://nvd.nist.gov/vuln/detail/CVE-2026-29121) | 8.3 | HIGH | CWE-269 | No | 0.0% | 5.81 | 2026-03-05 | International Data Casting (IDC) SFX2100 satellite receiver comes with the `/sbin/ip` utility installed with the setuid... |
 | [CVE-2026-22052](https://nvd.nist.gov/vuln/detail/CVE-2026-22052) | 5.3 | MEDIUM | CWE-209 | No | 0.0% | 3.71 | 2026-03-05 | ONTAP versions 9.12.1 and higher with S3 NAS buckets are susceptible to an information disclosure vulnerability. Success... |
 | [CVE-2026-2297](https://nvd.nist.gov/vuln/detail/CVE-2026-2297) | 5.7 | MEDIUM | CWE-668 | No | 0.0% | 3.99 | 2026-03-04 | The import hook in CPython that handles legacy *.pyc files (SourcelessFileLoader) is incorrectly handled in FileLoader (... |

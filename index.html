@@ -11,7 +11,7 @@
     <header>
       <h1>vuln-tracker</h1>
       <p class="subtitle">CVEs from the National Vulnerability Database — current and previous month</p>
-      <p class="last-updated">Last updated: 2026-04-12 18:59 UTC</p>
+      <p class="last-updated">Last updated: 2026-04-12 20:43 UTC</p>
     </header>
     <nav>
       <a href="top50.html">&#9733; Top 50</a>
@@ -25,7 +25,7 @@
     </nav>
     <main>
     <section>
-      <h2>Current Month — April 2026 <span class="count">(2206)</span></h2>
+      <h2>Current Month — April 2026 <span class="count">(2213)</span></h2>
       <div class="table-wrapper">
         <table>
           <thead>
@@ -42,6 +42,83 @@
             </tr>
           </thead>
           <tbody>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6129" target="_blank" rel="noopener">CVE-2026-6129</a></td>
+        <td>6.9</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-287</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.83</td>
+        <td><details><summary>A vulnerability was detected in zhayujie chatgpt-on-wechat CowAgent up to 2.0.4....</summary><p>A vulnerability was detected in zhayujie chatgpt-on-wechat CowAgent up to 2.0.4. This affects an unknown function of the component Agent Mode Service. Performing a manipulation results in missing authentication. The attack can be initiated remotely. The exploit is now public and may be used. The project was informed of the problem early through an issue report but has not responded yet.</p></details></td>
+        <td>2026-04-12</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40396" target="_blank" rel="noopener">CVE-2026-40396</a></td>
+        <td>4.0</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-670</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>2.80</td>
+        <td><details><summary>Varnish Cache 9 before 9.0.1 allows a &quot;workspace overflow&quot; denial of service (da...</summary><p>Varnish Cache 9 before 9.0.1 allows a &quot;workspace overflow&quot; denial of service (daemon panic) after timeout_linger. A malicious client could send an HTTP/1 request, wait long enough until the session releases its worker thread (timeout_linger) and resume traffic before the session is closed (timeout_idle) sending more than one request at once to trigger a pipelining operation between requests. This vulnerability affecting Varnish Cache 9.0.0 emerged from a port of the Varnish Enterprise non-blocking architecture for HTTP/2. New code was needed to adapt to a more recent workspace API that formalizes the pipelining operation. In addition to the workspace change on the Varnish Cache side, other differences created merge conflicts, like partial support for trailers in Varnish Enterprise. The conflict resolution missed one code path configuring pipelining to perform a complete workspace rollback, losing the guarantee that prefetched data would fit inside workspace_client during the transition from one request to the next. This can result in a workspace overflow, triggering a panic and crashing the Varnish server.</p></details></td>
+        <td>2026-04-12</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40395" target="_blank" rel="noopener">CVE-2026-40395</a></td>
+        <td>4.0</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-770</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>2.80</td>
+        <td><details><summary>Varnish Enterprise before 6.0.16r12 allows a &quot;workspace overflow&quot; denial of serv...</summary><p>Varnish Enterprise before 6.0.16r12 allows a &quot;workspace overflow&quot; denial of service (daemon panic) for shared VCL. The headerplus.write_req0() function from vmod_headerplus updates the underlying req0, which is normally the original read-only request from which req is derived (readable and writable from VCL). This is useful in the active VCL, after amending req, to prepare a refined req0 before switching to a different VCL with the return (vcl(&lt;label&gt;)) action. This is for example how the Varnish Controller operates shared VCL deployments. If the amended req contained too many header fields for req0, this would have resulted in a workspace overflow that would in turn trigger a panic and crash the Varnish Enterprise server. This could be used as a Denial of Service attack vector by malicious clients.</p></details></td>
+        <td>2026-04-12</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40394" target="_blank" rel="noopener">CVE-2026-40394</a></td>
+        <td>4.0</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-670</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>2.80</td>
+        <td><details><summary>Varnish Cache 9 before 9.0.1 and Varnish Enterprise before 6.0.16r11 allows a &quot;w...</summary><p>Varnish Cache 9 before 9.0.1 and Varnish Enterprise before 6.0.16r11 allows a &quot;workspace overflow&quot; denial of service (daemon panic) for certain amounts of prefetched data. The setup of an HTTP/2 session starts with a speculative HTTP/1 transport, and upon upgrading to h2 the HTTP/1 request is repurposed as stream zero. During the upgrade, a buffer allocation is made to reserve space to send frames to the client. This allocation would split the original workspace, and depending on the amount of prefetched data, the next fetch could perform a pipelining operation that would run out of workspace.</p></details></td>
+        <td>2026-04-12</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40393" target="_blank" rel="noopener">CVE-2026-40393</a></td>
+        <td>8.1</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-787</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.67</td>
+        <td><details><summary>In Mesa before 25.3.6 and 26 before 26.0.1, out-of-bounds memory access can occu...</summary><p>In Mesa before 25.3.6 and 26 before 26.0.1, out-of-bounds memory access can occur in WebGPU because the amount of to-be-allocated data depends on an untrusted party, and is then used for alloca.</p></details></td>
+        <td>2026-04-12</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40386" target="_blank" rel="noopener">CVE-2026-40386</a></td>
+        <td>4.0</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-191</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>2.80</td>
+        <td><details><summary>In libexif through 0.6.25, an integer underflow in size checking for Fuji and Ol...</summary><p>In libexif through 0.6.25, an integer underflow in size checking for Fuji and Olympus MakerNote decoding could be used by attackers to crash or leak information out of libexif-using programs.</p></details></td>
+        <td>2026-04-12</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40385" target="_blank" rel="noopener">CVE-2026-40385</a></td>
+        <td>4.0</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-190</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>2.80</td>
+        <td><details><summary>In libexif through 0.6.25, an unsigned 32bit integer overflow in Nikon MakerNote...</summary><p>In libexif through 0.6.25, an unsigned 32bit integer overflow in Nikon MakerNote handling could be used by local attackers to cause crashes or information leaks. This only affects 32bit systems.</p></details></td>
+        <td>2026-04-12</td>
+      </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2019-25713" target="_blank" rel="noopener">CVE-2019-25713</a></td>
         <td>7.1</td>
@@ -24313,7 +24390,7 @@
       </div>
     </section>
     <section>
-      <h2>Previous Month — March 2026 <span class="count">(5734)</span></h2>
+      <h2>Previous Month — March 2026 <span class="count">(5733)</span></h2>
       <div class="table-wrapper">
         <table>
           <thead>
@@ -82078,21 +82155,6 @@
         <td>0.0% <small>p4</small></td>
         <td>5.81</td>
         <td><details><summary>International Data Casting (IDC) SFX2100 satellite receiver comes with the `/bin...</summary><p>International Data Casting (IDC) SFX2100 satellite receiver comes with the `/bin/date` utility installed with the setuid bit set. This configuration grants elevated privileges to any local user who can execute the binary. A local actor is able to use the GTFObins resource to preform privileged file reads as the root user on the local file system. This allows an actor to be able to read any root read-only files, such as the /etc/shadow file or other configuration/secrets carrier files.</p></details></td>
-        <td>2026-03-05</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-40931" target="_blank" rel="noopener">CVE-2025-40931</a></td>
-        <td>9.1</td>
-        <td><span class="severity critical">CRITICAL</span></td>
-        <td>CWE-338</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p14</small></td>
-        <td>6.37</td>
-        <td><details><summary>Apache::Session::Generate::MD5 versions through 1.94 for Perl create insecure se...</summary><p>Apache::Session::Generate::MD5 versions through 1.94 for Perl create insecure session id.
-
-Apache::Session::Generate::MD5 generates session ids insecurely. The default session id generator returns a MD5 hash seeded with the built-in rand() function, the epoch time, and the PID. The PID will come from a small set of numbers, and the epoch time may be guessed, if it is not leaked from the HTTP Date header. The built-in rand function is unsuitable for cryptographic usage. Predicable session ids could allow an attacker to gain access to systems.
-
-Note that the libapache-session-perl package in some Debian-based Linux distributions may be patched to use Crypt::URandom.</p></details></td>
         <td>2026-03-05</td>
       </tr>
       <tr>

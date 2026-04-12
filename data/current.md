@@ -1,9 +1,16 @@
 # CVEs — April 2026
 
-_2206 vulnerabilities_
+_2213 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
+| [CVE-2026-6129](https://nvd.nist.gov/vuln/detail/CVE-2026-6129) | 6.9 | MEDIUM | CWE-287 | No | — | 4.83 | 2026-04-12 | A vulnerability was detected in zhayujie chatgpt-on-wechat CowAgent up to 2.0.4. This affects an unknown function of the... |
+| [CVE-2026-40396](https://nvd.nist.gov/vuln/detail/CVE-2026-40396) | 4.0 | MEDIUM | CWE-670 | No | — | 2.80 | 2026-04-12 | Varnish Cache 9 before 9.0.1 allows a "workspace overflow" denial of service (daemon panic) after timeout_linger. A mali... |
+| [CVE-2026-40395](https://nvd.nist.gov/vuln/detail/CVE-2026-40395) | 4.0 | MEDIUM | CWE-770 | No | — | 2.80 | 2026-04-12 | Varnish Enterprise before 6.0.16r12 allows a "workspace overflow" denial of service (daemon panic) for shared VCL. The h... |
+| [CVE-2026-40394](https://nvd.nist.gov/vuln/detail/CVE-2026-40394) | 4.0 | MEDIUM | CWE-670 | No | — | 2.80 | 2026-04-12 | Varnish Cache 9 before 9.0.1 and Varnish Enterprise before 6.0.16r11 allows a "workspace overflow" denial of service (da... |
+| [CVE-2026-40393](https://nvd.nist.gov/vuln/detail/CVE-2026-40393) | 8.1 | HIGH | CWE-787 | No | — | 5.67 | 2026-04-12 | In Mesa before 25.3.6 and 26 before 26.0.1, out-of-bounds memory access can occur in WebGPU because the amount of to-be-... |
+| [CVE-2026-40386](https://nvd.nist.gov/vuln/detail/CVE-2026-40386) | 4.0 | MEDIUM | CWE-191 | No | — | 2.80 | 2026-04-12 | In libexif through 0.6.25, an integer underflow in size checking for Fuji and Olympus MakerNote decoding could be used b... |
+| [CVE-2026-40385](https://nvd.nist.gov/vuln/detail/CVE-2026-40385) | 4.0 | MEDIUM | CWE-190 | No | — | 2.80 | 2026-04-12 | In libexif through 0.6.25, an unsigned 32bit integer overflow in Nikon MakerNote handling could be used by local attacke... |
 | [CVE-2019-25713](https://nvd.nist.gov/vuln/detail/CVE-2019-25713) | 7.1 | HIGH | CWE-89 | No | — | 4.97 | 2026-04-12 | MyT-PM 1.5.1 contains an SQL injection vulnerability that allows authenticated attackers to execute arbitrary SQL querie... |
 | [CVE-2019-25712](https://nvd.nist.gov/vuln/detail/CVE-2019-25712) | 6.9 | MEDIUM | CWE-787 | No | — | 4.83 | 2026-04-12 | BlueAuditor 1.7.2.0 contains a buffer overflow vulnerability in the registration key field that allows local attackers t... |
 | [CVE-2019-25711](https://nvd.nist.gov/vuln/detail/CVE-2019-25711) | 6.9 | MEDIUM | CWE-807 | No | — | 4.83 | 2026-04-12 | SpotFTP Password Recover 2.4.2 contains a denial of service vulnerability that allows local attackers to crash the appli... |
