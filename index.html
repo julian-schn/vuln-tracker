@@ -11,7 +11,7 @@
     <header>
       <h1>vuln-tracker</h1>
       <p class="subtitle">CVEs from the National Vulnerability Database — current and previous month</p>
-      <p class="last-updated">Last updated: 2026-04-12 05:57 UTC</p>
+      <p class="last-updated">Last updated: 2026-04-12 07:38 UTC</p>
     </header>
     <nav>
       <a href="top50.html">&#9733; Top 50</a>
@@ -25,7 +25,7 @@
     </nav>
     <main>
     <section>
-      <h2>Current Month — April 2026 <span class="count">(2178)</span></h2>
+      <h2>Current Month — April 2026 <span class="count">(2181)</span></h2>
       <div class="table-wrapper">
         <table>
           <thead>
@@ -42,6 +42,59 @@
             </tr>
           </thead>
           <tbody>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6120" target="_blank" rel="noopener">CVE-2026-6120</a></td>
+        <td>7.4</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-119</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.18</td>
+        <td><details><summary>A vulnerability was detected in Tenda F451 1.0.0.7. Affected is the function fro...</summary><p>A vulnerability was detected in Tenda F451 1.0.0.7. Affected is the function fromDhcpListClient of the file /goform/DhcpListClient of the component httpd. The manipulation of the argument page results in stack-based buffer overflow. The attack can be launched remotely. The exploit is now public and may be used.</p></details></td>
+        <td>2026-04-12</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6119" target="_blank" rel="noopener">CVE-2026-6119</a></td>
+        <td>5.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-918</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.71</td>
+        <td><details><summary>A vulnerability was identified in AstrBotDevs AstrBot up to 4.22.1. The affected...</summary><p>A vulnerability was identified in AstrBotDevs AstrBot up to 4.22.1. The affected element is the function post_data.get of the component API Endpoint. Such manipulation leads to server-side request forgery. The attack may be performed from remote. The exploit is publicly available and might be used. The project was informed of the problem early through an issue report but has not responded yet.</p></details></td>
+        <td>2026-04-12</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-31413" target="_blank" rel="noopener">CVE-2026-31413</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>In the Linux kernel, the following vulnerability has been resolved:
+
+bpf: Fix un...</summary><p>In the Linux kernel, the following vulnerability has been resolved:
+
+bpf: Fix unsound scalar forking in maybe_fork_scalars() for BPF_OR
+
+maybe_fork_scalars() is called for both BPF_AND and BPF_OR when the
+source operand is a constant.  When dst has signed range [-1, 0], it
+forks the verifier state: the pushed path gets dst = 0, the current
+path gets dst = -1.
+
+For BPF_AND this is correct: 0 &amp; K == 0.
+For BPF_OR this is wrong:    0 | K == K, not 0.
+
+The pushed path therefore tracks dst as 0 when the runtime value is K,
+producing an exploitable verifier/runtime divergence that allows
+out-of-bounds map access.
+
+Fix this by passing env-&gt;insn_idx (instead of env-&gt;insn_idx + 1) to
+push_stack(), so the pushed path re-executes the ALU instruction with
+dst = 0 and naturally computes the correct result for any opcode.</p></details></td>
+        <td>2026-04-12</td>
+      </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6118" target="_blank" rel="noopener">CVE-2026-6118</a></td>
         <td>5.3</td>
