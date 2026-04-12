@@ -1,9 +1,10 @@
 # CVEs — April 2026
 
-_2213 vulnerabilities_
+_2214 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
+| [CVE-2026-6130](https://nvd.nist.gov/vuln/detail/CVE-2026-6130) | 6.9 | MEDIUM | CWE-77 | No | — | 4.83 | 2026-04-12 | A flaw has been found in chatboxai chatbox up to 1.20.0. This impacts the function StdioClientTransport of the file src/... |
 | [CVE-2026-6129](https://nvd.nist.gov/vuln/detail/CVE-2026-6129) | 6.9 | MEDIUM | CWE-287 | No | — | 4.83 | 2026-04-12 | A vulnerability was detected in zhayujie chatgpt-on-wechat CowAgent up to 2.0.4. This affects an unknown function of the... |
 | [CVE-2026-40396](https://nvd.nist.gov/vuln/detail/CVE-2026-40396) | 4.0 | MEDIUM | CWE-670 | No | — | 2.80 | 2026-04-12 | Varnish Cache 9 before 9.0.1 allows a "workspace overflow" denial of service (daemon panic) after timeout_linger. A mali... |
 | [CVE-2026-40395](https://nvd.nist.gov/vuln/detail/CVE-2026-40395) | 4.0 | MEDIUM | CWE-770 | No | — | 2.80 | 2026-04-12 | Varnish Enterprise before 6.0.16r12 allows a "workspace overflow" denial of service (daemon panic) for shared VCL. The h... |
