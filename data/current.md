@@ -1,12 +1,13 @@
 # CVEs — April 2026
 
-_2181 vulnerabilities_
+_2182 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
+| [CVE-2026-6122](https://nvd.nist.gov/vuln/detail/CVE-2026-6122) | 7.4 | HIGH | CWE-119 | No | — | 5.18 | 2026-04-12 | A vulnerability has been found in Tenda F451 1.0.0.7. Affected by this issue is the function frmL7ProtForm of the file /... |
+| [CVE-2026-6121](https://nvd.nist.gov/vuln/detail/CVE-2026-6121) | 7.4 | HIGH | CWE-119 | No | — | 5.18 | 2026-04-12 | A flaw has been found in Tenda F451 1.0.0.7. Affected by this vulnerability is the function WrlclientSet of the file /go... |
 | [CVE-2026-6120](https://nvd.nist.gov/vuln/detail/CVE-2026-6120) | 7.4 | HIGH | CWE-119 | No | — | 5.18 | 2026-04-12 | A vulnerability was detected in Tenda F451 1.0.0.7. Affected is the function fromDhcpListClient of the file /goform/Dhcp... |
 | [CVE-2026-6119](https://nvd.nist.gov/vuln/detail/CVE-2026-6119) | 5.3 | MEDIUM | CWE-918 | No | — | 3.71 | 2026-04-12 | A vulnerability was identified in AstrBotDevs AstrBot up to 4.22.1. The affected element is the function post_data.get o... |
-| [CVE-2026-31413](https://nvd.nist.gov/vuln/detail/CVE-2026-31413) | 0.0 | NONE | N/A | No | — | 0.00 | 2026-04-12 | In the Linux kernel, the following vulnerability has been resolved:  bpf: Fix unsound scalar forking in maybe_fork_scala... |
 | [CVE-2026-6118](https://nvd.nist.gov/vuln/detail/CVE-2026-6118) | 5.3 | MEDIUM | CWE-74 | No | — | 3.71 | 2026-04-12 | A vulnerability was determined in AstrBotDevs AstrBot up to 4.22.1. Impacted is the function add_mcp_server of the file... |
 | [CVE-2026-6117](https://nvd.nist.gov/vuln/detail/CVE-2026-6117) | 5.3 | MEDIUM | CWE-264 | No | — | 3.71 | 2026-04-12 | A vulnerability was found in AstrBotDevs AstrBot up to 4.22.1. This issue affects the function install_plugin_upload of... |
 | [CVE-2026-6116](https://nvd.nist.gov/vuln/detail/CVE-2026-6116) | 8.9 | HIGH | CWE-77 | No | — | 6.23 | 2026-04-12 | A vulnerability has been found in Totolink A7100RU 7.4cu.2313_b20191024. This vulnerability affects the function setDiag... |

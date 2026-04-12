@@ -1,28 +1,11 @@
 #version 1.0
 #delimiter "|"
 
-cves[2181]{cveId:str|published:str|lastModified:str|cvssScore:f64|severity:str|cweId:str|cweName:str|kev:bool|description:str|nvdUrl:str|epssScore:f64|epssPercentile:f64|vapScore:f64}:
+cves[2182]{cveId:str|published:str|lastModified:str|cvssScore:f64|severity:str|cweId:str|cweName:str|kev:bool|description:str|nvdUrl:str|epssScore:f64|epssPercentile:f64|vapScore:f64}:
+  CVE-2026-6122|2026-04-12T08:16:37.700|2026-04-12T08:16:37.700|7.4|HIGH|CWE-119|N/A|false|A vulnerability has been found in Tenda F451 1.0.0.7. Affected by this issue is the function frmL7ProtForm of the file /goform/L7Prot of the component httpd. Such manipulation of the argument page leads to stack-based buffer overflow. The attack may be launched remotely. The exploit has been disclosed to the public and may be used.|https://nvd.nist.gov/vuln/detail/CVE-2026-6122|0.00000|0.00000|5.1800
+  CVE-2026-6121|2026-04-12T08:16:36.467|2026-04-12T08:16:36.467|7.4|HIGH|CWE-119|N/A|false|A flaw has been found in Tenda F451 1.0.0.7. Affected by this vulnerability is the function WrlclientSet of the file /goform/WrlclientSet of the component httpd. This manipulation of the argument GO causes stack-based buffer overflow. The attack may be initiated remotely. The exploit has been published and may be used.|https://nvd.nist.gov/vuln/detail/CVE-2026-6121|0.00000|0.00000|5.1800
   CVE-2026-6120|2026-04-12T06:16:22.187|2026-04-12T06:16:22.187|7.4|HIGH|CWE-119|N/A|false|A vulnerability was detected in Tenda F451 1.0.0.7. Affected is the function fromDhcpListClient of the file /goform/DhcpListClient of the component httpd. The manipulation of the argument page results in stack-based buffer overflow. The attack can be launched remotely. The exploit is now public and may be used.|https://nvd.nist.gov/vuln/detail/CVE-2026-6120|0.00000|0.00000|5.1800
   CVE-2026-6119|2026-04-12T06:16:21.927|2026-04-12T06:16:21.927|5.3|MEDIUM|CWE-918|N/A|false|A vulnerability was identified in AstrBotDevs AstrBot up to 4.22.1. The affected element is the function post_data.get of the component API Endpoint. Such manipulation leads to server-side request forgery. The attack may be performed from remote. The exploit is publicly available and might be used. The project was informed of the problem early through an issue report but has not responded yet.|https://nvd.nist.gov/vuln/detail/CVE-2026-6119|0.00000|0.00000|3.7100
-  CVE-2026-31413|2026-04-12T06:16:20.050|2026-04-12T06:16:20.050|0.0|NONE|N/A|N/A|false|"In the Linux kernel, the following vulnerability has been resolved:
-
-bpf: Fix unsound scalar forking in maybe_fork_scalars() for BPF_OR
-
-maybe_fork_scalars() is called for both BPF_AND and BPF_OR when the
-source operand is a constant.  When dst has signed range [-1, 0], it
-forks the verifier state: the pushed path gets dst = 0, the current
-path gets dst = -1.
-
-For BPF_AND this is correct: 0 & K == 0.
-For BPF_OR this is wrong:    0 | K == K, not 0.
-
-The pushed path therefore tracks dst as 0 when the runtime value is K,
-producing an exploitable verifier/runtime divergence that allows
-out-of-bounds map access.
-
-Fix this by passing env->insn_idx (instead of env->insn_idx + 1) to
-push_stack(), so the pushed path re-executes the ALU instruction with
-dst = 0 and naturally computes the correct result for any opcode."|https://nvd.nist.gov/vuln/detail/CVE-2026-31413|0.00000|0.00000|0.0000
   CVE-2026-6118|2026-04-12T05:16:01.560|2026-04-12T05:16:01.560|5.3|MEDIUM|CWE-74|N/A|false|A vulnerability was determined in AstrBotDevs AstrBot up to 4.22.1. Impacted is the function add_mcp_server of the file astrbot/dashboard/routes/tools.py of the component MCP Endpoint. This manipulation of the argument command causes command injection. The attack is possible to be carried out remotely. The exploit has been publicly disclosed and may be utilized. The project was informed of the problem early through an issue report but has not responded yet.|https://nvd.nist.gov/vuln/detail/CVE-2026-6118|0.00000|0.00000|3.7100
   CVE-2026-6117|2026-04-12T05:16:01.287|2026-04-12T05:16:01.287|5.3|MEDIUM|CWE-264|N/A|false|A vulnerability was found in AstrBotDevs AstrBot up to 4.22.1. This issue affects the function install_plugin_upload of the file astrbot/dashboard/routes/plugin.py of the component install-upload Endpoint. The manipulation of the argument File results in sandbox issue. The attack can be executed remotely. The exploit has been made public and could be used. The project was informed of the problem early through an issue report but has not responded yet.|https://nvd.nist.gov/vuln/detail/CVE-2026-6117|0.00000|0.00000|3.7100
   CVE-2026-6116|2026-04-12T05:16:01.060|2026-04-12T05:16:01.060|8.9|HIGH|CWE-77|N/A|false|A vulnerability has been found in Totolink A7100RU 7.4cu.2313_b20191024. This vulnerability affects the function setDiagnosisCfg of the file /cgi-bin/cstecgi.cgi of the component CGI Handler. The manipulation of the argument ip leads to os command injection. Remote exploitation of the attack is possible. The exploit has been disclosed to the public and may be used.|https://nvd.nist.gov/vuln/detail/CVE-2026-6116|0.00000|0.00000|6.2300
