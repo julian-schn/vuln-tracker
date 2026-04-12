@@ -1,9 +1,16 @@
 # CVEs — April 2026
 
-_2171 vulnerabilities_
+_2178 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
+| [CVE-2026-6118](https://nvd.nist.gov/vuln/detail/CVE-2026-6118) | 5.3 | MEDIUM | CWE-74 | No | — | 3.71 | 2026-04-12 | A vulnerability was determined in AstrBotDevs AstrBot up to 4.22.1. Impacted is the function add_mcp_server of the file... |
+| [CVE-2026-6117](https://nvd.nist.gov/vuln/detail/CVE-2026-6117) | 5.3 | MEDIUM | CWE-264 | No | — | 3.71 | 2026-04-12 | A vulnerability was found in AstrBotDevs AstrBot up to 4.22.1. This issue affects the function install_plugin_upload of... |
+| [CVE-2026-6116](https://nvd.nist.gov/vuln/detail/CVE-2026-6116) | 8.9 | HIGH | CWE-77 | No | — | 6.23 | 2026-04-12 | A vulnerability has been found in Totolink A7100RU 7.4cu.2313_b20191024. This vulnerability affects the function setDiag... |
+| [CVE-2026-6115](https://nvd.nist.gov/vuln/detail/CVE-2026-6115) | 8.9 | HIGH | CWE-77 | No | — | 6.23 | 2026-04-12 | A flaw has been found in Totolink A7100RU 7.4cu.2313_b20191024. This affects the function setAppCfg of the file /cgi-bin... |
+| [CVE-2026-6114](https://nvd.nist.gov/vuln/detail/CVE-2026-6114) | 8.9 | HIGH | CWE-77 | No | — | 6.23 | 2026-04-12 | A vulnerability was detected in Totolink A7100RU 7.4cu.2313_b20191024. Affected by this issue is the function setNetwork... |
+| [CVE-2026-6113](https://nvd.nist.gov/vuln/detail/CVE-2026-6113) | 8.9 | HIGH | CWE-77 | No | — | 6.23 | 2026-04-12 | A security vulnerability has been detected in Totolink A7100RU 7.4cu.2313_b20191024. Affected by this vulnerability is t... |
+| [CVE-2026-6112](https://nvd.nist.gov/vuln/detail/CVE-2026-6112) | 8.9 | HIGH | CWE-77 | No | — | 6.23 | 2026-04-12 | A weakness has been identified in Totolink A7100RU 7.4cu.2313_b20191024. Affected is the function setRadvdCfg of the fil... |
 | [CVE-2026-6111](https://nvd.nist.gov/vuln/detail/CVE-2026-6111) | 5.3 | MEDIUM | CWE-918 | No | — | 3.71 | 2026-04-12 | A security flaw has been discovered in FoundationAgents MetaGPT up to 0.8.1. This impacts the function decode_image of t... |
 | [CVE-2026-6110](https://nvd.nist.gov/vuln/detail/CVE-2026-6110) | 6.9 | MEDIUM | CWE-74 | No | — | 4.83 | 2026-04-12 | A vulnerability was identified in FoundationAgents MetaGPT up to 0.8.1. This affects the function generate_thoughts of t... |
 | [CVE-2026-1116](https://nvd.nist.gov/vuln/detail/CVE-2026-1116) | 8.2 | HIGH | CWE-79 | No | — | 5.74 | 2026-04-12 | A Cross-site Scripting (XSS) vulnerability was identified in the `from_dict` method of the `AppLollmsMessage` class in p... |
@@ -14,7 +21,7 @@ _2171 vulnerabilities_
 | [CVE-2026-6105](https://nvd.nist.gov/vuln/detail/CVE-2026-6105) | 6.9 | MEDIUM | CWE-266 | No | — | 4.83 | 2026-04-11 | A security vulnerability has been detected in perfree go-fastdfs-web up to 1.3.7. This affects an unknown part of the fi... |
 | [CVE-2026-23900](https://nvd.nist.gov/vuln/detail/CVE-2026-23900) | 0.0 | NONE | CWE-79 | No | — | 0.00 | 2026-04-11 | Various stored XSS vulnerabilities in the maps- and icon rendering logic in Phoca Maps component 5.0.0-6.0.2 have been d... |
 | [CVE-2026-5809](https://nvd.nist.gov/vuln/detail/CVE-2026-5809) | 7.1 | HIGH | CWE-73 | No | 0.0% | 4.97 | 2026-04-11 | The wpForo Forum plugin for WordPress is vulnerable to Arbitrary File Deletion in versions up to and including 3.0.2. Th... |
-| [CVE-2026-34621](https://nvd.nist.gov/vuln/detail/CVE-2026-34621) | 9.6 | CRITICAL | CWE-1321 | No | 0.2% | 6.73 | 2026-04-11 | Acrobat Reader versions 24.001.30356, 26.001.21367 and earlier are affected by an Improperly Controlled Modification of... |
+| [CVE-2026-34621](https://nvd.nist.gov/vuln/detail/CVE-2026-34621) | 8.6 | HIGH | CWE-1321 | No | 0.2% | 6.03 | 2026-04-11 | Acrobat Reader versions 24.001.30356, 26.001.21367 and earlier are affected by an Improperly Controlled Modification of... |
 | [CVE-2026-5226](https://nvd.nist.gov/vuln/detail/CVE-2026-5226) | 6.1 | MEDIUM | CWE-79 | No | 0.1% | 4.27 | 2026-04-11 | The Optimole – Optimize Images in Real Time plugin for WordPress is vulnerable to Reflected Cross-Site Scripting via URL... |
 | [CVE-2026-5217](https://nvd.nist.gov/vuln/detail/CVE-2026-5217) | 7.2 | HIGH | CWE-79 | No | 0.1% | 5.04 | 2026-04-11 | The Optimole – Optimize Images \| Convert WebP & AVIF \| CDN & Lazy Load \| Image Optimization plugin for WordPress is v... |
 | [CVE-2026-5207](https://nvd.nist.gov/vuln/detail/CVE-2026-5207) | 6.5 | MEDIUM | CWE-89 | No | 0.0% | 4.55 | 2026-04-11 | The LifterLMS plugin for WordPress is vulnerable to SQL Injection via the 'order' parameter in all versions up to, and i... |
