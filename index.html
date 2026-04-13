@@ -11,7 +11,7 @@
     <header>
       <h1>vuln-tracker</h1>
       <p class="subtitle">CVEs from the National Vulnerability Database — current and previous month</p>
-      <p class="last-updated">Last updated: 2026-04-13 19:21 UTC</p>
+      <p class="last-updated">Last updated: 2026-04-13 21:01 UTC</p>
     </header>
     <nav>
       <a href="top50.html">&#9733; Top 50</a>
@@ -42,6 +42,94 @@
             </tr>
           </thead>
           <tbody>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6215" target="_blank" rel="noopener">CVE-2026-6215</a></td>
+        <td>5.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-918</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.71</td>
+        <td><details><summary>A weakness has been identified in DbGate up to 7.1.4. The impacted element is th...</summary><p>A weakness has been identified in DbGate up to 7.1.4. The impacted element is the function apiServerUrl1 of the file packages/rest/src/openApiDriver.ts of the component REST/GraphQL. This manipulation causes server-side request forgery. The attack may be initiated remotely. The exploit has been made available to the public and could be used for attacks. The vendor was contacted early about this disclosure but did not respond in any way.</p></details></td>
+        <td>2026-04-13</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6202" target="_blank" rel="noopener">CVE-2026-6202</a></td>
+        <td>5.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-74</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.71</td>
+        <td><details><summary>A security flaw has been discovered in code-projects Easy Blog Site 1.0. This af...</summary><p>A security flaw has been discovered in code-projects Easy Blog Site 1.0. This affects an unknown function of the file post.php. Performing a manipulation of the argument tags results in sql injection. The attack may be initiated remotely. The exploit has been released to the public and may be used for attacks.</p></details></td>
+        <td>2026-04-13</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6201" target="_blank" rel="noopener">CVE-2026-6201</a></td>
+        <td>5.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-266</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.71</td>
+        <td><details><summary>A vulnerability was identified in CodeAstro Online Job Portal 1.0. The impacted ...</summary><p>A vulnerability was identified in CodeAstro Online Job Portal 1.0. The impacted element is an unknown function of the file /jobs/job-delete.php of the component Delete Job Posting Handler. Such manipulation of the argument ID leads to improper access controls. The attack can be launched remotely. The exploit is publicly available and might be used.</p></details></td>
+        <td>2026-04-13</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33657" target="_blank" rel="noopener">CVE-2026-33657</a></td>
+        <td>4.6</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-80</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.22</td>
+        <td><details><summary>EspoCRM is an open source customer relationship management application. Versions...</summary><p>EspoCRM is an open source customer relationship management application. Versions 9.3.3 and below have a stored HTML injection vulnerability that allows any authenticated user with standard (non-administrative) privileges to inject arbitrary HTML into system-generated email notifications by crafting malicious content in the post field of stream activity notes. The vulnerability exists because server-side Handlebars templates render the post field using unescaped triple-brace syntax, the Markdown processor preserves inline HTML by default, and the rendering pipeline explicitly skips sanitization for fields present in additionalData, creating a path where attacker-controlled HTML is accepted, stored, and rendered directly into emails without any escaping. Since the emails are sent using the system&#x27;s configured SMTP identity (such as an administrative sender address), the injected content appears fully trusted to recipients, enabling phishing attacks, user tracking via embedded resources like image beacons, and UI manipulation within email content. The @mention feature further increases the impact by allowing targeted delivery of malicious emails to specific users. This issue has been fixed in version 9.3.4.</p></details></td>
+        <td>2026-04-13</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33534" target="_blank" rel="noopener">CVE-2026-33534</a></td>
+        <td>4.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-918</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.01</td>
+        <td><details><summary>EspoCRM is an open source customer relationship management application. Versions...</summary><p>EspoCRM is an open source customer relationship management application. Versions 9.3.3 and below have an authenticated Server-Side Request Forgery (SSRF) vulnerability that allows bypassing the internal-host validation logic by using alternative IPv4 representations such as octal notation (e.g., 0177.0.0.1 instead of 127.0.0.1). This is caused by HostCheck::isNotInternalHost() function relying on PHP&#x27;s filter_var(..., FILTER_VALIDATE_IP), which does not recognize alternative IP formats, causing the validation to fall through to a DNS lookup that returns no records and incorrectly treats the host as safe, however the cURL subsequently normalizes the address and connects to the loopback destination. Through the confirmed /api/v1/Attachment/fromImageUrl endpoint, an authenticated user can force the server to make requests to loopback-only services and store the fetched response as an attachment. This vulnerability is distinct from CVE-2023-46736 (which involved redirect-based SSRF) and may allow access to internal resources reachable from the application runtime. This issue has been fixed in version 9.3.4.</p></details></td>
+        <td>2026-04-13</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32605" target="_blank" rel="noopener">CVE-2026-32605</a></td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-125</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.25</td>
+        <td><details><summary>nimiq/core-rs-albatross is a Rust implementation of the Nimiq Proof-of-Stake pro...</summary><p>nimiq/core-rs-albatross is a Rust implementation of the Nimiq Proof-of-Stake protocol based on the Albatross consensus algorithm. Prior to version 1.3.0, an untrusted peer could crash a validator by publishing a signed tendermint proposal message where signer == validators.num_validators(). ProposalSender::send uses &gt; instead of &gt;= for the signer bounds check, so the equality case passes and reaches validators.get_validator_by_slot_band(signer), which panics with an out-of-bounds index before any signature verification runs. This issue has been fixed in version 1.3.0.</p></details></td>
+        <td>2026-04-13</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32270" target="_blank" rel="noopener">CVE-2026-32270</a></td>
+        <td>1.7</td>
+        <td><span class="severity low">LOW</span></td>
+        <td>CWE-200</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>1.19</td>
+        <td><details><summary>Craft Commerce is an ecommerce platform for Craft CMS. In versions 4.0.0 through...</summary><p>Craft Commerce is an ecommerce platform for Craft CMS. In versions 4.0.0 through 4.10.2 and 5.0.0 through 5.5.4, the PaymentsController::actionPay discloses some order data to unauthenticated users when an order number is provided and the email check fails during an anonymous payment. The JSON error response includes the serialized order object (order), which contains some sensitive fields such as customer email, shipping address, and billing address. The frontend payment flow&#x27;s actionPay() retrieves orders by number before authorization is fully enforcedLoad order by number. This issue has been fixed in versions 4.11.0 and 5.6.0.</p></details></td>
+        <td>2026-04-13</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-31048" target="_blank" rel="noopener">CVE-2026-31048</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>An issue in the &lt;code&gt;pickle&lt;/code&gt; protocol of Pyro v3.x allows attackers to ex...</summary><p>An issue in the &lt;code&gt;pickle&lt;/code&gt; protocol of Pyro v3.x allows attackers to execute arbitrary code via supplying a crafted pickled string message.</p></details></td>
+        <td>2026-04-13</td>
+      </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6200" target="_blank" rel="noopener">CVE-2026-6200</a></td>
         <td>7.4</td>
@@ -240,28 +328,6 @@ The vulnerability is only present if the program re-uses decompressor instances 
         <td>&mdash;</td>
         <td>5.67</td>
         <td><details><summary>simple-git enables running native Git commands from JavaScript. Versions up to a...</summary><p>simple-git enables running native Git commands from JavaScript. Versions up to and including 3.31.1 allow execution of arbitrary commands through Git option manipulation, bypassing safety checks meant to block dangerous options like -u and --upload-pack. The flaw stems from an incomplete fix for CVE-2022-25860, as Git&#x27;s flexible option parsing allows numerous character combinations (e.g., -vu, -4u, -nu) to circumvent the regular-expression-based blocklist in the unsafe operations plugin. Due to the virtually infinite number of valid option variants that Git accepts, a complete blocklist-based mitigation may be infeasible without fully emulating Git&#x27;s option parsing behavior. This issue has been fixed in version 3.32.0.</p></details></td>
-        <td>2026-04-13</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-3756" target="_blank" rel="noopener">CVE-2025-3756</a></td>
-        <td>7.1</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-1284</td>
-        <td>&nbsp;</td>
-        <td>&mdash;</td>
-        <td>4.97</td>
-        <td><details><summary>A vulnerability exists in the command handling of the IEC 61850 communication st...</summary><p>A vulnerability exists in the command handling of the IEC 61850 communication stack included in the product revisions listed as affected in this CVE. An attacker with access to IEC 61850 networks could exploit the vulnera bility by using a specially crafted 61850 packet, forcing the communication interfaces of the PM 877, CI850 and CI868 modules into fault mode or causing unavailability of the S+ Operations 61850 connectivity, resulting in a denial-of-service situation. 
-
-
-
-
-The System 800xA IEC61850 Connect is not affected. Note: This vulnerability does not impact on the overall availability and functionality of the S+ Operations node, only the 61850 communication function.
-
-   
-
-
-
-This issue affects AC800M (System 800xA): from 6.0.0x through 6.0.0303.0, from 6.1.0x through 6.1.0031.0, from 6.1.1x through 6.1.1004.0, from 6.1.1x through 6.1.1202.0, from 6.2.0x through 6.2.0006.0; Symphony Plus SD Series: A_0, A_1, A_2.003, A_3.005, A_4.001, B_0.005; Symphony Plus MR (Melody Rack): from 3.10 through 3.52; S+ Operations: 2.1, 2.2, 2.3, 3.3.</p></details></td>
         <td>2026-04-13</td>
       </tr>
       <tr>
@@ -563,23 +629,23 @@ This issue affects AC800M (System 800xA): from 6.0.0x through 6.0.0303.0, from 
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-69624" target="_blank" rel="noopener">CVE-2025-69624</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-476</td>
         <td>&nbsp;</td>
         <td>&mdash;</td>
-        <td>0.00</td>
+        <td>5.25</td>
         <td><details><summary>Nitro PDF Pro for Windows 14.41.1.4 contains a NULL pointer dereference vulnerab...</summary><p>Nitro PDF Pro for Windows 14.41.1.4 contains a NULL pointer dereference vulnerability in the JavaScript implementation of app.alert(). When app.alert() is called with more than one argument and the first argument evaluates to null (for example, app.alert(app.activeDocs, true) when app.activeDocs is null), the engine routes the call through a fallback path intended for non-string arguments. In this path, js_ValueToString() is invoked on the null value and returns an invalid string pointer, which is then passed to JS_GetStringChars() without validation. Dereferencing this pointer leads to an access violation and application crash when opening a crafted PDF.</p></details></td>
         <td>2026-04-13</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-66769" target="_blank" rel="noopener">CVE-2025-66769</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-476</td>
         <td>&nbsp;</td>
         <td>&mdash;</td>
-        <td>0.00</td>
+        <td>5.25</td>
         <td><details><summary>A NULL pointer dereference in Nitro PDF Pro for Windows v14.41.1.4 allows attack...</summary><p>A NULL pointer dereference in Nitro PDF Pro for Windows v14.41.1.4 allows attackers to cause a Denial of Service (DoS) via a crafted XFA packet.</p></details></td>
         <td>2026-04-13</td>
       </tr>
@@ -683,20 +749,6 @@ This issue affects AC800M (System 800xA): from 6.0.0x through 6.0.0303.0, from 
         <td>2026-04-13</td>
       </tr>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33858" target="_blank" rel="noopener">CVE-2026-33858</a></td>
-        <td>8.8</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-502</td>
-        <td>&nbsp;</td>
-        <td>&mdash;</td>
-        <td>6.16</td>
-        <td><details><summary>Dag Authors, who normally should not be able to execute code in the webserver co...</summary><p>Dag Authors, who normally should not be able to execute code in the webserver context could craft XCom payload causing the webserver to execute arbitrary code. Since Dag Authors are already highly trusted, severity of this issue is Low.
-
-
-Users are recommended to upgrade to Apache Airflow 3.2.0, which resolves this issue.</p></details></td>
-        <td>2026-04-13</td>
-      </tr>
-      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-31283" target="_blank" rel="noopener">CVE-2026-31283</a></td>
         <td>0.0</td>
         <td><span class="severity none">NONE</span></td>
@@ -731,45 +783,45 @@ Users are recommended to upgrade to Apache Airflow 3.2.0, which resolves this is
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-30999" target="_blank" rel="noopener">CVE-2026-30999</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-122</td>
         <td>&nbsp;</td>
         <td>&mdash;</td>
-        <td>0.00</td>
+        <td>5.25</td>
         <td><details><summary>A heap buffer overflow in the av_bprint_finalize() function of FFmpeg v8.0.1 all...</summary><p>A heap buffer overflow in the av_bprint_finalize() function of FFmpeg v8.0.1 allows attackers to cause a Denial of Service (DoS) via a crafted input.</p></details></td>
         <td>2026-04-13</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-30998" target="_blank" rel="noopener">CVE-2026-30998</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-400</td>
         <td>&nbsp;</td>
         <td>&mdash;</td>
-        <td>0.00</td>
+        <td>5.25</td>
         <td><details><summary>An improper resource deallocation and closure vulnerability in the tools/zmqsend...</summary><p>An improper resource deallocation and closure vulnerability in the tools/zmqsend.c component of FFmpeg v8.0.1 allows attackers to cause a Denial of Service (DoS) via supplying a crafted input file.</p></details></td>
         <td>2026-04-13</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-30997" target="_blank" rel="noopener">CVE-2026-30997</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-125</td>
         <td>&nbsp;</td>
         <td>&mdash;</td>
-        <td>0.00</td>
+        <td>5.25</td>
         <td><details><summary>An out-of-bounds read in the read_global_param() function (libavcodec/av1dec.c) ...</summary><p>An out-of-bounds read in the read_global_param() function (libavcodec/av1dec.c) of FFmpeg v8.0.1 allows attackers to cause a Denial of Service (DoS) via a crafted input.</p></details></td>
         <td>2026-04-13</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-29628" target="_blank" rel="noopener">CVE-2026-29628</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>6.2</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-121</td>
         <td>&nbsp;</td>
         <td>&mdash;</td>
-        <td>0.00</td>
+        <td>4.34</td>
         <td><details><summary>A stack overflow in the experimental/tinyobj_loader_opt.h file of tinyobjloader ...</summary><p>A stack overflow in the experimental/tinyobj_loader_opt.h file of tinyobjloader commit d56555b allows attackers to cause a Denial of Service (DoS) via supplying a crafted .mtl file.</p></details></td>
         <td>2026-04-13</td>
       </tr>
@@ -782,26 +834,6 @@ Users are recommended to upgrade to Apache Airflow 3.2.0, which resolves this is
         <td>&mdash;</td>
         <td>6.16</td>
         <td><details><summary>A vulnerability in the `TFSMLayer` class of the `keras` package, version 3.13.0,...</summary><p>A vulnerability in the `TFSMLayer` class of the `keras` package, version 3.13.0, allows attacker-controlled TensorFlow SavedModels to be loaded during deserialization of `.keras` models, even when `safe_mode=True`. This bypasses the security guarantees of `safe_mode` and enables arbitrary attacker-controlled code execution during model inference under the victim&#x27;s privileges. The issue arises due to the unconditional loading of external SavedModels, serialization of attacker-controlled file paths, and the lack of validation in the `from_config()` method.</p></details></td>
-        <td>2026-04-13</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-66236" target="_blank" rel="noopener">CVE-2025-66236</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>CWE-532</td>
-        <td>&nbsp;</td>
-        <td>&mdash;</td>
-        <td>0.00</td>
-        <td><details><summary>Before Airflow 3.2.0, it was unclear that secure Airflow deployments require the...</summary><p>Before Airflow 3.2.0, it was unclear that secure Airflow deployments require the Deployment Manager to take appropriate actions and pay attention to security details and security model of Airflow. Some assumptions the Deployment Manager could make were not clear or explicit enough, even though Airflow&#x27;s intentions and security model of Airflow did not suggest different assumptions. The overall security model [1], workload isolation [2], and JWT authentication details [3] are now described in more detail. Users concerned with role isolation and following the Airflow security model of Airflow are advised to upgrade to Airflow 3.2, where several security improvements have been implemented. They should also read and follow the relevant documents to make sure that their deployment is secure enough. It also clarifies that the Deployment Manager is ultimately responsible for securing your Airflow deployment. This had also been communicated via Airflow 3.2.0 Blog announcement [4].
-
-[1] Security Model:  https://airflow.apache.org/docs/apache-airflow/stable/security/jwt_token_authentication.html 
-[2] Workload isolation:  https://airflow.apache.org/docs/apache-airflow/stable/security/workload.html 
-[3] JWT Token authentication:  https://airflow.apache.org/docs/apache-airflow/stable/security/jwt_token_authentication.html 
-[4] Airflow 3.2.0 Blog announcement:  https://airflow.apache.org/blog/airflow-3.2.0/ 
-
-
-
-Users are recommended to upgrade to version 3.2.0, which fixes this issue.</p></details></td>
         <td>2026-04-13</td>
       </tr>
       <tr>
@@ -7483,23 +7515,23 @@ Users are recommended to upgrade to version 3.2.0, which fixes this issue.</p></
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5896" target="_blank" rel="noopener">CVE-2026-5896</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>6.1</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-693</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p3</small></td>
-        <td>0.00</td>
+        <td>4.27</td>
         <td><details><summary>Policy bypass in Audio in Google Chrome prior to 147.0.7727.55 allowed a remote ...</summary><p>Policy bypass in Audio in Google Chrome prior to 147.0.7727.55 allowed a remote attacker who convinced a user to engage in specific UI gestures to bypass sandbox download restrictions via a crafted HTML page. (Chromium security severity: Low)</p></details></td>
         <td>2026-04-08</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5895" target="_blank" rel="noopener">CVE-2026-5895</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>5.4</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-451</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p10</small></td>
-        <td>0.00</td>
+        <td>3.78</td>
         <td><details><summary>Incorrect security UI in Omnibox in Google Chrome on iOS prior to 147.0.7727.55 ...</summary><p>Incorrect security UI in Omnibox in Google Chrome on iOS prior to 147.0.7727.55 allowed a remote attacker to spoof the contents of the Omnibox (URL bar) via a crafted domain name. (Chromium security severity: Low)</p></details></td>
         <td>2026-04-08</td>
       </tr>
@@ -7516,12 +7548,12 @@ Users are recommended to upgrade to version 3.2.0, which fixes this issue.</p></
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5893" target="_blank" rel="noopener">CVE-2026-5893</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
         <td>CWE-362</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p9</small></td>
-        <td>0.00</td>
+        <td>5.25</td>
         <td><details><summary>Race in V8 in Google Chrome prior to 147.0.7727.55 allowed a remote attacker to ...</summary><p>Race in V8 in Google Chrome prior to 147.0.7727.55 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: Medium)</p></details></td>
         <td>2026-04-08</td>
       </tr>
@@ -9969,12 +10001,12 @@ Users are recommended to upgrade to version 3.2.0, which fixes this issue.</p></
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39703" target="_blank" rel="noopener">CVE-2026-39703</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>6.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
         <td>CWE-79</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p8</small></td>
-        <td>0.00</td>
+        <td>4.55</td>
         <td><details><summary>Improper Neutralization of Input During Web Page Generation (&#x27;Cross-site Scripti...</summary><p>Improper Neutralization of Input During Web Page Generation (&#x27;Cross-site Scripting&#x27;) vulnerability in wpbits WPBITS Addons For Elementor Page Builder wpbits-addons-for-elementor allows Stored XSS.This issue affects WPBITS Addons For Elementor Page Builder: from n/a through &lt;= 1.8.1.</p></details></td>
         <td>2026-04-08</td>
       </tr>
@@ -10057,12 +10089,12 @@ Users are recommended to upgrade to version 3.2.0, which fixes this issue.</p></
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39695" target="_blank" rel="noopener">CVE-2026-39695</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>5.4</td>
+        <td><span class="severity medium">MEDIUM</span></td>
         <td>CWE-918</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p4</small></td>
-        <td>0.00</td>
+        <td>3.78</td>
         <td><details><summary>Server-Side Request Forgery (SSRF) vulnerability in podigee Podigee podigee allo...</summary><p>Server-Side Request Forgery (SSRF) vulnerability in podigee Podigee podigee allows Server Side Request Forgery.This issue affects Podigee: from n/a through &lt;= 1.4.0.</p></details></td>
         <td>2026-04-08</td>
       </tr>
@@ -10079,12 +10111,12 @@ Users are recommended to upgrade to version 3.2.0, which fixes this issue.</p></
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39693" target="_blank" rel="noopener">CVE-2026-39693</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>5.9</td>
+        <td><span class="severity medium">MEDIUM</span></td>
         <td>CWE-79</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p8</small></td>
-        <td>0.00</td>
+        <td>4.13</td>
         <td><details><summary>Improper Neutralization of Input During Web Page Generation (&#x27;Cross-site Scripti...</summary><p>Improper Neutralization of Input During Web Page Generation (&#x27;Cross-site Scripting&#x27;) vulnerability in fesomia FSM Custom Featured Image Caption fsm-custom-featured-image-caption allows DOM-Based XSS.This issue affects FSM Custom Featured Image Caption: from n/a through &lt;= 1.25.1.</p></details></td>
         <td>2026-04-08</td>
       </tr>
@@ -10123,12 +10155,12 @@ Users are recommended to upgrade to version 3.2.0, which fixes this issue.</p></
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39689" target="_blank" rel="noopener">CVE-2026-39689</a></td>
-        <td>5.3</td>
-        <td><span class="severity medium">MEDIUM</span></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
         <td>CWE-862</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p4</small></td>
-        <td>3.71</td>
+        <td>0.00</td>
         <td><details><summary>Missing Authorization vulnerability in eshipper eShipper Commerce eshipper-comme...</summary><p>Missing Authorization vulnerability in eshipper eShipper Commerce eshipper-commerce allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects eShipper Commerce: from n/a through &lt;= 2.16.12.</p></details></td>
         <td>2026-04-08</td>
       </tr>
@@ -10189,12 +10221,12 @@ Users are recommended to upgrade to version 3.2.0, which fixes this issue.</p></
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39683" target="_blank" rel="noopener">CVE-2026-39683</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>5.9</td>
+        <td><span class="severity medium">MEDIUM</span></td>
         <td>CWE-79</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p8</small></td>
-        <td>0.00</td>
+        <td>4.13</td>
         <td><details><summary>Improper Neutralization of Input During Web Page Generation (&#x27;Cross-site Scripti...</summary><p>Improper Neutralization of Input During Web Page Generation (&#x27;Cross-site Scripting&#x27;) vulnerability in Chief Gnome Garden Gnome Package garden-gnome-package allows DOM-Based XSS.This issue affects Garden Gnome Package: from n/a through &lt;= 2.4.1.</p></details></td>
         <td>2026-04-08</td>
       </tr>
@@ -10211,12 +10243,12 @@ Users are recommended to upgrade to version 3.2.0, which fixes this issue.</p></
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39681" target="_blank" rel="noopener">CVE-2026-39681</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
         <td>CWE-98</td>
         <td>&nbsp;</td>
         <td>0.1% <small>p16</small></td>
-        <td>0.00</td>
+        <td>5.25</td>
         <td><details><summary>Improper Control of Filename for Include/Require Statement in PHP Program (&#x27;PHP ...</summary><p>Improper Control of Filename for Include/Require Statement in PHP Program (&#x27;PHP Remote File Inclusion&#x27;) vulnerability in ApusTheme Homeo homeo allows PHP Local File Inclusion.This issue affects Homeo: from n/a through &lt;= 1.2.59.</p></details></td>
         <td>2026-04-08</td>
       </tr>
@@ -10233,12 +10265,12 @@ Users are recommended to upgrade to version 3.2.0, which fixes this issue.</p></
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39679" target="_blank" rel="noopener">CVE-2026-39679</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
         <td>CWE-98</td>
         <td>&nbsp;</td>
         <td>0.1% <small>p16</small></td>
-        <td>0.00</td>
+        <td>5.25</td>
         <td><details><summary>Improper Control of Filename for Include/Require Statement in PHP Program (&#x27;PHP ...</summary><p>Improper Control of Filename for Include/Require Statement in PHP Program (&#x27;PHP Remote File Inclusion&#x27;) vulnerability in ApusTheme Freeio freeio allows PHP Local File Inclusion.This issue affects Freeio: from n/a through &lt;= 1.3.21.</p></details></td>
         <td>2026-04-08</td>
       </tr>
@@ -10255,12 +10287,12 @@ Users are recommended to upgrade to version 3.2.0, which fixes this issue.</p></
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39677" target="_blank" rel="noopener">CVE-2026-39677</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
         <td>CWE-98</td>
         <td>&nbsp;</td>
         <td>0.1% <small>p16</small></td>
-        <td>0.00</td>
+        <td>5.25</td>
         <td><details><summary>Improper Control of Filename for Include/Require Statement in PHP Program (&#x27;PHP ...</summary><p>Improper Control of Filename for Include/Require Statement in PHP Program (&#x27;PHP Remote File Inclusion&#x27;) vulnerability in Creatives_Planet Emphires emphires allows PHP Local File Inclusion.This issue affects Emphires: from n/a through &lt;= 3.9.</p></details></td>
         <td>2026-04-08</td>
       </tr>
@@ -10365,12 +10397,12 @@ Users are recommended to upgrade to version 3.2.0, which fixes this issue.</p></
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39667" target="_blank" rel="noopener">CVE-2026-39667</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>5.9</td>
+        <td><span class="severity medium">MEDIUM</span></td>
         <td>CWE-79</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p8</small></td>
-        <td>0.00</td>
+        <td>4.13</td>
         <td><details><summary>Improper Neutralization of Input During Web Page Generation (&#x27;Cross-site Scripti...</summary><p>Improper Neutralization of Input During Web Page Generation (&#x27;Cross-site Scripting&#x27;) vulnerability in Jongmyoung Kim Korea SNS korea-sns allows DOM-Based XSS.This issue affects Korea SNS: from n/a through &lt;= 1.7.0.</p></details></td>
         <td>2026-04-08</td>
       </tr>
@@ -10387,12 +10419,12 @@ Users are recommended to upgrade to version 3.2.0, which fixes this issue.</p></
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39665" target="_blank" rel="noopener">CVE-2026-39665</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>6.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
         <td>CWE-79</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p8</small></td>
-        <td>0.00</td>
+        <td>4.55</td>
         <td><details><summary>Improper Neutralization of Input During Web Page Generation (&#x27;Cross-site Scripti...</summary><p>Improper Neutralization of Input During Web Page Generation (&#x27;Cross-site Scripting&#x27;) vulnerability in Vladimir Prelovac SEO Friendly Images seo-image allows DOM-Based XSS.This issue affects SEO Friendly Images: from n/a through &lt;= 3.0.5.</p></details></td>
         <td>2026-04-08</td>
       </tr>
@@ -10651,12 +10683,12 @@ Users are recommended to upgrade to version 3.2.0, which fixes this issue.</p></
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39638" target="_blank" rel="noopener">CVE-2026-39638</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>5.9</td>
+        <td><span class="severity medium">MEDIUM</span></td>
         <td>CWE-79</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p8</small></td>
-        <td>0.00</td>
+        <td>4.13</td>
         <td><details><summary>Improper Neutralization of Input During Web Page Generation (&#x27;Cross-site Scripti...</summary><p>Improper Neutralization of Input During Web Page Generation (&#x27;Cross-site Scripting&#x27;) vulnerability in Themeum Qubely qubely allows Stored XSS.This issue affects Qubely: from n/a through &lt;= 1.8.14.</p></details></td>
         <td>2026-04-08</td>
       </tr>
@@ -10673,12 +10705,12 @@ Users are recommended to upgrade to version 3.2.0, which fixes this issue.</p></
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39636" target="_blank" rel="noopener">CVE-2026-39636</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>6.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
         <td>CWE-79</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p8</small></td>
-        <td>0.00</td>
+        <td>4.55</td>
         <td><details><summary>Improper Neutralization of Input During Web Page Generation (&#x27;Cross-site Scripti...</summary><p>Improper Neutralization of Input During Web Page Generation (&#x27;Cross-site Scripting&#x27;) vulnerability in livemesh Livemesh Addons for Elementor addons-for-elementor allows Stored XSS.This issue affects Livemesh Addons for Elementor: from n/a through &lt;= 9.0.</p></details></td>
         <td>2026-04-08</td>
       </tr>
@@ -11025,12 +11057,12 @@ Users are recommended to upgrade to version 3.2.0, which fixes this issue.</p></
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39604" target="_blank" rel="noopener">CVE-2026-39604</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>5.9</td>
+        <td><span class="severity medium">MEDIUM</span></td>
         <td>CWE-79</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p8</small></td>
-        <td>0.00</td>
+        <td>4.13</td>
         <td><details><summary>Improper Neutralization of Input During Web Page Generation (&#x27;Cross-site Scripti...</summary><p>Improper Neutralization of Input During Web Page Generation (&#x27;Cross-site Scripting&#x27;) vulnerability in zookatron MyBookTable Bookstore mybooktable allows Stored XSS.This issue affects MyBookTable Bookstore: from n/a through &lt;= 3.6.0.</p></details></td>
         <td>2026-04-08</td>
       </tr>
@@ -11047,12 +11079,12 @@ Users are recommended to upgrade to version 3.2.0, which fixes this issue.</p></
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39602" target="_blank" rel="noopener">CVE-2026-39602</a></td>
-        <td>5.3</td>
-        <td><span class="severity medium">MEDIUM</span></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
         <td>CWE-862</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p4</small></td>
-        <td>3.71</td>
+        <td>0.00</td>
         <td><details><summary>Missing Authorization vulnerability in Rustaurius Order Tracking order-tracking ...</summary><p>Missing Authorization vulnerability in Rustaurius Order Tracking order-tracking allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects Order Tracking: from n/a through &lt;= 3.4.3.</p></details></td>
         <td>2026-04-08</td>
       </tr>
@@ -11443,12 +11475,12 @@ Users are recommended to upgrade to version 3.2.0, which fixes this issue.</p></
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39500" target="_blank" rel="noopener">CVE-2026-39500</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>6.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
         <td>CWE-79</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p8</small></td>
-        <td>0.00</td>
+        <td>4.55</td>
         <td><details><summary>Improper Neutralization of Input During Web Page Generation (&#x27;Cross-site Scripti...</summary><p>Improper Neutralization of Input During Web Page Generation (&#x27;Cross-site Scripting&#x27;) vulnerability in Themesflat themesflat-addons-for-elementor themesflat-addons-for-elementor allows Stored XSS.This issue affects themesflat-addons-for-elementor: from n/a through &lt;= 2.3.2.</p></details></td>
         <td>2026-04-08</td>
       </tr>
@@ -11465,12 +11497,12 @@ Users are recommended to upgrade to version 3.2.0, which fixes this issue.</p></
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39496" target="_blank" rel="noopener">CVE-2026-39496</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>7.6</td>
+        <td><span class="severity high">HIGH</span></td>
         <td>CWE-89</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p5</small></td>
-        <td>0.00</td>
+        <td>5.32</td>
         <td><details><summary>Improper Neutralization of Special Elements used in an SQL Command (&#x27;SQL Injecti...</summary><p>Improper Neutralization of Special Elements used in an SQL Command (&#x27;SQL Injection&#x27;) vulnerability in YayCommerce YayMail yaymail allows Blind SQL Injection.This issue affects YayMail: from n/a through &lt;= 4.3.3.</p></details></td>
         <td>2026-04-08</td>
       </tr>
@@ -11553,12 +11585,12 @@ Users are recommended to upgrade to version 3.2.0, which fixes this issue.</p></
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39482" target="_blank" rel="noopener">CVE-2026-39482</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>6.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
         <td>CWE-79</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p8</small></td>
-        <td>0.00</td>
+        <td>4.55</td>
         <td><details><summary>Improper Neutralization of Input During Web Page Generation (&#x27;Cross-site Scripti...</summary><p>Improper Neutralization of Input During Web Page Generation (&#x27;Cross-site Scripting&#x27;) vulnerability in PublishPress Post Expirator post-expirator allows DOM-Based XSS.This issue affects Post Expirator: from n/a through &lt;= 4.9.4.</p></details></td>
         <td>2026-04-08</td>
       </tr>
@@ -14489,50 +14521,6 @@ Users are recommended to upgrade to version 3.2.0, which fixes this issue.</p></
         <td>2026-04-07</td>
       </tr>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4292" target="_blank" rel="noopener">CVE-2026-4292</a></td>
-        <td>2.7</td>
-        <td><span class="severity low">LOW</span></td>
-        <td>CWE-862</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p1</small></td>
-        <td>1.89</td>
-        <td><details><summary>An issue was discovered in 6.0 before 6.0.4, 5.2 before 5.2.13, and 4.2 before 4...</summary><p>An issue was discovered in 6.0 before 6.0.4, 5.2 before 5.2.13, and 4.2 before 4.2.30.
-Admin changelist forms using `ModelAdmin.list_editable` incorrectly allowed new
-instances to be created via forged `POST` data.
-Earlier, unsupported Django series (such as 5.0.x, 4.1.x, and 3.2.x) were not evaluated and may also be affected.
-Django would like to thank Cantina for reporting this issue.</p></details></td>
-        <td>2026-04-07</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4277" target="_blank" rel="noopener">CVE-2026-4277</a></td>
-        <td>9.8</td>
-        <td><span class="severity critical">CRITICAL</span></td>
-        <td>CWE-862</td>
-        <td>&nbsp;</td>
-        <td>0.1% <small>p16</small></td>
-        <td>6.86</td>
-        <td><details><summary>An issue was discovered in 6.0 before 6.0.4, 5.2 before 5.2.13, and 4.2 before 4...</summary><p>An issue was discovered in 6.0 before 6.0.4, 5.2 before 5.2.13, and 4.2 before 4.2.30.
-Add permissions on inline model instances were not validated on submission of
-forged `POST` data in `GenericInlineModelAdmin`.
-Earlier, unsupported Django series (such as 5.0.x, 4.1.x, and 3.2.x) were not evaluated and may also be affected.
-Django would like to thank N05ec@LZU-DSLab for reporting this issue.</p></details></td>
-        <td>2026-04-07</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-3902" target="_blank" rel="noopener">CVE-2026-3902</a></td>
-        <td>7.5</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-290</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p14</small></td>
-        <td>5.25</td>
-        <td><details><summary>An issue was discovered in 6.0 before 6.0.4, 5.2 before 5.2.13, and 4.2 before 4...</summary><p>An issue was discovered in 6.0 before 6.0.4, 5.2 before 5.2.13, and 4.2 before 4.2.30.
-`ASGIRequest` allows a remote attacker to spoof headers by exploiting an ambiguous mapping of two header variants (with hyphens or with underscores) to a single version with underscores.
-Earlier, unsupported Django series (such as 5.0.x, 4.1.x, and 3.2.x) were not evaluated and may also be affected.
-Django would like to thank Tarek Nakkouch for reporting this issue.</p></details></td>
-        <td>2026-04-07</td>
-      </tr>
-      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35485" target="_blank" rel="noopener">CVE-2026-35485</a></td>
         <td>7.5</td>
         <td><span class="severity high">HIGH</span></td>
@@ -14673,37 +14661,6 @@ Django would like to thank Tarek Nakkouch for reporting this issue.</p></details
         <td>0.1% <small>p16</small></td>
         <td>5.25</td>
         <td><details><summary>libp2p-rust is the official rust language Implementation of the libp2p networkin...</summary><p>libp2p-rust is the official rust language Implementation of the libp2p networking stack. Prior to 0.17.1, libp2p-rendezvous server has no limit on how many namespaces a single peer can register.  A malicious peer can just keep registering unique namespaces in a loop and the server happily accepts every single one allocating memory for each registration with no pushback. Keep doing this long enough (or with multiple sybil peers) and the server process gets OOM killed. This vulnerability is fixed in 0.17.1.</p></details></td>
-        <td>2026-04-07</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33034" target="_blank" rel="noopener">CVE-2026-33034</a></td>
-        <td>7.5</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-770</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p9</small></td>
-        <td>5.25</td>
-        <td><details><summary>An issue was discovered in 6.0 before 6.0.4, 5.2 before 5.2.13, and 4.2 before 4...</summary><p>An issue was discovered in 6.0 before 6.0.4, 5.2 before 5.2.13, and 4.2 before 4.2.30.
-ASGI requests with a missing or understated `Content-Length` header could
-bypass the `DATA_UPLOAD_MAX_MEMORY_SIZE` limit when reading
-`HttpRequest.body`, allowing remote attackers to load an unbounded request body into
-memory.
-Earlier, unsupported Django series (such as 5.0.x, 4.1.x, and 3.2.x) were not evaluated and may also be affected.
-Django would like to thank Superior for reporting this issue.</p></details></td>
-        <td>2026-04-07</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33033" target="_blank" rel="noopener">CVE-2026-33033</a></td>
-        <td>6.5</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-407</td>
-        <td>&nbsp;</td>
-        <td>0.1% <small>p29</small></td>
-        <td>4.55</td>
-        <td><details><summary>An issue was discovered in 6.0 before 6.0.4, 5.2 before 5.2.13, and 4.2 before 4...</summary><p>An issue was discovered in 6.0 before 6.0.4, 5.2 before 5.2.13, and 4.2 before 4.2.30.
-`MultiPartParser` allows remote attackers to degrade performance by submitting multipart uploads with `Content-Transfer-Encoding: base64` including excessive whitespace.
-Earlier, unsupported Django series (such as 5.0.x, 4.1.x, and 3.2.x) were not evaluated and may also be affected.
-Django would like to thank Seokchan Yoon for reporting this issue.</p></details></td>
         <td>2026-04-07</td>
       </tr>
       <tr>
@@ -15029,7 +14986,7 @@ Django would like to thank Seokchan Yoon for reporting this issue.</p></details>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-1900" target="_blank" rel="noopener">CVE-2026-1900</a></td>
         <td>6.5</td>
         <td><span class="severity medium">MEDIUM</span></td>
-        <td>N/A</td>
+        <td>CWE-306</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p10</small></td>
         <td>4.55</td>
