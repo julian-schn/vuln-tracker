@@ -11,7 +11,7 @@
     <header>
       <h1>vuln-tracker — Top 50</h1>
       <p class="subtitle">The 50 most important CVEs from the current and previous month, ranked by VAP score (70% CVSS + 30% EPSS)</p>
-      <p class="last-updated">Last updated: 2026-04-13 10:01 UTC</p>
+      <p class="last-updated">Last updated: 2026-04-13 13:54 UTC</p>
     </header>
     <nav>
       <a href="index.html">&larr; All CVEs</a>
@@ -85,6 +85,17 @@
         <td>2026-04-04</td>
       </tr>
       <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33478" target="_blank" rel="noopener">CVE-2026-33478</a></td>
+        <td>10.0</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-78</td>
+        <td>&nbsp;</td>
+        <td>20.6% <small>p95</small></td>
+        <td>7.62</td>
+        <td><details><summary>WWBN AVideo is an open source video platform. In versions up to and including 26...</summary><p>WWBN AVideo is an open source video platform. In versions up to and including 26.0, multiple vulnerabilities in AVideo&#x27;s CloneSite plugin chain together to allow a completely unauthenticated attacker to achieve remote code execution. The `clones.json.php` endpoint exposes clone secret keys without authentication, which can be used to trigger a full database dump via `cloneServer.json.php`. The dump contains admin password hashes stored as MD5, which are trivially crackable. With admin access, the attacker exploits an OS command injection in the rsync command construction in `cloneClient.json.php` to execute arbitrary system commands. Commit c85d076375fab095a14170df7ddb27058134d38c contains a patch.</p></details></td>
+        <td>2026-03-23</td>
+      </tr>
+      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-28289" target="_blank" rel="noopener">CVE-2026-28289</a></td>
         <td>10.0</td>
         <td><span class="severity critical">CRITICAL</span></td>
@@ -105,17 +116,6 @@
         <td>7.49</td>
         <td><details><summary>WWBN AVideo is an open source video platform. Prior to version 24.0, an unauthen...</summary><p>WWBN AVideo is an open source video platform. Prior to version 24.0, an unauthenticated SQL Injection vulnerability exists in AVideo within the objects/videos.json.php and objects/video.php components. The application fails to properly sanitize the catName parameter when it is supplied via a JSON-formatted POST request body. Because JSON input is parsed and merged into $_REQUEST after global security checks are executed, the payload bypasses the existing sanitization mechanisms. This issue has been patched in version 24.0.</p></details></td>
         <td>2026-03-06</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33478" target="_blank" rel="noopener">CVE-2026-33478</a></td>
-        <td>10.0</td>
-        <td><span class="severity critical">CRITICAL</span></td>
-        <td>CWE-78</td>
-        <td>&nbsp;</td>
-        <td>16.2% <small>p94</small></td>
-        <td>7.49</td>
-        <td><details><summary>WWBN AVideo is an open source video platform. In versions up to and including 26...</summary><p>WWBN AVideo is an open source video platform. In versions up to and including 26.0, multiple vulnerabilities in AVideo&#x27;s CloneSite plugin chain together to allow a completely unauthenticated attacker to achieve remote code execution. The `clones.json.php` endpoint exposes clone secret keys without authentication, which can be used to trigger a full database dump via `cloneServer.json.php`. The dump contains admin password hashes stored as MD5, which are trivially crackable. With admin access, the attacker exploits an OS command injection in the rsync command construction in `cloneClient.json.php` to execute arbitrary system commands. Commit c85d076375fab095a14170df7ddb27058134d38c contains a patch.</p></details></td>
-        <td>2026-03-23</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4257" target="_blank" rel="noopener">CVE-2026-4257</a></td>
@@ -228,6 +228,17 @@
         <td>2026-03-27</td>
       </tr>
       <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39337" target="_blank" rel="noopener">CVE-2026-39337</a></td>
+        <td>10.0</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-94</td>
+        <td>&nbsp;</td>
+        <td>0.3% <small>p55</small></td>
+        <td>7.01</td>
+        <td><details><summary>ChurchCRM is an open-source church management system. Prior to 7.1.0, critical p...</summary><p>ChurchCRM is an open-source church management system. Prior to 7.1.0, critical pre-authentication remote code execution vulnerability in ChurchCRM&#x27;s setup wizard allows unauthenticated attackers to inject arbitrary PHP code during the initial installation process, leading to complete server compromise. The &quot;$dbPassword&quot; variable is not sanitized. This vulnerability exists due to an incomplete fix for CVE-2025-62521. This vulnerability is fixed in 7.1.0.</p></details></td>
+        <td>2026-04-07</td>
+      </tr>
+      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-31957" target="_blank" rel="noopener">CVE-2026-31957</a></td>
         <td>10.0</td>
         <td><span class="severity critical">CRITICAL</span></td>
@@ -237,17 +248,6 @@
         <td>7.01</td>
         <td><details><summary>Himmelblau is an interoperability suite for Microsoft Azure Entra ID and Intune....</summary><p>Himmelblau is an interoperability suite for Microsoft Azure Entra ID and Intune. From 3.0.0 to before 3.1.0, if Himmelblau is deployed without a configured tenant domain in himmelblau.conf, authentication is not tenant-scoped. In this mode, Himmelblau can accept authentication attempts for arbitrary Entra ID domains by dynamically registering providers at runtime. This behavior is intended for initial/local bootstrap scenarios, but it can create risk in remote authentication environments. This vulnerability is fixed in 3.1.0.</p></details></td>
         <td>2026-03-11</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39337" target="_blank" rel="noopener">CVE-2026-39337</a></td>
-        <td>10.0</td>
-        <td><span class="severity critical">CRITICAL</span></td>
-        <td>CWE-94</td>
-        <td>&nbsp;</td>
-        <td>0.3% <small>p50</small></td>
-        <td>7.01</td>
-        <td><details><summary>ChurchCRM is an open-source church management system. Prior to 7.1.0, critical p...</summary><p>ChurchCRM is an open-source church management system. Prior to 7.1.0, critical pre-authentication remote code execution vulnerability in ChurchCRM&#x27;s setup wizard allows unauthenticated attackers to inject arbitrary PHP code during the initial installation process, leading to complete server compromise. The &quot;$dbPassword&quot; variable is not sanitized. This vulnerability exists due to an incomplete fix for CVE-2025-62521. This vulnerability is fixed in 7.1.0.</p></details></td>
-        <td>2026-04-07</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-21628" target="_blank" rel="noopener">CVE-2026-21628</a></td>
@@ -299,7 +299,7 @@
         <td><span class="severity critical">CRITICAL</span></td>
         <td>CWE-306</td>
         <td>&nbsp;</td>
-        <td>0.2% <small>p43</small></td>
+        <td>0.2% <small>p45</small></td>
         <td>7.01</td>
         <td><details><summary>The Honeywell IQ4x building management controller, exposes its full web-based HM...</summary><p>The Honeywell IQ4x building management controller, exposes its full web-based HMI without authentication in its factory-default configuration. With no user module configured, security is disabled by design and the system operates under a System Guest (level 100) context, granting read/write privileges to any party able to reach the HTTP interface. Authentication controls are only enforced after a web user is created via U.htm, which dynamically enables the user module. Because this function is accessible prior to authentication, a remote user can create a new account with administrative read/write permissions enabling the user module and imposing authentication under attacker-controlled credentials. This action can effectively lock legitimate operators out of local and web-based configuration and administration.</p></details></td>
         <td>2026-03-12</td>
@@ -321,7 +321,7 @@
         <td><span class="severity critical">CRITICAL</span></td>
         <td>CWE-306</td>
         <td>&nbsp;</td>
-        <td>0.2% <small>p36</small></td>
+        <td>0.2% <small>p35</small></td>
         <td>7.00</td>
         <td><details><summary>FastGPT is an AI Agent building platform. Prior to version 4.14.9.5, the FastGPT...</summary><p>FastGPT is an AI Agent building platform. Prior to version 4.14.9.5, the FastGPT HTTP tools testing endpoint (/api/core/app/httpTools/runTool) is exposed without any authentication. This endpoint acts as a full HTTP proxy — it accepts a user-supplied baseUrl, toolPath, HTTP method, custom headers, and body, then makes a server-side HTTP request and returns the complete response to the caller. This issue has been patched in version 4.14.9.5.</p></details></td>
         <td>2026-03-31</td>
