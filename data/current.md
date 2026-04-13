@@ -1,9 +1,29 @@
 # CVEs — April 2026
 
-_2214 vulnerabilities_
+_2234 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
+| [CVE-2026-6179](https://nvd.nist.gov/vuln/detail/CVE-2026-6179) | 6.3 | MEDIUM | CWE-79 | No | — | 4.41 | 2026-04-13 | Stored Cross Site Scripting in NightWolf Penetration Testing Platform allows attack trigger and run malicious script in... |
+| [CVE-2026-6152](https://nvd.nist.gov/vuln/detail/CVE-2026-6152) | 6.9 | MEDIUM | CWE-74 | No | — | 4.83 | 2026-04-13 | A vulnerability was determined in code-projects Vehicle Showroom Management System 1.0. This issue affects some unknown... |
+| [CVE-2026-6151](https://nvd.nist.gov/vuln/detail/CVE-2026-6151) | 6.9 | MEDIUM | CWE-74 | No | — | 4.83 | 2026-04-13 | A vulnerability was found in code-projects Vehicle Showroom Management System 1.0. This vulnerability affects unknown co... |
+| [CVE-2026-6150](https://nvd.nist.gov/vuln/detail/CVE-2026-6150) | 5.3 | MEDIUM | CWE-79 | No | — | 3.71 | 2026-04-13 | A vulnerability has been found in code-projects Simple Laundry System 1.0. This affects an unknown part of the file /che... |
+| [CVE-2026-6149](https://nvd.nist.gov/vuln/detail/CVE-2026-6149) | 6.9 | MEDIUM | CWE-74 | No | — | 4.83 | 2026-04-13 | A flaw has been found in code-projects Vehicle Showroom Management System 1.0. Affected by this issue is some unknown fu... |
+| [CVE-2026-6148](https://nvd.nist.gov/vuln/detail/CVE-2026-6148) | 6.9 | MEDIUM | CWE-74 | No | — | 4.83 | 2026-04-13 | A vulnerability was detected in code-projects Vehicle Showroom Management System 1.0. Affected by this vulnerability is... |
+| [CVE-2026-6143](https://nvd.nist.gov/vuln/detail/CVE-2026-6143) | 5.3 | MEDIUM | CWE-346 | No | — | 3.71 | 2026-04-13 | A security flaw has been discovered in farion1231 cc-switch up to 3.12.3. Affected by this issue is some unknown functio... |
+| [CVE-2026-6142](https://nvd.nist.gov/vuln/detail/CVE-2026-6142) | 6.9 | MEDIUM | CWE-74 | No | — | 4.83 | 2026-04-13 | A vulnerability was identified in tushar-2223 Hotel Management System up to bb1f3b3666124b888f1e4bcf51b6fba9fbb01d15. Af... |
+| [CVE-2026-6141](https://nvd.nist.gov/vuln/detail/CVE-2026-6141) | 5.3 | MEDIUM | CWE-77 | No | — | 3.71 | 2026-04-13 | A vulnerability was determined in danielmiessler Personal_AI_Infrastructure up to 2.3.0. Affected is an unknown function... |
+| [CVE-2026-6140](https://nvd.nist.gov/vuln/detail/CVE-2026-6140) | 8.9 | HIGH | CWE-77 | No | — | 6.23 | 2026-04-13 | A vulnerability was found in Totolink A7100RU 7.4cu.2313_b20191024. This impacts the function UploadFirmwareFile of the... |
+| [CVE-2026-6139](https://nvd.nist.gov/vuln/detail/CVE-2026-6139) | 8.9 | HIGH | CWE-77 | No | — | 6.23 | 2026-04-13 | A vulnerability has been found in Totolink A7100RU 7.4cu.2313_b20191024. This affects the function UploadOpenVpnCert of... |
+| [CVE-2026-25204](https://nvd.nist.gov/vuln/detail/CVE-2026-25204) | 6.2 | MEDIUM | CWE-502 | No | — | 4.34 | 2026-04-13 | Deserialization of untrusted data vulnerability in Samsung Open Source Escargot Java Script allows denial of service con... |
+| [CVE-2026-6138](https://nvd.nist.gov/vuln/detail/CVE-2026-6138) | 8.9 | HIGH | CWE-77 | No | — | 6.23 | 2026-04-13 | A flaw has been found in Totolink A7100RU 7.4cu.2313_b20191024. The impacted element is the function setAccessDeviceCfg... |
+| [CVE-2026-6137](https://nvd.nist.gov/vuln/detail/CVE-2026-6137) | 7.4 | HIGH | CWE-119 | No | — | 5.18 | 2026-04-13 | A vulnerability was detected in Tenda F451 1.0.0.7_cn_svn7958. The affected element is the function fromAdvSetWan of the... |
+| [CVE-2026-6136](https://nvd.nist.gov/vuln/detail/CVE-2026-6136) | 7.4 | HIGH | CWE-119 | No | — | 5.18 | 2026-04-13 | A security vulnerability has been detected in Tenda F451 1.0.0.7_cn_svn7958. Impacted is the function frmL7ImForm of the... |
+| [CVE-2026-6135](https://nvd.nist.gov/vuln/detail/CVE-2026-6135) | 7.4 | HIGH | CWE-119 | No | — | 5.18 | 2026-04-13 | A weakness has been identified in Tenda F451 1.0.0.7_cn_svn7958. This issue affects the function fromSetIpBind of the fi... |
+| [CVE-2026-6134](https://nvd.nist.gov/vuln/detail/CVE-2026-6134) | 7.4 | HIGH | CWE-119 | No | — | 5.18 | 2026-04-12 | A security flaw has been discovered in Tenda F451 1.0.0.7_cn_svn7958. This vulnerability affects the function fromqosset... |
+| [CVE-2026-6133](https://nvd.nist.gov/vuln/detail/CVE-2026-6133) | 7.4 | HIGH | CWE-119 | No | — | 5.18 | 2026-04-12 | A vulnerability was identified in Tenda F451 1.0.0.7_cn_svn7958. This affects the function fromSafeUrlFilter of the file... |
+| [CVE-2026-6132](https://nvd.nist.gov/vuln/detail/CVE-2026-6132) | 8.9 | HIGH | CWE-77 | No | — | 6.23 | 2026-04-12 | A vulnerability was determined in Totolink A7100RU 7.4cu.2313_b20191024. Affected by this issue is the function setLedCf... |
+| [CVE-2026-6131](https://nvd.nist.gov/vuln/detail/CVE-2026-6131) | 8.9 | HIGH | CWE-77 | No | — | 6.23 | 2026-04-12 | A vulnerability was found in Totolink A7100RU 7.4cu.2313_b20191024. Affected by this vulnerability is the function setTr... |
 | [CVE-2026-6130](https://nvd.nist.gov/vuln/detail/CVE-2026-6130) | 6.9 | MEDIUM | CWE-77 | No | — | 4.83 | 2026-04-12 | A flaw has been found in chatboxai chatbox up to 1.20.0. This impacts the function StdioClientTransport of the file src/... |
 | [CVE-2026-6129](https://nvd.nist.gov/vuln/detail/CVE-2026-6129) | 6.9 | MEDIUM | CWE-287 | No | — | 4.83 | 2026-04-12 | A vulnerability was detected in zhayujie chatgpt-on-wechat CowAgent up to 2.0.4. This affects an unknown function of the... |
 | [CVE-2026-40396](https://nvd.nist.gov/vuln/detail/CVE-2026-40396) | 4.0 | MEDIUM | CWE-670 | No | — | 2.80 | 2026-04-12 | Varnish Cache 9 before 9.0.1 allows a "workspace overflow" denial of service (daemon panic) after timeout_linger. A mali... |
