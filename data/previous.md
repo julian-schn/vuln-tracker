@@ -1,6 +1,6 @@
 # CVEs — March 2026
 
-_5736 vulnerabilities_
+_5734 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
@@ -205,7 +205,6 @@ _5736 vulnerabilities_
 | [CVE-2026-0397](https://nvd.nist.gov/vuln/detail/CVE-2026-0397) | 3.1 | LOW | CWE-942 | No | 0.0% | 2.17 | 2026-03-31 | When the internal webserver is enabled (default is disabled), an attacker might be able to trick an administrator logged... |
 | [CVE-2026-0396](https://nvd.nist.gov/vuln/detail/CVE-2026-0396) | 3.1 | LOW | CWE-80 | No | 0.0% | 2.17 | 2026-03-31 | An attacker might be able to inject HTML content into the internal web dashboard by sending crafted DNS queries to a DNS... |
 | [CVE-2025-14213](https://nvd.nist.gov/vuln/detail/CVE-2025-14213) | 8.3 | HIGH | CWE-20 | No | 0.5% | 5.82 | 2026-03-31 | Cato Networks’ Socket versions prior to 25 contain a command injection vulnerability that allows an authenticated attack... |
-| [CVE-2024-14030](https://nvd.nist.gov/vuln/detail/CVE-2024-14030) | 8.1 | HIGH | CWE-787 | No | 0.1% | 5.67 | 2026-03-31 | Sereal::Decoder versions from 4.000 through 4.009_002 for Perl embeds a vulnerable version of the Zstandard library.  Se... |
 | [CVE-2026-4400](https://nvd.nist.gov/vuln/detail/CVE-2026-4400) | 7.0 | HIGH | CWE-639 | No | 0.3% | 4.91 | 2026-03-31 | Insecure Direct Object Reference (IDOR) vulnerability in 1millionbot Millie chat that allows private conversations of ot... |
 | [CVE-2026-4399](https://nvd.nist.gov/vuln/detail/CVE-2026-4399) | 8.7 | HIGH | CWE-77 | No | 0.3% | 6.10 | 2026-03-31 | Prompt injection vulnerability in 1millionbot Millie chatbot that occurs when a user manages to evade chat restrictions... |
 | [CVE-2026-34887](https://nvd.nist.gov/vuln/detail/CVE-2026-34887) | 6.5 | MEDIUM | CWE-79 | No | 0.0% | 4.55 | 2026-03-31 | Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Extend Themes Kubi... |
@@ -3467,7 +3466,6 @@ _5736 vulnerabilities_
 | [CVE-2026-32245](https://nvd.nist.gov/vuln/detail/CVE-2026-32245) | 6.5 | MEDIUM | CWE-863 | No | 0.1% | 4.55 | 2026-03-12 | Tinyauth is an authentication and authorization server. Prior to 5.0.3, the OIDC token endpoint does not verify that the... |
 | [CVE-2026-32242](https://nvd.nist.gov/vuln/detail/CVE-2026-32242) | 9.1 | CRITICAL | CWE-362 | No | 0.1% | 6.37 | 2026-03-12 | Parse Server is an open source backend that can be deployed to any infrastructure that can run Node.js. Prior to 9.6.0-a... |
 | [CVE-2026-32237](https://nvd.nist.gov/vuln/detail/CVE-2026-32237) | 4.4 | MEDIUM | CWE-200 | No | 0.0% | 3.08 | 2026-03-12 | Backstage is an open framework for building developer portals. Prior to 3.1.5, authenticated users with permission to ex... |
-| [CVE-2026-32236](https://nvd.nist.gov/vuln/detail/CVE-2026-32236) | 0.0 | NONE | CWE-918 | No | 0.0% | 0.00 | 2026-03-12 | Backstage is an open framework for building developer portals. Prior to 0.27.1, a Server-Side Request Forgery (SSRF) vul... |
 | [CVE-2026-32235](https://nvd.nist.gov/vuln/detail/CVE-2026-32235) | 5.9 | MEDIUM | CWE-601 | No | 0.0% | 4.13 | 2026-03-12 | Backstage is an open framework for building developer portals. Prior to 0.27.1, the experimental OIDC provider in @backs... |
 | [CVE-2026-32232](https://nvd.nist.gov/vuln/detail/CVE-2026-32232) | 8.8 | HIGH | CWE-22 | No | 0.1% | 6.16 | 2026-03-12 | ZeptoClaw is a personal AI assistant. Prior to 0.7.6, there is a Dangling Symlink Component Bypass, TOCTOU Between Valid... |
 | [CVE-2026-32231](https://nvd.nist.gov/vuln/detail/CVE-2026-32231) | 8.2 | HIGH | CWE-306 | No | 0.0% | 5.74 | 2026-03-12 | ZeptoClaw is a personal AI assistant. Prior to 0.7.6, the generic webhook channel trusts caller-supplied identity fields... |
