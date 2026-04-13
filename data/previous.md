@@ -1,6 +1,6 @@
 # CVEs — March 2026
 
-_5733 vulnerabilities_
+_5734 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
@@ -372,6 +372,7 @@ _5733 vulnerabilities_
 | [CVE-2018-25228](https://nvd.nist.gov/vuln/detail/CVE-2018-25228) | 6.9 | MEDIUM | CWE-787 | No | 0.0% | 4.83 | 2026-03-30 | NetSetMan 4.7.1 contains a buffer overflow vulnerability in the Workgroup feature that allows local attackers to crash t... |
 | [CVE-2018-25227](https://nvd.nist.gov/vuln/detail/CVE-2018-25227) | 6.9 | MEDIUM | CWE-466 | No | 0.0% | 4.83 | 2026-03-30 | Valentina Studio 9.0.4 contains a denial of service vulnerability that allows local attackers to crash the application b... |
 | [CVE-2018-25226](https://nvd.nist.gov/vuln/detail/CVE-2018-25226) | 6.9 | MEDIUM | CWE-787 | No | 0.0% | 4.83 | 2026-03-30 | FTPShell Server 6.83 contains a buffer overflow vulnerability that allows local attackers to crash the application by su... |
+| [CVE-2026-1612](https://nvd.nist.gov/vuln/detail/CVE-2026-1612) | 6.9 | MEDIUM | CWE-798 | No | 0.1% | 4.83 | 2026-03-30 | AL-KO Robolinho Update Software has hard-coded AWS Access and Secret keys that allow anyone to access AL-KO's AWS bucket... |
 | [CVE-2026-5128](https://nvd.nist.gov/vuln/detail/CVE-2026-5128) | 0.0 | NONE | N/A | No | — | 0.00 | 2026-03-30 | Rejected reason: This CVE ID has been rejected or withdrawn by its CVE Numbering Authority. |
 | [CVE-2026-5121](https://nvd.nist.gov/vuln/detail/CVE-2026-5121) | 9.8 | CRITICAL | CWE-190 | No | 0.2% | 6.87 | 2026-03-30 | A flaw was found in libarchive. On 32-bit systems, an integer overflow vulnerability exists in the zisofs block pointer... |
 | [CVE-2026-4416](https://nvd.nist.gov/vuln/detail/CVE-2026-4416) | 8.5 | HIGH | CWE-502 | No | 0.0% | 5.95 | 2026-03-30 | The Performance Library component of Gigabyte Control Center has an Insecure Deserialization vulnerability. Authenticate... |
