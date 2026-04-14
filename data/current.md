@@ -1,9 +1,17 @@
 # CVEs — April 2026
 
-_2427 vulnerabilities_
+_2434 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
+| [CVE-2026-4479](https://nvd.nist.gov/vuln/detail/CVE-2026-4479) | 4.4 | MEDIUM | CWE-79 | No | — | 3.08 | 2026-04-14 | The WholeSale Products Dynamic Pricing Management WooCommerce plugin for WordPress is vulnerable to Stored Cross-Site Sc... |
+| [CVE-2026-4059](https://nvd.nist.gov/vuln/detail/CVE-2026-4059) | 6.4 | MEDIUM | CWE-79 | No | — | 4.48 | 2026-04-14 | The ShopLentor plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the woolentor_quickview_button shor... |
+| [CVE-2026-40315](https://nvd.nist.gov/vuln/detail/CVE-2026-40315) | 7.2 | HIGH | CWE-89 | No | — | 5.04 | 2026-04-14 | PraisonAI is a multi-agent teams system. Prior to 4.5.133, there is an SQL identifier injection vulnerability in SQLiteC... |
+| [CVE-2026-40313](https://nvd.nist.gov/vuln/detail/CVE-2026-40313) | 9.1 | CRITICAL | CWE-829 | No | — | 6.37 | 2026-04-14 | PraisonAI is a multi-agent teams system. In versions 4.5.139 and below, the GitHub Actions workflows are vulnerable to A... |
+| [CVE-2026-40289](https://nvd.nist.gov/vuln/detail/CVE-2026-40289) | 9.1 | CRITICAL | CWE-306 | No | — | 6.37 | 2026-04-14 | PraisonAI is a multi-agent teams system. In versions below 4.5.139 of PraisonAI and 1.5.140 of praisonaiagents, the brow... |
+| [CVE-2026-40288](https://nvd.nist.gov/vuln/detail/CVE-2026-40288) | 9.8 | CRITICAL | CWE-78 | No | — | 6.86 | 2026-04-14 | PraisonAI is a multi-agent teams system. In versions below 4.5.139 of PraisonAI and 1.5.140 of praisonaiagents, the work... |
+| [CVE-2026-40287](https://nvd.nist.gov/vuln/detail/CVE-2026-40287) | 8.4 | HIGH | CWE-94 | No | — | 5.88 | 2026-04-14 | PraisonAI is a multi-agent teams system. Versions 4.5.138 and below are vulnerable to arbitrary code execution through a... |
+| [CVE-2026-1607](https://nvd.nist.gov/vuln/detail/CVE-2026-1607) | 6.4 | MEDIUM | CWE-79 | No | — | 4.48 | 2026-04-14 | The Surbma \| Booking.com Shortcode plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the plugin's `... |
 | [CVE-2026-6264](https://nvd.nist.gov/vuln/detail/CVE-2026-6264) | 9.8 | CRITICAL | N/A | No | — | 6.86 | 2026-04-14 | A critical vulnerability in the Talend JobServer and Talend Runtime allows unauthenticated remote code execution via the... |
 | [CVE-2026-6227](https://nvd.nist.gov/vuln/detail/CVE-2026-6227) | 7.2 | HIGH | CWE-22 | No | — | 5.04 | 2026-04-14 | The BackWPup plugin for WordPress is vulnerable to Local File Inclusion via the `block_name` parameter of the `/wp-json/... |
 | [CVE-2026-4388](https://nvd.nist.gov/vuln/detail/CVE-2026-4388) | 7.2 | HIGH | CWE-79 | No | — | 5.04 | 2026-04-14 | The Form Maker by 10Web plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the Matrix field (Text Box... |
@@ -42,7 +50,6 @@ _2427 vulnerabilities_
 | [CVE-2026-24318](https://nvd.nist.gov/vuln/detail/CVE-2026-24318) | 4.2 | MEDIUM | CWE-539 | No | — | 2.94 | 2026-04-14 | Due to an Insecure session management vulnerability in SAP Business Objects Business Intelligence Platform, an unauthent... |
 | [CVE-2026-0512](https://nvd.nist.gov/vuln/detail/CVE-2026-0512) | 6.1 | MEDIUM | CWE-79 | No | — | 4.27 | 2026-04-14 | Due to a Cross-Site Scripting (XSS) vulnerability in the SAP Supplier Relationship Management (SICF Handler in SRM Catal... |
 | [CVE-2026-6203](https://nvd.nist.gov/vuln/detail/CVE-2026-6203) | 6.1 | MEDIUM | CWE-601 | No | — | 4.27 | 2026-04-13 | The User Registration & Membership plugin for WordPress is vulnerable to Open Redirect in versions up to and including 5... |
-| [CVE-2026-5086](https://nvd.nist.gov/vuln/detail/CVE-2026-5086) | 0.0 | NONE | CWE-208 | No | — | 0.00 | 2026-04-13 | Crypt::SecretBuffer versions before 0.019 for Perl is suseceptible to timing attacks.  For example, if Crypt::SecretBuff... |
 | [CVE-2026-39979](https://nvd.nist.gov/vuln/detail/CVE-2026-39979) | 6.9 | MEDIUM | CWE-125 | No | — | 4.83 | 2026-04-13 | jq is a command-line JSON processor. In commits before 2f09060afab23fe9390cce7cb860b10416e1bf5f, the jv_parse_sized() AP... |
 | [CVE-2026-39956](https://nvd.nist.gov/vuln/detail/CVE-2026-39956) | 6.1 | MEDIUM | CWE-125 | No | — | 4.27 | 2026-04-13 | jq is a command-line JSON processor. In commits after 69785bf77f86e2ea1b4a20ca86775916889e91c9, the _strindices builtin... |
 | [CVE-2026-6224](https://nvd.nist.gov/vuln/detail/CVE-2026-6224) | 6.9 | MEDIUM | CWE-264 | No | — | 4.83 | 2026-04-13 | A security flaw has been discovered in nocobase plugin-workflow-javascript up to 2.0.23. This issue affects the function... |

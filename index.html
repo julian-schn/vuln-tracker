@@ -11,7 +11,7 @@
     <header>
       <h1>vuln-tracker</h1>
       <p class="subtitle">CVEs from the National Vulnerability Database — current and previous month</p>
-      <p class="last-updated">Last updated: 2026-04-14 03:21 UTC</p>
+      <p class="last-updated">Last updated: 2026-04-14 06:03 UTC</p>
     </header>
     <nav>
       <a href="top50.html">&#9733; Top 50</a>
@@ -25,7 +25,7 @@
     </nav>
     <main>
     <section>
-      <h2>Current Month — April 2026 <span class="count">(2427)</span></h2>
+      <h2>Current Month — April 2026 <span class="count">(2434)</span></h2>
       <div class="table-wrapper">
         <table>
           <thead>
@@ -42,6 +42,94 @@
             </tr>
           </thead>
           <tbody>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4479" target="_blank" rel="noopener">CVE-2026-4479</a></td>
+        <td>4.4</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.08</td>
+        <td><details><summary>The WholeSale Products Dynamic Pricing Management WooCommerce plugin for WordPre...</summary><p>The WholeSale Products Dynamic Pricing Management WooCommerce plugin for WordPress is vulnerable to Stored Cross-Site Scripting via admin settings in all versions up to, and including, 1.2 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with administrator-level permissions and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page. This only affects multi-site installations and installations where unfiltered_html has been disabled.</p></details></td>
+        <td>2026-04-14</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4059" target="_blank" rel="noopener">CVE-2026-4059</a></td>
+        <td>6.4</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.48</td>
+        <td><details><summary>The ShopLentor plugin for WordPress is vulnerable to Stored Cross-Site Scripting...</summary><p>The ShopLentor plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the woolentor_quickview_button shortcode&#x27;s button_text attribute in all versions up to, and including, 3.3.5. This is due to insufficient input sanitization and missing output escaping on user-supplied shortcode attributes. This makes it possible for authenticated attackers, with Contributor-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.</p></details></td>
+        <td>2026-04-14</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40315" target="_blank" rel="noopener">CVE-2026-40315</a></td>
+        <td>7.2</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-89</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.04</td>
+        <td><details><summary>PraisonAI is a multi-agent teams system. Prior to 4.5.133, there is an SQL ident...</summary><p>PraisonAI is a multi-agent teams system. Prior to 4.5.133, there is an SQL identifier injection vulnerability in SQLiteConversationStore where the table_prefix configuration value is directly concatenated into SQL queries via f-strings without any validation or sanitization. Since SQL identifiers cannot be safely parameterized, an attacker who controls the table_prefix value (e.g., through from_yaml or from_dict configuration input) can inject arbitrary SQL fragments that alter query structure. This enables unauthorized data access, such as reading internal SQLite tables like sqlite_master, and manipulation of query results through techniques like UNION-based injection. The vulnerability propagates from configuration input in config.py, through factory.py, to the SQL query construction in sqlite.py. Exploitation requires the ability to influence configuration input, and successful exploitation leads to internal schema disclosure and full query result tampering. This issue has been fixed in version 4.5.133.</p></details></td>
+        <td>2026-04-14</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40313" target="_blank" rel="noopener">CVE-2026-40313</a></td>
+        <td>9.1</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-829</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.37</td>
+        <td><details><summary>PraisonAI is a multi-agent teams system. In versions 4.5.139 and below, the GitH...</summary><p>PraisonAI is a multi-agent teams system. In versions 4.5.139 and below, the GitHub Actions workflows are vulnerable to ArtiPACKED attack, a known credential leakage vector caused by using actions/checkout without setting persist-credentials: false. By default, actions/checkout writes the GITHUB_TOKEN (and sometimes ACTIONS_RUNTIME_TOKEN) into the .git/config file for persistence, and if any subsequent workflow step uploads artifacts (build outputs, logs, test results, etc.), these tokens can be inadvertently included. Since PraisonAI is a public repository, any user with read access can download these artifacts and extract the leaked tokens, potentially enabling an attacker to push malicious code, poison releases and PyPI/Docker packages, steal repository secrets, and execute a full supply chain compromise affecting all downstream users. The issue spans numerous workflow and action files across .github/workflows/ and .github/actions/. This issue has been fixed in version 4.5.140.</p></details></td>
+        <td>2026-04-14</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40289" target="_blank" rel="noopener">CVE-2026-40289</a></td>
+        <td>9.1</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-306</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.37</td>
+        <td><details><summary>PraisonAI is a multi-agent teams system. In versions below 4.5.139 of PraisonAI ...</summary><p>PraisonAI is a multi-agent teams system. In versions below 4.5.139 of PraisonAI and 1.5.140 of praisonaiagents, the browser bridge (praisonai browser start) is vulnerable to unauthenticated remote session hijacking due to missing authentication and a bypassable origin check on its /ws WebSocket endpoint. The server binds to 0.0.0.0 by default and only validates the Origin header when one is present, meaning any non-browser client that omits the header is accepted without restriction. An unauthenticated network attacker can connect, send a start_session message, and the server will route it to the first idle browser-extension WebSocket (effectively hijacking that session) and then broadcast all resulting automation actions and outputs back to the attacker. This enables unauthorized remote control of connected browser automation sessions, leakage of sensitive page context and automation results, and misuse of model-backed browser actions in any environment where the bridge is network-reachable. This issue has been fixed in versions 4.5.139 of PraisonAI and 1.5.140 of praisonaiagents.</p></details></td>
+        <td>2026-04-14</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40288" target="_blank" rel="noopener">CVE-2026-40288</a></td>
+        <td>9.8</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-78</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.86</td>
+        <td><details><summary>PraisonAI is a multi-agent teams system. In versions below 4.5.139 of PraisonAI ...</summary><p>PraisonAI is a multi-agent teams system. In versions below 4.5.139 of PraisonAI and 1.5.140 of praisonaiagents, the workflow engine is vulnerable to arbitrary command and code execution through untrusted YAML files. When praisonai workflow run &lt;file.yaml&gt; loads a YAML file with type: job, the JobWorkflowExecutor in job_workflow.py processes steps that support run: (shell commands via subprocess.run()), script: (inline Python via exec()), and python: (arbitrary Python script execution)—all without any validation, sandboxing, or user confirmation. The affected code paths include action_run() in workflow.py and _exec_shell(), _exec_inline_python(), and _exec_python_script() in job_workflow.py. An attacker who can supply or influence a workflow YAML file (particularly in CI pipelines, shared repositories, or multi-tenant deployment environments) can achieve full arbitrary command execution on the host system, compromising the machine and any accessible data or credentials. This issue has been fixed in versions 4.5.139 of PraisonAI and 1.5.140 of praisonaiagents.</p></details></td>
+        <td>2026-04-14</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40287" target="_blank" rel="noopener">CVE-2026-40287</a></td>
+        <td>8.4</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-94</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.88</td>
+        <td><details><summary>PraisonAI is a multi-agent teams system. Versions 4.5.138 and below are vulnerab...</summary><p>PraisonAI is a multi-agent teams system. Versions 4.5.138 and below are vulnerable to arbitrary code execution through automatic, unsanitized import of a tools.py file from the current working directory. Components including call.py (import_tools_from_file()), tool_resolver.py (_load_local_tools()), and CLI tool-loading paths blindly import ./tools.py at startup without any validation, sandboxing, or user confirmation. An attacker who can place a malicious tools.py in the directory where PraisonAI is launched (such as through a shared project, cloned repository, or writable workspace) achieves immediate arbitrary Python code execution in the host environment. This compromises the full PraisonAI process, the host system, and any connected data or credentials. This issue has been fixed in version 4.5.139.</p></details></td>
+        <td>2026-04-14</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-1607" target="_blank" rel="noopener">CVE-2026-1607</a></td>
+        <td>6.4</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.48</td>
+        <td><details><summary>The Surbma | Booking.com Shortcode plugin for WordPress is vulnerable to Stored ...</summary><p>The Surbma | Booking.com Shortcode plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the plugin&#x27;s `surbma-bookingcom` shortcode in all versions up to, and including, 2.1 due to insufficient input sanitization and output escaping on user supplied attributes. This makes it possible for authenticated attackers, with contributor-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.</p></details></td>
+        <td>2026-04-14</td>
+      </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6264" target="_blank" rel="noopener">CVE-2026-6264</a></td>
         <td>9.8</td>
@@ -458,19 +546,6 @@
         <td>&mdash;</td>
         <td>4.27</td>
         <td><details><summary>The User Registration &amp; Membership plugin for WordPress is vulnerable to Open Re...</summary><p>The User Registration &amp; Membership plugin for WordPress is vulnerable to Open Redirect in versions up to and including 5.1.4. This is due to insufficient validation of user-supplied URLs passed via the &#x27;redirect_to_on_logout&#x27; GET parameter before redirecting users. The `redirect_to_on_logout` GET parameter is passed directly to WordPress&#x27;s `wp_redirect()` function instead of the domain-restricted `wp_safe_redirect()`. While `esc_url_raw()` is applied to sanitize malformed URLs, it does not restrict the redirect destination to the local domain, allowing an attacker to craft a specially formed link that redirects users to potentially malicious external URLs after logout, which could be used to facilitate phishing attacks.</p></details></td>
-        <td>2026-04-13</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5086" target="_blank" rel="noopener">CVE-2026-5086</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>CWE-208</td>
-        <td>&nbsp;</td>
-        <td>&mdash;</td>
-        <td>0.00</td>
-        <td><details><summary>Crypt::SecretBuffer versions before 0.019 for Perl is suseceptible to timing att...</summary><p>Crypt::SecretBuffer versions before 0.019 for Perl is suseceptible to timing attacks.
-
-For example, if Crypt::SecretBuffer was used to store and compare plaintext passwords, then discrepencies in timing could be used to guess the secret password.</p></details></td>
         <td>2026-04-13</td>
       </tr>
       <tr>
@@ -26746,7 +26821,7 @@ For example, if Crypt::SecretBuffer was used to store and compare plaintext pass
       </div>
     </section>
     <section>
-      <h2>Previous Month — March 2026 <span class="count">(5735)</span></h2>
+      <h2>Previous Month — March 2026 <span class="count">(5734)</span></h2>
       <div class="table-wrapper">
         <table>
           <thead>
@@ -51555,20 +51630,6 @@ For example, if Crypt::SecretBuffer was used to store and compare plaintext pass
         <td>0.0% <small>p9</small></td>
         <td>4.27</td>
         <td><details><summary>DooTask v1.6.27 has a Cross-Site Scripting (XSS) vulnerability in the /manage/pr...</summary><p>DooTask v1.6.27 has a Cross-Site Scripting (XSS) vulnerability in the /manage/project/&lt;id&gt; page via the input field projectDesc.</p></details></td>
-        <td>2026-03-20</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-59383" target="_blank" rel="noopener">CVE-2025-59383</a></td>
-        <td>2.7</td>
-        <td><span class="severity low">LOW</span></td>
-        <td>CWE-121</td>
-        <td>&nbsp;</td>
-        <td>0.2% <small>p47</small></td>
-        <td>1.90</td>
-        <td><details><summary>A buffer overflow vulnerability has been reported to affect Media Streaming Add-...</summary><p>A buffer overflow vulnerability has been reported to affect Media Streaming Add-On. The remote attackers can then exploit the vulnerability to modify memory or crash processes.
-
-We have already fixed the vulnerability in the following version:
-Media Streaming Add-on 500.1.1 and later</p></details></td>
         <td>2026-03-20</td>
       </tr>
       <tr>
