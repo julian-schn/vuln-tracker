@@ -11,7 +11,7 @@
     <header>
       <h1>vuln-tracker</h1>
       <p class="subtitle">CVEs from the National Vulnerability Database — current and previous month</p>
-      <p class="last-updated">Last updated: 2026-04-14 06:03 UTC</p>
+      <p class="last-updated">Last updated: 2026-04-14 09:25 UTC</p>
     </header>
     <nav>
       <a href="top50.html">&#9733; Top 50</a>
@@ -25,7 +25,7 @@
     </nav>
     <main>
     <section>
-      <h2>Current Month — April 2026 <span class="count">(2434)</span></h2>
+      <h2>Current Month — April 2026 <span class="count">(2446)</span></h2>
       <div class="table-wrapper">
         <table>
           <thead>
@@ -42,6 +42,175 @@
             </tr>
           </thead>
           <tbody>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4109" target="_blank" rel="noopener">CVE-2026-4109</a></td>
+        <td>4.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.01</td>
+        <td><details><summary>The Eventin – Events Calendar, Event Booking, Ticket &amp; Registration (AI Powered)...</summary><p>The Eventin – Events Calendar, Event Booking, Ticket &amp; Registration (AI Powered) plugin for WordPress is vulnerable to unauthorized access of data due to a improper capability check on the get_item_permissions_check() function in all versions up to, and including, 4.1.8. This makes it possible for authenticated attackers, with Subscriber-level access and above, to read arbitrary order data including customer PII (name, email, phone) by iterating order IDs.</p></details></td>
+        <td>2026-04-14</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33929" target="_blank" rel="noopener">CVE-2026-33929</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-22</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Improper Limitation of a Pathname to a Restricted Directory (&#x27;Path Traversal&#x27;) v...</summary><p>Improper Limitation of a Pathname to a Restricted Directory (&#x27;Path Traversal&#x27;) vulnerability in Apache PDFBox Examples.
+
+This issue affects the 
+ExtractEmbeddedFiles example in Apache PDFBox: from 2.0.24 through 2.0.36, from 3.0.0 through 3.0.7.
+
+
+Users are recommended to update to version 2.0.37 or 3.0.8 once 
+available. Until then, they should apply the fix provided in GitHub PR 
+427.
+
+The ExtractEmbeddedFiles example contained a path traversal vulnerability (CWE-22) mentioned in CVE-2026-23907. However the change in the releases 2.0.36 and 3.0.7 is flawed because it doesn&#x27;t consider the file path separator. Because of that, a user having writing rights on /home/ABC could be victim to a malicious PDF resulting in a write attempt to any path starting with /home/ABC, e.g. &quot;/home/ABCDEF&quot;.
+
+Users who have copied this example into their production code should apply the mentioned change. The example 
+has been changed accordingly and is available in the project repository.</p></details></td>
+        <td>2026-04-14</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33892" target="_blank" rel="noopener">CVE-2026-33892</a></td>
+        <td>5.1</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-305</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.57</td>
+        <td><details><summary>A vulnerability has been identified in Industrial Edge Management Pro V1 (All ve...</summary><p>A vulnerability has been identified in Industrial Edge Management Pro V1 (All versions &gt;= V1.7.6 &lt; V1.15.17), Industrial Edge Management Pro V2 (All versions &gt;= V2.0.0 &lt; V2.1.1), Industrial Edge Management Virtual (All versions &gt;= V2.2.0 &lt; V2.8.0). Affected management systems do not properly enforce user authentication on remote connections to devices.
+This could facilitate an unauthenticated remote attacker to circumvent authentication and impersonate a legitimate user.
+Successful exploitation requires that the attacker has identified the header and port used for remote connections to devices and that the remote connection feature is enabled for the device.
+
+Exploitation allows the attacker to tunnel to the device. Security features on this device itself (e.g. app specific authentication) are not affected.</p></details></td>
+        <td>2026-04-14</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-31924" target="_blank" rel="noopener">CVE-2026-31924</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-319</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Cleartext Transmission of Sensitive Information vulnerability in Apache APISIX.
+...</summary><p>Cleartext Transmission of Sensitive Information vulnerability in Apache APISIX.
+
+tencent-cloud-cls log export uses plaintext HTTP
+This issue affects Apache APISIX: from 2.99.0 through 3.15.0.
+
+Users are recommended to upgrade to version 3.16.0, which fixes the issue.</p></details></td>
+        <td>2026-04-14</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-31923" target="_blank" rel="noopener">CVE-2026-31923</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-319</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Cleartext Transmission of Sensitive Information vulnerability in Apache APISIX.
+...</summary><p>Cleartext Transmission of Sensitive Information vulnerability in Apache APISIX.
+
+This can occur due to `ssl_verify` in openid-connect plugin configuration being set to false by default.
+This issue affects Apache APISIX: from 0.7 through 3.15.0.
+
+Users are recommended to upgrade to version 3.16.0, which fixes the issue.</p></details></td>
+        <td>2026-04-14</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-31908" target="_blank" rel="noopener">CVE-2026-31908</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-75</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Header injection vulnerability in Apache APISIX.
+
+The attacker can take advantag...</summary><p>Header injection vulnerability in Apache APISIX.
+
+The attacker can take advantage of certain configuration in forward-auth plugin to inject malicious headers.
+This issue affects Apache APISIX: from 2.12.0 through 3.15.0.
+
+Users are recommended to upgrade to version 3.16.0, which fixes the issue.</p></details></td>
+        <td>2026-04-14</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-27668" target="_blank" rel="noopener">CVE-2026-27668</a></td>
+        <td>8.7</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-266</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.09</td>
+        <td><details><summary>A vulnerability has been identified in RUGGEDCOM CROSSBOW Secure Access Manager ...</summary><p>A vulnerability has been identified in RUGGEDCOM CROSSBOW Secure Access Manager Primary (SAM-P) (All versions &lt; V5.8). User Administrators are allowed to administer groups they belong to. This could allow an authenticated User Administrator to escalate their own privileges and grant themselves access to any device group at any access level.</p></details></td>
+        <td>2026-04-14</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-25654" target="_blank" rel="noopener">CVE-2026-25654</a></td>
+        <td>8.7</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-639</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.09</td>
+        <td><details><summary>A vulnerability has been identified in SINEC NMS (All versions &lt; V4.0 SP3). Affe...</summary><p>A vulnerability has been identified in SINEC NMS (All versions &lt; V4.0 SP3). Affected products do not properly validate user authorization when processing password reset requests. This could allow an authenticated remote attacker to bypass authorization checks, leading to the ability to reset the password of any arbitrary user account.</p></details></td>
+        <td>2026-04-14</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-24032" target="_blank" rel="noopener">CVE-2026-24032</a></td>
+        <td>6.9</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-347</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.83</td>
+        <td><details><summary>A vulnerability has been identified in SINEC NMS (All versions &lt; V4.0 SP3 with U...</summary><p>A vulnerability has been identified in SINEC NMS (All versions &lt; V4.0 SP3 with UMC). The affected application contains an authentication weakness due to insufficient validation of user identity in the UMC component.
+This could allow an unauthenticated remote attacker to bypass authentication and gain unauthorized access to the application. (ZDI-CAN-27564)</p></details></td>
+        <td>2026-04-14</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-40745" target="_blank" rel="noopener">CVE-2025-40745</a></td>
+        <td>6.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-295</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.41</td>
+        <td><details><summary>A vulnerability has been identified in Siemens Software Center (All versions &lt; V...</summary><p>A vulnerability has been identified in Siemens Software Center (All versions &lt; V3.5.8.2), Simcenter 3D (All versions &lt; V2506.6000), Simcenter Femap (All versions &lt; V2506.0002), Simcenter STAR-CCM+ (All versions &lt; V2602), Solid Edge SE2025 (All versions &lt; V225.0 Update 13), Solid Edge SE2026 (All versions &lt; V226.0 Update 04), Tecnomatix Plant Simulation (All versions &lt; V2504.0008). Affected applications do not properly validate client certificates to connect to Analytics Service endpoint. This could allow an unauthenticated remote attacker to perform man in the middle attacks.</p></details></td>
+        <td>2026-04-14</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-2582" target="_blank" rel="noopener">CVE-2026-2582</a></td>
+        <td>6.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-94</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.55</td>
+        <td><details><summary>The The Germanized for WooCommerce plugin for WordPress is vulnerable to arbitra...</summary><p>The The Germanized for WooCommerce plugin for WordPress is vulnerable to arbitrary shortcode execution via &#x27;account_holder&#x27; parameter in all versions up to, and including, 3.20.5. This is due to the software allowing users to execute an action that does not properly validate a value before running do_shortcode. This makes it possible for unauthenticated attackers to execute arbitrary shortcodes.</p></details></td>
+        <td>2026-04-14</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-3017" target="_blank" rel="noopener">CVE-2026-3017</a></td>
+        <td>7.2</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-502</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.04</td>
+        <td><details><summary>The Smart Post Show – Post Grid, Post Carousel &amp; Slider, and List Category Posts...</summary><p>The Smart Post Show – Post Grid, Post Carousel &amp; Slider, and List Category Posts plugin for WordPress is vulnerable to PHP Object Injection in all versions up to, and including, 3.0.12 via deserialization of untrusted input in the import_shortcodes() function. This makes it possible for authenticated attackers, with Administrator-level access and above, to inject a PHP Object. No known POP chain is present in the vulnerable software, which means this vulnerability has no impact unless another plugin or theme containing a POP chain is installed on the site. If a POP chain is present via an additional plugin or theme installed on the target system, it may allow the attacker to perform actions like delete arbitrary files, retrieve sensitive data, or execute code depending on the POP chain present.</p></details></td>
+        <td>2026-04-14</td>
+      </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4479" target="_blank" rel="noopener">CVE-2026-4479</a></td>
         <td>4.4</td>

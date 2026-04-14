@@ -1,9 +1,21 @@
 # CVEs — April 2026
 
-_2434 vulnerabilities_
+_2446 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
+| [CVE-2026-4109](https://nvd.nist.gov/vuln/detail/CVE-2026-4109) | 4.3 | MEDIUM | CWE-862 | No | — | 3.01 | 2026-04-14 | The Eventin – Events Calendar, Event Booking, Ticket & Registration (AI Powered) plugin for WordPress is vulnerable to u... |
+| [CVE-2026-33929](https://nvd.nist.gov/vuln/detail/CVE-2026-33929) | 0.0 | NONE | CWE-22 | No | — | 0.00 | 2026-04-14 | Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal') vulnerability in Apache PDFBox Examples.... |
+| [CVE-2026-33892](https://nvd.nist.gov/vuln/detail/CVE-2026-33892) | 5.1 | MEDIUM | CWE-305 | No | — | 3.57 | 2026-04-14 | A vulnerability has been identified in Industrial Edge Management Pro V1 (All versions >= V1.7.6 < V1.15.17), Industrial... |
+| [CVE-2026-31924](https://nvd.nist.gov/vuln/detail/CVE-2026-31924) | 0.0 | NONE | CWE-319 | No | — | 0.00 | 2026-04-14 | Cleartext Transmission of Sensitive Information vulnerability in Apache APISIX.  tencent-cloud-cls log export uses plain... |
+| [CVE-2026-31923](https://nvd.nist.gov/vuln/detail/CVE-2026-31923) | 0.0 | NONE | CWE-319 | No | — | 0.00 | 2026-04-14 | Cleartext Transmission of Sensitive Information vulnerability in Apache APISIX.  This can occur due to `ssl_verify` in o... |
+| [CVE-2026-31908](https://nvd.nist.gov/vuln/detail/CVE-2026-31908) | 0.0 | NONE | CWE-75 | No | — | 0.00 | 2026-04-14 | Header injection vulnerability in Apache APISIX.  The attacker can take advantage of certain configuration in forward-au... |
+| [CVE-2026-27668](https://nvd.nist.gov/vuln/detail/CVE-2026-27668) | 8.7 | HIGH | CWE-266 | No | — | 6.09 | 2026-04-14 | A vulnerability has been identified in RUGGEDCOM CROSSBOW Secure Access Manager Primary (SAM-P) (All versions < V5.8). U... |
+| [CVE-2026-25654](https://nvd.nist.gov/vuln/detail/CVE-2026-25654) | 8.7 | HIGH | CWE-639 | No | — | 6.09 | 2026-04-14 | A vulnerability has been identified in SINEC NMS (All versions < V4.0 SP3). Affected products do not properly validate u... |
+| [CVE-2026-24032](https://nvd.nist.gov/vuln/detail/CVE-2026-24032) | 6.9 | MEDIUM | CWE-347 | No | — | 4.83 | 2026-04-14 | A vulnerability has been identified in SINEC NMS (All versions < V4.0 SP3 with UMC). The affected application contains a... |
+| [CVE-2025-40745](https://nvd.nist.gov/vuln/detail/CVE-2025-40745) | 6.3 | MEDIUM | CWE-295 | No | — | 4.41 | 2026-04-14 | A vulnerability has been identified in Siemens Software Center (All versions < V3.5.8.2), Simcenter 3D (All versions < V... |
+| [CVE-2026-2582](https://nvd.nist.gov/vuln/detail/CVE-2026-2582) | 6.5 | MEDIUM | CWE-94 | No | — | 4.55 | 2026-04-14 | The The Germanized for WooCommerce plugin for WordPress is vulnerable to arbitrary shortcode execution via 'account_hold... |
+| [CVE-2026-3017](https://nvd.nist.gov/vuln/detail/CVE-2026-3017) | 7.2 | HIGH | CWE-502 | No | — | 5.04 | 2026-04-14 | The Smart Post Show – Post Grid, Post Carousel & Slider, and List Category Posts plugin for WordPress is vulnerable to P... |
 | [CVE-2026-4479](https://nvd.nist.gov/vuln/detail/CVE-2026-4479) | 4.4 | MEDIUM | CWE-79 | No | — | 3.08 | 2026-04-14 | The WholeSale Products Dynamic Pricing Management WooCommerce plugin for WordPress is vulnerable to Stored Cross-Site Sc... |
 | [CVE-2026-4059](https://nvd.nist.gov/vuln/detail/CVE-2026-4059) | 6.4 | MEDIUM | CWE-79 | No | — | 4.48 | 2026-04-14 | The ShopLentor plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the woolentor_quickview_button shor... |
 | [CVE-2026-40315](https://nvd.nist.gov/vuln/detail/CVE-2026-40315) | 7.2 | HIGH | CWE-89 | No | — | 5.04 | 2026-04-14 | PraisonAI is a multi-agent teams system. Prior to 4.5.133, there is an SQL identifier injection vulnerability in SQLiteC... |
