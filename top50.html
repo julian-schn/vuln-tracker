@@ -11,7 +11,7 @@
     <header>
       <h1>vuln-tracker — Top 50</h1>
       <p class="subtitle">The 50 most important CVEs from the current and previous month, ranked by VAP score (70% CVSS + 30% EPSS)</p>
-      <p class="last-updated">Last updated: 2026-04-14 09:25 UTC</p>
+      <p class="last-updated">Last updated: 2026-04-14 13:59 UTC</p>
     </header>
     <nav>
       <a href="index.html">&larr; All CVEs</a>
@@ -57,8 +57,8 @@
         <td><span class="severity critical">CRITICAL</span></td>
         <td>CWE-125</td>
         <td><span class="kev-yes">&#10003;</span></td>
-        <td>50.8% <small>p97</small></td>
-        <td>8.04</td>
+        <td>53.8% <small>p98</small></td>
+        <td>8.12</td>
         <td><details><summary>Insufficient input validation in NetScaler ADC and NetScaler Gateway when config...</summary><p>Insufficient input validation in NetScaler ADC and NetScaler Gateway when configured as a SAML IDP leading to memory overread</p></details></td>
         <td>2026-03-23</td>
       </tr>
@@ -68,9 +68,20 @@
         <td><span class="severity critical">CRITICAL</span></td>
         <td>CWE-269</td>
         <td>&nbsp;</td>
-        <td>32.7% <small>p96</small></td>
-        <td>7.84</td>
+        <td>39.0% <small>p97</small></td>
+        <td>8.03</td>
         <td><details><summary>The User Registration &amp; Membership – Custom Registration Form Builder, Custom Lo...</summary><p>The User Registration &amp; Membership – Custom Registration Form Builder, Custom Login Form, User Profile, Content Restriction &amp; Membership Plugin plugin for WordPress is vulnerable to improper privilege management in all versions up to, and including, 5.1.2. This is due to the plugin accepting a user-supplied role during membership registration without properly enforcing a server-side allowlist. This makes it possible for unauthenticated attackers to create administrator accounts by supplying a role value during membership registration.</p></details></td>
+        <td>2026-03-03</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-28289" target="_blank" rel="noopener">CVE-2026-28289</a></td>
+        <td>10.0</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-434</td>
+        <td>&nbsp;</td>
+        <td>22.3% <small>p95</small></td>
+        <td>7.67</td>
+        <td><details><summary>FreeScout is a free help desk and shared inbox built with PHP&#x27;s Laravel framewor...</summary><p>FreeScout is a free help desk and shared inbox built with PHP&#x27;s Laravel framework. A patch bypass vulnerability for CVE-2026-27636 in FreeScout 1.8.206 and earlier allows any authenticated user with file upload permissions to achieve Remote Code Execution (RCE) on the server by uploading a malicious .htaccess file using a zero-width space character prefix to bypass the security check. The vulnerability exists in the sanitizeUploadedFileName() function in app/Http/Helper.php. The function contains a Time-of-Check to Time-of-Use (TOCTOU) flaw where the dot-prefix check occurs before sanitization removes invisible characters. This vulnerability is fixed in 1.8.207.</p></details></td>
         <td>2026-03-03</td>
       </tr>
       <tr>
@@ -94,17 +105,6 @@
         <td>7.62</td>
         <td><details><summary>WWBN AVideo is an open source video platform. In versions up to and including 26...</summary><p>WWBN AVideo is an open source video platform. In versions up to and including 26.0, multiple vulnerabilities in AVideo&#x27;s CloneSite plugin chain together to allow a completely unauthenticated attacker to achieve remote code execution. The `clones.json.php` endpoint exposes clone secret keys without authentication, which can be used to trigger a full database dump via `cloneServer.json.php`. The dump contains admin password hashes stored as MD5, which are trivially crackable. With admin access, the attacker exploits an OS command injection in the rsync command construction in `cloneClient.json.php` to execute arbitrary system commands. Commit c85d076375fab095a14170df7ddb27058134d38c contains a patch.</p></details></td>
         <td>2026-03-23</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-28289" target="_blank" rel="noopener">CVE-2026-28289</a></td>
-        <td>10.0</td>
-        <td><span class="severity critical">CRITICAL</span></td>
-        <td>CWE-434</td>
-        <td>&nbsp;</td>
-        <td>17.7% <small>p95</small></td>
-        <td>7.53</td>
-        <td><details><summary>FreeScout is a free help desk and shared inbox built with PHP&#x27;s Laravel framewor...</summary><p>FreeScout is a free help desk and shared inbox built with PHP&#x27;s Laravel framework. A patch bypass vulnerability for CVE-2026-27636 in FreeScout 1.8.206 and earlier allows any authenticated user with file upload permissions to achieve Remote Code Execution (RCE) on the server by uploading a malicious .htaccess file using a zero-width space character prefix to bypass the security check. The vulnerability exists in the sanitizeUploadedFileName() function in app/Http/Helper.php. The function contains a Time-of-Check to Time-of-Use (TOCTOU) flaw where the dot-prefix check occurs before sanitization removes invisible characters. This vulnerability is fixed in 1.8.207.</p></details></td>
-        <td>2026-03-03</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-28501" target="_blank" rel="noopener">CVE-2026-28501</a></td>
@@ -140,6 +140,17 @@
         <td>2026-03-20</td>
       </tr>
       <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-27971" target="_blank" rel="noopener">CVE-2026-27971</a></td>
+        <td>9.2</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-502</td>
+        <td>&nbsp;</td>
+        <td>30.0% <small>p96</small></td>
+        <td>7.34</td>
+        <td><details><summary>Qwik is a performance focused javascript framework. qwik &lt;=1.19.0 is vulnerable ...</summary><p>Qwik is a performance focused javascript framework. qwik &lt;=1.19.0 is vulnerable to RCE due to an unsafe deserialization vulnerability in the server$ RPC mechanism that allows any unauthenticated user to execute arbitrary code on the server with a single HTTP request. Affects any deployment where require() is available at runtime. This vulnerability is fixed in 1.19.1.</p></details></td>
+        <td>2026-03-03</td>
+      </tr>
+      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33634" target="_blank" rel="noopener">CVE-2026-33634</a></td>
         <td>9.4</td>
         <td><span class="severity critical">CRITICAL</span></td>
@@ -151,23 +162,12 @@
         <td>2026-03-23</td>
       </tr>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-27971" target="_blank" rel="noopener">CVE-2026-27971</a></td>
-        <td>9.2</td>
-        <td><span class="severity critical">CRITICAL</span></td>
-        <td>CWE-502</td>
-        <td>&nbsp;</td>
-        <td>24.4% <small>p96</small></td>
-        <td>7.17</td>
-        <td><details><summary>Qwik is a performance focused javascript framework. qwik &lt;=1.19.0 is vulnerable ...</summary><p>Qwik is a performance focused javascript framework. qwik &lt;=1.19.0 is vulnerable to RCE due to an unsafe deserialization vulnerability in the server$ RPC mechanism that allows any unauthenticated user to execute arbitrary code on the server with a single HTTP request. Affects any deployment where require() is available at runtime. This vulnerability is fixed in 1.19.1.</p></details></td>
-        <td>2026-03-03</td>
-      </tr>
-      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-2699" target="_blank" rel="noopener">CVE-2026-2699</a></td>
         <td>9.8</td>
         <td><span class="severity critical">CRITICAL</span></td>
         <td>CWE-284</td>
         <td>&nbsp;</td>
-        <td>9.9% <small>p92</small></td>
+        <td>9.9% <small>p93</small></td>
         <td>7.16</td>
         <td><details><summary>Customer Managed ShareFile Storage Zones Controller (SZC) allows an unauthentica...</summary><p>Customer Managed ShareFile Storage Zones Controller (SZC) allows an unauthenticated attacker to access restricted configuration pages. This leads to changing system configuration and potential remote code execution.</p></details></td>
         <td>2026-04-02</td>
@@ -228,6 +228,17 @@
         <td>2026-03-27</td>
       </tr>
       <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-24898" target="_blank" rel="noopener">CVE-2026-24898</a></td>
+        <td>10.0</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-287</td>
+        <td>&nbsp;</td>
+        <td>0.3% <small>p55</small></td>
+        <td>7.01</td>
+        <td><details><summary>OpenEMR is a free and open source electronic health records and medical practice...</summary><p>OpenEMR is a free and open source electronic health records and medical practice management application. Prior to 8.0.0, an unauthenticated token disclosure vulnerability in the MedEx callback endpoint allows any unauthenticated visitor to obtain the practice&#x27;s MedEx API tokens, leading to complete third-party service compromise, PHI exfiltration, unauthorized actions on the MedEx platform, and HIPAA violations. The vulnerability exists because the endpoint bypasses authentication ($ignoreAuth = true) and performs a MedEx login whenever $_POST[&#x27;callback_key&#x27;] is provided, returning the full JSON response including sensitive API tokens. This vulnerability is fixed in 8.0.0.</p></details></td>
+        <td>2026-03-03</td>
+      </tr>
+      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39337" target="_blank" rel="noopener">CVE-2026-39337</a></td>
         <td>10.0</td>
         <td><span class="severity critical">CRITICAL</span></td>
@@ -259,17 +270,6 @@
         <td>7.01</td>
         <td><details><summary>A improperly secured file management feature allows uploads of dangerous data ty...</summary><p>A improperly secured file management feature allows uploads of dangerous data types for unauthenticated users, leading to remote code execution.</p></details></td>
         <td>2026-03-05</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-24898" target="_blank" rel="noopener">CVE-2026-24898</a></td>
-        <td>10.0</td>
-        <td><span class="severity critical">CRITICAL</span></td>
-        <td>CWE-287</td>
-        <td>&nbsp;</td>
-        <td>0.2% <small>p47</small></td>
-        <td>7.01</td>
-        <td><details><summary>OpenEMR is a free and open source electronic health records and medical practice...</summary><p>OpenEMR is a free and open source electronic health records and medical practice management application. Prior to 8.0.0, an unauthenticated token disclosure vulnerability in the MedEx callback endpoint allows any unauthenticated visitor to obtain the practice&#x27;s MedEx API tokens, leading to complete third-party service compromise, PHI exfiltration, unauthorized actions on the MedEx platform, and HIPAA violations. The vulnerability exists because the endpoint bypasses authentication ($ignoreAuth = true) and performs a MedEx login whenever $_POST[&#x27;callback_key&#x27;] is provided, returning the full JSON response including sensitive API tokens. This vulnerability is fixed in 8.0.0.</p></details></td>
-        <td>2026-03-03</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40175" target="_blank" rel="noopener">CVE-2026-40175</a></td>
@@ -332,7 +332,7 @@
         <td><span class="severity critical">CRITICAL</span></td>
         <td>CWE-918</td>
         <td>&nbsp;</td>
-        <td>0.2% <small>p36</small></td>
+        <td>0.2% <small>p35</small></td>
         <td>7.00</td>
         <td><details><summary>FastMCP is a Pythonic way to build MCP servers and clients. Prior to version 3.2...</summary><p>FastMCP is a Pythonic way to build MCP servers and clients. Prior to version 3.2.0, the OpenAPIProvider in FastMCP exposes internal APIs to MCP clients by parsing OpenAPI specifications. The RequestDirector class is responsible for constructing HTTP requests to the backend service. A vulnerability exists in the _build_url() method. When an OpenAPI operation defines path parameters (e.g., /api/v1/users/{user_id}), the system directly substitutes parameter values into the URL template string without URL-encoding. Subsequently, urllib.parse.urljoin() resolves the final URL. Since urljoin() interprets ../ sequences as directory traversal, an attacker controlling a path parameter can perform path traversal attacks to escape the intended API prefix and access arbitrary backend endpoints. This results in authenticated SSRF, as requests are sent with the authorization headers configured in the MCP provider. This issue has been patched in version 3.2.0.</p></details></td>
         <td>2026-04-02</td>
@@ -371,6 +371,17 @@
         <td>2026-03-11</td>
       </tr>
       <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32186" target="_blank" rel="noopener">CVE-2026-32186</a></td>
+        <td>10.0</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-918</td>
+        <td>&nbsp;</td>
+        <td>0.1% <small>p26</small></td>
+        <td>7.00</td>
+        <td><details><summary>Server-side request forgery (ssrf) in Microsoft Bing allows an unauthorized atta...</summary><p>Server-side request forgery (ssrf) in Microsoft Bing allows an unauthorized attacker to elevate privileges over a network.</p></details></td>
+        <td>2026-04-03</td>
+      </tr>
+      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32169" target="_blank" rel="noopener">CVE-2026-32169</a></td>
         <td>10.0</td>
         <td><span class="severity critical">CRITICAL</span></td>
@@ -380,17 +391,6 @@
         <td>7.00</td>
         <td><details><summary>Server-side request forgery (ssrf) in Azure Cloud Shell allows an unauthorized a...</summary><p>Server-side request forgery (ssrf) in Azure Cloud Shell allows an unauthorized attacker to elevate privileges over a network.</p></details></td>
         <td>2026-03-19</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32186" target="_blank" rel="noopener">CVE-2026-32186</a></td>
-        <td>10.0</td>
-        <td><span class="severity critical">CRITICAL</span></td>
-        <td>CWE-918</td>
-        <td>&nbsp;</td>
-        <td>0.1% <small>p24</small></td>
-        <td>7.00</td>
-        <td><details><summary>Server-side request forgery (ssrf) in Microsoft Bing allows an unauthorized atta...</summary><p>Server-side request forgery (ssrf) in Microsoft Bing allows an unauthorized attacker to elevate privileges over a network.</p></details></td>
-        <td>2026-04-03</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33494" target="_blank" rel="noopener">CVE-2026-33494</a></td>
@@ -437,6 +437,17 @@
         <td>2026-04-06</td>
       </tr>
       <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-26954" target="_blank" rel="noopener">CVE-2026-26954</a></td>
+        <td>10.0</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-94</td>
+        <td>&nbsp;</td>
+        <td>0.1% <small>p20</small></td>
+        <td>7.00</td>
+        <td><details><summary>SandboxJS is a JavaScript sandboxing library. Prior to 0.8.34, it is possible to...</summary><p>SandboxJS is a JavaScript sandboxing library. Prior to 0.8.34, it is possible to obtain arrays containing Function, which allows escaping the sandbox. Given an array containing Function, and Object.fromEntries, it is possible to construct {[p]: Function} where p is any constructible property. This vulnerability is fixed in 0.8.34.</p></details></td>
+        <td>2026-03-13</td>
+      </tr>
+      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-28353" target="_blank" rel="noopener">CVE-2026-28353</a></td>
         <td>10.0</td>
         <td><span class="severity critical">CRITICAL</span></td>
@@ -446,17 +457,6 @@
         <td>7.00</td>
         <td><details><summary>Trivy Vulnerability Scanner is a VS Code extension that helps find vulnerabiliti...</summary><p>Trivy Vulnerability Scanner is a VS Code extension that helps find vulnerabilities. In Trivy VSCode Extension version 1.8.12, which was distributed via OpenVSX marketplace was compromised and contained malicious code designed to leverage local AI coding agent to collect and exfiltrate sensitive information. Users using the affected artifact are advised to immediately remove it and rotate environment secrets. The malicious artifact has been removed from the marketplace. No other affected artifacts have been identified.</p></details></td>
         <td>2026-03-05</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-26954" target="_blank" rel="noopener">CVE-2026-26954</a></td>
-        <td>10.0</td>
-        <td><span class="severity critical">CRITICAL</span></td>
-        <td>CWE-94</td>
-        <td>&nbsp;</td>
-        <td>0.1% <small>p19</small></td>
-        <td>7.00</td>
-        <td><details><summary>SandboxJS is a JavaScript sandboxing library. Prior to 0.8.34, it is possible to...</summary><p>SandboxJS is a JavaScript sandboxing library. Prior to 0.8.34, it is possible to obtain arrays containing Function, which allows escaping the sandbox. Given an array containing Function, and Object.fromEntries, it is possible to construct {[p]: Function} where p is any constructible property. This vulnerability is fixed in 0.8.34.</p></details></td>
-        <td>2026-03-13</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-30966" target="_blank" rel="noopener">CVE-2026-30966</a></td>
@@ -541,7 +541,7 @@
         <td><span class="severity critical">CRITICAL</span></td>
         <td>NVD-CWE-noinfo</td>
         <td>&nbsp;</td>
-        <td>0.0% <small>p7</small></td>
+        <td>0.0% <small>p6</small></td>
         <td>7.00</td>
         <td><details><summary>Sandbox escape in the Responsive Design Mode component. This vulnerability was f...</summary><p>Sandbox escape in the Responsive Design Mode component. This vulnerability was fixed in Firefox 149, Firefox ESR 115.34, Firefox ESR 140.9, Thunderbird 149, and Thunderbird 140.9.</p></details></td>
         <td>2026-03-24</td>
