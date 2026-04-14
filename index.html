@@ -11,7 +11,7 @@
     <header>
       <h1>vuln-tracker</h1>
       <p class="subtitle">CVEs from the National Vulnerability Database — current and previous month</p>
-      <p class="last-updated">Last updated: 2026-04-14 21:01 UTC</p>
+      <p class="last-updated">Last updated: 2026-04-14 22:51 UTC</p>
     </header>
     <nav>
       <a href="top50.html">&#9733; Top 50</a>
@@ -25,7 +25,7 @@
     </nav>
     <main>
     <section>
-      <h2>Current Month — April 2026 <span class="count">(2732)</span></h2>
+      <h2>Current Month — April 2026 <span class="count">(2756)</span></h2>
       <div class="table-wrapper">
         <table>
           <thead>
@@ -43,6 +43,337 @@
           </thead>
           <tbody>
       <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40291" target="_blank" rel="noopener">CVE-2026-40291</a></td>
+        <td>8.8</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-269</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.16</td>
+        <td><details><summary>Chamilo LMS is an open-source learning management system. In versions prior to 2...</summary><p>Chamilo LMS is an open-source learning management system. In versions prior to 2.0.0-RC.3, an insecure direct object modification vulnerability in the PUT /api/users/{id} endpoint allows any authenticated user with ROLE_STUDENT to escalate their privileges to ROLE_ADMIN by modifying the roles field on their own user record. The API Platform security expression is_granted(&#x27;EDIT&#x27;, object) only verifies record ownership, and the roles field is included in the writable serialization group, enabling any user to set arbitrary roles such as ROLE_ADMIN. Successful exploitation grants full administrative control of the platform, including access to all courses, user data, grades, and administrative settings. This issue has been fixed in version 2.0.0-RC.3.</p></details></td>
+        <td>2026-04-14</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39907" target="_blank" rel="noopener">CVE-2026-39907</a></td>
+        <td>7.0</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-73</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.90</td>
+        <td><details><summary>Unisys WebPerfect Image Suite versions 3.0.3960.22810 and 3.0.3960.22604 expose ...</summary><p>Unisys WebPerfect Image Suite versions 3.0.3960.22810 and 3.0.3960.22604 expose an unauthenticated WCF SOAP endpoint on TCP port 1208 that accepts unsanitized file paths in the ReadLicense action&#x27;s LFName parameter, allowing remote attackers to trigger SMB connections and leak NTLMv2 machine-account hashes. Attackers can submit crafted SOAP requests with UNC paths to force the server to initiate outbound SMB connections, exposing authentication credentials that may be relayed for privilege escalation or lateral movement within the network.</p></details></td>
+        <td>2026-04-14</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39906" target="_blank" rel="noopener">CVE-2026-39906</a></td>
+        <td>7.0</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-441</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.90</td>
+        <td><details><summary>Unisys WebPerfect Image Suite versions 3.0.3960.22810 and 3.0.3960.22604 expose ...</summary><p>Unisys WebPerfect Image Suite versions 3.0.3960.22810 and 3.0.3960.22604 expose a deprecated .NET Remoting TCP channel that allows remote unauthenticated attackers to leak NTLMv2 machine-account hashes by supplying a Windows UNC path as a target file argument through object-unmarshalling techniques. Attackers can capture the leaked NTLMv2 hash and relay it to other hosts to achieve privilege escalation or lateral movement depending on network configuration and patch level.</p></details></td>
+        <td>2026-04-14</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35196" target="_blank" rel="noopener">CVE-2026-35196</a></td>
+        <td>8.8</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-78</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.16</td>
+        <td><details><summary>Chamilo LMS is an open-source learning management system. In versions prior to 2...</summary><p>Chamilo LMS is an open-source learning management system. In versions prior to 2.0.0-RC.3, an OS Command Injection vulnerability exists in the main/inc/ajax/gradebook.ajax.php endpoint within the export_all_certificates action, where the course code retrieved from the session variable $_SESSION[&#x27;_cid&#x27;] via api_get_course_id() is concatenated directly into a shell_exec() command string without sanitization or escaping using escapeshellarg(). If an attacker can manipulate or poison their session data to inject shell metacharacters into the _cid variable, they can achieve arbitrary command execution on the underlying server. Successful exploitation grants full access to read system files and credentials, alters the application and database, or disrupts server availability. This issue has been fixed in version 2.0.0-RC.3.</p></details></td>
+        <td>2026-04-14</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34631" target="_blank" rel="noopener">CVE-2026-34631</a></td>
+        <td>7.8</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-787</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.46</td>
+        <td><details><summary>InCopy versions 20.5.2, 21.2 and earlier are affected by an out-of-bounds write ...</summary><p>InCopy versions 20.5.2, 21.2 and earlier are affected by an out-of-bounds write vulnerability that could result in arbitrary code execution in the context of the current user. Exploitation of this issue requires user interaction in that a victim must open a malicious file.</p></details></td>
+        <td>2026-04-14</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34619" target="_blank" rel="noopener">CVE-2026-34619</a></td>
+        <td>7.7</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-22</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.39</td>
+        <td><details><summary>ColdFusion versions 2023.18, 2025.6 and earlier are affected by an Improper Limi...</summary><p>ColdFusion versions 2023.18, 2025.6 and earlier are affected by an Improper Limitation of a Pathname to a Restricted Directory (&#x27;Path Traversal&#x27;) vulnerability that could result in a Security feature bypass. An attacker could leverage this vulnerability to access unauthorized files or directories outside the intended restrictions. Exploitation of this issue does not require user interaction.</p></details></td>
+        <td>2026-04-14</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34602" target="_blank" rel="noopener">CVE-2026-34602</a></td>
+        <td>7.1</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-639</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.97</td>
+        <td><details><summary>Chamilo LMS is an open-source learning management system. In versions prior to 2...</summary><p>Chamilo LMS is an open-source learning management system. In versions prior to 2.0.0-RC.3, the /api/course_rel_users endpoint is vulnerable to Insecure Direct Object Reference (IDOR), allowing an authenticated attacker to modify the user parameter in the request body to enroll any arbitrary user into any course without proper authorization checks. The backend trusts the user-supplied input for the user field and performs no server-side verification that the requester owns the referenced user ID or has permission to act on behalf of other users. This enables unauthorized manipulation of user-course relationships, potentially granting unintended access to course materials, bypassing enrollment controls, and compromising platform integrity. This issue has been fixed in version  2.0.0-RC.3.</p></details></td>
+        <td>2026-04-14</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34370" target="_blank" rel="noopener">CVE-2026-34370</a></td>
+        <td>6.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-285</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.55</td>
+        <td><details><summary>Chamilo LMS is an open-source learning management system. In versions prior to 2...</summary><p>Chamilo LMS is an open-source learning management system. In versions prior to 2.0.0-RC.3, the notebook module contains an Insecure Direct Object Reference (IDOR) vulnerability that allows any authenticated student to read the private course notes of any other user on the platform by manipulating the notebook_id parameter in the editnote action. The application fetches the note content using only the supplied integer ID without verifying that the requesting user owns the note, and the full title and HTML body are rendered in the edit form and returned to the attacker&#x27;s browser. While ownership checks exist in the write paths (updateNote() and delete_note()), they are entirely absent from the read path (get_note_information()). This issue has been fixed in version 2.0.0-RC.3.</p></details></td>
+        <td>2026-04-14</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34213" target="_blank" rel="noopener">CVE-2026-34213</a></td>
+        <td>5.4</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-639</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.78</td>
+        <td><details><summary>Docmost is open-source collaborative wiki and documentation software. Starting i...</summary><p>Docmost is open-source collaborative wiki and documentation software. Starting in version 0.3.0 and prior to version 0.71.0, improper authorization in Docmost allows a low-privileged authenticated user to overwrite another page&#x27;s attachment within the same workspace by supplying a victim `attachmentId` to `POST /api/files/upload`. This is a remote integrity issue requiring no victim interaction. Version 0.71.0 contains a patch.</p></details></td>
+        <td>2026-04-14</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34212" target="_blank" rel="noopener">CVE-2026-34212</a></td>
+        <td>5.4</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.78</td>
+        <td><details><summary>Docmost is open-source collaborative wiki and documentation software. In version...</summary><p>Docmost is open-source collaborative wiki and documentation software. In versions prior to 0.71.0, improper neutralization of attachment URLs in Docmost allows a low-privileged authenticated user to store a malicious `javascript:` URL inside an attachment node in page content. When another user views the page and activates the attachment link/icon, attacker-controlled JavaScript executes in the context of the Docmost origin. Version 0.71.0 patches the issue.</p></details></td>
+        <td>2026-04-14</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33193" target="_blank" rel="noopener">CVE-2026-33193</a></td>
+        <td>4.6</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.22</td>
+        <td><details><summary>Docmost is open-source collaborative wiki and documentation software. Versions p...</summary><p>Docmost is open-source collaborative wiki and documentation software. Versions prior to 0.70.0 are vulnerable to a stored cross-site scripting (XSS) attack due to improper handling of MIME type spoofing (GHSL-2026-052). An attacker could exploit this flaw to inject malicious scripts, potentially compromising the security of users and data. Version 0.70.0 contains a patch.</p></details></td>
+        <td>2026-04-14</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33146" target="_blank" rel="noopener">CVE-2026-33146</a></td>
+        <td>4.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-285</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.01</td>
+        <td><details><summary>Docmost is open-source collaborative wiki and documentation software. An authori...</summary><p>Docmost is open-source collaborative wiki and documentation software. An authorization bypass vulnerability in versions 0.70.0 through 0.70.2 exposes restricted child page titles and text snippets through the public search endpoint (`POST /api/search/share-search`) for publicly shared content. This flaw allows unauthenticated users to enumerate and retrieve content that should remain hidden from public share viewers, leading to a confidentiality breach. Version 0.70.3 contains a patch.</p></details></td>
+        <td>2026-04-14</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33020" target="_blank" rel="noopener">CVE-2026-33020</a></td>
+        <td>7.1</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-122</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.97</td>
+        <td><details><summary>libsixel is a SIXEL encoder/decoder implementation derived from kmiya&#x27;s sixel. V...</summary><p>libsixel is a SIXEL encoder/decoder implementation derived from kmiya&#x27;s sixel. Versions 1.8.7 and prior contain an integer overflow which leads to a heap buffer overflow via sixel_frame_convert_to_rgb888() in frame.c, where allocation size and pointer offset computations for palettised images (PAL1, PAL2, PAL4) are performed using int arithmetic before casting to size_t. For images whose pixel count exceeds INT_MAX / 4, the overflow produces an undersized heap allocation for the conversion buffer and a negative pointer offset for the normalization sub-buffer, after which sixel_helper_normalize_pixelformat() writes the full image data starting from the invalid pointer, causing massive heap corruption confirmed by ASAN. An attacker providing a specially crafted large palettised PNG can corrupt the heap of the victim process, resulting in a reliable crash and potential arbitrary code execution.
+This issue has been fixed in version 1.8.7-r1.</p></details></td>
+        <td>2026-04-14</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33019" target="_blank" rel="noopener">CVE-2026-33019</a></td>
+        <td>7.1</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-125</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.97</td>
+        <td><details><summary>libsixel is a SIXEL encoder/decoder implementation derived from kmiya&#x27;s sixel. V...</summary><p>libsixel is a SIXEL encoder/decoder implementation derived from kmiya&#x27;s sixel. Versions 1.8.7 and prior contain an integer overflow leading to an out-of-bounds heap read in the --crop option handling of img2sixel, where positive coordinates up to INT_MAX are accepted without overflow-safe bounds checking. In sixel_encoder_do_clip(), the expression clip_w + clip_x overflows to a large negative value when clip_x is INT_MAX, causing the bounds guard to be skipped entirely, and the unclamped coordinate is passed through sixel_frame_clip() to clip(), which computes a source pointer far beyond the image buffer and passes it to memmove(). An attacker supplying a specially crafted crop argument with any valid image can trigger an out-of-bounds read in the heap, resulting in a reliable crash and potential information disclosure. This issue has been fixed in version 1.8.7-r1.</p></details></td>
+        <td>2026-04-14</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33018" target="_blank" rel="noopener">CVE-2026-33018</a></td>
+        <td>7.0</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-416</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.90</td>
+        <td><details><summary>libsixel is a SIXEL encoder/decoder implementation derived from kmiya&#x27;s sixel. V...</summary><p>libsixel is a SIXEL encoder/decoder implementation derived from kmiya&#x27;s sixel. Versions 1.8.7 and prior contain a Use-After-Free vulnerability via the load_gif() function in fromgif.c, where a single sixel_frame_t object is reused across all frames of an animated GIF and gif_init_frame() unconditionally frees and reallocates frame-&gt;pixels between frames without consulting the object&#x27;s reference count. Because the public API explicitly provides sixel_frame_ref() to retain a frame and sixel_frame_get_pixels() to access the raw pixel buffer, a callback following this documented usage pattern will hold a dangling pointer after the second frame is decoded, resulting in a heap use-after-free confirmed by ASAN. Any application using sixel_helper_load_image_file() with a multi-frame callback to process user-supplied animated GIFs is affected, with a reliable crash as the minimum impact and potential for code execution. This issue has been fixed in version 1.8.7-r1.</p></details></td>
+        <td>2026-04-14</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-27308" target="_blank" rel="noopener">CVE-2026-27308</a></td>
+        <td>2.4</td>
+        <td><span class="severity low">LOW</span></td>
+        <td>CWE-400</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>1.68</td>
+        <td><details><summary>ColdFusion versions 2023.18, 2025.6 and earlier are affected by an Uncontrolled ...</summary><p>ColdFusion versions 2023.18, 2025.6 and earlier are affected by an Uncontrolled Resource Consumption vulnerability that could lead to application denial-of-service. A high-privileged attacker could exploit this vulnerability and exhaust system resources, reducing application speed. Exploitation of this issue does not require user interaction.</p></details></td>
+        <td>2026-04-14</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-27307" target="_blank" rel="noopener">CVE-2026-27307</a></td>
+        <td>2.4</td>
+        <td><span class="severity low">LOW</span></td>
+        <td>CWE-400</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>1.68</td>
+        <td><details><summary>ColdFusion versions 2023.18, 2025.6 and earlier are affected by an Uncontrolled ...</summary><p>ColdFusion versions 2023.18, 2025.6 and earlier are affected by an Uncontrolled Resource Consumption vulnerability that could lead to application denial-of-service. A high-privileged attacker could exploit this vulnerability and exhaust system resources, reducing application speed. Exploitation of this issue does not require user interaction.</p></details></td>
+        <td>2026-04-14</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-27306" target="_blank" rel="noopener">CVE-2026-27306</a></td>
+        <td>8.4</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-20</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.88</td>
+        <td><details><summary>ColdFusion versions 2023.18, 2025.6 and earlier are affected by an Improper Inpu...</summary><p>ColdFusion versions 2023.18, 2025.6 and earlier are affected by an Improper Input Validation vulnerability that could result in arbitrary code execution in the context of the current user. Attacker requires elevated privileges. Exploitation of this issue requires user interaction in that a victim must open a malicious file.</p></details></td>
+        <td>2026-04-14</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-27305" target="_blank" rel="noopener">CVE-2026-27305</a></td>
+        <td>8.6</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-22</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.02</td>
+        <td><details><summary>ColdFusion versions 2023.18, 2025.6 and earlier are affected by an Improper Limi...</summary><p>ColdFusion versions 2023.18, 2025.6 and earlier are affected by an Improper Limitation of a Pathname to a Restricted Directory (&#x27;Path Traversal&#x27;) vulnerability that could lead to arbitrary file system read. An attacker could exploit this vulnerability to access sensitive files and directories outside the intended access scope. Exploitation of this issue does not require user interaction.</p></details></td>
+        <td>2026-04-14</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-27304" target="_blank" rel="noopener">CVE-2026-27304</a></td>
+        <td>9.3</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-20</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.51</td>
+        <td><details><summary>ColdFusion versions 2023.18, 2025.6 and earlier are affected by an Improper Inpu...</summary><p>ColdFusion versions 2023.18, 2025.6 and earlier are affected by an Improper Input Validation vulnerability that could result in arbitrary code execution in the context of the current user. Exploitation of this issue does not require user interaction.</p></details></td>
+        <td>2026-04-14</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-27282" target="_blank" rel="noopener">CVE-2026-27282</a></td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-20</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.25</td>
+        <td><details><summary>ColdFusion versions 2023.18, 2025.6 and earlier are affected by an Improper Inpu...</summary><p>ColdFusion versions 2023.18, 2025.6 and earlier are affected by an Improper Input Validation vulnerability that could result in a Security feature bypass. An attacker could leverage this vulnerability to bypass security measures and gain unauthorized access. Exploitation of this issue requires user interaction.</p></details></td>
+        <td>2026-04-14</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-15565" target="_blank" rel="noopener">CVE-2025-15565</a></td>
+        <td>5.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.71</td>
+        <td><details><summary>The Nexi XPay plugin for WordPress is vulnerable to unauthorized modification of...</summary><p>The Nexi XPay plugin for WordPress is vulnerable to unauthorized modification of data due to missing authorization checks on the redirect function in all versions up to, and including, 8.3.0. This makes it possible for unauthenticated attackers to mark pending WooCommerce orders as paid/completed.</p></details></td>
+        <td>2026-04-14</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34161" target="_blank" rel="noopener">CVE-2026-34161</a></td>
+        <td>5.1</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.57</td>
+        <td><details><summary>Chamilo LMS is an open-source learning management system. In versions prior to 2...</summary><p>Chamilo LMS is an open-source learning management system. In versions prior to 2.0.0-RC.3, a Stored Cross-Site Scripting (XSS) vulnerability exists in the social post attachment upload functionality, where an authenticated user can upload a malicious HTML file containing JavaScript via the /api/social_post_attachments endpoint. The uploaded file is served back from the application at the generated contentUrl without sanitization, content type restrictions, or a Content-Disposition: attachment header, causing the JavaScript to execute in the browser within the application&#x27;s origin. Because the payload is stored server-side and runs in the trusted origin, an attacker can perform session hijacking, account takeover, privilege escalation (if an admin views the link), and arbitrary actions on behalf of the victim. This issue has been fixed in version 2.0.0-RC.3.</p></details></td>
+        <td>2026-04-14</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34160" target="_blank" rel="noopener">CVE-2026-34160</a></td>
+        <td>8.6</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-306</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.02</td>
+        <td><details><summary>Chamilo LMS is an open-source learning management system. In versions prior to 2...</summary><p>Chamilo LMS is an open-source learning management system. In versions prior to 2.0.0-RC.3, the PENS (Package Exchange Notification Services) plugin endpoint at public/plugin/Pens/pens.php is accessible without authentication and accepts a user-controlled package-url parameter that the server fetches using curl without filtering private or internal IP addresses, enabling unauthenticated Server-Side Request Forgery (SSRF). An attacker can exploit this to probe internal network services, access cloud metadata endpoints (such as 169.254.169.254) to steal IAM credentials and sensitive instance metadata, or trigger state-changing operations on internal services via the receipt and alerts callback parameters. No authentication is required to exploit either SSRF vector, significantly increasing the attack surface. This issue has been fixed in version 2.0.0-RC.3.</p></details></td>
+        <td>2026-04-14</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33715" target="_blank" rel="noopener">CVE-2026-33715</a></td>
+        <td>7.2</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-306</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.04</td>
+        <td><details><summary>Chamilo LMS is an open-source learning management system. In version 2.0-RC.2, t...</summary><p>Chamilo LMS is an open-source learning management system. In version 2.0-RC.2, the file public/main/inc/ajax/install.ajax.php is accessible without authentication on fully installed instances because, unlike other AJAX endpoints, it does not include the global.inc.php file that performs authentication and installation-completed checks. Its test_mailer action accepts an arbitrary Symfony Mailer DSN string from POST data and uses it to connect to an attacker-specified SMTP server, enabling Server-Side Request Forgery (SSRF) into internal networks via the SMTP protocol. An unauthenticated attacker can also abuse this to weaponize the Chamilo server as an open email relay for phishing and spam campaigns, with emails appearing to originate from the server&#x27;s IP address. Additionally, error responses from failed SMTP connections may disclose information about internal network topology and running services. This issue has been fixed in version 2.0.0-RC.3.</p></details></td>
+        <td>2026-04-14</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33714" target="_blank" rel="noopener">CVE-2026-33714</a></td>
+        <td>7.1</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-89</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.97</td>
+        <td><details><summary>Chamilo is an open-source learning management system (LMS). Version 2.0.0-RC.2 c...</summary><p>Chamilo is an open-source learning management system (LMS). Version 2.0.0-RC.2 contains a SQL Injection vulnerability in the statistics AJAX endpoint, which is an incomplete fix for CVE-2026-30881. While CVE-2026-30881 was patched by applying Security::remove_XSS() to the date_start and date_end parameters in the get_user_registration_by_month action, the same parameters remain unsanitized in the users_active action within the same file (public/main/inc/ajax/statistics.ajax.php), where they are directly interpolated into a SQL query. An authenticated admin can exploit this to perform time-based blind SQL injection, enabling extraction of arbitrary data from the database. This issue has been fixed in version 2.0.0.</p></details></td>
+        <td>2026-04-14</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-27287" target="_blank" rel="noopener">CVE-2026-27287</a></td>
+        <td>7.8</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-125</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.46</td>
+        <td><details><summary>InCopy versions 20.5.2, 21.2 and earlier are affected by an out-of-bounds read v...</summary><p>InCopy versions 20.5.2, 21.2 and earlier are affected by an out-of-bounds read vulnerability when parsing a crafted file, which could result in a read past the end of an allocated memory structure. An attacker could leverage this vulnerability to execute code in the context of the current user. Exploitation of this issue requires user interaction in that a victim must open a malicious file.</p></details></td>
+        <td>2026-04-14</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-25133" target="_blank" rel="noopener">CVE-2026-25133</a></td>
+        <td>4.8</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.36</td>
+        <td><details><summary>October is a Content Management System (CMS) and web platform. Versions prior to...</summary><p>October is a Content Management System (CMS) and web platform. Versions prior to 3.7.14 and 4.1.10 contain a stored cross-site scripting (XSS) vulnerability in the SVG sanitization logic. The regex pattern used to strip event handler attributes (such as onclick or onload) could be bypassed using a crafted payload that exploits how the pattern matches attribute boundaries, allowing malicious SVG files to be uploaded through the Media Manager with embedded JavaScript. Exploitation could lead to privilege escalation if a superuser views or embeds the malicious SVG, and requires authenticated backend access with media upload permissions. The SVG must be viewed or embedded in a page for the payload to trigger. This issue has been fixed in versions 3.7.14 and 4.1.10.</p></details></td>
+        <td>2026-04-14</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-25125" target="_blank" rel="noopener">CVE-2026-25125</a></td>
+        <td>4.9</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-94</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.43</td>
+        <td><details><summary>October is a Content Management System (CMS) and web platform. Versions prior to...</summary><p>October is a Content Management System (CMS) and web platform. Versions prior to 3.7.14 and 4.1.10 contain a server-side information disclosure vulnerability in the INI settings parser. Because PHP&#x27;s parse_ini_string() function supports ${} syntax for environment variable interpolation, attackers with Editor access could inject patterns such as ${APP_KEY} or ${DB_PASSWORD} into CMS page settings fields, causing sensitive environment variables to be resolved, stored in the template, and returned to the attacker when the page was reopened. This could enable exfiltration of credentials and secrets (database passwords, AWS keys, application keys), potentially leading to further attacks such as database access or cookie forgery. The vulnerability is only relevant when cms.safe_mode is enabled, as direct PHP injection is already possible otherwise. This issue has been fixed in versions 3.7.14 and 4.1.10. If users are unable to immediately upgrade, they can workaround this issue by restricting Editor tool access to fully trusted administrators only, and ensuring database and cloud service credentials are not accessible from the web server&#x27;s network.</p></details></td>
+        <td>2026-04-14</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-24893" target="_blank" rel="noopener">CVE-2026-24893</a></td>
+        <td>8.8</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-20</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.16</td>
+        <td><details><summary>openITCOCKPIT is an open source monitoring tool built for different monitoring e...</summary><p>openITCOCKPIT is an open source monitoring tool built for different monitoring engines. openITCOCKPIT Community Edition prior to version 5.5.2 contains a command injection vulnerability that allows an authenticated user with permission to add or modify hosts to execute arbitrary OS commands on the monitoring backend. The vulnerability arises because user-controlled host attributes (specifically the host address) are expanded into monitoring command templates without validation, escaping, or quoting. These templates are later executed by the monitoring engine (Nagios/Icinga) via a shell, resulting in remote code execution. Version 5.5.2 patches the issue.</p></details></td>
+        <td>2026-04-14</td>
+      </tr>
+      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40683" target="_blank" rel="noopener">CVE-2026-40683</a></td>
         <td>7.7</td>
         <td><span class="severity high">HIGH</span></td>
@@ -50,7 +381,7 @@
         <td>&nbsp;</td>
         <td>&mdash;</td>
         <td>5.39</td>
-        <td><details><summary>In OpenStack Keystone before 28.0.1, the LDAP identity backend does not convert ...</summary><p>In OpenStack Keystone before 28.0.1, the LDAP identity backend does not convert the user enabled attribute to a boolean when the user_enabled_invert configuration option is False (the default). The _ldap_res_to_model method in the UserApi class only performed string-to-boolean conversion when user_enabled_invert was True. When False, the raw string value from LDAP (e.g. &quot;FALSE&quot;) was used directly. Since non-empty strings are truthy in Python, users marked as disabled in LDAP were treated as enabled by Keystone, allowing them to authenticate and perform actions. All deployments using the LDAP identity backend without user_enabled_invert=True or user_enabled_emulation are affected.</p></details></td>
+        <td><details><summary>In OpenStack Keystone before 28.0.1, the LDAP identity backend does not convert ...</summary><p>In OpenStack Keystone before 28.0.1, the LDAP identity backend does not convert the user enabled attribute to a boolean when the user_enabled_invert configuration option is False (the default). The _ldap_res_to_model method in the UserApi class only performed string-to-boolean conversion when user_enabled_invert was True. When False, the raw string value from LDAP (e.g., &quot;FALSE&quot;) was used directly. Since non-empty strings are truthy in Python, users marked as disabled in LDAP were treated as enabled by Keystone, allowing them to authenticate and perform actions. All deployments using the LDAP identity backend without user_enabled_invert=True or user_enabled_emulation are affected.</p></details></td>
         <td>2026-04-14</td>
       </tr>
       <tr>
@@ -3178,47 +3509,6 @@
         <td>2026-04-14</td>
       </tr>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33929" target="_blank" rel="noopener">CVE-2026-33929</a></td>
-        <td>4.3</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-22</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p4</small></td>
-        <td>3.01</td>
-        <td><details><summary>Improper Limitation of a Pathname to a Restricted Directory (&#x27;Path Traversal&#x27;) v...</summary><p>Improper Limitation of a Pathname to a Restricted Directory (&#x27;Path Traversal&#x27;) vulnerability in Apache PDFBox Examples.
-
-This issue affects the 
-ExtractEmbeddedFiles example in Apache PDFBox: from 2.0.24 through 2.0.36, from 3.0.0 through 3.0.7.
-
-
-Users are recommended to update to version 2.0.37 or 3.0.8 once 
-available. Until then, they should apply the fix provided in GitHub PR 
-427.
-
-The ExtractEmbeddedFiles example contained a path traversal vulnerability (CWE-22) mentioned in CVE-2026-23907. However the change in the releases 2.0.36 and 3.0.7 is flawed because it doesn&#x27;t consider the file path separator. Because of that, a user having writing rights on /home/ABC could be victim to a malicious PDF resulting in a write attempt to any path starting with /home/ABC, e.g. &quot;/home/ABCDEF&quot;.
-
-Users who have copied this example into their production code should apply the mentioned change. The example 
-has been changed accordingly and is available in the project repository.</p></details></td>
-        <td>2026-04-14</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-31924" target="_blank" rel="noopener">CVE-2026-31924</a></td>
-        <td>5.3</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-319</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p2</small></td>
-        <td>3.71</td>
-        <td><details><summary>Cleartext Transmission of Sensitive Information vulnerability in Apache APISIX.
-...</summary><p>Cleartext Transmission of Sensitive Information vulnerability in Apache APISIX.
-
-tencent-cloud-cls log export uses plaintext HTTP
-This issue affects Apache APISIX: from 2.99.0 through 3.15.0.
-
-Users are recommended to upgrade to version 3.16.0, which fixes the issue.</p></details></td>
-        <td>2026-04-14</td>
-      </tr>
-      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-27668" target="_blank" rel="noopener">CVE-2026-27668</a></td>
         <td>8.7</td>
         <td><span class="severity high">HIGH</span></td>
@@ -3942,6 +4232,25 @@ Users are recommended to upgrade to version 3.16.0, which fixes the issue.</p></
         <td>0.0% <small>p1</small></td>
         <td>3.85</td>
         <td><details><summary>ImageMagick is free and open-source software used for editing and manipulating d...</summary><p>ImageMagick is free and open-source software used for editing and manipulating digital images. In versions below both 7.1.2-19 and 6.9.13-44, a stack overflow vulnerability in ImageMagick&#x27;s FX expression parser allows an attacker to crash the process by providing a deeply nested expression. This issue has been fixed in versions 6.9.13-44 and 7.1.2-19.</p></details></td>
+        <td>2026-04-13</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-22565" target="_blank" rel="noopener">CVE-2026-22565</a></td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-20</td>
+        <td>&nbsp;</td>
+        <td>0.0% <small>p1</small></td>
+        <td>5.25</td>
+        <td><details><summary>An Improper Input Validation vulnerability could allow a malicious actor with ac...</summary><p>An Improper Input Validation vulnerability could allow a malicious actor with access to the UniFi Play network to cause the device to stop responding.  
+
+Affected Products:
+UniFi Play PowerAmp (Version 1.0.35 and earlier) 
+UniFi Play Audio Port  (Version 1.0.24 and earlier)  
+
+Mitigation:
+Update UniFi Play PowerAmp to Version 1.0.38 or later 
+Update UniFi Play Audio Port  to Version 1.1.9 or later</p></details></td>
         <td>2026-04-13</td>
       </tr>
       <tr>
@@ -5474,6 +5783,19 @@ Users are recommended to upgrade to version 3.16.0, which fixes the issue.</p></
         <td>2026-04-13</td>
       </tr>
       <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-28553" target="_blank" rel="noopener">CVE-2026-28553</a></td>
+        <td>6.9</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-275</td>
+        <td>&nbsp;</td>
+        <td>0.0% <small>p0</small></td>
+        <td>4.83</td>
+        <td><details><summary>Vulnerability of improper permission control in the theme setting module.
+Impact...</summary><p>Vulnerability of improper permission control in the theme setting module.
+Impact: Successful exploitation of this vulnerability may affect service confidentiality.</p></details></td>
+        <td>2026-04-13</td>
+      </tr>
+      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6179" target="_blank" rel="noopener">CVE-2026-6179</a></td>
         <td>6.3</td>
         <td><span class="severity medium">MEDIUM</span></td>
@@ -6373,71 +6695,6 @@ Users are recommended to upgrade to version 3.16.0, which fixes the issue.</p></
         <td>0.1% <small>p18</small></td>
         <td>3.78</td>
         <td><details><summary>The Tutor LMS – eLearning and online course solution plugin for WordPress is vul...</summary><p>The Tutor LMS – eLearning and online course solution plugin for WordPress is vulnerable to unauthorized private course enrollment in all versions up to, and including, 3.9.7. This is due to missing post_status validation in the `enroll_now()` and `course_enrollment()` functions. Both enrollment endpoints verify the nonce, user authentication, and whether the course is purchasable, but fail to check if the course has a `private` post_status. This makes it possible for authenticated attackers with Subscriber-level access or above to enroll in private courses by sending a crafted POST request with the target course ID. The enrollment record is created in the database and the private course title and enrollment status are exposed in the subscriber&#x27;s dashboard, though WordPress core access control prevents the subscriber from viewing the actual course content (returns 404). Enrollment in private courses should be restricted to users with the `read_private_posts` capability.</p></details></td>
-        <td>2026-04-11</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4154" target="_blank" rel="noopener">CVE-2026-4154</a></td>
-        <td>7.8</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-190</td>
-        <td>&nbsp;</td>
-        <td>0.1% <small>p19</small></td>
-        <td>5.46</td>
-        <td><details><summary>GIMP XPM File Parsing Integer Overflow Remote Code Execution Vulnerability. This...</summary><p>GIMP XPM File Parsing Integer Overflow Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of GIMP. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.
-
-The specific flaw exists within the parsing of XPM files. The issue results from the lack of proper validation of user-supplied data, which can result in an integer overflow before allocating a buffer. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-28901.</p></details></td>
-        <td>2026-04-11</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4153" target="_blank" rel="noopener">CVE-2026-4153</a></td>
-        <td>7.8</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-122</td>
-        <td>&nbsp;</td>
-        <td>0.1% <small>p17</small></td>
-        <td>5.46</td>
-        <td><details><summary>GIMP PSP File Parsing Heap-based Buffer Overflow Remote Code Execution Vulnerabi...</summary><p>GIMP PSP File Parsing Heap-based Buffer Overflow Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of GIMP. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.
-
-The specific flaw exists within the parsing of PSP files. The issue results from the lack of proper validation of the length of user-supplied data prior to copying it to a heap-based buffer. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-28874.</p></details></td>
-        <td>2026-04-11</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4152" target="_blank" rel="noopener">CVE-2026-4152</a></td>
-        <td>7.8</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-122</td>
-        <td>&nbsp;</td>
-        <td>0.1% <small>p17</small></td>
-        <td>5.46</td>
-        <td><details><summary>GIMP JP2 File Parsing Heap-based Buffer Overflow Remote Code Execution Vulnerabi...</summary><p>GIMP JP2 File Parsing Heap-based Buffer Overflow Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of GIMP. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.
-
-The specific flaw exists within the parsing of JP2 files. The issue results from the lack of proper validation of the length of user-supplied data prior to copying it to a heap-based buffer. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-28863.</p></details></td>
-        <td>2026-04-11</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4151" target="_blank" rel="noopener">CVE-2026-4151</a></td>
-        <td>7.8</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-190</td>
-        <td>&nbsp;</td>
-        <td>0.1% <small>p19</small></td>
-        <td>5.46</td>
-        <td><details><summary>GIMP ANI File Parsing Integer Overflow Remote Code Execution Vulnerability. This...</summary><p>GIMP ANI File Parsing Integer Overflow Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of GIMP. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.
-
-The specific flaw exists within the parsing of ANI files. The issue results from the lack of proper validation of user-supplied data, which can result in an integer overflow before allocating a buffer. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-28813.</p></details></td>
-        <td>2026-04-11</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4150" target="_blank" rel="noopener">CVE-2026-4150</a></td>
-        <td>7.8</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-190</td>
-        <td>&nbsp;</td>
-        <td>0.1% <small>p19</small></td>
-        <td>5.46</td>
-        <td><details><summary>GIMP PSD File Parsing Integer Overflow Remote Code Execution Vulnerability. This...</summary><p>GIMP PSD File Parsing Integer Overflow Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of GIMP. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.
-
-The specific flaw exists within the parsing of PSD files. The issue results from the lack of proper validation of user-supplied data, which can result in an integer overflow before allocating a buffer. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-28807.</p></details></td>
         <td>2026-04-11</td>
       </tr>
       <tr>
@@ -9694,22 +9951,6 @@ The specific flaw exists within the parsing of PSD files. The issue results from
         <td>0.0% <small>p4</small></td>
         <td>5.46</td>
         <td><details><summary>The pstrip64.sys driver in EnTech Taiwan PowerStrip &lt;=3.90.736 allows local user...</summary><p>The pstrip64.sys driver in EnTech Taiwan PowerStrip &lt;=3.90.736 allows local users to escalate privileges to SYSTEM via a crafted IOCTL request enabling unprivileged users to map arbitrary physical memory into their address space and modify critical kernel structures.</p></details></td>
-        <td>2026-04-09</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-24880" target="_blank" rel="noopener">CVE-2026-24880</a></td>
-        <td>7.5</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-444</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p8</small></td>
-        <td>5.25</td>
-        <td><details><summary>Inconsistent Interpretation of HTTP Requests (&#x27;HTTP Request/Response Smuggling&#x27;)...</summary><p>Inconsistent Interpretation of HTTP Requests (&#x27;HTTP Request/Response Smuggling&#x27;) vulnerability in Apache Tomcat via invalid chunk extension.
-
-This issue affects Apache Tomcat: from 11.0.0-M1 through 11.0.18, from 10.1.0-M1 through 10.1.52, from 9.0.0.M1 through 9.0.115, from 8.5.0 through 8.5.100, from 7.0.0 through 7.0.109.
-Other, unsupported versions may also be affected.
-
-Users are recommended to upgrade to version 11.0.20, 10.1.52 or 9.0.116, which fix the issue.</p></details></td>
         <td>2026-04-09</td>
       </tr>
       <tr>
