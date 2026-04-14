@@ -1,6 +1,6 @@
 # CVEs — March 2026
 
-_5739 vulnerabilities_
+_5734 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
@@ -174,7 +174,7 @@ _5739 vulnerabilities_
 | [CVE-2026-30309](https://nvd.nist.gov/vuln/detail/CVE-2026-30309) | 7.8 | HIGH | CWE-78 | No | 0.1% | 5.46 | 2026-03-31 | InfCode's terminal auto-execution module contains a critical command filtering vulnerability that renders its blacklist... |
 | [CVE-2026-29870](https://nvd.nist.gov/vuln/detail/CVE-2026-29870) | 7.6 | HIGH | CWE-22 | No | 0.1% | 5.32 | 2026-03-31 | A directory traversal vulnerability in the agentic-context-engine project versions up to 0.7.1 allows arbitrary file wri... |
 | [CVE-2026-20915](https://nvd.nist.gov/vuln/detail/CVE-2026-20915) | 8.5 | HIGH | CWE-79 | No | 0.0% | 5.95 | 2026-03-31 | Stored cross-site scripting (XSS) in Checkmk version 2.5.0 (beta) before 2.5.0b2 allows authenticated users with permiss... |
-| [CVE-2026-0596](https://nvd.nist.gov/vuln/detail/CVE-2026-0596) | 9.6 | CRITICAL | CWE-78 | No | 0.4% | 6.73 | 2026-03-31 | A command injection vulnerability exists in mlflow/mlflow when serving a model with `enable_mlserver=True`. The `model_u... |
+| [CVE-2026-0596](https://nvd.nist.gov/vuln/detail/CVE-2026-0596) | 7.8 | HIGH | CWE-78 | No | 0.4% | 5.47 | 2026-03-31 | A command injection vulnerability exists in mlflow/mlflow when serving a model with `enable_mlserver=True`. The `model_u... |
 | [CVE-2026-3308](https://nvd.nist.gov/vuln/detail/CVE-2026-3308) | 7.8 | HIGH | CWE-190 | No | 0.0% | 5.46 | 2026-03-31 | An integer overflow vulnerability in 'pdf-image.c' in Artifex's MuPDF version 1.27.0 allows an attacker to maliciously c... |
 | [CVE-2026-34156](https://nvd.nist.gov/vuln/detail/CVE-2026-34156) | 9.9 | CRITICAL | CWE-913 | No | 7.2% | 7.15 | 2026-03-31 | NocoBase is an AI-powered no-code/low-code platform for building business applications and enterprise solutions. Prior t... |
 | [CVE-2026-34155](https://nvd.nist.gov/vuln/detail/CVE-2026-34155) | 7.2 | HIGH | CWE-196 | No | 0.0% | 5.04 | 2026-03-31 | RAUC controls the update process on embedded Linux systems. Prior to version 1.15.2, RAUC bundles using the 'plain' form... |
@@ -373,7 +373,7 @@ _5739 vulnerabilities_
 | [CVE-2018-25227](https://nvd.nist.gov/vuln/detail/CVE-2018-25227) | 6.9 | MEDIUM | CWE-466 | No | 0.0% | 4.83 | 2026-03-30 | Valentina Studio 9.0.4 contains a denial of service vulnerability that allows local attackers to crash the application b... |
 | [CVE-2018-25226](https://nvd.nist.gov/vuln/detail/CVE-2018-25226) | 6.9 | MEDIUM | CWE-787 | No | 0.0% | 4.83 | 2026-03-30 | FTPShell Server 6.83 contains a buffer overflow vulnerability that allows local attackers to crash the application by su... |
 | [CVE-2026-5128](https://nvd.nist.gov/vuln/detail/CVE-2026-5128) | 0.0 | NONE | N/A | No | — | 0.00 | 2026-03-30 | Rejected reason: This CVE ID has been rejected or withdrawn by its CVE Numbering Authority. |
-| [CVE-2026-5121](https://nvd.nist.gov/vuln/detail/CVE-2026-5121) | 9.8 | CRITICAL | CWE-190 | No | 0.2% | 6.87 | 2026-03-30 | A flaw was found in libarchive. On 32-bit systems, an integer overflow vulnerability exists in the zisofs block pointer... |
+| [CVE-2026-5121](https://nvd.nist.gov/vuln/detail/CVE-2026-5121) | 7.5 | HIGH | CWE-190 | No | 0.2% | 5.26 | 2026-03-30 | A flaw was found in libarchive. On 32-bit systems, an integer overflow vulnerability exists in the zisofs block pointer... |
 | [CVE-2026-4416](https://nvd.nist.gov/vuln/detail/CVE-2026-4416) | 8.5 | HIGH | CWE-502 | No | 0.0% | 5.95 | 2026-03-30 | The Performance Library component of Gigabyte Control Center has an Insecure Deserialization vulnerability. Authenticate... |
 | [CVE-2026-4415](https://nvd.nist.gov/vuln/detail/CVE-2026-4415) | 9.2 | CRITICAL | CWE-23 | No | 0.5% | 6.46 | 2026-03-30 | Gigabyte Control Center developed by GIGABYTE has an Arbitrary File Write vulnerability. When the pairing feature is ena... |
 | [CVE-2026-3945](https://nvd.nist.gov/vuln/detail/CVE-2026-3945) | 8.7 | HIGH | CWE-190 | No | 0.1% | 6.09 | 2026-03-30 | An integer overflow vulnerability in the HTTP chunked transfer encoding parser in tinyproxy up to and including version... |
@@ -2258,11 +2258,6 @@ _5739 vulnerabilities_
 | [CVE-2026-4491](https://nvd.nist.gov/vuln/detail/CVE-2026-4491) | 7.4 | HIGH | CWE-119 | No | 0.0% | 5.18 | 2026-03-20 | A vulnerability has been found in Tenda A18 Pro 02.03.02.28. Impacted is the function fromSetIpMacBind of the file /gofo... |
 | [CVE-2026-4490](https://nvd.nist.gov/vuln/detail/CVE-2026-4490) | 7.4 | HIGH | CWE-119 | No | 0.0% | 5.18 | 2026-03-20 | A flaw has been found in Tenda A18 Pro 02.03.02.28. This issue affects the function setSchedWifi of the file /goform/ope... |
 | [CVE-2026-29828](https://nvd.nist.gov/vuln/detail/CVE-2026-29828) | 6.1 | MEDIUM | CWE-79 | No | 0.0% | 4.27 | 2026-03-20 | DooTask v1.6.27 has a Cross-Site Scripting (XSS) vulnerability in the /manage/project/<id> page via the input field proj... |
-| [CVE-2026-22898](https://nvd.nist.gov/vuln/detail/CVE-2026-22898) | 9.3 | CRITICAL | CWE-306 | No | 0.4% | 6.52 | 2026-03-20 | A missing authentication for critical function vulnerability has been reported to affect QVR Pro. The remote attackers c... |
-| [CVE-2025-62846](https://nvd.nist.gov/vuln/detail/CVE-2025-62846) | 7.3 | HIGH | CWE-89 | No | 0.0% | 5.11 | 2026-03-20 | An SQL injection vulnerability has been reported to affect QHora. If a local attacker gains an administrator account, th... |
-| [CVE-2025-62845](https://nvd.nist.gov/vuln/detail/CVE-2025-62845) | 5.6 | MEDIUM | CWE-150 | No | 0.0% | 3.92 | 2026-03-20 | An improper neutralization of escape, meta, or control sequences vulnerability has been reported to affect QHora. If a l... |
-| [CVE-2025-62844](https://nvd.nist.gov/vuln/detail/CVE-2025-62844) | 4.0 | MEDIUM | CWE-1390 | No | 0.0% | 2.80 | 2026-03-20 | A weak authentication vulnerability has been reported to affect QHora. If an attacker gains local network access, they c... |
-| [CVE-2025-62843](https://nvd.nist.gov/vuln/detail/CVE-2025-62843) | 0.9 | LOW | CWE-923 | No | 0.0% | 0.63 | 2026-03-20 | An improper restriction of communication channel to intended endpoints vulnerability has been reported to affect QHora.... |
 | [CVE-2025-15607](https://nvd.nist.gov/vuln/detail/CVE-2025-15607) | 7.3 | HIGH | CWE-77 | No | 0.5% | 5.13 | 2026-03-20 | A command injection vulnerability on AX53 v1 occurs in mscd debug functionality due to insufficient input handling, allo... |
 | [CVE-2026-4489](https://nvd.nist.gov/vuln/detail/CVE-2026-4489) | 7.4 | HIGH | CWE-119 | No | 0.0% | 5.18 | 2026-03-20 | A vulnerability was detected in Tenda A18 Pro 02.03.02.28. This vulnerability affects the function form_fast_setting_wif... |
 | [CVE-2026-4488](https://nvd.nist.gov/vuln/detail/CVE-2026-4488) | 7.4 | HIGH | CWE-119 | No | 0.0% | 5.18 | 2026-03-20 | A vulnerability was identified in UTT HiPER 1250GW up to 3.2.7-210907-180535. Affected is the function strcpy of the fil... |
@@ -3182,7 +3177,7 @@ _5739 vulnerabilities_
 | [CVE-2025-15554](https://nvd.nist.gov/vuln/detail/CVE-2025-15554) | 6.0 | MEDIUM | CWE-525 | No | 0.0% | 4.20 | 2026-03-16 | Browser caching of LAPS passwords in Truesec’s LAPSWebUI before version 2.4 allows an attacker with access to a workstat... |
 | [CVE-2025-15553](https://nvd.nist.gov/vuln/detail/CVE-2025-15553) | 6.0 | MEDIUM | CWE-613 | No | 0.0% | 4.20 | 2026-03-16 | Non-working logout functionality in Truesec’s LAPSWebUI before version 2.4 allows an attacker with access to a workstati... |
 | [CVE-2025-15552](https://nvd.nist.gov/vuln/detail/CVE-2025-15552) | 6.0 | MEDIUM | CWE-613 | No | 0.0% | 4.20 | 2026-03-16 | Insufficient Session Expiration in Truesec’s LAPSWebUI before version 2.4 allows an attacker with access to a workstatio... |
-| [CVE-2025-14287](https://nvd.nist.gov/vuln/detail/CVE-2025-14287) | 7.5 | HIGH | CWE-94 | No | 0.1% | 5.25 | 2026-03-16 | A command injection vulnerability exists in mlflow/mlflow versions before v3.7.0, specifically in the `mlflow/sagemaker/... |
+| [CVE-2025-14287](https://nvd.nist.gov/vuln/detail/CVE-2025-14287) | 8.8 | HIGH | CWE-94 | No | 0.1% | 6.16 | 2026-03-16 | A command injection vulnerability exists in mlflow/mlflow versions before v3.7.0, specifically in the `mlflow/sagemaker/... |
 | [CVE-2025-13460](https://nvd.nist.gov/vuln/detail/CVE-2025-13460) | 5.3 | MEDIUM | CWE-204 | No | 0.0% | 3.71 | 2026-03-16 | IBM Aspera Console 3.3.0 through 3.4.8 could allow an attacker to enumerate usernames due to an observable response disc... |
 | [CVE-2025-13459](https://nvd.nist.gov/vuln/detail/CVE-2025-13459) | 2.7 | LOW | CWE-841 | No | 0.1% | 1.89 | 2026-03-16 | IBM Aspera Console 3.3.0 through 3.4.8 could allow a privileged user to cause a denial of service due to improper enforc... |
 | [CVE-2025-13212](https://nvd.nist.gov/vuln/detail/CVE-2025-13212) | 5.3 | MEDIUM | CWE-799 | No | 0.1% | 3.71 | 2026-03-16 | IBM Aspera Console 3.3.0 through 3.4.8 could allow an authenticated user to cause a denial of service in the email servi... |
