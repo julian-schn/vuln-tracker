@@ -11,7 +11,7 @@
     <header>
       <h1>vuln-tracker</h1>
       <p class="subtitle">CVEs from the National Vulnerability Database — current and previous month</p>
-      <p class="last-updated">Last updated: 2026-04-14 19:25 UTC</p>
+      <p class="last-updated">Last updated: 2026-04-14 21:01 UTC</p>
     </header>
     <nav>
       <a href="top50.html">&#9733; Top 50</a>
@@ -25,7 +25,7 @@
     </nav>
     <main>
     <section>
-      <h2>Current Month — April 2026 <span class="count">(2716)</span></h2>
+      <h2>Current Month — April 2026 <span class="count">(2732)</span></h2>
       <div class="table-wrapper">
         <table>
           <thead>
@@ -42,6 +42,105 @@
             </tr>
           </thead>
           <tbody>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40683" target="_blank" rel="noopener">CVE-2026-40683</a></td>
+        <td>7.7</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-843</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.39</td>
+        <td><details><summary>In OpenStack Keystone before 28.0.1, the LDAP identity backend does not convert ...</summary><p>In OpenStack Keystone before 28.0.1, the LDAP identity backend does not convert the user enabled attribute to a boolean when the user_enabled_invert configuration option is False (the default). The _ldap_res_to_model method in the UserApi class only performed string-to-boolean conversion when user_enabled_invert was True. When False, the raw string value from LDAP (e.g. &quot;FALSE&quot;) was used directly. Since non-empty strings are truthy in Python, users marked as disabled in LDAP were treated as enabled by Keystone, allowing them to authenticate and perform actions. All deployments using the LDAP identity backend without user_enabled_invert=True or user_enabled_emulation are affected.</p></details></td>
+        <td>2026-04-14</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34630" target="_blank" rel="noopener">CVE-2026-34630</a></td>
+        <td>7.8</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-122</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.46</td>
+        <td><details><summary>Bridge versions 16.0.2, 15.1.4 and earlier are affected by a Heap-based Buffer O...</summary><p>Bridge versions 16.0.2, 15.1.4 and earlier are affected by a Heap-based Buffer Overflow vulnerability that could result in arbitrary code execution in the context of the current user. Exploitation of this issue requires user interaction in that a victim must open a malicious file.</p></details></td>
+        <td>2026-04-14</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34618" target="_blank" rel="noopener">CVE-2026-34618</a></td>
+        <td>7.8</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-787</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.46</td>
+        <td><details><summary>Illustrator versions 30.2, 29.8.5 and earlier are affected by an out-of-bounds w...</summary><p>Illustrator versions 30.2, 29.8.5 and earlier are affected by an out-of-bounds write vulnerability that could result in arbitrary code execution in the context of the current user. Exploitation of this issue requires user interaction in that a victim must open a malicious file.</p></details></td>
+        <td>2026-04-14</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-27313" target="_blank" rel="noopener">CVE-2026-27313</a></td>
+        <td>7.8</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-122</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.46</td>
+        <td><details><summary>Bridge versions 16.0.2, 15.1.4 and earlier are affected by a Heap-based Buffer O...</summary><p>Bridge versions 16.0.2, 15.1.4 and earlier are affected by a Heap-based Buffer Overflow vulnerability that could result in arbitrary code execution in the context of the current user. Exploitation of this issue requires user interaction in that a victim must open a malicious file.</p></details></td>
+        <td>2026-04-14</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-27312" target="_blank" rel="noopener">CVE-2026-27312</a></td>
+        <td>7.8</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-122</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.46</td>
+        <td><details><summary>Bridge versions 16.0.2, 15.1.4 and earlier are affected by a Heap-based Buffer O...</summary><p>Bridge versions 16.0.2, 15.1.4 and earlier are affected by a Heap-based Buffer Overflow vulnerability that could result in arbitrary code execution in the context of the current user. Exploitation of this issue requires user interaction in that a victim must open a malicious file.</p></details></td>
+        <td>2026-04-14</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-27311" target="_blank" rel="noopener">CVE-2026-27311</a></td>
+        <td>7.8</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-122</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.46</td>
+        <td><details><summary>Bridge versions 16.0.2, 15.1.4 and earlier are affected by a Heap-based Buffer O...</summary><p>Bridge versions 16.0.2, 15.1.4 and earlier are affected by a Heap-based Buffer Overflow vulnerability that could result in arbitrary code execution in the context of the current user. Exploitation of this issue requires user interaction in that a victim must open a malicious file.</p></details></td>
+        <td>2026-04-14</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-27310" target="_blank" rel="noopener">CVE-2026-27310</a></td>
+        <td>7.8</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-122</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.46</td>
+        <td><details><summary>Bridge versions 16.0.2, 15.1.4 and earlier are affected by a Heap-based Buffer O...</summary><p>Bridge versions 16.0.2, 15.1.4 and earlier are affected by a Heap-based Buffer Overflow vulnerability that could result in arbitrary code execution in the context of the current user. Exploitation of this issue requires user interaction in that a victim must open a malicious file.</p></details></td>
+        <td>2026-04-14</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-27289" target="_blank" rel="noopener">CVE-2026-27289</a></td>
+        <td>7.8</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-125</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.46</td>
+        <td><details><summary>Photoshop Desktop versions 27.4 and earlier are affected by an out-of-bounds rea...</summary><p>Photoshop Desktop versions 27.4 and earlier are affected by an out-of-bounds read vulnerability when parsing a crafted file, which could result in a read past the end of an allocated memory structure. An attacker could leverage this vulnerability to execute code in the context of the current user. Exploitation of this issue requires user interaction in that a victim must open a malicious file.</p></details></td>
+        <td>2026-04-14</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-27222" target="_blank" rel="noopener">CVE-2026-27222</a></td>
+        <td>5.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-369</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.85</td>
+        <td><details><summary>Bridge versions 16.0.2, 15.1.4 and earlier are affected by a Divide By Zero vuln...</summary><p>Bridge versions 16.0.2, 15.1.4 and earlier are affected by a Divide By Zero vulnerability that could lead to application denial-of-service. An attacker could exploit this vulnerability to crash the application or render it unresponsive. Exploitation of this issue requires user interaction in that a victim must open a malicious file.</p></details></td>
+        <td>2026-04-14</td>
+      </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34625" target="_blank" rel="noopener">CVE-2026-34625</a></td>
         <td>5.4</td>
@@ -99,12 +198,12 @@
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5752" target="_blank" rel="noopener">CVE-2026-5752</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>9.3</td>
+        <td><span class="severity critical">CRITICAL</span></td>
         <td>N/A</td>
         <td>&nbsp;</td>
         <td>&mdash;</td>
-        <td>0.00</td>
+        <td>6.51</td>
         <td><details><summary>Sandbox Escape Vulnerability in Terrarium allows arbitrary code execution with r...</summary><p>Sandbox Escape Vulnerability in Terrarium allows arbitrary code execution with root privileges on a host process via JavaScript prototype chain traversal.</p></details></td>
         <td>2026-04-14</td>
       </tr>
@@ -553,7 +652,7 @@
         <td>6.5</td>
         <td><span class="severity medium">MEDIUM</span></td>
         <td>CWE-20</td>
-        <td>&nbsp;</td>
+        <td><span class="kev-yes">&#10003;</span></td>
         <td>&mdash;</td>
         <td>4.55</td>
         <td><details><summary>Improper input validation in Microsoft Office SharePoint allows an unauthorized ...</summary><p>Improper input validation in Microsoft Office SharePoint allows an unauthorized attacker to perform spoofing over a network.</p></details></td>
@@ -3079,18 +3178,42 @@
         <td>2026-04-14</td>
       </tr>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-31923" target="_blank" rel="noopener">CVE-2026-31923</a></td>
-        <td>7.5</td>
-        <td><span class="severity high">HIGH</span></td>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33929" target="_blank" rel="noopener">CVE-2026-33929</a></td>
+        <td>4.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-22</td>
+        <td>&nbsp;</td>
+        <td>0.0% <small>p4</small></td>
+        <td>3.01</td>
+        <td><details><summary>Improper Limitation of a Pathname to a Restricted Directory (&#x27;Path Traversal&#x27;) v...</summary><p>Improper Limitation of a Pathname to a Restricted Directory (&#x27;Path Traversal&#x27;) vulnerability in Apache PDFBox Examples.
+
+This issue affects the 
+ExtractEmbeddedFiles example in Apache PDFBox: from 2.0.24 through 2.0.36, from 3.0.0 through 3.0.7.
+
+
+Users are recommended to update to version 2.0.37 or 3.0.8 once 
+available. Until then, they should apply the fix provided in GitHub PR 
+427.
+
+The ExtractEmbeddedFiles example contained a path traversal vulnerability (CWE-22) mentioned in CVE-2026-23907. However the change in the releases 2.0.36 and 3.0.7 is flawed because it doesn&#x27;t consider the file path separator. Because of that, a user having writing rights on /home/ABC could be victim to a malicious PDF resulting in a write attempt to any path starting with /home/ABC, e.g. &quot;/home/ABCDEF&quot;.
+
+Users who have copied this example into their production code should apply the mentioned change. The example 
+has been changed accordingly and is available in the project repository.</p></details></td>
+        <td>2026-04-14</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-31924" target="_blank" rel="noopener">CVE-2026-31924</a></td>
+        <td>5.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
         <td>CWE-319</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p2</small></td>
-        <td>5.25</td>
+        <td>3.71</td>
         <td><details><summary>Cleartext Transmission of Sensitive Information vulnerability in Apache APISIX.
 ...</summary><p>Cleartext Transmission of Sensitive Information vulnerability in Apache APISIX.
 
-This can occur due to `ssl_verify` in openid-connect plugin configuration being set to false by default.
-This issue affects Apache APISIX: from 0.7 through 3.15.0.
+tencent-cloud-cls log export uses plaintext HTTP
+This issue affects Apache APISIX: from 2.99.0 through 3.15.0.
 
 Users are recommended to upgrade to version 3.16.0, which fixes the issue.</p></details></td>
         <td>2026-04-14</td>
@@ -6250,6 +6373,71 @@ Users are recommended to upgrade to version 3.16.0, which fixes the issue.</p></
         <td>0.1% <small>p18</small></td>
         <td>3.78</td>
         <td><details><summary>The Tutor LMS – eLearning and online course solution plugin for WordPress is vul...</summary><p>The Tutor LMS – eLearning and online course solution plugin for WordPress is vulnerable to unauthorized private course enrollment in all versions up to, and including, 3.9.7. This is due to missing post_status validation in the `enroll_now()` and `course_enrollment()` functions. Both enrollment endpoints verify the nonce, user authentication, and whether the course is purchasable, but fail to check if the course has a `private` post_status. This makes it possible for authenticated attackers with Subscriber-level access or above to enroll in private courses by sending a crafted POST request with the target course ID. The enrollment record is created in the database and the private course title and enrollment status are exposed in the subscriber&#x27;s dashboard, though WordPress core access control prevents the subscriber from viewing the actual course content (returns 404). Enrollment in private courses should be restricted to users with the `read_private_posts` capability.</p></details></td>
+        <td>2026-04-11</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4154" target="_blank" rel="noopener">CVE-2026-4154</a></td>
+        <td>7.8</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-190</td>
+        <td>&nbsp;</td>
+        <td>0.1% <small>p19</small></td>
+        <td>5.46</td>
+        <td><details><summary>GIMP XPM File Parsing Integer Overflow Remote Code Execution Vulnerability. This...</summary><p>GIMP XPM File Parsing Integer Overflow Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of GIMP. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.
+
+The specific flaw exists within the parsing of XPM files. The issue results from the lack of proper validation of user-supplied data, which can result in an integer overflow before allocating a buffer. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-28901.</p></details></td>
+        <td>2026-04-11</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4153" target="_blank" rel="noopener">CVE-2026-4153</a></td>
+        <td>7.8</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-122</td>
+        <td>&nbsp;</td>
+        <td>0.1% <small>p17</small></td>
+        <td>5.46</td>
+        <td><details><summary>GIMP PSP File Parsing Heap-based Buffer Overflow Remote Code Execution Vulnerabi...</summary><p>GIMP PSP File Parsing Heap-based Buffer Overflow Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of GIMP. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.
+
+The specific flaw exists within the parsing of PSP files. The issue results from the lack of proper validation of the length of user-supplied data prior to copying it to a heap-based buffer. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-28874.</p></details></td>
+        <td>2026-04-11</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4152" target="_blank" rel="noopener">CVE-2026-4152</a></td>
+        <td>7.8</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-122</td>
+        <td>&nbsp;</td>
+        <td>0.1% <small>p17</small></td>
+        <td>5.46</td>
+        <td><details><summary>GIMP JP2 File Parsing Heap-based Buffer Overflow Remote Code Execution Vulnerabi...</summary><p>GIMP JP2 File Parsing Heap-based Buffer Overflow Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of GIMP. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.
+
+The specific flaw exists within the parsing of JP2 files. The issue results from the lack of proper validation of the length of user-supplied data prior to copying it to a heap-based buffer. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-28863.</p></details></td>
+        <td>2026-04-11</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4151" target="_blank" rel="noopener">CVE-2026-4151</a></td>
+        <td>7.8</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-190</td>
+        <td>&nbsp;</td>
+        <td>0.1% <small>p19</small></td>
+        <td>5.46</td>
+        <td><details><summary>GIMP ANI File Parsing Integer Overflow Remote Code Execution Vulnerability. This...</summary><p>GIMP ANI File Parsing Integer Overflow Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of GIMP. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.
+
+The specific flaw exists within the parsing of ANI files. The issue results from the lack of proper validation of user-supplied data, which can result in an integer overflow before allocating a buffer. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-28813.</p></details></td>
+        <td>2026-04-11</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4150" target="_blank" rel="noopener">CVE-2026-4150</a></td>
+        <td>7.8</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-190</td>
+        <td>&nbsp;</td>
+        <td>0.1% <small>p19</small></td>
+        <td>5.46</td>
+        <td><details><summary>GIMP PSD File Parsing Integer Overflow Remote Code Execution Vulnerability. This...</summary><p>GIMP PSD File Parsing Integer Overflow Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of GIMP. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.
+
+The specific flaw exists within the parsing of PSD files. The issue results from the lack of proper validation of user-supplied data, which can result in an integer overflow before allocating a buffer. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-28807.</p></details></td>
         <td>2026-04-11</td>
       </tr>
       <tr>
@@ -9509,6 +9697,22 @@ Users are recommended to upgrade to version 3.16.0, which fixes the issue.</p></
         <td>2026-04-09</td>
       </tr>
       <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-24880" target="_blank" rel="noopener">CVE-2026-24880</a></td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-444</td>
+        <td>&nbsp;</td>
+        <td>0.0% <small>p8</small></td>
+        <td>5.25</td>
+        <td><details><summary>Inconsistent Interpretation of HTTP Requests (&#x27;HTTP Request/Response Smuggling&#x27;)...</summary><p>Inconsistent Interpretation of HTTP Requests (&#x27;HTTP Request/Response Smuggling&#x27;) vulnerability in Apache Tomcat via invalid chunk extension.
+
+This issue affects Apache Tomcat: from 11.0.0-M1 through 11.0.18, from 10.1.0-M1 through 10.1.52, from 9.0.0.M1 through 9.0.115, from 8.5.0 through 8.5.100, from 7.0.0 through 7.0.109.
+Other, unsupported versions may also be affected.
+
+Users are recommended to upgrade to version 11.0.20, 10.1.52 or 9.0.116, which fix the issue.</p></details></td>
+        <td>2026-04-09</td>
+      </tr>
+      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39912" target="_blank" rel="noopener">CVE-2026-39912</a></td>
         <td>9.1</td>
         <td><span class="severity critical">CRITICAL</span></td>
@@ -10227,7 +10431,7 @@ Users are recommended to upgrade to version 3.16.0, which fixes the issue.</p></
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5445" target="_blank" rel="noopener">CVE-2026-5445</a></td>
         <td>9.1</td>
         <td><span class="severity critical">CRITICAL</span></td>
-        <td>N/A</td>
+        <td>CWE-125</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p3</small></td>
         <td>6.37</td>
@@ -10238,7 +10442,7 @@ Users are recommended to upgrade to version 3.16.0, which fixes the issue.</p></
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5444" target="_blank" rel="noopener">CVE-2026-5444</a></td>
         <td>7.1</td>
         <td><span class="severity high">HIGH</span></td>
-        <td>N/A</td>
+        <td>CWE-787</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p4</small></td>
         <td>4.97</td>
@@ -10249,7 +10453,7 @@ Users are recommended to upgrade to version 3.16.0, which fixes the issue.</p></
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5443" target="_blank" rel="noopener">CVE-2026-5443</a></td>
         <td>9.8</td>
         <td><span class="severity critical">CRITICAL</span></td>
-        <td>N/A</td>
+        <td>CWE-787</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p3</small></td>
         <td>6.86</td>
@@ -10260,7 +10464,7 @@ Users are recommended to upgrade to version 3.16.0, which fixes the issue.</p></
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5442" target="_blank" rel="noopener">CVE-2026-5442</a></td>
         <td>9.8</td>
         <td><span class="severity critical">CRITICAL</span></td>
-        <td>N/A</td>
+        <td>CWE-787</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p3</small></td>
         <td>6.86</td>
@@ -10271,7 +10475,7 @@ Users are recommended to upgrade to version 3.16.0, which fixes the issue.</p></
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5441" target="_blank" rel="noopener">CVE-2026-5441</a></td>
         <td>7.1</td>
         <td><span class="severity high">HIGH</span></td>
-        <td>N/A</td>
+        <td>CWE-125</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p3</small></td>
         <td>4.97</td>
@@ -10282,7 +10486,7 @@ Users are recommended to upgrade to version 3.16.0, which fixes the issue.</p></
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5440" target="_blank" rel="noopener">CVE-2026-5440</a></td>
         <td>7.5</td>
         <td><span class="severity high">HIGH</span></td>
-        <td>N/A</td>
+        <td>CWE-770</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p6</small></td>
         <td>5.25</td>
@@ -18213,7 +18417,7 @@ Users are recommended to upgrade to version 3.16.0, which fixes the issue.</p></
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33816" target="_blank" rel="noopener">CVE-2026-33816</a></td>
         <td>9.8</td>
         <td><span class="severity critical">CRITICAL</span></td>
-        <td>N/A</td>
+        <td>NVD-CWE-noinfo</td>
         <td>&nbsp;</td>
         <td>0.1% <small>p17</small></td>
         <td>6.86</td>
@@ -18224,7 +18428,7 @@ Users are recommended to upgrade to version 3.16.0, which fixes the issue.</p></
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33815" target="_blank" rel="noopener">CVE-2026-33815</a></td>
         <td>9.8</td>
         <td><span class="severity critical">CRITICAL</span></td>
-        <td>N/A</td>
+        <td>NVD-CWE-noinfo</td>
         <td>&nbsp;</td>
         <td>0.1% <small>p17</small></td>
         <td>6.86</td>
