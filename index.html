@@ -11,7 +11,7 @@
     <header>
       <h1>vuln-tracker</h1>
       <p class="subtitle">CVEs from the National Vulnerability Database — current and previous month</p>
-      <p class="last-updated">Last updated: 2026-04-13 22:51 UTC</p>
+      <p class="last-updated">Last updated: 2026-04-14 03:21 UTC</p>
     </header>
     <nav>
       <a href="top50.html">&#9733; Top 50</a>
@@ -25,7 +25,7 @@
     </nav>
     <main>
     <section>
-      <h2>Current Month — April 2026 <span class="count">(2392)</span></h2>
+      <h2>Current Month — April 2026 <span class="count">(2427)</span></h2>
       <div class="table-wrapper">
         <table>
           <thead>
@@ -42,6 +42,459 @@
             </tr>
           </thead>
           <tbody>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6264" target="_blank" rel="noopener">CVE-2026-6264</a></td>
+        <td>9.8</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.86</td>
+        <td><details><summary>A critical vulnerability in the Talend JobServer and Talend Runtime allows unaut...</summary><p>A critical vulnerability in the Talend JobServer and Talend Runtime allows unauthenticated remote code execution via the JMX monitoring port. The attack vector is the JMX monitoring port of the Talend JobServer. The vulnerability can be mitigated for the Talend JobServer by requiring TLS client authentication for the monitoring port; however, the patch must be applied for full mitigation. For Talend ESB Runtime, the vulnerability can be mitigated by disabling the JobServer JMX monitoring port, which is disabled by default from the R2024-07-RT patch.</p></details></td>
+        <td>2026-04-14</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6227" target="_blank" rel="noopener">CVE-2026-6227</a></td>
+        <td>7.2</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-22</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.04</td>
+        <td><details><summary>The BackWPup plugin for WordPress is vulnerable to Local File Inclusion via the ...</summary><p>The BackWPup plugin for WordPress is vulnerable to Local File Inclusion via the `block_name` parameter of the `/wp-json/backwpup/v1/getblock` REST endpoint in all versions up to, and including, 5.6.6 due to a non-recursive `str_replace()` sanitization of path traversal sequences. This makes it possible for authenticated attackers, with Administrator-level access and above, to include arbitrary PHP files on the server via crafted traversal sequences (e.g., `....//`), which can be leveraged to read sensitive files such as `wp-config.php` or achieve remote code execution in certain configurations. Administrators have the ability to grant individual users permission to handle backups, which may then allow lower-level users to exploit this vulnerability.</p></details></td>
+        <td>2026-04-14</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4388" target="_blank" rel="noopener">CVE-2026-4388</a></td>
+        <td>7.2</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.04</td>
+        <td><details><summary>The Form Maker by 10Web plugin for WordPress is vulnerable to Stored Cross-Site ...</summary><p>The Form Maker by 10Web plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the Matrix field (Text Box input type) in form submissions in all versions up to, and including, 1.15.40. This is due to insufficient input sanitization (`sanitize_text_field` strips tags but not quotes) and missing output escaping when rendering submission data in the admin Submissions view. This makes it possible for unauthenticated attackers to inject arbitrary JavaScript through a form submission that executes in the browser of an administrator who views the submission details.</p></details></td>
+        <td>2026-04-14</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34984" target="_blank" rel="noopener">CVE-2026-34984</a></td>
+        <td>7.1</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-200</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.97</td>
+        <td><details><summary>External Secrets Operator reads information from a third-party service and autom...</summary><p>External Secrets Operator reads information from a third-party service and automatically injects the values as Kubernetes Secrets. Versions 2.2.0 and below contain a vulnerability in runtime/template/v2/template.go where the v2 template engine removes env and expandenv from Sprig&#x27;s TxtFuncMap() but leaves the getHostByName function accessible to user-controlled templates. Since ESO executes templates within the controller process, an attacker who can create or update templated ExternalSecret resources can invoke controller-side DNS lookups using secret-derived values. This creates a DNS exfiltration primitive, allowing fetched secret material to be leaked via DNS queries without requiring direct outbound network access from the attacker&#x27;s workload. The impact is a confidentiality issue, particularly in environments where untrusted or lower-trust users can author templated ExternalSecret resources and the controller has DNS resolution capability. This issue has been fixed in version 2.3.0.</p></details></td>
+        <td>2026-04-14</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4365" target="_blank" rel="noopener">CVE-2026-4365</a></td>
+        <td>9.1</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.37</td>
+        <td><details><summary>The LearnPress plugin for WordPress is vulnerable to unauthorized data deletion ...</summary><p>The LearnPress plugin for WordPress is vulnerable to unauthorized data deletion due to a missing capability check on the `delete_question_answer()` function in all versions up to, and including, 4.3.2.8. The plugin exposes a `wp_rest` nonce in public frontend HTML (`lpData`) to unauthenticated visitors, and uses that nonce as the only security gate for the `lp-load-ajax` AJAX dispatcher. The `delete_question_answer` action has no capability or ownership check. This makes it possible for unauthenticated attackers to delete any quiz answer option by sending a crafted POST request with a publicly available nonce.</p></details></td>
+        <td>2026-04-14</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4352" target="_blank" rel="noopener">CVE-2026-4352</a></td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-89</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.25</td>
+        <td><details><summary>The JetEngine plugin for WordPress is vulnerable to SQL Injection via the Custom...</summary><p>The JetEngine plugin for WordPress is vulnerable to SQL Injection via the Custom Content Type (CCT) REST API search endpoint in all versions up to, and including, 3.8.6.1. This is due to the `_cct_search` parameter being interpolated directly into a SQL query string via `sprintf()` without sanitization or use of `$wpdb-&gt;prepare()`. WordPress REST API&#x27;s `wp_unslash()` call on `$_GET` strips the `wp_magic_quotes()` protection, allowing single-quote-based injection. This makes it possible for unauthenticated attackers to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database. The Custom Content Types module must be enabled with at least one CCT configured with a public REST GET endpoint for exploitation.</p></details></td>
+        <td>2026-04-14</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39426" target="_blank" rel="noopener">CVE-2026-39426</a></td>
+        <td>5.1</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.57</td>
+        <td><details><summary>MaxKB is an open-source AI assistant for enterprise. Versions 2.7.1 and below co...</summary><p>MaxKB is an open-source AI assistant for enterprise. Versions 2.7.1 and below contain a Stored Cross-Site Scripting (XSS) vulnerability where the frontend&#x27;s MdRenderer.vue component parses custom &lt;iframe_render&gt; tags from LLM responses or Application Prologue configurations, bypassing standard Markdown sanitization and XSS filtering. The unsanitized HTML content is passed to the IframeRender.vue component, which renders it directly into an &lt;iframe&gt; via the srcdoc attribute configured with sandbox=&quot;allow-scripts allow-same-origin&quot;. This can be a dangerous combination, allowing injected scripts to escape the iframe and execute JavaScript in the parent window using window.parent. Since the Prologue is rendered for any user visiting an application&#x27;s chat interface, this results in a high-impact Stored XSS that can lead to session hijacking, unauthorized actions, and sensitive data exposure. This issue has been fixed in version 2.8.0.</p></details></td>
+        <td>2026-04-14</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39425" target="_blank" rel="noopener">CVE-2026-39425</a></td>
+        <td>5.1</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-80</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.57</td>
+        <td><details><summary>MaxKB is an open-source AI assistant for enterprise. Versions 2.7.1 and below co...</summary><p>MaxKB is an open-source AI assistant for enterprise. Versions 2.7.1 and below contain a Stored Cross-Site Scripting (XSS) vulnerability that allows authenticated users to inject arbitrary HTML and JavaScript into the Application prologue (Opening Remarks) field by wrapping malicious payloads in &lt;html_rander&gt; tags. The backend fails to sanitize or encode HTML entities in the prologue field when applications are created or updated via the /admin/api/workspace/{workspace_id}/application endpoint, storing the raw payload directly in the database. The frontend then renders this content using an innerHTML-equivalent mechanism, trusting &lt;html_rander&gt;-wrapped content to be safe, which enables persistent DOM-based Stored XSS execution against any visitor who opens the affected chatbot interface. Exploitation can lead to session hijacking, unauthorized actions performed on behalf of victims (such as deleting workspaces or applications), and sensitive data exposure. This issue has been fixed in version 2.8.0.</p></details></td>
+        <td>2026-04-14</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39419" target="_blank" rel="noopener">CVE-2026-39419</a></td>
+        <td>3.1</td>
+        <td><span class="severity low">LOW</span></td>
+        <td>CWE-74</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>2.17</td>
+        <td><details><summary>MaxKB is an open-source AI assistant for enterprise. In versions 2.7.1 and below...</summary><p>MaxKB is an open-source AI assistant for enterprise. In versions 2.7.1 and below, an authenticated user can bypass sandbox result validation and spoof tool execution results by exploiting Python frame introspection to read the wrapper&#x27;s UUID from its bytecode constants, then writing a forged result directly to file descriptor 1 (bypassing stdout redirection). By calling sys.exit(0), the attacker terminates the wrapper before it prints the legitimate output, causing the MaxKB service to parse and trust the spoofed response as the genuine tool result. This issue has been fixed in version 2.8.0.</p></details></td>
+        <td>2026-04-14</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34225" target="_blank" rel="noopener">CVE-2026-34225</a></td>
+        <td>4.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-918</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.01</td>
+        <td><details><summary>Open WebUI is a self-hosted artificial intelligence platform designed to operate...</summary><p>Open WebUI is a self-hosted artificial intelligence platform designed to operate entirely offline. Versions 0.7.2 and below contain a Blind Server Side Request Forgery in the functionality that allows editing an image via a prompt. The affected function performs a GET request to a user-provided URL with no restriction on the domain, allowing the local address space to be accessed. Since the SSRF is blind (the response cannot be read), the primary impact is port scanning of the local network, as whether a port is open can be determined based on whether the GET request succeeds or fails. These response differentials can be automated to iterate through the entire port range and identify open ports. If the service running on an open port can be inferred, an attacker may be able to interact with it in a meaningful way, provided the service offers state-changing GET request endpoints. This issue was unresolved at the time of publication.</p></details></td>
+        <td>2026-04-14</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39424" target="_blank" rel="noopener">CVE-2026-39424</a></td>
+        <td>5.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-1236</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.71</td>
+        <td><details><summary>MaxKB is an open-source AI assistant for enterprise. In versions 2.7.1 and below...</summary><p>MaxKB is an open-source AI assistant for enterprise. In versions 2.7.1 and below, the chat export feature is vulnerable to Improper Neutralization of Formula Elements in a CSV File. When an administrator exports the application chat history to an Excel file (.xlsx) via the /admin/api/workspace/{workspace_id}/application/{application_id}/chat/export endpoint, strings starting with formula characters are written directly without proper sanitization. Opening this file in spreadsheet applications like Microsoft Excel can lead to Arbitrary Code Execution (RCE) on the administrator&#x27;s workstation via Dynamic Data Exchange (DDE). The issue is a variant of CVE-2025-4546, which fixed the exact same pattern in apps/dataset/serializers/document_serializers.py but missed the application chat export sink. This issue has been fixed in version 2.8.0.</p></details></td>
+        <td>2026-04-14</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39423" target="_blank" rel="noopener">CVE-2026-39423</a></td>
+        <td>6.9</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.83</td>
+        <td><details><summary>MaxKB is an open-source AI assistant for enterprise. Versions 2.7.1 and below co...</summary><p>MaxKB is an open-source AI assistant for enterprise. Versions 2.7.1 and below contain an Eval Injection vulnerability in the Markdown rendering engine that allows any user capable of interacting with the AI chat interface to execute arbitrary JavaScript in the browsers of other users, including administrators, resulting in Stored Cross-Site Scripting (XSS). This issue has been fixed in version 2.8.0.</p></details></td>
+        <td>2026-04-14</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39422" target="_blank" rel="noopener">CVE-2026-39422</a></td>
+        <td>6.9</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.83</td>
+        <td><details><summary>MaxKB is an open-source AI assistant for enterprise. Versions 2.7.1 and below co...</summary><p>MaxKB is an open-source AI assistant for enterprise. Versions 2.7.1 and below contain a Stored Cross-Site Scripting (XSS) vulnerability through the application name or icon fields when creating an application. When a victim visits the public chat interface (/ui/chat/{access_token}), the ChatHeadersMiddleware retrieves the application data and directly inserts the unescaped application name and icon into the HTML response via string replacement. This allows an attacker to execute arbitrary JavaScript in the victim&#x27;s browser context. This issue has been fixed in version 2.8.0.</p></details></td>
+        <td>2026-04-14</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39421" target="_blank" rel="noopener">CVE-2026-39421</a></td>
+        <td>6.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-94</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.41</td>
+        <td><details><summary>MaxKB is an open-source AI assistant for enterprise. Versions 2.7.1 and below co...</summary><p>MaxKB is an open-source AI assistant for enterprise. Versions 2.7.1 and below contain a sandbox escape vulnerability in the ToolExecutor component. By leveraging Python&#x27;s ctypes library to execute raw system calls, an authenticated attacker with workspace privileges can bypass the LD_PRELOAD-based sandbox.so module to achieve arbitrary code execution via direct kernel system calls, enabling full network exfiltration and container compromise. The library intercepts critical standard system functions such as execve, system, connect, and open. It also intercepts mprotect to prevent PROT_EXEC (executable memory) allocations within the sandboxed Python processes, but pkey_mprotect is not blocked. This issue has been fixed in version 2.8.0.</p></details></td>
+        <td>2026-04-14</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39420" target="_blank" rel="noopener">CVE-2026-39420</a></td>
+        <td>6.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-78</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.41</td>
+        <td><details><summary>MaxKB is an open-source AI assistant for enterprise. In versions 2.7.1 and below...</summary><p>MaxKB is an open-source AI assistant for enterprise. In versions 2.7.1 and below, an incomplete sandbox protection mechanism allows an authenticated user with tool execution privileges to escape the LD_PRELOAD-based sandbox. By env command the attacker can clear the environment variables and drop the sandbox.so hook, leading to unrestricted Remote Code Execution (RCE) and network access. MaxKB restricts untrusted Python code execution via the Tool Debug API by injecting sandbox.so through the LD_PRELOAD environment variable. This intercepts sensitive C library functions (like execve, socket, open) to restrict network and file access. However, a patch allowed the /usr/bin/env utility to be executed by the sandboxed user. When an attacker is permitted to create subprocesses, they can execute the env -i python command. The -i flag instructs env to completely clear all environment variables before running the target program. This effectively drops the LD_PRELOAD environment variable. The newly spawned Python process will therefore execute natively without any sandbox hooks, bypassing all network and file system restrictions. This issue has been fixed in version 2.8.0.</p></details></td>
+        <td>2026-04-14</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39418" target="_blank" rel="noopener">CVE-2026-39418</a></td>
+        <td>5.0</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-918</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.50</td>
+        <td><details><summary>MaxKB is an open-source AI assistant for enterprise. In versions 2.7.1 and below...</summary><p>MaxKB is an open-source AI assistant for enterprise. In versions 2.7.1 and below, sandbox network protection can be bypassed by using socket.sendto() with the MSG_FASTOPEN flag. This allows authenticated user with tool-editing permissions to reach internal services that are explicitly blocked by the sandbox&#x27;s banned hosts configuration. MaxKB&#x27;s sandbox uses LD_PRELOAD to hook the connect() function and block connections to banned IPs, but Linux&#x27;s sendto() with the MSG_FASTOPEN flag can establish TCP connections directly through the kernel without ever calling connect(), completely bypassing the IP validation. Although sendto is listed in the syscall() wrapper, this is ineffective because glibc invokes the kernel syscall directly rather than routing through the hooked syscall() function. This issue has been fixed in version 2.8.0.</p></details></td>
+        <td>2026-04-14</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34264" target="_blank" rel="noopener">CVE-2026-34264</a></td>
+        <td>6.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-204</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.55</td>
+        <td><details><summary>During authorization checks in SAP Human Capital Management for SAP S/4HANA, the...</summary><p>During authorization checks in SAP Human Capital Management for SAP S/4HANA, the system returns specific messages. Due to this, an authenticated user with low privileges could guess and enumerate the content shown, beyond their authorized scope. This leads to disclosure of sensitive information causing a high impact on confidentiality, while integrity and availability are unaffected.</p></details></td>
+        <td>2026-04-14</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34262" target="_blank" rel="noopener">CVE-2026-34262</a></td>
+        <td>5.0</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-522</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.50</td>
+        <td><details><summary>Information Disclosure Vulnerability in SAP HANA Cockpit and HANA Database Explo...</summary><p>Information Disclosure Vulnerability in SAP HANA Cockpit and HANA Database Explorer</p></details></td>
+        <td>2026-04-14</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34261" target="_blank" rel="noopener">CVE-2026-34261</a></td>
+        <td>6.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.55</td>
+        <td><details><summary>Due to a missing authorization check in SAP Business Analytics and SAP Content M...</summary><p>Due to a missing authorization check in SAP Business Analytics and SAP Content Management, an authenticated user could make unauthorized calls to certain remote function modules, potentially accessing sensitive information beyond their intended permissions. This vulnerability affects confidentiality, with no impact on integrity and availability.</p></details></td>
+        <td>2026-04-14</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34257" target="_blank" rel="noopener">CVE-2026-34257</a></td>
+        <td>6.1</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-601</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.27</td>
+        <td><details><summary>Due to an Open Redirect vulnerability in SAP NetWeaver Application Server ABAP, ...</summary><p>Due to an Open Redirect vulnerability in SAP NetWeaver Application Server ABAP, an unauthenticated attacker could craft malicious URL that, if accessed by a victim, they could be redirected to the page controlled by the attacker. This causes low impact on confidentiality and integrity of the application with no impact on availability.</p></details></td>
+        <td>2026-04-14</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34256" target="_blank" rel="noopener">CVE-2026-34256</a></td>
+        <td>7.1</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.97</td>
+        <td><details><summary>Due to a missing authorization check in SAP ERP and SAP S/4HANA (Private Cloud a...</summary><p>Due to a missing authorization check in SAP ERP and SAP S/4HANA (Private Cloud and On-Premise), an authenticated attacker could execute a particular ABAP report to overwrite any existing eight?character executable ABAP report without authorization. If the overwritten report is subsequently executed, the intended functionality could become unavailable. Successful exploitation impacts availability, with a limited impact on integrity confined to the affected report, while confidentiality remains unaffected.</p></details></td>
+        <td>2026-04-14</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40164" target="_blank" rel="noopener">CVE-2026-40164</a></td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-328</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.25</td>
+        <td><details><summary>jq is a command-line JSON processor. Before commit 0c7d133c3c7e37c00b6d46b658a02...</summary><p>jq is a command-line JSON processor. Before commit 0c7d133c3c7e37c00b6d46b658a02244fdd3c784, jq used MurmurHash3 with a hardcoded, publicly visible seed (0x432A9843) for all JSON object hash table operations, which allowed an attacker to precompute key collisions offline. By supplying a crafted JSON object (~100 KB) where all keys hashed to the same bucket, hash table lookups degraded from O(1) to O(n), turning any jq expression into an O(n²) operation and causing significant CPU exhaustion. This affected common jq use cases such as CI/CD pipelines, web services, and data processing scripts, and was far more practical to exploit than existing heap overflow issues since it required only a small payload. This issue has been patched in commit 0c7d133c3c7e37c00b6d46b658a02244fdd3c784.</p></details></td>
+        <td>2026-04-14</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39417" target="_blank" rel="noopener">CVE-2026-39417</a></td>
+        <td>4.6</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-20</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.22</td>
+        <td><details><summary>MaxKB is an open-source AI assistant for enterprise. Versions 2.7.1 and below co...</summary><p>MaxKB is an open-source AI assistant for enterprise. Versions 2.7.1 and below contain an incomplete fix for CVE-2025-53928, where a Remote Code Execution vulnerability still exists in the MCP node of the workflow engine. MaxKB only restricts the referencing code path (loading MCP config from the database). The else branch, responsible for loading mcp_servers directly from user-supplied JSON remains completely unpatched. Since mcp_source is an optional field (required=False), an attacker can simply omit it or set it to any non-referencing value to bypass the fix. By calling the workflow creation API directly with a crafted JSON payload, an attacker can inject a complete MCP node configuration with stdio transport, arbitrary command, and args — achieving RCE when the workflow is triggered via chat. This issue has been fixed in version 2.8.0.</p></details></td>
+        <td>2026-04-14</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34069" target="_blank" rel="noopener">CVE-2026-34069</a></td>
+        <td>5.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-617</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.71</td>
+        <td><details><summary>nimiq/core-rs-albatross is a Rust implementation of the Nimiq Proof-of-Stake pro...</summary><p>nimiq/core-rs-albatross is a Rust implementation of the Nimiq Proof-of-Stake protocol based on the Albatross consensus algorithm. In versions 1.2.2 and below, an unauthenticated p2p peer can cause the RequestMacroChain message handler task to panic. Sending a RequestMacroChain message where the first locator hash on the victim’s main chain is a micro block hash (not a macro block hash) causes said panic. The RequestMacroChain::handle handler selects the locator based only on &quot;is on main chain&quot;, then calls get_macro_blocks() and panics via .unwrap() when the selected hash is not a macro block (BlockchainError::BlockIsNotMacro). This issue has been fixed in version 1.3.0.</p></details></td>
+        <td>2026-04-14</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33948" target="_blank" rel="noopener">CVE-2026-33948</a></td>
+        <td>2.9</td>
+        <td><span class="severity low">LOW</span></td>
+        <td>CWE-20</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>2.03</td>
+        <td><details><summary>jq is a command-line JSON processor. Commits before 6374ae0bcdfe33a18eb0ae6db284...</summary><p>jq is a command-line JSON processor. Commits before 6374ae0bcdfe33a18eb0ae6db28493b1f34a0a5b contain a vulnerability where CLI input parsing allows validation bypass via embedded NUL bytes. When reading JSON from files or stdin, jq uses strlen() to determine buffer length instead of the actual byte count from fgets(), causing it to truncate input at the first NUL byte and parse only the preceding prefix. This enables an attacker to craft input with a benign JSON prefix before a NUL byte followed by malicious trailing data, where jq validates only the prefix as valid JSON while silently discarding the suffix. Workflows relying on jq to validate untrusted JSON before forwarding it to downstream consumers are susceptible to parser differential attacks, as those consumers may process the full input including the malicious trailing bytes. This issue has been patched by commit 6374ae0bcdfe33a18eb0ae6db28493b1f34a0a5b.</p></details></td>
+        <td>2026-04-14</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-27683" target="_blank" rel="noopener">CVE-2026-27683</a></td>
+        <td>4.1</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>2.87</td>
+        <td><details><summary>SAP BusinessObjects Business Intelligence application allows an authenticated at...</summary><p>SAP BusinessObjects Business Intelligence application allows an authenticated attacker to inject malicious JavaScript payloads through crafted URLs. When a victim accesses the URL, the script executes in the user�s browser, potentially exposing restricted information. This results in a low impact on confidentiality with no impact on integrity and availability.</p></details></td>
+        <td>2026-04-14</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-27681" target="_blank" rel="noopener">CVE-2026-27681</a></td>
+        <td>9.9</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-89</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.93</td>
+        <td><details><summary>Due to insufficient authorization checks in SAP Business Planning and Consolidat...</summary><p>Due to insufficient authorization checks in SAP Business Planning and Consolidation and SAP Business Warehouse, an authenticated user can execute crafted SQL statements to read, modify, and delete database data. This leads to a high impact on the confidentiality, integrity, and availability of the system.</p></details></td>
+        <td>2026-04-14</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-27679" target="_blank" rel="noopener">CVE-2026-27679</a></td>
+        <td>6.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.55</td>
+        <td><details><summary>Due to missing authorization checks in the SAP S/4HANA frontend OData Service (M...</summary><p>Due to missing authorization checks in the SAP S/4HANA frontend OData Service (Manage Reference Structures), an attacker could update and delete child entities via exposed OData services without proper authorization. This vulnerability has a high impact on integrity, while confidentiality and availability are not impacted.</p></details></td>
+        <td>2026-04-14</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-27678" target="_blank" rel="noopener">CVE-2026-27678</a></td>
+        <td>6.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.55</td>
+        <td><details><summary>Due to missing authorization checks in the SAP S/4HANA backend OData Service (Ma...</summary><p>Due to missing authorization checks in the SAP S/4HANA backend OData Service (Manage Reference Structures), an attacker could update and delete child entities via exposed OData services without proper authorization. This vulnerability has a high impact on integrity, while confidentiality and availability are not impacted.</p></details></td>
+        <td>2026-04-14</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-27677" target="_blank" rel="noopener">CVE-2026-27677</a></td>
+        <td>6.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.55</td>
+        <td><details><summary>Due to missing authorization checks in the SAP S/4HANA OData Service (Manage Ref...</summary><p>Due to missing authorization checks in the SAP S/4HANA OData Service (Manage Reference Equipment), an attacker could update and delete child entities via OData services without proper authorization. This vulnerability has a high impact on integrity, while confidentiality and availability are not impacted.</p></details></td>
+        <td>2026-04-14</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-27676" target="_blank" rel="noopener">CVE-2026-27676</a></td>
+        <td>4.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.01</td>
+        <td><details><summary>Due to missing authorization checks in the SAP S/4HANA OData Service (Manage Tec...</summary><p>Due to missing authorization checks in the SAP S/4HANA OData Service (Manage Technical Object Structures), an attacker could update and delete child entities via exposed OData services without proper authorization. This vulnerability results in a low impact on integrity, while confidentiality and availability are not impacted.</p></details></td>
+        <td>2026-04-14</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-27675" target="_blank" rel="noopener">CVE-2026-27675</a></td>
+        <td>2.0</td>
+        <td><span class="severity low">LOW</span></td>
+        <td>CWE-94</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>1.40</td>
+        <td><details><summary>SAP Landscape Transformation contains a vulnerability in an RFC-exposed function...</summary><p>SAP Landscape Transformation contains a vulnerability in an RFC-exposed function module that could allow a high privileged adversary to inject arbitrary ABAP code and operating system commands. Due to this, some information could be modified, but the attacker does not have control over kind or degree. This leads to a low impact on integrity, while confidentiality and availability are not impacted.</p></details></td>
+        <td>2026-04-14</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-27674" target="_blank" rel="noopener">CVE-2026-27674</a></td>
+        <td>6.1</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-94</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.27</td>
+        <td><details><summary>Due to a Code Injection vulnerability in SAP NetWeaver Application Server Java (...</summary><p>Due to a Code Injection vulnerability in SAP NetWeaver Application Server Java (Web Dynpro Java), an unauthenticated attacker could supply crafted input that is interpreted by the application and causes it to reference attacker-controlled content. If a victim accesses the affected functionality, that attacker-controlled content could be executed in the victim�s browser, potentially resulting in session compromise. This could allow the attacker to execute arbitrary client-side code, impacting the confidentiality and integrity of the application, with no impact to availability.</p></details></td>
+        <td>2026-04-14</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-27673" target="_blank" rel="noopener">CVE-2026-27673</a></td>
+        <td>4.9</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.43</td>
+        <td><details><summary>Due to a missing authorization check, SAP S/4HANA (Private Cloud and On-Premise)...</summary><p>Due to a missing authorization check, SAP S/4HANA (Private Cloud and On-Premise) allows an authenticated user to delete files on the operating system and gain unauthorized control over file operations which could leads to no impact on Confidentiality, Low impact on Integrity and Availability of the application.</p></details></td>
+        <td>2026-04-14</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-27672" target="_blank" rel="noopener">CVE-2026-27672</a></td>
+        <td>4.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.01</td>
+        <td><details><summary>The Material Master application does not enforce authorization checks for authen...</summary><p>The Material Master application does not enforce authorization checks for authenticated users when executing reports, resulting in the disclosure of sensitive information. This vulnerability has a low impact on confidentiality and does not affect integrity and availability of the system.</p></details></td>
+        <td>2026-04-14</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-24318" target="_blank" rel="noopener">CVE-2026-24318</a></td>
+        <td>4.2</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-539</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>2.94</td>
+        <td><details><summary>Due to an Insecure session management vulnerability in SAP Business Objects Busi...</summary><p>Due to an Insecure session management vulnerability in SAP Business Objects Business Intelligence Platform, an unauthenticated attacker could obtain valid session tokens and reuse them to gain unauthorized access to a victim�s session. If the application continues to accept previously issued tokens after authentication, the attacker could assume the victim�s authenticated context. This could allow the attacker to access or modify information within the victim�s session scope, impacting confidentiality and integrity, while availability remains unaffected.</p></details></td>
+        <td>2026-04-14</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-0512" target="_blank" rel="noopener">CVE-2026-0512</a></td>
+        <td>6.1</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.27</td>
+        <td><details><summary>Due to a Cross-Site Scripting (XSS) vulnerability in the SAP Supplier Relationsh...</summary><p>Due to a Cross-Site Scripting (XSS) vulnerability in the SAP Supplier Relationship Management (SICF Handler in SRM Catalog), an unauthenticated attacker could craft a malicious URL, that if accessed by a victim, results in execution of malicious content within the victim&#x27;s browser. This could allow the attacker to access and modify information, impacting the confidentiality and integrity of the application, while availability remains unaffected.</p></details></td>
+        <td>2026-04-14</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6203" target="_blank" rel="noopener">CVE-2026-6203</a></td>
+        <td>6.1</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-601</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.27</td>
+        <td><details><summary>The User Registration &amp; Membership plugin for WordPress is vulnerable to Open Re...</summary><p>The User Registration &amp; Membership plugin for WordPress is vulnerable to Open Redirect in versions up to and including 5.1.4. This is due to insufficient validation of user-supplied URLs passed via the &#x27;redirect_to_on_logout&#x27; GET parameter before redirecting users. The `redirect_to_on_logout` GET parameter is passed directly to WordPress&#x27;s `wp_redirect()` function instead of the domain-restricted `wp_safe_redirect()`. While `esc_url_raw()` is applied to sanitize malformed URLs, it does not restrict the redirect destination to the local domain, allowing an attacker to craft a specially formed link that redirects users to potentially malicious external URLs after logout, which could be used to facilitate phishing attacks.</p></details></td>
+        <td>2026-04-13</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5086" target="_blank" rel="noopener">CVE-2026-5086</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-208</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Crypt::SecretBuffer versions before 0.019 for Perl is suseceptible to timing att...</summary><p>Crypt::SecretBuffer versions before 0.019 for Perl is suseceptible to timing attacks.
+
+For example, if Crypt::SecretBuffer was used to store and compare plaintext passwords, then discrepencies in timing could be used to guess the secret password.</p></details></td>
+        <td>2026-04-13</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39979" target="_blank" rel="noopener">CVE-2026-39979</a></td>
+        <td>6.9</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-125</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.83</td>
+        <td><details><summary>jq is a command-line JSON processor. In commits before 2f09060afab23fe9390cce7cb...</summary><p>jq is a command-line JSON processor. In commits before 2f09060afab23fe9390cce7cb860b10416e1bf5f, the jv_parse_sized() API in libjq accepts a counted buffer with an explicit length parameter, but its error-handling path formats the input buffer using %s in jv_string_fmt(), which reads until a NUL terminator is found rather than respecting the caller-supplied length. This means that when malformed JSON is passed in a non-NUL-terminated buffer, the error construction logic performs an out-of-bounds read past the end of the buffer. The vulnerability is reachable by any libjq consumer calling jv_parse_sized() with untrusted input, and depending on memory layout, can result in memory disclosure or process termination. The issue has been patched in commit 2f09060afab23fe9390cce7cb860b10416e1bf5f.</p></details></td>
+        <td>2026-04-13</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39956" target="_blank" rel="noopener">CVE-2026-39956</a></td>
+        <td>6.1</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-125</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.27</td>
+        <td><details><summary>jq is a command-line JSON processor. In commits after 69785bf77f86e2ea1b4a20ca86...</summary><p>jq is a command-line JSON processor. In commits after 69785bf77f86e2ea1b4a20ca86775916889e91c9, the _strindices builtin in jq&#x27;s src/builtin.c passes its arguments directly to jv_string_indexes() without verifying they are strings, and jv_string_indexes() in src/jv.c relies solely on assert() checks that are stripped in release builds compiled with -DNDEBUG. This allows an attacker to crash jq trivially with input like _strindices(0), and by crafting a numeric value whose IEEE-754 bit pattern maps to a chosen pointer, achieve a controlled pointer dereference and limited memory read/probe primitive. Any deployment that evaluates untrusted jq filters against a release build is vulnerable. This issue has been patched in commit fdf8ef0f0810e3d365cdd5160de43db46f57ed03.</p></details></td>
+        <td>2026-04-13</td>
+      </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6224" target="_blank" rel="noopener">CVE-2026-6224</a></td>
         <td>6.9</td>
@@ -183,98 +636,6 @@
         <td>&mdash;</td>
         <td>3.85</td>
         <td><details><summary>ImageMagick is free and open-source software used for editing and manipulating d...</summary><p>ImageMagick is free and open-source software used for editing and manipulating digital images. In versions below both 7.1.2-19 and 6.9.13-44, a stack overflow vulnerability in ImageMagick&#x27;s FX expression parser allows an attacker to crash the process by providing a deeply nested expression. This issue has been fixed in versions 6.9.13-44 and 7.1.2-19.</p></details></td>
-        <td>2026-04-13</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-22566" target="_blank" rel="noopener">CVE-2026-22566</a></td>
-        <td>7.5</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-284</td>
-        <td>&nbsp;</td>
-        <td>&mdash;</td>
-        <td>5.25</td>
-        <td><details><summary>An Improper Access Control vulnerability could allow a malicious actor with acce...</summary><p>An Improper Access Control vulnerability could allow a malicious actor with access to the UniFi Play network to obtain UniFi Play WiFi credentials.  
-
-Affected Products:
-UniFi Play PowerAmp (Version 1.0.35 and earlier) 
-UniFi Play Audio Port  (Version 1.0.24 and earlier)  
-
-Mitigation:
-Update UniFi Play PowerAmp to Version 1.0.38 or later 
-Update UniFi Play Audio Port  to Version 1.1.9 or later</p></details></td>
-        <td>2026-04-13</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-22565" target="_blank" rel="noopener">CVE-2026-22565</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>CWE-20</td>
-        <td>&nbsp;</td>
-        <td>&mdash;</td>
-        <td>0.00</td>
-        <td><details><summary>An Improper Input Validation vulnerability could allow a malicious actor with ac...</summary><p>An Improper Input Validation vulnerability could allow a malicious actor with access to the UniFi Play network to cause the device to stop responding.  
-
-Affected Products:
-UniFi Play PowerAmp (Version 1.0.35 and earlier) 
-UniFi Play Audio Port  (Version 1.0.24 and earlier)  
-
-Mitigation:
-Update UniFi Play PowerAmp to Version 1.0.38 or later 
-Update UniFi Play Audio Port  to Version 1.1.9 or later</p></details></td>
-        <td>2026-04-13</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-22564" target="_blank" rel="noopener">CVE-2026-22564</a></td>
-        <td>9.8</td>
-        <td><span class="severity critical">CRITICAL</span></td>
-        <td>CWE-284</td>
-        <td>&nbsp;</td>
-        <td>&mdash;</td>
-        <td>6.86</td>
-        <td><details><summary>An Improper Access Control vulnerability could allow a malicious actor with acce...</summary><p>An Improper Access Control vulnerability could allow a malicious actor with access to the UniFi Play network to enable SSH to make unauthorized changes to the system.  
-
-Affected Products:
-UniFi Play PowerAmp (Version 1.0.35 and earlier) 
-UniFi Play Audio Port  (Version 1.0.24 and earlier)  
-
-Mitigation:
-Update UniFi Play PowerAmp to Version 1.0.38 or later 
-Update UniFi Play Audio Port  to Version 1.1.9 or later</p></details></td>
-        <td>2026-04-13</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-22563" target="_blank" rel="noopener">CVE-2026-22563</a></td>
-        <td>9.8</td>
-        <td><span class="severity critical">CRITICAL</span></td>
-        <td>CWE-20</td>
-        <td>&nbsp;</td>
-        <td>&mdash;</td>
-        <td>6.86</td>
-        <td><details><summary>A series of Improper Input Validation vulnerabilities could allow a Command Inje...</summary><p>A series of Improper Input Validation vulnerabilities could allow a Command Injection by a malicious actor with access to the UniFi Play network.
- 
-Affected Products:
-UniFi Play PowerAmp (Version 1.0.35 and earlier) 
-UniFi Play Audio Port  (Version 1.0.24 and earlier)  
-
-Mitigation:
-Update UniFi Play PowerAmp to Version 1.0.38 or later 
-Update UniFi Play Audio Port  to Version 1.1.9 or later</p></details></td>
-        <td>2026-04-13</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-22562" target="_blank" rel="noopener">CVE-2026-22562</a></td>
-        <td>9.8</td>
-        <td><span class="severity critical">CRITICAL</span></td>
-        <td>CWE-22</td>
-        <td>&nbsp;</td>
-        <td>&mdash;</td>
-        <td>6.86</td>
-        <td><details><summary>A malicious actor with access to the UniFi Play network could exploit a Path Tra...</summary><p>A malicious actor with access to the UniFi Play network could exploit a Path Traversal vulnerability found in the device firmware to write files on the system that could be used for a remote code execution (RCE).
- 
-Affected Products:
-UniFi Play PowerAmp (Version 1.0.35 and earlier) UniFi Play Audio Port  (Version 1.0.24 and earlier)  
-Mitigation:
-Update UniFi Play PowerAmp to Version 1.0.38 or later Update UniFi Play Audio Port  to Version 1.1.9 or later</p></details></td>
         <td>2026-04-13</td>
       </tr>
       <tr>
@@ -9504,46 +9865,6 @@ Update UniFi Play PowerAmp to Version 1.0.38 or later Update UniFi Play Audio 
         <td>0.0% <small>p11</small></td>
         <td>5.25</td>
         <td><details><summary>A buffer overflow vulnerability exists in D-Link DI-8003 16.07.26A1 due to impro...</summary><p>A buffer overflow vulnerability exists in D-Link DI-8003 16.07.26A1 due to improper validation of user input in the qj.asp endpoint.</p></details></td>
-        <td>2026-04-08</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-30650" target="_blank" rel="noopener">CVE-2025-30650</a></td>
-        <td>8.4</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-306</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p4</small></td>
-        <td>5.88</td>
-        <td><details><summary>A Missing Authentication for Critical Function vulnerability in command processi...</summary><p>A Missing Authentication for Critical Function vulnerability in command processing of Juniper Networks Junos OS allows a privileged local attacker to gain access to Linux-based line cards as root.
-
-This issue affects systems running Junos OS using Linux-based line cards. Affected line cards include:
-  *  MPC7, MPC8, MPC9, MPC10, MPC11
-  *  LC2101, LC2103
-  *  LC480, LC4800, LC9600
-  *  MX304 (built-in FPC)
-  *  MX-SPC3
-  *  SRX5K-SPC3
-  *  EX9200-40XS
-
-
-  *  FPC3-PTX-U2, FPC3-PTX-U3
-  *  FPC3-SFF-PTX
-  *  LC1101, LC1102, LC1104, LC1105
-
-
-
-
-
-This issue affects Junos OS: 
-
-
-
-  *  all versions before 22.4R3-S8, 
-  *  from 23.2 before 23.2R2-S6, 
-  *  from 23.4 before 23.4R2-S6, 
-  *  from 24.2 before 24.2R2-S3, 
-  *  from 24.4 before 24.4R2,
-  *  from 25.2 before 25.2R2.</p></details></td>
         <td>2026-04-08</td>
       </tr>
       <tr>
@@ -26425,7 +26746,7 @@ This issue affects Junos OS: 
       </div>
     </section>
     <section>
-      <h2>Previous Month — March 2026 <span class="count">(5734)</span></h2>
+      <h2>Previous Month — March 2026 <span class="count">(5735)</span></h2>
       <div class="table-wrapper">
         <table>
           <thead>
@@ -51234,6 +51555,20 @@ This issue affects Junos OS: 
         <td>0.0% <small>p9</small></td>
         <td>4.27</td>
         <td><details><summary>DooTask v1.6.27 has a Cross-Site Scripting (XSS) vulnerability in the /manage/pr...</summary><p>DooTask v1.6.27 has a Cross-Site Scripting (XSS) vulnerability in the /manage/project/&lt;id&gt; page via the input field projectDesc.</p></details></td>
+        <td>2026-03-20</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-59383" target="_blank" rel="noopener">CVE-2025-59383</a></td>
+        <td>2.7</td>
+        <td><span class="severity low">LOW</span></td>
+        <td>CWE-121</td>
+        <td>&nbsp;</td>
+        <td>0.2% <small>p47</small></td>
+        <td>1.90</td>
+        <td><details><summary>A buffer overflow vulnerability has been reported to affect Media Streaming Add-...</summary><p>A buffer overflow vulnerability has been reported to affect Media Streaming Add-On. The remote attackers can then exploit the vulnerability to modify memory or crash processes.
+
+We have already fixed the vulnerability in the following version:
+Media Streaming Add-on 500.1.1 and later</p></details></td>
         <td>2026-03-20</td>
       </tr>
       <tr>

@@ -1,6 +1,6 @@
 # CVEs — March 2026
 
-_5734 vulnerabilities_
+_5735 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
@@ -2258,6 +2258,7 @@ _5734 vulnerabilities_
 | [CVE-2026-4491](https://nvd.nist.gov/vuln/detail/CVE-2026-4491) | 7.4 | HIGH | CWE-119 | No | 0.0% | 5.18 | 2026-03-20 | A vulnerability has been found in Tenda A18 Pro 02.03.02.28. Impacted is the function fromSetIpMacBind of the file /gofo... |
 | [CVE-2026-4490](https://nvd.nist.gov/vuln/detail/CVE-2026-4490) | 7.4 | HIGH | CWE-119 | No | 0.0% | 5.18 | 2026-03-20 | A flaw has been found in Tenda A18 Pro 02.03.02.28. This issue affects the function setSchedWifi of the file /goform/ope... |
 | [CVE-2026-29828](https://nvd.nist.gov/vuln/detail/CVE-2026-29828) | 6.1 | MEDIUM | CWE-79 | No | 0.0% | 4.27 | 2026-03-20 | DooTask v1.6.27 has a Cross-Site Scripting (XSS) vulnerability in the /manage/project/<id> page via the input field proj... |
+| [CVE-2025-59383](https://nvd.nist.gov/vuln/detail/CVE-2025-59383) | 2.7 | LOW | CWE-121 | No | 0.2% | 1.90 | 2026-03-20 | A buffer overflow vulnerability has been reported to affect Media Streaming Add-On. The remote attackers can then exploi... |
 | [CVE-2025-15607](https://nvd.nist.gov/vuln/detail/CVE-2025-15607) | 7.3 | HIGH | CWE-77 | No | 0.5% | 5.13 | 2026-03-20 | A command injection vulnerability on AX53 v1 occurs in mscd debug functionality due to insufficient input handling, allo... |
 | [CVE-2026-4489](https://nvd.nist.gov/vuln/detail/CVE-2026-4489) | 7.4 | HIGH | CWE-119 | No | 0.0% | 5.18 | 2026-03-20 | A vulnerability was detected in Tenda A18 Pro 02.03.02.28. This vulnerability affects the function form_fast_setting_wif... |
 | [CVE-2026-4488](https://nvd.nist.gov/vuln/detail/CVE-2026-4488) | 7.4 | HIGH | CWE-119 | No | 0.0% | 5.18 | 2026-03-20 | A vulnerability was identified in UTT HiPER 1250GW up to 3.2.7-210907-180535. Affected is the function strcpy of the fil... |
