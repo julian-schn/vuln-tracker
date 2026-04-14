@@ -1,6 +1,6 @@
 # CVEs — March 2026
 
-_5735 vulnerabilities_
+_5739 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
@@ -2258,6 +2258,11 @@ _5735 vulnerabilities_
 | [CVE-2026-4491](https://nvd.nist.gov/vuln/detail/CVE-2026-4491) | 7.4 | HIGH | CWE-119 | No | 0.0% | 5.18 | 2026-03-20 | A vulnerability has been found in Tenda A18 Pro 02.03.02.28. Impacted is the function fromSetIpMacBind of the file /gofo... |
 | [CVE-2026-4490](https://nvd.nist.gov/vuln/detail/CVE-2026-4490) | 7.4 | HIGH | CWE-119 | No | 0.0% | 5.18 | 2026-03-20 | A flaw has been found in Tenda A18 Pro 02.03.02.28. This issue affects the function setSchedWifi of the file /goform/ope... |
 | [CVE-2026-29828](https://nvd.nist.gov/vuln/detail/CVE-2026-29828) | 6.1 | MEDIUM | CWE-79 | No | 0.0% | 4.27 | 2026-03-20 | DooTask v1.6.27 has a Cross-Site Scripting (XSS) vulnerability in the /manage/project/<id> page via the input field proj... |
+| [CVE-2026-22898](https://nvd.nist.gov/vuln/detail/CVE-2026-22898) | 9.3 | CRITICAL | CWE-306 | No | 0.4% | 6.52 | 2026-03-20 | A missing authentication for critical function vulnerability has been reported to affect QVR Pro. The remote attackers c... |
+| [CVE-2025-62846](https://nvd.nist.gov/vuln/detail/CVE-2025-62846) | 7.3 | HIGH | CWE-89 | No | 0.0% | 5.11 | 2026-03-20 | An SQL injection vulnerability has been reported to affect QHora. If a local attacker gains an administrator account, th... |
+| [CVE-2025-62845](https://nvd.nist.gov/vuln/detail/CVE-2025-62845) | 5.6 | MEDIUM | CWE-150 | No | 0.0% | 3.92 | 2026-03-20 | An improper neutralization of escape, meta, or control sequences vulnerability has been reported to affect QHora. If a l... |
+| [CVE-2025-62844](https://nvd.nist.gov/vuln/detail/CVE-2025-62844) | 4.0 | MEDIUM | CWE-1390 | No | 0.0% | 2.80 | 2026-03-20 | A weak authentication vulnerability has been reported to affect QHora. If an attacker gains local network access, they c... |
+| [CVE-2025-62843](https://nvd.nist.gov/vuln/detail/CVE-2025-62843) | 0.9 | LOW | CWE-923 | No | 0.0% | 0.63 | 2026-03-20 | An improper restriction of communication channel to intended endpoints vulnerability has been reported to affect QHora.... |
 | [CVE-2025-15607](https://nvd.nist.gov/vuln/detail/CVE-2025-15607) | 7.3 | HIGH | CWE-77 | No | 0.5% | 5.13 | 2026-03-20 | A command injection vulnerability on AX53 v1 occurs in mscd debug functionality due to insufficient input handling, allo... |
 | [CVE-2026-4489](https://nvd.nist.gov/vuln/detail/CVE-2026-4489) | 7.4 | HIGH | CWE-119 | No | 0.0% | 5.18 | 2026-03-20 | A vulnerability was detected in Tenda A18 Pro 02.03.02.28. This vulnerability affects the function form_fast_setting_wif... |
 | [CVE-2026-4488](https://nvd.nist.gov/vuln/detail/CVE-2026-4488) | 7.4 | HIGH | CWE-119 | No | 0.0% | 5.18 | 2026-03-20 | A vulnerability was identified in UTT HiPER 1250GW up to 3.2.7-210907-180535. Affected is the function strcpy of the fil... |
@@ -5335,7 +5340,6 @@ _5735 vulnerabilities_
 | [CVE-2025-70342](https://nvd.nist.gov/vuln/detail/CVE-2025-70342) | 6.6 | MEDIUM | CWE-732 | No | 0.0% | 4.62 | 2026-03-04 | erase-install prior to v40.4 commit 2c31239 writes swiftDialog credential output to a hardcoded path /var/tmp/dialog.jso... |
 | [CVE-2025-70341](https://nvd.nist.gov/vuln/detail/CVE-2025-70341) | 7.8 | HIGH | CWE-94 | No | 0.0% | 5.46 | 2026-03-04 | Insecure permissions in App-Auto-Patch v3.4.2 create a race condition which allows attackers to write arbitrary files. |
 | [CVE-2026-3103](https://nvd.nist.gov/vuln/detail/CVE-2026-3103) | 5.3 | MEDIUM | CWE-863 | No | 0.1% | 3.71 | 2026-03-04 | A logic error in the remove_password() function in Checkmk GmbH's Checkmk versions <2.4.0p23, <2.3.0p43, and 2.2.0 (EOL)... |
-| [CVE-2025-40894](https://nvd.nist.gov/vuln/detail/CVE-2025-40894) | 2.1 | LOW | CWE-79 | No | 0.0% | 1.47 | 2026-03-04 | A Stored HTML Injection vulnerability was discovered in the Alerted Nodes Dashboard functionality due to improper valida... |
 | [CVE-2026-25907](https://nvd.nist.gov/vuln/detail/CVE-2026-25907) | 5.3 | MEDIUM | CWE-645 | No | 0.1% | 3.71 | 2026-03-04 | Dell PowerScale OneFS, version 9.13.0.0, contains an overly restrictive account lockout mechanism vulnerability. An unau... |
 | [CVE-2026-22270](https://nvd.nist.gov/vuln/detail/CVE-2026-22270) | 6.7 | MEDIUM | CWE-427 | No | 0.0% | 4.69 | 2026-03-04 | Dell PowerScale OneFS, versions prior to 9.10.1.6 and versions 9.11.0.0 through 9.12.0.1, contains an uncontrolled searc... |
 | [CVE-2026-21426](https://nvd.nist.gov/vuln/detail/CVE-2026-21426) | 6.7 | MEDIUM | CWE-250 | No | 0.0% | 4.69 | 2026-03-04 | Dell PowerScale OneFS, versions prior to 9.10.1.6 and versions 9.11.0.0 through 9.12.0.1, contains an execution with unn... |
