@@ -1,6 +1,6 @@
 # CVEs — March 2026
 
-_5734 vulnerabilities_
+_5735 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
@@ -540,7 +540,7 @@ _5734 vulnerabilities_
 | [CVE-2026-33875](https://nvd.nist.gov/vuln/detail/CVE-2026-33875) | 9.3 | CRITICAL | CWE-940 | No | 0.1% | 6.51 | 2026-03-27 | Gematik Authenticator securely authenticates users for login to digital health applications. Versions prior to 4.16.0 ar... |
 | [CVE-2026-33874](https://nvd.nist.gov/vuln/detail/CVE-2026-33874) | 7.8 | HIGH | CWE-78 | No | 0.1% | 5.46 | 2026-03-27 | Gematik Authenticator securely authenticates users for login to digital health applications. Starting in version 4.12.0... |
 | [CVE-2026-33873](https://nvd.nist.gov/vuln/detail/CVE-2026-33873) | 9.3 | CRITICAL | CWE-94 | No | 0.1% | 6.51 | 2026-03-27 | Langflow is a tool for building and deploying AI-powered agents and workflows. Prior to version 1.9.0, the Agentic Assis... |
-| [CVE-2026-32187](https://nvd.nist.gov/vuln/detail/CVE-2026-32187) | 4.2 | MEDIUM | CWE-1021 | No | 0.0% | 2.94 | 2026-03-27 | Microsoft Edge (Chromium-based) Defense in Depth Vulnerability |
+| [CVE-2026-32187](https://nvd.nist.gov/vuln/detail/CVE-2026-32187) | 0.0 | NONE | N/A | No | 0.0% | 0.00 | 2026-03-27 | Rejected reason: This CVE ID has been rejected or withdrawn by its CVE Numbering Authority. |
 | [CVE-2026-4975](https://nvd.nist.gov/vuln/detail/CVE-2026-4975) | 7.4 | HIGH | CWE-119 | No | 0.1% | 5.18 | 2026-03-27 | A vulnerability has been found in Tenda AC15 15.03.05.19. This affects the function formSetCfm of the file /goform/setcf... |
 | [CVE-2026-4974](https://nvd.nist.gov/vuln/detail/CVE-2026-4974) | 7.4 | HIGH | CWE-119 | No | 0.1% | 5.18 | 2026-03-27 | A flaw has been found in Tenda AC7 15.03.06.44. Affected by this issue is the function fromSetSysTime of the file /gofor... |
 | [CVE-2026-4973](https://nvd.nist.gov/vuln/detail/CVE-2026-4973) | 5.1 | MEDIUM | CWE-79 | No | 0.0% | 3.57 | 2026-03-27 | A vulnerability was detected in SourceCodester Online Quiz System up to 1.0. Affected by this vulnerability is an unknow... |
@@ -3466,6 +3466,7 @@ _5734 vulnerabilities_
 | [CVE-2026-32245](https://nvd.nist.gov/vuln/detail/CVE-2026-32245) | 6.5 | MEDIUM | CWE-863 | No | 0.1% | 4.55 | 2026-03-12 | Tinyauth is an authentication and authorization server. Prior to 5.0.3, the OIDC token endpoint does not verify that the... |
 | [CVE-2026-32242](https://nvd.nist.gov/vuln/detail/CVE-2026-32242) | 9.1 | CRITICAL | CWE-362 | No | 0.1% | 6.37 | 2026-03-12 | Parse Server is an open source backend that can be deployed to any infrastructure that can run Node.js. Prior to 9.6.0-a... |
 | [CVE-2026-32237](https://nvd.nist.gov/vuln/detail/CVE-2026-32237) | 4.4 | MEDIUM | CWE-200 | No | 0.0% | 3.08 | 2026-03-12 | Backstage is an open framework for building developer portals. Prior to 3.1.5, authenticated users with permission to ex... |
+| [CVE-2026-32236](https://nvd.nist.gov/vuln/detail/CVE-2026-32236) | 1.7 | LOW | CWE-918 | No | 0.0% | 1.19 | 2026-03-12 | Backstage is an open framework for building developer portals. Prior to 0.27.1, a Server-Side Request Forgery (SSRF) vul... |
 | [CVE-2026-32235](https://nvd.nist.gov/vuln/detail/CVE-2026-32235) | 5.9 | MEDIUM | CWE-601 | No | 0.0% | 4.13 | 2026-03-12 | Backstage is an open framework for building developer portals. Prior to 0.27.1, the experimental OIDC provider in @backs... |
 | [CVE-2026-32232](https://nvd.nist.gov/vuln/detail/CVE-2026-32232) | 8.8 | HIGH | CWE-22 | No | 0.1% | 6.16 | 2026-03-12 | ZeptoClaw is a personal AI assistant. Prior to 0.7.6, there is a Dangling Symlink Component Bypass, TOCTOU Between Valid... |
 | [CVE-2026-32231](https://nvd.nist.gov/vuln/detail/CVE-2026-32231) | 8.2 | HIGH | CWE-306 | No | 0.0% | 5.74 | 2026-03-12 | ZeptoClaw is a personal AI assistant. Prior to 0.7.6, the generic webhook channel trusts caller-supplied identity fields... |

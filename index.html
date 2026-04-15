@@ -11,7 +11,7 @@
     <header>
       <h1>vuln-tracker</h1>
       <p class="subtitle">CVEs from the National Vulnerability Database — current and previous month</p>
-      <p class="last-updated">Last updated: 2026-04-15 20:58 UTC</p>
+      <p class="last-updated">Last updated: 2026-04-15 22:49 UTC</p>
     </header>
     <nav>
       <a href="top50.html">&#9733; Top 50</a>
@@ -25,7 +25,7 @@
     </nav>
     <main>
     <section>
-      <h2>Current Month — April 2026 <span class="count">(2885)</span></h2>
+      <h2>Current Month — April 2026 <span class="count">(2881)</span></h2>
       <div class="table-wrapper">
         <table>
           <thead>
@@ -42,6 +42,116 @@
             </tr>
           </thead>
           <tbody>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6388" target="_blank" rel="noopener">CVE-2026-6388</a></td>
+        <td>9.1</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-1220</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.37</td>
+        <td><details><summary>A flaw was found in ArgoCD Image Updater. This vulnerability allows an attacker,...</summary><p>A flaw was found in ArgoCD Image Updater. This vulnerability allows an attacker, with permissions to create or modify an ImageUpdater resource in a multi-tenant environment, to bypass namespace boundaries. By exploiting insufficient validation, the attacker can trigger unauthorized image updates on applications managed by other tenants. This leads to cross-namespace privilege escalation, impacting application integrity through unauthorized application updates.</p></details></td>
+        <td>2026-04-15</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40500" target="_blank" rel="noopener">CVE-2026-40500</a></td>
+        <td>6.1</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-918</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.27</td>
+        <td><details><summary>ProcessWire CMS version 3.0.255 and prior contain a server-side request forgery ...</summary><p>ProcessWire CMS version 3.0.255 and prior contain a server-side request forgery vulnerability in the admin panel&#x27;s &#x27;Add Module From URL&#x27; feature that allows authenticated administrators to supply arbitrary URLs to the module download parameter, causing the server to issue outbound HTTP requests to attacker-controlled internal or external hosts. Attackers can exploit differentiable error messages returned by the server to perform reliable internal network port scanning, host enumeration across RFC-1918 ranges, and potential access to cloud instance metadata endpoints.</p></details></td>
+        <td>2026-04-15</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-1711" target="_blank" rel="noopener">CVE-2026-1711</a></td>
+        <td>4.8</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.36</td>
+        <td><details><summary>Pega Platform versions 8.1.0 through 25.1.1 are affected by a Stored Cross-Site ...</summary><p>Pega Platform versions 8.1.0 through 25.1.1 are affected by a Stored Cross-Site Scripting vulnerability in a user interface component. Requires a high privileged user with a developer role.</p></details></td>
+        <td>2026-04-15</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-1564" target="_blank" rel="noopener">CVE-2026-1564</a></td>
+        <td>5.1</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-80</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.57</td>
+        <td><details><summary>Pega Platform versions 8.1.0 through 25.1.1 are affected by an HTML Injection vu...</summary><p>Pega Platform versions 8.1.0 through 25.1.1 are affected by an HTML Injection vulnerability in a user interface component. Requires a high privileged user with a developer role.</p></details></td>
+        <td>2026-04-15</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6398" target="_blank" rel="noopener">CVE-2026-6398</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Rejected reason: ** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. Reason: This can...</summary><p>Rejected reason: ** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. Reason: This candidate was issued in error. Notes: All references and descriptions in this candidate have been removed to prevent accidental usage.</p></details></td>
+        <td>2026-04-15</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40261" target="_blank" rel="noopener">CVE-2026-40261</a></td>
+        <td>8.8</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-20</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.16</td>
+        <td><details><summary>Composer is a dependency manager for PHP. Versions 1.0 through 2.2.26 and 2.3 th...</summary><p>Composer is a dependency manager for PHP. Versions 1.0 through 2.2.26 and 2.3 through 2.9.5 contain a command injection vulnerability in the Perforce::syncCodeBase() method, which appends the $sourceReference parameter to a shell command without proper escaping, and additionally in the Perforce::generateP4Command() method as in GHSA-wg36-wvj6-r67p / CVE-2026-40176, which interpolates user-supplied Perforce connection parameters (port, user, client) from the source url field without proper escaping. An attacker can inject arbitrary commands through crafted source reference or source url values containing shell metacharacters, even if Perforce is not installed. Unlike CVE-2026-40176, the source reference and url are provided as part of package metadata, meaning any compromised or malicious Composer repository can serve package metadata declaring perforce as a source type with malicious values. This vulnerability is exploitable when installing or updating dependencies from source, including the default behavior when installing dev-prefixed versions. This issue has been fixed in Composer 2.2.27 (2.2 LTS) and 2.9.6 (mainline). If developers are unable to immediately update, they can avoid installing dependencies from source by using --prefer-dist or the preferred-install: dist config setting, and only use trusted Composer repositories as a workaround.</p></details></td>
+        <td>2026-04-15</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40186" target="_blank" rel="noopener">CVE-2026-40186</a></td>
+        <td>6.1</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.27</td>
+        <td><details><summary>ApostropheCMS is an open-source Node.js content management system. A regression ...</summary><p>ApostropheCMS is an open-source Node.js content management system. A regression introduced in commit 49d0bb7, included in versions 2.17.1 of the ApostropheCMS-maintained sanitize-html package bypasses allowedTags enforcement for text inside nonTextTagsArray elements (textarea and option). ApostropheCMS version 4.28.0 is affected through its dependency on the vulnerable sanitize-html version. The code at packages/sanitize-html/index.js:569-573 incorrectly assumes that htmlparser2 does not decode entities inside these elements and skips escaping, but htmlparser2 10.x does decode entities before passing text to the ontext callback. As a result, entity-encoded HTML is decoded by the parser and then written directly to the output as literal HTML characters, completely bypassing the allowedTags filter. An attacker can inject arbitrary tags including XSS payloads through any allowed option or textarea element using entity encoding. This affects non-default configurations where option or textarea are included in allowedTags, which is common in form builders and CMS platforms. This issue has been fixed in version 2.17.2 of sanitize-html and 4.29.0 of ApostropheCMS.</p></details></td>
+        <td>2026-04-15</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40176" target="_blank" rel="noopener">CVE-2026-40176</a></td>
+        <td>7.8</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-20</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.46</td>
+        <td><details><summary>Composer is a dependency manager for PHP. Versions 1.0 through 2.2.26 and 2.3 th...</summary><p>Composer is a dependency manager for PHP. Versions 1.0 through 2.2.26 and 2.3 through 2.9.5 contain a command injection vulnerability in the Perforce::generateP4Command() method, which constructs shell commands by interpolating user-supplied Perforce connection parameters (port, user, client) without proper escaping. An attacker can inject arbitrary commands through these values in a malicious composer.json declaring a Perforce VCS repository, leading to command execution in the context of the user running Composer, even if Perforce is not installed. VCS repositories are only loaded from the root composer.json or the composer config directory, so this cannot be exploited through composer.json files of packages installed as dependencies. Users are at risk if they run Composer commands on untrusted projects with attacker-supplied composer.json files. This issue has been fixed in Composer 2.2.27 (2.2 LTS) and 2.9.6 (mainline).</p></details></td>
+        <td>2026-04-15</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40173" target="_blank" rel="noopener">CVE-2026-40173</a></td>
+        <td>9.4</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-200</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.58</td>
+        <td><details><summary>Dgraph is an open source distributed GraphQL database. Versions 25.3.1 and prior...</summary><p>Dgraph is an open source distributed GraphQL database. Versions 25.3.1 and prior contain an unauthenticated credential disclosure vulnerability where the /debug/pprof/cmdline endpoint is registered on the default mux and reachable without authentication, exposing the full process command line including the admin token configured via the --security &quot;token=...&quot; startup flag. An attacker can retrieve the leaked token and reuse it in the X-Dgraph-AuthToken header to gain unauthorized access to admin-only endpoints such as /admin/config/cache_mb, bypassing the adminAuthHandler token validation. This enables unauthorized privileged administrative access including configuration changes and operational control actions in any deployment where the Alpha HTTP port is reachable by untrusted parties. This issue has been fixed in version 25.3.2.</p></details></td>
+        <td>2026-04-15</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-22676" target="_blank" rel="noopener">CVE-2026-22676</a></td>
+        <td>8.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-732</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.95</td>
+        <td><details><summary>Barracuda RMM versions prior to 2025.2.2 contain a privilege escalation vulnerab...</summary><p>Barracuda RMM versions prior to 2025.2.2 contain a privilege escalation vulnerability that allows local attackers to gain SYSTEM-level privileges by exploiting overly permissive filesystem ACLs on the C:\Windows\Automation directory. Attackers can modify existing automation content or place attacker-controlled files in this directory, which are then executed under the NT AUTHORITY\SYSTEM account during routine automation cycles, typically succeeding within the next execution cycle.</p></details></td>
+        <td>2026-04-15</td>
+      </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6385" target="_blank" rel="noopener">CVE-2026-6385</a></td>
         <td>6.5</td>
@@ -297,12 +407,12 @@
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6305" target="_blank" rel="noopener">CVE-2026-6305</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>8.8</td>
+        <td><span class="severity high">HIGH</span></td>
         <td>CWE-122</td>
         <td>&nbsp;</td>
         <td>&mdash;</td>
-        <td>0.00</td>
+        <td>6.16</td>
         <td><details><summary>Heap buffer overflow in PDFium in Google Chrome prior to 147.0.7727.101 allowed ...</summary><p>Heap buffer overflow in PDFium in Google Chrome prior to 147.0.7727.101 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted PDF file. (Chromium security severity: High)</p></details></td>
         <td>2026-04-15</td>
       </tr>
@@ -374,12 +484,12 @@
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6298" target="_blank" rel="noopener">CVE-2026-6298</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>4.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
         <td>CWE-122</td>
         <td>&nbsp;</td>
         <td>&mdash;</td>
-        <td>0.00</td>
+        <td>3.01</td>
         <td><details><summary>Heap buffer overflow in Skia in Google Chrome prior to 147.0.7727.101 allowed a ...</summary><p>Heap buffer overflow in Skia in Google Chrome prior to 147.0.7727.101 allowed a remote attacker to obtain potentially sensitive information from process memory via a crafted HTML page. (Chromium security severity: Critical)</p></details></td>
         <td>2026-04-15</td>
       </tr>
@@ -396,12 +506,12 @@
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6296" target="_blank" rel="noopener">CVE-2026-6296</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>9.6</td>
+        <td><span class="severity critical">CRITICAL</span></td>
         <td>CWE-122</td>
         <td>&nbsp;</td>
         <td>&mdash;</td>
-        <td>0.00</td>
+        <td>6.72</td>
         <td><details><summary>Heap buffer overflow in ANGLE in Google Chrome prior to 147.0.7727.101 allowed a...</summary><p>Heap buffer overflow in ANGLE in Google Chrome prior to 147.0.7727.101 allowed a remote attacker to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: Critical)</p></details></td>
         <td>2026-04-15</td>
       </tr>
@@ -513,73 +623,6 @@
         <td>&mdash;</td>
         <td>2.59</td>
         <td><details><summary>ApostropheCMS is an open-source Node.js content management system. Versions 4.28...</summary><p>ApostropheCMS is an open-source Node.js content management system. Versions 4.28.0 and prior contain a timing side-channel vulnerability in the password reset endpoint (/api/v1/@apostrophecms/login/reset-request) that allows unauthenticated username and email enumeration. When a user is not found, the handler returns after a fixed 2-second artificial delay, but when a valid user is found, it performs a MongoDB update and SMTP email send with no equivalent delay normalization, producing measurably different response times. The endpoint also accepts both username and email via an $or query, and has no rate limiting as the existing checkLoginAttempts throttle only applies to the login flow. This enables automated enumeration of valid accounts for use in credential stuffing or targeted phishing. Only instances that have explicitly enabled the passwordReset option are affected, as it defaults to false. This issue has been fixed in version 4.29.0.</p></details></td>
-        <td>2026-04-15</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-21727" target="_blank" rel="noopener">CVE-2026-21727</a></td>
-        <td>3.3</td>
-        <td><span class="severity low">LOW</span></td>
-        <td>N/A</td>
-        <td>&nbsp;</td>
-        <td>&mdash;</td>
-        <td>2.31</td>
-        <td><details><summary>---
-title: Cross-Tenant Legacy Correlation Disclosure and Deletion
-draft: false
-...</summary><p>---
-title: Cross-Tenant Legacy Correlation Disclosure and Deletion
-draft: false
-hero:
-  image: /static/img/heros/hero-legal2.svg
-  content: &quot;# Cross-Tenant Legacy Correlation Disclosure and Deletion&quot;
-date: 2026-01-29
-product: Grafana
-severity: Low
-cve: CVE-2026-21727
-cvss_score: &quot;3.3&quot;
-cvss_vector: &quot;CVSS:3.3/AV:N/AC:H/PR:H/UI:N/S:U/C:L/I:L/A:N&quot;
-fixed_versions:
-  - &quot;&gt;=11.6.11 &gt;=12.0.9 &gt;=12.1.6 &gt;=12.2.4&quot;
----
-A cross-tenant isolation vulnerability was found in Grafana’s Correlations feature affecting legacy correlation records. Due to a backward compatibility condition allowing org_id = 0 records to be returned across organizations, a user with datasource management privileges could read and permanently delete legacy correlation data belonging to another organization. This issue affects correlations created prior to Grafana 10.2 and is fixed in &gt;=11.6.11, &gt;=12.0.9, &gt;=12.1.6, and &gt;=12.2.4.
-
-Thanks to Gyu-hyeok Lee (g2h) for reporting this vulnerability.</p></details></td>
-        <td>2026-04-15</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-21726" target="_blank" rel="noopener">CVE-2026-21726</a></td>
-        <td>5.3</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>N/A</td>
-        <td>&nbsp;</td>
-        <td>&mdash;</td>
-        <td>3.71</td>
-        <td><details><summary>The CVE-2021-36156 fix validates the namespace parameter for path traversal sequ...</summary><p>The CVE-2021-36156 fix validates the namespace parameter for path traversal sequences after a single URL decode, by double encoding, an attacker can read files at the Ruler API endpoint /loki/api/v1/rules/{namespace}
-
-Thanks to Prasanth Sundararajan for reporting this vulnerability.</p></details></td>
-        <td>2026-04-15</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-41118" target="_blank" rel="noopener">CVE-2025-41118</a></td>
-        <td>9.1</td>
-        <td><span class="severity critical">CRITICAL</span></td>
-        <td>N/A</td>
-        <td>&nbsp;</td>
-        <td>&mdash;</td>
-        <td>6.37</td>
-        <td><details><summary>Pyroscope is an open-source continuous profiling database. The database supports...</summary><p>Pyroscope is an open-source continuous profiling database. The database supports various storage backends, including Tencent Cloud Object Storage (COS).
-
-If the database is configured to use Tencent COS as the storage backend, an attacker could extract the secret_key configuration value from the Pyroscope API.
-
-To exploit this vulnerability, an attacker needs direct access to the Pyroscope API. We highly recommend limiting the public internet exposure of all our databases, such that they are only accessible by trusted users or internal systems.
-
-This vulnerability is fixed in versions:
-
-1.15.x: 1.15.2 and above.
-1.16.x: 1.16.1 and above.
-1.17.x: 1.17.0 and above (i.e. all versions).
-
-Thanks to Théo Cusnir for reporting this vulnerability to us via our bug bounty program.</p></details></td>
         <td>2026-04-15</td>
       </tr>
       <tr>
@@ -1064,19 +1107,6 @@ Thanks to Théo Cusnir for reporting this vulnerability to us via our bug bounty
         <td>&mdash;</td>
         <td>5.88</td>
         <td><details><summary>Command injection in the connect function in NietThijmen ShoppingCart 0.0.2 allo...</summary><p>Command injection in the connect function in NietThijmen ShoppingCart 0.0.2 allows an attacker to execute arbitrary shell commands and achieve remote code execution via injection of malicious payloads into the Port field</p></details></td>
-        <td>2026-04-15</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-25219" target="_blank" rel="noopener">CVE-2026-25219</a></td>
-        <td>6.5</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-200</td>
-        <td>&nbsp;</td>
-        <td>&mdash;</td>
-        <td>4.55</td>
-        <td><details><summary>The `access_key` and `connection_string` connection properties were not marked a...</summary><p>The `access_key` and `connection_string` connection properties were not marked as sensitive names in secrets masker. This means that user with read permission could see the values in Connection UI, as well as when Connection was accidentaly logged to logs, those values could be seen in the logs. Azure Service Bus used those properties to store sensitive values. Possibly other providers could be also affected if they used the same fields to store sensitive data.
-
-If you used Azure Service Bus connection with those values set or if you have other connections with those values storing sensitve values, you should upgrade Airflow to 3.1.8</p></details></td>
         <td>2026-04-15</td>
       </tr>
       <tr>
@@ -3771,7 +3801,7 @@ If you used Azure Service Bus connection with those values set or if you have ot
         <td>&nbsp;</td>
         <td>0.1% <small>p24</small></td>
         <td>5.25</td>
-        <td><details><summary>Concurrent execution using shared resource with improper synchronization (&#x27;race ...</summary><p>Concurrent execution using shared resource with improper synchronization (&#x27;race condition&#x27;) in .NET Framework allows an unauthorized attacker to deny service over a network.</p></details></td>
+        <td><details><summary>Improper input validation in .NET Framework allows an unauthorized attacker to d...</summary><p>Improper input validation in .NET Framework allows an unauthorized attacker to deny service over a network.</p></details></td>
         <td>2026-04-14</td>
       </tr>
       <tr>
@@ -5436,19 +5466,6 @@ If you used Azure Service Bus connection with those values set or if you have ot
         <td>2026-04-13</td>
       </tr>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5086" target="_blank" rel="noopener">CVE-2026-5086</a></td>
-        <td>7.5</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-208</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p4</small></td>
-        <td>5.25</td>
-        <td><details><summary>Crypt::SecretBuffer versions before 0.019 for Perl is suseceptible to timing att...</summary><p>Crypt::SecretBuffer versions before 0.019 for Perl is suseceptible to timing attacks.
-
-For example, if Crypt::SecretBuffer was used to store and compare plaintext passwords, then discrepencies in timing could be used to guess the secret password.</p></details></td>
-        <td>2026-04-13</td>
-      </tr>
-      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39979" target="_blank" rel="noopener">CVE-2026-39979</a></td>
         <td>6.9</td>
         <td><span class="severity medium">MEDIUM</span></td>
@@ -6549,26 +6566,6 @@ For example, if Crypt::SecretBuffer was used to store and compare plaintext pass
         <td>2026-04-13</td>
       </tr>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-66236" target="_blank" rel="noopener">CVE-2025-66236</a></td>
-        <td>7.5</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-532</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p12</small></td>
-        <td>5.25</td>
-        <td><details><summary>Before Airflow 3.2.0, it was unclear that secure Airflow deployments require the...</summary><p>Before Airflow 3.2.0, it was unclear that secure Airflow deployments require the Deployment Manager to take appropriate actions and pay attention to security details and security model of Airflow. Some assumptions the Deployment Manager could make were not clear or explicit enough, even though Airflow&#x27;s intentions and security model of Airflow did not suggest different assumptions. The overall security model [1], workload isolation [2], and JWT authentication details [3] are now described in more detail. Users concerned with role isolation and following the Airflow security model of Airflow are advised to upgrade to Airflow 3.2, where several security improvements have been implemented. They should also read and follow the relevant documents to make sure that their deployment is secure enough. It also clarifies that the Deployment Manager is ultimately responsible for securing your Airflow deployment. This had also been communicated via Airflow 3.2.0 Blog announcement [4].
-
-[1] Security Model:  https://airflow.apache.org/docs/apache-airflow/stable/security/jwt_token_authentication.html 
-[2] Workload isolation:  https://airflow.apache.org/docs/apache-airflow/stable/security/workload.html 
-[3] JWT Token authentication:  https://airflow.apache.org/docs/apache-airflow/stable/security/jwt_token_authentication.html 
-[4] Airflow 3.2.0 Blog announcement:  https://airflow.apache.org/blog/airflow-3.2.0/ 
-
-
-
-Users are recommended to upgrade to version 3.2.0, which fixes this issue.</p></details></td>
-        <td>2026-04-13</td>
-      </tr>
-      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-36947" target="_blank" rel="noopener">CVE-2026-36947</a></td>
         <td>2.7</td>
         <td><span class="severity low">LOW</span></td>
@@ -7050,110 +7047,6 @@ Users are recommended to upgrade to version 3.2.0, which fixes this issue.</p></
         <td>0.0% <small>p1</small></td>
         <td>5.88</td>
         <td><details><summary>Bluetooth ACPI Drivers provided by Dynabook Inc. contain a stack-based buffer ov...</summary><p>Bluetooth ACPI Drivers provided by Dynabook Inc. contain a stack-based buffer overflow vulnerability. An attacker may execute arbitrary code by modifying certain registry values.</p></details></td>
-        <td>2026-04-13</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34864" target="_blank" rel="noopener">CVE-2026-34864</a></td>
-        <td>6.8</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-119</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p0</small></td>
-        <td>4.76</td>
-        <td><details><summary>Boundary-unlimited vulnerability in the application read module.
-Impact: Success...</summary><p>Boundary-unlimited vulnerability in the application read module.
-Impact: Successful exploitation of this vulnerability may affect availability.</p></details></td>
-        <td>2026-04-13</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34863" target="_blank" rel="noopener">CVE-2026-34863</a></td>
-        <td>6.7</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-787</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p0</small></td>
-        <td>4.69</td>
-        <td><details><summary>Out-of-bounds write vulnerability in the file system.
-Impact: Successful exploit...</summary><p>Out-of-bounds write vulnerability in the file system.
-Impact: Successful exploitation of this vulnerability may affect availability.</p></details></td>
-        <td>2026-04-13</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34862" target="_blank" rel="noopener">CVE-2026-34862</a></td>
-        <td>6.3</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-362</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p0</small></td>
-        <td>4.41</td>
-        <td><details><summary>Race condition vulnerability in the power consumption statistics module.
-Impact:...</summary><p>Race condition vulnerability in the power consumption statistics module.
-Impact: Successful exploitation of this vulnerability may affect availability.</p></details></td>
-        <td>2026-04-13</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34861" target="_blank" rel="noopener">CVE-2026-34861</a></td>
-        <td>6.3</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-362</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p0</small></td>
-        <td>4.41</td>
-        <td><details><summary>Race condition vulnerability in the thermal management module.
-Impact: Successfu...</summary><p>Race condition vulnerability in the thermal management module.
-Impact: Successful exploitation of this vulnerability may affect availability.</p></details></td>
-        <td>2026-04-13</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34859" target="_blank" rel="noopener">CVE-2026-34859</a></td>
-        <td>5.9</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-416</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p0</small></td>
-        <td>4.13</td>
-        <td><details><summary>UAF vulnerability in the kernel module.
-Impact: Successful exploitation of this ...</summary><p>UAF vulnerability in the kernel module.
-Impact: Successful exploitation of this vulnerability will affect availability and confidentiality.</p></details></td>
-        <td>2026-04-13</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34858" target="_blank" rel="noopener">CVE-2026-34858</a></td>
-        <td>4.1</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-362</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p0</small></td>
-        <td>2.87</td>
-        <td><details><summary>UAF vulnerability in the communication module.
-Impact: Successful exploitation o...</summary><p>UAF vulnerability in the communication module.
-Impact: Successful exploitation of this vulnerability may affect availability.</p></details></td>
-        <td>2026-04-13</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34857" target="_blank" rel="noopener">CVE-2026-34857</a></td>
-        <td>4.7</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-362</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p0</small></td>
-        <td>3.29</td>
-        <td><details><summary>UAF vulnerability in the communication module.
-Impact: Successful exploitation o...</summary><p>UAF vulnerability in the communication module.
-Impact: Successful exploitation of this vulnerability may affect availability.</p></details></td>
-        <td>2026-04-13</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34854" target="_blank" rel="noopener">CVE-2026-34854</a></td>
-        <td>5.7</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-416</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p0</small></td>
-        <td>3.99</td>
-        <td><details><summary>UAF vulnerability in the kernel module.
-Impact: Successful exploitation of this ...</summary><p>UAF vulnerability in the kernel module.
-Impact: Successful exploitation of this vulnerability will affect availability and confidentiality.</p></details></td>
         <td>2026-04-13</td>
       </tr>
       <tr>
@@ -22404,12 +22297,12 @@ Impact: Successful exploitation of this vulnerability will affect availability a
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34940" target="_blank" rel="noopener">CVE-2026-34940</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>8.7</td>
+        <td><span class="severity high">HIGH</span></td>
         <td>CWE-78</td>
         <td>&nbsp;</td>
         <td>0.1% <small>p18</small></td>
-        <td>0.00</td>
+        <td>6.09</td>
         <td><details><summary>KubeAI is an AI inference operator for kubernetes. Prior to 0.23.2, the ollamaSt...</summary><p>KubeAI is an AI inference operator for kubernetes. Prior to 0.23.2, the ollamaStartupProbeScript() function in internal/modelcontroller/engine_ollama.go constructs a shell command string using fmt.Sprintf with unsanitized model URL components (ref, modelParam). This shell command is executed via bash -c as a Kubernetes startup probe. An attacker who can create or update Model custom resources can inject arbitrary shell commands that execute inside model server pods. This vulnerability is fixed in 0.23.2.</p></details></td>
         <td>2026-04-06</td>
       </tr>
@@ -31845,7 +31738,7 @@ Impact: Successful exploitation of this vulnerability will affect availability a
       </div>
     </section>
     <section>
-      <h2>Previous Month — March 2026 <span class="count">(5734)</span></h2>
+      <h2>Previous Month — March 2026 <span class="count">(5735)</span></h2>
       <div class="table-wrapper">
         <table>
           <thead>
@@ -37760,13 +37653,13 @@ Impact: Successful exploitation of this vulnerability will affect availability a
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32187" target="_blank" rel="noopener">CVE-2026-32187</a></td>
-        <td>4.2</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-1021</td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>N/A</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p12</small></td>
-        <td>2.94</td>
-        <td><details><summary>Microsoft Edge (Chromium-based) Defense in Depth Vulnerability</summary><p>Microsoft Edge (Chromium-based) Defense in Depth Vulnerability</p></details></td>
+        <td>0.00</td>
+        <td><details><summary>Rejected reason: This CVE ID has been rejected or withdrawn by its CVE Numbering...</summary><p>Rejected reason: This CVE ID has been rejected or withdrawn by its CVE Numbering Authority.</p></details></td>
         <td>2026-03-27</td>
       </tr>
       <tr>
@@ -69942,6 +69835,18 @@ Impact: Successful exploitation of this vulnerability will affect availability a
         <td>0.0% <small>p8</small></td>
         <td>3.08</td>
         <td><details><summary>Backstage is an open framework for building developer portals. Prior to 3.1.5, a...</summary><p>Backstage is an open framework for building developer portals. Prior to 3.1.5, authenticated users with permission to execute scaffolder dry-runs can gain access to server-configured environment secrets through the dry-run API response. Secrets are properly redacted in log output but not in all parts of the response payload. Deployments that have configured scaffolder.defaultEnvironment.secrets are affected. This is patched in @backstage/plugin-scaffolder-backend version 3.1.5.</p></details></td>
+        <td>2026-03-12</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32236" target="_blank" rel="noopener">CVE-2026-32236</a></td>
+        <td>1.7</td>
+        <td><span class="severity low">LOW</span></td>
+        <td>CWE-918</td>
+        <td>&nbsp;</td>
+        <td>0.0% <small>p14</small></td>
+        <td>1.19</td>
+        <td><details><summary>Backstage is an open framework for building developer portals. Prior to 0.27.1, ...</summary><p>Backstage is an open framework for building developer portals. Prior to 0.27.1, a Server-Side Request Forgery (SSRF) vulnerability exists in @backstage/plugin-auth-backend when auth.experimentalClientIdMetadataDocuments.enabled is set to true. The CIMD
+metadata fetch validates the initial client_id hostname against private IP ranges but does not apply the same validation after HTTP redirects. The practical impact is limited. The attacker cannot read the response body from the internal request, cannot control request headers or method, and the feature must be explicitly enabled via an experimental flag that is off by default. Deployments that restrict allowedClientIdPatterns to specific trusted domains are not affected. Patched in @backstage/plugin-auth-backend version 0.27.1.</p></details></td>
         <td>2026-03-12</td>
       </tr>
       <tr>
