@@ -11,7 +11,7 @@
     <header>
       <h1>vuln-tracker</h1>
       <p class="subtitle">CVEs from the National Vulnerability Database — current and previous month</p>
-      <p class="last-updated">Last updated: 2026-04-15 15:11 UTC</p>
+      <p class="last-updated">Last updated: 2026-04-15 17:12 UTC</p>
     </header>
     <nav>
       <a href="top50.html">&#9733; Top 50</a>
@@ -25,7 +25,7 @@
     </nav>
     <main>
     <section>
-      <h2>Current Month — April 2026 <span class="count">(2777)</span></h2>
+      <h2>Current Month — April 2026 <span class="count">(2809)</span></h2>
       <div class="table-wrapper">
         <table>
           <thead>
@@ -42,6 +42,281 @@
             </tr>
           </thead>
           <tbody>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5387" target="_blank" rel="noopener">CVE-2026-5387</a></td>
+        <td>9.3</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.51</td>
+        <td><details><summary>The vulnerability, if exploited, could allow an unauthenticated miscreant to per...</summary><p>The vulnerability, if exploited, could allow an unauthenticated miscreant to perform operations intended only for Simulator Instructor or Simulator Developer (Administrator) roles, resulting in privilege escalation with potential for modification of simulation parameters, training configuration, and training records.</p></details></td>
+        <td>2026-04-15</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-30625" target="_blank" rel="noopener">CVE-2026-30625</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Upsonic 0.71.6 contains a remote code execution vulnerability in its MCP server/...</summary><p>Upsonic 0.71.6 contains a remote code execution vulnerability in its MCP server/task creation functionality. The application allows users to define MCP tasks with arbitrary command and args values. Although an allowlist exists, certain allowed commands (npm, npx) accept argument flags that enable execution of arbitrary OS commands. Maliciously crafted MCP tasks may lead to remote code execution with the privileges of the Upsonic process. In version 0.72.0 Upsonic added a warning about using Stdio servers being able to execute commands directly on the machine.</p></details></td>
+        <td>2026-04-15</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-30624" target="_blank" rel="noopener">CVE-2026-30624</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Agent Zero 0.9.8 contains a remote code execution vulnerability in its External ...</summary><p>Agent Zero 0.9.8 contains a remote code execution vulnerability in its External MCP Servers configuration feature. The application allows users to define MCP servers using a JSON configuration containing arbitrary command and args values. These values are executed by the application when the configuration is applied without sufficient validation or restriction. An attacker may supply a malicious MCP configuration to execute arbitrary operating system commands, potentially resulting in remote code execution with the privileges of the Agent Zero process.</p></details></td>
+        <td>2026-04-15</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-30617" target="_blank" rel="noopener">CVE-2026-30617</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>LangChain-ChatChat 0.3.1 contains a remote code execution vulnerability in its M...</summary><p>LangChain-ChatChat 0.3.1 contains a remote code execution vulnerability in its MCP STDIO server configuration and execution handling. A remote attacker can access the publicly exposed MCP management interface and configure an MCP STDIO server with attacker-controlled commands and arguments. When the MCP server is started and MCP is enabled for agent execution, subsequent agent activity triggers execution of arbitrary commands on the server. Successful exploitation allows arbitrary command execution within the context of the LangChain-ChatChat service.</p></details></td>
+        <td>2026-04-15</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-30616" target="_blank" rel="noopener">CVE-2026-30616</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Jaaz 1.0.30 contains a remote code execution vulnerability in its MCP STDIO comm...</summary><p>Jaaz 1.0.30 contains a remote code execution vulnerability in its MCP STDIO command execution handling. A remote attacker can send crafted network requests to the network-accessible Jaaz application, causing attacker-controlled commands to be executed on the server. Successful exploitation results in arbitrary command execution within the context of the Jaaz service, potentially allowing full compromise of the affected system.</p></details></td>
+        <td>2026-04-15</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-30615" target="_blank" rel="noopener">CVE-2026-30615</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>A prompt injection vulnerability in Windsurf 1.9544.26 allows remote attackers t...</summary><p>A prompt injection vulnerability in Windsurf 1.9544.26 allows remote attackers to execute arbitrary commands on a victim system. When Windsurf processes attacker-controlled HTML content, malicious instructions can cause unauthorized modification of the local MCP configuration and automatic registration of a malicious MCP STDIO server, resulting in execution of arbitrary commands without further user interaction. Successful exploitation may allow attackers to execute commands on behalf of the user, persist malicious MCP configuration changes, and access sensitive information exposed through the application.</p></details></td>
+        <td>2026-04-15</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-30461" target="_blank" rel="noopener">CVE-2026-30461</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Daylight Studio FuelCMS v1.5.2 was discovered to contain an authenticated remote...</summary><p>Daylight Studio FuelCMS v1.5.2 was discovered to contain an authenticated remote code execution (RCE) vulnerability via the /controllers/Installer.php and the function add_git_submodule.</p></details></td>
+        <td>2026-04-15</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-20205" target="_blank" rel="noopener">CVE-2026-20205</a></td>
+        <td>7.2</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-532</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.04</td>
+        <td><details><summary>In Splunk MCP Server app versions below 1.0.3 , a user who holds a role with acc...</summary><p>In Splunk MCP Server app versions below 1.0.3 , a user who holds a role with access to the Splunk `_internal` index or possesses the high-privilege capability `mcp_tool_admin` could view users session and authorization tokens in clear text.&lt;br&gt;&lt;br&gt;The vulnerability would require either local access to the log files or administrative access to internal indexes, which by default only the admin role receives. &lt;br&gt;&lt;br&gt;Review roles and capabilities on your instance and restrict internal index access to administrator-level roles. See [Define roles on the Splunk platform with capabilities](https://docs.splunk.com/Documentation/Splunk/latest/Security/Rolesandcapabilities) and [Connecting to MCP Server and Admin settings](https://help.splunk.com/en/splunk-enterprise/mcp-server-for-splunk-platform/connecting-to-mcp-server-and-admin-settings) in the Splunk documentation for more information.</p></details></td>
+        <td>2026-04-15</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-20204" target="_blank" rel="noopener">CVE-2026-20204</a></td>
+        <td>7.1</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-377</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.97</td>
+        <td><details><summary>In Splunk Enterprise versions below 10.2.1, 10.0.5, 9.4.10, and 9.3.11, and Splu...</summary><p>In Splunk Enterprise versions below 10.2.1, 10.0.5, 9.4.10, and 9.3.11, and Splunk Cloud Platform versions below 10.4.2603.0, 10.3.2512.5, 10.2.2510.9, 10.1.2507.19, 10.0.2503.13, and 9.3.2411.127, a low-privileged user that does not hold the `admin` or `power` Splunk roles could potentially perform a Remote Code Execution (RCE) by uploading a malicious file to the `$SPLUNK_HOME/var/run/splunk/apptemp` directory due to improper handling and insufficient isolation of temporary files within the `apptemp` directory.</p></details></td>
+        <td>2026-04-15</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-20203" target="_blank" rel="noopener">CVE-2026-20203</a></td>
+        <td>4.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-284</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.01</td>
+        <td><details><summary>In Splunk Enterprise versions below 10.2.2, 10.0.5, 9.4.10, and 9.3.11, and Splu...</summary><p>In Splunk Enterprise versions below 10.2.2, 10.0.5, 9.4.10, and 9.3.11, and Splunk Cloud Platform versions below 10.4.2603.0, 10.3.2512.6, 10.2.2510.10, 10.1.2507.19, 10.0.2503.13, and 9.3.2411.127, a low-privileged user that does not hold the `admin` or `power` Splunk roles, has write permission on the app, and does not hold the high-privilege capability `accelerate_datamodel`, could turn on or off Data Model Acceleration due to improper access control.</p></details></td>
+        <td>2026-04-15</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-20202" target="_blank" rel="noopener">CVE-2026-20202</a></td>
+        <td>6.6</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-176</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.62</td>
+        <td><details><summary>In Splunk Enterprise versions below 10.2.2, 10.0.5, 9.4.10, and 9.3.11, and Splu...</summary><p>In Splunk Enterprise versions below 10.2.2, 10.0.5, 9.4.10, and 9.3.11, and Splunk Cloud Platform versions below 10.4.2603.0, 10.3.2512.6, 10.2.2510.10, 10.1.2507.20, 10.0.2503.13, and 9.3.2411.127, a user who holds a role that contains the high-privilege capability `edit_user`could create a specially crafted username that includes a null byte or a non-UTF-8 percent-encoded byte due to improper input validation.&lt;br&gt;&lt;br&gt;This could lead to inconsistent conversion of usernames into a proper format for storage and account management inconsistencies, such as being unable to edit or delete affected users.</p></details></td>
+        <td>2026-04-15</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-67841" target="_blank" rel="noopener">CVE-2025-67841</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Nordic Semiconductor IronSide SE for nRF54H20 before 23.0.2+17 has an Algorithmi...</summary><p>Nordic Semiconductor IronSide SE for nRF54H20 before 23.0.2+17 has an Algorithmic complexity issue.</p></details></td>
+        <td>2026-04-15</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-53444" target="_blank" rel="noopener">CVE-2025-53444</a></td>
+        <td>4.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-352</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.01</td>
+        <td><details><summary>Cross-Site Request Forgery (CSRF) vulnerability in DeluxeThemes Userpro allows C...</summary><p>Cross-Site Request Forgery (CSRF) vulnerability in DeluxeThemes Userpro allows Cross Site Request Forgery.This issue affects Userpro: from n/a before 5.1.11.</p></details></td>
+        <td>2026-04-15</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-12141" target="_blank" rel="noopener">CVE-2025-12141</a></td>
+        <td>1.3</td>
+        <td><span class="severity low">LOW</span></td>
+        <td>CWE-200</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.91</td>
+        <td><details><summary>In Grafana&#x27;s alerting system, users with edit permissions for a contact point, s...</summary><p>In Grafana&#x27;s alerting system, users with edit permissions for a contact point, specifically the permissions “alert.notifications:write” or “alert.notifications.receivers:test” that are granted as part of the fixed role &quot;Contact Point Writer&quot;, which is part of the basic role Editor - can edit contact points created by other users, modify the endpoint URL to a controlled server. By invoking the test functionality, attackers can capture and extract redacted secure settings, such as authentication credentials for third-party services (e.g., Slack tokens). This leads to unauthorized access and potential compromise of external integrations.</p></details></td>
+        <td>2026-04-15</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4682" target="_blank" rel="noopener">CVE-2026-4682</a></td>
+        <td>8.7</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-121</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.09</td>
+        <td><details><summary>Certain HP DeskJet All in One devices
+may be vulnerable to remote code execution...</summary><p>Certain HP DeskJet All in One devices
+may be vulnerable to remote code execution caused by a buffer overflow when
+specially crafted Web Services for Devices (WSD) scan requests are improperly
+validated and handled by the MFP.
+
+
+
+WSD
+Scan is a Microsoft Windows–based network scanning protocol that allows a PC to
+discover scanners (and MFPs) on a network and send scan jobs to them without
+requiring vendor specific drivers or utilities.</p></details></td>
+        <td>2026-04-15</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4667" target="_blank" rel="noopener">CVE-2026-4667</a></td>
+        <td>7.3</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-250</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.11</td>
+        <td><details><summary>HP System Optimizer might potentially be vulnerable to escalation of privilege. ...</summary><p>HP System Optimizer might potentially be vulnerable to escalation of privilege. HP is releasing an update to mitigate this potential vulnerability.</p></details></td>
+        <td>2026-04-15</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-30364" target="_blank" rel="noopener">CVE-2026-30364</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>CentSDR commit e40795 was discovered to contain a stack overflow in the &quot;Thread1...</summary><p>CentSDR commit e40795 was discovered to contain a stack overflow in the &quot;Thread1&quot; function.</p></details></td>
+        <td>2026-04-15</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2024-53412" target="_blank" rel="noopener">CVE-2024-53412</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Command injection in the connect function in NietThijmen ShoppingCart 0.0.2 allo...</summary><p>Command injection in the connect function in NietThijmen ShoppingCart 0.0.2 allows an attacker to execute arbitrary shell commands and achieve remote code execution via injection of malicious payloads into the Port field</p></details></td>
+        <td>2026-04-15</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40784" target="_blank" rel="noopener">CVE-2026-40784</a></td>
+        <td>8.1</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-639</td>
+        <td>&nbsp;</td>
+        <td>0.0% <small>p4</small></td>
+        <td>5.67</td>
+        <td><details><summary>Authorization Bypass Through User-Controlled Key vulnerability in Mahmudul Hasan...</summary><p>Authorization Bypass Through User-Controlled Key vulnerability in Mahmudul Hasan Arif FluentBoards fluent-boards allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects FluentBoards: from n/a through &lt;= 1.91.2.</p></details></td>
+        <td>2026-04-15</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40764" target="_blank" rel="noopener">CVE-2026-40764</a></td>
+        <td>8.1</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-352</td>
+        <td>&nbsp;</td>
+        <td>0.0% <small>p0</small></td>
+        <td>5.67</td>
+        <td><details><summary>Cross-Site Request Forgery (CSRF) vulnerability in Syed Balkhi Contact Form by W...</summary><p>Cross-Site Request Forgery (CSRF) vulnerability in Syed Balkhi Contact Form by WPForms wpforms-lite allows Cross Site Request Forgery.This issue affects Contact Form by WPForms: from n/a through &lt;= 1.10.0.2.</p></details></td>
+        <td>2026-04-15</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40745" target="_blank" rel="noopener">CVE-2026-40745</a></td>
+        <td>7.6</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-89</td>
+        <td>&nbsp;</td>
+        <td>0.0% <small>p5</small></td>
+        <td>5.32</td>
+        <td><details><summary>Improper Neutralization of Special Elements used in an SQL Command (&#x27;SQL Injecti...</summary><p>Improper Neutralization of Special Elements used in an SQL Command (&#x27;SQL Injection&#x27;) vulnerability in bdthemes Element Pack Elementor Addons bdthemes-element-pack-lite allows Blind SQL Injection.This issue affects Element Pack Elementor Addons: from n/a through &lt;= 8.4.2.</p></details></td>
+        <td>2026-04-15</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40742" target="_blank" rel="noopener">CVE-2026-40742</a></td>
+        <td>5.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>0.0% <small>p4</small></td>
+        <td>3.71</td>
+        <td><details><summary>Missing Authorization vulnerability in Nelio Software Nelio AB Testing nelio-ab-...</summary><p>Missing Authorization vulnerability in Nelio Software Nelio AB Testing nelio-ab-testing allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects Nelio AB Testing: from n/a through &lt;= 8.2.8.</p></details></td>
+        <td>2026-04-15</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40737" target="_blank" rel="noopener">CVE-2026-40737</a></td>
+        <td>5.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-639</td>
+        <td>&nbsp;</td>
+        <td>0.0% <small>p4</small></td>
+        <td>3.71</td>
+        <td><details><summary>Authorization Bypass Through User-Controlled Key vulnerability in VillaTheme COM...</summary><p>Authorization Bypass Through User-Controlled Key vulnerability in VillaTheme COMPE compe-woo-compare-products allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects COMPE: from n/a through &lt;= 1.1.4.</p></details></td>
+        <td>2026-04-15</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40728" target="_blank" rel="noopener">CVE-2026-40728</a></td>
+        <td>4.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>0.0% <small>p4</small></td>
+        <td>3.01</td>
+        <td><details><summary>Missing Authorization vulnerability in BlockArt Magazine Blocks magazine-blocks ...</summary><p>Missing Authorization vulnerability in BlockArt Magazine Blocks magazine-blocks allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects Magazine Blocks: from n/a through &lt;= 1.8.3.</p></details></td>
+        <td>2026-04-15</td>
+      </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40688" target="_blank" rel="noopener">CVE-2026-40688</a></td>
         <td>7.2</td>
@@ -4609,12 +4884,12 @@
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-26460" target="_blank" rel="noopener">CVE-2026-26460</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>6.1</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-80</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p4</small></td>
-        <td>0.00</td>
+        <td>4.27</td>
         <td><details><summary>A HTML Injection vulnerability exists in the Dashboard module of Vtiger CRM 8.4....</summary><p>A HTML Injection vulnerability exists in the Dashboard module of Vtiger CRM 8.4.0. The application fails to properly neutralize user-supplied input in the tabid parameter of the DashBoardTab view (getTabContents action), allowing an attacker to inject arbitrary HTML content into the dashboard interface. The injected content is rendered in the victim&#x27;s browser</p></details></td>
         <td>2026-04-13</td>
       </tr>
@@ -4631,12 +4906,12 @@
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-51414" target="_blank" rel="noopener">CVE-2025-51414</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>9.8</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-94</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p4</small></td>
-        <td>0.00</td>
+        <td>6.86</td>
         <td><details><summary>In Phpgurukul Online Course Registration v3.1, an arbitrary file upload vulnerab...</summary><p>In Phpgurukul Online Course Registration v3.1, an arbitrary file upload vulnerability was discovered within the profile picture upload functionality on the /my-profile.php page.</p></details></td>
         <td>2026-04-13</td>
       </tr>
@@ -4719,12 +4994,12 @@
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-31048" target="_blank" rel="noopener">CVE-2026-31048</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>9.8</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-94</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p4</small></td>
-        <td>0.00</td>
+        <td>6.86</td>
         <td><details><summary>An issue in the &lt;code&gt;pickle&lt;/code&gt; protocol of Pyro v3.x allows attackers to ex...</summary><p>An issue in the &lt;code&gt;pickle&lt;/code&gt; protocol of Pyro v3.x allows attackers to execute arbitrary code via supplying a crafted pickled string message.</p></details></td>
         <td>2026-04-13</td>
       </tr>
@@ -4851,12 +5126,12 @@
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-29955" target="_blank" rel="noopener">CVE-2026-29955</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>9.8</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-94</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p11</small></td>
-        <td>0.00</td>
+        <td>6.86</td>
         <td><details><summary>The `/registercrd` endpoint in KubePlus 4.14 in the kubeconfiggenerator componen...</summary><p>The `/registercrd` endpoint in KubePlus 4.14 in the kubeconfiggenerator component is vulnerable to command injection. The component uses `subprocess.Popen()` with `shell=True` parameter to execute shell commands, and the user-supplied `chartName` parameter is directly concatenated into the command string without any sanitization or validation. An attacker can inject arbitrary shell commands by crafting a malicious `chartName` parameter value.</p></details></td>
         <td>2026-04-13</td>
       </tr>
@@ -5540,6 +5815,59 @@
         <td>0.0% <small>p0</small></td>
         <td>3.22</td>
         <td><details><summary>LibreNMS versions before 26.3.0 are affected by an authenticated Cross-site Scri...</summary><p>LibreNMS versions before 26.3.0 are affected by an authenticated Cross-site Scripting vulnerability on the showconfig page. Successful exploitation requires administrative privileges. Exploitation could result in XSS attacks being performed against other users with access to the page.</p></details></td>
+        <td>2026-04-13</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35565" target="_blank" rel="noopener">CVE-2026-35565</a></td>
+        <td>5.4</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>0.0% <small>p9</small></td>
+        <td>3.78</td>
+        <td><details><summary>Stored Cross-Site Scripting (XSS) via Unsanitized Topology Metadata in Apache St...</summary><p>Stored Cross-Site Scripting (XSS) via Unsanitized Topology Metadata in Apache Storm UI
+
+
+Versions Affected: before 2.8.6
+
+
+Description: The Storm UI visualization component interpolates topology metadata including component IDs, stream names, and grouping values directly into HTML via innerHTML in parseNode() and parseEdge() without sanitization at any layer. An authenticated user with topology submission rights could craft a topology containing malicious HTML/JavaScript in component identifiers (e.g., a bolt ID containing an onerror event handler). This payload flows through Nimbus → Thrift → the Visualization API → vis.js tooltip rendering, resulting in stored cross-site scripting. 
+
+In multi-tenant deployments where topology submission is available to less-trusted users but the UI is accessed by operators or administrators, this enables privilege escalation through script execution in an admin&#x27;s browser session.
+
+
+Mitigation: 2.x users should upgrade to 2.8.6. Users who cannot upgrade immediately should monkey-patch the parseNode() and parseEdge() functions in the visualization JavaScript file to HTML-escape all API-supplied values including nodeId, :capacity, :latency, :component, :stream, and :grouping before interpolation into tooltip HTML strings, and should additionally restrict topology submission to trusted users via Nimbus ACLs as a defense-in-depth measure. A guide on how to do this is available in the release notes of 2.8.6.
+
+Credit: This issue was discovered while investigating another report by K.</p></details></td>
+        <td>2026-04-13</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35337" target="_blank" rel="noopener">CVE-2026-35337</a></td>
+        <td>8.8</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-502</td>
+        <td>&nbsp;</td>
+        <td>0.4% <small>p61</small></td>
+        <td>6.17</td>
+        <td><details><summary>Deserialization of Untrusted Data vulnerability in Apache Storm.
+
+Versions Affec...</summary><p>Deserialization of Untrusted Data vulnerability in Apache Storm.
+
+Versions Affected:
+before 2.8.6.
+
+
+Description:
+When processing topology credentials submitted via the Nimbus Thrift API, Storm deserializes the base64-encoded TGT blob using ObjectInputStream.readObject() without any class filtering or validation. An authenticated user with topology submission rights could supply a crafted serialized object in the &quot;TGT&quot; credential field, leading to remote code execution in both the Nimbus and Worker JVMs.
+
+
+Mitigation:
+2.x users should upgrade to 2.8.6.
+
+
+Users who cannot upgrade immediately should monkey-patch an ObjectInputFilter allow-list to ClientAuthUtils.deserializeKerberosTicket() restricting deserialized classes to javax.security.auth.kerberos.KerberosTicket and its known dependencies. A guide on how to do this is available in the release notes of 2.8.6.
+
+Credit: This issue was discovered by K.</p></details></td>
         <td>2026-04-13</td>
       </tr>
       <tr>
@@ -10831,6 +11159,61 @@
         <td>0.1% <small>p21</small></td>
         <td>3.71</td>
         <td><details><summary>fast-jwt provides fast JSON Web Token (JWT) implementation. Prior to 6.2.1, usin...</summary><p>fast-jwt provides fast JSON Web Token (JWT) implementation. Prior to 6.2.1, using certain modifiers on RegExp objects in the allowedAud, allowedIss, allowedSub, allowedJti, or allowedNonce options in verify functions can cause certain unintended behaviours. This is because some modifiers are stateful and will cause failures in every second verification attempt regardless of the validity of the token provided. Such modifiers are /g (global matching) and /y (sticky matching). This does NOT allow invalid tokens to be accepted, only for valid tokens to be improperly rejected in some configurations. Instead it causes 50% of valid authentication requests to fail in an alternating pattern. This vulnerability is fixed in 6.2.1.</p></details></td>
+        <td>2026-04-09</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34020" target="_blank" rel="noopener">CVE-2026-34020</a></td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-598</td>
+        <td>&nbsp;</td>
+        <td>0.0% <small>p11</small></td>
+        <td>5.25</td>
+        <td><details><summary>Use of GET Request Method With Sensitive Query Strings vulnerability in Apache O...</summary><p>Use of GET Request Method With Sensitive Query Strings vulnerability in Apache OpenMeetings.
+
+The REST login endpoint uses HTTP GET method with username and password passed as query parameters. Please check references regarding possible impact
+
+
+This issue affects Apache OpenMeetings: from 3.1.3 before 9.0.0.
+
+Users are recommended to upgrade to version 9.0.0, which fixes the issue.</p></details></td>
+        <td>2026-04-09</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33266" target="_blank" rel="noopener">CVE-2026-33266</a></td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-321</td>
+        <td>&nbsp;</td>
+        <td>0.0% <small>p6</small></td>
+        <td>5.25</td>
+        <td><details><summary>Use of Hard-coded Cryptographic Key vulnerability in Apache OpenMeetings.
+
+The r...</summary><p>Use of Hard-coded Cryptographic Key vulnerability in Apache OpenMeetings.
+
+The remember-me cookie encryption key is set to default value in openmeetings.properties and not being auto-rotated. In case OM admin hasn&#x27;t changed the default encryption key, an attacker who has stolen a cookie from a logged-in user can get full user credentials.
+
+
+This issue affects Apache OpenMeetings: from 6.1.0 before 9.0.0.
+
+Users are recommended to upgrade to version 9.0.0, which fixes the issue.</p></details></td>
+        <td>2026-04-09</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33005" target="_blank" rel="noopener">CVE-2026-33005</a></td>
+        <td>4.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-274</td>
+        <td>&nbsp;</td>
+        <td>0.0% <small>p7</small></td>
+        <td>3.01</td>
+        <td><details><summary>Improper Handling of Insufficient Privileges vulnerability in Apache OpenMeeting...</summary><p>Improper Handling of Insufficient Privileges vulnerability in Apache OpenMeetings.
+
+Any registered user can query web service with their credentials and get files/sub-folders of any folder by ID (metadata only NOT contents). Metadata includes id, type, name and some other field. Full list of fields get be checked at FileItemDTO object.
+
+This issue affects Apache OpenMeetings: from 3.10 before 9.0.0.
+
+Users are recommended to upgrade to version 9.0.0, which fixes the issue.</p></details></td>
         <td>2026-04-09</td>
       </tr>
       <tr>
@@ -18564,6 +18947,50 @@
         <td>0.1% <small>p31</small></td>
         <td>5.25</td>
         <td><details><summary>Strawberry GraphQL is a library for creating GraphQL APIs. Strawberry up until v...</summary><p>Strawberry GraphQL is a library for creating GraphQL APIs. Strawberry up until version 0.312.3 is vulnerable to an authentication bypass on WebSocket subscription endpoints. The legacy graphql-ws subprotocol handler does not verify that a connection_init handshake has been completed before processing start (subscription) messages. This allows a remote attacker to skip the on_ws_connect authentication hook entirely by connecting with the graphql-ws subprotocol and sending a start message directly, without ever sending connection_init.  This vulnerability is fixed in 0.312.3.</p></details></td>
+        <td>2026-04-07</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32588" target="_blank" rel="noopener">CVE-2026-32588</a></td>
+        <td>6.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-400</td>
+        <td>&nbsp;</td>
+        <td>0.0% <small>p13</small></td>
+        <td>4.55</td>
+        <td><details><summary>Authenticated DoS over CQL in Apache Cassandra 4.0, 4.1, 5.0 allows authenticate...</summary><p>Authenticated DoS over CQL in Apache Cassandra 4.0, 4.1, 5.0 allows authenticated user to raise query latencies via repeated password changes.
+Users are recommended to upgrade to version 4.0.20, 4.1.11, 5.0.7, which fixes this issue.</p></details></td>
+        <td>2026-04-07</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-27315" target="_blank" rel="noopener">CVE-2026-27315</a></td>
+        <td>5.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-532</td>
+        <td>&nbsp;</td>
+        <td>0.0% <small>p1</small></td>
+        <td>3.85</td>
+        <td><details><summary>Sensitive Information Leak in cqlsh in Apache Cassandra 4.0 allows access to sen...</summary><p>Sensitive Information Leak in cqlsh in Apache Cassandra 4.0 allows access to sensitive information, like passwords, from previously executed cqlsh command via  ~/.cassandra/cqlsh_history local file access.
+
+Users are recommended to upgrade to version 4.0.20, which fixes this issue.
+
+--
+Description: Cassandra&#x27;s command-line tool, cqlsh, provides a command history feature that allows users to recall previously executed commands using the up/down arrow keys. These history records are saved in the ~/.cassandra/cqlsh_history file in the user&#x27;s home directory.
+
+However, cqlsh does not redact sensitive information when saving command history. This means that if a user executes operations involving passwords (such as logging in or creating users) within cqlsh, these passwords are permanently stored in cleartext in the history file on the disk.</p></details></td>
+        <td>2026-04-07</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-27314" target="_blank" rel="noopener">CVE-2026-27314</a></td>
+        <td>8.8</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-267</td>
+        <td>&nbsp;</td>
+        <td>0.0% <small>p7</small></td>
+        <td>6.16</td>
+        <td><details><summary>Privilege escalation in Apache Cassandra 5.0 on an mTLS environment using Mutual...</summary><p>Privilege escalation in Apache Cassandra 5.0 on an mTLS environment using MutualTlsAuthenticator allows a user with only CREATE permission to associate their own certificate identity with an arbitrary role,
+including a superuser role, and authenticate as that role via ADD IDENTITY.
+
+Users are recommended to upgrade to version 5.0.7+, which fixes this issue.</p></details></td>
         <td>2026-04-07</td>
       </tr>
       <tr>
