@@ -1,6 +1,6 @@
 # CVEs — March 2026
 
-_5750 vulnerabilities_
+_5734 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
@@ -691,8 +691,6 @@ _5750 vulnerabilities_
 | [CVE-2026-27650](https://nvd.nist.gov/vuln/detail/CVE-2026-27650) | 8.6 | HIGH | CWE-78 | No | 0.1% | 6.02 | 2026-03-27 | OS Command Injection vulnerability exists in BUFFALO Wi-Fi router products. If this vulnerability is exploited, an arbit... |
 | [CVE-2026-22744](https://nvd.nist.gov/vuln/detail/CVE-2026-22744) | 7.5 | HIGH | NVD-CWE-noinfo | No | 0.0% | 5.25 | 2026-03-27 | In RedisFilterExpressionConverter of spring-ai-redis-store, when a user-controlled string is passed as a filter value fo... |
 | [CVE-2026-22743](https://nvd.nist.gov/vuln/detail/CVE-2026-22743) | 7.5 | HIGH | CWE-89 | No | 0.1% | 5.25 | 2026-03-27 | Spring AI's spring-ai-neo4j-store contains a Cypher injection vulnerability in Neo4jVectorFilterExpressionConverter. Whe... |
-| [CVE-2026-22742](https://nvd.nist.gov/vuln/detail/CVE-2026-22742) | 8.6 | HIGH | CWE-918 | No | 0.0% | 6.02 | 2026-03-27 | Spring AI's spring-ai-bedrock-converse contains a Server-Side Request Forgery (SSRF) vulnerability in BedrockProxyChatMo... |
-| [CVE-2026-22738](https://nvd.nist.gov/vuln/detail/CVE-2026-22738) | 9.8 | CRITICAL | CWE-917 | No | 0.1% | 6.86 | 2026-03-27 | In Spring AI, a SpEL injection vulnerability exists in SimpleVectorStore when a user-supplied value is used as a filter... |
 | [CVE-2026-4910](https://nvd.nist.gov/vuln/detail/CVE-2026-4910) | 6.9 | MEDIUM | CWE-74 | No | 0.0% | 4.83 | 2026-03-27 | A security vulnerability has been detected in Shenzhen Ruiming Technology Streamax Crocus up to 1.3.44. Affected is an u... |
 | [CVE-2026-3098](https://nvd.nist.gov/vuln/detail/CVE-2026-3098) | 6.5 | MEDIUM | CWE-862 | No | 0.0% | 4.55 | 2026-03-27 | The Smart Slider 3 plugin for WordPress is vulnerable to Arbitrary File Read in all versions up to, and including, 3.5.1... |
 | [CVE-2026-4909](https://nvd.nist.gov/vuln/detail/CVE-2026-4909) | 4.8 | MEDIUM | CWE-79 | No | 0.0% | 3.36 | 2026-03-27 | A weakness has been identified in code-projects Exam Form Submission 1.0. This impacts an unknown function of the file /... |
@@ -5292,24 +5290,10 @@ _5750 vulnerabilities_
 | [CVE-2026-28434](https://nvd.nist.gov/vuln/detail/CVE-2026-28434) | 5.3 | MEDIUM | CWE-200 | No | 0.1% | 3.71 | 2026-03-04 | cpp-httplib is a C++11 single-file header-only cross platform HTTP/HTTPS library. Prior to 0.35.0, when a request handle... |
 | [CVE-2026-28427](https://nvd.nist.gov/vuln/detail/CVE-2026-28427) | 5.9 | MEDIUM | CWE-22 | No | 0.1% | 4.13 | 2026-03-04 | OpenDeck is Linux software for your Elgato Stream Deck. Prior to 2.8.1, the service listening on port 57118 serves stati... |
 | [CVE-2025-70219](https://nvd.nist.gov/vuln/detail/CVE-2025-70219) | 9.8 | CRITICAL | CWE-121 | No | 0.1% | 6.86 | 2026-03-04 | Stack buffer overflow vulnerability in D-Link DIR-513 v1.10 via the goform/formDeviceReboot. |
-| [CVE-2026-20021](https://nvd.nist.gov/vuln/detail/CVE-2026-20021) | 4.3 | MEDIUM | CWE-401 | No | 0.0% | 3.01 | 2026-03-04 | A vulnerability in the OSPF protocol of Cisco Secure Firewall Adaptive Security Appliance (ASA) Software and Cisco Secur... |
 | [CVE-2026-0847](https://nvd.nist.gov/vuln/detail/CVE-2026-0847) | 8.6 | HIGH | CWE-22 | No | 0.3% | 6.03 | 2026-03-04 | A vulnerability in NLTK versions up to and including 3.9.2 allows arbitrary file read via path traversal in multiple Cor... |
 | [CVE-2025-70226](https://nvd.nist.gov/vuln/detail/CVE-2025-70226) | 9.8 | CRITICAL | CWE-121 | No | 0.1% | 6.86 | 2026-03-04 | Stack buffer overflow vulnerability in D-Link DIR-513 v1.10 via the curTime parameter to goform/formEasySetupWizard. |
 | [CVE-2025-70223](https://nvd.nist.gov/vuln/detail/CVE-2025-70223) | 9.8 | CRITICAL | CWE-121 | No | 0.1% | 6.86 | 2026-03-04 | Stack buffer overflow vulnerability in D-Link DIR-513 v1.10 via the curTime parameter to goform/formAdvNetwork. |
 | [CVE-2026-26949](https://nvd.nist.gov/vuln/detail/CVE-2026-26949) | 5.5 | MEDIUM | CWE-863 | No | 0.0% | 3.85 | 2026-03-04 | Dell Device Management Agent (DDMA), versions prior to 26.02, contain an Incorrect Authorization vulnerability. A low pr... |
-| [CVE-2026-20106](https://nvd.nist.gov/vuln/detail/CVE-2026-20106) | 5.3 | MEDIUM | CWE-401 | No | 0.1% | 3.71 | 2026-03-04 | A vulnerability in the Remote Access SSL VPN, HTTP management and MUS functionality, of Cisco Secure Firewall Adaptive S... |
-| [CVE-2026-20105](https://nvd.nist.gov/vuln/detail/CVE-2026-20105) | 7.7 | HIGH | CWE-401 | No | 0.1% | 5.39 | 2026-03-04 | A vulnerability in the Remote Access SSL VPN functionality of Cisco Secure Firewall Adaptive Security Appliance (ASA) So... |
-| [CVE-2026-20103](https://nvd.nist.gov/vuln/detail/CVE-2026-20103) | 8.6 | HIGH | CWE-770 | No | 0.1% | 6.02 | 2026-03-04 | A vulnerability in the Remote Access SSL VPN functionality of Cisco Secure Firewall Adaptive Security Appliance (ASA) So... |
-| [CVE-2026-20102](https://nvd.nist.gov/vuln/detail/CVE-2026-20102) | 6.1 | MEDIUM | CWE-79 | No | 0.0% | 4.27 | 2026-03-04 | A vulnerability in the SAML 2.0 single sign-on (SSO) feature of Cisco Secure Firewall ASA Software and Cisco Secure Fire... |
-| [CVE-2026-20101](https://nvd.nist.gov/vuln/detail/CVE-2026-20101) | 8.6 | HIGH | CWE-330 | No | 0.1% | 6.02 | 2026-03-04 | A vulnerability in the SAML 2.0 single sign-on (SSO) feature of Cisco Secure Firewall ASA Software and Secure FTD Softwa... |
-| [CVE-2026-20050](https://nvd.nist.gov/vuln/detail/CVE-2026-20050) | 6.8 | MEDIUM | CWE-404 | No | 0.2% | 4.76 | 2026-03-04 | A vulnerability in the Do Not Decrypt exclusion feature of the SSL decryption feature of Cisco Secure Firewall Threat De... |
-| [CVE-2026-20049](https://nvd.nist.gov/vuln/detail/CVE-2026-20049) | 7.7 | HIGH | CWE-131 | No | 0.2% | 5.40 | 2026-03-04 | A vulnerability in the processing of Galois/Counter Mode (GCM)-encrypted Internet Key Exchange version 2 (IKEv2) IPsec t... |
-| [CVE-2026-20039](https://nvd.nist.gov/vuln/detail/CVE-2026-20039) | 8.6 | HIGH | CWE-244 | No | 0.2% | 6.03 | 2026-03-04 | A vulnerability in the VPN web server of Cisco Secure Firewall Adaptive Security Appliance (ASA) Software and Cisco Secu... |
-| [CVE-2026-20015](https://nvd.nist.gov/vuln/detail/CVE-2026-20015) | 5.8 | MEDIUM | CWE-401 | No | 0.1% | 4.06 | 2026-03-04 | A vulnerability in the IKEv2 feature of Cisco Secure Firewall ASA Software and Cisco Secure FTD Software could allow an... |
-| [CVE-2026-20014](https://nvd.nist.gov/vuln/detail/CVE-2026-20014) | 7.7 | HIGH | CWE-401 | No | 0.2% | 5.40 | 2026-03-04 | A vulnerability in the IKEv2 feature of Cisco Secure Firewall ASA Software and Cisco Secure FTD Software could allow an... |
-| [CVE-2026-20013](https://nvd.nist.gov/vuln/detail/CVE-2026-20013) | 5.8 | MEDIUM | CWE-401 | No | 0.1% | 4.06 | 2026-03-04 | A vulnerability in the IKEv2 feature of Cisco Secure Firewall ASA Software and Cisco Secure FTD Software could allow an... |
-| [CVE-2026-20009](https://nvd.nist.gov/vuln/detail/CVE-2026-20009) | 5.3 | MEDIUM | CWE-138 | No | 0.0% | 3.71 | 2026-03-04 | A vulnerability in the implementation of the proprietary SSH stack with SSH key-based authentication in Cisco Secure Fir... |
-| [CVE-2026-20008](https://nvd.nist.gov/vuln/detail/CVE-2026-20008) | 6.0 | MEDIUM | CWE-78 | No | 0.0% | 4.20 | 2026-03-04 | A vulnerability in a small subset of CLI commands that are used on Cisco Secure Firewall Adaptive Security Appliance (AS... |
 | [CVE-2025-70220](https://nvd.nist.gov/vuln/detail/CVE-2025-70220) | 9.8 | CRITICAL | CWE-121 | No | 0.1% | 6.86 | 2026-03-04 | Stack buffer overflow vulnerability in D-Link DIR-513 v1.10 via the curTime parameter to goform/formAutoDetecWAN_wizard4... |
 | [CVE-2025-70218](https://nvd.nist.gov/vuln/detail/CVE-2025-70218) | 9.8 | CRITICAL | CWE-121 | No | 0.1% | 6.86 | 2026-03-04 | Stack buffer overflow vulnerability in D-Link DIR-513 v1.10 via POST to the goform/formAdvFirewall component. |
 | [CVE-2019-25507](https://nvd.nist.gov/vuln/detail/CVE-2019-25507) | 8.8 | HIGH | CWE-89 | No | 0.1% | 6.16 | 2026-03-04 | Ashop Shopping Cart Software contains an SQL injection vulnerability that allows unauthenticated attackers to manipulate... |

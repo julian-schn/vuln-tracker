@@ -11,7 +11,7 @@
     <header>
       <h1>vuln-tracker</h1>
       <p class="subtitle">CVEs from the National Vulnerability Database — current and previous month</p>
-      <p class="last-updated">Last updated: 2026-04-16 20:55 UTC</p>
+      <p class="last-updated">Last updated: 2026-04-16 22:50 UTC</p>
     </header>
     <nav>
       <a href="top50.html">&#9733; Top 50</a>
@@ -25,7 +25,7 @@
     </nav>
     <main>
     <section>
-      <h2>Current Month — April 2026 <span class="count">(2994)</span></h2>
+      <h2>Current Month — April 2026 <span class="count">(3006)</span></h2>
       <div class="table-wrapper">
         <table>
           <thead>
@@ -42,6 +42,149 @@
             </tr>
           </thead>
           <tbody>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-41113" target="_blank" rel="noopener">CVE-2026-41113</a></td>
+        <td>8.1</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-78</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.67</td>
+        <td><details><summary>sagredo qmail before 2026.04.07 allows tls_quit remote code execution because of...</summary><p>sagredo qmail before 2026.04.07 allows tls_quit remote code execution because of popen in notlshosts_auto in qmail-remote.c.</p></details></td>
+        <td>2026-04-16</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40308" target="_blank" rel="noopener">CVE-2026-40308</a></td>
+        <td>8.8</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-639</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.16</td>
+        <td><details><summary>My Calendar is a WordPress plugin for managing calendar events. In versions 3.7....</summary><p>My Calendar is a WordPress plugin for managing calendar events. In versions 3.7.6 and below, the mc_ajax_mcjs_action AJAX endpoint, registered for unauthenticated users, passes user-supplied arguments through parse_str() without validation, allowing injection of arbitrary parameters including a site value. On WordPress Multisite installations, this enables an unauthenticated attacker to call switch_to_blog() with an arbitrary site ID and extract calendar events from any sub-site on the network, including private or hidden events. On standard Single Site installations, switch_to_blog() does not exist, causing an uncaught PHP fatal error and crashing the worker thread, creating an unauthenticated denial of service vector. This issue has been fixed in version 3.7.7.</p></details></td>
+        <td>2026-04-16</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40249" target="_blank" rel="noopener">CVE-2026-40249</a></td>
+        <td>6.9</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-636</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.83</td>
+        <td><details><summary>free5GC is an open-source implementation of the 5G core network. In versions 4.2...</summary><p>free5GC is an open-source implementation of the 5G core network. In versions 4.2.1 and below of the UDR service, the PUT handler for updating Policy Data notification subscriptions at /nudr-dr/v2/policy-data/subs-to-notify/{subsId} does not return after request body retrieval or deserialization errors. Although HTTP 500 or 400 error responses are sent, execution continues and the processor is invoked with a potentially uninitialized or partially initialized PolicyDataSubscription object. This fail-open behavior may allow unintended modification of existing Policy Data notification subscriptions with invalid or empty input, depending on downstream processor and storage behavior. A patched version was not available at the time of publication.</p></details></td>
+        <td>2026-04-16</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40248" target="_blank" rel="noopener">CVE-2026-40248</a></td>
+        <td>8.7</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-285</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.09</td>
+        <td><details><summary>free5GC is an open-source implementation of the 5G core network. In versions 4.2...</summary><p>free5GC is an open-source implementation of the 5G core network. In versions 4.2.1 and below of the UDR service, the handler for creating or updating Traffic Influence Subscriptions checks whether the influenceId path segment equals subs-to-notify, but does not return after sending the HTTP 404 response when validation fails. Execution continues and the subscription is created or overwritten regardless. An unauthenticated attacker with access to the 5G Service Based Interface can create or overwrite arbitrary Traffic Influence Subscriptions, including injecting attacker-controlled notificationUri values and arbitrary SUPIs, by supplying any value for the influenceId path segment. A patched version was not available at the time of publication.</p></details></td>
+        <td>2026-04-16</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40247" target="_blank" rel="noopener">CVE-2026-40247</a></td>
+        <td>8.7</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-285</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.09</td>
+        <td><details><summary>free5GC is an open-source implementation of the 5G core network. In versions 4.2...</summary><p>free5GC is an open-source implementation of the 5G core network. In versions 4.2.1 and below of the UDR service, the handler for reading Traffic Influence Subscriptions checks whether the influenceId path segment equals subs-to-notify, but does not return after sending the HTTP 404 response when validation fails. Execution continues and the subscription data is returned alongside the 404 response. An unauthenticated attacker with access to the 5G Service Based Interface can read arbitrary Traffic Influence Subscriptions, including SUPIs/IMSIs, DNNs, S-NSSAIs, and callback URIs, by supplying any value for the influenceId path segment. A patched version was not available at the time of publication.</p></details></td>
+        <td>2026-04-16</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40246" target="_blank" rel="noopener">CVE-2026-40246</a></td>
+        <td>8.7</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-285</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.09</td>
+        <td><details><summary>free5GC is an open-source implementation of the 5G core network. In versions 1.4...</summary><p>free5GC is an open-source implementation of the 5G core network. In versions 1.4.2 and below of the UDR service, the handler for deleting Traffic Influence Subscriptions checks whether the influenceId path segment equals subs-to-notify, but does not return after sending the HTTP 404 response when validation fails. Execution continues and the subscription is deleted regardless. An unauthenticated attacker with access to the 5G Service Based Interface can delete arbitrary Traffic Influence Subscriptions by supplying any value for the influenceId path segment, while the API misleadingly returns a 404 Not Found response. A patched version was not available at the time of publication.</p></details></td>
+        <td>2026-04-16</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40170" target="_blank" rel="noopener">CVE-2026-40170</a></td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-121</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.25</td>
+        <td><details><summary>ngtcp2 is a C implementation of the IETF QUIC protocol. In versions prior to 1.2...</summary><p>ngtcp2 is a C implementation of the IETF QUIC protocol. In versions prior to 1.22.1, ngtcp2_qlog_parameters_set_transport_params() serializes peer transport parameters into a fixed 1024-byte stack buffer without bounds checking. When qlog is enabled, a remote peer can send sufficiently large transport parameters during the QUIC handshake to cause writes beyond the buffer boundary, resulting in a stack buffer overflow. This affects deployments that enable the qlog callback and process untrusted peer transport parameters. This issue has been fixed in version 1.22.1. If developers are unable to immediately upgrade, they can disable the qlog on client.</p></details></td>
+        <td>2026-04-16</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39313" target="_blank" rel="noopener">CVE-2026-39313</a></td>
+        <td>8.7</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-770</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.09</td>
+        <td><details><summary>mcp-framework is a framework for building Model Context Protocol (MCP) servers. ...</summary><p>mcp-framework is a framework for building Model Context Protocol (MCP) servers. In versions 0.2.21 and below, the readRequestBody() function in the HTTP transport concatenates request body chunks into a string with no size limit. Although a maxMessageSize configuration value exists, it is never enforced in readRequestBody(). A remote unauthenticated attacker can crash any mcp-framework HTTP server by sending a single large POST request to /mcp, causing memory exhaustion and denial of service. This issue has been fixed in version 0.2.22.</p></details></td>
+        <td>2026-04-16</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35469" target="_blank" rel="noopener">CVE-2026-35469</a></td>
+        <td>8.7</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-770</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.09</td>
+        <td><details><summary>spdystream is a Go library for multiplexing streams over SPDY connections. In ve...</summary><p>spdystream is a Go library for multiplexing streams over SPDY connections. In versions 0.5.0 and below, the SPDY/3 frame parser does not validate attacker-controlled counts and lengths before allocating memory. Three allocation paths are affected: the SETTINGS frame entry count, the header count in parseHeaderValueBlock, and individual header field sizes — all read as 32-bit integers and used directly as allocation sizes with no bounds checking. Because SPDY header blocks are zlib-compressed, a small on-the-wire payload can decompress into large attacker-controlled values. A remote peer that can send SPDY frames to a service using spdystream can exhaust process memory and cause an out-of-memory crash with a single crafted control frame. This issue has been fixed in version 0.5.1.</p></details></td>
+        <td>2026-04-16</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34164" target="_blank" rel="noopener">CVE-2026-34164</a></td>
+        <td>4.9</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-532</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.43</td>
+        <td><details><summary>Valtimo is an open-source business process automation platform. In versions 13.0...</summary><p>Valtimo is an open-source business process automation platform. In versions 13.0.0 through 13.21.0, the InboxHandlingService logs the full content of every incoming inbox message at INFO level. Inbox messages can contain highly sensitive information including personal data (PII), citizen identifiers (BSN), and case details. This data is exposed to anyone with access to application logs or any Valtimo user with the admin role through the Admin UI logging module. This issue has been fixed in version 13.22.0. If developers are unable to upgrade immediately, they can restrict access to application logs and adjust the log level for com.ritense.inbox to WARN or higher in their application configuration as a workaround.</p></details></td>
+        <td>2026-04-16</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33472" target="_blank" rel="noopener">CVE-2026-33472</a></td>
+        <td>4.8</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-305</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.36</td>
+        <td><details><summary>Cryptomator is an open-source client-side encryption application for cloud stora...</summary><p>Cryptomator is an open-source client-side encryption application for cloud storage. Version 1.19.1 contains a logic flaw in CheckHostTrustController.getAuthority() that allows an attacker to bypass the security fix for CVE-2026-32303. The method hardcodes the URI scheme based on port number, causing HTTPS URLs with port 80 to produce the same authority string as HTTP URLs, which defeats both the consistency check and the HTTP block validation. An attacker with write access to a cloud-synced vault.cryptomator file can craft a Hub configuration where apiBaseUrl and authEndpoint use HTTPS with port 80 to pass auto-trust validation, while tokenEndpoint uses plaintext HTTP. The vault is auto-trusted without user prompt, and a network-positioned attacker can intercept the OAuth token exchange to access the Cryptomator Hub API as the victim. This issue has been fixed in version 1.19.2.</p></details></td>
+        <td>2026-04-16</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40901" target="_blank" rel="noopener">CVE-2026-40901</a></td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-502</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.25</td>
+        <td><details><summary>DataEase is an open-source data visualization and analytics platform. Versions 2...</summary><p>DataEase is an open-source data visualization and analytics platform. Versions 2.10.20 and below ship the legacy velocity-1.7.jar, which pulls in commons-collections-3.2.1.jar containing the InvokerTransformer deserialization gadget chain. Quartz 2.3.2, also bundled in the application, deserializes job data BLOBs from the qrtz_job_details table using ObjectInputStream with no deserialization filter or class allowlist. An authenticated attacker who can write to the Quartz job table, such as through the previously described SQL injection in previewSql, can replace a scheduled job&#x27;s JOB_DATA with a malicious CommonsCollections6 gadget chain payload. When the Quartz cron trigger fires, the payload is deserialized and executes arbitrary commands as root inside the container, achieving full remote code execution. This issue has been fixed in version 2.10.21.</p></details></td>
+        <td>2026-04-16</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40900" target="_blank" rel="noopener">CVE-2026-40900</a></td>
+        <td>8.7</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-89</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.09</td>
+        <td><details><summary>DataEase is an open-source data visualization and analytics platform. Versions 2...</summary><p>DataEase is an open-source data visualization and analytics platform. Versions 2.10.20 and below contain a SQL injection vulnerability in the /de2api/datasetData/previewSql endpoint. The user-supplied SQL is wrapped in a subquery without validation that the input is a single SELECT statement. Combined with the JDBC blocklist bypass that allows enabling allowMultiQueries=true, an attacker can break out of the subquery and execute arbitrary stacked SQL statements, including UPDATE and other write operations, against the connected database. An authenticated attacker with access to valid datasource credentials can achieve full read and write access to the underlying database. This issue has been fixed in version 2.10.21.</p></details></td>
+        <td>2026-04-16</td>
+      </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40899" target="_blank" rel="noopener">CVE-2026-40899</a></td>
         <td>8.3</td>
@@ -21911,31 +22054,6 @@
         <td>2026-04-07</td>
       </tr>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34197" target="_blank" rel="noopener">CVE-2026-34197</a></td>
-        <td>8.8</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-20</td>
-        <td><span class="kev-yes">&#10003;</span></td>
-        <td>6.2% <small>p90</small></td>
-        <td>6.35</td>
-        <td><details><summary>Improper Input Validation, Improper Control of Generation of Code (&#x27;Code Injecti...</summary><p>Improper Input Validation, Improper Control of Generation of Code (&#x27;Code Injection&#x27;) vulnerability in Apache ActiveMQ Broker, Apache ActiveMQ.
-
-Apache ActiveMQ Classic exposes the Jolokia JMX-HTTP bridge at /api/jolokia/ on the web console. The default Jolokia access policy permits exec operations on all ActiveMQ MBeans (org.apache.activemq:*), including
-BrokerService.addNetworkConnector(String) and BrokerService.addConnector(String).
-
-An authenticated attacker can invoke these operations with a crafted discovery URI that triggers the VM transport&#x27;s brokerConfig parameter to load a remote Spring XML application context using ResourceXmlApplicationContext.
-Because Spring&#x27;s ResourceXmlApplicationContext instantiates all singleton beans before the BrokerService validates the configuration, arbitrary code execution occurs on the broker&#x27;s JVM through bean factory methods such as Runtime.exec().
-
-
-
-This issue affects Apache ActiveMQ Broker: before 5.19.4, from 6.0.0 before 6.2.3; Apache ActiveMQ All: before 5.19.4, from 6.0.0 before 6.2.3; Apache ActiveMQ: before 5.19.4, from 6.0.0 before 6.2.3.
-
-
-
-Users are recommended to upgrade to version 5.19.4 or 6.2.3, which fixes the issue</p></details></td>
-        <td>2026-04-07</td>
-      </tr>
-      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-3177" target="_blank" rel="noopener">CVE-2026-3177</a></td>
         <td>5.3</td>
         <td><span class="severity medium">MEDIUM</span></td>
@@ -32995,7 +33113,7 @@ Users are recommended to upgrade to version 5.19.4 or 6.2.3, which fixes the iss
       </div>
     </section>
     <section>
-      <h2>Previous Month — March 2026 <span class="count">(5750)</span></h2>
+      <h2>Previous Month — March 2026 <span class="count">(5734)</span></h2>
       <div class="table-wrapper">
         <table>
           <thead>
@@ -40567,30 +40685,6 @@ Users are recommended to upgrade to version 5.19.4 or 6.2.3, which fixes the iss
         <td>0.1% <small>p17</small></td>
         <td>5.25</td>
         <td><details><summary>Spring AI&#x27;s spring-ai-neo4j-store contains a Cypher injection vulnerability in N...</summary><p>Spring AI&#x27;s spring-ai-neo4j-store contains a Cypher injection vulnerability in Neo4jVectorFilterExpressionConverter. When a user-controlled string is passed as a filter expression key in Neo4jVectorFilterExpressionConverter of spring-ai-neo4j-store, doKey() embeds the key into a backtick-delimited Cypher property accessor (node.`metadata.`) after stripping only double quotes, without escaping embedded backticks.This issue affects Spring AI: from 1.0.0 before 1.0.5, from 1.1.0 before 1.1.4.</p></details></td>
-        <td>2026-03-27</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-22742" target="_blank" rel="noopener">CVE-2026-22742</a></td>
-        <td>8.6</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-918</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p12</small></td>
-        <td>6.02</td>
-        <td><details><summary>Spring AI&#x27;s spring-ai-bedrock-converse contains a Server-Side Request Forgery (S...</summary><p>Spring AI&#x27;s spring-ai-bedrock-converse contains a Server-Side Request Forgery (SSRF) vulnerability in BedrockProxyChatModel when processing multimodal messages that include user-supplied media URLs. Insufficient validation of those URLs allows an attacker to induce the server to issue HTTP requests to unintended internal or external destinations.
-This issue affects Spring AI: from 1.0.0 before 1.0.5, from 1.1.0 before 1.1.4.</p></details></td>
-        <td>2026-03-27</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-22738" target="_blank" rel="noopener">CVE-2026-22738</a></td>
-        <td>9.8</td>
-        <td><span class="severity critical">CRITICAL</span></td>
-        <td>CWE-917</td>
-        <td>&nbsp;</td>
-        <td>0.1% <small>p25</small></td>
-        <td>6.86</td>
-        <td><details><summary>In Spring AI, a SpEL injection vulnerability exists in SimpleVectorStore when a ...</summary><p>In Spring AI, a SpEL injection vulnerability exists in SimpleVectorStore when a user-supplied value is used as a filter expression key. A malicious actor could exploit this to execute arbitrary code. Only applications that use SimpleVectorStore and pass user-supplied input as a filter expression key are affected.
-This issue affects Spring AI: from 1.0.0 before 1.0.5, from 1.1.0 before 1.1.4.</p></details></td>
         <td>2026-03-27</td>
       </tr>
       <tr>
@@ -91183,18 +91277,6 @@ This issue affects Spring AI: from 1.0.0 before 1.0.5, from 1.1.0 before 1.1.4.<
         <td>2026-03-04</td>
       </tr>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-20021" target="_blank" rel="noopener">CVE-2026-20021</a></td>
-        <td>4.3</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-401</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p5</small></td>
-        <td>3.01</td>
-        <td><details><summary>A vulnerability in the OSPF protocol of Cisco Secure Firewall Adaptive Security ...</summary><p>A vulnerability in the OSPF protocol of Cisco Secure Firewall Adaptive Security Appliance (ASA) Software and Cisco Secure Firewall Threat Defense (FTD) Software could allow an authenticated, adjacent attacker to exhaust memory on an affected device, resulting in a denial of service (DoS) condition.
- This vulnerability is due to improperly validating input by the OSPF protocol when parsing packets. An attacker could exploit this vulnerability by by sending crafted OSPF packets to an affected device. A successful exploit could allow the attacker to exhaust memory on the affected device, resulting in a DoS condition.</p></details></td>
-        <td>2026-03-04</td>
-      </tr>
-      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-0847" target="_blank" rel="noopener">CVE-2026-0847</a></td>
         <td>8.6</td>
         <td><span class="severity high">HIGH</span></td>
@@ -91236,172 +91318,6 @@ This issue affects Spring AI: from 1.0.0 before 1.0.5, from 1.1.0 before 1.1.4.<
         <td>0.0% <small>p2</small></td>
         <td>3.85</td>
         <td><details><summary>Dell Device Management Agent (DDMA), versions prior to 26.02, contain an Incorre...</summary><p>Dell Device Management Agent (DDMA), versions prior to 26.02, contain an Incorrect Authorization vulnerability. A low privileged attacker with local access could potentially exploit this vulnerability, leading to Elevation of Privileges.</p></details></td>
-        <td>2026-03-04</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-20106" target="_blank" rel="noopener">CVE-2026-20106</a></td>
-        <td>5.3</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-401</td>
-        <td>&nbsp;</td>
-        <td>0.1% <small>p19</small></td>
-        <td>3.71</td>
-        <td><details><summary>A vulnerability in the Remote Access SSL VPN, HTTP management and MUS functional...</summary><p>A vulnerability in the Remote Access SSL VPN, HTTP management and MUS functionality, of Cisco Secure Firewall Adaptive Security Appliance (ASA) Software and Secure Firewall Threat Defense (FTD) Software could allow an unauthenticated, remote attacker to exhaust device memory resulting in a denial of service (DoS) condition requiring a manual reboot.
- This vulnerability is due to trusting user input without validation. An attacker could exploit this vulnerability by sending crafted packets to the Remote Access SSL VPN server. A successful exploit could allow the attacker to cause the device to stop responding, resulting in a DoS condition.</p></details></td>
-        <td>2026-03-04</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-20105" target="_blank" rel="noopener">CVE-2026-20105</a></td>
-        <td>7.7</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-401</td>
-        <td>&nbsp;</td>
-        <td>0.1% <small>p27</small></td>
-        <td>5.39</td>
-        <td><details><summary>A vulnerability in the Remote Access SSL VPN functionality of Cisco Secure Firew...</summary><p>A vulnerability in the Remote Access SSL VPN functionality of Cisco Secure Firewall Adaptive Security Appliance (ASA) Software and Secure Firewall Threat Defense (FTD) Software could allow an authenticated, remote attacker with a valid VPN connection to exhaust device memory resulting in a denial of service (DoS) condition.This does not affect the management or MUS interfaces.
- This vulnerability is due to trusting user input without validation. An attacker could exploit this vulnerability by sending crafted packets to the Remote Access SSL VPN server. A successful exploit could allow the attacker to cause the device to reload, resulting in a DoS condition.</p></details></td>
-        <td>2026-03-04</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-20103" target="_blank" rel="noopener">CVE-2026-20103</a></td>
-        <td>8.6</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-770</td>
-        <td>&nbsp;</td>
-        <td>0.1% <small>p21</small></td>
-        <td>6.02</td>
-        <td><details><summary>A vulnerability in the Remote Access SSL VPN functionality of Cisco Secure Firew...</summary><p>A vulnerability in the Remote Access SSL VPN functionality of Cisco Secure Firewall Adaptive Security Appliance (ASA) Software and Secure Firewall Threat Defense (FTD) Software could allow an unauthenticated, remote attacker to exhaust device memory resulting in a denial of service (DoS) condition to new Remote Access SSL VPN connections. This does not affect the management interface, though it may become temporarily unresponsive. 
- This vulnerability is due to trusting user input without validation. An attacker could exploit this vulnerability by sending crafted packets to the Remote Access SSL VPN server. A successful exploit could allow the attacker to cause the device web interface to stop responding, resulting in a DoS condition.</p></details></td>
-        <td>2026-03-04</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-20102" target="_blank" rel="noopener">CVE-2026-20102</a></td>
-        <td>6.1</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-79</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p6</small></td>
-        <td>4.27</td>
-        <td><details><summary>A vulnerability in the SAML 2.0 single sign-on (SSO) feature of Cisco Secure Fir...</summary><p>A vulnerability in the SAML 2.0 single sign-on (SSO) feature of Cisco Secure Firewall ASA Software and Cisco Secure Firewall Threat Defense (FTD) Software could allow an unauthenticated, remote attacker to conduct a cross-site scripting (XSS) attack against the SAML feature and access sensitive, browser-based information.
-
-This vulnerability is due to insufficient input validation of multiple HTTP parameters. An attacker could exploit this vulnerability by persuading a user to access a malicious link. A successful exploit could allow the attacker&amp;nbsp;to conduct a reflected XSS attack through an affected device.</p></details></td>
-        <td>2026-03-04</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-20101" target="_blank" rel="noopener">CVE-2026-20101</a></td>
-        <td>8.6</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-330</td>
-        <td>&nbsp;</td>
-        <td>0.1% <small>p35</small></td>
-        <td>6.02</td>
-        <td><details><summary>A vulnerability in the SAML 2.0 single sign-on (SSO) feature of Cisco Secure Fir...</summary><p>A vulnerability in the SAML 2.0 single sign-on (SSO) feature of Cisco Secure Firewall ASA Software and Secure FTD Software could allow an unauthenticated, remote attacker to cause the device to reload unexpectedly, resulting in a DoS condition.
- This vulnerability is due to insufficient error checking when processing SAML messages. An attacker could exploit this vulnerability by sending crafted SAML messages to the SAML service. A successful exploit could allow the attacker to cause the device to reload, resulting in a DoS condition.</p></details></td>
-        <td>2026-03-04</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-20050" target="_blank" rel="noopener">CVE-2026-20050</a></td>
-        <td>6.8</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-404</td>
-        <td>&nbsp;</td>
-        <td>0.2% <small>p35</small></td>
-        <td>4.76</td>
-        <td><details><summary>A vulnerability in the Do Not Decrypt exclusion feature of the SSL decryption fe...</summary><p>A vulnerability in the Do Not Decrypt exclusion feature of the SSL decryption feature of Cisco Secure Firewall Threat Defense (FTD) Software could allow an unauthenticated, remote attacker to cause a denial of service (DoS) condition on an affected device.
-
-This vulnerability is due to improper memory management during the inspection of TLS 1.2 encrypted traffic. An attacker could exploit this vulnerability by sending crafted TLS 1.2 encrypted traffic through an affected device. A successful exploit could allow the attacker to cause a reload of an affected device.
-Note: This vulnerability only affects traffic that is encrypted by TLS 1.2. Other versions of TLS are not affected.</p></details></td>
-        <td>2026-03-04</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-20049" target="_blank" rel="noopener">CVE-2026-20049</a></td>
-        <td>7.7</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-131</td>
-        <td>&nbsp;</td>
-        <td>0.2% <small>p39</small></td>
-        <td>5.40</td>
-        <td><details><summary>A vulnerability in the processing of Galois/Counter Mode (GCM)-encrypted Interne...</summary><p>A vulnerability in the processing of Galois/Counter Mode (GCM)-encrypted Internet Key Exchange version 2 (IKEv2) IPsec traffic of Cisco Secure Firewall Adaptive Security Appliance (ASA) Software and Cisco Secure Firewall Threat Defense (FTD) Software could allow an authenticated, remote attacker to cause a denial of service (DoS) condition on an affected device.
- This vulnerability is due to the allocation of an insufficiently sized block of memory. An attacker could exploit this vulnerability by sending crafted GCM-encrypted IPsec traffic to an affected device. A successful exploit could allow the attacker to cause an unexpected reload of the device, resulting in a DoS condition. To exploit this vulnerability, the attacker must have valid credentials to establish a VPN connection with the affected device.</p></details></td>
-        <td>2026-03-04</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-20039" target="_blank" rel="noopener">CVE-2026-20039</a></td>
-        <td>8.6</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-244</td>
-        <td>&nbsp;</td>
-        <td>0.2% <small>p39</small></td>
-        <td>6.03</td>
-        <td><details><summary>A vulnerability in the VPN web server of Cisco Secure Firewall Adaptive Security...</summary><p>A vulnerability in the VPN web server of Cisco Secure Firewall Adaptive Security Appliance (ASA) Software and Cisco Secure Firewall Threat Defense (FTD) Software could allow an unauthenticated, remote attacker to cause a denial of service (DoS) condition on an affected device.
-
-This vulnerability is due to ineffective memory management of the VPN web server. An attacker could exploit this vulnerability by sending a large number of&amp;nbsp;crafted HTTP requests to an affected device. A successful exploit could allow the attacker to cause the device to reload, resulting in a DoS condition.</p></details></td>
-        <td>2026-03-04</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-20015" target="_blank" rel="noopener">CVE-2026-20015</a></td>
-        <td>5.8</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-401</td>
-        <td>&nbsp;</td>
-        <td>0.1% <small>p29</small></td>
-        <td>4.06</td>
-        <td><details><summary>A vulnerability in the IKEv2 feature of Cisco Secure Firewall ASA Software and C...</summary><p>A vulnerability in the IKEv2 feature of Cisco Secure Firewall ASA Software and Cisco Secure FTD Software could allow an unauthenticated, remote attacker to cause a DoS condition on an affected device that may impact the availability of services to devices elsewhere in the network.
- This vulnerability is due to a memory leak when parsing IKEv2 packets. An attacker could exploit this vulnerability by sending crafted IKEv2 packets to an affected device. A successful exploit could allow the attacker to exhaust resources, causing a DoS condition that will eventually require the device to be manually reloaded.</p></details></td>
-        <td>2026-03-04</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-20014" target="_blank" rel="noopener">CVE-2026-20014</a></td>
-        <td>7.7</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-401</td>
-        <td>&nbsp;</td>
-        <td>0.2% <small>p39</small></td>
-        <td>5.40</td>
-        <td><details><summary>A vulnerability in the IKEv2 feature of Cisco Secure Firewall ASA Software and C...</summary><p>A vulnerability in the IKEv2 feature of Cisco Secure Firewall ASA Software and Cisco Secure FTD Software could allow an authenticated, remote attacker with valid VPN user credentials to cause a DoS condition on an affected device that may also impact the availability of services to devices elsewhere in the network.
- This vulnerability is due to the improper processing of IKEv2 packets. An attacker could exploit this vulnerability by sending crafted, authenticated IKEv2 packets to an affected device. A successful exploit could allow the attacker to exhaust memory, causing the device to reload.</p></details></td>
-        <td>2026-03-04</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-20013" target="_blank" rel="noopener">CVE-2026-20013</a></td>
-        <td>5.8</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-401</td>
-        <td>&nbsp;</td>
-        <td>0.1% <small>p33</small></td>
-        <td>4.06</td>
-        <td><details><summary>A vulnerability in the IKEv2 feature of Cisco Secure Firewall ASA Software and C...</summary><p>A vulnerability in the IKEv2 feature of Cisco Secure Firewall ASA Software and Cisco Secure FTD Software could allow an unauthenticated, remote attacker to cause a DoS condition on an affected device that may also impact the availability of services to devices elsewhere in the network.
- This vulnerability is due to memory exhaustion caused by not freeing memory during IKEv2 packet processing. An attacker could exploit this vulnerability by sending crafted IKEv2 packets to an affected device. A successful exploit could allow the attacker to exhaust resources, causing a DoS condition that will eventually require the device to manually reload.</p></details></td>
-        <td>2026-03-04</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-20009" target="_blank" rel="noopener">CVE-2026-20009</a></td>
-        <td>5.3</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-138</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p12</small></td>
-        <td>3.71</td>
-        <td><details><summary>A vulnerability in the implementation of the proprietary SSH stack with SSH key-...</summary><p>A vulnerability in the implementation of the proprietary SSH stack with SSH key-based authentication in Cisco Secure Firewall Adaptive Security Appliance (ASA) Software could allow an unauthenticated, remote attacker to log in to a Cisco Secure Firewall ASA device and execute commands as a specific user.
-
-This vulnerability is due to insufficient validation of user input during the SSH authentication phase. An attacker could exploit this vulnerability by submitting crafted input during SSH authentication to an affected device. A successful exploit could allow the attacker to log in to the device as a specific user without the private SSH key of that user. To exploit this vulnerability, the attacker must possess a valid username and the associated public key. The private key is not required.
-Notes:
-
-Exploitation of this vulnerability does not provide the attacker with root access.
-The authentication, authorization, and accounting (AAA) configuration command auto-enable is not affected by this vulnerability.&amp;nbsp;&amp;nbsp;</p></details></td>
-        <td>2026-03-04</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-20008" target="_blank" rel="noopener">CVE-2026-20008</a></td>
-        <td>6.0</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-78</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p8</small></td>
-        <td>4.20</td>
-        <td><details><summary>A vulnerability in a small subset of CLI commands that are used on Cisco Secure ...</summary><p>A vulnerability in a small subset of CLI commands that are used on Cisco Secure Firewall Adaptive Security Appliance (ASA) Software and Cisco Secure Firewall Threat Defense (FTD) Software could allow an authenticated, local attacker to craft Lua code that could be used on the underlying operating system as&amp;nbsp;root.
-
-This vulnerability exists because user-provided input is not properly sanitized. An attacker could exploit this vulnerability by crafting valid Lua code and submitting it as a malicious parameter for a CLI command. A successful exploit could allow the attacker to inject Lua code, which could lead to arbitrary code execution as the root user. To exploit this vulnerability, an attacker must have valid&amp;nbsp;Administrator&amp;nbsp;credentials.</p></details></td>
         <td>2026-03-04</td>
       </tr>
       <tr>

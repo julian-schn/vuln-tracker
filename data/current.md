@@ -1,9 +1,22 @@
 # CVEs — April 2026
 
-_2994 vulnerabilities_
+_3006 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
+| [CVE-2026-41113](https://nvd.nist.gov/vuln/detail/CVE-2026-41113) | 8.1 | HIGH | CWE-78 | No | — | 5.67 | 2026-04-16 | sagredo qmail before 2026.04.07 allows tls_quit remote code execution because of popen in notlshosts_auto in qmail-remot... |
+| [CVE-2026-40308](https://nvd.nist.gov/vuln/detail/CVE-2026-40308) | 8.8 | HIGH | CWE-639 | No | — | 6.16 | 2026-04-16 | My Calendar is a WordPress plugin for managing calendar events. In versions 3.7.6 and below, the mc_ajax_mcjs_action AJA... |
+| [CVE-2026-40249](https://nvd.nist.gov/vuln/detail/CVE-2026-40249) | 6.9 | MEDIUM | CWE-636 | No | — | 4.83 | 2026-04-16 | free5GC is an open-source implementation of the 5G core network. In versions 4.2.1 and below of the UDR service, the PUT... |
+| [CVE-2026-40248](https://nvd.nist.gov/vuln/detail/CVE-2026-40248) | 8.7 | HIGH | CWE-285 | No | — | 6.09 | 2026-04-16 | free5GC is an open-source implementation of the 5G core network. In versions 4.2.1 and below of the UDR service, the han... |
+| [CVE-2026-40247](https://nvd.nist.gov/vuln/detail/CVE-2026-40247) | 8.7 | HIGH | CWE-285 | No | — | 6.09 | 2026-04-16 | free5GC is an open-source implementation of the 5G core network. In versions 4.2.1 and below of the UDR service, the han... |
+| [CVE-2026-40246](https://nvd.nist.gov/vuln/detail/CVE-2026-40246) | 8.7 | HIGH | CWE-285 | No | — | 6.09 | 2026-04-16 | free5GC is an open-source implementation of the 5G core network. In versions 1.4.2 and below of the UDR service, the han... |
+| [CVE-2026-40170](https://nvd.nist.gov/vuln/detail/CVE-2026-40170) | 7.5 | HIGH | CWE-121 | No | — | 5.25 | 2026-04-16 | ngtcp2 is a C implementation of the IETF QUIC protocol. In versions prior to 1.22.1, ngtcp2_qlog_parameters_set_transpor... |
+| [CVE-2026-39313](https://nvd.nist.gov/vuln/detail/CVE-2026-39313) | 8.7 | HIGH | CWE-770 | No | — | 6.09 | 2026-04-16 | mcp-framework is a framework for building Model Context Protocol (MCP) servers. In versions 0.2.21 and below, the readRe... |
+| [CVE-2026-35469](https://nvd.nist.gov/vuln/detail/CVE-2026-35469) | 8.7 | HIGH | CWE-770 | No | — | 6.09 | 2026-04-16 | spdystream is a Go library for multiplexing streams over SPDY connections. In versions 0.5.0 and below, the SPDY/3 frame... |
+| [CVE-2026-34164](https://nvd.nist.gov/vuln/detail/CVE-2026-34164) | 4.9 | MEDIUM | CWE-532 | No | — | 3.43 | 2026-04-16 | Valtimo is an open-source business process automation platform. In versions 13.0.0 through 13.21.0, the InboxHandlingSer... |
+| [CVE-2026-33472](https://nvd.nist.gov/vuln/detail/CVE-2026-33472) | 4.8 | MEDIUM | CWE-305 | No | — | 3.36 | 2026-04-16 | Cryptomator is an open-source client-side encryption application for cloud storage. Version 1.19.1 contains a logic flaw... |
+| [CVE-2026-40901](https://nvd.nist.gov/vuln/detail/CVE-2026-40901) | 7.5 | HIGH | CWE-502 | No | — | 5.25 | 2026-04-16 | DataEase is an open-source data visualization and analytics platform. Versions 2.10.20 and below ship the legacy velocit... |
+| [CVE-2026-40900](https://nvd.nist.gov/vuln/detail/CVE-2026-40900) | 8.7 | HIGH | CWE-89 | No | — | 6.09 | 2026-04-16 | DataEase is an open-source data visualization and analytics platform. Versions 2.10.20 and below contain a SQL injection... |
 | [CVE-2026-40899](https://nvd.nist.gov/vuln/detail/CVE-2026-40899) | 8.3 | HIGH | CWE-183 | No | — | 5.81 | 2026-04-16 | DataEase is an open-source data visualization and analytics platform. Versions 2.10.20 and below contain a JDBC paramete... |
 | [CVE-2026-33207](https://nvd.nist.gov/vuln/detail/CVE-2026-33207) | 8.6 | HIGH | CWE-89 | No | — | 6.02 | 2026-04-16 | DataEase is an open-source data visualization and analytics platform. Versions 2.10.20 and below contain a SQL injection... |
 | [CVE-2026-33122](https://nvd.nist.gov/vuln/detail/CVE-2026-33122) | 8.6 | HIGH | CWE-89 | No | — | 6.02 | 2026-04-16 | DataEase is an open-source data visualization and analytics platform. Versions 2.10.20 and below contain a SQL injection... |
@@ -1992,7 +2005,6 @@ _2994 vulnerabilities_
 | [CVE-2026-34903](https://nvd.nist.gov/vuln/detail/CVE-2026-34903) | 5.4 | MEDIUM | CWE-862 | No | 0.0% | 3.78 | 2026-04-07 | Missing Authorization vulnerability in OceanWP Ocean Extra allows Exploiting Incorrectly Configured Access Control Secur... |
 | [CVE-2026-34899](https://nvd.nist.gov/vuln/detail/CVE-2026-34899) | 5.3 | MEDIUM | CWE-862 | No | 0.0% | 3.71 | 2026-04-07 | Missing Authorization vulnerability in Eniture technology LTL Freight Quotes – Worldwide Express Edition allows Exploiti... |
 | [CVE-2026-34896](https://nvd.nist.gov/vuln/detail/CVE-2026-34896) | 7.5 | HIGH | CWE-352 | No | 0.0% | 5.25 | 2026-04-07 | Cross-Site Request Forgery (CSRF) vulnerability in Analytify Under Construction, Coming Soon & Maintenance Mode allows C... |
-| [CVE-2026-34197](https://nvd.nist.gov/vuln/detail/CVE-2026-34197) | 8.8 | HIGH | CWE-20 | Yes | 6.2% | 6.35 | 2026-04-07 | Improper Input Validation, Improper Control of Generation of Code ('Code Injection') vulnerability in Apache ActiveMQ Br... |
 | [CVE-2026-3177](https://nvd.nist.gov/vuln/detail/CVE-2026-3177) | 5.3 | MEDIUM | CWE-345 | No | 0.0% | 3.71 | 2026-04-07 | The Charitable – Donation Plugin for WordPress – Fundraising with Recurring Donations & More plugin for WordPress is vul... |
 | [CVE-2026-5465](https://nvd.nist.gov/vuln/detail/CVE-2026-5465) | 8.8 | HIGH | CWE-639 | No | 0.1% | 6.16 | 2026-04-07 | The Booking for Appointments and Events Calendar – Amelia plugin for WordPress is vulnerable to Insecure Direct Object R... |
 | [CVE-2026-4079](https://nvd.nist.gov/vuln/detail/CVE-2026-4079) | 6.5 | MEDIUM | CWE-89 | No | 0.0% | 4.55 | 2026-04-07 | The SQL Chart Builder WordPress plugin before 2.3.8 does not properly escape user input as it is concatened to SQL queri... |
