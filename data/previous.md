@@ -1,6 +1,6 @@
 # CVEs — March 2026
 
-_5734 vulnerabilities_
+_5736 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
@@ -2465,6 +2465,8 @@ _5734 vulnerabilities_
 | [CVE-2026-29098](https://nvd.nist.gov/vuln/detail/CVE-2026-29098) | 4.9 | MEDIUM | CWE-23 | No | 0.1% | 3.43 | 2026-03-19 | SuiteCRM is an open-source, enterprise-ready Customer Relationship Management (CRM) software application. Prior to versi... |
 | [CVE-2026-29097](https://nvd.nist.gov/vuln/detail/CVE-2026-29097) | 7.1 | HIGH | CWE-918 | No | 0.0% | 4.97 | 2026-03-19 | SuiteCRM is an open-source, enterprise-ready Customer Relationship Management (CRM) software application. Versions prior... |
 | [CVE-2026-29096](https://nvd.nist.gov/vuln/detail/CVE-2026-29096) | 8.1 | HIGH | CWE-89 | No | 0.0% | 5.67 | 2026-03-19 | SuiteCRM is an open-source, enterprise-ready Customer Relationship Management (CRM) software application. Prior to versi... |
+| [CVE-2026-22732](https://nvd.nist.gov/vuln/detail/CVE-2026-22732) | 9.1 | CRITICAL | CWE-425 | No | 0.0% | 6.37 | 2026-03-19 | When applications specify HTTP response headers for servlet applications using Spring Security, there is the possibility... |
+| [CVE-2026-22731](https://nvd.nist.gov/vuln/detail/CVE-2026-22731) | 8.2 | HIGH | CWE-288 | No | 0.1% | 5.74 | 2026-03-19 | Spring Boot applications with Actuator can be vulnerable to an "Authentication Bypass" vulnerability when an application... |
 | [CVE-2026-4342](https://nvd.nist.gov/vuln/detail/CVE-2026-4342) | 8.8 | HIGH | CWE-20 | No | 0.0% | 6.16 | 2026-03-19 | A security issue was discovered in ingress-nginx where a combination of Ingress annotations can be used to inject config... |
 | [CVE-2026-4159](https://nvd.nist.gov/vuln/detail/CVE-2026-4159) | 1.2 | LOW | CWE-125 | No | 0.0% | 0.84 | 2026-03-19 | 1-byte OOB heap read in wc_PKCS7_DecodeEnvelopedData via zero-length encrypted content. A vulnerability existed in wolfS... |
 | [CVE-2026-33410](https://nvd.nist.gov/vuln/detail/CVE-2026-33410) | 5.4 | MEDIUM | CWE-863 | No | 0.0% | 3.78 | 2026-03-19 | Discourse is an open-source discussion platform. Versions prior to 2026.3.0-latest.1, 2026.2.1, and 2026.1.2 have two au... |
