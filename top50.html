@@ -11,7 +11,7 @@
     <header>
       <h1>vuln-tracker — Top 50</h1>
       <p class="subtitle">The 50 most important CVEs from the current and previous month, ranked by VAP score (70% CVSS + 30% EPSS)</p>
-      <p class="last-updated">Last updated: 2026-04-16 11:10 UTC</p>
+      <p class="last-updated">Last updated: 2026-04-16 14:01 UTC</p>
     </header>
     <nav>
       <a href="index.html">&larr; All CVEs</a>
@@ -184,6 +184,17 @@
         <td>2026-03-31</td>
       </tr>
       <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-27944" target="_blank" rel="noopener">CVE-2026-27944</a></td>
+        <td>9.8</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-306</td>
+        <td>&nbsp;</td>
+        <td>6.4% <small>p91</small></td>
+        <td>7.05</td>
+        <td><details><summary>Nginx UI is a web user interface for the Nginx web server. Prior to version 2.3....</summary><p>Nginx UI is a web user interface for the Nginx web server. Prior to version 2.3.3, the /api/backup endpoint is accessible without authentication and discloses the encryption keys required to decrypt the backup in the X-Backup-Security response header. This allows an unauthenticated attacker to download a full system backup containing sensitive data (user credentials, session tokens, SSL private keys, Nginx configurations) and decrypt it immediately. This issue has been patched in version 2.3.3.</p></details></td>
+        <td>2026-03-05</td>
+      </tr>
+      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-28775" target="_blank" rel="noopener">CVE-2026-28775</a></td>
         <td>10.0</td>
         <td><span class="severity critical">CRITICAL</span></td>
@@ -206,6 +217,17 @@
         <td>2026-03-05</td>
       </tr>
       <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40175" target="_blank" rel="noopener">CVE-2026-40175</a></td>
+        <td>10.0</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-113</td>
+        <td>&nbsp;</td>
+        <td>0.5% <small>p67</small></td>
+        <td>7.02</td>
+        <td><details><summary>Axios is a promise based HTTP client for the browser and Node.js. Prior to 1.15....</summary><p>Axios is a promise based HTTP client for the browser and Node.js. Prior to 1.15.0 and 0.3.1, the Axios library is vulnerable to a specific &quot;Gadget&quot; attack chain that allows Prototype Pollution in any third-party dependency to be escalated into Remote Code Execution (RCE) or Full Cloud Compromise (via AWS IMDSv2 bypass). This vulnerability is fixed in 1.15.0 and 0.3.1.</p></details></td>
+        <td>2026-04-10</td>
+      </tr>
+      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-0848" target="_blank" rel="noopener">CVE-2026-0848</a></td>
         <td>10.0</td>
         <td><span class="severity critical">CRITICAL</span></td>
@@ -226,17 +248,6 @@
         <td>7.01</td>
         <td><details><summary>The command auto-approval module in CodeRider-Kilo contains an OS Command Inject...</summary><p>The command auto-approval module in CodeRider-Kilo contains an OS Command Injection vulnerability, rendering its whitelist security mechanism ineffective. The vulnerability stems from the incorrect use of an incompatible command parser (the Unix-based shell-quote library) to analyze commands on the Windows platform, coupled with a failure to correctly handle Windows CMD-specific escape sequences (^). Attackers can exploit this discrepancy between the parsing logic and the execution environment by constructing payloads such as git log ^&quot; &amp; malicious_command ^&quot;. The CodeRider-Kilo parser is deceived by the escape characters, misinterpreting the malicious command connector (&amp;) as being within a protected string argument and thus auto-approving the command. However, the underlying Windows CMD interpreter ignores the escaped quotes, parsing and executing the subsequent malicious command directly. This allows attackers to achieve arbitrary Remote Code Execution (RCE) after bypassing what appears to be a legitimate Git whitelist check.</p></details></td>
         <td>2026-03-27</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40175" target="_blank" rel="noopener">CVE-2026-40175</a></td>
-        <td>10.0</td>
-        <td><span class="severity critical">CRITICAL</span></td>
-        <td>CWE-113</td>
-        <td>&nbsp;</td>
-        <td>0.4% <small>p60</small></td>
-        <td>7.01</td>
-        <td><details><summary>Axios is a promise based HTTP client for the browser and Node.js. Prior to 1.15....</summary><p>Axios is a promise based HTTP client for the browser and Node.js. Prior to 1.15.0 and 0.3.1, the Axios library is vulnerable to a specific &quot;Gadget&quot; attack chain that allows Prototype Pollution in any third-party dependency to be escalated into Remote Code Execution (RCE) or Full Cloud Compromise (via AWS IMDSv2 bypass). This vulnerability is fixed in 1.15.0 and 0.3.1.</p></details></td>
-        <td>2026-04-10</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-24898" target="_blank" rel="noopener">CVE-2026-24898</a></td>
@@ -577,17 +588,6 @@
         <td>0.0% <small>p5</small></td>
         <td>7.00</td>
         <td><details><summary>There is a possible out of bounds write due to a missing bounds check. This coul...</summary><p>There is a possible out of bounds write due to a missing bounds check. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.</p></details></td>
-        <td>2026-03-10</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-48611" target="_blank" rel="noopener">CVE-2025-48611</a></td>
-        <td>10.0</td>
-        <td><span class="severity critical">CRITICAL</span></td>
-        <td>CWE-120</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p5</small></td>
-        <td>7.00</td>
-        <td><details><summary>In DeviceId of DeviceId.java, there is a possible desync in persistence due to a...</summary><p>In DeviceId of DeviceId.java, there is a possible desync in persistence due to a missing bounds check. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.</p></details></td>
         <td>2026-03-10</td>
       </tr>
             </tbody>
