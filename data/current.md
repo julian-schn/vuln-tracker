@@ -1,11 +1,14 @@
 # CVEs — April 2026
 
-_2937 vulnerabilities_
+_2940 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
+| [CVE-2025-6024](https://nvd.nist.gov/vuln/detail/CVE-2025-6024) | 6.1 | MEDIUM | CWE-79 | No | — | 4.27 | 2026-04-16 | The authentication endpoint fails to encode user-supplied input before rendering it in the web page, allowing for script... |
+| [CVE-2024-8010](https://nvd.nist.gov/vuln/detail/CVE-2024-8010) | 3.5 | LOW | CWE-611 | No | — | 2.45 | 2026-04-16 | The component accepts XML input through the publisher without disabling external entity resolution. This allows maliciou... |
+| [CVE-2024-4867](https://nvd.nist.gov/vuln/detail/CVE-2024-4867) | 5.4 | MEDIUM | CWE-79 | No | — | 3.78 | 2026-04-16 | The WSO2 API Manager developer portal accepts user-supplied input without enforcing expected validation constraints or p... |
+| [CVE-2024-10242](https://nvd.nist.gov/vuln/detail/CVE-2024-10242) | 6.1 | MEDIUM | CWE-79 | No | — | 4.27 | 2026-04-16 | The authentication endpoint fails to adequately validate user-supplied input before reflecting it back in the response.... |
 | [CVE-2026-23772](https://nvd.nist.gov/vuln/detail/CVE-2026-23772) | 7.3 | HIGH | CWE-269 | No | — | 5.11 | 2026-04-16 | Dell Storage Manager - Replay Manager for Microsoft Servers, version(s) 8.0, contain(s) an Improper Privilege Management... |
-| [CVE-2024-2374](https://nvd.nist.gov/vuln/detail/CVE-2024-2374) | 7.5 | HIGH | CWE-611 | No | — | 5.25 | 2026-04-16 | The XML parsers within multiple WSO2 products accept user-supplied XML data without properly configuring to prevent the... |
 | [CVE-2026-0718](https://nvd.nist.gov/vuln/detail/CVE-2026-0718) | 5.3 | MEDIUM | CWE-862 | No | — | 3.71 | 2026-04-16 | The Post Grid Gutenberg Blocks for News, Magazines, Blog Websites – PostX plugin for WordPress is vulnerable to unauthor... |
 | [CVE-2025-14868](https://nvd.nist.gov/vuln/detail/CVE-2025-14868) | 8.8 | HIGH | CWE-22 | No | — | 6.16 | 2026-04-16 | The Career Section plugin for WordPress is vulnerable to Cross-Site Request Forgery leading to Path Traversal and Arbitr... |
 | [CVE-2026-41035](https://nvd.nist.gov/vuln/detail/CVE-2026-41035) | 7.4 | HIGH | CWE-130 | No | — | 5.18 | 2026-04-16 | In rsync 3.0.1 through 3.4.1, receive_xattr relies on an untrusted length value during a qsort call, leading to a receiv... |
@@ -78,8 +81,8 @@ _2937 vulnerabilities_
 | [CVE-2026-6360](https://nvd.nist.gov/vuln/detail/CVE-2026-6360) | 8.8 | HIGH | CWE-416 | No | — | 6.16 | 2026-04-15 | Use after free in FileSystem in Google Chrome prior to 147.0.7727.101 allowed a remote attacker to potentially exploit o... |
 | [CVE-2026-6359](https://nvd.nist.gov/vuln/detail/CVE-2026-6359) | 8.8 | HIGH | CWE-416 | No | — | 6.16 | 2026-04-15 | Use after free in Video in Google Chrome on Windows prior to 147.0.7727.101 allowed a remote attacker who had compromise... |
 | [CVE-2026-6358](https://nvd.nist.gov/vuln/detail/CVE-2026-6358) | 8.8 | HIGH | CWE-416 | No | — | 6.16 | 2026-04-15 | Use after free in XR in Google Chrome on Android prior to 147.0.7727.101 allowed a remote attacker to perform an out of... |
-| [CVE-2026-6319](https://nvd.nist.gov/vuln/detail/CVE-2026-6319) | 0.0 | NONE | CWE-416 | No | — | 0.00 | 2026-04-15 | Use after free in Payments in Google Chrome on Android prior to 147.0.7727.101 allowed a remote attacker who convinced a... |
-| [CVE-2026-6318](https://nvd.nist.gov/vuln/detail/CVE-2026-6318) | 0.0 | NONE | CWE-416 | No | — | 0.00 | 2026-04-15 | Use after free in Codecs in Google Chrome prior to 147.0.7727.101 allowed a remote attacker to execute arbitrary code in... |
+| [CVE-2026-6319](https://nvd.nist.gov/vuln/detail/CVE-2026-6319) | 7.5 | HIGH | CWE-416 | No | — | 5.25 | 2026-04-15 | Use after free in Payments in Google Chrome on Android prior to 147.0.7727.101 allowed a remote attacker who convinced a... |
+| [CVE-2026-6318](https://nvd.nist.gov/vuln/detail/CVE-2026-6318) | 8.8 | HIGH | CWE-416 | No | — | 6.16 | 2026-04-15 | Use after free in Codecs in Google Chrome prior to 147.0.7727.101 allowed a remote attacker to execute arbitrary code in... |
 | [CVE-2026-6317](https://nvd.nist.gov/vuln/detail/CVE-2026-6317) | 8.8 | HIGH | CWE-416 | No | — | 6.16 | 2026-04-15 | Use after free in Cast in Google Chrome prior to 147.0.7727.101 allowed a remote attacker to execute arbitrary code via... |
 | [CVE-2026-6316](https://nvd.nist.gov/vuln/detail/CVE-2026-6316) | 8.8 | HIGH | CWE-416 | No | — | 6.16 | 2026-04-15 | Use after free in Forms in Google Chrome prior to 147.0.7727.101 allowed a remote attacker to execute arbitrary code ins... |
 | [CVE-2026-6315](https://nvd.nist.gov/vuln/detail/CVE-2026-6315) | 8.8 | HIGH | CWE-416 | No | — | 6.16 | 2026-04-15 | Use after free in Permissions in Google Chrome on Android prior to 147.0.7727.101 allowed a remote attacker who convince... |
@@ -89,12 +92,12 @@ _2937 vulnerabilities_
 | [CVE-2026-6311](https://nvd.nist.gov/vuln/detail/CVE-2026-6311) | 8.3 | HIGH | CWE-457 | No | — | 5.81 | 2026-04-15 | Uninitialized Use in Accessibility in Google Chrome on Windows prior to 147.0.7727.101 allowed a remote attacker who had... |
 | [CVE-2026-6310](https://nvd.nist.gov/vuln/detail/CVE-2026-6310) | 8.3 | HIGH | CWE-416 | No | — | 5.81 | 2026-04-15 | Use after free in Dawn in Google Chrome prior to 147.0.7727.101 allowed a remote attacker who had compromised the render... |
 | [CVE-2026-6309](https://nvd.nist.gov/vuln/detail/CVE-2026-6309) | 8.3 | HIGH | CWE-416 | No | — | 5.81 | 2026-04-15 | Use after free in Viz in Google Chrome prior to 147.0.7727.101 allowed a remote attacker who had compromised the rendere... |
-| [CVE-2026-6308](https://nvd.nist.gov/vuln/detail/CVE-2026-6308) | 0.0 | NONE | CWE-125 | No | — | 0.00 | 2026-04-15 | Out of bounds read in Media in Google Chrome prior to 147.0.7727.101 allowed a remote attacker who convinced a user to e... |
+| [CVE-2026-6308](https://nvd.nist.gov/vuln/detail/CVE-2026-6308) | 7.5 | HIGH | CWE-125 | No | — | 5.25 | 2026-04-15 | Out of bounds read in Media in Google Chrome prior to 147.0.7727.101 allowed a remote attacker who convinced a user to e... |
 | [CVE-2026-6307](https://nvd.nist.gov/vuln/detail/CVE-2026-6307) | 8.8 | HIGH | CWE-843 | No | — | 6.16 | 2026-04-15 | Type Confusion in Turbofan in Google Chrome prior to 147.0.7727.101 allowed a remote attacker to execute arbitrary code... |
-| [CVE-2026-6306](https://nvd.nist.gov/vuln/detail/CVE-2026-6306) | 0.0 | NONE | CWE-122 | No | — | 0.00 | 2026-04-15 | Heap buffer overflow in PDFium in Google Chrome prior to 147.0.7727.101 allowed a remote attacker to execute arbitrary c... |
+| [CVE-2026-6306](https://nvd.nist.gov/vuln/detail/CVE-2026-6306) | 8.8 | HIGH | CWE-122 | No | — | 6.16 | 2026-04-15 | Heap buffer overflow in PDFium in Google Chrome prior to 147.0.7727.101 allowed a remote attacker to execute arbitrary c... |
 | [CVE-2026-6305](https://nvd.nist.gov/vuln/detail/CVE-2026-6305) | 8.8 | HIGH | CWE-122 | No | — | 6.16 | 2026-04-15 | Heap buffer overflow in PDFium in Google Chrome prior to 147.0.7727.101 allowed a remote attacker to execute arbitrary c... |
 | [CVE-2026-6304](https://nvd.nist.gov/vuln/detail/CVE-2026-6304) | 8.3 | HIGH | CWE-416 | No | — | 5.81 | 2026-04-15 | Use after free in Graphite in Google Chrome prior to 147.0.7727.101 allowed a remote attacker who had compromised the re... |
-| [CVE-2026-6303](https://nvd.nist.gov/vuln/detail/CVE-2026-6303) | 0.0 | NONE | CWE-416 | No | — | 0.00 | 2026-04-15 | Use after free in Codecs in Google Chrome prior to 147.0.7727.101 allowed a remote attacker to execute arbitrary code in... |
+| [CVE-2026-6303](https://nvd.nist.gov/vuln/detail/CVE-2026-6303) | 8.8 | HIGH | CWE-416 | No | — | 6.16 | 2026-04-15 | Use after free in Codecs in Google Chrome prior to 147.0.7727.101 allowed a remote attacker to execute arbitrary code in... |
 | [CVE-2026-6302](https://nvd.nist.gov/vuln/detail/CVE-2026-6302) | 8.8 | HIGH | CWE-416 | No | — | 6.16 | 2026-04-15 | Use after free in Video in Google Chrome prior to 147.0.7727.101 allowed a remote attacker to execute arbitrary code ins... |
 | [CVE-2026-6301](https://nvd.nist.gov/vuln/detail/CVE-2026-6301) | 8.8 | HIGH | CWE-843 | No | — | 6.16 | 2026-04-15 | Type Confusion in Turbofan in Google Chrome prior to 147.0.7727.101 allowed a remote attacker to execute arbitrary code... |
 | [CVE-2026-6300](https://nvd.nist.gov/vuln/detail/CVE-2026-6300) | 8.8 | HIGH | CWE-416 | No | — | 6.16 | 2026-04-15 | Use after free in CSS in Google Chrome prior to 147.0.7727.101 allowed a remote attacker to execute arbitrary code insid... |

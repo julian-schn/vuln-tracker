@@ -11,7 +11,7 @@
     <header>
       <h1>vuln-tracker</h1>
       <p class="subtitle">CVEs from the National Vulnerability Database — current and previous month</p>
-      <p class="last-updated">Last updated: 2026-04-16 09:25 UTC</p>
+      <p class="last-updated">Last updated: 2026-04-16 11:10 UTC</p>
     </header>
     <nav>
       <a href="top50.html">&#9733; Top 50</a>
@@ -25,7 +25,7 @@
     </nav>
     <main>
     <section>
-      <h2>Current Month — April 2026 <span class="count">(2937)</span></h2>
+      <h2>Current Month — April 2026 <span class="count">(2940)</span></h2>
       <div class="table-wrapper">
         <table>
           <thead>
@@ -43,6 +43,57 @@
           </thead>
           <tbody>
       <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-6024" target="_blank" rel="noopener">CVE-2025-6024</a></td>
+        <td>6.1</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.27</td>
+        <td><details><summary>The authentication endpoint fails to encode user-supplied input before rendering...</summary><p>The authentication endpoint fails to encode user-supplied input before rendering it in the web page, allowing for script injection.
+An attacker can leverage this by injecting malicious scripts into the authentication endpoint. This can result in the user&#x27;s browser being redirected to a malicious website, manipulation of the web page&#x27;s user interface, or the retrieval of information from the browser. However, session hijacking is not possible due to the httpOnly flag protecting session-related cookies.</p></details></td>
+        <td>2026-04-16</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2024-8010" target="_blank" rel="noopener">CVE-2024-8010</a></td>
+        <td>3.5</td>
+        <td><span class="severity low">LOW</span></td>
+        <td>CWE-611</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>2.45</td>
+        <td><details><summary>The component accepts XML input through the publisher without disabling external...</summary><p>The component accepts XML input through the publisher without disabling external entity resolution. This allows malicious actors to submit a crafted XML payload that exploits the unescaped external entity references.
+
+By leveraging this vulnerability, a malicious actor can read confidential files from the product&#x27;s file system or access limited HTTP resources reachable via HTTP GET requests to the vulnerable product.</p></details></td>
+        <td>2026-04-16</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2024-4867" target="_blank" rel="noopener">CVE-2024-4867</a></td>
+        <td>5.4</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.78</td>
+        <td><details><summary>The WSO2 API Manager developer portal accepts user-supplied input without enforc...</summary><p>The WSO2 API Manager developer portal accepts user-supplied input without enforcing expected validation constraints or proper output encoding. This deficiency allows a malicious actor to inject script content that is executed within the context of a user&#x27;s browser.
+
+By leveraging this cross-site scripting vulnerability, a malicious actor can cause the browser to redirect to a malicious website, make changes to the UI of the web page, or retrieve information from the browser. However, session hijacking is not possible as all session-related sensitive cookies are protected by the httpOnly flag.</p></details></td>
+        <td>2026-04-16</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2024-10242" target="_blank" rel="noopener">CVE-2024-10242</a></td>
+        <td>6.1</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.27</td>
+        <td><details><summary>The authentication endpoint fails to adequately validate user-supplied input bef...</summary><p>The authentication endpoint fails to adequately validate user-supplied input before reflecting it back in the response. This allows an attacker to inject malicious script payloads into the input parameters, which are then executed by the victim&#x27;s browser.
+
+Successful exploitation can enable an attacker to redirect the user&#x27;s browser to a malicious website, modify the UI of the web page, or retrieve information from the browser. However, the impact is limited as session-related sensitive cookies are protected by the httpOnly flag, preventing session hijacking.</p></details></td>
+        <td>2026-04-16</td>
+      </tr>
+      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-23772" target="_blank" rel="noopener">CVE-2026-23772</a></td>
         <td>7.3</td>
         <td><span class="severity high">HIGH</span></td>
@@ -51,19 +102,6 @@
         <td>&mdash;</td>
         <td>5.11</td>
         <td><details><summary>Dell Storage Manager - Replay Manager for Microsoft Servers, version(s) 8.0, con...</summary><p>Dell Storage Manager - Replay Manager for Microsoft Servers, version(s) 8.0, contain(s) an Improper Privilege Management vulnerability. A low privileged attacker with local access could potentially exploit this vulnerability, leading to Elevation of privileges.</p></details></td>
-        <td>2026-04-16</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2024-2374" target="_blank" rel="noopener">CVE-2024-2374</a></td>
-        <td>7.5</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-611</td>
-        <td>&nbsp;</td>
-        <td>&mdash;</td>
-        <td>5.25</td>
-        <td><details><summary>The XML parsers within multiple WSO2 products accept user-supplied XML data with...</summary><p>The XML parsers within multiple WSO2 products accept user-supplied XML data without properly configuring to prevent the resolution of external entities. This omission allows malicious actors to craft XML payloads that exploit the parser&#x27;s behavior, leading to the inclusion of external resources.
-
-By leveraging this vulnerability, an attacker can read confidential files from the file system and access limited HTTP resources reachable by the product. Additionally, the vulnerability can be exploited to perform denial of service attacks by exhausting server resources through recursive entity expansion or fetching large external resources.</p></details></td>
         <td>2026-04-16</td>
       </tr>
       <tr>
@@ -860,23 +898,23 @@ By leveraging this vulnerability, an attacker can read confidential files from t
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6319" target="_blank" rel="noopener">CVE-2026-6319</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
         <td>CWE-416</td>
         <td>&nbsp;</td>
         <td>&mdash;</td>
-        <td>0.00</td>
+        <td>5.25</td>
         <td><details><summary>Use after free in Payments in Google Chrome on Android prior to 147.0.7727.101 a...</summary><p>Use after free in Payments in Google Chrome on Android prior to 147.0.7727.101 allowed a remote attacker who convinced a user to engage in specific UI gestures to execute arbitrary code via a crafted HTML page. (Chromium security severity: Medium)</p></details></td>
         <td>2026-04-15</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6318" target="_blank" rel="noopener">CVE-2026-6318</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>8.8</td>
+        <td><span class="severity high">HIGH</span></td>
         <td>CWE-416</td>
         <td>&nbsp;</td>
         <td>&mdash;</td>
-        <td>0.00</td>
+        <td>6.16</td>
         <td><details><summary>Use after free in Codecs in Google Chrome prior to 147.0.7727.101 allowed a remo...</summary><p>Use after free in Codecs in Google Chrome prior to 147.0.7727.101 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: Medium)</p></details></td>
         <td>2026-04-15</td>
       </tr>
@@ -981,12 +1019,12 @@ By leveraging this vulnerability, an attacker can read confidential files from t
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6308" target="_blank" rel="noopener">CVE-2026-6308</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
         <td>CWE-125</td>
         <td>&nbsp;</td>
         <td>&mdash;</td>
-        <td>0.00</td>
+        <td>5.25</td>
         <td><details><summary>Out of bounds read in Media in Google Chrome prior to 147.0.7727.101 allowed a r...</summary><p>Out of bounds read in Media in Google Chrome prior to 147.0.7727.101 allowed a remote attacker who convinced a user to engage in specific UI gestures to execute arbitrary code via a crafted HTML page. (Chromium security severity: High)</p></details></td>
         <td>2026-04-15</td>
       </tr>
@@ -1003,12 +1041,12 @@ By leveraging this vulnerability, an attacker can read confidential files from t
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6306" target="_blank" rel="noopener">CVE-2026-6306</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>8.8</td>
+        <td><span class="severity high">HIGH</span></td>
         <td>CWE-122</td>
         <td>&nbsp;</td>
         <td>&mdash;</td>
-        <td>0.00</td>
+        <td>6.16</td>
         <td><details><summary>Heap buffer overflow in PDFium in Google Chrome prior to 147.0.7727.101 allowed ...</summary><p>Heap buffer overflow in PDFium in Google Chrome prior to 147.0.7727.101 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted PDF file. (Chromium security severity: High)</p></details></td>
         <td>2026-04-15</td>
       </tr>
@@ -1036,12 +1074,12 @@ By leveraging this vulnerability, an attacker can read confidential files from t
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6303" target="_blank" rel="noopener">CVE-2026-6303</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>8.8</td>
+        <td><span class="severity high">HIGH</span></td>
         <td>CWE-416</td>
         <td>&nbsp;</td>
         <td>&mdash;</td>
-        <td>0.00</td>
+        <td>6.16</td>
         <td><details><summary>Use after free in Codecs in Google Chrome prior to 147.0.7727.101 allowed a remo...</summary><p>Use after free in Codecs in Google Chrome prior to 147.0.7727.101 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: High)</p></details></td>
         <td>2026-04-15</td>
       </tr>
