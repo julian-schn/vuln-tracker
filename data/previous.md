@@ -1,6 +1,6 @@
 # CVEs — March 2026
 
-_5735 vulnerabilities_
+_5734 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
@@ -3466,7 +3466,6 @@ _5735 vulnerabilities_
 | [CVE-2026-32245](https://nvd.nist.gov/vuln/detail/CVE-2026-32245) | 6.5 | MEDIUM | CWE-863 | No | 0.1% | 4.55 | 2026-03-12 | Tinyauth is an authentication and authorization server. Prior to 5.0.3, the OIDC token endpoint does not verify that the... |
 | [CVE-2026-32242](https://nvd.nist.gov/vuln/detail/CVE-2026-32242) | 9.1 | CRITICAL | CWE-362 | No | 0.1% | 6.37 | 2026-03-12 | Parse Server is an open source backend that can be deployed to any infrastructure that can run Node.js. Prior to 9.6.0-a... |
 | [CVE-2026-32237](https://nvd.nist.gov/vuln/detail/CVE-2026-32237) | 4.4 | MEDIUM | CWE-200 | No | 0.0% | 3.08 | 2026-03-12 | Backstage is an open framework for building developer portals. Prior to 3.1.5, authenticated users with permission to ex... |
-| [CVE-2026-32236](https://nvd.nist.gov/vuln/detail/CVE-2026-32236) | 1.7 | LOW | CWE-918 | No | 0.0% | 1.19 | 2026-03-12 | Backstage is an open framework for building developer portals. Prior to 0.27.1, a Server-Side Request Forgery (SSRF) vul... |
 | [CVE-2026-32235](https://nvd.nist.gov/vuln/detail/CVE-2026-32235) | 5.9 | MEDIUM | CWE-601 | No | 0.0% | 4.13 | 2026-03-12 | Backstage is an open framework for building developer portals. Prior to 0.27.1, the experimental OIDC provider in @backs... |
 | [CVE-2026-32232](https://nvd.nist.gov/vuln/detail/CVE-2026-32232) | 8.8 | HIGH | CWE-22 | No | 0.1% | 6.16 | 2026-03-12 | ZeptoClaw is a personal AI assistant. Prior to 0.7.6, there is a Dangling Symlink Component Bypass, TOCTOU Between Valid... |
 | [CVE-2026-32231](https://nvd.nist.gov/vuln/detail/CVE-2026-32231) | 8.2 | HIGH | CWE-306 | No | 0.0% | 5.74 | 2026-03-12 | ZeptoClaw is a personal AI assistant. Prior to 0.7.6, the generic webhook channel trusts caller-supplied identity fields... |
