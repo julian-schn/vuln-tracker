@@ -11,7 +11,7 @@
     <header>
       <h1>vuln-tracker</h1>
       <p class="subtitle">CVEs from the National Vulnerability Database — current and previous month</p>
-      <p class="last-updated">Last updated: 2026-04-16 06:06 UTC</p>
+      <p class="last-updated">Last updated: 2026-04-16 09:25 UTC</p>
     </header>
     <nav>
       <a href="top50.html">&#9733; Top 50</a>
@@ -25,7 +25,7 @@
     </nav>
     <main>
     <section>
-      <h2>Current Month — April 2026 <span class="count">(2918)</span></h2>
+      <h2>Current Month — April 2026 <span class="count">(2937)</span></h2>
       <div class="table-wrapper">
         <table>
           <thead>
@@ -42,6 +42,294 @@
             </tr>
           </thead>
           <tbody>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-23772" target="_blank" rel="noopener">CVE-2026-23772</a></td>
+        <td>7.3</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-269</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.11</td>
+        <td><details><summary>Dell Storage Manager - Replay Manager for Microsoft Servers, version(s) 8.0, con...</summary><p>Dell Storage Manager - Replay Manager for Microsoft Servers, version(s) 8.0, contain(s) an Improper Privilege Management vulnerability. A low privileged attacker with local access could potentially exploit this vulnerability, leading to Elevation of privileges.</p></details></td>
+        <td>2026-04-16</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2024-2374" target="_blank" rel="noopener">CVE-2024-2374</a></td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-611</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.25</td>
+        <td><details><summary>The XML parsers within multiple WSO2 products accept user-supplied XML data with...</summary><p>The XML parsers within multiple WSO2 products accept user-supplied XML data without properly configuring to prevent the resolution of external entities. This omission allows malicious actors to craft XML payloads that exploit the parser&#x27;s behavior, leading to the inclusion of external resources.
+
+By leveraging this vulnerability, an attacker can read confidential files from the file system and access limited HTTP resources reachable by the product. Additionally, the vulnerability can be exploited to perform denial of service attacks by exhausting server resources through recursive entity expansion or fetching large external resources.</p></details></td>
+        <td>2026-04-16</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-0718" target="_blank" rel="noopener">CVE-2026-0718</a></td>
+        <td>5.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.71</td>
+        <td><details><summary>The Post Grid Gutenberg Blocks for News, Magazines, Blog Websites – PostX plugin...</summary><p>The Post Grid Gutenberg Blocks for News, Magazines, Blog Websites – PostX plugin for WordPress is vulnerable to unauthorized modification of data due to a missing capability check on the ultp_shareCount_callback() function in all versions up to, and including, 5.0.5. This makes it possible for unauthenticated attackers to modify the share_count post meta for any post, including private or draft posts.</p></details></td>
+        <td>2026-04-16</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-14868" target="_blank" rel="noopener">CVE-2025-14868</a></td>
+        <td>8.8</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-22</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.16</td>
+        <td><details><summary>The Career Section plugin for WordPress is vulnerable to Cross-Site Request Forg...</summary><p>The Career Section plugin for WordPress is vulnerable to Cross-Site Request Forgery leading to Path Traversal and Arbitrary File Deletion in all versions up to, and including, 1.6. This is due to missing nonce validation and insufficient file path validation on the delete action in the &#x27;appform_options_page_html&#x27; function. This makes it possible for unauthenticated attackers to delete arbitrary files on the server via a forged request, granted they can trick a site administrator into performing an action such as clicking on a link.</p></details></td>
+        <td>2026-04-16</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-41035" target="_blank" rel="noopener">CVE-2026-41035</a></td>
+        <td>7.4</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-130</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.18</td>
+        <td><details><summary>In rsync 3.0.1 through 3.4.1, receive_xattr relies on an untrusted length value ...</summary><p>In rsync 3.0.1 through 3.4.1, receive_xattr relies on an untrusted length value during a qsort call, leading to a receiver use-after-free. The victim must run rsync with -X (aka --xattrs). On Linux, many (but not all) common configurations are vulnerable. Non-Linux platforms are more widely vulnerable.</p></details></td>
+        <td>2026-04-16</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-41034" target="_blank" rel="noopener">CVE-2026-41034</a></td>
+        <td>5.0</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-125</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.50</td>
+        <td><details><summary>ONLYOFFICE DocumentServer before 9.3.0 has an untrusted pointer dereference in X...</summary><p>ONLYOFFICE DocumentServer before 9.3.0 has an untrusted pointer dereference in XLS processing/conversion (via pictFmla.cbBufInCtlStm and other vectors), leading to an information leak and ASLR bypass.</p></details></td>
+        <td>2026-04-16</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-41030" target="_blank" rel="noopener">CVE-2026-41030</a></td>
+        <td>6.2</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-669</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.34</td>
+        <td><details><summary>In ONLYOFFICE DesktopEditors before 9.3.0, the update service allows attackers t...</summary><p>In ONLYOFFICE DesktopEditors before 9.3.0, the update service allows attackers to perform actions on files with SYSTEM privileges.</p></details></td>
+        <td>2026-04-16</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-3995" target="_blank" rel="noopener">CVE-2026-3995</a></td>
+        <td>4.4</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.08</td>
+        <td><details><summary>The OPEN-BRAIN plugin for WordPress is vulnerable to Stored Cross-Site Scripting...</summary><p>The OPEN-BRAIN plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the &#x27;API Key&#x27; settings field in all versions up to, and including, 0.5.0. This is due to insufficient input sanitization and output escaping. The plugin uses sanitize_text_field() which strips HTML tags but does not encode double quotes or other HTML-special characters needed for safe attribute context output. The API key value is saved via update_option() and later output into an HTML input element&#x27;s value attribute without esc_attr() escaping. This makes it possible for authenticated attackers, with Administrator-level access, to inject arbitrary web scripts via attribute breakout payloads (e.g., double quotes followed by event handlers) that execute whenever a user accesses the plugin settings page.</p></details></td>
+        <td>2026-04-16</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-3876" target="_blank" rel="noopener">CVE-2026-3876</a></td>
+        <td>7.2</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.04</td>
+        <td><details><summary>The Prismatic plugin for WordPress is vulnerable to Stored Cross-Site Scripting ...</summary><p>The Prismatic plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the &#x27;prismatic_encoded&#x27; pseudo-shortcode in all versions up to, and including, 3.7.3. This is due to insufficient input sanitization and output escaping on user-supplied attributes within the &#x27;prismatic_decode&#x27; function. This makes it possible for unauthenticated attackers to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page by submitting a comment containing a crafted &#x27;prismatic_encoded&#x27; pseudo-shortcode.</p></details></td>
+        <td>2026-04-16</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-3875" target="_blank" rel="noopener">CVE-2026-3875</a></td>
+        <td>6.4</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.48</td>
+        <td><details><summary>The BetterDocs plugin for WordPress is vulnerable to Stored Cross-Site Scripting...</summary><p>The BetterDocs plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the &#x27;betterdocs_feedback_form&#x27; shortcode in all versions up to, and including, 4.3.8. This is due to insufficient input sanitization and output escaping on user supplied shortcode attributes. This makes it possible for authenticated attackers, with contributor level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.</p></details></td>
+        <td>2026-04-16</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-3861" target="_blank" rel="noopener">CVE-2026-3861</a></td>
+        <td>6.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.55</td>
+        <td><details><summary>LINE client for iOS versions prior to 26.3.0 contains a vulnerability in the in-...</summary><p>LINE client for iOS versions prior to 26.3.0 contains a vulnerability in the in-app browser where opening a crafted web page can repeatedly trigger OS-level dialogs, potentially causing the iOS device to become temporarily inoperable.</p></details></td>
+        <td>2026-04-16</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-3355" target="_blank" rel="noopener">CVE-2026-3355</a></td>
+        <td>6.1</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.27</td>
+        <td><details><summary>The Customer Reviews for WooCommerce plugin for WordPress is vulnerable to Refle...</summary><p>The Customer Reviews for WooCommerce plugin for WordPress is vulnerable to Reflected Cross-Site Scripting via the ‘crsearch’ parameter in all versions up to, and including, 5.101.0 due to insufficient input sanitization and output escaping. This makes it possible for unauthenticated attackers to inject arbitrary web scripts in pages that execute if they can successfully trick a user into performing an action such as clicking on a link.</p></details></td>
+        <td>2026-04-16</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-1620" target="_blank" rel="noopener">CVE-2026-1620</a></td>
+        <td>8.8</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-98</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.16</td>
+        <td><details><summary>The Livemesh Addons for Elementor plugin for WordPress is vulnerable to Local Fi...</summary><p>The Livemesh Addons for Elementor plugin for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 9.0. This is due to insufficient sanitization of the template name parameter in the `lae_get_template_part()` function, which uses an inadequate `str_replace()` approach that can be bypassed using recursive directory traversal patterns. This makes it possible for authenticated attackers, with Contributor-level access and above, to include and execute arbitrary files on the server, allowing the attacker to include and execute local files via the widget&#x27;s template parameter granted they can trick an administrator into performing an action or install Elementor.</p></details></td>
+        <td>2026-04-16</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-1572" target="_blank" rel="noopener">CVE-2026-1572</a></td>
+        <td>6.4</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.48</td>
+        <td><details><summary>The Livemesh Addons for Elementor plugin for WordPress is vulnerable to unauthor...</summary><p>The Livemesh Addons for Elementor plugin for WordPress is vulnerable to unauthorized modification of data and Stored Cross-Site Scripting via plugin settings in all versions up to, and including, 9.0. This is due to missing authorization checks on the AJAX handler `lae_admin_ajax()` and insufficient output escaping on multiple checkbox settings fields. This makes it possible for authenticated attackers, with Subscriber-level access and above, to inject arbitrary web scripts in the plugin settings page that will execute whenever an administrator accesses the plugin settings page granted they can obtain a valid nonce, which can be leaked via the plugin&#x27;s improper access control on settings pages.</p></details></td>
+        <td>2026-04-16</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-13364" target="_blank" rel="noopener">CVE-2025-13364</a></td>
+        <td>6.4</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.48</td>
+        <td><details><summary>The WP Maps – Store Locator,Google Maps,OpenStreetMap,Mapbox,Listing,Directory &amp;...</summary><p>The WP Maps – Store Locator,Google Maps,OpenStreetMap,Mapbox,Listing,Directory &amp; Filters plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the &#x27;put_wpgm&#x27; shortcode in all versions up to, and including, 4.8.7. This is due to insufficient input sanitization and output escaping on user-supplied shortcode attributes. This makes it possible for authenticated attackers, with contributor level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.</p></details></td>
+        <td>2026-04-16</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5050" target="_blank" rel="noopener">CVE-2026-5050</a></td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-347</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.25</td>
+        <td><details><summary>The Payment Gateway for Redsys &amp; WooCommerce Lite plugin for WordPress is vulner...</summary><p>The Payment Gateway for Redsys &amp; WooCommerce Lite plugin for WordPress is vulnerable to Improper Verification of Cryptographic Signature in versions up to, and including, 7.0.0 due to successful_request() handlers calculating a local signature but not validating Ds_Signature from the request before accepting payment status across the Redsys, Bizum, and Google Pay gateway flows. This makes it possible for unauthenticated attackers to forge payment callback data and mark pending orders as paid when they know a valid order key and order amount, potentially allowing checkout completion and product or service fulfillment without a successful payment.</p></details></td>
+        <td>2026-04-16</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-3773" target="_blank" rel="noopener">CVE-2026-3773</a></td>
+        <td>6.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-89</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.55</td>
+        <td><details><summary>The Accessibility Suite by Ability, Inc plugin for WordPress is vulnerable to SQ...</summary><p>The Accessibility Suite by Ability, Inc plugin for WordPress is vulnerable to SQL Injection via the &#x27;scan_id&#x27; parameter in all versions up to, and including, 4.20. This is due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query. This makes it possible for authenticated attackers, with Subscriber-level access and above, to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database.</p></details></td>
+        <td>2026-04-16</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-3614" target="_blank" rel="noopener">CVE-2026-3614</a></td>
+        <td>8.8</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.16</td>
+        <td><details><summary>The AcyMailing plugin for WordPress is vulnerable to privilege escalation in all...</summary><p>The AcyMailing plugin for WordPress is vulnerable to privilege escalation in all versions From 9.11.0 up to, and including, 10.8.1 due to a missing capability check on the `wp_ajax_acymailing_router` AJAX handler. This makes it possible for authenticated attackers, with Subscriber-level access and above, to access admin-only controllers (including configuration management), enable the autologin feature, create a malicious newsletter subscriber with an injected `cms_id` pointing to any WordPress user, and then use the autologin URL to authenticate as that user, including administrators.</p></details></td>
+        <td>2026-04-16</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-3599" target="_blank" rel="noopener">CVE-2026-3599</a></td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-89</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.25</td>
+        <td><details><summary>The Riaxe Product Customizer plugin for WordPress is vulnerable to SQL Injection...</summary><p>The Riaxe Product Customizer plugin for WordPress is vulnerable to SQL Injection via the &#x27;options&#x27; parameter keys within &#x27;product_data&#x27; of the /wp-json/InkXEProductDesignerLite/add-item-to-cart REST API endpoint in all versions up to, and including, 2.1.2. This is due to insufficient escaping on the user-supplied parameter and insufficient preparation on the existing SQL query. This makes it possible for unauthenticated attackers to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database.</p></details></td>
+        <td>2026-04-16</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-3596" target="_blank" rel="noopener">CVE-2026-3596</a></td>
+        <td>9.8</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.86</td>
+        <td><details><summary>The Riaxe Product Customizer plugin for WordPress is vulnerable to Privilege Esc...</summary><p>The Riaxe Product Customizer plugin for WordPress is vulnerable to Privilege Escalation in all versions up to, and including, 2.1.2. The plugin registers an unauthenticated AJAX action (&#x27;wp_ajax_nopriv_install-imprint&#x27;) that maps to the ink_pd_add_option() function. This function reads &#x27;option&#x27; and &#x27;opt_value&#x27; from $_POST, then calls delete_option() followed by add_option() using these attacker-controlled values without any nonce verification, capability checks, or option name allowlist. This makes it possible for unauthenticated attackers to update arbitrary WordPress options, which can be leveraged for privilege escalation by enabling user registration and setting the default user role to administrator.</p></details></td>
+        <td>2026-04-16</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-3595" target="_blank" rel="noopener">CVE-2026-3595</a></td>
+        <td>5.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.71</td>
+        <td><details><summary>The Riaxe Product Customizer plugin for WordPress is vulnerable to authorization...</summary><p>The Riaxe Product Customizer plugin for WordPress is vulnerable to authorization bypass in all versions up to, and including, 2.1.2. This is due to the plugin registering a REST API route at POST /wp-json/InkXEProductDesignerLite/customer/delete_customer without a permission_callback, causing WordPress to default to allowing unauthenticated access, and the inkxe_delete_customer() callback function taking an array of user IDs from the request body and passing each one directly to wp_delete_user() without any authentication or authorization checks. This makes it possible for unauthenticated attackers to delete arbitrary WordPress user accounts, including administrator accounts, leading to complete site lockout and data loss.</p></details></td>
+        <td>2026-04-16</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-3581" target="_blank" rel="noopener">CVE-2026-3581</a></td>
+        <td>5.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.71</td>
+        <td><details><summary>The Basic Google Maps Placemarks plugin for WordPress is vulnerable to authoriza...</summary><p>The Basic Google Maps Placemarks plugin for WordPress is vulnerable to authorization bypass in versions up to, and including, 1.10.7. This is due to the plugin not properly verifying that a user is authorized to perform an action. This makes it possible for unauthenticated attackers to modify stored map latitude and longitude options.</p></details></td>
+        <td>2026-04-16</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-3551" target="_blank" rel="noopener">CVE-2026-3551</a></td>
+        <td>4.4</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.08</td>
+        <td><details><summary>The Custom New User Notification plugin for WordPress is vulnerable to Stored Cr...</summary><p>The Custom New User Notification plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the plugin&#x27;s admin settings in all versions up to, and including, 1.2.0. This is due to insufficient input sanitization and output escaping on multiple settings fields including &#x27;User Mail Subject&#x27;, &#x27;User From Name&#x27;, &#x27;User From Email&#x27;, &#x27;Admin Mail Subject&#x27;, &#x27;Admin From Name&#x27;, and &#x27;Admin From Email&#x27;. The settings are registered via register_setting() without sanitize callbacks, and the values retrieved via get_option() are echoed directly into HTML input value attributes without esc_attr(). This makes it possible for authenticated attackers, with Administrator-level access and above, to inject arbitrary web scripts in the plugin settings page that will execute whenever a user accesses that page. This could be used in multi-site installations where administrators of subsites could target super administrators.</p></details></td>
+        <td>2026-04-16</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-22619" target="_blank" rel="noopener">CVE-2026-22619</a></td>
+        <td>7.8</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.46</td>
+        <td><details><summary>Eaton Intelligent Power Protector (IPP) is affected by insecure library loading ...</summary><p>Eaton Intelligent Power Protector (IPP) is affected by insecure library loading in its executable, which could lead to arbitrary code execution by an attacker with access to the software package. This security issue has been fixed in the latest version of Eaton IPP software which is available on the Eaton download center.</p></details></td>
+        <td>2026-04-16</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-22618" target="_blank" rel="noopener">CVE-2026-22618</a></td>
+        <td>5.9</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-358</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.13</td>
+        <td><details><summary>A security misconfiguration was identified in Eaton Intelligent Power Protector ...</summary><p>A security misconfiguration was identified in Eaton Intelligent Power Protector (IPP), where an HTTP response header was set with an insecure attribute, potentially exposing users to web‑based attacks. This security issue has been fixed in the latest version of Eaton IPP software which is available on the Eaton download centre.</p></details></td>
+        <td>2026-04-16</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-22617" target="_blank" rel="noopener">CVE-2026-22617</a></td>
+        <td>5.7</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-614</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.99</td>
+        <td><details><summary>Eaton Intelligent Power Protector (IPP) uses an insecure cookie configuration, w...</summary><p>Eaton Intelligent Power Protector (IPP) uses an insecure cookie configuration, which could allow a network‑based attacker to intercept the cookie and exploit it through a man‑in‑the‑middle attack. This security issue has been fixed in the latest version of Eaton IPP software which is available on the Eaton download centre.</p></details></td>
+        <td>2026-04-16</td>
+      </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40118" target="_blank" rel="noopener">CVE-2026-40118</a></td>
         <td>5.1</td>
@@ -62,21 +350,6 @@
         <td>&mdash;</td>
         <td>4.55</td>
         <td><details><summary>Eaton Intelligent Power Protector (IPP) software allows repeated authentication ...</summary><p>Eaton Intelligent Power Protector (IPP) software allows repeated authentication attempts against the web interface login page due to insufficient rate‑limiting controls. This security issue has been fixed in the latest version of Eaton IPP which is available on the Eaton download centre.</p></details></td>
-        <td>2026-04-16</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-22615" target="_blank" rel="noopener">CVE-2026-22615</a></td>
-        <td>6.0</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-20</td>
-        <td>&nbsp;</td>
-        <td>&mdash;</td>
-        <td>4.20</td>
-        <td><details><summary>Due to improper
-input validation in one of the Eaton Intelligent Power Protector...</summary><p>Due to improper
-input validation in one of the Eaton Intelligent Power Protector (IPP) XML, it is
-possible for an attacker with admin privileges and access to the local system to
-inject malicious code resulting in arbitrary command execution. This security issue has been fixed in the latest version of Eaton IPP software which is available on the Eaton download centre.</p></details></td>
         <td>2026-04-16</td>
       </tr>
       <tr>
@@ -7502,84 +7775,6 @@ inject malicious code resulting in arbitrary command execution. This security i
         <td>0.0% <small>p8</small></td>
         <td>4.83</td>
         <td><details><summary>A vulnerability was identified in code-projects Vehicle Showroom Management Syst...</summary><p>A vulnerability was identified in code-projects Vehicle Showroom Management System 1.0. Impacted is an unknown function of the file /util/StaffDetailsFunction.php. Such manipulation of the argument STAFF_ID leads to sql injection. The attack can be launched remotely. The exploit is publicly available and might be used.</p></details></td>
-        <td>2026-04-13</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34860" target="_blank" rel="noopener">CVE-2026-34860</a></td>
-        <td>4.1</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-284</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p0</small></td>
-        <td>2.87</td>
-        <td><details><summary>Access control vulnerability in the memo module.
-Impact: Successful exploitation...</summary><p>Access control vulnerability in the memo module.
-Impact: Successful exploitation of this vulnerability will affect availability and confidentiality.</p></details></td>
-        <td>2026-04-13</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34856" target="_blank" rel="noopener">CVE-2026-34856</a></td>
-        <td>7.3</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-362</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p0</small></td>
-        <td>5.11</td>
-        <td><details><summary>UAF vulnerability in the communication module.
-Impact: Successful exploitation o...</summary><p>UAF vulnerability in the communication module.
-Impact: Successful exploitation of this vulnerability may affect availability.</p></details></td>
-        <td>2026-04-13</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34853" target="_blank" rel="noopener">CVE-2026-34853</a></td>
-        <td>7.7</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-270</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p0</small></td>
-        <td>5.39</td>
-        <td><details><summary>Permission bypass vulnerability in the LBS module.
-Impact: Successful exploitati...</summary><p>Permission bypass vulnerability in the LBS module.
-Impact: Successful exploitation of this vulnerability may affect availability.</p></details></td>
-        <td>2026-04-13</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34852" target="_blank" rel="noopener">CVE-2026-34852</a></td>
-        <td>6.1</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-835</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p0</small></td>
-        <td>4.27</td>
-        <td><details><summary>Stack overflow vulnerability in the media platform.
-Impact: Successful exploitat...</summary><p>Stack overflow vulnerability in the media platform.
-Impact: Successful exploitation of this vulnerability may affect availability.</p></details></td>
-        <td>2026-04-13</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34851" target="_blank" rel="noopener">CVE-2026-34851</a></td>
-        <td>2.2</td>
-        <td><span class="severity low">LOW</span></td>
-        <td>CWE-362</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p0</small></td>
-        <td>1.54</td>
-        <td><details><summary>Race condition vulnerability in the event notification module.
-Impact: Successfu...</summary><p>Race condition vulnerability in the event notification module.
-Impact: Successful exploitation of this vulnerability may affect availability.</p></details></td>
-        <td>2026-04-13</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34850" target="_blank" rel="noopener">CVE-2026-34850</a></td>
-        <td>1.9</td>
-        <td><span class="severity low">LOW</span></td>
-        <td>CWE-362</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p0</small></td>
-        <td>1.33</td>
-        <td><details><summary>Race condition vulnerability in the notification service.
-Impact: Successful exp...</summary><p>Race condition vulnerability in the notification service.
-Impact: Successful exploitation of this vulnerability may affect availability.</p></details></td>
         <td>2026-04-13</td>
       </tr>
       <tr>
@@ -32161,7 +32356,7 @@ Impact: Successful exploitation of this vulnerability may affect availability.</
       </div>
     </section>
     <section>
-      <h2>Previous Month — March 2026 <span class="count">(5736)</span></h2>
+      <h2>Previous Month — March 2026 <span class="count">(5734)</span></h2>
       <div class="table-wrapper">
         <table>
           <thead>
@@ -59247,33 +59442,6 @@ Impact: Successful exploitation of this vulnerability may affect availability.</
         <td>0.0% <small>p7</small></td>
         <td>5.67</td>
         <td><details><summary>SuiteCRM is an open-source, enterprise-ready Customer Relationship Management (C...</summary><p>SuiteCRM is an open-source, enterprise-ready Customer Relationship Management (CRM) software application. Prior to versions 7.15.1 and 8.9.3, when creating or editing a report (AOR_Reports module), the `field_function` parameter from POST data is saved directly into the `aor_fields` table without any validation. Later, when the report is executed/viewed, this value is concatenated directly into a SQL SELECT query without sanitization, enabling second-order SQL injection. Any authenticated user with Reports access can extract arbitrary database contents (password hashes, API tokens, config values). On MySQL with FILE privilege, this could lead to RCE via SELECT INTO OUTFILE. Versions 7.15.1 and 8.9.3 patch the issue.</p></details></td>
-        <td>2026-03-19</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-22732" target="_blank" rel="noopener">CVE-2026-22732</a></td>
-        <td>9.1</td>
-        <td><span class="severity critical">CRITICAL</span></td>
-        <td>CWE-425</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p4</small></td>
-        <td>6.37</td>
-        <td><details><summary>When applications specify HTTP response headers for servlet applications using S...</summary><p>When applications specify HTTP response headers for servlet applications using Spring Security, there is the possibility that the HTTP Headers will not be written. 
-This issue affects Spring Security Servlet applications using lazy (default) writing of HTTP Headers:
-
-: from 5.7.0 through 5.7.21, from 5.8.0 through 5.8.23, from 6.3.0 through 6.3.14, from 6.4.0 through 6.4.14, from 6.5.0 through 6.5.8, from 7.0.0 through 7.0.3.</p></details></td>
-        <td>2026-03-19</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-22731" target="_blank" rel="noopener">CVE-2026-22731</a></td>
-        <td>8.2</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-288</td>
-        <td>&nbsp;</td>
-        <td>0.1% <small>p16</small></td>
-        <td>5.74</td>
-        <td><details><summary>Spring Boot applications with Actuator can be vulnerable to an &quot;Authentication B...</summary><p>Spring Boot applications with Actuator can be vulnerable to an &quot;Authentication Bypass&quot; vulnerability when an application endpoint that requires authentication is declared under a specific path, already configured for a Health Group additional path.
-This issue affects Spring Boot: from 4.0 before 4.0.3, from 3.5 before 3.5.11, from 3.4 before 3.4.15.
-This CVE is similar but not equivalent to CVE-2026-22733, as the conditions for exploit and vulnerable versions are different.</p></details></td>
         <td>2026-03-19</td>
       </tr>
       <tr>
