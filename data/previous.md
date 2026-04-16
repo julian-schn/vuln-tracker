@@ -1,6 +1,6 @@
 # CVEs — March 2026
 
-_5734 vulnerabilities_
+_5738 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
@@ -378,6 +378,7 @@ _5734 vulnerabilities_
 | [CVE-2026-4415](https://nvd.nist.gov/vuln/detail/CVE-2026-4415) | 9.2 | CRITICAL | CWE-23 | No | 0.5% | 6.46 | 2026-03-30 | Gigabyte Control Center developed by GIGABYTE has an Arbitrary File Write vulnerability. When the pairing feature is ena... |
 | [CVE-2026-3945](https://nvd.nist.gov/vuln/detail/CVE-2026-3945) | 8.7 | HIGH | CWE-190 | No | 0.1% | 6.09 | 2026-03-30 | An integer overflow vulnerability in the HTTP chunked transfer encoding parser in tinyproxy up to and including version... |
 | [CVE-2026-2328](https://nvd.nist.gov/vuln/detail/CVE-2026-2328) | 7.5 | HIGH | CWE-790 | No | 0.0% | 5.25 | 2026-03-30 | An unauthenticated remote attacker can exploit insufficient input validation to access backend components beyond their i... |
+| [CVE-2026-25704](https://nvd.nist.gov/vuln/detail/CVE-2026-25704) | 5.8 | MEDIUM | CWE-271 | No | 0.0% | 4.06 | 2026-03-30 | A Privilege Dropping / Lowering Errors/Time-of-check Time-of-use (TOCTOU) Race Condition vulnerability in  cosmic-greete... |
 | [CVE-2025-3716](https://nvd.nist.gov/vuln/detail/CVE-2025-3716) | 5.3 | MEDIUM | CWE-204 | No | 0.0% | 3.71 | 2026-03-30 | User enumeration in ESET Protect (on-prem) via Response Timing. |
 | [CVE-2025-15379](https://nvd.nist.gov/vuln/detail/CVE-2025-15379) | 10.0 | CRITICAL | CWE-77 | No | 0.2% | 7.01 | 2026-03-30 | A command injection vulnerability exists in MLflow's model serving container initialization code, specifically in the `_... |
 | [CVE-2026-5119](https://nvd.nist.gov/vuln/detail/CVE-2026-5119) | 5.9 | MEDIUM | CWE-319 | No | 0.0% | 4.13 | 2026-03-30 | A flaw was found in libsoup. When establishing HTTPS tunnels through a configured HTTP proxy, sensitive session cookies... |
@@ -1701,6 +1702,7 @@ _5734 vulnerabilities_
 | [CVE-2026-33320](https://nvd.nist.gov/vuln/detail/CVE-2026-33320) | 6.2 | MEDIUM | CWE-674 | No | 0.0% | 4.34 | 2026-03-24 | Dasel is a command-line tool and library for querying, modifying, and transforming data structures. Starting in version... |
 | [CVE-2026-33306](https://nvd.nist.gov/vuln/detail/CVE-2026-33306) | 4.5 | MEDIUM | CWE-190 | No | 0.0% | 3.15 | 2026-03-24 | bcrypt-ruby is a Ruby binding for the OpenBSD bcrypt() password hashing algorithm. Prior to version 3.1.22, an integer o... |
 | [CVE-2026-33298](https://nvd.nist.gov/vuln/detail/CVE-2026-33298) | 7.8 | HIGH | CWE-122 | No | 0.0% | 5.46 | 2026-03-24 | llama.cpp is an inference of several LLM models in C/C++. Prior to b7824, an integer overflow vulnerability in the `ggml... |
+| [CVE-2026-33290](https://nvd.nist.gov/vuln/detail/CVE-2026-33290) | 4.3 | MEDIUM | CWE-862 | No | 0.0% | 3.01 | 2026-03-24 | WPGraphQL provides a GraphQL API for WordPress sites. Prior to version 2.10.0, an authorization flaw in updateComment al... |
 | [CVE-2026-22739](https://nvd.nist.gov/vuln/detail/CVE-2026-22739) | 8.6 | HIGH | CWE-22 | No | 13.2% | 6.42 | 2026-03-24 | Vulnerability in Spring Cloud when substituting the profile parameter from a request made to the Spring Cloud Config Ser... |
 | [CVE-2026-4615](https://nvd.nist.gov/vuln/detail/CVE-2026-4615) | 6.9 | MEDIUM | CWE-74 | No | 0.0% | 4.83 | 2026-03-24 | A vulnerability was identified in SourceCodester Online Catering Reservation 1.0. Impacted is an unknown function of the... |
 | [CVE-2026-4614](https://nvd.nist.gov/vuln/detail/CVE-2026-4614) | 5.3 | MEDIUM | CWE-74 | No | 0.0% | 3.71 | 2026-03-24 | A vulnerability was determined in itsourcecode sanitize or validate this input 1.0. This issue affects some unknown proc... |
@@ -2265,6 +2267,7 @@ _5734 vulnerabilities_
 | [CVE-2026-32986](https://nvd.nist.gov/vuln/detail/CVE-2026-32986) | 5.1 | MEDIUM | CWE-79 | No | 0.0% | 3.57 | 2026-03-20 | Textpattern CMS version 4.9.0 contains a second-order cross-site scripting vulnerability that allows attackers to inject... |
 | [CVE-2025-67260](https://nvd.nist.gov/vuln/detail/CVE-2025-67260) | 8.8 | HIGH | CWE-434 | No | 0.1% | 6.16 | 2026-03-20 | The Terrapack software, from ASTER TEC / ASTER S.p.A., with the indicated components and versions has a file upload vuln... |
 | [CVE-2025-46597](https://nvd.nist.gov/vuln/detail/CVE-2025-46597) | 7.5 | HIGH | CWE-190 | No | 0.0% | 5.25 | 2026-03-20 | Bitcoin Core 0.13.0 through 29.x has an integer overflow. |
+| [CVE-2026-4519](https://nvd.nist.gov/vuln/detail/CVE-2026-4519) | 7.0 | HIGH | CWE-20 | No | 0.0% | 4.90 | 2026-03-20 | The webbrowser.open() API would accept leading dashes in the URL which  could be handled as command line options for cer... |
 | [CVE-2026-4487](https://nvd.nist.gov/vuln/detail/CVE-2026-4487) | 7.4 | HIGH | CWE-119 | No | 0.0% | 5.18 | 2026-03-20 | A vulnerability was determined in UTT HiPER 1200GW up to 2.5.3-170306. This impacts the function strcpy of the file /gof... |
 | [CVE-2026-33312](https://nvd.nist.gov/vuln/detail/CVE-2026-33312) | 5.3 | MEDIUM | CWE-863 | No | 0.0% | 3.71 | 2026-03-20 | Vikunja is an open-source self-hosted task management platform. Starting in version 0.20.2 and prior to version 2.2.0, t... |
 | [CVE-2026-29794](https://nvd.nist.gov/vuln/detail/CVE-2026-29794) | 5.3 | MEDIUM | CWE-807 | No | 0.1% | 3.71 | 2026-03-20 | Vikunja is an open-source self-hosted task management platform. Starting in version 0.8 and prior to version 2.2.0, unau... |
@@ -2896,6 +2899,7 @@ _5734 vulnerabilities_
 | [CVE-2026-32290](https://nvd.nist.gov/vuln/detail/CVE-2026-32290) | 7.0 | HIGH | CWE-345 | No | 0.0% | 4.90 | 2026-03-17 | The GL-iNet Comet (GL-RM1) KVM before version 1.8.2 does not sufficiently verify the authenticity of uploaded firmware f... |
 | [CVE-2026-25770](https://nvd.nist.gov/vuln/detail/CVE-2026-25770) | 9.1 | CRITICAL | CWE-22 | No | 0.0% | 6.37 | 2026-03-17 | Wazuh is a free and open source platform used for threat prevention, detection, and response. Starting in version 3.9.0... |
 | [CVE-2026-25769](https://nvd.nist.gov/vuln/detail/CVE-2026-25769) | 9.1 | CRITICAL | CWE-502 | No | 0.2% | 6.38 | 2026-03-17 | Wazuh is a free and open source platform used for threat prevention, detection, and response. Versions 4.0.0 through 4.1... |
+| [CVE-2026-25534](https://nvd.nist.gov/vuln/detail/CVE-2026-25534) | 9.1 | CRITICAL | CWE-918 | No | 0.0% | 6.37 | 2026-03-17 | ### Impact Spinnaker updated URL Validation logic on user input to provide sanitation on user inputted URLs for clouddri... |
 | [CVE-2026-4148](https://nvd.nist.gov/vuln/detail/CVE-2026-4148) | 8.7 | HIGH | CWE-416 | No | 0.1% | 6.09 | 2026-03-17 | A use-after-free vulnerability can be triggered in sharded clusters by an authenticated user with the read role who issu... |
 | [CVE-2026-4147](https://nvd.nist.gov/vuln/detail/CVE-2026-4147) | 7.1 | HIGH | CWE-457 | No | 0.0% | 4.97 | 2026-03-17 | An authenticated user with the read role may read limited amounts of uninitialized stack memory via specially-crafted is... |
 | [CVE-2026-28506](https://nvd.nist.gov/vuln/detail/CVE-2026-28506) | 4.3 | MEDIUM | CWE-200 | No | 0.0% | 3.01 | 2026-03-17 | Outline is a service that allows for collaborative documentation. Prior to 1.5.0, the events.list API endpoint, used for... |
