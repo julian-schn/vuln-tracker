@@ -11,7 +11,7 @@
     <header>
       <h1>vuln-tracker</h1>
       <p class="subtitle">CVEs from the National Vulnerability Database — current and previous month</p>
-      <p class="last-updated">Last updated: 2026-04-16 19:23 UTC</p>
+      <p class="last-updated">Last updated: 2026-04-16 20:55 UTC</p>
     </header>
     <nav>
       <a href="top50.html">&#9733; Top 50</a>
@@ -25,7 +25,7 @@
     </nav>
     <main>
     <section>
-      <h2>Current Month — April 2026 <span class="count">(2995)</span></h2>
+      <h2>Current Month — April 2026 <span class="count">(2994)</span></h2>
       <div class="table-wrapper">
         <table>
           <thead>
@@ -42,6 +42,50 @@
             </tr>
           </thead>
           <tbody>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40899" target="_blank" rel="noopener">CVE-2026-40899</a></td>
+        <td>8.3</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-183</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.81</td>
+        <td><details><summary>DataEase is an open-source data visualization and analytics platform. Versions 2...</summary><p>DataEase is an open-source data visualization and analytics platform. Versions 2.10.20 and below contain a JDBC parameter blocklist bypass vulnerability in the MySQL datasource configuration. The Mysql class uses Lombok&#x27;s @Data annotation, which auto-generates a public setter for the illegalParameters field that contains the JDBC security blocklist. When a datasource configuration is submitted as JSON, Jackson deserialization calls setIllegalParameters with an attacker-supplied empty list, replacing the blocklist before getJdbc() validation runs. This allows an authenticated attacker to include dangerous JDBC parameters such as allowLoadLocalInfile=true, and by pointing the datasource at a rogue MySQL server, exploit the LOAD DATA LOCAL INFILE protocol feature to read arbitrary files from the DataEase server filesystem, including sensitive environment variables and database credentials. This issue has been fixed in version 2.10.21.</p></details></td>
+        <td>2026-04-16</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33207" target="_blank" rel="noopener">CVE-2026-33207</a></td>
+        <td>8.6</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-89</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.02</td>
+        <td><details><summary>DataEase is an open-source data visualization and analytics platform. Versions 2...</summary><p>DataEase is an open-source data visualization and analytics platform. Versions 2.10.20 and below contain a SQL injection vulnerability in the /datasource/getTableField endpoint. The getTableFiledSql method in CalciteProvider.java incorporates the tableName parameter directly into SQL query strings using String.format without parameterization or sanitization. Although DatasourceServer.java validates that the table name exists in the datasource, an attacker can bypass this by first registering an API datasource with a malicious deTableName, which is then returned by getTables and passes the validation check. An authenticated attacker can execute arbitrary SQL commands, enabling error-based extraction of sensitive database information. This issue has been fixed in version 2.10.21.</p></details></td>
+        <td>2026-04-16</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33122" target="_blank" rel="noopener">CVE-2026-33122</a></td>
+        <td>8.6</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-89</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.02</td>
+        <td><details><summary>DataEase is an open-source data visualization and analytics platform. Versions 2...</summary><p>DataEase is an open-source data visualization and analytics platform. Versions 2.10.20 and below contain a SQL injection vulnerability in the API datasource update process. When a new table definition is added during a datasource update via /de2api/datasource/update, the deTableName field from the user-submitted configuration is passed to DatasourceSyncManage.createEngineTable, where it is substituted into a CREATE TABLE statement template without any sanitization or identifier escaping. An authenticated attacker can inject arbitrary SQL commands by crafting a deTableName that breaks out of identifier quoting, enabling error-based SQL injection that can extract database information. This issue has been fixed in version 2.10.21.</p></details></td>
+        <td>2026-04-16</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-54502" target="_blank" rel="noopener">CVE-2025-54502</a></td>
+        <td>7.1</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-668</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.97</td>
+        <td><details><summary>Incorrect use of boot service in the AMD Platform Configuration Blob (APCB) SMM ...</summary><p>Incorrect use of boot service in the AMD Platform Configuration Blob (APCB) SMM driver could allow a privileged attacker with local access (Ring 0) to achieve privilege escalation potentially resulting in arbitrary code execution.</p></details></td>
+        <td>2026-04-16</td>
+      </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6442" target="_blank" rel="noopener">CVE-2026-6442</a></td>
         <td>8.3</td>
@@ -83,7 +127,7 @@
         <td>&nbsp;</td>
         <td>&mdash;</td>
         <td>4.13</td>
-        <td><details><summary>Missing lock check in AMD Platform Security Processor in AMD EPYC™ 9005 Series C...</summary><p>Missing lock check in AMD Platform Security Processor in AMD EPYC™ 9005 Series CPUs allows a privileged attacker to potentially impact guest confidentiality via local access.</p></details></td>
+        <td><details><summary>A missing lock verification in AMD Secure Processor (ASP) firmware may permit a ...</summary><p>A missing lock verification in AMD Secure Processor (ASP) firmware may permit a locally authenticated attacker with administrative privileges to alter MMIO routing on some Zen 5-based products, potentially compromising guest system integrity.</p></details></td>
         <td>2026-04-16</td>
       </tr>
       <tr>
@@ -116,7 +160,7 @@
         <td>&nbsp;</td>
         <td>&mdash;</td>
         <td>3.92</td>
-        <td><details><summary>Insuffient checks of the RMP on host buffer access in IOMMU may allow an attacke...</summary><p>Insuffient checks of the RMP on host buffer access in IOMMU may allow an attacker with privileges and a compromised HV to trigger an out of bounds condition without RMP checks resulting in a potential loss of confidential guest integrity.</p></details></td>
+        <td><details><summary>Insufficient checks of the RMP on host buffer access in IOMMU may allow an attac...</summary><p>Insufficient checks of the RMP on host buffer access in IOMMU may allow an attacker with privileges and a compromised hypervisor to trigger an out of bounds condition without RMP checks, resulting in a potential loss of confidential guest integrity.</p></details></td>
         <td>2026-04-16</td>
       </tr>
       <tr>
@@ -458,20 +502,6 @@
         <td>&mdash;</td>
         <td>3.71</td>
         <td><details><summary>The Fluent Forms – Customizable Contact Forms, Survey, Quiz, &amp; Conversational Fo...</summary><p>The Fluent Forms – Customizable Contact Forms, Survey, Quiz, &amp; Conversational Form Builder plugin for WordPress is vulnerable to Insecure Direct Object Reference via the &#x27;submission_id&#x27; parameter in versions up to, and including, 6.1.21. This is due to missing authorization and ownership validation on a user controlled key in the Stripe SCA confirmation AJAX endpoint. This makes it possible for unauthenticated attackers to modify payment status of targeted pending submissions (for example, setting the status to &quot;failed&quot;).</p></details></td>
-        <td>2026-04-16</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-31987" target="_blank" rel="noopener">CVE-2026-31987</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>CWE-532</td>
-        <td>&nbsp;</td>
-        <td>&mdash;</td>
-        <td>0.00</td>
-        <td><details><summary>JWT Tokens used by tasks were exposed in logs. This could allow UI users to act ...</summary><p>JWT Tokens used by tasks were exposed in logs. This could allow UI users to act as Dag Authors. 
-Users are advised to upgrade to Airflow version that contains fix.
-
-Users are recommended to upgrade to version 3.2.0, which fixes this issue.</p></details></td>
         <td>2026-04-16</td>
       </tr>
       <tr>
@@ -10598,7 +10628,7 @@ Users are recommended to upgrade to version 3.2.0, which fixes this issue.</p></
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6069" target="_blank" rel="noopener">CVE-2026-6069</a></td>
         <td>7.5</td>
         <td><span class="severity high">HIGH</span></td>
-        <td>N/A</td>
+        <td>CWE-787</td>
         <td>&nbsp;</td>
         <td>0.1% <small>p16</small></td>
         <td>5.25</td>
@@ -10609,7 +10639,7 @@ Users are recommended to upgrade to version 3.2.0, which fixes this issue.</p></
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6068" target="_blank" rel="noopener">CVE-2026-6068</a></td>
         <td>6.5</td>
         <td><span class="severity medium">MEDIUM</span></td>
-        <td>N/A</td>
+        <td>CWE-416</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p10</small></td>
         <td>4.55</td>
@@ -10620,7 +10650,7 @@ Users are recommended to upgrade to version 3.2.0, which fixes this issue.</p></
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6067" target="_blank" rel="noopener">CVE-2026-6067</a></td>
         <td>7.5</td>
         <td><span class="severity high">HIGH</span></td>
-        <td>N/A</td>
+        <td>CWE-787</td>
         <td>&nbsp;</td>
         <td>0.1% <small>p22</small></td>
         <td>5.25</td>
@@ -12154,138 +12184,6 @@ Users are recommended to upgrade to version 3.2.0, which fixes this issue.</p></
         <td>0.0% <small>p12</small></td>
         <td>5.04</td>
         <td><details><summary>OpenClaw before 2026.3.25 contains an improper access control vulnerability in t...</summary><p>OpenClaw before 2026.3.25 contains an improper access control vulnerability in the HTTP /sessions/:sessionKey/kill route that allows any bearer-authenticated user to invoke admin-level session termination functions without proper scope validation. Attackers can exploit this by sending authenticated requests to kill arbitrary subagent sessions via the killSubagentRunAdmin function, bypassing ownership and operator scope restrictions.</p></details></td>
-        <td>2026-04-09</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33797" target="_blank" rel="noopener">CVE-2026-33797</a></td>
-        <td>7.1</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-20</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p6</small></td>
-        <td>4.97</td>
-        <td><details><summary>An Improper Input Validation vulnerability in Juniper Networks Junos OS and Juno...</summary><p>An Improper Input Validation vulnerability in Juniper Networks Junos OS and Junos OS Evolved allows an unauthenticated, adjacent attacker, sending a specific genuine BGP packet in an already established BGP session to reset only that session causing a Denial of Service (DoS).
-
-An attacker repeatedly sending the packet will sustain the Denial of Service (DoS).This issue affects Junos OS:
-
-  *  25.2 versions before 25.2R2
-
-
-This issue doesn&#x27;t not affected Junos OS versions before 25.2R1.
-
-This issue affects Junos OS Evolved: 
-  *  25.2-EVO versions before 25.2R2-EVO
-
-
-This issue doesn&#x27;t not affected Junos OS Evolved versions before 25.2R1-EVO.
-
-eBGP and iBGP are affected.
-IPv4 and IPv6 are affected.</p></details></td>
-        <td>2026-04-09</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33793" target="_blank" rel="noopener">CVE-2026-33793</a></td>
-        <td>8.5</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-250</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p3</small></td>
-        <td>5.95</td>
-        <td><details><summary>An Execution with Unnecessary Privileges vulnerability in the User Interface (UI...</summary><p>An Execution with Unnecessary Privileges vulnerability in the User Interface (UI) of Juniper Networks Junos OS and Junos OS Evolved allows a local, low-privileged attacker to gain root privileges, thus compromising the system.
-
-When a configuration that allows unsigned Python op scripts is present on the device, a non-root user is able to execute malicious op scripts as a root-equivalent user, leading to privilege escalation. 
-
-This issue affects Junos OS: 
-
-  *  All versions before 22.4R3-S7, 
-  *  from 23.2 before 23.2R2-S4, 
-  *  from 23.4 before 23.4R2-S6,
-  *  from 24.2 before 24.2R1-S2, 24.2R2, 
-  *  from 24.4 before 24.4R1-S2, 24.4R2; 
-
-
-
-
-Junos OS Evolved: 
-
-
-
-  *  All versions before 22.4R3-S7-EVO, 
-  *  from 23.2 before 23.2R2-S4-EVO, 
-  *  from 23.4 before 23.4R2-S6-EVO,
-  *  from 24.2 before 24.2R2-EVO, 
-  *  from 24.4 before 24.4R1-S1-EVO, 24.4R2-EVO.</p></details></td>
-        <td>2026-04-09</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33791" target="_blank" rel="noopener">CVE-2026-33791</a></td>
-        <td>8.4</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-78</td>
-        <td>&nbsp;</td>
-        <td>0.1% <small>p18</small></td>
-        <td>5.88</td>
-        <td><details><summary>An OS Command Injection vulnerability in the CLI processing of Juniper Networks ...</summary><p>An OS Command Injection vulnerability in the CLI processing of Juniper Networks Junos OS and Junos OS Evolved allows a local, high-privileged attacker executing specific, crafted CLI commands to inject arbitrary shell commands as root, leading to a complete compromise of the system.
-
-Certain &#x27;set system&#x27; commands, when executed with crafted arguments, are not properly sanitized, allowing for arbitrary shell injection. These shell commands are executed as root, potentially allowing for complete control of the vulnerable system.
-This issue affects:
-
-Junos OS: 
-
-
-
-  *  all versions before 22.4R3-S8, 
-  *  from 23.2 before 23.2R2-S5, 
-  *  from 23.4 before 23.4R2-S7, 
-  *  from 24.2 before 24.2R2-S2, 
-  *  from 24.4 before 24.4R2, 
-  *  from 25.2 before 25.2R2; 
-
-
-
-
-Junos OS Evolved: 
-
-
-
-  *  all versions before 22.4R3-S8-EVO, 
-  *  from 23.2 before 23.2R2-S5-EVO, 
-  *  from 23.4 before 23.4R2-S7-EVO, 
-  *  from 24.2 before 24.2R2-S2-EVO, 
-  *  from 24.4 before 24.4R2-EVO, 
-  *  from 25.2 before 25.2R1-S1-EVO, 25.2R2-EVO.</p></details></td>
-        <td>2026-04-09</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33776" target="_blank" rel="noopener">CVE-2026-33776</a></td>
-        <td>6.8</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-862</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p1</small></td>
-        <td>4.76</td>
-        <td><details><summary>A Missing Authorization vulnerability in the CLI of Juniper Networks Junos OS an...</summary><p>A Missing Authorization vulnerability in the CLI of Juniper Networks Junos OS and Junos OS Evolved allows a local user with low privileges to read sensitive information.
-
-A local user with low privileges can execute the CLI command &#x27;show mgd&#x27; with specific arguments which will expose sensitive information.
-
-This issue affects
-
-Junos OS:
-  *  all versions before 22.4R3-S8,
-  *  23.2 versions before 23.2R2-S6,
-  *  23.4 versions before 23.4R2-S6,
-  *  24.2 versions before 24.2R2-S4,
-  *  24.4 versions before 24.4R2-S1,
-  *  25.2 version before 25.2R1-S2, 25.2R2;
-
-
-
-Junos OS Evolved:
-  *  all versions before 23.2R2-S6-EVO,
-  *  23.4 version before 23.4R2-S6-EVO,
-  *  24.2 version before 24.2R2-S4-EVO,
-  *  24.4 versions before 24.4R2-S1-EVO,
-  *  25.2 versions before 25.2R2-EVO.</p></details></td>
         <td>2026-04-09</td>
       </tr>
       <tr>
@@ -19321,7 +19219,7 @@ Junos OS Evolved:
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-27140" target="_blank" rel="noopener">CVE-2026-27140</a></td>
         <td>8.8</td>
         <td><span class="severity high">HIGH</span></td>
-        <td>N/A</td>
+        <td>CWE-863</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p5</small></td>
         <td>6.16</td>
@@ -33097,7 +32995,7 @@ Users are recommended to upgrade to version 5.19.4 or 6.2.3, which fixes the iss
       </div>
     </section>
     <section>
-      <h2>Previous Month — March 2026 <span class="count">(5738)</span></h2>
+      <h2>Previous Month — March 2026 <span class="count">(5750)</span></h2>
       <div class="table-wrapper">
         <table>
           <thead>
@@ -40653,7 +40551,7 @@ Users are recommended to upgrade to version 5.19.4 or 6.2.3, which fixes the iss
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-22744" target="_blank" rel="noopener">CVE-2026-22744</a></td>
         <td>7.5</td>
         <td><span class="severity high">HIGH</span></td>
-        <td>N/A</td>
+        <td>NVD-CWE-noinfo</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p12</small></td>
         <td>5.25</td>
@@ -40669,6 +40567,30 @@ Users are recommended to upgrade to version 5.19.4 or 6.2.3, which fixes the iss
         <td>0.1% <small>p17</small></td>
         <td>5.25</td>
         <td><details><summary>Spring AI&#x27;s spring-ai-neo4j-store contains a Cypher injection vulnerability in N...</summary><p>Spring AI&#x27;s spring-ai-neo4j-store contains a Cypher injection vulnerability in Neo4jVectorFilterExpressionConverter. When a user-controlled string is passed as a filter expression key in Neo4jVectorFilterExpressionConverter of spring-ai-neo4j-store, doKey() embeds the key into a backtick-delimited Cypher property accessor (node.`metadata.`) after stripping only double quotes, without escaping embedded backticks.This issue affects Spring AI: from 1.0.0 before 1.0.5, from 1.1.0 before 1.1.4.</p></details></td>
+        <td>2026-03-27</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-22742" target="_blank" rel="noopener">CVE-2026-22742</a></td>
+        <td>8.6</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-918</td>
+        <td>&nbsp;</td>
+        <td>0.0% <small>p12</small></td>
+        <td>6.02</td>
+        <td><details><summary>Spring AI&#x27;s spring-ai-bedrock-converse contains a Server-Side Request Forgery (S...</summary><p>Spring AI&#x27;s spring-ai-bedrock-converse contains a Server-Side Request Forgery (SSRF) vulnerability in BedrockProxyChatModel when processing multimodal messages that include user-supplied media URLs. Insufficient validation of those URLs allows an attacker to induce the server to issue HTTP requests to unintended internal or external destinations.
+This issue affects Spring AI: from 1.0.0 before 1.0.5, from 1.1.0 before 1.1.4.</p></details></td>
+        <td>2026-03-27</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-22738" target="_blank" rel="noopener">CVE-2026-22738</a></td>
+        <td>9.8</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-917</td>
+        <td>&nbsp;</td>
+        <td>0.1% <small>p25</small></td>
+        <td>6.86</td>
+        <td><details><summary>In Spring AI, a SpEL injection vulnerability exists in SimpleVectorStore when a ...</summary><p>In Spring AI, a SpEL injection vulnerability exists in SimpleVectorStore when a user-supplied value is used as a filter expression key. A malicious actor could exploit this to execute arbitrary code. Only applications that use SimpleVectorStore and pass user-supplied input as a filter expression key are affected.
+This issue affects Spring AI: from 1.0.0 before 1.0.5, from 1.1.0 before 1.1.4.</p></details></td>
         <td>2026-03-27</td>
       </tr>
       <tr>
@@ -41871,63 +41793,6 @@ Users are recommended to upgrade to version 5.19.4 or 6.2.3, which fixes the iss
         <td>2026-03-26</td>
       </tr>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4926" target="_blank" rel="noopener">CVE-2026-4926</a></td>
-        <td>7.5</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-400</td>
-        <td>&nbsp;</td>
-        <td>0.1% <small>p16</small></td>
-        <td>5.25</td>
-        <td><details><summary>Impact:
-
-A bad regular expression is generated any time you have multiple sequen...</summary><p>Impact:
-
-A bad regular expression is generated any time you have multiple sequential optional groups (curly brace syntax), such as `{a}{b}{c}:z`. The generated regex grows exponentially with the number of groups, causing denial of service.
-
-Patches:
-
-Fixed in version 8.4.0.
-
-Workarounds:
-
-Limit the number of sequential optional groups in route patterns. Avoid passing user-controlled input as route patterns.</p></details></td>
-        <td>2026-03-26</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4923" target="_blank" rel="noopener">CVE-2026-4923</a></td>
-        <td>5.9</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-1333</td>
-        <td>&nbsp;</td>
-        <td>0.1% <small>p16</small></td>
-        <td>4.13</td>
-        <td><details><summary>Impact:
-
-When using multiple wildcards, combined with at least one parameter, a ...</summary><p>Impact:
-
-When using multiple wildcards, combined with at least one parameter, a regular expression can be generated that is vulnerable to ReDoS. This backtracking vulnerability requires the second wildcard to be somewhere other than the end of the path.
-
-Unsafe examples:
-
-/*foo-*bar-:baz
-/*a-:b-*c-:d
-/x/*a-:b/*c/y
-
-Safe examples:
-
-/*foo-:bar
-/*foo-:bar-*baz
-
-Patches:
-
-Upgrade to version 8.4.0.
-
-Workarounds:
-
-If you are using multiple wildcard parameters, you can check the regex output with a tool such as https://makenowjust-labs.github.io/recheck/playground/ to confirm whether a path is vulnerable.</p></details></td>
-        <td>2026-03-26</td>
-      </tr>
-      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-3190" target="_blank" rel="noopener">CVE-2026-3190</a></td>
         <td>4.3</td>
         <td><span class="severity medium">MEDIUM</span></td>
@@ -42233,33 +42098,6 @@ If you are using multiple wildcard parameters, you can check the regex output wi
         <td>0.0% <small>p11</small></td>
         <td>5.46</td>
         <td><details><summary>Firecrawl version 2.8.0 and prior contain a server-side request forgery (SSRF) p...</summary><p>Firecrawl version 2.8.0 and prior contain a server-side request forgery (SSRF) protection bypass vulnerability in the Playwright scraping service where network policy validation is applied only to the initial user-supplied URL and not to subsequent redirect destinations. Attackers can supply an externally valid URL that passes validation and returns an HTTP redirect to an internal or restricted resource, allowing the browser to follow the redirect and fetch the final destination without revalidation, thereby gaining access to internal network services and sensitive endpoints. This issue is distinct from CVE-2024-56800, which describes redirect-based SSRF generally. This vulnerability specifically arises from a post-redirect enforcement gap in implemented SSRF protections, where validation is applied only to the initial request and not to the final redirected destination.</p></details></td>
-        <td>2026-03-26</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4867" target="_blank" rel="noopener">CVE-2026-4867</a></td>
-        <td>7.5</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-1333</td>
-        <td>&nbsp;</td>
-        <td>0.1% <small>p15</small></td>
-        <td>5.25</td>
-        <td><details><summary>Impact:
-
-A bad regular expression is generated any time you have three or more p...</summary><p>Impact:
-
-A bad regular expression is generated any time you have three or more parameters within a single segment, separated by something that is not a period (.). For example, /:a-:b-:c or /:a-:b-:c-:d. The backtrack protection added in path-to-regexp@0.1.12 only prevents ambiguity for two parameters. With three or more, the generated lookahead does not block single separator characters, so capture groups overlap and cause catastrophic backtracking.
-
-Patches:
-
-Upgrade to path-to-regexp@0.1.13
-
-Custom regex patterns in route definitions (e.g., /:a-:b([^-/]+)-:c([^-/]+)) are not affected because they override the default capture group.
-
-Workarounds:
-
-All versions can be patched by providing a custom regular expression for parameters after the first in a single segment. As long as the custom regular expression does not match the text before the parameter, you will be safe. For example, change /:a-:b-:c to /:a-:b([^-/]+)-:c([^-/]+).
-
-If paths cannot be rewritten and versions cannot be upgraded, another alternative is to limit the URL length.</p></details></td>
         <td>2026-03-26</td>
       </tr>
       <tr>
@@ -53546,27 +53384,6 @@ If paths cannot be rewritten and versions cannot be upgraded, another alternativ
         <td>0.0% <small>p11</small></td>
         <td>3.71</td>
         <td><details><summary>A vulnerability was identified in kalcaddle kodbox 1.64. The affected element is...</summary><p>A vulnerability was identified in kalcaddle kodbox 1.64. The affected element is the function PathDriverUrl of the file /workspace/source-code/app/controller/explorer/editor.class.php of the component fileGet Endpoint. Such manipulation of the argument path leads to server-side request forgery. The attack may be launched remotely. The exploit is publicly available and might be used. The vendor was contacted early about this disclosure but did not respond in any way. Statistical analysis made it clear that VulDB provides the best quality for vulnerability data.</p></details></td>
-        <td>2026-03-23</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-3635" target="_blank" rel="noopener">CVE-2026-3635</a></td>
-        <td>6.1</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-348</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p0</small></td>
-        <td>4.27</td>
-        <td><details><summary>Summary
-When trustProxy is configured with a restrictive trust function (e.g., a...</summary><p>Summary
-When trustProxy is configured with a restrictive trust function (e.g., a specific IP like trustProxy: &#x27;10.0.0.1&#x27;, a subnet, a hop count, or a custom function), the request.protocol and request.host getters read X-Forwarded-Proto and X-Forwarded-Host headers from any connection — including connections from untrusted IPs. This allows an attacker connecting directly to Fastify (bypassing the proxy) to spoof both the protocol and host seen by the application.
-
-Affected Versions
-fastify &lt;= 5.8.2
-
-Impact
-Applications using request.protocol or request.host for security decisions (HTTPS enforcement, secure cookie flags, CSRF origin checks, URL construction, host-based routing) are affected when trustProxy is configured with a restrictive trust function.
-
-When trustProxy: true (trust everything), both host and protocol trust all forwarded headers — this is expected behavior. The vulnerability only manifests with restrictive trust configurations.</p></details></td>
         <td>2026-03-23</td>
       </tr>
       <tr>
@@ -91366,6 +91183,18 @@ When trustProxy: true (trust everything), both host and protocol trust all forwa
         <td>2026-03-04</td>
       </tr>
       <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-20021" target="_blank" rel="noopener">CVE-2026-20021</a></td>
+        <td>4.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-401</td>
+        <td>&nbsp;</td>
+        <td>0.0% <small>p5</small></td>
+        <td>3.01</td>
+        <td><details><summary>A vulnerability in the OSPF protocol of Cisco Secure Firewall Adaptive Security ...</summary><p>A vulnerability in the OSPF protocol of Cisco Secure Firewall Adaptive Security Appliance (ASA) Software and Cisco Secure Firewall Threat Defense (FTD) Software could allow an authenticated, adjacent attacker to exhaust memory on an affected device, resulting in a denial of service (DoS) condition.
+ This vulnerability is due to improperly validating input by the OSPF protocol when parsing packets. An attacker could exploit this vulnerability by by sending crafted OSPF packets to an affected device. A successful exploit could allow the attacker to exhaust memory on the affected device, resulting in a DoS condition.</p></details></td>
+        <td>2026-03-04</td>
+      </tr>
+      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-0847" target="_blank" rel="noopener">CVE-2026-0847</a></td>
         <td>8.6</td>
         <td><span class="severity high">HIGH</span></td>
@@ -91407,6 +91236,172 @@ When trustProxy: true (trust everything), both host and protocol trust all forwa
         <td>0.0% <small>p2</small></td>
         <td>3.85</td>
         <td><details><summary>Dell Device Management Agent (DDMA), versions prior to 26.02, contain an Incorre...</summary><p>Dell Device Management Agent (DDMA), versions prior to 26.02, contain an Incorrect Authorization vulnerability. A low privileged attacker with local access could potentially exploit this vulnerability, leading to Elevation of Privileges.</p></details></td>
+        <td>2026-03-04</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-20106" target="_blank" rel="noopener">CVE-2026-20106</a></td>
+        <td>5.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-401</td>
+        <td>&nbsp;</td>
+        <td>0.1% <small>p19</small></td>
+        <td>3.71</td>
+        <td><details><summary>A vulnerability in the Remote Access SSL VPN, HTTP management and MUS functional...</summary><p>A vulnerability in the Remote Access SSL VPN, HTTP management and MUS functionality, of Cisco Secure Firewall Adaptive Security Appliance (ASA) Software and Secure Firewall Threat Defense (FTD) Software could allow an unauthenticated, remote attacker to exhaust device memory resulting in a denial of service (DoS) condition requiring a manual reboot.
+ This vulnerability is due to trusting user input without validation. An attacker could exploit this vulnerability by sending crafted packets to the Remote Access SSL VPN server. A successful exploit could allow the attacker to cause the device to stop responding, resulting in a DoS condition.</p></details></td>
+        <td>2026-03-04</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-20105" target="_blank" rel="noopener">CVE-2026-20105</a></td>
+        <td>7.7</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-401</td>
+        <td>&nbsp;</td>
+        <td>0.1% <small>p27</small></td>
+        <td>5.39</td>
+        <td><details><summary>A vulnerability in the Remote Access SSL VPN functionality of Cisco Secure Firew...</summary><p>A vulnerability in the Remote Access SSL VPN functionality of Cisco Secure Firewall Adaptive Security Appliance (ASA) Software and Secure Firewall Threat Defense (FTD) Software could allow an authenticated, remote attacker with a valid VPN connection to exhaust device memory resulting in a denial of service (DoS) condition.This does not affect the management or MUS interfaces.
+ This vulnerability is due to trusting user input without validation. An attacker could exploit this vulnerability by sending crafted packets to the Remote Access SSL VPN server. A successful exploit could allow the attacker to cause the device to reload, resulting in a DoS condition.</p></details></td>
+        <td>2026-03-04</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-20103" target="_blank" rel="noopener">CVE-2026-20103</a></td>
+        <td>8.6</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-770</td>
+        <td>&nbsp;</td>
+        <td>0.1% <small>p21</small></td>
+        <td>6.02</td>
+        <td><details><summary>A vulnerability in the Remote Access SSL VPN functionality of Cisco Secure Firew...</summary><p>A vulnerability in the Remote Access SSL VPN functionality of Cisco Secure Firewall Adaptive Security Appliance (ASA) Software and Secure Firewall Threat Defense (FTD) Software could allow an unauthenticated, remote attacker to exhaust device memory resulting in a denial of service (DoS) condition to new Remote Access SSL VPN connections. This does not affect the management interface, though it may become temporarily unresponsive. 
+ This vulnerability is due to trusting user input without validation. An attacker could exploit this vulnerability by sending crafted packets to the Remote Access SSL VPN server. A successful exploit could allow the attacker to cause the device web interface to stop responding, resulting in a DoS condition.</p></details></td>
+        <td>2026-03-04</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-20102" target="_blank" rel="noopener">CVE-2026-20102</a></td>
+        <td>6.1</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>0.0% <small>p6</small></td>
+        <td>4.27</td>
+        <td><details><summary>A vulnerability in the SAML 2.0 single sign-on (SSO) feature of Cisco Secure Fir...</summary><p>A vulnerability in the SAML 2.0 single sign-on (SSO) feature of Cisco Secure Firewall ASA Software and Cisco Secure Firewall Threat Defense (FTD) Software could allow an unauthenticated, remote attacker to conduct a cross-site scripting (XSS) attack against the SAML feature and access sensitive, browser-based information.
+
+This vulnerability is due to insufficient input validation of multiple HTTP parameters. An attacker could exploit this vulnerability by persuading a user to access a malicious link. A successful exploit could allow the attacker&amp;nbsp;to conduct a reflected XSS attack through an affected device.</p></details></td>
+        <td>2026-03-04</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-20101" target="_blank" rel="noopener">CVE-2026-20101</a></td>
+        <td>8.6</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-330</td>
+        <td>&nbsp;</td>
+        <td>0.1% <small>p35</small></td>
+        <td>6.02</td>
+        <td><details><summary>A vulnerability in the SAML 2.0 single sign-on (SSO) feature of Cisco Secure Fir...</summary><p>A vulnerability in the SAML 2.0 single sign-on (SSO) feature of Cisco Secure Firewall ASA Software and Secure FTD Software could allow an unauthenticated, remote attacker to cause the device to reload unexpectedly, resulting in a DoS condition.
+ This vulnerability is due to insufficient error checking when processing SAML messages. An attacker could exploit this vulnerability by sending crafted SAML messages to the SAML service. A successful exploit could allow the attacker to cause the device to reload, resulting in a DoS condition.</p></details></td>
+        <td>2026-03-04</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-20050" target="_blank" rel="noopener">CVE-2026-20050</a></td>
+        <td>6.8</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-404</td>
+        <td>&nbsp;</td>
+        <td>0.2% <small>p35</small></td>
+        <td>4.76</td>
+        <td><details><summary>A vulnerability in the Do Not Decrypt exclusion feature of the SSL decryption fe...</summary><p>A vulnerability in the Do Not Decrypt exclusion feature of the SSL decryption feature of Cisco Secure Firewall Threat Defense (FTD) Software could allow an unauthenticated, remote attacker to cause a denial of service (DoS) condition on an affected device.
+
+This vulnerability is due to improper memory management during the inspection of TLS 1.2 encrypted traffic. An attacker could exploit this vulnerability by sending crafted TLS 1.2 encrypted traffic through an affected device. A successful exploit could allow the attacker to cause a reload of an affected device.
+Note: This vulnerability only affects traffic that is encrypted by TLS 1.2. Other versions of TLS are not affected.</p></details></td>
+        <td>2026-03-04</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-20049" target="_blank" rel="noopener">CVE-2026-20049</a></td>
+        <td>7.7</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-131</td>
+        <td>&nbsp;</td>
+        <td>0.2% <small>p39</small></td>
+        <td>5.40</td>
+        <td><details><summary>A vulnerability in the processing of Galois/Counter Mode (GCM)-encrypted Interne...</summary><p>A vulnerability in the processing of Galois/Counter Mode (GCM)-encrypted Internet Key Exchange version 2 (IKEv2) IPsec traffic of Cisco Secure Firewall Adaptive Security Appliance (ASA) Software and Cisco Secure Firewall Threat Defense (FTD) Software could allow an authenticated, remote attacker to cause a denial of service (DoS) condition on an affected device.
+ This vulnerability is due to the allocation of an insufficiently sized block of memory. An attacker could exploit this vulnerability by sending crafted GCM-encrypted IPsec traffic to an affected device. A successful exploit could allow the attacker to cause an unexpected reload of the device, resulting in a DoS condition. To exploit this vulnerability, the attacker must have valid credentials to establish a VPN connection with the affected device.</p></details></td>
+        <td>2026-03-04</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-20039" target="_blank" rel="noopener">CVE-2026-20039</a></td>
+        <td>8.6</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-244</td>
+        <td>&nbsp;</td>
+        <td>0.2% <small>p39</small></td>
+        <td>6.03</td>
+        <td><details><summary>A vulnerability in the VPN web server of Cisco Secure Firewall Adaptive Security...</summary><p>A vulnerability in the VPN web server of Cisco Secure Firewall Adaptive Security Appliance (ASA) Software and Cisco Secure Firewall Threat Defense (FTD) Software could allow an unauthenticated, remote attacker to cause a denial of service (DoS) condition on an affected device.
+
+This vulnerability is due to ineffective memory management of the VPN web server. An attacker could exploit this vulnerability by sending a large number of&amp;nbsp;crafted HTTP requests to an affected device. A successful exploit could allow the attacker to cause the device to reload, resulting in a DoS condition.</p></details></td>
+        <td>2026-03-04</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-20015" target="_blank" rel="noopener">CVE-2026-20015</a></td>
+        <td>5.8</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-401</td>
+        <td>&nbsp;</td>
+        <td>0.1% <small>p29</small></td>
+        <td>4.06</td>
+        <td><details><summary>A vulnerability in the IKEv2 feature of Cisco Secure Firewall ASA Software and C...</summary><p>A vulnerability in the IKEv2 feature of Cisco Secure Firewall ASA Software and Cisco Secure FTD Software could allow an unauthenticated, remote attacker to cause a DoS condition on an affected device that may impact the availability of services to devices elsewhere in the network.
+ This vulnerability is due to a memory leak when parsing IKEv2 packets. An attacker could exploit this vulnerability by sending crafted IKEv2 packets to an affected device. A successful exploit could allow the attacker to exhaust resources, causing a DoS condition that will eventually require the device to be manually reloaded.</p></details></td>
+        <td>2026-03-04</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-20014" target="_blank" rel="noopener">CVE-2026-20014</a></td>
+        <td>7.7</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-401</td>
+        <td>&nbsp;</td>
+        <td>0.2% <small>p39</small></td>
+        <td>5.40</td>
+        <td><details><summary>A vulnerability in the IKEv2 feature of Cisco Secure Firewall ASA Software and C...</summary><p>A vulnerability in the IKEv2 feature of Cisco Secure Firewall ASA Software and Cisco Secure FTD Software could allow an authenticated, remote attacker with valid VPN user credentials to cause a DoS condition on an affected device that may also impact the availability of services to devices elsewhere in the network.
+ This vulnerability is due to the improper processing of IKEv2 packets. An attacker could exploit this vulnerability by sending crafted, authenticated IKEv2 packets to an affected device. A successful exploit could allow the attacker to exhaust memory, causing the device to reload.</p></details></td>
+        <td>2026-03-04</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-20013" target="_blank" rel="noopener">CVE-2026-20013</a></td>
+        <td>5.8</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-401</td>
+        <td>&nbsp;</td>
+        <td>0.1% <small>p33</small></td>
+        <td>4.06</td>
+        <td><details><summary>A vulnerability in the IKEv2 feature of Cisco Secure Firewall ASA Software and C...</summary><p>A vulnerability in the IKEv2 feature of Cisco Secure Firewall ASA Software and Cisco Secure FTD Software could allow an unauthenticated, remote attacker to cause a DoS condition on an affected device that may also impact the availability of services to devices elsewhere in the network.
+ This vulnerability is due to memory exhaustion caused by not freeing memory during IKEv2 packet processing. An attacker could exploit this vulnerability by sending crafted IKEv2 packets to an affected device. A successful exploit could allow the attacker to exhaust resources, causing a DoS condition that will eventually require the device to manually reload.</p></details></td>
+        <td>2026-03-04</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-20009" target="_blank" rel="noopener">CVE-2026-20009</a></td>
+        <td>5.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-138</td>
+        <td>&nbsp;</td>
+        <td>0.0% <small>p12</small></td>
+        <td>3.71</td>
+        <td><details><summary>A vulnerability in the implementation of the proprietary SSH stack with SSH key-...</summary><p>A vulnerability in the implementation of the proprietary SSH stack with SSH key-based authentication in Cisco Secure Firewall Adaptive Security Appliance (ASA) Software could allow an unauthenticated, remote attacker to log in to a Cisco Secure Firewall ASA device and execute commands as a specific user.
+
+This vulnerability is due to insufficient validation of user input during the SSH authentication phase. An attacker could exploit this vulnerability by submitting crafted input during SSH authentication to an affected device. A successful exploit could allow the attacker to log in to the device as a specific user without the private SSH key of that user. To exploit this vulnerability, the attacker must possess a valid username and the associated public key. The private key is not required.
+Notes:
+
+Exploitation of this vulnerability does not provide the attacker with root access.
+The authentication, authorization, and accounting (AAA) configuration command auto-enable is not affected by this vulnerability.&amp;nbsp;&amp;nbsp;</p></details></td>
+        <td>2026-03-04</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-20008" target="_blank" rel="noopener">CVE-2026-20008</a></td>
+        <td>6.0</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-78</td>
+        <td>&nbsp;</td>
+        <td>0.0% <small>p8</small></td>
+        <td>4.20</td>
+        <td><details><summary>A vulnerability in a small subset of CLI commands that are used on Cisco Secure ...</summary><p>A vulnerability in a small subset of CLI commands that are used on Cisco Secure Firewall Adaptive Security Appliance (ASA) Software and Cisco Secure Firewall Threat Defense (FTD) Software could allow an authenticated, local attacker to craft Lua code that could be used on the underlying operating system as&amp;nbsp;root.
+
+This vulnerability exists because user-provided input is not properly sanitized. An attacker could exploit this vulnerability by crafting valid Lua code and submitting it as a malicious parameter for a CLI command. A successful exploit could allow the attacker to inject Lua code, which could lead to arbitrary code execution as the root user. To exploit this vulnerability, an attacker must have valid&amp;nbsp;Administrator&amp;nbsp;credentials.</p></details></td>
         <td>2026-03-04</td>
       </tr>
       <tr>
