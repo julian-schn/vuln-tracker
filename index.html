@@ -11,7 +11,7 @@
     <header>
       <h1>vuln-tracker</h1>
       <p class="subtitle">CVEs from the National Vulnerability Database — current and previous month</p>
-      <p class="last-updated">Last updated: 2026-04-17 03:23 UTC</p>
+      <p class="last-updated">Last updated: 2026-04-17 06:07 UTC</p>
     </header>
     <nav>
       <a href="top50.html">&#9733; Top 50</a>
@@ -25,7 +25,7 @@
     </nav>
     <main>
     <section>
-      <h2>Current Month — April 2026 <span class="count">(3022)</span></h2>
+      <h2>Current Month — April 2026 <span class="count">(3033)</span></h2>
       <div class="table-wrapper">
         <table>
           <thead>
@@ -42,6 +42,127 @@
             </tr>
           </thead>
           <tbody>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6080" target="_blank" rel="noopener">CVE-2026-6080</a></td>
+        <td>6.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-89</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.55</td>
+        <td><details><summary>The Tutor LMS plugin for WordPress is vulnerable to SQL Injection in versions up...</summary><p>The Tutor LMS plugin for WordPress is vulnerable to SQL Injection in versions up to and including 3.9.8. This is due to insufficient escaping on the &#x27;date&#x27; parameter combined with direct interpolation into a SQL fragment before being passed to $wpdb-&gt;prepare(). This makes it possible for authenticated attackers with Admin-level access and above to append additional SQL queries and extract sensitive information from the database.</p></details></td>
+        <td>2026-04-17</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5807" target="_blank" rel="noopener">CVE-2026-5807</a></td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-770</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.25</td>
+        <td><details><summary>Vault is vulnerable to a denial-of-service condition where an unauthenticated at...</summary><p>Vault is vulnerable to a denial-of-service condition where an unauthenticated attacker can repeatedly initiate or cancel root token generation or rekey operations, occupying the single in-progress operation slot. This prevents legitimate operators from completing these workflows. This vulnerability, CVE-2026-5807, is fixed in Vault Community Edition 2.0.0 and Vault Enterprise 2.0.0.</p></details></td>
+        <td>2026-04-17</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5502" target="_blank" rel="noopener">CVE-2026-5502</a></td>
+        <td>5.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.71</td>
+        <td><details><summary>The Tutor LMS – eLearning and online course solution plugin for WordPress is vul...</summary><p>The Tutor LMS – eLearning and online course solution plugin for WordPress is vulnerable to unauthorized course content manipulation in versions up to and including 3.9.8. This is due to a missing authorization check in the tutor_update_course_content_order() function. The function only validates the nonce (CSRF protection) but does not verify whether the user has permission to manage course content. The can_user_manage() authorization check only executes when the &#x27;content_parent&#x27; parameter is present in the request. When this parameter is omitted, the function proceeds directly to save_course_content_order() which manipulates the wp_posts table without any authorization validation. This makes it possible for authenticated attackers with subscriber-level access and above to detach all lessons from any topic, move lessons between topics, and modify the menu_order of course content, effectively allowing them to disrupt the structure of any course on the site.</p></details></td>
+        <td>2026-04-17</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5427" target="_blank" rel="noopener">CVE-2026-5427</a></td>
+        <td>5.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.71</td>
+        <td><details><summary>The Kubio plugin for WordPress is vulnerable to Arbitrary File Upload in version...</summary><p>The Kubio plugin for WordPress is vulnerable to Arbitrary File Upload in versions up to and including 2.7.2. This is due to insufficient capability checks in the kubio_rest_pre_insert_import_assets() function, which is hooked to the rest_pre_insert_{post_type} filter for posts, pages, templates, and template parts. When a post is created or updated via the REST API, Kubio parses block attributes looking for URLs in the &#x27;kubio&#x27; attribute namespace and automatically imports them via importRemoteFile() without verifying the user has the upload_files capability. This makes it possible for authenticated attackers with Contributor-level access and above to bypass WordPress&#x27;s normal media upload restrictions and upload files fetched from external URLs to the media library, creating attachment posts in the database.</p></details></td>
+        <td>2026-04-17</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5234" target="_blank" rel="noopener">CVE-2026-5234</a></td>
+        <td>5.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-639</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.71</td>
+        <td><details><summary>The LatePoint plugin for WordPress is vulnerable to Insecure Direct Object Refer...</summary><p>The LatePoint plugin for WordPress is vulnerable to Insecure Direct Object Reference in all versions up to, and including, 5.3.2. The vulnerability exists because the OsStripeConnectController::create_payment_intent_for_transaction action is registered as a public action (no authentication required) and loads invoices by sequential integer invoice_id without any access_key or ownership verification. This is in contrast to other invoice-related actions (view_by_key, payment_form, summary_before_payment) in OsInvoicesController which properly require a cryptographic UUID access_key. This makes it possible for unauthenticated attackers to enumerate valid invoice IDs via an error message oracle, create unauthorized transaction intent records in the database containing sensitive financial data (invoice_id, order_id, customer_id, charge_amount), and on sites with Stripe Connect configured, the response also leaks Stripe payment_intent_client_secret tokens, transaction_intent_key values, and payment amounts for any invoice.</p></details></td>
+        <td>2026-04-17</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4853" target="_blank" rel="noopener">CVE-2026-4853</a></td>
+        <td>4.9</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-22</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.43</td>
+        <td><details><summary>The JetBackup – Backup, Restore &amp; Migrate plugin for WordPress is vulnerable to ...</summary><p>The JetBackup – Backup, Restore &amp; Migrate plugin for WordPress is vulnerable to Path Traversal leading to Arbitrary Directory Deletion in versions up to and including 3.1.19.8. This is due to insufficient input validation on the fileName parameter in the file upload handler. The plugin sanitizes the fileName parameter using sanitize_text_field(), which removes HTML tags but does not prevent path traversal sequences like &#x27;../&#x27;. The unsanitized filename is then directly concatenated in Upload::getFileLocation() without using basename() or validating the resolved path stays within the intended directory. When an invalid file is uploaded, the cleanup logic  calls dirname() on the traversed path and passes it to Util::rm(), which recursively deletes the entire resolved directory. This makes it possible for authenticated attackers with administrator-level access to traverse outside the intended upload directory and trigger deletion of critical WordPress directories such as wp-content/plugins, effectively disabling all installed plugins and causing severe site disruption.</p></details></td>
+        <td>2026-04-17</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-3330" target="_blank" rel="noopener">CVE-2026-3330</a></td>
+        <td>4.9</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-89</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.43</td>
+        <td><details><summary>The Form Maker by 10Web plugin for WordPress is vulnerable to SQL Injection via ...</summary><p>The Form Maker by 10Web plugin for WordPress is vulnerable to SQL Injection via the &#x27;ip_search&#x27;, &#x27;startdate&#x27;, &#x27;enddate&#x27;, &#x27;username_search&#x27;, and &#x27;useremail_search&#x27; parameters in all versions up to, and including, 1.15.40. This is due to the `WDW_FM_Library::validate_data()` method calling `stripslashes()` on user input (removing WordPress&#x27;s `wp_magic_quotes()` protection) and the `FMModelSubmissions_fm::get_labels_parameters()` function directly concatenating user-supplied values into SQL queries without using `$wpdb-&gt;prepare()`. This makes it possible for authenticated attackers, with Administrator-level access and above, to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database. Additionally, the Submissions controller skips nonce verification for the `display` task, which means this vulnerability can be triggered via CSRF by tricking an administrator into clicking a crafted link.</p></details></td>
+        <td>2026-04-17</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5052" target="_blank" rel="noopener">CVE-2026-5052</a></td>
+        <td>5.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-918</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.71</td>
+        <td><details><summary>Vault’s PKI engine’s ACME validation did not reject local targets when issuing h...</summary><p>Vault’s PKI engine’s ACME validation did not reject local targets when issuing http-01 and tls-alpn-01 challenges. This may lead to these requests being sent to local network targets, potentially leading to information disclosure. Fixed in Vault Community Edition 2.0.0 and Vault Enterprise 2.0.0, 1.21.5, 1.20.10, and 1.19.16.</p></details></td>
+        <td>2026-04-17</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4666" target="_blank" rel="noopener">CVE-2026-4666</a></td>
+        <td>6.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.55</td>
+        <td><details><summary>The wpForo Forum plugin for WordPress is vulnerable to unauthorized modification...</summary><p>The wpForo Forum plugin for WordPress is vulnerable to unauthorized modification of data due to the use of `extract($args, EXTR_OVERWRITE)` on user-controlled input in the `edit()` method of `classes/Posts.php` in all versions up to, and including, 2.4.16. The `post_edit` action handler in `Actions.php` passes `$_REQUEST[&#x27;post&#x27;]` directly to `Posts::edit()`, which calls `extract($args, EXTR_OVERWRITE)`. An attacker can inject `post[guestposting]=1` to overwrite the local `$guestposting` variable, causing the entire permission check block to be skipped. The nonce check uses a hardcoded `wpforo_verify_form` action shared across all 8 forum templates, so any user who can view any forum page obtains a valid nonce. This makes it possible for authenticated attackers, with Subscriber-level access and above, to edit the title, body, name, and email fields of any forum post, including posts in private forums, admin posts, and moderator posts. Content passes through `wpforo_kses()` which strips JavaScript but allows rich HTML.</p></details></td>
+        <td>2026-04-17</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4525" target="_blank" rel="noopener">CVE-2026-4525</a></td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-201</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.25</td>
+        <td><details><summary>If a Vault auth mount is configured to pass through the &quot;Authorization&quot; header, ...</summary><p>If a Vault auth mount is configured to pass through the &quot;Authorization&quot; header, and the &quot;Authorization&quot; header is used to authenticate to Vault, Vault forwarded the Vault token to the auth plugin backend. Fixed in 2.0.0, 1.21.5, 1.20.10, and 1.19.16.</p></details></td>
+        <td>2026-04-17</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-3605" target="_blank" rel="noopener">CVE-2026-3605</a></td>
+        <td>8.1</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-288</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.67</td>
+        <td><details><summary>An authenticated user with access to a kvv2 path through a policy containing a g...</summary><p>An authenticated user with access to a kvv2 path through a policy containing a glob may be able to delete secrets they were not authorized to read or write, resulting in denial-of-service. This vulnerability did not allow a malicious user to delete secrets across namespaces, nor read any secret data. Fxed in Vault Community Edition 2.0.0 and Vault Enterprise 2.0.0, 1.21.5, 1.20.10, and 1.19.16.</p></details></td>
+        <td>2026-04-17</td>
+      </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5231" target="_blank" rel="noopener">CVE-2026-5231</a></td>
         <td>7.2</td>

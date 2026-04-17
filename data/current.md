@@ -1,9 +1,20 @@
 # CVEs — April 2026
 
-_3022 vulnerabilities_
+_3033 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
+| [CVE-2026-6080](https://nvd.nist.gov/vuln/detail/CVE-2026-6080) | 6.5 | MEDIUM | CWE-89 | No | — | 4.55 | 2026-04-17 | The Tutor LMS plugin for WordPress is vulnerable to SQL Injection in versions up to and including 3.9.8. This is due to... |
+| [CVE-2026-5807](https://nvd.nist.gov/vuln/detail/CVE-2026-5807) | 7.5 | HIGH | CWE-770 | No | — | 5.25 | 2026-04-17 | Vault is vulnerable to a denial-of-service condition where an unauthenticated attacker can repeatedly initiate or cancel... |
+| [CVE-2026-5502](https://nvd.nist.gov/vuln/detail/CVE-2026-5502) | 5.3 | MEDIUM | CWE-862 | No | — | 3.71 | 2026-04-17 | The Tutor LMS – eLearning and online course solution plugin for WordPress is vulnerable to unauthorized course content m... |
+| [CVE-2026-5427](https://nvd.nist.gov/vuln/detail/CVE-2026-5427) | 5.3 | MEDIUM | CWE-862 | No | — | 3.71 | 2026-04-17 | The Kubio plugin for WordPress is vulnerable to Arbitrary File Upload in versions up to and including 2.7.2. This is due... |
+| [CVE-2026-5234](https://nvd.nist.gov/vuln/detail/CVE-2026-5234) | 5.3 | MEDIUM | CWE-639 | No | — | 3.71 | 2026-04-17 | The LatePoint plugin for WordPress is vulnerable to Insecure Direct Object Reference in all versions up to, and includin... |
+| [CVE-2026-4853](https://nvd.nist.gov/vuln/detail/CVE-2026-4853) | 4.9 | MEDIUM | CWE-22 | No | — | 3.43 | 2026-04-17 | The JetBackup – Backup, Restore & Migrate plugin for WordPress is vulnerable to Path Traversal leading to Arbitrary Dire... |
+| [CVE-2026-3330](https://nvd.nist.gov/vuln/detail/CVE-2026-3330) | 4.9 | MEDIUM | CWE-89 | No | — | 3.43 | 2026-04-17 | The Form Maker by 10Web plugin for WordPress is vulnerable to SQL Injection via the 'ip_search', 'startdate', 'enddate',... |
+| [CVE-2026-5052](https://nvd.nist.gov/vuln/detail/CVE-2026-5052) | 5.3 | MEDIUM | CWE-918 | No | — | 3.71 | 2026-04-17 | Vault’s PKI engine’s ACME validation did not reject local targets when issuing http-01 and tls-alpn-01 challenges. This... |
+| [CVE-2026-4666](https://nvd.nist.gov/vuln/detail/CVE-2026-4666) | 6.5 | MEDIUM | CWE-862 | No | — | 4.55 | 2026-04-17 | The wpForo Forum plugin for WordPress is vulnerable to unauthorized modification of data due to the use of `extract($arg... |
+| [CVE-2026-4525](https://nvd.nist.gov/vuln/detail/CVE-2026-4525) | 7.5 | HIGH | CWE-201 | No | — | 5.25 | 2026-04-17 | If a Vault auth mount is configured to pass through the "Authorization" header, and the "Authorization" header is used t... |
+| [CVE-2026-3605](https://nvd.nist.gov/vuln/detail/CVE-2026-3605) | 8.1 | HIGH | CWE-288 | No | — | 5.67 | 2026-04-17 | An authenticated user with access to a kvv2 path through a policy containing a glob may be able to delete secrets they w... |
 | [CVE-2026-5231](https://nvd.nist.gov/vuln/detail/CVE-2026-5231) | 7.2 | HIGH | CWE-79 | No | — | 5.04 | 2026-04-17 | The WP Statistics plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'utm_source' parameter in al... |
 | [CVE-2026-5162](https://nvd.nist.gov/vuln/detail/CVE-2026-5162) | 6.4 | MEDIUM | CWE-79 | No | — | 4.48 | 2026-04-17 | The Royal Addons for Elementor plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the Instagram Feed... |
 | [CVE-2026-4817](https://nvd.nist.gov/vuln/detail/CVE-2026-4817) | 6.5 | MEDIUM | CWE-89 | No | — | 4.55 | 2026-04-17 | The MasterStudy LMS WordPress Plugin for Online Courses and Education plugin for WordPress is vulnerable to Time-based B... |
