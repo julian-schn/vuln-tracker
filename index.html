@@ -11,7 +11,7 @@
     <header>
       <h1>vuln-tracker</h1>
       <p class="subtitle">CVEs from the National Vulnerability Database — current and previous month</p>
-      <p class="last-updated">Last updated: 2026-04-17 20:54 UTC</p>
+      <p class="last-updated">Last updated: 2026-04-17 22:49 UTC</p>
     </header>
     <nav>
       <a href="top50.html">&#9733; Top 50</a>
@@ -25,7 +25,7 @@
     </nav>
     <main>
     <section>
-      <h2>Current Month — April 2026 <span class="count">(3148)</span></h2>
+      <h2>Current Month — April 2026 <span class="count">(3165)</span></h2>
       <div class="table-wrapper">
         <table>
           <thead>
@@ -43,31 +43,366 @@
           </thead>
           <tbody>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40461" target="_blank" rel="noopener">CVE-2026-40461</a></td>
-        <td>7.5</td>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5720" target="_blank" rel="noopener">CVE-2026-5720</a></td>
+        <td>7.1</td>
         <td><span class="severity high">HIGH</span></td>
-        <td>CWE-306</td>
+        <td>CWE-125</td>
         <td>&nbsp;</td>
         <td>&mdash;</td>
-        <td>5.25</td>
-        <td><details><summary>Anviz CX2 Lite and CX7 are vulnerable to unauthenticated POST requests that modi...</summary><p>Anviz CX2 Lite and CX7 are vulnerable to unauthenticated POST requests that modify debug 
-settings (e.g., enabling SSH), allowing unauthorized state changes that 
-can facilitate later compromise.</p></details></td>
+        <td>4.97</td>
+        <td><details><summary>miniupnpd contains an integer underflow vulnerability in SOAPAction header parsi...</summary><p>miniupnpd contains an integer underflow vulnerability in SOAPAction header parsing that allows remote attackers to cause a denial of service or information disclosure by sending a malformed SOAPAction header with a single quote. Attackers can trigger an out-of-bounds memory read by exploiting improper length validation in ParseHttpHeaders(), where the parsed length underflows to a large unsigned value when passed to memchr(), causing the process to scan memory far beyond the allocated HTTP request buffer.</p></details></td>
         <td>2026-04-17</td>
       </tr>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40434" target="_blank" rel="noopener">CVE-2026-40434</a></td>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40478" target="_blank" rel="noopener">CVE-2026-40478</a></td>
+        <td>9.0</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-917</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.30</td>
+        <td><details><summary>Thymeleaf is a server-side Java template engine for web and standalone environme...</summary><p>Thymeleaf is a server-side Java template engine for web and standalone environments. Versions 3.1.3.RELEASE and prior contain a security bypass vulnerability in the the expression execution mechanisms. Although the library provides mechanisms to prevent expression injection, it fails to properly neutralize specific syntax patterns that allow for the execution of unauthorized expressions. If an application developer passes unvalidated user input directly to the template engine, an unauthenticated remote attacker can bypass the library&#x27;s protections to achieve Server-Side Template Injection (SSTI). This issue has ben fixed in version 3.1.4.RELEASE.</p></details></td>
+        <td>2026-04-17</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40477" target="_blank" rel="noopener">CVE-2026-40477</a></td>
+        <td>9.0</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-917</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.30</td>
+        <td><details><summary>Thymeleaf is a server-side Java template engine for web and standalone environme...</summary><p>Thymeleaf is a server-side Java template engine for web and standalone environments. Versions 3.1.3.RELEASE and prior contain a security bypass vulnerability in the expression execution mechanisms. Although the library provides mechanisms to prevent expression injection, it fails to properly restrict the scope of accessible objects, allowing specific potentially sensitive objects to be reached from within a template. If an application developer passes unvalidated user input directly to the template engine, an unauthenticated remote attacker can bypass the library&#x27;s protections to achieve Server-Side Template Injection (SSTI). This issue has ben fixed in version 3.1.4.RELEASE.</p></details></td>
+        <td>2026-04-17</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40476" target="_blank" rel="noopener">CVE-2026-40476</a></td>
+        <td>6.9</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-407</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.83</td>
+        <td><details><summary>graphql-go is a Go implementation of GraphQL. In versions 15.31.4 and below, the...</summary><p>graphql-go is a Go implementation of GraphQL. In versions 15.31.4 and below, the OverlappingFieldsCanBeMerged validation rule performs O(n²) pairwise comparisons of fields sharing the same response name. An attacker can send a query with thousands of repeated identical fields, causing excessive CPU usage during validation before execution begins. This is not mitigated by existing QueryDepth or QueryComplexity rules. This issue has been fixed in version 15.31.5.</p></details></td>
+        <td>2026-04-17</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40474" target="_blank" rel="noopener">CVE-2026-40474</a></td>
+        <td>7.6</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-284</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.32</td>
+        <td><details><summary>wger is a free, open-source workout and fitness manager. In versions 2.5 and bel...</summary><p>wger is a free, open-source workout and fitness manager. In versions 2.5 and below, the GymConfigUpdateView declares permission_required = &#x27;config.change_gymconfig&#x27; but inherits WgerFormMixin instead of WgerPermissionMixin, so the permission is never enforced at runtime. Since GymConfig is an ownerless singleton, any authenticated user can modify the global gym configuration, triggering save() side effects that bulk-update user profile gym assignments — a vertical privilege escalation to installation-wide configuration control. This issue is fixed in version 2.5.</p></details></td>
+        <td>2026-04-17</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40353" target="_blank" rel="noopener">CVE-2026-40353</a></td>
+        <td>5.1</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.57</td>
+        <td><details><summary>wger is a free, open-source workout and fitness manager. In versions 2.5 and bel...</summary><p>wger is a free, open-source workout and fitness manager. In versions 2.5 and below, the attribution_link property in AbstractLicenseModel constructs HTML by directly interpolating user-controlled license fields (such as license_author) without escaping, and templates render the result using Django&#x27;s |safe filter. An authenticated user can create an ingredient with a malicious license_author value containing JavaScript, which executes in the browser of any visitor viewing the ingredient page, resulting in stored XSS. This issue has been fixed in version 2.5.</p></details></td>
+        <td>2026-04-17</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40352" target="_blank" rel="noopener">CVE-2026-40352</a></td>
+        <td>8.8</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-943</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.16</td>
+        <td><details><summary>FastGPT is an AI Agent building platform. In versions prior to 4.14.9.5, the pas...</summary><p>FastGPT is an AI Agent building platform. In versions prior to 4.14.9.5, the password change endpoint is vulnerable to NoSQL injection. An authenticated attacker can bypass the &quot;old password&quot; verification by injecting MongoDB query operators. This allows an attacker who has gained a low-privileged session to change the password of their account (or others if combined with ID manipulation) without knowing the current one, leading to full account takeover and persistence. This issue has been fixed in version 4.14.9.5.</p></details></td>
+        <td>2026-04-17</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40351" target="_blank" rel="noopener">CVE-2026-40351</a></td>
+        <td>9.8</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-943</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.86</td>
+        <td><details><summary>FastGPT is an AI Agent building platform. In versions prior to 4.14.9.5, the pas...</summary><p>FastGPT is an AI Agent building platform. In versions prior to 4.14.9.5, the password-based login endpoint uses TypeScript type assertion without runtime validation, allowing an unauthenticated attacker to pass a MongoDB query operator object (e.g., {&quot;$ne&quot;: &quot;&quot;}) as the password field. This NoSQL injection bypasses the password check, enabling login as any user including the root administrator. This issue has been fixed in version 4.14.9.5.</p></details></td>
+        <td>2026-04-17</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40321" target="_blank" rel="noopener">CVE-2026-40321</a></td>
+        <td>8.0</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-87</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.60</td>
+        <td><details><summary>DNN (formerly DotNetNuke) is an open-source web content management platform (CMS...</summary><p>DNN (formerly DotNetNuke) is an open-source web content management platform (CMS) in the Microsoft ecosystem. Prior to version 10.2.2, a user could upload a specially crafted SVG file that could include scripts that can target both authenticated and unauthenticated DNN users. The impact is increased if the scripts are run by a power user. Version 10.2.2 patches the issue.</p></details></td>
+        <td>2026-04-17</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40306" target="_blank" rel="noopener">CVE-2026-40306</a></td>
+        <td>6.9</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-330</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.83</td>
+        <td><details><summary>DNN (formerly DotNetNuke) is an open-source web content management platform (CMS...</summary><p>DNN (formerly DotNetNuke) is an open-source web content management platform (CMS) in the Microsoft ecosystem. All new installations of DNN 10.x.x - 10.2.1 have the same Host GUID. This does not affect upgrades from 9.x.x. Version 10.2.2 patches the issue.</p></details></td>
+        <td>2026-04-17</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40305" target="_blank" rel="noopener">CVE-2026-40305</a></td>
+        <td>4.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-285</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.01</td>
+        <td><details><summary>DNN (formerly DotNetNuke) is an open-source web content management platform (CMS...</summary><p>DNN (formerly DotNetNuke) is an open-source web content management platform (CMS) in the Microsoft ecosystem. Starting in version 6.0.0 and prior to version 10.2.2, in the friends feature, a user could craft a request that would force the acceptance of a friend request on another user. Version 10.2.2 patches the issue.</p></details></td>
+        <td>2026-04-17</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40304" target="_blank" rel="noopener">CVE-2026-40304</a></td>
+        <td>5.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-284</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.71</td>
+        <td><details><summary>zrok is software for sharing web services, files, and network resources. Prior t...</summary><p>zrok is software for sharing web services, files, and network resources. Prior to version 2.0.1, the unaccess handler (controller/unaccess.go) contains a logical error in its ownership guard: when a frontend record has environment_id = NULL (the marker for admin-created global frontends), the condition short-circuits to false and allows the deletion to proceed without any ownership verification. A non-admin user who knows a global frontend token can call DELETE /api/v2/unaccess with any of their own environment IDs and permanently delete the global frontend, taking down all public shares routed through it. Version 2.0.1 patches the issue.</p></details></td>
+        <td>2026-04-17</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40258" target="_blank" rel="noopener">CVE-2026-40258</a></td>
+        <td>9.1</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-22</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.37</td>
+        <td><details><summary>The Gramps Web API is a Python REST API for the genealogical research software G...</summary><p>The Gramps Web API is a Python REST API for the genealogical research software Gramps. Versions 1.6.0 through 3.11.0 have a path traversal vulnerability (Zip Slip) in the media archive import feature. An authenticated user with owner-level privileges can craft a malicious ZIP file with directory-traversal filenames to write arbitrary files outside the intended temporary extraction directory on the server&#x27;s local filesystem. Startig in version 3.11.1, ZIP entry names are now validated against the resolved real path of the temporary directory before extraction. Any entry whose resolved path falls outside the temporary directory raises an error and aborts the import.</p></details></td>
+        <td>2026-04-17</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-29013" target="_blank" rel="noopener">CVE-2026-29013</a></td>
+        <td>8.8</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-125</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.16</td>
+        <td><details><summary>libcoap contains out-of-bounds read vulnerabilities in OSCORE Appendix B.2 CBOR ...</summary><p>libcoap contains out-of-bounds read vulnerabilities in OSCORE Appendix B.2 CBOR unwrap handling where get_byte_inc() in src/oscore/oscore_cbor.c relies solely on assert() for bounds checking, which is removed in release builds compiled with NDEBUG. Attackers can send crafted CoAP requests with malformed OSCORE options or responses during OSCORE negotiation to trigger out-of-bounds reads during CBOR parsing and potentially cause heap buffer overflow writes through integer wraparound in allocation size computation.</p></details></td>
+        <td>2026-04-17</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40527" target="_blank" rel="noopener">CVE-2026-40527</a></td>
+        <td>8.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-78</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.95</td>
+        <td><details><summary>radare2 prior to commit bc5a890 contains a command injection vulnerability in th...</summary><p>radare2 prior to commit bc5a890 contains a command injection vulnerability in the afsv/afsvj command path where crafted ELF binaries can embed malicious r2 command sequences as DWARF DW_TAG_formal_parameter names. Attackers can craft a binary with shell commands in DWARF parameter names that execute when radare2 analyzes the binary with aaa and subsequently runs afsvj, allowing arbitrary shell command execution through the unsanitized parameter interpolation in the pfq command string.</p></details></td>
+        <td>2026-04-17</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40303" target="_blank" rel="noopener">CVE-2026-40303</a></td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-400</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.25</td>
+        <td><details><summary>zrok is software for sharing web services, files, and network resources. Prior t...</summary><p>zrok is software for sharing web services, files, and network resources. Prior to version 2.0.1, endpoints.GetSessionCookie parses an attacker-supplied cookie chunk count and calls make([]string, count) with no upper bound before any token validation occurs. The function is reached on every request to an OAuth-protected proxy share, allowing an unauthenticated remote attacker to trigger gigabyte-scale heap allocations per request, leading to process-level OOM termination or repeated goroutine panics. Both publicProxy and dynamicProxy are affected. Version 2.0.1 patches the issue.</p></details></td>
+        <td>2026-04-17</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40302" target="_blank" rel="noopener">CVE-2026-40302</a></td>
+        <td>6.1</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.27</td>
+        <td><details><summary>zrok is software for sharing web services, files, and network resources. Prior t...</summary><p>zrok is software for sharing web services, files, and network resources. Prior to version 2.0.1, the proxyUi template engine uses Go&#x27;s text/template (which performs no HTML escaping) instead of html/template. The GitHub OAuth callback handlers in both publicProxy and dynamicProxy embed the attacker-controlled refreshInterval query parameter verbatim into an error message when time.ParseDuration fails, and render that error unescaped into HTML. An attacker can deliver a crafted login URL to a victim; after the victim completes the GitHub OAuth flow, the callback page executes arbitrary JavaScript in the OAuth server&#x27;s origin. Version 2.0.1 patches the issue.</p></details></td>
+        <td>2026-04-17</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40301" target="_blank" rel="noopener">CVE-2026-40301</a></td>
+        <td>4.7</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.29</td>
+        <td><details><summary>DOMSanitizer is a DOM/SVG/MathML Sanitizer for PHP 7.3+. Prior to version 1.0.10...</summary><p>DOMSanitizer is a DOM/SVG/MathML Sanitizer for PHP 7.3+. Prior to version 1.0.10, DOMSanitizer::sanitize() allows &lt;style&gt; elements in SVG content but never inspects their text content. CSS url() references and @import rules pass through unfiltered, causing the browser to issue HTTP requests to attacker-controlled hosts when the sanitized SVG is rendered. Version 1.0.10 fixes the issue.</p></details></td>
+        <td>2026-04-17</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40299" target="_blank" rel="noopener">CVE-2026-40299</a></td>
+        <td>6.9</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-601</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.83</td>
+        <td><details><summary>next-intl provides internationalization for Next.js. Applications using the `nex...</summary><p>next-intl provides internationalization for Next.js. Applications using the `next-intl` middleware prior to version 4.9.1with `localePrefix: &#x27;as-needed&#x27;` could construct URLs where path handling and the WHATWG URL parser resolved a relative redirect target to another host (e.g. scheme-relative `//` or control characters stripped by the URL parser), so the middleware could redirect the browser off-site while the user still started from a trusted app URL. The problem has been patchedin `next-intl@4.9.1`.</p></details></td>
+        <td>2026-04-17</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40293" target="_blank" rel="noopener">CVE-2026-40293</a></td>
+        <td>6.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-200</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.55</td>
+        <td><details><summary>OpenFGA is an authorization/permission engine built for developers. In versions ...</summary><p>OpenFGA is an authorization/permission engine built for developers. In versions 0.1.4 through 1.13.1, when OpenFGA is configured to use preshared-key authentication with the built-in playground enabled, the local server includes the preshared API key in the HTML response of the /playground endpoint. The /playground endpoint is enabled by default and does not require authentication. It is intended for local development and debugging and is not designed to be exposed to production environments. Only those who run OpenFGA with `--authn-method` preshared, with the playground enabled, and with the playground endpoint accessible beyond localhost or trusted networks are vulnerable. To remediate the issue, users should upgrade to OpenFGA v1.14.0, or disable the playground by running `./openfga run --playground-enabled=false.`</p></details></td>
+        <td>2026-04-17</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40286" target="_blank" rel="noopener">CVE-2026-40286</a></td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.25</td>
+        <td><details><summary>WeGIA is a web manager for charitable institutions. In versions prior to 3.6.10,...</summary><p>WeGIA is a web manager for charitable institutions. In versions prior to 3.6.10, a Stored Cross-Site Scripting (XSS) vulnerability was identified in the &#x27;Member Registration&#x27; (Cadastrar Sócio) function. By injecting a payload into the &#x27;Member Name&#x27; (Nome Sócio) field, the script is persistently stored in the database. Consequently, the payload is executed whenever a user navigates to certain URL. Version 3.6.10 fixes the issue.</p></details></td>
+        <td>2026-04-17</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40285" target="_blank" rel="noopener">CVE-2026-40285</a></td>
+        <td>8.8</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-89</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.16</td>
+        <td><details><summary>WeGIA is a web manager for charitable institutions. Versions prior to 3.6.10 con...</summary><p>WeGIA is a web manager for charitable institutions. Versions prior to 3.6.10 contain a SQL injection vulnerability in dao/memorando/UsuarioDAO.php. The cpf_usuario POST parameter overwrites the session-stored user identity via extract($_REQUEST) in DespachoControle::verificarDespacho(), and the attacker-controlled value is then interpolated directly into a raw SQL query, allowing any authenticated user to query the database under an arbitrary identity. Version 3.6.10 fixes the issue.</p></details></td>
+        <td>2026-04-17</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40284" target="_blank" rel="noopener">CVE-2026-40284</a></td>
+        <td>6.8</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.76</td>
+        <td><details><summary>WeGIA is a web manager for charitable institutions. In versions prior to 3.6.10,...</summary><p>WeGIA is a web manager for charitable institutions. In versions prior to 3.6.10, a Stored Cross-Site Scripting (XSS) vulnerability allows an authenticated user to inject malicious JavaScript via the &quot;Destinatário&quot; field. The payload is stored and later executed when viewing the dispatch page, impacting other users. Version 3.6.10 fixes the issue.</p></details></td>
+        <td>2026-04-17</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40282" target="_blank" rel="noopener">CVE-2026-40282</a></td>
+        <td>6.4</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.48</td>
+        <td><details><summary>WeGIA is a web manager for charitable institutions. In versions prior to 3.6.10,...</summary><p>WeGIA is a web manager for charitable institutions. In versions prior to 3.6.10, a Stored Cross-Site Scripting (XSS) vulnerability allows an authenticated user to inject malicious JavaScript into the Intercorrências notification page, which is executed when user access the the page, enabling session hijacking and account takeover. Version 3.6.10 fixes the issue.</p></details></td>
+        <td>2026-04-17</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40196" target="_blank" rel="noopener">CVE-2026-40196</a></td>
         <td>8.1</td>
         <td><span class="severity high">HIGH</span></td>
-        <td>CWE-940</td>
+        <td>CWE-708</td>
         <td>&nbsp;</td>
         <td>&mdash;</td>
         <td>5.67</td>
-        <td><details><summary>Anviz CrossChex Standard
-lacks source verification in the client/server channel,...</summary><p>Anviz CrossChex Standard
-lacks source verification in the client/server channel, enabling TCP 
-packet injection by an attacker on the same network to alter or disrupt 
-application traffic.</p></details></td>
+        <td><details><summary>HomeBox is a home inventory and organization system. Versions prior to 0.25.0 co...</summary><p>HomeBox is a home inventory and organization system. Versions prior to 0.25.0 contain a vulnerability where the defaultGroup ID remained permanently assigned to a user after being invited to a group, even after their access to that group was revoked. While the web interface correctly enforced the access revocation and prevented the user from viewing or modifying the group&#x27;s contents, the API did not. Because the original group ID persisted as the user&#x27;s defaultGroup, and this value was not properly validated when the X-Tenant header was omitted, the user could still perform full CRUD operations on the group&#x27;s collections through the API, bypassing the intended access controls. This issue has been fixed in version 0.25.0.</p></details></td>
+        <td>2026-04-17</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40155" target="_blank" rel="noopener">CVE-2026-40155</a></td>
+        <td>5.4</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-362</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.78</td>
+        <td><details><summary>The Auth0 Next.js SDK is a library for implementing user authentication in Next....</summary><p>The Auth0 Next.js SDK is a library for implementing user authentication in Next.js applications. In versions 4.12.0 through 4.17.1, simultaneous requests that trigger a nonce retry may cause the proxy cache fetcher to perform improper lookups for the token request results. Users are affected if their project uses both the vulnerable versions and the proxy handler /me/* and /my-org/* with DPoP enabled. This issue has been fixed in version 4.18.0.</p></details></td>
+        <td>2026-04-17</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35603" target="_blank" rel="noopener">CVE-2026-35603</a></td>
+        <td>5.4</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-426</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.78</td>
+        <td><details><summary>Claude Code is an agentic coding tool. In versions prior to 2.1.75 on Windows, C...</summary><p>Claude Code is an agentic coding tool. In versions prior to 2.1.75 on Windows, Claude Code loaded the system-wide default configuration from C:\ProgramData\ClaudeCode\managed-settings.json without validating directory ownership or access permissions. Because the ProgramData directory is writable by non-administrative users by default and the ClaudeCode subdirectory was not pre-created or access-restricted, a low-privileged local user could create this directory and place a malicious configuration file that would be automatically loaded for any user launching Claude Code on the same machine. Exploiting this would have required a shared multi-user Windows system and a victim user to launch Claude Code after the malicious configuration was placed. This issue has been fixed on version 2.1.75.</p></details></td>
+        <td>2026-04-17</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35512" target="_blank" rel="noopener">CVE-2026-35512</a></td>
+        <td>8.7</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-122</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.09</td>
+        <td><details><summary>xrdp is an open source RDP server. Versions through 0.10.5 have a heap-based buf...</summary><p>xrdp is an open source RDP server. Versions through 0.10.5 have a heap-based buffer overflow in the EGFX (graphics dynamic virtual channel) implementation due to insufficient validation of client-controlled size parameters, allowing an out-of-bounds write via crafted PDUs. Pre-authentication exploitation can crash the process, while post-authentication exploitation may achieve remote code execution. This issue has been fixed in version 0.10.6. If users are unable to immediately update, they should run xrdp as a non-privileged user (default since 0.10.2) to limit the impact of successful exploitation.</p></details></td>
+        <td>2026-04-17</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35402" target="_blank" rel="noopener">CVE-2026-35402</a></td>
+        <td>2.3</td>
+        <td><span class="severity low">LOW</span></td>
+        <td>CWE-284</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>1.61</td>
+        <td><details><summary>mcp-neo4j-cypher is an MCP server for executing Cypher queries against Neo4j dat...</summary><p>mcp-neo4j-cypher is an MCP server for executing Cypher queries against Neo4j databases. In versions prior to 0.6.0, the read_only mode enforcement can be bypassed using APOC CALL procedures, potentially allowing unauthorized write operations or server-side request forgery. This issue is fixed in version 0.6.0.</p></details></td>
+        <td>2026-04-17</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33689" target="_blank" rel="noopener">CVE-2026-33689</a></td>
+        <td>8.7</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-125</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.09</td>
+        <td><details><summary>xrdp is an open source RDP server. Versions through 0.10.5 have an out-of-bounds...</summary><p>xrdp is an open source RDP server. Versions through 0.10.5 have an out-of-bounds read vulnerability in the pre-authentication RDP message parsing logic. A remote, unauthenticated attacker can trigger this flaw by sending a specially crafted sequence of packets during the initial connection phase. This vulnerability results from insufficient validation of input buffer lengths before processing dynamic channel communication. Successful exploitation can lead to a denial-of-service (DoS) condition via a process crash or potential disclosure of sensitive information from the service&#x27;s memory space. This issue has been fixed in version 0.10.6.</p></details></td>
+        <td>2026-04-17</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33436" target="_blank" rel="noopener">CVE-2026-33436</a></td>
+        <td>3.1</td>
+        <td><span class="severity low">LOW</span></td>
+        <td>CWE-20</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>2.17</td>
+        <td><details><summary>Stirling-PDF is a locally hosted web application that facilitates various operat...</summary><p>Stirling-PDF is a locally hosted web application that facilitates various operations on PDF files. In versions prior to 2.0.0, file upload endpoints render user-supplied filenames directly into HTML using unsafe methods like innerHTML without sanitization. An attacker can craft a file with a malicious filename containing JavaScript that executes in the uploading user&#x27;s browser context, resulting in reflected XSS. The issue affects numerous upload endpoints across the application. The issue has been fixed in version 2.0.0.</p></details></td>
+        <td>2026-04-17</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33145" target="_blank" rel="noopener">CVE-2026-33145</a></td>
+        <td>6.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-78</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.41</td>
+        <td><details><summary>xrdp is an open source RDP server. Versions through 0.10.5 allow an authenticate...</summary><p>xrdp is an open source RDP server. Versions through 0.10.5 allow an authenticated remote user to execute arbitrary commands on the server due to unsafe handling of the AlternateShell parameter in xrdp-sesman. When the AllowAlternateShell setting is enabled (which is the default when not explicitly configured), xrdp accepts a client-supplied AlternateShell value and executes it via /bin/sh -c during session initialization. This results in shell-interpreted execution of unsanitized, user-controlled input. This behavior effectively provides a scriptable remote command execution primitive over RDP within the security context of the authenticated user, occurring prior to normal window manager startup. This can bypass expected session initialization flows and operational assumptions that restrict execution to interactive desktop environments. This issue has been fixed in version 0.10.6.</p></details></td>
+        <td>2026-04-17</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-23500" target="_blank" rel="noopener">CVE-2026-23500</a></td>
+        <td>9.4</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-78</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.58</td>
+        <td><details><summary>Dolibarr is an enterprise resource planning (ERP) and customer relationship mana...</summary><p>Dolibarr is an enterprise resource planning (ERP) and customer relationship management (CRM) software package. In versions prior to 23.0.0 , the ODT to PDF conversion process in odf.php concatenates the MAIN_ODT_AS_PDF configuration constant directly into a shell command passed to exec() without sanitization. An authenticated administrator can inject arbitrary OS commands via this constant using command separators, achieving remote code execution as the web server user when any ODT template is generated. This issue has been fixed in version 23.0.0.</p></details></td>
         <td>2026-04-17</td>
       </tr>
       <tr>
@@ -93,46 +428,6 @@ application traffic.</p></details></td>
         <td>2026-04-17</td>
       </tr>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40066" target="_blank" rel="noopener">CVE-2026-40066</a></td>
-        <td>8.8</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-494</td>
-        <td>&nbsp;</td>
-        <td>&mdash;</td>
-        <td>6.16</td>
-        <td><details><summary>Anviz CX2 Lite and CX7 are vulnerable to unverified update packages that can be ...</summary><p>Anviz CX2 Lite and CX7 are vulnerable to unverified update packages that can be uploaded. The 
-device unpacks and executes a script resulting in unauthenticated remote
- code execution.</p></details></td>
-        <td>2026-04-17</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35682" target="_blank" rel="noopener">CVE-2026-35682</a></td>
-        <td>8.8</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-77</td>
-        <td>&nbsp;</td>
-        <td>&mdash;</td>
-        <td>6.16</td>
-        <td><details><summary>Anviz CX2 Lite is vulnerable to an authenticated command injection via a 
-filena...</summary><p>Anviz CX2 Lite is vulnerable to an authenticated command injection via a 
-filename parameter that enables arbitrary command execution (e.g., 
-starting telnetd), resulting in root‑level access.</p></details></td>
-        <td>2026-04-17</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35546" target="_blank" rel="noopener">CVE-2026-35546</a></td>
-        <td>9.8</td>
-        <td><span class="severity critical">CRITICAL</span></td>
-        <td>CWE-306</td>
-        <td>&nbsp;</td>
-        <td>&mdash;</td>
-        <td>6.86</td>
-        <td><details><summary>Anviz CX2 Lite and CX7 are vulnerable to unauthenticated firmware uploads. This ...</summary><p>Anviz CX2 Lite and CX7 are vulnerable to unauthenticated firmware uploads. This causes crafted 
-archives to be accepted, enabling attackers to plant and execute code 
-and obtain a reverse shell.</p></details></td>
-        <td>2026-04-17</td>
-      </tr>
-      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35215" target="_blank" rel="noopener">CVE-2026-35215</a></td>
         <td>7.5</td>
         <td><span class="severity high">HIGH</span></td>
@@ -141,19 +436,6 @@ and obtain a reverse shell.</p></details></td>
         <td>&mdash;</td>
         <td>5.25</td>
         <td><details><summary>Firebird is an open-source relational database management system. In versions pr...</summary><p>Firebird is an open-source relational database management system. In versions prior to 5.0.4, 4.0.7 and 3.0.14, the sdl_desc() function does not validate the length of a decoded SDL descriptor from a slice packet. A zero-length descriptor is later used to calculate the number of slice items, causing a division by zero. An unauthenticated attacker can exploit this by sending a crafted slice packet to crash the server. This issue has been fixed in versions 5.0.4, 4.0.7 and 3.0.14.</p></details></td>
-        <td>2026-04-17</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35061" target="_blank" rel="noopener">CVE-2026-35061</a></td>
-        <td>5.3</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-862</td>
-        <td>&nbsp;</td>
-        <td>&mdash;</td>
-        <td>3.71</td>
-        <td><details><summary>Anviz CX7 Firmware is vulnerable to the most recently captured test photo that c...</summary><p>Anviz CX7 Firmware is vulnerable to the most recently captured test photo that can be 
-retrieved without authentication, revealing sensitive operational 
-imagery.</p></details></td>
         <td>2026-04-17</td>
       </tr>
       <tr>
@@ -168,20 +450,6 @@ imagery.</p></details></td>
         <td>2026-04-17</td>
       </tr>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33569" target="_blank" rel="noopener">CVE-2026-33569</a></td>
-        <td>6.5</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-319</td>
-        <td>&nbsp;</td>
-        <td>&mdash;</td>
-        <td>4.55</td>
-        <td><details><summary>Anviz CX2 Lite and CX7 administrative sessions occur over HTTP, enabling 
-on‑pat...</summary><p>Anviz CX2 Lite and CX7 administrative sessions occur over HTTP, enabling 
-on‑path attackers to sniff credentials and session data, which can be 
-used to compromise the device.</p></details></td>
-        <td>2026-04-17</td>
-      </tr>
-      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33516" target="_blank" rel="noopener">CVE-2026-33516</a></td>
         <td>7.7</td>
         <td><span class="severity high">HIGH</span></td>
@@ -190,45 +458,6 @@ used to compromise the device.</p></details></td>
         <td>&mdash;</td>
         <td>5.39</td>
         <td><details><summary>xrdp is an open source RDP server. Versions through 0.10.5 contain an out-of-bou...</summary><p>xrdp is an open source RDP server. Versions through 0.10.5 contain an out-of-bounds read vulnerability during the RDP capability exchange phase. The issue occurs when memory is accessed before validating the remaining buffer length. A remote, unauthenticated attacker can trigger this vulnerability by sending a specially crafted Confirm Active PDU. Successful exploitation could lead to a denial of service (process crash) or potential disclosure of sensitive information from the process memory. This issue has been fixed in version 0.10.6.</p></details></td>
-        <td>2026-04-17</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33093" target="_blank" rel="noopener">CVE-2026-33093</a></td>
-        <td>5.3</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-862</td>
-        <td>&nbsp;</td>
-        <td>&mdash;</td>
-        <td>3.71</td>
-        <td><details><summary>Anviz CX7 Firmware is vulnerable to an unauthenticated POST to the device that c...</summary><p>Anviz CX7 Firmware is vulnerable to an unauthenticated POST to the device that captures
- a photo with the front facing camera, exposing visual information about
- the deployment environment.</p></details></td>
-        <td>2026-04-17</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32650" target="_blank" rel="noopener">CVE-2026-32650</a></td>
-        <td>7.5</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-757</td>
-        <td>&nbsp;</td>
-        <td>&mdash;</td>
-        <td>5.25</td>
-        <td><details><summary>Anviz CrossChex Standard is vulnerable when an attacker manipulates the TDS7 Pre...</summary><p>Anviz CrossChex Standard is vulnerable when an attacker manipulates the TDS7 PreLogin to disable 
-encryption, causing database credentials to be sent in plaintext and 
-enabling unauthorized database access.</p></details></td>
-        <td>2026-04-17</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32648" target="_blank" rel="noopener">CVE-2026-32648</a></td>
-        <td>5.3</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-862</td>
-        <td>&nbsp;</td>
-        <td>&mdash;</td>
-        <td>3.71</td>
-        <td><details><summary>Anviz CX2 Lite and CX7 are vulnerable to unauthenticated access that discloses d...</summary><p>Anviz CX2 Lite and CX7 are vulnerable to unauthenticated access that discloses debug 
-configuration details (e.g., SSH/RTTY status), assisting attackers in 
-reconnaissance against the device.</p></details></td>
         <td>2026-04-17</td>
       </tr>
       <tr>
@@ -254,21 +483,6 @@ reconnaissance against the device.</p></details></td>
         <td>2026-04-17</td>
       </tr>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32324" target="_blank" rel="noopener">CVE-2026-32324</a></td>
-        <td>7.7</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-321</td>
-        <td>&nbsp;</td>
-        <td>&mdash;</td>
-        <td>5.39</td>
-        <td><details><summary>Anviz CX7 Firmware is 
-vulnerable because the application embeds reusable certif...</summary><p>Anviz CX7 Firmware is 
-vulnerable because the application embeds reusable certificate/key 
-material, enabling decryption of MQTT traffic and potential interaction 
-with device messaging channels at scale.</p></details></td>
-        <td>2026-04-17</td>
-      </tr>
-      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32107" target="_blank" rel="noopener">CVE-2026-32107</a></td>
         <td>8.8</td>
         <td><span class="severity high">HIGH</span></td>
@@ -288,35 +502,6 @@ with device messaging channels at scale.</p></details></td>
         <td>&mdash;</td>
         <td>6.51</td>
         <td><details><summary>xrdp is an open source RDP server. In versions through 0.10.5, xrdp does not imp...</summary><p>xrdp is an open source RDP server. In versions through 0.10.5, xrdp does not implement verification for the Message Authentication Code (MAC) signature of encrypted RDP packets when using the &quot;Classic RDP Security&quot; layer. While the sender correctly generates signatures, the receiving logic lacks the necessary implementation to validate the 8-byte integrity signature, causing it to be silently ignored. An unauthenticated attacker with man-in-the-middle (MITM) capabilities can exploit this missing check to modify encrypted traffic in transit without detection. It does not affect connections where the TLS security layer is enforced. This issue has been fixed in version 0.10.6. If users are unable to immediately upgrade, they should configure xrdp.ini to enforce TLS security (security_layer=tls) to ensure end-to-end integrity.</p></details></td>
-        <td>2026-04-17</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-31927" target="_blank" rel="noopener">CVE-2026-31927</a></td>
-        <td>4.9</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-23</td>
-        <td>&nbsp;</td>
-        <td>&mdash;</td>
-        <td>3.43</td>
-        <td><details><summary>Anviz CX7 Firmware is vulnerable to an authenticated CSV upload which allows pat...</summary><p>Anviz CX7 Firmware is vulnerable to an authenticated CSV upload which allows path traversal 
-to overwrite arbitrary files (e.g., /etc/shadow), enabling unauthorized 
-SSH access when combined with debug‑setting changes</p></details></td>
-        <td>2026-04-17</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6437" target="_blank" rel="noopener">CVE-2026-6437</a></td>
-        <td>6.9</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-88</td>
-        <td>&nbsp;</td>
-        <td>&mdash;</td>
-        <td>4.83</td>
-        <td><details><summary>Improper neutralization of argument delimiters in the volume handling component ...</summary><p>Improper neutralization of argument delimiters in the volume handling component in AWS EFS CSI Driver (aws-efs-csi-driver) before v3.0.1 allows remote authenticated users with PersistentVolume creation permissions to inject arbitrary mount options via comma injection.
-
-
-
-
-To remediate this issue, users should upgrade to version v3.0.1</p></details></td>
         <td>2026-04-17</td>
       </tr>
       <tr>
@@ -9989,19 +10174,6 @@ To remediate this issue, users should upgrade to version v3.0.1</p></details></t
         <td>2026-04-13</td>
       </tr>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34855" target="_blank" rel="noopener">CVE-2026-34855</a></td>
-        <td>5.7</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-20</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p0</small></td>
-        <td>3.99</td>
-        <td><details><summary>Out-of-bounds write vulnerability in the kernel module.
-Impact: Successful explo...</summary><p>Out-of-bounds write vulnerability in the kernel module.
-Impact: Successful exploitation of this vulnerability will affect availability and confidentiality.</p></details></td>
-        <td>2026-04-13</td>
-      </tr>
-      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-25209" target="_blank" rel="noopener">CVE-2026-25209</a></td>
         <td>6.5</td>
         <td><span class="severity medium">MEDIUM</span></td>
@@ -10109,19 +10281,6 @@ Impact: Successful exploitation of this vulnerability will affect availability a
         <td>0.0% <small>p8</small></td>
         <td>4.83</td>
         <td><details><summary>A vulnerability was identified in code-projects Vehicle Showroom Management Syst...</summary><p>A vulnerability was identified in code-projects Vehicle Showroom Management System 1.0. Impacted is an unknown function of the file /util/StaffDetailsFunction.php. Such manipulation of the argument STAFF_ID leads to sql injection. The attack can be launched remotely. The exploit is publicly available and might be used.</p></details></td>
-        <td>2026-04-13</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34867" target="_blank" rel="noopener">CVE-2026-34867</a></td>
-        <td>5.6</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-415</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p0</small></td>
-        <td>3.92</td>
-        <td><details><summary>Double free vulnerability in the multi-mode input system.
-Impact: Successful exp...</summary><p>Double free vulnerability in the multi-mode input system.
-Impact: Successful exploitation of this vulnerability may affect availability.</p></details></td>
         <td>2026-04-13</td>
       </tr>
       <tr>
@@ -13609,18 +13768,6 @@ Impact: Successful exploitation of this vulnerability may affect availability.</
         <td>0.0% <small>p10</small></td>
         <td>5.04</td>
         <td><details><summary>PraisonAI is a multi-agent teams system. Prior to 4.5.128, the /api/v1/runs endp...</summary><p>PraisonAI is a multi-agent teams system. Prior to 4.5.128, the /api/v1/runs endpoint accepts an arbitrary webhook_url in the request body with no URL validation. When a submitted job completes (success or failure), the server makes an HTTP POST request to this URL using httpx.AsyncClient. An unauthenticated attacker can use this to make the server send POST requests to arbitrary internal or external destinations, enabling SSRF against cloud metadata services, internal APIs, and other network-adjacent services. This vulnerability is fixed in 4.5.128.</p></details></td>
-        <td>2026-04-09</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40113" target="_blank" rel="noopener">CVE-2026-40113</a></td>
-        <td>8.4</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-88</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p5</small></td>
-        <td>5.88</td>
-        <td><details><summary>PraisonAI is a multi-agent teams system. Prior to 4.5.128, deploy.py constructs ...</summary><p>PraisonAI is a multi-agent teams system. Prior to 4.5.128, deploy.py constructs a single comma-delimited string for the gcloud run
-deploy --set-env-vars argument by directly interpolating openai_model, openai_key, and openai_base without validating that these values do not contain commas. gcloud uses a comma as the key-value pair separator for --set-env-vars. A comma in any of the three values causes gcloud to parse the trailing text as additional KEY=VALUE definitions, injecting arbitrary environment variables into the deployed Cloud Run service. This vulnerability is fixed in 4.5.128.</p></details></td>
         <td>2026-04-09</td>
       </tr>
       <tr>
@@ -82287,12 +82434,12 @@ deploy --set-env-vars argument by directly interpolating openai_model, openai_ke
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-0846" target="_blank" rel="noopener">CVE-2026-0846</a></td>
-        <td>8.6</td>
+        <td>7.5</td>
         <td><span class="severity high">HIGH</span></td>
         <td>CWE-36</td>
         <td>&nbsp;</td>
         <td>0.1% <small>p29</small></td>
-        <td>6.02</td>
+        <td>5.25</td>
         <td><details><summary>A vulnerability in the `filestring()` function of the `nltk.util` module in nltk...</summary><p>A vulnerability in the `filestring()` function of the `nltk.util` module in nltk version 3.9.2 allows arbitrary file read due to improper validation of input paths. The function directly opens files specified by user input without sanitization, enabling attackers to access sensitive system files by providing absolute paths or traversal paths. This vulnerability can be exploited locally or remotely, particularly in scenarios where the function is used in web APIs or other interfaces that accept user-supplied input.</p></details></td>
         <td>2026-03-09</td>
       </tr>
