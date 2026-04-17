@@ -1,6 +1,6 @@
 # CVEs — March 2026
 
-_5734 vulnerabilities_
+_5737 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
@@ -3449,6 +3449,9 @@ _5734 vulnerabilities_
 | [CVE-2025-13718](https://nvd.nist.gov/vuln/detail/CVE-2025-13718) | 3.7 | LOW | CWE-319 | No | 0.0% | 2.59 | 2026-03-13 | IBM Sterling Partner Engagement Manager 6.2.3.0 through 6.2.3.5 and 6.2.4.0 through 6.2.4.2 could allow a remote attacke... |
 | [CVE-2025-13702](https://nvd.nist.gov/vuln/detail/CVE-2025-13702) | 6.1 | MEDIUM | CWE-79 | No | 0.0% | 4.27 | 2026-03-13 | IBM Sterling Partner Engagement Manager 6.2.3.0 through 6.2.3.5 and 6.2.4.0 through 6.2.4.2 is vulnerable to cross-site... |
 | [CVE-2025-13337](https://nvd.nist.gov/vuln/detail/CVE-2025-13337) | 0.0 | NONE | N/A | No | — | 0.00 | 2026-03-13 | Rejected reason: This CVE ID has been rejected or withdrawn by its CVE Numbering Authority. |
+| [CVE-2025-12455](https://nvd.nist.gov/vuln/detail/CVE-2025-12455) | 5.1 | MEDIUM | CWE-204 | No | 0.1% | 3.57 | 2026-03-13 | Observable response discrepancy vulnerability in OpenText™ Vertica allows Password Brute Forcing.   The vulnerability co... |
+| [CVE-2025-12454](https://nvd.nist.gov/vuln/detail/CVE-2025-12454) | 5.1 | MEDIUM | CWE-79 | No | 0.1% | 3.57 | 2026-03-13 | Improper neutralization of input during web page generation ('cross-site scripting') vulnerability in OpenText™ Vertica... |
+| [CVE-2025-12453](https://nvd.nist.gov/vuln/detail/CVE-2025-12453) | 5.1 | MEDIUM | CWE-79 | No | 0.1% | 3.57 | 2026-03-13 | Improper neutralization of input during web page generation ('cross-site scripting') vulnerability in OpenText™ Vertica... |
 | [CVE-2023-40693](https://nvd.nist.gov/vuln/detail/CVE-2023-40693) | 5.4 | MEDIUM | CWE-79 | No | 0.0% | 3.78 | 2026-03-13 | IBM Sterling B2B Integrator and IBM Sterling File Gateway 6.1.0.0 through 6.1.2.7_2, and 6.2.0.0 through 6.2.0.5_1, 6.2.... |
 | [CVE-2026-3611](https://nvd.nist.gov/vuln/detail/CVE-2026-3611) | 10.0 | CRITICAL | CWE-306 | No | 0.2% | 7.01 | 2026-03-12 | The Honeywell IQ4x building management controller, exposes its full web-based HMI without authentication in its factory-... |
 | [CVE-2026-32274](https://nvd.nist.gov/vuln/detail/CVE-2026-32274) | 8.7 | HIGH | CWE-22 | No | 0.0% | 6.09 | 2026-03-12 | Black is the uncompromising Python code formatter. Prior to 26.3.1, Black writes a cache file, the name of which is comp... |
@@ -3510,8 +3513,8 @@ _5734 vulnerabilities_
 | [CVE-2026-25529](https://nvd.nist.gov/vuln/detail/CVE-2026-25529) | 8.1 | HIGH | CWE-79 | No | 0.0% | 5.67 | 2026-03-12 | Postal is an open source SMTP server. Postal versions less than 3.3.5 had a HTML injection vulnerability that allowed un... |
 | [CVE-2026-24125](https://nvd.nist.gov/vuln/detail/CVE-2026-24125) | 6.3 | MEDIUM | CWE-22 | No | 0.1% | 4.41 | 2026-03-12 | Tina is a headless content management system. Prior to 2.1.2, TinaCMS allows users to create, update, and delete content... |
 | [CVE-2026-21887](https://nvd.nist.gov/vuln/detail/CVE-2026-21887) | 7.7 | HIGH | CWE-918 | No | 0.0% | 5.39 | 2026-03-12 | OpenCTI is an open source platform for managing cyber threat intelligence knowledge and observables. Prior to 6.8.16, th... |
-| [CVE-2026-21708](https://nvd.nist.gov/vuln/detail/CVE-2026-21708) | 9.9 | CRITICAL | N/A | No | 1.3% | 6.97 | 2026-03-12 | A vulnerability allowing a Backup Viewer to perform remote code execution (RCE) as the postgres user. |
-| [CVE-2026-21672](https://nvd.nist.gov/vuln/detail/CVE-2026-21672) | 8.8 | HIGH | N/A | No | 0.0% | 6.16 | 2026-03-12 | A vulnerability allowing local privilege escalation on Windows-based Veeam Backup & Replication servers. |
+| [CVE-2026-21708](https://nvd.nist.gov/vuln/detail/CVE-2026-21708) | 0.0 | NONE | CWE-89 | No | 1.3% | 0.04 | 2026-03-12 | A vulnerability allowing a Backup Viewer to perform remote code execution (RCE) as the postgres user. |
+| [CVE-2026-21672](https://nvd.nist.gov/vuln/detail/CVE-2026-21672) | 0.0 | NONE | CWE-538 | No | 0.0% | 0.00 | 2026-03-12 | A vulnerability allowing local privilege escalation on Windows-based Veeam Backup & Replication servers. |
 | [CVE-2026-4044](https://nvd.nist.gov/vuln/detail/CVE-2026-4044) | 5.1 | MEDIUM | CWE-22 | No | 0.1% | 3.57 | 2026-03-12 | A vulnerability was detected in projectsend up to r1945. This affects the function realpath of the file /import-orphans.... |
 | [CVE-2026-4043](https://nvd.nist.gov/vuln/detail/CVE-2026-4043) | 7.4 | HIGH | CWE-119 | No | 0.1% | 5.18 | 2026-03-12 | A security vulnerability has been detected in Tenda i12 1.0.0.6(2204). The impacted element is the function formwrlSSIDg... |
 | [CVE-2019-25543](https://nvd.nist.gov/vuln/detail/CVE-2019-25543) | 8.8 | HIGH | CWE-89 | No | 0.2% | 6.17 | 2026-03-12 | Netartmedia Real Estate Portal 5.0 contains an SQL injection vulnerability that allows unauthenticated attackers to mani... |
