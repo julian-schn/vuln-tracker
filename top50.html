@@ -11,7 +11,7 @@
     <header>
       <h1>vuln-tracker — Top 50</h1>
       <p class="subtitle">The 50 most important CVEs from the current and previous month, ranked by VAP score (70% CVSS + 30% EPSS)</p>
-      <p class="last-updated">Last updated: 2026-04-17 13:44 UTC</p>
+      <p class="last-updated">Last updated: 2026-04-17 15:03 UTC</p>
     </header>
     <nav>
       <a href="index.html">&larr; All CVEs</a>
@@ -57,8 +57,8 @@
         <td><span class="severity critical">CRITICAL</span></td>
         <td>CWE-125</td>
         <td><span class="kev-yes">&#10003;</span></td>
-        <td>53.8% <small>p98</small></td>
-        <td>8.12</td>
+        <td>55.7% <small>p98</small></td>
+        <td>8.18</td>
         <td><details><summary>Insufficient input validation in NetScaler ADC and NetScaler Gateway when config...</summary><p>Insufficient input validation in NetScaler ADC and NetScaler Gateway when configured as a SAML IDP leading to memory overread</p></details></td>
         <td>2026-03-23</td>
       </tr>
@@ -206,6 +206,17 @@
         <td>2026-03-04</td>
       </tr>
       <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-31843" target="_blank" rel="noopener">CVE-2026-31843</a></td>
+        <td>10.0</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-284</td>
+        <td>&nbsp;</td>
+        <td>0.9% <small>p75</small></td>
+        <td>7.03</td>
+        <td><details><summary>The goodoneuz/pay-uz Laravel package (&lt;= 2.2.24) contains a critical vulnerabili...</summary><p>The goodoneuz/pay-uz Laravel package (&lt;= 2.2.24) contains a critical vulnerability in the /payment/api/editable/update endpoint that allows unauthenticated attackers to overwrite existing PHP payment hook files. The endpoint is exposed via Route::any() without authentication middleware, enabling remote access without credentials. User-controlled input is directly written into executable PHP files using file_put_contents(). These files are later executed via require() during normal payment processing workflows, resulting in remote code execution under default application behavior. The payment secret token mentioned by the vendor is unrelated to this endpoint and does not mitigate the vulnerability.</p></details></td>
+        <td>2026-04-16</td>
+      </tr>
+      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-2743" target="_blank" rel="noopener">CVE-2026-2743</a></td>
         <td>10.0</td>
         <td><span class="severity critical">CRITICAL</span></td>
@@ -259,6 +270,17 @@
         <td>7.01</td>
         <td><details><summary>ChurchCRM is an open-source church management system. Prior to 7.1.0, critical p...</summary><p>ChurchCRM is an open-source church management system. Prior to 7.1.0, critical pre-authentication remote code execution vulnerability in ChurchCRM&#x27;s setup wizard allows unauthenticated attackers to inject arbitrary PHP code during the initial installation process, leading to complete server compromise. The &quot;$dbPassword&quot; variable is not sanitized. This vulnerability exists due to an incomplete fix for CVE-2025-62521. This vulnerability is fixed in 7.1.0.</p></details></td>
         <td>2026-04-07</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33032" target="_blank" rel="noopener">CVE-2026-33032</a></td>
+        <td>9.8</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-306</td>
+        <td>&nbsp;</td>
+        <td>5.0% <small>p89</small></td>
+        <td>7.01</td>
+        <td><details><summary>Nginx UI is a web user interface for the Nginx web server. In versions 2.3.5 and...</summary><p>Nginx UI is a web user interface for the Nginx web server. In versions 2.3.5 and prior, the nginx-ui MCP (Model Context Protocol) integration exposes two HTTP endpoints: /mcp and /mcp_message. While /mcp requires both IP whitelisting and authentication (AuthRequired() middleware), the /mcp_message endpoint only applies IP whitelisting - and the default IP whitelist is empty, which the middleware treats as &quot;allow all&quot;. This means any network attacker can invoke all MCP tools without authentication, including restarting nginx, creating/modifying/deleting nginx configuration files, and triggering automatic config reloads - achieving complete nginx service takeover. At time of publication, there are no publicly available patches.</p></details></td>
+        <td>2026-03-30</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-31957" target="_blank" rel="noopener">CVE-2026-31957</a></td>
@@ -567,28 +589,6 @@
         <td>7.00</td>
         <td><details><summary>Sandbox escape due to use-after-free in the Disability Access APIs component. Th...</summary><p>Sandbox escape due to use-after-free in the Disability Access APIs component. This vulnerability was fixed in Firefox 149, Firefox ESR 140.9, Thunderbird 149, and Thunderbird 140.9.</p></details></td>
         <td>2026-03-24</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-0124" target="_blank" rel="noopener">CVE-2026-0124</a></td>
-        <td>10.0</td>
-        <td><span class="severity critical">CRITICAL</span></td>
-        <td>CWE-787</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p5</small></td>
-        <td>7.00</td>
-        <td><details><summary>There is a possible out of bounds write due to a missing bounds check. This coul...</summary><p>There is a possible out of bounds write due to a missing bounds check. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.</p></details></td>
-        <td>2026-03-10</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-48611" target="_blank" rel="noopener">CVE-2025-48611</a></td>
-        <td>10.0</td>
-        <td><span class="severity critical">CRITICAL</span></td>
-        <td>CWE-120</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p5</small></td>
-        <td>7.00</td>
-        <td><details><summary>In DeviceId of DeviceId.java, there is a possible desync in persistence due to a...</summary><p>In DeviceId of DeviceId.java, there is a possible desync in persistence due to a missing bounds check. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.</p></details></td>
-        <td>2026-03-10</td>
       </tr>
             </tbody>
           </table>
