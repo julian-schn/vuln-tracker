@@ -1,9 +1,31 @@
 # CVEs — April 2026
 
-_3033 vulnerabilities_
+_3055 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
+| [CVE-2026-6494](https://nvd.nist.gov/vuln/detail/CVE-2026-6494) | 5.3 | MEDIUM | CWE-117 | No | — | 3.71 | 2026-04-17 | A flaw was found in the AAP MCP server. An unauthenticated remote attacker can exploit a log injection vulnerability by... |
+| [CVE-2026-6439](https://nvd.nist.gov/vuln/detail/CVE-2026-6439) | 4.4 | MEDIUM | CWE-79 | No | — | 3.08 | 2026-04-17 | The VideoZen plugin for WordPress is vulnerable to Stored Cross-Site Scripting in versions up to and including 1.0.1. Th... |
+| [CVE-2026-23778](https://nvd.nist.gov/vuln/detail/CVE-2026-23778) | 7.2 | HIGH | CWE-77 | No | — | 5.04 | 2026-04-17 | Dell PowerProtect Data Domain with Data Domain Operating System (DD OS) of Feature Release versions 7.7.1.0 through 8.5,... |
+| [CVE-2026-23775](https://nvd.nist.gov/vuln/detail/CVE-2026-23775) | 7.6 | HIGH | CWE-532 | No | — | 5.32 | 2026-04-17 | Dell PowerProtect Data Domain appliances with Data Domain Operating System (DD OS) of Feature Release versions 8.0 throu... |
+| [CVE-2025-36568](https://nvd.nist.gov/vuln/detail/CVE-2025-36568) | 7.8 | HIGH | CWE-522 | No | — | 5.46 | 2026-04-17 | Dell PowerProtect Data Domain BoostFS for client of Feature Release versions 7.7.1.0 through 8.5, LTS2025 release versio... |
+| [CVE-2025-15625](https://nvd.nist.gov/vuln/detail/CVE-2025-15625) | 9.5 | CRITICAL | CWE-89 | No | — | 6.65 | 2026-04-17 | Unauthenticated user is able to execute arbitrary SQL commands in Sparx Pro Cloud Server database in certain cases. |
+| [CVE-2025-15624](https://nvd.nist.gov/vuln/detail/CVE-2025-15624) | 9.3 | CRITICAL | CWE-256 | No | — | 6.51 | 2026-04-17 | Plaintext Storage of a Password vulnerability in Sparx Systems Pty Ltd. Sparx Pro Cloud Server.  In a setup where OpenID... |
+| [CVE-2025-15623](https://nvd.nist.gov/vuln/detail/CVE-2025-15623) | 9.3 | CRITICAL | CWE-359 | No | — | 6.51 | 2026-04-17 | Exposure of Private Personal Information to an Unauthorized Actor, : Exposure of Sensitive System Information to an Unau... |
+| [CVE-2025-15622](https://nvd.nist.gov/vuln/detail/CVE-2025-15622) | 6.2 | MEDIUM | CWE-522 | No | — | 4.34 | 2026-04-17 | Insufficiently Protected Credentials vulnerability in Sparx Systems Pty Ltd. Sparx Enterprise Architect. Client reveals... |
+| [CVE-2026-6451](https://nvd.nist.gov/vuln/detail/CVE-2026-6451) | 4.3 | MEDIUM | CWE-352 | No | — | 3.01 | 2026-04-17 | The cms-fuer-motorrad-werkstaetten plugin for WordPress is vulnerable to Cross-Site Request Forgery in versions up to an... |
+| [CVE-2026-40002](https://nvd.nist.gov/vuln/detail/CVE-2026-40002) | 5.0 | MEDIUM | CWE-269 | No | — | 3.50 | 2026-04-17 | Red Magic 11 Pro (NX809J) contains a vulnerability that allows non-privileged applications to trigger sensitive operatio... |
+| [CVE-2026-33392](https://nvd.nist.gov/vuln/detail/CVE-2026-33392) | 7.2 | HIGH | CWE-1336 | No | — | 5.04 | 2026-04-17 | In JetBrains YouTrack before 2025.3.131383 high privileged user can achieve RCE via sandbox bypass |
+| [CVE-2026-23853](https://nvd.nist.gov/vuln/detail/CVE-2026-23853) | 8.4 | HIGH | CWE-1391 | No | — | 5.88 | 2026-04-17 | Dell PowerProtect Data Domain with Data Domain Operating System (DD OS) of Feature Release versions 7.7.1.0 through 8.5,... |
+| [CVE-2026-6443](https://nvd.nist.gov/vuln/detail/CVE-2026-6443) | 9.8 | CRITICAL | CWE-506 | No | — | 6.86 | 2026-04-17 | The Accordion and Accordion Slider plugin for WordPress is vulnerable to an injected backdoor in version 1.4.6. This is... |
+| [CVE-2026-6441](https://nvd.nist.gov/vuln/detail/CVE-2026-6441) | 4.3 | MEDIUM | CWE-862 | No | — | 3.01 | 2026-04-17 | The Canto plugin for WordPress is vulnerable to Missing Authorization in versions up to and including 3.1.1. This is due... |
+| [CVE-2026-4659](https://nvd.nist.gov/vuln/detail/CVE-2026-4659) | 7.5 | HIGH | CWE-22 | No | — | 5.25 | 2026-04-17 | The Unlimited Elements for Elementor plugin for WordPress is vulnerable to Arbitrary File Read via the Repeater JSON/CSV... |
+| [CVE-2026-6482](https://nvd.nist.gov/vuln/detail/CVE-2026-6482) | 8.5 | HIGH | CWE-829 | No | — | 5.95 | 2026-04-17 | The Rapid7 Insight Agent (versions > 4.1.0.2) is vulnerable to a local privilege escalation attack that allows users to... |
+| [CVE-2026-6421](https://nvd.nist.gov/vuln/detail/CVE-2026-6421) | 7.3 | HIGH | CWE-426 | No | — | 5.11 | 2026-04-17 | A vulnerability has been found in Mobatek MobaXterm Home Edition up to 26.1. This affects an unknown part in the library... |
+| [CVE-2026-5797](https://nvd.nist.gov/vuln/detail/CVE-2026-5797) | 5.3 | MEDIUM | CWE-74 | No | — | 3.71 | 2026-04-17 | The Quiz And Survey Master plugin for WordPress is vulnerable to Arbitrary Shortcode Execution in versions up to and inc... |
+| [CVE-2026-35496](https://nvd.nist.gov/vuln/detail/CVE-2026-35496) | 5.1 | MEDIUM | CWE-22 | No | — | 3.57 | 2026-04-17 | A path traversal vulnerability exists in CubeCart prior to 6.6.0, which may allow a user with an administrative privileg... |
+| [CVE-2026-34018](https://nvd.nist.gov/vuln/detail/CVE-2026-34018) | 5.1 | MEDIUM | CWE-89 | No | — | 3.57 | 2026-04-17 | An SQL injection vulnerability exists in CubeCart prior to 6.6.0, which may allow an attacker to execute an arbitrary SQ... |
+| [CVE-2026-21719](https://nvd.nist.gov/vuln/detail/CVE-2026-21719) | 8.6 | HIGH | CWE-78 | No | — | 6.02 | 2026-04-17 | An OS command injection vulnerability exists in CubeCart prior to 6.6.0, which may allow a user with an administrative p... |
 | [CVE-2026-6080](https://nvd.nist.gov/vuln/detail/CVE-2026-6080) | 6.5 | MEDIUM | CWE-89 | No | — | 4.55 | 2026-04-17 | The Tutor LMS plugin for WordPress is vulnerable to SQL Injection in versions up to and including 3.9.8. This is due to... |
 | [CVE-2026-5807](https://nvd.nist.gov/vuln/detail/CVE-2026-5807) | 7.5 | HIGH | CWE-770 | No | — | 5.25 | 2026-04-17 | Vault is vulnerable to a denial-of-service condition where an unauthenticated attacker can repeatedly initiate or cancel... |
 | [CVE-2026-5502](https://nvd.nist.gov/vuln/detail/CVE-2026-5502) | 5.3 | MEDIUM | CWE-862 | No | — | 3.71 | 2026-04-17 | The Tutor LMS – eLearning and online course solution plugin for WordPress is vulnerable to unauthorized course content m... |
