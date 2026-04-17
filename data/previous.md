@@ -1,6 +1,6 @@
 # CVEs — March 2026
 
-_5737 vulnerabilities_
+_5734 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
@@ -3449,9 +3449,6 @@ _5737 vulnerabilities_
 | [CVE-2025-13718](https://nvd.nist.gov/vuln/detail/CVE-2025-13718) | 3.7 | LOW | CWE-319 | No | 0.0% | 2.59 | 2026-03-13 | IBM Sterling Partner Engagement Manager 6.2.3.0 through 6.2.3.5 and 6.2.4.0 through 6.2.4.2 could allow a remote attacke... |
 | [CVE-2025-13702](https://nvd.nist.gov/vuln/detail/CVE-2025-13702) | 6.1 | MEDIUM | CWE-79 | No | 0.0% | 4.27 | 2026-03-13 | IBM Sterling Partner Engagement Manager 6.2.3.0 through 6.2.3.5 and 6.2.4.0 through 6.2.4.2 is vulnerable to cross-site... |
 | [CVE-2025-13337](https://nvd.nist.gov/vuln/detail/CVE-2025-13337) | 0.0 | NONE | N/A | No | — | 0.00 | 2026-03-13 | Rejected reason: This CVE ID has been rejected or withdrawn by its CVE Numbering Authority. |
-| [CVE-2025-12455](https://nvd.nist.gov/vuln/detail/CVE-2025-12455) | 5.1 | MEDIUM | CWE-204 | No | 0.1% | 3.57 | 2026-03-13 | Observable response discrepancy vulnerability in OpenText™ Vertica allows Password Brute Forcing.   The vulnerability co... |
-| [CVE-2025-12454](https://nvd.nist.gov/vuln/detail/CVE-2025-12454) | 5.1 | MEDIUM | CWE-79 | No | 0.1% | 3.57 | 2026-03-13 | Improper neutralization of input during web page generation ('cross-site scripting') vulnerability in OpenText™ Vertica... |
-| [CVE-2025-12453](https://nvd.nist.gov/vuln/detail/CVE-2025-12453) | 5.1 | MEDIUM | CWE-79 | No | 0.1% | 3.57 | 2026-03-13 | Improper neutralization of input during web page generation ('cross-site scripting') vulnerability in OpenText™ Vertica... |
 | [CVE-2023-40693](https://nvd.nist.gov/vuln/detail/CVE-2023-40693) | 5.4 | MEDIUM | CWE-79 | No | 0.0% | 3.78 | 2026-03-13 | IBM Sterling B2B Integrator and IBM Sterling File Gateway 6.1.0.0 through 6.1.2.7_2, and 6.2.0.0 through 6.2.0.5_1, 6.2.... |
 | [CVE-2026-3611](https://nvd.nist.gov/vuln/detail/CVE-2026-3611) | 10.0 | CRITICAL | CWE-306 | No | 0.2% | 7.01 | 2026-03-12 | The Honeywell IQ4x building management controller, exposes its full web-based HMI without authentication in its factory-... |
 | [CVE-2026-32274](https://nvd.nist.gov/vuln/detail/CVE-2026-32274) | 8.7 | HIGH | CWE-22 | No | 0.0% | 6.09 | 2026-03-12 | Black is the uncompromising Python code formatter. Prior to 26.3.1, Black writes a cache file, the name of which is comp... |
