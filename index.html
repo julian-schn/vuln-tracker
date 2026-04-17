@@ -11,7 +11,7 @@
     <header>
       <h1>vuln-tracker</h1>
       <p class="subtitle">CVEs from the National Vulnerability Database — current and previous month</p>
-      <p class="last-updated">Last updated: 2026-04-16 22:50 UTC</p>
+      <p class="last-updated">Last updated: 2026-04-17 03:23 UTC</p>
     </header>
     <nav>
       <a href="top50.html">&#9733; Top 50</a>
@@ -25,7 +25,7 @@
     </nav>
     <main>
     <section>
-      <h2>Current Month — April 2026 <span class="count">(3006)</span></h2>
+      <h2>Current Month — April 2026 <span class="count">(3022)</span></h2>
       <div class="table-wrapper">
         <table>
           <thead>
@@ -42,6 +42,182 @@
             </tr>
           </thead>
           <tbody>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5231" target="_blank" rel="noopener">CVE-2026-5231</a></td>
+        <td>7.2</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.04</td>
+        <td><details><summary>The WP Statistics plugin for WordPress is vulnerable to Stored Cross-Site Script...</summary><p>The WP Statistics plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the &#x27;utm_source&#x27; parameter in all versions up to, and including, 14.16.4. This is due to insufficient input sanitization and output escaping. The plugin&#x27;s referral parser copies the raw utm_source value into the source_name field when a wildcard channel domain matches, and the chart renderer later inserts this value into legend markup via innerHTML without escaping. This makes it possible for unauthenticated attackers to inject arbitrary web scripts in admin pages that will execute whenever an administrator accesses the Referrals Overview or Social Media analytics pages.</p></details></td>
+        <td>2026-04-17</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5162" target="_blank" rel="noopener">CVE-2026-5162</a></td>
+        <td>6.4</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.48</td>
+        <td><details><summary>The Royal Addons for Elementor plugin for WordPress is vulnerable to Stored Cros...</summary><p>The Royal Addons for Elementor plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the Instagram Feed widget&#x27;s &#x27;instagram_follow_text&#x27; setting in all versions up to, and including, 1.7.1056 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with Contributor-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.</p></details></td>
+        <td>2026-04-17</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4817" target="_blank" rel="noopener">CVE-2026-4817</a></td>
+        <td>6.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-89</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.55</td>
+        <td><details><summary>The MasterStudy LMS WordPress Plugin for Online Courses and Education plugin for...</summary><p>The MasterStudy LMS WordPress Plugin for Online Courses and Education plugin for WordPress is vulnerable to Time-based Blind SQL Injection via the &#x27;order&#x27; and &#x27;orderby&#x27; parameters in the /lms/stm-lms/order/items REST API endpoint in versions up to and including 3.7.25. This is due to insufficient input sanitization combined with a design flaw in the custom Query builder class that allows unquoted SQL injection in ORDER BY clauses. When the Query builder detects parentheses in the sort_by parameter, it treats the value as a SQL function and directly concatenates it into the ORDER BY clause without any quoting. While esc_sql() is applied to escape quotes and backslashes, this cannot prevent ORDER BY injection when the values themselves are not wrapped in quotes in the resulting SQL statement. This makes it possible for authenticated attackers, with subscriber-level access and above, to append arbitrary SQL queries via the ORDER BY clause to extract sensitive information from the database including user credentials, session tokens, and other confidential data through time-based blind SQL injection techniques.</p></details></td>
+        <td>2026-04-17</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-3488" target="_blank" rel="noopener">CVE-2026-3488</a></td>
+        <td>6.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.55</td>
+        <td><details><summary>The WP Statistics plugin for WordPress is vulnerable to Missing Authorization in...</summary><p>The WP Statistics plugin for WordPress is vulnerable to Missing Authorization in all versions up to, and including, 14.16.4. This is due to missing capability checks on multiple AJAX handlers including `wp_statistics_get_filters`, `wp_statistics_getPrivacyStatus`, `wp_statistics_updatePrivacyStatus`, and `wp_statistics_dismiss_notices`. These endpoints only verify a `wp_rest` nonce via `check_ajax_referer()` but do not enforce any capability checks such as `current_user_can()` or the plugin&#x27;s own `User::Access()` method. Since the `wp_rest` nonce is available to all authenticated WordPress users, this makes it possible for authenticated attackers, with Subscriber-level access and above, to access sensitive analytics data (user IDs, usernames, emails, visitor tracking data), retrieve and modify privacy audit compliance status, and dismiss administrative notices.</p></details></td>
+        <td>2026-04-17</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40922" target="_blank" rel="noopener">CVE-2026-40922</a></td>
+        <td>5.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.71</td>
+        <td><details><summary>SiYuan is an open-source personal knowledge management system. In versions 3.6.1...</summary><p>SiYuan is an open-source personal knowledge management system. In versions 3.6.1 through 3.6.3, a prior fix for XSS in bazaar README rendering (incomplete fix for CVE-2026-33066) enabled the Lute HTML sanitizer, but the sanitizer does not block iframe tags, and its URL-prefix blocklist does not effectively filter srcdoc attributes which contain raw HTML rather than URLs. A malicious bazaar package author can include an iframe with a srcdoc attribute containing embedded scripts in their README. When other users view the package in SiYuan&#x27;s marketplace UI, the payload executes in the Electron context with full application privileges, enabling arbitrary code execution on the user&#x27;s machine. This issue has been fixed in version 3.6.4.</p></details></td>
+        <td>2026-04-17</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40265" target="_blank" rel="noopener">CVE-2026-40265</a></td>
+        <td>5.9</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.13</td>
+        <td><details><summary>Note Mark is an open-source note-taking application. In versions 0.19.1 and prio...</summary><p>Note Mark is an open-source note-taking application. In versions 0.19.1 and prior, the asset download endpoint at /api/notes/{noteID}/assets/{assetID} is registered without authentication middleware, and the backend query does not verify ownership or book visibility. An unauthenticated user who knows a valid note ID and asset ID can retrieve the full contents of private note assets without authentication, regardless of whether the associated book is public or private. This issue has been fixed in version 0.19.2.</p></details></td>
+        <td>2026-04-17</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40263" target="_blank" rel="noopener">CVE-2026-40263</a></td>
+        <td>3.7</td>
+        <td><span class="severity low">LOW</span></td>
+        <td>CWE-208</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>2.59</td>
+        <td><details><summary>Note Mark is an open-source note-taking application. In versions 0.19.1 and prio...</summary><p>Note Mark is an open-source note-taking application. In versions 0.19.1 and prior, the login endpoint performs bcrypt password verification only when the supplied username exists, returning immediately for nonexistent usernames. This timing discrepancy allows unauthenticated attackers to enumerate valid usernames by measuring response times, enabling targeted credential attacks. This issue has been fixed in version 0.19.2.</p></details></td>
+        <td>2026-04-17</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40262" target="_blank" rel="noopener">CVE-2026-40262</a></td>
+        <td>8.7</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.09</td>
+        <td><details><summary>Note Mark is an open-source note-taking application. In versions 0.19.1 and prio...</summary><p>Note Mark is an open-source note-taking application. In versions 0.19.1 and prior, the asset delivery handler serves uploaded files inline and relies on magic-byte detection for content type, which does not identify text-based formats such as HTML, SVG, or XHTML. These files are served with an empty Content-Type, no X-Content-Type-Options: nosniff header, and inline disposition, allowing browsers to sniff and render active content. An authenticated user can upload an HTML or SVG file containing JavaScript as a note asset, and when a victim navigates to the asset URL, the script executes under the application&#x27;s origin with access to the victim&#x27;s authenticated session and API actions. This issue has been fixed in version 0.19.2.</p></details></td>
+        <td>2026-04-17</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40260" target="_blank" rel="noopener">CVE-2026-40260</a></td>
+        <td>6.9</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-776</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.83</td>
+        <td><details><summary>pypdf is a free and open-source pure-python PDF library. In versions prior to 6....</summary><p>pypdf is a free and open-source pure-python PDF library. In versions prior to 6.10.0, manipulated XMP metadata entity declarations can exhaust RAM. An attacker who exploits this vulnerability can craft a PDF which leads to large memory usage. This requires parsing the XMP metadata. This issue has been fixed in version 6.10.0.</p></details></td>
+        <td>2026-04-17</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-22734" target="_blank" rel="noopener">CVE-2026-22734</a></td>
+        <td>8.6</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-290</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.02</td>
+        <td><details><summary>Cloud Foundry UUA is vulnerable to a bypass that allows an attacker to obtain a ...</summary><p>Cloud Foundry UUA is vulnerable to a bypass that allows an attacker to obtain a token for any user and gain access to UAA-protected systems. This vulnerability exists when SAML 2.0 bearer assertions are enabled for a client, as the UAA accepts SAML 2.0 bearer assertions that are neither signed nor encrypted. This issue affects UUA from v77.30.0 to v78.7.0 (inclusive) and it affects CF Deployment from v48.7.0 to v54.14.0 (inclusive).</p></details></td>
+        <td>2026-04-17</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40322" target="_blank" rel="noopener">CVE-2026-40322</a></td>
+        <td>9.0</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.30</td>
+        <td><details><summary>SiYuan is an open-source personal knowledge management system. In versions 3.6.3...</summary><p>SiYuan is an open-source personal knowledge management system. In versions 3.6.3 and below, Mermaid diagrams are rendered with securityLevel set to &quot;loose&quot;, and the resulting SVG is injected into the DOM via innerHTML. This allows attacker-controlled javascript: URLs in Mermaid code blocks to survive into the rendered output. On desktop builds using Electron, windows are created with nodeIntegration enabled and contextIsolation disabled, escalating the stored XSS to arbitrary code execution when a victim opens a note containing a malicious Mermaid block and clicks the rendered diagram node. This issue has been fixed in version 3.6.4.</p></details></td>
+        <td>2026-04-16</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40318" target="_blank" rel="noopener">CVE-2026-40318</a></td>
+        <td>8.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-24</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.95</td>
+        <td><details><summary>SiYuan is an open-source personal knowledge management system. In versions 3.6.3...</summary><p>SiYuan is an open-source personal knowledge management system. In versions 3.6.3 and prior, the /api/av/removeUnusedAttributeView endpoint constructs a filesystem path using the user-controlled id parameter without validation or path boundary enforcement. An attacker can inject path traversal sequences such as ../ into the id value to escape the intended directory and delete arbitrary .json files on the server, including global configuration files and workspace metadata. This issue has been fixed in version 3.6.4.</p></details></td>
+        <td>2026-04-16</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40259" target="_blank" rel="noopener">CVE-2026-40259</a></td>
+        <td>8.1</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-285</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.67</td>
+        <td><details><summary>SiYuan is an open-source personal knowledge management system. In versions 3.6.3...</summary><p>SiYuan is an open-source personal knowledge management system. In versions 3.6.3 and below, the /api/av/removeUnusedAttributeView endpoint is protected only by generic authentication that accepts publish-service RoleReader tokens. The handler passes a caller-controlled id directly to a model function that unconditionally deletes the corresponding attribute view file from the workspace without verifying that the caller has write privileges or that the target attribute view is actually unused. An authenticated publish-service reader can permanently delete arbitrary attribute view definitions by extracting publicly exposed data-av-id values from published content, causing breakage of database views and workspace rendering until manually restored. This issue has been fixed in version 3.6.4.</p></details></td>
+        <td>2026-04-16</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40255" target="_blank" rel="noopener">CVE-2026-40255</a></td>
+        <td>6.1</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-601</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.27</td>
+        <td><details><summary>AdonisJS HTTP Server is a package for handling HTTP requests in the AdonisJS fra...</summary><p>AdonisJS HTTP Server is a package for handling HTTP requests in the AdonisJS framework. In @adonisjs/http-server versions prior to 7.8.1 and 8.0.0-next.0 through 8.1.3, and @adonisjs/core versions prior to 7.4.0, the response.redirect().back() method reads the Referer header from the incoming HTTP request and redirects to that URL without validating the host.An attacker who can influence the Referer header can cause the application to redirect users to a malicious external site. This affects all AdonisJS applications that use response.redirect().back() or response.redirect(&#x27;back&#x27;). This issue has been fixed in versions 7.8.1 and 8.2.0 and 7.4.0 of @adonisjs/core.</p></details></td>
+        <td>2026-04-16</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40253" target="_blank" rel="noopener">CVE-2026-40253</a></td>
+        <td>6.8</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-125</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.76</td>
+        <td><details><summary>openCryptoki is a PKCS#11 library and provides tooling for Linux and AIX. In ver...</summary><p>openCryptoki is a PKCS#11 library and provides tooling for Linux and AIX. In versions 3.26.0 and below, the BER/DER decoding functions in the shared common library (asn1.c) accept a raw pointer but no buffer length parameter, and trust attacker-controlled BER length fields without validating them against actual buffer boundaries. All primitive decoders are affected: ber_decode_INTEGER, ber_decode_SEQUENCE, ber_decode_OCTET_STRING, ber_decode_BIT_STRING, and ber_decode_CHOICE. Additionally, ber_decode_INTEGER can produce integer underflows when the encoded length is zero. An attacker supplying a malformed BER-encoded cryptographic object through PKCS#11 operations such as C_CreateObject or C_UnwrapKey, token loading from disk, or remote backend communication can trigger out-of-bounds reads. This affects all token backends (Soft, ICA, CCA, TPM, EP11, ICSF) since the vulnerable code is in the shared common library. A patch is available thorugh commit ed378f463ef73364c89feb0fc923f4dc867332a3.</p></details></td>
+        <td>2026-04-16</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2024-58343" target="_blank" rel="noopener">CVE-2024-58343</a></td>
+        <td>4.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-425</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.01</td>
+        <td><details><summary>Vision Helpdesk before 5.7.0 (patched in 5.6.10) allows attackers to read user p...</summary><p>Vision Helpdesk before 5.7.0 (patched in 5.6.10) allows attackers to read user profiles via modified serialized cookie data to vis_client_id.</p></details></td>
+        <td>2026-04-16</td>
+      </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-41113" target="_blank" rel="noopener">CVE-2026-41113</a></td>
         <td>8.1</td>

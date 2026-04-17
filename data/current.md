@@ -1,9 +1,25 @@
 # CVEs — April 2026
 
-_3006 vulnerabilities_
+_3022 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
+| [CVE-2026-5231](https://nvd.nist.gov/vuln/detail/CVE-2026-5231) | 7.2 | HIGH | CWE-79 | No | — | 5.04 | 2026-04-17 | The WP Statistics plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'utm_source' parameter in al... |
+| [CVE-2026-5162](https://nvd.nist.gov/vuln/detail/CVE-2026-5162) | 6.4 | MEDIUM | CWE-79 | No | — | 4.48 | 2026-04-17 | The Royal Addons for Elementor plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the Instagram Feed... |
+| [CVE-2026-4817](https://nvd.nist.gov/vuln/detail/CVE-2026-4817) | 6.5 | MEDIUM | CWE-89 | No | — | 4.55 | 2026-04-17 | The MasterStudy LMS WordPress Plugin for Online Courses and Education plugin for WordPress is vulnerable to Time-based B... |
+| [CVE-2026-3488](https://nvd.nist.gov/vuln/detail/CVE-2026-3488) | 6.5 | MEDIUM | CWE-862 | No | — | 4.55 | 2026-04-17 | The WP Statistics plugin for WordPress is vulnerable to Missing Authorization in all versions up to, and including, 14.1... |
+| [CVE-2026-40922](https://nvd.nist.gov/vuln/detail/CVE-2026-40922) | 5.3 | MEDIUM | CWE-79 | No | — | 3.71 | 2026-04-17 | SiYuan is an open-source personal knowledge management system. In versions 3.6.1 through 3.6.3, a prior fix for XSS in b... |
+| [CVE-2026-40265](https://nvd.nist.gov/vuln/detail/CVE-2026-40265) | 5.9 | MEDIUM | CWE-862 | No | — | 4.13 | 2026-04-17 | Note Mark is an open-source note-taking application. In versions 0.19.1 and prior, the asset download endpoint at /api/n... |
+| [CVE-2026-40263](https://nvd.nist.gov/vuln/detail/CVE-2026-40263) | 3.7 | LOW | CWE-208 | No | — | 2.59 | 2026-04-17 | Note Mark is an open-source note-taking application. In versions 0.19.1 and prior, the login endpoint performs bcrypt pa... |
+| [CVE-2026-40262](https://nvd.nist.gov/vuln/detail/CVE-2026-40262) | 8.7 | HIGH | CWE-79 | No | — | 6.09 | 2026-04-17 | Note Mark is an open-source note-taking application. In versions 0.19.1 and prior, the asset delivery handler serves upl... |
+| [CVE-2026-40260](https://nvd.nist.gov/vuln/detail/CVE-2026-40260) | 6.9 | MEDIUM | CWE-776 | No | — | 4.83 | 2026-04-17 | pypdf is a free and open-source pure-python PDF library. In versions prior to 6.10.0, manipulated XMP metadata entity de... |
+| [CVE-2026-22734](https://nvd.nist.gov/vuln/detail/CVE-2026-22734) | 8.6 | HIGH | CWE-290 | No | — | 6.02 | 2026-04-17 | Cloud Foundry UUA is vulnerable to a bypass that allows an attacker to obtain a token for any user and gain access to UA... |
+| [CVE-2026-40322](https://nvd.nist.gov/vuln/detail/CVE-2026-40322) | 9.0 | CRITICAL | CWE-79 | No | — | 6.30 | 2026-04-16 | SiYuan is an open-source personal knowledge management system. In versions 3.6.3 and below, Mermaid diagrams are rendere... |
+| [CVE-2026-40318](https://nvd.nist.gov/vuln/detail/CVE-2026-40318) | 8.5 | HIGH | CWE-24 | No | — | 5.95 | 2026-04-16 | SiYuan is an open-source personal knowledge management system. In versions 3.6.3 and prior, the /api/av/removeUnusedAttr... |
+| [CVE-2026-40259](https://nvd.nist.gov/vuln/detail/CVE-2026-40259) | 8.1 | HIGH | CWE-285 | No | — | 5.67 | 2026-04-16 | SiYuan is an open-source personal knowledge management system. In versions 3.6.3 and below, the /api/av/removeUnusedAttr... |
+| [CVE-2026-40255](https://nvd.nist.gov/vuln/detail/CVE-2026-40255) | 6.1 | MEDIUM | CWE-601 | No | — | 4.27 | 2026-04-16 | AdonisJS HTTP Server is a package for handling HTTP requests in the AdonisJS framework. In @adonisjs/http-server version... |
+| [CVE-2026-40253](https://nvd.nist.gov/vuln/detail/CVE-2026-40253) | 6.8 | MEDIUM | CWE-125 | No | — | 4.76 | 2026-04-16 | openCryptoki is a PKCS#11 library and provides tooling for Linux and AIX. In versions 3.26.0 and below, the BER/DER deco... |
+| [CVE-2024-58343](https://nvd.nist.gov/vuln/detail/CVE-2024-58343) | 4.3 | MEDIUM | CWE-425 | No | — | 3.01 | 2026-04-16 | Vision Helpdesk before 5.7.0 (patched in 5.6.10) allows attackers to read user profiles via modified serialized cookie d... |
 | [CVE-2026-41113](https://nvd.nist.gov/vuln/detail/CVE-2026-41113) | 8.1 | HIGH | CWE-78 | No | — | 5.67 | 2026-04-16 | sagredo qmail before 2026.04.07 allows tls_quit remote code execution because of popen in notlshosts_auto in qmail-remot... |
 | [CVE-2026-40308](https://nvd.nist.gov/vuln/detail/CVE-2026-40308) | 8.8 | HIGH | CWE-639 | No | — | 6.16 | 2026-04-16 | My Calendar is a WordPress plugin for managing calendar events. In versions 3.7.6 and below, the mc_ajax_mcjs_action AJA... |
 | [CVE-2026-40249](https://nvd.nist.gov/vuln/detail/CVE-2026-40249) | 6.9 | MEDIUM | CWE-636 | No | — | 4.83 | 2026-04-16 | free5GC is an open-source implementation of the 5G core network. In versions 4.2.1 and below of the UDR service, the PUT... |
