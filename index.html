@@ -11,7 +11,7 @@
     <header>
       <h1>vuln-tracker</h1>
       <p class="subtitle">CVEs from the National Vulnerability Database — current and previous month</p>
-      <p class="last-updated">Last updated: 2026-04-18 07:18 UTC</p>
+      <p class="last-updated">Last updated: 2026-04-18 08:58 UTC</p>
     </header>
     <nav>
       <a href="top50.html">&#9733; Top 50</a>
@@ -25,7 +25,7 @@
     </nav>
     <main>
     <section>
-      <h2>Current Month — April 2026 <span class="count">(3218)</span></h2>
+      <h2>Current Month — April 2026 <span class="count">(3215)</span></h2>
       <div class="table-wrapper">
         <table>
           <thead>
@@ -54,31 +54,6 @@
         <td>2026-04-18</td>
       </tr>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32690" target="_blank" rel="noopener">CVE-2026-32690</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>CWE-668</td>
-        <td>&nbsp;</td>
-        <td>&mdash;</td>
-        <td>0.00</td>
-        <td><details><summary>Secrets in Variables saved as JSON dictionaries were not properly redacted - in ...</summary><p>Secrets in Variables saved as JSON dictionaries were not properly redacted - in case thee variables were retrieved by the user the secrets stored as nested fields were not masked.
-
-If you do not store variables with sensitive values in JSON form, you are not affected. Otherwise please upgrade to Apache Airflow 3.2.0 that has the fix implemented</p></details></td>
-        <td>2026-04-18</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32228" target="_blank" rel="noopener">CVE-2026-32228</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>CWE-863</td>
-        <td>&nbsp;</td>
-        <td>&mdash;</td>
-        <td>0.00</td>
-        <td><details><summary>UI / API User with asset materialize permission could trigger dags they had no a...</summary><p>UI / API User with asset materialize permission could trigger dags they had no access to.
-Users are advised to migrate to Airflow version 3.2.0 that fixes the issue.</p></details></td>
-        <td>2026-04-18</td>
-      </tr>
-      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-30912" target="_blank" rel="noopener">CVE-2026-30912</a></td>
         <td>0.0</td>
         <td><span class="severity none">NONE</span></td>
@@ -98,19 +73,6 @@ Users are advised to migrate to Airflow version 3.2.0 that fixes the issue.</p><
         <td>&mdash;</td>
         <td>0.00</td>
         <td><details><summary>An example of BashOperator in Airflow documentation suggested a way of passing d...</summary><p>An example of BashOperator in Airflow documentation suggested a way of passing dag_run.conf in the way that could cause unsanitized user input to be used to escalate privileges of UI user to allow execute code on worker. Users should review if any of their own DAGs have adopted this incorrect advice.</p></details></td>
-        <td>2026-04-18</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-25917" target="_blank" rel="noopener">CVE-2026-25917</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>CWE-502</td>
-        <td>&nbsp;</td>
-        <td>&mdash;</td>
-        <td>0.00</td>
-        <td><details><summary>Dag Authors, who normally should not be able to execute code in the webserver co...</summary><p>Dag Authors, who normally should not be able to execute code in the webserver context could craft XCom payload causing the webserver to execute arbitrary code. Since Dag Authors are already highly trusted, severity of this issue is Low.
-
-Users are recommended to upgrade to Apache Airflow 3.2.0, which fixes the issue.</p></details></td>
         <td>2026-04-18</td>
       </tr>
       <tr>

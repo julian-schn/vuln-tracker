@@ -1,15 +1,12 @@
 # CVEs — April 2026
 
-_3218 vulnerabilities_
+_3215 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
 | [CVE-2026-41254](https://nvd.nist.gov/vuln/detail/CVE-2026-41254) | 4.0 | MEDIUM | CWE-696 | No | — | 2.80 | 2026-04-18 | Little CMS (lcms2) through 2.18 has an integer overflow in CubeSize in cmslut.c because the overflow check is performed... |
-| [CVE-2026-32690](https://nvd.nist.gov/vuln/detail/CVE-2026-32690) | 0.0 | NONE | CWE-668 | No | — | 0.00 | 2026-04-18 | Secrets in Variables saved as JSON dictionaries were not properly redacted - in case thee variables were retrieved by th... |
-| [CVE-2026-32228](https://nvd.nist.gov/vuln/detail/CVE-2026-32228) | 0.0 | NONE | CWE-863 | No | — | 0.00 | 2026-04-18 | UI / API User with asset materialize permission could trigger dags they had no access to. Users are advised to migrate t... |
 | [CVE-2026-30912](https://nvd.nist.gov/vuln/detail/CVE-2026-30912) | 0.0 | NONE | CWE-668 | No | — | 0.00 | 2026-04-18 | In case of SQL errors, exception/stack trace of errors was exposed in API even if "api/expose_stack_traces" was set to f... |
 | [CVE-2026-30898](https://nvd.nist.gov/vuln/detail/CVE-2026-30898) | 0.0 | NONE | CWE-77 | No | — | 0.00 | 2026-04-18 | An example of BashOperator in Airflow documentation suggested a way of passing dag_run.conf in the way that could cause... |
-| [CVE-2026-25917](https://nvd.nist.gov/vuln/detail/CVE-2026-25917) | 0.0 | NONE | CWE-502 | No | — | 0.00 | 2026-04-18 | Dag Authors, who normally should not be able to execute code in the webserver context could craft XCom payload causing t... |
 | [CVE-2026-41253](https://nvd.nist.gov/vuln/detail/CVE-2026-41253) | 6.9 | MEDIUM | CWE-829 | No | — | 4.83 | 2026-04-18 | In iTerm2 through 3.6.9, displaying a .txt file can cause code execution via DCS 2000p and OSC 135 data, if the working... |
 | [CVE-2026-6518](https://nvd.nist.gov/vuln/detail/CVE-2026-6518) | 8.8 | HIGH | CWE-434 | No | — | 6.16 | 2026-04-18 | The CMP – Coming Soon & Maintenance Plugin by NiteoThemes plugin for WordPress is vulnerable to arbitrary file upload an... |
 | [CVE-2026-6048](https://nvd.nist.gov/vuln/detail/CVE-2026-6048) | 6.4 | MEDIUM | CWE-79 | No | — | 4.48 | 2026-04-18 | The Flipbox Addon for Elementor plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the Flipbox widget... |
