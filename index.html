@@ -11,7 +11,7 @@
     <header>
       <h1>vuln-tracker</h1>
       <p class="subtitle">CVEs from the National Vulnerability Database — current and previous month</p>
-      <p class="last-updated">Last updated: 2026-04-18 05:43 UTC</p>
+      <p class="last-updated">Last updated: 2026-04-18 07:18 UTC</p>
     </header>
     <nav>
       <a href="top50.html">&#9733; Top 50</a>
@@ -25,7 +25,7 @@
     </nav>
     <main>
     <section>
-      <h2>Current Month — April 2026 <span class="count">(3212)</span></h2>
+      <h2>Current Month — April 2026 <span class="count">(3218)</span></h2>
       <div class="table-wrapper">
         <table>
           <thead>
@@ -42,6 +42,88 @@
             </tr>
           </thead>
           <tbody>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-41254" target="_blank" rel="noopener">CVE-2026-41254</a></td>
+        <td>4.0</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-696</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>2.80</td>
+        <td><details><summary>Little CMS (lcms2) through 2.18 has an integer overflow in CubeSize in cmslut.c ...</summary><p>Little CMS (lcms2) through 2.18 has an integer overflow in CubeSize in cmslut.c because the overflow check is performed after the multiplication.</p></details></td>
+        <td>2026-04-18</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32690" target="_blank" rel="noopener">CVE-2026-32690</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-668</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Secrets in Variables saved as JSON dictionaries were not properly redacted - in ...</summary><p>Secrets in Variables saved as JSON dictionaries were not properly redacted - in case thee variables were retrieved by the user the secrets stored as nested fields were not masked.
+
+If you do not store variables with sensitive values in JSON form, you are not affected. Otherwise please upgrade to Apache Airflow 3.2.0 that has the fix implemented</p></details></td>
+        <td>2026-04-18</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32228" target="_blank" rel="noopener">CVE-2026-32228</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-863</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>UI / API User with asset materialize permission could trigger dags they had no a...</summary><p>UI / API User with asset materialize permission could trigger dags they had no access to.
+Users are advised to migrate to Airflow version 3.2.0 that fixes the issue.</p></details></td>
+        <td>2026-04-18</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-30912" target="_blank" rel="noopener">CVE-2026-30912</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-668</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>In case of SQL errors, exception/stack trace of errors was exposed in API even i...</summary><p>In case of SQL errors, exception/stack trace of errors was exposed in API even if &quot;api/expose_stack_traces&quot; was set to false. That could lead to exposing additional information to potential attacker. Users are recommended to upgrade to Apache Airflow 3.2.0, which fixes the issue.</p></details></td>
+        <td>2026-04-18</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-30898" target="_blank" rel="noopener">CVE-2026-30898</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-77</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>An example of BashOperator in Airflow documentation suggested a way of passing d...</summary><p>An example of BashOperator in Airflow documentation suggested a way of passing dag_run.conf in the way that could cause unsanitized user input to be used to escalate privileges of UI user to allow execute code on worker. Users should review if any of their own DAGs have adopted this incorrect advice.</p></details></td>
+        <td>2026-04-18</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-25917" target="_blank" rel="noopener">CVE-2026-25917</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-502</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Dag Authors, who normally should not be able to execute code in the webserver co...</summary><p>Dag Authors, who normally should not be able to execute code in the webserver context could craft XCom payload causing the webserver to execute arbitrary code. Since Dag Authors are already highly trusted, severity of this issue is Low.
+
+Users are recommended to upgrade to Apache Airflow 3.2.0, which fixes the issue.</p></details></td>
+        <td>2026-04-18</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-41253" target="_blank" rel="noopener">CVE-2026-41253</a></td>
+        <td>6.9</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-829</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.83</td>
+        <td><details><summary>In iTerm2 through 3.6.9, displaying a .txt file can cause code execution via DCS...</summary><p>In iTerm2 through 3.6.9, displaying a .txt file can cause code execution via DCS 2000p and OSC 135 data, if the working directory contains a malicious file whose name is valid output from the conductor encoding path, such as a pathname with an initial ace/c+ substring, aka &quot;hypothetical in-band signaling abuse.&quot; This occurs because iTerm2 accepts the SSH conductor protocol from terminal output that does not originate from a legitimate conductor session.</p></details></td>
+        <td>2026-04-18</td>
+      </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6518" target="_blank" rel="noopener">CVE-2026-6518</a></td>
         <td>8.8</td>
@@ -2647,20 +2729,6 @@
         <td>0.0% <small>p7</small></td>
         <td>3.71</td>
         <td><details><summary>The Fluent Forms – Customizable Contact Forms, Survey, Quiz, &amp; Conversational Fo...</summary><p>The Fluent Forms – Customizable Contact Forms, Survey, Quiz, &amp; Conversational Form Builder plugin for WordPress is vulnerable to Insecure Direct Object Reference via the &#x27;submission_id&#x27; parameter in versions up to, and including, 6.1.21. This is due to missing authorization and ownership validation on a user controlled key in the Stripe SCA confirmation AJAX endpoint. This makes it possible for unauthenticated attackers to modify payment status of targeted pending submissions (for example, setting the status to &quot;failed&quot;).</p></details></td>
-        <td>2026-04-16</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-31987" target="_blank" rel="noopener">CVE-2026-31987</a></td>
-        <td>7.5</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-532</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p4</small></td>
-        <td>5.25</td>
-        <td><details><summary>JWT Tokens used by tasks were exposed in logs. This could allow UI users to act ...</summary><p>JWT Tokens used by tasks were exposed in logs. This could allow UI users to act as Dag Authors. 
-Users are advised to upgrade to Airflow version that contains fix.
-
-Users are recommended to upgrade to version 3.2.0, which fixes this issue.</p></details></td>
         <td>2026-04-16</td>
       </tr>
       <tr>
