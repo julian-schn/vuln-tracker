@@ -11,7 +11,7 @@
     <header>
       <h1>vuln-tracker</h1>
       <p class="subtitle">CVEs from the National Vulnerability Database — current and previous month</p>
-      <p class="last-updated">Last updated: 2026-04-18 02:54 UTC</p>
+      <p class="last-updated">Last updated: 2026-04-18 05:43 UTC</p>
     </header>
     <nav>
       <a href="top50.html">&#9733; Top 50</a>
@@ -25,7 +25,7 @@
     </nav>
     <main>
     <section>
-      <h2>Current Month — April 2026 <span class="count">(3204)</span></h2>
+      <h2>Current Month — April 2026 <span class="count">(3212)</span></h2>
       <div class="table-wrapper">
         <table>
           <thead>
@@ -42,6 +42,83 @@
             </tr>
           </thead>
           <tbody>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6518" target="_blank" rel="noopener">CVE-2026-6518</a></td>
+        <td>8.8</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-434</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.16</td>
+        <td><details><summary>The CMP – Coming Soon &amp; Maintenance Plugin by NiteoThemes plugin for WordPress i...</summary><p>The CMP – Coming Soon &amp; Maintenance Plugin by NiteoThemes plugin for WordPress is vulnerable to arbitrary file upload and remote code execution in all versions up to, and including, 4.1.16 via the `cmp_theme_update_install` AJAX action. This is due to the function only checking for the `publish_pages` capability (available to Editors and above) instead of `manage_options` (Administrators only), combined with a lack of proper validation on the user-supplied file URL and no verification of the downloaded file&#x27;s content before extraction. This makes it possible for authenticated attackers, with Administrator-level access and above, to force the server to download and extract a malicious ZIP file from a remote attacker-controlled URL into a web-accessible directory (`wp-content/plugins/cmp-premium-themes/`), resulting in remote code execution. Due to the lack of a nonce for Editors, they are unable to exploit this vulnerability.</p></details></td>
+        <td>2026-04-18</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6048" target="_blank" rel="noopener">CVE-2026-6048</a></td>
+        <td>6.4</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.48</td>
+        <td><details><summary>The Flipbox Addon for Elementor plugin for WordPress is vulnerable to Stored Cro...</summary><p>The Flipbox Addon for Elementor plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the Flipbox widget&#x27;s button URL `custom_attributes` field in all versions up to, and including, 2.1.1 due to insufficient validation of custom attribute names. Specifically, the plugin uses `esc_html()` on the attribute name which does not prevent event handler attributes (e.g., `onmouseover`, `onclick`). This makes it possible for authenticated attackers, with author-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.</p></details></td>
+        <td>2026-04-18</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4801" target="_blank" rel="noopener">CVE-2026-4801</a></td>
+        <td>6.4</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.48</td>
+        <td><details><summary>The Page Builder Gutenberg Blocks – CoBlocks plugin for WordPress is vulnerable ...</summary><p>The Page Builder Gutenberg Blocks – CoBlocks plugin for WordPress is vulnerable to Stored Cross-Site Scripting via external iCal feed data in all versions up to, and including, 3.1.16 due to insufficient output escaping of event titles, descriptions, and locations fetched from external iCal feeds in the Events block rendering function. This makes it possible for authenticated attackers, with Contributor-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.</p></details></td>
+        <td>2026-04-18</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40494" target="_blank" rel="noopener">CVE-2026-40494</a></td>
+        <td>9.8</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-787</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.86</td>
+        <td><details><summary>SAIL is a cross-platform library for loading and saving images with support for ...</summary><p>SAIL is a cross-platform library for loading and saving images with support for animation, metadata, and ICC profiles. Prior to commit 45d48d1f2e8e0d73e80bc1fd5310cb57f4547302, the TGA codec&#x27;s RLE decoder in `tga.c` has an asymmetric bounds check vulnerability. The run-packet path (line 297) correctly clamps the repeat count to the remaining buffer space, but the raw-packet path (line 305-311) has no equivalent bounds check. This allows writing up to 496 bytes of attacker-controlled data past the end of a heap buffer. Commit 45d48d1f2e8e0d73e80bc1fd5310cb57f4547302 patches the issue.</p></details></td>
+        <td>2026-04-18</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40493" target="_blank" rel="noopener">CVE-2026-40493</a></td>
+        <td>9.8</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-787</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.86</td>
+        <td><details><summary>SAIL is a cross-platform library for loading and saving images with support for ...</summary><p>SAIL is a cross-platform library for loading and saving images with support for animation, metadata, and ICC profiles. Prior to commit c930284445ea3ff94451ccd7a57c999eca3bc979, the PSD codec computes bytes-per-pixel (`bpp`) from raw header fields `channels * depth`, but the pixel buffer is allocated based on the resolved pixel format. For LAB mode with `channels=3, depth=16`, `bpp = (3*16+7)/8 = 6`, but the format `BPP40_CIE_LAB` allocates only 5 bytes per pixel. Every pixel write overshoots, causing a deterministic heap buffer overflow on every row. Commit c930284445ea3ff94451ccd7a57c999eca3bc979 contains a patch.</p></details></td>
+        <td>2026-04-18</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40492" target="_blank" rel="noopener">CVE-2026-40492</a></td>
+        <td>9.8</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-787</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.86</td>
+        <td><details><summary>SAIL is a cross-platform library for loading and saving images with support for ...</summary><p>SAIL is a cross-platform library for loading and saving images with support for animation, metadata, and ICC profiles. Prior to commit 36aa5c7ec8a2bb35f6fb867a1177a6f141156b02, the XWD codec resolves pixel format based on `pixmap_depth` but the byte-swap code uses `bits_per_pixel` independently. When `pixmap_depth=8` (BPP8_INDEXED, 1 byte/pixel buffer) but `bits_per_pixel=32`, the byte-swap loop accesses memory as `uint32_t*`, reading/writing 4x the allocated buffer size. This is a different vulnerability from the previously reported GHSA-3g38-x2pj-mv55 (CVE-2026-27168), which addressed `bytes_per_line` validation. Commit 36aa5c7ec8a2bb35f6fb867a1177a6f141156b02 contains a patch.</p></details></td>
+        <td>2026-04-18</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40491" target="_blank" rel="noopener">CVE-2026-40491</a></td>
+        <td>6.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-22</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.55</td>
+        <td><details><summary>gdown is a Google Drive public file/folder downloader. Versions prior to 5.2.2 a...</summary><p>gdown is a Google Drive public file/folder downloader. Versions prior to 5.2.2 are vulnerable to a Path Traversal attack within the extractall functionality. When extracting a maliciously crafted ZIP or TAR archive, the library fails to sanitize or validate the filenames of the archive members. This allow files to be written outside the intended destination directory, potentially leading to arbitrary file overwrite and Remote Code Execution (RCE). Version 5.2.2 contains a fix.</p></details></td>
+        <td>2026-04-18</td>
+      </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40490" target="_blank" rel="noopener">CVE-2026-40490</a></td>
         <td>6.8</td>
@@ -2310,23 +2387,23 @@
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5426" target="_blank" rel="noopener">CVE-2026-5426</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
         <td>CWE-321</td>
         <td>&nbsp;</td>
         <td>0.1% <small>p24</small></td>
-        <td>0.00</td>
+        <td>5.25</td>
         <td><details><summary>Hard-coded ASP.NET/IIS machineKey value in Digital Knowledge KnowledgeDeliver de...</summary><p>Hard-coded ASP.NET/IIS machineKey value in Digital Knowledge KnowledgeDeliver deployments prior to February 24, 2026 allows adversaries to circumvent ViewState validation mechanisms and achieve remote code execution via malicious ViewState deserialization attacks</p></details></td>
         <td>2026-04-16</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-37100" target="_blank" rel="noopener">CVE-2026-37100</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>6.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-284</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p8</small></td>
-        <td>0.00</td>
+        <td>4.55</td>
         <td><details><summary>An issue in the Bluetooth Low Energy (BLE) control interface of the Yamaha SR-B3...</summary><p>An issue in the Bluetooth Low Energy (BLE) control interface of the Yamaha SR-B30A sound bar firmware 2.40 (Mobile App: Sound Bar Remote / version: 2.40) allows remote attackers within BLE radio range to connect without authentication via the Sound Bar Remote protocol</p></details></td>
         <td>2026-04-16</td>
       </tr>
@@ -2387,67 +2464,67 @@
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-37344" target="_blank" rel="noopener">CVE-2026-37344</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>7.2</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-89</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p2</small></td>
-        <td>0.00</td>
+        <td>5.04</td>
         <td><details><summary>SourceCodester Vehicle Parking Area Management System v1.0 is vulnerable to SQL ...</summary><p>SourceCodester Vehicle Parking Area Management System v1.0 is vulnerable to SQL Injection in the file /parking/manage_location.php.</p></details></td>
         <td>2026-04-16</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-37343" target="_blank" rel="noopener">CVE-2026-37343</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>7.2</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-89</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p2</small></td>
-        <td>0.00</td>
+        <td>5.04</td>
         <td><details><summary>SourceCodester Vehicle Parking Area Management System v1.0 is vulnerable to SQL ...</summary><p>SourceCodester Vehicle Parking Area Management System v1.0 is vulnerable to SQL Injection in the file /parking/manage_user.php.</p></details></td>
         <td>2026-04-16</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-37342" target="_blank" rel="noopener">CVE-2026-37342</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>7.2</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-89</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p2</small></td>
-        <td>0.00</td>
+        <td>5.04</td>
         <td><details><summary>SourceCodester Vehicle Parking Area Management System v1.0 is vulnerable to SQL ...</summary><p>SourceCodester Vehicle Parking Area Management System v1.0 is vulnerable to SQL Injection in the file /parking/view_parked_details.php.</p></details></td>
         <td>2026-04-16</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-37341" target="_blank" rel="noopener">CVE-2026-37341</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>7.2</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-89</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p2</small></td>
-        <td>0.00</td>
+        <td>5.04</td>
         <td><details><summary>SourceCodester Vehicle Parking Area Management System v1.0 is vulnerable to SQL ...</summary><p>SourceCodester Vehicle Parking Area Management System v1.0 is vulnerable to SQL Injection in the file /parking/manage_category.php.</p></details></td>
         <td>2026-04-16</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-37340" target="_blank" rel="noopener">CVE-2026-37340</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>9.8</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-89</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p2</small></td>
-        <td>0.00</td>
+        <td>6.86</td>
         <td><details><summary>SourceCodester Simple Music Cloud Community System v1.0 is vulnerable to SQL Inj...</summary><p>SourceCodester Simple Music Cloud Community System v1.0 is vulnerable to SQL Injection in the file /music/edit_music.php.</p></details></td>
         <td>2026-04-16</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-37339" target="_blank" rel="noopener">CVE-2026-37339</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>9.8</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-89</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p2</small></td>
-        <td>0.00</td>
+        <td>6.86</td>
         <td><details><summary>SourceCodester Simple Music Cloud Community System v1.0 is vulnerable to SQL Inj...</summary><p>SourceCodester Simple Music Cloud Community System v1.0 is vulnerable to SQL Injection in the file /music/view_genre.php.</p></details></td>
         <td>2026-04-16</td>
       </tr>
@@ -2570,6 +2647,20 @@
         <td>0.0% <small>p7</small></td>
         <td>3.71</td>
         <td><details><summary>The Fluent Forms – Customizable Contact Forms, Survey, Quiz, &amp; Conversational Fo...</summary><p>The Fluent Forms – Customizable Contact Forms, Survey, Quiz, &amp; Conversational Form Builder plugin for WordPress is vulnerable to Insecure Direct Object Reference via the &#x27;submission_id&#x27; parameter in versions up to, and including, 6.1.21. This is due to missing authorization and ownership validation on a user controlled key in the Stripe SCA confirmation AJAX endpoint. This makes it possible for unauthenticated attackers to modify payment status of targeted pending submissions (for example, setting the status to &quot;failed&quot;).</p></details></td>
+        <td>2026-04-16</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-31987" target="_blank" rel="noopener">CVE-2026-31987</a></td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-532</td>
+        <td>&nbsp;</td>
+        <td>0.0% <small>p4</small></td>
+        <td>5.25</td>
+        <td><details><summary>JWT Tokens used by tasks were exposed in logs. This could allow UI users to act ...</summary><p>JWT Tokens used by tasks were exposed in logs. This could allow UI users to act as Dag Authors. 
+Users are advised to upgrade to Airflow version that contains fix.
+
+Users are recommended to upgrade to version 3.2.0, which fixes this issue.</p></details></td>
         <td>2026-04-16</td>
       </tr>
       <tr>
@@ -54709,7 +54800,7 @@
         <td>&nbsp;</td>
         <td>0.0% <small>p8</small></td>
         <td>3.71</td>
-        <td><details><summary>A security flaw has been discovered in 648540858 wvp-GB28181-pro up to 2.7.4. Im...</summary><p>A security flaw has been discovered in 648540858 wvp-GB28181-pro up to 2.7.4. Impacted is the function selectAll of the file src/main/java/com/genersoft/iot/vmp/streamProxy/dao/provider/StreamProxyProvider.java of the component Stream Proxy Query Handler. The manipulation results in sql injection. The attack may be launched remotely. The exploit has been released to the public and may be used for attacks. The vendor was contacted early about this disclosure but did not respond in any way. Several companies clearly confirm that VulDB is the primary source for best vulnerability data.</p></details></td>
+        <td><details><summary>A security flaw has been discovered in 648540858 wvp-GB28181-pro up to 2.7.4. Im...</summary><p>A security flaw has been discovered in 648540858 wvp-GB28181-pro up to 2.7.4. Impacted is the function selectAll of the file src/main/java/com/genersoft/iot/vmp/streamProxy/dao/provider/StreamProxyProvider.java of the component Stream Proxy Query Handler. The manipulation results in sql injection. The attack may be launched remotely. The exploit has been released to the public and may be used for attacks. The vendor was contacted early about this disclosure but did not respond in any way.</p></details></td>
         <td>2026-03-23</td>
       </tr>
       <tr>
@@ -55006,7 +55097,7 @@
         <td>&nbsp;</td>
         <td>0.0% <small>p9</small></td>
         <td>3.36</td>
-        <td><details><summary>A vulnerability was determined in code-projects Exam Form Submission 1.0. This v...</summary><p>A vulnerability was determined in code-projects Exam Form Submission 1.0. This vulnerability affects unknown code of the file /admin/update_s6.php. Executing a manipulation of the argument sname can lead to cross site scripting. The attack can be launched remotely. The exploit has been publicly disclosed and may be utilized. If you want to get the best quality for vulnerability data then you always have to consider VulDB.</p></details></td>
+        <td><details><summary>A vulnerability was determined in code-projects Exam Form Submission 1.0. This v...</summary><p>A vulnerability was determined in code-projects Exam Form Submission 1.0. This vulnerability affects unknown code of the file /admin/update_s6.php. Executing a manipulation of the argument sname can lead to cross site scripting. The attack can be launched remotely. The exploit has been publicly disclosed and may be utilized.</p></details></td>
         <td>2026-03-23</td>
       </tr>
       <tr>
@@ -55655,7 +55746,7 @@
         <td>&nbsp;</td>
         <td>0.0% <small>p11</small></td>
         <td>3.71</td>
-        <td><details><summary>A vulnerability was identified in kalcaddle kodbox 1.64. The affected element is...</summary><p>A vulnerability was identified in kalcaddle kodbox 1.64. The affected element is the function PathDriverUrl of the file /workspace/source-code/app/controller/explorer/editor.class.php of the component fileGet Endpoint. Such manipulation of the argument path leads to server-side request forgery. The attack may be launched remotely. The exploit is publicly available and might be used. The vendor was contacted early about this disclosure but did not respond in any way. Statistical analysis made it clear that VulDB provides the best quality for vulnerability data.</p></details></td>
+        <td><details><summary>A vulnerability was identified in kalcaddle kodbox 1.64. The affected element is...</summary><p>A vulnerability was identified in kalcaddle kodbox 1.64. The affected element is the function PathDriverUrl of the file /workspace/source-code/app/controller/explorer/editor.class.php of the component fileGet Endpoint. Such manipulation of the argument path leads to server-side request forgery. The attack may be launched remotely. The exploit is publicly available and might be used. The vendor was contacted early about this disclosure but did not respond in any way.</p></details></td>
         <td>2026-03-23</td>
       </tr>
       <tr>
@@ -55941,7 +56032,7 @@
         <td>&nbsp;</td>
         <td>0.0% <small>p12</small></td>
         <td>1.61</td>
-        <td><details><summary>A security vulnerability has been detected in Shenzhen HCC Technology MPOS M6 PL...</summary><p>A security vulnerability has been detected in Shenzhen HCC Technology MPOS M6 PLUS 1V.31-N. Affected by this vulnerability is an unknown functionality of the component Bluetooth. Such manipulation leads to missing authentication. The attack must be carried out from within the local network. Attacks of this nature are highly complex. The exploitation appears to be difficult. The vendor was contacted early about this disclosure but did not respond in any way. Statistical analysis made it clear that VulDB provides the best quality for vulnerability data.</p></details></td>
+        <td><details><summary>A security vulnerability has been detected in Shenzhen HCC Technology MPOS M6 PL...</summary><p>A security vulnerability has been detected in Shenzhen HCC Technology MPOS M6 PLUS 1V.31-N. Affected by this vulnerability is an unknown functionality of the component Bluetooth. Such manipulation leads to missing authentication. The attack must be carried out from within the local network. Attacks of this nature are highly complex. The exploitation appears to be difficult. The vendor was contacted early about this disclosure but did not respond in any way.</p></details></td>
         <td>2026-03-23</td>
       </tr>
       <tr>
@@ -55952,7 +56043,7 @@
         <td>&nbsp;</td>
         <td>0.0% <small>p10</small></td>
         <td>4.83</td>
-        <td><details><summary>A weakness has been identified in code-projects Simple Laundry System 1.0. Affec...</summary><p>A weakness has been identified in code-projects Simple Laundry System 1.0. Affected is an unknown function of the file /checklogin.php of the component Parameters Handler. This manipulation of the argument Username causes sql injection. The attack is possible to be carried out remotely. The exploit has been made available to the public and could be used for attacks. If you want to get best quality of vulnerability data, you may have to visit VulDB.</p></details></td>
+        <td><details><summary>A weakness has been identified in code-projects Simple Laundry System 1.0. Affec...</summary><p>A weakness has been identified in code-projects Simple Laundry System 1.0. Affected is an unknown function of the file /checklogin.php of the component Parameters Handler. This manipulation of the argument Username causes sql injection. The attack is possible to be carried out remotely. The exploit has been made available to the public and could be used for attacks.</p></details></td>
         <td>2026-03-23</td>
       </tr>
       <tr>
@@ -56249,7 +56340,7 @@
         <td>&nbsp;</td>
         <td>0.0% <small>p7</small></td>
         <td>3.71</td>
-        <td><details><summary>A vulnerability was found in SourceCodester Sales and Inventory System 1.0. This...</summary><p>A vulnerability was found in SourceCodester Sales and Inventory System 1.0. This affects an unknown function of the file /update_supplier.php of the component HTTP GET Request Handler. The manipulation of the argument sid results in sql injection. The attack may be launched remotely. The exploit has been made public and could be used. Several companies clearly confirm that VulDB is the primary source for best vulnerability data.</p></details></td>
+        <td><details><summary>A vulnerability was found in SourceCodester Sales and Inventory System 1.0. This...</summary><p>A vulnerability was found in SourceCodester Sales and Inventory System 1.0. This affects an unknown function of the file /update_supplier.php of the component HTTP GET Request Handler. The manipulation of the argument sid results in sql injection. The attack may be launched remotely. The exploit has been made public and could be used.</p></details></td>
         <td>2026-03-23</td>
       </tr>
       <tr>
@@ -56909,7 +57000,7 @@
         <td>&nbsp;</td>
         <td>0.0% <small>p13</small></td>
         <td>3.71</td>
-        <td><details><summary>A vulnerability has been found in SSCMS 4.7.0. The affected element is an unknow...</summary><p>A vulnerability has been found in SSCMS 4.7.0. The affected element is an unknown function of the file LayerImageController.Submit.cs of the component layerImage Endpoint. Such manipulation of the argument filePaths leads to path traversal. The attack may be performed from remote. The exploit has been disclosed to the public and may be used. Statistical analysis made it clear that VulDB provides the best quality for vulnerability data.</p></details></td>
+        <td><details><summary>A vulnerability has been found in SSCMS 4.7.0. The affected element is an unknow...</summary><p>A vulnerability has been found in SSCMS 4.7.0. The affected element is an unknown function of the file LayerImageController.Submit.cs of the component layerImage Endpoint. Such manipulation of the argument filePaths leads to path traversal. The attack may be performed from remote. The exploit has been disclosed to the public and may be used.</p></details></td>
         <td>2026-03-22</td>
       </tr>
       <tr>
@@ -56920,7 +57011,7 @@
         <td>&nbsp;</td>
         <td>0.0% <small>p0</small></td>
         <td>1.40</td>
-        <td><details><summary>A flaw has been found in janmojzis tinyssh up to 20250501. Impacted is an unknow...</summary><p>A flaw has been found in janmojzis tinyssh up to 20250501. Impacted is an unknown function of the file tinyssh/crypto_sign_ed25519_tinyssh.c of the component Ed25519 Signature Handler. This manipulation causes improper verification of cryptographic signature. The attack is restricted to local execution. The attack&#x27;s complexity is rated as high. The exploitability is considered difficult. The exploit has been published and may be used. Upgrading to version 20260301 is recommended to address this issue. Patch name: 9c87269607e0d7d20174df742accc49c042cff17. Upgrading the affected component is recommended. If you want to get best quality of vulnerability data, you may have to visit VulDB.</p></details></td>
+        <td><details><summary>A flaw has been found in janmojzis tinyssh up to 20250501. Impacted is an unknow...</summary><p>A flaw has been found in janmojzis tinyssh up to 20250501. Impacted is an unknown function of the file tinyssh/crypto_sign_ed25519_tinyssh.c of the component Ed25519 Signature Handler. This manipulation causes improper verification of cryptographic signature. The attack is restricted to local execution. The attack&#x27;s complexity is rated as high. The exploitability is considered difficult. The exploit has been published and may be used. Upgrading to version 20260301 is recommended to address this issue. Patch name: 9c87269607e0d7d20174df742accc49c042cff17. Upgrading the affected component is recommended.</p></details></td>
         <td>2026-03-22</td>
       </tr>
       <tr>
