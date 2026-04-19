@@ -1,9 +1,12 @@
 # CVEs — April 2026
 
-_3222 vulnerabilities_
+_3225 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
+| [CVE-2026-6561](https://nvd.nist.gov/vuln/detail/CVE-2026-6561) | 5.1 | MEDIUM | CWE-284 | No | — | 3.57 | 2026-04-19 | A vulnerability was detected in EyouCMS up to 1.7.1. This issue affects the function edit_adminlogo of the file applicat... |
+| [CVE-2026-6560](https://nvd.nist.gov/vuln/detail/CVE-2026-6560) | 7.4 | HIGH | CWE-119 | No | — | 5.18 | 2026-04-19 | A security vulnerability has been detected in H3C Magic B0 up to 100R002. This vulnerability affects the function Edit_B... |
+| [CVE-2026-6559](https://nvd.nist.gov/vuln/detail/CVE-2026-6559) | 5.3 | MEDIUM | CWE-79 | No | — | 3.71 | 2026-04-19 | A weakness has been identified in Wavlink WL-WN579A3 220323. This affects the function sub_401F80 of the file /cgi-bin/l... |
 | [CVE-2026-0868](https://nvd.nist.gov/vuln/detail/CVE-2026-0868) | 6.4 | MEDIUM | CWE-79 | No | — | 4.48 | 2026-04-19 | The EMC – Easily Embed Calendly Scheduling Features plugin for WordPress is vulnerable to Stored Cross-Site Scripting vi... |
 | [CVE-2026-6056](https://nvd.nist.gov/vuln/detail/CVE-2026-6056) | 0.0 | NONE | N/A | No | — | 0.00 | 2026-04-18 | Rejected reason: This CVE ID has been rejected or withdrawn by its CVE Numbering Authority. |
 | [CVE-2026-41242](https://nvd.nist.gov/vuln/detail/CVE-2026-41242) | 9.4 | CRITICAL | CWE-94 | No | — | 6.58 | 2026-04-18 | protobufjs compiles protobuf definitions into JavaScript (JS) functions. In versions prior to 8.0.1 and 7.5.5, attackers... |
