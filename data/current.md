@@ -1,9 +1,11 @@
 # CVEs — April 2026
 
-_3235 vulnerabilities_
+_3237 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
+| [CVE-2026-6577](https://nvd.nist.gov/vuln/detail/CVE-2026-6577) | 6.9 | MEDIUM | CWE-287 | No | — | 4.83 | 2026-04-19 | A vulnerability was identified in liangliangyy DjangoBlog up to 2.1.0.0. The impacted element is an unknown function of... |
+| [CVE-2026-6576](https://nvd.nist.gov/vuln/detail/CVE-2026-6576) | 5.3 | MEDIUM | CWE-74 | No | — | 3.71 | 2026-04-19 | A vulnerability was determined in liangliangyy DjangoBlog up to 2.1.0.0. The affected element is the function CommandHan... |
 | [CVE-2026-6574](https://nvd.nist.gov/vuln/detail/CVE-2026-6574) | 6.9 | MEDIUM | CWE-259 | No | — | 4.83 | 2026-04-19 | A vulnerability has been found in osuuu LightPicture up to 1.2.2. This issue affects some unknown processing of the file... |
 | [CVE-2026-6573](https://nvd.nist.gov/vuln/detail/CVE-2026-6573) | 5.3 | MEDIUM | CWE-918 | No | — | 3.71 | 2026-04-19 | A vulnerability was detected in PHPEMS 11.0. This affects the function temppage of the file /app/exam/controller/exams.m... |
 | [CVE-2026-6572](https://nvd.nist.gov/vuln/detail/CVE-2026-6572) | 6.3 | MEDIUM | CWE-266 | No | — | 4.41 | 2026-04-19 | A security vulnerability has been detected in Collabora KodExplorer up to 4.52. Affected by this issue is some unknown f... |
