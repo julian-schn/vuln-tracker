@@ -1,9 +1,13 @@
 # CVEs — April 2026
 
-_3225 vulnerabilities_
+_3229 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
+| [CVE-2026-6568](https://nvd.nist.gov/vuln/detail/CVE-2026-6568) | 6.9 | MEDIUM | CWE-22 | No | — | 4.83 | 2026-04-19 | A vulnerability was determined in kodcloud KodExplorer up to 4.52. This affects the function share.class.php::initShareO... |
+| [CVE-2026-6564](https://nvd.nist.gov/vuln/detail/CVE-2026-6564) | 5.3 | MEDIUM | CWE-266 | No | — | 3.71 | 2026-04-19 | A vulnerability was found in EMQ EMQX Enterprise up to 6.1.0. The impacted element is an unknown function of the compone... |
+| [CVE-2026-6563](https://nvd.nist.gov/vuln/detail/CVE-2026-6563) | 7.4 | HIGH | CWE-119 | No | — | 5.18 | 2026-04-19 | A vulnerability has been found in H3C Magic B1 up to 100R004. The affected element is the function SetAPWifiorLedInfoByI... |
+| [CVE-2026-6562](https://nvd.nist.gov/vuln/detail/CVE-2026-6562) | 6.9 | MEDIUM | CWE-74 | No | — | 4.83 | 2026-04-19 | A flaw has been found in dameng100 muucmf 1.9.5.20260309. Impacted is the function getListByPage of the file /index/Sear... |
 | [CVE-2026-6561](https://nvd.nist.gov/vuln/detail/CVE-2026-6561) | 5.1 | MEDIUM | CWE-284 | No | — | 3.57 | 2026-04-19 | A vulnerability was detected in EyouCMS up to 1.7.1. This issue affects the function edit_adminlogo of the file applicat... |
 | [CVE-2026-6560](https://nvd.nist.gov/vuln/detail/CVE-2026-6560) | 7.4 | HIGH | CWE-119 | No | — | 5.18 | 2026-04-19 | A security vulnerability has been detected in H3C Magic B0 up to 100R002. This vulnerability affects the function Edit_B... |
 | [CVE-2026-6559](https://nvd.nist.gov/vuln/detail/CVE-2026-6559) | 5.3 | MEDIUM | CWE-79 | No | — | 3.71 | 2026-04-19 | A weakness has been identified in Wavlink WL-WN579A3 220323. This affects the function sub_401F80 of the file /cgi-bin/l... |
