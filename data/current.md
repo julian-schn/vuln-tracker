@@ -1,9 +1,10 @@
 # CVEs — April 2026
 
-_3220 vulnerabilities_
+_3221 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
+| [CVE-2026-6056](https://nvd.nist.gov/vuln/detail/CVE-2026-6056) | 0.0 | NONE | N/A | No | — | 0.00 | 2026-04-18 | Rejected reason: This CVE ID has been rejected or withdrawn by its CVE Numbering Authority. |
 | [CVE-2026-41242](https://nvd.nist.gov/vuln/detail/CVE-2026-41242) | 9.4 | CRITICAL | CWE-94 | No | — | 6.58 | 2026-04-18 | protobufjs compiles protobuf definitions into JavaScript (JS) functions. In versions prior to 8.0.1 and 7.5.5, attackers... |
 | [CVE-2026-40948](https://nvd.nist.gov/vuln/detail/CVE-2026-40948) | 0.0 | NONE | CWE-352 | No | — | 0.00 | 2026-04-18 | The Keycloak authentication manager in `apache-airflow-providers-keycloak` did not generate or validate the OAuth 2.0 `s... |
 | [CVE-2026-2986](https://nvd.nist.gov/vuln/detail/CVE-2026-2986) | 6.4 | MEDIUM | CWE-79 | No | 0.0% | 4.48 | 2026-04-18 | The Contextual Related Posts plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'other_attributes... |
