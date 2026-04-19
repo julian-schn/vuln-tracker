@@ -1,9 +1,12 @@
 # CVEs — April 2026
 
-_3229 vulnerabilities_
+_3232 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
+| [CVE-2026-6571](https://nvd.nist.gov/vuln/detail/CVE-2026-6571) | 5.3 | MEDIUM | CWE-285 | No | — | 3.71 | 2026-04-19 | A weakness has been identified in kodcloud KodExplorer up to 4.52. Affected by this vulnerability is the function roleGr... |
+| [CVE-2026-6570](https://nvd.nist.gov/vuln/detail/CVE-2026-6570) | 5.1 | MEDIUM | CWE-285 | No | — | 3.57 | 2026-04-19 | A security flaw has been discovered in kodcloud KodExplorer up to 4.52. Affected is the function initInstall of the file... |
+| [CVE-2026-6569](https://nvd.nist.gov/vuln/detail/CVE-2026-6569) | 6.9 | MEDIUM | CWE-287 | No | — | 4.83 | 2026-04-19 | A vulnerability was identified in kodcloud KodExplorer up to 4.52. This impacts the function fileGet of the file /app/co... |
 | [CVE-2026-6568](https://nvd.nist.gov/vuln/detail/CVE-2026-6568) | 6.9 | MEDIUM | CWE-22 | No | — | 4.83 | 2026-04-19 | A vulnerability was determined in kodcloud KodExplorer up to 4.52. This affects the function share.class.php::initShareO... |
 | [CVE-2026-6564](https://nvd.nist.gov/vuln/detail/CVE-2026-6564) | 5.3 | MEDIUM | CWE-266 | No | — | 3.71 | 2026-04-19 | A vulnerability was found in EMQ EMQX Enterprise up to 6.1.0. The impacted element is an unknown function of the compone... |
 | [CVE-2026-6563](https://nvd.nist.gov/vuln/detail/CVE-2026-6563) | 7.4 | HIGH | CWE-119 | No | — | 5.18 | 2026-04-19 | A vulnerability has been found in H3C Magic B1 up to 100R004. The affected element is the function SetAPWifiorLedInfoByI... |
