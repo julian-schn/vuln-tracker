@@ -11,7 +11,7 @@
     <header>
       <h1>vuln-tracker — Top 50</h1>
       <p class="subtitle">The 50 most important CVEs from the current and previous month, ranked by VAP score (70% CVSS + 30% EPSS)</p>
-      <p class="last-updated">Last updated: 2026-04-19 13:14 UTC</p>
+      <p class="last-updated">Last updated: 2026-04-19 14:47 UTC</p>
     </header>
     <nav>
       <a href="index.html">&larr; All CVEs</a>
@@ -343,7 +343,7 @@
         <td><span class="severity critical">CRITICAL</span></td>
         <td>CWE-306</td>
         <td>&nbsp;</td>
-        <td>0.2% <small>p36</small></td>
+        <td>0.2% <small>p35</small></td>
         <td>7.00</td>
         <td><details><summary>FastGPT is an AI Agent building platform. Prior to version 4.14.9.5, the FastGPT...</summary><p>FastGPT is an AI Agent building platform. Prior to version 4.14.9.5, the FastGPT HTTP tools testing endpoint (/api/core/app/httpTools/runTool) is exposed without any authentication. This endpoint acts as a full HTTP proxy — it accepts a user-supplied baseUrl, toolPath, HTTP method, custom headers, and body, then makes a server-side HTTP request and returns the complete response to the caller. This issue has been patched in version 4.14.9.5.</p></details></td>
         <td>2026-03-31</td>
@@ -387,7 +387,7 @@
         <td><span class="severity critical">CRITICAL</span></td>
         <td>CWE-693</td>
         <td>&nbsp;</td>
-        <td>0.1% <small>p30</small></td>
+        <td>0.1% <small>p29</small></td>
         <td>7.00</td>
         <td><details><summary>PraisonAI is a multi-agent teams system. Prior to version 1.5.90, execute_code()...</summary><p>PraisonAI is a multi-agent teams system. Prior to version 1.5.90, execute_code() in praisonai-agents runs attacker-controlled Python inside a three-layer sandbox that can be fully bypassed by passing a str subclass with an overridden startswith() method to the _safe_getattr wrapper, achieving arbitrary OS command execution on the host. This issue has been patched in version 1.5.90.</p></details></td>
         <td>2026-04-03</td>
@@ -547,6 +547,17 @@
         <td>2026-03-19</td>
       </tr>
       <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34865" target="_blank" rel="noopener">CVE-2026-34865</a></td>
+        <td>10.0</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-122</td>
+        <td>&nbsp;</td>
+        <td>0.0% <small>p7</small></td>
+        <td>7.00</td>
+        <td><details><summary>Out-of-bounds write vulnerability in the WEB module.Impact: Successful exploitat...</summary><p>Out-of-bounds write vulnerability in the WEB module.Impact: Successful exploitation of this vulnerability will affect availability and confidentiality.</p></details></td>
+        <td>2026-04-13</td>
+      </tr>
+      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4689" target="_blank" rel="noopener">CVE-2026-4689</a></td>
         <td>10.0</td>
         <td><span class="severity critical">CRITICAL</span></td>
@@ -578,17 +589,6 @@
         <td>7.00</td>
         <td><details><summary>Mesop is a Python-based UI framework that allows users to build web applications...</summary><p>Mesop is a Python-based UI framework that allows users to build web applications. Versions 1.2.2 and below contain a Path Traversal vulnerability that allows any user supplying an untrusted state_token through the UI stream payload to arbitrarily target files on the disk under the standard file-based runtime backend. This can result in application denial of service (via crash loops when reading non-msgpack target files as configurations), or arbitrary file manipulation. This vulnerability heavily exposes systems hosted utilizing FileStateSessionBackend. Unauthorized malicious actors could interact with arbitrary payloads overwriting or explicitly removing underlying service resources natively outside the application bounds. This issue has been fixed in version 1.2.3.</p></details></td>
         <td>2026-03-20</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34865" target="_blank" rel="noopener">CVE-2026-34865</a></td>
-        <td>10.0</td>
-        <td><span class="severity critical">CRITICAL</span></td>
-        <td>CWE-122</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p5</small></td>
-        <td>7.00</td>
-        <td><details><summary>Out-of-bounds write vulnerability in the WEB module.Impact: Successful exploitat...</summary><p>Out-of-bounds write vulnerability in the WEB module.Impact: Successful exploitation of this vulnerability will affect availability and confidentiality.</p></details></td>
-        <td>2026-04-13</td>
       </tr>
             </tbody>
           </table>
