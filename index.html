@@ -11,7 +11,7 @@
     <header>
       <h1>vuln-tracker</h1>
       <p class="subtitle">CVEs from the National Vulnerability Database — current and previous month</p>
-      <p class="last-updated">Last updated: 2026-04-20 19:15 UTC</p>
+      <p class="last-updated">Last updated: 2026-04-20 20:55 UTC</p>
     </header>
     <nav>
       <a href="top50.html">&#9733; Top 50</a>
@@ -25,7 +25,7 @@
     </nav>
     <main>
     <section>
-      <h2>Current Month — April 2026 <span class="count">(3392)</span></h2>
+      <h2>Current Month — April 2026 <span class="count">(3381)</span></h2>
       <div class="table-wrapper">
         <table>
           <thead>
@@ -42,6 +42,136 @@
             </tr>
           </thead>
           <tbody>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6550" target="_blank" rel="noopener">CVE-2026-6550</a></td>
+        <td>5.7</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-757</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.99</td>
+        <td><details><summary>Cryptographic algorithm downgrade in the caching layer of Amazon AWS Encryption ...</summary><p>Cryptographic algorithm downgrade in the caching layer of Amazon AWS Encryption SDK for Python before version 3.3.1 and before version  4.0.5 might allow an authenticated local threat actor to bypass key commitment policy enforcement via a shared key cache, resulting in ciphertext that can be decrypted to multiple different plaintexts.
+
+To remediate this issue, users should upgrade to version 3.3.1, 4.0.5 or above.</p></details></td>
+        <td>2026-04-20</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6257" target="_blank" rel="noopener">CVE-2026-6257</a></td>
+        <td>9.2</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-434</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.44</td>
+        <td><details><summary>Vvveb CMS v1.0.8 contains a remote code execution vulnerability in its media man...</summary><p>Vvveb CMS v1.0.8 contains a remote code execution vulnerability in its media management functionality where a missing return statement in the file rename handler allows authenticated attackers to rename files to blocked extensions .php or .htaccess. Attackers can exploit this logic flaw by first uploading a text file and renaming it to .htaccess to inject Apache directives that register PHP-executable MIME types, then uploading another file and renaming it to .php to execute arbitrary operating system commands as the www-data user.</p></details></td>
+        <td>2026-04-20</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6249" target="_blank" rel="noopener">CVE-2026-6249</a></td>
+        <td>8.7</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-434</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.09</td>
+        <td><details><summary>Vvveb CMS 1.0.8 contains a remote code execution vulnerability in its media uplo...</summary><p>Vvveb CMS 1.0.8 contains a remote code execution vulnerability in its media upload handler that allows authenticated attackers to execute arbitrary operating system commands by uploading a PHP webshell with a .phtml extension. Attackers can bypass the extension deny-list and upload malicious files to the publicly accessible media directory, then request the file over HTTP to achieve full server compromise.</p></details></td>
+        <td>2026-04-20</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5478" target="_blank" rel="noopener">CVE-2026-5478</a></td>
+        <td>8.1</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-22</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.67</td>
+        <td><details><summary>The Everest Forms plugin for WordPress is vulnerable to Arbitrary File Read and ...</summary><p>The Everest Forms plugin for WordPress is vulnerable to Arbitrary File Read and Deletion in all versions up to, and including, 3.4.4. This is due to the plugin trusting attacker-controlled old_files data from public form submissions as legitimate server-side upload state, and converting attacker-supplied URLs into local filesystem paths using regex-based string replacement without canonicalization or directory boundary enforcement. This makes it possible for unauthenticated attackers to read arbitrary local files (e.g., wp-config.php) by injecting path-traversal payloads into the old_files upload field parameter, which are then attached to notification emails. The same path resolution is also used in the post-email cleanup routine, which calls unlink() on the resolved path, resulting in the targeted file being deleted after being attached. This can lead to full site compromise through disclosure of database credentials and authentication salts from wp-config.php, and denial of service through deletion of critical files. Prerequisite: The form must contain a file-upload or image-upload field, and disable storing entry information.</p></details></td>
+        <td>2026-04-20</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32311" target="_blank" rel="noopener">CVE-2026-32311</a></td>
+        <td>9.3</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-78</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.51</td>
+        <td><details><summary>Flowsint is an open-source OSINT graph exploration tool designed for cybersecuri...</summary><p>Flowsint is an open-source OSINT graph exploration tool designed for cybersecurity investigation, transparency, and verification. Flowsint allows a user to create investigations, which are used to manage sketches and analyses. Sketches have controllable graphs, which are comprised of nodes and relationships. The sketches contain information on an OSINT target (usernames, websites, etc) within these nodes and relationships. The nodes can have automated processes execute on them called &#x27;transformers&#x27;. A remote attacker can create a sketch, then trigger the &#x27;org_to_asn&#x27; transform on an organization node to execute arbitrary OS commands as root on the host machine via shell metacharacters and a docker container escape. Commit b52cbbb904c8013b74308d58af88bc7dbb1b055c appears to remove the code that causes this issue.</p></details></td>
+        <td>2026-04-20</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32135" target="_blank" rel="noopener">CVE-2026-32135</a></td>
+        <td>7.7</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-122</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.39</td>
+        <td><details><summary>NanoMQ MQTT Broker (NanoMQ) is an all-around Edge Messaging Platform. Versions p...</summary><p>NanoMQ MQTT Broker (NanoMQ) is an all-around Edge Messaging Platform. Versions prior to 0.24.11 have a remotely triggerable heap buffer overflow in the `uri_param_parse` function of NanoMQ&#x27;s REST API. The vulnerability occurs due to an off-by-one error when allocating memory for query parameter keys and values, allowing an attacker to write a null byte beyond the allocated buffer. This can be triggered via a crafted HTTP request. Version 0.24.11 patches the issue.</p></details></td>
+        <td>2026-04-20</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-29649" target="_blank" rel="noopener">CVE-2026-29649</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>NEMU contains an implementation flaw in its RISC-V Hypervisor CSR handling where...</summary><p>NEMU contains an implementation flaw in its RISC-V Hypervisor CSR handling where henvcfg[7:4] (CBIE/CBCFE/CBZE-related fields) is incorrectly masked/updated based on menvcfg[7:4], so a machine-mode write to menvcfg can implicitly modify the hypervisor&#x27;s environment configuration. This can lead to incorrect enforcement of virtualization configuration and may cause unexpected traps or denial of service when executing cache-block management instructions in virtualized contexts (V=1).</p></details></td>
+        <td>2026-04-20</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-29645" target="_blank" rel="noopener">CVE-2026-29645</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>NEMU (OpenXiangShan/NEMU) before v2025.12.r2 contains an improper instruction-va...</summary><p>NEMU (OpenXiangShan/NEMU) before v2025.12.r2 contains an improper instruction-validation flaw in its RISC-V Vector (RVV) decoder. The decoder does not correctly validate the funct3 field when decoding vsetvli/vsetivli/vsetvl, allowing certain invalid OP-V instruction encodings to be misinterpreted and executed as vset* configuration instructions rather than raising an illegal-instruction exception. This can be exploited by providing crafted RISC-V binaries to cause incorrect trap behavior, architectural state corruption/divergence, and potential denial of service in systems that rely on NEMU for correct execution or sandboxing.</p></details></td>
+        <td>2026-04-20</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6248" target="_blank" rel="noopener">CVE-2026-6248</a></td>
+        <td>8.1</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-22</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.67</td>
+        <td><details><summary>The wpForo Forum plugin for WordPress is vulnerable to Arbitrary File Deletion i...</summary><p>The wpForo Forum plugin for WordPress is vulnerable to Arbitrary File Deletion in versions up to and including 3.0.5. This is due to two compounding flaws: the Members::update() method does not validate or restrict the value of file-type custom profile fields, allowing authenticated users to store an arbitrary path instead of a legitimate upload path; and the wpforo_fix_upload_dir() sanitization function in ucf_file_delete() only remaps paths that match the expected pattern, and it is passed directly to the unlink() function. This makes it possible for authenticated attackers, with subscriber-level access and above, to delete arbitrary files on the server, which can easily lead to remote code execution when the right file is deleted (such as wp-config.php). Note: The vulnerability requires a file custom field, which requires the wpForo - User Custom Fields addon plugin.</p></details></td>
+        <td>2026-04-20</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6060" target="_blank" rel="noopener">CVE-2026-6060</a></td>
+        <td>4.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-400</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.15</td>
+        <td><details><summary>A vulnerability in the SQL Box in the admin interface of OTRS leads to an uncont...</summary><p>A vulnerability in the SQL Box in the admin interface of OTRS leads to an uncontrolled resource consumption leading to a DoS against the webserver. will be killed by the systemThis issue affects OTRS: 
+
+  *  7.0.X
+  *  8.0.X
+  *  2023.X
+  *  2024.X
+  *  2025.X
+  *  2026.X before 2026.3.X</p></details></td>
+        <td>2026-04-20</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-11249" target="_blank" rel="noopener">CVE-2025-11249</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Rejected reason: This CVE id was assigned as a duplicate of CVE-2025-66414.</summary><p>Rejected reason: This CVE id was assigned as a duplicate of CVE-2025-66414.</p></details></td>
+        <td>2026-04-20</td>
+      </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-41389" target="_blank" rel="noopener">CVE-2026-41389</a></td>
         <td>6.3</td>
@@ -77,23 +207,23 @@
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39110" target="_blank" rel="noopener">CVE-2026-39110</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>8.2</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-89</td>
         <td>&nbsp;</td>
         <td>&mdash;</td>
-        <td>0.00</td>
+        <td>5.74</td>
         <td><details><summary>SQL Injection vulnerability in Apartment Visitors Management System Apartment Vi...</summary><p>SQL Injection vulnerability in Apartment Visitors Management System Apartment Visitors Management System V1.1 in the contactno parameter of the forgot password page (forgot-password.php). This allows an unauthenticated attacker to manipulate backend SQL queries during authentication and retrieve sensitive database contents.</p></details></td>
         <td>2026-04-20</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39109" target="_blank" rel="noopener">CVE-2026-39109</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>9.4</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-89</td>
         <td>&nbsp;</td>
         <td>&mdash;</td>
-        <td>0.00</td>
+        <td>6.58</td>
         <td><details><summary>SQL Injection vulnerability in Apartment Visitors Management System Apartment Vi...</summary><p>SQL Injection vulnerability in Apartment Visitors Management System Apartment Visitors Management System V1.1 within the username parameter of the login page (index.php). This allows an unauthenticated attacker to manipulate backend SQL queries during authentication and retrieve sensitive database contents.</p></details></td>
         <td>2026-04-20</td>
       </tr>
@@ -220,12 +350,12 @@
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-30269" target="_blank" rel="noopener">CVE-2026-30269</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>9.9</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-269</td>
         <td>&nbsp;</td>
         <td>&mdash;</td>
-        <td>0.00</td>
+        <td>6.93</td>
         <td><details><summary>Improper access control in Doorman v0.1.0 and v1.0.2 allows any authenticated us...</summary><p>Improper access control in Doorman v0.1.0 and v1.0.2 allows any authenticated user to update their own account role to a non-admin privileged role via /platform/user/{username}. The `role` field is accepted by the update model without a manage_users permission check for self-updates, enabling privilege escalation to high-privileged roles.</p></details></td>
         <td>2026-04-20</td>
       </tr>
@@ -626,60 +756,6 @@
         <td>2026-04-20</td>
       </tr>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33558" target="_blank" rel="noopener">CVE-2026-33558</a></td>
-        <td>5.3</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-533</td>
-        <td>&nbsp;</td>
-        <td>&mdash;</td>
-        <td>3.71</td>
-        <td><details><summary>Information exposure vulnerability has been identified in Apache Kafka.
-
-The Net...</summary><p>Information exposure vulnerability has been identified in Apache Kafka.
-
-The NetworkClient component will output entire requests and responses information in the DEBUG log level in the logs. By default, the log level is set to INFO level. If the DEBUG level is enabled, the sensitive information will be exposed via the requests and responses output log. The entire lists of impacted requests and responses are:
-
-
-  *  AlterConfigsRequest
-
-  *  AlterUserScramCredentialsRequest
-
-  *  ExpireDelegationTokenRequest
-
-  *  IncrementalAlterConfigsRequest
-
-  *  RenewDelegationTokenRequest
-
-  *  SaslAuthenticateRequest
-
-  *  createDelegationTokenResponse
-
-  *  describeDelegationTokenResponse
-
-  *  SaslAuthenticateResponse
-
-
-This issue affects Apache Kafka: from any version supported the listed API above through v3.9.1, v4.0.0. We advise the Kafka users to upgrade to v3.9.2, v4.0.1, or later to avoid this vulnerability.</p></details></td>
-        <td>2026-04-20</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33557" target="_blank" rel="noopener">CVE-2026-33557</a></td>
-        <td>9.1</td>
-        <td><span class="severity critical">CRITICAL</span></td>
-        <td>CWE-1285</td>
-        <td>&nbsp;</td>
-        <td>&mdash;</td>
-        <td>6.37</td>
-        <td><details><summary>A possible security vulnerability has been identified in Apache Kafka.
-
-By defau...</summary><p>A possible security vulnerability has been identified in Apache Kafka.
-
-By default, the broker property `sasl.oauthbearer.jwt.validator.class` is set to `org.apache.kafka.common.security.oauthbearer.DefaultJwtValidator`. It accepts any JWT token without validating its signature, issuer, or audience. An attacker can generate a JWT token from any issuer with the `preferred_username` set to any user, and the broker will accept it.
-
-We advise the Kafka users using kafka v4.1.0 or v4.1.1 to set the config `sasl.oauthbearer.jwt.validator.class` to `org.apache.kafka.common.security.oauthbearer.BrokerJwtValidator` explicitly to avoid this vulnerability. Since Kafka v4.1.2 and v4.2.0 and later, the issue is fixed and will correctly validate the JWT token.</p></details></td>
-        <td>2026-04-20</td>
-      </tr>
-      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-66335" target="_blank" rel="noopener">CVE-2025-66335</a></td>
         <td>5.3</td>
         <td><span class="severity medium">MEDIUM</span></td>
@@ -743,23 +819,6 @@ We advise the Kafka users using kafka v4.1.0 or v4.1.1 to set the config `sasl.o
         <td>0.0% <small>p8</small></td>
         <td>3.57</td>
         <td><details><summary>A security flaw has been discovered in Yifang CMS up to 2.0.5. The impacted elem...</summary><p>A security flaw has been discovered in Yifang CMS up to 2.0.5. The impacted element is the function store of the file plugins/yifang_backend_account/logic/admin/L_rbac_admin.php of the component Extended Management Module. The manipulation of the argument Account results in cross site scripting. The attack can be executed remotely. The exploit has been released to the public and may be used for attacks. The vendor was contacted early about this disclosure but did not respond in any way.</p></details></td>
-        <td>2026-04-20</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5958" target="_blank" rel="noopener">CVE-2026-5958</a></td>
-        <td>2.1</td>
-        <td><span class="severity low">LOW</span></td>
-        <td>CWE-367</td>
-        <td>&nbsp;</td>
-        <td>&mdash;</td>
-        <td>1.47</td>
-        <td><details><summary>When sed is invoked with both -i (in-place edit) and --follow-symlinks, the func...</summary><p>When sed is invoked with both -i (in-place edit) and --follow-symlinks, the function open_next_file() performs two separate, non-atomic filesystem operations on the same path: 
-1. resolves symlink to its target and stores the resolved path for determining when output is written,
-2. opens the original symlink path (not the resolved one) to read the file. 
-Between these two calls there is a race window. If an attacker atomically replaces the symlink with a different target during that window, sed will: read content from the new (attacker-chosen) symlink target and write the processed result to the path recorded in step 1. This can lead to arbitrary file overwrite with attacker-controlled content in the context of the sed process.
-
-
-This issue was fixed in version 4.10.</p></details></td>
         <td>2026-04-20</td>
       </tr>
       <tr>
@@ -881,18 +940,6 @@ This issue was fixed in version 4.10.</p></details></td>
         <td>0.0% <small>p7</small></td>
         <td>3.36</td>
         <td><details><summary>A vulnerability was identified in BichitroGan ISP Billing Software 2025.3.20. Th...</summary><p>A vulnerability was identified in BichitroGan ISP Billing Software 2025.3.20. This affects an unknown function of the file /?\_route=customers/edit/ of the component Customer Handler. Such manipulation leads to cross site scripting. The attack can be executed remotely. The exploit is publicly available and might be used. The vendor was contacted early about this disclosure but did not respond in any way.</p></details></td>
-        <td>2026-04-20</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-13480" target="_blank" rel="noopener">CVE-2025-13480</a></td>
-        <td>5.1</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-863</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p4</small></td>
-        <td>3.57</td>
-        <td><details><summary>Fudo Enterprise in versions from 5.5.0 through 5.6.2 allows low privileged users...</summary><p>Fudo Enterprise in versions from 5.5.0 through 5.6.2 allows low privileged users to access certain administrator-only resources via improperly protected API endpoints. This includes sensitive information such as system logs and parts of system configuration settings.
-This vulnerability has been fixed in version 5.6.3</p></details></td>
         <td>2026-04-20</td>
       </tr>
       <tr>
@@ -1036,30 +1083,6 @@ This vulnerability has been fixed in version 5.6.3</p></details></td>
         <td>0.0% <small>p13</small></td>
         <td>2.80</td>
         <td><details><summary>ProjectDiscovery Nuclei 3 before 3.8.0 allows DSL expression injection. This aff...</summary><p>ProjectDiscovery Nuclei 3 before 3.8.0 allows DSL expression injection. This affects use of -env-vars for multi-step templates against untrusted targets (not the default configuration).</p></details></td>
-        <td>2026-04-20</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6644" target="_blank" rel="noopener">CVE-2026-6644</a></td>
-        <td>9.4</td>
-        <td><span class="severity critical">CRITICAL</span></td>
-        <td>CWE-78</td>
-        <td>&nbsp;</td>
-        <td>0.7% <small>p72</small></td>
-        <td>6.60</td>
-        <td><details><summary>A command injection vulnerability was found in the PPTP VPN Clients on the ADM. ...</summary><p>A command injection vulnerability was found in the PPTP VPN Clients on the ADM. The vulnerability allows an administrative user to break out of the restricted web environment and execute arbitrary code on the underlying operating system. This occurs due to insufficient validation of user-supplied input before it is passed to a system shell. Successful exploitation allows an attacker to achieve Remote Code Execution (RCE) and fully compromise the system.
-Affected products and versions include: from ADM 4.1.0 through ADM 4.3.3.RR42 as well as from ADM 5.0.0 through ADM 5.1.2.REO1.</p></details></td>
-        <td>2026-04-20</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6643" target="_blank" rel="noopener">CVE-2026-6643</a></td>
-        <td>8.6</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-121</td>
-        <td>&nbsp;</td>
-        <td>0.2% <small>p46</small></td>
-        <td>6.03</td>
-        <td><details><summary>A stack-based buffer overflow vulnerability was found in the VPN Clients on the ...</summary><p>A stack-based buffer overflow vulnerability was found in the VPN Clients on the ADM. The issue stems from the use of unbounded sscanf() and passing user-controlled data directly to printf(). Due to the lack of PIE and Stack Canary protections, an authenticated remote attacker can exploit these to execute arbitrary code as the web server user. 
-Affected products and versions include: from ADM 4.1.0 through ADM 4.3.3.RR42 as well as from ADM 5.0.0 through ADM 5.1.2.REO1.</p></details></td>
         <td>2026-04-20</td>
       </tr>
       <tr>
@@ -1833,31 +1856,6 @@ Affected products and versions include: from ADM 4.1.0 through ADM 4.3.3.RR42 as
         <td>2026-04-18</td>
       </tr>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32690" target="_blank" rel="noopener">CVE-2026-32690</a></td>
-        <td>3.7</td>
-        <td><span class="severity low">LOW</span></td>
-        <td>CWE-668</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p3</small></td>
-        <td>2.59</td>
-        <td><details><summary>Secrets in Variables saved as JSON dictionaries were not properly redacted - in ...</summary><p>Secrets in Variables saved as JSON dictionaries were not properly redacted - in case thee variables were retrieved by the user the secrets stored as nested fields were not masked.
-
-If you do not store variables with sensitive values in JSON form, you are not affected. Otherwise please upgrade to Apache Airflow 3.2.0 that has the fix implemented</p></details></td>
-        <td>2026-04-18</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32228" target="_blank" rel="noopener">CVE-2026-32228</a></td>
-        <td>7.5</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-863</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p3</small></td>
-        <td>5.25</td>
-        <td><details><summary>UI / API User with asset materialize permission could trigger dags they had no a...</summary><p>UI / API User with asset materialize permission could trigger dags they had no access to.
-Users are advised to migrate to Airflow version 3.2.0 that fixes the issue.</p></details></td>
-        <td>2026-04-18</td>
-      </tr>
-      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-30912" target="_blank" rel="noopener">CVE-2026-30912</a></td>
         <td>7.5</td>
         <td><span class="severity high">HIGH</span></td>
@@ -1877,19 +1875,6 @@ Users are advised to migrate to Airflow version 3.2.0 that fixes the issue.</p><
         <td>0.0% <small>p7</small></td>
         <td>6.16</td>
         <td><details><summary>An example of BashOperator in Airflow documentation suggested a way of passing d...</summary><p>An example of BashOperator in Airflow documentation suggested a way of passing dag_run.conf in the way that could cause unsanitized user input to be used to escalate privileges of UI user to allow execute code on worker. Users should review if any of their own DAGs have adopted this incorrect advice.</p></details></td>
-        <td>2026-04-18</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-25917" target="_blank" rel="noopener">CVE-2026-25917</a></td>
-        <td>9.8</td>
-        <td><span class="severity critical">CRITICAL</span></td>
-        <td>CWE-502</td>
-        <td>&nbsp;</td>
-        <td>0.1% <small>p21</small></td>
-        <td>6.86</td>
-        <td><details><summary>Dag Authors, who normally should not be able to execute code in the webserver co...</summary><p>Dag Authors, who normally should not be able to execute code in the webserver context could craft XCom payload causing the webserver to execute arbitrary code. Since Dag Authors are already highly trusted, severity of this issue is Low.
-
-Users are recommended to upgrade to Apache Airflow 3.2.0, which fixes the issue.</p></details></td>
         <td>2026-04-18</td>
       </tr>
       <tr>
@@ -2773,34 +2758,6 @@ Users are recommended to upgrade to Apache Airflow 3.2.0, which fixes the issue.
         <td>2026-04-17</td>
       </tr>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40461" target="_blank" rel="noopener">CVE-2026-40461</a></td>
-        <td>7.5</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-306</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p7</small></td>
-        <td>5.25</td>
-        <td><details><summary>Anviz CX2 Lite and CX7 are vulnerable to unauthenticated POST requests that modi...</summary><p>Anviz CX2 Lite and CX7 are vulnerable to unauthenticated POST requests that modify debug 
-settings (e.g., enabling SSH), allowing unauthorized state changes that 
-can facilitate later compromise.</p></details></td>
-        <td>2026-04-17</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40434" target="_blank" rel="noopener">CVE-2026-40434</a></td>
-        <td>8.1</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-940</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p4</small></td>
-        <td>5.67</td>
-        <td><details><summary>Anviz CrossChex Standard
-lacks source verification in the client/server channel,...</summary><p>Anviz CrossChex Standard
-lacks source verification in the client/server channel, enabling TCP 
-packet injection by an attacker on the same network to alter or disrupt 
-application traffic.</p></details></td>
-        <td>2026-04-17</td>
-      </tr>
-      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40342" target="_blank" rel="noopener">CVE-2026-40342</a></td>
         <td>9.9</td>
         <td><span class="severity critical">CRITICAL</span></td>
@@ -2823,46 +2780,6 @@ application traffic.</p></details></td>
         <td>2026-04-17</td>
       </tr>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40066" target="_blank" rel="noopener">CVE-2026-40066</a></td>
-        <td>8.8</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-494</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p6</small></td>
-        <td>6.16</td>
-        <td><details><summary>Anviz CX2 Lite and CX7 are vulnerable to unverified update packages that can be ...</summary><p>Anviz CX2 Lite and CX7 are vulnerable to unverified update packages that can be uploaded. The 
-device unpacks and executes a script resulting in unauthenticated remote
- code execution.</p></details></td>
-        <td>2026-04-17</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35682" target="_blank" rel="noopener">CVE-2026-35682</a></td>
-        <td>8.8</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-77</td>
-        <td>&nbsp;</td>
-        <td>0.3% <small>p49</small></td>
-        <td>6.17</td>
-        <td><details><summary>Anviz CX2 Lite is vulnerable to an authenticated command injection via a 
-filena...</summary><p>Anviz CX2 Lite is vulnerable to an authenticated command injection via a 
-filename parameter that enables arbitrary command execution (e.g., 
-starting telnetd), resulting in root‑level access.</p></details></td>
-        <td>2026-04-17</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35546" target="_blank" rel="noopener">CVE-2026-35546</a></td>
-        <td>9.8</td>
-        <td><span class="severity critical">CRITICAL</span></td>
-        <td>CWE-306</td>
-        <td>&nbsp;</td>
-        <td>0.1% <small>p18</small></td>
-        <td>6.86</td>
-        <td><details><summary>Anviz CX2 Lite and CX7 are vulnerable to unauthenticated firmware uploads. This ...</summary><p>Anviz CX2 Lite and CX7 are vulnerable to unauthenticated firmware uploads. This causes crafted 
-archives to be accepted, enabling attackers to plant and execute code 
-and obtain a reverse shell.</p></details></td>
-        <td>2026-04-17</td>
-      </tr>
-      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35215" target="_blank" rel="noopener">CVE-2026-35215</a></td>
         <td>7.5</td>
         <td><span class="severity high">HIGH</span></td>
@@ -2871,19 +2788,6 @@ and obtain a reverse shell.</p></details></td>
         <td>0.0% <small>p12</small></td>
         <td>5.25</td>
         <td><details><summary>Firebird is an open-source relational database management system. In versions pr...</summary><p>Firebird is an open-source relational database management system. In versions prior to 5.0.4, 4.0.7 and 3.0.14, the sdl_desc() function does not validate the length of a decoded SDL descriptor from a slice packet. A zero-length descriptor is later used to calculate the number of slice items, causing a division by zero. An unauthenticated attacker can exploit this by sending a crafted slice packet to crash the server. This issue has been fixed in versions 5.0.4, 4.0.7 and 3.0.14.</p></details></td>
-        <td>2026-04-17</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35061" target="_blank" rel="noopener">CVE-2026-35061</a></td>
-        <td>5.3</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-862</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p14</small></td>
-        <td>3.71</td>
-        <td><details><summary>Anviz CX7 Firmware is vulnerable to the most recently captured test photo that c...</summary><p>Anviz CX7 Firmware is vulnerable to the most recently captured test photo that can be 
-retrieved without authentication, revealing sensitive operational 
-imagery.</p></details></td>
         <td>2026-04-17</td>
       </tr>
       <tr>
@@ -2898,20 +2802,6 @@ imagery.</p></details></td>
         <td>2026-04-17</td>
       </tr>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33569" target="_blank" rel="noopener">CVE-2026-33569</a></td>
-        <td>6.5</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-319</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p5</small></td>
-        <td>4.55</td>
-        <td><details><summary>Anviz CX2 Lite and CX7 administrative sessions occur over HTTP, enabling 
-on‑pat...</summary><p>Anviz CX2 Lite and CX7 administrative sessions occur over HTTP, enabling 
-on‑path attackers to sniff credentials and session data, which can be 
-used to compromise the device.</p></details></td>
-        <td>2026-04-17</td>
-      </tr>
-      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33516" target="_blank" rel="noopener">CVE-2026-33516</a></td>
         <td>7.7</td>
         <td><span class="severity high">HIGH</span></td>
@@ -2920,45 +2810,6 @@ used to compromise the device.</p></details></td>
         <td>0.1% <small>p34</small></td>
         <td>5.39</td>
         <td><details><summary>xrdp is an open source RDP server. Versions through 0.10.5 contain an out-of-bou...</summary><p>xrdp is an open source RDP server. Versions through 0.10.5 contain an out-of-bounds read vulnerability during the RDP capability exchange phase. The issue occurs when memory is accessed before validating the remaining buffer length. A remote, unauthenticated attacker can trigger this vulnerability by sending a specially crafted Confirm Active PDU. Successful exploitation could lead to a denial of service (process crash) or potential disclosure of sensitive information from the process memory. This issue has been fixed in version 0.10.6.</p></details></td>
-        <td>2026-04-17</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33093" target="_blank" rel="noopener">CVE-2026-33093</a></td>
-        <td>5.3</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-862</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p7</small></td>
-        <td>3.71</td>
-        <td><details><summary>Anviz CX7 Firmware is vulnerable to an unauthenticated POST to the device that c...</summary><p>Anviz CX7 Firmware is vulnerable to an unauthenticated POST to the device that captures
- a photo with the front facing camera, exposing visual information about
- the deployment environment.</p></details></td>
-        <td>2026-04-17</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32650" target="_blank" rel="noopener">CVE-2026-32650</a></td>
-        <td>7.5</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-757</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p5</small></td>
-        <td>5.25</td>
-        <td><details><summary>Anviz CrossChex Standard is vulnerable when an attacker manipulates the TDS7 Pre...</summary><p>Anviz CrossChex Standard is vulnerable when an attacker manipulates the TDS7 PreLogin to disable 
-encryption, causing database credentials to be sent in plaintext and 
-enabling unauthorized database access.</p></details></td>
-        <td>2026-04-17</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32648" target="_blank" rel="noopener">CVE-2026-32648</a></td>
-        <td>5.3</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-862</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p7</small></td>
-        <td>3.71</td>
-        <td><details><summary>Anviz CX2 Lite and CX7 are vulnerable to unauthenticated access that discloses d...</summary><p>Anviz CX2 Lite and CX7 are vulnerable to unauthenticated access that discloses debug 
-configuration details (e.g., SSH/RTTY status), assisting attackers in 
-reconnaissance against the device.</p></details></td>
         <td>2026-04-17</td>
       </tr>
       <tr>
@@ -2984,21 +2835,6 @@ reconnaissance against the device.</p></details></td>
         <td>2026-04-17</td>
       </tr>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32324" target="_blank" rel="noopener">CVE-2026-32324</a></td>
-        <td>7.7</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-321</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p0</small></td>
-        <td>5.39</td>
-        <td><details><summary>Anviz CX7 Firmware is 
-vulnerable because the application embeds reusable certif...</summary><p>Anviz CX7 Firmware is 
-vulnerable because the application embeds reusable certificate/key 
-material, enabling decryption of MQTT traffic and potential interaction 
-with device messaging channels at scale.</p></details></td>
-        <td>2026-04-17</td>
-      </tr>
-      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32107" target="_blank" rel="noopener">CVE-2026-32107</a></td>
         <td>8.8</td>
         <td><span class="severity high">HIGH</span></td>
@@ -3018,35 +2854,6 @@ with device messaging channels at scale.</p></details></td>
         <td>0.0% <small>p13</small></td>
         <td>6.51</td>
         <td><details><summary>xrdp is an open source RDP server. In versions through 0.10.5, xrdp does not imp...</summary><p>xrdp is an open source RDP server. In versions through 0.10.5, xrdp does not implement verification for the Message Authentication Code (MAC) signature of encrypted RDP packets when using the &quot;Classic RDP Security&quot; layer. While the sender correctly generates signatures, the receiving logic lacks the necessary implementation to validate the 8-byte integrity signature, causing it to be silently ignored. An unauthenticated attacker with man-in-the-middle (MITM) capabilities can exploit this missing check to modify encrypted traffic in transit without detection. It does not affect connections where the TLS security layer is enforced. This issue has been fixed in version 0.10.6. If users are unable to immediately upgrade, they should configure xrdp.ini to enforce TLS security (security_layer=tls) to ensure end-to-end integrity.</p></details></td>
-        <td>2026-04-17</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-31927" target="_blank" rel="noopener">CVE-2026-31927</a></td>
-        <td>4.9</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-23</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p8</small></td>
-        <td>3.43</td>
-        <td><details><summary>Anviz CX7 Firmware is vulnerable to an authenticated CSV upload which allows pat...</summary><p>Anviz CX7 Firmware is vulnerable to an authenticated CSV upload which allows path traversal 
-to overwrite arbitrary files (e.g., /etc/shadow), enabling unauthorized 
-SSH access when combined with debug‑setting changes</p></details></td>
-        <td>2026-04-17</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6437" target="_blank" rel="noopener">CVE-2026-6437</a></td>
-        <td>6.9</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-88</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p8</small></td>
-        <td>4.83</td>
-        <td><details><summary>Improper neutralization of argument delimiters in the volume handling component ...</summary><p>Improper neutralization of argument delimiters in the volume handling component in AWS EFS CSI Driver (aws-efs-csi-driver) before v3.0.1 allows remote authenticated users with PersistentVolume creation permissions to inject arbitrary mount options via comma injection.
-
-
-
-
-To remediate this issue, users should upgrade to version v3.0.1</p></details></td>
         <td>2026-04-17</td>
       </tr>
       <tr>
@@ -5940,6 +5747,73 @@ To remediate this issue, users should upgrade to version v3.0.1</p></details></t
         <td>0.0% <small>p7</small></td>
         <td>2.59</td>
         <td><details><summary>ApostropheCMS is an open-source Node.js content management system. Versions 4.28...</summary><p>ApostropheCMS is an open-source Node.js content management system. Versions 4.28.0 and prior contain a timing side-channel vulnerability in the password reset endpoint (/api/v1/@apostrophecms/login/reset-request) that allows unauthenticated username and email enumeration. When a user is not found, the handler returns after a fixed 2-second artificial delay, but when a valid user is found, it performs a MongoDB update and SMTP email send with no equivalent delay normalization, producing measurably different response times. The endpoint also accepts both username and email via an $or query, and has no rate limiting as the existing checkLoginAttempts throttle only applies to the login flow. This enables automated enumeration of valid accounts for use in credential stuffing or targeted phishing. Only instances that have explicitly enabled the passwordReset option are affected, as it defaults to false. This issue has been fixed in version 4.29.0.</p></details></td>
+        <td>2026-04-15</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-21727" target="_blank" rel="noopener">CVE-2026-21727</a></td>
+        <td>3.3</td>
+        <td><span class="severity low">LOW</span></td>
+        <td>CWE-732</td>
+        <td>&nbsp;</td>
+        <td>0.0% <small>p0</small></td>
+        <td>2.31</td>
+        <td><details><summary>---
+title: Cross-Tenant Legacy Correlation Disclosure and Deletion
+draft: false
+...</summary><p>---
+title: Cross-Tenant Legacy Correlation Disclosure and Deletion
+draft: false
+hero:
+  image: /static/img/heros/hero-legal2.svg
+  content: &quot;# Cross-Tenant Legacy Correlation Disclosure and Deletion&quot;
+date: 2026-01-29
+product: Grafana
+severity: Low
+cve: CVE-2026-21727
+cvss_score: &quot;3.3&quot;
+cvss_vector: &quot;CVSS:3.3/AV:N/AC:H/PR:H/UI:N/S:U/C:L/I:L/A:N&quot;
+fixed_versions:
+  - &quot;&gt;=11.6.11 &gt;=12.0.9 &gt;=12.1.6 &gt;=12.2.4&quot;
+---
+A cross-tenant isolation vulnerability was found in Grafana’s Correlations feature affecting legacy correlation records. Due to a backward compatibility condition allowing org_id = 0 records to be returned across organizations, a user with datasource management privileges could read and permanently delete legacy correlation data belonging to another organization. This issue affects correlations created prior to Grafana 10.2 and is fixed in &gt;=11.6.11, &gt;=12.0.9, &gt;=12.1.6, and &gt;=12.2.4.
+
+Thanks to Gyu-hyeok Lee (g2h) for reporting this vulnerability.</p></details></td>
+        <td>2026-04-15</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-21726" target="_blank" rel="noopener">CVE-2026-21726</a></td>
+        <td>5.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-22</td>
+        <td>&nbsp;</td>
+        <td>0.0% <small>p0</small></td>
+        <td>3.71</td>
+        <td><details><summary>The CVE-2021-36156 fix validates the namespace parameter for path traversal sequ...</summary><p>The CVE-2021-36156 fix validates the namespace parameter for path traversal sequences after a single URL decode, by double encoding, an attacker can read files at the Ruler API endpoint /loki/api/v1/rules/{namespace}
+
+Thanks to Prasanth Sundararajan for reporting this vulnerability.</p></details></td>
+        <td>2026-04-15</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-41118" target="_blank" rel="noopener">CVE-2025-41118</a></td>
+        <td>9.1</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-732</td>
+        <td>&nbsp;</td>
+        <td>0.0% <small>p8</small></td>
+        <td>6.37</td>
+        <td><details><summary>Pyroscope is an open-source continuous profiling database. The database supports...</summary><p>Pyroscope is an open-source continuous profiling database. The database supports various storage backends, including Tencent Cloud Object Storage (COS).
+
+If the database is configured to use Tencent COS as the storage backend, an attacker could extract the secret_key configuration value from the Pyroscope API.
+
+To exploit this vulnerability, an attacker needs direct access to the Pyroscope API. We highly recommend limiting the public internet exposure of all our databases, such that they are only accessible by trusted users or internal systems.
+
+This vulnerability is fixed in versions:
+
+1.15.x: 1.15.2 and above.
+1.16.x: 1.16.1 and above.
+1.17.x: 1.17.0 and above (i.e. all versions).
+
+Thanks to Théo Cusnir for reporting this vulnerability to us via our bug bounty program.</p></details></td>
         <td>2026-04-15</td>
       </tr>
       <tr>
@@ -26238,33 +26112,6 @@ To remediate this issue, users should upgrade to version v3.0.1</p></details></t
         <td>2026-04-07</td>
       </tr>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33866" target="_blank" rel="noopener">CVE-2026-33866</a></td>
-        <td>5.3</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-862</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p9</small></td>
-        <td>3.71</td>
-        <td><details><summary>MLflow is vulnerable to an authorization bypass affecting the AJAX endpoint used...</summary><p>MLflow is vulnerable to an authorization bypass affecting the AJAX endpoint used to download saved model artifacts. Due to missing access‑control validation, a user without permissions to a given experiment can directly query this endpoint and retrieve model artifacts they are not authorized to access.
-
- 
-This issue affects MLflow version through 3.10.1</p></details></td>
-        <td>2026-04-07</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33865" target="_blank" rel="noopener">CVE-2026-33865</a></td>
-        <td>5.1</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-79</td>
-        <td>&nbsp;</td>
-        <td>0.1% <small>p17</small></td>
-        <td>3.57</td>
-        <td><details><summary>MLflow is vulnerable to Stored Cross-Site Scripting (XSS) caused by unsafe parsi...</summary><p>MLflow is vulnerable to Stored Cross-Site Scripting (XSS) caused by unsafe parsing of YAML-based MLmodel artifacts in its web interface. An authenticated attacker can upload a malicious MLmodel file containing a payload that executes when another user views the artifact in the UI. This allows actions such as session hijacking or performing operations on behalf of the victim. 
-
-This issue affects MLflow version through 3.10.1</p></details></td>
-        <td>2026-04-07</td>
-      </tr>
-      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-23818" target="_blank" rel="noopener">CVE-2026-23818</a></td>
         <td>8.8</td>
         <td><span class="severity high">HIGH</span></td>
@@ -28033,18 +27880,6 @@ This issue affects MLflow version through 3.10.1</p></details></td>
         <td>0.0% <small>p13</small></td>
         <td>4.55</td>
         <td><details><summary>vLLM is an inference and serving engine for large language models (LLMs). From 0...</summary><p>vLLM is an inference and serving engine for large language models (LLMs). From 0.7.0 to before 0.19.0, the VideoMediaIO.load_base64() method at vllm/multimodal/media/video.py splits video/jpeg data URLs by comma to extract individual JPEG frames, but does not enforce a frame count limit. The num_frames parameter (default: 32), which is enforced by the load_bytes() code path, is completely bypassed in the video/jpeg base64 path. An attacker can send a single API request containing thousands of comma-separated base64-encoded JPEG frames, causing the server to decode all frames into memory and crash with OOM. This vulnerability is fixed in 0.19.0.</p></details></td>
-        <td>2026-04-06</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34753" target="_blank" rel="noopener">CVE-2026-34753</a></td>
-        <td>5.4</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-918</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p11</small></td>
-        <td>3.78</td>
-        <td><details><summary>vLLM is an inference and serving engine for large language models (LLMs). From 0...</summary><p>vLLM is an inference and serving engine for large language models (LLMs). From 0.16.0 to before 0.19.0, a server-side request forgery (SSRF) vulnerability in download_bytes_from_url allows any actor who can control batch input JSON to make the vLLM batch runner issue arbitrary HTTP/HTTPS requests from the server, without any URL validation or domain restrictions.
-This can be used to target internal services (e.g. cloud metadata endpoints or internal HTTP APIs) reachable from the vLLM host. This vulnerability is fixed in 0.19.0.</p></details></td>
         <td>2026-04-06</td>
       </tr>
       <tr>
