@@ -1,6 +1,6 @@
 # CVEs — March 2026
 
-_5734 vulnerabilities_
+_5735 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
@@ -311,6 +311,7 @@ _5734 vulnerabilities_
 | [CVE-2026-29924](https://nvd.nist.gov/vuln/detail/CVE-2026-29924) | 7.6 | HIGH | CWE-611 | No | 0.1% | 5.32 | 2026-03-30 | Grav CMS v1.7.x and before is vulnerable to XML External Entity (XXE) through the SVG file upload functionality in the a... |
 | [CVE-2026-5126](https://nvd.nist.gov/vuln/detail/CVE-2026-5126) | 5.3 | MEDIUM | CWE-918 | No | 0.0% | 3.71 | 2026-03-30 | A flaw has been found in SourceCodester RSS Feed Parser 1.0. Affected by this issue is the function file_get_contents. T... |
 | [CVE-2026-5125](https://nvd.nist.gov/vuln/detail/CVE-2026-5125) | 4.8 | MEDIUM | CWE-77 | No | 0.3% | 3.37 | 2026-03-30 | A vulnerability was detected in raine consult-llm-mcp up to 2.5.3. Affected by this vulnerability is the function child_... |
+| [CVE-2026-4046](https://nvd.nist.gov/vuln/detail/CVE-2026-4046) | 7.5 | HIGH | CWE-617 | No | 0.0% | 5.25 | 2026-03-30 | The iconv() function in the GNU C Library versions 2.43 and earlier may crash due to an assertion failure when convertin... |
 | [CVE-2026-33032](https://nvd.nist.gov/vuln/detail/CVE-2026-33032) | 9.8 | CRITICAL | CWE-306 | No | 5.0% | 7.01 | 2026-03-30 | Nginx UI is a web user interface for the Nginx web server. In versions 2.3.5 and prior, the nginx-ui MCP (Model Context... |
 | [CVE-2026-33030](https://nvd.nist.gov/vuln/detail/CVE-2026-33030) | 8.8 | HIGH | CWE-78 | No | 0.0% | 6.16 | 2026-03-30 | Nginx UI is a web user interface for the Nginx web server. In versions 2.3.3 and prior, Nginx-UI contains an Insecure Di... |
 | [CVE-2026-33029](https://nvd.nist.gov/vuln/detail/CVE-2026-33029) | 6.9 | MEDIUM | CWE-20 | No | 0.1% | 4.83 | 2026-03-30 | Nginx UI is a web user interface for the Nginx web server. Prior to version 2.3.4, an input validation vulnerability in... |

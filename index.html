@@ -11,7 +11,7 @@
     <header>
       <h1>vuln-tracker</h1>
       <p class="subtitle">CVEs from the National Vulnerability Database — current and previous month</p>
-      <p class="last-updated">Last updated: 2026-04-20 20:55 UTC</p>
+      <p class="last-updated">Last updated: 2026-04-20 22:52 UTC</p>
     </header>
     <nav>
       <a href="top50.html">&#9733; Top 50</a>
@@ -25,7 +25,7 @@
     </nav>
     <main>
     <section>
-      <h2>Current Month — April 2026 <span class="count">(3381)</span></h2>
+      <h2>Current Month — April 2026 <span class="count">(3395)</span></h2>
       <div class="table-wrapper">
         <table>
           <thead>
@@ -43,16 +43,216 @@
           </thead>
           <tbody>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6550" target="_blank" rel="noopener">CVE-2026-6550</a></td>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6729" target="_blank" rel="noopener">CVE-2026-6729</a></td>
+        <td>5.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-287</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.71</td>
+        <td><details><summary>HKUDS OpenHarness prior to PR #159 remediation contains a session key derivation...</summary><p>HKUDS OpenHarness prior to PR #159 remediation contains a session key derivation vulnerability that allows authenticated participants in shared chats or threads to hijack other users&#x27; sessions by exploiting a shared ohmo session key that lacks sender identity verification. Attackers can reuse another user&#x27;s conversation state and replace or interrupt their active tasks by colliding into the same session boundary through the shared chat or thread scope.</p></details></td>
+        <td>2026-04-20</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-29643" target="_blank" rel="noopener">CVE-2026-29643</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>XiangShan (Open-source high-performance RISC-V processor) commit edb1dfaf7d290ae...</summary><p>XiangShan (Open-source high-performance RISC-V processor) commit edb1dfaf7d290ae99724594507dc46c2c2125384 (2024-11-28) contains an improper exceptional-condition handling flaw in its CSR subsystem (NewCSR). On affected versions, certain sequences of CSR operations targeting non-existent/custom CSR addresses may trigger an illegal-instruction exception but fail to reliably transfer control to the configured trap handler (mtvec), causing control-flow disruption and potentially leaving the core in a hung or unrecoverable state. This can be exploited by a local attacker able to execute code on the processor to cause a denial of service and potentially inconsistent architectural state.</p></details></td>
+        <td>2026-04-20</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-22051" target="_blank" rel="noopener">CVE-2026-22051</a></td>
+        <td>2.3</td>
+        <td><span class="severity low">LOW</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>1.61</td>
+        <td><details><summary>StorageGRID (formerly StorageGRID Webscale) versions prior to 11.9.0.13 and 12.0...</summary><p>StorageGRID (formerly StorageGRID Webscale) versions prior to 11.9.0.13 and 12.0.0.6 are susceptible to a Information Disclosure vulnerability. Successful exploit could allow an authenticated attacker with low privileges to run arbitrary metrics queries, revealing metric results that they do not have access to.</p></details></td>
+        <td>2026-04-20</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-0930" target="_blank" rel="noopener">CVE-2026-0930</a></td>
+        <td>2.3</td>
+        <td><span class="severity low">LOW</span></td>
+        <td>CWE-126</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>1.61</td>
+        <td><details><summary>Potential read out of bounds case with wolfSSHd on Windows while handling a term...</summary><p>Potential read out of bounds case with wolfSSHd on Windows while handling a terminal resize request. An authenticated user could trigger the out of bounds read after establishing a connection which would leak the adjacent stack memory to the pseudo-console output.</p></details></td>
+        <td>2026-04-20</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5928" target="_blank" rel="noopener">CVE-2026-5928</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-127</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Calling the ungetwc function on a FILE stream with wide characters encoded in a ...</summary><p>Calling the ungetwc function on a FILE stream with wide characters encoded in a character set that has overlaps between its single byte and multi-byte character encodings, in the GNU C Library version 2.43 or earlier, may result in an attempt to read bytes before an allocated buffer, potentially resulting in unintentional disclosure of neighboring data in the heap, or a program crash.
+
+A bug in the wide character pushback implementation (_IO_wdefault_pbackfail in libio/wgenops.c) causes ungetwc() to operate on the regular character buffer (fp-&gt;_IO_read_ptr) instead of the actual wide-stream read pointer (fp-&gt;_wide_data-&gt;_IO_read_ptr). The program crash may happen in cases where fp-&gt;_IO_read_ptr is not initialized and hence points to NULL. The buffer under-read requires a special situation where the input character encoding is such that there are overlaps between single byte representations and multibyte representations in that encoding, resulting in spurious matches. The spurious match case is not possible in the standard Unicode character sets.</p></details></td>
+        <td>2026-04-20</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5450" target="_blank" rel="noopener">CVE-2026-5450</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-122</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Calling the scanf family of functions with a %mc (malloc&#x27;d character match) in t...</summary><p>Calling the scanf family of functions with a %mc (malloc&#x27;d character match) in the GNU C Library version 2.7 to version 2.43 with a format width specifier with an explicit width greater than 1024 could result in a one byte heap buffer overflow.</p></details></td>
+        <td>2026-04-20</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5358" target="_blank" rel="noopener">CVE-2026-5358</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-120</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>The obsolete nis_local_principal function in the GNU C Library version 2.43 and ...</summary><p>The obsolete nis_local_principal function in the GNU C Library version 2.43 and older may overflow a buffer in the data section, which could allow an attacker to spoof a crafted response to a UDP request generated by this function and overwrite neighboring static data in the requesting application.
+
+NIS support is obsolete and has been deprecated in the GNU C Library since version 2.26 and is only maintained for legacy usage. Applications should port away from NIS to more modern identity and access management services.</p></details></td>
+        <td>2026-04-20</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4852" target="_blank" rel="noopener">CVE-2026-4852</a></td>
+        <td>6.4</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.48</td>
+        <td><details><summary>The Image Source Control Lite – Show Image Credits and Captions plugin for WordP...</summary><p>The Image Source Control Lite – Show Image Credits and Captions plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the &#x27;Image Source&#x27; attachment field in all versions up to, and including, 3.9.1 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with Author-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.</p></details></td>
+        <td>2026-04-20</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34403" target="_blank" rel="noopener">CVE-2026-34403</a></td>
+        <td>5.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-1385</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.85</td>
+        <td><details><summary>Nginx UI is a web user interface for the Nginx web server. Prior to version 2.3....</summary><p>Nginx UI is a web user interface for the Nginx web server. Prior to version 2.3.5, all WebSocket endpoints in nginx-ui use a gorilla/websocket Upgrader with CheckOrigin unconditionally returning true, allowing Cross-Site WebSocket Hijacking (CSWSH). Combined with the fact that authentication tokens are stored in browser cookies (set via JavaScript without HttpOnly or explicit SameSite attributes), a malicious webpage can establish authenticated WebSocket connections to the nginx-ui instance when a logged-in administrator visits the attacker-controlled page. Version 2.3.5 patches the issue.</p></details></td>
+        <td>2026-04-20</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33626" target="_blank" rel="noopener">CVE-2026-33626</a></td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-918</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.25</td>
+        <td><details><summary>LMDeploy is a toolkit for compressing, deploying, and serving large language mod...</summary><p>LMDeploy is a toolkit for compressing, deploying, and serving large language models. Versions prior to 0.12.3 have a Server-Side Request Forgery (SSRF) vulnerability in LMDeploy&#x27;s vision-language module. The `load_image()` function in `lmdeploy/vl/utils.py` fetches arbitrary URLs without validating internal/private IP addresses, allowing attackers to access cloud metadata services, internal networks, and sensitive resources. Version 0.12.3 patches the issue.</p></details></td>
+        <td>2026-04-20</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33432" target="_blank" rel="noopener">CVE-2026-33432</a></td>
+        <td>7.7</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-287</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.39</td>
+        <td><details><summary>Roxy-WI is a web interface for managing Haproxy, Nginx, Apache and Keepalived se...</summary><p>Roxy-WI is a web interface for managing Haproxy, Nginx, Apache and Keepalived servers. In versions up to and including 8.2.8.2, when LDAP authentication is enabled, Roxy-WI constructs an LDAP search filter by directly concatenating the user-supplied login username into the filter string without escaping LDAP special characters. An unauthenticated attacker can inject LDAP filter metacharacters into the username field to manipulate the search query, cause the directory to return an unintended user entry, and bypass authentication entirely — gaining access to the application without knowing any valid password. As of time of publication, no known patches are available.</p></details></td>
+        <td>2026-04-20</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33431" target="_blank" rel="noopener">CVE-2026-33431</a></td>
         <td>5.7</td>
         <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-757</td>
+        <td>CWE-24</td>
         <td>&nbsp;</td>
         <td>&mdash;</td>
         <td>3.99</td>
-        <td><details><summary>Cryptographic algorithm downgrade in the caching layer of Amazon AWS Encryption ...</summary><p>Cryptographic algorithm downgrade in the caching layer of Amazon AWS Encryption SDK for Python before version 3.3.1 and before version  4.0.5 might allow an authenticated local threat actor to bypass key commitment policy enforcement via a shared key cache, resulting in ciphertext that can be decrypted to multiple different plaintexts.
-
-To remediate this issue, users should upgrade to version 3.3.1, 4.0.5 or above.</p></details></td>
+        <td><details><summary>Roxy-WI is a web interface for managing Haproxy, Nginx, Apache and Keepalived se...</summary><p>Roxy-WI is a web interface for managing Haproxy, Nginx, Apache and Keepalived servers. Prior to version 8.2.6.4, the POST /config/&lt;service&gt;/show API endpoint accepts a configver parameter that is directly appended to a base directory path to construct a local file path, which is subsequently opened and its contents returned to the caller. The existing path traversal guard only inspects the base directory variable (which is never user-controlled) and entirely ignores the user-supplied configver value. An authenticated attacker can supply a configver value containing `../` sequences to escape the intended directory and read arbitrary files accessible to the web application process. Version 8.2.6.4 contains a patch for the issue.</p></details></td>
+        <td>2026-04-20</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33031" target="_blank" rel="noopener">CVE-2026-33031</a></td>
+        <td>8.6</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-284</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.02</td>
+        <td><details><summary>Nginx UI is a web user interface for the Nginx web server. Prior to version 2.3....</summary><p>Nginx UI is a web user interface for the Nginx web server. Prior to version 2.3.4, a user who was disabled by an administrator can use previously issued API tokens for up to the token lifetime. In practice, disabling a compromised account does not actually terminate that user’s access, so an attacker who already stole a JWT can continue reading and modifying protected resources after the account is marked disabled. Since tokens can be used to create new accounts, it is possible the disabled user to maintain the privilege. Version 2.3.4 patches the issue.</p></details></td>
+        <td>2026-04-20</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32613" target="_blank" rel="noopener">CVE-2026-32613</a></td>
+        <td>9.9</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-94</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.93</td>
+        <td><details><summary>Spinnaker is an open source, multi-cloud continuous delivery platform. Echo like...</summary><p>Spinnaker is an open source, multi-cloud continuous delivery platform. Echo like some other services, uses SPeL (Spring Expression Language) to process information - specifically around expected artifacts. In versions prior to 2026.1.0, 2026.0.1, 2025.4.2, and 2025.3.2, unlike orca, it was NOT restricting that context to a set of trusted classes, but allowing FULL JVM access. This enabled a user to use arbitrary java classes which allow deep access to the system. This enabled the ability to invoke commands, access files, etc. Versions 2026.1.0, 2026.0.1, 2025.4.2, and 2025.3.2 contain a patch. As a workaround, disable echo entirely.</p></details></td>
+        <td>2026-04-20</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32604" target="_blank" rel="noopener">CVE-2026-32604</a></td>
+        <td>9.9</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-20</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.93</td>
+        <td><details><summary>Spinnaker is an open source, multi-cloud continuous delivery platform. In versio...</summary><p>Spinnaker is an open source, multi-cloud continuous delivery platform. In versions prior to 2026.1.0, 2026.0.1, 2025.4.2, and 2025.3.2, a bad actor can execute arbitrary commands very simply on the clouddriver pods. This can expose credentials, remove files, or inject resources easily. Versions 2026.1.0, 2026.0.1, 2025.4.2, and 2025.3.2 contain a patch. As a workaround, disable the gitrepo artifact types.</p></details></td>
+        <td>2026-04-20</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-29648" target="_blank" rel="noopener">CVE-2026-29648</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>In OpenXiangShan NEMU, when Smstateen is enabled, clearing mstateen0.ENVCFG does...</summary><p>In OpenXiangShan NEMU, when Smstateen is enabled, clearing mstateen0.ENVCFG does not correctly restrict access to henvcfg and senvcfg. As a result, less-privileged code may read or write these CSRs without the required exception, potentially bypassing intended state-enable based isolation controls in virtualized or multi-privilege environments.</p></details></td>
+        <td>2026-04-20</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-29647" target="_blank" rel="noopener">CVE-2026-29647</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>In OpenXiangShan NEMU, insufficient Smstateen permission enforcement allows lowe...</summary><p>In OpenXiangShan NEMU, insufficient Smstateen permission enforcement allows lower-privileged code to access IMSIC state via stopei/vstopei CSRs even when mstateen0.IMSIC is cleared, potentially enabling cross-context information leakage or disruption of interrupt handling.</p></details></td>
+        <td>2026-04-20</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-29646" target="_blank" rel="noopener">CVE-2026-29646</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>In OpenXiangShan NEMU prior to 55295c4, when running with RVH (Hypervisor extens...</summary><p>In OpenXiangShan NEMU prior to 55295c4, when running with RVH (Hypervisor extension) enabled, a VS-mode guest write to the supervisor interrupt-enable CSR (sie) may be handled incorrectly and can influence machine-level interrupt enable state (mie). This breaks privilege/virtualization isolation and can lead to denial of service or privilege-boundary violation in environments relying on NEMU for correct interrupt virtualization.</p></details></td>
+        <td>2026-04-20</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-29642" target="_blank" rel="noopener">CVE-2026-29642</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>A local attacker who can execute privileged CSR operations (or can induce firmwa...</summary><p>A local attacker who can execute privileged CSR operations (or can induce firmware to do so) performs carefully crafted reads/writes to menvcfg (e.g., csrrs in M-mode). On affected XiangShan versions (commit aecf601e803bfd2371667a3fb60bfcd83c333027, 2024-11-19), these menvcfg accesses can unexpectedly set WPRI (reserved) bits in the status view (xstatus) to 1. RISC-V defines WPRI fields as &quot;writes preserve values, reads ignore values,&quot; i.e., they must not be modified by software manipulating other fields, and menvcfg itself contains multiple WPRI fields.</p></details></td>
         <td>2026-04-20</td>
       </tr>
       <tr>
@@ -141,24 +341,6 @@ To remediate this issue, users should upgrade to version 3.3.1, 4.0.5 or above.<
         <td>&mdash;</td>
         <td>5.67</td>
         <td><details><summary>The wpForo Forum plugin for WordPress is vulnerable to Arbitrary File Deletion i...</summary><p>The wpForo Forum plugin for WordPress is vulnerable to Arbitrary File Deletion in versions up to and including 3.0.5. This is due to two compounding flaws: the Members::update() method does not validate or restrict the value of file-type custom profile fields, allowing authenticated users to store an arbitrary path instead of a legitimate upload path; and the wpforo_fix_upload_dir() sanitization function in ucf_file_delete() only remaps paths that match the expected pattern, and it is passed directly to the unlink() function. This makes it possible for authenticated attackers, with subscriber-level access and above, to delete arbitrary files on the server, which can easily lead to remote code execution when the right file is deleted (such as wp-config.php). Note: The vulnerability requires a file custom field, which requires the wpForo - User Custom Fields addon plugin.</p></details></td>
-        <td>2026-04-20</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6060" target="_blank" rel="noopener">CVE-2026-6060</a></td>
-        <td>4.5</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-400</td>
-        <td>&nbsp;</td>
-        <td>&mdash;</td>
-        <td>3.15</td>
-        <td><details><summary>A vulnerability in the SQL Box in the admin interface of OTRS leads to an uncont...</summary><p>A vulnerability in the SQL Box in the admin interface of OTRS leads to an uncontrolled resource consumption leading to a DoS against the webserver. will be killed by the systemThis issue affects OTRS: 
-
-  *  7.0.X
-  *  8.0.X
-  *  2023.X
-  *  2024.X
-  *  2025.X
-  *  2026.X before 2026.3.X</p></details></td>
         <td>2026-04-20</td>
       </tr>
       <tr>
@@ -5750,73 +5932,6 @@ To remediate this issue, users should upgrade to version 3.3.1, 4.0.5 or above.<
         <td>2026-04-15</td>
       </tr>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-21727" target="_blank" rel="noopener">CVE-2026-21727</a></td>
-        <td>3.3</td>
-        <td><span class="severity low">LOW</span></td>
-        <td>CWE-732</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p0</small></td>
-        <td>2.31</td>
-        <td><details><summary>---
-title: Cross-Tenant Legacy Correlation Disclosure and Deletion
-draft: false
-...</summary><p>---
-title: Cross-Tenant Legacy Correlation Disclosure and Deletion
-draft: false
-hero:
-  image: /static/img/heros/hero-legal2.svg
-  content: &quot;# Cross-Tenant Legacy Correlation Disclosure and Deletion&quot;
-date: 2026-01-29
-product: Grafana
-severity: Low
-cve: CVE-2026-21727
-cvss_score: &quot;3.3&quot;
-cvss_vector: &quot;CVSS:3.3/AV:N/AC:H/PR:H/UI:N/S:U/C:L/I:L/A:N&quot;
-fixed_versions:
-  - &quot;&gt;=11.6.11 &gt;=12.0.9 &gt;=12.1.6 &gt;=12.2.4&quot;
----
-A cross-tenant isolation vulnerability was found in Grafana’s Correlations feature affecting legacy correlation records. Due to a backward compatibility condition allowing org_id = 0 records to be returned across organizations, a user with datasource management privileges could read and permanently delete legacy correlation data belonging to another organization. This issue affects correlations created prior to Grafana 10.2 and is fixed in &gt;=11.6.11, &gt;=12.0.9, &gt;=12.1.6, and &gt;=12.2.4.
-
-Thanks to Gyu-hyeok Lee (g2h) for reporting this vulnerability.</p></details></td>
-        <td>2026-04-15</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-21726" target="_blank" rel="noopener">CVE-2026-21726</a></td>
-        <td>5.3</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-22</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p0</small></td>
-        <td>3.71</td>
-        <td><details><summary>The CVE-2021-36156 fix validates the namespace parameter for path traversal sequ...</summary><p>The CVE-2021-36156 fix validates the namespace parameter for path traversal sequences after a single URL decode, by double encoding, an attacker can read files at the Ruler API endpoint /loki/api/v1/rules/{namespace}
-
-Thanks to Prasanth Sundararajan for reporting this vulnerability.</p></details></td>
-        <td>2026-04-15</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-41118" target="_blank" rel="noopener">CVE-2025-41118</a></td>
-        <td>9.1</td>
-        <td><span class="severity critical">CRITICAL</span></td>
-        <td>CWE-732</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p8</small></td>
-        <td>6.37</td>
-        <td><details><summary>Pyroscope is an open-source continuous profiling database. The database supports...</summary><p>Pyroscope is an open-source continuous profiling database. The database supports various storage backends, including Tencent Cloud Object Storage (COS).
-
-If the database is configured to use Tencent COS as the storage backend, an attacker could extract the secret_key configuration value from the Pyroscope API.
-
-To exploit this vulnerability, an attacker needs direct access to the Pyroscope API. We highly recommend limiting the public internet exposure of all our databases, such that they are only accessible by trusted users or internal systems.
-
-This vulnerability is fixed in versions:
-
-1.15.x: 1.15.2 and above.
-1.16.x: 1.16.1 and above.
-1.17.x: 1.17.0 and above (i.e. all versions).
-
-Thanks to Théo Cusnir for reporting this vulnerability to us via our bug bounty program.</p></details></td>
-        <td>2026-04-15</td>
-      </tr>
-      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6383" target="_blank" rel="noopener">CVE-2026-6383</a></td>
         <td>5.4</td>
         <td><span class="severity medium">MEDIUM</span></td>
@@ -9278,7 +9393,7 @@ Thanks to Théo Cusnir for reporting this vulnerability to us via our bug bounty
         <td>&nbsp;</td>
         <td>0.1% <small>p18</small></td>
         <td>6.30</td>
-        <td><details><summary>Improper neutralization of escape, meta, or control sequences in Microsoft Power...</summary><p>Improper neutralization of escape, meta, or control sequences in Microsoft Power Apps allows an authorized attacker to bypass a security feature over a network.</p></details></td>
+        <td><details><summary>Improper neutralization of escape, meta, or control sequences in Microsoft Power...</summary><p>Improper neutralization of escape, meta, or control sequences in Microsoft Power Apps allows an authorized attacker to perform spoofing over a network.</p></details></td>
         <td>2026-04-14</td>
       </tr>
       <tr>
@@ -37281,7 +37396,7 @@ Thanks to Théo Cusnir for reporting this vulnerability to us via our bug bounty
       </div>
     </section>
     <section>
-      <h2>Previous Month — March 2026 <span class="count">(5734)</span></h2>
+      <h2>Previous Month — March 2026 <span class="count">(5735)</span></h2>
       <div class="table-wrapper">
         <table>
           <thead>
@@ -40673,6 +40788,21 @@ Thanks to Théo Cusnir for reporting this vulnerability to us via our bug bounty
         <td>0.3% <small>p53</small></td>
         <td>3.37</td>
         <td><details><summary>A vulnerability was detected in raine consult-llm-mcp up to 2.5.3. Affected by t...</summary><p>A vulnerability was detected in raine consult-llm-mcp up to 2.5.3. Affected by this vulnerability is the function child_process.execSync of the file src/server.ts. The manipulation of the argument git_diff.base_ref/git_diff.files results in os command injection. The attack is only possible with local access. The exploit is now public and may be used. Upgrading to version 2.5.4 addresses this issue. The patch is identified as 4abf297b34e5e8a9cb364b35f52c5f0ca1d599d3. Upgrading the affected component is recommended.</p></details></td>
+        <td>2026-03-30</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4046" target="_blank" rel="noopener">CVE-2026-4046</a></td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-617</td>
+        <td>&nbsp;</td>
+        <td>0.0% <small>p13</small></td>
+        <td>5.25</td>
+        <td><details><summary>The iconv() function in the GNU C Library versions 2.43 and earlier may crash du...</summary><p>The iconv() function in the GNU C Library versions 2.43 and earlier may crash due to an assertion failure when converting inputs from the IBM1390 or IBM1399 character sets, which may be used to remotely crash an application.
+
+
+
+This vulnerability can be trivially mitigated by removing the IBM1390 and IBM1399 character sets from systems that do not need them.</p></details></td>
         <td>2026-03-30</td>
       </tr>
       <tr>
