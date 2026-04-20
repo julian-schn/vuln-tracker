@@ -11,7 +11,7 @@
     <header>
       <h1>vuln-tracker — Top 50</h1>
       <p class="subtitle">The 50 most important CVEs from the current and previous month, ranked by VAP score (70% CVSS + 30% EPSS)</p>
-      <p class="last-updated">Last updated: 2026-04-20 10:03 UTC</p>
+      <p class="last-updated">Last updated: 2026-04-20 15:22 UTC</p>
     </header>
     <nav>
       <a href="index.html">&larr; All CVEs</a>
@@ -354,7 +354,7 @@
         <td><span class="severity critical">CRITICAL</span></td>
         <td>CWE-918</td>
         <td>&nbsp;</td>
-        <td>0.2% <small>p36</small></td>
+        <td>0.2% <small>p35</small></td>
         <td>7.00</td>
         <td><details><summary>FastMCP is a Pythonic way to build MCP servers and clients. Prior to version 3.2...</summary><p>FastMCP is a Pythonic way to build MCP servers and clients. Prior to version 3.2.0, the OpenAPIProvider in FastMCP exposes internal APIs to MCP clients by parsing OpenAPI specifications. The RequestDirector class is responsible for constructing HTTP requests to the backend service. A vulnerability exists in the _build_url() method. When an OpenAPI operation defines path parameters (e.g., /api/v1/users/{user_id}), the system directly substitutes parameter values into the URL template string without URL-encoding. Subsequently, urllib.parse.urljoin() resolves the final URL. Since urljoin() interprets ../ sequences as directory traversal, an attacker controlling a path parameter can perform path traversal attacks to escape the intended API prefix and access arbitrary backend endpoints. This results in authenticated SSRF, as requests are sent with the authorization headers configured in the MCP provider. This issue has been patched in version 3.2.0.</p></details></td>
         <td>2026-04-02</td>
@@ -398,7 +398,7 @@
         <td><span class="severity critical">CRITICAL</span></td>
         <td>CWE-918</td>
         <td>&nbsp;</td>
-        <td>0.1% <small>p26</small></td>
+        <td>0.1% <small>p28</small></td>
         <td>7.00</td>
         <td><details><summary>Server-side request forgery (ssrf) in Azure Cloud Shell allows an unauthorized a...</summary><p>Server-side request forgery (ssrf) in Azure Cloud Shell allows an unauthorized attacker to elevate privileges over a network.</p></details></td>
         <td>2026-03-19</td>
@@ -409,7 +409,7 @@
         <td><span class="severity critical">CRITICAL</span></td>
         <td>CWE-918</td>
         <td>&nbsp;</td>
-        <td>0.1% <small>p26</small></td>
+        <td>0.1% <small>p25</small></td>
         <td>7.00</td>
         <td><details><summary>Server-side request forgery (ssrf) in Microsoft Bing allows an unauthorized atta...</summary><p>Server-side request forgery (ssrf) in Microsoft Bing allows an unauthorized attacker to elevate privileges over a network.</p></details></td>
         <td>2026-04-03</td>
@@ -541,7 +541,7 @@
         <td><span class="severity critical">CRITICAL</span></td>
         <td>CWE-22</td>
         <td>&nbsp;</td>
-        <td>0.0% <small>p9</small></td>
+        <td>0.0% <small>p10</small></td>
         <td>7.00</td>
         <td><details><summary>A malicious actor with access to the network could exploit a Path Traversal vuln...</summary><p>A malicious actor with access to the network could exploit a Path Traversal vulnerability found in the UniFi Network Application to access files on the underlying system that could be manipulated to access an underlying account.</p></details></td>
         <td>2026-03-19</td>
