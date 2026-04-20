@@ -1,9 +1,27 @@
 # CVEs — April 2026
 
-_3239 vulnerabilities_
+_3257 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
+| [CVE-2026-6597](https://nvd.nist.gov/vuln/detail/CVE-2026-6597) | 5.1 | MEDIUM | CWE-255 | No | — | 3.57 | 2026-04-20 | A weakness has been identified in langflow-ai langflow up to 1.8.3. Impacted is the function remove_api_keys/has_api_ter... |
+| [CVE-2026-6596](https://nvd.nist.gov/vuln/detail/CVE-2026-6596) | 6.9 | MEDIUM | CWE-284 | No | — | 4.83 | 2026-04-20 | A security flaw has been discovered in langflow-ai langflow up to 1.1.0. This issue affects the function create_upload_f... |
+| [CVE-2026-6595](https://nvd.nist.gov/vuln/detail/CVE-2026-6595) | 6.9 | MEDIUM | CWE-74 | No | — | 4.83 | 2026-04-20 | A vulnerability was identified in ProjectsAndPrograms School Management System up to 6b6fae5426044f89c08d0dd101c7fa71f90... |
+| [CVE-2026-6594](https://nvd.nist.gov/vuln/detail/CVE-2026-6594) | 6.9 | MEDIUM | CWE-94 | No | — | 4.83 | 2026-04-20 | A vulnerability was determined in brikcss merge up to 1.3.0. This affects an unknown part. Executing a manipulation of t... |
+| [CVE-2026-6593](https://nvd.nist.gov/vuln/detail/CVE-2026-6593) | 5.1 | MEDIUM | CWE-79 | No | — | 3.57 | 2026-04-20 | A vulnerability was found in ComfyUI up to 0.13.0. Affected by this issue is some unknown functionality of the file serv... |
+| [CVE-2026-6592](https://nvd.nist.gov/vuln/detail/CVE-2026-6592) | 5.1 | MEDIUM | CWE-79 | No | — | 3.57 | 2026-04-20 | A vulnerability has been found in ComfyUI up to 0.13.0. Affected by this vulnerability is the function getuserdata of th... |
+| [CVE-2026-6591](https://nvd.nist.gov/vuln/detail/CVE-2026-6591) | 5.3 | MEDIUM | CWE-22 | No | — | 3.71 | 2026-04-20 | A flaw has been found in ComfyUI up to 0.13.0. Affected is the function folder_paths.get_annotated_filepath of the file... |
+| [CVE-2026-6590](https://nvd.nist.gov/vuln/detail/CVE-2026-6590) | 5.3 | MEDIUM | CWE-22 | No | — | 3.71 | 2026-04-20 | A vulnerability was detected in ComfyUI up to 0.13.0. This impacts the function get_model_preview of the file app/model_... |
+| [CVE-2026-6589](https://nvd.nist.gov/vuln/detail/CVE-2026-6589) | 5.3 | MEDIUM | CWE-352 | No | — | 3.71 | 2026-04-20 | A security vulnerability has been detected in ComfyUI up to 0.13.0. This affects the function create_origin_only_middlew... |
+| [CVE-2026-6588](https://nvd.nist.gov/vuln/detail/CVE-2026-6588) | 6.9 | MEDIUM | CWE-287 | No | — | 4.83 | 2026-04-20 | A weakness has been identified in serge-chat serge up to 1.4TB. The impacted element is the function download_model/dele... |
+| [CVE-2026-6587](https://nvd.nist.gov/vuln/detail/CVE-2026-6587) | 5.3 | MEDIUM | CWE-918 | No | — | 3.71 | 2026-04-20 | A security flaw has been discovered in vibrantlabsai RAGAS up to 0.4.3. The affected element is the function _try_proces... |
+| [CVE-2026-6586](https://nvd.nist.gov/vuln/detail/CVE-2026-6586) | 5.3 | MEDIUM | CWE-285 | No | — | 3.71 | 2026-04-20 | A vulnerability was identified in TransformerOptimus SuperAGI up to 0.0.14. Impacted is the function get_budget/update_b... |
+| [CVE-2026-6585](https://nvd.nist.gov/vuln/detail/CVE-2026-6585) | 5.3 | MEDIUM | CWE-285 | No | — | 3.71 | 2026-04-20 | A vulnerability was determined in TransformerOptimus SuperAGI up to 0.0.14. This issue affects the function update_organ... |
+| [CVE-2026-6584](https://nvd.nist.gov/vuln/detail/CVE-2026-6584) | 5.3 | MEDIUM | CWE-285 | No | — | 3.71 | 2026-04-20 | A vulnerability was found in TransformerOptimus SuperAGI up to 0.0.14. This vulnerability affects the function update_us... |
+| [CVE-2026-6583](https://nvd.nist.gov/vuln/detail/CVE-2026-6583) | 5.3 | MEDIUM | CWE-285 | No | — | 3.71 | 2026-04-19 | A vulnerability has been found in TransformerOptimus SuperAGI up to 0.0.14. This affects the function delete_api_key/edi... |
+| [CVE-2026-6582](https://nvd.nist.gov/vuln/detail/CVE-2026-6582) | 6.9 | MEDIUM | CWE-287 | No | — | 4.83 | 2026-04-19 | A flaw has been found in TransformerOptimus SuperAGI up to 0.0.14. Affected by this issue is the function get_vector_db_... |
+| [CVE-2026-6581](https://nvd.nist.gov/vuln/detail/CVE-2026-6581) | 7.4 | HIGH | CWE-119 | No | — | 5.18 | 2026-04-19 | A vulnerability was detected in H3C Magic B1 up to 100R004. Affected by this vulnerability is the function SetMobileAPIn... |
+| [CVE-2026-6580](https://nvd.nist.gov/vuln/detail/CVE-2026-6580) | 6.9 | MEDIUM | CWE-320 | No | — | 4.83 | 2026-04-19 | A security vulnerability has been detected in liangliangyy DjangoBlog up to 2.1.0.0. Affected is an unknown function of... |
 | [CVE-2026-6579](https://nvd.nist.gov/vuln/detail/CVE-2026-6579) | 6.9 | MEDIUM | CWE-287 | No | — | 4.83 | 2026-04-19 | A weakness has been identified in liangliangyy DjangoBlog up to 2.1.0.0. This impacts an unknown function of the file bl... |
 | [CVE-2026-6578](https://nvd.nist.gov/vuln/detail/CVE-2026-6578) | 6.3 | MEDIUM | CWE-259 | No | — | 4.41 | 2026-04-19 | A security flaw has been discovered in liangliangyy DjangoBlog up to 2.1.0.0. This affects an unknown function of the fi... |
 | [CVE-2026-6577](https://nvd.nist.gov/vuln/detail/CVE-2026-6577) | 6.9 | MEDIUM | CWE-287 | No | — | 4.83 | 2026-04-19 | A vulnerability was identified in liangliangyy DjangoBlog up to 2.1.0.0. The impacted element is an unknown function of... |
