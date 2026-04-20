@@ -1,6 +1,6 @@
 # CVEs — March 2026
 
-_5736 vulnerabilities_
+_5734 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
@@ -624,7 +624,6 @@ _5736 vulnerabilities_
 | [CVE-2026-30302](https://nvd.nist.gov/vuln/detail/CVE-2026-30302) | 10.0 | CRITICAL | CWE-78 | No | 0.5% | 7.01 | 2026-03-27 | The command auto-approval module in CodeRider-Kilo contains an OS Command Injection vulnerability, rendering its whiteli... |
 | [CVE-2023-7340](https://nvd.nist.gov/vuln/detail/CVE-2023-7340) | 5.3 | MEDIUM | CWE-125 | No | 0.0% | 3.71 | 2026-03-27 | Wazuh authd contains a heap-buffer overflow vulnerability that allows attackers to cause memory corruption and malformed... |
 | [CVE-2026-5027](https://nvd.nist.gov/vuln/detail/CVE-2026-5027) | 8.8 | HIGH | CWE-22 | No | 0.1% | 6.16 | 2026-03-27 | The 'POST /api/v2/files' endpoint does not sanitize the 'filename' parameter from the multipart form data, allowing an a... |
-| [CVE-2026-5026](https://nvd.nist.gov/vuln/detail/CVE-2026-5026) | 7.0 | HIGH | CWE-79 | No | 0.1% | 4.90 | 2026-03-27 | The '/api/v1/files/images/{flow_id}/{file_name}' endpoint serves SVG files with the 'image/svg+xml' content type without... |
 | [CVE-2026-5025](https://nvd.nist.gov/vuln/detail/CVE-2026-5025) | 6.5 | MEDIUM | CWE-862 | No | 0.0% | 4.55 | 2026-03-27 | The '/logs' and '/logs-stream' endpoints in the log router allow any authenticated user to read the full application log... |
 | [CVE-2026-5022](https://nvd.nist.gov/vuln/detail/CVE-2026-5022) | 6.3 | MEDIUM | CWE-862 | No | 0.1% | 4.41 | 2026-03-27 | The '/api/v1/files/images/{flow_id}/{file_name}' endpoint does not enforce any authentication or authorization checks, a... |
 | [CVE-2026-5010](https://nvd.nist.gov/vuln/detail/CVE-2026-5010) | 5.1 | MEDIUM | CWE-79 | No | 0.1% | 3.57 | 2026-03-27 | A reflected Cross-Site Scripting (XSS) vulnerability has been discovered in Clickedu. This vulnerability allows an attac... |
@@ -946,7 +945,6 @@ _5736 vulnerabilities_
 | [CVE-2026-4849](https://nvd.nist.gov/vuln/detail/CVE-2026-4849) | 5.3 | MEDIUM | CWE-79 | No | 0.0% | 3.71 | 2026-03-26 | A vulnerability was identified in code-projects Simple Laundry System 1.0. This impacts an unknown function of the file... |
 | [CVE-2026-4848](https://nvd.nist.gov/vuln/detail/CVE-2026-4848) | 5.3 | MEDIUM | CWE-79 | No | 0.0% | 3.71 | 2026-03-26 | A vulnerability was determined in dameng100 muucmf 1.9.5.20260309. This affects an unknown function of the file /admin/e... |
 | [CVE-2026-4847](https://nvd.nist.gov/vuln/detail/CVE-2026-4847) | 5.3 | MEDIUM | CWE-79 | No | 0.0% | 3.71 | 2026-03-26 | A vulnerability was found in dameng100 muucmf 1.9.5.20260309. The impacted element is an unknown function of the file /a... |
-| [CVE-2026-4747](https://nvd.nist.gov/vuln/detail/CVE-2026-4747) | 8.8 | HIGH | CWE-121 | No | 0.2% | 6.17 | 2026-03-26 | Each RPCSEC_GSS data packet is validated by a routine which checks a signature in the packet.  This routine copies a por... |
 | [CVE-2026-32680](https://nvd.nist.gov/vuln/detail/CVE-2026-32680) | 8.5 | HIGH | CWE-276 | No | 0.0% | 5.95 | 2026-03-26 | The installer of RATOC RAID Monitoring Manager for Windows allows to customize the installation folder. If the installat... |
 | [CVE-2026-28760](https://nvd.nist.gov/vuln/detail/CVE-2026-28760) | 8.4 | HIGH | CWE-427 | No | 0.0% | 5.88 | 2026-03-26 | The installer of RATOC RAID Monitoring Manager for Windows searches the current directory to load certain DLLs. If a use... |
 | [CVE-2026-1890](https://nvd.nist.gov/vuln/detail/CVE-2026-1890) | 5.3 | MEDIUM | N/A | No | 0.1% | 3.71 | 2026-03-26 | The LeadConnector WordPress plugin before 3.0.22 does not have authorization in a REST route, allowing unauthenticated u... |
