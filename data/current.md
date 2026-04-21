@@ -1,9 +1,16 @@
 # CVEs — April 2026
 
-_3433 vulnerabilities_
+_3440 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
+| [CVE-2025-13826](https://nvd.nist.gov/vuln/detail/CVE-2025-13826) | 8.2 | HIGH | CWE-20 | No | — | 5.74 | 2026-04-21 | Zervit's portable HTTP/web server is vulnerable to remote DoS attacks when a configuration reset request is made. The vu... |
+| [CVE-2026-6712](https://nvd.nist.gov/vuln/detail/CVE-2026-6712) | 4.4 | MEDIUM | CWE-79 | No | — | 3.08 | 2026-04-21 | The Website LLMs.txt plugin for WordPress is vulnerable to Stored Cross-Site Scripting via admin settings in all version... |
+| [CVE-2026-6711](https://nvd.nist.gov/vuln/detail/CVE-2026-6711) | 6.1 | MEDIUM | CWE-79 | No | — | 4.27 | 2026-04-21 | The Website LLMs.txt plugin for WordPress is vulnerable to Reflected Cross-Site Scripting via the 'tab' parameter in all... |
+| [CVE-2026-6703](https://nvd.nist.gov/vuln/detail/CVE-2026-6703) | 4.3 | MEDIUM | CWE-862 | No | — | 3.01 | 2026-04-21 | The Responsive Blocks – Page Builder for Blocks & Patterns plugin for WordPress is vulnerable to unauthorized access in... |
+| [CVE-2026-31370](https://nvd.nist.gov/vuln/detail/CVE-2026-31370) | 6.3 | MEDIUM | N/A | No | — | 4.41 | 2026-04-21 | Honor E APP is affected by information leak vulnerability, successful exploitation of this vulnerability may affect serv... |
+| [CVE-2026-31369](https://nvd.nist.gov/vuln/detail/CVE-2026-31369) | 3.2 | LOW | N/A | No | — | 2.24 | 2026-04-21 | PcManager is affected by type privilege bypass, successful exploitation of this vulnerability may affect service availab... |
+| [CVE-2026-31368](https://nvd.nist.gov/vuln/detail/CVE-2026-31368) | 7.8 | HIGH | N/A | No | — | 5.46 | 2026-04-21 | AiAssistant is affected by type privilege bypass, successful exploitation of this vulnerability may affect service avail... |
 | [CVE-2026-5965](https://nvd.nist.gov/vuln/detail/CVE-2026-5965) | 9.3 | CRITICAL | CWE-78 | No | — | 6.51 | 2026-04-21 | NewSoftOA developed by NewSoft has an OS Command Injection vulnerability, allowing unauthenticated local attackers to in... |
 | [CVE-2026-6675](https://nvd.nist.gov/vuln/detail/CVE-2026-6675) | 5.3 | MEDIUM | CWE-20 | No | — | 3.71 | 2026-04-21 | The Responsive Blocks – Page Builder for Blocks & Patterns plugin for WordPress is vulnerable to Unauthenticated Open Em... |
 | [CVE-2026-6674](https://nvd.nist.gov/vuln/detail/CVE-2026-6674) | 6.5 | MEDIUM | CWE-89 | No | — | 4.55 | 2026-04-21 | The Plugin: CMS für Motorrad Werkstätten plugin for WordPress is vulnerable to SQL Injection via the 'arttype' parameter... |
