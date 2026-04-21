@@ -4,6 +4,7 @@ _3433 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
+| [CVE-2026-5965](https://nvd.nist.gov/vuln/detail/CVE-2026-5965) | 9.3 | CRITICAL | CWE-78 | No | — | 6.51 | 2026-04-21 | NewSoftOA developed by NewSoft has an OS Command Injection vulnerability, allowing unauthenticated local attackers to in... |
 | [CVE-2026-6675](https://nvd.nist.gov/vuln/detail/CVE-2026-6675) | 5.3 | MEDIUM | CWE-20 | No | — | 3.71 | 2026-04-21 | The Responsive Blocks – Page Builder for Blocks & Patterns plugin for WordPress is vulnerable to Unauthenticated Open Em... |
 | [CVE-2026-6674](https://nvd.nist.gov/vuln/detail/CVE-2026-6674) | 6.5 | MEDIUM | CWE-89 | No | — | 4.55 | 2026-04-21 | The Plugin: CMS für Motorrad Werkstätten plugin for WordPress is vulnerable to SQL Injection via the 'arttype' parameter... |
 | [CVE-2026-40497](https://nvd.nist.gov/vuln/detail/CVE-2026-40497) | 8.1 | HIGH | CWE-79 | No | — | 5.67 | 2026-04-21 | FreeScout is a free self-hosted help desk and shared mailbox. Prior to version 1.8.213, FreeScout's `Helper::stripDanger... |
@@ -12,7 +13,6 @@ _3433 vulnerabilities_
 | [CVE-2026-40250](https://nvd.nist.gov/vuln/detail/CVE-2026-40250) | 8.4 | HIGH | CWE-190 | No | — | 5.88 | 2026-04-21 | OpenEXR provides the specification and reference implementation of the EXR file format, an image storage format for the... |
 | [CVE-2026-40244](https://nvd.nist.gov/vuln/detail/CVE-2026-40244) | 8.4 | HIGH | CWE-190 | No | — | 5.88 | 2026-04-21 | OpenEXR provides the specification and reference implementation of the EXR file format, an image storage format for the... |
 | [CVE-2026-39973](https://nvd.nist.gov/vuln/detail/CVE-2026-39973) | 7.1 | HIGH | CWE-22 | No | — | 4.97 | 2026-04-21 | Apktool is a tool for reverse engineering Android APK files. In versions 3.0.0 and 3.0.1, a path traversal vulnerability... |
-| [CVE-2026-39886](https://nvd.nist.gov/vuln/detail/CVE-2026-39886) | 5.3 | MEDIUM | CWE-190 | No | — | 3.71 | 2026-04-21 | OpenEXR provides the specification and reference implementation of the EXR file format, an image storage format for the... |
 | [CVE-2026-39866](https://nvd.nist.gov/vuln/detail/CVE-2026-39866) | 7.4 | HIGH | CWE-77 | No | — | 5.18 | 2026-04-21 | Lawnchair is a free, open-source home app for Android. Prior to commit fcba413f55dd47f8a3921445252849126c6266b2, command... |
 | [CVE-2026-40264](https://nvd.nist.gov/vuln/detail/CVE-2026-40264) | 2.0 | LOW | CWE-1259 | No | — | 1.40 | 2026-04-21 | OpenBao is an open source identity-based secrets management system. OpenBao's namespaces provide multi-tenant separation... |
 | [CVE-2026-39946](https://nvd.nist.gov/vuln/detail/CVE-2026-39946) | 4.6 | MEDIUM | CWE-89 | No | — | 3.22 | 2026-04-21 | OpenBao is an open source identity-based secrets management system. Prior to version 2.5.3, when OpenBao revoked privile... |

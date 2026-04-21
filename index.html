@@ -11,7 +11,7 @@
     <header>
       <h1>vuln-tracker</h1>
       <p class="subtitle">CVEs from the National Vulnerability Database — current and previous month</p>
-      <p class="last-updated">Last updated: 2026-04-21 03:24 UTC</p>
+      <p class="last-updated">Last updated: 2026-04-21 06:06 UTC</p>
     </header>
     <nav>
       <a href="top50.html">&#9733; Top 50</a>
@@ -42,6 +42,17 @@
             </tr>
           </thead>
           <tbody>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5965" target="_blank" rel="noopener">CVE-2026-5965</a></td>
+        <td>9.3</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-78</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.51</td>
+        <td><details><summary>NewSoftOA developed by NewSoft has an OS Command Injection vulnerability, allowi...</summary><p>NewSoftOA developed by NewSoft has an OS Command Injection vulnerability, allowing unauthenticated local attackers to inject arbitrary OS commands and execute them on the server.</p></details></td>
+        <td>2026-04-21</td>
+      </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6675" target="_blank" rel="noopener">CVE-2026-6675</a></td>
         <td>5.3</td>
@@ -128,18 +139,6 @@
         <td>&mdash;</td>
         <td>4.97</td>
         <td><details><summary>Apktool is a tool for reverse engineering Android APK files. In versions 3.0.0 a...</summary><p>Apktool is a tool for reverse engineering Android APK files. In versions 3.0.0 and 3.0.1, a path traversal vulnerability in `brut/androlib/res/decoder/ResFileDecoder.java` allows a maliciously crafted APK to write arbitrary files to the filesystem during standard decoding (`apktool d`). This is a security regression introduced in commit e10a045 (PR #4041, December 12, 2025), which removed the `BrutIO.sanitizePath()` call that previously prevented path traversal in resource file output paths. An attacker can embed `../` sequences in the `resources.arsc` Type String Pool to escape the output directory and write files to arbitrary locations, including `~/.ssh/config`, `~/.bashrc`, or Windows Startup folders, escalating to RCE. The fix in version 3.0.2 re-introduces `BrutIO.sanitizePath()` in `ResFileDecoder.java` before file write operations.</p></details></td>
-        <td>2026-04-21</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39886" target="_blank" rel="noopener">CVE-2026-39886</a></td>
-        <td>5.3</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-190</td>
-        <td>&nbsp;</td>
-        <td>&mdash;</td>
-        <td>3.71</td>
-        <td><details><summary>OpenEXR provides the specification and reference implementation of the EXR file ...</summary><p>OpenEXR provides the specification and reference implementation of the EXR file format, an image storage format for the motion picture industry. Versions 3.4.0 through 3.4.9 have a signed integer overflow vulnerability in OpenEXR&#x27;s HTJ2K (High-Throughput JPEG 2000) decompression path. The `ht_undo_impl()` function in `src/lib/OpenEXRCore/internal_ht.cpp` accumulates a bytes-per-line value (`bpl`) using a 32-bit signed integer with no overflow guard. A crafted EXR file with 16,385 FLOAT channels at the HTJ2K maximum width of 32,767 causes `bpl` to overflow `INT_MAX`, producing undefined behavior confirmed by UBSan. On an
-allocator-permissive host where the required ~64 GB allocation succeeds, the wrapped negative `bpl` value would subsequently be used as a per-scanline pointer advance, which would produce a heap out-of-bounds write. On a memory-constrained host, the allocation fails before `ht_undo_impl()` is entered. This is the second distinct integer overflow in `ht_undo_impl()`. CVE-2026-34545 addressed a different overflow in the same function — the `int16_t p` pixel-loop counter at line ~302 that overflows when iterating over channels whose `width` exceeds 32,767. The CVE-2026-34545 fix did not touch the `int bpl` accumulator at line 211, which is the subject of this advisory. The `bpl` accumulator was also not addressed by any of the 8 advisories in the 2026-04-05 v3.4.9 release batch. This finding is structurally identical to CVE-2026-34588 (PIZ `wcount*nx` overflow in `internal_piz.c`) and should be remediated with the same pattern. The CVE-2026-34588 fix did not touch `internal_ht.cpp`. Version 3.4.10 contains a remediation that addresses the vulnerability in `internal_ht.cpp`.</p></details></td>
         <td>2026-04-21</td>
       </tr>
       <tr>
