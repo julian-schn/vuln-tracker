@@ -1,6 +1,6 @@
 # CVEs — March 2026
 
-_5736 vulnerabilities_
+_5734 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
@@ -2203,8 +2203,6 @@ _5736 vulnerabilities_
 | [CVE-2026-29796](https://nvd.nist.gov/vuln/detail/CVE-2026-29796) | 9.3 | CRITICAL | CWE-306 | No | 0.1% | 6.51 | 2026-03-20 | WebSocket endpoints lack proper authentication mechanisms, enabling attackers to perform unauthorized station impersonat... |
 | [CVE-2026-28204](https://nvd.nist.gov/vuln/detail/CVE-2026-28204) | 6.9 | MEDIUM | CWE-522 | No | 0.1% | 4.83 | 2026-03-20 | Charging station authentication identifiers are publicly accessible via web-based mapping platforms. |
 | [CVE-2026-27649](https://nvd.nist.gov/vuln/detail/CVE-2026-27649) | 6.9 | MEDIUM | CWE-613 | No | 0.1% | 4.83 | 2026-03-20 | The WebSocket backend uses charging station identifiers to uniquely associate sessions but allows multiple endpoints to... |
-| [CVE-2026-22163](https://nvd.nist.gov/vuln/detail/CVE-2026-22163) | 7.8 | HIGH | CWE-820 | No | 0.0% | 5.46 | 2026-03-20 | Requires malware code to misuse the DDK kernel module IOCTL interface.  Such code can use the interface in an unsupporte... |
-| [CVE-2026-21732](https://nvd.nist.gov/vuln/detail/CVE-2026-21732) | 9.6 | CRITICAL | CWE-823 | No | 0.1% | 6.72 | 2026-03-20 | A web page that contains unusual GPU shader code is loaded into the GPU compiler process and can trigger a write out-of-... |
 | [CVE-2026-4507](https://nvd.nist.gov/vuln/detail/CVE-2026-4507) | 5.3 | MEDIUM | CWE-74 | No | 0.0% | 3.71 | 2026-03-20 | A vulnerability was determined in Mindinventory MindSQL up to 0.2.1. The affected element is the function ask_db of the... |
 | [CVE-2026-4506](https://nvd.nist.gov/vuln/detail/CVE-2026-4506) | 5.3 | MEDIUM | CWE-74 | No | 0.1% | 3.71 | 2026-03-20 | A vulnerability was found in Mindinventory MindSQL up to 0.2.1. Impacted is the function ask_db of the file mindsql/core... |
 | [CVE-2026-3584](https://nvd.nist.gov/vuln/detail/CVE-2026-3584) | 9.8 | CRITICAL | CWE-94 | No | 17.0% | 7.37 | 2026-03-20 | The Kali Forms plugin for WordPress is vulnerable to Remote Code Execution in all versions up to, and including, 2.4.9 v... |
