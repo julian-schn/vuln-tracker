@@ -11,7 +11,7 @@
     <header>
       <h1>vuln-tracker</h1>
       <p class="subtitle">CVEs from the National Vulnerability Database — current and previous month</p>
-      <p class="last-updated">Last updated: 2026-04-21 15:21 UTC</p>
+      <p class="last-updated">Last updated: 2026-04-21 17:10 UTC</p>
     </header>
     <nav>
       <a href="top50.html">&#9733; Top 50</a>
@@ -25,7 +25,7 @@
     </nav>
     <main>
     <section>
-      <h2>Current Month — April 2026 <span class="count">(3504)</span></h2>
+      <h2>Current Month — April 2026 <span class="count">(3519)</span></h2>
       <div class="table-wrapper">
         <table>
           <thead>
@@ -42,6 +42,89 @@
             </tr>
           </thead>
           <tbody>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40565" target="_blank" rel="noopener">CVE-2026-40565</a></td>
+        <td>6.1</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.27</td>
+        <td><details><summary>FreeScout is a free self-hosted help desk and shared mailbox. Prior to version 1...</summary><p>FreeScout is a free self-hosted help desk and shared mailbox. Prior to version 1.8.213, FreeScout&#x27;s linkify() function in app/Misc/Helper.php converts plain-text URLs in email bodies into HTML anchor tags without escaping double-quote characters (&quot;) in the URL. HTMLPurifier (called first via getCleanBody()) preserves literal &quot; characters in text nodes. linkify() then wraps URLs including those &quot; chars inside an unescaped href=&quot;...&quot; attribute, breaking out of the href and injecting arbitrary HTML attributes. Version 1.8.213 fixes the issue.</p></details></td>
+        <td>2026-04-21</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40498" target="_blank" rel="noopener">CVE-2026-40498</a></td>
+        <td>8.9</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-200</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.23</td>
+        <td><details><summary>FreeScout is a free self-hosted help desk and shared mailbox. Prior to version 1...</summary><p>FreeScout is a free self-hosted help desk and shared mailbox. Prior to version 1.8.213, an unauthenticated attacker can access diagnostic and system tools that should be restricted to administrators. The /system/cron endpoint relies on a static MD5 hash derived from the APP_KEY, which is exposed in the response and logs. Accessing these endpoints reveals sensitive server information (Full Path Disclosure), process IDs, and allows for Resource Exhaustion (DoS) by triggering heavy background tasks repeatedly without any rate limiting. The cron hash is generated using md5(APP_KEY . &#x27;web_cron_hash&#x27;). Since this hash is often transmitted via GET requests, it is susceptible to exposure in server logs, browser history, and proxy logs. Furthermore, the lack of rate limiting on these endpoints allows for automated resource exhaustion (DoS) and brute-force attempts. Version 1.8.213 fixes the issue.</p></details></td>
+        <td>2026-04-21</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-37748" target="_blank" rel="noopener">CVE-2026-37748</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Visitor Management System 1.0 by sanjay1313 is vulnerable to Unrestricted File U...</summary><p>Visitor Management System 1.0 by sanjay1313 is vulnerable to Unrestricted File Upload in vms/php/admin_user_insert.php and vms/php/update_1.php. The move_uploaded_file() function is called without any MIME type, extension, or content validation, allowing an authenticated admin to upload a PHP webshell and achieve Remote Code Execution on the server.</p></details></td>
+        <td>2026-04-21</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-41029" target="_blank" rel="noopener">CVE-2025-41029</a></td>
+        <td>9.3</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-89</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.51</td>
+        <td><details><summary>SQL injection vulnerability in Zeon Academy Pro by Zeon Global Tech. This vulner...</summary><p>SQL injection vulnerability in Zeon Academy Pro by Zeon Global Tech. This vulnerability allows an attacker to retrieve, create, update, and delete databases by sending a POST request using the parameter &#x27;phonenumber&#x27; in &#x27;/private/continue-upload.php&#x27;.</p></details></td>
+        <td>2026-04-21</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-41011" target="_blank" rel="noopener">CVE-2025-41011</a></td>
+        <td>5.1</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.57</td>
+        <td><details><summary>HTML injection vulnerability in PHP Point of Sale v19.4. This vulnerability allo...</summary><p>HTML injection vulnerability in PHP Point of Sale v19.4. This vulnerability allows an attacker to render HTML in the victim&#x27;s browser due to a lack of proper validation of user input by sending a request to &#x27;/reports/generate/specific_customer&#x27;, ussing &#x27;start_date_formatted&#x27; y &#x27;end_date_formatted&#x27; parameters.</p></details></td>
+        <td>2026-04-21</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-15638" target="_blank" rel="noopener">CVE-2025-15638</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Net::Dropbear versions before 0.14 for Perl contains a vulnerable version of lib...</summary><p>Net::Dropbear versions before 0.14 for Perl contains a vulnerable version of libtomcrypt.
+
+Net::Dropbear versions before 0.14 includes versions of Dropbear 2019.78 or earlier. These include versions of libtomcrypt v1.18.1 or earlier, which is affected by CVE-2016-6129 and CVE-2018-12437.</p></details></td>
+        <td>2026-04-21</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2017-20230" target="_blank" rel="noopener">CVE-2017-20230</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-121</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Storable versions before 3.05 for Perl has a stack overflow.
+
+The retrieve_hook ...</summary><p>Storable versions before 3.05 for Perl has a stack overflow.
+
+The retrieve_hook function stored the length of the class name into a signed integer but in read operations treated the length as unsigned. This allowed an attacker to craft data that could trigger the overflow.</p></details></td>
+        <td>2026-04-21</td>
+      </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5789" target="_blank" rel="noopener">CVE-2026-5789</a></td>
         <td>8.5</td>
@@ -77,12 +160,12 @@
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-31018" target="_blank" rel="noopener">CVE-2026-31018</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>8.8</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-94</td>
         <td>&nbsp;</td>
         <td>&mdash;</td>
-        <td>0.00</td>
+        <td>6.16</td>
         <td><details><summary>In Dolibarr ERP &amp; CRM &lt;= 22.0.4, PHP code detection and editing permission enfor...</summary><p>In Dolibarr ERP &amp; CRM &lt;= 22.0.4, PHP code detection and editing permission enforcement in the Website module is not applied consistently to all input parameters, allowing an authenticated user restricted to HTML/JavaScript editing to inject PHP code through unprotected inputs during website page creation.</p></details></td>
         <td>2026-04-21</td>
       </tr>
@@ -648,6 +731,40 @@
         <td>2026-04-21</td>
       </tr>
       <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32147" target="_blank" rel="noopener">CVE-2026-32147</a></td>
+        <td>5.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-22</td>
+        <td>&nbsp;</td>
+        <td>0.0% <small>p3</small></td>
+        <td>3.71</td>
+        <td><details><summary>Improper Limitation of a Pathname to a Restricted Directory (&#x27;Path Traversal&#x27;) v...</summary><p>Improper Limitation of a Pathname to a Restricted Directory (&#x27;Path Traversal&#x27;) vulnerability in Erlang OTP ssh (ssh_sftpd module) allows an authenticated SFTP user to modify file attributes outside the configured chroot directory.
+
+The SFTP daemon (ssh_sftpd) stores the raw, user-supplied path in file handles instead of the chroot-resolved path. When SSH_FXP_FSETSTAT is issued on such a handle, file attributes (permissions, ownership, timestamps) are modified on the real filesystem path, bypassing the root directory boundary entirely.
+
+Any authenticated SFTP user on a server configured with the root option can modify file attributes of files outside the intended chroot boundary. The prerequisite is that a target file must exist on the real filesystem at the same relative path. Note that this vulnerability only allows modification of file attributes; file contents cannot be read or altered through this attack vector.
+
+If the SSH daemon runs as root, this enables direct privilege escalation: an attacker can set the setuid bit on any binary, change ownership of sensitive files, or make system configuration world-writable.
+
+This vulnerability is associated with program files lib/ssh/src/ssh_sftpd.erl and program routines ssh_sftpd:do_open/4 and ssh_sftpd:handle_op/4.
+
+This issue affects OTP from OTP 17.0 until OTP 28.4.3, 27.3.4.11, and 26.2.5.20 corresponding to ssh from 3.01 until 5.5.3, 5.2.11.7, and 5.1.4.15.</p></details></td>
+        <td>2026-04-21</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-41039" target="_blank" rel="noopener">CVE-2026-41039</a></td>
+        <td>8.7</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-306</td>
+        <td>&nbsp;</td>
+        <td>0.1% <small>p16</small></td>
+        <td>6.09</td>
+        <td><details><summary>This vulnerability exists in Quantum Networks router due to improper access cont...</summary><p>This vulnerability exists in Quantum Networks router due to improper access control and insecure default configuration in the web-based management interface. An unauthenticated attacker could exploit this vulnerability by accessing exposed API endpoints on the targeted device.
+
+Successful exploitation of this vulnerability could allow the attacker to access sensitive information, including internal endpoints, scripts and directories on the targeted device.</p></details></td>
+        <td>2026-04-21</td>
+      </tr>
+      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-41038" target="_blank" rel="noopener">CVE-2026-41038</a></td>
         <td>7.6</td>
         <td><span class="severity high">HIGH</span></td>
@@ -678,6 +795,19 @@
         <td>0.0% <small>p6</small></td>
         <td>6.09</td>
         <td><details><summary>This vulnerability exists in Quantum Networks router due to missing rate limitin...</summary><p>This vulnerability exists in Quantum Networks router due to missing rate limiting and CAPTCHA protection for failed login attempts in the web-based management interface. An attacker on the same network could exploit this vulnerability by performing brute force attacks against administrative credentials, leading to unauthorized access with root privileges on the targeted device.</p></details></td>
+        <td>2026-04-21</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-41036" target="_blank" rel="noopener">CVE-2026-41036</a></td>
+        <td>8.7</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-78</td>
+        <td>&nbsp;</td>
+        <td>0.4% <small>p61</small></td>
+        <td>6.10</td>
+        <td><details><summary>This vulnerability exists in Quantum Networks router due to inadequate sanitizat...</summary><p>This vulnerability exists in Quantum Networks router due to inadequate sanitization of user-supplied input in the management CLI interface. An authenticated remote attacker could exploit this vulnerability by injecting arbitrary OS commands on the targeted device.
+
+Successful exploitation of this vulnerability could allow the attacker to perform remote code execution with root privileges on the targeted device.</p></details></td>
         <td>2026-04-21</td>
       </tr>
       <tr>
@@ -876,6 +1006,18 @@
         <td>0.0% <small>p2</small></td>
         <td>4.97</td>
         <td><details><summary>Apktool is a tool for reverse engineering Android APK files. In versions 3.0.0 a...</summary><p>Apktool is a tool for reverse engineering Android APK files. In versions 3.0.0 and 3.0.1, a path traversal vulnerability in `brut/androlib/res/decoder/ResFileDecoder.java` allows a maliciously crafted APK to write arbitrary files to the filesystem during standard decoding (`apktool d`). This is a security regression introduced in commit e10a045 (PR #4041, December 12, 2025), which removed the `BrutIO.sanitizePath()` call that previously prevented path traversal in resource file output paths. An attacker can embed `../` sequences in the `resources.arsc` Type String Pool to escape the output directory and write files to arbitrary locations, including `~/.ssh/config`, `~/.bashrc`, or Windows Startup folders, escalating to RCE. The fix in version 3.0.2 re-introduces `BrutIO.sanitizePath()` in `ResFileDecoder.java` before file write operations.</p></details></td>
+        <td>2026-04-21</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39886" target="_blank" rel="noopener">CVE-2026-39886</a></td>
+        <td>5.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-190</td>
+        <td>&nbsp;</td>
+        <td>0.0% <small>p11</small></td>
+        <td>3.71</td>
+        <td><details><summary>OpenEXR provides the specification and reference implementation of the EXR file ...</summary><p>OpenEXR provides the specification and reference implementation of the EXR file format, an image storage format for the motion picture industry. Versions 3.4.0 through 3.4.9 have a signed integer overflow vulnerability in OpenEXR&#x27;s HTJ2K (High-Throughput JPEG 2000) decompression path. The `ht_undo_impl()` function in `src/lib/OpenEXRCore/internal_ht.cpp` accumulates a bytes-per-line value (`bpl`) using a 32-bit signed integer with no overflow guard. A crafted EXR file with 16,385 FLOAT channels at the HTJ2K maximum width of 32,767 causes `bpl` to overflow `INT_MAX`, producing undefined behavior confirmed by UBSan. On an
+allocator-permissive host where the required ~64 GB allocation succeeds, the wrapped negative `bpl` value would subsequently be used as a per-scanline pointer advance, which would produce a heap out-of-bounds write. On a memory-constrained host, the allocation fails before `ht_undo_impl()` is entered. This is the second distinct integer overflow in `ht_undo_impl()`. CVE-2026-34545 addressed a different overflow in the same function — the `int16_t p` pixel-loop counter at line ~302 that overflows when iterating over channels whose `width` exceeds 32,767. The CVE-2026-34545 fix did not touch the `int bpl` accumulator at line 211, which is the subject of this advisory. The `bpl` accumulator was also not addressed by any of the 8 advisories in the 2026-04-05 v3.4.9 release batch. This finding is structurally identical to CVE-2026-34588 (PIZ `wcount*nx` overflow in `internal_piz.c`) and should be remediated with the same pattern. The CVE-2026-34588 fix did not touch `internal_ht.cpp`. Version 3.4.10 contains a remediation that addresses the vulnerability in `internal_ht.cpp`.</p></details></td>
         <td>2026-04-21</td>
       </tr>
       <tr>
@@ -1264,6 +1406,19 @@
         <td>2026-04-20</td>
       </tr>
       <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5928" target="_blank" rel="noopener">CVE-2026-5928</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-127</td>
+        <td>&nbsp;</td>
+        <td>0.0% <small>p4</small></td>
+        <td>0.00</td>
+        <td><details><summary>Calling the ungetwc function on a FILE stream with wide characters encoded in a ...</summary><p>Calling the ungetwc function on a FILE stream with wide characters encoded in a character set that has overlaps between its single byte and multi-byte character encodings, in the GNU C Library version 2.43 or earlier, may result in an attempt to read bytes before an allocated buffer, potentially resulting in unintentional disclosure of neighboring data in the heap, or a program crash.
+
+A bug in the wide character pushback implementation (_IO_wdefault_pbackfail in libio/wgenops.c) causes ungetwc() to operate on the regular character buffer (fp-&gt;_IO_read_ptr) instead of the actual wide-stream read pointer (fp-&gt;_wide_data-&gt;_IO_read_ptr). The program crash may happen in cases where fp-&gt;_IO_read_ptr is not initialized and hence points to NULL. The buffer under-read requires a special situation where the input character encoding is such that there are overlaps between single byte representations and multibyte representations in that encoding, resulting in spurious matches. The spurious match case is not possible in the standard Unicode character sets.</p></details></td>
+        <td>2026-04-20</td>
+      </tr>
+      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5450" target="_blank" rel="noopener">CVE-2026-5450</a></td>
         <td>0.0</td>
         <td><span class="severity none">NONE</span></td>
@@ -1272,6 +1427,19 @@
         <td>0.0% <small>p4</small></td>
         <td>0.00</td>
         <td><details><summary>Calling the scanf family of functions with a %mc (malloc&#x27;d character match) in t...</summary><p>Calling the scanf family of functions with a %mc (malloc&#x27;d character match) in the GNU C Library version 2.7 to version 2.43 with a format width specifier with an explicit width greater than 1024 could result in a one byte heap buffer overflow.</p></details></td>
+        <td>2026-04-20</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5358" target="_blank" rel="noopener">CVE-2026-5358</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-120</td>
+        <td>&nbsp;</td>
+        <td>0.0% <small>p4</small></td>
+        <td>0.00</td>
+        <td><details><summary>The obsolete nis_local_principal function in the GNU C Library version 2.43 and ...</summary><p>The obsolete nis_local_principal function in the GNU C Library version 2.43 and older may overflow a buffer in the data section, which could allow an attacker to spoof a crafted response to a UDP request generated by this function and overwrite neighboring static data in the requesting application.
+
+NIS support is obsolete and has been deprecated in the GNU C Library since version 2.26 and is only maintained for legacy usage. Applications should port away from NIS to more modern identity and access management services.</p></details></td>
         <td>2026-04-20</td>
       </tr>
       <tr>
@@ -1407,6 +1575,19 @@
         <td>2026-04-20</td>
       </tr>
       <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6550" target="_blank" rel="noopener">CVE-2026-6550</a></td>
+        <td>5.7</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-757</td>
+        <td>&nbsp;</td>
+        <td>0.0% <small>p1</small></td>
+        <td>3.99</td>
+        <td><details><summary>Cryptographic algorithm downgrade in the caching layer of Amazon AWS Encryption ...</summary><p>Cryptographic algorithm downgrade in the caching layer of Amazon AWS Encryption SDK for Python before version 3.3.1 and before version  4.0.5 might allow an authenticated local threat actor to bypass key commitment policy enforcement via a shared key cache, resulting in ciphertext that can be decrypted to multiple different plaintexts.
+
+To remediate this issue, users should upgrade to version 3.3.1, 4.0.5 or above.</p></details></td>
+        <td>2026-04-20</td>
+      </tr>
+      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6257" target="_blank" rel="noopener">CVE-2026-6257</a></td>
         <td>9.2</td>
         <td><span class="severity critical">CRITICAL</span></td>
@@ -1492,6 +1673,24 @@
         <td>0.4% <small>p60</small></td>
         <td>5.68</td>
         <td><details><summary>The wpForo Forum plugin for WordPress is vulnerable to Arbitrary File Deletion i...</summary><p>The wpForo Forum plugin for WordPress is vulnerable to Arbitrary File Deletion in versions up to and including 3.0.5. This is due to two compounding flaws: the Members::update() method does not validate or restrict the value of file-type custom profile fields, allowing authenticated users to store an arbitrary path instead of a legitimate upload path; and the wpforo_fix_upload_dir() sanitization function in ucf_file_delete() only remaps paths that match the expected pattern, and it is passed directly to the unlink() function. This makes it possible for authenticated attackers, with subscriber-level access and above, to delete arbitrary files on the server, which can easily lead to remote code execution when the right file is deleted (such as wp-config.php). Note: The vulnerability requires a file custom field, which requires the wpForo - User Custom Fields addon plugin.</p></details></td>
+        <td>2026-04-20</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6060" target="_blank" rel="noopener">CVE-2026-6060</a></td>
+        <td>4.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-400</td>
+        <td>&nbsp;</td>
+        <td>0.0% <small>p8</small></td>
+        <td>3.15</td>
+        <td><details><summary>A vulnerability in the SQL Box in the admin interface of OTRS leads to an uncont...</summary><p>A vulnerability in the SQL Box in the admin interface of OTRS leads to an uncontrolled resource consumption leading to a DoS against the webserver. will be killed by the systemThis issue affects OTRS: 
+
+  *  7.0.X
+  *  8.0.X
+  *  2023.X
+  *  2024.X
+  *  2025.X
+  *  2026.X before 2026.3.X</p></details></td>
         <td>2026-04-20</td>
       </tr>
       <tr>
@@ -3189,19 +3388,6 @@
         <td>2026-04-18</td>
       </tr>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32690" target="_blank" rel="noopener">CVE-2026-32690</a></td>
-        <td>3.7</td>
-        <td><span class="severity low">LOW</span></td>
-        <td>CWE-668</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p7</small></td>
-        <td>2.59</td>
-        <td><details><summary>Secrets in Variables saved as JSON dictionaries were not properly redacted - in ...</summary><p>Secrets in Variables saved as JSON dictionaries were not properly redacted - in case thee variables were retrieved by the user the secrets stored as nested fields were not masked.
-
-If you do not store variables with sensitive values in JSON form, you are not affected. Otherwise please upgrade to Apache Airflow 3.2.0 that has the fix implemented</p></details></td>
-        <td>2026-04-18</td>
-      </tr>
-      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-30912" target="_blank" rel="noopener">CVE-2026-30912</a></td>
         <td>7.5</td>
         <td><span class="severity high">HIGH</span></td>
@@ -3221,19 +3407,6 @@ If you do not store variables with sensitive values in JSON form, you are not af
         <td>0.1% <small>p19</small></td>
         <td>6.16</td>
         <td><details><summary>An example of BashOperator in Airflow documentation suggested a way of passing d...</summary><p>An example of BashOperator in Airflow documentation suggested a way of passing dag_run.conf in the way that could cause unsanitized user input to be used to escalate privileges of UI user to allow execute code on worker. Users should review if any of their own DAGs have adopted this incorrect advice.</p></details></td>
-        <td>2026-04-18</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-25917" target="_blank" rel="noopener">CVE-2026-25917</a></td>
-        <td>9.8</td>
-        <td><span class="severity critical">CRITICAL</span></td>
-        <td>CWE-502</td>
-        <td>&nbsp;</td>
-        <td>0.1% <small>p20</small></td>
-        <td>6.86</td>
-        <td><details><summary>Dag Authors, who normally should not be able to execute code in the webserver co...</summary><p>Dag Authors, who normally should not be able to execute code in the webserver context could craft XCom payload causing the webserver to execute arbitrary code. Since Dag Authors are already highly trusted, severity of this issue is Low.
-
-Users are recommended to upgrade to Apache Airflow 3.2.0, which fixes the issue.</p></details></td>
         <td>2026-04-18</td>
       </tr>
       <tr>
@@ -7834,6 +8007,19 @@ Users are recommended to upgrade to Apache Airflow 3.2.0, which fixes the issue.
         <td><details><summary>Covert timing channel vulnerability in Legion of the Bouncy Castle Inc. BC-JAVA ...</summary><p>Covert timing channel vulnerability in Legion of the Bouncy Castle Inc. BC-JAVA core on all (core modules). This vulnerability is associated with program files FrodoEngine.Java.
 
 This issue affects BC-JAVA: from 1.71 before 1.84.</p></details></td>
+        <td>2026-04-15</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5588" target="_blank" rel="noopener">CVE-2026-5588</a></td>
+        <td>6.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-327</td>
+        <td>&nbsp;</td>
+        <td>0.0% <small>p1</small></td>
+        <td>4.41</td>
+        <td><details><summary>Use of a Broken or Risky Cryptographic Algorithm vulnerability in Legion of the ...</summary><p>Use of a Broken or Risky Cryptographic Algorithm vulnerability in Legion of the Bouncy Castle Inc. BC-JAVA bcpkix on all (pkix modules), Legion of the Bouncy Castle Inc. BCPKIX-FIPS bcpkix on All (pkix modules). This vulnerability is associated with program files JcaContentVerifierProviderBuilder.Java.
+
+This issue affects BC-JAVA: from 1.67 before 1.84; BCPKIX-FIPS: from 2.0.6 before 2.0.11, from 2.1.7 before 2.1.11.</p></details></td>
         <td>2026-04-15</td>
       </tr>
       <tr>
@@ -16073,21 +16259,6 @@ This issue affects BC-JAVA: from 1.71 before 1.84.</p></details></td>
         <td>0.0% <small>p2</small></td>
         <td>3.29</td>
         <td><details><summary>In systemd 258 before 260, a local unprivileged user can trigger an assert when ...</summary><p>In systemd 258 before 260, a local unprivileged user can trigger an assert when a Delegate=yes and User=&lt;unset&gt; unit exists and is running.</p></details></td>
-        <td>2026-04-10</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40023" target="_blank" rel="noopener">CVE-2026-40023</a></td>
-        <td>6.3</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-116</td>
-        <td>&nbsp;</td>
-        <td>0.2% <small>p36</small></td>
-        <td>4.41</td>
-        <td><details><summary>Apache Log4cxx&#x27;s  XMLLayout https://logging.apache.org/log4cxx/1.7.0/classlog4cx...</summary><p>Apache Log4cxx&#x27;s  XMLLayout https://logging.apache.org/log4cxx/1.7.0/classlog4cxx_1_1xml_1_1XMLLayout.html , in versions before 1.7.0, fails to sanitize characters forbidden by the  XML 1.0 specification https://www.w3.org/TR/xml/#charsets  in log messages, NDC, and MDC property keys and values, producing invalid XML output. Conforming XML parsers must reject such documents with a fatal error, which may cause downstream log processing systems to drop or fail to index affected records.
-
-An attacker who can influence logged data can exploit this to suppress individual log records, impairing audit trails and detection of malicious activity.
-
-Users are advised to upgrade to Apache Log4cxx 1.7.0, which fixes this issue.</p></details></td>
         <td>2026-04-10</td>
       </tr>
       <tr>
@@ -27014,6 +27185,18 @@ Users are advised to upgrade to Apache Log4cxx 1.7.0, which fixes this issue.</p
         <td>2026-04-07</td>
       </tr>
       <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5382" target="_blank" rel="noopener">CVE-2026-5382</a></td>
+        <td>3.0</td>
+        <td><span class="severity low">LOW</span></td>
+        <td>CWE-863</td>
+        <td>&nbsp;</td>
+        <td>0.0% <small>p8</small></td>
+        <td>2.10</td>
+        <td><details><summary>An issue that could expose records outside of the authorized organization scope ...</summary><p>An issue that could expose records outside of the authorized organization scope through the MCP endpoints has been resolved. This is an instance of CWE-863: Incorrect Authorization, and has an estimated CVSS score of 
+CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:C/C:L/I:N/A:N (3.0 Low). This issue was fixed in version 4.0.260206.0 of the runZero Platform.</p></details></td>
+        <td>2026-04-07</td>
+      </tr>
+      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5381" target="_blank" rel="noopener">CVE-2026-5381</a></td>
         <td>2.2</td>
         <td><span class="severity low">LOW</span></td>
@@ -27022,6 +27205,18 @@ Users are advised to upgrade to Apache Log4cxx 1.7.0, which fixes this issue.</p
         <td>0.0% <small>p8</small></td>
         <td>1.54</td>
         <td><details><summary>An issue that could expose task information outside of the authorized organizati...</summary><p>An issue that could expose task information outside of the authorized organization scope has been resolved. This is an instance of CWE-863: Incorrect Authorization, and has an estimated CVSS score of CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:L/I:N/A:N (2.2 Low). This issue was fixed in version 4.0.260205.0 of the runZero Platform.</p></details></td>
+        <td>2026-04-07</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5380" target="_blank" rel="noopener">CVE-2026-5380</a></td>
+        <td>5.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-863</td>
+        <td>&nbsp;</td>
+        <td>0.0% <small>p10</small></td>
+        <td>3.71</td>
+        <td><details><summary>An issue that could allow an authorized user to view the clear-text secrets for ...</summary><p>An issue that could allow an authorized user to view the clear-text secrets for a subset of credential types and fields has been resolved. This is an instance of CWE-522: Insufficiently Protected Credentials, and has an estimated CVSS score of
+CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:N/A:N (5.3 Medium). This issue was fixed in version 4.0.260204.2 of the runZero Platform.</p></details></td>
         <td>2026-04-07</td>
       </tr>
       <tr>
@@ -38601,7 +38796,7 @@ Users are advised to upgrade to Apache Log4cxx 1.7.0, which fixes this issue.</p
       </div>
     </section>
     <section>
-      <h2>Previous Month — March 2026 <span class="count">(5734)</span></h2>
+      <h2>Previous Month — March 2026 <span class="count">(5736)</span></h2>
       <div class="table-wrapper">
         <table>
           <thead>
@@ -47301,7 +47496,7 @@ Users are advised to upgrade to Apache Log4cxx 1.7.0, which fixes this issue.</p
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32287" target="_blank" rel="noopener">CVE-2026-32287</a></td>
         <td>7.5</td>
         <td><span class="severity high">HIGH</span></td>
-        <td>N/A</td>
+        <td>CWE-835</td>
         <td>&nbsp;</td>
         <td>0.1% <small>p18</small></td>
         <td>5.25</td>
@@ -47323,7 +47518,7 @@ Users are advised to upgrade to Apache Log4cxx 1.7.0, which fixes this issue.</p
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32285" target="_blank" rel="noopener">CVE-2026-32285</a></td>
         <td>7.5</td>
         <td><span class="severity high">HIGH</span></td>
-        <td>N/A</td>
+        <td>CWE-129</td>
         <td>&nbsp;</td>
         <td>0.1% <small>p17</small></td>
         <td>5.25</td>
@@ -50161,7 +50356,7 @@ Users are advised to upgrade to Apache Log4cxx 1.7.0, which fixes this issue.</p
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33809" target="_blank" rel="noopener">CVE-2026-33809</a></td>
         <td>5.3</td>
         <td><span class="severity medium">MEDIUM</span></td>
-        <td>N/A</td>
+        <td>CWE-434</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p1</small></td>
         <td>3.71</td>
@@ -62805,6 +63000,38 @@ Users are advised to upgrade to Apache Log4cxx 1.7.0, which fixes this issue.</p
         <td>0.1% <small>p15</small></td>
         <td>4.83</td>
         <td><details><summary>The WebSocket backend uses charging station identifiers to uniquely associate se...</summary><p>The WebSocket backend uses charging station identifiers to uniquely associate sessions but allows multiple endpoints to connect using the same session identifier. This implementation results in predictable session identifiers and enables session hijacking or shadowing, where the most recent connection displaces the legitimate charging station and receives backend commands intended for that station. This vulnerability may allow unauthorized users to authenticate as other users or enable a malicious actor to cause a denial-of-service condition by overwhelming the backend with valid session requests.</p></details></td>
+        <td>2026-03-20</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-22163" target="_blank" rel="noopener">CVE-2026-22163</a></td>
+        <td>7.8</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-820</td>
+        <td>&nbsp;</td>
+        <td>0.0% <small>p3</small></td>
+        <td>5.46</td>
+        <td><details><summary>Requires malware code to misuse the DDK kernel module IOCTL interface.
+
+Such cod...</summary><p>Requires malware code to misuse the DDK kernel module IOCTL interface.
+
+Such code can use the interface in an unsupported way that allows subversion of the GPU to perform writes to arbitrary physical memory pages.
+
+The product utilises a shared resource in a concurrent manner but does not attempt to synchronise access to the resource.</p></details></td>
+        <td>2026-03-20</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-21732" target="_blank" rel="noopener">CVE-2026-21732</a></td>
+        <td>9.6</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-823</td>
+        <td>&nbsp;</td>
+        <td>0.1% <small>p18</small></td>
+        <td>6.72</td>
+        <td><details><summary>A web page that contains unusual GPU shader code is loaded into the GPU compiler...</summary><p>A web page that contains unusual GPU shader code is loaded into the GPU compiler process and can trigger a write out-of-bounds write crash in the GPU shader compiler library. On certain platforms, when the compiler process has system privileges this could enable further exploits on the device.
+
+
+
+An edge case using a very large value in switch statements in GPU shader code can cause a segmentation fault in the GPU shader compiler due to an out-of-bounds write access.</p></details></td>
         <td>2026-03-20</td>
       </tr>
       <tr>

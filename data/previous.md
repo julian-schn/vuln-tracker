@@ -1,6 +1,6 @@
 # CVEs — March 2026
 
-_5734 vulnerabilities_
+_5736 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
@@ -793,9 +793,9 @@ _5734 vulnerabilities_
 | [CVE-2026-33529](https://nvd.nist.gov/vuln/detail/CVE-2026-33529) | 3.3 | LOW | CWE-22 | No | 0.1% | 2.31 | 2026-03-26 | Zoraxy is a general purpose HTTP reverse proxy and forwarding tool. Prior to version 3.3.2, an authenticated path traver... |
 | [CVE-2026-33528](https://nvd.nist.gov/vuln/detail/CVE-2026-33528) | 6.5 | MEDIUM | CWE-22 | No | 0.1% | 4.55 | 2026-03-26 | GoDoxy is a reverse proxy and container orchestrator for self-hosters. Prior to version 0.27.5, the file content API end... |
 | [CVE-2026-33525](https://nvd.nist.gov/vuln/detail/CVE-2026-33525) | 0.5 | LOW | CWE-79 | No | 0.0% | 0.35 | 2026-03-26 | Authelia is an open-source authentication and authorization server providing two-factor authentication and single sign-o... |
-| [CVE-2026-32287](https://nvd.nist.gov/vuln/detail/CVE-2026-32287) | 7.5 | HIGH | N/A | No | 0.1% | 5.25 | 2026-03-26 | Boolean XPath expressions that evaluate to true can cause an infinite loop in logicalQuery.Select, leading to 100% CPU u... |
+| [CVE-2026-32287](https://nvd.nist.gov/vuln/detail/CVE-2026-32287) | 7.5 | HIGH | CWE-835 | No | 0.1% | 5.25 | 2026-03-26 | Boolean XPath expressions that evaluate to true can cause an infinite loop in logicalQuery.Select, leading to 100% CPU u... |
 | [CVE-2026-32286](https://nvd.nist.gov/vuln/detail/CVE-2026-32286) | 7.5 | HIGH | N/A | No | 0.1% | 5.25 | 2026-03-26 | The DataRow.Decode function fails to properly validate field lengths. A malicious or compromised PostgreSQL server can s... |
-| [CVE-2026-32285](https://nvd.nist.gov/vuln/detail/CVE-2026-32285) | 7.5 | HIGH | N/A | No | 0.1% | 5.25 | 2026-03-26 | The Delete function fails to properly validate offsets when processing malformed JSON input. This can lead to a negative... |
+| [CVE-2026-32285](https://nvd.nist.gov/vuln/detail/CVE-2026-32285) | 7.5 | HIGH | CWE-129 | No | 0.1% | 5.25 | 2026-03-26 | The Delete function fails to properly validate offsets when processing malformed JSON input. This can lead to a negative... |
 | [CVE-2026-32284](https://nvd.nist.gov/vuln/detail/CVE-2026-32284) | 7.5 | HIGH | N/A | No | 0.1% | 5.25 | 2026-03-26 | The msgpack decoder fails to properly validate the input buffer length when processing truncated fixext data (format cod... |
 | [CVE-2026-2436](https://nvd.nist.gov/vuln/detail/CVE-2026-2436) | 6.5 | MEDIUM | CWE-825 | No | 0.1% | 4.55 | 2026-03-26 | A flaw was found in libsoup's SoupServer. A remote attacker could exploit a use-after-free vulnerability where the `soup... |
 | [CVE-2023-7338](https://nvd.nist.gov/vuln/detail/CVE-2023-7338) | 7.7 | HIGH | CWE-78 | No | 0.3% | 5.40 | 2026-03-26 | Ruckus Unleashed contains a remote code execution vulnerability in the web-based management interface that allows authen... |
@@ -1053,7 +1053,7 @@ _5734 vulnerabilities_
 | [CVE-2025-70888](https://nvd.nist.gov/vuln/detail/CVE-2025-70888) | 9.8 | CRITICAL | CWE-269 | No | 0.1% | 6.86 | 2026-03-25 | An issue in mtrojnar Osslsigncode affected at v2.10 and before allows a remote attacker to escalate privileges via the o... |
 | [CVE-2025-14790](https://nvd.nist.gov/vuln/detail/CVE-2025-14790) | 6.5 | MEDIUM | CWE-522 | No | 0.0% | 4.55 | 2026-03-25 | IBM InfoSphere Information Server 11.7.0.0 through 11.7.1.6 could allow an attacker to obtain sensitive information due... |
 | [CVE-2025-12708](https://nvd.nist.gov/vuln/detail/CVE-2025-12708) | 6.2 | MEDIUM | CWE-798 | No | 0.0% | 4.34 | 2026-03-25 | IBM Concert 1.0.0 through 2.2.0 contains hard-coded credentials that could be obtained by a local user. |
-| [CVE-2026-33809](https://nvd.nist.gov/vuln/detail/CVE-2026-33809) | 5.3 | MEDIUM | N/A | No | 0.0% | 3.71 | 2026-03-25 | A maliciously crafted TIFF file can cause image decoding to attempt to allocate up 4GiB of memory, causing either excess... |
+| [CVE-2026-33809](https://nvd.nist.gov/vuln/detail/CVE-2026-33809) | 5.3 | MEDIUM | CWE-434 | No | 0.0% | 3.71 | 2026-03-25 | A maliciously crafted TIFF file can cause image decoding to attempt to allocate up 4GiB of memory, causing either excess... |
 | [CVE-2026-33751](https://nvd.nist.gov/vuln/detail/CVE-2026-33751) | 6.3 | MEDIUM | CWE-90 | No | 0.0% | 4.41 | 2026-03-25 | n8n is an open source workflow automation platform. Prior to versions 1.123.27, 2.13.3, and 2.14.1, a flaw in the LDAP n... |
 | [CVE-2026-33749](https://nvd.nist.gov/vuln/detail/CVE-2026-33749) | 6.3 | MEDIUM | CWE-79 | No | 0.0% | 4.41 | 2026-03-25 | n8n is an open source workflow automation platform. Prior to versions 1.123.27, 2.13.3, and 2.14.1, an authenticated use... |
 | [CVE-2026-33724](https://nvd.nist.gov/vuln/detail/CVE-2026-33724) | 6.3 | MEDIUM | CWE-639 | No | 0.0% | 4.41 | 2026-03-25 | n8n is an open source workflow automation platform. Prior to version 2.5.0, when the Source Control feature is configure... |
@@ -2203,6 +2203,8 @@ _5734 vulnerabilities_
 | [CVE-2026-29796](https://nvd.nist.gov/vuln/detail/CVE-2026-29796) | 9.3 | CRITICAL | CWE-306 | No | 0.1% | 6.51 | 2026-03-20 | WebSocket endpoints lack proper authentication mechanisms, enabling attackers to perform unauthorized station impersonat... |
 | [CVE-2026-28204](https://nvd.nist.gov/vuln/detail/CVE-2026-28204) | 6.9 | MEDIUM | CWE-522 | No | 0.1% | 4.83 | 2026-03-20 | Charging station authentication identifiers are publicly accessible via web-based mapping platforms. |
 | [CVE-2026-27649](https://nvd.nist.gov/vuln/detail/CVE-2026-27649) | 6.9 | MEDIUM | CWE-613 | No | 0.1% | 4.83 | 2026-03-20 | The WebSocket backend uses charging station identifiers to uniquely associate sessions but allows multiple endpoints to... |
+| [CVE-2026-22163](https://nvd.nist.gov/vuln/detail/CVE-2026-22163) | 7.8 | HIGH | CWE-820 | No | 0.0% | 5.46 | 2026-03-20 | Requires malware code to misuse the DDK kernel module IOCTL interface.  Such code can use the interface in an unsupporte... |
+| [CVE-2026-21732](https://nvd.nist.gov/vuln/detail/CVE-2026-21732) | 9.6 | CRITICAL | CWE-823 | No | 0.1% | 6.72 | 2026-03-20 | A web page that contains unusual GPU shader code is loaded into the GPU compiler process and can trigger a write out-of-... |
 | [CVE-2026-4507](https://nvd.nist.gov/vuln/detail/CVE-2026-4507) | 5.3 | MEDIUM | CWE-74 | No | 0.0% | 3.71 | 2026-03-20 | A vulnerability was determined in Mindinventory MindSQL up to 0.2.1. The affected element is the function ask_db of the... |
 | [CVE-2026-4506](https://nvd.nist.gov/vuln/detail/CVE-2026-4506) | 5.3 | MEDIUM | CWE-74 | No | 0.1% | 3.71 | 2026-03-20 | A vulnerability was found in Mindinventory MindSQL up to 0.2.1. Impacted is the function ask_db of the file mindsql/core... |
 | [CVE-2026-3584](https://nvd.nist.gov/vuln/detail/CVE-2026-3584) | 9.8 | CRITICAL | CWE-94 | No | 17.0% | 7.37 | 2026-03-20 | The Kali Forms plugin for WordPress is vulnerable to Remote Code Execution in all versions up to, and including, 2.4.9 v... |
