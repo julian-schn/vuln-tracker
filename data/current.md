@@ -1,9 +1,14 @@
 # CVEs — April 2026
 
-_3440 vulnerabilities_
+_3445 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
+| [CVE-2026-6553](https://nvd.nist.gov/vuln/detail/CVE-2026-6553) | 7.3 | HIGH | CWE-312 | No | — | 5.11 | 2026-04-21 | Changing backend users' passwords via the user settings module results in storing the cleartext password in the uc and u... |
+| [CVE-2026-41037](https://nvd.nist.gov/vuln/detail/CVE-2026-41037) | 8.7 | HIGH | CWE-78 | No | — | 6.09 | 2026-04-21 | This vulnerability exists in Quantum Networks router due to inadequate sanitization of user-supplied input in the manage... |
+| [CVE-2026-41036](https://nvd.nist.gov/vuln/detail/CVE-2026-41036) | 8.7 | HIGH | CWE-78 | No | — | 6.09 | 2026-04-21 | This vulnerability exists in Quantum Networks router due to inadequate sanitization of user-supplied input in the manage... |
+| [CVE-2026-3317](https://nvd.nist.gov/vuln/detail/CVE-2026-3317) | 5.1 | MEDIUM | CWE-79 | No | — | 3.57 | 2026-04-21 | Reflected Cross-Site Scripting (XSS) vulnerability in Navigate Content Management System. The vulnerability is present i... |
+| [CVE-2026-39467](https://nvd.nist.gov/vuln/detail/CVE-2026-39467) | 7.2 | HIGH | CWE-502 | No | — | 5.04 | 2026-04-21 | Deserialization of Untrusted Data vulnerability in MetaSlider Responsive Slider by MetaSlider allows Object Injection.Th... |
 | [CVE-2025-13826](https://nvd.nist.gov/vuln/detail/CVE-2025-13826) | 8.2 | HIGH | CWE-20 | No | — | 5.74 | 2026-04-21 | Zervit's portable HTTP/web server is vulnerable to remote DoS attacks when a configuration reset request is made. The vu... |
 | [CVE-2026-6712](https://nvd.nist.gov/vuln/detail/CVE-2026-6712) | 4.4 | MEDIUM | CWE-79 | No | — | 3.08 | 2026-04-21 | The Website LLMs.txt plugin for WordPress is vulnerable to Stored Cross-Site Scripting via admin settings in all version... |
 | [CVE-2026-6711](https://nvd.nist.gov/vuln/detail/CVE-2026-6711) | 6.1 | MEDIUM | CWE-79 | No | — | 4.27 | 2026-04-21 | The Website LLMs.txt plugin for WordPress is vulnerable to Reflected Cross-Site Scripting via the 'tab' parameter in all... |
