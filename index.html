@@ -11,7 +11,7 @@
     <header>
       <h1>vuln-tracker</h1>
       <p class="subtitle">CVEs from the National Vulnerability Database — current and previous month</p>
-      <p class="last-updated">Last updated: 2026-04-21 13:57 UTC</p>
+      <p class="last-updated">Last updated: 2026-04-21 15:21 UTC</p>
     </header>
     <nav>
       <a href="top50.html">&#9733; Top 50</a>
@@ -25,7 +25,7 @@
     </nav>
     <main>
     <section>
-      <h2>Current Month — April 2026 <span class="count">(3488)</span></h2>
+      <h2>Current Month — April 2026 <span class="count">(3504)</span></h2>
       <div class="table-wrapper">
         <table>
           <thead>
@@ -43,13 +43,178 @@
           </thead>
           <tbody>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6784" target="_blank" rel="noopener">CVE-2026-6784</a></td>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5789" target="_blank" rel="noopener">CVE-2026-5789</a></td>
+        <td>8.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-428</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.95</td>
+        <td><details><summary>Vulnerability related to an unquoted search path in CivetWeb v1.16. This vulnera...</summary><p>Vulnerability related to an unquoted search path in CivetWeb v1.16. This vulnerability allows a local attacker to execute arbitrary code with elevated privileges by placing a malicious executable in a directory that is scanned before the intended application path (C:\Program Files\CivetWeb\CivetWeb.exe --), due to the absence of quotes in the service configuration.</p></details></td>
+        <td>2026-04-21</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-3298" target="_blank" rel="noopener">CVE-2026-3298</a></td>
+        <td>8.8</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-787</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.16</td>
+        <td><details><summary>The method &quot;sock_recvfrom_into()&quot; of &quot;asyncio.ProacterEventLoop&quot; (Windows only) ...</summary><p>The method &quot;sock_recvfrom_into()&quot; of &quot;asyncio.ProacterEventLoop&quot; (Windows only) was missing a boundary check for the data buffer when using nbytes parameter. This allowed for an out-of-bounds buffer write if data was larger than the buffer size. Non-Windows platforms are not affected.</p></details></td>
+        <td>2026-04-21</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-31019" target="_blank" rel="noopener">CVE-2026-31019</a></td>
         <td>0.0</td>
         <td><span class="severity none">NONE</span></td>
         <td>N/A</td>
         <td>&nbsp;</td>
         <td>&mdash;</td>
         <td>0.00</td>
+        <td><details><summary>In the Website module of Dolibarr ERP &amp; CRM 22.0.4 and below, the application us...</summary><p>In the Website module of Dolibarr ERP &amp; CRM 22.0.4 and below, the application uses blacklist-based filtering to restrict dangerous PHP functions related to system command execution. An authenticated user with permission to edit PHP content can bypass this filtering, resulting in full remote code execution with the ability to execute arbitrary operating system commands on the server.</p></details></td>
+        <td>2026-04-21</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-31018" target="_blank" rel="noopener">CVE-2026-31018</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>In Dolibarr ERP &amp; CRM &lt;= 22.0.4, PHP code detection and editing permission enfor...</summary><p>In Dolibarr ERP &amp; CRM &lt;= 22.0.4, PHP code detection and editing permission enforcement in the Website module is not applied consistently to all input parameters, allowing an authenticated user restricted to HTML/JavaScript editing to inject PHP code through unprotected inputs during website page creation.</p></details></td>
+        <td>2026-04-21</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-31014" target="_blank" rel="noopener">CVE-2026-31014</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Dovestones Softwares AD Self Update &lt;4.0.0.5 is vulnerable to Cross Site Request...</summary><p>Dovestones Softwares AD Self Update &lt;4.0.0.5 is vulnerable to Cross Site Request Forgery (CSRF). The affected endpoint processes state-changing requests without requiring a CSRF token or equivalent protection. The endpoint accepts application/x-www-form-urlencoded requests, and an originally POST-based request can be converted to a GET request while still successfully updating user details. This allows an attacker to craft a malicious request that, when visited by an authenticated user, can modify user account information without their consent.</p></details></td>
+        <td>2026-04-21</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-31013" target="_blank" rel="noopener">CVE-2026-31013</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Dovestones Softwares ADPhonebook &lt;4.0.1.1 has a reflected cross-site scripting (...</summary><p>Dovestones Softwares ADPhonebook &lt;4.0.1.1 has a reflected cross-site scripting (XSS) vulnerability in the search parameter of the /ADPhonebook?Department=HR endpoint. User-supplied input is reflected in the HTTP response without proper input validation or output encoding, allowing execution of arbitrary JavaScript in the victim&#x27;s browser.</p></details></td>
+        <td>2026-04-21</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-29644" target="_blank" rel="noopener">CVE-2026-29644</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>XiangShan (open-source high-performance RISC-V processor) commit edb1dfaf7d290ae...</summary><p>XiangShan (open-source high-performance RISC-V processor) commit edb1dfaf7d290ae99724594507dc46c2c2125384 (2024-11-28) has improper gating of its distributed CSR write-enable path, allowing illegal CSR write attempts to alter custom PMA (Physical Memory Attribute) CSR state. Though the RISC-V privileged specification requires an illegal-instruction exception for non-existent/illegal CSR accesses, affected XiangShan versions may still propagate such writes to replicated PMA configuration state. Local attackers able to execute code on the core (privilege context depends on system integration) can exploit this to tamper with memory-attribute enforcement, potentially leading to privilege escalation, information disclosure, or denial of service depending on how PMA enforces platform security and isolation boundaries.</p></details></td>
+        <td>2026-04-21</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-1089" target="_blank" rel="noopener">CVE-2026-1089</a></td>
+        <td>6.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-74</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.55</td>
+        <td><details><summary>User‑Controlled HTTP Header in Fortra&#x27;s GoAnywhere MFT prior to version 7.10.0 a...</summary><p>User‑Controlled HTTP Header in Fortra&#x27;s GoAnywhere MFT prior to version 7.10.0 allows attackers to trigger a DNS lookup, as well as DNS Rebinding and Information Disclosure.</p></details></td>
+        <td>2026-04-21</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-0972" target="_blank" rel="noopener">CVE-2026-0972</a></td>
+        <td>7.3</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-307</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.11</td>
+        <td><details><summary>The login limit is not enforced on the SFTP service of Fortra&#x27;s GoAnywhere MFT p...</summary><p>The login limit is not enforced on the SFTP service of Fortra&#x27;s GoAnywhere MFT prior to 7.10.0 if the Web User attempting to be logged in to is configured to log in with an SSH Key, making the SSH key vulnerable to being guessed via Brute Force.</p></details></td>
+        <td>2026-04-21</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-0971" target="_blank" rel="noopener">CVE-2026-0971</a></td>
+        <td>4.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-613</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.01</td>
+        <td><details><summary>An improper session timeout issue in Fortra&#x27;s GoAnywhere MFT prior to version 7....</summary><p>An improper session timeout issue in Fortra&#x27;s GoAnywhere MFT prior to version 7.10.0 results in SAML configured Web Users being redirected to the regular login page instead of the SAML login page.</p></details></td>
+        <td>2026-04-21</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-31981" target="_blank" rel="noopener">CVE-2025-31981</a></td>
+        <td>5.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-319</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.71</td>
+        <td><details><summary>HCL BigFix Service Management (SM) Discovery is vulnerable to unenforced encrypt...</summary><p>HCL BigFix Service Management (SM) Discovery is vulnerable to unenforced encryption due to port 80 (HTTP) being open, allowing unencrypted access.  An attacker with access to the network traffic can sniff packets from the connection and uncover the data.</p></details></td>
+        <td>2026-04-21</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-31958" target="_blank" rel="noopener">CVE-2025-31958</a></td>
+        <td>3.7</td>
+        <td><span class="severity low">LOW</span></td>
+        <td>CWE-444</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>2.59</td>
+        <td><details><summary>HCL BigFix Service Management is susceptible to HTTP Request Smuggling.  HTTP re...</summary><p>HCL BigFix Service Management is susceptible to HTTP Request Smuggling.  HTTP request smuggling vulnerabilities arise when websites route HTTP requests through web servers with inconsistent HTTP parsing. HTTP Smuggling exploits inconsistencies in request parsing between front-end and back-end servers, allowing attackers to bypass security controls and perform attacks like cache poisoning or request hijacking.</p></details></td>
+        <td>2026-04-21</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-1241" target="_blank" rel="noopener">CVE-2025-1241</a></td>
+        <td>5.8</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-326</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.06</td>
+        <td><details><summary>Encrypted values in Fortra&#x27;s GoAnywhere MFT prior to version 7.10.0 and GoAnywhe...</summary><p>Encrypted values in Fortra&#x27;s GoAnywhere MFT prior to version 7.10.0 and GoAnywhere Agents prior to version 2.2.0 utilize a static IV which allows admin users to brute-force decryption of data.</p></details></td>
+        <td>2026-04-21</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-14362" target="_blank" rel="noopener">CVE-2025-14362</a></td>
+        <td>7.3</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-307</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.11</td>
+        <td><details><summary>The login limit is not enforced on the SFTP service of Fortra&#x27;s GoAnywhere MFT p...</summary><p>The login limit is not enforced on the SFTP service of Fortra&#x27;s GoAnywhere MFT prior to 7.10.0 if the Web User attempting to be logged in to is configured to log in with an SSH Key, making the SSH key vulnerable to being guessed via Brute Force.</p></details></td>
+        <td>2026-04-21</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-10354" target="_blank" rel="noopener">CVE-2025-10354</a></td>
+        <td>5.1</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.57</td>
+        <td><details><summary>Cross-Site Scripting (XSS) vulnerability reflected in Semantic MediaWiki. This v...</summary><p>Cross-Site Scripting (XSS) vulnerability reflected in Semantic MediaWiki. This vulnerability allows an attacker to execute JavaScript code in the victim&#x27;s browser by sending them a malicious URL using the &#x27;/index.php/Speciaal:GefacetteerdZoeken&#x27; endpoint parameter. This vulnerability can be exploited to steal sensitive user data, such as session cookies, or to perform actions on behalf of the user.</p></details></td>
+        <td>2026-04-21</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6784" target="_blank" rel="noopener">CVE-2026-6784</a></td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-125</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.25</td>
         <td><details><summary>Memory safety bugs present in Firefox 149 and Thunderbird 149. Some of these bug...</summary><p>Memory safety bugs present in Firefox 149 and Thunderbird 149. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code. This vulnerability was fixed in Firefox 150.</p></details></td>
         <td>2026-04-21</td>
       </tr>
@@ -132,12 +297,12 @@
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6776" target="_blank" rel="noopener">CVE-2026-6776</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>7.8</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-119</td>
         <td>&nbsp;</td>
         <td>&mdash;</td>
-        <td>0.00</td>
+        <td>5.46</td>
         <td><details><summary>Incorrect boundary conditions in the WebRTC: Networking component. This vulnerab...</summary><p>Incorrect boundary conditions in the WebRTC: Networking component. This vulnerability was fixed in Firefox 150 and Firefox ESR 140.10.</p></details></td>
         <td>2026-04-21</td>
       </tr>
@@ -154,12 +319,12 @@
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6774" target="_blank" rel="noopener">CVE-2026-6774</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>5.4</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-693</td>
         <td>&nbsp;</td>
         <td>&mdash;</td>
-        <td>0.00</td>
+        <td>3.78</td>
         <td><details><summary>Mitigation bypass in the DOM: Security component. This vulnerability was fixed i...</summary><p>Mitigation bypass in the DOM: Security component. This vulnerability was fixed in Firefox 150.</p></details></td>
         <td>2026-04-21</td>
       </tr>
@@ -363,12 +528,12 @@
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6755" target="_blank" rel="noopener">CVE-2026-6755</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>6.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-352</td>
         <td>&nbsp;</td>
         <td>&mdash;</td>
-        <td>0.00</td>
+        <td>4.55</td>
         <td><details><summary>Mitigation bypass in the DOM: postMessage component. This vulnerability was fixe...</summary><p>Mitigation bypass in the DOM: postMessage component. This vulnerability was fixed in Firefox 150.</p></details></td>
         <td>2026-04-21</td>
       </tr>
@@ -480,40 +645,6 @@
         <td>&mdash;</td>
         <td>6.02</td>
         <td><details><summary>FreePBX api module version 17.0.8 and prior contain a command injection vulnerab...</summary><p>FreePBX api module version 17.0.8 and prior contain a command injection vulnerability in the initiateGqlAPIProcess() function where GraphQL mutation input fields are passed directly to shell_exec() without sanitization or escaping. An authenticated user with a valid bearer token can send a GraphQL moduleOperations mutation with backtick-wrapped commands in the module field to execute arbitrary commands on the underlying host as the web server user.</p></details></td>
-        <td>2026-04-21</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32147" target="_blank" rel="noopener">CVE-2026-32147</a></td>
-        <td>5.3</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-22</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p3</small></td>
-        <td>3.71</td>
-        <td><details><summary>Improper Limitation of a Pathname to a Restricted Directory (&#x27;Path Traversal&#x27;) v...</summary><p>Improper Limitation of a Pathname to a Restricted Directory (&#x27;Path Traversal&#x27;) vulnerability in Erlang OTP ssh (ssh_sftpd module) allows an authenticated SFTP user to modify file attributes outside the configured chroot directory.
-
-The SFTP daemon (ssh_sftpd) stores the raw, user-supplied path in file handles instead of the chroot-resolved path. When SSH_FXP_FSETSTAT is issued on such a handle, file attributes (permissions, ownership, timestamps) are modified on the real filesystem path, bypassing the root directory boundary entirely.
-
-Any authenticated SFTP user on a server configured with the root option can modify file attributes of files outside the intended chroot boundary. The prerequisite is that a target file must exist on the real filesystem at the same relative path. Note that this vulnerability only allows modification of file attributes; file contents cannot be read or altered through this attack vector.
-
-If the SSH daemon runs as root, this enables direct privilege escalation: an attacker can set the setuid bit on any binary, change ownership of sensitive files, or make system configuration world-writable.
-
-This vulnerability is associated with program files lib/ssh/src/ssh_sftpd.erl and program routines ssh_sftpd:do_open/4 and ssh_sftpd:handle_op/4.
-
-This issue affects OTP from OTP 17.0 until OTP 28.4.3, 27.3.4.11, and 26.2.5.20 corresponding to ssh from 3.01 until 5.5.3, 5.2.11.7, and 5.1.4.15.</p></details></td>
-        <td>2026-04-21</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-41039" target="_blank" rel="noopener">CVE-2026-41039</a></td>
-        <td>8.7</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-306</td>
-        <td>&nbsp;</td>
-        <td>0.1% <small>p16</small></td>
-        <td>6.09</td>
-        <td><details><summary>This vulnerability exists in Quantum Networks router due to improper access cont...</summary><p>This vulnerability exists in Quantum Networks router due to improper access control and insecure default configuration in the web-based management interface. An unauthenticated attacker could exploit this vulnerability by accessing exposed API endpoints on the targeted device.
-
-Successful exploitation of this vulnerability could allow the attacker to access sensitive information, including internal endpoints, scripts and directories on the targeted device.</p></details></td>
         <td>2026-04-21</td>
       </tr>
       <tr>
@@ -630,7 +761,7 @@ Successful exploitation of this vulnerability could allow the attacker to access
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-31369" target="_blank" rel="noopener">CVE-2026-31369</a></td>
         <td>3.2</td>
         <td><span class="severity low">LOW</span></td>
-        <td>N/A</td>
+        <td>CWE-269</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p2</small></td>
         <td>2.24</td>
@@ -1114,7 +1245,7 @@ Successful exploitation of this vulnerability could allow the attacker to access
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-22051" target="_blank" rel="noopener">CVE-2026-22051</a></td>
         <td>2.3</td>
         <td><span class="severity low">LOW</span></td>
-        <td>N/A</td>
+        <td>CWE-200</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p12</small></td>
         <td>1.61</td>
@@ -3058,15 +3189,16 @@ Successful exploitation of this vulnerability could allow the attacker to access
         <td>2026-04-18</td>
       </tr>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32228" target="_blank" rel="noopener">CVE-2026-32228</a></td>
-        <td>7.5</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-863</td>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32690" target="_blank" rel="noopener">CVE-2026-32690</a></td>
+        <td>3.7</td>
+        <td><span class="severity low">LOW</span></td>
+        <td>CWE-668</td>
         <td>&nbsp;</td>
-        <td>0.0% <small>p8</small></td>
-        <td>5.25</td>
-        <td><details><summary>UI / API User with asset materialize permission could trigger dags they had no a...</summary><p>UI / API User with asset materialize permission could trigger dags they had no access to.
-Users are advised to migrate to Airflow version 3.2.0 that fixes the issue.</p></details></td>
+        <td>0.0% <small>p7</small></td>
+        <td>2.59</td>
+        <td><details><summary>Secrets in Variables saved as JSON dictionaries were not properly redacted - in ...</summary><p>Secrets in Variables saved as JSON dictionaries were not properly redacted - in case thee variables were retrieved by the user the secrets stored as nested fields were not masked.
+
+If you do not store variables with sensitive values in JSON form, you are not affected. Otherwise please upgrade to Apache Airflow 3.2.0 that has the fix implemented</p></details></td>
         <td>2026-04-18</td>
       </tr>
       <tr>
@@ -3089,6 +3221,19 @@ Users are advised to migrate to Airflow version 3.2.0 that fixes the issue.</p><
         <td>0.1% <small>p19</small></td>
         <td>6.16</td>
         <td><details><summary>An example of BashOperator in Airflow documentation suggested a way of passing d...</summary><p>An example of BashOperator in Airflow documentation suggested a way of passing dag_run.conf in the way that could cause unsanitized user input to be used to escalate privileges of UI user to allow execute code on worker. Users should review if any of their own DAGs have adopted this incorrect advice.</p></details></td>
+        <td>2026-04-18</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-25917" target="_blank" rel="noopener">CVE-2026-25917</a></td>
+        <td>9.8</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-502</td>
+        <td>&nbsp;</td>
+        <td>0.1% <small>p20</small></td>
+        <td>6.86</td>
+        <td><details><summary>Dag Authors, who normally should not be able to execute code in the webserver co...</summary><p>Dag Authors, who normally should not be able to execute code in the webserver context could craft XCom payload causing the webserver to execute arbitrary code. Since Dag Authors are already highly trusted, severity of this issue is Low.
+
+Users are recommended to upgrade to Apache Airflow 3.2.0, which fixes the issue.</p></details></td>
         <td>2026-04-18</td>
       </tr>
       <tr>
@@ -4078,7 +4223,7 @@ Users are advised to migrate to Airflow version 3.2.0 that fixes the issue.</p><
         <td>&nbsp;</td>
         <td>0.1% <small>p29</small></td>
         <td>6.37</td>
-        <td><details><summary>OpenViking prior to commit c7bb167 contains an authentication bypass vulnerabili...</summary><p>OpenViking prior to commit c7bb167 contains an authentication bypass vulnerability in the VikingBot OpenAPI HTTP route surface where the authentication check fails open when the api_key configuration value is unset or empty. Remote attackers with network access to the exposed service can invoke privileged bot-control functionality without providing a valid X-API-Key header, including submitting attacker-controlled prompts, creating or using bot sessions, and accessing downstream tools, integrations, secrets, or data accessible to the bot.</p></details></td>
+        <td><details><summary>OpenViking prior to version 0.3.9 contains an authentication bypass vulnerabilit...</summary><p>OpenViking prior to version 0.3.9 contains an authentication bypass vulnerability in the VikingBot OpenAPI HTTP route surface where the authentication check fails open when the api_key configuration value is unset or empty. Remote attackers with network access to the exposed service can invoke privileged bot-control functionality without providing a valid X-API-Key header, including submitting attacker-controlled prompts, creating or using bot sessions, and accessing downstream tools, integrations, secrets, or data accessible to the bot.</p></details></td>
         <td>2026-04-17</td>
       </tr>
       <tr>
@@ -7676,6 +7821,19 @@ Users are advised to migrate to Airflow version 3.2.0 that fixes the issue.</p><
         <td>0.0% <small>p9</small></td>
         <td>1.89</td>
         <td><details><summary>Mattermost versions 10.11.x &lt;= 10.11.12 fail to validate whether users were corr...</summary><p>Mattermost versions 10.11.x &lt;= 10.11.12 fail to validate whether users were correctly owned by the correct Connected Workspace which allows a malicious remote server connected using the Conntexted Workspaces feature to change the displayed status of local users via the Connected Workspaces API.. Mattermost Advisory ID: MMSA-2026-00603</p></details></td>
+        <td>2026-04-15</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5598" target="_blank" rel="noopener">CVE-2026-5598</a></td>
+        <td>8.9</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-385</td>
+        <td>&nbsp;</td>
+        <td>0.0% <small>p5</small></td>
+        <td>6.23</td>
+        <td><details><summary>Covert timing channel vulnerability in Legion of the Bouncy Castle Inc. BC-JAVA ...</summary><p>Covert timing channel vulnerability in Legion of the Bouncy Castle Inc. BC-JAVA core on all (core modules). This vulnerability is associated with program files FrodoEngine.Java.
+
+This issue affects BC-JAVA: from 1.71 before 1.84.</p></details></td>
         <td>2026-04-15</td>
       </tr>
       <tr>
@@ -15915,6 +16073,21 @@ Users are advised to migrate to Airflow version 3.2.0 that fixes the issue.</p><
         <td>0.0% <small>p2</small></td>
         <td>3.29</td>
         <td><details><summary>In systemd 258 before 260, a local unprivileged user can trigger an assert when ...</summary><p>In systemd 258 before 260, a local unprivileged user can trigger an assert when a Delegate=yes and User=&lt;unset&gt; unit exists and is running.</p></details></td>
+        <td>2026-04-10</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40023" target="_blank" rel="noopener">CVE-2026-40023</a></td>
+        <td>6.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-116</td>
+        <td>&nbsp;</td>
+        <td>0.2% <small>p36</small></td>
+        <td>4.41</td>
+        <td><details><summary>Apache Log4cxx&#x27;s  XMLLayout https://logging.apache.org/log4cxx/1.7.0/classlog4cx...</summary><p>Apache Log4cxx&#x27;s  XMLLayout https://logging.apache.org/log4cxx/1.7.0/classlog4cxx_1_1xml_1_1XMLLayout.html , in versions before 1.7.0, fails to sanitize characters forbidden by the  XML 1.0 specification https://www.w3.org/TR/xml/#charsets  in log messages, NDC, and MDC property keys and values, producing invalid XML output. Conforming XML parsers must reject such documents with a fatal error, which may cause downstream log processing systems to drop or fail to index affected records.
+
+An attacker who can influence logged data can exploit this to suppress individual log records, impairing audit trails and detection of malicious activity.
+
+Users are advised to upgrade to Apache Log4cxx 1.7.0, which fixes this issue.</p></details></td>
         <td>2026-04-10</td>
       </tr>
       <tr>
@@ -89148,7 +89321,7 @@ Users are advised to migrate to Airflow version 3.2.0 that fixes the issue.</p><
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-27142" target="_blank" rel="noopener">CVE-2026-27142</a></td>
         <td>6.1</td>
         <td><span class="severity medium">MEDIUM</span></td>
-        <td>N/A</td>
+        <td>CWE-79</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p3</small></td>
         <td>4.27</td>
@@ -89159,7 +89332,7 @@ Users are advised to migrate to Airflow version 3.2.0 that fixes the issue.</p><
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-27139" target="_blank" rel="noopener">CVE-2026-27139</a></td>
         <td>2.5</td>
         <td><span class="severity low">LOW</span></td>
-        <td>N/A</td>
+        <td>CWE-22</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p0</small></td>
         <td>1.75</td>
@@ -89170,7 +89343,7 @@ Users are advised to migrate to Airflow version 3.2.0 that fixes the issue.</p><
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-27138" target="_blank" rel="noopener">CVE-2026-27138</a></td>
         <td>5.9</td>
         <td><span class="severity medium">MEDIUM</span></td>
-        <td>N/A</td>
+        <td>CWE-295</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p5</small></td>
         <td>4.13</td>
@@ -89181,7 +89354,7 @@ Users are advised to migrate to Airflow version 3.2.0 that fixes the issue.</p><
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-27137" target="_blank" rel="noopener">CVE-2026-27137</a></td>
         <td>7.5</td>
         <td><span class="severity high">HIGH</span></td>
-        <td>N/A</td>
+        <td>CWE-295</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p2</small></td>
         <td>5.25</td>
@@ -89192,7 +89365,7 @@ Users are advised to migrate to Airflow version 3.2.0 that fixes the issue.</p><
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-25679" target="_blank" rel="noopener">CVE-2026-25679</a></td>
         <td>7.5</td>
         <td><span class="severity high">HIGH</span></td>
-        <td>N/A</td>
+        <td>CWE-425</td>
         <td>&nbsp;</td>
         <td>0.1% <small>p15</small></td>
         <td>5.25</td>
