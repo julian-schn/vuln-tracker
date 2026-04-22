@@ -11,7 +11,7 @@
     <header>
       <h1>vuln-tracker</h1>
       <p class="subtitle">CVEs from the National Vulnerability Database — current and previous month</p>
-      <p class="last-updated">Last updated: 2026-04-22 17:09 UTC</p>
+      <p class="last-updated">Last updated: 2026-04-22 19:22 UTC</p>
     </header>
     <nav>
       <a href="top50.html">&#9733; Top 50</a>
@@ -25,7 +25,7 @@
     </nav>
     <main>
     <section>
-      <h2>Current Month — April 2026 <span class="count">(3889)</span></h2>
+      <h2>Current Month — April 2026 <span class="count">(3958)</span></h2>
       <div class="table-wrapper">
         <table>
           <thead>
@@ -42,6 +42,721 @@
             </tr>
           </thead>
           <tbody>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-41469" target="_blank" rel="noopener">CVE-2026-41469</a></td>
+        <td>5.1</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-693</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.57</td>
+        <td><details><summary>Beghelli Sicuro24 SicuroWeb does not enforce a Content Security Policy, allowing...</summary><p>Beghelli Sicuro24 SicuroWeb does not enforce a Content Security Policy, allowing unrestricted loading of external JavaScript resources from attacker-controlled origins. When chained with the template injection and sandbox escape vulnerabilities present in the same application, the absence of CSP removes the browser-enforced restriction that would otherwise block external script execution, enabling attackers to load arbitrary remote payloads into operator browser sessions.</p></details></td>
+        <td>2026-04-22</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-41468" target="_blank" rel="noopener">CVE-2026-41468</a></td>
+        <td>9.3</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-1104</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.51</td>
+        <td><details><summary>Beghelli Sicuro24 SicuroWeb embeds AngularJS 1.5.2, an end-of-life component con...</summary><p>Beghelli Sicuro24 SicuroWeb embeds AngularJS 1.5.2, an end-of-life component containing known sandbox escape primitives. When combined with template injection present in the same application, these primitives allow attackers to escape the AngularJS sandbox and achieve arbitrary JavaScript execution in operator browser sessions, enabling session hijacking, DOM manipulation, and persistent browser compromise. Network-adjacent attackers can deliver the complete injection and escape chain via MITM in plaintext HTTP deployments without active user interaction.</p></details></td>
+        <td>2026-04-22</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-41459" target="_blank" rel="noopener">CVE-2026-41459</a></td>
+        <td>6.9</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-497</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.83</td>
+        <td><details><summary>Xerte Online Toolkits versions 3.15 and earlier contain an information disclosur...</summary><p>Xerte Online Toolkits versions 3.15 and earlier contain an information disclosure vulnerability that allows unauthenticated attackers to retrieve the full server-side filesystem path of the application root. Attackers can send a GET request to the /setup page to access the exposed root_path value rendered in the HTML response, which enables exploitation of path-dependent vulnerabilities such as relative path traversal in connector.php.</p></details></td>
+        <td>2026-04-22</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34415" target="_blank" rel="noopener">CVE-2026-34415</a></td>
+        <td>9.3</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-184</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.51</td>
+        <td><details><summary>Xerte Online Toolkits versions 3.15 and earlier contain an incomplete input vali...</summary><p>Xerte Online Toolkits versions 3.15 and earlier contain an incomplete input validation vulnerability in the elFinder connector endpoint that fails to block PHP-executable extensions .php4 due to an incorrect regex pattern. Unauthenticated attackers can exploit this flaw combined with authentication bypass and path traversal vulnerabilities to upload malicious PHP code, rename it with a .php4 extension, and execute arbitrary operating system commands on the server.</p></details></td>
+        <td>2026-04-22</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34414" target="_blank" rel="noopener">CVE-2026-34414</a></td>
+        <td>7.1</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-22</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.97</td>
+        <td><details><summary>Xerte Online Toolkits versions 3.15 and earlier contain a relative path traversa...</summary><p>Xerte Online Toolkits versions 3.15 and earlier contain a relative path traversal vulnerability in the elFinder connector endpoint at /editor/elfinder/php/connector.php where the name parameter in rename commands is not sanitized for path traversal sequences. Attackers can supply a name value containing directory traversal sequences to move files from project media directories to arbitrary locations on the filesystem, potentially overwriting application files, achieving stored cross-site scripting, or combining with other vulnerabilities to achieve unauthenticated remote code execution by moving PHP code files to the application root.</p></details></td>
+        <td>2026-04-22</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34413" target="_blank" rel="noopener">CVE-2026-34413</a></td>
+        <td>8.8</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-497</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.16</td>
+        <td><details><summary>Xerte Online Toolkits versions 3.15 and earlier contain a missing authentication...</summary><p>Xerte Online Toolkits versions 3.15 and earlier contain a missing authentication vulnerability in the elFinder connector endpoint at /editor/elfinder/php/connector.php where an HTTP redirect to unauthenticated callers does not call exit() or die(), allowing PHP execution to continue and process the full request server-side. Unauthenticated attackers can perform file operations on project media directories including creating directories, uploading files, renaming files, duplicating files, overwriting files, and deleting files, which can be chained with path traversal and extension blocklist vulnerabilities to achieve remote code execution and arbitrary file read.</p></details></td>
+        <td>2026-04-22</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-28950" target="_blank" rel="noopener">CVE-2026-28950</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>A logging issue was addressed with improved data redaction. This issue is fixed ...</summary><p>A logging issue was addressed with improved data redaction. This issue is fixed in iOS 18.7.8 and iPadOS 18.7.8, iOS 26.4.2 and iPadOS 26.4.2. Notifications marked for deletion could be unexpectedly retained on the device.</p></details></td>
+        <td>2026-04-22</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-26354" target="_blank" rel="noopener">CVE-2026-26354</a></td>
+        <td>8.1</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-121</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.67</td>
+        <td><details><summary>Dell PowerProtect Data Domain with Domain Operating System (DD OS) of Feature Re...</summary><p>Dell PowerProtect Data Domain with Domain Operating System (DD OS) of Feature Release versions 7.7.1.0 through 8.6, LTS2025 release version 8.3.1.0 through 8.3.1.10, LTS2024 release versions 7.13.1.0 through 7.13.1.60, contain a stack-based Buffer Overflow vulnerability. An unauthenticated attacker with remote access could potentially exploit this vulnerability, leading to arbitrary command execution.</p></details></td>
+        <td>2026-04-22</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6515" target="_blank" rel="noopener">CVE-2026-6515</a></td>
+        <td>5.4</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-613</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.78</td>
+        <td><details><summary>GitLab has remediated an issue in GitLab CE/EE affecting all versions from 18.2 ...</summary><p>GitLab has remediated an issue in GitLab CE/EE affecting all versions from 18.2 before 18.9.6, 18.10 before 18.10.4, and 18.11 before 18.11.1 that could have allowed a user to use invalidated or incorrectly scoped credentials to access Virtual Registries under certain conditions.</p></details></td>
+        <td>2026-04-22</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5816" target="_blank" rel="noopener">CVE-2026-5816</a></td>
+        <td>8.0</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-41</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.60</td>
+        <td><details><summary>GitLab has remediated an issue in GitLab CE/EE affecting all versions from 18.10...</summary><p>GitLab has remediated an issue in GitLab CE/EE affecting all versions from 18.10 before 18.10.4 and 18.11 before 18.11.1 that could have allowed an unauthenticated user to execute arbitrary JavaScript in a user&#x27;s browser session due to improper path validation under certain conditions.</p></details></td>
+        <td>2026-04-22</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5377" target="_blank" rel="noopener">CVE-2026-5377</a></td>
+        <td>4.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-863</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.01</td>
+        <td><details><summary>GitLab has remediated an issue in GitLab CE/EE affecting all versions from 18.11...</summary><p>GitLab has remediated an issue in GitLab CE/EE affecting all versions from 18.11 before 18.11.1 that could have allowed an authenticated user to access titles of confidential or private issues in public projects due to improper access control in the issue description rendering process.</p></details></td>
+        <td>2026-04-22</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5262" target="_blank" rel="noopener">CVE-2026-5262</a></td>
+        <td>8.0</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.60</td>
+        <td><details><summary>GitLab has remediated an issue in GitLab CE/EE affecting all versions from 16.1....</summary><p>GitLab has remediated an issue in GitLab CE/EE affecting all versions from 16.1.0 before 18.9.6, 18.10 before 18.10.4, and 18.11 before 18.11.1 that under certain conditions could have allowed an unauthenticated user to access tokens in the Storybook development environment due to improper input validation.</p></details></td>
+        <td>2026-04-22</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4922" target="_blank" rel="noopener">CVE-2026-4922</a></td>
+        <td>8.1</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-352</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.67</td>
+        <td><details><summary>GitLab has remediated an issue in GitLab CE/EE affecting all versions from 17.0 ...</summary><p>GitLab has remediated an issue in GitLab CE/EE affecting all versions from 17.0 before 18.9.6, 18.10 before 18.10.4, and 18.11 before 18.11.1 that could have allowed an unauthenticated user to execute GraphQL mutations on behalf of authenticated users due to insufficient CSRF protection.</p></details></td>
+        <td>2026-04-22</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-3254" target="_blank" rel="noopener">CVE-2026-3254</a></td>
+        <td>3.5</td>
+        <td><span class="severity low">LOW</span></td>
+        <td>CWE-1021</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>2.45</td>
+        <td><details><summary>GitLab has remediated an issue in GitLab CE/EE affecting all versions from 18.11...</summary><p>GitLab has remediated an issue in GitLab CE/EE affecting all versions from 18.11 before 18.11.1 that under certain conditions could have allowed an authenticated user to load unauthorized content into another user&#x27;s browser due to improper input validation in the Mermaid sandbox.</p></details></td>
+        <td>2026-04-22</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35382" target="_blank" rel="noopener">CVE-2026-35382</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Rejected reason: Voluntarily withdrawn</summary><p>Rejected reason: Voluntarily withdrawn</p></details></td>
+        <td>2026-04-22</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35381" target="_blank" rel="noopener">CVE-2026-35381</a></td>
+        <td>3.3</td>
+        <td><span class="severity low">LOW</span></td>
+        <td>CWE-684</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>2.31</td>
+        <td><details><summary>A logic error in the cut utility of uutils coreutils causes the utility to ignor...</summary><p>A logic error in the cut utility of uutils coreutils causes the utility to ignore the -s (only-delimited) flag when using the -z (null-terminated) and -d &#x27;&#x27; (empty delimiter) options together. The implementation incorrectly routes this specific combination through a specialized newline-delimiter code path that fails to check the record suppression status. Consequently, uutils cut emits the entire record plus a NUL byte instead of suppressing it. This divergence from GNU coreutils behavior creates a data integrity risk for automated pipelines that rely on cut -s to filter out undelimited data.</p></details></td>
+        <td>2026-04-22</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35380" target="_blank" rel="noopener">CVE-2026-35380</a></td>
+        <td>5.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-20</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.85</td>
+        <td><details><summary>A logic error in the cut utility of uutils coreutils causes the program to incor...</summary><p>A logic error in the cut utility of uutils coreutils causes the program to incorrectly interpret the literal two-byte string &#x27;&#x27; (two single quotes) as an empty delimiter. The implementation mistakenly maps this string to the NUL character for both the -d (delimiter) and --output-delimiter options. This vulnerability can lead to silent data corruption or logic errors in automated scripts and data pipelines that process strings containing these characters, as the utility may unintentionally split or join data on NUL bytes rather than the intended literal characters.</p></details></td>
+        <td>2026-04-22</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35379" target="_blank" rel="noopener">CVE-2026-35379</a></td>
+        <td>3.3</td>
+        <td><span class="severity low">LOW</span></td>
+        <td>CWE-684</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>2.31</td>
+        <td><details><summary>A logic error in the tr utility of uutils coreutils causes the program to incorr...</summary><p>A logic error in the tr utility of uutils coreutils causes the program to incorrectly define the [:graph:] and [:print:] character classes. The implementation mistakenly includes the ASCII space character (0x20) in the [:graph:] class and excludes it from the [:print:] class, effectively reversing the standard behavior established by POSIX and GNU coreutils. This vulnerability leads to unintended data modification or loss when the utility is used in automated scripts or data-cleaning pipelines that rely on standard character class semantics. For example, a command executed to delete all graphical characters while intending to preserve whitespace will incorrectly delete all ASCII spaces, potentially resulting in data corruption or logic failures in downstream processing.</p></details></td>
+        <td>2026-04-22</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35378" target="_blank" rel="noopener">CVE-2026-35378</a></td>
+        <td>3.3</td>
+        <td><span class="severity low">LOW</span></td>
+        <td>CWE-768</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>2.31</td>
+        <td><details><summary>A logic error in the expr utility of uutils coreutils causes the program to eval...</summary><p>A logic error in the expr utility of uutils coreutils causes the program to evaluate parenthesized subexpressions during the parsing phase rather than at the execution phase. This implementation flaw prevents the utility from performing proper short-circuiting for logical OR (|) and AND (&amp;) operations. As a result, arithmetic errors (such as division by zero) occurring within &quot;dead&quot; branches, branches that should be ignored due to short-circuiting, are raised as fatal errors. This divergence from GNU expr behavior can cause guarded expressions within shell scripts to fail with hard errors instead of returning expected boolean results, leading to premature script termination and breaking GNU-compatible shell control flow.</p></details></td>
+        <td>2026-04-22</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35377" target="_blank" rel="noopener">CVE-2026-35377</a></td>
+        <td>3.3</td>
+        <td><span class="severity low">LOW</span></td>
+        <td>CWE-20</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>2.31</td>
+        <td><details><summary>A logic error in the env utility of uutils coreutils causes a failure to correct...</summary><p>A logic error in the env utility of uutils coreutils causes a failure to correctly parse command-line arguments when utilizing the -S (split-string) option. In GNU env, backslashes within single quotes are treated literally (with the exceptions of \\ and \&#x27;). However, the uutils implementation incorrectly attempts to validate these sequences, resulting in an &quot;invalid sequence&quot; error and an immediate process termination with an exit status of 125 when encountering valid but unrecognized sequences like \a or \x. This divergence from GNU behavior breaks compatibility for automated scripts and administrative workflows that rely on standard split-string semantics, leading to a local denial of service for those operations.</p></details></td>
+        <td>2026-04-22</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35376" target="_blank" rel="noopener">CVE-2026-35376</a></td>
+        <td>4.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-367</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.15</td>
+        <td><details><summary>A Time-of-Check to Time-of-Use (TOCTOU) vulnerability exists in the chcon utilit...</summary><p>A Time-of-Check to Time-of-Use (TOCTOU) vulnerability exists in the chcon utility of uutils coreutils during recursive operations. The implementation resolves recursive targets using a fresh path lookup (via fts_accpath) rather than binding the traversal and label application to the specific directory state encountered during traversal. Because these operations are not anchored to file descriptors, a local attacker with write access to a directory tree can exploit timing-sensitive rename or symbolic link races to redirect a privileged recursive relabeling operation to unintended files or directories. This vulnerability breaks the hardening expectations for SELinux administration workflows and can lead to the unauthorized modification of security labels on sensitive system objects.</p></details></td>
+        <td>2026-04-22</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35375" target="_blank" rel="noopener">CVE-2026-35375</a></td>
+        <td>3.3</td>
+        <td><span class="severity low">LOW</span></td>
+        <td>CWE-176</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>2.31</td>
+        <td><details><summary>A logic error in the split utility of uutils coreutils causes the corruption of ...</summary><p>A logic error in the split utility of uutils coreutils causes the corruption of output filenames when provided with non-UTF-8 prefix or suffix inputs. The implementation utilizes to_string_lossy() when constructing chunk filenames, which automatically rewrites invalid byte sequences into the UTF-8 replacement character (U+FFFD). This behavior diverges from GNU split, which preserves raw pathname bytes intact. In environments utilizing non-UTF-8 encodings, this vulnerability leads to the creation of files with incorrect names, potentially causing filename collisions, broken automation, or the misdirection of output data.</p></details></td>
+        <td>2026-04-22</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35374" target="_blank" rel="noopener">CVE-2026-35374</a></td>
+        <td>6.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-367</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.41</td>
+        <td><details><summary>A Time-of-Check to Time-of-Use (TOCTOU) vulnerability exists in the split utilit...</summary><p>A Time-of-Check to Time-of-Use (TOCTOU) vulnerability exists in the split utility of uutils coreutils. The program attempts to prevent data loss by checking for identity between input and output files using their file paths before initiating the split operation. However, the utility subsequently opens the output file with truncation after this path-based validation is complete. A local attacker with write access to the directory can exploit this race window by manipulating mutable path components (e.g., swapping a path with a symbolic link). This can cause split to truncate and write to an unintended target file, potentially including the input file itself or other sensitive files accessible to the process, leading to permanent data loss.</p></details></td>
+        <td>2026-04-22</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35373" target="_blank" rel="noopener">CVE-2026-35373</a></td>
+        <td>3.3</td>
+        <td><span class="severity low">LOW</span></td>
+        <td>CWE-176</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>2.31</td>
+        <td><details><summary>A logic error in the ln utility of uutils coreutils causes the program to reject...</summary><p>A logic error in the ln utility of uutils coreutils causes the program to reject source paths containing non-UTF-8 filename bytes when using target-directory forms (e.g., ln SOURCE... DIRECTORY). While GNU ln treats filenames as raw bytes and creates the links correctly, the uutils implementation enforces UTF-8 encoding, resulting in a failure to stat the file and a non-zero exit code. In environments where automated scripts or system tasks process valid but non-UTF-8 filenames common on Unix filesystems, this divergence causes the utility to fail, leading to a local denial of service for those specific operations.</p></details></td>
+        <td>2026-04-22</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35372" target="_blank" rel="noopener">CVE-2026-35372</a></td>
+        <td>5.0</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-61</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.50</td>
+        <td><details><summary>A logic error in the ln utility of uutils coreutils allows the utility to derefe...</summary><p>A logic error in the ln utility of uutils coreutils allows the utility to dereference a symbolic link target even when the --no-dereference (or -n) flag is explicitly provided. The implementation previously only honored the &quot;no-dereference&quot; intent if the --force (overwrite) mode was also enabled. This flaw causes ln to follow a symbolic link that points to a directory and create new links inside that target directory instead of treating the symbolic link itself as the destination. In environments where a privileged user or system script uses ln -n to update a symlink, a local attacker could manipulate existing symbolic links to redirect file creation into sensitive directories, potentially leading to unauthorized file creation or system misconfiguration.</p></details></td>
+        <td>2026-04-22</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35371" target="_blank" rel="noopener">CVE-2026-35371</a></td>
+        <td>3.3</td>
+        <td><span class="severity low">LOW</span></td>
+        <td>CWE-451</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>2.31</td>
+        <td><details><summary>The id utility in uutils coreutils exhibits incorrect behavior in its &quot;pretty pr...</summary><p>The id utility in uutils coreutils exhibits incorrect behavior in its &quot;pretty print&quot; output when the real UID and effective UID differ. The implementation incorrectly uses the effective GID instead of the effective UID when performing a name lookup for the effective user. This results in misleading diagnostic output that can cause automated scripts or system administrators to make incorrect decisions regarding file permissions or access control.</p></details></td>
+        <td>2026-04-22</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35370" target="_blank" rel="noopener">CVE-2026-35370</a></td>
+        <td>4.4</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-863</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.08</td>
+        <td><details><summary>The id utility in uutils coreutils miscalculates the groups= section of its outp...</summary><p>The id utility in uutils coreutils miscalculates the groups= section of its output. The implementation uses a user&#x27;s real GID instead of their effective GID to compute the group list, leading to potentially divergent output compared to GNU coreutils. Because many scripts and automated processes rely on the output of id to make security-critical access-control or permission decisions, this discrepancy can lead to unauthorized access or security misconfigurations.</p></details></td>
+        <td>2026-04-22</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35369" target="_blank" rel="noopener">CVE-2026-35369</a></td>
+        <td>5.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-20</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.85</td>
+        <td><details><summary>An argument parsing error in the kill utility of uutils coreutils incorrectly in...</summary><p>An argument parsing error in the kill utility of uutils coreutils incorrectly interprets kill -1 as a request to send the default signal (SIGTERM) to PID -1. Sending a signal to PID -1 causes the kernel to terminate all processes visible to the caller, potentially leading to a system crash or massive process termination. This differs from GNU coreutils, which correctly recognizes -1 as a signal number in this context and would instead report a missing PID argument.</p></details></td>
+        <td>2026-04-22</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35368" target="_blank" rel="noopener">CVE-2026-35368</a></td>
+        <td>7.8</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-426</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.46</td>
+        <td><details><summary>A vulnerability exists in the chroot utility of uutils coreutils when using the ...</summary><p>A vulnerability exists in the chroot utility of uutils coreutils when using the --userspec option. The utility resolves the user specification via getpwnam() after entering the chroot but before dropping root privileges. On glibc-based systems, this can trigger the Name Service Switch (NSS) to load shared libraries (e.g., libnss_*.so.2) from the new root directory. If the NEWROOT is writable by an attacker, they can inject a malicious NSS module to execute arbitrary code as root, facilitating a full container escape or privilege escalation.</p></details></td>
+        <td>2026-04-22</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35367" target="_blank" rel="noopener">CVE-2026-35367</a></td>
+        <td>3.3</td>
+        <td><span class="severity low">LOW</span></td>
+        <td>CWE-732</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>2.31</td>
+        <td><details><summary>The nohup utility in uutils coreutils creates its default output file, nohup.out...</summary><p>The nohup utility in uutils coreutils creates its default output file, nohup.out, without specifying explicit restricted permissions. This causes the file to inherit umask-based permissions, typically resulting in a world-readable file (0644). In multi-user environments, this allows any user on the system to read the captured stdout/stderr output of a command, potentially exposing sensitive information. This behavior diverges from GNU coreutils, which creates nohup.out with owner-only (0600) permissions.</p></details></td>
+        <td>2026-04-22</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35366" target="_blank" rel="noopener">CVE-2026-35366</a></td>
+        <td>4.4</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-754</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.08</td>
+        <td><details><summary>The printenv utility in uutils coreutils fails to display environment variables ...</summary><p>The printenv utility in uutils coreutils fails to display environment variables containing invalid UTF-8 byte sequences. While POSIX permits arbitrary bytes in environment strings, the uutils implementation silently skips these entries rather than printing the raw bytes. This vulnerability allows malicious environment variables (e.g., adversarial LD_PRELOAD values) to evade inspection by administrators or security auditing tools, potentially allowing library injection or other environment-based attacks to go undetected.</p></details></td>
+        <td>2026-04-22</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35365" target="_blank" rel="noopener">CVE-2026-35365</a></td>
+        <td>6.6</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-59</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.62</td>
+        <td><details><summary>The mv utility in uutils coreutils improperly handles directory trees containing...</summary><p>The mv utility in uutils coreutils improperly handles directory trees containing symbolic links during moves across filesystem boundaries. Instead of preserving symlinks, the implementation expands them, copying the linked targets as real files or directories at the destination. This can lead to resource exhaustion (disk space or time) if symlinks point to large external directories, unexpected duplication of sensitive data into unintended locations, or infinite recursion and repeated copying in the presence of symlink loops.</p></details></td>
+        <td>2026-04-22</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35364" target="_blank" rel="noopener">CVE-2026-35364</a></td>
+        <td>6.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-367</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.41</td>
+        <td><details><summary>A Time-of-Check to Time-of-Use (TOCTOU) race condition exists in the mv utility ...</summary><p>A Time-of-Check to Time-of-Use (TOCTOU) race condition exists in the mv utility of uutils coreutils during cross-device operations. The utility removes the destination path before recreating it through a copy operation. A local attacker with write access to the destination directory can exploit this window to replace the destination with a symbolic link. The subsequent privileged move operation will follow the symlink, allowing the attacker to redirect the write and overwrite an arbitrary target file with contents from the source.</p></details></td>
+        <td>2026-04-22</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35363" target="_blank" rel="noopener">CVE-2026-35363</a></td>
+        <td>5.6</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-22</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.92</td>
+        <td><details><summary>A vulnerability in the rm utility of uutils coreutils allows the bypass of safeg...</summary><p>A vulnerability in the rm utility of uutils coreutils allows the bypass of safeguard mechanisms intended to protect the current directory. While the utility correctly refuses to delete . or .., it fails to recognize equivalent paths with trailing slashes, such as ./ or .///. An accidental or malicious execution of rm -rf ./ results in the silent recursive deletion of all contents within the current directory. The command further obscures the data loss by reporting a misleading &#x27;Invalid input&#x27; error, which may cause users to miss the critical window for data recovery.</p></details></td>
+        <td>2026-04-22</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35362" target="_blank" rel="noopener">CVE-2026-35362</a></td>
+        <td>3.6</td>
+        <td><span class="severity low">LOW</span></td>
+        <td>CWE-367</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>2.52</td>
+        <td><details><summary>The safe_traversal module in uutils coreutils, which provides protection against...</summary><p>The safe_traversal module in uutils coreutils, which provides protection against Time-of-Check to Time-of-Use (TOCTOU) symlink races using file-descriptor-relative syscalls, is incorrectly limited to Linux targets. On other Unix-like systems such as macOS and FreeBSD, the utility fails to utilize these protections, leaving directory traversal operations vulnerable to symlink race conditions.</p></details></td>
+        <td>2026-04-22</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35361" target="_blank" rel="noopener">CVE-2026-35361</a></td>
+        <td>3.4</td>
+        <td><span class="severity low">LOW</span></td>
+        <td>CWE-281</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>2.38</td>
+        <td><details><summary>The mknod utility in uutils coreutils fails to handle security labels atomically...</summary><p>The mknod utility in uutils coreutils fails to handle security labels atomically by creating device nodes before setting the SELinux context. If labeling fails, the utility attempts cleanup using std::fs::remove_dir, which cannot remove device nodes or FIFOs. This leaves mislabeled nodes behind with incorrect default contexts, potentially allowing unauthorized access to device nodes that should have been restricted by mandatory access controls.</p></details></td>
+        <td>2026-04-22</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35360" target="_blank" rel="noopener">CVE-2026-35360</a></td>
+        <td>6.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-367</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.41</td>
+        <td><details><summary>The touch utility in uutils coreutils is vulnerable to a Time-of-Check to Time-o...</summary><p>The touch utility in uutils coreutils is vulnerable to a Time-of-Check to Time-of-Use (TOCTOU) race condition during file creation. When the utility identifies a missing path, it later attempts creation using File::create(), which internally uses O_TRUNC. An attacker can exploit this window to create a file or swap a symlink at the target path, causing touch to truncate an existing file and leading to permanent data loss.</p></details></td>
+        <td>2026-04-22</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35359" target="_blank" rel="noopener">CVE-2026-35359</a></td>
+        <td>4.7</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-59</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.29</td>
+        <td><details><summary>A Time-of-Check to Time-of-Use (TOCTOU) vulnerability in the cp utility of uutil...</summary><p>A Time-of-Check to Time-of-Use (TOCTOU) vulnerability in the cp utility of uutils coreutils allows an attacker to bypass no-dereference intent. The utility checks if a source path is a symbolic link using path-based metadata but subsequently opens it without the O_NOFOLLOW flag. An attacker with concurrent write access can swap a regular file for a symbolic link during this window, causing a privileged cp process to copy the contents of arbitrary sensitive files into a destination controlled by the attacker.</p></details></td>
+        <td>2026-04-22</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35358" target="_blank" rel="noopener">CVE-2026-35358</a></td>
+        <td>4.4</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-706</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.08</td>
+        <td><details><summary>The cp utility in uutils coreutils, when performing recursive copies (-R), incor...</summary><p>The cp utility in uutils coreutils, when performing recursive copies (-R), incorrectly treats character and block device nodes as stream sources rather than preserving them. Because the implementation reads bytes into regular files at the destination instead of using mknod, device semantics are destroyed (e.g., /dev/null becomes a regular file). This behavior can lead to runtime denial of service through disk exhaustion or process hangs when reading from unbounded device nodes.</p></details></td>
+        <td>2026-04-22</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35357" target="_blank" rel="noopener">CVE-2026-35357</a></td>
+        <td>4.7</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-367</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.29</td>
+        <td><details><summary>The cp utility in uutils coreutils is vulnerable to an information disclosure ra...</summary><p>The cp utility in uutils coreutils is vulnerable to an information disclosure race condition. Destination files are initially created with umask-derived permissions (e.g., 0644) before being restricted to their final mode (e.g., 0600) later in the process. A local attacker can race to open the file during this window; once obtained, the file descriptor remains valid and readable even after the permissions are tightened, exposing sensitive or private file contents.</p></details></td>
+        <td>2026-04-22</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35356" target="_blank" rel="noopener">CVE-2026-35356</a></td>
+        <td>6.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-367</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.41</td>
+        <td><details><summary>A Time-of-Check to Time-of-Use (TOCTOU) vulnerability exists in the install util...</summary><p>A Time-of-Check to Time-of-Use (TOCTOU) vulnerability exists in the install utility of uutils coreutils when using the -D flag. The command creates parent directories and subsequently performs a second path resolution to create the target file, neither of which is anchored to a directory file descriptor. An attacker with concurrent write access can replace a path component with a symbolic link between these operations, redirecting the privileged write to an arbitrary file system location.</p></details></td>
+        <td>2026-04-22</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35355" target="_blank" rel="noopener">CVE-2026-35355</a></td>
+        <td>6.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-367</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.41</td>
+        <td><details><summary>The install utility in uutils coreutils is vulnerable to a Time-of-Check to Time...</summary><p>The install utility in uutils coreutils is vulnerable to a Time-of-Check to Time-of-Use (TOCTOU) race condition during file installation. The implementation unlinks an existing destination file and then recreates it using a path-based operation without the O_EXCL flag. A local attacker can exploit the window between the unlink and the subsequent creation to swap the path with a symbolic link, allowing them to redirect privileged writes to overwrite arbitrary system files.</p></details></td>
+        <td>2026-04-22</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35354" target="_blank" rel="noopener">CVE-2026-35354</a></td>
+        <td>4.7</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-367</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.29</td>
+        <td><details><summary>A Time-of-Check to Time-of-Use (TOCTOU) vulnerability exists in the mv utility o...</summary><p>A Time-of-Check to Time-of-Use (TOCTOU) vulnerability exists in the mv utility of uutils coreutils during cross-device moves. The extended attribute (xattr) preservation logic uses multiple path-based system calls that perform fresh path-to-inode lookups for each operation. A local attacker with write access to the directory can exploit this race to swap files between calls, causing the destination file to receive an inconsistent mix of security xattrs, such as SELinux labels or file capabilities.</p></details></td>
+        <td>2026-04-22</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35353" target="_blank" rel="noopener">CVE-2026-35353</a></td>
+        <td>3.3</td>
+        <td><span class="severity low">LOW</span></td>
+        <td>CWE-367</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>2.31</td>
+        <td><details><summary>The mkdir utility in uutils coreutils incorrectly applies permissions when using...</summary><p>The mkdir utility in uutils coreutils incorrectly applies permissions when using the -m flag by creating a directory with umask-derived permissions (typically 0755) before subsequently changing them to the requested mode via a separate chmod system call. In multi-user environments, this introduces a brief window where a directory intended to be private is accessible to other users, potentially leading to unauthorized data access.</p></details></td>
+        <td>2026-04-22</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35352" target="_blank" rel="noopener">CVE-2026-35352</a></td>
+        <td>7.0</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-367</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.90</td>
+        <td><details><summary>A Time-of-Check to Time-of-Use (TOCTOU) race condition exists in the mkfifo util...</summary><p>A Time-of-Check to Time-of-Use (TOCTOU) race condition exists in the mkfifo utility of uutils coreutils. The utility creates a FIFO and then performs a path-based chmod to set permissions. A local attacker with write access to the parent directory can swap the newly created FIFO for a symbolic link between these two operations. This redirects the chmod call to an arbitrary file, potentially enabling privilege escalation if the utility is run with elevated privileges.</p></details></td>
+        <td>2026-04-22</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35351" target="_blank" rel="noopener">CVE-2026-35351</a></td>
+        <td>4.2</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-281</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>2.94</td>
+        <td><details><summary>The mv utility in uutils coreutils fails to preserve file ownership during moves...</summary><p>The mv utility in uutils coreutils fails to preserve file ownership during moves across different filesystem boundaries. The utility falls back to a copy-and-delete routine that creates the destination file using the caller&#x27;s UID/GID rather than the source&#x27;s metadata. This flaw breaks backups and migrations, causing files moved by a privileged user (e.g., root) to become root-owned unexpectedly, which can lead to information disclosure or restricted access for the intended owners.</p></details></td>
+        <td>2026-04-22</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35350" target="_blank" rel="noopener">CVE-2026-35350</a></td>
+        <td>6.6</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-281</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.62</td>
+        <td><details><summary>The cp utility in uutils coreutils fails to properly handle setuid and setgid bi...</summary><p>The cp utility in uutils coreutils fails to properly handle setuid and setgid bits when ownership preservation fails. When copying with the -p (preserve) flag, the utility applies the source mode bits even if the chown operation is unsuccessful. This can result in a user-owned copy retaining original privileged bits, creating unexpected privileged executables that violate local security policies. This differs from GNU cp, which clears these bits when ownership cannot be preserved.</p></details></td>
+        <td>2026-04-22</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35349" target="_blank" rel="noopener">CVE-2026-35349</a></td>
+        <td>6.7</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-59</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.69</td>
+        <td><details><summary>A vulnerability in the rm utility of uutils coreutils allows a bypass of the --p...</summary><p>A vulnerability in the rm utility of uutils coreutils allows a bypass of the --preserve-root protection. The implementation uses a path-string check rather than comparing device and inode numbers to identify the root directory. An attacker or accidental user can bypass this safeguard by using a symbolic link that resolves to the root directory (e.g., /tmp/rootlink -&gt; /), potentially leading to the unintended recursive deletion of the entire root filesystem.</p></details></td>
+        <td>2026-04-22</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35348" target="_blank" rel="noopener">CVE-2026-35348</a></td>
+        <td>5.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-248</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.85</td>
+        <td><details><summary>The sort utility in uutils coreutils is vulnerable to a process panic when using...</summary><p>The sort utility in uutils coreutils is vulnerable to a process panic when using the --files0-from option with inputs containing non-UTF-8 filenames. The implementation enforces UTF-8 encoding and utilizes expect(), causing an immediate crash when encountering valid but non-UTF-8 paths. This diverges from GNU sort, which treats filenames as raw bytes. A local attacker can exploit this to crash the utility and disrupt automated pipelines.</p></details></td>
+        <td>2026-04-22</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35347" target="_blank" rel="noopener">CVE-2026-35347</a></td>
+        <td>4.4</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-20</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.08</td>
+        <td><details><summary>The comm utility in uutils coreutils incorrectly consumes data from non-regular ...</summary><p>The comm utility in uutils coreutils incorrectly consumes data from non-regular file inputs before performing comparison operations. The are_files_identical function opens and reads from both input paths to compare content without first verifying if the paths refer to regular files. If an input path is a FIFO or a pipe, this pre-read operation drains the stream, leading to silent data loss before the actual comparison logic is executed. Additionally, the utility may hang indefinitely if it attempts to pre-read from infinite streams like /dev/zero.</p></details></td>
+        <td>2026-04-22</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35346" target="_blank" rel="noopener">CVE-2026-35346</a></td>
+        <td>3.3</td>
+        <td><span class="severity low">LOW</span></td>
+        <td>CWE-176</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>2.31</td>
+        <td><details><summary>The comm utility in uutils coreutils silently corrupts data by performing lossy ...</summary><p>The comm utility in uutils coreutils silently corrupts data by performing lossy UTF-8 conversion on all output lines. The implementation uses String::from_utf8_lossy(), which replaces invalid UTF-8 byte sequences with the Unicode replacement character (U+FFFD). This behavior differs from GNU comm, which processes raw bytes and preserves the original input. This results in corrupted output when the utility is used to compare binary files or files using non-UTF-8 legacy encodings.</p></details></td>
+        <td>2026-04-22</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35345" target="_blank" rel="noopener">CVE-2026-35345</a></td>
+        <td>5.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-59</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.71</td>
+        <td><details><summary>A vulnerability in the tail utility of uutils coreutils allows for the exfiltrat...</summary><p>A vulnerability in the tail utility of uutils coreutils allows for the exfiltration of sensitive file contents when using the --follow=name option. Unlike GNU tail, the uutils implementation continues to monitor a path after it has been replaced by a symbolic link, subsequently outputting the contents of the link&#x27;s target. In environments where a privileged user (e.g., root) monitors a log directory, a local attacker with write access to that directory can replace a log file with a symlink to a sensitive system file (such as /etc/shadow), causing tail to disclose the contents of the sensitive file.</p></details></td>
+        <td>2026-04-22</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35344" target="_blank" rel="noopener">CVE-2026-35344</a></td>
+        <td>3.3</td>
+        <td><span class="severity low">LOW</span></td>
+        <td>CWE-252</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>2.31</td>
+        <td><details><summary>The dd utility in uutils coreutils suppresses errors during file truncation oper...</summary><p>The dd utility in uutils coreutils suppresses errors during file truncation operations by unconditionally calling Result::ok() on truncation attempts. While intended to mimic GNU behavior for special files like /dev/null, the uutils implementation also hides failures on regular files and directories caused by full disks or read-only file systems. This can lead to silent data corruption in backup or migration scripts, as the utility may report a successful operation even when the destination file contains old or garbage data.</p></details></td>
+        <td>2026-04-22</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35343" target="_blank" rel="noopener">CVE-2026-35343</a></td>
+        <td>3.3</td>
+        <td><span class="severity low">LOW</span></td>
+        <td>CWE-670</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>2.31</td>
+        <td><details><summary>The cut utility in uutils coreutils incorrectly handles the -s (only-delimited) ...</summary><p>The cut utility in uutils coreutils incorrectly handles the -s (only-delimited) option when a newline character is specified as the delimiter. The implementation fails to verify the only_delimited flag in the cut_fields_newline_char_delim function, causing the utility to print non-delimited lines that should have been suppressed. This can lead to unexpected data being passed to downstream scripts that rely on strict output filtering.</p></details></td>
+        <td>2026-04-22</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35342" target="_blank" rel="noopener">CVE-2026-35342</a></td>
+        <td>3.3</td>
+        <td><span class="severity low">LOW</span></td>
+        <td>CWE-377</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>2.31</td>
+        <td><details><summary>The mktemp utility in uutils coreutils fails to properly handle an empty TMPDIR ...</summary><p>The mktemp utility in uutils coreutils fails to properly handle an empty TMPDIR environment variable. Unlike GNU mktemp, which falls back to /tmp when TMPDIR is an empty string, the uutils implementation treats the empty string as a valid path. This causes temporary files to be created in the current working directory (CWD) instead of the intended secure temporary directory. If the CWD is more permissive or accessible to other users than /tmp, it may lead to unintended information disclosure or unauthorized access to temporary data.</p></details></td>
+        <td>2026-04-22</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35341" target="_blank" rel="noopener">CVE-2026-35341</a></td>
+        <td>7.1</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-732</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.97</td>
+        <td><details><summary>A vulnerability in uutils coreutils mkfifo allows for the unauthorized modificat...</summary><p>A vulnerability in uutils coreutils mkfifo allows for the unauthorized modification of permissions on existing files. When mkfifo fails to create a FIFO because a file already exists at the target path, it fails to terminate the operation for that path and continues to execute a follow-up set_permissions call. This results in the existing file&#x27;s permissions being changed to the default mode (often 644 after umask), potentially exposing sensitive files such as SSH private keys to other users on the system.</p></details></td>
+        <td>2026-04-22</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35340" target="_blank" rel="noopener">CVE-2026-35340</a></td>
+        <td>5.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-253</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.85</td>
+        <td><details><summary>A flaw in the ChownExecutor used by uutils coreutils chown and chgrp causes the ...</summary><p>A flaw in the ChownExecutor used by uutils coreutils chown and chgrp causes the utilities to return an incorrect exit code during recursive operations. The final exit code is determined only by the last file processed. If the last operation succeeds, the command returns 0 even if earlier ownership or group changes failed due to permission errors. This can lead to security misconfigurations where administrative scripts incorrectly assume that ownership has been successfully transferred across a directory tree.</p></details></td>
+        <td>2026-04-22</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35339" target="_blank" rel="noopener">CVE-2026-35339</a></td>
+        <td>5.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-253</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.85</td>
+        <td><details><summary>The recursive mode (-R) of the chmod utility in uutils coreutils incorrectly han...</summary><p>The recursive mode (-R) of the chmod utility in uutils coreutils incorrectly handles exit codes when processing multiple files. The final return value is determined solely by the success or failure of the last file processed. This allows the command to return an exit code of 0 (success) even if errors were encountered on previous files, such as &#x27;Operation not permitted&#x27;. Scripts relying on these exit codes may proceed under a false sense of success while sensitive files remain with restrictive or incorrect permissions.</p></details></td>
+        <td>2026-04-22</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35338" target="_blank" rel="noopener">CVE-2026-35338</a></td>
+        <td>7.3</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-22</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.11</td>
+        <td><details><summary>A vulnerability in the chmod utility of uutils coreutils allows users to bypass ...</summary><p>A vulnerability in the chmod utility of uutils coreutils allows users to bypass the --preserve-root safety mechanism. The implementation only validates if the target path is literally / and does not canonicalize the path. An attacker or accidental user can use path variants such as /../ or symbolic links to execute destructive recursive operations (e.g., chmod -R 000) on the entire root filesystem, leading to system-wide permission loss and potential complete system breakdown.</p></details></td>
+        <td>2026-04-22</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32885" target="_blank" rel="noopener">CVE-2026-32885</a></td>
+        <td>6.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-22</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.55</td>
+        <td><details><summary>DDEV is an open-source tool for running local web development environments for P...</summary><p>DDEV is an open-source tool for running local web development environments for PHP and Node.js. Versions prior to 1.25.2 have unsanitized extraction in both `Untar()` and `Unzip()` functions in `pkg/archive/archive.go`. Downloads and extracts archives from remote sources without path validation. Version 1.25.2 patches the issue.</p></details></td>
+        <td>2026-04-22</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-1660" target="_blank" rel="noopener">CVE-2026-1660</a></td>
+        <td>6.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-770</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.55</td>
+        <td><details><summary>GitLab has remediated an issue in GitLab CE/EE affecting all versions from 12.3 ...</summary><p>GitLab has remediated an issue in GitLab CE/EE affecting all versions from 12.3 before 18.9.6, 18.10 before 18.10.4, and 18.11 before 18.11.1 that under certain conditions could have allowed an authenticated user to cause denial of service when importing issues due to improper input validation.</p></details></td>
+        <td>2026-04-22</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-9957" target="_blank" rel="noopener">CVE-2025-9957</a></td>
+        <td>2.7</td>
+        <td><span class="severity low">LOW</span></td>
+        <td>CWE-863</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>1.89</td>
+        <td><details><summary>GitLab has remediated an issue in GitLab CE/EE affecting all versions from 11.2 ...</summary><p>GitLab has remediated an issue in GitLab CE/EE affecting all versions from 11.2 before 18.9.6, 18.10 before 18.10.4, and 18.11 before 18.11.1 that under certain conditions could have allowed an authenticated user with project owner permissions to bypass group fork prevention settings due to improper authorization checks.</p></details></td>
+        <td>2026-04-22</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-6016" target="_blank" rel="noopener">CVE-2025-6016</a></td>
+        <td>6.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-770</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.55</td>
+        <td><details><summary>GitLab has remediated an issue in GitLab CE/EE affecting all versions from 9.2 b...</summary><p>GitLab has remediated an issue in GitLab CE/EE affecting all versions from 9.2 before 18.9.6, 18.10 before 18.10.4, and 18.11 before 18.11.1 that could have allowed an authenticated user to cause denial of service due to insufficient resource allocation limits when retrieving notes under certain conditions.</p></details></td>
+        <td>2026-04-22</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-3922" target="_blank" rel="noopener">CVE-2025-3922</a></td>
+        <td>6.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-770</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.55</td>
+        <td><details><summary>GitLab has remediated an issue in GitLab CE/EE affecting all versions from 12.4 ...</summary><p>GitLab has remediated an issue in GitLab CE/EE affecting all versions from 12.4 before 18.9.6, 18.10 before 18.10.4, and 18.11 before 18.11.1 that could have allowed an authenticated user to cause denial of service by overwhelming system resources under certain conditions due to insufficient resource allocation limits in the GraphQL API.</p></details></td>
+        <td>2026-04-22</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-0186" target="_blank" rel="noopener">CVE-2025-0186</a></td>
+        <td>6.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-770</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.55</td>
+        <td><details><summary>GitLab has remediated an issue in GitLab CE/EE affecting all versions from 10.6 ...</summary><p>GitLab has remediated an issue in GitLab CE/EE affecting all versions from 10.6 before 18.9.6, 18.10 before 18.10.4, and 18.11 before 18.11.1 that could have allowed an authenticated user to cause denial of service under certain conditions by exhausting server resources by making crafted requests to a discussions endpoint.</p></details></td>
+        <td>2026-04-22</td>
+      </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-30139" target="_blank" rel="noopener">CVE-2026-30139</a></td>
         <td>6.1</td>
@@ -296,6 +1011,22 @@
         <td>2026-04-22</td>
       </tr>
       <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-41651" target="_blank" rel="noopener">CVE-2026-41651</a></td>
+        <td>8.8</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-367</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.16</td>
+        <td><details><summary>PackageKit is a a D-Bus abstraction layer that allows the user to manage package...</summary><p>PackageKit is a a D-Bus abstraction layer that allows the user to manage packages in a secure way using a cross-distro, cross-architecture API. PackageKit between and including versions 1.0.2 and 1.3.4 is vulnerable to a time-of-check time-of-use (TOCTOU) race condition on transaction flags that allows unprivileged users to install packages as root and thus leads to a local privilege escalation. This is patched in version 1.3.5.
+
+A local unprivileged user can install arbitrary RPM packages as root, including executing RPM scriptlets, without authentication. The vulnerability is a TOCTOU race condition on `transaction-&gt;cached_transaction_flags`  combined with a silent state-machine guard that discards illegal backward transitions while leaving corrupted flags in place. Three bugs exist in `src/pk-transaction.c`:
+1. Unconditional flag overwrite (line 4036): `InstallFiles()` writes caller-supplied flags to `transaction-&gt;cached_transaction_flags` without checking whether the transaction has already been  authorized/started. A second call blindly overwrites the flags even while the transaction is RUNNING.
+2. Silent state-transition rejection (lines 873–882): `pk_transaction_set_state()` silently discards backward state transitions (e.g. `RUNNING` → `WAITING_FOR_AUTH`) but the flag overwrite at step 1 already happened. The transaction continues running with corrupted flags.
+3. Late flag read at execution time (lines 2273–2277): The scheduler&#x27;s idle callback reads cached_transaction_flags at dispatch time, not at authorization time. If flags were overwritten between authorization and execution, the backend sees the attacker&#x27;s flags.</p></details></td>
+        <td>2026-04-22</td>
+      </tr>
+      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33611" target="_blank" rel="noopener">CVE-2026-33611</a></td>
         <td>6.5</td>
         <td><span class="severity medium">MEDIUM</span></td>
@@ -440,12 +1171,12 @@
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-31192" target="_blank" rel="noopener">CVE-2026-31192</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>6.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-20</td>
         <td>&nbsp;</td>
         <td>&mdash;</td>
-        <td>0.00</td>
+        <td>4.55</td>
         <td><details><summary>Insufficient validation of Chrome extension identifiers in Raindrop.io Bookmark ...</summary><p>Insufficient validation of Chrome extension identifiers in Raindrop.io Bookmark Manager Web App 5.6.76.0 allows attackers to obtain sensitive user data via a crafted request.</p></details></td>
         <td>2026-04-22</td>
       </tr>
@@ -662,7 +1393,7 @@
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33601" target="_blank" rel="noopener">CVE-2026-33601</a></td>
         <td>4.4</td>
         <td><span class="severity medium">MEDIUM</span></td>
-        <td>N/A</td>
+        <td>CWE-476</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p4</small></td>
         <td>3.08</td>
@@ -673,7 +1404,7 @@
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33600" target="_blank" rel="noopener">CVE-2026-33600</a></td>
         <td>4.4</td>
         <td><span class="severity medium">MEDIUM</span></td>
-        <td>N/A</td>
+        <td>CWE-476</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p4</small></td>
         <td>3.08</td>
@@ -684,7 +1415,7 @@
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33262" target="_blank" rel="noopener">CVE-2026-33262</a></td>
         <td>5.9</td>
         <td><span class="severity medium">MEDIUM</span></td>
-        <td>N/A</td>
+        <td>CWE-476</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p5</small></td>
         <td>4.13</td>
@@ -695,7 +1426,7 @@
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33261" target="_blank" rel="noopener">CVE-2026-33261</a></td>
         <td>5.9</td>
         <td><span class="severity medium">MEDIUM</span></td>
-        <td>N/A</td>
+        <td>CWE-353</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p5</small></td>
         <td>4.13</td>
@@ -706,7 +1437,7 @@
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33260" target="_blank" rel="noopener">CVE-2026-33260</a></td>
         <td>5.3</td>
         <td><span class="severity medium">MEDIUM</span></td>
-        <td>N/A</td>
+        <td>CWE-770</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p1</small></td>
         <td>3.71</td>
@@ -717,7 +1448,7 @@
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33259" target="_blank" rel="noopener">CVE-2026-33259</a></td>
         <td>5.0</td>
         <td><span class="severity medium">MEDIUM</span></td>
-        <td>N/A</td>
+        <td>CWE-416</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p0</small></td>
         <td>3.50</td>
@@ -728,7 +1459,7 @@
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33258" target="_blank" rel="noopener">CVE-2026-33258</a></td>
         <td>5.3</td>
         <td><span class="severity medium">MEDIUM</span></td>
-        <td>N/A</td>
+        <td>CWE-770</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p1</small></td>
         <td>3.71</td>
@@ -739,7 +1470,7 @@
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33257" target="_blank" rel="noopener">CVE-2026-33257</a></td>
         <td>5.3</td>
         <td><span class="severity medium">MEDIUM</span></td>
-        <td>N/A</td>
+        <td>CWE-770</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p1</small></td>
         <td>3.71</td>
@@ -750,7 +1481,7 @@
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33256" target="_blank" rel="noopener">CVE-2026-33256</a></td>
         <td>5.3</td>
         <td><span class="severity medium">MEDIUM</span></td>
-        <td>N/A</td>
+        <td>CWE-770</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p1</small></td>
         <td>3.71</td>
@@ -1311,7 +2042,7 @@
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-22754" target="_blank" rel="noopener">CVE-2026-22754</a></td>
         <td>7.5</td>
         <td><span class="severity high">HIGH</span></td>
-        <td>N/A</td>
+        <td>CWE-284</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p8</small></td>
         <td>5.25</td>
@@ -1322,7 +2053,7 @@
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-22753" target="_blank" rel="noopener">CVE-2026-22753</a></td>
         <td>7.5</td>
         <td><span class="severity high">HIGH</span></td>
-        <td>N/A</td>
+        <td>CWE-693</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p14</small></td>
         <td>5.25</td>
@@ -1333,11 +2064,23 @@
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-22748" target="_blank" rel="noopener">CVE-2026-22748</a></td>
         <td>5.3</td>
         <td><span class="severity medium">MEDIUM</span></td>
-        <td>N/A</td>
+        <td>CWE-20</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p8</small></td>
         <td>3.71</td>
         <td><details><summary>Vulnerability in Spring Spring Security. When an application configures JWT deco...</summary><p>Vulnerability in Spring Spring Security. When an application configures JWT decoding with NimbusJwtDecoder  or NimbusReactiveJwtDecoder, it must configure an OAuth2TokenValidator&lt;Jwt&gt; separately, for example by calling setJwtValidator.This issue affects Spring Security: from 6.3.0 through 6.3.14, from 6.4.0 through 6.4.14, from 6.5.0 through 6.5.9, from 7.0.0 through 7.0.4.</p></details></td>
+        <td>2026-04-22</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-22747" target="_blank" rel="noopener">CVE-2026-22747</a></td>
+        <td>6.8</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-297</td>
+        <td>&nbsp;</td>
+        <td>0.0% <small>p4</small></td>
+        <td>4.76</td>
+        <td><details><summary>Vulnerability in Spring Spring Security. SubjectX500PrincipalExtractor does not ...</summary><p>Vulnerability in Spring Spring Security. SubjectX500PrincipalExtractor does not correctly handle certain malformed X.509 certificate CN values, which can lead to reading the wrong value for the username. In a carefully crafted certificate, this can lead to an attacker impersonating another user.
+This issue affects Spring Security: from 7.0.0 through 7.0.4.</p></details></td>
         <td>2026-04-22</td>
       </tr>
       <tr>
@@ -2785,7 +3528,7 @@
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34287" target="_blank" rel="noopener">CVE-2026-34287</a></td>
         <td>9.1</td>
         <td><span class="severity critical">CRITICAL</span></td>
-        <td>N/A</td>
+        <td>CWE-284</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p8</small></td>
         <td>6.37</td>
@@ -2818,7 +3561,7 @@
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34284" target="_blank" rel="noopener">CVE-2026-34284</a></td>
         <td>6.1</td>
         <td><span class="severity medium">MEDIUM</span></td>
-        <td>N/A</td>
+        <td>CWE-284</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p7</small></td>
         <td>4.27</td>
@@ -4300,6 +5043,34 @@
         <td>2026-04-21</td>
       </tr>
       <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-15638" target="_blank" rel="noopener">CVE-2025-15638</a></td>
+        <td>10.0</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>NVD-CWE-noinfo</td>
+        <td>&nbsp;</td>
+        <td>0.0% <small>p2</small></td>
+        <td>7.00</td>
+        <td><details><summary>Net::Dropbear versions before 0.14 for Perl contains a vulnerable version of lib...</summary><p>Net::Dropbear versions before 0.14 for Perl contains a vulnerable version of libtomcrypt.
+
+Net::Dropbear versions before 0.14 includes versions of Dropbear 2019.78 or earlier. These include versions of libtomcrypt v1.18.1 or earlier, which is affected by CVE-2016-6129 and CVE-2018-12437.</p></details></td>
+        <td>2026-04-21</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2017-20230" target="_blank" rel="noopener">CVE-2017-20230</a></td>
+        <td>10.0</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-121</td>
+        <td>&nbsp;</td>
+        <td>0.0% <small>p8</small></td>
+        <td>7.00</td>
+        <td><details><summary>Storable versions before 3.05 for Perl has a stack overflow.
+
+The retrieve_hook ...</summary><p>Storable versions before 3.05 for Perl has a stack overflow.
+
+The retrieve_hook function stored the length of the class name into a signed integer but in read operations treated the length as unsigned. This allowed an attacker to craft data that could trigger the overflow.</p></details></td>
+        <td>2026-04-21</td>
+      </tr>
+      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5789" target="_blank" rel="noopener">CVE-2026-5789</a></td>
         <td>8.5</td>
         <td><span class="severity high">HIGH</span></td>
@@ -4385,20 +5156,6 @@
         <td>0.0% <small>p12</small></td>
         <td>4.55</td>
         <td><details><summary>User‑Controlled HTTP Header in Fortra&#x27;s GoAnywhere MFT prior to version 7.10.0 a...</summary><p>User‑Controlled HTTP Header in Fortra&#x27;s GoAnywhere MFT prior to version 7.10.0 allows attackers to trigger a DNS lookup, as well as DNS Rebinding and Information Disclosure.</p></details></td>
-        <td>2026-04-21</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-0972" target="_blank" rel="noopener">CVE-2026-0972</a></td>
-        <td>5.4</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-74</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p10</small></td>
-        <td>3.78</td>
-        <td><details><summary>HTML injection is possible in system generated emails in Fortra&#x27;s GoAnywhere MFT...</summary><p>HTML injection is possible in system generated emails in Fortra&#x27;s GoAnywhere MFT prior to 7.10.0.
-
-
-Note: The title, details, and description of this CVE were corrected post-publishing.</p></details></td>
         <td>2026-04-21</td>
       </tr>
       <tr>
@@ -5136,6 +5893,18 @@ Note: The title, details, and description of this CVE were corrected post-publis
         <td>0.0% <small>p2</small></td>
         <td>4.97</td>
         <td><details><summary>Apktool is a tool for reverse engineering Android APK files. In versions 3.0.0 a...</summary><p>Apktool is a tool for reverse engineering Android APK files. In versions 3.0.0 and 3.0.1, a path traversal vulnerability in `brut/androlib/res/decoder/ResFileDecoder.java` allows a maliciously crafted APK to write arbitrary files to the filesystem during standard decoding (`apktool d`). This is a security regression introduced in commit e10a045 (PR #4041, December 12, 2025), which removed the `BrutIO.sanitizePath()` call that previously prevented path traversal in resource file output paths. An attacker can embed `../` sequences in the `resources.arsc` Type String Pool to escape the output directory and write files to arbitrary locations, including `~/.ssh/config`, `~/.bashrc`, or Windows Startup folders, escalating to RCE. The fix in version 3.0.2 re-introduces `BrutIO.sanitizePath()` in `ResFileDecoder.java` before file write operations.</p></details></td>
+        <td>2026-04-21</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39886" target="_blank" rel="noopener">CVE-2026-39886</a></td>
+        <td>5.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-190</td>
+        <td>&nbsp;</td>
+        <td>0.0% <small>p11</small></td>
+        <td>3.71</td>
+        <td><details><summary>OpenEXR provides the specification and reference implementation of the EXR file ...</summary><p>OpenEXR provides the specification and reference implementation of the EXR file format, an image storage format for the motion picture industry. Versions 3.4.0 through 3.4.9 have a signed integer overflow vulnerability in OpenEXR&#x27;s HTJ2K (High-Throughput JPEG 2000) decompression path. The `ht_undo_impl()` function in `src/lib/OpenEXRCore/internal_ht.cpp` accumulates a bytes-per-line value (`bpl`) using a 32-bit signed integer with no overflow guard. A crafted EXR file with 16,385 FLOAT channels at the HTJ2K maximum width of 32,767 causes `bpl` to overflow `INT_MAX`, producing undefined behavior confirmed by UBSan. On an
+allocator-permissive host where the required ~64 GB allocation succeeds, the wrapped negative `bpl` value would subsequently be used as a per-scanline pointer advance, which would produce a heap out-of-bounds write. On a memory-constrained host, the allocation fails before `ht_undo_impl()` is entered. This is the second distinct integer overflow in `ht_undo_impl()`. CVE-2026-34545 addressed a different overflow in the same function — the `int16_t p` pixel-loop counter at line ~302 that overflows when iterating over channels whose `width` exceeds 32,767. The CVE-2026-34545 fix did not touch the `int bpl` accumulator at line 211, which is the subject of this advisory. The `bpl` accumulator was also not addressed by any of the 8 advisories in the 2026-04-05 v3.4.9 release batch. This finding is structurally identical to CVE-2026-34588 (PIZ `wcount*nx` overflow in `internal_piz.c`) and should be remediated with the same pattern. The CVE-2026-34588 fix did not touch `internal_ht.cpp`. Version 3.4.10 contains a remediation that addresses the vulnerability in `internal_ht.cpp`.</p></details></td>
         <td>2026-04-21</td>
       </tr>
       <tr>
@@ -42829,7 +43598,7 @@ Note: The title, details, and description of this CVE were corrected post-publis
       </div>
     </section>
     <section>
-      <h2>Previous Month — March 2026 <span class="count">(5734)</span></h2>
+      <h2>Previous Month — March 2026 <span class="count">(5735)</span></h2>
       <div class="table-wrapper">
         <table>
           <thead>
@@ -47101,6 +47870,19 @@ Note: The title, details, and description of this CVE were corrected post-publis
         <td>2.9% <small>p86</small></td>
         <td>3.80</td>
         <td><details><summary>A vulnerability was identified in Totolink A3300R 17.0.0cu.557_b20221024. This a...</summary><p>A vulnerability was identified in Totolink A3300R 17.0.0cu.557_b20221024. This affects the function setLanCfg of the file /cgi-bin/cstecgi.cgi of the component Parameter Handler. The manipulation of the argument lanIp leads to command injection. Remote exploitation of the attack is possible. The exploit is publicly available and might be used.</p></details></td>
+        <td>2026-03-29</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4176" target="_blank" rel="noopener">CVE-2026-4176</a></td>
+        <td>9.8</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>NVD-CWE-Other</td>
+        <td>&nbsp;</td>
+        <td>0.0% <small>p7</small></td>
+        <td>6.86</td>
+        <td><details><summary>Perl versions from 5.9.4 before 5.40.4-RC1, from 5.41.0 before 5.42.2-RC1, from ...</summary><p>Perl versions from 5.9.4 before 5.40.4-RC1, from 5.41.0 before 5.42.2-RC1, from 5.43.0 before 5.43.9 contain a vulnerable version of Compress::Raw::Zlib.
+
+Compress::Raw::Zlib is included in the Perl package as a dual-life core module, and is vulnerable to CVE-2026-3381 due to a vendored version of zlib which has several vulnerabilities, including CVE-2026-27171. The bundled Compress::Raw::Zlib was updated to version 2.221 in Perl blead commit c75ae9cc164205e1b6d6dbd57bd2c65c8593fe94.</p></details></td>
         <td>2026-03-29</td>
       </tr>
       <tr>
@@ -80424,13 +81206,13 @@ Note: The title, details, and description of this CVE were corrected post-publis
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-22199" target="_blank" rel="noopener">CVE-2026-22199</a></td>
-        <td>6.9</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-290</td>
+        <td>8.7</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-22</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p11</small></td>
-        <td>4.83</td>
-        <td><details><summary>wpDiscuz before 7.6.47 contains a vote manipulation vulnerability that allows at...</summary><p>wpDiscuz before 7.6.47 contains a vote manipulation vulnerability that allows attackers to manipulate comment votes by obtaining fresh nonces and bypassing rate limiting through client-controlled headers. Attackers can vary User-Agent headers to reset rate limits, request nonces from the unauthenticated wpdGetNonce endpoint, and vote multiple times using IP rotation or reverse proxy header manipulation.</p></details></td>
+        <td>6.09</td>
+        <td><details><summary>Voltronic Power SNMP Web Pro version 1.1 contains a pre-authentication path trav...</summary><p>Voltronic Power SNMP Web Pro version 1.1 contains a pre-authentication path traversal vulnerability in the upload.cgi endpoint that allows unauthenticated attackers to read arbitrary files on the device filesystem by supplying directory traversal sequences in the params parameter. Attackers can exploit this vulnerability to disclose sensitive files such as password hashes, which can be cracked offline to obtain root-level access and enable full system compromise.</p></details></td>
         <td>2026-03-13</td>
       </tr>
       <tr>
@@ -80446,24 +81228,24 @@ Note: The title, details, and description of this CVE were corrected post-publis
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-22192" target="_blank" rel="noopener">CVE-2026-22192</a></td>
-        <td>6.3</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-79</td>
+        <td>8.8</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-306</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p3</small></td>
-        <td>4.41</td>
-        <td><details><summary>wpDiscuz before 7.6.47 contains a stored cross-site scripting vulnerability that...</summary><p>wpDiscuz before 7.6.47 contains a stored cross-site scripting vulnerability that allows authenticated attackers to inject malicious JavaScript by importing a crafted options file with unescaped customCss field values. Attackers can supply a malicious JSON import file containing script payloads in the customCss parameter that execute on every page when rendered through the options handler without proper sanitization.</p></details></td>
+        <td>6.16</td>
+        <td><details><summary>Voltronic Power SNMP Web Pro version 1.1 contains an authentication bypass vulne...</summary><p>Voltronic Power SNMP Web Pro version 1.1 contains an authentication bypass vulnerability that allows unauthenticated attackers to access privileged management functions by manipulating browser localStorage values. Attackers can modify client-side authentication state to bypass server-side access controls and gain unauthorized access to protected management functionality without valid credentials.</p></details></td>
         <td>2026-03-13</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-22191" target="_blank" rel="noopener">CVE-2026-22191</a></td>
-        <td>6.9</td>
+        <td>5.1</td>
         <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-94</td>
+        <td>CWE-1336</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p12</small></td>
-        <td>4.83</td>
-        <td><details><summary>wpDiscuz before 7.6.47 contains a shortcode injection vulnerability that allows ...</summary><p>wpDiscuz before 7.6.47 contains a shortcode injection vulnerability that allows attackers to execute arbitrary shortcodes by including them in comment content sent via email notifications. Attackers can inject shortcodes like [contact-form-7] or [user_meta] in comments, which are executed server-side when the WpdiscuzHelperEmail class processes notifications through do_shortcode() before wp_mail().</p></details></td>
+        <td>3.57</td>
+        <td><details><summary>Beghelli Sicuro24 SicuroWeb contains a template injection vulnerability that all...</summary><p>Beghelli Sicuro24 SicuroWeb contains a template injection vulnerability that allows attackers to inject arbitrary AngularJS expressions by exploiting improper rendering of untrusted input in AngularJS template contexts. Attackers can inject malicious expressions that are compiled and executed by the AngularJS 1.5.2 runtime to achieve arbitrary JavaScript execution in operator browser sessions, with network-adjacent attackers able to deliver payloads via MITM injection in plaintext HTTP deployments.</p></details></td>
         <td>2026-03-13</td>
       </tr>
       <tr>
