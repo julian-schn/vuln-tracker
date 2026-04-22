@@ -11,7 +11,7 @@
     <header>
       <h1>vuln-tracker</h1>
       <p class="subtitle">CVEs from the National Vulnerability Database — current and previous month</p>
-      <p class="last-updated">Last updated: 2026-04-22 06:03 UTC</p>
+      <p class="last-updated">Last updated: 2026-04-22 09:26 UTC</p>
     </header>
     <nav>
       <a href="top50.html">&#9733; Top 50</a>
@@ -25,7 +25,7 @@
     </nav>
     <main>
     <section>
-      <h2>Current Month — April 2026 <span class="count">(3769)</span></h2>
+      <h2>Current Month — April 2026 <span class="count">(3833)</span></h2>
       <div class="table-wrapper">
         <table>
           <thead>
@@ -42,6 +42,768 @@
             </tr>
           </thead>
           <tbody>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6846" target="_blank" rel="noopener">CVE-2026-6846</a></td>
+        <td>7.8</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-122</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.46</td>
+        <td><details><summary>A flaw was found in binutils. A heap-buffer-overflow vulnerability exists when p...</summary><p>A flaw was found in binutils. A heap-buffer-overflow vulnerability exists when processing a specially crafted XCOFF (Extended Common Object File Format) object file during linking. A local attacker could trick a user into processing this malicious file, which could lead to arbitrary code execution, allowing the attacker to run unauthorized commands, or cause a denial of service, making the system unavailable.</p></details></td>
+        <td>2026-04-22</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6845" target="_blank" rel="noopener">CVE-2026-6845</a></td>
+        <td>5.0</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-476</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.50</td>
+        <td><details><summary>A flaw was found in binutils, specifically within the `readelf` utility. This vu...</summary><p>A flaw was found in binutils, specifically within the `readelf` utility. This vulnerability allows a local attacker to cause a Denial of Service (DoS) by tricking a user into processing a specially crafted Executable and Linkable Format (ELF) file. The exploitation of this flaw can lead to the system becoming unresponsive due to excessive resource consumption or a program crash.</p></details></td>
+        <td>2026-04-22</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6844" target="_blank" rel="noopener">CVE-2026-6844</a></td>
+        <td>5.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-400</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.85</td>
+        <td><details><summary>A flaw was found in the `readelf` utility of the binutils package. A local attac...</summary><p>A flaw was found in the `readelf` utility of the binutils package. A local attacker could exploit two Denial of Service (DoS) vulnerabilities by providing a specially crafted Executable and Linkable Format (ELF) file. One vulnerability, a resource exhaustion (CWE-400), can lead to an out-of-memory condition. The other, a null pointer dereference (CWE-476), can cause a segmentation fault. Both issues can result in the `readelf` utility becoming unresponsive or crashing, leading to a denial of service.</p></details></td>
+        <td>2026-04-22</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6843" target="_blank" rel="noopener">CVE-2026-6843</a></td>
+        <td>5.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-134</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.85</td>
+        <td><details><summary>A flaw was found in nano. A local user could exploit a format string vulnerabili...</summary><p>A flaw was found in nano. A local user could exploit a format string vulnerability in the `statusline()` function. By creating a directory with a name containing `printf` specifiers, the application attempts to display this name, leading to a segmentation fault (SEGV). This results in a Denial of Service (DoS) for the `nano` application.</p></details></td>
+        <td>2026-04-22</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6396" target="_blank" rel="noopener">CVE-2026-6396</a></td>
+        <td>4.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-352</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.01</td>
+        <td><details><summary>The Fast &amp; Fancy Filter – 3F plugin for WordPress is vulnerable to Cross-Site Re...</summary><p>The Fast &amp; Fancy Filter – 3F plugin for WordPress is vulnerable to Cross-Site Request Forgery in versions up to and including 1.2.2. This is due to missing nonce verification in the saveFields() function, which handles the fff_save_settins AJAX action. This makes it possible for unauthenticated attackers to modify plugin filter settings, update arbitrary options, or create new filter posts via a forged request granted they can trick a site administrator into performing an action such as clicking on a link.</p></details></td>
+        <td>2026-04-22</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6294" target="_blank" rel="noopener">CVE-2026-6294</a></td>
+        <td>4.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-352</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.01</td>
+        <td><details><summary>The Google PageRank Display plugin for WordPress is vulnerable to Cross-Site Req...</summary><p>The Google PageRank Display plugin for WordPress is vulnerable to Cross-Site Request Forgery in versions up to and including 1.4. This is due to missing nonce validation in the gpdisplay_option() function, which handles the plugin settings page. The settings form does not include a wp_nonce_field(), and the form handler does not call check_admin_referer() or wp_verify_nonce() before processing the POST request. This makes it possible for unauthenticated attackers to trick a logged-in administrator into submitting a crafted request that changes the plugin&#x27;s settings (stored via update_option()), such as the display style used to render the PageRank badge.</p></details></td>
+        <td>2026-04-22</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6246" target="_blank" rel="noopener">CVE-2026-6246</a></td>
+        <td>6.4</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.48</td>
+        <td><details><summary>The Simple Random Posts Shortcode plugin for WordPress is vulnerable to Stored C...</summary><p>The Simple Random Posts Shortcode plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the &#x27;container_right_width&#x27; attribute of the &#x27;simple_random_posts&#x27; shortcode in all versions up to, and including, 0.3 due to insufficient input sanitization and output escaping on user supplied attributes. This makes it possible for authenticated attackers, with contributor-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.</p></details></td>
+        <td>2026-04-22</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6236" target="_blank" rel="noopener">CVE-2026-6236</a></td>
+        <td>6.4</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.48</td>
+        <td><details><summary>The Posts map plugin for WordPress is vulnerable to Stored Cross-Site Scripting ...</summary><p>The Posts map plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the &#x27;name&#x27; shortcode attribute in all versions up to, and including, 0.1.3 due to insufficient input sanitization and output escaping on user supplied attributes. This makes it possible for authenticated attackers, with contributor-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.</p></details></td>
+        <td>2026-04-22</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6235" target="_blank" rel="noopener">CVE-2026-6235</a></td>
+        <td>9.8</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.86</td>
+        <td><details><summary>The Sendmachine for WordPress plugin for WordPress is vulnerable to authorizatio...</summary><p>The Sendmachine for WordPress plugin for WordPress is vulnerable to authorization bypass via the &#x27;manage_admin_requests&#x27; function in all versions up to, and including, 1.0.20. This is due to the plugin not properly verifying that a user is authorized to perform an action. This makes it possible for unauthenticated attackers to overwrite the plugin&#x27;s SMTP configuration, which can be leveraged to intercept all outbound emails from the site (including password reset emails).</p></details></td>
+        <td>2026-04-22</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6041" target="_blank" rel="noopener">CVE-2026-6041</a></td>
+        <td>4.4</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.08</td>
+        <td><details><summary>The Buzz Comments plugin for WordPress is vulnerable to Stored Cross-Site Script...</summary><p>The Buzz Comments plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the &#x27;Custom Buzz Avatar&#x27; (buzz_comments_avatar_image) setting in all versions up to, and including, 0.9.4. This is due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with Administrator-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses the plugin settings page.</p></details></td>
+        <td>2026-04-22</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5820" target="_blank" rel="noopener">CVE-2026-5820</a></td>
+        <td>6.4</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.48</td>
+        <td><details><summary>The Zypento Blocks plugin for WordPress is vulnerable to Stored Cross-Site Scrip...</summary><p>The Zypento Blocks plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the Table of Contents block in all versions up to, and including, 1.0.6. This is due to the front-end TOC rendering script reading heading text via `innerText` and inserting it into the page using `innerHTML` without proper sanitization. This makes it possible for authenticated attackers, with Author-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.</p></details></td>
+        <td>2026-04-22</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5767" target="_blank" rel="noopener">CVE-2026-5767</a></td>
+        <td>6.4</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.48</td>
+        <td><details><summary>The SlideShowPro SC plugin for WordPress is vulnerable to Stored Cross-Site Scri...</summary><p>The SlideShowPro SC plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the plugin&#x27;s `slideShowProSC` shortcode in all versions up to, and including, 1.0.2 due to insufficient input sanitization and output escaping on user supplied attributes. This makes it possible for authenticated attackers, with contributor-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.</p></details></td>
+        <td>2026-04-22</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5748" target="_blank" rel="noopener">CVE-2026-5748</a></td>
+        <td>6.4</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.48</td>
+        <td><details><summary>The Text Snippets plugin for WordPress is vulnerable to Stored Cross-Site Script...</summary><p>The Text Snippets plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the plugin&#x27;s `ts` shortcode in all versions up to, and including, 0.0.1 due to insufficient input sanitization and output escaping on user supplied attributes. This makes it possible for authenticated attackers, with contributor-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.</p></details></td>
+        <td>2026-04-22</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4353" target="_blank" rel="noopener">CVE-2026-4353</a></td>
+        <td>6.4</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.48</td>
+        <td><details><summary>The CI HUB Connector plugin for WordPress is vulnerable to Stored Cross-Site Scr...</summary><p>The CI HUB Connector plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the &#x27;id&#x27; attribute of the `cihub_metadata` shortcode in all versions up to, and including, 1.2.106 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with Contributor-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.</p></details></td>
+        <td>2026-04-22</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4280" target="_blank" rel="noopener">CVE-2026-4280</a></td>
+        <td>6.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-22</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.55</td>
+        <td><details><summary>The Breaking News WP plugin for WordPress is vulnerable to Local File Inclusion ...</summary><p>The Breaking News WP plugin for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 1.3. This is due to the brnwp_ajax_form AJAX endpoint lacking both authorization checks and CSRF verification, combined with insufficient path validation when the brnwp_theme option value is passed directly to an include() statement in the brnwp_show_breaking_news_wp() shortcode handler. While sanitize_text_field() is applied to user input, it does not strip directory traversal sequences (../). This makes it possible for authenticated attackers, with Subscriber-level access and above, to overwrite the brnwp_theme option with a directory traversal payload (e.g., ../../../../etc/passwd) and subsequently trigger file inclusion of arbitrary files on the server when the shortcode is rendered.</p></details></td>
+        <td>2026-04-22</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4279" target="_blank" rel="noopener">CVE-2026-4279</a></td>
+        <td>6.4</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.48</td>
+        <td><details><summary>The Bread &amp; Butter plugin for WordPress is vulnerable to Stored Cross-Site Scrip...</summary><p>The Bread &amp; Butter plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the &#x27;breadbutter-customevent-button&#x27; shortcode in all versions up to, and including, 8.2.0.25. This is due to insufficient input sanitization and output escaping on the &#x27;event&#x27; shortcode attribute. The customEventShortCodeButton() function takes the &#x27;event&#x27; attribute value and directly interpolates it into a JavaScript string within an onclick HTML attribute without applying esc_attr() or esc_js(). Notably, the sister function customEventShortCode() properly uses esc_js() for the same attribute, but this was omitted in the button variant. This makes it possible for authenticated attackers, with Contributor-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses the page and clicks the injected button.</p></details></td>
+        <td>2026-04-22</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4142" target="_blank" rel="noopener">CVE-2026-4142</a></td>
+        <td>4.4</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.08</td>
+        <td><details><summary>The Sentence To SEO (keywords, description and tags) plugin for WordPress is vul...</summary><p>The Sentence To SEO (keywords, description and tags) plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the &#x27;Permanent keywords&#x27; field in all versions up to and including 1.0. This is due to insufficient input sanitization and output escaping. The plugin reads user input via filter_input_array(INPUT_POST) which applies no HTML sanitization (FILTER_DEFAULT), stores it unsanitized to the WordPress options table via update_option(), and then outputs the stored value directly into a textarea element without any escaping using PHP short echo tags (&lt;?= ?&gt;). An attacker can break out of the textarea element using a closing &lt;/textarea&gt; tag and inject arbitrary HTML/JavaScript. This makes it possible for authenticated attackers, with administrator-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses the plugin&#x27;s settings page.</p></details></td>
+        <td>2026-04-22</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4140" target="_blank" rel="noopener">CVE-2026-4140</a></td>
+        <td>4.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-352</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.01</td>
+        <td><details><summary>The Ni WooCommerce Order Export plugin for WordPress is vulnerable to Cross-Site...</summary><p>The Ni WooCommerce Order Export plugin for WordPress is vulnerable to Cross-Site Request Forgery in all versions up to and including 3.1.6. This is due to missing nonce validation in the ni_order_export_action() AJAX handler function. The handler processes settings updates when the &#x27;page&#x27; parameter is set to &#x27;nioe-order-settings&#x27;, delegating to Ni_Order_Setting::page_ajax() which calls update_option(&#x27;ni_order_export_option&#x27;, $_REQUEST) without verifying any nonce or checking user capabilities. This makes it possible for unauthenticated attackers to modify the plugin&#x27;s settings via a forged request, granted they can trick a site administrator into performing an action such as clicking a link.</p></details></td>
+        <td>2026-04-22</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4139" target="_blank" rel="noopener">CVE-2026-4139</a></td>
+        <td>4.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-352</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.01</td>
+        <td><details><summary>The mCatFilter plugin for WordPress is vulnerable to Cross-Site Request Forgery ...</summary><p>The mCatFilter plugin for WordPress is vulnerable to Cross-Site Request Forgery in all versions up to and including 0.5.2. This is due to the complete absence of nonce verification and capability checks in the compute_post() function, which processes settings updates. The compute_post() function is called in the plugin constructor on every page load via the plugins_loaded hook, and it directly processes $_POST data to modify plugin settings via update_option() without any CSRF token validation. This makes it possible for unauthenticated attackers to modify all plugin settings, including category exclusion rules, feed exclusion flags, and tag page exclusion flags, via a forged POST request, granted they can trick a site administrator into performing an action such as clicking a link.</p></details></td>
+        <td>2026-04-22</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4138" target="_blank" rel="noopener">CVE-2026-4138</a></td>
+        <td>4.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-352</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.01</td>
+        <td><details><summary>The DX Unanswered Comments plugin for WordPress is vulnerable to Cross-Site Requ...</summary><p>The DX Unanswered Comments plugin for WordPress is vulnerable to Cross-Site Request Forgery in all versions up to, and including, 1.7. This is due to missing nonce validation on the plugin&#x27;s settings form in the dxuc-unanswered-comments-admin-page.php file. This makes it possible for unauthenticated attackers to modify plugin settings (dxuc_authors_list and dxuc_comment_count) via a forged request granted they can trick a site administrator into performing an action such as clicking on a link.</p></details></td>
+        <td>2026-04-22</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4133" target="_blank" rel="noopener">CVE-2026-4133</a></td>
+        <td>4.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-352</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.01</td>
+        <td><details><summary>The TextP2P Texting Widget plugin for WordPress is vulnerable to Cross-Site Requ...</summary><p>The TextP2P Texting Widget plugin for WordPress is vulnerable to Cross-Site Request Forgery in all versions up to and including 1.7. This is due to missing nonce validation in the imTextP2POptionPage() function which processes settings updates. The form at line 314 does not include a wp_nonce_field(), and the POST handler at line 7 does not call check_admin_referer() or wp_verify_nonce() before processing settings changes. This makes it possible for unauthenticated attackers to update all plugin settings including chat widget titles, messages, API credentials, colors, and reCAPTCHA configuration via a forged request, granted they can trick a site administrator into performing an action such as clicking a link.</p></details></td>
+        <td>2026-04-22</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4132" target="_blank" rel="noopener">CVE-2026-4132</a></td>
+        <td>7.2</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-73</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.04</td>
+        <td><details><summary>The HTTP Headers plugin for WordPress is vulnerable to External Control of File ...</summary><p>The HTTP Headers plugin for WordPress is vulnerable to External Control of File Name or Path leading to Remote Code Execution in all versions up to and including 1.19.2. This is due to insufficient validation of the file path stored in the &#x27;hh_htpasswd_path&#x27; option and lack of sanitization on the &#x27;hh_www_authenticate_user&#x27; option value. The plugin allows administrators to set an arbitrary file path for the htpasswd file location and does not validate that the path has a safe file extension (e.g., restricting to .htpasswd). Additionally, the username field used for HTTP Basic Authentication is written directly into the file without sanitization. The apache_auth_credentials() function constructs the file content using the unsanitized username via sprintf(&#x27;%s:{SHA}%s&#x27;, $user, ...), and update_auth_credentials() writes this content to the attacker-controlled path via file_put_contents(). This makes it possible for authenticated attackers, with Administrator-level access and above, to write arbitrary content (including PHP code) to arbitrary file paths on the server, effectively achieving Remote Code Execution.</p></details></td>
+        <td>2026-04-22</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4131" target="_blank" rel="noopener">CVE-2026-4131</a></td>
+        <td>6.1</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-352</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.27</td>
+        <td><details><summary>The WP Responsive Popup + Optin plugin for WordPress is vulnerable to Cross-Site...</summary><p>The WP Responsive Popup + Optin plugin for WordPress is vulnerable to Cross-Site Request Forgery in all versions up to and including 1.4. This is due to the settings form on the admin page (wpo_admin_page.php) lacking nonce generation (wp_nonce_field) and verification (wp_verify_nonce/check_admin_referer). This makes it possible for unauthenticated attackers to update all plugin settings including the &#x27;wpo_image_url&#x27; parameter via a forged request, granted they can trick a site administrator into performing an action such as clicking a link.</p></details></td>
+        <td>2026-04-22</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4128" target="_blank" rel="noopener">CVE-2026-4128</a></td>
+        <td>4.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.01</td>
+        <td><details><summary>The TP Restore Categories And Taxonomies plugin for WordPress is vulnerable to M...</summary><p>The TP Restore Categories And Taxonomies plugin for WordPress is vulnerable to Missing Authorization in all versions up to, and including, 1.0.1. The delete_term() function, which handles the &#x27;tpmcattt_delete_term&#x27; AJAX action, does not perform any capability check (e.g., current_user_can()) to verify the user has sufficient permissions. While it does verify a nonce via check_ajax_referer(), this nonce is generated for all authenticated users via the admin_enqueue_scripts hook and exposed on any wp-admin page (including profile.php, which subscribers can access). This makes it possible for authenticated attackers, with Subscriber-level access and above, to permanently delete taxonomy term records from the plugin&#x27;s trash/backup tables by sending a crafted AJAX request with a valid nonce and an arbitrary term_id.</p></details></td>
+        <td>2026-04-22</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4126" target="_blank" rel="noopener">CVE-2026-4126</a></td>
+        <td>4.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-200</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.01</td>
+        <td><details><summary>The Table Manager plugin for WordPress is vulnerable to Sensitive Information Ex...</summary><p>The Table Manager plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 1.0.0 via the &#x27;table_manager&#x27; shortcode. The shortcode handler `tablemanager_render_table_shortcode()` takes a user-controlled `table` attribute, applies only `sanitize_key()` for sanitization, and concatenates the value with `$wpdb-&gt;prefix` to form a full database table name. It then executes `DESC` and `SELECT *` queries against this table and renders all rows and columns to the frontend. There is no allowlist check to ensure only plugin-created tables can be accessed — the `tablemanager_created_tables` option is only referenced in admin functions, never in the shortcode handler. This makes it possible for authenticated attackers, with Contributor-level access and above, to extract sensitive data from arbitrary WordPress database tables.</p></details></td>
+        <td>2026-04-22</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4125" target="_blank" rel="noopener">CVE-2026-4125</a></td>
+        <td>6.4</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.48</td>
+        <td><details><summary>The WPMK Block plugin for WordPress is vulnerable to Stored Cross-Site Scripting...</summary><p>The WPMK Block plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the &#x27;class&#x27; shortcode attribute in all versions up to and including 1.0.1. This is due to insufficient input sanitization and output escaping on user-supplied shortcode attributes. Specifically, in the wpmk_block_shortcode() function, the &#x27;class&#x27; attribute is extracted from user-controllable shortcode attributes and directly concatenated into an HTML div element&#x27;s class attribute without any escaping (e.g., esc_attr()). This makes it possible for authenticated attackers, with Contributor-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.</p></details></td>
+        <td>2026-04-22</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4121" target="_blank" rel="noopener">CVE-2026-4121</a></td>
+        <td>4.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-352</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.01</td>
+        <td><details><summary>The Kcaptcha plugin for WordPress is vulnerable to Cross-Site Request Forgery in...</summary><p>The Kcaptcha plugin for WordPress is vulnerable to Cross-Site Request Forgery in all versions up to and including 1.0.1. This is due to missing nonce validation in the plugin&#x27;s settings page handler (admin/setting.php). The settings form does not include a wp_nonce_field() and the form processing code does not call wp_verify_nonce() or check_admin_referer() before saving settings to the database via $wpdb-&gt;update(). This makes it possible for unauthenticated attackers to modify the plugin&#x27;s CAPTCHA settings (enabling or disabling CAPTCHA on login, registration, lost password, and comment forms) via a forged request, granted they can trick a site administrator into performing an action such as clicking a link.</p></details></td>
+        <td>2026-04-22</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4119" target="_blank" rel="noopener">CVE-2026-4119</a></td>
+        <td>9.1</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.37</td>
+        <td><details><summary>The Create DB Tables plugin for WordPress is vulnerable to authorization bypass ...</summary><p>The Create DB Tables plugin for WordPress is vulnerable to authorization bypass in all versions up to and including 1.2.1. The plugin registers admin_post action hooks for creating tables (admin_post_add_table) and deleting tables (admin_post_delete_db_table) without implementing any capability checks via current_user_can() or nonce verification via wp_verify_nonce()/check_admin_referer(). The admin_post hook only requires the user to be logged in, meaning any authenticated user including Subscribers can access these endpoints. The cdbt_delete_db_table() function takes a user-supplied table name from $_POST[&#x27;db_table&#x27;] and executes a DROP TABLE SQL query, allowing any authenticated attacker to delete any database table including critical WordPress core tables such as wp_users or wp_options. The cdbt_create_new_table() function similarly allows creating arbitrary tables. This makes it possible for authenticated attackers, with Subscriber-level access and above, to create arbitrary database tables and delete any existing database table, potentially destroying the entire WordPress installation.</p></details></td>
+        <td>2026-04-22</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4118" target="_blank" rel="noopener">CVE-2026-4118</a></td>
+        <td>4.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-352</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.01</td>
+        <td><details><summary>The Call To Action Plugin plugin for WordPress is vulnerable to Cross-Site Reque...</summary><p>The Call To Action Plugin plugin for WordPress is vulnerable to Cross-Site Request Forgery in all versions up to, and including, 3.1.3. This is due to missing nonce validation in the cbox_options_page() function which handles saving, creating, and deleting plugin settings. The form rendered on the settings page does not include a wp_nonce_field(), and the save handler does not call wp_verify_nonce() or check_admin_referer() before processing settings updates via $wpdb-&gt;update(). This makes it possible for unauthenticated attackers to modify plugin settings such as call-to-action box title, content, link URL, image URL, colors, and other configuration options via a forged request, granted they can trick a site administrator into performing an action such as clicking on a link.</p></details></td>
+        <td>2026-04-22</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4117" target="_blank" rel="noopener">CVE-2026-4117</a></td>
+        <td>5.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.71</td>
+        <td><details><summary>The CalJ plugin for WordPress is vulnerable to Missing Authorization in all vers...</summary><p>The CalJ plugin for WordPress is vulnerable to Missing Authorization in all versions up to, and including, 1.5. This is due to a missing capability check in the CalJSettingsPage class constructor, which processes the &#x27;save-obtained-key&#x27; operation directly from POST data without verifying that the requesting user has the &#x27;manage_options&#x27; capability, and without any nonce verification. The plugin bootstrap file (calj.php) instantiates CalJSettingsPage whenever is_admin() returns true, which is the case for any authenticated user making requests to wp-admin URLs (including admin-ajax.php). This makes it possible for authenticated attackers, with Subscriber-level access and above, to modify the plugin&#x27;s API key setting and clear the Shabbat cache, effectively taking control of the plugin&#x27;s API integration.</p></details></td>
+        <td>2026-04-22</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4090" target="_blank" rel="noopener">CVE-2026-4090</a></td>
+        <td>6.1</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-352</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.27</td>
+        <td><details><summary>The Inquiry Cart plugin for WordPress is vulnerable to Cross-Site Request Forger...</summary><p>The Inquiry Cart plugin for WordPress is vulnerable to Cross-Site Request Forgery in all versions up to, and including, 3.4.2. This is due to missing nonce verification in the rd_ic_settings_page function when processing settings form submissions. This makes it possible for unauthenticated attackers to update the plugin&#x27;s settings, including injecting malicious scripts that will be stored and executed in the admin area, via a forged request granted they can trick an administrator into performing an action such as clicking on a link.</p></details></td>
+        <td>2026-04-22</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4089" target="_blank" rel="noopener">CVE-2026-4089</a></td>
+        <td>6.4</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.48</td>
+        <td><details><summary>The Twittee Text Tweet plugin for WordPress is vulnerable to Stored Cross-Site S...</summary><p>The Twittee Text Tweet plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the &#x27;id&#x27; shortcode attribute in all versions up to and including 1.0.8. This is due to insufficient input sanitization and output escaping on user-supplied shortcode attributes. The ttt_twittee_tweeter() function uses extract() to pull shortcode attributes into local variables and then directly concatenates them into HTML output without any escaping. Specifically, the $id parameter is inserted into an HTML id attribute context without esc_attr(), allowing an attacker to break out of the attribute and inject arbitrary HTML event handlers. Additionally, the $tweet, $content, $balloon, and $theme attributes are similarly injected into inline JavaScript without escaping (lines 87, 93, 101, 117). This makes it possible for authenticated attackers, with Contributor-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.</p></details></td>
+        <td>2026-04-22</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4088" target="_blank" rel="noopener">CVE-2026-4088</a></td>
+        <td>6.4</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.48</td>
+        <td><details><summary>The Switch CTA Box plugin for WordPress is vulnerable to Stored Cross-Site Scrip...</summary><p>The Switch CTA Box plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the &#x27;wppw_cta_box&#x27; shortcode in all versions up to, and including, 1.1. This is due to insufficient input sanitization and output escaping on user-supplied post meta values including &#x27;cta_box_button_link&#x27;, &#x27;cta_box_button_id&#x27;, &#x27;cta_box_button_text&#x27;, and &#x27;cta_box_description&#x27;. The shortcode reads post meta from a user-specified post ID and echoes these values directly into HTML output without any escaping functions (no esc_attr(), esc_url(), or esc_html()). This makes it possible for authenticated attackers, with contributor-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.</p></details></td>
+        <td>2026-04-22</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4085" target="_blank" rel="noopener">CVE-2026-4085</a></td>
+        <td>6.4</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.48</td>
+        <td><details><summary>The Easy Social Photos Gallery plugin for WordPress is vulnerable to Stored Cros...</summary><p>The Easy Social Photos Gallery plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the &#x27;wrapper_class&#x27; shortcode attribute of the &#x27;my-instagram-feed&#x27; shortcode in all versions up to, and including, 3.1.2. This is due to insufficient input sanitization and output escaping on user supplied attributes. Specifically, the plugin uses sanitize_text_field() instead of esc_attr() when outputting the &#x27;wrapper_class&#x27; attribute inside a double-quoted HTML class attribute. Since sanitize_text_field() does not encode double quotes, an attacker can break out of the class attribute and inject arbitrary HTML event handlers. This makes it possible for authenticated attackers, with contributor-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.</p></details></td>
+        <td>2026-04-22</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4082" target="_blank" rel="noopener">CVE-2026-4082</a></td>
+        <td>6.4</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.48</td>
+        <td><details><summary>The ER Swiffy Insert plugin for WordPress is vulnerable to Stored Cross-Site Scr...</summary><p>The ER Swiffy Insert plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the [swiffy] shortcode in all versions up to and including 1.0.0. This is due to insufficient input sanitization and output escaping on user-supplied shortcode attributes (&#x27;n&#x27;, &#x27;w&#x27;, &#x27;h&#x27;). These attributes are extracted using extract() and directly interpolated into the HTML output without any escaping such as esc_attr(). This makes it possible for authenticated attackers, with Contributor-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.</p></details></td>
+        <td>2026-04-22</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4076" target="_blank" rel="noopener">CVE-2026-4076</a></td>
+        <td>6.4</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.48</td>
+        <td><details><summary>The Slider Bootstrap Carousel plugin for WordPress is vulnerable to Stored Cross...</summary><p>The Slider Bootstrap Carousel plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the &#x27;category&#x27; and &#x27;template&#x27; shortcode attributes in all versions up to and including 1.0.7. This is due to insufficient input sanitization and output escaping on user-supplied shortcode attributes. The plugin uses extract() on shortcode_atts() to parse attributes, then directly outputs the $category variable into multiple HTML attributes (id, data-target, href) on lines 38, 47, 109, and 113 without applying esc_attr(). Similarly, the $template attribute flows into a class attribute on line 93 without escaping. This makes it possible for authenticated attackers, with Contributor-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.</p></details></td>
+        <td>2026-04-22</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4074" target="_blank" rel="noopener">CVE-2026-4074</a></td>
+        <td>6.4</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.48</td>
+        <td><details><summary>The Quran Live Multilanguage plugin for WordPress is vulnerable to Stored Cross-...</summary><p>The Quran Live Multilanguage plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the &#x27;cheikh&#x27; and &#x27;lang&#x27; shortcode attributes in all versions up to, and including, 1.0.3. This is due to insufficient input sanitization and output escaping on user-supplied shortcode attributes. The quran_live_render() function of quran-live.php receives shortcode attributes and passes them directly through shortcode_atts() and extract() without any sanitization. These values are then passed to Render_Quran_Live::render_verse_quran_live() where they are echoed directly into inline &lt;script&gt; blocks using PHP short tags (&lt;?=$cheikh;?&gt; and &lt;?=$lang;?&gt;) at lines 191, 216, 217, 245, and 246 of Class_QuranLive.php. Since the output occurs inside a JavaScript context within &lt;script&gt; tags, an attacker can break out of the JavaScript string and inject arbitrary script code. This makes it possible for authenticated attackers, with Contributor-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.</p></details></td>
+        <td>2026-04-22</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-3362" target="_blank" rel="noopener">CVE-2026-3362</a></td>
+        <td>4.4</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.08</td>
+        <td><details><summary>The Short Comment Filter plugin for WordPress is vulnerable to Stored Cross-Site...</summary><p>The Short Comment Filter plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the &#x27;Minimum Count&#x27; settings field in all versions up to and including 2.2. This is due to insufficient input sanitization (no sanitize callback on register_setting) and missing output escaping (no esc_attr() on the echoed value in the input&#x27;s value attribute). The option value is stored via update_option() and rendered unescaped in an HTML attribute context. This makes it possible for authenticated attackers, with administrator-level access and above, to inject arbitrary web scripts in the settings page that will execute whenever a user accesses that page. This is particularly impactful in WordPress multisite installations or when DISALLOW_UNFILTERED_HTML is set, where administrators are not granted the unfiltered_html capability.</p></details></td>
+        <td>2026-04-22</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-31433" target="_blank" rel="noopener">CVE-2026-31433</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>In the Linux kernel, the following vulnerability has been resolved:
+
+ksmbd: fix ...</summary><p>In the Linux kernel, the following vulnerability has been resolved:
+
+ksmbd: fix potencial OOB in get_file_all_info() for compound requests
+
+When a compound request consists of QUERY_DIRECTORY + QUERY_INFO
+(FILE_ALL_INFORMATION) and the first command consumes nearly the entire
+max_trans_size, get_file_all_info() would blindly call smbConvertToUTF16()
+with PATH_MAX, causing out-of-bounds write beyond the response buffer.
+In get_file_all_info(), there was a missing validation check for
+the client-provided OutputBufferLength before copying the filename into
+FileName field of the smb2_file_all_info structure.
+If the filename length exceeds the available buffer space, it could lead to
+potential buffer overflows or memory corruption during smbConvertToUTF16
+conversion. This calculating the actual free buffer size using
+smb2_calc_max_out_buf_len() and returning -EINVAL if the buffer is
+insufficient and updating smbConvertToUTF16 to use the actual filename
+length (clamped by PATH_MAX) to ensure a safe copy operation.</p></details></td>
+        <td>2026-04-22</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-31432" target="_blank" rel="noopener">CVE-2026-31432</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>In the Linux kernel, the following vulnerability has been resolved:
+
+ksmbd: fix ...</summary><p>In the Linux kernel, the following vulnerability has been resolved:
+
+ksmbd: fix OOB write in QUERY_INFO for compound requests
+
+When a compound request such as READ + QUERY_INFO(Security) is received,
+and the first command (READ) consumes most of the response buffer,
+ksmbd could write beyond the allocated buffer while building a security
+descriptor.
+
+The root cause was that smb2_get_info_sec() checked buffer space using
+ppntsd_size from xattr, while build_sec_desc() often synthesized a
+significantly larger descriptor from POSIX ACLs.
+
+This patch introduces smb_acl_sec_desc_scratch_len() to accurately
+compute the final descriptor size beforehand, performs proper buffer
+checking with smb2_calc_max_out_buf_len(), and uses exact-sized
+allocation + iov pinning.</p></details></td>
+        <td>2026-04-22</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-31431" target="_blank" rel="noopener">CVE-2026-31431</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>In the Linux kernel, the following vulnerability has been resolved:
+
+crypto: alg...</summary><p>In the Linux kernel, the following vulnerability has been resolved:
+
+crypto: algif_aead - Revert to operating out-of-place
+
+This mostly reverts commit 72548b093ee3 except for the copying of
+the associated data.
+
+There is no benefit in operating in-place in algif_aead since the
+source and destination come from different mappings.  Get rid of
+all the complexity added for in-place operation and just copy the
+AD directly.</p></details></td>
+        <td>2026-04-22</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-2719" target="_blank" rel="noopener">CVE-2026-2719</a></td>
+        <td>4.4</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.08</td>
+        <td><details><summary>The Private WP suite plugin for WordPress is vulnerable to Stored Cross-Site Scr...</summary><p>The Private WP suite plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the &#x27;Exceptions&#x27; setting in all versions up to, and including, 0.4.1. This is due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with Administrator-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page. This only affects multi-site installations and installations where unfiltered_html has been disabled.</p></details></td>
+        <td>2026-04-22</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-2717" target="_blank" rel="noopener">CVE-2026-2717</a></td>
+        <td>5.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-93</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.85</td>
+        <td><details><summary>The HTTP Headers plugin for WordPress is vulnerable to CRLF Injection in all ver...</summary><p>The HTTP Headers plugin for WordPress is vulnerable to CRLF Injection in all versions up to, and including, 1.19.2. This is due to insufficient sanitization of custom header name and value fields before writing them to the Apache .htaccess file via `insert_with_markers()`. This makes it possible for authenticated attackers, with Administrator-level access and above, to inject arbitrary newline characters and additional Apache directives into the .htaccess configuration file via the &#x27;Custom Headers&#x27; settings, leading to Apache configuration parse errors and potential site-wide denial of service.</p></details></td>
+        <td>2026-04-22</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-2714" target="_blank" rel="noopener">CVE-2026-2714</a></td>
+        <td>4.4</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.08</td>
+        <td><details><summary>The Institute Management plugin for WordPress is vulnerable to Stored Cross-Site...</summary><p>The Institute Management plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the &#x27;Enquiry Form Title&#x27; setting in all versions up to, and including, 5.5. This is due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with Administrator-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page. This only affects multi-site installations and installations where unfiltered_html has been disabled.</p></details></td>
+        <td>2026-04-22</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-1845" target="_blank" rel="noopener">CVE-2026-1845</a></td>
+        <td>5.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.85</td>
+        <td><details><summary>The Real Estate Pro plugin for WordPress is vulnerable to Stored Cross-Site Scri...</summary><p>The Real Estate Pro plugin for WordPress is vulnerable to Stored Cross-Site Scripting via admin settings in all versions up to, and including, 1.0.9 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with administrator-level permissions and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page. This only affects multi-site installations and installations where unfiltered_html has been disabled.</p></details></td>
+        <td>2026-04-22</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-1379" target="_blank" rel="noopener">CVE-2026-1379</a></td>
+        <td>4.4</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.08</td>
+        <td><details><summary>The HTTP Headers plugin for WordPress is vulnerable to Stored Cross-Site Scripti...</summary><p>The HTTP Headers plugin for WordPress is vulnerable to Stored Cross-Site Scripting via admin settings in all versions up to, and including, 1.19.2 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with administrator-level permissions and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page. This only affects multi-site installations and installations where unfiltered_html has been disabled.</p></details></td>
+        <td>2026-04-22</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6842" target="_blank" rel="noopener">CVE-2026-6842</a></td>
+        <td>2.5</td>
+        <td><span class="severity low">LOW</span></td>
+        <td>CWE-732</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>1.75</td>
+        <td><details><summary>A flaw was found in nano. In environments with permissive umask settings, a loca...</summary><p>A flaw was found in nano. In environments with permissive umask settings, a local attacker can exploit incorrect directory permissions (0777 instead of 0700) for the `~/.local` directory. This allows the attacker to inject a malicious `.desktop` launcher, which could lead to unintended actions or information disclosure if the launcher is subsequently processed.</p></details></td>
+        <td>2026-04-22</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6023" target="_blank" rel="noopener">CVE-2026-6023</a></td>
+        <td>8.1</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-502</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.67</td>
+        <td><details><summary>In Progress® Telerik® UI for AJAX versions 2024.4.1114 through 2026.1.421, the R...</summary><p>In Progress® Telerik® UI for AJAX versions 2024.4.1114 through 2026.1.421, the RadFilter control is vulnerable to insecure deserialization when restoring filter state if the state is exposed to the client. If an attacker tampers with this state, a server-side remote code execution is possible.</p></details></td>
+        <td>2026-04-22</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6022" target="_blank" rel="noopener">CVE-2026-6022</a></td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-400</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.25</td>
+        <td><details><summary>In Progress® Telerik® UI for AJAX prior to 2026.1.421, RadAsyncUpload contains a...</summary><p>In Progress® Telerik® UI for AJAX prior to 2026.1.421, RadAsyncUpload contains an uncontrolled resource consumption vulnerability that allows file uploads to exceed the configured maximum size due to missing cumulative size enforcement during chunk reassembly, leading to disk space exhaustion.</p></details></td>
+        <td>2026-04-22</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40542" target="_blank" rel="noopener">CVE-2026-40542</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-304</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Missing critical step in authentication in Apache HttpClient 5.6 allows an attac...</summary><p>Missing critical step in authentication in Apache HttpClient 5.6 allows an attacker to cause the client to accept SCRAM-SHA-256 authentication without proper mutual authentication verification. Users are recommended to upgrade to version 5.6.1, which fixes this issue.</p></details></td>
+        <td>2026-04-22</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6840" target="_blank" rel="noopener">CVE-2026-6840</a></td>
+        <td>5.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-129</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.85</td>
+        <td><details><summary>Missing bounds validation for operator could  allow out of range operator-code l...</summary><p>Missing bounds validation for operator could  allow out of range operator-code lookup during model loading
+Affected version is prior to commit  1.30.0.</p></details></td>
+        <td>2026-04-22</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6839" target="_blank" rel="noopener">CVE-2026-6839</a></td>
+        <td>6.6</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-1284</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.62</td>
+        <td><details><summary>Improper validation of STRING tensor offsets could allows malformed string metad...</summary><p>Improper validation of STRING tensor offsets could allows malformed string metadata to trigger out of bounds access during constant tensor import in Samsung Open Source ONE
+Affected version is prior to commit  1.30.0.</p></details></td>
+        <td>2026-04-22</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-41667" target="_blank" rel="noopener">CVE-2026-41667</a></td>
+        <td>6.6</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-190</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.62</td>
+        <td><details><summary>Integer overflow in constant tensor data size calculation in Samsung Open Source...</summary><p>Integer overflow in constant tensor data size calculation in Samsung Open Source ONE could cause incorrect buffer sizing for large constant nodes.
+Affected version is prior to commit  1.30.0.</p></details></td>
+        <td>2026-04-22</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-41666" target="_blank" rel="noopener">CVE-2026-41666</a></td>
+        <td>6.6</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-190</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.62</td>
+        <td><details><summary>Integer overflow in tensor copy size calculation in Samsung Open Source ONE coul...</summary><p>Integer overflow in tensor copy size calculation in Samsung Open Source ONE could lead to out of bounds access during loop state propagation.
+Affected version is prior to commit  1.30.0.</p></details></td>
+        <td>2026-04-22</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-41665" target="_blank" rel="noopener">CVE-2026-41665</a></td>
+        <td>6.1</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-190</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.27</td>
+        <td><details><summary>Integer overflow in scratch buffer initialization size calculation in Samsung Op...</summary><p>Integer overflow in scratch buffer initialization size calculation in Samsung Open Source ONE cause incorrect memory initialization for large intermediate tensors.
+Affected version is prior to commit  1.30.0.</p></details></td>
+        <td>2026-04-22</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-41664" target="_blank" rel="noopener">CVE-2026-41664</a></td>
+        <td>6.6</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-190</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.62</td>
+        <td><details><summary>Integer overflow in memory copy size calculation in Samsung Open Source ONE coul...</summary><p>Integer overflow in memory copy size calculation in Samsung Open Source ONE could lead to invalid memory operations with large tensor shapes.
+Affected version is prior to commit  1.30.0.</p></details></td>
+        <td>2026-04-22</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40450" target="_blank" rel="noopener">CVE-2026-40450</a></td>
+        <td>6.6</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-190</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.62</td>
+        <td><details><summary>Integer overflow in output tensor copy size calculation in Samsung Open Source O...</summary><p>Integer overflow in output tensor copy size calculation in Samsung Open Source ONE could cause incorrect copy length and memory corruption for oversized tensors.
+Affected version is prior to commit  1.30.0.</p></details></td>
+        <td>2026-04-22</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40449" target="_blank" rel="noopener">CVE-2026-40449</a></td>
+        <td>6.6</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-190</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.62</td>
+        <td><details><summary>Integer overflow in buffer size calculation could result in out of bounds memory...</summary><p>Integer overflow in buffer size calculation could result in out of bounds memory access when handling large tensors in Samsung Open Source ONE.
+Affected version is prior to commit  1.30.0.</p></details></td>
+        <td>2026-04-22</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40448" target="_blank" rel="noopener">CVE-2026-40448</a></td>
+        <td>5.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-190</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.71</td>
+        <td><details><summary>Potential Integer overflow in tensor allocation size calculation could lead to i...</summary><p>Potential Integer overflow in tensor allocation size calculation could lead to insufficient memory allocation for large tensors in Samsung Open Source ONE.
+Affected version is prior to commit  1.30.0.</p></details></td>
+        <td>2026-04-22</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-22754" target="_blank" rel="noopener">CVE-2026-22754</a></td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.25</td>
+        <td><details><summary>Vulnerability in Spring Spring Security. If an application uses &lt;sec:intercept-u...</summary><p>Vulnerability in Spring Spring Security. If an application uses &lt;sec:intercept-url servlet-path=&quot;/servlet-path&quot; pattern=&quot;/endpoint/**&quot;/&gt; to define the servlet path for computing a path matcher, then the servlet path is not included and the related authorization rules are not exercised. This can lead to an authorization bypass.This issue affects Spring Security: from 7.0.0 through 7.0.4.</p></details></td>
+        <td>2026-04-22</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-22753" target="_blank" rel="noopener">CVE-2026-22753</a></td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.25</td>
+        <td><details><summary>Vulnerability in Spring Spring Security. If an application is using securityMatc...</summary><p>Vulnerability in Spring Spring Security. If an application is using securityMatchers(String) and a PathPatternRequestMatcher.Builder bean to prepend a servlet path, matching requests to that filter chain may fail and its related security components will not be exercised as intended by the application. This can lead to the authentication, authorization, and other security controls being rendered inactive on intended requests.This issue affects Spring Security: from 7.0.0 through 7.0.4.</p></details></td>
+        <td>2026-04-22</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-22748" target="_blank" rel="noopener">CVE-2026-22748</a></td>
+        <td>5.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.71</td>
+        <td><details><summary>Vulnerability in Spring Spring Security. When an application configures JWT deco...</summary><p>Vulnerability in Spring Spring Security. When an application configures JWT decoding with NimbusJwtDecoder  or NimbusReactiveJwtDecoder, it must configure an OAuth2TokenValidator&lt;Jwt&gt; separately, for example by calling setJwtValidator.This issue affects Spring Security: from 6.3.0 through 6.3.14, from 6.4.0 through 6.4.14, from 6.5.0 through 6.5.9, from 7.0.0 through 7.0.4.</p></details></td>
+        <td>2026-04-22</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-22747" target="_blank" rel="noopener">CVE-2026-22747</a></td>
+        <td>6.8</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.76</td>
+        <td><details><summary>Vulnerability in Spring Spring Security. SubjectX500PrincipalExtractor does not ...</summary><p>Vulnerability in Spring Spring Security. SubjectX500PrincipalExtractor does not correctly handle certain malformed X.509 certificate CN values, which can lead to reading the wrong value for the username. In a carefully crafted certificate, this can lead to an attacker impersonating another user.
+This issue affects Spring Security: from 7.0.0 through 7.0.4.</p></details></td>
+        <td>2026-04-22</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-22746" target="_blank" rel="noopener">CVE-2026-22746</a></td>
+        <td>3.7</td>
+        <td><span class="severity low">LOW</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>2.59</td>
+        <td><details><summary>Vulnerability in Spring Spring Security. If an application is using the UserDeta...</summary><p>Vulnerability in Spring Spring Security. If an application is using the UserDetails#isEnabled, #isAccountNonExpired, or #isAccountNonLocked user attributes, to enable, expire, or lock users, then DaoAuthenticationProvider&#x27;s timing attack defense can be bypassed for users who are disabled, expired, or locked.This issue affects Spring Security: from 5.7.0 through 5.7.22, from 5.8.0 through 5.8.24, from 6.3.0 through 6.3.15, from 6.5.0 through 6.5.9, from 7.0.0 through 7.0.4.</p></details></td>
+        <td>2026-04-22</td>
+      </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40451" target="_blank" rel="noopener">CVE-2026-40451</a></td>
         <td>5.1</td>
