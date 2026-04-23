@@ -1,9 +1,16 @@
 # CVEs — April 2026
 
-_4055 vulnerabilities_
+_4062 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
+| [CVE-2026-6903](https://nvd.nist.gov/vuln/detail/CVE-2026-6903) | 8.7 | HIGH | CWE-22 | No | — | 6.09 | 2026-04-23 | The LabOne Web Server, backing the LabOne User Interface, contains insufficient input validation in its file access func... |
+| [CVE-2026-6887](https://nvd.nist.gov/vuln/detail/CVE-2026-6887) | 9.3 | CRITICAL | CWE-89 | No | — | 6.51 | 2026-04-23 | Borg SPM 2007 (Sales Ended in 2008) developed by BorG Technology Corporation has a SQL Injection vulnerability, allowing... |
+| [CVE-2026-6886](https://nvd.nist.gov/vuln/detail/CVE-2026-6886) | 9.3 | CRITICAL | CWE-1390 | No | — | 6.51 | 2026-04-23 | Borg SPM 2007 (Sales Ended in 2008) developed by BorG Technology Corporation has a Authentication Bypass vulnerability,... |
+| [CVE-2026-6885](https://nvd.nist.gov/vuln/detail/CVE-2026-6885) | 9.3 | CRITICAL | CWE-434 | No | — | 6.51 | 2026-04-23 | Borg SPM 2007 (Sales Ended in 2008) developed by BorG Technology Corporation has an Arbitrary File Upload vulnerability,... |
+| [CVE-2026-5464](https://nvd.nist.gov/vuln/detail/CVE-2026-5464) | 7.2 | HIGH | CWE-862 | No | — | 5.04 | 2026-04-23 | The ExactMetrics – Google Analytics Dashboard for WordPress (Website Stats Plugin) plugin for WordPress is vulnerable to... |
+| [CVE-2026-3960](https://nvd.nist.gov/vuln/detail/CVE-2026-3960) | 5.9 | MEDIUM | CWE-94 | No | — | 4.13 | 2026-04-23 | A critical remote code execution vulnerability exists in the unauthenticated REST API endpoint /99/ImportSQLTable in H2O... |
+| [CVE-2026-3259](https://nvd.nist.gov/vuln/detail/CVE-2026-3259) | 7.1 | HIGH | CWE-209 | No | — | 4.97 | 2026-04-23 | A Generation of Error Message Containing Sensitive Information vulnerability in the Materialized View Refresh mechanism... |
 | [CVE-2026-41564](https://nvd.nist.gov/vuln/detail/CVE-2026-41564) | 0.0 | NONE | CWE-335 | No | — | 0.00 | 2026-04-23 | CryptX versions before 0.088 for Perl do not reseed the Crypt::PK PRNG state after forking.  The Crypt::PK::RSA, Crypt::... |
 | [CVE-2026-4512](https://nvd.nist.gov/vuln/detail/CVE-2026-4512) | 0.0 | NONE | N/A | No | — | 0.00 | 2026-04-23 | The reCaptcha by WebDesignBy WordPress plugin before 2.0 does not sanitize or escape the Site Key setting before outputt... |
 | [CVE-2026-4106](https://nvd.nist.gov/vuln/detail/CVE-2026-4106) | 0.0 | NONE | N/A | No | — | 0.00 | 2026-04-23 | The HT Mega Addons for Elementor  WordPress plugin before 3.0.7 contains an unauthenticated AJAX action returning some P... |

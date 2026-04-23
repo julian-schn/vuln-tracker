@@ -11,7 +11,7 @@
     <header>
       <h1>vuln-tracker</h1>
       <p class="subtitle">CVEs from the National Vulnerability Database — current and previous month</p>
-      <p class="last-updated">Last updated: 2026-04-23 09:49 UTC</p>
+      <p class="last-updated">Last updated: 2026-04-23 11:14 UTC</p>
     </header>
     <nav>
       <a href="top50.html">&#9733; Top 50</a>
@@ -25,7 +25,7 @@
     </nav>
     <main>
     <section>
-      <h2>Current Month — April 2026 <span class="count">(4055)</span></h2>
+      <h2>Current Month — April 2026 <span class="count">(4062)</span></h2>
       <div class="table-wrapper">
         <table>
           <thead>
@@ -42,6 +42,89 @@
             </tr>
           </thead>
           <tbody>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6903" target="_blank" rel="noopener">CVE-2026-6903</a></td>
+        <td>8.7</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-22</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.09</td>
+        <td><details><summary>The LabOne Web Server, backing the LabOne User Interface, contains insufficient ...</summary><p>The LabOne Web Server, backing the LabOne User Interface, contains insufficient input validation in its file access functionality. An unauthenticated attacker could exploit this vulnerability to read arbitrary files on the host system that are accessible to the operating system user running the LabOne software.
+
+Additionally, the Web Server does not sufficiently restrict cross-origin requests, which could allow a remote attacker to trigger file access from a victim&#x27;s browser by directing the victim to a malicious website.
+
+The vulnerability is only exploitable when the LabOne Web Server is running. Installations using only the LabOne APIs without starting the Web Server are not exposed.</p></details></td>
+        <td>2026-04-23</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6887" target="_blank" rel="noopener">CVE-2026-6887</a></td>
+        <td>9.3</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-89</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.51</td>
+        <td><details><summary>Borg SPM 2007 (Sales Ended in 2008) developed by BorG Technology Corporation has...</summary><p>Borg SPM 2007 (Sales Ended in 2008) developed by BorG Technology Corporation has a SQL Injection vulnerability, allowing unauthenticated remote attackers to inject arbitrary SQL commands to read, modify, and delete database contents.</p></details></td>
+        <td>2026-04-23</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6886" target="_blank" rel="noopener">CVE-2026-6886</a></td>
+        <td>9.3</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-1390</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.51</td>
+        <td><details><summary>Borg SPM 2007 (Sales Ended in 2008) developed by BorG Technology Corporation has...</summary><p>Borg SPM 2007 (Sales Ended in 2008) developed by BorG Technology Corporation has a Authentication Bypass vulnerability, allowing unauthenticated remote attackers to log into the system as any user.</p></details></td>
+        <td>2026-04-23</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6885" target="_blank" rel="noopener">CVE-2026-6885</a></td>
+        <td>9.3</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-434</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.51</td>
+        <td><details><summary>Borg SPM 2007 (Sales Ended in 2008) developed by BorG Technology Corporation has...</summary><p>Borg SPM 2007 (Sales Ended in 2008) developed by BorG Technology Corporation has an Arbitrary File Upload vulnerability, allowing unauthenticated remote attackers to upload and execute web shell backdoors, thereby enabling arbitrary code execution on the server.</p></details></td>
+        <td>2026-04-23</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5464" target="_blank" rel="noopener">CVE-2026-5464</a></td>
+        <td>7.2</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.04</td>
+        <td><details><summary>The ExactMetrics – Google Analytics Dashboard for WordPress (Website Stats Plugi...</summary><p>The ExactMetrics – Google Analytics Dashboard for WordPress (Website Stats Plugin) plugin for WordPress is vulnerable to unauthorized arbitrary plugin installation and activation in all versions up to, and including, 9.1.2. This is due to the reports page exposing the &#x27;onboarding_key&#x27; transient to any user with the &#x27;exactmetrics_view_dashboard&#x27; capability. This key is the sole authorization gate for the &#x27;/wp-json/exactmetrics/v1/onboarding/connect-url&#x27; REST endpoint, which returns a one-time hash (OTH) token. This OTH token is then the only credential checked by the &#x27;exactmetrics_connect_process&#x27; AJAX endpoint — which has no capability check, no nonce verification, and accepts an arbitrary plugin ZIP URL via the file parameter for installation and activation. This makes it possible for authenticated attackers, with Editor-level access and above granted the report viewing permission, to install and activate arbitrary plugins from attacker-controlled URLs, leading to Remote Code Execution.</p></details></td>
+        <td>2026-04-23</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-3960" target="_blank" rel="noopener">CVE-2026-3960</a></td>
+        <td>5.9</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-94</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.13</td>
+        <td><details><summary>A critical remote code execution vulnerability exists in the unauthenticated RES...</summary><p>A critical remote code execution vulnerability exists in the unauthenticated REST API endpoint /99/ImportSQLTable in H2O-3 version 3.46.0.9 and prior. The vulnerability arises due to insufficient security controls in the parameter blacklist mechanism, which only targets MySQL JDBC driver-specific dangerous parameters. An attacker can bypass these controls by switching the JDBC URL protocol to jdbc:postgresql: and exploiting PostgreSQL JDBC driver-specific parameters such as socketFactory and socketFactoryArg. This allows unauthenticated attackers to execute arbitrary code on the H2O-3 server with the privileges of the H2O-3 process. The issue is resolved in version 3.46.0.10.</p></details></td>
+        <td>2026-04-23</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-3259" target="_blank" rel="noopener">CVE-2026-3259</a></td>
+        <td>7.1</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-209</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.97</td>
+        <td><details><summary>A Generation of Error Message Containing Sensitive Information vulnerability in ...</summary><p>A Generation of Error Message Containing Sensitive Information vulnerability in the Materialized View Refresh mechanism in Google BigQuery on Google Cloud Platform allows an authenticated user to potentially disclose sensitive data using a crafted materialized view that triggers a runtime error during the refresh process.
+
+This vulnerability was patched on 29 January 2026, and no customer action is needed.</p></details></td>
+        <td>2026-04-23</td>
+      </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-41564" target="_blank" rel="noopener">CVE-2026-41564</a></td>
         <td>0.0</td>
