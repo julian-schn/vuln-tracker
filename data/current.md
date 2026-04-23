@@ -1,9 +1,15 @@
 # CVEs — April 2026
 
-_4049 vulnerabilities_
+_4055 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
+| [CVE-2026-41564](https://nvd.nist.gov/vuln/detail/CVE-2026-41564) | 0.0 | NONE | CWE-335 | No | — | 0.00 | 2026-04-23 | CryptX versions before 0.088 for Perl do not reseed the Crypt::PK PRNG state after forking.  The Crypt::PK::RSA, Crypt::... |
+| [CVE-2026-4512](https://nvd.nist.gov/vuln/detail/CVE-2026-4512) | 0.0 | NONE | N/A | No | — | 0.00 | 2026-04-23 | The reCaptcha by WebDesignBy WordPress plugin before 2.0 does not sanitize or escape the Site Key setting before outputt... |
+| [CVE-2026-4106](https://nvd.nist.gov/vuln/detail/CVE-2026-4106) | 0.0 | NONE | N/A | No | — | 0.00 | 2026-04-23 | The HT Mega Addons for Elementor  WordPress plugin before 3.0.7 contains an unauthenticated AJAX action returning some P... |
+| [CVE-2026-41040](https://nvd.nist.gov/vuln/detail/CVE-2026-41040) | 8.7 | HIGH | CWE-1333 | No | — | 6.09 | 2026-04-23 | GROWI provided by GROWI, Inc. is vulnerable to a regular expression denial of service (ReDoS) via a crafted input string... |
+| [CVE-2026-34488](https://nvd.nist.gov/vuln/detail/CVE-2026-34488) | 7.0 | HIGH | CWE-427 | No | — | 4.90 | 2026-04-23 | IP Setting Software contains an issue with the DLL search path, which may lead to insecurely loading Dynamic Link Librar... |
+| [CVE-2025-10549](https://nvd.nist.gov/vuln/detail/CVE-2025-10549) | 0.0 | NONE | CWE-427 | No | — | 0.00 | 2026-04-23 | EfficientLab Controlio before v1.3.95 contains a DLL hijacking vulnerability caused by weak folder permissions in the in... |
 | [CVE-2026-41990](https://nvd.nist.gov/vuln/detail/CVE-2026-41990) | 4.0 | MEDIUM | CWE-787 | No | — | 2.80 | 2026-04-23 | Libgcrypt before 1.12.2 mishandles Dilithium signing. Writes to a static array lack a bounds check but do not use attack... |
 | [CVE-2026-41989](https://nvd.nist.gov/vuln/detail/CVE-2026-41989) | 6.7 | MEDIUM | CWE-787 | No | — | 4.69 | 2026-04-23 | Libgcrypt before 1.12.2 sometimes allows a heap-based buffer overflow and denial of service via crafted ECDH ciphertext... |
 | [CVE-2026-41988](https://nvd.nist.gov/vuln/detail/CVE-2026-41988) | 3.2 | LOW | CWE-670 | No | — | 2.24 | 2026-04-23 | uuid before 14.0.0 can make unexpected writes when external output buffers are used, and the UUID version is 3, 5, or 6.... |
