@@ -1,6 +1,6 @@
 # CVEs — March 2026
 
-_5738 vulnerabilities_
+_5734 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
@@ -2322,7 +2322,6 @@ _5738 vulnerabilities_
 | [CVE-2026-33056](https://nvd.nist.gov/vuln/detail/CVE-2026-33056) | 5.1 | MEDIUM | CWE-61 | No | 0.0% | 3.57 | 2026-03-20 | tar-rs is a tar archive reading/writing library for Rust. In versions 0.4.44 and below, when unpacking a tar archive, th... |
 | [CVE-2026-33022](https://nvd.nist.gov/vuln/detail/CVE-2026-33022) | 6.5 | MEDIUM | CWE-129 | No | 0.0% | 4.55 | 2026-03-20 | Tekton Pipelines project provides k8s-style resources for declaring CI/CD-style pipelines. Versions 0.60.0 through 1.0.0... |
 | [CVE-2026-4478](https://nvd.nist.gov/vuln/detail/CVE-2026-4478) | 8.2 | HIGH | CWE-345 | No | 0.0% | 5.74 | 2026-03-20 | A vulnerability was identified in Yi Technology YI Home Camera 2 2.1.1_20171024151200. This impacts an unknown function... |
-| [CVE-2026-4477](https://nvd.nist.gov/vuln/detail/CVE-2026-4477) | 2.3 | LOW | CWE-320 | No | 0.0% | 1.61 | 2026-03-20 | A vulnerability was determined in Yi Technology YI Home Camera 2 2.1.1_20171024151200. This affects an unknown function... |
 | [CVE-2026-4476](https://nvd.nist.gov/vuln/detail/CVE-2026-4476) | 5.3 | MEDIUM | CWE-287 | No | 0.0% | 3.71 | 2026-03-20 | A vulnerability was found in Yi Technology YI Home Camera 2 2.1.1_20171024151200. The impacted element is an unknown fun... |
 | [CVE-2026-4475](https://nvd.nist.gov/vuln/detail/CVE-2026-4475) | 8.7 | HIGH | CWE-259 | No | 0.0% | 6.09 | 2026-03-20 | A vulnerability has been found in Yi Technology YI Home Camera 2 2.1.1_20171024151200. The affected element is an unknow... |
 | [CVE-2026-4474](https://nvd.nist.gov/vuln/detail/CVE-2026-4474) | 4.8 | MEDIUM | CWE-79 | No | 0.0% | 3.36 | 2026-03-20 | A flaw has been found in itsourcecode University Management System 1.0. Impacted is an unknown function of the file /adm... |
@@ -3618,7 +3617,6 @@ _5738 vulnerabilities_
 | [CVE-2026-3965](https://nvd.nist.gov/vuln/detail/CVE-2026-3965) | 5.3 | MEDIUM | CWE-693 | No | 0.1% | 3.71 | 2026-03-12 | A security vulnerability has been detected in whyour qinglong up to 2.20.1. Affected is an unknown function of the file... |
 | [CVE-2026-2808](https://nvd.nist.gov/vuln/detail/CVE-2026-2808) | 6.8 | MEDIUM | CWE-59 | No | 0.0% | 4.76 | 2026-03-12 | HashiCorp Consul and Consul Enterprise 1.18.20 up to 1.21.10 and 1.22.4 are vulnerable to arbitrary file read when confi... |
 | [CVE-2026-3964](https://nvd.nist.gov/vuln/detail/CVE-2026-3964) | 4.8 | MEDIUM | CWE-77 | No | 0.4% | 3.37 | 2026-03-11 | A weakness has been identified in OpenAkita up to 1.24.3. This impacts the function run of the file src/openakita/tools/... |
-| [CVE-2026-3963](https://nvd.nist.gov/vuln/detail/CVE-2026-3963) | 6.3 | MEDIUM | CWE-320 | No | 0.0% | 4.41 | 2026-03-11 | A security flaw has been discovered in perfree go-fastdfs-web up to 1.3.7. This affects the function rememberMeManager o... |
 | [CVE-2026-3962](https://nvd.nist.gov/vuln/detail/CVE-2026-3962) | 5.3 | MEDIUM | CWE-79 | No | 0.0% | 3.71 | 2026-03-11 | A vulnerability was identified in Jcharis Machine-Learning-Web-Apps up to a6996b634d98ccec4701ac8934016e8175b60eb5. The... |
 | [CVE-2026-31988](https://nvd.nist.gov/vuln/detail/CVE-2026-31988) | 6.9 | MEDIUM | CWE-193 | No | 0.1% | 4.83 | 2026-03-11 | yauzl (aka Yet Another Unzip Library) version 3.2.0 for Node.js contains an off-by-one error in the NTFS extended timest... |
 | [CVE-2026-3961](https://nvd.nist.gov/vuln/detail/CVE-2026-3961) | 5.3 | MEDIUM | CWE-918 | No | 0.1% | 3.71 | 2026-03-11 | A vulnerability was determined in zyddnys manga-image-translator up to beta-0.3. The affected element is the function to... |
@@ -5248,7 +5246,6 @@ _5738 vulnerabilities_
 | [CVE-2025-53335](https://nvd.nist.gov/vuln/detail/CVE-2025-53335) | 8.1 | HIGH | CWE-98 | No | 0.2% | 5.67 | 2026-03-05 | Improper Control of Filename for Include/Require Statement in PHP Program ('PHP Remote File Inclusion') vulnerability in... |
 | [CVE-2026-3523](https://nvd.nist.gov/vuln/detail/CVE-2026-3523) | 4.9 | MEDIUM | CWE-89 | No | 0.1% | 3.43 | 2026-03-05 | The Apocalypse Meow plugin for WordPress is vulnerable to SQL Injection via the 'type' parameter in all versions up to,... |
 | [CVE-2026-3034](https://nvd.nist.gov/vuln/detail/CVE-2026-3034) | 6.4 | MEDIUM | CWE-79 | No | 0.0% | 4.48 | 2026-03-05 | The OoohBoi Steroids for Elementor plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the _ob_spacera... |
-| [CVE-2026-2899](https://nvd.nist.gov/vuln/detail/CVE-2026-2899) | 6.5 | MEDIUM | CWE-862 | No | 0.2% | 4.55 | 2026-03-05 | The Fluent Forms Pro Add On Pack plugin for WordPress is vulnerable to Missing Authorization in all versions up to, and... |
 | [CVE-2026-2365](https://nvd.nist.gov/vuln/detail/CVE-2026-2365) | 7.2 | HIGH | CWE-79 | No | 0.3% | 5.05 | 2026-03-05 | The Fluent Forms Pro plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the `fluentform_step_form_sav... |
 | [CVE-2026-29127](https://nvd.nist.gov/vuln/detail/CVE-2026-29127) | 9.2 | CRITICAL | CWE-269 | No | 0.0% | 6.44 | 2026-03-05 | The IDC SFX2100 Satellite Receiver sets overly permissive file system permissions on the monitor user's home directory.... |
 | [CVE-2026-26034](https://nvd.nist.gov/vuln/detail/CVE-2026-26034) | 8.5 | HIGH | CWE-276 | No | 0.0% | 5.95 | 2026-03-05 | UPS Multi-UPS Management Console (MUMC) version 01.06.0001 (A03) contains an Incorrect Default Permissions (CWE-276) vul... |
@@ -5510,7 +5507,6 @@ _5738 vulnerabilities_
 | [CVE-2026-1487](https://nvd.nist.gov/vuln/detail/CVE-2026-1487) | 6.5 | MEDIUM | CWE-89 | No | 0.0% | 4.55 | 2026-03-03 | The LatePoint – Calendar Booking Plugin for Appointments and Events plugin for WordPress is vulnerable to SQL Injection... |
 | [CVE-2026-0754](https://nvd.nist.gov/vuln/detail/CVE-2026-0754) | 8.2 | HIGH | CWE-321 | No | 0.0% | 5.74 | 2026-03-03 | An embedded test key and certificate could be extracted from a Poly Voice device using specialized reverse engineering t... |
 | [CVE-2026-1566](https://nvd.nist.gov/vuln/detail/CVE-2026-1566) | 8.8 | HIGH | CWE-269 | No | 0.1% | 6.16 | 2026-03-03 | The LatePoint – Calendar Booking Plugin for Appointments and Events plugin for WordPress is vulnerable to privilege esca... |
-| [CVE-2026-1336](https://nvd.nist.gov/vuln/detail/CVE-2026-1336) | 5.3 | MEDIUM | CWE-862 | No | 0.1% | 3.71 | 2026-03-03 | The AI ChatBot with ChatGPT and Content Generator by AYS plugin for WordPress is vulnerable to unauthorized access and m... |
 | [CVE-2026-2583](https://nvd.nist.gov/vuln/detail/CVE-2026-2583) | 6.4 | MEDIUM | CWE-79 | No | 0.0% | 4.48 | 2026-03-02 | The Blocksy theme for WordPress is vulnerable to Stored Cross-Site Scripting via the `blocksy_meta` metadata fields in a... |
 | [CVE-2026-2256](https://nvd.nist.gov/vuln/detail/CVE-2026-2256) | 6.5 | MEDIUM | CWE-77 | No | 0.7% | 4.57 | 2026-03-02 | A command injection vulnerability in ModelScope's ms-agent versions v1.6.0rc1 and earlier exists, allowing an attacker t... |
 | [CVE-2026-27631](https://nvd.nist.gov/vuln/detail/CVE-2026-27631) | 2.7 | LOW | CWE-248 | No | 0.0% | 1.89 | 2026-03-02 | Exiv2 is a C++ library and a command-line utility to read, write, delete and modify Exif, IPTC, XMP and ICC image metada... |
