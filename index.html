@@ -11,7 +11,7 @@
     <header>
       <h1>vuln-tracker</h1>
       <p class="subtitle">CVEs from the National Vulnerability Database — current and previous month</p>
-      <p class="last-updated">Last updated: 2026-04-23 13:59 UTC</p>
+      <p class="last-updated">Last updated: 2026-04-23 16:02 UTC</p>
     </header>
     <nav>
       <a href="top50.html">&#9733; Top 50</a>
@@ -25,7 +25,7 @@
     </nav>
     <main>
     <section>
-      <h2>Current Month — April 2026 <span class="count">(4070)</span></h2>
+      <h2>Current Month — April 2026 <span class="count">(4088)</span></h2>
       <div class="table-wrapper">
         <table>
           <thead>
@@ -43,6 +43,50 @@
           </thead>
           <tbody>
       <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-41461" target="_blank" rel="noopener">CVE-2026-41461</a></td>
+        <td>6.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-918</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.41</td>
+        <td><details><summary>SocialEngine versions 7.8.0 and prior contain a blind server-side request forger...</summary><p>SocialEngine versions 7.8.0 and prior contain a blind server-side request forgery vulnerability in the /core/link/preview endpoint where user-supplied input passed via the uri request parameter is not sanitized before being used to construct outbound HTTP requests. Authenticated remote attackers can supply arbitrary URLs including internal network addresses and loopback addresses to cause the server to issue HTTP requests to attacker-controlled destinations, enabling internal network enumeration and access to services not intended to be externally reachable.</p></details></td>
+        <td>2026-04-23</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-41460" target="_blank" rel="noopener">CVE-2026-41460</a></td>
+        <td>9.3</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-89</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.51</td>
+        <td><details><summary>SocialEngine versions 7.8.0 and prior contain a SQL injection vulnerability in t...</summary><p>SocialEngine versions 7.8.0 and prior contain a SQL injection vulnerability in the /activity/index/get-memberall endpoint where user-supplied input passed via the text parameter is not sanitized before being incorporated into a SQL query. An unauthenticated remote attacker can exploit this vulnerability to read arbitrary data from the database, reset administrator account passwords, and gain unauthorized access to the Packages Manager in the Admin Panel, potentially enabling remote code execution.</p></details></td>
+        <td>2026-04-23</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35225" target="_blank" rel="noopener">CVE-2026-35225</a></td>
+        <td>8.7</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-754</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.09</td>
+        <td><details><summary>An unauthenticated remote attacker is able to exhaust all available TCP connecti...</summary><p>An unauthenticated remote attacker is able to exhaust all available TCP connections in the CODESYS EtherNet/IP adapter stack, preventing legitimate clients from establishing new connections.</p></details></td>
+        <td>2026-04-23</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-70994" target="_blank" rel="noopener">CVE-2025-70994</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Yadea T5 Electric Bicycles (models manufactured in/after 2024) have a weak authe...</summary><p>Yadea T5 Electric Bicycles (models manufactured in/after 2024) have a weak authentication mechanism in their keyless entry system. The system utilizes the EV1527 fixed-code RF protocol without implementing rolling codes or cryptographic challenge-response mechanisms. This is vulnerable to signal forgery after a local attacker intercepts any legitimate key fob transmission, allowing for complete unauthorized vehicle operation via a replay attack.</p></details></td>
+        <td>2026-04-23</td>
+      </tr>
+      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39440" target="_blank" rel="noopener">CVE-2026-39440</a></td>
         <td>9.9</td>
         <td><span class="severity critical">CRITICAL</span></td>
@@ -54,105 +98,14 @@
         <td>2026-04-23</td>
       </tr>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-66286" target="_blank" rel="noopener">CVE-2025-66286</a></td>
-        <td>4.7</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-639</td>
-        <td>&nbsp;</td>
-        <td>&mdash;</td>
-        <td>3.29</td>
-        <td><details><summary>An API design flaw in WebKitGTK and WPE WebKit allows untrusted web content to u...</summary><p>An API design flaw in WebKitGTK and WPE WebKit allows untrusted web content to unexpectedly perform IP connections, DNS lookups, and HTTP requests. Applications expect to use the
-WebPage::send-request signal handler to approve or reject all network requests. However, certain types of HTTP requests bypass this signal handler.</p></details></td>
-        <td>2026-04-23</td>
-      </tr>
-      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-13763" target="_blank" rel="noopener">CVE-2025-13763</a></td>
         <td>5.7</td>
         <td><span class="severity medium">MEDIUM</span></td>
-        <td>N/A</td>
+        <td>CWE-457</td>
         <td>&nbsp;</td>
         <td>&mdash;</td>
         <td>3.99</td>
         <td><details><summary>Multiple uses of uninitialized variables were found in libopensc that may lead t...</summary><p>Multiple uses of uninitialized variables were found in libopensc that may lead to information disclosure or application crash. An attack requires a crafted USB device or smart card that would present the system with specially crafted responses to the APDUs</p></details></td>
-        <td>2026-04-23</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-31532" target="_blank" rel="noopener">CVE-2026-31532</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p4</small></td>
-        <td>0.00</td>
-        <td><details><summary>In the Linux kernel, the following vulnerability has been resolved:
-
-can: raw: f...</summary><p>In the Linux kernel, the following vulnerability has been resolved:
-
-can: raw: fix ro-&gt;uniq use-after-free in raw_rcv()
-
-raw_release() unregisters raw CAN receive filters via can_rx_unregister(),
-but receiver deletion is deferred with call_rcu(). This leaves a window
-where raw_rcv() may still be running in an RCU read-side critical section
-after raw_release() frees ro-&gt;uniq, leading to a use-after-free of the
-percpu uniq storage.
-
-Move free_percpu(ro-&gt;uniq) out of raw_release() and into a raw-specific
-socket destructor. can_rx_unregister() takes an extra reference to the
-socket and only drops it from the RCU callback, so freeing uniq from
-sk_destruct ensures the percpu area is not released until the relevant
-callbacks have drained.
-
-[mkl: applied manually]</p></details></td>
-        <td>2026-04-23</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-31531" target="_blank" rel="noopener">CVE-2026-31531</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p4</small></td>
-        <td>0.00</td>
-        <td><details><summary>In the Linux kernel, the following vulnerability has been resolved:
-
-ipv4: nexth...</summary><p>In the Linux kernel, the following vulnerability has been resolved:
-
-ipv4: nexthop: allocate skb dynamically in rtm_get_nexthop()
-
-When querying a nexthop object via RTM_GETNEXTHOP, the kernel currently
-allocates a fixed-size skb using NLMSG_GOODSIZE. While sufficient for
-single nexthops and small Equal-Cost Multi-Path groups, this fixed
-allocation fails for large nexthop groups like 512 nexthops.
-
-This results in the following warning splat:
-
- WARNING: net/ipv4/nexthop.c:3395 at rtm_get_nexthop+0x176/0x1c0, CPU#20: rep/4608
- [...]
- RIP: 0010:rtm_get_nexthop (net/ipv4/nexthop.c:3395)
- [...]
- Call Trace:
-  &lt;TASK&gt;
-  rtnetlink_rcv_msg (net/core/rtnetlink.c:6989)
-  netlink_rcv_skb (net/netlink/af_netlink.c:2550)
-  netlink_unicast (net/netlink/af_netlink.c:1319 net/netlink/af_netlink.c:1344)
-  netlink_sendmsg (net/netlink/af_netlink.c:1894)
-  ____sys_sendmsg (net/socket.c:721 net/socket.c:736 net/socket.c:2585)
-  ___sys_sendmsg (net/socket.c:2641)
-  __sys_sendmsg (net/socket.c:2671)
-  do_syscall_64 (arch/x86/entry/syscall_64.c:63 arch/x86/entry/syscall_64.c:94)
-  entry_SYSCALL_64_after_hwframe (arch/x86/entry/entry_64.S:130)
-  &lt;/TASK&gt;
-
-Fix this by allocating the size dynamically using nh_nlmsg_size() and
-using nlmsg_new(), this is consistent with nexthop_notify() behavior. In
-addition, adjust nh_nlmsg_size_grp() so it calculates the size needed
-based on flags passed. While at it, also add the size of NHA_FDB for
-nexthop group size calculation as it was missing too.
-
-This cannot be reproduced via iproute2 as the group size is currently
-limited and the command fails as follows:
-
-addattr_l ERROR: message exceeded bound of 1048</p></details></td>
         <td>2026-04-23</td>
       </tr>
       <tr>
@@ -244,6 +197,21 @@ addattr_l ERROR: message exceeded bound of 1048</p></details></td>
         <td>2026-04-23</td>
       </tr>
       <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-41564" target="_blank" rel="noopener">CVE-2026-41564</a></td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-335</td>
+        <td>&nbsp;</td>
+        <td>0.0% <small>p4</small></td>
+        <td>5.25</td>
+        <td><details><summary>CryptX versions before 0.088 for Perl do not reseed the Crypt::PK PRNG state aft...</summary><p>CryptX versions before 0.088 for Perl do not reseed the Crypt::PK PRNG state after forking.
+
+The Crypt::PK::RSA, Crypt::PK::DSA, Crypt::PK::DH, Crypt::PK::ECC, Crypt::PK::Ed25519 and Crypt::PK::X25519 modules seed a per-object PRNG state in their constructors and reuse it without fork detection. A Crypt::PK::* object created before `fork()` shares byte-identical PRNG state with every child process, and any randomized operation they perform can produce identical output, including key generation. Two ECDSA or DSA signatures from different processes are enough to recover the signing private key through nonce-reuse key recovery.
+
+This affects preforking services such as the Starman web server, where a Crypt::PK::* object loaded at startup is inherited by every worker process.</p></details></td>
+        <td>2026-04-23</td>
+      </tr>
+      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4512" target="_blank" rel="noopener">CVE-2026-4512</a></td>
         <td>3.5</td>
         <td><span class="severity low">LOW</span></td>
@@ -256,12 +224,12 @@ addattr_l ERROR: message exceeded bound of 1048</p></details></td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4106" target="_blank" rel="noopener">CVE-2026-4106</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
         <td>N/A</td>
         <td>&nbsp;</td>
         <td>0.8% <small>p73</small></td>
-        <td>0.02</td>
+        <td>5.27</td>
         <td><details><summary>The HT Mega Addons for Elementor  WordPress plugin before 3.0.7 contains an unau...</summary><p>The HT Mega Addons for Elementor  WordPress plugin before 3.0.7 contains an unauthenticated AJAX action returning some PII (such as full name, city, state and country) of customers who placed orders in the last 7 days</p></details></td>
         <td>2026-04-23</td>
       </tr>
@@ -289,12 +257,12 @@ addattr_l ERROR: message exceeded bound of 1048</p></details></td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-10549" target="_blank" rel="noopener">CVE-2025-10549</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>5.1</td>
+        <td><span class="severity medium">MEDIUM</span></td>
         <td>CWE-427</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p0</small></td>
-        <td>0.00</td>
+        <td>3.57</td>
         <td><details><summary>EfficientLab Controlio before v1.3.95 contains a DLL hijacking vulnerability cau...</summary><p>EfficientLab Controlio before v1.3.95 contains a DLL hijacking vulnerability caused by weak folder permissions in the installation directory. A local attacker can place a specially crafted DLL in this directory and achieve arbitrary code execution with highest privileges, because the affected service runs as NT AUTHORITY\SYSTEM.</p></details></td>
         <td>2026-04-23</td>
       </tr>
@@ -6151,20 +6119,6 @@ addattr_l ERROR: message exceeded bound of 1048</p></details></td>
         <td>2026-04-21</td>
       </tr>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-0972" target="_blank" rel="noopener">CVE-2026-0972</a></td>
-        <td>5.4</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-74</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p8</small></td>
-        <td>3.78</td>
-        <td><details><summary>HTML injection is possible in system generated emails in Fortra&#x27;s GoAnywhere MFT...</summary><p>HTML injection is possible in system generated emails in Fortra&#x27;s GoAnywhere MFT prior to 7.10.0.
-
-
-Note: The title, details, and description of this CVE were corrected post-publishing.</p></details></td>
-        <td>2026-04-21</td>
-      </tr>
-      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-0971" target="_blank" rel="noopener">CVE-2026-0971</a></td>
         <td>4.3</td>
         <td><span class="severity medium">MEDIUM</span></td>
@@ -7287,6 +7241,19 @@ Note: The title, details, and description of this CVE were corrected post-publis
         <td>2026-04-20</td>
       </tr>
       <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5928" target="_blank" rel="noopener">CVE-2026-5928</a></td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-127</td>
+        <td>&nbsp;</td>
+        <td>0.0% <small>p12</small></td>
+        <td>5.25</td>
+        <td><details><summary>Calling the ungetwc function on a FILE stream with wide characters encoded in a ...</summary><p>Calling the ungetwc function on a FILE stream with wide characters encoded in a character set that has overlaps between its single byte and multi-byte character encodings, in the GNU C Library version 2.43 or earlier, may result in an attempt to read bytes before an allocated buffer, potentially resulting in unintentional disclosure of neighboring data in the heap, or a program crash.
+
+A bug in the wide character pushback implementation (_IO_wdefault_pbackfail in libio/wgenops.c) causes ungetwc() to operate on the regular character buffer (fp-&gt;_IO_read_ptr) instead of the actual wide-stream read pointer (fp-&gt;_wide_data-&gt;_IO_read_ptr). The program crash may happen in cases where fp-&gt;_IO_read_ptr is not initialized and hence points to NULL. The buffer under-read requires a special situation where the input character encoding is such that there are overlaps between single byte representations and multibyte representations in that encoding, resulting in spurious matches. The spurious match case is not possible in the standard Unicode character sets.</p></details></td>
+        <td>2026-04-20</td>
+      </tr>
+      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5450" target="_blank" rel="noopener">CVE-2026-5450</a></td>
         <td>9.8</td>
         <td><span class="severity critical">CRITICAL</span></td>
@@ -7734,7 +7701,7 @@ Note: The title, details, and description of this CVE were corrected post-publis
         <td>&nbsp;</td>
         <td>0.0% <small>p3</small></td>
         <td>5.46</td>
-        <td><details><summary>Insecure Permissions vulnerability in DeepCool DeepCreative v.1.2.7 and before a...</summary><p>Insecure Permissions vulnerability in DeepCool DeepCreative v.1.2.7 and before allows a local attacker to execute arbitrary code via a crafted file</p></details></td>
+        <td><details><summary>Insecure Permissions vulnerability in DeepCool DeepCreative v.1.2.12 and before ...</summary><p>Insecure Permissions vulnerability in DeepCool DeepCreative v.1.2.12 and before allows a local attacker to execute arbitrary code via a crafted file</p></details></td>
         <td>2026-04-20</td>
       </tr>
       <tr>
@@ -10389,19 +10356,6 @@ Note: The title, details, and description of this CVE were corrected post-publis
         <td>2026-04-17</td>
       </tr>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-21733" target="_blank" rel="noopener">CVE-2026-21733</a></td>
-        <td>7.3</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>N/A</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p2</small></td>
-        <td>5.11</td>
-        <td><details><summary>Vulnerability in Imagination Technologies Graphics DDK on Linux, Android -- 
-RES...</summary><p>Vulnerability in Imagination Technologies Graphics DDK on Linux, Android -- 
-RESERVED</p></details></td>
-        <td>2026-04-17</td>
-      </tr>
-      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6497" target="_blank" rel="noopener">CVE-2026-6497</a></td>
         <td>5.3</td>
         <td><span class="severity medium">MEDIUM</span></td>
@@ -11953,6 +11907,70 @@ RESERVED</p></details></td>
         <td>2026-04-16</td>
       </tr>
       <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-12624" target="_blank" rel="noopener">CVE-2025-12624</a></td>
+        <td>6.0</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-613</td>
+        <td>&nbsp;</td>
+        <td>0.0% <small>p1</small></td>
+        <td>4.20</td>
+        <td><details><summary>Active access tokens are not revoked or invalidated when a user account is locke...</summary><p>Active access tokens are not revoked or invalidated when a user account is locked within WSO2 Identity Server. This failure to enforce revocation allows previously issued, valid tokens to remain usable, enabling continued access to protected resources by locked user accounts.
+
+The security consequence is that a locked user account can maintain access to protected resources through the use of existing, unexpired access tokens. This creates a security gap where access control policies are bypassed, potentially leading to unauthorized data access or actions until the tokens naturally expire.</p></details></td>
+        <td>2026-04-16</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-6024" target="_blank" rel="noopener">CVE-2025-6024</a></td>
+        <td>6.1</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>0.0% <small>p1</small></td>
+        <td>4.27</td>
+        <td><details><summary>The authentication endpoint fails to encode user-supplied input before rendering...</summary><p>The authentication endpoint fails to encode user-supplied input before rendering it in the web page, allowing for script injection.
+An attacker can leverage this by injecting malicious scripts into the authentication endpoint. This can result in the user&#x27;s browser being redirected to a malicious website, manipulation of the web page&#x27;s user interface, or the retrieval of information from the browser. However, session hijacking is not possible due to the httpOnly flag protecting session-related cookies.</p></details></td>
+        <td>2026-04-16</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2024-8010" target="_blank" rel="noopener">CVE-2024-8010</a></td>
+        <td>3.5</td>
+        <td><span class="severity low">LOW</span></td>
+        <td>CWE-611</td>
+        <td>&nbsp;</td>
+        <td>0.0% <small>p0</small></td>
+        <td>2.45</td>
+        <td><details><summary>The component accepts XML input through the publisher without disabling external...</summary><p>The component accepts XML input through the publisher without disabling external entity resolution. This allows malicious actors to submit a crafted XML payload that exploits the unescaped external entity references.
+
+By leveraging this vulnerability, a malicious actor can read confidential files from the product&#x27;s file system or access limited HTTP resources reachable via HTTP GET requests to the vulnerable product.</p></details></td>
+        <td>2026-04-16</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2024-4867" target="_blank" rel="noopener">CVE-2024-4867</a></td>
+        <td>5.4</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>0.0% <small>p1</small></td>
+        <td>3.78</td>
+        <td><details><summary>The WSO2 API Manager developer portal accepts user-supplied input without enforc...</summary><p>The WSO2 API Manager developer portal accepts user-supplied input without enforcing expected validation constraints or proper output encoding. This deficiency allows a malicious actor to inject script content that is executed within the context of a user&#x27;s browser.
+
+By leveraging this cross-site scripting vulnerability, a malicious actor can cause the browser to redirect to a malicious website, make changes to the UI of the web page, or retrieve information from the browser. However, session hijacking is not possible as all session-related sensitive cookies are protected by the httpOnly flag.</p></details></td>
+        <td>2026-04-16</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2024-10242" target="_blank" rel="noopener">CVE-2024-10242</a></td>
+        <td>6.1</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>0.0% <small>p3</small></td>
+        <td>4.27</td>
+        <td><details><summary>The authentication endpoint fails to adequately validate user-supplied input bef...</summary><p>The authentication endpoint fails to adequately validate user-supplied input before reflecting it back in the response. This allows an attacker to inject malicious script payloads into the input parameters, which are then executed by the victim&#x27;s browser.
+
+Successful exploitation can enable an attacker to redirect the user&#x27;s browser to a malicious website, modify the UI of the web page, or retrieve information from the browser. However, the impact is limited as session-related sensitive cookies are protected by the httpOnly flag, preventing session hijacking.</p></details></td>
+        <td>2026-04-16</td>
+      </tr>
+      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-23772" target="_blank" rel="noopener">CVE-2026-23772</a></td>
         <td>7.3</td>
         <td><span class="severity high">HIGH</span></td>
@@ -11961,6 +11979,19 @@ RESERVED</p></details></td>
         <td>0.0% <small>p0</small></td>
         <td>5.11</td>
         <td><details><summary>Dell Storage Manager - Replay Manager for Microsoft Servers, version(s) 8.0, con...</summary><p>Dell Storage Manager - Replay Manager for Microsoft Servers, version(s) 8.0, contain(s) an Improper Privilege Management vulnerability. A low privileged attacker with local access could potentially exploit this vulnerability, leading to Elevation of privileges.</p></details></td>
+        <td>2026-04-16</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2024-2374" target="_blank" rel="noopener">CVE-2024-2374</a></td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-611</td>
+        <td>&nbsp;</td>
+        <td>0.0% <small>p2</small></td>
+        <td>5.25</td>
+        <td><details><summary>The XML parsers within multiple WSO2 products accept user-supplied XML data with...</summary><p>The XML parsers within multiple WSO2 products accept user-supplied XML data without properly configuring to prevent the resolution of external entities. This omission allows malicious actors to craft XML payloads that exploit the parser&#x27;s behavior, leading to the inclusion of external resources.
+
+By leveraging this vulnerability, an attacker can read confidential files from the file system and access limited HTTP resources reachable by the product. Additionally, the vulnerability can be exploited to perform denial of service attacks by exhausting server resources through recursive entity expansion or fetching large external resources.</p></details></td>
         <td>2026-04-16</td>
       </tr>
       <tr>
@@ -13390,7 +13421,7 @@ RESERVED</p></details></td>
         <td>&nbsp;</td>
         <td>0.0% <small>p10</small></td>
         <td>5.32</td>
-        <td><details><summary>Improper Neutralization of Special Elements used in an SQL Command (&#x27;SQL Injecti...</summary><p>Improper Neutralization of Special Elements used in an SQL Command (&#x27;SQL Injection&#x27;) vulnerability in WC Lovers WCFM Marketplace allows SQL Injection.This issue affects WCFM Marketplace: from n/a through 3.7.1.</p></details></td>
+        <td><details><summary>Improper Neutralization of Special Elements used in an SQL Command (&#x27;SQL Injecti...</summary><p>Improper Neutralization of Special Elements used in an SQL Command (&#x27;SQL Injection&#x27;) vulnerability in WC Lovers WCFM Marketplace wc-multivendor-marketplace allows SQL Injection.This issue affects WCFM Marketplace: from n/a through &lt;= 3.7.1.</p></details></td>
         <td>2026-04-15</td>
       </tr>
       <tr>
@@ -13401,7 +13432,7 @@ RESERVED</p></details></td>
         <td>&nbsp;</td>
         <td>0.0% <small>p9</small></td>
         <td>4.55</td>
-        <td><details><summary>Improper Neutralization of Input During Web Page Generation (&#x27;Cross-site Scripti...</summary><p>Improper Neutralization of Input During Web Page Generation (&#x27;Cross-site Scripting&#x27;) vulnerability in Emarket-design YouTube Showcase allows Stored XSS.This issue affects YouTube Showcase: from n/a through 3.5.1.</p></details></td>
+        <td><details><summary>Improper Neutralization of Input During Web Page Generation (&#x27;Cross-site Scripti...</summary><p>Improper Neutralization of Input During Web Page Generation (&#x27;Cross-site Scripting&#x27;) vulnerability in emarket-design YouTube Showcase youtube-showcase allows Stored XSS.This issue affects YouTube Showcase: from n/a through &lt;= 3.5.1.</p></details></td>
         <td>2026-04-15</td>
       </tr>
       <tr>
@@ -13412,7 +13443,7 @@ RESERVED</p></details></td>
         <td>&nbsp;</td>
         <td>0.0% <small>p3</small></td>
         <td>3.01</td>
-        <td><details><summary>Cross-Site Request Forgery (CSRF) vulnerability in Zaytech Smart Online Order fo...</summary><p>Cross-Site Request Forgery (CSRF) vulnerability in Zaytech Smart Online Order for Clover allows Cross Site Request Forgery.This issue affects Smart Online Order for Clover: from n/a through 1.6.0.</p></details></td>
+        <td><details><summary>Cross-Site Request Forgery (CSRF) vulnerability in ZAYTECH Smart Online Order fo...</summary><p>Cross-Site Request Forgery (CSRF) vulnerability in ZAYTECH Smart Online Order for Clover clover-online-orders allows Cross Site Request Forgery.This issue affects Smart Online Order for Clover: from n/a through &lt;= 1.6.0.</p></details></td>
         <td>2026-04-15</td>
       </tr>
       <tr>
@@ -13566,7 +13597,7 @@ RESERVED</p></details></td>
         <td>&nbsp;</td>
         <td>0.0% <small>p3</small></td>
         <td>3.01</td>
-        <td><details><summary>Cross-Site Request Forgery (CSRF) vulnerability in DeluxeThemes Userpro allows C...</summary><p>Cross-Site Request Forgery (CSRF) vulnerability in DeluxeThemes Userpro allows Cross Site Request Forgery.This issue affects Userpro: from n/a before 5.1.11.</p></details></td>
+        <td><details><summary>Cross-Site Request Forgery (CSRF) vulnerability in DeluxeThemes Userpro userpro ...</summary><p>Cross-Site Request Forgery (CSRF) vulnerability in DeluxeThemes Userpro userpro allows Cross Site Request Forgery.This issue affects Userpro: from n/a through &lt; 5.1.11.</p></details></td>
         <td>2026-04-15</td>
       </tr>
       <tr>
@@ -14711,6 +14742,18 @@ RESERVED</p></details></td>
         <td>0.0% <small>p12</small></td>
         <td>3.01</td>
         <td><details><summary>Docmost is open-source collaborative wiki and documentation software. An authori...</summary><p>Docmost is open-source collaborative wiki and documentation software. An authorization bypass vulnerability in versions 0.70.0 through 0.70.2 exposes restricted child page titles and text snippets through the public search endpoint (`POST /api/search/share-search`) for publicly shared content. This flaw allows unauthenticated users to enumerate and retrieve content that should remain hidden from public share viewers, leading to a confidentiality breach. Version 0.70.3 contains a patch.</p></details></td>
+        <td>2026-04-14</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33020" target="_blank" rel="noopener">CVE-2026-33020</a></td>
+        <td>7.1</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-122</td>
+        <td>&nbsp;</td>
+        <td>0.0% <small>p3</small></td>
+        <td>4.97</td>
+        <td><details><summary>libsixel is a SIXEL encoder/decoder implementation derived from kmiya&#x27;s sixel. V...</summary><p>libsixel is a SIXEL encoder/decoder implementation derived from kmiya&#x27;s sixel. Versions 1.8.7 and prior contain an integer overflow which leads to a heap buffer overflow via sixel_frame_convert_to_rgb888() in frame.c, where allocation size and pointer offset computations for palettised images (PAL1, PAL2, PAL4) are performed using int arithmetic before casting to size_t. For images whose pixel count exceeds INT_MAX / 4, the overflow produces an undersized heap allocation for the conversion buffer and a negative pointer offset for the normalization sub-buffer, after which sixel_helper_normalize_pixelformat() writes the full image data starting from the invalid pointer, causing massive heap corruption confirmed by ASAN. An attacker providing a specially crafted large palettised PNG can corrupt the heap of the victim process, resulting in a reliable crash and potential arbitrary code execution.
+This issue has been fixed in version 1.8.7-r1.</p></details></td>
         <td>2026-04-14</td>
       </tr>
       <tr>
@@ -19906,6 +19949,25 @@ RESERVED</p></details></td>
         <td>2026-04-13</td>
       </tr>
       <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5085" target="_blank" rel="noopener">CVE-2026-5085</a></td>
+        <td>9.1</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-338</td>
+        <td>&nbsp;</td>
+        <td>0.0% <small>p12</small></td>
+        <td>6.37</td>
+        <td><details><summary>Solstice::Session versions through 1440 for Perl generates session ids insecurel...</summary><p>Solstice::Session versions through 1440 for Perl generates session ids insecurely.
+
+The _generateSessionID method returns an MD5 digest seeded by the epoch time, a random hash reference, a call to the built-in rand() function and the process id.
+
+The same method is used in the _generateID method in Solstice::Subsession, which is part of the same distribution.
+
+The epoch time may be guessed, if it is not leaked in the HTTP Date header. Stringified hash refences will contain predictable content. The built-in rand() function is seeded by 16-bits and is unsuitable for security purposes. The process id comes from a small set of numbers.
+
+Predictable session ids could allow an attacker to gain access to systems.</p></details></td>
+        <td>2026-04-13</td>
+      </tr>
+      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40436" target="_blank" rel="noopener">CVE-2026-40436</a></td>
         <td>7.1</td>
         <td><span class="severity high">HIGH</span></td>
@@ -22586,7 +22648,7 @@ RESERVED</p></details></td>
         <td>&nbsp;</td>
         <td>0.0% <small>p6</small></td>
         <td>5.25</td>
-        <td><details><summary>Improper Control of Filename for Include/Require Statement in PHP Program (&#x27;PHP ...</summary><p>Improper Control of Filename for Include/Require Statement in PHP Program (&#x27;PHP Remote File Inclusion&#x27;) vulnerability in Case Themes Case Theme User allows PHP Local File Inclusion.This issue affects Case Theme User: from n/a before 1.0.4.</p></details></td>
+        <td><details><summary>Improper Control of Filename for Include/Require Statement in PHP Program (&#x27;PHP ...</summary><p>Improper Control of Filename for Include/Require Statement in PHP Program (&#x27;PHP Remote File Inclusion&#x27;) vulnerability in Case Themes Case Theme User case-theme-user allows PHP Local File Inclusion.This issue affects Case Theme User: from n/a through &lt; 1.0.4.</p></details></td>
         <td>2026-04-10</td>
       </tr>
       <tr>
@@ -22597,7 +22659,7 @@ RESERVED</p></details></td>
         <td>&nbsp;</td>
         <td>0.0% <small>p10</small></td>
         <td>4.97</td>
-        <td><details><summary>Improper Neutralization of Input During Web Page Generation (&#x27;Cross-site Scripti...</summary><p>Improper Neutralization of Input During Web Page Generation (&#x27;Cross-site Scripting&#x27;) vulnerability in Zootemplate Cerato allows Reflected XSS.This issue affects Cerato: from n/a through 2.2.18.</p></details></td>
+        <td><details><summary>Improper Neutralization of Input During Web Page Generation (&#x27;Cross-site Scripti...</summary><p>Improper Neutralization of Input During Web Page Generation (&#x27;Cross-site Scripting&#x27;) vulnerability in Zootemplate Cerato cerato allows Reflected XSS.This issue affects Cerato: from n/a through &lt;= 2.2.18.</p></details></td>
         <td>2026-04-10</td>
       </tr>
       <tr>
@@ -22608,7 +22670,7 @@ RESERVED</p></details></td>
         <td>&nbsp;</td>
         <td>0.1% <small>p15</small></td>
         <td>5.67</td>
-        <td><details><summary>Improper Control of Filename for Include/Require Statement in PHP Program (&#x27;PHP ...</summary><p>Improper Control of Filename for Include/Require Statement in PHP Program (&#x27;PHP Remote File Inclusion&#x27;) vulnerability in CactusThemes VideoPro allows PHP Local File Inclusion.This issue affects VideoPro: from n/a through 2.3.8.1.</p></details></td>
+        <td><details><summary>Improper Control of Filename for Include/Require Statement in PHP Program (&#x27;PHP ...</summary><p>Improper Control of Filename for Include/Require Statement in PHP Program (&#x27;PHP Remote File Inclusion&#x27;) vulnerability in CactusThemes VideoPro videopro allows PHP Local File Inclusion.This issue affects VideoPro: from n/a through &lt;= 2.3.8.1.</p></details></td>
         <td>2026-04-10</td>
       </tr>
       <tr>
@@ -28409,23 +28471,6 @@ RESERVED</p></details></td>
         <td>2026-04-08</td>
       </tr>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5795" target="_blank" rel="noopener">CVE-2026-5795</a></td>
-        <td>7.4</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-226</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p5</small></td>
-        <td>5.18</td>
-        <td><details><summary>In Eclipse Jetty, the class JASPIAuthenticator initiates the authentication chec...</summary><p>In Eclipse Jetty, the class JASPIAuthenticator initiates the authentication checks, which set two ThreadLocal variable.
-
-
-Upon returning from the initial checks, there are conditions that cause an early return from the JASPIAuthenticator code without clearing those ThreadLocals.
-
-
-A subsequent request using the same thread inherits the ThreadLocal values, leading to a broken access control and privilege escalation.</p></details></td>
-        <td>2026-04-08</td>
-      </tr>
-      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35023" target="_blank" rel="noopener">CVE-2026-35023</a></td>
         <td>5.3</td>
         <td><span class="severity medium">MEDIUM</span></td>
@@ -30824,6 +30869,42 @@ A subsequent request using the same thread inherits the ThreadLocal values, lead
         <td>2026-04-08</td>
       </tr>
       <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5083" target="_blank" rel="noopener">CVE-2026-5083</a></td>
+        <td>5.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-338</td>
+        <td>&nbsp;</td>
+        <td>0.0% <small>p3</small></td>
+        <td>3.71</td>
+        <td><details><summary>Ado::Sessions versions through 0.935 for Perl generates insecure session ids.
+
+T...</summary><p>Ado::Sessions versions through 0.935 for Perl generates insecure session ids.
+
+The session id is generated from a SHA-1 hash seeded with the built-in rand function, the epoch time, and the PID. The PID will come from a small set of numbers, and the epoch time may be guessed, if it is not leaked from the HTTP Date header. The built-in rand function is unsuitable for cryptographic usage.
+
+Predicable session ids could allow an attacker to gain access to systems.
+
+Note that Ado is no longer maintained, and has been removed from the CPAN index. It is still available on BackPAN.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5082" target="_blank" rel="noopener">CVE-2026-5082</a></td>
+        <td>5.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-338</td>
+        <td>&nbsp;</td>
+        <td>0.0% <small>p3</small></td>
+        <td>3.71</td>
+        <td><details><summary>Amon2::Plugin::Web::CSRFDefender versions from 7.00 through 7.03 for Perl genera...</summary><p>Amon2::Plugin::Web::CSRFDefender versions from 7.00 through 7.03 for Perl generate an insecure session id.
+
+The generate_session_id function will attempt to read bytes from the /dev/urandom device, but if that is unavailable then it generates bytes using SHA-1 hash seeded with the built-in rand() function, the PID, and the high resolution epoch time.  The PID will come from a small set of numbers, and the epoch time may be guessed, if it is not leaked from the HTTP Date header. The built-in rand function is unsuitable for cryptographic usage.
+
+Amon2::Plugin::Web::CSRFDefender versions before 7.00 were part of Amon2, which was vulnerable to insecure session ids due to CVE-2025-15604.
+
+Note that the author has deprecated this module.</p></details></td>
+        <td>2026-04-08</td>
+      </tr>
+      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-3311" target="_blank" rel="noopener">CVE-2026-3311</a></td>
         <td>6.4</td>
         <td><span class="severity medium">MEDIUM</span></td>
@@ -31459,6 +31540,232 @@ A subsequent request using the same thread inherits the ThreadLocal values, lead
         <td>0.0% <small>p13</small></td>
         <td>6.51</td>
         <td><details><summary>Flatpak is a Linux application sandboxing and distribution framework. Prior to 1...</summary><p>Flatpak is a Linux application sandboxing and distribution framework. Prior to 1.16.4, the Flatpak portal accepts paths in the sandbox-expose options which can be app-controlled symlinks pointing at arbitrary paths. Flatpak run mounts the resolved host path in the sandbox. This gives apps access to all host files and can be used as a primitive to gain code execution in the host context. This vulnerability is fixed in 1.16.4.</p></details></td>
+        <td>2026-04-07</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-31790" target="_blank" rel="noopener">CVE-2026-31790</a></td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-754</td>
+        <td>&nbsp;</td>
+        <td>0.0% <small>p4</small></td>
+        <td>5.25</td>
+        <td><details><summary>Issue summary: Applications using RSASVE key encapsulation to establish
+a secret...</summary><p>Issue summary: Applications using RSASVE key encapsulation to establish
+a secret encryption key can send contents of an uninitialized memory buffer to
+a malicious peer.
+
+Impact summary: The uninitialized buffer might contain sensitive data from the
+previous execution of the application process which leads to sensitive data
+leakage to an attacker.
+
+RSA_public_encrypt() returns the number of bytes written on success and -1
+on error. The affected code tests only whether the return value is non-zero.
+As a result, if RSA encryption fails, encapsulation can still return success to
+the caller, set the output lengths, and leave the caller to use the contents of
+the ciphertext buffer as if a valid KEM ciphertext had been produced.
+
+If applications use EVP_PKEY_encapsulate() with RSA/RSASVE on an
+attacker-supplied invalid RSA public key without first validating that key,
+then this may cause stale or uninitialized contents of the caller-provided
+ciphertext buffer to be disclosed to the attacker in place of the KEM
+ciphertext.
+
+As a workaround calling EVP_PKEY_public_check() or
+EVP_PKEY_public_check_quick() before EVP_PKEY_encapsulate() will mitigate
+the issue.
+
+The FIPS modules in 3.6, 3.5, 3.4, 3.3, 3.1 and 3.0 are affected by this issue.</p></details></td>
+        <td>2026-04-07</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-31789" target="_blank" rel="noopener">CVE-2026-31789</a></td>
+        <td>9.8</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-787</td>
+        <td>&nbsp;</td>
+        <td>0.0% <small>p0</small></td>
+        <td>6.86</td>
+        <td><details><summary>Issue summary: Converting an excessively large OCTET STRING value to
+a hexadecim...</summary><p>Issue summary: Converting an excessively large OCTET STRING value to
+a hexadecimal string leads to a heap buffer overflow on 32 bit platforms.
+
+Impact summary: A heap buffer overflow may lead to a crash or possibly
+an attacker controlled code execution or other undefined behavior.
+
+If an attacker can supply a crafted X.509 certificate with an excessively
+large OCTET STRING value in extensions such as the Subject Key Identifier
+(SKID) or Authority Key Identifier (AKID) which are being converted to hex,
+the size of the buffer needed for the result is calculated as multiplication
+of the input length by 3. On 32 bit platforms, this multiplication may overflow
+resulting in the allocation of a smaller buffer and a heap buffer overflow.
+
+Applications and services that print or log contents of untrusted X.509
+certificates are vulnerable to this issue. As the certificates would have
+to have sizes of over 1 Gigabyte, printing or logging such certificates
+is a fairly unlikely operation and only 32 bit platforms are affected,
+this issue was assigned Low severity.
+
+The FIPS modules in 3.6, 3.5, 3.4, 3.3 and 3.0 are not affected by this
+issue, as the affected code is outside the OpenSSL FIPS module boundary.</p></details></td>
+        <td>2026-04-07</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-28390" target="_blank" rel="noopener">CVE-2026-28390</a></td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-476</td>
+        <td>&nbsp;</td>
+        <td>0.1% <small>p15</small></td>
+        <td>5.25</td>
+        <td><details><summary>Issue summary: During processing of a crafted CMS EnvelopedData message
+with Key...</summary><p>Issue summary: During processing of a crafted CMS EnvelopedData message
+with KeyTransportRecipientInfo a NULL pointer dereference can happen.
+
+Impact summary: Applications that process attacker-controlled CMS data may
+crash before authentication or cryptographic operations occur resulting in
+Denial of Service.
+
+When a CMS EnvelopedData message that uses KeyTransportRecipientInfo with
+RSA-OAEP encryption is processed, the optional parameters field of
+RSA-OAEP SourceFunc algorithm identifier is examined without checking
+for its presence. This results in a NULL pointer dereference if the field
+is missing.
+
+Applications and services that call CMS_decrypt() on untrusted input
+(e.g., S/MIME processing or CMS-based protocols) are vulnerable.
+
+The FIPS modules in 3.6, 3.5, 3.4, 3.3 and 3.0 are not affected by this
+issue, as the affected code is outside the OpenSSL FIPS module boundary.</p></details></td>
+        <td>2026-04-07</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-28389" target="_blank" rel="noopener">CVE-2026-28389</a></td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-476</td>
+        <td>&nbsp;</td>
+        <td>0.1% <small>p15</small></td>
+        <td>5.25</td>
+        <td><details><summary>Issue summary: During processing of a crafted CMS EnvelopedData message
+with Key...</summary><p>Issue summary: During processing of a crafted CMS EnvelopedData message
+with KeyAgreeRecipientInfo a NULL pointer dereference can happen.
+
+Impact summary: Applications that process attacker-controlled CMS data may
+crash before authentication or cryptographic operations occur resulting in
+Denial of Service.
+
+When a CMS EnvelopedData message that uses KeyAgreeRecipientInfo is
+processed, the optional parameters field of KeyEncryptionAlgorithmIdentifier
+is examined without checking for its presence. This results in a NULL
+pointer dereference if the field is missing.
+
+Applications and services that call CMS_decrypt() on untrusted input
+(e.g., S/MIME processing or CMS-based protocols) are vulnerable.
+
+The FIPS modules in 3.6, 3.5, 3.4, 3.3 and 3.0 are not affected by this
+issue, as the affected code is outside the OpenSSL FIPS module boundary.</p></details></td>
+        <td>2026-04-07</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-28388" target="_blank" rel="noopener">CVE-2026-28388</a></td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-476</td>
+        <td>&nbsp;</td>
+        <td>0.0% <small>p7</small></td>
+        <td>5.25</td>
+        <td><details><summary>Issue summary: When a delta CRL that contains a Delta CRL Indicator extension
+is...</summary><p>Issue summary: When a delta CRL that contains a Delta CRL Indicator extension
+is processed a NULL pointer dereference might happen if the required CRL
+Number extension is missing.
+
+Impact summary: A NULL pointer dereference can trigger a crash which
+leads to a Denial of Service for an application.
+
+When CRL processing and delta CRL processing is enabled during X.509
+certificate verification, the delta CRL processing does not check
+whether the CRL Number extension is NULL before dereferencing it.
+When a malformed delta CRL file is being processed, this parameter
+can be NULL, causing a NULL pointer dereference.
+
+Exploiting this issue requires the X509_V_FLAG_USE_DELTAS flag to be enabled in
+the verification context, the certificate being verified to contain a
+freshestCRL extension or the base CRL to have the EXFLAG_FRESHEST flag set, and
+an attacker to provide a malformed CRL to an application that processes it.
+
+The vulnerability is limited to Denial of Service and cannot be escalated to
+achieve code execution or memory disclosure. For that reason the issue was
+assessed as Low severity according to our Security Policy.
+
+The FIPS modules in 3.6, 3.5, 3.4, 3.3 and 3.0 are not affected by this issue,
+as the affected code is outside the OpenSSL FIPS module boundary.</p></details></td>
+        <td>2026-04-07</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-28387" target="_blank" rel="noopener">CVE-2026-28387</a></td>
+        <td>8.1</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-416</td>
+        <td>&nbsp;</td>
+        <td>0.0% <small>p3</small></td>
+        <td>5.67</td>
+        <td><details><summary>Issue summary: An uncommon configuration of clients performing DANE TLSA-based
+s...</summary><p>Issue summary: An uncommon configuration of clients performing DANE TLSA-based
+server authentication, when paired with uncommon server DANE TLSA records, may
+result in a use-after-free and/or double-free on the client side.
+
+Impact summary: A use after free can have a range of potential consequences
+such as the corruption of valid data, crashes or execution of arbitrary code.
+
+However, the issue only affects clients that make use of TLSA records with both
+the PKIX-TA(0/PKIX-EE(1) certificate usages and the DANE-TA(2) certificate
+usage.
+
+By far the most common deployment of DANE is in SMTP MTAs for which RFC7672
+recommends that clients treat as &#x27;unusable&#x27; any TLSA records that have the PKIX
+certificate usages.  These SMTP (or other similar) clients are not vulnerable
+to this issue.  Conversely, any clients that support only the PKIX usages, and
+ignore the DANE-TA(2) usage are also not vulnerable.
+
+The client would also need to be communicating with a server that publishes a
+TLSA RRset with both types of TLSA records.
+
+No FIPS modules are affected by this issue, the problem code is outside the
+FIPS module boundary.</p></details></td>
+        <td>2026-04-07</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-28386" target="_blank" rel="noopener">CVE-2026-28386</a></td>
+        <td>9.1</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-125</td>
+        <td>&nbsp;</td>
+        <td>0.0% <small>p15</small></td>
+        <td>6.37</td>
+        <td><details><summary>Issue summary: Applications using AES-CFB128 encryption or decryption on
+systems...</summary><p>Issue summary: Applications using AES-CFB128 encryption or decryption on
+systems with AVX-512 and VAES support can trigger an out-of-bounds read
+of up to 15 bytes when processing partial cipher blocks.
+
+Impact summary: This out-of-bounds read may trigger a crash which leads to
+Denial of Service for an application if the input buffer ends at a memory
+page boundary and the following page is unmapped. There is no information
+disclosure as the over-read bytes are not written to output.
+
+The vulnerable code path is only reached when processing partial blocks
+(when a previous call left an incomplete block and the current call provides
+fewer bytes than needed to complete it). Additionally, the input buffer
+must be positioned at a page boundary with the following page unmapped.
+CFB mode is not used in TLS/DTLS protocols, which use CBC, GCM, CCM, or
+ChaCha20-Poly1305 instead. For these reasons the issue was assessed as
+Low severity according to our Security Policy.
+
+Only x86-64 systems with AVX-512 and VAES instruction support are affected.
+Other architectures and systems without VAES support use different code
+paths that are not affected.
+
+OpenSSL FIPS module in 3.6 version is affected by this issue.</p></details></td>
         <td>2026-04-07</td>
       </tr>
       <tr>
@@ -33824,6 +34131,25 @@ A subsequent request using the same thread inherits the ThreadLocal values, lead
         <td>0.0% <small>p5</small></td>
         <td>5.25</td>
         <td><details><summary>Cross-Site Request Forgery (CSRF) vulnerability in Analytify Under Construction,...</summary><p>Cross-Site Request Forgery (CSRF) vulnerability in Analytify Under Construction, Coming Soon &amp; Maintenance Mode allows Cross Site Request Forgery.This issue affects Under Construction, Coming Soon &amp; Maintenance Mode: from n/a through 2.1.1.</p></details></td>
+        <td>2026-04-07</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-28810" target="_blank" rel="noopener">CVE-2026-28810</a></td>
+        <td>6.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-340</td>
+        <td>&nbsp;</td>
+        <td>0.1% <small>p20</small></td>
+        <td>4.41</td>
+        <td><details><summary>Generation of Predictable Numbers or Identifiers vulnerability in Erlang/OTP ker...</summary><p>Generation of Predictable Numbers or Identifiers vulnerability in Erlang/OTP kernel (inet_res, inet_db modules) allows DNS Cache Poisoning.
+
+The built-in DNS resolver (inet_res) uses a sequential, process-global 16-bit transaction ID for UDP queries and does not implement source port randomization. Response validation relies almost entirely on this ID, making DNS cache poisoning practical for an attacker who can observe one query or predict the next ID. This conflicts with RFC 5452 recommendations for mitigating forged DNS answers.
+
+inet_res is intended for use in trusted network environments and with trusted recursive resolvers. Earlier documentation did not clearly state this deployment assumption, which could lead users to deploy the resolver in environments where spoofed DNS responses are possible.
+
+This vulnerability is associated with program files lib/kernel/src/inet_db.erl and lib/kernel/src/inet_res.erl.
+
+This issue affects OTP from OTP 17.0 until OTP 28.4.2, 27.3.4.10 and 26.2.5.19 corresponding to kernel from 3.0 until 10.6.2, 10.2.7.4 and 9.2.4.11.</p></details></td>
         <td>2026-04-07</td>
       </tr>
       <tr>
@@ -57847,7 +58173,7 @@ A subsequent request using the same thread inherits the ThreadLocal values, lead
         <td>&nbsp;</td>
         <td>0.0% <small>p9</small></td>
         <td>4.55</td>
-        <td><details><summary>Improper Neutralization of Input During Web Page Generation (&#x27;Cross-site Scripti...</summary><p>Improper Neutralization of Input During Web Page Generation (&#x27;Cross-site Scripting&#x27;) vulnerability in codepeople CP Multi View Event Calendar  cp-multi-view-calendar allows Stored XSS.This issue affects CP Multi View Event Calendar : from n/a through &lt;= 1.4.35.</p></details></td>
+        <td><details><summary>Improper Neutralization of Input During Web Page Generation (&#x27;Cross-site Scripti...</summary><p>Improper Neutralization of Input During Web Page Generation (&#x27;Cross-site Scripting&#x27;) vulnerability in codepeople CP Multi View Event Calendar  cp-multi-view-calendar allows Stored XSS.This issue affects CP Multi View Event Calendar : from n/a through &lt;= 1.4.36.</p></details></td>
         <td>2026-03-25</td>
       </tr>
       <tr>
@@ -57858,7 +58184,7 @@ A subsequent request using the same thread inherits the ThreadLocal values, lead
         <td>&nbsp;</td>
         <td>0.2% <small>p35</small></td>
         <td>5.67</td>
-        <td><details><summary>Improper Control of Filename for Include/Require Statement in PHP Program (&#x27;PHP ...</summary><p>Improper Control of Filename for Include/Require Statement in PHP Program (&#x27;PHP Remote File Inclusion&#x27;) vulnerability in TieLabs Jannah jannah allows PHP Local File Inclusion.This issue affects Jannah: from n/a through &lt;= 7.6.3.</p></details></td>
+        <td><details><summary>Improper Control of Filename for Include/Require Statement in PHP Program (&#x27;PHP ...</summary><p>Improper Control of Filename for Include/Require Statement in PHP Program (&#x27;PHP Remote File Inclusion&#x27;) vulnerability in TieLabs Jannah jannah allows PHP Local File Inclusion.This issue affects Jannah: from n/a through &lt;= 7.6.4.</p></details></td>
         <td>2026-03-25</td>
       </tr>
       <tr>
@@ -57918,13 +58244,13 @@ A subsequent request using the same thread inherits the ThreadLocal values, lead
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-25456" target="_blank" rel="noopener">CVE-2026-25456</a></td>
-        <td>7.5</td>
+        <td>7.3</td>
         <td><span class="severity high">HIGH</span></td>
         <td>CWE-862</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p12</small></td>
-        <td>5.25</td>
-        <td><details><summary>Missing Authorization vulnerability in Aarsiv Groups Automated FedEx live/manual...</summary><p>Missing Authorization vulnerability in Aarsiv Groups Automated FedEx live/manual rates with shipping labels a2z-fedex-shipping allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects Automated FedEx live/manual rates with shipping labels: from n/a through &lt;= 5.1.8.</p></details></td>
+        <td>5.11</td>
+        <td><details><summary>Missing Authorization vulnerability in Aarsiv Groups Automated FedEx live/manual...</summary><p>Missing Authorization vulnerability in Aarsiv Groups Automated FedEx live/manual rates with shipping labels a2z-fedex-shipping allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects Automated FedEx live/manual rates with shipping labels: from n/a through &lt;= 5.1.9.</p></details></td>
         <td>2026-03-25</td>
       </tr>
       <tr>
@@ -57935,7 +58261,7 @@ A subsequent request using the same thread inherits the ThreadLocal values, lead
         <td>&nbsp;</td>
         <td>0.0% <small>p8</small></td>
         <td>4.55</td>
-        <td><details><summary>Missing Authorization vulnerability in PickPlugins Product Slider for WooCommerc...</summary><p>Missing Authorization vulnerability in PickPlugins Product Slider for WooCommerce woocommerce-products-slider allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects Product Slider for WooCommerce: from n/a through &lt;= 1.13.60.</p></details></td>
+        <td><details><summary>Missing Authorization vulnerability in PickPlugins Product Slider for WooCommerc...</summary><p>Missing Authorization vulnerability in PickPlugins Product Slider for WooCommerce woocommerce-products-slider allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects Product Slider for WooCommerce: from n/a through &lt;= 1.13.61.</p></details></td>
         <td>2026-03-25</td>
       </tr>
       <tr>
@@ -58050,12 +58376,12 @@ A subsequent request using the same thread inherits the ThreadLocal values, lead
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-25406" target="_blank" rel="noopener">CVE-2026-25406</a></td>
-        <td>8.8</td>
+        <td>8.1</td>
         <td><span class="severity high">HIGH</span></td>
         <td>CWE-288</td>
         <td>&nbsp;</td>
         <td>0.1% <small>p18</small></td>
-        <td>6.16</td>
+        <td>5.67</td>
         <td><details><summary>Authentication Bypass Using an Alternate Path or Channel vulnerability in Themeu...</summary><p>Authentication Bypass Using an Alternate Path or Channel vulnerability in Themeum Tutor LMS Pro tutor-pro allows Authentication Abuse.This issue affects Tutor LMS Pro: from n/a through &lt;= 3.9.4.</p></details></td>
         <td>2026-03-25</td>
       </tr>
@@ -59546,12 +59872,12 @@ A subsequent request using the same thread inherits the ThreadLocal values, lead
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-69347" target="_blank" rel="noopener">CVE-2025-69347</a></td>
-        <td>8.5</td>
+        <td>8.6</td>
         <td><span class="severity high">HIGH</span></td>
         <td>CWE-639</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p9</small></td>
-        <td>5.95</td>
+        <td>6.02</td>
         <td><details><summary>Authorization Bypass Through User-Controlled Key vulnerability in Convers Lab WP...</summary><p>Authorization Bypass Through User-Controlled Key vulnerability in Convers Lab WPSubscription subscription allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects WPSubscription: from n/a through &lt;= 1.8.10.</p></details></td>
         <td>2026-03-25</td>
       </tr>
@@ -70112,7 +70438,7 @@ A subsequent request using the same thread inherits the ThreadLocal values, lead
         <td>&nbsp;</td>
         <td>0.1% <small>p16</small></td>
         <td>5.67</td>
-        <td><details><summary>Improper Control of Filename for Include/Require Statement in PHP Program (&#x27;PHP ...</summary><p>Improper Control of Filename for Include/Require Statement in PHP Program (&#x27;PHP Remote File Inclusion&#x27;) vulnerability in ThemeREX Melania allows PHP Local File Inclusion.This issue affects Melania: from n/a through 2.5.0.</p></details></td>
+        <td><details><summary>Improper Control of Filename for Include/Require Statement in PHP Program (&#x27;PHP ...</summary><p>Improper Control of Filename for Include/Require Statement in PHP Program (&#x27;PHP Remote File Inclusion&#x27;) vulnerability in ThemeREX Melania melania allows PHP Local File Inclusion.This issue affects Melania: from n/a through &lt;= 2.5.0.</p></details></td>
         <td>2026-03-20</td>
       </tr>
       <tr>
@@ -73445,7 +73771,7 @@ A subsequent request using the same thread inherits the ThreadLocal values, lead
         <td>&nbsp;</td>
         <td>0.0% <small>p5</small></td>
         <td>5.04</td>
-        <td><details><summary>Unrestricted Upload of File with Dangerous Type vulnerability in ThemeGoods Phot...</summary><p>Unrestricted Upload of File with Dangerous Type vulnerability in ThemeGoods Photography allows Path Traversal.This issue affects Photography: from n/a before 7.7.6.</p></details></td>
+        <td><details><summary>Unrestricted Upload of File with Dangerous Type vulnerability in ThemeGoods Phot...</summary><p>Unrestricted Upload of File with Dangerous Type vulnerability in ThemeGoods Photography photography allows Path Traversal.This issue affects Photography: from n/a through &lt; 7.7.6.</p></details></td>
         <td>2026-03-19</td>
       </tr>
       <tr>
@@ -73566,39 +73892,39 @@ A subsequent request using the same thread inherits the ThreadLocal values, lead
         <td>&nbsp;</td>
         <td>0.0% <small>p11</small></td>
         <td>4.97</td>
-        <td><details><summary>Improper Neutralization of Input During Web Page Generation (&#x27;Cross-site Scripti...</summary><p>Improper Neutralization of Input During Web Page Generation (&#x27;Cross-site Scripting&#x27;) vulnerability in WPEverest Everest Forms Pro allows Stored XSS.This issue affects Everest Forms Pro: from n/a through 1.9.10.</p></details></td>
+        <td><details><summary>Improper Neutralization of Input During Web Page Generation (&#x27;Cross-site Scripti...</summary><p>Improper Neutralization of Input During Web Page Generation (&#x27;Cross-site Scripting&#x27;) vulnerability in WPEverest Everest Forms Pro everest-forms-pro allows Stored XSS.This issue affects Everest Forms Pro: from n/a through &lt;= 1.9.12.</p></details></td>
         <td>2026-03-19</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-27068" target="_blank" rel="noopener">CVE-2026-27068</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>7.1</td>
+        <td><span class="severity high">HIGH</span></td>
         <td>CWE-79</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p12</small></td>
-        <td>0.00</td>
+        <td>4.97</td>
         <td><details><summary>Improper Neutralization of Input During Web Page Generation (&#x27;Cross-site Scripti...</summary><p>Improper Neutralization of Input During Web Page Generation (&#x27;Cross-site Scripting&#x27;) vulnerability in Ryan Howard Website LLMs.txt website-llms-txt allows Reflected XSS.This issue affects Website LLMs.txt: from n/a through &lt;= 8.2.6.</p></details></td>
         <td>2026-03-19</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-27067" target="_blank" rel="noopener">CVE-2026-27067</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>9.1</td>
+        <td><span class="severity critical">CRITICAL</span></td>
         <td>CWE-434</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p7</small></td>
-        <td>0.00</td>
+        <td>6.37</td>
         <td><details><summary>Unrestricted Upload of File with Dangerous Type vulnerability in Syarif Mobile A...</summary><p>Unrestricted Upload of File with Dangerous Type vulnerability in Syarif Mobile App Editor mobile-app-editor allows Upload a Web Shell to a Web Server.This issue affects Mobile App Editor: from n/a through &lt;= 1.3.1.</p></details></td>
         <td>2026-03-19</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-27065" target="_blank" rel="noopener">CVE-2026-27065</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>9.8</td>
+        <td><span class="severity critical">CRITICAL</span></td>
         <td>CWE-98</td>
         <td>&nbsp;</td>
         <td>0.1% <small>p22</small></td>
-        <td>0.00</td>
+        <td>6.86</td>
         <td><details><summary>Improper Control of Filename for Include/Require Statement in PHP Program (&#x27;PHP ...</summary><p>Improper Control of Filename for Include/Require Statement in PHP Program (&#x27;PHP Remote File Inclusion&#x27;) vulnerability in ThimPress BuilderPress builderpress allows PHP Local File Inclusion.This issue affects BuilderPress: from n/a through &lt;= 2.0.1.</p></details></td>
         <td>2026-03-19</td>
       </tr>
@@ -73610,39 +73936,39 @@ A subsequent request using the same thread inherits the ThreadLocal values, lead
         <td>&nbsp;</td>
         <td>0.1% <small>p19</small></td>
         <td>6.16</td>
-        <td><details><summary>Deserialization of Untrusted Data vulnerability in Membership Software WishList ...</summary><p>Deserialization of Untrusted Data vulnerability in Membership Software WishList Member X allows Object Injection.This issue affects WishList Member X: from n/a through 3.29.0.</p></details></td>
+        <td><details><summary>Deserialization of Untrusted Data vulnerability in Membership Software WishList ...</summary><p>Deserialization of Untrusted Data vulnerability in Membership Software WishList Member X wishlist-member-x allows Object Injection.This issue affects WishList Member X: from n/a through &lt;= 3.29.0.</p></details></td>
         <td>2026-03-19</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-25443" target="_blank" rel="noopener">CVE-2026-25443</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
         <td>CWE-862</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p6</small></td>
-        <td>0.00</td>
+        <td>5.25</td>
         <td><details><summary>Missing Authorization vulnerability in Dotstore Fraud Prevention For Woocommerce...</summary><p>Missing Authorization vulnerability in Dotstore Fraud Prevention For Woocommerce woo-blocker-lite-prevent-fake-orders-and-blacklist-fraud-customers allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects Fraud Prevention For Woocommerce: from n/a through &lt;= 2.3.3.</p></details></td>
         <td>2026-03-19</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-25442" target="_blank" rel="noopener">CVE-2026-25442</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>7.1</td>
+        <td><span class="severity high">HIGH</span></td>
         <td>CWE-79</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p12</small></td>
-        <td>0.00</td>
+        <td>4.97</td>
         <td><details><summary>Improper Neutralization of Input During Web Page Generation (&#x27;Cross-site Scripti...</summary><p>Improper Neutralization of Input During Web Page Generation (&#x27;Cross-site Scripting&#x27;) vulnerability in QantumThemes Kentha kentha allows Reflected XSS.This issue affects Kentha: from n/a through &lt;= 4.7.2.</p></details></td>
         <td>2026-03-19</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-25438" target="_blank" rel="noopener">CVE-2026-25438</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>7.1</td>
+        <td><span class="severity high">HIGH</span></td>
         <td>CWE-79</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p12</small></td>
-        <td>0.00</td>
+        <td>4.97</td>
         <td><details><summary>Improper Neutralization of Input During Web Page Generation (&#x27;Cross-site Scripti...</summary><p>Improper Neutralization of Input During Web Page Generation (&#x27;Cross-site Scripting&#x27;) vulnerability in ThemeHunk Gutenberg Blocks unlimited-blocks allows Reflected XSS.This issue affects Gutenberg Blocks: from n/a through &lt;= 1.2.8.</p></details></td>
         <td>2026-03-19</td>
       </tr>
@@ -73665,7 +73991,7 @@ A subsequent request using the same thread inherits the ThreadLocal values, lead
         <td>&nbsp;</td>
         <td>0.0% <small>p11</small></td>
         <td>4.97</td>
-        <td><details><summary>Improper Neutralization of Input During Web Page Generation (&#x27;Cross-site Scripti...</summary><p>Improper Neutralization of Input During Web Page Generation (&#x27;Cross-site Scripting&#x27;) vulnerability in Markbeljaars Table of Contents Creator allows Reflected XSS.This issue affects Table of Contents Creator: from n/a through 1.6.4.1.</p></details></td>
+        <td><details><summary>Improper Neutralization of Input During Web Page Generation (&#x27;Cross-site Scripti...</summary><p>Improper Neutralization of Input During Web Page Generation (&#x27;Cross-site Scripting&#x27;) vulnerability in Markbeljaars Table of Contents Creator table-of-contents-creator allows Reflected XSS.This issue affects Table of Contents Creator: from n/a through &lt;= 1.6.4.1.</p></details></td>
         <td>2026-03-19</td>
       </tr>
       <tr>
@@ -73676,7 +74002,7 @@ A subsequent request using the same thread inherits the ThreadLocal values, lead
         <td>&nbsp;</td>
         <td>0.0% <small>p2</small></td>
         <td>4.97</td>
-        <td><details><summary>Improper Neutralization of Input During Web Page Generation (&#x27;Cross-site Scripti...</summary><p>Improper Neutralization of Input During Web Page Generation (&#x27;Cross-site Scripting&#x27;) vulnerability in ArtstudioWorks Brookside allows Reflected XSS.This issue affects Brookside: from n/a through 1.4.</p></details></td>
+        <td><details><summary>Improper Neutralization of Input During Web Page Generation (&#x27;Cross-site Scripti...</summary><p>Improper Neutralization of Input During Web Page Generation (&#x27;Cross-site Scripting&#x27;) vulnerability in ArtstudioWorks Brookside brookside allows Reflected XSS.This issue affects Brookside: from n/a through &lt;= 1.4.</p></details></td>
         <td>2026-03-19</td>
       </tr>
       <tr>
@@ -73698,7 +74024,7 @@ A subsequent request using the same thread inherits the ThreadLocal values, lead
         <td>&nbsp;</td>
         <td>0.0% <small>p5</small></td>
         <td>6.86</td>
-        <td><details><summary>Deserialization of Untrusted Data vulnerability in Themeton Finag allows Object ...</summary><p>Deserialization of Untrusted Data vulnerability in Themeton Finag allows Object Injection.This issue affects Finag: from n/a through 1.5.0.</p></details></td>
+        <td><details><summary>Deserialization of Untrusted Data vulnerability in Themeton Finag finag allows O...</summary><p>Deserialization of Untrusted Data vulnerability in Themeton Finag finag allows Object Injection.This issue affects Finag: from n/a through &lt;= 1.5.0.</p></details></td>
         <td>2026-03-19</td>
       </tr>
       <tr>
@@ -73709,17 +74035,17 @@ A subsequent request using the same thread inherits the ThreadLocal values, lead
         <td>&nbsp;</td>
         <td>0.1% <small>p18</small></td>
         <td>6.86</td>
-        <td><details><summary>Deserialization of Untrusted Data vulnerability in Themeton Zuut allows Object I...</summary><p>Deserialization of Untrusted Data vulnerability in Themeton Zuut allows Object Injection.This issue affects Zuut: from n/a through 1.4.2.</p></details></td>
+        <td><details><summary>Deserialization of Untrusted Data vulnerability in Themeton Zuut zuut allows Obj...</summary><p>Deserialization of Untrusted Data vulnerability in Themeton Zuut zuut allows Object Injection.This issue affects Zuut: from n/a through &lt;= 1.4.2.</p></details></td>
         <td>2026-03-19</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-53222" target="_blank" rel="noopener">CVE-2025-53222</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>7.1</td>
+        <td><span class="severity high">HIGH</span></td>
         <td>CWE-79</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p1</small></td>
-        <td>0.00</td>
+        <td>4.97</td>
         <td><details><summary>Improper Neutralization of Input During Web Page Generation (&#x27;Cross-site Scripti...</summary><p>Improper Neutralization of Input During Web Page Generation (&#x27;Cross-site Scripting&#x27;) vulnerability in tagDiv tagDiv Opt-In Builder td-subscription allows Reflected XSS.This issue affects tagDiv Opt-In Builder: from n/a through &lt;= 1.7.3.</p></details></td>
         <td>2026-03-19</td>
       </tr>
@@ -73758,13 +74084,13 @@ A subsequent request using the same thread inherits the ThreadLocal values, lead
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-25471" target="_blank" rel="noopener">CVE-2026-25471</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>8.1</td>
+        <td><span class="severity high">HIGH</span></td>
         <td>CWE-288</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p9</small></td>
-        <td>0.00</td>
-        <td><details><summary>Authentication Bypass Using an Alternate Path or Channel vulnerability in Themep...</summary><p>Authentication Bypass Using an Alternate Path or Channel vulnerability in Themepaste Admin Safety Guard admin-safety-guard allows Password Recovery Exploitation.This issue affects Admin Safety Guard: from n/a through &lt;= 1.2.6.</p></details></td>
+        <td>5.67</td>
+        <td><details><summary>Authentication Bypass Using an Alternate Path or Channel vulnerability in Themep...</summary><p>Authentication Bypass Using an Alternate Path or Channel vulnerability in Themepaste Admin Safety Guard admin-safety-guard allows Password Recovery Exploitation.This issue affects Admin Safety Guard: from n/a through &lt;= 1.2.7.</p></details></td>
         <td>2026-03-19</td>
       </tr>
       <tr>
@@ -73835,23 +74161,23 @@ A subsequent request using the same thread inherits the ThreadLocal values, lead
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-27093" target="_blank" rel="noopener">CVE-2026-27093</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>8.1</td>
+        <td><span class="severity high">HIGH</span></td>
         <td>CWE-98</td>
         <td>&nbsp;</td>
         <td>0.1% <small>p22</small></td>
-        <td>0.00</td>
+        <td>5.67</td>
         <td><details><summary>Improper Control of Filename for Include/Require Statement in PHP Program (&#x27;PHP ...</summary><p>Improper Control of Filename for Include/Require Statement in PHP Program (&#x27;PHP Remote File Inclusion&#x27;) vulnerability in ovatheme Tripgo tripgo allows PHP Local File Inclusion.This issue affects Tripgo: from n/a through &lt; 1.5.6.</p></details></td>
         <td>2026-03-19</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-27091" target="_blank" rel="noopener">CVE-2026-27091</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>6.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
         <td>CWE-862</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p6</small></td>
-        <td>0.00</td>
+        <td>4.41</td>
         <td><details><summary>Missing Authorization vulnerability in UiPress UiPress lite uipress-lite allows ...</summary><p>Missing Authorization vulnerability in UiPress UiPress lite uipress-lite allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects UiPress lite: from n/a through &lt;= 3.5.09.</p></details></td>
         <td>2026-03-19</td>
       </tr>
@@ -73863,7 +74189,7 @@ A subsequent request using the same thread inherits the ThreadLocal values, lead
         <td>&nbsp;</td>
         <td>0.0% <small>p11</small></td>
         <td>4.97</td>
-        <td><details><summary>Improper Neutralization of Input During Web Page Generation (&#x27;Cross-site Scripti...</summary><p>Improper Neutralization of Input During Web Page Generation (&#x27;Cross-site Scripting&#x27;) vulnerability in Tips and Tricks HQ WP eMember allows Reflected XSS.This issue affects WP eMember: from n/a through v10.2.2.</p></details></td>
+        <td><details><summary>Improper Neutralization of Input During Web Page Generation (&#x27;Cross-site Scripti...</summary><p>Improper Neutralization of Input During Web Page Generation (&#x27;Cross-site Scripting&#x27;) vulnerability in Tips and Tricks HQ WP eMember wp-eMember allows Reflected XSS.This issue affects WP eMember: from n/a through &lt;= v10.2.2.</p></details></td>
         <td>2026-03-19</td>
       </tr>
       <tr>
@@ -73874,7 +74200,7 @@ A subsequent request using the same thread inherits the ThreadLocal values, lead
         <td>&nbsp;</td>
         <td>0.0% <small>p2</small></td>
         <td>3.71</td>
-        <td><details><summary>Missing Authorization vulnerability in Tips and Tricks HQ WP eMember allows Expl...</summary><p>Missing Authorization vulnerability in Tips and Tricks HQ WP eMember allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects WP eMember: from n/a through v10.2.2.</p></details></td>
+        <td><details><summary>Missing Authorization vulnerability in Tips and Tricks HQ WP eMember wp-eMember ...</summary><p>Missing Authorization vulnerability in Tips and Tricks HQ WP eMember wp-eMember allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects WP eMember: from n/a through &lt;= v10.2.2.</p></details></td>
         <td>2026-03-19</td>
       </tr>
       <tr>
@@ -73885,29 +74211,29 @@ A subsequent request using the same thread inherits the ThreadLocal values, lead
         <td>&nbsp;</td>
         <td>0.0% <small>p10</small></td>
         <td>4.13</td>
-        <td><details><summary>Improper Neutralization of Input During Web Page Generation (&#x27;Cross-site Scripti...</summary><p>Improper Neutralization of Input During Web Page Generation (&#x27;Cross-site Scripting&#x27;) vulnerability in WP Media WP Rocket allows Stored XSS.This issue affects WP Rocket: from n/a through 3.19.4.</p></details></td>
+        <td><details><summary>Improper Neutralization of Input During Web Page Generation (&#x27;Cross-site Scripti...</summary><p>Improper Neutralization of Input During Web Page Generation (&#x27;Cross-site Scripting&#x27;) vulnerability in WP Media WP Rocket wp-rocket allows Stored XSS.This issue affects WP Rocket: from n/a through &lt;= 3.19.4.</p></details></td>
         <td>2026-03-19</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-27542" target="_blank" rel="noopener">CVE-2026-27542</a></td>
-        <td>9.8</td>
-        <td><span class="severity critical">CRITICAL</span></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
         <td>CWE-266</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p5</small></td>
-        <td>6.86</td>
-        <td><details><summary>Incorrect Privilege Assignment vulnerability in Rymera Web Co Pty Ltd. Woocommer...</summary><p>Incorrect Privilege Assignment vulnerability in Rymera Web Co Pty Ltd. Woocommerce Wholesale Lead Capture allows Privilege Escalation.This issue affects Woocommerce Wholesale Lead Capture: from n/a through 2.0.3.1.</p></details></td>
+        <td>0.00</td>
+        <td><details><summary>Incorrect Privilege Assignment vulnerability in Rymera Web Co Pty Ltd. Woocommer...</summary><p>Incorrect Privilege Assignment vulnerability in Rymera Web Co Pty Ltd. Woocommerce Wholesale Lead Capture woocommerce-wholesale-lead-capture allows Privilege Escalation.This issue affects Woocommerce Wholesale Lead Capture: from n/a through &lt;= 2.0.3.1.</p></details></td>
         <td>2026-03-19</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-27540" target="_blank" rel="noopener">CVE-2026-27540</a></td>
-        <td>9.0</td>
-        <td><span class="severity critical">CRITICAL</span></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
         <td>CWE-434</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p4</small></td>
-        <td>6.30</td>
-        <td><details><summary>Unrestricted Upload of File with Dangerous Type vulnerability in Rymera Web Co P...</summary><p>Unrestricted Upload of File with Dangerous Type vulnerability in Rymera Web Co Pty Ltd. Woocommerce Wholesale Lead Capture allows Using Malicious Files.This issue affects Woocommerce Wholesale Lead Capture: from n/a through 2.0.3.1.</p></details></td>
+        <td>0.00</td>
+        <td><details><summary>Unrestricted Upload of File with Dangerous Type vulnerability in Rymera Web Co P...</summary><p>Unrestricted Upload of File with Dangerous Type vulnerability in Rymera Web Co Pty Ltd. Woocommerce Wholesale Lead Capture woocommerce-wholesale-lead-capture allows Using Malicious Files.This issue affects Woocommerce Wholesale Lead Capture: from n/a through &lt;= 2.0.3.1.</p></details></td>
         <td>2026-03-19</td>
       </tr>
       <tr>
@@ -73918,7 +74244,7 @@ A subsequent request using the same thread inherits the ThreadLocal values, lead
         <td>&nbsp;</td>
         <td>0.0% <small>p3</small></td>
         <td>6.51</td>
-        <td><details><summary>Improper Neutralization of Special Elements used in an SQL Command (&#x27;SQL Injecti...</summary><p>Improper Neutralization of Special Elements used in an SQL Command (&#x27;SQL Injection&#x27;) vulnerability in Cozmoslabs Profile Builder Pro allows Blind SQL Injection.This issue affects Profile Builder Pro: from n/a before 3.14.0.</p></details></td>
+        <td><details><summary>Improper Neutralization of Special Elements used in an SQL Command (&#x27;SQL Injecti...</summary><p>Improper Neutralization of Special Elements used in an SQL Command (&#x27;SQL Injection&#x27;) vulnerability in Cozmoslabs Profile Builder Pro profile-builder-pro allows Blind SQL Injection.This issue affects Profile Builder Pro: from n/a through &lt; 3.14.0.</p></details></td>
         <td>2026-03-19</td>
       </tr>
       <tr>
@@ -73929,7 +74255,7 @@ A subsequent request using the same thread inherits the ThreadLocal values, lead
         <td>&nbsp;</td>
         <td>0.1% <small>p16</small></td>
         <td>4.55</td>
-        <td><details><summary>Authorization Bypass Through User-Controlled Key vulnerability in Really Simple ...</summary><p>Authorization Bypass Through User-Controlled Key vulnerability in Really Simple Plugins B.V. Really Simple Security Pro allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects Really Simple Security Pro: from n/a through 9.5.4.0.</p></details></td>
+        <td><details><summary>Authorization Bypass Through User-Controlled Key vulnerability in Really Simple ...</summary><p>Authorization Bypass Through User-Controlled Key vulnerability in Really Simple Plugins B.V. Really Simple Security Pro really-simple-ssl-pro allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects Really Simple Security Pro: from n/a through &lt;= 9.5.4.0.</p></details></td>
         <td>2026-03-19</td>
       </tr>
       <tr>
@@ -73940,7 +74266,7 @@ A subsequent request using the same thread inherits the ThreadLocal values, lead
         <td>&nbsp;</td>
         <td>0.1% <small>p18</small></td>
         <td>5.67</td>
-        <td><details><summary>Deserialization of Untrusted Data vulnerability in BuddhaThemes ColorFolio - Fre...</summary><p>Deserialization of Untrusted Data vulnerability in BuddhaThemes ColorFolio - Freelance Designer WordPress Theme allows Object Injection.This issue affects ColorFolio - Freelance Designer WordPress Theme: from n/a through 1.3.</p></details></td>
+        <td><details><summary>Deserialization of Untrusted Data vulnerability in BuddhaThemes ColorFolio - Fre...</summary><p>Deserialization of Untrusted Data vulnerability in BuddhaThemes ColorFolio - Freelance Designer WordPress Theme colorfolio allows Object Injection.This issue affects ColorFolio - Freelance Designer WordPress Theme: from n/a through &lt;= 1.3.</p></details></td>
         <td>2026-03-19</td>
       </tr>
       <tr>
@@ -75144,12 +75470,12 @@ A subsequent request using the same thread inherits the ThreadLocal values, lead
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-25449" target="_blank" rel="noopener">CVE-2026-25449</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>9.8</td>
+        <td><span class="severity critical">CRITICAL</span></td>
         <td>CWE-502</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p10</small></td>
-        <td>0.00</td>
+        <td>6.86</td>
         <td><details><summary>Deserialization of Untrusted Data vulnerability in shinetheme Traveler traveler ...</summary><p>Deserialization of Untrusted Data vulnerability in shinetheme Traveler traveler allows Object Injection.This issue affects Traveler: from n/a through &lt; 3.2.8.1.</p></details></td>
         <td>2026-03-18</td>
       </tr>
@@ -77718,12 +78044,12 @@ A subsequent request using the same thread inherits the ThreadLocal values, lead
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-25369" target="_blank" rel="noopener">CVE-2026-25369</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>7.1</td>
+        <td><span class="severity high">HIGH</span></td>
         <td>CWE-79</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p12</small></td>
-        <td>0.00</td>
+        <td>4.97</td>
         <td><details><summary>Improper Neutralization of Input During Web Page Generation (&#x27;Cross-site Scripti...</summary><p>Improper Neutralization of Input During Web Page Generation (&#x27;Cross-site Scripting&#x27;) vulnerability in flexmls Flexmls® IDX flexmls-idx allows Reflected XSS.This issue affects Flexmls® IDX: from n/a through &lt;= 3.15.9.</p></details></td>
         <td>2026-03-16</td>
       </tr>
@@ -96754,7 +97080,7 @@ A subsequent request using the same thread inherits the ThreadLocal values, lead
         <td>&nbsp;</td>
         <td>0.0% <small>p9</small></td>
         <td>3.01</td>
-        <td><details><summary>Missing Authorization vulnerability in Rank Math Rank Math SEO PRO allows Exploi...</summary><p>Missing Authorization vulnerability in Rank Math Rank Math SEO PRO allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects Rank Math SEO PRO: from n/a through 3.0.95.</p></details></td>
+        <td><details><summary>Missing Authorization vulnerability in Rank Math Rank Math SEO PRO seo-by-rank-m...</summary><p>Missing Authorization vulnerability in Rank Math Rank Math SEO PRO seo-by-rank-math-pro allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects Rank Math SEO PRO: from n/a through &lt;= 3.0.96.</p></details></td>
         <td>2026-03-06</td>
       </tr>
       <tr>
@@ -100527,7 +100853,7 @@ A subsequent request using the same thread inherits the ThreadLocal values, lead
         <td>&nbsp;</td>
         <td>0.0% <small>p9</small></td>
         <td>4.55</td>
-        <td><details><summary>Missing Authorization vulnerability in Brainstorm Force Ultimate Addons for WPBa...</summary><p>Missing Authorization vulnerability in Brainstorm Force Ultimate Addons for WPBakery Page Builder allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects Ultimate Addons for WPBakery Page Builder: from n/a through 3.21.1.</p></details></td>
+        <td><details><summary>Missing Authorization vulnerability in Brainstorm_Force Ultimate Addons for WPBa...</summary><p>Missing Authorization vulnerability in Brainstorm_Force Ultimate Addons for WPBakery Page Builder ultimate_vc_addons allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects Ultimate Addons for WPBakery Page Builder: from n/a through &lt;= 3.21.1.</p></details></td>
         <td>2026-03-05</td>
       </tr>
       <tr>
@@ -101341,7 +101667,7 @@ A subsequent request using the same thread inherits the ThreadLocal values, lead
         <td>&nbsp;</td>
         <td>0.0% <small>p11</small></td>
         <td>4.97</td>
-        <td><details><summary>Improper Neutralization of Input During Web Page Generation (&#x27;Cross-site Scripti...</summary><p>Improper Neutralization of Input During Web Page Generation (&#x27;Cross-site Scripting&#x27;) vulnerability in ThemeGoods Musico allows Reflected XSS.This issue affects Musico: from n/a before 3.4.5.</p></details></td>
+        <td><details><summary>Improper Neutralization of Input During Web Page Generation (&#x27;Cross-site Scripti...</summary><p>Improper Neutralization of Input During Web Page Generation (&#x27;Cross-site Scripting&#x27;) vulnerability in ThemeGoods Musico musico allows Reflected XSS.This issue affects Musico: from n/a through &lt; 3.4.5.</p></details></td>
         <td>2026-03-05</td>
       </tr>
       <tr>
@@ -101396,7 +101722,7 @@ A subsequent request using the same thread inherits the ThreadLocal values, lead
         <td>&nbsp;</td>
         <td>0.0% <small>p11</small></td>
         <td>4.97</td>
-        <td><details><summary>Improper Neutralization of Input During Web Page Generation (&#x27;Cross-site Scripti...</summary><p>Improper Neutralization of Input During Web Page Generation (&#x27;Cross-site Scripting&#x27;) vulnerability in ThemeGoods Architecturer allows Reflected XSS.This issue affects Architecturer: from n/a before 3.9.5.</p></details></td>
+        <td><details><summary>Improper Neutralization of Input During Web Page Generation (&#x27;Cross-site Scripti...</summary><p>Improper Neutralization of Input During Web Page Generation (&#x27;Cross-site Scripting&#x27;) vulnerability in ThemeGoods Architecturer architecturer allows Reflected XSS.This issue affects Architecturer: from n/a through &lt; 3.9.5.</p></details></td>
         <td>2026-03-05</td>
       </tr>
       <tr>
@@ -101429,7 +101755,7 @@ A subsequent request using the same thread inherits the ThreadLocal values, lead
         <td>&nbsp;</td>
         <td>0.0% <small>p11</small></td>
         <td>4.97</td>
-        <td><details><summary>Improper Neutralization of Input During Web Page Generation (&#x27;Cross-site Scripti...</summary><p>Improper Neutralization of Input During Web Page Generation (&#x27;Cross-site Scripting&#x27;) vulnerability in ThemeGoods Starto allows Reflected XSS.This issue affects Starto: from n/a before 2.2.5.</p></details></td>
+        <td><details><summary>Improper Neutralization of Input During Web Page Generation (&#x27;Cross-site Scripti...</summary><p>Improper Neutralization of Input During Web Page Generation (&#x27;Cross-site Scripting&#x27;) vulnerability in ThemeGoods Starto starto allows Reflected XSS.This issue affects Starto: from n/a through &lt; 2.2.5.</p></details></td>
         <td>2026-03-05</td>
       </tr>
       <tr>
@@ -101440,17 +101766,17 @@ A subsequent request using the same thread inherits the ThreadLocal values, lead
         <td>&nbsp;</td>
         <td>0.0% <small>p11</small></td>
         <td>4.97</td>
-        <td><details><summary>Improper Neutralization of Input During Web Page Generation (&#x27;Cross-site Scripti...</summary><p>Improper Neutralization of Input During Web Page Generation (&#x27;Cross-site Scripting&#x27;) vulnerability in ThemeGoods Photography allows DOM-Based XSS.This issue affects Photography: from n/a before 7.7.6.</p></details></td>
+        <td><details><summary>Improper Neutralization of Input During Web Page Generation (&#x27;Cross-site Scripti...</summary><p>Improper Neutralization of Input During Web Page Generation (&#x27;Cross-site Scripting&#x27;) vulnerability in ThemeGoods Photography photography allows DOM-Based XSS.This issue affects Photography: from n/a through &lt; 7.7.6.</p></details></td>
         <td>2026-03-05</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-27344" target="_blank" rel="noopener">CVE-2026-27344</a></td>
-        <td>5.3</td>
+        <td>5.9</td>
         <td><span class="severity medium">MEDIUM</span></td>
         <td>CWE-862</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p12</small></td>
-        <td>3.71</td>
+        <td>4.13</td>
         <td><details><summary>Missing Authorization vulnerability in inseriswiss inseri core inseri-core allow...</summary><p>Missing Authorization vulnerability in inseriswiss inseri core inseri-core allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects inseri core: from n/a through &lt;= 1.0.5.</p></details></td>
         <td>2026-03-05</td>
       </tr>
@@ -101797,12 +102123,12 @@ A subsequent request using the same thread inherits the ThreadLocal values, lead
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-22471" target="_blank" rel="noopener">CVE-2026-22471</a></td>
-        <td>8.6</td>
+        <td>8.8</td>
         <td><span class="severity high">HIGH</span></td>
         <td>CWE-502</td>
         <td>&nbsp;</td>
         <td>0.1% <small>p17</small></td>
-        <td>6.02</td>
+        <td>6.16</td>
         <td><details><summary>Deserialization of Untrusted Data vulnerability in maximsecudeal Secudeal Paymen...</summary><p>Deserialization of Untrusted Data vulnerability in maximsecudeal Secudeal Payments for Ecommerce secudeal-payments-for-ecommerce allows Object Injection.This issue affects Secudeal Payments for Ecommerce: from n/a through &lt;= 1.1.</p></details></td>
         <td>2026-03-05</td>
       </tr>
@@ -101836,7 +102162,7 @@ A subsequent request using the same thread inherits the ThreadLocal values, lead
         <td>&nbsp;</td>
         <td>0.1% <small>p21</small></td>
         <td>6.02</td>
-        <td><details><summary>Improper Limitation of a Pathname to a Restricted Directory (&#x27;Path Traversal&#x27;) v...</summary><p>Improper Limitation of a Pathname to a Restricted Directory (&#x27;Path Traversal&#x27;) vulnerability in wpWax FormGent formgent allows Path Traversal.This issue affects FormGent: from n/a through &lt;= 1.5.6.</p></details></td>
+        <td><details><summary>Improper Limitation of a Pathname to a Restricted Directory (&#x27;Path Traversal&#x27;) v...</summary><p>Improper Limitation of a Pathname to a Restricted Directory (&#x27;Path Traversal&#x27;) vulnerability in wpWax FormGent formgent allows Path Traversal.This issue affects FormGent: from n/a through &lt;= 1.7.0.</p></details></td>
         <td>2026-03-05</td>
       </tr>
       <tr>
@@ -102204,13 +102530,13 @@ A subsequent request using the same thread inherits the ThreadLocal values, lead
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-22417" target="_blank" rel="noopener">CVE-2026-22417</a></td>
-        <td>8.1</td>
-        <td><span class="severity high">HIGH</span></td>
+        <td>9.8</td>
+        <td><span class="severity critical">CRITICAL</span></td>
         <td>CWE-502</td>
         <td>&nbsp;</td>
         <td>0.1% <small>p18</small></td>
-        <td>5.67</td>
-        <td><details><summary>Deserialization of Untrusted Data vulnerability in ThemeGoods Grand Wedding gran...</summary><p>Deserialization of Untrusted Data vulnerability in ThemeGoods Grand Wedding grandwedding allows Object Injection.This issue affects Grand Wedding: from n/a through &lt;= 3.1.0.</p></details></td>
+        <td>6.86</td>
+        <td><details><summary>Deserialization of Untrusted Data vulnerability in ThemeGoods Grand Wedding gran...</summary><p>Deserialization of Untrusted Data vulnerability in ThemeGoods Grand Wedding grandwedding allows Object Injection.This issue affects Grand Wedding: from n/a through &lt; 3.1.11.</p></details></td>
         <td>2026-03-05</td>
       </tr>
       <tr>
@@ -102309,7 +102635,7 @@ A subsequent request using the same thread inherits the ThreadLocal values, lead
         <td>&nbsp;</td>
         <td>0.2% <small>p37</small></td>
         <td>5.67</td>
-        <td><details><summary>Improper Control of Filename for Include/Require Statement in PHP Program (&#x27;PHP ...</summary><p>Improper Control of Filename for Include/Require Statement in PHP Program (&#x27;PHP Remote File Inclusion&#x27;) vulnerability in Mikado-Themes Innovio innovio allows PHP Local File Inclusion.This issue affects Innovio: from n/a through &lt;= 1.7.</p></details></td>
+        <td><details><summary>Improper Control of Filename for Include/Require Statement in PHP Program (&#x27;PHP ...</summary><p>Improper Control of Filename for Include/Require Statement in PHP Program (&#x27;PHP Remote File Inclusion&#x27;) vulnerability in Mikado-Themes Innovio innovio allows PHP Local File Inclusion.This issue affects Innovio: from n/a through &lt;= 1.9.</p></details></td>
         <td>2026-03-05</td>
       </tr>
       <tr>
@@ -102331,7 +102657,7 @@ A subsequent request using the same thread inherits the ThreadLocal values, lead
         <td>&nbsp;</td>
         <td>0.2% <small>p37</small></td>
         <td>5.67</td>
-        <td><details><summary>Improper Control of Filename for Include/Require Statement in PHP Program (&#x27;PHP ...</summary><p>Improper Control of Filename for Include/Require Statement in PHP Program (&#x27;PHP Remote File Inclusion&#x27;) vulnerability in Mikado-Themes Fleur fleur allows PHP Local File Inclusion.This issue affects Fleur: from n/a through &lt;= 2.0.</p></details></td>
+        <td><details><summary>Improper Control of Filename for Include/Require Statement in PHP Program (&#x27;PHP ...</summary><p>Improper Control of Filename for Include/Require Statement in PHP Program (&#x27;PHP Remote File Inclusion&#x27;) vulnerability in Mikado-Themes Fleur fleur allows PHP Local File Inclusion.This issue affects Fleur: from n/a through &lt;= 2.2.1.</p></details></td>
         <td>2026-03-05</td>
       </tr>
       <tr>
@@ -102364,7 +102690,7 @@ A subsequent request using the same thread inherits the ThreadLocal values, lead
         <td>&nbsp;</td>
         <td>0.2% <small>p37</small></td>
         <td>5.67</td>
-        <td><details><summary>Improper Control of Filename for Include/Require Statement in PHP Program (&#x27;PHP ...</summary><p>Improper Control of Filename for Include/Require Statement in PHP Program (&#x27;PHP Remote File Inclusion&#x27;) vulnerability in Mikado-Themes Cortex cortex allows PHP Local File Inclusion.This issue affects Cortex: from n/a through &lt;= 1.5.</p></details></td>
+        <td><details><summary>Improper Control of Filename for Include/Require Statement in PHP Program (&#x27;PHP ...</summary><p>Improper Control of Filename for Include/Require Statement in PHP Program (&#x27;PHP Remote File Inclusion&#x27;) vulnerability in Mikado-Themes Cortex cortex allows PHP Local File Inclusion.This issue affects Cortex: from n/a through &lt;= 1.9.</p></details></td>
         <td>2026-03-05</td>
       </tr>
       <tr>
@@ -102386,7 +102712,7 @@ A subsequent request using the same thread inherits the ThreadLocal values, lead
         <td>&nbsp;</td>
         <td>0.2% <small>p37</small></td>
         <td>5.67</td>
-        <td><details><summary>Improper Control of Filename for Include/Require Statement in PHP Program (&#x27;PHP ...</summary><p>Improper Control of Filename for Include/Require Statement in PHP Program (&#x27;PHP Remote File Inclusion&#x27;) vulnerability in Mikado-Themes Cocco cocco allows PHP Local File Inclusion.This issue affects Cocco: from n/a through &lt;= 1.5.1.</p></details></td>
+        <td><details><summary>Improper Control of Filename for Include/Require Statement in PHP Program (&#x27;PHP ...</summary><p>Improper Control of Filename for Include/Require Statement in PHP Program (&#x27;PHP Remote File Inclusion&#x27;) vulnerability in Mikado-Themes Cocco cocco allows PHP Local File Inclusion.This issue affects Cocco: from n/a through &lt;= 2.0.</p></details></td>
         <td>2026-03-05</td>
       </tr>
       <tr>
