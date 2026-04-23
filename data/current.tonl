@@ -1,25 +1,71 @@
 #version 1.0
 #delimiter "|"
 
-cves[4140]{cveId:str|published:str|lastModified:str|cvssScore:f64|severity:str|cweId:str|cweName:str|kev:bool|description:str|nvdUrl:str|epssScore:f64|epssPercentile:f64|vapScore:f64}:
+cves[4207]{cveId:str|published:str|lastModified:str|cvssScore:f64|severity:str|cweId:str|cweName:str|kev:bool|description:str|nvdUrl:str|epssScore:f64|epssPercentile:f64|vapScore:f64}:
+  CVE-2026-41361|2026-04-23T22:16:43.870|2026-04-23T22:16:43.870|5.1|MEDIUM|CWE-184|N/A|false|OpenClaw before 2026.3.28 contains an SSRF guard bypass vulnerability that fails to block four IPv6 special-use ranges. Attackers can exploit this by crafting URLs targeting internal or non-routable IPv6 addresses to bypass SSRF protections.|https://nvd.nist.gov/vuln/detail/CVE-2026-41361|0.00000|0.00000|3.5700
+  CVE-2026-41360|2026-04-23T22:16:43.703|2026-04-23T22:16:43.703|5.4|MEDIUM|CWE-367|N/A|false|OpenClaw before 2026.4.2 contains an approval integrity vulnerability in pnpm dlx that fails to bind local script operands consistently with pnpm exec flows. Attackers can replace approved local scripts before execution without invalidating the approval plan, allowing execution of modified script contents.|https://nvd.nist.gov/vuln/detail/CVE-2026-41360|0.00000|0.00000|3.7800
+  CVE-2026-41359|2026-04-23T22:16:43.527|2026-04-23T22:16:43.527|7.1|HIGH|CWE-269|N/A|false|OpenClaw before 2026.3.28 contains a privilege escalation vulnerability allowing authenticated operators with write permissions to access admin-class Telegram configuration and cron persistence settings via the send endpoint. Attackers with operator.write credentials can exploit insufficient access controls to reach sensitive administrative functionality and modify persistence mechanisms.|https://nvd.nist.gov/vuln/detail/CVE-2026-41359|0.00000|0.00000|4.9700
+  CVE-2026-41358|2026-04-23T22:16:43.350|2026-04-23T22:16:43.350|2.3|LOW|CWE-346|N/A|false|OpenClaw before 2026.4.2 fails to filter Slack thread context by sender allowlist, allowing non-allowlisted messages to enter agent context. Attackers can inject unauthorized thread messages through allowlisted user replies to bypass sender access controls and manipulate model context.|https://nvd.nist.gov/vuln/detail/CVE-2026-41358|0.00000|0.00000|1.6100
+  CVE-2026-41357|2026-04-23T22:16:43.177|2026-04-23T22:16:43.177|2.0|LOW|CWE-214|N/A|false|OpenClaw before 2026.3.31 contains an environment variable leakage vulnerability in SSH-based sandbox backends that pass unsanitized process.env to child processes. Attackers can exploit this by leveraging non-default SSH environment forwarding configurations to leak sensitive environment variables from parent processes to SSH child processes.|https://nvd.nist.gov/vuln/detail/CVE-2026-41357|0.00000|0.00000|1.4000
+  CVE-2026-41356|2026-04-23T22:16:43.007|2026-04-23T22:16:43.007|2.3|LOW|CWE-613|N/A|false|OpenClaw before 2026.3.31 fails to terminate active WebSocket sessions when rotating device tokens. Attackers with previously compromised credentials can maintain unauthorized access through existing WebSocket connections after token rotation.|https://nvd.nist.gov/vuln/detail/CVE-2026-41356|0.00000|0.00000|1.6100
+  CVE-2026-41355|2026-04-23T22:16:42.840|2026-04-23T22:16:42.840|5.4|MEDIUM|CWE-829|N/A|false|OpenShell before 2026.3.28 contains an arbitrary code execution vulnerability in mirror mode that converts untrusted sandbox files into workspace hooks. Attackers with mirror mode access can execute arbitrary code on the host during gateway startup by exploiting enabled workspace hooks.|https://nvd.nist.gov/vuln/detail/CVE-2026-41355|0.00000|0.00000|3.7800
+  CVE-2026-41354|2026-04-23T22:16:42.670|2026-04-23T22:16:42.670|6.3|MEDIUM|CWE-706|N/A|false|OpenClaw before 2026.4.2 contains an insufficient scope vulnerability in Zalo webhook replay dedupe keys that allows legitimate events from different conversations or senders to collide. Attackers can exploit weak deduplication scoping to cause silent message suppression and disrupt bot workflows across chat sessions.|https://nvd.nist.gov/vuln/detail/CVE-2026-41354|0.00000|0.00000|4.4100
+  CVE-2026-41353|2026-04-23T22:16:42.493|2026-04-23T22:16:42.493|7.6|HIGH|CWE-472|N/A|false|OpenClaw before 2026.3.22 contains an access control bypass vulnerability in the allowProfiles feature that allows attackers to circumvent profile restrictions through persistent profile mutation and runtime profile selection. Remote attackers can exploit this by manipulating browser proxy profiles at runtime to access restricted profiles and bypass intended access controls.|https://nvd.nist.gov/vuln/detail/CVE-2026-41353|0.00000|0.00000|5.3200
+  CVE-2026-41352|2026-04-23T22:16:42.327|2026-04-23T22:16:42.327|7.7|HIGH|CWE-862|N/A|false|OpenClaw before 2026.3.31 contains a remote code execution vulnerability where a device-paired node can bypass the node scope gate authentication mechanism. Attackers with device pairing credentials can execute arbitrary node commands on the host system without proper node pairing validation.|https://nvd.nist.gov/vuln/detail/CVE-2026-41352|0.00000|0.00000|5.3900
+  CVE-2026-41351|2026-04-23T22:16:42.160|2026-04-23T22:16:42.160|6.3|MEDIUM|CWE-294|N/A|false|OpenClaw before 2026.3.31 contains a replay detection bypass vulnerability in webhook signature handling that treats Base64 and Base64URL encoded signatures as distinct requests. Attackers can re-encode Telnyx webhook signatures to bypass replay detection while maintaining valid signature verification.|https://nvd.nist.gov/vuln/detail/CVE-2026-41351|0.00000|0.00000|4.4100
+  CVE-2026-41350|2026-04-23T22:16:42.000|2026-04-23T22:16:42.000|5.3|MEDIUM|CWE-863|N/A|false|OpenClaw before 2026.3.31 contains a session visibility bypass vulnerability where the session_status function fails to enforce configured tools.sessions.visibility restrictions for unsandboxed invocations. Attackers can invoke session_status without sandbox constraints to bypass session-policy controls and access restricted session information.|https://nvd.nist.gov/vuln/detail/CVE-2026-41350|0.00000|0.00000|3.7100
+  CVE-2026-41349|2026-04-23T22:16:41.827|2026-04-23T22:16:41.827|8.7|HIGH|CWE-862|N/A|false|OpenClaw before 2026.3.28 contains an agentic consent bypass vulnerability allowing LLM agents to silently disable execution approval via config.patch parameter. Remote attackers can exploit this to bypass security controls and execute unauthorized operations without user consent.|https://nvd.nist.gov/vuln/detail/CVE-2026-41349|0.00000|0.00000|6.0900
+  CVE-2026-41348|2026-04-23T22:16:41.660|2026-04-23T22:16:41.660|2.3|LOW|CWE-863|N/A|false|OpenClaw before 2026.3.31 contains an authorization bypass vulnerability in Discord slash command and autocomplete paths that fail to enforce group DM channel allowlist restrictions. Authorized Discord users can bypass channel restrictions by invoking slash commands, allowing access to restricted group DM channels.|https://nvd.nist.gov/vuln/detail/CVE-2026-41348|0.00000|0.00000|1.6100
+  CVE-2026-41347|2026-04-23T22:16:41.483|2026-04-23T22:16:41.483|2.3|LOW|CWE-352|N/A|false|OpenClaw before 2026.3.31 lacks browser-origin validation in HTTP operator endpoints when operating in trusted-proxy mode, allowing cross-site request forgery attacks. Attackers can exploit this by sending malicious requests from a browser in trusted-proxy deployments to perform unauthorized actions on HTTP operator endpoints.|https://nvd.nist.gov/vuln/detail/CVE-2026-41347|0.00000|0.00000|1.6100
+  CVE-2026-41346|2026-04-23T22:16:41.313|2026-04-23T22:16:41.313|6.3|MEDIUM|CWE-799|N/A|false|OpenClaw 2026.2.26 before 2026.3.31 enforces pending pairing-request caps per channel file instead of per account, allowing attackers to exhaust the shared pending window. Remote attackers can submit pairing requests from other accounts to block new pairing challenges on unaffected accounts, causing denial of service.|https://nvd.nist.gov/vuln/detail/CVE-2026-41346|0.00000|0.00000|4.4100
+  CVE-2026-41345|2026-04-23T22:16:41.147|2026-04-23T22:16:41.147|6.0|MEDIUM|CWE-522|N/A|false|OpenClaw before 2026.3.31 contains a credential exposure vulnerability in media download functionality that forwards Authorization headers across cross-origin redirects. Attackers can exploit this by crafting malicious cross-origin redirect chains to intercept sensitive authorization credentials intended for legitimate requests.|https://nvd.nist.gov/vuln/detail/CVE-2026-41345|0.00000|0.00000|4.2000
+  CVE-2026-41344|2026-04-23T22:16:40.970|2026-04-23T22:16:40.970|5.3|MEDIUM|CWE-863|N/A|false|OpenClaw before 2026.3.28 contains a privilege escalation vulnerability in the chat.send endpoint that allows write-scoped gateway callers to persist admin-only verboseLevel session overrides. Attackers can exploit the /verbose parameter to bypass access controls and expose sensitive reasoning or tool output intended to be restricted to administrators.|https://nvd.nist.gov/vuln/detail/CVE-2026-41344|0.00000|0.00000|3.7100
+  CVE-2026-41343|2026-04-23T22:16:40.803|2026-04-23T22:16:40.803|6.9|MEDIUM|CWE-799|N/A|false|OpenClaw before 2026.3.31 lacks a shared pre-auth concurrency budget on the public LINE webhook path, allowing attackers to cause transient availability loss. Remote attackers can flood the webhook endpoint with concurrent requests before signature verification to exhaust resources and degrade service availability.|https://nvd.nist.gov/vuln/detail/CVE-2026-41343|0.00000|0.00000|4.8300
+  CVE-2026-41342|2026-04-23T22:16:40.640|2026-04-23T22:16:40.640|7.4|HIGH|CWE-346|N/A|false|OpenClaw before 2026.3.28 contains an authentication bypass vulnerability in the remote onboarding component that persists unauthenticated discovery endpoints without explicit trust confirmation. Attackers can spoof discovery endpoints to redirect onboarding toward malicious gateways and capture gateway credentials or traffic.|https://nvd.nist.gov/vuln/detail/CVE-2026-41342|0.00000|0.00000|5.1800
+  CVE-2026-41341|2026-04-23T22:16:40.477|2026-04-23T22:16:40.477|2.3|LOW|CWE-351|N/A|false|OpenClaw before 2026.3.31 contains a logic error in Discord component interaction routing that misclassifies group direct messages as direct messages in extensions/discord/src/monitor/agent-components-helpers.ts. Attackers can exploit this misclassification to bypass group DM policy enforcement or trigger incorrect session handling.|https://nvd.nist.gov/vuln/detail/CVE-2026-41341|0.00000|0.00000|1.6100
+  CVE-2026-41340|2026-04-23T22:16:40.307|2026-04-23T22:16:40.307|6.3|MEDIUM|CWE-372|N/A|false|OpenClaw before 2026.3.31 contains an authentication boundary vulnerability where Telegram legacy allowFrom migration incorrectly fans default-account trust into all named accounts. Attackers can exploit this trust propagation to bypass authentication controls and gain unauthorized access to named accounts.|https://nvd.nist.gov/vuln/detail/CVE-2026-41340|0.00000|0.00000|4.4100
+  CVE-2026-41339|2026-04-23T22:16:40.140|2026-04-23T22:16:40.140|5.3|MEDIUM|CWE-497|N/A|false|OpenClaw before 2026.4.2 exposes configPath and stateDir metadata in Gateway connect success snapshots to non-admin authenticated clients. Non-admin clients can recover host-specific filesystem paths and deployment details, enabling host fingerprinting and facilitating chained attacks.|https://nvd.nist.gov/vuln/detail/CVE-2026-41339|0.00000|0.00000|3.7100
+  CVE-2026-41338|2026-04-23T22:16:39.957|2026-04-23T22:16:39.957|4.3|MEDIUM|CWE-367|N/A|false|OpenClaw before 2026.3.31 contains a time-of-check-time-of-use vulnerability in sandbox file operations that allows attackers to bypass fd-based defenses. Attackers can exploit check-then-act patterns in apply_patch, remove, and mkdir operations to manipulate files between validation and execution.|https://nvd.nist.gov/vuln/detail/CVE-2026-41338|0.00000|0.00000|3.0100
+  CVE-2026-41337|2026-04-23T22:16:39.780|2026-04-23T22:16:39.780|6.3|MEDIUM|CWE-367|N/A|false|OpenClaw before 2026.3.31 contains a callback origin mutation vulnerability in Plivo voice-call replay that allows attackers to mutate in-process callback origin before replay rejection. Attackers with captured valid callbacks for live calls can exploit this to manipulate callback origins during the replay process.|https://nvd.nist.gov/vuln/detail/CVE-2026-41337|0.00000|0.00000|4.4100
+  CVE-2026-41336|2026-04-23T22:16:39.603|2026-04-23T22:16:39.603|8.5|HIGH|CWE-829|N/A|false|OpenClaw before 2026.3.31 allows workspace .env files to override the OPENCLAW_BUNDLED_HOOKS_DIR environment variable, enabling loading of attacker-controlled hook code. Attackers can replace trusted default-on bundled hooks from untrusted workspaces to execute arbitrary code.|https://nvd.nist.gov/vuln/detail/CVE-2026-41336|0.00000|0.00000|5.9500
+  CVE-2026-41335|2026-04-23T22:16:39.430|2026-04-23T22:16:39.430|6.9|MEDIUM|CWE-497|N/A|false|OpenClaw before 2026.3.31 contains an information disclosure vulnerability in the Control Interface bootstrap JSON that exposes version and assistant agent identifiers. Attackers can extract sensitive fingerprinting information from the Control UI bootstrap payload to identify system versions and agent configurations.|https://nvd.nist.gov/vuln/detail/CVE-2026-41335|0.00000|0.00000|4.8300
+  CVE-2026-41334|2026-04-23T22:16:39.263|2026-04-23T22:16:39.263|7.1|HIGH|CWE-636|N/A|false|OpenClaw before 2026.3.31 contains a decompression bomb vulnerability in image processing that fails to properly enforce pixel-limit guards on sips. Attackers can exploit this by uploading oversized images to cause denial of service through excessive memory consumption.|https://nvd.nist.gov/vuln/detail/CVE-2026-41334|0.00000|0.00000|4.9700
+  CVE-2026-41333|2026-04-23T22:16:39.083|2026-04-23T22:16:39.083|6.3|MEDIUM|CWE-799|N/A|false|OpenClaw before 2026.3.31 contains an authentication rate limiting bypass vulnerability that allows attackers to circumvent shared authentication protections using fake device tokens. Attackers can exploit the mixed WebSocket authentication flow to bypass rate limiting controls and conduct brute force attacks against weak shared passwords.|https://nvd.nist.gov/vuln/detail/CVE-2026-41333|0.00000|0.00000|4.4100
+  CVE-2026-41332|2026-04-23T22:16:38.907|2026-04-23T22:16:38.907|5.8|MEDIUM|CWE-184|N/A|false|OpenClaw before 2026.3.28 contains an environment variable sanitization vulnerability where GIT_TEMPLATE_DIR and AWS_CONFIG_FILE are not blocked in the host-env blocklist. Attackers can exploit approved exec requests to redirect git or AWS CLI behavior through attacker-controlled configuration files to execute untrusted code or load malicious credentials.|https://nvd.nist.gov/vuln/detail/CVE-2026-41332|0.00000|0.00000|4.0600
+  CVE-2026-41274|2026-04-23T22:16:38.740|2026-04-23T22:16:38.740|9.3|CRITICAL|CWE-943|N/A|false|Flowise is a drag & drop user interface to build a customized large language model flow. Prior to 3.1.0, the GraphCypherQAChain node forwards user-provided input directly into the Cypher query execution pipeline without proper sanitization. An attacker can inject arbitrary Cypher commands that are executed on the underlying Neo4j database, enabling data exfiltration, modification, or deletion. This vulnerability is fixed in 3.1.0.|https://nvd.nist.gov/vuln/detail/CVE-2026-41274|0.00000|0.00000|6.5100
+  CVE-2026-35431|2026-04-23T22:16:38.510|2026-04-23T22:16:38.510|10.0|CRITICAL|CWE-918|N/A|false|Server-side request forgery (ssrf) in Microsoft Entra ID Entitlement Management allows an unauthorized attacker to perform spoofing over a network.|https://nvd.nist.gov/vuln/detail/CVE-2026-35431|0.00000|0.00000|7.0000
+  CVE-2026-33819|2026-04-23T22:16:37.817|2026-04-23T22:16:37.817|10.0|CRITICAL|CWE-502|N/A|false|Deserialization of untrusted data in Microsoft Bing allows an unauthorized attacker to execute code over a network.|https://nvd.nist.gov/vuln/detail/CVE-2026-33819|0.00000|0.00000|7.0000
+  CVE-2026-33102|2026-04-23T22:16:37.093|2026-04-23T22:16:37.093|9.3|CRITICAL|CWE-601|N/A|false|Url redirection to untrusted site ('open redirect') in M365 Copilot allows an unauthorized attacker to elevate privileges over a network.|https://nvd.nist.gov/vuln/detail/CVE-2026-33102|0.00000|0.00000|6.5100
+  CVE-2026-32210|2026-04-23T22:16:35.260|2026-04-23T22:16:35.260|9.3|CRITICAL|CWE-918|N/A|false|Server-side request forgery (ssrf) in Microsoft Dynamics 365 (Online) allows an unauthorized attacker to perform spoofing over a network.|https://nvd.nist.gov/vuln/detail/CVE-2026-32210|0.00000|0.00000|6.5100
+  CVE-2026-32172|2026-04-23T22:16:33.720|2026-04-23T22:16:33.720|8.0|HIGH|CWE-427|N/A|false|Uncontrolled search path element in Microsoft Power Apps allows an unauthorized attacker to execute code over a network.|https://nvd.nist.gov/vuln/detail/CVE-2026-32172|0.00000|0.00000|5.6000
+  CVE-2026-2708|2026-04-23T22:16:29.233|2026-04-23T22:16:29.233|3.7|LOW|CWE-444|N/A|false|A request smuggling vulnerability exists in libsoup's HTTP/1 header parsing logic. The soup_message_headers_append_common() function in libsoup/soup-message-headers.c unconditionally appends each header value without validating for duplicate or conflicting Content-Length fields. This allows an attacker to send HTTP requests containing multiple Content-Length headers with differing values.|https://nvd.nist.gov/vuln/detail/CVE-2026-2708|0.00000|0.00000|2.5900
+  CVE-2026-26210|2026-04-23T22:16:26.400|2026-04-23T22:16:26.400|9.3|CRITICAL|CWE-502|N/A|false|KTransformers through 0.5.3 contains an unsafe deserialization vulnerability in the balance_serve backend mode where the scheduler RPC server binds a ZMQ ROUTER socket to all interfaces with no authentication and deserializes incoming messages using pickle.loads() without validation. Attackers can send a crafted pickle payload to the exposed ZMQ socket to execute arbitrary code on the server with the privileges of the ktransformers process.|https://nvd.nist.gov/vuln/detail/CVE-2026-26210|0.00000|0.00000|6.5100
+  CVE-2026-26150|2026-04-23T22:16:23.177|2026-04-23T22:16:23.177|8.6|HIGH|CWE-918|N/A|false|Server-side request forgery (ssrf) in Microsoft Purview allows an unauthorized attacker to elevate privileges over a network.|https://nvd.nist.gov/vuln/detail/CVE-2026-26150|0.00000|0.00000|6.0200
+  CVE-2026-24303|2026-04-23T22:16:22.483|2026-04-23T22:16:22.483|9.6|CRITICAL|CWE-284|N/A|false|Improper access control in Microsoft Partner Center allows an authorized attacker to elevate privileges over a network.|https://nvd.nist.gov/vuln/detail/CVE-2026-24303|0.00000|0.00000|6.7200
+  CVE-2026-6942|2026-04-23T21:16:06.947|2026-04-23T21:16:06.947|9.3|CRITICAL|CWE-78|N/A|false|radare2-mcp version 1.6.0 and earlier contains an os command injection vulnerability that allows remote attackers to execute arbitrary commands by bypassing the command filter through shell metacharacters in user-controlled input passed to r2_cmd_str(). Attackers can inject shell metacharacters through the jsonrpc interface parameters to achieve remote code execution on the host running radare2-mcp without requiring authentication.|https://nvd.nist.gov/vuln/detail/CVE-2026-6942|0.00000|0.00000|6.5100
+  CVE-2026-6941|2026-04-23T21:16:06.790|2026-04-23T21:16:06.790|6.9|MEDIUM|CWE-59|N/A|false|radare2 prior to 6.1.4 contains a path traversal vulnerability in its project notes handling that allows attackers to read or write files outside the configured project directory by importing a malicious .zrp archive containing a symlinked notes.txt file. Attackers can craft a .zrp archive with a symlinked notes.txt that bypasses directory confinement checks, allowing note operations to follow the symlink and access arbitrary files outside the dir.projects root directory.|https://nvd.nist.gov/vuln/detail/CVE-2026-6941|0.00000|0.00000|4.8300
+  CVE-2026-6940|2026-04-23T21:16:06.640|2026-04-23T21:16:06.640|6.9|MEDIUM|CWE-22|N/A|false|radare2 prior to 6.1.4 contains a path traversal vulnerability in project deletion that allows local attackers to recursively delete arbitrary directories by supplying absolute paths that escape the configured dir.projects root directory. Attackers can craft absolute paths to project marker files outside the project storage boundary to cause recursive deletion of attacker-chosen directories with permissions of the radare2 process, resulting in integrity and availability loss.|https://nvd.nist.gov/vuln/detail/CVE-2026-6940|0.00000|0.00000|4.8300
+  CVE-2026-6376|2026-04-23T21:16:06.507|2026-04-23T21:16:06.507|8.7|HIGH|CWE-306|N/A|false|A weakness in SpiceJet’s public booking retrieval page permits full passenger booking details to be accessed using only a PNR and last name, with no authentication or verification mechanisms. This results in exposure of extensive personal, travel, and booking metadata to any unauthenticated user who can obtain or guess those basic inputs. The issue arises from improper access control on a sensitive data retrieval function.|https://nvd.nist.gov/vuln/detail/CVE-2026-6376|0.00000|0.00000|6.0900
+  CVE-2026-6375|2026-04-23T21:16:06.370|2026-04-23T21:16:06.370|8.7|HIGH|CWE-639|N/A|false|A vulnerability in SpiceJet’s booking API allows unauthenticated users to query passenger name records (PNRs) without any access controls. Because PNR identifiers follow a predictable pattern, an attacker could systematically enumerate valid records and obtain associated passenger names. This flaw stems from missing authorization checks on an endpoint intended for authenticated profile access.|https://nvd.nist.gov/vuln/detail/CVE-2026-6375|0.00000|0.00000|6.0900
+  CVE-2026-28525|2026-04-23T21:16:05.367|2026-04-23T21:16:05.367|8.2|HIGH|CWE-125|N/A|false|SWUpdate contains an integer underflow vulnerability in the multipart upload parser in mongoose_multipart.c that allows unauthenticated attackers to cause a denial of service by sending a crafted HTTP POST request to /upload with a malformed multipart boundary and controlled TCP stream timing. Attackers can trigger an integer underflow in the mg_http_multipart_continue_wait_for_chunk() function when the buffer length falls within a specific range, causing an out-of-bounds heap read that writes data beyond the allocated receive buffer to a local IPC socket.|https://nvd.nist.gov/vuln/detail/CVE-2026-28525|0.00000|0.00000|5.7400
   CVE-2026-41279|2026-04-23T20:16:16.687|2026-04-23T20:16:16.687|8.2|HIGH|CWE-639|N/A|false|Flowise is a drag & drop user interface to build a customized large language model flow. Prior to 3.1.0, the text-to-speech generation endpoint (POST /api/v1/text-to-speech/generate) is whitelisted (no auth) and accepts a credentialId directly in the request body. When called without a chatflowId, the endpoint uses the provided credentialId to decrypt the stored credential (e.g., OpenAI or ElevenLabs API key) and generate speech. This vulnerability is fixed in 3.1.0.|https://nvd.nist.gov/vuln/detail/CVE-2026-41279|0.00000|0.00000|5.7400
   CVE-2026-41278|2026-04-23T20:16:16.550|2026-04-23T20:16:16.550|8.7|HIGH|CWE-200|N/A|false|Flowise is a drag & drop user interface to build a customized large language model flow. Prior to 3.1.0, the GET /api/v1/public-chatflows/:id endpoint returns the full chatflow object without sanitization for public chatflows. Docker validation revealed this is worse than initially assessed: the sanitizeFlowDataForPublicEndpoint function does NOT exist in the released v3.0.13 Docker image. Both public-chatflows AND public-chatbotConfig return completely raw flowData including credential IDs, plaintext API keys, and password-type fields. This vulnerability is fixed in 3.1.0.|https://nvd.nist.gov/vuln/detail/CVE-2026-41278|0.00000|0.00000|6.0900
   CVE-2026-41277|2026-04-23T20:16:16.410|2026-04-23T20:16:16.410|7.6|HIGH|CWE-284|N/A|false|Flowise is a drag & drop user interface to build a customized large language model flow. Prior to 3.1.0, a Mass Assignment vulnerability in the DocumentStore creation endpoint allows authenticated users to control the primary key (id) and internal state fields of DocumentStore entities. Because the service uses repository.save() with a client-supplied primary key, the POST create endpoint behaves as an implicit UPSERT operation. This enables overwriting existing DocumentStore objects. In multi-workspace or multi-tenant deployments, this can lead to cross-workspace object takeover and broken object-level authorization (IDOR), allowing an attacker to reassign or modify DocumentStore objects belonging to other workspaces. This vulnerability is fixed in 3.1.0.|https://nvd.nist.gov/vuln/detail/CVE-2026-41277|0.00000|0.00000|5.3200
   CVE-2026-41276|2026-04-23T20:16:16.270|2026-04-23T20:16:16.270|7.7|HIGH|CWE-287|N/A|false|"Flowise is a drag & drop user interface to build a customized large language model flow. Prior to 3.1.0, this vulnerability allows remote attackers to bypass authentication on affected installations of FlowiseAI Flowise. Authentication is not required to exploit this vulnerability. The specific flaw exists within the resetPassword method of the AccountService class. There is no check performed to ensure that a password reset token has actually been generated for a user account. By default the value of the reset token stored in a users account is null, or an empty string if they've reset their password before. An attacker with knowledge of the user's email address can submit a request to the ""/api/v1/account/reset-password"" endpoint containing a null or empty string reset token value and reset that user's password to a value of their choosing. This vulnerability is fixed in 3.1.0."|https://nvd.nist.gov/vuln/detail/CVE-2026-41276|0.00000|0.00000|5.3900
   CVE-2026-41275|2026-04-23T20:16:16.117|2026-04-23T20:16:16.117|7.5|HIGH|CWE-319|N/A|false|Flowise is a drag & drop user interface to build a customized large language model flow. Prior to 3.1.0, the password reset functionality on cloud.flowiseai.com sends a reset password link over the unsecured HTTP protocol instead of HTTPS. This behavior introduces the risk of a man-in-the-middle (MITM) attack, where an attacker on the same network as the user (e.g., public Wi-Fi) can intercept the reset link and gain unauthorized access to the victim’s account. This vulnerability is fixed in 3.1.0.|https://nvd.nist.gov/vuln/detail/CVE-2026-41275|0.00000|0.00000|5.2500
   CVE-2026-41273|2026-04-23T20:16:15.973|2026-04-23T20:16:15.973|7.7|HIGH|CWE-306|N/A|false|Flowise is a drag & drop user interface to build a customized large language model flow. Prior to 3.1.0, Flowise contains an authentication bypass vulnerability that allows an unauthenticated attacker to obtain OAuth 2.0 access tokens associated with a public chatflow. By accessing a public chatflow configuration endpoint, an attacker can retrieve internal workflow data, including OAuth credential identifiers, which can then be used to refresh and obtain valid OAuth 2.0 access tokens without authentication. This vulnerability is fixed in 3.1.0.|https://nvd.nist.gov/vuln/detail/CVE-2026-41273|0.00000|0.00000|5.3900
-  CVE-2026-41272|2026-04-23T20:16:15.810|2026-04-23T20:16:15.810|7.1|HIGH|CWE-918|N/A|false|Flowise is a drag & drop user interface to build a customized large language model flow. Prior to 3.1.0, the core security wrappers (secureAxiosRequest and secureFetch) intended to prevent Server-Side Request Forgery (SSRF) contain multiple logic flaws. These flaws allow attackers to bypass the allow/deny lists via DNS Rebinding (Time-of-Check Time-of-Use) or by exploiting the default configuration which fails to enforce any deny list. This vulnerability is fixed in 3.1.0.|https://nvd.nist.gov/vuln/detail/CVE-2026-41272|0.00000|0.00000|4.9700
+  CVE-2026-41272|2026-04-23T20:16:15.810|2026-04-23T21:16:06.210|7.1|HIGH|CWE-918|N/A|false|Flowise is a drag & drop user interface to build a customized large language model flow. Prior to 3.1.0, the core security wrappers (secureAxiosRequest and secureFetch) intended to prevent Server-Side Request Forgery (SSRF) contain multiple logic flaws. These flaws allow attackers to bypass the allow/deny lists via DNS Rebinding (Time-of-Check Time-of-Use) or by exploiting the default configuration which fails to enforce any deny list. This vulnerability is fixed in 3.1.0.|https://nvd.nist.gov/vuln/detail/CVE-2026-41272|0.00000|0.00000|4.9700
   CVE-2026-41271|2026-04-23T20:16:15.683|2026-04-23T20:16:15.683|7.1|HIGH|CWE-918|N/A|false|Flowise is a drag & drop user interface to build a customized large language model flow. Prior to 3.1.0, a Server-Side Request Forgery (SSRF) vulnerability exists in FlowiseAI's POST/GET API Chain components that allows unauthenticated attackers to force the server to make arbitrary HTTP requests to internal and external systems. By injecting malicious prompt templates, attackers can bypass the intended API documentation constraints and redirect requests to sensitive internal services, potentially leading to internal network reconnaissance and data exfiltration. This vulnerability is fixed in 3.1.0.|https://nvd.nist.gov/vuln/detail/CVE-2026-41271|0.00000|0.00000|4.9700
   CVE-2026-41270|2026-04-23T20:16:15.547|2026-04-23T20:16:15.547|7.1|HIGH|CWE-284|N/A|false|Flowise is a drag & drop user interface to build a customized large language model flow. Prior to 3.1.0, a Server-Side Request Forgery (SSRF) protection bypass vulnerability exists in the Custom Function feature. While the application implements SSRF protection via HTTP_DENY_LIST for axios and node-fetch libraries, the built-in Node.js http, https, and net modules are allowed in the NodeVM sandbox without equivalent protection. This allows authenticated users to bypass SSRF controls and access internal network resources (e.g., cloud provider metadata services) This vulnerability is fixed in 3.1.0.|https://nvd.nist.gov/vuln/detail/CVE-2026-41270|0.00000|0.00000|4.9700
   CVE-2026-41269|2026-04-23T20:16:15.417|2026-04-23T20:16:15.417|7.1|HIGH|CWE-434|N/A|false|Flowise is a drag & drop user interface to build a customized large language model flow. Prior to 3.1.0, the Chatflow configuration file upload settings can be modified to allow the application/javascript MIME type. This lets an attacker upload .js files even though the frontend doesn’t normally allow JavaScript uploads. This enables attackers to persistently store malicious Node.js web shells on the server, potentially leading to Remote Code Execution (RCE). This vulnerability is fixed in 3.1.0.|https://nvd.nist.gov/vuln/detail/CVE-2026-41269|0.00000|0.00000|4.9700
-  CVE-2026-41268|2026-04-23T20:16:15.300|2026-04-23T20:16:15.300|7.7|HIGH|CWE-20|N/A|false|Flowise is a drag & drop user interface to build a customized large language model flow. Prior to 3.1.0, Flowise is vulnerable to a critical unauthenticated remote command execution (RCE) vulnerability. It can be exploited via a parameter override bypass using the FILE-STORAGE:: keyword combined with a NODE_OPTIONS environment variable injection. This allows for the execution of arbitrary system commands with root privileges within the containerized Flowise instance, requiring only a single HTTP request and no authentication or knowledge of the instance. This vulnerability is fixed in 3.1.0.|https://nvd.nist.gov/vuln/detail/CVE-2026-41268|0.00000|0.00000|5.3900
+  CVE-2026-41268|2026-04-23T20:16:15.300|2026-04-23T21:16:06.120|7.7|HIGH|CWE-20|N/A|false|Flowise is a drag & drop user interface to build a customized large language model flow. Prior to 3.1.0, Flowise is vulnerable to a critical unauthenticated remote command execution (RCE) vulnerability. It can be exploited via a parameter override bypass using the FILE-STORAGE:: keyword combined with a NODE_OPTIONS environment variable injection. This allows for the execution of arbitrary system commands with root privileges within the containerized Flowise instance, requiring only a single HTTP request and no authentication or knowledge of the instance. This vulnerability is fixed in 3.1.0.|https://nvd.nist.gov/vuln/detail/CVE-2026-41268|0.00000|0.00000|5.3900
   CVE-2026-41267|2026-04-23T20:16:15.160|2026-04-23T20:16:15.160|8.1|HIGH|CWE-639|N/A|false|Flowise is a drag & drop user interface to build a customized large language model flow. Prior to 3.1.0, an improper mass assignment (JSON injection) vulnerability in the account registration endpoint of Flowise Cloud allows unauthenticated attackers to inject server-managed fields and nested objects during account creation. This enables client-controlled manipulation of ownership metadata, timestamps, organization association, and role mappings, breaking trust boundaries in a multi-tenant environment. This vulnerability is fixed in 3.1.0.|https://nvd.nist.gov/vuln/detail/CVE-2026-41267|0.00000|0.00000|5.6700
   CVE-2026-41266|2026-04-23T20:16:15.030|2026-04-23T20:16:15.030|7.7|HIGH|CWE-200|N/A|false|Flowise is a drag & drop user interface to build a customized large language model flow. Prior to 3.1.0, /api/v1/public-chatbotConfig/:id ep exposes sensitive data including API keys, HTTP authorization headers and internal configuration without any authentication. An attacker with knowledge just of a chatflow UUID can retrieve credentials stored in password type fields and HTTP headers, leading to credential theft and more. This vulnerability is fixed in 3.1.0.|https://nvd.nist.gov/vuln/detail/CVE-2026-41266|0.00000|0.00000|5.3900
-  CVE-2026-41265|2026-04-23T20:16:14.890|2026-04-23T20:16:14.890|9.2|CRITICAL|CWE-77|N/A|false|Flowise is a drag & drop user interface to build a customized large language model flow. Prior to 3.1.0, the specific flaw exists within the run method of the Airtable_Agents class. The issue results from the lack of proper sandboxing when evaluating an LLM generated python script. Using prompt injection techniques, an unauthenticated attacker with the ability to send prompts to a chatflow using the Airtable Agent node may convince an LLM to respond with a malicious python script that executes attacker controlled commands on the flowise server. This vulnerability is fixed in 3.1.0.|https://nvd.nist.gov/vuln/detail/CVE-2026-41265|0.00000|0.00000|6.4400
+  CVE-2026-41265|2026-04-23T20:16:14.890|2026-04-23T21:16:06.023|9.2|CRITICAL|CWE-77|N/A|false|Flowise is a drag & drop user interface to build a customized large language model flow. Prior to 3.1.0, the specific flaw exists within the run method of the Airtable_Agents class. The issue results from the lack of proper sandboxing when evaluating an LLM generated python script. Using prompt injection techniques, an unauthenticated attacker with the ability to send prompts to a chatflow using the Airtable Agent node may convince an LLM to respond with a malicious python script that executes attacker controlled commands on the flowise server. This vulnerability is fixed in 3.1.0.|https://nvd.nist.gov/vuln/detail/CVE-2026-41265|0.00000|0.00000|6.4400
   CVE-2026-41264|2026-04-23T20:16:14.750|2026-04-23T20:16:14.750|9.2|CRITICAL|CWE-184|N/A|false|Flowise is a drag & drop user interface to build a customized large language model flow. Prior to 3.1.0, the specific flaw exists within the run method of the CSV_Agents class. The issue results from the lack of proper sandboxing when evaluating an LLM generated python script. An attacker can leverage this vulnerability to execute code in the context of the user running the server. Using prompt injection techniques, an unauthenticated attacker with the ability to send prompts to a chatflow using the CSV Agent node may convince an LLM to respond with a malicious python script that executes attacker controlled commands on the Flowise server. This vulnerability is fixed in 3.1.0.|https://nvd.nist.gov/vuln/detail/CVE-2026-41264|0.00000|0.00000|6.4400
   CVE-2026-41138|2026-04-23T20:16:14.380|2026-04-23T20:16:14.380|8.3|HIGH|CWE-94|N/A|false|Flowise is a drag & drop user interface to build a customized large language model flow. Prior to 3.1.0, there is a remote code execution vulnerability in AirtableAgent.ts caused by lack of input verification when using Pandas. The user’s input is directly applied to the question parameter within the prompt template and it is reflected to the Python code without any sanitization. This vulnerability is fixed in 3.1.0.|https://nvd.nist.gov/vuln/detail/CVE-2026-41138|0.00000|0.00000|5.8100
-  CVE-2026-41137|2026-04-23T20:16:14.257|2026-04-23T20:16:14.257|9.4|CRITICAL|CWE-94|N/A|false|Flowise is a drag & drop user interface to build a customized large language model flow. Prior to 3.1.0, The CSVAgent allows providing a custom Pandas CSV read code. Due to lack of sanitization, an attacker can provide a command injection payload that will get interpolated and executed by the server. This vulnerability is fixed in 3.1.0.|https://nvd.nist.gov/vuln/detail/CVE-2026-41137|0.00000|0.00000|6.5800
-  CVE-2026-25874|2026-04-23T20:16:13.903|2026-04-23T20:16:13.903|9.3|CRITICAL|CWE-502|N/A|false|LeRobot contains an unsafe deserialization vulnerability in the async inference pipeline where pickle.loads() is used to deserialize data received over unauthenticated gRPC channels without TLS in the policy server and robot client components. An unauthenticated network-reachable attacker can achieve arbitrary code execution on the server or client by sending a crafted pickle payload through the SendPolicyInstructions, SendObservations, or GetActions gRPC calls.|https://nvd.nist.gov/vuln/detail/CVE-2026-25874|0.00000|0.00000|6.5100
+  CVE-2026-41137|2026-04-23T20:16:14.257|2026-04-23T21:16:05.840|9.4|CRITICAL|CWE-94|N/A|false|Flowise is a drag & drop user interface to build a customized large language model flow. Prior to 3.1.0, The CSVAgent allows providing a custom Pandas CSV read code. Due to lack of sanitization, an attacker can provide a command injection payload that will get interpolated and executed by the server. This vulnerability is fixed in 3.1.0.|https://nvd.nist.gov/vuln/detail/CVE-2026-41137|0.00000|0.00000|6.5800
+  CVE-2026-25874|2026-04-23T20:16:13.903|2026-04-23T22:16:22.907|9.3|CRITICAL|CWE-502|N/A|false|LeRobot through 0.5.1 contains an unsafe deserialization vulnerability in the async inference pipeline where pickle.loads() is used to deserialize data received over unauthenticated gRPC channels without TLS in the policy server and robot client components. An unauthenticated network-reachable attacker can achieve arbitrary code execution on the server or client by sending a crafted pickle payload through the SendPolicyInstructions, SendObservations, or GetActions gRPC calls.|https://nvd.nist.gov/vuln/detail/CVE-2026-25874|0.00000|0.00000|6.5100
   CVE-2026-6074|2026-04-23T19:17:30.410|2026-04-23T19:17:30.410|9.3|CRITICAL|CWE-35|N/A|false|A path traversal condition in Intrado 911 Emergency Gateway could allow an attacker with existing network access the ability to access the EGW management interface without authentication. Successful exploitation of this vulnerability could allow a user to read, modify, or delete files.|https://nvd.nist.gov/vuln/detail/CVE-2026-6074|0.00000|0.00000|6.5100
   CVE-2026-41259|2026-04-23T19:17:30.027|2026-04-23T19:17:30.027|8.2|HIGH|CWE-841|N/A|false|Mastodon is a free, open-source social network server based on ActivityPub. Prior to v4.5.9, v4.4.16, and v4.3.22, Mastodon allows restricting new user sign-up based on e-mail domain names, and performs basic validation on e-mail addresses, but fails to restrict characters that are interpreted differently by some mailing servers. This vulnerability is fixed in v4.5.9, v4.4.16, and v4.3.22.|https://nvd.nist.gov/vuln/detail/CVE-2026-41259|0.00000|0.00000|5.7400
   CVE-2026-41247|2026-04-23T19:17:29.850|2026-04-23T19:17:29.850|8.9|HIGH|CWE-78|N/A|false|elFinder is an open-source file manager for web, written in JavaScript using jQuery UI. Prior to 2.1.67, elFinder contains a command injection vulnerability in the resize command. The bg (background color) parameter is accepted from user input and passed through image resize/rotate processing. In configurations that use the ImageMagick CLI backend, this value is incorporated into shell command strings without sufficient escaping. An attacker able to invoke the resize command with a crafted bg value may achieve arbitrary command execution as the web server process user. This vulnerability is fixed in 2.1.67.|https://nvd.nist.gov/vuln/detail/CVE-2026-41247|0.00000|0.00000|6.2300
@@ -168,7 +214,7 @@ cves[4140]{cveId:str|published:str|lastModified:str|cvssScore:f64|severity:str|c
   CVE-2026-34415|2026-04-22T19:17:04.253|2026-04-22T21:18:45.917|9.3|CRITICAL|CWE-184|N/A|false|Xerte Online Toolkits versions 3.15 and earlier contain an incomplete input validation vulnerability in the elFinder connector endpoint that fails to block PHP-executable extensions .php4 due to an incorrect regex pattern. Unauthenticated attackers can exploit this flaw combined with authentication bypass and path traversal vulnerabilities to upload malicious PHP code, rename it with a .php4 extension, and execute arbitrary operating system commands on the server.|https://nvd.nist.gov/vuln/detail/CVE-2026-34415|0.00193|0.41241|6.5158
   CVE-2026-34414|2026-04-22T19:17:04.033|2026-04-22T21:18:45.917|7.1|HIGH|CWE-22|N/A|false|Xerte Online Toolkits versions 3.15 and earlier contain a relative path traversal vulnerability in the elFinder connector endpoint at /editor/elfinder/php/connector.php where the name parameter in rename commands is not sanitized for path traversal sequences. Attackers can supply a name value containing directory traversal sequences to move files from project media directories to arbitrary locations on the filesystem, potentially overwriting application files, achieving stored cross-site scripting, or combining with other vulnerabilities to achieve unauthenticated remote code execution by moving PHP code files to the application root.|https://nvd.nist.gov/vuln/detail/CVE-2026-34414|0.00094|0.26226|4.9728
   CVE-2026-34413|2026-04-22T19:17:02.710|2026-04-22T21:18:45.917|8.8|HIGH|CWE-497|N/A|false|Xerte Online Toolkits versions 3.15 and earlier contain a missing authentication vulnerability in the elFinder connector endpoint at /editor/elfinder/php/connector.php where an HTTP redirect to unauthenticated callers does not call exit() or die(), allowing PHP execution to continue and process the full request server-side. Unauthenticated attackers can perform file operations on project media directories including creating directories, uploading files, renaming files, duplicating files, overwriting files, and deleting files, which can be chained with path traversal and extension blocklist vulnerabilities to achieve remote code execution and arbitrary file read.|https://nvd.nist.gov/vuln/detail/CVE-2026-34413|0.00325|0.55611|6.1698
-  CVE-2026-28950|2026-04-22T19:17:00.847|2026-04-22T21:23:52.620|0.0|NONE|N/A|N/A|false|A logging issue was addressed with improved data redaction. This issue is fixed in iOS 18.7.8 and iPadOS 18.7.8, iOS 26.4.2 and iPadOS 26.4.2. Notifications marked for deletion could be unexpectedly retained on the device.|https://nvd.nist.gov/vuln/detail/CVE-2026-28950|0.00018|0.04940|0.0005
+  CVE-2026-28950|2026-04-22T19:17:00.847|2026-04-23T21:16:05.527|6.2|MEDIUM|CWE-359|N/A|false|A logging issue was addressed with improved data redaction. This issue is fixed in iOS 18.7.8 and iPadOS 18.7.8, iOS 26.4.2 and iPadOS 26.4.2. Notifications marked for deletion could be unexpectedly retained on the device.|https://nvd.nist.gov/vuln/detail/CVE-2026-28950|0.00018|0.04940|4.3405
   CVE-2026-26354|2026-04-22T19:17:00.677|2026-04-22T21:23:52.620|8.1|HIGH|CWE-121|N/A|false|Dell PowerProtect Data Domain with Domain Operating System (DD OS) of Feature Release versions 7.7.1.0 through 8.6, LTS2025 release version 8.3.1.0 through 8.3.1.10, LTS2024 release versions 7.13.1.0 through 7.13.1.60, contain a stack-based Buffer Overflow vulnerability. An unauthenticated attacker with remote access could potentially exploit this vulnerability, leading to arbitrary command execution.|https://nvd.nist.gov/vuln/detail/CVE-2026-26354|0.00047|0.14597|5.6714
   CVE-2026-6515|2026-04-22T17:16:44.923|2026-04-23T20:18:22.383|5.4|MEDIUM|CWE-613|N/A|false|GitLab has remediated an issue in GitLab CE/EE affecting all versions from 18.2 before 18.9.6, 18.10 before 18.10.4, and 18.11 before 18.11.1 that could have allowed a user to use invalidated or incorrectly scoped credentials to access Virtual Registries under certain conditions.|https://nvd.nist.gov/vuln/detail/CVE-2026-6515|0.00011|0.01525|3.7803
   CVE-2026-5816|2026-04-22T17:16:44.763|2026-04-23T20:30:30.267|8.0|HIGH|CWE-41|N/A|false|GitLab has remediated an issue in GitLab CE/EE affecting all versions from 18.10 before 18.10.4 and 18.11 before 18.11.1 that could have allowed an unauthenticated user to execute arbitrary JavaScript in a user's browser session due to improper path validation under certain conditions.|https://nvd.nist.gov/vuln/detail/CVE-2026-5816|0.00012|0.01612|5.6004
@@ -1267,8 +1313,6 @@ cves[4140]{cveId:str|published:str|lastModified:str|cvssScore:f64|severity:str|c
   CVE-2026-33440|2026-04-15T19:16:35.447|2026-04-21T14:09:48.707|5.0|MEDIUM|CWE-918|N/A|false|Weblate is a web based localization tool. In versions prior to 5.17, the ALLOWED_ASSET_DOMAINS setting applied only to the first issued requests and didn't restrict possible redirects. This issue has been fixed in version 5.17.|https://nvd.nist.gov/vuln/detail/CVE-2026-33440|0.00010|0.01036|3.5003
   CVE-2026-33435|2026-04-15T19:16:35.277|2026-04-21T14:10:08.137|8.0|HIGH|CWE-23|N/A|false|Weblate is a web based localization tool. In versions prior to 5.17, the project backup didn't filter Git and Mercurial configuration files which could lead to remote code execution under certain circumstances. This issue has been fixed in version 5.17. If developers are unable to update immediately, they can limit the scope of the vulnerability by restricting access to the project backup, as it is only accessible to users who can create projects.|https://nvd.nist.gov/vuln/detail/CVE-2026-33435|0.00081|0.23916|5.6024
   CVE-2026-33220|2026-04-15T19:16:35.130|2026-04-21T14:10:42.463|6.8|MEDIUM|CWE-22|N/A|false|Weblate is a web based localization tool. In versions prior to 5.17, the translation memory API exposed unintended endpoints, which in turn didn't perform proper access control. This issue has been fixed in version 5.17. If developers are unable to update immediately, they can disable this feature as the CDN add-on is not enabled by default.|https://nvd.nist.gov/vuln/detail/CVE-2026-33220|0.00015|0.03165|4.7604
-  CVE-2026-6290|2026-04-15T18:17:25.030|2026-04-23T20:44:59.880|8.0|HIGH|CWE-863|N/A|false|"Velociraptor versions prior to 0.76.3 contain a vulnerability in the query() plugin which allows access to all orgs with the user's current ACL token. This allows an authenticated GUI user with access in one org, to use the query() plugin, in a notebook cell, to run VQL queries on other orgs which they may not have access to. The user's permissions in the other org are
-the same as the permissions they have in the org containing the notebook."|https://nvd.nist.gov/vuln/detail/CVE-2026-6290|0.00039|0.11705|5.6012
   CVE-2026-5758|2026-04-15T18:17:24.920|2026-04-17T15:17:00.957|6.5|MEDIUM|N/A|N/A|false|JavaScript is vulnerable to prototype pollution in Mafintosh's protocol-buffers-schema Version 3.6.0, where an attacker may alter the application logic, bypass security checks, cause a DoS or achieve remote code execution.|https://nvd.nist.gov/vuln/detail/CVE-2026-5758|0.00166|0.37658|4.5550
   CVE-2026-33214|2026-04-15T18:17:20.053|2026-04-21T14:11:09.503|4.3|MEDIUM|CWE-862|N/A|false|Weblate is a web based localization tool. In versions prior to 5.17, the translation memory API exposed unintended endpoints, which in turn didn't enforce proper access control. This issue has been fixed in version 5.17. If users are unable to update immediately, they can work around this issue by blocking access to /api/memory/ in the HTTP server, which removes access to this feature.|https://nvd.nist.gov/vuln/detail/CVE-2026-33214|0.00011|0.01516|3.0103
   CVE-2026-33212|2026-04-15T18:17:19.897|2026-04-21T14:11:21.500|3.1|LOW|CWE-284|N/A|false|Weblate is a web based localization tool. In versions prior to 5.17, the tasks API didn't verify user access for pending tasks. This could expose logs of in-progress operations to users who don't have access to given scope. The attacker needs to brute-force the random UUID of the task, so exploiting this is unlikely with the default API rate limits. This issue has been fixed in version 5.17.|https://nvd.nist.gov/vuln/detail/CVE-2026-33212|0.00010|0.01102|2.1703
@@ -2252,6 +2296,23 @@ the same as the permissions they have in the org containing the notebook."|https
   CVE-2026-35618|2026-04-09T22:16:30.143|2026-04-17T12:20:03.500|8.3|HIGH|CWE-294|N/A|false|OpenClaw before 2026.3.23 contains a replay identity vulnerability in Plivo V2 signature verification that allows attackers to bypass replay protection by modifying query parameters. The verification path derives replay keys from the full URL including query strings instead of the canonicalized base URL, enabling attackers to mint new verified request keys through unsigned query-only changes to signed requests.|https://nvd.nist.gov/vuln/detail/CVE-2026-35618|0.00039|0.11790|5.8112
   CVE-2026-35617|2026-04-09T22:16:29.950|2026-04-16T14:19:04.850|2.3|LOW|CWE-807|N/A|false|OpenClaw before 2026.3.25 contains an authorization bypass vulnerability in Google Chat group policy enforcement that relies on mutable space display names. Attackers can rebind group policies by changing or colliding space display names to gain unauthorized access to protected resources.|https://nvd.nist.gov/vuln/detail/CVE-2026-35617|0.00056|0.17659|1.6117
   CVE-2026-34512|2026-04-09T22:16:29.757|2026-04-15T17:23:36.897|7.2|HIGH|CWE-863|N/A|false|OpenClaw before 2026.3.25 contains an improper access control vulnerability in the HTTP /sessions/:sessionKey/kill route that allows any bearer-authenticated user to invoke admin-level session termination functions without proper scope validation. Attackers can exploit this by sending authenticated requests to kill arbitrary subagent sessions via the killSubagentRunAdmin function, bypassing ownership and operator scope restrictions.|https://nvd.nist.gov/vuln/detail/CVE-2026-34512|0.00041|0.12445|5.0412
+  CVE-2026-33797|2026-04-09T22:16:29.547|2026-04-23T21:16:05.677|7.1|HIGH|CWE-20|N/A|false|"An Improper Input Validation vulnerability in Juniper Networks Junos OS and Junos OS Evolved allows an unauthenticated, adjacent attacker, sending a specific genuine BGP packet in an already established BGP session to reset only that session causing a Denial of Service (DoS).
+
+An attacker repeatedly sending the packet will sustain the Denial of Service (DoS).This issue affects Junos OS:
+
+  *  25.2 versions before 25.2R2
+
+
+This issue does not affect Junos OS versions before 25.2R1.
+
+This issue affects Junos OS Evolved: 
+  *  25.2-EVO versions before 25.2R2-EVO
+
+
+This issue does not affect Junos OS Evolved versions before 25.2R1-EVO.
+
+eBGP and iBGP are affected.
+IPv4 and IPv6 are affected."|https://nvd.nist.gov/vuln/detail/CVE-2026-33797|0.00035|0.10486|4.9710
   CVE-2026-5980|2026-04-09T21:16:14.223|2026-04-13T15:02:27.760|7.4|HIGH|CWE-119|N/A|false|A flaw has been found in D-Link DIR-605L 2.13B01. Affected by this issue is the function formSetMACFilter of the file /goform/formSetMACFilter of the component POST Request Handler. This manipulation of the argument curTime causes buffer overflow. The attack may be initiated remotely. The exploit has been published and may be used. This vulnerability only affects products that are no longer supported by the maintainer.|https://nvd.nist.gov/vuln/detail/CVE-2026-5980|0.00050|0.15452|5.1815
   CVE-2026-5979|2026-04-09T21:16:13.967|2026-04-13T15:02:27.760|7.4|HIGH|CWE-119|N/A|false|A vulnerability was detected in D-Link DIR-605L 2.13B01. Affected by this vulnerability is the function formVirtualServ of the file /goform/formVirtualServ of the component POST Request Handler. The manipulation of the argument curTime results in buffer overflow. The attack can be launched remotely. The exploit is now public and may be used. This vulnerability only affects products that are no longer supported by the maintainer.|https://nvd.nist.gov/vuln/detail/CVE-2026-5979|0.00050|0.15452|5.1815
   CVE-2026-5978|2026-04-09T21:16:13.727|2026-04-13T15:02:27.760|8.9|HIGH|CWE-77|N/A|false|A security vulnerability has been detected in Totolink A7100RU 7.4cu.2313_b20191024. Affected is the function setWiFiAclRules of the file /cgi-bin/cstecgi.cgi of the component CGI Handler. The manipulation of the argument mode leads to os command injection. The attack can be initiated remotely. The exploit has been disclosed publicly and may be used.|https://nvd.nist.gov/vuln/detail/CVE-2026-5978|0.01254|0.79422|6.2676
@@ -3664,43 +3725,555 @@ the same as the permissions they have in the org containing the notebook."|https
   CVE-2026-25044|2026-04-03T16:16:35.870|2026-04-08T21:19:41.237|8.7|HIGH|CWE-78|N/A|false|Budibase is an open-source low-code platform. Prior to version 3.33.4, the bash automation step executes user-provided commands using execSync without proper sanitization or validation. User input is processed through processStringSync which allows template interpolation, potentially allowing arbitrary command execution. This issue has been patched in version 3.33.4.|https://nvd.nist.gov/vuln/detail/CVE-2026-25044|0.00074|0.22290|6.0922
   CVE-2026-25043|2026-04-03T16:16:35.607|2026-04-21T01:35:13.413|5.3|MEDIUM|CWE-770|N/A|false|Budibase is an open-source low-code platform. Prior to version 3.23.25, a business logic vulnerability exists in Budibase’s password reset functionality due to the absence of rate limiting, CAPTCHA, or abuse prevention mechanisms on the “Forgot Password” endpoint. An unauthenticated attacker can repeatedly trigger password reset requests for the same email address, resulting in hundreds of password reset emails being sent in a short time window. This enables large-scale email flooding, user harassment, denial of service (DoS) against user inboxes, and potential financial and reputational impact for Budibase. This issue has been patched in version 3.23.25.|https://nvd.nist.gov/vuln/detail/CVE-2026-25043|0.00059|0.18446|3.7118
   CVE-2026-23471|2026-04-03T16:16:34.773|2026-04-13T14:16:09.590|0.0|NONE|N/A|N/A|false|Rejected reason: This CVE ID has been rejected or withdrawn by its CVE Numbering Authority.|https://nvd.nist.gov/vuln/detail/CVE-2026-23471|0.00000|0.00000|0.0000
-  CVE-2026-23447|2026-04-03T16:16:30.663|2026-04-23T20:56:17.963|7.8|HIGH|CWE-129|N/A|false|"In the Linux kernel, the following vulnerability has been resolved:
+  CVE-2026-23445|2026-04-03T16:16:30.077|2026-04-23T20:58:35.600|5.5|MEDIUM|NVD-CWE-noinfo|N/A|false|"In the Linux kernel, the following vulnerability has been resolved:
 
-net: usb: cdc_ncm: add ndpoffset to NDP32 nframes bounds check
+igc: fix page fault in XDP TX timestamps handling
 
-The same bounds-check bug fixed for NDP16 in the previous patch also
-exists in cdc_ncm_rx_verify_ndp32(). The DPE array size is validated
-against the total skb length without accounting for ndpoffset, allowing
-out-of-bounds reads when the NDP32 is placed near the end of the NTB.
+If an XDP application that requested TX timestamping is shutting down
+while the link of the interface in use is still up the following kernel
+splat is reported:
 
-Add ndpoffset to the nframes bounds check and use struct_size_t() to
-express the NDP-plus-DPE-array size more clearly.
+[  883.803618] [   T1554] BUG: unable to handle page fault for address: ffffcfb6200fd008
+...
+[  883.803650] [   T1554] Call Trace:
+[  883.803652] [   T1554]  <TASK>
+[  883.803654] [   T1554]  igc_ptp_tx_tstamp_event+0xdf/0x160 [igc]
+[  883.803660] [   T1554]  igc_tsync_interrupt+0x2d5/0x300 [igc]
+...
 
-Compile-tested only."|https://nvd.nist.gov/vuln/detail/CVE-2026-23447|0.00024|0.06504|5.4607
-  CVE-2026-23446|2026-04-03T16:16:30.317|2026-04-23T20:57:00.913|5.5|MEDIUM|NVD-CWE-noinfo|N/A|false|"In the Linux kernel, the following vulnerability has been resolved:
+During shutdown of the TX ring the xsk_meta pointers are left behind, so
+that the IRQ handler is trying to touch them.
 
-net: usb: aqc111: Do not perform PM inside suspend callback
+This issue is now being fixed by cleaning up the stale xsk meta data on
+TX shutdown. TX timestamps on other queues remain unaffected."|https://nvd.nist.gov/vuln/detail/CVE-2026-23445|0.00023|0.06404|3.8507
+  CVE-2026-23444|2026-04-03T16:16:28.810|2026-04-23T20:58:42.750|5.5|MEDIUM|CWE-401|N/A|false|"In the Linux kernel, the following vulnerability has been resolved:
 
-syzbot reports ""task hung in rpm_resume""
+wifi: mac80211: always free skb on ieee80211_tx_prepare_skb() failure
 
-This is caused by aqc111_suspend calling
-the PM variant of its write_cmd routine.
+ieee80211_tx_prepare_skb() has three error paths, but only two of them
+free the skb. The first error path (ieee80211_tx_prepare() returning
+TX_DROP) does not free it, while invoke_tx_handlers() failure and the
+fragmentation check both do.
 
-The simplified call trace looks like this:
+Add kfree_skb() to the first error path so all three are consistent,
+and remove the now-redundant frees in callers (ath9k, mt76,
+mac80211_hwsim) to avoid double-free.
 
-rpm_suspend()
-  usb_suspend_both() - here udev->dev.power.runtime_status == RPM_SUSPENDING
-    aqc111_suspend() - called for the usb device interface
-      aqc111_write32_cmd()
-        usb_autopm_get_interface()
-          pm_runtime_resume_and_get()
-            rpm_resume() - here we call rpm_resume() on our parent
-              rpm_resume() - Here we wait for a status change that will never happen.
+Document the skb ownership guarantee in the function's kdoc."|https://nvd.nist.gov/vuln/detail/CVE-2026-23444|0.00022|0.06057|3.8507
+  CVE-2026-23443|2026-04-03T16:16:28.573|2026-04-23T20:58:48.307|5.5|MEDIUM|CWE-476|N/A|false|"In the Linux kernel, the following vulnerability has been resolved:
 
-At this point we block another task which holds
-rtnl_lock and locks up the whole networking stack.
+ACPI: processor: Fix previous acpi_processor_errata_piix4() fix
 
-Fix this by replacing the write_cmd calls with their _nopm variants"|https://nvd.nist.gov/vuln/detail/CVE-2026-23446|0.00032|0.09309|3.8510
+After commi f132e089fe89 (""ACPI: processor: Fix NULL-pointer dereference
+in acpi_processor_errata_piix4()""), device pointers may be dereferenced
+after dropping references to the device objects pointed to by them,
+which may cause a use-after-free to occur.
+
+Moreover, debug messages about enabling the errata may be printed
+if the errata flags corresponding to them are unset.
+
+Address all of these issues by moving message printing to the points
+in the code where the errata flags are set."|https://nvd.nist.gov/vuln/detail/CVE-2026-23443|0.00032|0.09309|3.8510
+  CVE-2026-23442|2026-04-03T16:16:28.423|2026-04-23T20:58:55.020|5.5|MEDIUM|CWE-476|N/A|false|"In the Linux kernel, the following vulnerability has been resolved:
+
+ipv6: add NULL checks for idev in SRv6 paths
+
+__in6_dev_get() can return NULL when the device has no IPv6 configuration
+(e.g. MTU < IPV6_MIN_MTU or after NETDEV_UNREGISTER).
+
+Add NULL checks for idev returned by __in6_dev_get() in both
+seg6_hmac_validate_skb() and ipv6_srh_rcv() to prevent potential NULL
+pointer dereferences."|https://nvd.nist.gov/vuln/detail/CVE-2026-23442|0.00022|0.06057|3.8507
+  CVE-2026-23441|2026-04-03T16:16:26.340|2026-04-23T20:59:07.087|4.7|MEDIUM|CWE-362|N/A|false|"In the Linux kernel, the following vulnerability has been resolved:
+
+net/mlx5e: Prevent concurrent access to IPSec ASO context
+
+The query or updating IPSec offload object is through Access ASO WQE.
+The driver uses a single mlx5e_ipsec_aso struct for each PF, which
+contains a shared DMA-mapped context for all ASO operations.
+
+A race condition exists because the ASO spinlock is released before
+the hardware has finished processing WQE. If a second operation is
+initiated immediately after, it overwrites the shared context in the
+DMA area.
+
+When the first operation's completion is processed later, it reads
+this corrupted context, leading to unexpected behavior and incorrect
+results.
+
+This commit fixes the race by introducing a private context within
+each IPSec offload object. The shared ASO context is now copied to
+this private context while the ASO spinlock is held. Subsequent
+processing uses this saved, per-object context, ensuring its integrity
+is maintained."|https://nvd.nist.gov/vuln/detail/CVE-2026-23441|0.00024|0.06504|3.2907
+  CVE-2026-23440|2026-04-03T16:16:26.020|2026-04-23T20:59:12.653|4.7|MEDIUM|CWE-362|N/A|false|"In the Linux kernel, the following vulnerability has been resolved:
+
+net/mlx5e: Fix race condition during IPSec ESN update
+
+In IPSec full offload mode, the device reports an ESN (Extended
+Sequence Number) wrap event to the driver. The driver validates this
+event by querying the IPSec ASO and checking that the esn_event_arm
+field is 0x0, which indicates an event has occurred. After handling
+the event, the driver must re-arm the context by setting esn_event_arm
+back to 0x1.
+
+A race condition exists in this handling path. After validating the
+event, the driver calls mlx5_accel_esp_modify_xfrm() to update the
+kernel's xfrm state. This function temporarily releases and
+re-acquires the xfrm state lock.
+
+So, need to acknowledge the event first by setting esn_event_arm to
+0x1. This prevents the driver from reprocessing the same ESN update if
+the hardware sends events for other reason. Since the next ESN update
+only occurs after nearly 2^31 packets are received, there's no risk of
+missing an update, as it will happen long after this handling has
+finished.
+
+Processing the event twice causes the ESN high-order bits (esn_msb) to
+be incremented incorrectly. The driver then programs the hardware with
+this invalid ESN state, which leads to anti-replay failures and a
+complete halt of IPSec traffic.
+
+Fix this by re-arming the ESN event immediately after it is validated,
+before calling mlx5_accel_esp_modify_xfrm(). This ensures that any
+spurious, duplicate events are correctly ignored, closing the race
+window."|https://nvd.nist.gov/vuln/detail/CVE-2026-23440|0.00024|0.06504|3.2907
+  CVE-2026-23439|2026-04-03T16:16:25.737|2026-04-23T20:59:18.080|5.5|MEDIUM|CWE-476|N/A|false|"In the Linux kernel, the following vulnerability has been resolved:
+
+udp_tunnel: fix NULL deref caused by udp_sock_create6 when CONFIG_IPV6=n
+
+When CONFIG_IPV6 is disabled, the udp_sock_create6() function returns 0
+(success) without actually creating a socket. Callers such as
+fou_create() then proceed to dereference the uninitialized socket
+pointer, resulting in a NULL pointer dereference.
+
+The captured NULL deref crash:
+  BUG: kernel NULL pointer dereference, address: 0000000000000018
+  RIP: 0010:fou_nl_add_doit (net/ipv4/fou_core.c:590 net/ipv4/fou_core.c:764)
+  [...]
+  Call Trace:
+    <TASK>
+    genl_family_rcv_msg_doit.constprop.0 (net/netlink/genetlink.c:1114)
+    genl_rcv_msg (net/netlink/genetlink.c:1194 net/netlink/genetlink.c:1209)
+    [...]
+    netlink_rcv_skb (net/netlink/af_netlink.c:2550)
+    genl_rcv (net/netlink/genetlink.c:1219)
+    netlink_unicast (net/netlink/af_netlink.c:1319 net/netlink/af_netlink.c:1344)
+    netlink_sendmsg (net/netlink/af_netlink.c:1894)
+    __sock_sendmsg (net/socket.c:727 (discriminator 1) net/socket.c:742 (discriminator 1))
+    __sys_sendto (./include/linux/file.h:62 (discriminator 1) ./include/linux/file.h:83 (discriminator 1) net/socket.c:2183 (discriminator 1))
+    __x64_sys_sendto (net/socket.c:2213 (discriminator 1) net/socket.c:2209 (discriminator 1) net/socket.c:2209 (discriminator 1))
+    do_syscall_64 (arch/x86/entry/syscall_64.c:63 (discriminator 1) arch/x86/entry/syscall_64.c:94 (discriminator 1))
+    entry_SYSCALL_64_after_hwframe (net/arch/x86/entry/entry_64.S:130)
+
+This patch makes udp_sock_create6 return -EPFNOSUPPORT instead, so
+callers correctly take their error paths. There is only one caller of
+the vulnerable function and only privileged users can trigger it."|https://nvd.nist.gov/vuln/detail/CVE-2026-23439|0.00032|0.09309|3.8510
+  CVE-2026-23438|2026-04-03T16:16:25.540|2026-04-23T20:59:22.450|5.5|MEDIUM|CWE-476|N/A|false|"In the Linux kernel, the following vulnerability has been resolved:
+
+net: mvpp2: guard flow control update with global_tx_fc in buffer switching
+
+mvpp2_bm_switch_buffers() unconditionally calls
+mvpp2_bm_pool_update_priv_fc() when switching between per-cpu and
+shared buffer pool modes. This function programs CM3 flow control
+registers via mvpp2_cm3_read()/mvpp2_cm3_write(), which dereference
+priv->cm3_base without any NULL check.
+
+When the CM3 SRAM resource is not present in the device tree (the
+third reg entry added by commit 60523583b07c (""dts: marvell: add CM3
+SRAM memory to cp11x ethernet device tree"")), priv->cm3_base remains
+NULL and priv->global_tx_fc is false. Any operation that triggers
+mvpp2_bm_switch_buffers(), for example an MTU change that crosses
+the jumbo frame threshold, will crash:
+
+  Unable to handle kernel NULL pointer dereference at
+  virtual address 0000000000000000
+  Mem abort info:
+    ESR = 0x0000000096000006
+    EC = 0x25: DABT (current EL), IL = 32 bits
+  pc : readl+0x0/0x18
+  lr : mvpp2_cm3_read.isra.0+0x14/0x20
+  Call trace:
+   readl+0x0/0x18
+   mvpp2_bm_pool_update_fc+0x40/0x12c
+   mvpp2_bm_pool_update_priv_fc+0x94/0xd8
+   mvpp2_bm_switch_buffers.isra.0+0x80/0x1c0
+   mvpp2_change_mtu+0x140/0x380
+   __dev_set_mtu+0x1c/0x38
+   dev_set_mtu_ext+0x78/0x118
+   dev_set_mtu+0x48/0xa8
+   dev_ifsioc+0x21c/0x43c
+   dev_ioctl+0x2d8/0x42c
+   sock_ioctl+0x314/0x378
+
+Every other flow control call site in the driver already guards
+hardware access with either priv->global_tx_fc or port->tx_fc.
+mvpp2_bm_switch_buffers() is the only place that omits this check.
+
+Add the missing priv->global_tx_fc guard to both the disable and
+re-enable calls in mvpp2_bm_switch_buffers(), consistent with the
+rest of the driver."|https://nvd.nist.gov/vuln/detail/CVE-2026-23438|0.00032|0.09309|3.8510
+  CVE-2026-23437|2026-04-03T16:16:25.400|2026-04-23T20:59:26.760|5.5|MEDIUM|NVD-CWE-noinfo|N/A|false|"In the Linux kernel, the following vulnerability has been resolved:
+
+net: shaper: protect late read accesses to the hierarchy
+
+We look up a netdev during prep of Netlink ops (pre- callbacks)
+and take a ref to it. Then later in the body of the callback
+we take its lock or RCU which are the actual protections.
+
+This is not proper, a conversion from a ref to a locked netdev
+must include a liveness check (a check if the netdev hasn't been
+unregistered already). Fix the read cases (those under RCU).
+Writes needs a separate change to protect from creating the
+hierarchy after flush has already run."|https://nvd.nist.gov/vuln/detail/CVE-2026-23437|0.00022|0.06057|3.8507
+  CVE-2026-23436|2026-04-03T16:16:25.257|2026-04-23T20:59:33.860|5.5|MEDIUM|NVD-CWE-noinfo|N/A|false|"In the Linux kernel, the following vulnerability has been resolved:
+
+net: shaper: protect from late creation of hierarchy
+
+We look up a netdev during prep of Netlink ops (pre- callbacks)
+and take a ref to it. Then later in the body of the callback
+we take its lock or RCU which are the actual protections.
+
+The netdev may get unregistered in between the time we take
+the ref and the time we lock it. We may allocate the hierarchy
+after flush has already run, which would lead to a leak.
+
+Take the instance lock in pre- already, this saves us from the race
+and removes the need for dedicated lock/unlock callbacks completely.
+After all, if there's any chance of write happening concurrently
+with the flush - we're back to leaking the hierarchy.
+
+We may take the lock for devices which don't support shapers but
+we're only dealing with SET operations here, not taking the lock
+would be optimizing for an error case."|https://nvd.nist.gov/vuln/detail/CVE-2026-23436|0.00022|0.06057|3.8507
+  CVE-2026-23435|2026-04-03T16:16:25.083|2026-04-23T20:59:39.733|5.5|MEDIUM|CWE-476|N/A|false|"In the Linux kernel, the following vulnerability has been resolved:
+
+perf/x86: Move event pointer setup earlier in x86_pmu_enable()
+
+A production AMD EPYC system crashed with a NULL pointer dereference
+in the PMU NMI handler:
+
+  BUG: kernel NULL pointer dereference, address: 0000000000000198
+  RIP: x86_perf_event_update+0xc/0xa0
+  Call Trace:
+   <NMI>
+   amd_pmu_v2_handle_irq+0x1a6/0x390
+   perf_event_nmi_handler+0x24/0x40
+
+The faulting instruction is `cmpq $0x0, 0x198(%rdi)` with RDI=0,
+corresponding to the `if (unlikely(!hwc->event_base))` check in
+x86_perf_event_update() where hwc = &event->hw and event is NULL.
+
+drgn inspection of the vmcore on CPU 106 showed a mismatch between
+cpuc->active_mask and cpuc->events[]:
+
+  active_mask: 0x1e (bits 1, 2, 3, 4)
+  events[1]:   0xff1100136cbd4f38  (valid)
+  events[2]:   0x0                 (NULL, but active_mask bit 2 set)
+  events[3]:   0xff1100076fd2cf38  (valid)
+  events[4]:   0xff1100079e990a90  (valid)
+
+The event that should occupy events[2] was found in event_list[2]
+with hw.idx=2 and hw.state=0x0, confirming x86_pmu_start() had run
+(which clears hw.state and sets active_mask) but events[2] was
+never populated.
+
+Another event (event_list[0]) had hw.state=0x7 (STOPPED|UPTODATE|ARCH),
+showing it was stopped when the PMU rescheduled events, confirming the
+throttle-then-reschedule sequence occurred.
+
+The root cause is commit 7e772a93eb61 (""perf/x86: Fix NULL event access
+and potential PEBS record loss"") which moved the cpuc->events[idx]
+assignment out of x86_pmu_start() and into step 2 of x86_pmu_enable(),
+after the PERF_HES_ARCH check. This broke any path that calls
+pmu->start() without going through x86_pmu_enable() -- specifically
+the unthrottle path:
+
+  perf_adjust_freq_unthr_events()
+    -> perf_event_unthrottle_group()
+      -> perf_event_unthrottle()
+        -> event->pmu->start(event, 0)
+          -> x86_pmu_start()     // sets active_mask but not events[]
+
+The race sequence is:
+
+  1. A group of perf events overflows, triggering group throttle via
+     perf_event_throttle_group(). All events are stopped: active_mask
+     bits cleared, events[] preserved (x86_pmu_stop no longer clears
+     events[] after commit 7e772a93eb61).
+
+  2. While still throttled (PERF_HES_STOPPED), x86_pmu_enable() runs
+     due to other scheduling activity. Stopped events that need to
+     move counters get PERF_HES_ARCH set and events[old_idx] cleared.
+     In step 2 of x86_pmu_enable(), PERF_HES_ARCH causes these events
+     to be skipped -- events[new_idx] is never set.
+
+  3. The timer tick unthrottles the group via pmu->start(). Since
+     commit 7e772a93eb61 removed the events[] assignment from
+     x86_pmu_start(), active_mask[new_idx] is set but events[new_idx]
+     remains NULL.
+
+  4. A PMC overflow NMI fires. The handler iterates active counters,
+     finds active_mask[2] set, reads events[2] which is NULL, and
+     crashes dereferencing it.
+
+Move the cpuc->events[hwc->idx] assignment in x86_pmu_enable() to
+before the PERF_HES_ARCH check, so that events[] is populated even
+for events that are not immediately started. This ensures the
+unthrottle path via pmu->start() always finds a valid event pointer."|https://nvd.nist.gov/vuln/detail/CVE-2026-23435|0.00022|0.06057|3.8507
+  CVE-2026-23434|2026-04-03T16:16:24.913|2026-04-23T20:59:48.700|5.5|MEDIUM|NVD-CWE-noinfo|N/A|false|"In the Linux kernel, the following vulnerability has been resolved:
+
+mtd: rawnand: serialize lock/unlock against other NAND operations
+
+nand_lock() and nand_unlock() call into chip->ops.lock_area/unlock_area
+without holding the NAND device lock. On controllers that implement
+SET_FEATURES via multiple low-level PIO commands, these can race with
+concurrent UBI/UBIFS background erase/write operations that hold the
+device lock, resulting in cmd_pending conflicts on the NAND controller.
+
+Add nand_get_device()/nand_release_device() around the lock/unlock
+operations to serialize them against all other NAND controller access."|https://nvd.nist.gov/vuln/detail/CVE-2026-23434|0.00032|0.09309|3.8510
+  CVE-2026-23433|2026-04-03T16:16:24.777|2026-04-23T20:59:54.533|5.5|MEDIUM|CWE-476|N/A|false|"In the Linux kernel, the following vulnerability has been resolved:
+
+arm_mpam: Fix null pointer dereference when restoring bandwidth counters
+
+When an MSC supporting memory bandwidth monitoring is brought offline and
+then online, mpam_restore_mbwu_state() calls __ris_msmon_read() via ipi to
+restore the configuration of the bandwidth counters. It doesn't care about
+the value read, mbwu_arg.val, and doesn't set it leading to a null pointer
+dereference when __ris_msmon_read() adds to it. This results in a kernel
+oops with a call trace such as:
+
+Call trace:
+__ris_msmon_read+0x19c/0x64c (P)
+mpam_restore_mbwu_state+0xa0/0xe8
+smp_call_on_cpu_callback+0x1c/0x38
+process_one_work+0x154/0x4b4
+worker_thread+0x188/0x310
+kthread+0x11c/0x130
+ret_from_fork+0x10/0x20
+
+Provide a local variable for val to avoid __ris_msmon_read() dereferencing
+a null pointer when adding to val."|https://nvd.nist.gov/vuln/detail/CVE-2026-23433|0.00024|0.06702|3.8507
+  CVE-2026-23432|2026-04-03T16:16:24.637|2026-04-23T21:00:48.590|7.8|HIGH|CWE-416|N/A|false|"In the Linux kernel, the following vulnerability has been resolved:
+
+mshv: Fix use-after-free in mshv_map_user_memory error path
+
+In the error path of mshv_map_user_memory(), calling vfree() directly on
+the region leaves the MMU notifier registered. When userspace later unmaps
+the memory, the notifier fires and accesses the freed region, causing a
+use-after-free and potential kernel panic.
+
+Replace vfree() with mshv_partition_put() to properly unregister
+the MMU notifier before freeing the region."|https://nvd.nist.gov/vuln/detail/CVE-2026-23432|0.00024|0.06702|5.4607
+  CVE-2026-23431|2026-04-03T16:16:24.493|2026-04-23T21:00:59.380|5.5|MEDIUM|CWE-401|N/A|false|"In the Linux kernel, the following vulnerability has been resolved:
+
+spi: amlogic-spisg: Fix memory leak in aml_spisg_probe()
+
+In aml_spisg_probe(), ctlr is allocated by
+spi_alloc_target()/spi_alloc_host(), but fails to call
+spi_controller_put() in several error paths. This leads
+to a memory leak whenever the driver fails to probe after
+the initial allocation.
+
+Convert to use devm_spi_alloc_host()/devm_spi_alloc_target()
+to fix the memory leak."|https://nvd.nist.gov/vuln/detail/CVE-2026-23431|0.00022|0.06057|3.8507
+  CVE-2026-23430|2026-04-03T16:16:24.357|2026-04-23T21:03:36.690|5.5|MEDIUM|CWE-401|N/A|false|"In the Linux kernel, the following vulnerability has been resolved:
+
+drm/vmwgfx: Don't overwrite KMS surface dirty tracker
+
+We were overwriting the surface's dirty tracker here causing a memory leak."|https://nvd.nist.gov/vuln/detail/CVE-2026-23430|0.00022|0.06057|3.8507
+  CVE-2026-23429|2026-04-03T16:16:24.210|2026-04-23T21:03:47.160|5.5|MEDIUM|NVD-CWE-noinfo|N/A|false|"In the Linux kernel, the following vulnerability has been resolved:
+
+iommu/sva: Fix crash in iommu_sva_unbind_device()
+
+domain->mm->iommu_mm can be freed by iommu_domain_free():
+  iommu_domain_free()
+    mmdrop()
+      __mmdrop()
+        mm_pasid_drop()
+After iommu_domain_free() returns, accessing domain->mm->iommu_mm may
+dereference a freed mm structure, leading to a crash.
+
+Fix this by moving the code that accesses domain->mm->iommu_mm to before
+the call to iommu_domain_free()."|https://nvd.nist.gov/vuln/detail/CVE-2026-23429|0.00022|0.06057|3.8507
+  CVE-2026-23428|2026-04-03T16:16:23.993|2026-04-23T21:03:52.867|7.8|HIGH|CWE-416|N/A|false|"In the Linux kernel, the following vulnerability has been resolved:
+
+ksmbd: fix use-after-free of share_conf in compound request
+
+smb2_get_ksmbd_tcon() reuses work->tcon in compound requests without
+validating tcon->t_state. ksmbd_tree_conn_lookup() checks t_state ==
+TREE_CONNECTED on the initial lookup path, but the compound reuse path
+bypasses this check entirely.
+
+If a prior command in the compound (SMB2_TREE_DISCONNECT) sets t_state
+to TREE_DISCONNECTED and frees share_conf via ksmbd_share_config_put(),
+subsequent commands dereference the freed share_conf through
+work->tcon->share_conf.
+
+KASAN report:
+
+[    4.144653] ==================================================================
+[    4.145059] BUG: KASAN: slab-use-after-free in smb2_write+0xc74/0xe70
+[    4.145415] Read of size 4 at addr ffff88810430c194 by task kworker/1:1/44
+[    4.145772]
+[    4.145867] CPU: 1 UID: 0 PID: 44 Comm: kworker/1:1 Not tainted 7.0.0-rc3+ #60 PREEMPTLAZY
+[    4.145871] Hardware name: QEMU Ubuntu 24.04 PC v2 (i440FX + PIIX, arch_caps fix, 1996), BIOS 1.16.3-debian-1.16.3-2 04/01/2014
+[    4.145875] Workqueue: ksmbd-io handle_ksmbd_work
+[    4.145888] Call Trace:
+[    4.145892]  <TASK>
+[    4.145894]  dump_stack_lvl+0x64/0x80
+[    4.145910]  print_report+0xce/0x660
+[    4.145919]  ? __pfx__raw_spin_lock_irqsave+0x10/0x10
+[    4.145928]  ? smb2_write+0xc74/0xe70
+[    4.145931]  kasan_report+0xce/0x100
+[    4.145934]  ? smb2_write+0xc74/0xe70
+[    4.145937]  smb2_write+0xc74/0xe70
+[    4.145939]  ? __pfx_smb2_write+0x10/0x10
+[    4.145942]  ? _raw_spin_unlock+0xe/0x30
+[    4.145945]  ? ksmbd_smb2_check_message+0xeb2/0x24c0
+[    4.145948]  ? smb2_tree_disconnect+0x31c/0x480
+[    4.145951]  handle_ksmbd_work+0x40f/0x1080
+[    4.145953]  process_one_work+0x5fa/0xef0
+[    4.145962]  ? assign_work+0x122/0x3e0
+[    4.145964]  worker_thread+0x54b/0xf70
+[    4.145967]  ? __pfx_worker_thread+0x10/0x10
+[    4.145970]  kthread+0x346/0x470
+[    4.145976]  ? recalc_sigpending+0x19b/0x230
+[    4.145980]  ? __pfx_kthread+0x10/0x10
+[    4.145984]  ret_from_fork+0x4fb/0x6c0
+[    4.145992]  ? __pfx_ret_from_fork+0x10/0x10
+[    4.145995]  ? __switch_to+0x36c/0xbe0
+[    4.145999]  ? __pfx_kthread+0x10/0x10
+[    4.146003]  ret_from_fork_asm+0x1a/0x30
+[    4.146013]  </TASK>
+[    4.146014]
+[    4.149858] Allocated by task 44:
+[    4.149953]  kasan_save_stack+0x33/0x60
+[    4.150061]  kasan_save_track+0x14/0x30
+[    4.150169]  __kasan_kmalloc+0x8f/0xa0
+[    4.150274]  ksmbd_share_config_get+0x1dd/0xdd0
+[    4.150401]  ksmbd_tree_conn_connect+0x7e/0x600
+[    4.150529]  smb2_tree_connect+0x2e6/0x1000
+[    4.150645]  handle_ksmbd_work+0x40f/0x1080
+[    4.150761]  process_one_work+0x5fa/0xef0
+[    4.150873]  worker_thread+0x54b/0xf70
+[    4.150978]  kthread+0x346/0x470
+[    4.151071]  ret_from_fork+0x4fb/0x6c0
+[    4.151176]  ret_from_fork_asm+0x1a/0x30
+[    4.151286]
+[    4.151332] Freed by task 44:
+[    4.151418]  kasan_save_stack+0x33/0x60
+[    4.151526]  kasan_save_track+0x14/0x30
+[    4.151634]  kasan_save_free_info+0x3b/0x60
+[    4.151751]  __kasan_slab_free+0x43/0x70
+[    4.151861]  kfree+0x1ca/0x430
+[    4.151952]  __ksmbd_tree_conn_disconnect+0xc8/0x190
+[    4.152088]  smb2_tree_disconnect+0x1cd/0x480
+[    4.152211]  handle_ksmbd_work+0x40f/0x1080
+[    4.152326]  process_one_work+0x5fa/0xef0
+[    4.152438]  worker_thread+0x54b/0xf70
+[    4.152545]  kthread+0x346/0x470
+[    4.152638]  ret_from_fork+0x4fb/0x6c0
+[    4.152743]  ret_from_fork_asm+0x1a/0x30
+[    4.152853]
+[    4.152900] The buggy address belongs to the object at ffff88810430c180
+[    4.152900]  which belongs to the cache kmalloc-96 of size 96
+[    4.153226] The buggy address is located 20 bytes inside of
+[    4.153226]  freed 96-byte region [ffff88810430c180, ffff88810430c1e0)
+[    4.153549]
+[    4.153596] The buggy address belongs to the physical page:
+[    4.153750] page: refcount:0 mapcount:0 mapping:0000000000000000 index:0xffff88810430ce80 pfn:0x10430c
+[    4.154000] flags: 0x
+---truncated---"|https://nvd.nist.gov/vuln/detail/CVE-2026-23428|0.00032|0.09309|5.4610
+  CVE-2026-23427|2026-04-03T16:16:23.797|2026-04-23T21:04:00.563|7.8|HIGH|CWE-416|N/A|false|"In the Linux kernel, the following vulnerability has been resolved:
+
+ksmbd: fix use-after-free in durable v2 replay of active file handles
+
+parse_durable_handle_context() unconditionally assigns dh_info->fp->conn
+to the current connection when handling a DURABLE_REQ_V2 context with
+SMB2_FLAGS_REPLAY_OPERATION. ksmbd_lookup_fd_cguid() does not filter by
+fp->conn, so it returns file handles that are already actively connected.
+The unconditional overwrite replaces fp->conn, and when the overwriting
+connection is subsequently freed, __ksmbd_close_fd() dereferences the
+stale fp->conn via spin_lock(&fp->conn->llist_lock), causing a
+use-after-free.
+
+KASAN report:
+
+[    7.349357] ==================================================================
+[    7.349607] BUG: KASAN: slab-use-after-free in _raw_spin_lock+0x75/0xe0
+[    7.349811] Write of size 4 at addr ffff8881056ac18c by task kworker/1:2/108
+[    7.350010]
+[    7.350064] CPU: 1 UID: 0 PID: 108 Comm: kworker/1:2 Not tainted 7.0.0-rc3+ #58 PREEMPTLAZY
+[    7.350068] Hardware name: QEMU Ubuntu 24.04 PC v2 (i440FX + PIIX, arch_caps fix, 1996), BIOS 1.16.3-debian-1.16.3-2 04/01/2014
+[    7.350070] Workqueue: ksmbd-io handle_ksmbd_work
+[    7.350083] Call Trace:
+[    7.350087]  <TASK>
+[    7.350087]  dump_stack_lvl+0x64/0x80
+[    7.350094]  print_report+0xce/0x660
+[    7.350100]  ? __pfx__raw_spin_lock_irqsave+0x10/0x10
+[    7.350101]  ? __pfx___mod_timer+0x10/0x10
+[    7.350106]  ? _raw_spin_lock+0x75/0xe0
+[    7.350108]  kasan_report+0xce/0x100
+[    7.350109]  ? _raw_spin_lock+0x75/0xe0
+[    7.350114]  kasan_check_range+0x105/0x1b0
+[    7.350116]  _raw_spin_lock+0x75/0xe0
+[    7.350118]  ? __pfx__raw_spin_lock+0x10/0x10
+[    7.350119]  ? __call_rcu_common.constprop.0+0x25e/0x780
+[    7.350125]  ? close_id_del_oplock+0x2cc/0x4e0
+[    7.350128]  __ksmbd_close_fd+0x27f/0xaf0
+[    7.350131]  ksmbd_close_fd+0x135/0x1b0
+[    7.350133]  smb2_close+0xb19/0x15b0
+[    7.350142]  ? __pfx_smb2_close+0x10/0x10
+[    7.350143]  ? xas_load+0x18/0x270
+[    7.350146]  ? _raw_spin_lock+0x84/0xe0
+[    7.350148]  ? __pfx__raw_spin_lock+0x10/0x10
+[    7.350150]  ? _raw_spin_unlock+0xe/0x30
+[    7.350151]  ? ksmbd_smb2_check_message+0xeb2/0x24c0
+[    7.350153]  ? ksmbd_tree_conn_lookup+0xcd/0xf0
+[    7.350154]  handle_ksmbd_work+0x40f/0x1080
+[    7.350156]  process_one_work+0x5fa/0xef0
+[    7.350162]  ? assign_work+0x122/0x3e0
+[    7.350163]  worker_thread+0x54b/0xf70
+[    7.350165]  ? __pfx_worker_thread+0x10/0x10
+[    7.350166]  kthread+0x346/0x470
+[    7.350170]  ? recalc_sigpending+0x19b/0x230
+[    7.350176]  ? __pfx_kthread+0x10/0x10
+[    7.350178]  ret_from_fork+0x4fb/0x6c0
+[    7.350183]  ? __pfx_ret_from_fork+0x10/0x10
+[    7.350185]  ? __switch_to+0x36c/0xbe0
+[    7.350188]  ? __pfx_kthread+0x10/0x10
+[    7.350190]  ret_from_fork_asm+0x1a/0x30
+[    7.350197]  </TASK>
+[    7.350197]
+[    7.355160] Allocated by task 123:
+[    7.355261]  kasan_save_stack+0x33/0x60
+[    7.355373]  kasan_save_track+0x14/0x30
+[    7.355484]  __kasan_kmalloc+0x8f/0xa0
+[    7.355593]  ksmbd_conn_alloc+0x44/0x6d0
+[    7.355711]  ksmbd_kthread_fn+0x243/0xd70
+[    7.355839]  kthread+0x346/0x470
+[    7.355942]  ret_from_fork+0x4fb/0x6c0
+[    7.356051]  ret_from_fork_asm+0x1a/0x30
+[    7.356164]
+[    7.356214] Freed by task 134:
+[    7.356305]  kasan_save_stack+0x33/0x60
+[    7.356416]  kasan_save_track+0x14/0x30
+[    7.356527]  kasan_save_free_info+0x3b/0x60
+[    7.356646]  __kasan_slab_free+0x43/0x70
+[    7.356761]  kfree+0x1ca/0x430
+[    7.356862]  ksmbd_tcp_disconnect+0x59/0xe0
+[    7.356993]  ksmbd_conn_handler_loop+0x77e/0xd40
+[    7.357138]  kthread+0x346/0x470
+[    7.357240]  ret_from_fork+0x4fb/0x6c0
+[    7.357350]  ret_from_fork_asm+0x1a/0x30
+[    7.357463]
+[    7.357513] The buggy address belongs to the object at ffff8881056ac000
+[    7.357513]  which belongs to the cache kmalloc-1k of size 1024
+[    7.357857] The buggy address is located 396 bytes inside of
+[    7.357857]  freed 1024-byte region 
+---truncated---"|https://nvd.nist.gov/vuln/detail/CVE-2026-23427|0.00024|0.06504|5.4607
   CVE-2025-68153|2026-04-03T16:16:23.357|2026-04-21T01:24:01.973|7.1|HIGH|CWE-863|N/A|false|Juju is an open source application orchestration engine that enables any application operation on any infrastructure at any scale through special operators called ‘charms’. From versions 2.9 to before 2.9.56 and 3.6 to before 3.6.19, any authenticated user, machine or controller under a Juju controller can modify the resources of an application within the entire controller. This issue has been patched in versions 2.9.56 and 3.6.19.|https://nvd.nist.gov/vuln/detail/CVE-2025-68153|0.00010|0.01246|4.9703
   CVE-2025-68152|2026-04-03T16:16:23.193|2026-04-21T01:18:39.967|6.9|MEDIUM|CWE-863|N/A|false|Juju is an open source application orchestration engine that enables any application operation on any infrastructure at any scale through special operators called ‘charms’. From versions 2.9 to before 2.9.56 and 3.6 to before 3.6.19, it is possible that a compromised workload machine under a Juju controller can read any log file for any entity in any model at any level. This issue has been patched in versions 2.9.56 and 3.6.19.|https://nvd.nist.gov/vuln/detail/CVE-2025-68152|0.00012|0.01845|4.8304
   CVE-2025-64340|2026-04-03T16:16:23.010|2026-04-21T01:09:14.960|6.7|MEDIUM|CWE-78|N/A|false|FastMCP is the standard framework for building MCP applications. Prior to version 3.2.0, server names containing shell metacharacters (e.g., &) can cause command injection on Windows when passed to fastmcp install claude-code or fastmcp install gemini-cli. These install paths use subprocess.run() with a list argument, but on Windows the target CLIs often resolve to .cmd wrappers that are executed through cmd.exe, which interprets metacharacters in the flattened command string. This issue has been patched in version 3.2.0.|https://nvd.nist.gov/vuln/detail/CVE-2025-64340|0.00024|0.06603|4.6907
@@ -3712,6 +4285,61 @@ Fix this by replacing the write_cmd calls with their _nopm variants"|https://nvd
   CVE-2026-5468|2026-04-03T14:16:33.837|2026-04-09T00:57:43.527|5.1|MEDIUM|CWE-79|N/A|false|A security flaw has been discovered in Casdoor 2.356.0. This affects the function dangerouslySetInnerHTML. Performing a manipulation of the argument formCss/formCssMobile/formSideHtml results in cross site scripting. The attack can be initiated remotely. The exploit has been released to the public and may be used for attacks. The vendor was contacted early about this disclosure but did not respond in any way.|https://nvd.nist.gov/vuln/detail/CVE-2026-5468|0.00025|0.06834|3.5707
   CVE-2026-28736|2026-04-03T14:16:29.517|2026-04-03T16:10:23.730|4.3|MEDIUM|CWE-639|N/A|false|** UNSUPPORTED WHEN ASSIGNED ** Focalboard version 8.0 fails to validate file ownership when serving uploaded files. This allows an authenticated attacker who knows a victim's fileID to read the content of the file. NOTE: Focalboard as a standalone product is not maintained and no fix will be issued.|https://nvd.nist.gov/vuln/detail/CVE-2026-28736|0.00009|0.01021|3.0103
   CVE-2026-25773|2026-04-03T14:16:29.127|2026-04-03T16:10:23.730|8.1|HIGH|CWE-89|N/A|false|** UNSUPPORTED WHEN ASSIGNED ** Focalboard version 8.0 fails to sanitize category IDs before incorporating them into dynamic SQL statements when reordering categories. An attacker can inject a malicious SQL payload into the category id field, which is stored in the database and later executed unsanitized when the category reorder API processes the stored value. This Second-Order SQL Injection (Time-Based Blind) allows an authenticated attacker to exfiltrate sensitive data including password hashes of other users. NOTE: Focalboard as a standalone product is not maintained and no fix will be issued.|https://nvd.nist.gov/vuln/detail/CVE-2026-25773|0.00011|0.01327|5.6703
+  CVE-2026-23426|2026-04-03T14:16:28.890|2026-04-23T21:04:06.670|5.5|MEDIUM|NVD-CWE-Other|N/A|false|"In the Linux kernel, the following vulnerability has been resolved:
+
+drm/logicvc: Fix device node reference leak in logicvc_drm_config_parse()
+
+The logicvc_drm_config_parse() function calls of_get_child_by_name() to
+find the ""layers"" node but fails to release the reference, leading to a
+device node reference leak.
+
+Fix this by using the __free(device_node) cleanup attribute to automatic
+release the reference when the variable goes out of scope."|https://nvd.nist.gov/vuln/detail/CVE-2026-23426|0.00032|0.09309|3.8510
+  CVE-2026-23425|2026-04-03T14:16:28.747|2026-04-23T21:04:11.800|5.5|MEDIUM|NVD-CWE-noinfo|N/A|false|"In the Linux kernel, the following vulnerability has been resolved:
+
+KVM: arm64: Fix ID register initialization for non-protected pKVM guests
+
+In protected mode, the hypervisor maintains a separate instance of
+the `kvm` structure for each VM. For non-protected VMs, this structure is
+initialized from the host's `kvm` state.
+
+Currently, `pkvm_init_features_from_host()` copies the
+`KVM_ARCH_FLAG_ID_REGS_INITIALIZED` flag from the host without the
+underlying `id_regs` data being initialized. This results in the
+hypervisor seeing the flag as set while the ID registers remain zeroed.
+
+Consequently, `kvm_has_feat()` checks at EL2 fail (return 0) for
+non-protected VMs. This breaks logic that relies on feature detection,
+such as `ctxt_has_tcrx()` for TCR2_EL1 support. As a result, certain
+system registers (e.g., TCR2_EL1, PIR_EL1, POR_EL1) are not
+saved/restored during the world switch, which could lead to state
+corruption.
+
+Fix this by explicitly copying the ID registers from the host `kvm` to
+the hypervisor `kvm` for non-protected VMs during initialization, since
+we trust the host with its non-protected guests' features. Also ensure
+`KVM_ARCH_FLAG_ID_REGS_INITIALIZED` is cleared initially in
+`pkvm_init_features_from_host` so that `vm_copy_id_regs` can properly
+initialize them and set the flag once done."|https://nvd.nist.gov/vuln/detail/CVE-2026-23425|0.00022|0.06057|3.8507
+  CVE-2026-23424|2026-04-03T14:16:28.623|2026-04-23T21:04:20.700|5.5|MEDIUM|NVD-CWE-noinfo|N/A|false|"In the Linux kernel, the following vulnerability has been resolved:
+
+accel/amdxdna: Validate command buffer payload count
+
+The count field in the command header is used to determine the valid
+payload size. Verify that the valid payload does not exceed the remaining
+buffer space."|https://nvd.nist.gov/vuln/detail/CVE-2026-23424|0.00022|0.06057|3.8507
+  CVE-2026-23423|2026-04-03T14:16:28.487|2026-04-23T21:04:24.317|5.5|MEDIUM|CWE-401|N/A|false|"In the Linux kernel, the following vulnerability has been resolved:
+
+btrfs: free pages on error in btrfs_uring_read_extent()
+
+In this function the 'pages' object is never freed in the hopes that it is
+picked up by btrfs_uring_read_finished() whenever that executes in the
+future. But that's just the happy path. Along the way previous
+allocations might have gone wrong, or we might not get -EIOCBQUEUED from
+btrfs_encoded_read_regular_fill_pages(). In all these cases, we go to a
+cleanup section that frees all memory allocated by this function without
+assuming any deferred execution, and this also needs to happen for the
+'pages' allocation."|https://nvd.nist.gov/vuln/detail/CVE-2026-23423|0.00022|0.06142|3.8507
   CVE-2026-27655|2026-04-03T13:17:07.903|2026-04-03T18:10:23.540|7.3|HIGH|CWE-79|N/A|false|Zohocorp ManageEngine Exchange Reporter Plus versions before 5802 are vulnerable to Stored XSS in Permissions Based on Mailboxes report.|https://nvd.nist.gov/vuln/detail/CVE-2026-27655|0.00016|0.03736|5.1105
   CVE-2026-5467|2026-04-03T12:16:19.593|2026-04-09T01:00:46.647|5.3|MEDIUM|CWE-601|N/A|false|A vulnerability was identified in Casdoor 2.356.0. Affected by this issue is some unknown functionality of the component OAuth Authorization Request Handler. Such manipulation of the argument redirect_uri leads to open redirect. It is possible to launch the attack remotely. The exploit is publicly available and might be used. The vendor was contacted early about this disclosure but did not respond in any way.|https://nvd.nist.gov/vuln/detail/CVE-2026-5467|0.00008|0.00706|3.7102
   CVE-2026-4108|2026-04-03T12:16:19.207|2026-04-03T18:23:54.213|7.3|HIGH|CWE-79|N/A|false|Zohocorp ManageEngine Exchange Reporter Plus versions before 5802 are vulnerable to Stored XSS in Non-Owner Mailbox Permission report.|https://nvd.nist.gov/vuln/detail/CVE-2026-4108|0.00020|0.05402|5.1106
