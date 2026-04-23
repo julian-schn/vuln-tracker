@@ -11,7 +11,7 @@
     <header>
       <h1>vuln-tracker — Top 50</h1>
       <p class="subtitle">The 50 most important CVEs from the current and previous month, ranked by VAP score (70% CVSS + 30% EPSS)</p>
-      <p class="last-updated">Last updated: 2026-04-23 11:14 UTC</p>
+      <p class="last-updated">Last updated: 2026-04-23 13:59 UTC</p>
     </header>
     <nav>
       <a href="index.html">&larr; All CVEs</a>
@@ -162,6 +162,17 @@
         <td>2026-04-02</td>
       </tr>
       <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39808" target="_blank" rel="noopener">CVE-2026-39808</a></td>
+        <td>9.8</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-78</td>
+        <td>&nbsp;</td>
+        <td>11.3% <small>p93</small></td>
+        <td>7.20</td>
+        <td><details><summary>A improper neutralization of special elements used in an os command (&#x27;os command...</summary><p>A improper neutralization of special elements used in an os command (&#x27;os command injection&#x27;) vulnerability in Fortinet FortiSandbox 4.4.0 through 4.4.8 may allow attacker to execute unauthorized code or commands via &lt;insert attack vector here&gt;</p></details></td>
+        <td>2026-04-14</td>
+      </tr>
+      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34156" target="_blank" rel="noopener">CVE-2026-34156</a></td>
         <td>9.9</td>
         <td><span class="severity critical">CRITICAL</span></td>
@@ -204,6 +215,17 @@
         <td>7.08</td>
         <td><details><summary>Nginx UI is a web user interface for the Nginx web server. Prior to version 2.3....</summary><p>Nginx UI is a web user interface for the Nginx web server. Prior to version 2.3.3, the /api/backup endpoint is accessible without authentication and discloses the encryption keys required to decrypt the backup in the X-Backup-Security response header. This allows an unauthenticated attacker to download a full system backup containing sensitive data (user credentials, session tokens, SSL private keys, Nginx configurations) and decrypt it immediately. This issue has been patched in version 2.3.3.</p></details></td>
         <td>2026-03-05</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-71260" target="_blank" rel="noopener">CVE-2025-71260</a></td>
+        <td>8.7</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-502</td>
+        <td>&nbsp;</td>
+        <td>32.3% <small>p96</small></td>
+        <td>7.06</td>
+        <td><details><summary>BMC FootPrints ITSM versions 20.20.02 through 20.24.01.001 contain a deserializa...</summary><p>BMC FootPrints ITSM versions 20.20.02 through 20.24.01.001 contain a deserialization of untrusted data vulnerability in the ASP.NET servlet&#x27;s VIEWSTATE handling that allows authenticated attackers to execute arbitrary code. Attackers can supply crafted serialized objects to the VIEWSTATE parameter to achieve remote code execution and fully compromise the application. The following hotfixes remediate the vulnerability: 20.20.02, 20.20.03.002, 20.21.01.001, 20.21.02.002, 20.22.01, 20.22.01.001, 20.23.01, 20.23.01.002, and 20.24.01.</p></details></td>
+        <td>2026-03-19</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-31843" target="_blank" rel="noopener">CVE-2026-31843</a></td>
@@ -338,6 +360,17 @@
         <td>2026-04-06</td>
       </tr>
       <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-41679" target="_blank" rel="noopener">CVE-2026-41679</a></td>
+        <td>10.0</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-287</td>
+        <td>&nbsp;</td>
+        <td>0.2% <small>p38</small></td>
+        <td>7.01</td>
+        <td><details><summary>Paperclip is a Node.js server and React UI that orchestrates a team of AI agents...</summary><p>Paperclip is a Node.js server and React UI that orchestrates a team of AI agents to run a business. Prior to version 2026.416.0, an unauthenticated attacker can achieve full remote code execution on any network-accessible Paperclip instance running in `authenticated` mode with default configuration. No user interaction, no credentials, just the target&#x27;s address. The chain consists of six API calls. The attack is fully automated, requires no user interaction, and works against the default deployment configuration. Version 2026.416.0 patches the issue.</p></details></td>
+        <td>2026-04-23</td>
+      </tr>
+      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40911" target="_blank" rel="noopener">CVE-2026-40911</a></td>
         <td>10.0</td>
         <td><span class="severity critical">CRITICAL</span></td>
@@ -391,6 +424,17 @@
         <td>7.00</td>
         <td><details><summary>Server-side request forgery (ssrf) in Azure Cloud Shell allows an unauthorized a...</summary><p>Server-side request forgery (ssrf) in Azure Cloud Shell allows an unauthorized attacker to elevate privileges over a network.</p></details></td>
         <td>2026-03-19</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34976" target="_blank" rel="noopener">CVE-2026-34976</a></td>
+        <td>10.0</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>0.1% <small>p26</small></td>
+        <td>7.00</td>
+        <td><details><summary>Dgraph is an open source distributed GraphQL database. Prior to 25.3.1, the rest...</summary><p>Dgraph is an open source distributed GraphQL database. Prior to 25.3.1, the restoreTenant admin mutation is missing from the authorization middleware config (admin.go), making it completely unauthenticated. Unlike the similar restore mutation which requires Guardian-of-Galaxy authentication, restoreTenant executes with zero middleware. This mutation accepts attacker-controlled backup source URLs (including file:// for local filesystem access), S3/MinIO credentials, encryption key file paths, and Vault credential file paths. An unauthenticated attacker can overwrite the entire database, read server-side files, and perform SSRF. This vulnerability is fixed in 25.3.1.</p></details></td>
+        <td>2026-04-06</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-27897" target="_blank" rel="noopener">CVE-2026-27897</a></td>
@@ -470,17 +514,6 @@
         <td>2026-03-10</td>
       </tr>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34976" target="_blank" rel="noopener">CVE-2026-34976</a></td>
-        <td>10.0</td>
-        <td><span class="severity critical">CRITICAL</span></td>
-        <td>CWE-862</td>
-        <td>&nbsp;</td>
-        <td>0.1% <small>p17</small></td>
-        <td>7.00</td>
-        <td><details><summary>Dgraph is an open source distributed GraphQL database. Prior to 25.3.1, the rest...</summary><p>Dgraph is an open source distributed GraphQL database. Prior to 25.3.1, the restoreTenant admin mutation is missing from the authorization middleware config (admin.go), making it completely unauthenticated. Unlike the similar restore mutation which requires Guardian-of-Galaxy authentication, restoreTenant executes with zero middleware. This mutation accepts attacker-controlled backup source URLs (including file:// for local filesystem access), S3/MinIO credentials, encryption key file paths, and Vault credential file paths. An unauthenticated attacker can overwrite the entire database, read server-side files, and perform SSRF. This vulnerability is fixed in 25.3.1.</p></details></td>
-        <td>2026-04-06</td>
-      </tr>
-      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34938" target="_blank" rel="noopener">CVE-2026-34938</a></td>
         <td>10.0</td>
         <td><span class="severity critical">CRITICAL</span></td>
@@ -556,39 +589,6 @@
         <td>7.00</td>
         <td><details><summary>A vulnerability was identified in Juju from version 3.2.0 until 3.6.19 and from ...</summary><p>A vulnerability was identified in Juju from version 3.2.0 until 3.6.19 and from version 4.0 until 4.0.4, where the internal Dqlite database cluster fails to perform proper TLS client and server authentication. Specifically, the Juju controller&#x27;s database endpoint does not validate client certificates when a new node attempts to join the cluster. An unauthenticated attacker with network reachability to the Juju controller&#x27;s Dqlite port can exploit this flaw to join the database cluster. Once joined, the attacker gains full read and write access to the underlying database, allowing for total data compromise.</p></details></td>
         <td>2026-04-01</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34865" target="_blank" rel="noopener">CVE-2026-34865</a></td>
-        <td>10.0</td>
-        <td><span class="severity critical">CRITICAL</span></td>
-        <td>CWE-122</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p7</small></td>
-        <td>7.00</td>
-        <td><details><summary>Out-of-bounds write vulnerability in the WEB module.Impact: Successful exploitat...</summary><p>Out-of-bounds write vulnerability in the WEB module.Impact: Successful exploitation of this vulnerability will affect availability and confidentiality.</p></details></td>
-        <td>2026-04-13</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4689" target="_blank" rel="noopener">CVE-2026-4689</a></td>
-        <td>10.0</td>
-        <td><span class="severity critical">CRITICAL</span></td>
-        <td>CWE-190</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p7</small></td>
-        <td>7.00</td>
-        <td><details><summary>Sandbox escape due to incorrect boundary conditions, integer overflow in the XPC...</summary><p>Sandbox escape due to incorrect boundary conditions, integer overflow in the XPCOM component. This vulnerability was fixed in Firefox 149, Firefox ESR 115.34, Firefox ESR 140.9, Thunderbird 149, and Thunderbird 140.9.</p></details></td>
-        <td>2026-03-24</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4692" target="_blank" rel="noopener">CVE-2026-4692</a></td>
-        <td>10.0</td>
-        <td><span class="severity critical">CRITICAL</span></td>
-        <td>NVD-CWE-noinfo</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p7</small></td>
-        <td>7.00</td>
-        <td><details><summary>Sandbox escape in the Responsive Design Mode component. This vulnerability was f...</summary><p>Sandbox escape in the Responsive Design Mode component. This vulnerability was fixed in Firefox 149, Firefox ESR 115.34, Firefox ESR 140.9, Thunderbird 149, and Thunderbird 140.9.</p></details></td>
-        <td>2026-03-24</td>
       </tr>
             </tbody>
           </table>
