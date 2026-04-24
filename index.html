@@ -11,7 +11,7 @@
     <header>
       <h1>vuln-tracker</h1>
       <p class="subtitle">CVEs from the National Vulnerability Database — current and previous month</p>
-      <p class="last-updated">Last updated: 2026-04-24 20:56 UTC</p>
+      <p class="last-updated">Last updated: 2026-04-24 22:46 UTC</p>
     </header>
     <nav>
       <a href="top50.html">&#9733; Top 50</a>
@@ -25,7 +25,7 @@
     </nav>
     <main>
     <section>
-      <h2>Current Month — April 2026 <span class="count">(4312)</span></h2>
+      <h2>Current Month — April 2026 <span class="count">(4314)</span></h2>
       <div class="table-wrapper">
         <table>
           <thead>
@@ -42,6 +42,84 @@
             </tr>
           </thead>
           <tbody>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-42171" target="_blank" rel="noopener">CVE-2026-42171</a></td>
+        <td>7.8</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-427</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.46</td>
+        <td><details><summary>NSIS (Nullsoft Scriptable Install System) 3.06.1 before 3.12 sometimes uses the ...</summary><p>NSIS (Nullsoft Scriptable Install System) 3.06.1 before 3.12 sometimes uses the Low IL temp directory when executing as SYSTEM, allowing local attackers to gain privileges (if they can cause my_GetTempFileName to return 0, as shown in the references).</p></details></td>
+        <td>2026-04-24</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-41488" target="_blank" rel="noopener">CVE-2026-41488</a></td>
+        <td>3.1</td>
+        <td><span class="severity low">LOW</span></td>
+        <td>CWE-918</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>2.17</td>
+        <td><details><summary>LangChain is a framework for building agents and LLM-powered applications. Prior...</summary><p>LangChain is a framework for building agents and LLM-powered applications. Prior to 1.1.14, langchain-openai&#x27;s _url_to_size() helper (used by get_num_tokens_from_messages for image token counting) validated URLs for SSRF protection and then fetched them in a separate network operation with independent DNS resolution. This left a TOCTOU / DNS rebinding window: an attacker-controlled hostname could resolve to a public IP during validation and then to a private/localhost IP during the actual fetch.</p></details></td>
+        <td>2026-04-24</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-41481" target="_blank" rel="noopener">CVE-2026-41481</a></td>
+        <td>6.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-918</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.55</td>
+        <td><details><summary>LangChain is a framework for building agents and LLM-powered applications. Prior...</summary><p>LangChain is a framework for building agents and LLM-powered applications. Prior to langchain-text-splitters
+ 1.1.2, HTMLHeaderTextSplitter.split_text_from_url() validated the initial URL using validate_safe_url() but then performed the fetch with requests.get() with redirects enabled (the default). Because redirect targets were not revalidated, a URL pointing to an attacker-controlled server could redirect to internal, localhost, or cloud metadata endpoints, bypassing SSRF protections. The response body is parsed and returned as Document objects to the calling application code. Whether this constitutes a data exfiltration path depends on the application: if it exposes Document contents (or derivatives) back to the requester who supplied the URL, sensitive data from internal endpoints could be leaked. Applications that store or process Documents internally without returning raw content to the requester are not directly exposed to data exfiltration through this issue. This vulnerability is fixed in 1.1.2.</p></details></td>
+        <td>2026-04-24</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-41478" target="_blank" rel="noopener">CVE-2026-41478</a></td>
+        <td>9.9</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-89</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.93</td>
+        <td><details><summary>Saltcorn is an extensible, open source, no-code database application builder. Pr...</summary><p>Saltcorn is an extensible, open source, no-code database application builder. Prior to 1.4.6, 1.5.6, and 1.6.0-beta.5, a SQL injection vulnerability in Saltcorn’s mobile-sync routes allows any authenticated low-privilege user with read access to at least one table to inject arbitrary SQL through sync parameters. This can lead to full database exfiltration, including admin password hashes and configuration secrets, and may also enable database modification or destruction depending on the backend. This vulnerability is fixed in 1.4.6, 1.5.6, and 1.6.0-beta.5.</p></details></td>
+        <td>2026-04-24</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-41473" target="_blank" rel="noopener">CVE-2026-41473</a></td>
+        <td>8.8</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-306</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.16</td>
+        <td><details><summary>CyberPanel versions prior to 2.4.4 contain an authentication bypass vulnerabilit...</summary><p>CyberPanel versions prior to 2.4.4 contain an authentication bypass vulnerability in the AI Scanner worker API endpoints that allows unauthenticated remote attackers to write arbitrary data to the database by sending requests to the /api/ai-scanner/status-webhook and /api/ai-scanner/callback endpoints. Attackers can exploit the lack of authentication checks to cause denial of service through storage exhaustion, corrupt scan history records, and pollute database fields with malicious data.</p></details></td>
+        <td>2026-04-24</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-41472" target="_blank" rel="noopener">CVE-2026-41472</a></td>
+        <td>5.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.71</td>
+        <td><details><summary>CyberPanel versions prior to 2.4.4 contain a stored cross-site scripting vulnera...</summary><p>CyberPanel versions prior to 2.4.4 contain a stored cross-site scripting vulnerability in the AI Scanner dashboard where the POST /api/ai-scanner/callback endpoint lacks authentication and allows unauthenticated attackers to inject malicious JavaScript by overwriting the findings_json field of ScanHistory records. Attackers can inject JavaScript that executes in an administrator&#x27;s authenticated session when they visit the AI Scanner dashboard, allowing them to issue same-origin requests to plant cron jobs and achieve remote code execution on the server.</p></details></td>
+        <td>2026-04-24</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-41248" target="_blank" rel="noopener">CVE-2026-41248</a></td>
+        <td>9.1</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-436</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.37</td>
+        <td><details><summary>Clerk JavaScript is the official JavaScript repository for Clerk authentication....</summary><p>Clerk JavaScript is the official JavaScript repository for Clerk authentication. createRouteMatcher in @clerk/nextjs, @clerk/nuxt, and @clerk/astro can be bypassed by certain crafted requests, allowing them to skip middleware gating and reach downstream handlers. This vulnerability is fixed in @clerk/astro 1.5.7, 2.17.10, and 3.0.15; @clerk/nextjs 5.7.6, 6.39.2, and 7.2.1; @clerk/nuxt 1.13.28 and 2.2.2; and @clerk/shared 2.22.1, 3.47.4, anc 4.8.1</p></details></td>
+        <td>2026-04-24</td>
+      </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6968" target="_blank" rel="noopener">CVE-2026-6968</a></td>
         <td>7.1</td>
@@ -145,18 +223,6 @@ We recommend you upgrade to tough-v0.22.0 / tuftool-v0.15.0.</p></details></td>
         <td>&mdash;</td>
         <td>5.88</td>
         <td><details><summary>OpenTelemetry eBPF Instrumentation provides eBPF instrumentation based on the Op...</summary><p>OpenTelemetry eBPF Instrumentation provides eBPF instrumentation based on the OpenTelemetry standard. From 0.4.0 to before 0.8.0, a flaw in the Java agent injection path allows a local attacker controlling a Java workload to overwrite arbitrary host files when Java injection is enabled and OBI is running with elevated privileges. The injector trusted TMPDIR from the target process and used unsafe file creation semantics, enabling both filesystem boundary escape and symlink-based file clobbering. This vulnerability is fixed in 0.8.0.</p></details></td>
-        <td>2026-04-24</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-41429" target="_blank" rel="noopener">CVE-2026-41429</a></td>
-        <td>8.8</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-121</td>
-        <td>&nbsp;</td>
-        <td>&mdash;</td>
-        <td>6.16</td>
-        <td><details><summary>arduino-esp32 is an Arduino core for the ESP32, ESP32-S2, ESP32-S3, ESP32-C3, ES...</summary><p>arduino-esp32 is an Arduino core for the ESP32, ESP32-S2, ESP32-S3, ESP32-C3, ESP32-C6 and ESP32-H2 microcontrollers. Prior to 3.3.8, there is a remotely reachable memory corruption issue in the NBNS packet handling path. When NetBIOS is enabled by calling NBNS.begin(...), the device listens on UDP port 137 and processes untrusted NBNS requests from the local network.
-The request parser trusts the attacker-controlled name_len field without enforcing a bound consistent with the fixed-size destination buffers used later in the flow. This vulnerability is fixed in 3.3.8.</p></details></td>
         <td>2026-04-24</td>
       </tr>
       <tr>
@@ -817,81 +883,6 @@ The request parser trusts the attacker-controlled name_len field without enforci
         <td>0.1% <small>p19</small></td>
         <td>6.16</td>
         <td><details><summary>P4 Server versions prior to 2026.1 are configured with insecure default settings...</summary><p>P4 Server versions prior to 2026.1 are configured with insecure default settings that, when exposed to untrusted networks, allow unauthenticated attackers to create arbitrary user accounts, enumerate existing users, authenticate to accounts with no password set, and access depot contents via the built-in &#x27;remote&#x27; user. These default settings, taken together, can lead to unauthorized access to source code repositories and other managed assets. The 2026.1 release, expected in May 2026, enforces secure-by-default configurations on upgrade and new installations</p></details></td>
-        <td>2026-04-24</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-23902" target="_blank" rel="noopener">CVE-2026-23902</a></td>
-        <td>8.1</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-863</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p3</small></td>
-        <td>5.67</td>
-        <td><details><summary>Incorrect Authorization vulnerability in Apache DolphinScheduler allows authenti...</summary><p>Incorrect Authorization vulnerability in Apache DolphinScheduler allows authenticated users with system login permissions to use tenants that are not defined on the platform during workflow execution.
-
-This issue affects Apache DolphinScheduler versions prior to 3.4.1. 
-
-Users are recommended to upgrade to version 3.4.1, which fixes this issue.</p></details></td>
-        <td>2026-04-24</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-41044" target="_blank" rel="noopener">CVE-2026-41044</a></td>
-        <td>8.8</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-20</td>
-        <td>&nbsp;</td>
-        <td>0.1% <small>p18</small></td>
-        <td>6.16</td>
-        <td><details><summary>Improper Input Validation, Improper Control of Generation of Code (&#x27;Code Injecti...</summary><p>Improper Input Validation, Improper Control of Generation of Code (&#x27;Code Injection&#x27;) vulnerability in Apache ActiveMQ, Apache ActiveMQ Broker, Apache ActiveMQ All.
-
-An authenticated attacker can use the admin web console page to construct a malicious broker name that bypasses name validation to include an xbean binding that can be later used by a VM transport to load a remote Spring XML application.
-The attacker can then use the DestinationView mbean to send a message to trigger a VM transport creation that will reference this malicious broker name which can lead to loading the malicious Spring XML context file.
-
-
-Because Spring&#x27;s ResourceXmlApplicationContext instantiates all singleton beans before the BrokerService validates the configuration, arbitrary code execution occurs on the broker&#x27;s JVM through bean factory methods such as Runtime.exec().
-
-This issue affects Apache ActiveMQ: before 5.19.6, from 6.0.0 before 6.2.5; Apache ActiveMQ Broker: before 5.19.6, from 6.0.0 before 6.2.5; Apache ActiveMQ All: before 5.19.6, from 6.0.0 before 6.2.5.
-
-Users are recommended to upgrade to version 6.2.5 or 5.19.6, which fixes the issue.</p></details></td>
-        <td>2026-04-24</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-41043" target="_blank" rel="noopener">CVE-2026-41043</a></td>
-        <td>6.5</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-79</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p6</small></td>
-        <td>4.55</td>
-        <td><details><summary>Improper Neutralization of Script-Related HTML Tags in a Web Page (Basic XSS) vu...</summary><p>Improper Neutralization of Script-Related HTML Tags in a Web Page (Basic XSS) vulnerability in Apache ActiveMQ, Apache ActiveMQ Web.
-
-An authenticated attacker can show malicious content when browsing queues in the web console by overriding the content type to be HTML (instead of XML) and by injecting HTML into a JMS selector field.
-
-This issue affects Apache ActiveMQ: before 5.19.6, from 6.0.0 before 6.2.5; Apache ActiveMQ Web: before 5.19.6, from 6.0.0 before 6.2.5.
-
-Users are recommended to upgrade to version 6.2.5 or 5.19.6, which fixes the issue.</p></details></td>
-        <td>2026-04-24</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40466" target="_blank" rel="noopener">CVE-2026-40466</a></td>
-        <td>8.8</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-20</td>
-        <td>&nbsp;</td>
-        <td>0.1% <small>p18</small></td>
-        <td>6.16</td>
-        <td><details><summary>Improper Input Validation, Improper Control of Generation of Code (&#x27;Code Injecti...</summary><p>Improper Input Validation, Improper Control of Generation of Code (&#x27;Code Injection&#x27;) vulnerability in Apache ActiveMQ Broker, Apache ActiveMQ All, Apache ActiveMQ.
-
-
-
-An authenticated attacker may bypass the fix in CVE-2026-34197 by adding a connector using an HTTP Discovery transport via BrokerView.addNetworkConnector or BrokerView.addConnector through Jolokia if the activemq-http module is on the classpath.
-A malicious HTTP endpoint can return a VM transport through the HTTP URI which will bypass the validation added in CVE-2026-34197. The attacker can then use the VM transport&#x27;s brokerConfig parameter to load a remote Spring XML application context using ResourceXmlApplicationContext.
-Because Spring&#x27;s ResourceXmlApplicationContext instantiates all singleton beans before the BrokerService validates the configuration, arbitrary code execution occurs on the broker&#x27;s JVM through bean factory methods such as Runtime.exec().
-
-
-This issue affects Apache ActiveMQ Broker: before 5.19.6, from 6.0.0 before 6.2.5; Apache ActiveMQ All: before 5.19.6, from 6.0.0 before 6.2.5; Apache ActiveMQ: before 5.19.6, from 6.0.0 before 6.2.5.
-
-Users are recommended to upgrade to version 5.19.6 or 6.2.5, which fixes the issue.</p></details></td>
         <td>2026-04-24</td>
       </tr>
       <tr>
@@ -47517,7 +47508,7 @@ Users are recommended to upgrade to version 5.19.6 or 6.2.5, which fixes the iss
       </div>
     </section>
     <section>
-      <h2>Previous Month — March 2026 <span class="count">(5740)</span></h2>
+      <h2>Previous Month — March 2026 <span class="count">(5734)</span></h2>
       <div class="table-wrapper">
         <table>
           <thead>
@@ -62569,226 +62560,6 @@ Users are recommended to upgrade to version 5.19.6 or 6.2.5, which fixes the iss
         <td>0.0% <small>p3</small></td>
         <td>5.39</td>
         <td><details><summary>An issue in Eufy Homebase 2 version 3.3.4.1h allows a local attacker to obtain s...</summary><p>An issue in Eufy Homebase 2 version 3.3.4.1h allows a local attacker to obtain sensitive information via the cryptographic scheme.</p></details></td>
-        <td>2026-03-25</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-23359" target="_blank" rel="noopener">CVE-2026-23359</a></td>
-        <td>7.8</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-787</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p9</small></td>
-        <td>5.46</td>
-        <td><details><summary>In the Linux kernel, the following vulnerability has been resolved:
-
-bpf: Fix st...</summary><p>In the Linux kernel, the following vulnerability has been resolved:
-
-bpf: Fix stack-out-of-bounds write in devmap
-
-get_upper_ifindexes() iterates over all upper devices and writes their
-indices into an array without checking bounds.
-
-Also the callers assume that the max number of upper devices is
-MAX_NEST_DEV and allocate excluded_devices[1+MAX_NEST_DEV] on the stack,
-but that assumption is not correct and the number of upper devices could
-be larger than MAX_NEST_DEV (e.g., many macvlans), causing a
-stack-out-of-bounds write.
-
-Add a max parameter to get_upper_ifindexes() to avoid the issue.
-When there are too many upper devices, return -EOVERFLOW and abort the
-redirect.
-
-To reproduce, create more than MAX_NEST_DEV(8) macvlans on a device with
-an XDP program attached using BPF_F_BROADCAST | BPF_F_EXCLUDE_INGRESS.
-Then send a packet to the device to trigger the XDP redirect path.</p></details></td>
-        <td>2026-03-25</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-23358" target="_blank" rel="noopener">CVE-2026-23358</a></td>
-        <td>5.5</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-908</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p6</small></td>
-        <td>3.85</td>
-        <td><details><summary>In the Linux kernel, the following vulnerability has been resolved:
-
-drm/amdgpu:...</summary><p>In the Linux kernel, the following vulnerability has been resolved:
-
-drm/amdgpu: Fix error handling in slot reset
-
-If the device has not recovered after slot reset is called, it goes to
-out label for error handling. There it could make decision based on
-uninitialized hive pointer and could result in accessing an uninitialized
-list.
-
-Initialize the list and hive properly so that it handles the error
-situation and also releases the reset domain lock which is acquired
-during error_detected callback.
-
-(cherry picked from commit bb71362182e59caa227e4192da5a612b09349696)</p></details></td>
-        <td>2026-03-25</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-23357" target="_blank" rel="noopener">CVE-2026-23357</a></td>
-        <td>5.5</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-667</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p9</small></td>
-        <td>3.85</td>
-        <td><details><summary>In the Linux kernel, the following vulnerability has been resolved:
-
-can: mcp251...</summary><p>In the Linux kernel, the following vulnerability has been resolved:
-
-can: mcp251x: fix deadlock in error path of mcp251x_open
-
-The mcp251x_open() function call free_irq() in its error path with the
-mpc_lock mutex held. But if an interrupt already occurred the
-interrupt handler will be waiting for the mpc_lock and free_irq() will
-deadlock waiting for the handler to finish.
-
-This issue is similar to the one fixed in commit 7dd9c26bd6cf (&quot;can:
-mcp251x: fix deadlock if an interrupt occurs during mcp251x_open&quot;) but
-for the error path.
-
-To solve this issue move the call to free_irq() after the lock is
-released. Setting `priv-&gt;force_quit = 1` beforehand ensure that the IRQ
-handler will exit right away once it acquired the lock.</p></details></td>
-        <td>2026-03-25</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-23356" target="_blank" rel="noopener">CVE-2026-23356</a></td>
-        <td>5.5</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-617</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p9</small></td>
-        <td>3.85</td>
-        <td><details><summary>In the Linux kernel, the following vulnerability has been resolved:
-
-drbd: fix &quot;...</summary><p>In the Linux kernel, the following vulnerability has been resolved:
-
-drbd: fix &quot;LOGIC BUG&quot; in drbd_al_begin_io_nonblock()
-
-Even though we check that we &quot;should&quot; be able to do lc_get_cumulative()
-while holding the device-&gt;al_lock spinlock, it may still fail,
-if some other code path decided to do lc_try_lock() with bad timing.
-
-If that happened, we logged &quot;LOGIC BUG for enr=...&quot;,
-but still did not return an error.
-
-The rest of the code now assumed that this request has references
-for the relevant activity log extents.
-
-The implcations are that during an active resync, mutual exclusivity of
-resync versus application IO is not guaranteed. And a potential crash
-at this point may not realizs that these extents could have been target
-of in-flight IO and would need to be resynced just in case.
-
-Also, once the request completes, it will give up activity log references it
-does not even hold, which will trigger a BUG_ON(refcnt == 0) in lc_put().
-
-Fix:
-
-Do not crash the kernel for a condition that is harmless during normal
-operation: also catch &quot;e-&gt;refcnt == 0&quot;, not only &quot;e == NULL&quot;
-when being noisy about &quot;al_complete_io() called on inactive extent %u\n&quot;.
-
-And do not try to be smart and &quot;guess&quot; whether something will work, then
-be surprised when it does not.
-Deal with the fact that it may or may not work.  If it does not, remember a
-possible &quot;partially in activity log&quot; state (only possible for requests that
-cross extent boundaries), and return an error code from
-drbd_al_begin_io_nonblock().
-
-A latter call for the same request will then resume from where we left off.</p></details></td>
-        <td>2026-03-25</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-23355" target="_blank" rel="noopener">CVE-2026-23355</a></td>
-        <td>5.5</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>NVD-CWE-noinfo</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p6</small></td>
-        <td>3.85</td>
-        <td><details><summary>In the Linux kernel, the following vulnerability has been resolved:
-
-ata: libata...</summary><p>In the Linux kernel, the following vulnerability has been resolved:
-
-ata: libata: cancel pending work after clearing deferred_qc
-
-Syzbot reported a WARN_ON() in ata_scsi_deferred_qc_work(), caused by
-ap-&gt;ops-&gt;qc_defer() returning non-zero before issuing the deferred qc.
-
-ata_scsi_schedule_deferred_qc() is called during each command completion.
-This function will check if there is a deferred QC, and if
-ap-&gt;ops-&gt;qc_defer() returns zero, meaning that it is possible to queue the
-deferred qc at this time (without being deferred), then it will queue the
-work which will issue the deferred qc.
-
-Once the work get to run, which can potentially be a very long time after
-the work was scheduled, there is a WARN_ON() if ap-&gt;ops-&gt;qc_defer() returns
-non-zero.
-
-While we hold the ap-&gt;lock both when assigning and clearing deferred_qc,
-and the work itself holds the ap-&gt;lock, the code currently does not cancel
-the work after clearing the deferred qc.
-
-This means that the following scenario can happen:
-1) One or several NCQ commands are queued.
-2) A non-NCQ command is queued, gets stored in ap-&gt;deferred_qc.
-3) Last NCQ command gets completed, work is queued to issue the deferred
-   qc.
-4) Timeout or error happens, ap-&gt;deferred_qc is cleared. The queued work is
-   currently NOT canceled.
-5) Port is reset.
-6) One or several NCQ commands are queued.
-7) A non-NCQ command is queued, gets stored in ap-&gt;deferred_qc.
-8) Work is finally run. Yet at this time, there is still NCQ commands in
-   flight.
-
-The work in 8) really belongs to the non-NCQ command in 2), not to the
-non-NCQ command in 7). The reason why the work is executed when it is not
-supposed to, is because it was never canceled when ap-&gt;deferred_qc was
-cleared in 4). Thus, ensure that we always cancel the work after clearing
-ap-&gt;deferred_qc.
-
-Another potential fix would have been to let ata_scsi_deferred_qc_work() do
-nothing if ap-&gt;ops-&gt;qc_defer() returns non-zero. However, canceling the
-work when clearing ap-&gt;deferred_qc seems slightly more logical, as we hold
-the ap-&gt;lock when clearing ap-&gt;deferred_qc, so we know that the work cannot
-be holding the lock. (The function could be waiting for the lock, but that
-is okay since it will do nothing if ap-&gt;deferred_qc is not set.)</p></details></td>
-        <td>2026-03-25</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-23354" target="_blank" rel="noopener">CVE-2026-23354</a></td>
-        <td>7.8</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-129</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p6</small></td>
-        <td>5.46</td>
-        <td><details><summary>In the Linux kernel, the following vulnerability has been resolved:
-
-x86/fred: C...</summary><p>In the Linux kernel, the following vulnerability has been resolved:
-
-x86/fred: Correct speculative safety in fred_extint()
-
-array_index_nospec() is no use if the result gets spilled to the stack, as
-it makes the believed safe-under-speculation value subject to memory
-predictions.
-
-For all practical purposes, this means array_index_nospec() must be used in
-the expression that accesses the array.
-
-As the code currently stands, it&#x27;s the wrong side of irqentry_enter(), and
-&#x27;index&#x27; is put into %ebp across the function call.
-
-Remove the index variable and reposition array_index_nospec(), so it&#x27;s
-calculated immediately before the array access.</p></details></td>
         <td>2026-03-25</td>
       </tr>
       <tr>

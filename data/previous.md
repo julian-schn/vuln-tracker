@@ -1,6 +1,6 @@
 # CVEs — March 2026
 
-_5740 vulnerabilities_
+_5734 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
@@ -1371,12 +1371,6 @@ _5740 vulnerabilities_
 | [CVE-2024-51348](https://nvd.nist.gov/vuln/detail/CVE-2024-51348) | 8.8 | HIGH | CWE-121 | No | 0.2% | 6.17 | 2026-03-25 | A stack-based buffer overflow vulnerability in the P2P API service in BS Producten Petcam with firmware 33.1.0.0818 allo... |
 | [CVE-2024-51347](https://nvd.nist.gov/vuln/detail/CVE-2024-51347) | 7.2 | HIGH | CWE-120 | No | 0.1% | 5.04 | 2026-03-25 | A buffer overflow vulnerability in the dgiot binary in LSC Smart Indoor IP Camera V7.6.32. The flaw exists in the handli... |
 | [CVE-2024-51346](https://nvd.nist.gov/vuln/detail/CVE-2024-51346) | 7.7 | HIGH | CWE-330 | No | 0.0% | 5.39 | 2026-03-25 | An issue in Eufy Homebase 2 version 3.3.4.1h allows a local attacker to obtain sensitive information via the cryptograph... |
-| [CVE-2026-23359](https://nvd.nist.gov/vuln/detail/CVE-2026-23359) | 7.8 | HIGH | CWE-787 | No | 0.0% | 5.46 | 2026-03-25 | In the Linux kernel, the following vulnerability has been resolved:  bpf: Fix stack-out-of-bounds write in devmap  get_u... |
-| [CVE-2026-23358](https://nvd.nist.gov/vuln/detail/CVE-2026-23358) | 5.5 | MEDIUM | CWE-908 | No | 0.0% | 3.85 | 2026-03-25 | In the Linux kernel, the following vulnerability has been resolved:  drm/amdgpu: Fix error handling in slot reset  If th... |
-| [CVE-2026-23357](https://nvd.nist.gov/vuln/detail/CVE-2026-23357) | 5.5 | MEDIUM | CWE-667 | No | 0.0% | 3.85 | 2026-03-25 | In the Linux kernel, the following vulnerability has been resolved:  can: mcp251x: fix deadlock in error path of mcp251x... |
-| [CVE-2026-23356](https://nvd.nist.gov/vuln/detail/CVE-2026-23356) | 5.5 | MEDIUM | CWE-617 | No | 0.0% | 3.85 | 2026-03-25 | In the Linux kernel, the following vulnerability has been resolved:  drbd: fix "LOGIC BUG" in drbd_al_begin_io_nonblock(... |
-| [CVE-2026-23355](https://nvd.nist.gov/vuln/detail/CVE-2026-23355) | 5.5 | MEDIUM | NVD-CWE-noinfo | No | 0.0% | 3.85 | 2026-03-25 | In the Linux kernel, the following vulnerability has been resolved:  ata: libata: cancel pending work after clearing def... |
-| [CVE-2026-23354](https://nvd.nist.gov/vuln/detail/CVE-2026-23354) | 7.8 | HIGH | CWE-129 | No | 0.0% | 5.46 | 2026-03-25 | In the Linux kernel, the following vulnerability has been resolved:  x86/fred: Correct speculative safety in fred_extint... |
 | [CVE-2026-23333](https://nvd.nist.gov/vuln/detail/CVE-2026-23333) | 0.0 | NONE | N/A | No | — | 0.00 | 2026-03-25 | Rejected reason: This CVE ID has been rejected or withdrawn by its CVE Numbering Authority. |
 | [CVE-2026-23320](https://nvd.nist.gov/vuln/detail/CVE-2026-23320) | 0.0 | NONE | N/A | No | — | 0.00 | 2026-03-25 | Rejected reason: This CVE ID has been rejected or withdrawn by its CVE Numbering Authority. |
 | [CVE-2026-32326](https://nvd.nist.gov/vuln/detail/CVE-2026-32326) | 6.9 | MEDIUM | CWE-306 | No | 0.0% | 4.83 | 2026-03-25 | SHARP routers do not perform authentication for some web APIs. The device information may be retrieved without authentic... |

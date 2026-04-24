@@ -1,9 +1,16 @@
 # CVEs — April 2026
 
-_4312 vulnerabilities_
+_4314 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
+| [CVE-2026-42171](https://nvd.nist.gov/vuln/detail/CVE-2026-42171) | 7.8 | HIGH | CWE-427 | No | — | 5.46 | 2026-04-24 | NSIS (Nullsoft Scriptable Install System) 3.06.1 before 3.12 sometimes uses the Low IL temp directory when executing as... |
+| [CVE-2026-41488](https://nvd.nist.gov/vuln/detail/CVE-2026-41488) | 3.1 | LOW | CWE-918 | No | — | 2.17 | 2026-04-24 | LangChain is a framework for building agents and LLM-powered applications. Prior to 1.1.14, langchain-openai's _url_to_s... |
+| [CVE-2026-41481](https://nvd.nist.gov/vuln/detail/CVE-2026-41481) | 6.5 | MEDIUM | CWE-918 | No | — | 4.55 | 2026-04-24 | LangChain is a framework for building agents and LLM-powered applications. Prior to langchain-text-splitters  1.1.2, HTM... |
+| [CVE-2026-41478](https://nvd.nist.gov/vuln/detail/CVE-2026-41478) | 9.9 | CRITICAL | CWE-89 | No | — | 6.93 | 2026-04-24 | Saltcorn is an extensible, open source, no-code database application builder. Prior to 1.4.6, 1.5.6, and 1.6.0-beta.5, a... |
+| [CVE-2026-41473](https://nvd.nist.gov/vuln/detail/CVE-2026-41473) | 8.8 | HIGH | CWE-306 | No | — | 6.16 | 2026-04-24 | CyberPanel versions prior to 2.4.4 contain an authentication bypass vulnerability in the AI Scanner worker API endpoints... |
+| [CVE-2026-41472](https://nvd.nist.gov/vuln/detail/CVE-2026-41472) | 5.3 | MEDIUM | CWE-79 | No | — | 3.71 | 2026-04-24 | CyberPanel versions prior to 2.4.4 contain a stored cross-site scripting vulnerability in the AI Scanner dashboard where... |
+| [CVE-2026-41248](https://nvd.nist.gov/vuln/detail/CVE-2026-41248) | 9.1 | CRITICAL | CWE-436 | No | — | 6.37 | 2026-04-24 | Clerk JavaScript is the official JavaScript repository for Clerk authentication. createRouteMatcher in @clerk/nextjs, @c... |
 | [CVE-2026-6968](https://nvd.nist.gov/vuln/detail/CVE-2026-6968) | 7.1 | HIGH | CWE-22 | No | — | 4.97 | 2026-04-24 | Incomplete path traversal fixes in awslabs/tough before tough-v0.22.0 allow remote authenticated users with delegated si... |
 | [CVE-2026-6967](https://nvd.nist.gov/vuln/detail/CVE-2026-6967) | 7.1 | HIGH | CWE-345 | No | — | 4.97 | 2026-04-24 | Missing expiration, hash, and length enforcement in delegated metadata validation in awslabs/tough before tough-v0.22.0... |
 | [CVE-2026-6966](https://nvd.nist.gov/vuln/detail/CVE-2026-6966) | 7.0 | HIGH | CWE-347 | No | — | 4.90 | 2026-04-24 | Improper verification of cryptographic signature uniqueness in delegated role validation in awslabs/tough before tough-v... |
@@ -13,7 +20,6 @@ _4312 vulnerabilities_
 | [CVE-2026-41476](https://nvd.nist.gov/vuln/detail/CVE-2026-41476) | 7.4 | HIGH | CWE-120 | No | — | 5.18 | 2026-04-24 | Deskflow is a keyboard and mouse sharing app.  Prior to 1.26.0.138, a remote memory-safety vulnerability in Deskflow's c... |
 | [CVE-2026-41475](https://nvd.nist.gov/vuln/detail/CVE-2026-41475) | 8.7 | HIGH | CWE-125 | No | — | 6.09 | 2026-04-24 | BACnet Stack is a BACnet open source protocol stack C library for embedded systems. Prior to 1.4.3, an out-of-bounds rea... |
 | [CVE-2026-41433](https://nvd.nist.gov/vuln/detail/CVE-2026-41433) | 8.4 | HIGH | CWE-22 | No | — | 5.88 | 2026-04-24 | OpenTelemetry eBPF Instrumentation provides eBPF instrumentation based on the OpenTelemetry standard. From 0.4.0 to befo... |
-| [CVE-2026-41429](https://nvd.nist.gov/vuln/detail/CVE-2026-41429) | 8.8 | HIGH | CWE-121 | No | — | 6.16 | 2026-04-24 | arduino-esp32 is an Arduino core for the ESP32, ESP32-S2, ESP32-S3, ESP32-C3, ESP32-C6 and ESP32-H2 microcontrollers. Pr... |
 | [CVE-2026-41428](https://nvd.nist.gov/vuln/detail/CVE-2026-41428) | 9.1 | CRITICAL | CWE-287 | No | — | 6.37 | 2026-04-24 | Budibase is an open-source low-code platform. Prior to 3.35.4, the authenticated middleware uses unanchored regular expr... |
 | [CVE-2026-41427](https://nvd.nist.gov/vuln/detail/CVE-2026-41427) | 7.1 | HIGH | CWE-863 | No | — | 4.97 | 2026-04-24 | Better Auth is an authentication and authorization library for TypeScript. Prior to 1.6.5, the clientPrivileges option d... |
 | [CVE-2026-41426](https://nvd.nist.gov/vuln/detail/CVE-2026-41426) | 6.1 | MEDIUM | CWE-79 | No | — | 4.27 | 2026-04-24 | pretalx is a conference planning tool. Prior to 2026.1.0, an unauthenticated attacker can send arbitrary HTML-rendered e... |
@@ -74,10 +80,6 @@ _4312 vulnerabilities_
 | [CVE-2026-5265](https://nvd.nist.gov/vuln/detail/CVE-2026-5265) | 6.5 | MEDIUM | CWE-130 | No | — | 4.55 | 2026-04-24 | When generating an ICMP Destination Unreachable or Packet Too Big response, the handler copies a portion of the original... |
 | [CVE-2026-21515](https://nvd.nist.gov/vuln/detail/CVE-2026-21515) | 9.9 | CRITICAL | CWE-200 | No | — | 6.93 | 2026-04-24 | Exposure of sensitive information to an unauthorized actor in Azure IOT Central allows an authorized attacker to elevate... |
 | [CVE-2026-6043](https://nvd.nist.gov/vuln/detail/CVE-2026-6043) | 8.8 | HIGH | CWE-1188 | No | 0.1% | 6.16 | 2026-04-24 | P4 Server versions prior to 2026.1 are configured with insecure default settings that, when exposed to untrusted network... |
-| [CVE-2026-23902](https://nvd.nist.gov/vuln/detail/CVE-2026-23902) | 8.1 | HIGH | CWE-863 | No | 0.0% | 5.67 | 2026-04-24 | Incorrect Authorization vulnerability in Apache DolphinScheduler allows authenticated users with system login permission... |
-| [CVE-2026-41044](https://nvd.nist.gov/vuln/detail/CVE-2026-41044) | 8.8 | HIGH | CWE-20 | No | 0.1% | 6.16 | 2026-04-24 | Improper Input Validation, Improper Control of Generation of Code ('Code Injection') vulnerability in Apache ActiveMQ, A... |
-| [CVE-2026-41043](https://nvd.nist.gov/vuln/detail/CVE-2026-41043) | 6.5 | MEDIUM | CWE-79 | No | 0.0% | 4.55 | 2026-04-24 | Improper Neutralization of Script-Related HTML Tags in a Web Page (Basic XSS) vulnerability in Apache ActiveMQ, Apache A... |
-| [CVE-2026-40466](https://nvd.nist.gov/vuln/detail/CVE-2026-40466) | 8.8 | HIGH | CWE-20 | No | 0.1% | 6.16 | 2026-04-24 | Improper Input Validation, Improper Control of Generation of Code ('Code Injection') vulnerability in Apache ActiveMQ Br... |
 | [CVE-2026-4078](https://nvd.nist.gov/vuln/detail/CVE-2026-4078) | 6.4 | MEDIUM | CWE-79 | No | 0.0% | 4.48 | 2026-04-24 | The ITERAS plugin for WordPress is vulnerable to Stored Cross-Site Scripting via multiple shortcodes (iteras-ordering, i... |
 | [CVE-2026-3569](https://nvd.nist.gov/vuln/detail/CVE-2026-3569) | 5.3 | MEDIUM | CWE-862 | No | 0.0% | 3.71 | 2026-04-24 | The Liaison Site Prober plugin for WordPress is vulnerable to Information Exposure in all versions up to and including 1... |
 | [CVE-2026-3565](https://nvd.nist.gov/vuln/detail/CVE-2026-3565) | 4.3 | MEDIUM | CWE-352 | No | 0.0% | 3.01 | 2026-04-24 | The Taqnix plugin for WordPress is vulnerable to Cross-Site Request Forgery in all versions up to, and including, 1.0.3.... |
