@@ -11,7 +11,7 @@
     <header>
       <h1>vuln-tracker</h1>
       <p class="subtitle">CVEs from the National Vulnerability Database — current and previous month</p>
-      <p class="last-updated">Last updated: 2026-04-24 06:12 UTC</p>
+      <p class="last-updated">Last updated: 2026-04-24 09:49 UTC</p>
     </header>
     <nav>
       <a href="top50.html">&#9733; Top 50</a>
@@ -25,7 +25,7 @@
     </nav>
     <main>
     <section>
-      <h2>Current Month — April 2026 <span class="count">(4228)</span></h2>
+      <h2>Current Month — April 2026 <span class="count">(4243)</span></h2>
       <div class="table-wrapper">
         <table>
           <thead>
@@ -42,6 +42,174 @@
             </tr>
           </thead>
           <tbody>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6272" target="_blank" rel="noopener">CVE-2026-6272</a></td>
+        <td>8.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-306</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.95</td>
+        <td><details><summary>A client holding only a read JWT scope can still register itself as a signal pro...</summary><p>A client holding only a read JWT scope can still register itself as a signal provider through the production kuksa.val.v2 OpenProviderStream API by sending ProvideSignalRequest.
+
+1. Obtain any valid token with only read scope.
+2. Connect to the normal production gRPC API (kuksa.val.v2).
+3. Open OpenProviderStream.
+4. Send ProvideSignalRequest for a target signal ID.
+5. Wait for the broker to forward GetProviderValueRequest.
+6. Reply with attacker-controlled GetProviderValueResponse.
+7. Other clients performing GetValue / GetValues for that signal receive forged data.</p></details></td>
+        <td>2026-04-24</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-21728" target="_blank" rel="noopener">CVE-2026-21728</a></td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.25</td>
+        <td><details><summary>Tempo queries with large limits can cause large memory allocations which can imp...</summary><p>Tempo queries with large limits can cause large memory allocations which can impact the availability of the service, depending on its deployment strategy.
+
+Mitigation can be done by setting max_result_limit in the search config, e.g. to 262144 (2^18).</p></details></td>
+        <td>2026-04-24</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4078" target="_blank" rel="noopener">CVE-2026-4078</a></td>
+        <td>6.4</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.48</td>
+        <td><details><summary>The ITERAS plugin for WordPress is vulnerable to Stored Cross-Site Scripting via...</summary><p>The ITERAS plugin for WordPress is vulnerable to Stored Cross-Site Scripting via multiple shortcodes (iteras-ordering, iteras-signup, iteras-paywall-login, iteras-selfservice) in all versions up to and including 1.8.2. This is due to insufficient input sanitization and output escaping in the combine_attributes() function. The function directly concatenates shortcode attribute values into JavaScript code within &lt;script&gt; tags using double-quoted string interpolation (line 489: &#x27;&quot;&#x27;.$key.&#x27;&quot;: &quot;&#x27;.$value.&#x27;&quot;&#x27;) without any escaping. An attacker can break out of the JavaScript string context by including a double-quote character in a shortcode attribute value and inject arbitrary JavaScript. This makes it possible for authenticated attackers, with Contributor-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.</p></details></td>
+        <td>2026-04-24</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-3569" target="_blank" rel="noopener">CVE-2026-3569</a></td>
+        <td>5.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.71</td>
+        <td><details><summary>The Liaison Site Prober plugin for WordPress is vulnerable to Information Exposu...</summary><p>The Liaison Site Prober plugin for WordPress is vulnerable to Information Exposure in all versions up to and including 1.2.1 via the /wp-json/site-prober/v1/logs REST API endpoint. The permissions_read() permission callback unconditionally returns true (via __return_true()) instead of checking for appropriate capabilities. This makes it possible for unauthenticated attackers to retrieve sensitive audit log data including IP addresses, user IDs, usernames, login/logout events, failed login attempts, and detailed activity descriptions.</p></details></td>
+        <td>2026-04-24</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-3565" target="_blank" rel="noopener">CVE-2026-3565</a></td>
+        <td>4.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-352</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.01</td>
+        <td><details><summary>The Taqnix plugin for WordPress is vulnerable to Cross-Site Request Forgery in a...</summary><p>The Taqnix plugin for WordPress is vulnerable to Cross-Site Request Forgery in all versions up to, and including, 1.0.3. This is due to a missing nonce verification in the taqnix_delete_my_account() function, where the check_ajax_referer() call is explicitly commented out on line 883. This makes it possible for unauthenticated attackers to trick a logged-in non-administrator user into deleting their own account via a forged request granted they can trick the user into performing an action such as clicking a link or visiting a malicious page.</p></details></td>
+        <td>2026-04-24</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-11762" target="_blank" rel="noopener">CVE-2025-11762</a></td>
+        <td>4.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.01</td>
+        <td><details><summary>The HubSpot All-In-One Marketing - Forms, Popups, Live Chat plugin for WordPress...</summary><p>The HubSpot All-In-One Marketing - Forms, Popups, Live Chat plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 11.3.32 via the leadin/public/admin/class-adminconstants.php file. This makes it possible for authenticated attackers, with Contributor-level access and above, to extract a list of all installed plugins and their versions which can be leveraged for reconnaissance and further attacks.</p></details></td>
+        <td>2026-04-24</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-1952" target="_blank" rel="noopener">CVE-2026-1952</a></td>
+        <td>9.8</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-912</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.86</td>
+        <td><details><summary>Delta Electronics AS320T has denial of service via the undocumented subfunction ...</summary><p>Delta Electronics AS320T has denial of service via the undocumented subfunction vulnerability.</p></details></td>
+        <td>2026-04-24</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-1951" target="_blank" rel="noopener">CVE-2026-1951</a></td>
+        <td>9.8</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-121</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.86</td>
+        <td><details><summary>Delta Electronics AS320T has no checking of the length of the buffer with the di...</summary><p>Delta Electronics AS320T has no checking of the length of the buffer with the directory name
+
+ vulnerability.</p></details></td>
+        <td>2026-04-24</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-1950" target="_blank" rel="noopener">CVE-2026-1950</a></td>
+        <td>9.8</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-121</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.86</td>
+        <td><details><summary>Delta Electronics AS320T has 
+No checking of the length of the buffer with the f...</summary><p>Delta Electronics AS320T has 
+No checking of the length of the buffer with the file name vulnerability.</p></details></td>
+        <td>2026-04-24</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6810" target="_blank" rel="noopener">CVE-2026-6810</a></td>
+        <td>5.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-639</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.71</td>
+        <td><details><summary>The Booking Calendar Contact Form plugin for WordPress is vulnerable to Insecure...</summary><p>The Booking Calendar Contact Form plugin for WordPress is vulnerable to Insecure Direct Object Reference in all versions up to, and including, 1.2.63 via the dex_bccf_admin_int_calendar_list.inc.php file due to missing validation on a user controlled key. This makes it possible for authenticated attackers, with Subscriber-level access and above, to takeover other user&#x27;s calendars and view user data associated with the calendar.</p></details></td>
+        <td>2026-04-24</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5428" target="_blank" rel="noopener">CVE-2026-5428</a></td>
+        <td>6.4</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.48</td>
+        <td><details><summary>The Royal Elementor Addons plugin for WordPress is vulnerable to Stored Cross-Si...</summary><p>The Royal Elementor Addons plugin for WordPress is vulnerable to Stored Cross-Site Scripting via image captions in the Image Grid/Slider/Carousel widget in versions up to and including 1.7.1056. This is due to insufficient output escaping in the render_post_thumbnail() function, where wp_kses_post() is used instead of esc_attr() for the alt attribute context. This makes it possible for authenticated attackers, with Author-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses a page with the malicious image displayed in the media grid widget.</p></details></td>
+        <td>2026-04-24</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5364" target="_blank" rel="noopener">CVE-2026-5364</a></td>
+        <td>8.1</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-434</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.67</td>
+        <td><details><summary>The Drag and Drop File Upload for Contact Form 7 plugin for WordPress is vulnera...</summary><p>The Drag and Drop File Upload for Contact Form 7 plugin for WordPress is vulnerable to arbitrary file upload in versions up to, and including, 1.1.3. This is due to the plugin extracting the file extension before sanitization occurs and allowing the file type parameter to be controlled by the attacker rather than being restricted to administrator-configured values, which when combined with the fact that validation occurs on the unsanitized extension while the file is saved with a sanitized extension, allows special characters like &#x27;$&#x27; to be stripped during the save process. This makes it possible for unauthenticated attackers to upload arbitrary PHP files and potentially achieve remote code execution, however, an .htaccess file and name randomization is in place which restricts real-world exploitability.</p></details></td>
+        <td>2026-04-24</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5347" target="_blank" rel="noopener">CVE-2026-5347</a></td>
+        <td>5.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.71</td>
+        <td><details><summary>The HM Books Gallery plugin for WordPress is vulnerable to Missing Authorization...</summary><p>The HM Books Gallery plugin for WordPress is vulnerable to Missing Authorization in versions up to and including 4.8.0. This is due to the absence of capability checks and nonce verification in the admin_init hook that handles the permalink settings update at line 205-209 of wp-books-gallery.php. The vulnerable code checks only for the presence of the &#x27;permalink_structure&#x27; POST parameter before updating the &#x27;wbg_cpt_slug&#x27; option, without verifying that the request comes from an authenticated administrator. This makes it possible for unauthenticated attackers to modify the custom post type slug for the books gallery, which changes the URL structure for all book entries and can break existing links and SEO rankings.</p></details></td>
+        <td>2026-04-24</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-1949" target="_blank" rel="noopener">CVE-2026-1949</a></td>
+        <td>9.8</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-131</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.86</td>
+        <td><details><summary>Delta Electronics AS320T has incorrect calculation of the buffer size on the sta...</summary><p>Delta Electronics AS320T has incorrect calculation of the buffer size on the stack in the GET/PUT request handler of the web service.</p></details></td>
+        <td>2026-04-24</td>
+      </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6947" target="_blank" rel="noopener">CVE-2026-6947</a></td>
         <td>8.7</td>
@@ -14013,6 +14181,19 @@
         <td>2026-04-16</td>
       </tr>
       <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6349" target="_blank" rel="noopener">CVE-2026-6349</a></td>
+        <td>9.3</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-78</td>
+        <td>&nbsp;</td>
+        <td>1.3% <small>p80</small></td>
+        <td>6.55</td>
+        <td><details><summary>The 
+iSherlock developed by HGiga  has an OS Command Injection vulnerability, al...</summary><p>The 
+iSherlock developed by HGiga  has an OS Command Injection vulnerability, allowing unauthenticated local attackers to inject arbitrary OS commands and execute them on the server.</p></details></td>
+        <td>2026-04-16</td>
+      </tr>
+      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6348" target="_blank" rel="noopener">CVE-2026-6348</a></td>
         <td>9.3</td>
         <td><span class="severity critical">CRITICAL</span></td>
@@ -21302,7 +21483,7 @@
         <td>&nbsp;</td>
         <td>0.1% <small>p17</small></td>
         <td>6.86</td>
-        <td><details><summary>In Totara LMS v19.1.5 and before, the forgot password API does not implement rat...</summary><p>In Totara LMS v19.1.5 and before, the forgot password API does not implement rate limiting for the target email address. which can be used for an Email Bombing attack.</p></details></td>
+        <td><details><summary>In Totara LMS v19.1.5 and before, the forgot password API does not implement rat...</summary><p>In Totara LMS v19.1.5 and before, the forgot password API does not implement rate limiting for the target email address. which can be used for an Email Bombing attack. NOTE: the Supplier&#x27;s position is that the pwresettime configuration defaults to 30 minutes, the pwresettime configuration is a hard control enforced via flag PWRESET_STATUS_ALREADYSENT, and no further password-reset email messages are sent if this flag is active for a specific email address.</p></details></td>
         <td>2026-04-13</td>
       </tr>
       <tr>
@@ -106970,7 +107151,7 @@
         <td>&nbsp;</td>
         <td>0.2% <small>p42</small></td>
         <td>6.10</td>
-        <td><details><summary>Improper Resource Shutdown or Release vulnerability in Mitsubishi Electric Corpo...</summary><p>Improper Resource Shutdown or Release vulnerability in Mitsubishi Electric Corporation MELSEC iQ-F Series FX5-EIP EtherNet/IP Module FX5-EIP all versions allows a remote attacker to cause a denial-of-service (DoS) condition on the products by continuously sending UDP packets to the products. A system reset of the product is required for recovery.</p></details></td>
+        <td><details><summary>Improper Resource Shutdown or Release vulnerability in Mitsubishi Electric Corpo...</summary><p>Improper Resource Shutdown or Release vulnerability in Mitsubishi Electric Corporation MELSEC iQ-F Series FX5-EIP EtherNet/IP Module FX5-EIP versions 1.000 and prior allows a remote attacker to cause a denial-of-service (DoS) condition on the products by continuously sending UDP packets to the products. A system reset of the product is required for recovery.</p></details></td>
         <td>2026-03-03</td>
       </tr>
       <tr>
@@ -106981,7 +107162,7 @@
         <td>&nbsp;</td>
         <td>0.2% <small>p42</small></td>
         <td>6.10</td>
-        <td><details><summary>Always-Incorrect Control Flow Implementation vulnerability in Mitsubishi Electri...</summary><p>Always-Incorrect Control Flow Implementation vulnerability in Mitsubishi Electric Corporation MELSEC iQ-F Series FX5-ENET/IP Ethernet Module FX5-ENET/IP versions 1.106 and prior and Mitsubishi Electric Corporation MELSEC iQ-F Series FX5-EIP EtherNet/IP Module FX5-EIP all versions allows a remote attacker to cause a denial-of-service (DoS) condition on the products by continuously sending UDP packets to the products. A system reset of the product is required for recovery.</p></details></td>
+        <td><details><summary>Always-Incorrect Control Flow Implementation vulnerability in Mitsubishi Electri...</summary><p>Always-Incorrect Control Flow Implementation vulnerability in Mitsubishi Electric Corporation MELSEC iQ-F Series FX5-ENET/IP Ethernet Module FX5-ENET/IP versions 1.106 and prior and Mitsubishi Electric Corporation MELSEC iQ-F Series FX5-EIP EtherNet/IP Module FX5-EIP versions 1.000 and prior allows a remote attacker to cause a denial-of-service (DoS) condition on the products by continuously sending UDP packets to the products. A system reset of the product is required for recovery.</p></details></td>
         <td>2026-03-03</td>
       </tr>
       <tr>
