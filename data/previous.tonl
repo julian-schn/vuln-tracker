@@ -1,7 +1,7 @@
 #version 1.0
 #delimiter "|"
 
-cves[5765]{cveId:str|published:str|lastModified:str|cvssScore:f64|severity:str|cweId:str|cweName:str|kev:bool|description:str|nvdUrl:str|epssScore:f64|epssPercentile:f64|vapScore:f64}:
+cves[5740]{cveId:str|published:str|lastModified:str|cvssScore:f64|severity:str|cweId:str|cweName:str|kev:bool|description:str|nvdUrl:str|epssScore:f64|epssPercentile:f64|vapScore:f64}:
   CVE-2026-5237|2026-03-31T23:17:11.627|2026-04-24T18:12:06.580|6.9|MEDIUM|CWE-74|N/A|false|A security flaw has been discovered in itsourcecode Payroll Management System 1.0. Affected by this vulnerability is an unknown functionality of the file /manage_user.php of the component Parameter Handler. Performing a manipulation of the argument ID results in sql injection. The attack is possible to be carried out remotely. The exploit has been released to the public and may be used for attacks.|https://nvd.nist.gov/vuln/detail/CVE-2026-5237|0.00039|0.11873|4.8312
   CVE-2026-5236|2026-03-31T23:17:11.393|2026-04-24T18:12:06.580|4.8|MEDIUM|CWE-119|N/A|false|A vulnerability was identified in Axiomatic Bento4 up to 1.6.0-641. Affected is the function AP4_BitReader::SkipBits of the file Ap4Dac4Atom.cpp of the component DSI v1 Parser. Such manipulation of the argument n_presentations leads to heap-based buffer overflow. The attack needs to be performed locally. The exploit is publicly available and might be used. The project was informed of the problem early through an issue report but has not responded yet.|https://nvd.nist.gov/vuln/detail/CVE-2026-5236|0.00006|0.00336|3.3602
   CVE-2026-5235|2026-03-31T23:17:11.163|2026-04-24T18:12:06.580|4.8|MEDIUM|CWE-119|N/A|false|A vulnerability was determined in Axiomatic Bento4 up to 1.6.0-641. This impacts the function AP4_BitReader::ReadCache of the file Ap4Dac4Atom.cpp of the component MP4 File Parser. This manipulation causes heap-based buffer overflow. The attack needs to be launched locally. The exploit has been publicly disclosed and may be utilized. The project was informed of the problem early through an issue report but has not responded yet.|https://nvd.nist.gov/vuln/detail/CVE-2026-5235|0.00014|0.02793|3.3604
@@ -1369,749 +1369,154 @@ cves[5765]{cveId:str|published:str|lastModified:str|cvssScore:f64|severity:str|c
   CVE-2024-51348|2026-03-25T14:16:29.210|2026-03-25T16:16:06.343|8.8|HIGH|CWE-121|N/A|false|A stack-based buffer overflow vulnerability in the P2P API service in BS Producten Petcam with firmware 33.1.0.0818 allows unauthenticated attackers within network range to overwrite the instruction pointer and achieve Remote Code Execution (RCE) by sending a specially crafted HTTP request.|https://nvd.nist.gov/vuln/detail/CVE-2024-51348|0.00184|0.39867|6.1655
   CVE-2024-51347|2026-03-25T14:16:29.097|2026-03-25T18:16:24.673|7.2|HIGH|CWE-120|N/A|false|A buffer overflow vulnerability in the dgiot binary in LSC Smart Indoor IP Camera V7.6.32. The flaw exists in the handling of the Time Zone (TZ) parameter within the ONVIF configuration interface. The time zone (TZ) parameter does not have its length properly validated before being copied into a fixed-size buffer using the insecure strcpy function.|https://nvd.nist.gov/vuln/detail/CVE-2024-51347|0.00051|0.15978|5.0415
   CVE-2024-51346|2026-03-25T14:16:28.967|2026-03-25T15:41:33.977|7.7|HIGH|CWE-330|N/A|false|An issue in Eufy Homebase 2 version 3.3.4.1h allows a local attacker to obtain sensitive information via the cryptographic scheme.|https://nvd.nist.gov/vuln/detail/CVE-2024-51346|0.00015|0.03034|5.3904
-  CVE-2026-23393|2026-03-25T11:16:40.040|2026-04-24T18:39:39.577|7.8|HIGH|CWE-362|N/A|false|"In the Linux kernel, the following vulnerability has been resolved:
-
-bridge: cfm: Fix race condition in peer_mep deletion
+  CVE-2026-23359|2026-03-25T11:16:34.740|2026-04-24T19:02:43.677|7.8|HIGH|CWE-787|N/A|false|"In the Linux kernel, the following vulnerability has been resolved:
 
-When a peer MEP is being deleted, cancel_delayed_work_sync() is called
-on ccm_rx_dwork before freeing. However, br_cfm_frame_rx() runs in
-softirq context under rcu_read_lock (without RTNL) and can re-schedule
-ccm_rx_dwork via ccm_rx_timer_start() between cancel_delayed_work_sync()
-returning and kfree_rcu() being called.
+bpf: Fix stack-out-of-bounds write in devmap
 
-The following is a simple race scenario:
+get_upper_ifindexes() iterates over all upper devices and writes their
+indices into an array without checking bounds.
 
-           cpu0                                     cpu1
+Also the callers assume that the max number of upper devices is
+MAX_NEST_DEV and allocate excluded_devices[1+MAX_NEST_DEV] on the stack,
+but that assumption is not correct and the number of upper devices could
+be larger than MAX_NEST_DEV (e.g., many macvlans), causing a
+stack-out-of-bounds write.
 
-mep_delete_implementation()
-  cancel_delayed_work_sync(ccm_rx_dwork);
-                                           br_cfm_frame_rx()
-                                             // peer_mep still in hlist
-                                             if (peer_mep->ccm_defect)
-                                               ccm_rx_timer_start()
-                                                 queue_delayed_work(ccm_rx_dwork)
-  hlist_del_rcu(&peer_mep->head);
-  kfree_rcu(peer_mep, rcu);
-                                           ccm_rx_work_expired()
-                                             // on freed peer_mep
+Add a max parameter to get_upper_ifindexes() to avoid the issue.
+When there are too many upper devices, return -EOVERFLOW and abort the
+redirect.
 
-To prevent this, cancel_delayed_work_sync() is replaced with
-disable_delayed_work_sync() in both peer MEP deletion paths, so
-that subsequent queue_delayed_work() calls from br_cfm_frame_rx()
-are silently rejected.
-
-The cc_peer_disable() helper retains cancel_delayed_work_sync()
-because it is also used for the CC enable/disable toggle path where
-the work must remain re-schedulable."|https://nvd.nist.gov/vuln/detail/CVE-2026-23393|0.00016|0.03556|5.4605
-  CVE-2026-23392|2026-03-25T11:16:39.873|2026-04-24T18:39:15.767|7.8|HIGH|CWE-416|N/A|false|"In the Linux kernel, the following vulnerability has been resolved:
-
-netfilter: nf_tables: release flowtable after rcu grace period on error
-
-Call synchronize_rcu() after unregistering the hooks from error path,
-since a hook that already refers to this flowtable can be already
-registered, exposing this flowtable to packet path and nfnetlink_hook
-control plane.
-
-This error path is rare, it should only happen by reaching the maximum
-number hooks or by failing to set up to hardware offload, just call
-synchronize_rcu().
-
-There is a check for already used device hooks by different flowtable
-that could result in EEXIST at this late stage. The hook parser can be
-updated to perform this check earlier to this error path really becomes
-rarely exercised.
-
-Uncovered by KASAN reported as use-after-free from nfnetlink_hook path
-when dumping hooks."|https://nvd.nist.gov/vuln/detail/CVE-2026-23392|0.00016|0.03605|5.4605
-  CVE-2026-23391|2026-03-25T11:16:39.707|2026-04-24T18:38:57.790|7.8|HIGH|NVD-CWE-noinfo|N/A|false|"In the Linux kernel, the following vulnerability has been resolved:
-
-netfilter: xt_CT: drop pending enqueued packets on template removal
-
-Templates refer to objects that can go away while packets are sitting in
-nfqueue refer to:
-
-- helper, this can be an issue on module removal.
-- timeout policy, nfnetlink_cttimeout might remove it.
-
-The use of templates with zone and event cache filter are safe, since
-this just copies values.
-
-Flush these enqueued packets in case the template rule gets removed."|https://nvd.nist.gov/vuln/detail/CVE-2026-23391|0.00019|0.05331|5.4606
-  CVE-2026-23390|2026-03-25T11:16:39.567|2026-04-24T18:32:24.277|7.8|HIGH|CWE-787|N/A|false|"In the Linux kernel, the following vulnerability has been resolved:
-
-tracing/dma: Cap dma_map_sg tracepoint arrays to prevent buffer overflow
-
-The dma_map_sg tracepoint can trigger a perf buffer overflow when
-tracing large scatter-gather lists. With devices like virtio-gpu
-creating large DRM buffers, nents can exceed 1000 entries, resulting
-in:
-
-  phys_addrs: 1000 * 8 bytes = 8,000 bytes
-  dma_addrs:  1000 * 8 bytes = 8,000 bytes
-  lengths:    1000 * 4 bytes = 4,000 bytes
-  Total: ~20,000 bytes
-
-This exceeds PERF_MAX_TRACE_SIZE (8192 bytes), causing:
-
-  WARNING: CPU: 0 PID: 5497 at kernel/trace/trace_event_perf.c:405
-  perf buffer not large enough, wanted 24620, have 8192
-
-Cap all three dynamic arrays at 128 entries using min() in the array
-size calculation. This ensures arrays are only as large as needed
-(up to the cap), avoiding unnecessary memory allocation for small
-operations while preventing overflow for large ones.
-
-The tracepoint now records the full nents/ents counts and a truncated
-flag so users can see when data has been capped.
-
-Changes in v2:
-- Use min(nents, DMA_TRACE_MAX_ENTRIES) for dynamic array sizing
-  instead of fixed DMA_TRACE_MAX_ENTRIES allocation (feedback from
-  Steven Rostedt)
-- This allocates only what's needed up to the cap, avoiding waste
-  for small operations
-
-Reviwed-by: Sean Anderson <sean.anderson@linux.dev>"|https://nvd.nist.gov/vuln/detail/CVE-2026-23390|0.00022|0.06055|5.4607
-  CVE-2026-23389|2026-03-25T11:16:39.440|2026-04-24T18:45:31.403|5.5|MEDIUM|CWE-401|N/A|false|"In the Linux kernel, the following vulnerability has been resolved:
-
-ice: Fix memory leak in ice_set_ringparam()
-
-In ice_set_ringparam, tx_rings and xdp_rings are allocated before
-rx_rings. If the allocation of rx_rings fails, the code jumps to
-the done label leaking both tx_rings and xdp_rings. Furthermore, if
-the setup of an individual Rx ring fails during the loop, the code jumps
-to the free_tx label which releases tx_rings but leaks xdp_rings.
-
-Fix this by introducing a free_xdp label and updating the error paths to
-ensure both xdp_rings and tx_rings are properly freed if rx_rings
-allocation or setup fails.
-
-Compile tested only. Issue found using a prototype static analysis tool
-and code review."|https://nvd.nist.gov/vuln/detail/CVE-2026-23389|0.00023|0.06394|3.8507
-  CVE-2026-23388|2026-03-25T11:16:39.280|2026-04-24T18:45:22.870|7.1|HIGH|CWE-125|N/A|false|"In the Linux kernel, the following vulnerability has been resolved:
-
-Squashfs: check metadata block offset is within range
-
-Syzkaller reports a ""general protection fault in squashfs_copy_data""
-
-This is ultimately caused by a corrupted index look-up table, which
-produces a negative metadata block offset.
-
-This is subsequently passed to squashfs_copy_data (via
-squashfs_read_metadata) where the negative offset causes an out of bounds
-access.
-
-The fix is to check that the offset is within range in
-squashfs_read_metadata.  This will trap this and other cases."|https://nvd.nist.gov/vuln/detail/CVE-2026-23388|0.00032|0.09294|4.9710
-  CVE-2026-23387|2026-03-25T11:16:39.123|2026-04-24T18:45:08.230|7.8|HIGH|CWE-415|N/A|false|"In the Linux kernel, the following vulnerability has been resolved:
-
-pinctrl: cirrus: cs42l43: Fix double-put in cs42l43_pin_probe()
-
-devm_add_action_or_reset() already invokes the action on failure,
-so the explicit put causes a double-put."|https://nvd.nist.gov/vuln/detail/CVE-2026-23387|0.00024|0.06492|5.4607
-  CVE-2026-23386|2026-03-25T11:16:38.960|2026-04-24T18:44:53.623|5.5|MEDIUM|NVD-CWE-noinfo|N/A|false|"In the Linux kernel, the following vulnerability has been resolved:
-
-gve: fix incorrect buffer cleanup in gve_tx_clean_pending_packets for QPL
-
-In DQ-QPL mode, gve_tx_clean_pending_packets() incorrectly uses the RDA
-buffer cleanup path. It iterates num_bufs times and attempts to unmap
-entries in the dma array.
-
-This leads to two issues:
-1. The dma array shares storage with tx_qpl_buf_ids (union).
- Interpreting buffer IDs as DMA addresses results in attempting to
- unmap incorrect memory locations.
-2. num_bufs in QPL mode (counting 2K chunks) can significantly exceed
- the size of the dma array, causing out-of-bounds access warnings
-(trace below is how we noticed this issue).
-
-UBSAN: array-index-out-of-bounds in
-drivers/net/ethernet/drivers/net/ethernet/google/gve/gve_tx_dqo.c:178:5 index 18 is out of
-range for type 'dma_addr_t[18]' (aka 'unsigned long long[18]')
-Workqueue: gve gve_service_task [gve]
-Call Trace:
-<TASK>
-dump_stack_lvl+0x33/0xa0
-__ubsan_handle_out_of_bounds+0xdc/0x110
-gve_tx_stop_ring_dqo+0x182/0x200 [gve]
-gve_close+0x1be/0x450 [gve]
-gve_reset+0x99/0x120 [gve]
-gve_service_task+0x61/0x100 [gve]
-process_scheduled_works+0x1e9/0x380
-
-Fix this by properly checking for QPL mode and delegating to
-gve_free_tx_qpl_bufs() to reclaim the buffers."|https://nvd.nist.gov/vuln/detail/CVE-2026-23386|0.00024|0.06492|3.8507
-  CVE-2026-23385|2026-03-25T11:16:38.773|2026-04-24T18:44:10.210|5.5|MEDIUM|NVD-CWE-noinfo|N/A|false|"In the Linux kernel, the following vulnerability has been resolved:
-
-netfilter: nf_tables: clone set on flush only
-
-Syzbot with fault injection triggered a failing memory allocation with
-GFP_KERNEL which results in a WARN splat:
-
-iter.err
-WARNING: net/netfilter/nf_tables_api.c:845 at nft_map_deactivate+0x34e/0x3c0 net/netfilter/nf_tables_api.c:845, CPU#0: syz.0.17/5992
-Modules linked in:
-CPU: 0 UID: 0 PID: 5992 Comm: syz.0.17 Not tainted syzkaller #0 PREEMPT(full)
-Hardware name: Google Google Compute Engine/Google Compute Engine, BIOS Google 02/12/2026
-RIP: 0010:nft_map_deactivate+0x34e/0x3c0 net/netfilter/nf_tables_api.c:845
-Code: 8b 05 86 5a 4e 09 48 3b 84 24 a0 00 00 00 75 62 48 8d 65 d8 5b 41 5c 41 5d 41 5e 41 5f 5d c3 cc cc cc cc cc e8 63 6d fa f7 90 <0f> 0b 90 43
-+80 7c 35 00 00 0f 85 23 fe ff ff e9 26 fe ff ff 89 d9
-RSP: 0018:ffffc900045af780 EFLAGS: 00010293
-RAX: ffffffff89ca45bd RBX: 00000000fffffff4 RCX: ffff888028111e40
-RDX: 0000000000000000 RSI: 00000000fffffff4 RDI: 0000000000000000
-RBP: ffffc900045af870 R08: 0000000000400dc0 R09: 00000000ffffffff
-R10: dffffc0000000000 R11: fffffbfff1d141db R12: ffffc900045af7e0
-R13: 1ffff920008b5f24 R14: dffffc0000000000 R15: ffffc900045af920
-FS:  000055557a6a5500(0000) GS:ffff888125496000(0000) knlGS:0000000000000000
-CS:  0010 DS: 0000 ES: 0000 CR0: 0000000080050033
-CR2: 00007fb5ea271fc0 CR3: 000000003269e000 CR4: 00000000003526f0
-Call Trace:
- <TASK>
- __nft_release_table+0xceb/0x11f0 net/netfilter/nf_tables_api.c:12115
- nft_rcv_nl_event+0xc25/0xdb0 net/netfilter/nf_tables_api.c:12187
- notifier_call_chain+0x19d/0x3a0 kernel/notifier.c:85
- blocking_notifier_call_chain+0x6a/0x90 kernel/notifier.c:380
- netlink_release+0x123b/0x1ad0 net/netlink/af_netlink.c:761
- __sock_release net/socket.c:662 [inline]
- sock_close+0xc3/0x240 net/socket.c:1455
-
-Restrict set clone to the flush set command in the preparation phase.
-Add NFT_ITER_UPDATE_CLONE and use it for this purpose, update the rbtree
-and pipapo backends to only clone the set when this iteration type is
-used.
-
-As for the existing NFT_ITER_UPDATE type, update the pipapo backend to
-use the existing set clone if available, otherwise use the existing set
-representation. After this update, there is no need to clone a set that
-is being deleted, this includes bound anonymous set.
-
-An alternative approach to NFT_ITER_UPDATE_CLONE is to add a .clone
-interface and call it from the flush set path."|https://nvd.nist.gov/vuln/detail/CVE-2026-23385|0.00022|0.06055|3.8507
-  CVE-2026-23384|2026-03-25T11:16:38.633|2026-04-24T18:42:33.970|5.5|MEDIUM|CWE-401|N/A|false|"In the Linux kernel, the following vulnerability has been resolved:
-
-RDMA/ionic: Fix kernel stack leak in ionic_create_cq()
-
-struct ionic_cq_resp resp {
-    __u32 cqid[2];         // offset 0 - PARTIALLY SET (see below)
-    __u8  udma_mask;       // offset 8 - SET (resp.udma_mask = vcq->udma_mask)
-    __u8  rsvd[7];         // offset 9 - NEVER SET <- LEAK
-};
-
-rsvd[7]: 7 bytes of stack memory leaked unconditionally.
-
-cqid[2]: The loop at line 1256 iterates over udma_idx but skips indices
-where !(vcq->udma_mask & BIT(udma_idx)). The array has 2 entries but
-udma_count could be 1, meaning cqid[1] might never be written via
-ionic_create_cq_common(). If udma_mask only has bit 0 set, cqid[1] (4
-bytes) is also leaked. So potentially 11 bytes leaked."|https://nvd.nist.gov/vuln/detail/CVE-2026-23384|0.00022|0.06055|3.8507
-  CVE-2026-23383|2026-03-25T11:16:38.487|2026-04-24T18:42:21.773|7.8|HIGH|NVD-CWE-noinfo|N/A|false|"In the Linux kernel, the following vulnerability has been resolved:
-
-bpf, arm64: Force 8-byte alignment for JIT buffer to prevent atomic tearing
-
-struct bpf_plt contains a u64 target field. Currently, the BPF JIT
-allocator requests an alignment of 4 bytes (sizeof(u32)) for the JIT
-buffer.
-
-Because the base address of the JIT buffer can be 4-byte aligned (e.g.,
-ending in 0x4 or 0xc), the relative padding logic in build_plt() fails
-to ensure that target lands on an 8-byte boundary.
-
-This leads to two issues:
-1. UBSAN reports misaligned-access warnings when dereferencing the
-   structure.
-2. More critically, target is updated concurrently via WRITE_ONCE() in
-   bpf_arch_text_poke() while the JIT'd code executes ldr. On arm64,
-   64-bit loads/stores are only guaranteed to be single-copy atomic if
-   they are 64-bit aligned. A misaligned target risks a torn read,
-   causing the JIT to jump to a corrupted address.
-
-Fix this by increasing the allocation alignment requirement to 8 bytes
-(sizeof(u64)) in bpf_jit_binary_pack_alloc(). This anchors the base of
-the JIT buffer to an 8-byte boundary, allowing the relative padding math
-in build_plt() to correctly align the target field."|https://nvd.nist.gov/vuln/detail/CVE-2026-23383|0.00013|0.02338|5.4604
-  CVE-2026-23382|2026-03-25T11:16:38.330|2026-04-24T18:42:01.033|5.5|MEDIUM|CWE-476|N/A|false|"In the Linux kernel, the following vulnerability has been resolved:
-
-HID: Add HID_CLAIMED_INPUT guards in raw_event callbacks missing them
-
-In commit 2ff5baa9b527 (""HID: appleir: Fix potential NULL dereference at
-raw event handle""), we handle the fact that raw event callbacks
-can happen even for a HID device that has not been ""claimed"" causing a
-crash if a broken device were attempted to be connected to the system.
-
-Fix up the remaining in-tree HID drivers that forgot to add this same
-check to resolve the same issue."|https://nvd.nist.gov/vuln/detail/CVE-2026-23382|0.00032|0.09294|3.8510
-  CVE-2026-23381|2026-03-25T11:16:38.160|2026-04-24T18:41:47.693|5.5|MEDIUM|CWE-476|N/A|false|"In the Linux kernel, the following vulnerability has been resolved:
-
-net: bridge: fix nd_tbl NULL dereference when IPv6 is disabled
-
-When booting with the 'ipv6.disable=1' parameter, the nd_tbl is never
-initialized because inet6_init() exits before ndisc_init() is called
-which initializes it. Then, if neigh_suppress is enabled and an ICMPv6
-Neighbor Discovery packet reaches the bridge, br_do_suppress_nd() will
-dereference ipv6_stub->nd_tbl which is NULL, passing it to
-neigh_lookup(). This causes a kernel NULL pointer dereference.
-
- BUG: kernel NULL pointer dereference, address: 0000000000000268
- Oops: 0000 [#1] PREEMPT SMP NOPTI
- [...]
- RIP: 0010:neigh_lookup+0x16/0xe0
- [...]
- Call Trace:
-  <IRQ>
-  ? neigh_lookup+0x16/0xe0
-  br_do_suppress_nd+0x160/0x290 [bridge]
-  br_handle_frame_finish+0x500/0x620 [bridge]
-  br_handle_frame+0x353/0x440 [bridge]
-  __netif_receive_skb_core.constprop.0+0x298/0x1110
-  __netif_receive_skb_one_core+0x3d/0xa0
-  process_backlog+0xa0/0x140
-  __napi_poll+0x2c/0x170
-  net_rx_action+0x2c4/0x3a0
-  handle_softirqs+0xd0/0x270
-  do_softirq+0x3f/0x60
-
-Fix this by replacing IS_ENABLED(IPV6) call with ipv6_mod_enabled() in
-the callers. This is in essence disabling NS/NA suppression when IPv6 is
-disabled."|https://nvd.nist.gov/vuln/detail/CVE-2026-23381|0.00032|0.09294|3.8510
-  CVE-2026-23368|2026-03-25T11:16:36.167|2026-04-24T18:41:33.230|5.5|MEDIUM|CWE-667|N/A|false|"In the Linux kernel, the following vulnerability has been resolved:
-
-net: phy: register phy led_triggers during probe to avoid AB-BA deadlock
-
-There is an AB-BA deadlock when both LEDS_TRIGGER_NETDEV and
-LED_TRIGGER_PHY are enabled:
-
-[ 1362.049207] [<8054e4b8>] led_trigger_register+0x5c/0x1fc             <-- Trying to get lock ""triggers_list_lock"" via down_write(&triggers_list_lock);
-[ 1362.054536] [<80662830>] phy_led_triggers_register+0xd0/0x234
-[ 1362.060329] [<8065e200>] phy_attach_direct+0x33c/0x40c
-[ 1362.065489] [<80651fc4>] phylink_fwnode_phy_connect+0x15c/0x23c
-[ 1362.071480] [<8066ee18>] mtk_open+0x7c/0xba0
-[ 1362.075849] [<806d714c>] __dev_open+0x280/0x2b0
-[ 1362.080384] [<806d7668>] __dev_change_flags+0x244/0x24c
-[ 1362.085598] [<806d7698>] dev_change_flags+0x28/0x78
-[ 1362.090528] [<807150e4>] dev_ioctl+0x4c0/0x654                       <-- Hold lock ""rtnl_mutex"" by calling rtnl_lock();
-[ 1362.094985] [<80694360>] sock_ioctl+0x2f4/0x4e0
-[ 1362.099567] [<802e9c4c>] sys_ioctl+0x32c/0xd8c
-[ 1362.104022] [<80014504>] syscall_common+0x34/0x58
-
-Here LED_TRIGGER_PHY is registering LED triggers during phy_attach
-while holding RTNL and then taking triggers_list_lock.
-
-[ 1362.191101] [<806c2640>] register_netdevice_notifier+0x60/0x168      <-- Trying to get lock ""rtnl_mutex"" via rtnl_lock();
-[ 1362.197073] [<805504ac>] netdev_trig_activate+0x194/0x1e4
-[ 1362.202490] [<8054e28c>] led_trigger_set+0x1d4/0x360                 <-- Hold lock ""triggers_list_lock"" by down_read(&triggers_list_lock);
-[ 1362.207511] [<8054eb38>] led_trigger_write+0xd8/0x14c
-[ 1362.212566] [<80381d98>] sysfs_kf_bin_write+0x80/0xbc
-[ 1362.217688] [<8037fcd8>] kernfs_fop_write_iter+0x17c/0x28c
-[ 1362.223174] [<802cbd70>] vfs_write+0x21c/0x3c4
-[ 1362.227712] [<802cc0c4>] ksys_write+0x78/0x12c
-[ 1362.232164] [<80014504>] syscall_common+0x34/0x58
-
-Here LEDS_TRIGGER_NETDEV is being enabled on an LED. It first takes
-triggers_list_lock and then RTNL. A classical AB-BA deadlock.
-
-phy_led_triggers_registers() does not require the RTNL, it does not
-make any calls into the network stack which require protection. There
-is also no requirement the PHY has been attached to a MAC, the
-triggers only make use of phydev state. This allows the call to
-phy_led_triggers_registers() to be placed elsewhere. PHY probe() and
-release() don't hold RTNL, so solving the AB-BA deadlock."|https://nvd.nist.gov/vuln/detail/CVE-2026-23368|0.00032|0.09294|3.8510
-  CVE-2026-23367|2026-03-25T11:16:36.000|2026-04-24T18:41:25.547|5.5|MEDIUM|NVD-CWE-noinfo|N/A|false|"In the Linux kernel, the following vulnerability has been resolved:
-
-wifi: radiotap: reject radiotap with unknown bits
-
-The radiotap parser is currently only used with the radiotap
-namespace (not with vendor namespaces), but if the undefined
-field 18 is used, the alignment/size is unknown as well. In
-this case, iterator->_next_ns_data isn't initialized (it's
-only set for skipping vendor namespaces), and syzbot points
-out that we later compare against this uninitialized value.
-
-Fix this by moving the rejection of unknown radiotap fields
-down to after the in-namespace lookup, so it will really use
-iterator->_next_ns_data only for vendor namespaces, even in
-case undefined fields are present."|https://nvd.nist.gov/vuln/detail/CVE-2026-23367|0.00032|0.09294|3.8510
-  CVE-2026-23366|2026-03-25T11:16:35.873|2026-04-24T18:41:12.913|5.5|MEDIUM|CWE-476|N/A|false|"In the Linux kernel, the following vulnerability has been resolved:
-
-drm/client: Do not destroy NULL modes
-
-'modes' in drm_client_modeset_probe may fail to kcalloc.  If this
-occurs, we jump to 'out', calling modes_destroy on it, which
-dereferences it.  This may result in a NULL pointer dereference in the
-error case.  Prevent that."|https://nvd.nist.gov/vuln/detail/CVE-2026-23366|0.00022|0.06055|3.8507
-  CVE-2026-23365|2026-03-25T11:16:35.710|2026-04-24T18:47:28.840|5.5|MEDIUM|NVD-CWE-noinfo|N/A|false|"In the Linux kernel, the following vulnerability has been resolved:
-
-net: usb: kalmia: validate USB endpoints
-
-The kalmia driver should validate that the device it is probing has the
-proper number and types of USB endpoints it is expecting before it binds
-to it.  If a malicious device were to not have the same urbs the driver
-will crash later on when it blindly accesses these endpoints."|https://nvd.nist.gov/vuln/detail/CVE-2026-23365|0.00032|0.09294|3.8510
-  CVE-2026-23363|2026-03-25T11:16:35.407|2026-04-24T18:48:32.070|7.1|HIGH|CWE-125|N/A|false|"In the Linux kernel, the following vulnerability has been resolved:
-
-wifi: mt76: mt7925: Fix possible oob access in mt7925_mac_write_txwi_80211()
-
-Check frame length before accessing the mgmt fields in
-mt7925_mac_write_txwi_80211 in order to avoid a possible oob access."|https://nvd.nist.gov/vuln/detail/CVE-2026-23363|0.00023|0.06394|4.9707
-  CVE-2026-23362|2026-03-25T11:16:35.220|2026-04-24T18:21:28.463|5.5|MEDIUM|CWE-667|N/A|false|"In the Linux kernel, the following vulnerability has been resolved:
-
-can: bcm: fix locking for bcm_op runtime updates
-
-Commit c2aba69d0c36 (""can: bcm: add locking for bcm_op runtime updates"")
-added a locking for some variables that can be modified at runtime when
-updating the sending bcm_op with a new TX_SETUP command in bcm_tx_setup().
-
-Usually the RX_SETUP only handles and filters incoming traffic with one
-exception: When the RX_RTR_FRAME flag is set a predefined CAN frame is
-sent when a specific RTR frame is received. Therefore the rx bcm_op uses
-bcm_can_tx() which uses the bcm_tx_lock that was only initialized in
-bcm_tx_setup(). Add the missing spin_lock_init() when allocating the
-bcm_op in bcm_rx_setup() to handle the RTR case properly."|https://nvd.nist.gov/vuln/detail/CVE-2026-23362|0.00032|0.09294|3.8510
-  CVE-2026-23361|2026-03-25T11:16:35.060|2026-04-24T18:41:30.110|7.8|HIGH|CWE-787|N/A|false|"In the Linux kernel, the following vulnerability has been resolved:
-
-PCI: dwc: ep: Flush MSI-X write before unmapping its ATU entry
-
-Endpoint drivers use dw_pcie_ep_raise_msix_irq() to raise an MSI-X
-interrupt to the host using a writel(), which generates a PCI posted write
-transaction.  There's no completion for posted writes, so the writel() may
-return before the PCI write completes.  dw_pcie_ep_raise_msix_irq() also
-unmaps the outbound ATU entry used for the PCI write, so the write races
-with the unmap.
-
-If the PCI write loses the race with the ATU unmap, the write may corrupt
-host memory or cause IOMMU errors, e.g., these when running fio with a
-larger queue depth against nvmet-pci-epf:
-
-  arm-smmu-v3 fc900000.iommu:      0x0000010000000010
-  arm-smmu-v3 fc900000.iommu:      0x0000020000000000
-  arm-smmu-v3 fc900000.iommu:      0x000000090000f040
-  arm-smmu-v3 fc900000.iommu:      0x0000000000000000
-  arm-smmu-v3 fc900000.iommu: event: F_TRANSLATION client: 0000:01:00.0 sid: 0x100 ssid: 0x0 iova: 0x90000f040 ipa: 0x0
-  arm-smmu-v3 fc900000.iommu: unpriv data write s1 ""Input address caused fault"" stag: 0x0
-
-Flush the write by performing a readl() of the same address to ensure that
-the write has reached the destination before the ATU entry is unmapped.
-
-The same problem was solved for dw_pcie_ep_raise_msi_irq() in commit
-8719c64e76bf (""PCI: dwc: ep: Cache MSI outbound iATU mapping""), but there
-it was solved by dedicating an outbound iATU only for MSI. We can't do the
-same for MSI-X because each vector can have a different msg_addr and the
-msg_addr may be changed while the vector is masked.
-
-[bhelgaas: commit log]"|https://nvd.nist.gov/vuln/detail/CVE-2026-23361|0.00023|0.06394|5.4607
-  CVE-2026-23360|2026-03-25T11:16:34.907|2026-04-24T18:59:28.380|5.5|MEDIUM|CWE-401|N/A|false|"In the Linux kernel, the following vulnerability has been resolved:
-
-nvme: fix admin queue leak on controller reset
-
-When nvme_alloc_admin_tag_set() is called during a controller reset,
-a previous admin queue may still exist. Release it properly before
-allocating a new one to avoid orphaning the old queue.
-
-This fixes a regression introduced by commit 03b3bcd319b3 (""nvme: fix
-admin request_queue lifetime"")."|https://nvd.nist.gov/vuln/detail/CVE-2026-23360|0.00032|0.09294|3.8510
-  CVE-2026-23353|2026-03-25T11:16:33.817|2026-04-24T17:45:52.567|5.5|MEDIUM|CWE-476|N/A|false|"In the Linux kernel, the following vulnerability has been resolved:
-
-ice: fix crash in ethtool offline loopback test
-
-Since the conversion of ice to page pool, the ethtool loopback test
-crashes:
-
- BUG: kernel NULL pointer dereference, address: 000000000000000c
- #PF: supervisor write access in kernel mode
- #PF: error_code(0x0002) - not-present page
- PGD 1100f1067 P4D 0
- Oops: Oops: 0002 [#1] SMP NOPTI
- CPU: 23 UID: 0 PID: 5904 Comm: ethtool Kdump: loaded Not tainted 6.19.0-0.rc7.260128g1f97d9dcf5364.49.eln154.x86_64 #1 PREEMPT(lazy)
- Hardware name: [...]
- RIP: 0010:ice_alloc_rx_bufs+0x1cd/0x310 [ice]
- Code: 83 6c 24 30 01 66 41 89 47 08 0f 84 c0 00 00 00 41 0f b7 dc 48 8b 44 24 18 48 c1 e3 04 41 bb 00 10 00 00 48 8d 2c 18 8b 04 24 <89> 45 0c 41 8b 4d 00 49 d3 e3 44 3b 5c 24 24 0f 83 ac fe ff ff 44
- RSP: 0018:ff7894738aa1f768 EFLAGS: 00010246
- RAX: 0000000000000000 RBX: 0000000000000000 RCX: 0000000000000000
- RDX: 0000000000000000 RSI: 0000000000000700 RDI: 0000000000000000
- RBP: 0000000000000000 R08: ff16dcae79880200 R09: 0000000000000019
- R10: 0000000000000001 R11: 0000000000001000 R12: 0000000000000000
- R13: 0000000000000000 R14: 0000000000000000 R15: ff16dcae6c670000
- FS:  00007fcf428850c0(0000) GS:ff16dcb149710000(0000) knlGS:0000000000000000
- CS:  0010 DS: 0000 ES: 0000 CR0: 0000000080050033
- CR2: 000000000000000c CR3: 0000000121227005 CR4: 0000000000773ef0
- PKRU: 55555554
- Call Trace:
-  <TASK>
-  ice_vsi_cfg_rxq+0xca/0x460 [ice]
-  ice_vsi_cfg_rxqs+0x54/0x70 [ice]
-  ice_loopback_test+0xa9/0x520 [ice]
-  ice_self_test+0x1b9/0x280 [ice]
-  ethtool_self_test+0xe5/0x200
-  __dev_ethtool+0x1106/0x1a90
-  dev_ethtool+0xbe/0x1a0
-  dev_ioctl+0x258/0x4c0
-  sock_do_ioctl+0xe3/0x130
-  __x64_sys_ioctl+0xb9/0x100
-  do_syscall_64+0x7c/0x700
-  entry_SYSCALL_64_after_hwframe+0x76/0x7e
-  [...]
-
-It crashes because we have not initialized libeth for the rx ring.
-
-Fix it by treating ICE_VSI_LB VSIs slightly more like normal PF VSIs and
-letting them have a q_vector. It's just a dummy, because the loopback
-test does not use interrupts, but it contains a napi struct that can be
-passed to libeth_rx_fq_create() called from ice_vsi_cfg_rxq() ->
-ice_rxq_pp_create()."|https://nvd.nist.gov/vuln/detail/CVE-2026-23353|0.00024|0.06682|3.8507
-  CVE-2026-23352|2026-03-25T11:16:33.627|2026-04-24T17:59:40.347|5.5|MEDIUM|CWE-401|N/A|false|"In the Linux kernel, the following vulnerability has been resolved:
-
-x86/efi: defer freeing of boot services memory
-
-efi_free_boot_services() frees memory occupied by EFI_BOOT_SERVICES_CODE
-and EFI_BOOT_SERVICES_DATA using memblock_free_late().
-
-There are two issue with that: memblock_free_late() should be used for
-memory allocated with memblock_alloc() while the memory reserved with
-memblock_reserve() should be freed with free_reserved_area().
-
-More acutely, with CONFIG_DEFERRED_STRUCT_PAGE_INIT=y
-efi_free_boot_services() is called before deferred initialization of the
-memory map is complete.
-
-Benjamin Herrenschmidt reports that this causes a leak of ~140MB of
-RAM on EC2 t3a.nano instances which only have 512MB or RAM.
-
-If the freed memory resides in the areas that memory map for them is
-still uninitialized, they won't be actually freed because
-memblock_free_late() calls memblock_free_pages() and the latter skips
-uninitialized pages.
-
-Using free_reserved_area() at this point is also problematic because
-__free_page() accesses the buddy of the freed page and that again might
-end up in uninitialized part of the memory map.
-
-Delaying the entire efi_free_boot_services() could be problematic
-because in addition to freeing boot services memory it updates
-efi.memmap without any synchronization and that's undesirable late in
-boot when there is concurrency.
-
-More robust approach is to only defer freeing of the EFI boot services
-memory.
-
-Split efi_free_boot_services() in two. First efi_unmap_boot_services()
-collects ranges that should be freed into an array then
-efi_free_boot_services() later frees them after deferred init is complete."|https://nvd.nist.gov/vuln/detail/CVE-2026-23352|0.00043|0.13218|3.8513
-  CVE-2026-23351|2026-03-25T11:16:33.450|2026-04-24T18:02:24.367|7.8|HIGH|CWE-416|N/A|false|"In the Linux kernel, the following vulnerability has been resolved:
-
-netfilter: nft_set_pipapo: split gc into unlink and reclaim phase
-
-Yiming Qian reports Use-after-free in the pipapo set type:
-  Under a large number of expired elements, commit-time GC can run for a very
-  long time in a non-preemptible context, triggering soft lockup warnings and
-  RCU stall reports (local denial of service).
-
-We must split GC in an unlink and a reclaim phase.
-
-We cannot queue elements for freeing until pointers have been swapped.
-Expired elements are still exposed to both the packet path and userspace
-dumpers via the live copy of the data structure.
-
-call_rcu() does not protect us: dump operations or element lookups starting
-after call_rcu has fired can still observe the free'd element, unless the
-commit phase has made enough progress to swap the clone and live pointers
-before any new reader has picked up the old version.
-
-This a similar approach as done recently for the rbtree backend in commit
-35f83a75529a (""netfilter: nft_set_rbtree: don't gc elements on insert"")."|https://nvd.nist.gov/vuln/detail/CVE-2026-23351|0.00013|0.01967|5.4604
-  CVE-2026-23350|2026-03-25T11:16:33.320|2026-04-24T18:05:34.897|7.8|HIGH|CWE-401|N/A|false|"In the Linux kernel, the following vulnerability has been resolved:
-
-drm/xe/queue: Call fini on exec queue creation fail
-
-Every call to queue init should have a corresponding fini call.
-Skipping this would mean skipping removal of the queue from GuC list
-(which is part of guc_id allocation). A damaged queue stored in
-exec_queue_lookup list would lead to invalid memory reference,
-sooner or later.
-
-Call fini to free guc_id. This must be done before any internal
-LRCs are freed.
-
-Since the finalization with this extra call became very similar to
-__xe_exec_queue_fini(), reuse that. To make this reuse possible,
-alter xe_lrc_put() so it can survive NULL parameters, like other
-similar functions.
-
-v2: Reuse _xe_exec_queue_fini(). Make xe_lrc_put() aware of NULLs.
-
-(cherry picked from commit 393e5fea6f7d7054abc2c3d97a4cfe8306cd6079)"|https://nvd.nist.gov/vuln/detail/CVE-2026-23350|0.00015|0.02863|5.4604
-  CVE-2026-23349|2026-03-25T11:16:33.197|2026-04-24T18:06:21.640|5.5|MEDIUM|CWE-476|N/A|false|"In the Linux kernel, the following vulnerability has been resolved:
-
-HID: pidff: Fix condition effect bit clearing
-
-As reported by MPDarkGuy on discord, NULL pointer dereferences were
-happening because not all the conditional effects bits were cleared.
-
-Properly clear all conditional effect bits from ffbit"|https://nvd.nist.gov/vuln/detail/CVE-2026-23349|0.00022|0.06055|3.8507
-  CVE-2026-23348|2026-03-25T11:16:33.050|2026-04-24T18:08:42.630|4.7|MEDIUM|CWE-362|N/A|false|"In the Linux kernel, the following vulnerability has been resolved:
-
-cxl: Fix race of nvdimm_bus object when creating nvdimm objects
-
-Found issue during running of cxl-translate.sh unit test. Adding a 3s
-sleep right before the test seems to make the issue reproduce fairly
-consistently. The cxl_translate module has dependency on cxl_acpi and
-causes orphaned nvdimm objects to reprobe after cxl_acpi is removed.
-The nvdimm_bus object is registered by the cxl_nvb object when
-cxl_acpi_probe() is called. With the nvdimm_bus object missing,
-__nd_device_register() will trigger NULL pointer dereference when
-accessing the dev->parent that points to &nvdimm_bus->dev.
-
-[  192.884510] BUG: kernel NULL pointer dereference, address: 000000000000006c
-[  192.895383] Hardware name: QEMU Standard PC (Q35 + ICH9, 2009), BIOS edk2-20250812-19.fc42 08/12/2025
-[  192.897721] Workqueue: cxl_port cxl_bus_rescan_queue [cxl_core]
-[  192.899459] RIP: 0010:kobject_get+0xc/0x90
-[  192.924871] Call Trace:
-[  192.925959]  <TASK>
-[  192.926976]  ? pm_runtime_init+0xb9/0xe0
-[  192.929712]  __nd_device_register.part.0+0x4d/0xc0 [libnvdimm]
-[  192.933314]  __nvdimm_create+0x206/0x290 [libnvdimm]
-[  192.936662]  cxl_nvdimm_probe+0x119/0x1d0 [cxl_pmem]
-[  192.940245]  cxl_bus_probe+0x1a/0x60 [cxl_core]
-[  192.943349]  really_probe+0xde/0x380
-
-This patch also relies on the previous change where
-devm_cxl_add_nvdimm_bridge() is called from drivers/cxl/pmem.c instead
-of drivers/cxl/core.c to ensure the dependency of cxl_acpi on cxl_pmem.
-
-1. Set probe_type of cxl_nvb to PROBE_FORCE_SYNCHRONOUS to ensure the
-   driver is probed synchronously when add_device() is called.
-2. Add a check in __devm_cxl_add_nvdimm_bridge() to ensure that the
-   cxl_nvb driver is attached during cxl_acpi_probe().
-3. Take the cxl_root uport_dev lock and the cxl_nvb->dev lock in
-   devm_cxl_add_nvdimm() before checking nvdimm_bus is valid.
-4. Set cxl_nvdimm flag to CXL_NVD_F_INVALIDATED so cxl_nvdimm_probe()
-   will exit with -EBUSY.
-
-The removal of cxl_nvdimm devices should prevent any orphaned devices
-from probing once the nvdimm_bus is gone.
-
-[ dj: Fixed 0-day reported kdoc issue. ]
-[ dj: Fix cxl_nvb reference leak on error. Gregory (kreview-0811365) ]"|https://nvd.nist.gov/vuln/detail/CVE-2026-23348|0.00022|0.06055|3.2907
-  CVE-2026-23347|2026-03-25T11:16:32.903|2026-04-24T18:10:38.093|5.5|MEDIUM|NVD-CWE-noinfo|N/A|false|"In the Linux kernel, the following vulnerability has been resolved:
-
-can: usb: f81604: correctly anchor the urb in the read bulk callback
-
-When submitting an urb, that is using the anchor pattern, it needs to be
-anchored before submitting it otherwise it could be leaked if
-usb_kill_anchored_urbs() is called.  This logic is correctly done
-elsewhere in the driver, except in the read bulk callback so do that
-here also."|https://nvd.nist.gov/vuln/detail/CVE-2026-23347|0.00024|0.06492|3.8507
-  CVE-2026-23346|2026-03-25T11:16:32.767|2026-04-24T18:15:05.637|5.5|MEDIUM|NVD-CWE-noinfo|N/A|false|"In the Linux kernel, the following vulnerability has been resolved:
-
-arm64: io: Extract user memory type in ioremap_prot()
-
-The only caller of ioremap_prot() outside of the generic ioremap()
-implementation is generic_access_phys(), which passes a 'pgprot_t' value
-determined from the user mapping of the target 'pfn' being accessed by
-the kernel. On arm64, the 'pgprot_t' contains all of the non-address
-bits from the pte, including the permission controls, and so we end up
-returning a new user mapping from ioremap_prot() which faults when
-accessed from the kernel on systems with PAN:
-
-  | Unable to handle kernel read from unreadable memory at virtual address ffff80008ea89000
-  | ...
-  | Call trace:
-  |   __memcpy_fromio+0x80/0xf8
-  |   generic_access_phys+0x20c/0x2b8
-  |   __access_remote_vm+0x46c/0x5b8
-  |   access_remote_vm+0x18/0x30
-  |   environ_read+0x238/0x3e8
-  |   vfs_read+0xe4/0x2b0
-  |   ksys_read+0xcc/0x178
-  |   __arm64_sys_read+0x4c/0x68
-
-Extract only the memory type from the user 'pgprot_t' in ioremap_prot()
-and assert that we're being passed a user mapping, to protect us against
-any changes in future that may require additional handling. To avoid
-falsely flagging users of ioremap(), provide our own ioremap() macro
-which simply wraps __ioremap_prot()."|https://nvd.nist.gov/vuln/detail/CVE-2026-23346|0.00022|0.06055|3.8507
-  CVE-2026-23345|2026-03-25T11:16:32.610|2026-04-24T18:17:11.950|5.5|MEDIUM|NVD-CWE-noinfo|N/A|false|"In the Linux kernel, the following vulnerability has been resolved:
-
-arm64: gcs: Do not set PTE_SHARED on GCS mappings if FEAT_LPA2 is enabled
-
-When FEAT_LPA2 is enabled, bits 8-9 of the PTE replace the
-shareability attribute with bits 50-51 of the output address. The
-_PAGE_GCS{,_RO} definitions include the PTE_SHARED bits as 0b11 (this
-matches the other _PAGE_* definitions) but using this macro directly
-leads to the following panic when enabling GCS on a system/model with
-LPA2:
-
-  Unable to handle kernel paging request at virtual address fffff1ffc32d8008
-  Mem abort info:
-    ESR = 0x0000000096000004
-    EC = 0x25: DABT (current EL), IL = 32 bits
-    SET = 0, FnV = 0
-    EA = 0, S1PTW = 0
-    FSC = 0x04: level 0 translation fault
-  Data abort info:
-    ISV = 0, ISS = 0x00000004, ISS2 = 0x00000000
-    CM = 0, WnR = 0, TnD = 0, TagAccess = 0
-    GCS = 0, Overlay = 0, DirtyBit = 0, Xs = 0
-  swapper pgtable: 4k pages, 52-bit VAs, pgdp=0000000060f4d000
-  [fffff1ffc32d8008] pgd=100000006184b003, p4d=0000000000000000
-  Internal error: Oops: 0000000096000004 [#1]  SMP
-  CPU: 0 UID: 0 PID: 513 Comm: gcs_write_fault Tainted: G   M                7.0.0-rc1 #1 PREEMPT
-  Tainted: [M]=MACHINE_CHECK
-  Hardware name: QEMU QEMU Virtual Machine, BIOS 2025.02-8+deb13u1 11/08/2025
-  pstate: 03402005 (nzcv daif +PAN -UAO +TCO +DIT -SSBS BTYPE=--)
-  pc : zap_huge_pmd+0x168/0x468
-  lr : zap_huge_pmd+0x2c/0x468
-  sp : ffff800080beb660
-  x29: ffff800080beb660 x28: fff00000c2058180 x27: ffff800080beb898
-  x26: fff00000c2058180 x25: ffff800080beb820 x24: 00c800010b600f41
-  x23: ffffc1ffc30af1a8 x22: fff00000c2058180 x21: 0000ffff8dc00000
-  x20: fff00000c2bc6370 x19: ffff800080beb898 x18: ffff800080bebb60
-  x17: 0000000000000000 x16: 0000000000000000 x15: 0000000000000007
-  x14: 000000000000000a x13: 0000aaaacbbbffff x12: 0000000000000000
-  x11: 0000ffff8ddfffff x10: 00000000000001fe x9 : 0000ffff8ddfffff
-  x8 : 0000ffff8de00000 x7 : 0000ffff8da00000 x6 : fff00000c2bc6370
-  x5 : 0000ffff8da00000 x4 : 000000010b600000 x3 : ffffc1ffc0000000
-  x2 : fff00000c2058180 x1 : fffff1ffc32d8000 x0 : 000000c00010b600
-  Call trace:
-   zap_huge_pmd+0x168/0x468 (P)
-   unmap_page_range+0xd70/0x1560
-   unmap_single_vma+0x48/0x80
-   unmap_vmas+0x90/0x180
-   unmap_region+0x88/0xe4
-   vms_complete_munmap_vmas+0xf8/0x1e0
-   do_vmi_align_munmap+0x158/0x180
-   do_vmi_munmap+0xac/0x160
-   __vm_munmap+0xb0/0x138
-   vm_munmap+0x14/0x20
-   gcs_free+0x70/0x80
-   mm_release+0x1c/0xc8
-   exit_mm_release+0x28/0x38
-   do_exit+0x190/0x8ec
-   do_group_exit+0x34/0x90
-   get_signal+0x794/0x858
-   arch_do_signal_or_restart+0x11c/0x3e0
-   exit_to_user_mode_loop+0x10c/0x17c
-   el0_da+0x8c/0x9c
-   el0t_64_sync_handler+0xd0/0xf0
-   el0t_64_sync+0x198/0x19c
-  Code: aa1603e2 d34cfc00 cb813001 8b011861 (f9400420)
-
-Similarly to how the kernel handles protection_map[], use a
-gcs_page_prot variable to store the protection bits and clear PTE_SHARED
-if LPA2 is enabled.
-
-Also remove the unused PAGE_GCS{,_RO} macros."|https://nvd.nist.gov/vuln/detail/CVE-2026-23345|0.00022|0.06055|3.8507
-  CVE-2026-23344|2026-03-25T11:16:32.493|2026-04-24T18:17:48.577|7.8|HIGH|CWE-416|N/A|false|"In the Linux kernel, the following vulnerability has been resolved:
-
-crypto: ccp - Fix use-after-free on error path
-
-In the error path of sev_tsm_init_locked(), the code dereferences 't'
-after it has been freed with kfree(). The pr_err() statement attempts
-to access t->tio_en and t->tio_init_done after the memory has been
-released.
-
-Move the pr_err() call before kfree(t) to access the fields while the
-memory is still valid.
-
-This issue reported by Smatch static analyser"|https://nvd.nist.gov/vuln/detail/CVE-2026-23344|0.00024|0.06682|5.4607
+To reproduce, create more than MAX_NEST_DEV(8) macvlans on a device with
+an XDP program attached using BPF_F_BROADCAST | BPF_F_EXCLUDE_INGRESS.
+Then send a packet to the device to trigger the XDP redirect path."|https://nvd.nist.gov/vuln/detail/CVE-2026-23359|0.00032|0.09294|5.4610
+  CVE-2026-23358|2026-03-25T11:16:34.610|2026-04-24T19:03:35.863|5.5|MEDIUM|CWE-908|N/A|false|"In the Linux kernel, the following vulnerability has been resolved:
+
+drm/amdgpu: Fix error handling in slot reset
+
+If the device has not recovered after slot reset is called, it goes to
+out label for error handling. There it could make decision based on
+uninitialized hive pointer and could result in accessing an uninitialized
+list.
+
+Initialize the list and hive properly so that it handles the error
+situation and also releases the reset domain lock which is acquired
+during error_detected callback.
+
+(cherry picked from commit bb71362182e59caa227e4192da5a612b09349696)"|https://nvd.nist.gov/vuln/detail/CVE-2026-23358|0.00022|0.06055|3.8507
+  CVE-2026-23357|2026-03-25T11:16:34.450|2026-04-24T19:04:35.540|5.5|MEDIUM|CWE-667|N/A|false|"In the Linux kernel, the following vulnerability has been resolved:
+
+can: mcp251x: fix deadlock in error path of mcp251x_open
+
+The mcp251x_open() function call free_irq() in its error path with the
+mpc_lock mutex held. But if an interrupt already occurred the
+interrupt handler will be waiting for the mpc_lock and free_irq() will
+deadlock waiting for the handler to finish.
+
+This issue is similar to the one fixed in commit 7dd9c26bd6cf (""can:
+mcp251x: fix deadlock if an interrupt occurs during mcp251x_open"") but
+for the error path.
+
+To solve this issue move the call to free_irq() after the lock is
+released. Setting `priv->force_quit = 1` beforehand ensure that the IRQ
+handler will exit right away once it acquired the lock."|https://nvd.nist.gov/vuln/detail/CVE-2026-23357|0.00032|0.09294|3.8510
+  CVE-2026-23356|2026-03-25T11:16:34.270|2026-04-24T19:06:21.770|5.5|MEDIUM|CWE-617|N/A|false|"In the Linux kernel, the following vulnerability has been resolved:
+
+drbd: fix ""LOGIC BUG"" in drbd_al_begin_io_nonblock()
+
+Even though we check that we ""should"" be able to do lc_get_cumulative()
+while holding the device->al_lock spinlock, it may still fail,
+if some other code path decided to do lc_try_lock() with bad timing.
+
+If that happened, we logged ""LOGIC BUG for enr=..."",
+but still did not return an error.
+
+The rest of the code now assumed that this request has references
+for the relevant activity log extents.
+
+The implcations are that during an active resync, mutual exclusivity of
+resync versus application IO is not guaranteed. And a potential crash
+at this point may not realizs that these extents could have been target
+of in-flight IO and would need to be resynced just in case.
+
+Also, once the request completes, it will give up activity log references it
+does not even hold, which will trigger a BUG_ON(refcnt == 0) in lc_put().
+
+Fix:
+
+Do not crash the kernel for a condition that is harmless during normal
+operation: also catch ""e->refcnt == 0"", not only ""e == NULL""
+when being noisy about ""al_complete_io() called on inactive extent %u\n"".
+
+And do not try to be smart and ""guess"" whether something will work, then
+be surprised when it does not.
+Deal with the fact that it may or may not work.  If it does not, remember a
+possible ""partially in activity log"" state (only possible for requests that
+cross extent boundaries), and return an error code from
+drbd_al_begin_io_nonblock().
+
+A latter call for the same request will then resume from where we left off."|https://nvd.nist.gov/vuln/detail/CVE-2026-23356|0.00032|0.09294|3.8510
+  CVE-2026-23355|2026-03-25T11:16:34.110|2026-04-24T19:13:44.037|5.5|MEDIUM|NVD-CWE-noinfo|N/A|false|"In the Linux kernel, the following vulnerability has been resolved:
+
+ata: libata: cancel pending work after clearing deferred_qc
+
+Syzbot reported a WARN_ON() in ata_scsi_deferred_qc_work(), caused by
+ap->ops->qc_defer() returning non-zero before issuing the deferred qc.
+
+ata_scsi_schedule_deferred_qc() is called during each command completion.
+This function will check if there is a deferred QC, and if
+ap->ops->qc_defer() returns zero, meaning that it is possible to queue the
+deferred qc at this time (without being deferred), then it will queue the
+work which will issue the deferred qc.
+
+Once the work get to run, which can potentially be a very long time after
+the work was scheduled, there is a WARN_ON() if ap->ops->qc_defer() returns
+non-zero.
+
+While we hold the ap->lock both when assigning and clearing deferred_qc,
+and the work itself holds the ap->lock, the code currently does not cancel
+the work after clearing the deferred qc.
+
+This means that the following scenario can happen:
+1) One or several NCQ commands are queued.
+2) A non-NCQ command is queued, gets stored in ap->deferred_qc.
+3) Last NCQ command gets completed, work is queued to issue the deferred
+   qc.
+4) Timeout or error happens, ap->deferred_qc is cleared. The queued work is
+   currently NOT canceled.
+5) Port is reset.
+6) One or several NCQ commands are queued.
+7) A non-NCQ command is queued, gets stored in ap->deferred_qc.
+8) Work is finally run. Yet at this time, there is still NCQ commands in
+   flight.
+
+The work in 8) really belongs to the non-NCQ command in 2), not to the
+non-NCQ command in 7). The reason why the work is executed when it is not
+supposed to, is because it was never canceled when ap->deferred_qc was
+cleared in 4). Thus, ensure that we always cancel the work after clearing
+ap->deferred_qc.
+
+Another potential fix would have been to let ata_scsi_deferred_qc_work() do
+nothing if ap->ops->qc_defer() returns non-zero. However, canceling the
+work when clearing ap->deferred_qc seems slightly more logical, as we hold
+the ap->lock when clearing ap->deferred_qc, so we know that the work cannot
+be holding the lock. (The function could be waiting for the lock, but that
+is okay since it will do nothing if ap->deferred_qc is not set.)"|https://nvd.nist.gov/vuln/detail/CVE-2026-23355|0.00023|0.06394|3.8507
+  CVE-2026-23354|2026-03-25T11:16:33.963|2026-04-24T19:15:42.007|7.8|HIGH|CWE-129|N/A|false|"In the Linux kernel, the following vulnerability has been resolved:
+
+x86/fred: Correct speculative safety in fred_extint()
+
+array_index_nospec() is no use if the result gets spilled to the stack, as
+it makes the believed safe-under-speculation value subject to memory
+predictions.
+
+For all practical purposes, this means array_index_nospec() must be used in
+the expression that accesses the array.
+
+As the code currently stands, it's the wrong side of irqentry_enter(), and
+'index' is put into %ebp across the function call.
+
+Remove the index variable and reposition array_index_nospec(), so it's
+calculated immediately before the array access."|https://nvd.nist.gov/vuln/detail/CVE-2026-23354|0.00023|0.06394|5.4607
   CVE-2026-23333|2026-03-25T11:16:30.780|2026-04-13T14:16:09.077|0.0|NONE|N/A|N/A|false|Rejected reason: This CVE ID has been rejected or withdrawn by its CVE Numbering Authority.|https://nvd.nist.gov/vuln/detail/CVE-2026-23333|0.00000|0.00000|0.0000
   CVE-2026-23320|2026-03-25T11:16:28.747|2026-04-03T16:16:23.600|0.0|NONE|N/A|N/A|false|Rejected reason: This CVE ID has been rejected or withdrawn by its CVE Numbering Authority.|https://nvd.nist.gov/vuln/detail/CVE-2026-23320|0.00000|0.00000|0.0000
   CVE-2026-32326|2026-03-25T08:16:22.547|2026-03-25T15:41:33.977|6.9|MEDIUM|CWE-306|N/A|false|SHARP routers do not perform authentication for some web APIs. The device information may be retrieved without authentication. If the administrative password of the device is left as the initial one, the device may be taken over.|https://nvd.nist.gov/vuln/detail/CVE-2026-32326|0.00018|0.04782|4.8305
