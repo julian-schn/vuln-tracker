@@ -1,9 +1,20 @@
 # CVEs — April 2026
 
-_4219 vulnerabilities_
+_4228 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
+| [CVE-2026-6947](https://nvd.nist.gov/vuln/detail/CVE-2026-6947) | 8.7 | HIGH | CWE-307 | No | — | 6.09 | 2026-04-24 | DWM-222W USB Wi-Fi Adapter developed by D-Link has a Brute-Force Protection Bypass vulnerability, allowing unauthenticat... |
+| [CVE-2026-6393](https://nvd.nist.gov/vuln/detail/CVE-2026-6393) | 4.3 | MEDIUM | CWE-862 | No | — | 3.01 | 2026-04-24 | The BetterDocs plugin for WordPress is vulnerable to Missing Authorization in versions up to and including 4.3.11. This... |
+| [CVE-2026-5488](https://nvd.nist.gov/vuln/detail/CVE-2026-5488) | 5.3 | MEDIUM | CWE-862 | No | — | 3.71 | 2026-04-24 | The ExactMetrics – Google Analytics Dashboard for WordPress plugin for WordPress is vulnerable to Missing Authorization... |
+| [CVE-2026-41485](https://nvd.nist.gov/vuln/detail/CVE-2026-41485) | 7.7 | HIGH | CWE-617 | No | — | 5.39 | 2026-04-24 | Kyverno is a policy engine designed for cloud native platform engineering teams. Prior to versions 1.17.2 and 1.16.4, an... |
+| [CVE-2026-41430](https://nvd.nist.gov/vuln/detail/CVE-2026-41430) | 1.3 | LOW | CWE-79 | No | — | 0.91 | 2026-04-24 | Press, a Frappe custom app that runs Frappe Cloud, manages infrastructure, subscription, marketplace, and software-as-a-... |
+| [CVE-2026-41324](https://nvd.nist.gov/vuln/detail/CVE-2026-41324) | 7.5 | HIGH | CWE-400 | No | — | 5.25 | 2026-04-24 | basic-ftp is an FTP client for Node.js. Versions prior to 5.3.0 are vulnerable to denial of service through unbounded me... |
+| [CVE-2026-41323](https://nvd.nist.gov/vuln/detail/CVE-2026-41323) | 8.1 | HIGH | CWE-200 | No | — | 5.67 | 2026-04-24 | Kyverno is a policy engine designed for cloud native platform engineering teams. Prior to versions 1.18.0-rc1, 1.17.2-rc... |
+| [CVE-2026-41319](https://nvd.nist.gov/vuln/detail/CVE-2026-41319) | 6.5 | MEDIUM | CWE-74 | No | — | 4.55 | 2026-04-24 | MailKit is a cross-platform mail client library built on top of MimeKit. A STARTTLS Response Injection vulnerability in... |
+| [CVE-2026-41318](https://nvd.nist.gov/vuln/detail/CVE-2026-41318) | 5.4 | MEDIUM | CWE-79 | No | — | 3.78 | 2026-04-24 | AnythingLLM is an application that turns pieces of content into context that any LLM can use as references during chatti... |
+| [CVE-2026-41068](https://nvd.nist.gov/vuln/detail/CVE-2026-41068) | 7.7 | HIGH | CWE-863 | No | — | 5.39 | 2026-04-24 | Kyverno is a policy engine designed for cloud native platform engineering teams. The patch for CVE-2026-22039 fixed cros... |
+| [CVE-2026-2028](https://nvd.nist.gov/vuln/detail/CVE-2026-2028) | 5.3 | MEDIUM | CWE-639 | No | — | 3.71 | 2026-04-24 | The MaxiBlocks Builder plugin for WordPress is vulnerable to arbitrary media file deletion due to insufficient file owne... |
 | [CVE-2026-41317](https://nvd.nist.gov/vuln/detail/CVE-2026-41317) | 6.6 | MEDIUM | CWE-352 | No | — | 4.62 | 2026-04-24 | Press, a Frappe custom app that runs Frappe Cloud, manages infrastructure, subscription, marketplace, and software-as-a-... |
 | [CVE-2026-41316](https://nvd.nist.gov/vuln/detail/CVE-2026-41316) | 8.1 | HIGH | CWE-693 | No | — | 5.67 | 2026-04-24 | ERB is a templating system for Ruby. Ruby 2.7.0 (before ERB 2.2.0 was published on rubygems.org) introduced an `@_init`... |
 | [CVE-2026-41309](https://nvd.nist.gov/vuln/detail/CVE-2026-41309) | 8.2 | HIGH | CWE-400 | No | — | 5.74 | 2026-04-24 | Open Source Social Network (OSSN) is open-source social networking software developed in PHP. Versions prior to 9.0 are... |
@@ -23,7 +34,6 @@ _4219 vulnerabilities_
 | [CVE-2026-31956](https://nvd.nist.gov/vuln/detail/CVE-2026-31956) | 4.3 | MEDIUM | CWE-639 | No | — | 3.01 | 2026-04-24 | Xibo is an open source digital signage platform with a web content management system and Windows display player software... |
 | [CVE-2026-31955](https://nvd.nist.gov/vuln/detail/CVE-2026-31955) | 4.9 | MEDIUM | CWE-918 | No | — | 3.43 | 2026-04-24 | Xibo is an open source digital signage platform with a web content management system and Windows display player software... |
 | [CVE-2026-31953](https://nvd.nist.gov/vuln/detail/CVE-2026-31953) | 6.4 | MEDIUM | CWE-79 | No | — | 4.48 | 2026-04-24 | Xibo is an open source digital signage platform with a web content management system and Windows display player software... |
-| [CVE-2026-40630](https://nvd.nist.gov/vuln/detail/CVE-2026-40630) | 9.3 | CRITICAL | CWE-288 | No | — | 6.51 | 2026-04-24 | A vulnerability in  SenseLive   X3050’s web management interface allows unauthorized access to certain configuration end... |
 | [CVE-2026-40623](https://nvd.nist.gov/vuln/detail/CVE-2026-40623) | 7.2 | HIGH | CWE-862 | No | — | 5.04 | 2026-04-24 | A vulnerability in SenseLive X3050's web management interface allows critical system and network configuration parameter... |
 | [CVE-2026-40620](https://nvd.nist.gov/vuln/detail/CVE-2026-40620) | 9.3 | CRITICAL | CWE-306 | No | — | 6.51 | 2026-04-24 | A vulnerability in SenseLive X3050’s embedded management service allows full administrative control to be established wi... |
 | [CVE-2026-40431](https://nvd.nist.gov/vuln/detail/CVE-2026-40431) | 6.9 | MEDIUM | CWE-319 | No | — | 4.83 | 2026-04-24 | A vulnerability exists in SenseLive X3050’s web management interface due to its reliance on unencrypted HTTP for all adm... |
@@ -37,7 +47,6 @@ _4219 vulnerabilities_
 | [CVE-2026-27843](https://nvd.nist.gov/vuln/detail/CVE-2026-27843) | 9.2 | CRITICAL | CWE-306 | No | — | 6.44 | 2026-04-24 | A vulnerability exists in SenseLive X3050's web management interface that allows critical configuration parameters to be... |
 | [CVE-2026-27841](https://nvd.nist.gov/vuln/detail/CVE-2026-27841) | 8.4 | HIGH | CWE-352 | No | — | 5.88 | 2026-04-24 | A vulnerability in SenseLive X3050's web management interface allows state-changing operations to be triggered without p... |
 | [CVE-2026-25775](https://nvd.nist.gov/vuln/detail/CVE-2026-25775) | 9.3 | CRITICAL | CWE-306 | No | — | 6.51 | 2026-04-24 | A vulnerability in SenseLive X3050’s remote management service allows firmware retrieval and update operations to be per... |
-| [CVE-2026-25720](https://nvd.nist.gov/vuln/detail/CVE-2026-25720) | 6.9 | MEDIUM | CWE-613 | No | — | 4.83 | 2026-04-24 | A vulnerability exists in SenseLive  X3050’s web management interface due to improper session lifetime enforcement, allo... |
 | [CVE-2026-1789](https://nvd.nist.gov/vuln/detail/CVE-2026-1789) | 6.9 | MEDIUM | CWE-807 | No | — | 4.83 | 2026-04-24 | A vulnerability in the browser-based remote management interface may allow an administrator to access sensitive informat... |
 | [CVE-2026-6732](https://nvd.nist.gov/vuln/detail/CVE-2026-6732) | 6.5 | MEDIUM | CWE-843 | No | — | 4.55 | 2026-04-23 | A flaw was found in libxml2. This vulnerability occurs when the library processes a specially crafted XML Schema Definit... |
 | [CVE-2026-41361](https://nvd.nist.gov/vuln/detail/CVE-2026-41361) | 5.1 | MEDIUM | CWE-184 | No | — | 3.57 | 2026-04-23 | OpenClaw before 2026.3.28 contains an SSRF guard bypass vulnerability that fails to block four IPv6 special-use ranges.... |

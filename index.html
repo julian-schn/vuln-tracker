@@ -11,7 +11,7 @@
     <header>
       <h1>vuln-tracker</h1>
       <p class="subtitle">CVEs from the National Vulnerability Database — current and previous month</p>
-      <p class="last-updated">Last updated: 2026-04-24 03:28 UTC</p>
+      <p class="last-updated">Last updated: 2026-04-24 06:12 UTC</p>
     </header>
     <nav>
       <a href="top50.html">&#9733; Top 50</a>
@@ -25,7 +25,7 @@
     </nav>
     <main>
     <section>
-      <h2>Current Month — April 2026 <span class="count">(4219)</span></h2>
+      <h2>Current Month — April 2026 <span class="count">(4228)</span></h2>
       <div class="table-wrapper">
         <table>
           <thead>
@@ -42,6 +42,127 @@
             </tr>
           </thead>
           <tbody>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6947" target="_blank" rel="noopener">CVE-2026-6947</a></td>
+        <td>8.7</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-307</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.09</td>
+        <td><details><summary>DWM-222W USB Wi-Fi Adapter developed by D-Link has a Brute-Force Protection Bypa...</summary><p>DWM-222W USB Wi-Fi Adapter developed by D-Link has a Brute-Force Protection Bypass vulnerability, allowing unauthenticated adjacent network attackers to bypass login attempt limits to perform brute-force attacks to gain control over the device.</p></details></td>
+        <td>2026-04-24</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6393" target="_blank" rel="noopener">CVE-2026-6393</a></td>
+        <td>4.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.01</td>
+        <td><details><summary>The BetterDocs plugin for WordPress is vulnerable to Missing Authorization in ve...</summary><p>The BetterDocs plugin for WordPress is vulnerable to Missing Authorization in versions up to and including 4.3.11. This is due to a missing capability check in the generate_openai_content_callback() function, which relies solely on a nonce rather than verifying user permissions. This makes it possible for authenticated attackers, with subscriber-level access and above, to trigger OpenAI API calls using the site&#x27;s configured API key with arbitrary user-controlled prompts, leading to unauthorized consumption of the site owner&#x27;s paid AI API quota.</p></details></td>
+        <td>2026-04-24</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5488" target="_blank" rel="noopener">CVE-2026-5488</a></td>
+        <td>5.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.71</td>
+        <td><details><summary>The ExactMetrics – Google Analytics Dashboard for WordPress plugin for WordPress...</summary><p>The ExactMetrics – Google Analytics Dashboard for WordPress plugin for WordPress is vulnerable to Missing Authorization in versions up to and including 9.1.2. This is due to missing capability checks in the get_ads_access_token() and reset_experience() AJAX handlers. While the mi-admin-nonce is localized on all admin pages (including profile.php which subscribers can access), and while other similar AJAX endpoints in the same class properly check for the exactmetrics_save_settings capability, these two endpoints only verify the nonce. This makes it possible for authenticated attackers, with subscriber-level access and above, to retrieve valid Google Ads access tokens and reset Google Ads integration settings.</p></details></td>
+        <td>2026-04-24</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-41485" target="_blank" rel="noopener">CVE-2026-41485</a></td>
+        <td>7.7</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-617</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.39</td>
+        <td><details><summary>Kyverno is a policy engine designed for cloud native platform engineering teams....</summary><p>Kyverno is a policy engine designed for cloud native platform engineering teams. Prior to versions 1.17.2 and 1.16.4, an unchecked type assertion in the `forEach` mutation handler allows any user with permission to create a `Policy` or `ClusterPolicy` to crash the cluster-wide background controller into a persistent CrashLoopBackOff. The same bug also causes the admission controller to drop connections and block all matching resource operations. The crash loop persists until the policy is deleted. The vulnerability is confined to the legacy engine, and CEL-based policies are unaffected. Versions 1.17.2 and 1.16.4 fix the issue.</p></details></td>
+        <td>2026-04-24</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-41430" target="_blank" rel="noopener">CVE-2026-41430</a></td>
+        <td>1.3</td>
+        <td><span class="severity low">LOW</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.91</td>
+        <td><details><summary>Press, a Frappe custom app that runs Frappe Cloud, manages infrastructure, subsc...</summary><p>Press, a Frappe custom app that runs Frappe Cloud, manages infrastructure, subscription, marketplace, and software-as-a-service (SaaS). Redirect parameter on login page is vulnerable to reflected XSS. The patch in commit 16d1b6ca2559f858a1de77bcb03fd7f1b81671c6 fixes the issue by restricting redirects to internal URLs only.</p></details></td>
+        <td>2026-04-24</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-41324" target="_blank" rel="noopener">CVE-2026-41324</a></td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-400</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.25</td>
+        <td><details><summary>basic-ftp is an FTP client for Node.js. Versions prior to 5.3.0 are vulnerable t...</summary><p>basic-ftp is an FTP client for Node.js. Versions prior to 5.3.0 are vulnerable to denial of service through unbounded memory growth while processing directory listings from a remote FTP server. A malicious or compromised server can send an extremely large or never-ending listing response to `Client.list()`, causing the client process to consume memory until it becomes unstable or crashes. Version 5.3.0 fixes the issue.</p></details></td>
+        <td>2026-04-24</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-41323" target="_blank" rel="noopener">CVE-2026-41323</a></td>
+        <td>8.1</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-200</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.67</td>
+        <td><details><summary>Kyverno is a policy engine designed for cloud native platform engineering teams....</summary><p>Kyverno is a policy engine designed for cloud native platform engineering teams. Prior to versions 1.18.0-rc1, 1.17.2-rc1, and 1.16.4, Kyverno&#x27;s apiCall feature in ClusterPolicy automatically attaches the admission controller&#x27;s ServiceAccount token to outgoing HTTP requests. The service URL has no validation — it can point anywhere, including attacker-controlled servers. Since the admission controller SA has permissions to patch webhook configurations, a stolen token leads to full cluster compromise. Versions 1.18.0-rc1, 1.17.2-rc1, and 1.16.4 patch the issue.</p></details></td>
+        <td>2026-04-24</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-41319" target="_blank" rel="noopener">CVE-2026-41319</a></td>
+        <td>6.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-74</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.55</td>
+        <td><details><summary>MailKit is a cross-platform mail client library built on top of MimeKit. A START...</summary><p>MailKit is a cross-platform mail client library built on top of MimeKit. A STARTTLS Response Injection vulnerability in versions prior to 4.16.0 allows a Man-in-the-Middle attacker to inject arbitrary protocol responses across the plaintext-to-TLS trust boundary, enabling SASL authentication mechanism downgrade (e.g., forcing PLAIN instead of SCRAM-SHA-256). The internal read buffer in `SmtpStream`, `ImapStream`, and `Pop3Stream` is not flushed when the underlying stream is replaced with `SslStream` during STARTTLS upgrade, causing pre-TLS attacker-injected data to be processed as trusted post-TLS responses. Version 4.16.0 patches the issue.</p></details></td>
+        <td>2026-04-24</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-41318" target="_blank" rel="noopener">CVE-2026-41318</a></td>
+        <td>5.4</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.78</td>
+        <td><details><summary>AnythingLLM is an application that turns pieces of content into context that any...</summary><p>AnythingLLM is an application that turns pieces of content into context that any LLM can use as references during chatting. Prior to version 1.12.1, AnythingLLM&#x27;s in-chat markdown renderer has an unsafe custom rule for images that interpolates the markdown image&#x27;s `alt` text into an HTML `alt=&quot;...&quot;` attribute without any HTML encoding. Every call-site in the app wraps `renderMarkdown(...)` with `DOMPurify.sanitize(...)` as defense-in-depth — except the `Chartable` component, which renders chart captions with no sanitization. The chart caption is the natural-language text the LLM emits around a `create-chart` tool call, so any attacker who can influence the LLM&#x27;s output — most cheaply via indirect prompt injection in a shared workspace document, or directly if they can create a chart record in a multi-user workspace — can trigger stored DOM-level XSS in every other user&#x27;s browser when they open that conversation. AnythingLLM chat history is loaded server-side via `GET /api/workspace/:slug/chats` and rendered directly into the chat UI. Version 1.12.1 contains a patch for this issue.</p></details></td>
+        <td>2026-04-24</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-41068" target="_blank" rel="noopener">CVE-2026-41068</a></td>
+        <td>7.7</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-863</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.39</td>
+        <td><details><summary>Kyverno is a policy engine designed for cloud native platform engineering teams....</summary><p>Kyverno is a policy engine designed for cloud native platform engineering teams. The patch for CVE-2026-22039 fixed cross-namespace privilege escalation in Kyverno&#x27;s `apiCall` context by validating the `URLPath` field. However, the ConfigMap context loader has the identical vulnerability — the `configMap.namespace` field accepts any namespace with zero validation, allowing a namespace admin to read ConfigMaps from any namespace using Kyverno&#x27;s privileged service account. This is a complete RBAC bypass in multi-tenant Kubernetes clusters. An updated fix is available in version 1.17.2.</p></details></td>
+        <td>2026-04-24</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-2028" target="_blank" rel="noopener">CVE-2026-2028</a></td>
+        <td>5.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-639</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.71</td>
+        <td><details><summary>The MaxiBlocks Builder plugin for WordPress is vulnerable to arbitrary media fil...</summary><p>The MaxiBlocks Builder plugin for WordPress is vulnerable to arbitrary media file deletion due to insufficient file ownership validation on the &#x27;maxi_remove_custom_image_size&#x27; AJAX action in all versions up to, and including, 2.1.8. This makes it possible for authenticated attackers, with Author-level access and above, to delete arbitrary files in the wp-content/uploads directory, including files uploaded by other users and administrators.</p></details></td>
+        <td>2026-04-24</td>
+      </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-41317" target="_blank" rel="noopener">CVE-2026-41317</a></td>
         <td>6.6</td>
@@ -252,23 +373,6 @@
         <td>2026-04-24</td>
       </tr>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40630" target="_blank" rel="noopener">CVE-2026-40630</a></td>
-        <td>9.3</td>
-        <td><span class="severity critical">CRITICAL</span></td>
-        <td>CWE-288</td>
-        <td>&nbsp;</td>
-        <td>&mdash;</td>
-        <td>6.51</td>
-        <td><details><summary>A vulnerability in 
-SenseLive 
-
-X3050’s web management interface allows unauthor...</summary><p>A vulnerability in 
-SenseLive 
-
-X3050’s web management interface allows unauthorized access to certain configuration endpoints due to improper access control enforcement. An attacker with network access to the device may be able to bypass the intended authentication mechanism and directly interact with sensitive configuration functions.</p></details></td>
-        <td>2026-04-24</td>
-      </tr>
-      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40623" target="_blank" rel="noopener">CVE-2026-40623</a></td>
         <td>7.2</td>
         <td><span class="severity high">HIGH</span></td>
@@ -409,21 +513,6 @@ X3050’s web management interface allows unauthorized access to certain configu
         <td>&mdash;</td>
         <td>6.51</td>
         <td><details><summary>A vulnerability in SenseLive X3050’s remote management service allows firmware r...</summary><p>A vulnerability in SenseLive X3050’s remote management service allows firmware retrieval and update operations to be performed without authentication or authorization. The service accepts firmware-related requests from any reachable host and does not verify user privileges, integrity of uploaded images, or the authenticity of provided firmware.</p></details></td>
-        <td>2026-04-24</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-25720" target="_blank" rel="noopener">CVE-2026-25720</a></td>
-        <td>6.9</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-613</td>
-        <td>&nbsp;</td>
-        <td>&mdash;</td>
-        <td>4.83</td>
-        <td><details><summary>A vulnerability exists in SenseLive
-
-X3050’s web management interface due to imp...</summary><p>A vulnerability exists in SenseLive
-
-X3050’s web management interface due to improper session lifetime enforcement, allowing authenticated sessions to remain active for extended periods without requiring re-authentication. An attacker with access to a previously authenticated session could continue interacting with administrative functions long after legitimate user activity has ceased.</p></details></td>
         <td>2026-04-24</td>
       </tr>
       <tr>
