@@ -1,9 +1,22 @@
 # CVEs — April 2026
 
-_4238 vulnerabilities_
+_4252 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
+| [CVE-2026-5367](https://nvd.nist.gov/vuln/detail/CVE-2026-5367) | 8.6 | HIGH | CWE-130 | No | — | 6.02 | 2026-04-24 | A flaw was found in OVN (Open Virtual Network). A remote attacker, by sending crafted DHCPv6 (Dynamic Host Configuration... |
+| [CVE-2026-5265](https://nvd.nist.gov/vuln/detail/CVE-2026-5265) | 6.5 | MEDIUM | CWE-130 | No | — | 4.55 | 2026-04-24 | When generating an ICMP Destination Unreachable or Packet Too Big response, the handler copies a portion of the original... |
+| [CVE-2026-40690](https://nvd.nist.gov/vuln/detail/CVE-2026-40690) | 0.0 | NONE | CWE-1220 | No | — | 0.00 | 2026-04-24 | The asset dependency graph did not restrict nodes by the viewer's DAG read permissions: a user with read access to at le... |
+| [CVE-2026-38743](https://nvd.nist.gov/vuln/detail/CVE-2026-38743) | 0.0 | NONE | CWE-1220 | No | — | 0.00 | 2026-04-24 | The authenticated /ui/dags endpoint did not enforce per-DAG access control on embedded Human-in-the-Loop (HITL) and Task... |
+| [CVE-2026-21515](https://nvd.nist.gov/vuln/detail/CVE-2026-21515) | 9.9 | CRITICAL | CWE-200 | No | — | 6.93 | 2026-04-24 | Exposure of sensitive information to an unauthorized actor in Azure IOT Central allows an authorized attacker to elevate... |
+| [CVE-2026-6043](https://nvd.nist.gov/vuln/detail/CVE-2026-6043) | 8.8 | HIGH | CWE-1188 | No | — | 6.16 | 2026-04-24 | P4 Server versions prior to 2026.1 are configured with insecure default settings that, when exposed to untrusted network... |
+| [CVE-2026-4313](https://nvd.nist.gov/vuln/detail/CVE-2026-4313) | 2.4 | LOW | CWE-79 | No | — | 1.68 | 2026-04-24 | AdaptiveGRC is vulnerable to Stored XSS via text type fields across the forms. Authenticated attacker can replace the va... |
+| [CVE-2026-23902](https://nvd.nist.gov/vuln/detail/CVE-2026-23902) | 0.0 | NONE | CWE-863 | No | — | 0.00 | 2026-04-24 | Incorrect Authorization vulnerability in Apache DolphinScheduler allows authenticated users with system login permission... |
+| [CVE-2026-41044](https://nvd.nist.gov/vuln/detail/CVE-2026-41044) | 0.0 | NONE | CWE-20 | No | — | 0.00 | 2026-04-24 | Improper Input Validation, Improper Control of Generation of Code ('Code Injection') vulnerability in Apache ActiveMQ, A... |
+| [CVE-2026-41043](https://nvd.nist.gov/vuln/detail/CVE-2026-41043) | 0.0 | NONE | CWE-79 | No | — | 0.00 | 2026-04-24 | Improper Neutralization of Script-Related HTML Tags in a Web Page (Basic XSS) vulnerability in Apache ActiveMQ, Apache A... |
+| [CVE-2026-40466](https://nvd.nist.gov/vuln/detail/CVE-2026-40466) | 0.0 | NONE | CWE-20 | No | — | 0.00 | 2026-04-24 | Improper Input Validation, Improper Control of Generation of Code ('Code Injection') vulnerability in Apache ActiveMQ Br... |
+| [CVE-2025-62233](https://nvd.nist.gov/vuln/detail/CVE-2025-62233) | 0.0 | NONE | CWE-502 | No | — | 0.00 | 2026-04-24 | Deserialization of Untrusted Data vulnerability in Apache DolphinScheduler RPC module.  This issue affects Apache Dolphi... |
+| [CVE-2026-6272](https://nvd.nist.gov/vuln/detail/CVE-2026-6272) | 8.5 | HIGH | CWE-306 | No | — | 5.95 | 2026-04-24 | A client holding only a read JWT scope can still register itself as a signal provider through the production kuksa.val.v... |
 | [CVE-2026-4078](https://nvd.nist.gov/vuln/detail/CVE-2026-4078) | 6.4 | MEDIUM | CWE-79 | No | — | 4.48 | 2026-04-24 | The ITERAS plugin for WordPress is vulnerable to Stored Cross-Site Scripting via multiple shortcodes (iteras-ordering, i... |
 | [CVE-2026-3569](https://nvd.nist.gov/vuln/detail/CVE-2026-3569) | 5.3 | MEDIUM | CWE-862 | No | — | 3.71 | 2026-04-24 | The Liaison Site Prober plugin for WordPress is vulnerable to Information Exposure in all versions up to and including 1... |
 | [CVE-2026-3565](https://nvd.nist.gov/vuln/detail/CVE-2026-3565) | 4.3 | MEDIUM | CWE-352 | No | — | 3.01 | 2026-04-24 | The Taqnix plugin for WordPress is vulnerable to Cross-Site Request Forgery in all versions up to, and including, 1.0.3.... |
@@ -353,6 +366,7 @@ _4238 vulnerabilities_
 | [CVE-2026-6355](https://nvd.nist.gov/vuln/detail/CVE-2026-6355) | 6.5 | MEDIUM | N/A | No | 0.0% | 4.55 | 2026-04-22 | A vulnerability in the web application allows unauthorized users to access and manipulate sensitive data across differen... |
 | [CVE-2026-5750](https://nvd.nist.gov/vuln/detail/CVE-2026-5750) | 7.6 | HIGH | CWE-639 | No | 0.0% | 5.32 | 2026-04-22 | An insecure direct object reference (IDOR) vulnerability in the Fullstep V5 registration process allows authenticated us... |
 | [CVE-2026-5749](https://nvd.nist.gov/vuln/detail/CVE-2026-5749) | 8.7 | HIGH | CWE-306 | No | 0.1% | 6.09 | 2026-04-22 | Inadequate access control in the registration process in Fullstep V5, which could allow unauthenticated users to obtain... |
+| [CVE-2026-41651](https://nvd.nist.gov/vuln/detail/CVE-2026-41651) | 8.8 | HIGH | CWE-367 | No | 0.0% | 6.16 | 2026-04-22 | PackageKit is a a D-Bus abstraction layer that allows the user to manage packages in a secure way using a cross-distro,... |
 | [CVE-2026-33611](https://nvd.nist.gov/vuln/detail/CVE-2026-33611) | 6.5 | MEDIUM | CWE-190 | No | 0.0% | 4.55 | 2026-04-22 | An operator allowed to use the REST API can cause the Authoritative server to produce invalid HTTPS or SVCB record data,... |
 | [CVE-2026-33610](https://nvd.nist.gov/vuln/detail/CVE-2026-33610) | 5.9 | MEDIUM | CWE-400 | No | 0.0% | 4.13 | 2026-04-22 | A rogue primary server may cause file descriptor exhaustion and eventually a denial of service, when a PowerDNS secondar... |
 | [CVE-2026-33609](https://nvd.nist.gov/vuln/detail/CVE-2026-33609) | 5.3 | MEDIUM | CWE-90 | No | 0.0% | 3.71 | 2026-04-22 | Incomplete escaping of LDAP queries when running with 8bit-dns enabled allows users to perform queries of internal domai... |
