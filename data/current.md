@@ -1,18 +1,14 @@
 # CVEs — April 2026
 
-_4243 vulnerabilities_
+_4238 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
-| [CVE-2026-6272](https://nvd.nist.gov/vuln/detail/CVE-2026-6272) | 8.5 | HIGH | CWE-306 | No | — | 5.95 | 2026-04-24 | A client holding only a read JWT scope can still register itself as a signal provider through the production kuksa.val.v... |
-| [CVE-2026-21728](https://nvd.nist.gov/vuln/detail/CVE-2026-21728) | 7.5 | HIGH | N/A | No | — | 5.25 | 2026-04-24 | Tempo queries with large limits can cause large memory allocations which can impact the availability of the service, dep... |
 | [CVE-2026-4078](https://nvd.nist.gov/vuln/detail/CVE-2026-4078) | 6.4 | MEDIUM | CWE-79 | No | — | 4.48 | 2026-04-24 | The ITERAS plugin for WordPress is vulnerable to Stored Cross-Site Scripting via multiple shortcodes (iteras-ordering, i... |
 | [CVE-2026-3569](https://nvd.nist.gov/vuln/detail/CVE-2026-3569) | 5.3 | MEDIUM | CWE-862 | No | — | 3.71 | 2026-04-24 | The Liaison Site Prober plugin for WordPress is vulnerable to Information Exposure in all versions up to and including 1... |
 | [CVE-2026-3565](https://nvd.nist.gov/vuln/detail/CVE-2026-3565) | 4.3 | MEDIUM | CWE-352 | No | — | 3.01 | 2026-04-24 | The Taqnix plugin for WordPress is vulnerable to Cross-Site Request Forgery in all versions up to, and including, 1.0.3.... |
 | [CVE-2025-11762](https://nvd.nist.gov/vuln/detail/CVE-2025-11762) | 4.3 | MEDIUM | CWE-862 | No | — | 3.01 | 2026-04-24 | The HubSpot All-In-One Marketing - Forms, Popups, Live Chat plugin for WordPress is vulnerable to Sensitive Information... |
 | [CVE-2026-1952](https://nvd.nist.gov/vuln/detail/CVE-2026-1952) | 9.8 | CRITICAL | CWE-912 | No | — | 6.86 | 2026-04-24 | Delta Electronics AS320T has denial of service via the undocumented subfunction vulnerability. |
-| [CVE-2026-1951](https://nvd.nist.gov/vuln/detail/CVE-2026-1951) | 9.8 | CRITICAL | CWE-121 | No | — | 6.86 | 2026-04-24 | Delta Electronics AS320T has no checking of the length of the buffer with the directory name   vulnerability. |
-| [CVE-2026-1950](https://nvd.nist.gov/vuln/detail/CVE-2026-1950) | 9.8 | CRITICAL | CWE-121 | No | — | 6.86 | 2026-04-24 | Delta Electronics AS320T has  No checking of the length of the buffer with the file name vulnerability. |
 | [CVE-2026-6810](https://nvd.nist.gov/vuln/detail/CVE-2026-6810) | 5.3 | MEDIUM | CWE-639 | No | — | 3.71 | 2026-04-24 | The Booking Calendar Contact Form plugin for WordPress is vulnerable to Insecure Direct Object Reference in all versions... |
 | [CVE-2026-5428](https://nvd.nist.gov/vuln/detail/CVE-2026-5428) | 6.4 | MEDIUM | CWE-79 | No | — | 4.48 | 2026-04-24 | The Royal Elementor Addons plugin for WordPress is vulnerable to Stored Cross-Site Scripting via image captions in the I... |
 | [CVE-2026-5364](https://nvd.nist.gov/vuln/detail/CVE-2026-5364) | 8.1 | HIGH | CWE-434 | No | — | 5.67 | 2026-04-24 | The Drag and Drop File Upload for Contact Form 7 plugin for WordPress is vulnerable to arbitrary file upload in versions... |
@@ -1288,7 +1284,6 @@ _4243 vulnerabilities_
 | [CVE-2026-3878](https://nvd.nist.gov/vuln/detail/CVE-2026-3878) | 6.4 | MEDIUM | CWE-79 | No | 0.0% | 4.48 | 2026-04-16 | The WP Docs plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'wpdocs_options[icon_size]' parame... |
 | [CVE-2026-6351](https://nvd.nist.gov/vuln/detail/CVE-2026-6351) | 8.7 | HIGH | CWE-93 | No | 0.0% | 6.09 | 2026-04-16 | MailGates/MailAudit developed by Openfind has a CRLF Injection vulnerability, allowing unauthenticated remote attackers... |
 | [CVE-2026-6350](https://nvd.nist.gov/vuln/detail/CVE-2026-6350) | 9.3 | CRITICAL | CWE-121 | No | 0.1% | 6.51 | 2026-04-16 | MailGates/MailAudit developed by Openfind has a Stack-based Buffer Overflow vulnerability, allowing unauthenticated remo... |
-| [CVE-2026-6349](https://nvd.nist.gov/vuln/detail/CVE-2026-6349) | 9.3 | CRITICAL | CWE-78 | No | 1.3% | 6.55 | 2026-04-16 | The  iSherlock developed by HGiga  has an OS Command Injection vulnerability, allowing unauthenticated local attackers t... |
 | [CVE-2026-6348](https://nvd.nist.gov/vuln/detail/CVE-2026-6348) | 9.3 | CRITICAL | CWE-306 | No | 0.0% | 6.51 | 2026-04-16 | WinMatrix agent developed by Simopro Technology has a Missing Authentication vulnerability, allowing authenticated local... |
 | [CVE-2026-41015](https://nvd.nist.gov/vuln/detail/CVE-2026-41015) | 7.4 | HIGH | CWE-78 | No | 0.0% | 5.18 | 2026-04-16 | radare2 before 9236f44, when configured on UNIX without SSL, allows command injection via a PDB name to rabin2 -PP. NOTE... |
 | [CVE-2026-3885](https://nvd.nist.gov/vuln/detail/CVE-2026-3885) | 6.4 | MEDIUM | CWE-79 | No | 0.0% | 4.48 | 2026-04-16 | The WP Shortcodes Plugin — Shortcodes Ultimate plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the... |
