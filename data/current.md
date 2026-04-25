@@ -1,9 +1,10 @@
 # CVEs — April 2026
 
-_4311 vulnerabilities_
+_4313 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
+| [CVE-2026-6951](https://nvd.nist.gov/vuln/detail/CVE-2026-6951) | 9.2 | CRITICAL | CWE-94 | No | — | 6.44 | 2026-04-25 | Versions of the package simple-git before 3.36.0 are vulnerable to Remote Code Execution (RCE) due to an incomplete fix... |
 | [CVE-2026-6175](https://nvd.nist.gov/vuln/detail/CVE-2026-6175) | 0.0 | NONE | N/A | No | — | 0.00 | 2026-04-24 | Rejected reason: This CVE ID has been rejected or withdrawn by its CVE Numbering Authority. |
 | [CVE-2026-42171](https://nvd.nist.gov/vuln/detail/CVE-2026-42171) | 7.8 | HIGH | CWE-427 | No | — | 5.46 | 2026-04-24 | NSIS (Nullsoft Scriptable Install System) 3.06.1 before 3.12 sometimes uses the Low IL temp directory when executing as... |
 | [CVE-2026-41488](https://nvd.nist.gov/vuln/detail/CVE-2026-41488) | 3.1 | LOW | CWE-918 | No | — | 2.17 | 2026-04-24 | LangChain is a framework for building agents and LLM-powered applications. Prior to 1.1.14, langchain-openai's _url_to_s... |
@@ -69,6 +70,7 @@ _4311 vulnerabilities_
 | [CVE-2025-67259](https://nvd.nist.gov/vuln/detail/CVE-2025-67259) | 6.5 | MEDIUM | CWE-284 | No | — | 4.55 | 2026-04-24 | A Broken Access Control vulnerability exists in ClassroomIO v0.1.13 where an authenticated low-privileged "student" user... |
 | [CVE-2025-59308](https://nvd.nist.gov/vuln/detail/CVE-2025-59308) | 4.7 | MEDIUM | CWE-284 | No | — | 3.29 | 2026-04-24 | In Mahara before 24.04.10 and 25 before 25.04.1, an institution administrator or institution support administrator on a... |
 | [CVE-2026-42095](https://nvd.nist.gov/vuln/detail/CVE-2026-42095) | 4.0 | MEDIUM | CWE-306 | No | — | 2.80 | 2026-04-24 | bookserver in KDE Arianna before 26.04.1 allows attackers to read files over a socket connection by guessing a URL. |
+| [CVE-2026-31534](https://nvd.nist.gov/vuln/detail/CVE-2026-31534) | 0.0 | NONE | N/A | No | — | 0.00 | 2026-04-24 | Rejected reason: This CVE ID has been rejected or withdrawn by its CVE Numbering Authority. |
 | [CVE-2026-31052](https://nvd.nist.gov/vuln/detail/CVE-2026-31052) | 5.3 | MEDIUM | CWE-400 | No | — | 3.71 | 2026-04-24 | An issue in Hostbill v.2025-11-24 and 2025-12-01 allows a remote attacker to cause a denial of service via the Checkout... |
 | [CVE-2026-31051](https://nvd.nist.gov/vuln/detail/CVE-2026-31051) | 3.8 | LOW | CWE-400 | No | — | 2.66 | 2026-04-24 | An issue in Hostbill v.2025-11-24 and 2025-12-01 allows a remote attacker to cause a denial of service via the Client Ba... |
 | [CVE-2026-31050](https://nvd.nist.gov/vuln/detail/CVE-2026-31050) | 4.9 | MEDIUM | CWE-79 | No | — | 3.43 | 2026-04-24 | Cross Site Scripting vulnerability in Hostbill v.2025-11-24 and 2025-12-01 allows a remote attacker to execute arbitrary... |
