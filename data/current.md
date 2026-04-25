@@ -1,9 +1,14 @@
 # CVEs — April 2026
 
-_4329 vulnerabilities_
+_4334 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
+| [CVE-2026-6997](https://nvd.nist.gov/vuln/detail/CVE-2026-6997) | 4.8 | MEDIUM | CWE-79 | No | — | 3.36 | 2026-04-25 | A security vulnerability has been detected in BDCOM P3310D 0.4.2 10.1.0F Build 86345. This impacts an unknown function o... |
+| [CVE-2026-6996](https://nvd.nist.gov/vuln/detail/CVE-2026-6996) | 4.8 | MEDIUM | CWE-79 | No | — | 3.36 | 2026-04-25 | A weakness has been identified in BDCOM P3310D 0.4.2 10.1.0F Build 86345. This affects an unknown function of the compon... |
+| [CVE-2026-6995](https://nvd.nist.gov/vuln/detail/CVE-2026-6995) | 4.8 | MEDIUM | CWE-79 | No | — | 3.36 | 2026-04-25 | A security flaw has been discovered in BDCOM P3310D 0.4.2 10.1.0F Build 86345. The impacted element is an unknown functi... |
+| [CVE-2026-6994](https://nvd.nist.gov/vuln/detail/CVE-2026-6994) | 5.3 | MEDIUM | CWE-74 | No | — | 3.71 | 2026-04-25 | A weakness has been identified in Envoy up to 1.33.0. Affected is the function params.add of the file source/extensions/... |
+| [CVE-2026-6993](https://nvd.nist.gov/vuln/detail/CVE-2026-6993) | 5.5 | MEDIUM | CWE-441 | No | — | 3.85 | 2026-04-25 | A security flaw has been discovered in go-kratos kratos up to 2.9.2. This impacts the function NewServer of the file tra... |
 | [CVE-2026-6992](https://nvd.nist.gov/vuln/detail/CVE-2026-6992) | 7.3 | HIGH | CWE-77 | No | — | 5.11 | 2026-04-25 | A vulnerability was identified in Linksys MR9600 2.0.6.206937. This affects the function BTRequestGetSmartConnectStatus... |
 | [CVE-2026-6991](https://nvd.nist.gov/vuln/detail/CVE-2026-6991) | 5.3 | MEDIUM | CWE-74 | No | — | 3.71 | 2026-04-25 | A vulnerability was determined in colinhacks Zod up to 4.3.6. The impacted element is an unknown function of the file pa... |
 | [CVE-2026-6990](https://nvd.nist.gov/vuln/detail/CVE-2026-6990) | 5.1 | MEDIUM | CWE-79 | No | — | 3.57 | 2026-04-25 | A vulnerability was found in projeto-siga siga 11.0.3.18. The affected element is an unknown function of the file /sigaw... |
