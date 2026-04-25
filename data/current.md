@@ -1,9 +1,14 @@
 # CVEs — April 2026
 
-_4334 vulnerabilities_
+_4339 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
+| [CVE-2026-7002](https://nvd.nist.gov/vuln/detail/CVE-2026-7002) | 6.9 | MEDIUM | CWE-74 | No | — | 4.83 | 2026-04-25 | A vulnerability was determined in KLiK SocialMediaWebsite up to 1.0.1. This vulnerability affects unknown code of the fi... |
+| [CVE-2026-7001](https://nvd.nist.gov/vuln/detail/CVE-2026-7001) | 4.8 | MEDIUM | CWE-79 | No | — | 3.36 | 2026-04-25 | A vulnerability was found in Datacom DM4100 1.3.6.1.4.1.3709. This affects an unknown part of the component Ethernet Con... |
+| [CVE-2026-7000](https://nvd.nist.gov/vuln/detail/CVE-2026-7000) | 4.8 | MEDIUM | CWE-79 | No | — | 3.36 | 2026-04-25 | A vulnerability has been found in Datacom DM4100 1.3.6.1.4.1.3709. Affected by this issue is some unknown functionality... |
+| [CVE-2026-6999](https://nvd.nist.gov/vuln/detail/CVE-2026-6999) | 4.8 | MEDIUM | CWE-79 | No | — | 3.36 | 2026-04-25 | A flaw has been found in BIVOCOM TR321 21.1.1.50. Affected by this vulnerability is an unknown functionality of the comp... |
+| [CVE-2026-6998](https://nvd.nist.gov/vuln/detail/CVE-2026-6998) | 4.8 | MEDIUM | CWE-79 | No | — | 3.36 | 2026-04-25 | A vulnerability was detected in BDCOM P3310D 0.4.2 10.1.0F Build 86345. Affected is an unknown function of the component... |
 | [CVE-2026-6997](https://nvd.nist.gov/vuln/detail/CVE-2026-6997) | 4.8 | MEDIUM | CWE-79 | No | — | 3.36 | 2026-04-25 | A security vulnerability has been detected in BDCOM P3310D 0.4.2 10.1.0F Build 86345. This impacts an unknown function o... |
 | [CVE-2026-6996](https://nvd.nist.gov/vuln/detail/CVE-2026-6996) | 4.8 | MEDIUM | CWE-79 | No | — | 3.36 | 2026-04-25 | A weakness has been identified in BDCOM P3310D 0.4.2 10.1.0F Build 86345. This affects an unknown function of the compon... |
 | [CVE-2026-6995](https://nvd.nist.gov/vuln/detail/CVE-2026-6995) | 4.8 | MEDIUM | CWE-79 | No | — | 3.36 | 2026-04-25 | A security flaw has been discovered in BDCOM P3310D 0.4.2 10.1.0F Build 86345. The impacted element is an unknown functi... |
