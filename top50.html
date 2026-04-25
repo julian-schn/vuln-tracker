@@ -11,7 +11,7 @@
     <header>
       <h1>vuln-tracker — Top 50</h1>
       <p class="subtitle">The 50 most important CVEs from the current and previous month, ranked by VAP score (70% CVSS + 30% EPSS)</p>
-      <p class="last-updated">Last updated: 2026-04-25 13:18 UTC</p>
+      <p class="last-updated">Last updated: 2026-04-25 14:50 UTC</p>
     </header>
     <nav>
       <a href="index.html">&larr; All CVEs</a>
@@ -57,8 +57,8 @@
         <td><span class="severity critical">CRITICAL</span></td>
         <td>CWE-284</td>
         <td><span class="kev-yes">&#10003;</span></td>
-        <td>35.1% <small>p97</small></td>
-        <td>7.91</td>
+        <td>41.4% <small>p97</small></td>
+        <td>8.10</td>
         <td><details><summary>A improper access control vulnerability in Fortinet FortiClientEMS 7.4.5 through...</summary><p>A improper access control vulnerability in Fortinet FortiClientEMS 7.4.5 through 7.4.6 may allow an unauthenticated attacker to execute unauthorized code or commands via crafted requests.</p></details></td>
         <td>2026-04-04</td>
       </tr>
@@ -123,8 +123,8 @@
         <td><span class="severity critical">CRITICAL</span></td>
         <td>CWE-89</td>
         <td>&nbsp;</td>
-        <td>20.9% <small>p95</small></td>
-        <td>7.49</td>
+        <td>22.1% <small>p95</small></td>
+        <td>7.52</td>
         <td><details><summary>WWBN AVideo is an open source video platform. Prior to version 24.0, an unauthen...</summary><p>WWBN AVideo is an open source video platform. Prior to version 24.0, an unauthenticated SQL Injection vulnerability exists in AVideo within the objects/videos.json.php and objects/video.php components. The application fails to properly sanitize the catName parameter when it is supplied via a JSON-formatted POST request body. Because JSON input is parsed and merged into $_REQUEST after global security checks are executed, the payload bypasses the existing sanitization mechanisms. This issue has been patched in version 24.0.</p></details></td>
         <td>2026-03-06</td>
       </tr>
@@ -173,6 +173,17 @@
         <td>2026-03-23</td>
       </tr>
       <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34156" target="_blank" rel="noopener">CVE-2026-34156</a></td>
+        <td>9.9</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-913</td>
+        <td>&nbsp;</td>
+        <td>9.7% <small>p92</small></td>
+        <td>7.22</td>
+        <td><details><summary>NocoBase is an AI-powered no-code/low-code platform for building business applic...</summary><p>NocoBase is an AI-powered no-code/low-code platform for building business applications and enterprise solutions. Prior to version 2.0.28, NocoBase&#x27;s Workflow Script Node executes user-supplied JavaScript inside a Node.js vm sandbox with a custom require allowlist (controlled by WORKFLOW_SCRIPT_MODULES env var). However, the console object passed into the sandbox context exposes host-realm WritableWorkerStdio stream objects via console._stdout and console._stderr. An authenticated attacker can traverse the prototype chain to escape the sandbox and achieve Remote Code Execution as root. This issue has been patched in version 2.0.28.</p></details></td>
+        <td>2026-03-31</td>
+      </tr>
+      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39808" target="_blank" rel="noopener">CVE-2026-39808</a></td>
         <td>9.8</td>
         <td><span class="severity critical">CRITICAL</span></td>
@@ -182,17 +193,6 @@
         <td>7.20</td>
         <td><details><summary>A improper neutralization of special elements used in an os command (&#x27;os command...</summary><p>A improper neutralization of special elements used in an os command (&#x27;os command injection&#x27;) vulnerability in Fortinet FortiSandbox 4.4.0 through 4.4.8 may allow attacker to execute unauthorized code or commands via &lt;insert attack vector here&gt;</p></details></td>
         <td>2026-04-14</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34156" target="_blank" rel="noopener">CVE-2026-34156</a></td>
-        <td>9.9</td>
-        <td><span class="severity critical">CRITICAL</span></td>
-        <td>CWE-913</td>
-        <td>&nbsp;</td>
-        <td>8.9% <small>p92</small></td>
-        <td>7.20</td>
-        <td><details><summary>NocoBase is an AI-powered no-code/low-code platform for building business applic...</summary><p>NocoBase is an AI-powered no-code/low-code platform for building business applications and enterprise solutions. Prior to version 2.0.28, NocoBase&#x27;s Workflow Script Node executes user-supplied JavaScript inside a Node.js vm sandbox with a custom require allowlist (controlled by WORKFLOW_SCRIPT_MODULES env var). However, the console object passed into the sandbox context exposes host-realm WritableWorkerStdio stream objects via console._stdout and console._stderr. An authenticated attacker can traverse the prototype chain to escape the sandbox and achieve Remote Code Execution as root. This issue has been patched in version 2.0.28.</p></details></td>
-        <td>2026-03-31</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33032" target="_blank" rel="noopener">CVE-2026-33032</a></td>
@@ -464,7 +464,7 @@
         <td><span class="severity critical">CRITICAL</span></td>
         <td>CWE-22</td>
         <td>&nbsp;</td>
-        <td>0.1% <small>p25</small></td>
+        <td>0.1% <small>p26</small></td>
         <td>7.00</td>
         <td><details><summary>Vociferous provides cross-platform, offline speech-to-text with local AI refinem...</summary><p>Vociferous provides cross-platform, offline speech-to-text with local AI refinement. Prior to 4.4.2, the vulnerability exists in src/api/system.py within the export_file route. The application accepts a JSON payload containing a filename and content. While the developer intended for a native UI dialog to handle the file path, the API does not validate the filename string before it is processed by the backends filesystem logic. Because the API is unauthenticated and the CORS configuration in app.py is overly permissive (allow_origins=[&quot;*&quot;] or allowing localhost), an external attacker can bypass the UI entirely. By using directory traversal sequences (../), an attacker can force the app to write arbitrary data to any location accessible by the current user&#x27;s permissions. This vulnerability is fixed in 4.4.2.</p></details></td>
         <td>2026-03-11</td>
@@ -541,7 +541,7 @@
         <td><span class="severity critical">CRITICAL</span></td>
         <td>CWE-284</td>
         <td>&nbsp;</td>
-        <td>0.1% <small>p18</small></td>
+        <td>0.1% <small>p19</small></td>
         <td>7.00</td>
         <td><details><summary>Parse Server is an open source backend that can be deployed to any infrastructur...</summary><p>Parse Server is an open source backend that can be deployed to any infrastructure that can run Node.js. Prior to 9.5.2-alpha.7 and 8.6.20, Parse Server&#x27;s internal tables, which store Relation field mappings such as role memberships, can be directly accessed via the REST API or GraphQL API by any client using only the application key. No master key is required. An attacker can create, read, update, or delete records in any internal relationship table. Exploiting this allows the attacker to inject themselves into any Parse Role, gaining all permissions associated with that role, including full read, write, and delete access to classes protected by role-based Class-Level Permissions (CLP). Similarly, writing to any such table that backs a Relation field used in a pointerFields CLP bypasses that access control. This vulnerability is fixed in 9.5.2-alpha.7 and 8.6.20.</p></details></td>
         <td>2026-03-10</td>
