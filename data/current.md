@@ -1,22 +1,12 @@
 # CVEs — April 2026
 
-_4326 vulnerabilities_
+_4316 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
-| [CVE-2026-31685](https://nvd.nist.gov/vuln/detail/CVE-2026-31685) | 0.0 | NONE | N/A | No | — | 0.00 | 2026-04-25 | In the Linux kernel, the following vulnerability has been resolved:  netfilter: ip6t_eui64: reject invalid MAC header fo... |
-| [CVE-2026-31684](https://nvd.nist.gov/vuln/detail/CVE-2026-31684) | 0.0 | NONE | N/A | No | — | 0.00 | 2026-04-25 | In the Linux kernel, the following vulnerability has been resolved:  net: sched: act_csum: validate nested VLAN headers... |
-| [CVE-2026-31683](https://nvd.nist.gov/vuln/detail/CVE-2026-31683) | 0.0 | NONE | N/A | No | — | 0.00 | 2026-04-25 | In the Linux kernel, the following vulnerability has been resolved:  batman-adv: avoid OGM aggregation when skb tailroom... |
-| [CVE-2026-31682](https://nvd.nist.gov/vuln/detail/CVE-2026-31682) | 0.0 | NONE | N/A | No | — | 0.00 | 2026-04-25 | In the Linux kernel, the following vulnerability has been resolved:  bridge: br_nd_send: linearize skb before parsing ND... |
-| [CVE-2026-31681](https://nvd.nist.gov/vuln/detail/CVE-2026-31681) | 0.0 | NONE | N/A | No | — | 0.00 | 2026-04-25 | In the Linux kernel, the following vulnerability has been resolved:  netfilter: xt_multiport: validate range encoding in... |
-| [CVE-2026-31680](https://nvd.nist.gov/vuln/detail/CVE-2026-31680) | 0.0 | NONE | N/A | No | — | 0.00 | 2026-04-25 | In the Linux kernel, the following vulnerability has been resolved:  net: ipv6: flowlabel: defer exclusive option free u... |
-| [CVE-2026-31679](https://nvd.nist.gov/vuln/detail/CVE-2026-31679) | 0.0 | NONE | N/A | No | — | 0.00 | 2026-04-25 | In the Linux kernel, the following vulnerability has been resolved:  openvswitch: validate MPLS set/set_masked payload l... |
-| [CVE-2026-31678](https://nvd.nist.gov/vuln/detail/CVE-2026-31678) | 0.0 | NONE | N/A | No | — | 0.00 | 2026-04-25 | In the Linux kernel, the following vulnerability has been resolved:  openvswitch: defer tunnel netdev_put to RCU release... |
-| [CVE-2026-31677](https://nvd.nist.gov/vuln/detail/CVE-2026-31677) | 0.0 | NONE | N/A | No | — | 0.00 | 2026-04-25 | In the Linux kernel, the following vulnerability has been resolved:  crypto: af_alg - limit RX SG extraction by receive... |
-| [CVE-2026-31676](https://nvd.nist.gov/vuln/detail/CVE-2026-31676) | 0.0 | NONE | N/A | No | — | 0.00 | 2026-04-25 | In the Linux kernel, the following vulnerability has been resolved:  rxrpc: only handle RESPONSE during service challeng... |
-| [CVE-2026-31675](https://nvd.nist.gov/vuln/detail/CVE-2026-31675) | 0.0 | NONE | N/A | No | — | 0.00 | 2026-04-25 | In the Linux kernel, the following vulnerability has been resolved:  net/sched: sch_netem: fix out-of-bounds access in p... |
-| [CVE-2026-31674](https://nvd.nist.gov/vuln/detail/CVE-2026-31674) | 0.0 | NONE | N/A | No | — | 0.00 | 2026-04-25 | In the Linux kernel, the following vulnerability has been resolved:  netfilter: ip6t_rt: reject oversized addrnr in rt_m... |
-| [CVE-2026-31673](https://nvd.nist.gov/vuln/detail/CVE-2026-31673) | 0.0 | NONE | N/A | No | — | 0.00 | 2026-04-25 | In the Linux kernel, the following vulnerability has been resolved:  af_unix: read UNIX_DIAG_VFS data under unix_state_l... |
+| [CVE-2026-6979](https://nvd.nist.gov/vuln/detail/CVE-2026-6979) | 5.3 | MEDIUM | CWE-918 | No | — | 3.71 | 2026-04-25 | A flaw has been found in devlikeapro WAHA up to 2026.3.4. This affects an unknown function of the file src/api/media.con... |
+| [CVE-2026-6978](https://nvd.nist.gov/vuln/detail/CVE-2026-6978) | 5.1 | MEDIUM | CWE-74 | No | — | 3.57 | 2026-04-25 | A vulnerability was detected in JiZhiCMS up to 2.5.6. The impacted element is the function htmlspecialchars_decode of th... |
+| [CVE-2026-6977](https://nvd.nist.gov/vuln/detail/CVE-2026-6977) | 6.9 | MEDIUM | CWE-266 | No | — | 4.83 | 2026-04-25 | A security vulnerability has been detected in vanna-ai vanna up to 2.0.2. The affected element is an unknown function of... |
 | [CVE-2026-6951](https://nvd.nist.gov/vuln/detail/CVE-2026-6951) | 9.2 | CRITICAL | CWE-94 | No | — | 6.44 | 2026-04-25 | Versions of the package simple-git before 3.36.0 are vulnerable to Remote Code Execution (RCE) due to an incomplete fix... |
 | [CVE-2026-6175](https://nvd.nist.gov/vuln/detail/CVE-2026-6175) | 0.0 | NONE | N/A | No | — | 0.00 | 2026-04-24 | Rejected reason: This CVE ID has been rejected or withdrawn by its CVE Numbering Authority. |
 | [CVE-2026-42171](https://nvd.nist.gov/vuln/detail/CVE-2026-42171) | 7.8 | HIGH | CWE-427 | No | — | 5.46 | 2026-04-24 | NSIS (Nullsoft Scriptable Install System) 3.06.1 before 3.12 sometimes uses the Low IL temp directory when executing as... |
