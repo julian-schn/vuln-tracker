@@ -1,9 +1,13 @@
 # CVEs — April 2026
 
-_4317 vulnerabilities_
+_4321 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
+| [CVE-2026-6984](https://nvd.nist.gov/vuln/detail/CVE-2026-6984) | 5.1 | MEDIUM | CWE-791 | No | — | 3.57 | 2026-04-25 | A security flaw has been discovered in AstrBotDevs AstrBot up to 4.22.1. This affects the function create_template of th... |
+| [CVE-2026-6983](https://nvd.nist.gov/vuln/detail/CVE-2026-6983) | 5.1 | MEDIUM | CWE-918 | No | — | 3.57 | 2026-04-25 | A vulnerability was identified in pagekit up to 1.0.18. Affected by this issue is some unknown functionality of the file... |
+| [CVE-2026-6982](https://nvd.nist.gov/vuln/detail/CVE-2026-6982) | 5.3 | MEDIUM | CWE-74 | No | — | 3.71 | 2026-04-25 | A vulnerability was determined in star7th ShowDoc up to 2.10.10/3.6.2/3.8.0. Affected by this vulnerability is an unknow... |
+| [CVE-2026-6981](https://nvd.nist.gov/vuln/detail/CVE-2026-6981) | 5.3 | MEDIUM | CWE-918 | No | — | 3.71 | 2026-04-25 | A vulnerability was found in IhateCreatingUserNames2 AiraHub2 up to 3e4b77fd7d48ed811ffe5b8d222068c17c76495e. Affected i... |
 | [CVE-2026-6980](https://nvd.nist.gov/vuln/detail/CVE-2026-6980) | 6.9 | MEDIUM | CWE-74 | No | — | 4.83 | 2026-04-25 | A vulnerability has been found in Divyanshu-hash GitPilot-MCP up to 9ed9f153ba4158a2ad230ee4871b25130da29ffd. This impac... |
 | [CVE-2026-6979](https://nvd.nist.gov/vuln/detail/CVE-2026-6979) | 5.3 | MEDIUM | CWE-918 | No | — | 3.71 | 2026-04-25 | A flaw has been found in devlikeapro WAHA up to 2026.3.4. This affects an unknown function of the file src/api/media.con... |
 | [CVE-2026-6978](https://nvd.nist.gov/vuln/detail/CVE-2026-6978) | 5.1 | MEDIUM | CWE-74 | No | 0.0% | 3.57 | 2026-04-25 | A vulnerability was detected in JiZhiCMS up to 2.5.6. The impacted element is the function htmlspecialchars_decode of th... |
