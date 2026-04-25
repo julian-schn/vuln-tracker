@@ -1,19 +1,16 @@
 # CVEs — April 2026
 
-_4314 vulnerabilities_
+_4311 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
+| [CVE-2026-6175](https://nvd.nist.gov/vuln/detail/CVE-2026-6175) | 0.0 | NONE | N/A | No | — | 0.00 | 2026-04-24 | Rejected reason: This CVE ID has been rejected or withdrawn by its CVE Numbering Authority. |
 | [CVE-2026-42171](https://nvd.nist.gov/vuln/detail/CVE-2026-42171) | 7.8 | HIGH | CWE-427 | No | — | 5.46 | 2026-04-24 | NSIS (Nullsoft Scriptable Install System) 3.06.1 before 3.12 sometimes uses the Low IL temp directory when executing as... |
 | [CVE-2026-41488](https://nvd.nist.gov/vuln/detail/CVE-2026-41488) | 3.1 | LOW | CWE-918 | No | — | 2.17 | 2026-04-24 | LangChain is a framework for building agents and LLM-powered applications. Prior to 1.1.14, langchain-openai's _url_to_s... |
-| [CVE-2026-41481](https://nvd.nist.gov/vuln/detail/CVE-2026-41481) | 6.5 | MEDIUM | CWE-918 | No | — | 4.55 | 2026-04-24 | LangChain is a framework for building agents and LLM-powered applications. Prior to langchain-text-splitters  1.1.2, HTM... |
 | [CVE-2026-41478](https://nvd.nist.gov/vuln/detail/CVE-2026-41478) | 9.9 | CRITICAL | CWE-89 | No | — | 6.93 | 2026-04-24 | Saltcorn is an extensible, open source, no-code database application builder. Prior to 1.4.6, 1.5.6, and 1.6.0-beta.5, a... |
 | [CVE-2026-41473](https://nvd.nist.gov/vuln/detail/CVE-2026-41473) | 8.8 | HIGH | CWE-306 | No | — | 6.16 | 2026-04-24 | CyberPanel versions prior to 2.4.4 contain an authentication bypass vulnerability in the AI Scanner worker API endpoints... |
 | [CVE-2026-41472](https://nvd.nist.gov/vuln/detail/CVE-2026-41472) | 5.3 | MEDIUM | CWE-79 | No | — | 3.71 | 2026-04-24 | CyberPanel versions prior to 2.4.4 contain a stored cross-site scripting vulnerability in the AI Scanner dashboard where... |
 | [CVE-2026-41248](https://nvd.nist.gov/vuln/detail/CVE-2026-41248) | 9.1 | CRITICAL | CWE-436 | No | — | 6.37 | 2026-04-24 | Clerk JavaScript is the official JavaScript repository for Clerk authentication. createRouteMatcher in @clerk/nextjs, @c... |
-| [CVE-2026-6968](https://nvd.nist.gov/vuln/detail/CVE-2026-6968) | 7.1 | HIGH | CWE-22 | No | — | 4.97 | 2026-04-24 | Incomplete path traversal fixes in awslabs/tough before tough-v0.22.0 allow remote authenticated users with delegated si... |
-| [CVE-2026-6967](https://nvd.nist.gov/vuln/detail/CVE-2026-6967) | 7.1 | HIGH | CWE-345 | No | — | 4.97 | 2026-04-24 | Missing expiration, hash, and length enforcement in delegated metadata validation in awslabs/tough before tough-v0.22.0... |
-| [CVE-2026-6966](https://nvd.nist.gov/vuln/detail/CVE-2026-6966) | 7.0 | HIGH | CWE-347 | No | — | 4.90 | 2026-04-24 | Improper verification of cryptographic signature uniqueness in delegated role validation in awslabs/tough before tough-v... |
 | [CVE-2026-41503](https://nvd.nist.gov/vuln/detail/CVE-2026-41503) | 8.7 | HIGH | CWE-125 | No | — | 6.09 | 2026-04-24 | BACnet Stack is a BACnet open source protocol stack C library for embedded systems. Prior to 1.4.3, an out-of-bounds rea... |
 | [CVE-2026-41502](https://nvd.nist.gov/vuln/detail/CVE-2026-41502) | 8.7 | HIGH | CWE-125 | No | — | 6.09 | 2026-04-24 | BACnet Stack is a BACnet open source protocol stack C library for embedded systems. Prior to 1.4.3, an off-by-one out-of... |
 | [CVE-2026-41477](https://nvd.nist.gov/vuln/detail/CVE-2026-41477) | 7.8 | HIGH | CWE-306 | No | — | 5.46 | 2026-04-24 | Deskflow is a keyboard and mouse sharing app.  In 1.20.0, 1.26.0.134, and earlier, Deskflow daemon runs as SYSTEM and ex... |

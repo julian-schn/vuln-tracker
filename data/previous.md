@@ -1,6 +1,6 @@
 # CVEs — March 2026
 
-_5734 vulnerabilities_
+_5735 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
@@ -782,6 +782,7 @@ _5734 vulnerabilities_
 | [CVE-2026-21724](https://nvd.nist.gov/vuln/detail/CVE-2026-21724) | 5.4 | MEDIUM | CWE-285 | No | 0.0% | 3.78 | 2026-03-26 | A vulnerability has been discovered in Grafana OSS where an authorization bypass in the provisioning contact points API... |
 | [CVE-2026-0968](https://nvd.nist.gov/vuln/detail/CVE-2026-0968) | 3.1 | LOW | CWE-476 | No | 0.0% | 2.17 | 2026-03-26 | A flaw was found in libssh in which a malicious SFTP (SSH File Transfer Protocol) server can exploit this by sending a m... |
 | [CVE-2026-0967](https://nvd.nist.gov/vuln/detail/CVE-2026-0967) | 5.5 | MEDIUM | CWE-1333 | No | 0.0% | 3.85 | 2026-03-26 | A flaw was found in libssh. A remote attacker, by controlling client configuration files or known_hosts files, could cra... |
+| [CVE-2026-0966](https://nvd.nist.gov/vuln/detail/CVE-2026-0966) | 6.5 | MEDIUM | CWE-124 | No | 0.1% | 4.55 | 2026-03-26 | The API function `ssh_get_hexa()` is vulnerable, when 0-lenght input is provided to this function. This function is used... |
 | [CVE-2026-0965](https://nvd.nist.gov/vuln/detail/CVE-2026-0965) | 3.3 | LOW | CWE-73 | No | 0.0% | 2.31 | 2026-03-26 | A flaw was found in libssh where it can attempt to open arbitrary files during configuration parsing. A local attacker c... |
 | [CVE-2026-33632](https://nvd.nist.gov/vuln/detail/CVE-2026-33632) | 8.4 | HIGH | CWE-862 | No | 0.0% | 5.88 | 2026-03-26 | ClearanceKit intercepts file-system access events on macOS and enforces per-process access policies. Prior to version 4.... |
 | [CVE-2026-33631](https://nvd.nist.gov/vuln/detail/CVE-2026-33631) | 8.7 | HIGH | CWE-862 | No | 0.0% | 6.09 | 2026-03-26 | ClearanceKit intercepts file-system access events on macOS and enforces per-process access policies. In versions on the... |

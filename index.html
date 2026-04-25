@@ -11,7 +11,7 @@
     <header>
       <h1>vuln-tracker</h1>
       <p class="subtitle">CVEs from the National Vulnerability Database — current and previous month</p>
-      <p class="last-updated">Last updated: 2026-04-24 22:46 UTC</p>
+      <p class="last-updated">Last updated: 2026-04-25 02:56 UTC</p>
     </header>
     <nav>
       <a href="top50.html">&#9733; Top 50</a>
@@ -25,7 +25,7 @@
     </nav>
     <main>
     <section>
-      <h2>Current Month — April 2026 <span class="count">(4314)</span></h2>
+      <h2>Current Month — April 2026 <span class="count">(4311)</span></h2>
       <div class="table-wrapper">
         <table>
           <thead>
@@ -42,6 +42,17 @@
             </tr>
           </thead>
           <tbody>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6175" target="_blank" rel="noopener">CVE-2026-6175</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Rejected reason: This CVE ID has been rejected or withdrawn by its CVE Numbering...</summary><p>Rejected reason: This CVE ID has been rejected or withdrawn by its CVE Numbering Authority.</p></details></td>
+        <td>2026-04-24</td>
+      </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-42171" target="_blank" rel="noopener">CVE-2026-42171</a></td>
         <td>7.8</td>
@@ -62,18 +73,6 @@
         <td>&mdash;</td>
         <td>2.17</td>
         <td><details><summary>LangChain is a framework for building agents and LLM-powered applications. Prior...</summary><p>LangChain is a framework for building agents and LLM-powered applications. Prior to 1.1.14, langchain-openai&#x27;s _url_to_size() helper (used by get_num_tokens_from_messages for image token counting) validated URLs for SSRF protection and then fetched them in a separate network operation with independent DNS resolution. This left a TOCTOU / DNS rebinding window: an attacker-controlled hostname could resolve to a public IP during validation and then to a private/localhost IP during the actual fetch.</p></details></td>
-        <td>2026-04-24</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-41481" target="_blank" rel="noopener">CVE-2026-41481</a></td>
-        <td>6.5</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-918</td>
-        <td>&nbsp;</td>
-        <td>&mdash;</td>
-        <td>4.55</td>
-        <td><details><summary>LangChain is a framework for building agents and LLM-powered applications. Prior...</summary><p>LangChain is a framework for building agents and LLM-powered applications. Prior to langchain-text-splitters
- 1.1.2, HTMLHeaderTextSplitter.split_text_from_url() validated the initial URL using validate_safe_url() but then performed the fetch with requests.get() with redirects enabled (the default). Because redirect targets were not revalidated, a URL pointing to an attacker-controlled server could redirect to internal, localhost, or cloud metadata endpoints, bypassing SSRF protections. The response body is parsed and returned as Document objects to the calling application code. Whether this constitutes a data exfiltration path depends on the application: if it exposes Document contents (or derivatives) back to the requester who supplied the URL, sensitive data from internal endpoints could be leaked. Applications that store or process Documents internally without returning raw content to the requester are not directly exposed to data exfiltration through this issue. This vulnerability is fixed in 1.1.2.</p></details></td>
         <td>2026-04-24</td>
       </tr>
       <tr>
@@ -118,45 +117,6 @@
         <td>&mdash;</td>
         <td>6.37</td>
         <td><details><summary>Clerk JavaScript is the official JavaScript repository for Clerk authentication....</summary><p>Clerk JavaScript is the official JavaScript repository for Clerk authentication. createRouteMatcher in @clerk/nextjs, @clerk/nuxt, and @clerk/astro can be bypassed by certain crafted requests, allowing them to skip middleware gating and reach downstream handlers. This vulnerability is fixed in @clerk/astro 1.5.7, 2.17.10, and 3.0.15; @clerk/nextjs 5.7.6, 6.39.2, and 7.2.1; @clerk/nuxt 1.13.28 and 2.2.2; and @clerk/shared 2.22.1, 3.47.4, anc 4.8.1</p></details></td>
-        <td>2026-04-24</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6968" target="_blank" rel="noopener">CVE-2026-6968</a></td>
-        <td>7.1</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-22</td>
-        <td>&nbsp;</td>
-        <td>&mdash;</td>
-        <td>4.97</td>
-        <td><details><summary>Incomplete path traversal fixes in awslabs/tough before tough-v0.22.0 allow remo...</summary><p>Incomplete path traversal fixes in awslabs/tough before tough-v0.22.0 allow remote authenticated users with delegated signing authority to write files outside intended output directories via absolute target names in copy_target/link_target, symlinked parent directories in save_target, or symlinked metadata filenames in SignedRole::write, because write paths trust the joined destination path without post-resolution containment verification.
-
-We recommend you upgrade to tough-v0.22.0 / tuftool-v0.15.0.</p></details></td>
-        <td>2026-04-24</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6967" target="_blank" rel="noopener">CVE-2026-6967</a></td>
-        <td>7.1</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-345</td>
-        <td>&nbsp;</td>
-        <td>&mdash;</td>
-        <td>4.97</td>
-        <td><details><summary>Missing expiration, hash, and length enforcement in delegated metadata validatio...</summary><p>Missing expiration, hash, and length enforcement in delegated metadata validation in awslabs/tough before tough-v0.22.0 allows remote authenticated users with delegated signing authority to bypass TUF specification integrity checks for delegated targets metadata and poison the local metadata cache, because load_delegations does not apply the same validation checks as the top-level targets metadata path.
-
-We recommend you upgrade to tough-v0.22.0 / tuftool-v0.15.0.</p></details></td>
-        <td>2026-04-24</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6966" target="_blank" rel="noopener">CVE-2026-6966</a></td>
-        <td>7.0</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-347</td>
-        <td>&nbsp;</td>
-        <td>&mdash;</td>
-        <td>4.90</td>
-        <td><details><summary>Improper verification of cryptographic signature uniqueness in delegated role va...</summary><p>Improper verification of cryptographic signature uniqueness in delegated role validation in awslabs/tough before tough-v0.22.0 allows remote authenticated users to bypass the TUF signature threshold requirement by duplicating a valid signature, causing the client to accept forged delegated role metadata.
-
-We recommend you upgrade to tough-v0.22.0 / tuftool-v0.15.0.</p></details></td>
         <td>2026-04-24</td>
       </tr>
       <tr>
@@ -47508,7 +47468,7 @@ We recommend you upgrade to tough-v0.22.0 / tuftool-v0.15.0.</p></details></td>
       </div>
     </section>
     <section>
-      <h2>Previous Month — March 2026 <span class="count">(5734)</span></h2>
+      <h2>Previous Month — March 2026 <span class="count">(5735)</span></h2>
       <div class="table-wrapper">
         <table>
           <thead>
@@ -56081,6 +56041,28 @@ We recommend you upgrade to tough-v0.22.0 / tuftool-v0.15.0.</p></details></td>
         <td>0.0% <small>p7</small></td>
         <td>3.85</td>
         <td><details><summary>A flaw was found in libssh. A remote attacker, by controlling client configurati...</summary><p>A flaw was found in libssh. A remote attacker, by controlling client configuration files or known_hosts files, could craft specific hostnames that when processed by the `match_pattern()` function can lead to inefficient regular expression backtracking. This can cause timeouts and resource exhaustion, resulting in a Denial of Service (DoS) for the client.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-0966" target="_blank" rel="noopener">CVE-2026-0966</a></td>
+        <td>6.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-124</td>
+        <td>&nbsp;</td>
+        <td>0.1% <small>p21</small></td>
+        <td>4.55</td>
+        <td><details><summary>The API function `ssh_get_hexa()` is vulnerable, when 0-lenght
+input is provided...</summary><p>The API function `ssh_get_hexa()` is vulnerable, when 0-lenght
+input is provided to this function. This function is used internally
+in `ssh_get_fingerprint_hash()` and `ssh_print_hexa()` (deprecated),
+which is vulnerable to the same input (length is provided by the
+calling application).
+
+The function is also used internally in the gssapi code for logging
+the OIDs received by the server during GSSAPI authentication. This
+could be triggered remotely, when the server allows GSSAPI authentication
+and logging verbosity is set at least to SSH_LOG_PACKET (3). This
+could cause self-DoS of the per-connection daemon process.</p></details></td>
         <td>2026-03-26</td>
       </tr>
       <tr>
