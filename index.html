@@ -11,7 +11,7 @@
     <header>
       <h1>vuln-tracker</h1>
       <p class="subtitle">CVEs from the National Vulnerability Database — current and previous month</p>
-      <p class="last-updated">Last updated: 2026-04-25 02:56 UTC</p>
+      <p class="last-updated">Last updated: 2026-04-25 05:51 UTC</p>
     </header>
     <nav>
       <a href="top50.html">&#9733; Top 50</a>
@@ -47468,7 +47468,7 @@
       </div>
     </section>
     <section>
-      <h2>Previous Month — March 2026 <span class="count">(5735)</span></h2>
+      <h2>Previous Month — March 2026 <span class="count">(5734)</span></h2>
       <div class="table-wrapper">
         <table>
           <thead>
@@ -56041,28 +56041,6 @@
         <td>0.0% <small>p7</small></td>
         <td>3.85</td>
         <td><details><summary>A flaw was found in libssh. A remote attacker, by controlling client configurati...</summary><p>A flaw was found in libssh. A remote attacker, by controlling client configuration files or known_hosts files, could craft specific hostnames that when processed by the `match_pattern()` function can lead to inefficient regular expression backtracking. This can cause timeouts and resource exhaustion, resulting in a Denial of Service (DoS) for the client.</p></details></td>
-        <td>2026-03-26</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-0966" target="_blank" rel="noopener">CVE-2026-0966</a></td>
-        <td>6.5</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-124</td>
-        <td>&nbsp;</td>
-        <td>0.1% <small>p21</small></td>
-        <td>4.55</td>
-        <td><details><summary>The API function `ssh_get_hexa()` is vulnerable, when 0-lenght
-input is provided...</summary><p>The API function `ssh_get_hexa()` is vulnerable, when 0-lenght
-input is provided to this function. This function is used internally
-in `ssh_get_fingerprint_hash()` and `ssh_print_hexa()` (deprecated),
-which is vulnerable to the same input (length is provided by the
-calling application).
-
-The function is also used internally in the gssapi code for logging
-the OIDs received by the server during GSSAPI authentication. This
-could be triggered remotely, when the server allows GSSAPI authentication
-and logging verbosity is set at least to SSH_LOG_PACKET (3). This
-could cause self-DoS of the per-connection daemon process.</p></details></td>
         <td>2026-03-26</td>
       </tr>
       <tr>
