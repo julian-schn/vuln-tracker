@@ -11,7 +11,7 @@
     <header>
       <h1>vuln-tracker</h1>
       <p class="subtitle">CVEs from the National Vulnerability Database — current and previous month</p>
-      <p class="last-updated">Last updated: 2026-04-25 09:01 UTC</p>
+      <p class="last-updated">Last updated: 2026-04-25 10:50 UTC</p>
     </header>
     <nav>
       <a href="top50.html">&#9733; Top 50</a>
@@ -25,7 +25,7 @@
     </nav>
     <main>
     <section>
-      <h2>Current Month — April 2026 <span class="count">(4313)</span></h2>
+      <h2>Current Month — April 2026 <span class="count">(4326)</span></h2>
       <div class="table-wrapper">
         <table>
           <thead>
@@ -42,6 +42,343 @@
             </tr>
           </thead>
           <tbody>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-31685" target="_blank" rel="noopener">CVE-2026-31685</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>In the Linux kernel, the following vulnerability has been resolved:
+
+netfilter: ...</summary><p>In the Linux kernel, the following vulnerability has been resolved:
+
+netfilter: ip6t_eui64: reject invalid MAC header for all packets
+
+`eui64_mt6()` derives a modified EUI-64 from the Ethernet source address
+and compares it with the low 64 bits of the IPv6 source address.
+
+The existing guard only rejects an invalid MAC header when
+`par-&gt;fragoff != 0`. For packets with `par-&gt;fragoff == 0`, `eui64_mt6()`
+can still reach `eth_hdr(skb)` even when the MAC header is not valid.
+
+Fix this by removing the `par-&gt;fragoff != 0` condition so that packets
+with an invalid MAC header are rejected before accessing `eth_hdr(skb)`.</p></details></td>
+        <td>2026-04-25</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-31684" target="_blank" rel="noopener">CVE-2026-31684</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>In the Linux kernel, the following vulnerability has been resolved:
+
+net: sched:...</summary><p>In the Linux kernel, the following vulnerability has been resolved:
+
+net: sched: act_csum: validate nested VLAN headers
+
+tcf_csum_act() walks nested VLAN headers directly from skb-&gt;data when an
+skb still carries in-payload VLAN tags. The current code reads
+vlan-&gt;h_vlan_encapsulated_proto and then pulls VLAN_HLEN bytes without
+first ensuring that the full VLAN header is present in the linear area.
+
+If only part of an inner VLAN header is linearized, accessing
+h_vlan_encapsulated_proto reads past the linear area, and the following
+skb_pull(VLAN_HLEN) may violate skb invariants.
+
+Fix this by requiring pskb_may_pull(skb, VLAN_HLEN) before accessing and
+pulling each nested VLAN header. If the header still is not fully
+available, drop the packet through the existing error path.</p></details></td>
+        <td>2026-04-25</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-31683" target="_blank" rel="noopener">CVE-2026-31683</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>In the Linux kernel, the following vulnerability has been resolved:
+
+batman-adv:...</summary><p>In the Linux kernel, the following vulnerability has been resolved:
+
+batman-adv: avoid OGM aggregation when skb tailroom is insufficient
+
+When OGM aggregation state is toggled at runtime, an existing forwarded
+packet may have been allocated with only packet_len bytes, while a later
+packet can still be selected for aggregation. Appending in this case can
+hit skb_put overflow conditions.
+
+Reject aggregation when the target skb tailroom cannot accommodate the new
+packet. The caller then falls back to creating a new forward packet
+instead of appending.</p></details></td>
+        <td>2026-04-25</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-31682" target="_blank" rel="noopener">CVE-2026-31682</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>In the Linux kernel, the following vulnerability has been resolved:
+
+bridge: br_...</summary><p>In the Linux kernel, the following vulnerability has been resolved:
+
+bridge: br_nd_send: linearize skb before parsing ND options
+
+br_nd_send() parses neighbour discovery options from ns-&gt;opt[] and
+assumes that these options are in the linear part of request.
+
+Its callers only guarantee that the ICMPv6 header and target address
+are available, so the option area can still be non-linear. Parsing
+ns-&gt;opt[] in that case can access data past the linear buffer.
+
+Linearize request before option parsing and derive ns from the linear
+network header.</p></details></td>
+        <td>2026-04-25</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-31681" target="_blank" rel="noopener">CVE-2026-31681</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>In the Linux kernel, the following vulnerability has been resolved:
+
+netfilter: ...</summary><p>In the Linux kernel, the following vulnerability has been resolved:
+
+netfilter: xt_multiport: validate range encoding in checkentry
+
+ports_match_v1() treats any non-zero pflags entry as the start of a
+port range and unconditionally consumes the next ports[] element as
+the range end.
+
+The checkentry path currently validates protocol, flags and count, but
+it does not validate the range encoding itself. As a result, malformed
+rules can mark the last slot as a range start or place two range starts
+back to back, leaving ports_match_v1() to step past the last valid
+ports[] element while interpreting the rule.
+
+Reject malformed multiport v1 rules in checkentry by validating that
+each range start has a following element and that the following element
+is not itself marked as another range start.</p></details></td>
+        <td>2026-04-25</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-31680" target="_blank" rel="noopener">CVE-2026-31680</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>In the Linux kernel, the following vulnerability has been resolved:
+
+net: ipv6: ...</summary><p>In the Linux kernel, the following vulnerability has been resolved:
+
+net: ipv6: flowlabel: defer exclusive option free until RCU teardown
+
+`ip6fl_seq_show()` walks the global flowlabel hash under the seq-file
+RCU read-side lock and prints `fl-&gt;opt-&gt;opt_nflen` when an option block
+is present.
+
+Exclusive flowlabels currently free `fl-&gt;opt` as soon as `fl-&gt;users`
+drops to zero in `fl_release()`. However, the surrounding
+`struct ip6_flowlabel` remains visible in the global hash table until
+later garbage collection removes it and `fl_free_rcu()` finally tears it
+down.
+
+A concurrent `/proc/net/ip6_flowlabel` reader can therefore race that
+early `kfree()` and dereference freed option state, triggering a crash
+in `ip6fl_seq_show()`.
+
+Fix this by keeping `fl-&gt;opt` alive until `fl_free_rcu()`. That matches
+the lifetime already required for the enclosing flowlabel while readers
+can still reach it under RCU.</p></details></td>
+        <td>2026-04-25</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-31679" target="_blank" rel="noopener">CVE-2026-31679</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>In the Linux kernel, the following vulnerability has been resolved:
+
+openvswitch...</summary><p>In the Linux kernel, the following vulnerability has been resolved:
+
+openvswitch: validate MPLS set/set_masked payload length
+
+validate_set() accepted OVS_KEY_ATTR_MPLS as variable-sized payload for
+SET/SET_MASKED actions. In action handling, OVS expects fixed-size
+MPLS key data (struct ovs_key_mpls).
+
+Use the already normalized key_len (masked case included) and reject
+non-matching MPLS action key sizes.
+
+Reject invalid MPLS action payload lengths early.</p></details></td>
+        <td>2026-04-25</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-31678" target="_blank" rel="noopener">CVE-2026-31678</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>In the Linux kernel, the following vulnerability has been resolved:
+
+openvswitch...</summary><p>In the Linux kernel, the following vulnerability has been resolved:
+
+openvswitch: defer tunnel netdev_put to RCU release
+
+ovs_netdev_tunnel_destroy() may run after NETDEV_UNREGISTER already
+detached the device. Dropping the netdev reference in destroy can race
+with concurrent readers that still observe vport-&gt;dev.
+
+Do not release vport-&gt;dev in ovs_netdev_tunnel_destroy(). Instead, let
+vport_netdev_free() drop the reference from the RCU callback, matching
+the non-tunnel destroy path and avoiding additional synchronization
+under RTNL.</p></details></td>
+        <td>2026-04-25</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-31677" target="_blank" rel="noopener">CVE-2026-31677</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>In the Linux kernel, the following vulnerability has been resolved:
+
+crypto: af_...</summary><p>In the Linux kernel, the following vulnerability has been resolved:
+
+crypto: af_alg - limit RX SG extraction by receive buffer budget
+
+Make af_alg_get_rsgl() limit each RX scatterlist extraction to the
+remaining receive buffer budget.
+
+af_alg_get_rsgl() currently uses af_alg_readable() only as a gate
+before extracting data into the RX scatterlist. Limit each extraction
+to the remaining af_alg_rcvbuf(sk) budget so that receive-side
+accounting matches the amount of data attached to the request.
+
+If skcipher cannot obtain enough RX space for at least one chunk while
+more data remains to be processed, reject the recvmsg call instead of
+rounding the request length down to zero.</p></details></td>
+        <td>2026-04-25</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-31676" target="_blank" rel="noopener">CVE-2026-31676</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>In the Linux kernel, the following vulnerability has been resolved:
+
+rxrpc: only...</summary><p>In the Linux kernel, the following vulnerability has been resolved:
+
+rxrpc: only handle RESPONSE during service challenge
+
+Only process RESPONSE packets while the service connection is still in
+RXRPC_CONN_SERVICE_CHALLENGING. Check that state under state_lock before
+running response verification and security initialization, then use a local
+secured flag to decide whether to queue the secured-connection work after
+the state transition. This keeps duplicate or late RESPONSE packets from
+re-running the setup path and removes the unlocked post-transition state
+test.</p></details></td>
+        <td>2026-04-25</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-31675" target="_blank" rel="noopener">CVE-2026-31675</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>In the Linux kernel, the following vulnerability has been resolved:
+
+net/sched: ...</summary><p>In the Linux kernel, the following vulnerability has been resolved:
+
+net/sched: sch_netem: fix out-of-bounds access in packet corruption
+
+In netem_enqueue(), the packet corruption logic uses
+get_random_u32_below(skb_headlen(skb)) to select an index for
+modifying skb-&gt;data. When an AF_PACKET TX_RING sends fully non-linear
+packets over an IPIP tunnel, skb_headlen(skb) evaluates to 0.
+
+Passing 0 to get_random_u32_below() takes the variable-ceil slow path
+which returns an unconstrained 32-bit random integer. Using this
+unconstrained value as an offset into skb-&gt;data results in an
+out-of-bounds memory access.
+
+Fix this by verifying skb_headlen(skb) is non-zero before attempting
+to corrupt the linear data area. Fully non-linear packets will silently
+bypass the corruption logic.</p></details></td>
+        <td>2026-04-25</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-31674" target="_blank" rel="noopener">CVE-2026-31674</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>In the Linux kernel, the following vulnerability has been resolved:
+
+netfilter: ...</summary><p>In the Linux kernel, the following vulnerability has been resolved:
+
+netfilter: ip6t_rt: reject oversized addrnr in rt_mt6_check()
+
+Reject rt match rules whose addrnr exceeds IP6T_RT_HOPS.
+
+rt_mt6() expects addrnr to stay within the bounds of rtinfo-&gt;addrs[].
+Validate addrnr during rule installation so malformed rules are rejected
+before the match logic can use an out-of-range value.</p></details></td>
+        <td>2026-04-25</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-31673" target="_blank" rel="noopener">CVE-2026-31673</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>In the Linux kernel, the following vulnerability has been resolved:
+
+af_unix: re...</summary><p>In the Linux kernel, the following vulnerability has been resolved:
+
+af_unix: read UNIX_DIAG_VFS data under unix_state_lock
+
+Exact UNIX diag lookups hold a reference to the socket, but not to
+u-&gt;path. Meanwhile, unix_release_sock() clears u-&gt;path under
+unix_state_lock() and drops the path reference after unlocking.
+
+Read the inode and device numbers for UNIX_DIAG_VFS while holding
+unix_state_lock(), then emit the netlink attribute after dropping the
+lock.
+
+This keeps the VFS data stable while the reply is being built.</p></details></td>
+        <td>2026-04-25</td>
+      </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6951" target="_blank" rel="noopener">CVE-2026-6951</a></td>
         <td>9.2</td>
