@@ -1,9 +1,15 @@
 # CVEs — April 2026
 
-_4339 vulnerabilities_
+_4345 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
+| [CVE-2026-7015](https://nvd.nist.gov/vuln/detail/CVE-2026-7015) | 4.8 | MEDIUM | CWE-79 | No | — | 3.36 | 2026-04-26 | A vulnerability has been found in MaxSite CMS up to 109.3. This issue affects some unknown processing of the component G... |
+| [CVE-2026-7014](https://nvd.nist.gov/vuln/detail/CVE-2026-7014) | 4.8 | MEDIUM | CWE-79 | No | — | 3.36 | 2026-04-26 | A flaw has been found in MaxSite CMS up to 109.3. This vulnerability affects unknown code of the component down_count Pl... |
+| [CVE-2026-7013](https://nvd.nist.gov/vuln/detail/CVE-2026-7013) | 4.8 | MEDIUM | CWE-79 | No | — | 3.36 | 2026-04-26 | A security vulnerability has been detected in MaxSite CMS up to 109.3. Affected by this issue is some unknown functional... |
+| [CVE-2026-42254](https://nvd.nist.gov/vuln/detail/CVE-2026-42254) | 4.0 | MEDIUM | CWE-706 | No | — | 2.80 | 2026-04-26 | Hickory DNS hickory-recursor 0.1 through 0.25.2 allows cross-zone poisoning because cached data is not directly associat... |
+| [CVE-2026-7012](https://nvd.nist.gov/vuln/detail/CVE-2026-7012) | 4.8 | MEDIUM | CWE-79 | No | — | 3.36 | 2026-04-26 | A vulnerability was detected in MaxSite CMS up to 109.3. This affects an unknown part of the component Redirect Plugin.... |
+| [CVE-2026-7011](https://nvd.nist.gov/vuln/detail/CVE-2026-7011) | 4.8 | MEDIUM | CWE-79 | No | — | 3.36 | 2026-04-26 | A weakness has been identified in MaxSite CMS up to 109.3. Affected by this vulnerability is an unknown functionality of... |
 | [CVE-2026-7002](https://nvd.nist.gov/vuln/detail/CVE-2026-7002) | 6.9 | MEDIUM | CWE-74 | No | — | 4.83 | 2026-04-25 | A vulnerability was determined in KLiK SocialMediaWebsite up to 1.0.1. This vulnerability affects unknown code of the fi... |
 | [CVE-2026-7001](https://nvd.nist.gov/vuln/detail/CVE-2026-7001) | 4.8 | MEDIUM | CWE-79 | No | — | 3.36 | 2026-04-25 | A vulnerability was found in Datacom DM4100 1.3.6.1.4.1.3709. This affects an unknown part of the component Ethernet Con... |
 | [CVE-2026-7000](https://nvd.nist.gov/vuln/detail/CVE-2026-7000) | 4.8 | MEDIUM | CWE-79 | No | — | 3.36 | 2026-04-25 | A vulnerability has been found in Datacom DM4100 1.3.6.1.4.1.3709. Affected by this issue is some unknown functionality... |
