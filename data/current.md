@@ -1,9 +1,14 @@
 # CVEs — April 2026
 
-_4345 vulnerabilities_
+_4350 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
+| [CVE-2026-7020](https://nvd.nist.gov/vuln/detail/CVE-2026-7020) | 6.3 | MEDIUM | CWE-22 | No | — | 4.41 | 2026-04-26 | A security flaw has been discovered in Ollama up to 0.20.2. This affects the function digestToPath of the file x/imagege... |
+| [CVE-2026-7019](https://nvd.nist.gov/vuln/detail/CVE-2026-7019) | 7.4 | HIGH | CWE-119 | No | — | 5.18 | 2026-04-26 | A vulnerability was identified in Tenda F456 1.0.0.5. The impacted element is the function fromP2pListFilter of the file... |
+| [CVE-2026-7018](https://nvd.nist.gov/vuln/detail/CVE-2026-7018) | 6.3 | MEDIUM | CWE-320 | No | — | 4.41 | 2026-04-26 | A vulnerability was determined in Datavane Datavines up to 13607645e14a4982468cfdbcf75c85cde63bae71. The affected elemen... |
+| [CVE-2026-7016](https://nvd.nist.gov/vuln/detail/CVE-2026-7016) | 4.8 | MEDIUM | CWE-79 | No | — | 3.36 | 2026-04-26 | A vulnerability was found in MaxSite CMS up to 109.3. Impacted is an unknown function of the component ushki Plugin. Per... |
+| [CVE-2026-42255](https://nvd.nist.gov/vuln/detail/CVE-2026-42255) | 7.2 | HIGH | CWE-684 | No | — | 5.04 | 2026-04-26 | Technitium DNS Server before 15.0 allows DNS traffic amplification via cyclic name server delegation. |
 | [CVE-2026-7015](https://nvd.nist.gov/vuln/detail/CVE-2026-7015) | 4.8 | MEDIUM | CWE-79 | No | — | 3.36 | 2026-04-26 | A vulnerability has been found in MaxSite CMS up to 109.3. This issue affects some unknown processing of the component G... |
 | [CVE-2026-7014](https://nvd.nist.gov/vuln/detail/CVE-2026-7014) | 4.8 | MEDIUM | CWE-79 | No | — | 3.36 | 2026-04-26 | A flaw has been found in MaxSite CMS up to 109.3. This vulnerability affects unknown code of the component down_count Pl... |
 | [CVE-2026-7013](https://nvd.nist.gov/vuln/detail/CVE-2026-7013) | 4.8 | MEDIUM | CWE-79 | No | — | 3.36 | 2026-04-26 | A security vulnerability has been detected in MaxSite CMS up to 109.3. Affected by this issue is some unknown functional... |
