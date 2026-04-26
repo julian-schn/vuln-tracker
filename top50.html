@@ -11,7 +11,7 @@
     <header>
       <h1>vuln-tracker — Top 50</h1>
       <p class="subtitle">The 50 most important CVEs from the current and previous month, ranked by VAP score (70% CVSS + 30% EPSS)</p>
-      <p class="last-updated">Last updated: 2026-04-26 13:18 UTC</p>
+      <p class="last-updated">Last updated: 2026-04-26 14:52 UTC</p>
     </header>
     <nav>
       <a href="index.html">&larr; All CVEs</a>
@@ -68,8 +68,8 @@
         <td><span class="severity critical">CRITICAL</span></td>
         <td>CWE-306</td>
         <td><span class="kev-yes">&#10003;</span></td>
-        <td>45.5% <small>p97</small></td>
-        <td>7.88</td>
+        <td>48.8% <small>p97</small></td>
+        <td>7.97</td>
         <td><details><summary>marimo is a reactive Python notebook. Prior to 0.23.0, Marimo has a Pre-Auth RCE...</summary><p>marimo is a reactive Python notebook. Prior to 0.23.0, Marimo has a Pre-Auth RCE vulnerability. The terminal WebSocket endpoint /terminal/ws lacks authentication validation, allowing an unauthenticated attacker to obtain a full PTY shell and execute arbitrary system commands. Unlike other WebSocket endpoints (e.g., /ws) that correctly call validate_auth() for authentication, the /terminal/ws endpoint only checks the running mode and platform support before accepting connections, completely skipping authentication verification. This vulnerability is fixed in 0.23.0.</p></details></td>
         <td>2026-04-09</td>
       </tr>
@@ -272,6 +272,17 @@
         <td>2026-03-04</td>
       </tr>
       <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-29014" target="_blank" rel="noopener">CVE-2026-29014</a></td>
+        <td>9.3</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-94</td>
+        <td>&nbsp;</td>
+        <td>17.1% <small>p95</small></td>
+        <td>7.02</td>
+        <td><details><summary>MetInfo CMS versions 7.9, 8.0, and 8.1 contain an unauthenticated PHP code injec...</summary><p>MetInfo CMS versions 7.9, 8.0, and 8.1 contain an unauthenticated PHP code injection vulnerability that allows remote attackers to execute arbitrary code by sending crafted requests with malicious PHP code. Attackers can exploit insufficient input neutralization in the execution path to achieve remote code execution and gain full control over the affected server.</p></details></td>
+        <td>2026-04-01</td>
+      </tr>
+      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-2743" target="_blank" rel="noopener">CVE-2026-2743</a></td>
         <td>10.0</td>
         <td><span class="severity critical">CRITICAL</span></td>
@@ -464,7 +475,7 @@
         <td><span class="severity critical">CRITICAL</span></td>
         <td>CWE-22</td>
         <td>&nbsp;</td>
-        <td>0.1% <small>p26</small></td>
+        <td>0.1% <small>p25</small></td>
         <td>7.00</td>
         <td><details><summary>Vociferous provides cross-platform, offline speech-to-text with local AI refinem...</summary><p>Vociferous provides cross-platform, offline speech-to-text with local AI refinement. Prior to 4.4.2, the vulnerability exists in src/api/system.py within the export_file route. The application accepts a JSON payload containing a filename and content. While the developer intended for a native UI dialog to handle the file path, the API does not validate the filename string before it is processed by the backends filesystem logic. Because the API is unauthenticated and the CORS configuration in app.py is overly permissive (allow_origins=[&quot;*&quot;] or allowing localhost), an external attacker can bypass the UI entirely. By using directory traversal sequences (../), an attacker can force the app to write arbitrary data to any location accessible by the current user&#x27;s permissions. This vulnerability is fixed in 4.4.2.</p></details></td>
         <td>2026-03-11</td>
@@ -541,7 +552,7 @@
         <td><span class="severity critical">CRITICAL</span></td>
         <td>CWE-284</td>
         <td>&nbsp;</td>
-        <td>0.1% <small>p19</small></td>
+        <td>0.1% <small>p18</small></td>
         <td>7.00</td>
         <td><details><summary>Parse Server is an open source backend that can be deployed to any infrastructur...</summary><p>Parse Server is an open source backend that can be deployed to any infrastructure that can run Node.js. Prior to 9.5.2-alpha.7 and 8.6.20, Parse Server&#x27;s internal tables, which store Relation field mappings such as role memberships, can be directly accessed via the REST API or GraphQL API by any client using only the application key. No master key is required. An attacker can create, read, update, or delete records in any internal relationship table. Exploiting this allows the attacker to inject themselves into any Parse Role, gaining all permissions associated with that role, including full read, write, and delete access to classes protected by role-based Class-Level Permissions (CLP). Similarly, writing to any such table that backs a Relation field used in a pointerFields CLP bypasses that access control. This vulnerability is fixed in 9.5.2-alpha.7 and 8.6.20.</p></details></td>
         <td>2026-03-10</td>
@@ -577,17 +588,6 @@
         <td>0.0% <small>p14</small></td>
         <td>7.00</td>
         <td><details><summary>Improper authorization in Microsoft Azure Kubernetes Service allows an unauthori...</summary><p>Improper authorization in Microsoft Azure Kubernetes Service allows an unauthorized attacker to elevate privileges over a network.</p></details></td>
-        <td>2026-04-03</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32213" target="_blank" rel="noopener">CVE-2026-32213</a></td>
-        <td>10.0</td>
-        <td><span class="severity critical">CRITICAL</span></td>
-        <td>CWE-285</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p14</small></td>
-        <td>7.00</td>
-        <td><details><summary>Improper authorization in Azure AI Foundry allows an unauthorized attacker to el...</summary><p>Improper authorization in Azure AI Foundry allows an unauthorized attacker to elevate privileges over a network.</p></details></td>
         <td>2026-04-03</td>
       </tr>
             </tbody>
