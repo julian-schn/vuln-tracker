@@ -1,9 +1,18 @@
 # CVEs — April 2026
 
-_4360 vulnerabilities_
+_4369 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
+| [CVE-2026-7041](https://nvd.nist.gov/vuln/detail/CVE-2026-7041) | 6.3 | MEDIUM | CWE-200 | No | — | 4.41 | 2026-04-26 | A vulnerability was detected in 666ghj MiroFish up to 0.1.2. The impacted element is an unknown function of the file /co... |
+| [CVE-2026-7039](https://nvd.nist.gov/vuln/detail/CVE-2026-7039) | 8.5 | HIGH | CWE-74 | No | — | 5.95 | 2026-04-26 | A security vulnerability has been detected in tufantunc ssh-mcp up to 1.5.0. The affected element is the function shell.... |
+| [CVE-2026-7038](https://nvd.nist.gov/vuln/detail/CVE-2026-7038) | 1.9 | LOW | CWE-522 | No | — | 1.33 | 2026-04-26 | A weakness has been identified in tufantunc ssh-mcp up to 1.5.0. Impacted is an unknown function of the file src/index.t... |
+| [CVE-2026-7037](https://nvd.nist.gov/vuln/detail/CVE-2026-7037) | 8.9 | HIGH | CWE-77 | No | — | 6.23 | 2026-04-26 | A security flaw has been discovered in Totolink A8000RU 7.1cu.643_b20200521. This issue affects the function setVpnPassC... |
+| [CVE-2026-7036](https://nvd.nist.gov/vuln/detail/CVE-2026-7036) | 6.9 | MEDIUM | CWE-22 | No | — | 4.83 | 2026-04-26 | A vulnerability was identified in Tenda i9 1.0.0.5(2204). This vulnerability affects the function R7WebsSecurityHandlerf... |
+| [CVE-2026-7035](https://nvd.nist.gov/vuln/detail/CVE-2026-7035) | 7.4 | HIGH | CWE-119 | No | — | 5.18 | 2026-04-26 | A vulnerability was determined in Tenda FH1202 1.2.0.14. This affects the function fromWrlclientSet of the file /goform/... |
+| [CVE-2026-7034](https://nvd.nist.gov/vuln/detail/CVE-2026-7034) | 7.4 | HIGH | CWE-119 | No | — | 5.18 | 2026-04-26 | A vulnerability was found in Tenda FH1202 1.2.0.14(408). Affected by this issue is the function WrlExtraSet of the file... |
+| [CVE-2026-7033](https://nvd.nist.gov/vuln/detail/CVE-2026-7033) | 7.4 | HIGH | CWE-119 | No | — | 5.18 | 2026-04-26 | A vulnerability has been found in Tenda F456 1.0.0.5. Affected by this vulnerability is the function fromSafeClientFilte... |
+| [CVE-2026-7032](https://nvd.nist.gov/vuln/detail/CVE-2026-7032) | 7.4 | HIGH | CWE-119 | No | — | 5.18 | 2026-04-26 | A flaw has been found in Tenda F456 1.0.0.5. Affected is the function SafeEmailFilter of the file /goform/SafeEmailFilte... |
 | [CVE-2026-7031](https://nvd.nist.gov/vuln/detail/CVE-2026-7031) | 7.4 | HIGH | CWE-119 | No | — | 5.18 | 2026-04-26 | A vulnerability was detected in Tenda F456 1.0.0.5. This impacts the function fromSafeMacFilter of the file /goform/Safe... |
 | [CVE-2026-7030](https://nvd.nist.gov/vuln/detail/CVE-2026-7030) | 7.4 | HIGH | CWE-119 | No | — | 5.18 | 2026-04-26 | A security vulnerability has been detected in Tenda F456 1.0.0.5. This affects the function fromRouteStatic of the file... |
 | [CVE-2026-7029](https://nvd.nist.gov/vuln/detail/CVE-2026-7029) | 7.4 | HIGH | CWE-119 | No | — | 5.18 | 2026-04-26 | A weakness has been identified in Tenda F456 1.0.0.5. The impacted element is the function fromaddressNat of the file /g... |
