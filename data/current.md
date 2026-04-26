@@ -1,9 +1,14 @@
 # CVEs — April 2026
 
-_4355 vulnerabilities_
+_4360 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
+| [CVE-2026-7031](https://nvd.nist.gov/vuln/detail/CVE-2026-7031) | 7.4 | HIGH | CWE-119 | No | — | 5.18 | 2026-04-26 | A vulnerability was detected in Tenda F456 1.0.0.5. This impacts the function fromSafeMacFilter of the file /goform/Safe... |
+| [CVE-2026-7030](https://nvd.nist.gov/vuln/detail/CVE-2026-7030) | 7.4 | HIGH | CWE-119 | No | — | 5.18 | 2026-04-26 | A security vulnerability has been detected in Tenda F456 1.0.0.5. This affects the function fromRouteStatic of the file... |
+| [CVE-2026-7029](https://nvd.nist.gov/vuln/detail/CVE-2026-7029) | 7.4 | HIGH | CWE-119 | No | — | 5.18 | 2026-04-26 | A weakness has been identified in Tenda F456 1.0.0.5. The impacted element is the function fromaddressNat of the file /g... |
+| [CVE-2026-7028](https://nvd.nist.gov/vuln/detail/CVE-2026-7028) | 5.1 | MEDIUM | CWE-74 | No | — | 3.57 | 2026-04-26 | A security flaw has been discovered in CodeAstro Online Job Portal 1.0. The affected element is an unknown function of t... |
+| [CVE-2026-7027](https://nvd.nist.gov/vuln/detail/CVE-2026-7027) | 4.8 | MEDIUM | CWE-79 | No | — | 3.36 | 2026-04-26 | A vulnerability was identified in D-Link DSL-2740R EU_01.15. Impacted is an unknown function of the component Wireless S... |
 | [CVE-2026-7026](https://nvd.nist.gov/vuln/detail/CVE-2026-7026) | 5.4 | MEDIUM | CWE-79 | No | — | 3.78 | 2026-04-26 | A vulnerability was determined in D-Link DGS-3420 1.50.018. This issue affects some unknown processing of the component... |
 | [CVE-2026-7025](https://nvd.nist.gov/vuln/detail/CVE-2026-7025) | 6.9 | MEDIUM | CWE-918 | No | — | 4.83 | 2026-04-26 | A vulnerability was found in Typecho up to 1.3.0. This vulnerability affects the function Service::sendPingHandle of the... |
 | [CVE-2026-7024](https://nvd.nist.gov/vuln/detail/CVE-2026-7024) | 5.3 | MEDIUM | CWE-22 | No | — | 3.71 | 2026-04-26 | A flaw has been found in rawchen sims up to 004f783b1db5ecdfad81c8fdc3b34171211112de. Affected by this issue is some unk... |
