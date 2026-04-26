@@ -1,9 +1,11 @@
 # CVEs — April 2026
 
-_4369 vulnerabilities_
+_4371 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
+| [CVE-2026-6786](https://nvd.nist.gov/vuln/detail/CVE-2026-6786) | 8.1 | HIGH | CWE-125 | No | 0.0% | 5.67 | 2026-04-26 | Memory safety bugs present in Firefox ESR 140.9, Thunderbird ESR 140.9, Firefox 149 and Thunderbird 149. Some of these b... |
+| [CVE-2026-6785](https://nvd.nist.gov/vuln/detail/CVE-2026-6785) | 8.1 | HIGH | CWE-125 | No | 0.1% | 5.67 | 2026-04-26 | Memory safety bugs present in Firefox ESR 115.34, Firefox ESR 140.9, Thunderbird ESR 140.9, Firefox 149 and Thunderbird... |
 | [CVE-2026-7041](https://nvd.nist.gov/vuln/detail/CVE-2026-7041) | 6.3 | MEDIUM | CWE-200 | No | — | 4.41 | 2026-04-26 | A vulnerability was detected in 666ghj MiroFish up to 0.1.2. The impacted element is an unknown function of the file /co... |
 | [CVE-2026-7039](https://nvd.nist.gov/vuln/detail/CVE-2026-7039) | 8.5 | HIGH | CWE-74 | No | — | 5.95 | 2026-04-26 | A security vulnerability has been detected in tufantunc ssh-mcp up to 1.5.0. The affected element is the function shell.... |
 | [CVE-2026-7038](https://nvd.nist.gov/vuln/detail/CVE-2026-7038) | 1.9 | LOW | CWE-522 | No | — | 1.33 | 2026-04-26 | A weakness has been identified in tufantunc ssh-mcp up to 1.5.0. Impacted is an unknown function of the file src/index.t... |
