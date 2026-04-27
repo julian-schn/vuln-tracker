@@ -1,9 +1,33 @@
 # CVEs — April 2026
 
-_4411 vulnerabilities_
+_4435 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
+| [CVE-2026-7106](https://nvd.nist.gov/vuln/detail/CVE-2026-7106) | 8.8 | HIGH | CWE-269 | No | — | 6.16 | 2026-04-27 | The Highland Software Custom Role Manager plugin for WordPress is vulnerable to Privilege Escalation in versions up to a... |
+| [CVE-2026-7080](https://nvd.nist.gov/vuln/detail/CVE-2026-7080) | 7.4 | HIGH | CWE-119 | No | — | 5.18 | 2026-04-27 | A security vulnerability has been detected in Tenda F456 1.0.0.5. This impacts the function fromPPTPUserSetting of the f... |
+| [CVE-2026-7079](https://nvd.nist.gov/vuln/detail/CVE-2026-7079) | 7.4 | HIGH | CWE-119 | No | — | 5.18 | 2026-04-27 | A weakness has been identified in Tenda F456 1.0.0.5. This affects the function fromAdvSetWan of the file /goform/AdvSet... |
+| [CVE-2026-7078](https://nvd.nist.gov/vuln/detail/CVE-2026-7078) | 7.4 | HIGH | CWE-119 | No | — | 5.18 | 2026-04-27 | A security flaw has been discovered in Tenda F456 1.0.0.5. The impacted element is the function fromSetIpBind of the fil... |
+| [CVE-2026-7077](https://nvd.nist.gov/vuln/detail/CVE-2026-7077) | 6.9 | MEDIUM | CWE-74 | No | — | 4.83 | 2026-04-27 | A vulnerability was identified in itsourcecode Courier Management System 1.0. The affected element is an unknown functio... |
+| [CVE-2026-3006](https://nvd.nist.gov/vuln/detail/CVE-2026-3006) | 7.0 | HIGH | N/A | No | — | 4.90 | 2026-04-27 | Successful exploitation of the race condition vulnerability could allow an attacker to trigger a kernel heap overflow, p... |
+| [CVE-2026-7076](https://nvd.nist.gov/vuln/detail/CVE-2026-7076) | 6.9 | MEDIUM | CWE-74 | No | — | 4.83 | 2026-04-27 | A vulnerability was determined in itsourcecode Courier Management System 1.0. Impacted is an unknown function of the fil... |
+| [CVE-2026-7075](https://nvd.nist.gov/vuln/detail/CVE-2026-7075) | 6.9 | MEDIUM | CWE-74 | No | — | 4.83 | 2026-04-27 | A vulnerability was found in itsourcecode Construction Management System 1.0. This issue affects some unknown processing... |
+| [CVE-2026-7074](https://nvd.nist.gov/vuln/detail/CVE-2026-7074) | 6.9 | MEDIUM | CWE-74 | No | — | 4.83 | 2026-04-27 | A vulnerability has been found in itsourcecode Construction Management System 1.0. This vulnerability affects unknown co... |
+| [CVE-2026-7073](https://nvd.nist.gov/vuln/detail/CVE-2026-7073) | 6.9 | MEDIUM | CWE-74 | No | — | 4.83 | 2026-04-27 | A flaw has been found in itsourcecode Construction Management System 1.0. This affects an unknown part of the file /exec... |
+| [CVE-2026-7072](https://nvd.nist.gov/vuln/detail/CVE-2026-7072) | 6.9 | MEDIUM | CWE-74 | No | — | 4.83 | 2026-04-27 | A vulnerability was detected in CodePanda Source canteen_management_system 1.0. Affected by this issue is some unknown f... |
+| [CVE-2026-7071](https://nvd.nist.gov/vuln/detail/CVE-2026-7071) | 5.5 | MEDIUM | CWE-200 | No | — | 3.85 | 2026-04-27 | A security vulnerability has been detected in CodeAstro Online Job Portal 1.0. Affected by this vulnerability is an unkn... |
+| [CVE-2026-7070](https://nvd.nist.gov/vuln/detail/CVE-2026-7070) | 6.9 | MEDIUM | CWE-74 | No | — | 4.83 | 2026-04-27 | A weakness has been identified in code-projects Inventory Management System 1.0. Affected is an unknown function of the... |
+| [CVE-2026-7069](https://nvd.nist.gov/vuln/detail/CVE-2026-7069) | 8.6 | HIGH | CWE-119 | No | — | 6.02 | 2026-04-27 | A security flaw has been discovered in D-Link DIR-825 up to 3.00b32. This impacts the function AddPortMapping of the fil... |
+| [CVE-2026-7068](https://nvd.nist.gov/vuln/detail/CVE-2026-7068) | 8.7 | HIGH | CWE-119 | No | — | 6.09 | 2026-04-27 | A vulnerability was identified in D-Link DIR-825 3.00b32. This affects the function NMBD_process of the file sserver.c o... |
+| [CVE-2026-7067](https://nvd.nist.gov/vuln/detail/CVE-2026-7067) | 6.9 | MEDIUM | CWE-74 | No | — | 4.83 | 2026-04-27 | A vulnerability was determined in D-Link DIR-822 A_101. The impacted element is the function system of the file /udhcpcd... |
+| [CVE-2026-7066](https://nvd.nist.gov/vuln/detail/CVE-2026-7066) | 6.9 | MEDIUM | CWE-77 | No | — | 4.83 | 2026-04-27 | A vulnerability was found in choieastsea simple-openstack-mcp up to 767b2f4a8154cca344344b9725537a58399e6036. The affect... |
+| [CVE-2026-7065](https://nvd.nist.gov/vuln/detail/CVE-2026-7065) | 6.9 | MEDIUM | CWE-918 | No | — | 4.83 | 2026-04-27 | A vulnerability has been found in BidingCC BuildingAI up to 26.0.1. Impacted is the function uploadRemoteFile of the fil... |
+| [CVE-2026-42363](https://nvd.nist.gov/vuln/detail/CVE-2026-42363) | 9.3 | CRITICAL | CWE-656 | No | — | 6.51 | 2026-04-27 | An insufficient encryption vulnerability exists in the Device Authentication functionality of GeoVision GV-IP Device Uti... |
+| [CVE-2026-33566](https://nvd.nist.gov/vuln/detail/CVE-2026-33566) | 5.1 | MEDIUM | CWE-943 | No | — | 3.57 | 2026-04-27 | There is a cypher injection issue in LogonTracer prior to v2.0.0. If specially crafted Windows event log data is loaded,... |
+| [CVE-2026-33277](https://nvd.nist.gov/vuln/detail/CVE-2026-33277) | 8.7 | HIGH | CWE-78 | No | — | 6.09 | 2026-04-27 | An OS command Injection issue exists in LogonTracer prior to v2.0.0. An arbitrary OS command may be executed by a logged... |
+| [CVE-2026-7064](https://nvd.nist.gov/vuln/detail/CVE-2026-7064) | 6.9 | MEDIUM | CWE-77 | No | — | 4.83 | 2026-04-26 | A flaw has been found in AgentDeskAI browser-tools-mcp up to 1.2.0. This issue affects some unknown processing of the fi... |
+| [CVE-2026-7063](https://nvd.nist.gov/vuln/detail/CVE-2026-7063) | 6.9 | MEDIUM | CWE-74 | No | — | 4.83 | 2026-04-26 | A vulnerability was detected in code-projects Employee Management System 1.0. This vulnerability affects unknown code of... |
+| [CVE-2026-7062](https://nvd.nist.gov/vuln/detail/CVE-2026-7062) | 6.9 | MEDIUM | CWE-77 | No | — | 4.83 | 2026-04-26 | A security vulnerability has been detected in Intina47 context-sync up to 2.0.0. This affects an unknown part of the fil... |
 | [CVE-2026-7061](https://nvd.nist.gov/vuln/detail/CVE-2026-7061) | 6.9 | MEDIUM | CWE-77 | No | — | 4.83 | 2026-04-26 | A weakness has been identified in Toowiredd chatgpt-mcp-server up to 0.1.0. Affected by this issue is some unknown funct... |
 | [CVE-2026-7060](https://nvd.nist.gov/vuln/detail/CVE-2026-7060) | 6.9 | MEDIUM | CWE-74 | No | — | 4.83 | 2026-04-26 | A vulnerability was determined in liyupi yu-picture up to a053632c41340152bf75b66b3c543d129123d8ec. This impacts the fun... |
 | [CVE-2026-7059](https://nvd.nist.gov/vuln/detail/CVE-2026-7059) | 5.5 | MEDIUM | CWE-22 | No | — | 3.85 | 2026-04-26 | A vulnerability was found in 666ghj MiroFish up to 0.1.2. This affects the function get_simulation_posts of the file bac... |
