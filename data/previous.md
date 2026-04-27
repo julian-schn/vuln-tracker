@@ -1,6 +1,6 @@
 # CVEs — March 2026
 
-_5738 vulnerabilities_
+_5734 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
@@ -2759,7 +2759,6 @@ _5738 vulnerabilities_
 | [CVE-2026-32691](https://nvd.nist.gov/vuln/detail/CVE-2026-32691) | 5.3 | MEDIUM | CWE-708 | No | 0.0% | 3.71 | 2026-03-18 | A race condition in the secrets management subsystem of Juju versions 3.0.0 through 3.6.18 allows an authenticated unit... |
 | [CVE-2026-33265](https://nvd.nist.gov/vuln/detail/CVE-2026-33265) | 6.3 | MEDIUM | CWE-669 | No | 0.1% | 4.41 | 2026-03-18 | In LibreChat 0.8.1-rc2, a logged-in user obtains a JWT for both the LibreChat API and the RAG API. |
 | [CVE-2025-41258](https://nvd.nist.gov/vuln/detail/CVE-2025-41258) | 8.0 | HIGH | CWE-284 | No | 0.1% | 5.60 | 2026-03-18 | LibreChat version 0.8.1-rc2 uses the same JWT secret for the user session mechanism and RAG API which compromises the se... |
-| [CVE-2025-12518](https://nvd.nist.gov/vuln/detail/CVE-2025-12518) | 5.3 | MEDIUM | CWE-79 | No | 0.1% | 3.71 | 2026-03-18 | beefree.io SDK is vulnerable to Stored XSS in Social Media icon URL parameter in email builder functionality. Malicious... |
 | [CVE-2026-32565](https://nvd.nist.gov/vuln/detail/CVE-2026-32565) | 0.0 | NONE | CWE-862 | No | 0.0% | 0.00 | 2026-03-18 | Missing Authorization vulnerability in Ajay Contextual Related Posts contextual-related-posts allows Exploiting Incorrec... |
 | [CVE-2026-1217](https://nvd.nist.gov/vuln/detail/CVE-2026-1217) | 5.4 | MEDIUM | CWE-862 | No | 0.0% | 3.78 | 2026-03-18 | The Yoast Duplicate Post plugin for WordPress is vulnerable to unauthorized modification of data due to a missing capabi... |
 | [CVE-2026-22323](https://nvd.nist.gov/vuln/detail/CVE-2026-22323) | 7.1 | HIGH | CWE-352 | No | 0.0% | 4.97 | 2026-03-18 | A CSRF vulnerability in the Link Aggregation configuration interface allows an unauthenticated remote attacker to trick... |
@@ -3569,7 +3568,6 @@ _5738 vulnerabilities_
 | [CVE-2026-2987](https://nvd.nist.gov/vuln/detail/CVE-2026-2987) | 6.1 | MEDIUM | CWE-79 | No | 0.1% | 4.27 | 2026-03-12 | The Simple Ajax Chat plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'c' parameter in versions... |
 | [CVE-2026-2514](https://nvd.nist.gov/vuln/detail/CVE-2026-2514) | 8.6 | HIGH | CWE-79 | No | 0.0% | 6.02 | 2026-03-12 | In Progress Flowmon ADS versions prior to 12.5.5 and 13.0.3, a vulnerability exists whereby an adversary with access to... |
 | [CVE-2026-2513](https://nvd.nist.gov/vuln/detail/CVE-2026-2513) | 8.6 | HIGH | CWE-79 | No | 0.1% | 6.02 | 2026-03-12 | A vulnerability exists in Progress Flowmon ADS versions prior to 12.5.5 and 13.0.3, whereby an administrator who clicks... |
-| [CVE-2026-0809](https://nvd.nist.gov/vuln/detail/CVE-2026-0809) | 6.3 | MEDIUM | CWE-261 | No | 0.1% | 4.41 | 2026-03-12 | Use of a custom token encoding algorithm in Streamsoft Prestiż software allows the value of the KSeF (Krajowy System e-F... |
 | [CVE-2026-4040](https://nvd.nist.gov/vuln/detail/CVE-2026-4040) | 4.8 | MEDIUM | CWE-200 | No | 0.0% | 3.36 | 2026-03-12 | A vulnerability was identified in OpenClaw up to 2026.2.17. This issue affects the function tools.exec.safeBins of the c... |
 | [CVE-2026-4039](https://nvd.nist.gov/vuln/detail/CVE-2026-4039) | 5.3 | MEDIUM | CWE-74 | No | 0.1% | 3.71 | 2026-03-12 | A vulnerability was determined in OpenClaw 2026.2.19-2. This vulnerability affects the function applySkillConfigenvOverr... |
 | [CVE-2026-3989](https://nvd.nist.gov/vuln/detail/CVE-2026-3989) | 7.8 | HIGH | N/A | No | 0.0% | 5.46 | 2026-03-12 | SGLangs `replay_request_dump.py` contains an insecure pickle.load() without validation and proper deserialization. An at... |
@@ -4721,7 +4719,6 @@ _5738 vulnerabilities_
 | [CVE-2026-28106](https://nvd.nist.gov/vuln/detail/CVE-2026-28106) | 4.7 | MEDIUM | CWE-601 | No | 0.0% | 3.29 | 2026-03-06 | URL Redirection to Untrusted Site ('Open Redirect') vulnerability in Kings Plugins B2BKing Premium allows Phishing.This... |
 | [CVE-2026-28080](https://nvd.nist.gov/vuln/detail/CVE-2026-28080) | 4.3 | MEDIUM | CWE-862 | No | 0.0% | 3.01 | 2026-03-06 | Missing Authorization vulnerability in Rank Math Rank Math SEO PRO seo-by-rank-math-pro allows Exploiting Incorrectly Co... |
 | [CVE-2024-35644](https://nvd.nist.gov/vuln/detail/CVE-2024-35644) | 5.9 | MEDIUM | CWE-79 | No | 0.1% | 4.13 | 2026-03-06 | Improper Neutralization of Input During Web Page Generation (XSS or 'Cross-site Scripting') vulnerability in Pascal Birc... |
-| [CVE-2026-1468](https://nvd.nist.gov/vuln/detail/CVE-2026-1468) | 5.1 | MEDIUM | CWE-352 | No | 0.0% | 3.57 | 2026-03-06 | QuickCMS is vulnerable to Cross-Site Request Forgery across multiple endpoints. An attacker can craft special website, w... |
 | [CVE-2026-3589](https://nvd.nist.gov/vuln/detail/CVE-2026-3589) | 7.5 | HIGH | CWE-352 | No | 0.0% | 5.25 | 2026-03-06 | The WooCommerce WordPress plugin from versions 5.4.0 to 10.5.2 does not properly handle batch requests, which could allo... |
 | [CVE-2026-23925](https://nvd.nist.gov/vuln/detail/CVE-2026-23925) | 5.1 | MEDIUM | CWE-863 | No | 0.0% | 3.57 | 2026-03-06 | An authenticated Zabbix user (User role) with template/host write permissions is able to create objects via the configur... |
 | [CVE-2026-2830](https://nvd.nist.gov/vuln/detail/CVE-2026-2830) | 6.1 | MEDIUM | CWE-94 | No | 0.1% | 4.27 | 2026-03-06 | The WP All Import – Drag & Drop Import for CSV, XML, Excel & Google Sheets plugin for WordPress is vulnerable to Reflect... |
@@ -5673,7 +5670,6 @@ _5738 vulnerabilities_
 | [CVE-2026-1628](https://nvd.nist.gov/vuln/detail/CVE-2026-1628) | 4.6 | MEDIUM | CWE-829 | No | 0.0% | 3.22 | 2026-03-02 | Mattermost Desktop App versions <=5.13.3 fail to attach listeners restricting navigation to external sites within the Ma... |
 | [CVE-2026-3432](https://nvd.nist.gov/vuln/detail/CVE-2026-3432) | 9.3 | CRITICAL | CWE-862 | No | 0.1% | 6.51 | 2026-03-02 | On SimStudio version below to 0.5.74, the `/api/auth/oauth/token` endpoint contains a code path that bypasses all author... |
 | [CVE-2026-3431](https://nvd.nist.gov/vuln/detail/CVE-2026-3431) | 9.8 | CRITICAL | CWE-862 | No | 0.1% | 6.86 | 2026-03-02 | On SimStudio version below to 0.5.74, the MongoDB tool endpoints accept arbitrary connection parameters from the caller... |
-| [CVE-2025-12462](https://nvd.nist.gov/vuln/detail/CVE-2025-12462) | 9.3 | CRITICAL | CWE-89 | No | 0.2% | 6.52 | 2026-03-02 | A Blind SQL injection vulnerability has been identified in DobryCMS.  A remote unauthenticated attacker is able to injec... |
 | [CVE-2025-58406](https://nvd.nist.gov/vuln/detail/CVE-2025-58406) | 5.3 | MEDIUM | CWE-693 | No | 0.0% | 3.71 | 2026-03-02 | The CGM CLININET application respond without essential security HTTP headers, exposing users to client‑side attacks such... |
 | [CVE-2025-58405](https://nvd.nist.gov/vuln/detail/CVE-2025-58405) | 5.3 | MEDIUM | CWE-1021 | No | 0.0% | 3.71 | 2026-03-02 | The CGM CLININET application does not implement any mechanisms that prevent clickjacking attacks, neither HTTP security... |
 | [CVE-2025-58402](https://nvd.nist.gov/vuln/detail/CVE-2025-58402) | 7.1 | HIGH | CWE-639 | No | 0.0% | 4.97 | 2026-03-02 | The CGM CLININET application uses direct, sequential object identifiers "MessageID" without proper authorization checks.... |
