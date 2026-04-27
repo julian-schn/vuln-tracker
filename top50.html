@@ -11,7 +11,7 @@
     <header>
       <h1>vuln-tracker — Top 50</h1>
       <p class="subtitle">The 50 most important CVEs from the current and previous month, ranked by VAP score (70% CVSS + 30% EPSS)</p>
-      <p class="last-updated">Last updated: 2026-04-27 10:22 UTC</p>
+      <p class="last-updated">Last updated: 2026-04-27 14:09 UTC</p>
     </header>
     <nav>
       <a href="index.html">&larr; All CVEs</a>
@@ -52,6 +52,17 @@
         <td>2026-03-06</td>
       </tr>
       <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39987" target="_blank" rel="noopener">CVE-2026-39987</a></td>
+        <td>9.3</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-306</td>
+        <td><span class="kev-yes">&#10003;</span></td>
+        <td>55.2% <small>p98</small></td>
+        <td>8.17</td>
+        <td><details><summary>marimo is a reactive Python notebook. Prior to 0.23.0, Marimo has a Pre-Auth RCE...</summary><p>marimo is a reactive Python notebook. Prior to 0.23.0, Marimo has a Pre-Auth RCE vulnerability. The terminal WebSocket endpoint /terminal/ws lacks authentication validation, allowing an unauthenticated attacker to obtain a full PTY shell and execute arbitrary system commands. Unlike other WebSocket endpoints (e.g., /ws) that correctly call validate_auth() for authentication, the /terminal/ws endpoint only checks the running mode and platform support before accepting connections, completely skipping authentication verification. This vulnerability is fixed in 0.23.0.</p></details></td>
+        <td>2026-04-09</td>
+      </tr>
+      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35616" target="_blank" rel="noopener">CVE-2026-35616</a></td>
         <td>9.8</td>
         <td><span class="severity critical">CRITICAL</span></td>
@@ -61,17 +72,6 @@
         <td>8.10</td>
         <td><details><summary>A improper access control vulnerability in Fortinet FortiClientEMS 7.4.5 through...</summary><p>A improper access control vulnerability in Fortinet FortiClientEMS 7.4.5 through 7.4.6 may allow an unauthenticated attacker to execute unauthorized code or commands via crafted requests.</p></details></td>
         <td>2026-04-04</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39987" target="_blank" rel="noopener">CVE-2026-39987</a></td>
-        <td>9.3</td>
-        <td><span class="severity critical">CRITICAL</span></td>
-        <td>CWE-306</td>
-        <td><span class="kev-yes">&#10003;</span></td>
-        <td>48.8% <small>p97</small></td>
-        <td>7.97</td>
-        <td><details><summary>marimo is a reactive Python notebook. Prior to 0.23.0, Marimo has a Pre-Auth RCE...</summary><p>marimo is a reactive Python notebook. Prior to 0.23.0, Marimo has a Pre-Auth RCE vulnerability. The terminal WebSocket endpoint /terminal/ws lacks authentication validation, allowing an unauthenticated attacker to obtain a full PTY shell and execute arbitrary system commands. Unlike other WebSocket endpoints (e.g., /ws) that correctly call validate_auth() for authentication, the /terminal/ws endpoint only checks the running mode and platform support before accepting connections, completely skipping authentication verification. This vulnerability is fixed in 0.23.0.</p></details></td>
-        <td>2026-04-09</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-3055" target="_blank" rel="noopener">CVE-2026-3055</a></td>
@@ -90,8 +90,8 @@
         <td><span class="severity critical">CRITICAL</span></td>
         <td>CWE-269</td>
         <td>&nbsp;</td>
-        <td>32.7% <small>p96</small></td>
-        <td>7.84</td>
+        <td>30.8% <small>p96</small></td>
+        <td>7.78</td>
         <td><details><summary>The User Registration &amp; Membership – Custom Registration Form Builder, Custom Lo...</summary><p>The User Registration &amp; Membership – Custom Registration Form Builder, Custom Login Form, User Profile, Content Restriction &amp; Membership Plugin plugin for WordPress is vulnerable to improper privilege management in all versions up to, and including, 5.1.2. This is due to the plugin accepting a user-supplied role during membership registration without properly enforcing a server-side allowlist. This makes it possible for unauthenticated attackers to create administrator accounts by supplying a role value during membership registration.</p></details></td>
         <td>2026-03-03</td>
       </tr>
@@ -118,6 +118,17 @@
         <td>2026-03-30</td>
       </tr>
       <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-2699" target="_blank" rel="noopener">CVE-2026-2699</a></td>
+        <td>9.8</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-284</td>
+        <td>&nbsp;</td>
+        <td>23.8% <small>p96</small></td>
+        <td>7.57</td>
+        <td><details><summary>Customer Managed ShareFile Storage Zones Controller (SZC) allows an unauthentica...</summary><p>Customer Managed ShareFile Storage Zones Controller (SZC) allows an unauthenticated attacker to access restricted configuration pages. This leads to changing system configuration and potential remote code execution.</p></details></td>
+        <td>2026-04-02</td>
+      </tr>
+      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-28501" target="_blank" rel="noopener">CVE-2026-28501</a></td>
         <td>9.8</td>
         <td><span class="severity critical">CRITICAL</span></td>
@@ -138,17 +149,6 @@
         <td>7.48</td>
         <td><details><summary>The Kali Forms plugin for WordPress is vulnerable to Remote Code Execution in al...</summary><p>The Kali Forms plugin for WordPress is vulnerable to Remote Code Execution in all versions up to, and including, 2.4.9 via the &#x27;form_process&#x27; function. This is due to the &#x27;prepare_post_data&#x27; function mapping user-supplied keys directly into internal placeholder storage, combined with the use of &#x27;call_user_func&#x27; on these placeholder values. This makes it possible for unauthenticated attackers to execute code on the server.</p></details></td>
         <td>2026-03-20</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-2699" target="_blank" rel="noopener">CVE-2026-2699</a></td>
-        <td>9.8</td>
-        <td><span class="severity critical">CRITICAL</span></td>
-        <td>CWE-284</td>
-        <td>&nbsp;</td>
-        <td>20.0% <small>p95</small></td>
-        <td>7.46</td>
-        <td><details><summary>Customer Managed ShareFile Storage Zones Controller (SZC) allows an unauthentica...</summary><p>Customer Managed ShareFile Storage Zones Controller (SZC) allows an unauthenticated attacker to access restricted configuration pages. This leads to changing system configuration and potential remote code execution.</p></details></td>
-        <td>2026-04-02</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-27971" target="_blank" rel="noopener">CVE-2026-27971</a></td>
@@ -382,6 +382,17 @@
         <td>2026-03-12</td>
       </tr>
       <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40911" target="_blank" rel="noopener">CVE-2026-40911</a></td>
+        <td>10.0</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-94</td>
+        <td>&nbsp;</td>
+        <td>0.2% <small>p44</small></td>
+        <td>7.01</td>
+        <td><details><summary>WWBN AVideo is an open source video platform. In versions 29.0 and prior, the YP...</summary><p>WWBN AVideo is an open source video platform. In versions 29.0 and prior, the YPTSocket plugin&#x27;s WebSocket server relays attacker-supplied JSON message bodies to every connected client without sanitizing the `msg` or `callback` fields. On the client side, `plugin/YPTSocket/script.js` contains two `eval()` sinks fed directly by those relayed fields (`json.msg.autoEvalCodeOnHTML` at line 568 and `json.callback` at line 95). Because tokens are minted for anonymous visitors and never revalidated beyond decryption, an unauthenticated attacker can broadcast arbitrary JavaScript that executes in the origin of every currently-connected user (including administrators), resulting in universal account takeover, session theft, and privileged action execution. Commit c08694bf6264eb4decceb78c711baee2609b4efd contains a fix.</p></details></td>
+        <td>2026-04-21</td>
+      </tr>
+      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34208" target="_blank" rel="noopener">CVE-2026-34208</a></td>
         <td>10.0</td>
         <td><span class="severity critical">CRITICAL</span></td>
@@ -402,17 +413,6 @@
         <td>7.01</td>
         <td><details><summary>Paperclip is a Node.js server and React UI that orchestrates a team of AI agents...</summary><p>Paperclip is a Node.js server and React UI that orchestrates a team of AI agents to run a business. Prior to version 2026.416.0, an unauthenticated attacker can achieve full remote code execution on any network-accessible Paperclip instance running in `authenticated` mode with default configuration. No user interaction, no credentials, just the target&#x27;s address. The chain consists of six API calls. The attack is fully automated, requires no user interaction, and works against the default deployment configuration. Version 2026.416.0 patches the issue.</p></details></td>
         <td>2026-04-23</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40911" target="_blank" rel="noopener">CVE-2026-40911</a></td>
-        <td>10.0</td>
-        <td><span class="severity critical">CRITICAL</span></td>
-        <td>CWE-94</td>
-        <td>&nbsp;</td>
-        <td>0.2% <small>p37</small></td>
-        <td>7.00</td>
-        <td><details><summary>WWBN AVideo is an open source video platform. In versions 29.0 and prior, the YP...</summary><p>WWBN AVideo is an open source video platform. In versions 29.0 and prior, the YPTSocket plugin&#x27;s WebSocket server relays attacker-supplied JSON message bodies to every connected client without sanitizing the `msg` or `callback` fields. On the client side, `plugin/YPTSocket/script.js` contains two `eval()` sinks fed directly by those relayed fields (`json.msg.autoEvalCodeOnHTML` at line 568 and `json.callback` at line 95). Because tokens are minted for anonymous visitors and never revalidated beyond decryption, an unauthenticated attacker can broadcast arbitrary JavaScript that executes in the origin of every currently-connected user (including administrators), resulting in universal account takeover, session theft, and privileged action execution. Commit c08694bf6264eb4decceb78c711baee2609b4efd contains a fix.</p></details></td>
-        <td>2026-04-21</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34162" target="_blank" rel="noopener">CVE-2026-34162</a></td>
@@ -453,7 +453,7 @@
         <td><span class="severity critical">CRITICAL</span></td>
         <td>CWE-918</td>
         <td>&nbsp;</td>
-        <td>0.1% <small>p28</small></td>
+        <td>0.1% <small>p27</small></td>
         <td>7.00</td>
         <td><details><summary>Server-side request forgery (ssrf) in Azure Cloud Shell allows an unauthorized a...</summary><p>Server-side request forgery (ssrf) in Azure Cloud Shell allows an unauthorized attacker to elevate privileges over a network.</p></details></td>
         <td>2026-03-19</td>
@@ -492,6 +492,17 @@
         <td>2026-03-13</td>
       </tr>
       <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33494" target="_blank" rel="noopener">CVE-2026-33494</a></td>
+        <td>10.0</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-23</td>
+        <td>&nbsp;</td>
+        <td>0.1% <small>p24</small></td>
+        <td>7.00</td>
+        <td><details><summary>ORY Oathkeeper is an Identity &amp; Access Proxy (IAP) and Access Control Decision A...</summary><p>ORY Oathkeeper is an Identity &amp; Access Proxy (IAP) and Access Control Decision API that authorizes HTTP requests based on sets of Access Rules. Versions prior to 26.2.0 are vulnerable to an authorization bypass via HTTP path traversal. An attacker can craft a URL containing path traversal sequences (e.g. `/public/../admin/secrets`) that resolves to a protected path after normalization, but is matched against a permissive rule because the raw, un-normalized path is used during rule evaluation. Version 26.2.0 contains a patch.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32871" target="_blank" rel="noopener">CVE-2026-32871</a></td>
         <td>10.0</td>
         <td><span class="severity critical">CRITICAL</span></td>
@@ -501,17 +512,6 @@
         <td>7.00</td>
         <td><details><summary>FastMCP is a Pythonic way to build MCP servers and clients. Prior to version 3.2...</summary><p>FastMCP is a Pythonic way to build MCP servers and clients. Prior to version 3.2.0, the OpenAPIProvider in FastMCP exposes internal APIs to MCP clients by parsing OpenAPI specifications. The RequestDirector class is responsible for constructing HTTP requests to the backend service. A vulnerability exists in the _build_url() method. When an OpenAPI operation defines path parameters (e.g., /api/v1/users/{user_id}), the system directly substitutes parameter values into the URL template string without URL-encoding. Subsequently, urllib.parse.urljoin() resolves the final URL. Since urljoin() interprets ../ sequences as directory traversal, an attacker controlling a path parameter can perform path traversal attacks to escape the intended API prefix and access arbitrary backend endpoints. This results in authenticated SSRF, as requests are sent with the authorization headers configured in the MCP provider. This issue has been patched in version 3.2.0.</p></details></td>
         <td>2026-04-02</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33494" target="_blank" rel="noopener">CVE-2026-33494</a></td>
-        <td>10.0</td>
-        <td><span class="severity critical">CRITICAL</span></td>
-        <td>CWE-23</td>
-        <td>&nbsp;</td>
-        <td>0.1% <small>p23</small></td>
-        <td>7.00</td>
-        <td><details><summary>ORY Oathkeeper is an Identity &amp; Access Proxy (IAP) and Access Control Decision A...</summary><p>ORY Oathkeeper is an Identity &amp; Access Proxy (IAP) and Access Control Decision API that authorizes HTTP requests based on sets of Access Rules. Versions prior to 26.2.0 are vulnerable to an authorization bypass via HTTP path traversal. An attacker can craft a URL containing path traversal sequences (e.g. `/public/../admin/secrets`) that resolves to a protected path after normalization, but is matched against a permissive rule because the raw, un-normalized path is used during rule evaluation. Version 26.2.0 contains a patch.</p></details></td>
-        <td>2026-03-26</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-24898" target="_blank" rel="noopener">CVE-2026-24898</a></td>
@@ -558,23 +558,12 @@
         <td>2026-03-10</td>
       </tr>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32186" target="_blank" rel="noopener">CVE-2026-32186</a></td>
-        <td>10.0</td>
-        <td><span class="severity critical">CRITICAL</span></td>
-        <td>CWE-918</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p14</small></td>
-        <td>7.00</td>
-        <td><details><summary>Server-side request forgery (ssrf) in Microsoft Bing allows an unauthorized atta...</summary><p>Server-side request forgery (ssrf) in Microsoft Bing allows an unauthorized attacker to elevate privileges over a network.</p></details></td>
-        <td>2026-04-03</td>
-      </tr>
-      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33107" target="_blank" rel="noopener">CVE-2026-33107</a></td>
         <td>10.0</td>
         <td><span class="severity critical">CRITICAL</span></td>
         <td>CWE-918</td>
         <td>&nbsp;</td>
-        <td>0.0% <small>p14</small></td>
+        <td>0.1% <small>p17</small></td>
         <td>7.00</td>
         <td><details><summary>Server-side request forgery (ssrf) in Azure Databricks allows an unauthorized at...</summary><p>Server-side request forgery (ssrf) in Azure Databricks allows an unauthorized attacker to elevate privileges over a network.</p></details></td>
         <td>2026-04-03</td>
@@ -585,9 +574,20 @@
         <td><span class="severity critical">CRITICAL</span></td>
         <td>CWE-285</td>
         <td>&nbsp;</td>
-        <td>0.0% <small>p14</small></td>
+        <td>0.1% <small>p17</small></td>
         <td>7.00</td>
         <td><details><summary>Improper authorization in Microsoft Azure Kubernetes Service allows an unauthori...</summary><p>Improper authorization in Microsoft Azure Kubernetes Service allows an unauthorized attacker to elevate privileges over a network.</p></details></td>
+        <td>2026-04-03</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32213" target="_blank" rel="noopener">CVE-2026-32213</a></td>
+        <td>10.0</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-285</td>
+        <td>&nbsp;</td>
+        <td>0.1% <small>p17</small></td>
+        <td>7.00</td>
+        <td><details><summary>Improper authorization in Azure AI Foundry allows an unauthorized attacker to el...</summary><p>Improper authorization in Azure AI Foundry allows an unauthorized attacker to elevate privileges over a network.</p></details></td>
         <td>2026-04-03</td>
       </tr>
             </tbody>
