@@ -1,6 +1,6 @@
 # CVEs — March 2026
 
-_5737 vulnerabilities_
+_5734 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
@@ -1864,7 +1864,6 @@ _5737 vulnerabilities_
 | [CVE-2019-25622](https://nvd.nist.gov/vuln/detail/CVE-2019-25622) | 6.9 | MEDIUM | CWE-1285 | No | 0.0% | 4.83 | 2026-03-23 | Paint Studio 2.17 contains a denial of service vulnerability that allows local attackers to crash the application by pro... |
 | [CVE-2019-25621](https://nvd.nist.gov/vuln/detail/CVE-2019-25621) | 6.9 | MEDIUM | CWE-807 | No | 0.0% | 4.83 | 2026-03-23 | Pixel Studio 2.17 contains a denial of service vulnerability that allows local attackers to crash the application by pro... |
 | [CVE-2019-25620](https://nvd.nist.gov/vuln/detail/CVE-2019-25620) | 6.9 | MEDIUM | CWE-168 | No | 0.0% | 4.83 | 2026-03-23 | Tree Studio 2.17 contains a denial of service vulnerability that allows local attackers to crash the application by prov... |
-| [CVE-2026-4588](https://nvd.nist.gov/vuln/detail/CVE-2026-4588) | 2.9 | LOW | CWE-320 | No | 0.0% | 2.03 | 2026-03-23 | A vulnerability was determined in kalcaddle kodbox 1.64. Impacted is the function shareSafeGroup of the file /workspace/... |
 | [CVE-2026-4587](https://nvd.nist.gov/vuln/detail/CVE-2026-4587) | 6.3 | MEDIUM | CWE-287 | No | 0.0% | 4.41 | 2026-03-23 | A vulnerability was found in HybridAuth up to 3.12.2. This issue affects some unknown processing of the file src/HttpCli... |
 | [CVE-2026-4586](https://nvd.nist.gov/vuln/detail/CVE-2026-4586) | 2.1 | LOW | CWE-284 | No | 0.0% | 1.47 | 2026-03-23 | A vulnerability was found in CodePhiliaX Chat2DB up to 0.3.7. This affects the function Upload of the file chat2db-serve... |
 | [CVE-2026-31851](https://nvd.nist.gov/vuln/detail/CVE-2026-31851) | 7.7 | HIGH | CWE-307 | No | 0.0% | 5.39 | 2026-03-23 | Nexxt Solutions Nebula 300+ firmware through version 12.01.01.37 does not implement rate limiting or account lockout mec... |
@@ -2323,7 +2322,6 @@ _5737 vulnerabilities_
 | [CVE-2026-33056](https://nvd.nist.gov/vuln/detail/CVE-2026-33056) | 5.1 | MEDIUM | CWE-61 | No | 0.0% | 3.57 | 2026-03-20 | tar-rs is a tar archive reading/writing library for Rust. In versions 0.4.44 and below, when unpacking a tar archive, th... |
 | [CVE-2026-33022](https://nvd.nist.gov/vuln/detail/CVE-2026-33022) | 6.5 | MEDIUM | CWE-129 | No | 0.0% | 4.55 | 2026-03-20 | Tekton Pipelines project provides k8s-style resources for declaring CI/CD-style pipelines. Versions 0.60.0 through 1.0.0... |
 | [CVE-2026-4478](https://nvd.nist.gov/vuln/detail/CVE-2026-4478) | 8.2 | HIGH | CWE-345 | No | 0.0% | 5.74 | 2026-03-20 | A vulnerability was identified in Yi Technology YI Home Camera 2 2.1.1_20171024151200. This impacts an unknown function... |
-| [CVE-2026-4477](https://nvd.nist.gov/vuln/detail/CVE-2026-4477) | 1.3 | LOW | CWE-320 | No | 0.0% | 0.91 | 2026-03-20 | A vulnerability was determined in Yi Technology YI Home Camera 2 2.1.1_20171024151200. This affects an unknown function... |
 | [CVE-2026-4476](https://nvd.nist.gov/vuln/detail/CVE-2026-4476) | 2.1 | LOW | CWE-287 | No | 0.0% | 1.47 | 2026-03-20 | A vulnerability was found in Yi Technology YI Home Camera 2 2.1.1_20171024151200. The impacted element is an unknown fun... |
 | [CVE-2026-4475](https://nvd.nist.gov/vuln/detail/CVE-2026-4475) | 7.4 | HIGH | CWE-259 | No | 0.0% | 5.18 | 2026-03-20 | A vulnerability has been found in Yi Technology YI Home Camera 2 2.1.1_20171024151200. The affected element is an unknow... |
 | [CVE-2026-4474](https://nvd.nist.gov/vuln/detail/CVE-2026-4474) | 1.9 | LOW | CWE-79 | No | 0.0% | 1.33 | 2026-03-20 | A flaw has been found in itsourcecode University Management System 1.0. Impacted is an unknown function of the file /adm... |
@@ -3619,7 +3617,6 @@ _5737 vulnerabilities_
 | [CVE-2026-3965](https://nvd.nist.gov/vuln/detail/CVE-2026-3965) | 2.1 | LOW | CWE-693 | No | 0.1% | 1.47 | 2026-03-12 | A security vulnerability has been detected in whyour qinglong up to 2.20.1. Affected is an unknown function of the file... |
 | [CVE-2026-2808](https://nvd.nist.gov/vuln/detail/CVE-2026-2808) | 6.8 | MEDIUM | CWE-59 | No | 0.0% | 4.76 | 2026-03-12 | HashiCorp Consul and Consul Enterprise 1.18.20 up to 1.21.10 and 1.22.4 are vulnerable to arbitrary file read when confi... |
 | [CVE-2026-3964](https://nvd.nist.gov/vuln/detail/CVE-2026-3964) | 1.9 | LOW | CWE-77 | No | 0.4% | 1.34 | 2026-03-11 | A weakness has been identified in OpenAkita up to 1.24.3. This impacts the function run of the file src/openakita/tools/... |
-| [CVE-2026-3963](https://nvd.nist.gov/vuln/detail/CVE-2026-3963) | 2.9 | LOW | CWE-320 | No | 0.0% | 2.03 | 2026-03-11 | A security flaw has been discovered in perfree go-fastdfs-web up to 1.3.7. This affects the function rememberMeManager o... |
 | [CVE-2026-3962](https://nvd.nist.gov/vuln/detail/CVE-2026-3962) | 2.1 | LOW | CWE-79 | No | 0.0% | 1.47 | 2026-03-11 | A vulnerability was identified in Jcharis Machine-Learning-Web-Apps up to a6996b634d98ccec4701ac8934016e8175b60eb5. The... |
 | [CVE-2026-31988](https://nvd.nist.gov/vuln/detail/CVE-2026-31988) | 6.9 | MEDIUM | CWE-193 | No | 0.1% | 4.83 | 2026-03-11 | yauzl (aka Yet Another Unzip Library) version 3.2.0 for Node.js contains an off-by-one error in the NTFS extended timest... |
 | [CVE-2026-3961](https://nvd.nist.gov/vuln/detail/CVE-2026-3961) | 2.1 | LOW | CWE-918 | No | 0.1% | 1.47 | 2026-03-11 | A vulnerability was determined in zyddnys manga-image-translator up to beta-0.3. The affected element is the function to... |
