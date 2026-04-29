@@ -1,6 +1,6 @@
 # CVEs — March 2026
 
-_5735 vulnerabilities_
+_5734 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
@@ -2568,7 +2568,6 @@ _5735 vulnerabilities_
 | [CVE-2026-32119](https://nvd.nist.gov/vuln/detail/CVE-2026-32119) | 4.4 | MEDIUM | CWE-79 | No | 0.0% | 3.08 | 2026-03-19 | OpenEMR is a free and open source electronic health records and medical practice management application. Prior to 8.0.0.... |
 | [CVE-2026-25928](https://nvd.nist.gov/vuln/detail/CVE-2026-25928) | 6.5 | MEDIUM | CWE-22 | No | 0.0% | 4.55 | 2026-03-19 | OpenEMR is a free and open source electronic health records and medical practice management application. Prior to 8.0.0.... |
 | [CVE-2026-25744](https://nvd.nist.gov/vuln/detail/CVE-2026-25744) | 6.5 | MEDIUM | CWE-639 | No | 0.1% | 4.55 | 2026-03-19 | OpenEMR is a free and open source electronic health records and medical practice management application. Prior to 8.0.0.... |
-| [CVE-2026-3503](https://nvd.nist.gov/vuln/detail/CVE-2026-3503) | 4.3 | MEDIUM | CWE-335 | No | 0.0% | 3.01 | 2026-03-19 | Protection mechanism failure in wolfCrypt post-quantum implementations (ML-KEM and ML-DSA) in wolfSSL on ARM Cortex-M mi... |
 | [CVE-2026-25667](https://nvd.nist.gov/vuln/detail/CVE-2026-25667) | 7.5 | HIGH | CWE-400 | No | 3.5% | 5.35 | 2026-03-19 | ASP.NET Core Kestrel in Microsoft .NET 8.0 before 8.0.22 and .NET 9.0 before 9.0.11 allows a remote attacker to cause ex... |
 | [CVE-2026-3548](https://nvd.nist.gov/vuln/detail/CVE-2026-3548) | 7.2 | HIGH | CWE-122 | No | 0.0% | 5.04 | 2026-03-19 | Two buffer overflow vulnerabilities existed in the wolfSSL CRL parser when parsing CRL numbers: a heap-based buffer over... |
 | [CVE-2026-30694](https://nvd.nist.gov/vuln/detail/CVE-2026-30694) | 9.8 | CRITICAL | CWE-94 | No | 0.3% | 6.87 | 2026-03-19 | An issue in DedeCMS v.5.7.118 and before allows a remote attacker to execute arbitrary code via the array_filter compone... |

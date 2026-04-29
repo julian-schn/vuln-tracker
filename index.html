@@ -11,7 +11,7 @@
     <header>
       <h1>vuln-tracker</h1>
       <p class="subtitle">CVEs from the National Vulnerability Database — current and previous month</p>
-      <p class="last-updated">Last updated: 2026-04-29 17:43 UTC</p>
+      <p class="last-updated">Last updated: 2026-04-29 19:44 UTC</p>
     </header>
     <nav>
       <a href="top50.html">&#9733; Top 50</a>
@@ -25,7 +25,7 @@
     </nav>
     <main>
     <section>
-      <h2>Current Month — April 2026 <span class="count">(4863)</span></h2>
+      <h2>Current Month — April 2026 <span class="count">(4866)</span></h2>
       <div class="table-wrapper">
         <table>
           <thead>
@@ -42,6 +42,219 @@
             </tr>
           </thead>
           <tbody>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-7466" target="_blank" rel="noopener">CVE-2026-7466</a></td>
+        <td>7.7</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-94</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.39</td>
+        <td><details><summary>AgentFlow contains an arbitrary code execution vulnerability that allows attacke...</summary><p>AgentFlow contains an arbitrary code execution vulnerability that allows attackers to execute local Python pipeline files by supplying a user-controlled pipeline_path parameter to the POST /api/runs and POST /api/runs/validate endpoints. Attackers can induce requests to the local AgentFlow API to load and execute existing Python pipeline files on disk, resulting in code execution in the context of the user running AgentFlow.</p></details></td>
+        <td>2026-04-29</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-7439" target="_blank" rel="noopener">CVE-2026-7439</a></td>
+        <td>4.8</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-346</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.36</td>
+        <td><details><summary>AgentFlow&#x27;s local web API accepts non-JSON content types on POST /api/runs and P...</summary><p>AgentFlow&#x27;s local web API accepts non-JSON content types on POST /api/runs and POST /api/runs/validate endpoints without enforcing application/json validation, allowing attackers to bypass trust-boundary enforcement on sensitive operations. Attackers can exploit this content-type validation weakness through browser-driven or local cross-origin requests to abuse the localhost API and enable attack chains against the local control plane.</p></details></td>
+        <td>2026-04-29</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-7424" target="_blank" rel="noopener">CVE-2026-7424</a></td>
+        <td>7.2</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-191</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.04</td>
+        <td><details><summary>Integer underflow in the DHCPv6 sub-option parser in FreeRTOS-Plus-TCP before V4...</summary><p>Integer underflow in the DHCPv6 sub-option parser in FreeRTOS-Plus-TCP before V4.4.1 and V4.2.6 allows an adjacent network actor to corrupt the device&#x27;s IPv6 address assignment, DNS configuration, and lease times, and to cause a denial of service (permanent IP task freeze requiring hardware reset) by sending a single crafted DHCPv6 packet.
+
+
+
+
+
+
+
+
+The issue is present whenever DHCPv6 is enabled.
+
+
+
+
+
+
+
+
+To mitigate this issue, users should upgrade to version V4.2.6 or V4.4.1 or newer.</p></details></td>
+        <td>2026-04-29</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-7423" target="_blank" rel="noopener">CVE-2026-7423</a></td>
+        <td>6.0</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-191</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.20</td>
+        <td><details><summary>Integer underflow in the ICMP and ICMPv6 echo reply handlers in FreeRTOS-Plus-TC...</summary><p>Integer underflow in the ICMP and ICMPv6 echo reply handlers in FreeRTOS-Plus-TCP before V4.4.1 and V4.2.6 allows an adjacent network user to cause a denial of service (device crash) when outgoing ping support is enabled, because header sizes are subtracted from a packet length field without validating the field is large enough, resulting in a heap out-of-bounds read of up to approximately 65KB.
+
+
+
+To mitigate this issue, users should upgrade to the fixed version when available.</p></details></td>
+        <td>2026-04-29</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-7422" target="_blank" rel="noopener">CVE-2026-7422</a></td>
+        <td>7.1</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-290</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.97</td>
+        <td><details><summary>Insufficient packet validation in FreeRTOS-Plus-TCP before V4.2.6 and V4.4.1 all...</summary><p>Insufficient packet validation in FreeRTOS-Plus-TCP before V4.2.6 and V4.4.1 allows an adjacent network actor to bypass all checksum and minimum-size validation by spoofing the Ethernet source MAC address to match one of the device&#x27;s own registered endpoints, because the loopback detection mechanism skips all input validation for packets whose source MAC matches a local endpoint.
+
+
+
+To mitigate this issue, users should upgrade to the fixed version when available.</p></details></td>
+        <td>2026-04-29</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-7398" target="_blank" rel="noopener">CVE-2026-7398</a></td>
+        <td>5.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-22</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.85</td>
+        <td><details><summary>A weakness has been identified in florensiawidjaja BioinfoMCP up to 7ada7918b9e5...</summary><p>A weakness has been identified in florensiawidjaja BioinfoMCP up to 7ada7918b9e515604d3c0ae264d3a9af10bf6e54. This vulnerability affects the function Upload of the file bioinfo_mcp_platform/app.py of the component Upload Endpoint. This manipulation of the argument Name causes path traversal. The attack can be initiated remotely. The exploit has been made available to the public and could be used for attacks. Continious delivery with rolling releases is used by this product. Therefore, no version details of affected nor updated releases are available. The project was informed of the problem early through an issue report but has not responded yet.</p></details></td>
+        <td>2026-04-29</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-7397" target="_blank" rel="noopener">CVE-2026-7397</a></td>
+        <td>1.9</td>
+        <td><span class="severity low">LOW</span></td>
+        <td>CWE-59</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>1.33</td>
+        <td><details><summary>A security flaw has been discovered in NousResearch hermes-agent 0.8.0. This aff...</summary><p>A security flaw has been discovered in NousResearch hermes-agent 0.8.0. This affects the function _check_sensitive_path of the file tools/file_tools.py. The manipulation results in symlink following. Attacking locally is a requirement. The exploit has been released to the public and may be used for attacks. Upgrading to version 0.9.0 is able to mitigate this issue. The patch is identified as 311dac197145e19e07df68feba2cd55d896a3cd1. Upgrading the affected component is recommended.</p></details></td>
+        <td>2026-04-29</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-41499" target="_blank" rel="noopener">CVE-2026-41499</a></td>
+        <td>6.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-124</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.55</td>
+        <td><details><summary>Wazuh is a free and open source platform used for threat prevention, detection, ...</summary><p>Wazuh is a free and open source platform used for threat prevention, detection, and response. From version 4.0.0 to before version 4.14.4, multiple heap-based out-of-bounds WRITE vulnerabilities exist in parse_uname_string() (remoted_op.c). This function processes OS identification data from agents and contains a dangerous code pattern that appears in 4 locations within the same function: writing to strlen(ptr) - 1 without checking for empty strings. When the string is empty, strlen() returns 0, and 0 - 1 wraps to SIZE_MAX due to unsigned integer underflow. Due to pointer arithmetic wrapping, SIZE_MAX effectively becomes -1, causing a write exactly 1 byte before the allocated buffer. This corrupts heap metadata (e.g., the chunk size field in glibc malloc), leading to heap corruption. This issue has been patched in version 4.14.4.</p></details></td>
+        <td>2026-04-29</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-30893" target="_blank" rel="noopener">CVE-2026-30893</a></td>
+        <td>9.0</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-22</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.30</td>
+        <td><details><summary>Wazuh is a free and open source platform used for threat prevention, detection, ...</summary><p>Wazuh is a free and open source platform used for threat prevention, detection, and response. From version 4.4.0 to before version 4.14.4, a path traversal vulnerability in Wazuh&#x27;s cluster synchronization extraction routine allows an authenticated cluster peer to write arbitrary files outside the intended extraction directory on other cluster nodes. This can be escalated to code execution in the Wazuh service context by overwriting Python modules loaded by Wazuh components (proof of concept available as separate attachment). In deployments where the cluster daemon runs with elevated privileges, system-level compromise is possible. This issue has been patched in version 4.14.4.</p></details></td>
+        <td>2026-04-29</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-28221" target="_blank" rel="noopener">CVE-2026-28221</a></td>
+        <td>6.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-121</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.55</td>
+        <td><details><summary>Wazuh is a free and open source platform used for threat prevention, detection, ...</summary><p>Wazuh is a free and open source platform used for threat prevention, detection, and response. From version 4.8.0 to before version 4.14.4, a stack-based buffer overflow exists in print_hex_string() in wazuh-remoted. The bug is triggered when formatting attacker-controlled bytes using sprintf(dst_buf + 2*i, &quot;%.2x&quot;, src_buf[i]) on platforms where char is treated as signed and the compiled code sign-extends bytes before the variadic call. For input bytes such as 0xFF, the formatting can emit &quot;ffffffff&quot; (8 chars) instead of &quot;ff&quot; (2 chars), causing an out-of-bounds write past a fixed 2049-byte stack buffer. The vulnerable path is reachable remotely prior to any agent authentication/registration logic via TCP/1514 when an oversized length prefix causes the “unexpected message (hex)” diagnostic path to run. Additionally, the same unauthenticated oversized-message diagnostic path logs an attacker-controlled hex dump to /var/ossec/logs/ossec.log for each trigger, allowing remote log amplification that can degrade monitoring fidelity and consume disk/I/O. This log amplification is reachable even without triggering the sign-extension overflow (e.g., using bytes &lt; 0x80). This issue has been patched in version 4.14.4.</p></details></td>
+        <td>2026-04-29</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-27105" target="_blank" rel="noopener">CVE-2026-27105</a></td>
+        <td>6.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-59</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.41</td>
+        <td><details><summary>Dell/Alienware Purchased Apps, versions prior to 1.1.31.0, contain an Improper L...</summary><p>Dell/Alienware Purchased Apps, versions prior to 1.1.31.0, contain an Improper Link Resolution Before File Access (&#x27;Link Following&#x27;) vulnerability. A low privileged attacker with local access could potentially exploit this vulnerability, leading to Arbitrary File Write</p></details></td>
+        <td>2026-04-29</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-26206" target="_blank" rel="noopener">CVE-2026-26206</a></td>
+        <td>6.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-307</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.55</td>
+        <td><details><summary>Wazuh is a free and open source platform used for threat prevention, detection, ...</summary><p>Wazuh is a free and open source platform used for threat prevention, detection, and response. From version 4.0.0 to before version 4.14.4, Wazuh&#x27;s server API brute-force protection for POST /security/user/authenticate can be bypassed by sending concurrent authentication requests. Although the configured threshold (max_login_attempts, default 50) is enforced correctly for sequential requests, a parallel burst allows significantly more failed login attempts to be processed before the IP block is applied. This enables an attacker to perform more password guesses than the configured policy intends (e.g., 100 attempts processed where 50 should be allowed). This issue has been patched in version 4.14.4.</p></details></td>
+        <td>2026-04-29</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-7396" target="_blank" rel="noopener">CVE-2026-7396</a></td>
+        <td>5.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-22</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.85</td>
+        <td><details><summary>A vulnerability was identified in NousResearch hermes-agent 0.8.0. Affected by t...</summary><p>A vulnerability was identified in NousResearch hermes-agent 0.8.0. Affected by this issue is some unknown functionality of the file gateway/platforms/wecom.py of the component WeChat Work Platform Adapter. The manipulation leads to path traversal. It is possible to initiate the attack remotely. The exploit is publicly available and might be used.</p></details></td>
+        <td>2026-04-29</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-7394" target="_blank" rel="noopener">CVE-2026-7394</a></td>
+        <td>2.0</td>
+        <td><span class="severity low">LOW</span></td>
+        <td>CWE-74</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>1.40</td>
+        <td><details><summary>A vulnerability was determined in SourceCodester Pizzafy Ecommerce System 1.0. A...</summary><p>A vulnerability was determined in SourceCodester Pizzafy Ecommerce System 1.0. Affected by this vulnerability is an unknown functionality of the file /admin/view_order.php of the component GET Parameter Handler. Executing a manipulation of the argument ID can lead to sql injection. The attack may be performed from remote. The exploit has been publicly disclosed and may be utilized.</p></details></td>
+        <td>2026-04-29</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5712" target="_blank" rel="noopener">CVE-2026-5712</a></td>
+        <td>8.0</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-863</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.60</td>
+        <td><details><summary>This vulnerability impacts all versions of IdentityIQ and allows an authenticate...</summary><p>This vulnerability impacts all versions of IdentityIQ and allows an authenticated identity that is the requestor or assignee of a work item to edit the definition of a role without having an assigned capability that would allow role editing.</p></details></td>
+        <td>2026-04-29</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-26204" target="_blank" rel="noopener">CVE-2026-26204</a></td>
+        <td>4.4</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-124</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.08</td>
+        <td><details><summary>Wazuh is a free and open source platform used for threat prevention, detection, ...</summary><p>Wazuh is a free and open source platform used for threat prevention, detection, and response. From version 1.0.0 to before version 4.14.4, a heap-based out-of-bounds WRITE occurs in GetAlertData, resulting in writing a NULL byte exactly 1 byte before the start of the buffer allocated by strdup. Due to unsigned integer underflow and pointer arithmetic wrapping, the write lands at offset -1 from the buffer, corrupting heap metadata. A malicious actor can potentially leverage this issue through a compromised agent to cause denial of service or heap corruption by injecting a specially crafted alert into the alerts log file monitored by wazuh-logcollector. This issue has been patched in version 4.14.4.</p></details></td>
+        <td>2026-04-29</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-26015" target="_blank" rel="noopener">CVE-2026-26015</a></td>
+        <td>10.0</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-77</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>7.00</td>
+        <td><details><summary>DocsGPT is a GPT-powered chat for documentation. From version 0.15.0 to before v...</summary><p>DocsGPT is a GPT-powered chat for documentation. From version 0.15.0 to before version 0.16.0, an attacker accessing both the official DocsGPT website or any local and public deployment, can craft a malicious payload bypassing the &quot;MCP test&quot; behavior to achieve arbitrary remote code execution (RCE). This issue has been patched in version 0.16.0.</p></details></td>
+        <td>2026-04-29</td>
+      </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-7393" target="_blank" rel="noopener">CVE-2026-7393</a></td>
         <td>2.0</td>
@@ -84,18 +297,6 @@
         <td>&mdash;</td>
         <td>3.71</td>
         <td><details><summary>An authorization flaw in the user management command could allow an authenticate...</summary><p>An authorization flaw in the user management command could allow an authenticated user to make limited changes to authentication-related data associated with another user account. This could affect how authentication is performed for the impacted account.</p></details></td>
-        <td>2026-04-29</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6914" target="_blank" rel="noopener">CVE-2026-6914</a></td>
-        <td>7.1</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-191</td>
-        <td>&nbsp;</td>
-        <td>&mdash;</td>
-        <td>4.97</td>
-        <td><details><summary>Computing the MD5 checksum of a malformed BSON object under specific conditions ...</summary><p>Computing the MD5 checksum of a malformed BSON object under specific conditions may cause loss of availability in MongoDB server.
-This issue affects all MongoDB Server v8.2 versions, all MongoDB Server v8.1 versions, MongoDB Server v8.0 versions prior to 8.0.21, MongoDB Server v7.0 versions prior to 7.0.32</p></details></td>
         <td>2026-04-29</td>
       </tr>
       <tr>
@@ -173,32 +374,6 @@ This issue affects all MongoDB Server v8.2 versions, all MongoDB Server v8.1 ver
         <td>&mdash;</td>
         <td>3.85</td>
         <td><details><summary>A flaw has been found in fatbobman mail-mcp-bridge up to 1.3.3. Affected is an u...</summary><p>A flaw has been found in fatbobman mail-mcp-bridge up to 1.3.3. Affected is an unknown function of the file src/mail_mcp_server.py. Executing a manipulation of the argument message_ids can lead to path traversal. The attack can be executed remotely. The exploit has been published and may be used. Upgrading to version 1.3.4 is able to address this issue. This patch is called 638b162b26532e32fa8d8047f638537dbdfe197a. Upgrading the affected component is recommended.</p></details></td>
-        <td>2026-04-29</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6849" target="_blank" rel="noopener">CVE-2026-6849</a></td>
-        <td>8.8</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-78</td>
-        <td>&nbsp;</td>
-        <td>&mdash;</td>
-        <td>6.16</td>
-        <td><details><summary>Improper neutralization of special elements used in an OS command (&#x27;OS command i...</summary><p>Improper neutralization of special elements used in an OS command (&#x27;OS command injection&#x27;) vulnerability in TUBITAK BILGEM Software Technologies Research Institute Pardus OS My Computer allows OS Command Injection.
-
-This issue affects Pardus OS My Computer: from &lt;=0.7.5 before 0.8.0.</p></details></td>
-        <td>2026-04-29</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5166" target="_blank" rel="noopener">CVE-2026-5166</a></td>
-        <td>9.6</td>
-        <td><span class="severity critical">CRITICAL</span></td>
-        <td>CWE-22</td>
-        <td>&nbsp;</td>
-        <td>&mdash;</td>
-        <td>6.72</td>
-        <td><details><summary>Improper Limitation of a Pathname to a Restricted Directory (&#x27;Path Traversal&#x27;) v...</summary><p>Improper Limitation of a Pathname to a Restricted Directory (&#x27;Path Traversal&#x27;) vulnerability in TUBITAK BILGEM Software Technologies Research Institute Pardus Software Center allows Path Traversal.
-
-This issue affects Pardus Software Center: before 1.0.3.</p></details></td>
         <td>2026-04-29</td>
       </tr>
       <tr>
@@ -357,43 +532,17 @@ This issue affects Pardus Software Center: before 1.0.3.</p></details></td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-7111" target="_blank" rel="noopener">CVE-2026-7111</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>8.4</td>
+        <td><span class="severity high">HIGH</span></td>
         <td>CWE-416</td>
         <td>&nbsp;</td>
         <td>&mdash;</td>
-        <td>0.00</td>
+        <td>5.88</td>
         <td><details><summary>Text::CSV_XS versions before 1.62 for Perl have a use-after-free when registered...</summary><p>Text::CSV_XS versions before 1.62 for Perl have a use-after-free when registered callbacks extend the Perl argument stack, which may enable type confusion or memory corruption.
 
 The Parse, print, getline, and getline_all methods invoke registered callbacks (for example after_parse, before_print, or on_error) and cache the Perl argument stack pointer across the call. If a callback extends the argument stack enough to trigger a reallocation, the return value is written through the stale pointer into the freed buffer, and the caller reads the original $self argument as the return value instead.
 
 Calling code that expects parsed data from getline_all receives the Text::CSV_XS object in its place, leading to logic errors or crashes. Text::CSV_XS objects used without any registered callbacks are not affected.</p></details></td>
-        <td>2026-04-29</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5161" target="_blank" rel="noopener">CVE-2026-5161</a></td>
-        <td>8.8</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-59</td>
-        <td>&nbsp;</td>
-        <td>&mdash;</td>
-        <td>6.16</td>
-        <td><details><summary>Improper link resolution before file access (&#x27;link following&#x27;) vulnerability in ...</summary><p>Improper link resolution before file access (&#x27;link following&#x27;) vulnerability in TUBITAK BILGEM Software Technologies Research Institute Pardus About allows Symlink Attack.
-
-This issue affects Pardus About: before v1.2.1.</p></details></td>
-        <td>2026-04-29</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5141" target="_blank" rel="noopener">CVE-2026-5141</a></td>
-        <td>8.8</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-266</td>
-        <td>&nbsp;</td>
-        <td>&mdash;</td>
-        <td>6.16</td>
-        <td><details><summary>Improper Privilege Management, Improper Access Control, Incorrect privilege assi...</summary><p>Improper Privilege Management, Improper Access Control, Incorrect privilege assignment vulnerability in TUBITAK BILGEM Software Technologies Research Institute Pardus Software Center allows Hijacking a privileged process.
-
-This issue affects Pardus Software Center: from 1.0.2 before 1.0.3.</p></details></td>
         <td>2026-04-29</td>
       </tr>
       <tr>
@@ -460,19 +609,6 @@ This issue affects Pardus Software Center: from 1.0.2 before 1.0.3.</p></details
         <td>&mdash;</td>
         <td>4.69</td>
         <td><details><summary>Local privilege escalation due to DLL hijacking vulnerability. The following pro...</summary><p>Local privilege escalation due to DLL hijacking vulnerability. The following products are affected: Acronis DeviceLock DLP (Windows) before build 9.0.93212.</p></details></td>
-        <td>2026-04-29</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5140" target="_blank" rel="noopener">CVE-2026-5140</a></td>
-        <td>8.8</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-93</td>
-        <td>&nbsp;</td>
-        <td>&mdash;</td>
-        <td>6.16</td>
-        <td><details><summary>Improper neutralization of CRLF sequences (&#x27;CRLF injection&#x27;) vulnerability in TU...</summary><p>Improper neutralization of CRLF sequences (&#x27;CRLF injection&#x27;) vulnerability in TUBITAK BILGEM Software Technologies Research Institute Pardus allows Authentication Bypass.
-
-This issue affects Pardus: from &lt;=0.6.4 before 0.8.0.</p></details></td>
         <td>2026-04-29</td>
       </tr>
       <tr>
@@ -641,37 +777,6 @@ This issue affects Pardus: from &lt;=0.6.4 before 0.8.0.</p></details></td>
         <td>2026-04-29</td>
       </tr>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-42249" target="_blank" rel="noopener">CVE-2026-42249</a></td>
-        <td>7.7</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-22</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p9</small></td>
-        <td>5.39</td>
-        <td><details><summary>Ollama for Windows contains a Remote Code Execution vulnerability in its update ...</summary><p>Ollama for Windows contains a Remote Code Execution vulnerability in its update mechanism due to improper handling of attacker‑controlled HTTP response headers. When downloading updates, the application constructs local file paths using values derived from HTTP headers without validation. These values are passed directly to filepath.Join, allowing path traversal sequences (../) to be resolved and enabling files to be written outside the intended update staging directory.
-An attacker who can influence update responses can exploit this flaw to write arbitrary executables to attacker‑chosen locations accessible to the current user, including the Windows Startup directory. This allows execution of arbitrary executables.
-
-Critically, when chained with CVE‑2026‑42248 (Missing Signature Verification for Updates), an attacker can deliver malicious payloads that are written to sensitive locations and executed automatically. Because Ollama for Windows performs silent automatic updates and executes staged binaries without user interaction, this results in automatic and persistent code execution without user awareness.
-
-Maintainers of this project were notified early about this vulnerability, but didn&#x27;t respond with the details of vulnerability or vulnerable version range. Versions from 0.12.10 to 0.17.5 were tested and confirmed as vulnerable, other versions were not tested but might also be vulnerable.</p></details></td>
-        <td>2026-04-29</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-42248" target="_blank" rel="noopener">CVE-2026-42248</a></td>
-        <td>7.7</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-494</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p0</small></td>
-        <td>5.39</td>
-        <td><details><summary>Ollama for Windows does not perform integrity or authenticity verification of do...</summary><p>Ollama for Windows does not perform integrity or authenticity verification of downloaded update executables. Unlike other platforms, the Windows implementation of the update verification routine unconditionally returns success so no digital signature or trust validation is performed before staging or executing update payloads, enabling attacker‑supplied executables to be accepted and later executed by the application.
-
-Critically, Ollama for Windows performs silent automatic updates, so the malicious payload may be installed automatically without user awareness.
-
-Maintainers of this project were notified early about this vulnerability, but didn&#x27;t respond with the details of vulnerability or vulnerable version range. Versions from 0.12.10 to 0.17.5 were tested and confirmed as vulnerable, other versions were not tested but might also be vulnerable.</p></details></td>
-        <td>2026-04-29</td>
-      </tr>
-      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-2902" target="_blank" rel="noopener">CVE-2026-2902</a></td>
         <td>6.1</td>
         <td><span class="severity medium">MEDIUM</span></td>
@@ -680,62 +785,6 @@ Maintainers of this project were notified early about this vulnerability, but di
         <td>0.1% <small>p21</small></td>
         <td>4.27</td>
         <td><details><summary>The WP Meteor Website Speed Optimization Addon plugin for WordPress is vulnerabl...</summary><p>The WP Meteor Website Speed Optimization Addon plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the &#x27;frontend_rewrite&#x27; function&#x27;s &#x27;WPMETEOR[N]WPMETEOR&#x27; placeholder content in all versions up to, and including, 3.4.16 due to insufficient input sanitization and output escaping. This makes it possible for unauthenticated attackers to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.</p></details></td>
-        <td>2026-04-29</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-22745" target="_blank" rel="noopener">CVE-2026-22745</a></td>
-        <td>5.3</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-400</td>
-        <td>&nbsp;</td>
-        <td>0.1% <small>p16</small></td>
-        <td>3.71</td>
-        <td><details><summary>Spring MVC and WebFlux applications are vulnerable to Denial of Service attacks ...</summary><p>Spring MVC and WebFlux applications are vulnerable to Denial of Service attacks when resolving static resources.
-
-
-More precisely, an application can be vulnerable when all the following are true:
-
-  *  the application is using Spring MVC or Spring WebFlux
-  *  the application is serving static resources from the file system
-  *  the application is running on a Windows platform
-
-
-When all the conditions above are met, the attacker can send malicious requests that are slow to resolve and that can keep HTTP connections in use. This can cause a Denial of Service on the application.</p></details></td>
-        <td>2026-04-29</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-22741" target="_blank" rel="noopener">CVE-2026-22741</a></td>
-        <td>3.1</td>
-        <td><span class="severity low">LOW</span></td>
-        <td>CWE-524</td>
-        <td>&nbsp;</td>
-        <td>0.1% <small>p16</small></td>
-        <td>2.17</td>
-        <td><details><summary>Spring MVC and WebFlux applications are vulnerable to cache poisoning when resol...</summary><p>Spring MVC and WebFlux applications are vulnerable to cache poisoning when resolving static resources.
-
-
-More precisely, an application can be vulnerable when all the following are true:
-
-  *  the application is using Spring MVC or Spring WebFlux
-  *  the application is configuring the  resource chain support https://docs.spring.io/spring-framework/reference/web/webmvc/mvc-config/static-resources.html#page-title  with caching enabled
-  *  the application adds support for encoded resources resolution
-  *  the resource cache must be empty when the attacker has access to the application
-
-
-When all the conditions above are met, the attacker can send malicious requests and poison the resource cache with resources using the wrong encoding. This can cause a denial of service by breaking the front-end application for clients.</p></details></td>
-        <td>2026-04-29</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-22740" target="_blank" rel="noopener">CVE-2026-22740</a></td>
-        <td>6.5</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-400</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p9</small></td>
-        <td>4.55</td>
-        <td><details><summary>A WebFlux server application that processes multipart requests creates temp file...</summary><p>A WebFlux server application that processes multipart requests creates temp files for parts larger than 10 K. Under some circumstances, temp files may remain not deleted after the request is fully processed. This allows an attacker to consume available disk space.
-
-Older, unsupported versions are also affected.</p></details></td>
         <td>2026-04-29</td>
       </tr>
       <tr>
@@ -838,21 +887,6 @@ Older, unsupported versions are also affected.</p></details></td>
         <td>2026-04-29</td>
       </tr>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40560" target="_blank" rel="noopener">CVE-2026-40560</a></td>
-        <td>7.5</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-444</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p4</small></td>
-        <td>5.25</td>
-        <td><details><summary>Starman versions before 0.4018 for Perl allows HTTP Request Smuggling via Improp...</summary><p>Starman versions before 0.4018 for Perl allows HTTP Request Smuggling via Improper Header Precedence.
-
-Starman incorrectly prioritizes &quot;Content-Length&quot; over &quot;Transfer-Encoding: chunked&quot; when both headers are present in an HTTP request. Per RFC 7230 3.3.3, Transfer-Encoding must take precedence.
-
-An attacker could exploit this to smuggle malicious HTTP requests via a front-end reverse proxy.</p></details></td>
-        <td>2026-04-29</td>
-      </tr>
-      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-7363" target="_blank" rel="noopener">CVE-2026-7363</a></td>
         <td>8.8</td>
         <td><span class="severity high">HIGH</span></td>
@@ -887,45 +921,45 @@ An attacker could exploit this to smuggle malicious HTTP requests via a front-en
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-7359" target="_blank" rel="noopener">CVE-2026-7359</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>8.8</td>
+        <td><span class="severity high">HIGH</span></td>
         <td>CWE-416</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p1</small></td>
-        <td>0.00</td>
+        <td>6.16</td>
         <td><details><summary>Use after free in ANGLE in Google Chrome prior to 147.0.7727.138 allowed a remot...</summary><p>Use after free in ANGLE in Google Chrome prior to 147.0.7727.138 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: High)</p></details></td>
         <td>2026-04-28</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-7358" target="_blank" rel="noopener">CVE-2026-7358</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>8.8</td>
+        <td><span class="severity high">HIGH</span></td>
         <td>CWE-416</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p1</small></td>
-        <td>0.00</td>
+        <td>6.16</td>
         <td><details><summary>Use after free in Animation in Google Chrome prior to 147.0.7727.138 allowed a r...</summary><p>Use after free in Animation in Google Chrome prior to 147.0.7727.138 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: High)</p></details></td>
         <td>2026-04-28</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-7357" target="_blank" rel="noopener">CVE-2026-7357</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>8.8</td>
+        <td><span class="severity high">HIGH</span></td>
         <td>CWE-416</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p1</small></td>
-        <td>0.00</td>
+        <td>6.16</td>
         <td><details><summary>Use after free in GPU in Google Chrome prior to 147.0.7727.138 allowed a remote ...</summary><p>Use after free in GPU in Google Chrome prior to 147.0.7727.138 allowed a remote attacker who had compromised the renderer process to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)</p></details></td>
         <td>2026-04-28</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-7356" target="_blank" rel="noopener">CVE-2026-7356</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>8.8</td>
+        <td><span class="severity high">HIGH</span></td>
         <td>CWE-416</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p11</small></td>
-        <td>0.00</td>
+        <td>6.16</td>
         <td><details><summary>Use after free in Navigation in Google Chrome prior to 147.0.7727.138 allowed a ...</summary><p>Use after free in Navigation in Google Chrome prior to 147.0.7727.138 allowed a remote attacker to execute arbitrary code via a crafted HTML page. (Chromium security severity: High)</p></details></td>
         <td>2026-04-28</td>
       </tr>
@@ -942,12 +976,12 @@ An attacker could exploit this to smuggle malicious HTTP requests via a front-en
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-7354" target="_blank" rel="noopener">CVE-2026-7354</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>8.8</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-125</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p1</small></td>
-        <td>0.00</td>
+        <td>6.16</td>
         <td><details><summary>Out of bounds read and write in Angle in Google Chrome prior to 147.0.7727.138 a...</summary><p>Out of bounds read and write in Angle in Google Chrome prior to 147.0.7727.138 allowed a remote attacker to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: High)</p></details></td>
         <td>2026-04-28</td>
       </tr>
@@ -1162,12 +1196,12 @@ An attacker could exploit this to smuggle malicious HTTP requests via a front-en
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-7334" target="_blank" rel="noopener">CVE-2026-7334</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>8.8</td>
+        <td><span class="severity high">HIGH</span></td>
         <td>CWE-416</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p1</small></td>
-        <td>0.00</td>
+        <td>6.16</td>
         <td><details><summary>Use after free in Views in Google Chrome on Mac prior to 147.0.7727.138 allowed ...</summary><p>Use after free in Views in Google Chrome on Mac prior to 147.0.7727.138 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)</p></details></td>
         <td>2026-04-28</td>
       </tr>
@@ -2085,23 +2119,6 @@ An attacker could exploit this to smuggle malicious HTTP requests via a front-en
         <td>2026-04-28</td>
       </tr>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-41873" target="_blank" rel="noopener">CVE-2026-41873</a></td>
-        <td>9.8</td>
-        <td><span class="severity critical">CRITICAL</span></td>
-        <td>CWE-444</td>
-        <td>&nbsp;</td>
-        <td>0.1% <small>p30</small></td>
-        <td>6.86</td>
-        <td><details><summary>** UNSUPPORTED WHEN ASSIGNED ** Inconsistent Interpretation of HTTP Requests (&#x27;H...</summary><p>** UNSUPPORTED WHEN ASSIGNED ** Inconsistent Interpretation of HTTP Requests (&#x27;HTTP Request/Response Smuggling&#x27;) vulnerability in Pony Mail leading to admin account takeover.
-
-This issue affects all versions of the Lua implementation of Pony Mail. There is a Python implementation under development under the name &quot;Pony Mail Foal&quot; that is not affected by this issue, but hasn&#x27;t been released yet.
-
-As the Lua implementation of this project is retired, we do not plan to release a version that fixes this issue. Users are recommended to find an alternative or restrict access to the instance to trusted users.
-
-NOTE: This vulnerability only affects products that are no longer supported by the maintainer.</p></details></td>
-        <td>2026-04-28</td>
-      </tr>
-      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-38948" target="_blank" rel="noopener">CVE-2026-38948</a></td>
         <td>5.4</td>
         <td><span class="severity medium">MEDIUM</span></td>
@@ -2531,6 +2548,48 @@ NOTE: This vulnerability only affects products that are no longer supported by t
         <td>2026-04-28</td>
       </tr>
       <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40980" target="_blank" rel="noopener">CVE-2026-40980</a></td>
+        <td>6.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-400</td>
+        <td>&nbsp;</td>
+        <td>0.0% <small>p11</small></td>
+        <td>4.55</td>
+        <td><details><summary>In Spring AI, a malicious PDF file can be crafted that triggers the allocation o...</summary><p>In Spring AI, a malicious PDF file can be crafted that triggers the allocation of unreasonable amounts of memory when handled by `ForkPDFLayoutTextStripper`.
+
+Affected versions:
+Spring AI: 1.0.0 - 1.0.5 (fixed in 1.0.6), 1.1.0 - 1.1.4 (fixed in 1.1.5)</p></details></td>
+        <td>2026-04-28</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40979" target="_blank" rel="noopener">CVE-2026-40979</a></td>
+        <td>6.1</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-377</td>
+        <td>&nbsp;</td>
+        <td>0.0% <small>p1</small></td>
+        <td>4.27</td>
+        <td><details><summary>In Spring AI, having access to a shared environment can expose the ONNX model us...</summary><p>In Spring AI, having access to a shared environment can expose the ONNX model used by the application.
+
+Affected versions:
+Spring AI: 1.0.0 - 1.0.5 (fixed in 1.0.6), 1.1.0 - 1.1.4 (fixed in 1.1.5)</p></details></td>
+        <td>2026-04-28</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40978" target="_blank" rel="noopener">CVE-2026-40978</a></td>
+        <td>8.8</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-89</td>
+        <td>&nbsp;</td>
+        <td>0.0% <small>p12</small></td>
+        <td>6.16</td>
+        <td><details><summary>SQL injection vulnerability in Spring AI&#x27;s `CosmosDBVectorStore` allows attacker...</summary><p>SQL injection vulnerability in Spring AI&#x27;s `CosmosDBVectorStore` allows attackers to execute arbitrary SQL queries via crafted document IDs.
+
+Affected versions:
+Spring AI: 1.0.0 - 1.0.5 (fixed in 1.0.6), 1.1.0 - 1.1.4 (fixed in 1.1.5)</p></details></td>
+        <td>2026-04-28</td>
+      </tr>
+      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-10539" target="_blank" rel="noopener">CVE-2025-10539</a></td>
         <td>4.8</td>
         <td><span class="severity medium">MEDIUM</span></td>
@@ -2726,6 +2785,20 @@ NOTE: This vulnerability only affects products that are no longer supported by t
         <td>0.1% <small>p15</small></td>
         <td>3.78</td>
         <td><details><summary>The Check &amp; Log Email  WordPress plugin before 2.0.13 does not properly handle e...</summary><p>The Check &amp; Log Email  WordPress plugin before 2.0.13 does not properly handle email replacement, which could allow unauthenticated users to perform Stored XSS attacks when the email encoder setting is enabled</p></details></td>
+        <td>2026-04-28</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40967" target="_blank" rel="noopener">CVE-2026-40967</a></td>
+        <td>8.6</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-94</td>
+        <td>&nbsp;</td>
+        <td>0.0% <small>p14</small></td>
+        <td>6.02</td>
+        <td><details><summary>In Spring AI, various FilterExpressionConverter implementations accept a filter ...</summary><p>In Spring AI, various FilterExpressionConverter implementations accept a filter expression object and translate them to specific vector store query languages. In several cases, keys and values are not properly escaped, leading to the ability to alter the query.
+
+Affected versions:
+Spring AI: 1.0.0 - 1.0.5 (fixed in 1.0.6), 1.1.0 - 1.1.4 (fixed in 1.1.5)</p></details></td>
         <td>2026-04-28</td>
       </tr>
       <tr>
@@ -4379,6 +4452,38 @@ NOTE: This vulnerability only affects products that are no longer supported by t
         <td>2026-04-27</td>
       </tr>
       <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-41409" target="_blank" rel="noopener">CVE-2026-41409</a></td>
+        <td>9.8</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-502</td>
+        <td>&nbsp;</td>
+        <td>0.0% <small>p14</small></td>
+        <td>6.86</td>
+        <td><details><summary>The fix for CVE-2024-52046 in Apache MINA AbstractIoBuffer.getObject() was incom...</summary><p>The fix for CVE-2024-52046 in Apache MINA AbstractIoBuffer.getObject() was incomplete. The classname allowlist of classes allowed to be deserialized was applied too late after a static initializer in a class to be read might already have been executed.
+
+
+
+
+Affected versions are Apache MINA 2.0.0 &lt;= 2.0.27, 2.1.0 &lt;= 2.1.10, and 2.2.0 &lt;= 2.2.5.
+
+
+
+
+The problem is resolved in Apache MINA 2.0.28, 2.1.11, and 2.2.6 by 
+applying the classname allowlist earlier.
+
+
+
+
+Affected are applications using Apache MINA that call IoBuffer.getObject().
+
+
+
+
+Applications using Apache MINA are advised to upgrade</p></details></td>
+        <td>2026-04-27</td>
+      </tr>
+      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-7108" target="_blank" rel="noopener">CVE-2026-7108</a></td>
         <td>2.1</td>
         <td><span class="severity low">LOW</span></td>
@@ -4475,6 +4580,51 @@ NOTE: This vulnerability only affects products that are no longer supported by t
         <td>0.0% <small>p8</small></td>
         <td>5.39</td>
         <td><details><summary>Insertion of Sensitive Information Into Sent Data vulnerability in WPDeveloper T...</summary><p>Insertion of Sensitive Information Into Sent Data vulnerability in WPDeveloper Templately allows Retrieve Embedded Sensitive Data.This issue affects Templately: from n/a through 3.6.1.</p></details></td>
+        <td>2026-04-27</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-41635" target="_blank" rel="noopener">CVE-2026-41635</a></td>
+        <td>9.8</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-502</td>
+        <td>&nbsp;</td>
+        <td>0.0% <small>p14</small></td>
+        <td>6.86</td>
+        <td><details><summary>Apache MINA&#x27;s AbstractIoBuffer.resolveClass() contains two branches, one of them...</summary><p>Apache MINA&#x27;s AbstractIoBuffer.resolveClass() contains two branches, one of them (for static classes or primitive types) does not check the class at all, bypassing the classname allowlist and allowing arbitrary code to be executed.
+
+
+
+
+The fix checks if the class is present in the accepted class filter before calling Class.forName(). 
+
+
+
+
+
+
+Affected versions are Apache MINA 2.0.0 &lt;= 2.0.27, 2.1.0 &lt;= 2.1.10, and
+
+
+2.2.0 &lt;= 2.2.5.
+
+
+
+
+
+The problem is resolved in Apache MINA 2.0.28, 2.1.11, and 2.2.6 by 
+applying the classname allowlist earlier.
+
+
+
+
+
+Affected are applications using Apache MINA that call  IoBuffer.getObject().
+
+
+
+
+
+Applications using Apache MINA are advised to upgrade.</p></details></td>
         <td>2026-04-27</td>
       </tr>
       <tr>
@@ -6755,318 +6905,107 @@ NOTE: This vulnerability only affects products that are no longer supported by t
         <td>2026-04-24</td>
       </tr>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-31612" target="_blank" rel="noopener">CVE-2026-31612</a></td>
-        <td>7.5</td>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-31614" target="_blank" rel="noopener">CVE-2026-31614</a></td>
+        <td>7.1</td>
         <td><span class="severity high">HIGH</span></td>
-        <td>NVD-CWE-noinfo</td>
+        <td>CWE-125</td>
         <td>&nbsp;</td>
-        <td>0.0% <small>p10</small></td>
-        <td>5.25</td>
-        <td><details><summary>In the Linux kernel, the following vulnerability has been resolved:
-
-ksmbd: vali...</summary><p>In the Linux kernel, the following vulnerability has been resolved:
-
-ksmbd: validate EaNameLength in smb2_get_ea()
-
-smb2_get_ea() reads ea_req-&gt;EaNameLength from the client request and
-passes it directly to strncmp() as the comparison length without
-verifying that the length of the name really is the size of the input
-buffer received.
-
-Fix this up by properly checking the size of the name based on the value
-received and the overall size of the request, to prevent a later
-strncmp() call to use the length as a &quot;trusted&quot; size of the buffer.
-Without this check, uninitialized heap values might be slowly leaked to
-the client.</p></details></td>
-        <td>2026-04-24</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-31611" target="_blank" rel="noopener">CVE-2026-31611</a></td>
-        <td>8.6</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>NVD-CWE-noinfo</td>
-        <td>&nbsp;</td>
-        <td>0.1% <small>p16</small></td>
-        <td>6.02</td>
-        <td><details><summary>In the Linux kernel, the following vulnerability has been resolved:
-
-ksmbd: requ...</summary><p>In the Linux kernel, the following vulnerability has been resolved:
-
-ksmbd: require 3 sub-authorities before reading sub_auth[2]
-
-parse_dacl() compares each ACE SID against sid_unix_NFS_mode and on
-match reads sid.sub_auth[2] as the file mode.  If sid_unix_NFS_mode is
-the prefix S-1-5-88-3 with num_subauth = 2 then compare_sids() compares
-only min(num_subauth, 2) sub-authorities so a client SID with
-num_subauth = 2 and sub_auth = {88, 3} will match.
-
-If num_subauth = 2 and the ACE is placed at the very end of the security
-descriptor, sub_auth[2] will be  4 bytes past end_of_acl.  The
-out-of-band bytes will then be masked to the low 9 bits and applied as
-the file&#x27;s POSIX mode, probably not something that is good to have
-happen.
-
-Fix this up by forcing the SID to actually carry a third sub-authority
-before reading it at all.</p></details></td>
-        <td>2026-04-24</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-31610" target="_blank" rel="noopener">CVE-2026-31610</a></td>
-        <td>5.5</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-401</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p13</small></td>
-        <td>3.85</td>
-        <td><details><summary>In the Linux kernel, the following vulnerability has been resolved:
-
-ksmbd: fix ...</summary><p>In the Linux kernel, the following vulnerability has been resolved:
-
-ksmbd: fix mechToken leak when SPNEGO decode fails after token alloc
-
-The kernel ASN.1 BER decoder calls action callbacks incrementally as it
-walks the input.  When ksmbd_decode_negTokenInit() reaches the mechToken
-[2] OCTET STRING element, ksmbd_neg_token_alloc() allocates
-conn-&gt;mechToken immediately via kmemdup_nul().  If a later element in
-the same blob is malformed, then the decoder will return nonzero after
-the allocation is already live.  This could happen if mechListMIC [3]
-overrunse the enclosing SEQUENCE.
-
-decode_negotiation_token() then sets conn-&gt;use_spnego = false because
-both the negTokenInit and negTokenTarg grammars failed.  The cleanup at
-the bottom of smb2_sess_setup() is gated on use_spnego:
-
-	if (conn-&gt;use_spnego &amp;&amp; conn-&gt;mechToken) {
-		kfree(conn-&gt;mechToken);
-		conn-&gt;mechToken = NULL;
-	}
-
-so the kfree is skipped, causing the mechToken to never be freed.
-
-This codepath is reachable pre-authentication, so untrusted clients can
-cause slow memory leaks on a server without even being properly
-authenticated.
-
-Fix this up by not checking check for use_spnego, as it&#x27;s not required,
-so the memory will always be properly freed.  At the same time, always
-free the memory in ksmbd_conn_free() incase some other failure path
-forgot to free it.</p></details></td>
-        <td>2026-04-24</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-31609" target="_blank" rel="noopener">CVE-2026-31609</a></td>
-        <td>9.8</td>
-        <td><span class="severity critical">CRITICAL</span></td>
-        <td>CWE-415</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p13</small></td>
-        <td>6.86</td>
+        <td>0.0% <small>p6</small></td>
+        <td>4.97</td>
         <td><details><summary>In the Linux kernel, the following vulnerability has been resolved:
 
 smb: client...</summary><p>In the Linux kernel, the following vulnerability has been resolved:
 
-smb: client: avoid double-free in smbd_free_send_io() after smbd_send_batch_flush()
+smb: client: fix off-by-8 bounds check in check_wsl_eas()
 
-smbd_send_batch_flush() already calls smbd_free_send_io(),
-so we should not call it again after smbd_post_send()
-moved it to the batch list.</p></details></td>
+The bounds check uses (u8 *)ea + nlen + 1 + vlen as the end of the EA
+name and value, but ea_data sits at offset sizeof(struct
+smb2_file_full_ea_info) = 8 from ea, not at offset 0.  The strncmp()
+later reads ea-&gt;ea_data[0..nlen-1] and the value bytes follow at
+ea_data[nlen+1..nlen+vlen], so the actual end is ea-&gt;ea_data + nlen + 1
++ vlen.  Isn&#x27;t pointer math fun?
+
+The earlier check (u8 *)ea &gt; end - sizeof(*ea) only guarantees the
+8-byte header is in bounds, but since the last EA is placed within 8
+bytes of the end of the response, the name and value bytes are read past
+the end of iov.
+
+Fix this mess all up by using ea-&gt;ea_data as the base for the bounds
+check.
+
+An &quot;untrusted&quot; server can use this to leak up to 8 bytes of kernel heap
+into the EA name comparison and influence which WSL xattr the data is
+interpreted as.</p></details></td>
         <td>2026-04-24</td>
       </tr>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-31597" target="_blank" rel="noopener">CVE-2026-31597</a></td>
-        <td>7.8</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-416</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p1</small></td>
-        <td>5.46</td>
-        <td><details><summary>In the Linux kernel, the following vulnerability has been resolved:
-
-ocfs2: fix ...</summary><p>In the Linux kernel, the following vulnerability has been resolved:
-
-ocfs2: fix use-after-free in ocfs2_fault() when VM_FAULT_RETRY
-
-filemap_fault() may drop the mmap_lock before returning VM_FAULT_RETRY,
-as documented in mm/filemap.c:
-
-  &quot;If our return value has VM_FAULT_RETRY set, it&#x27;s because the mmap_lock
-  may be dropped before doing I/O or by lock_folio_maybe_drop_mmap().&quot;
-
-When this happens, a concurrent munmap() can call remove_vma() and free
-the vm_area_struct via RCU. The saved &#x27;vma&#x27; pointer in ocfs2_fault() then
-becomes a dangling pointer, and the subsequent trace_ocfs2_fault() call
-dereferences it -- a use-after-free.
-
-Fix this by saving ip_blkno as a plain integer before calling
-filemap_fault(), and removing vma from the trace event. Since
-ip_blkno is copied by value before the lock can be dropped, it
-remains valid regardless of what happens to the vma or inode
-afterward.</p></details></td>
-        <td>2026-04-24</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-31596" target="_blank" rel="noopener">CVE-2026-31596</a></td>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-31605" target="_blank" rel="noopener">CVE-2026-31605</a></td>
         <td>5.5</td>
         <td><span class="severity medium">MEDIUM</span></td>
-        <td>NVD-CWE-noinfo</td>
+        <td>CWE-369</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p6</small></td>
         <td>3.85</td>
         <td><details><summary>In the Linux kernel, the following vulnerability has been resolved:
 
-ocfs2: hand...</summary><p>In the Linux kernel, the following vulnerability has been resolved:
+fbdev: udlf...</summary><p>In the Linux kernel, the following vulnerability has been resolved:
 
-ocfs2: handle invalid dinode in ocfs2_group_extend
+fbdev: udlfb: avoid divide-by-zero on FBIOPUT_VSCREENINFO
 
-[BUG]
-kernel BUG at fs/ocfs2/resize.c:308!
-Oops: invalid opcode: 0000 [#1] SMP KASAN NOPTI
-RIP: 0010:ocfs2_group_extend+0x10aa/0x1ae0 fs/ocfs2/resize.c:308
-Code: 8b8520ff ffff83f8 860f8580 030000e8 5cc3c1fe
-Call Trace:
- ...
- ocfs2_ioctl+0x175/0x6e0 fs/ocfs2/ioctl.c:869
- vfs_ioctl fs/ioctl.c:51 [inline]
- __do_sys_ioctl fs/ioctl.c:597 [inline]
- __se_sys_ioctl fs/ioctl.c:583 [inline]
- __x64_sys_ioctl+0x197/0x1e0 fs/ioctl.c:583
- x64_sys_call+0x1144/0x26a0 arch/x86/include/generated/asm/syscalls_64.h:17
- do_syscall_x64 arch/x86/entry/syscall_64.c:63 [inline]
- do_syscall_64+0x93/0xf80 arch/x86/entry/syscall_64.c:94
- entry_SYSCALL_64_after_hwframe+0x76/0x7e
- ...
-
-[CAUSE]
-ocfs2_group_extend() assumes that the global bitmap inode block
-returned from ocfs2_inode_lock() has already been validated and
-BUG_ONs when the signature is not a dinode. That assumption is too
-strong for crafted filesystems because the JBD2-managed buffer path
-can bypass structural validation and return an invalid dinode to the
-resize ioctl.
-
-[FIX]
-Validate the dinode explicitly in ocfs2_group_extend(). If the global
-bitmap buffer does not contain a valid dinode, report filesystem
-corruption with ocfs2_error() and fail the resize operation instead of
-crashing the kernel.</p></details></td>
+Much like commit 19f953e74356 (&quot;fbdev: fb_pm2fb: Avoid potential divide
+by zero error&quot;), we also need to prevent that same crash from happening
+in the udlfb driver as it uses pixclock directly when dividing, which
+will crash.</p></details></td>
         <td>2026-04-24</td>
       </tr>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-31595" target="_blank" rel="noopener">CVE-2026-31595</a></td>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-31604" target="_blank" rel="noopener">CVE-2026-31604</a></td>
         <td>5.5</td>
         <td><span class="severity medium">MEDIUM</span></td>
-        <td>NVD-CWE-noinfo</td>
+        <td>CWE-401</td>
+        <td>&nbsp;</td>
+        <td>0.0% <small>p7</small></td>
+        <td>3.85</td>
+        <td><details><summary>In the Linux kernel, the following vulnerability has been resolved:
+
+wifi: rtw88...</summary><p>In the Linux kernel, the following vulnerability has been resolved:
+
+wifi: rtw88: fix device leak on probe failure
+
+Driver core holds a reference to the USB interface and its parent USB
+device while the interface is bound to a driver and there is no need to
+take additional references unless the structures are needed after
+disconnect.
+
+This driver takes a reference to the USB device during probe but does
+not to release it on all probe errors (e.g. when descriptor parsing
+fails).
+
+Drop the redundant device reference to fix the leak, reduce cargo
+culting, make it easier to spot drivers where an extra reference is
+needed, and reduce the risk of further memory leaks.</p></details></td>
+        <td>2026-04-24</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-31603" target="_blank" rel="noopener">CVE-2026-31603</a></td>
+        <td>5.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-369</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p6</small></td>
         <td>3.85</td>
         <td><details><summary>In the Linux kernel, the following vulnerability has been resolved:
 
-PCI: endpoi...</summary><p>In the Linux kernel, the following vulnerability has been resolved:
+staging: sm...</summary><p>In the Linux kernel, the following vulnerability has been resolved:
 
-PCI: endpoint: pci-epf-vntb: Stop cmd_handler work in epf_ntb_epc_cleanup
+staging: sm750fb: fix division by zero in ps_to_hz()
 
-Disable the delayed work before clearing BAR mappings and doorbells to
-avoid running the handler after resources have been torn down.
+ps_to_hz() is called from hw_sm750_crtc_set_mode() without validating
+that pixclock is non-zero. A zero pixclock passed via FBIOPUT_VSCREENINFO
+causes a division by zero.
 
-  Unable to handle kernel paging request at virtual address ffff800083f46004
-  [...]
-  Internal error: Oops: 0000000096000007 [#1]  SMP
-  [...]
-  Call trace:
-   epf_ntb_cmd_handler+0x54/0x200 [pci_epf_vntb] (P)
-   process_one_work+0x154/0x3b0
-   worker_thread+0x2c8/0x400
-   kthread+0x148/0x210
-   ret_from_fork+0x10/0x20</p></details></td>
-        <td>2026-04-24</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-31594" target="_blank" rel="noopener">CVE-2026-31594</a></td>
-        <td>5.5</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>NVD-CWE-noinfo</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p6</small></td>
-        <td>3.85</td>
-        <td><details><summary>In the Linux kernel, the following vulnerability has been resolved:
-
-PCI: endpoi...</summary><p>In the Linux kernel, the following vulnerability has been resolved:
-
-PCI: endpoint: pci-epf-vntb: Remove duplicate resource teardown
-
-epf_ntb_epc_destroy() duplicates the teardown that the caller is
-supposed to perform later. This leads to an oops when .allow_link fails
-or when .drop_link is performed. The following is an example oops of the
-former case:
-
-  Unable to handle kernel paging request at virtual address dead000000000108
-  [...]
-  [dead000000000108] address between user and kernel address ranges
-  Internal error: Oops: 0000000096000044 [#1]  SMP
-  [...]
-  Call trace:
-   pci_epc_remove_epf+0x78/0xe0 (P)
-   pci_primary_epc_epf_link+0x88/0xa8
-   configfs_symlink+0x1f4/0x5a0
-   vfs_symlink+0x134/0x1d8
-   do_symlinkat+0x88/0x138
-   __arm64_sys_symlinkat+0x74/0xe0
-  [...]
-
-Remove the helper, and drop pci_epc_put(). EPC device refcounting is
-tied to the configfs EPC group lifetime, and pci_epc_put() in the
-.drop_link path is sufficient.</p></details></td>
-        <td>2026-04-24</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-31593" target="_blank" rel="noopener">CVE-2026-31593</a></td>
-        <td>5.5</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>NVD-CWE-noinfo</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p4</small></td>
-        <td>3.85</td>
-        <td><details><summary>In the Linux kernel, the following vulnerability has been resolved:
-
-KVM: SEV: R...</summary><p>In the Linux kernel, the following vulnerability has been resolved:
-
-KVM: SEV: Reject attempts to sync VMSA of an already-launched/encrypted vCPU
-
-Reject synchronizing vCPU state to its associated VMSA if the vCPU has
-already been launched, i.e. if the VMSA has already been encrypted.  On a
-host with SNP enabled, accessing guest-private memory generates an RMP #PF
-and panics the host.
-
-  BUG: unable to handle page fault for address: ff1276cbfdf36000
-  #PF: supervisor write access in kernel mode
-  #PF: error_code(0x80000003) - RMP violation
-  PGD 5a31801067 P4D 5a31802067 PUD 40ccfb5063 PMD 40e5954063 PTE 80000040fdf36163
-  SEV-SNP: PFN 0x40fdf36, RMP entry: [0x6010fffffffff001 - 0x000000000000001f]
-  Oops: Oops: 0003 [#1] SMP NOPTI
-  CPU: 33 UID: 0 PID: 996180 Comm: qemu-system-x86 Tainted: G           OE
-  Tainted: [O]=OOT_MODULE, [E]=UNSIGNED_MODULE
-  Hardware name: Dell Inc. PowerEdge R7625/0H1TJT, BIOS 1.5.8 07/21/2023
-  RIP: 0010:sev_es_sync_vmsa+0x54/0x4c0 [kvm_amd]
-  Call Trace:
-   &lt;TASK&gt;
-   snp_launch_update_vmsa+0x19d/0x290 [kvm_amd]
-   snp_launch_finish+0xb6/0x380 [kvm_amd]
-   sev_mem_enc_ioctl+0x14e/0x720 [kvm_amd]
-   kvm_arch_vm_ioctl+0x837/0xcf0 [kvm]
-   kvm_vm_ioctl+0x3fd/0xcc0 [kvm]
-   __x64_sys_ioctl+0xa3/0x100
-   x64_sys_call+0xfe0/0x2350
-   do_syscall_64+0x81/0x10f0
-   entry_SYSCALL_64_after_hwframe+0x76/0x7e
-  RIP: 0033:0x7ffff673287d
-   &lt;/TASK&gt;
-
-Note, the KVM flaw has been present since commit ad73109ae7ec (&quot;KVM: SVM:
-Provide support to launch and run an SEV-ES guest&quot;), but has only been
-actively dangerous for the host since SNP support was added.  With SEV-ES,
-KVM would &quot;just&quot; clobber guest state, which is totally fine from a host
-kernel perspective since userspace can clobber guest state any time before
-sev_launch_update_vmsa().</p></details></td>
+Fix by rejecting zero pixclock in lynxfb_ops_check_var(), consistent
+with other framebuffer drivers.</p></details></td>
         <td>2026-04-24</td>
       </tr>
       <tr>
@@ -8775,46 +8714,6 @@ sev_launch_update_vmsa().</p></details></td>
         <td>2026-04-23</td>
       </tr>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-31533" target="_blank" rel="noopener">CVE-2026-31533</a></td>
-        <td>9.8</td>
-        <td><span class="severity critical">CRITICAL</span></td>
-        <td>CWE-416</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p12</small></td>
-        <td>6.86</td>
-        <td><details><summary>In the Linux kernel, the following vulnerability has been resolved:
-
-net/tls: fi...</summary><p>In the Linux kernel, the following vulnerability has been resolved:
-
-net/tls: fix use-after-free in -EBUSY error path of tls_do_encryption
-
-The -EBUSY handling in tls_do_encryption(), introduced by commit
-859054147318 (&quot;net: tls: handle backlogging of crypto requests&quot;), has
-a use-after-free due to double cleanup of encrypt_pending and the
-scatterlist entry.
-
-When crypto_aead_encrypt() returns -EBUSY, the request is enqueued to
-the cryptd backlog and the async callback tls_encrypt_done() will be
-invoked upon completion. That callback unconditionally restores the
-scatterlist entry (sge-&gt;offset, sge-&gt;length) and decrements
-ctx-&gt;encrypt_pending. However, if tls_encrypt_async_wait() returns an
-error, the synchronous error path in tls_do_encryption() performs the
-same cleanup again, double-decrementing encrypt_pending and
-double-restoring the scatterlist.
-
-The double-decrement corrupts the encrypt_pending sentinel (initialized
-to 1), making tls_encrypt_async_wait() permanently skip the wait for
-pending async callbacks. A subsequent sendmsg can then free the
-tls_rec via bpf_exec_tx_verdict() while a cryptd callback is still
-pending, resulting in a use-after-free when the callback fires on the
-freed record.
-
-Fix this by skipping the synchronous cleanup when the -EBUSY async
-wait returns an error, since the callback has already handled
-encrypt_pending and sge restoration.</p></details></td>
-        <td>2026-04-23</td>
-      </tr>
-      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-31181" target="_blank" rel="noopener">CVE-2026-31181</a></td>
         <td>9.8</td>
         <td><span class="severity critical">CRITICAL</span></td>
@@ -9142,35 +9041,6 @@ encrypt_pending and sge restoration.</p></details></td>
         <td>0.0% <small>p6</small></td>
         <td>3.99</td>
         <td><details><summary>Multiple uses of uninitialized variables were found in libopensc that may lead t...</summary><p>Multiple uses of uninitialized variables were found in libopensc that may lead to information disclosure or application crash. An attack requires a crafted USB device or smart card that would present the system with specially crafted responses to the APDUs</p></details></td>
-        <td>2026-04-23</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-31532" target="_blank" rel="noopener">CVE-2026-31532</a></td>
-        <td>7.8</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-416</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p2</small></td>
-        <td>5.46</td>
-        <td><details><summary>In the Linux kernel, the following vulnerability has been resolved:
-
-can: raw: f...</summary><p>In the Linux kernel, the following vulnerability has been resolved:
-
-can: raw: fix ro-&gt;uniq use-after-free in raw_rcv()
-
-raw_release() unregisters raw CAN receive filters via can_rx_unregister(),
-but receiver deletion is deferred with call_rcu(). This leaves a window
-where raw_rcv() may still be running in an RCU read-side critical section
-after raw_release() frees ro-&gt;uniq, leading to a use-after-free of the
-percpu uniq storage.
-
-Move free_percpu(ro-&gt;uniq) out of raw_release() and into a raw-specific
-socket destructor. can_rx_unregister() takes an extra reference to the
-socket and only drops it from the RCU callback, so freeing uniq from
-sk_destruct ensures the percpu area is not released until the relevant
-callbacks have drained.
-
-[mkl: applied manually]</p></details></td>
         <td>2026-04-23</td>
       </tr>
       <tr>
@@ -53860,7 +53730,7 @@ callbacks have drained.
       </div>
     </section>
     <section>
-      <h2>Previous Month — March 2026 <span class="count">(5735)</span></h2>
+      <h2>Previous Month — March 2026 <span class="count">(5734)</span></h2>
       <div class="table-wrapper">
         <table>
           <thead>
@@ -82079,22 +81949,6 @@ callbacks have drained.
         <td>0.1% <small>p30</small></td>
         <td>4.55</td>
         <td><details><summary>OpenEMR is a free and open source electronic health records and medical practice...</summary><p>OpenEMR is a free and open source electronic health records and medical practice management application. Prior to 8.0.0.2, the encounter vitals API accepts an `id` in the request body and treats it as an UPDATE. There is no verification that the vital belongs to the current patient or encounter. An authenticated user with encounters/notes permission can overwrite any patient&#x27;s vitals by supplying another patient&#x27;s vital `id`, leading to medical record tampering. Version 8.0.0.2 fixes the issue.</p></details></td>
-        <td>2026-03-19</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-3503" target="_blank" rel="noopener">CVE-2026-3503</a></td>
-        <td>4.3</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-335</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p0</small></td>
-        <td>3.01</td>
-        <td><details><summary>Protection mechanism failure in wolfCrypt post-quantum implementations (ML-KEM a...</summary><p>Protection mechanism failure in wolfCrypt post-quantum implementations (ML-KEM and ML-DSA) in wolfSSL on ARM Cortex-M microcontrollers allows a physical attacker to compromise key material and/or cryptographic outcomes via induced transient faults that corrupt or redirect seed/pointer values during Keccak-based expansion.
-
-
-
-
-This issue affects wolfSSL (wolfCrypt): commit hash d86575c766e6e67ef93545fa69c04d6eb49400c6.</p></details></td>
         <td>2026-03-19</td>
       </tr>
       <tr>
