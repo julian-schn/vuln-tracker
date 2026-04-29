@@ -11,7 +11,7 @@
     <header>
       <h1>vuln-tracker</h1>
       <p class="subtitle">CVEs from the National Vulnerability Database — current and previous month</p>
-      <p class="last-updated">Last updated: 2026-04-29 19:44 UTC</p>
+      <p class="last-updated">Last updated: 2026-04-29 21:12 UTC</p>
     </header>
     <nav>
       <a href="top50.html">&#9733; Top 50</a>
@@ -25,7 +25,7 @@
     </nav>
     <main>
     <section>
-      <h2>Current Month — April 2026 <span class="count">(4866)</span></h2>
+      <h2>Current Month — April 2026 <span class="count">(4886)</span></h2>
       <div class="table-wrapper">
         <table>
           <thead>
@@ -42,6 +42,300 @@
             </tr>
           </thead>
           <tbody>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-7426" target="_blank" rel="noopener">CVE-2026-7426</a></td>
+        <td>6.1</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-787</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.27</td>
+        <td><details><summary>Insufficient validation of the prefix length field in IPv6 Router Advertisement ...</summary><p>Insufficient validation of the prefix length field in IPv6 Router Advertisement processing in FreeRTOS-Plus-TCP before V4.2.6 and V4.4.1 allows an adjacent network actor to cause memory corruption by sending a crafted Router Advertisement with a prefix length value exceeding the maximum valid length, resulting in a heap buffer overflow. Users processing IPv4 RA only are not impacted.
+
+
+
+To mitigate this issue, users should upgrade to the fixed version when available.</p></details></td>
+        <td>2026-04-29</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-7425" target="_blank" rel="noopener">CVE-2026-7425</a></td>
+        <td>6.0</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-125</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.20</td>
+        <td><details><summary>Insufficient option length validation in the IPv6 Router Advertisement parser in...</summary><p>Insufficient option length validation in the IPv6 Router Advertisement parser in FreeRTOS-Plus-TCP before V4.2.6 and V4.4.1 allows an adjacent network actor to cause a denial of service (device crash) by sending a crafted Router Advertisement with a truncated PREFIX_INFORMATION option that is smaller than the expected structure size.
+
+
+
+To mitigate this issue, users should upgrade to the fixed version when available.</p></details></td>
+        <td>2026-04-29</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-7401" target="_blank" rel="noopener">CVE-2026-7401</a></td>
+        <td>2.1</td>
+        <td><span class="severity low">LOW</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>1.47</td>
+        <td><details><summary>A vulnerability was detected in SourceCodester CET Automated Grading System with...</summary><p>A vulnerability was detected in SourceCodester CET Automated Grading System with AI Predictive Analytics 1.0. This vulnerability affects unknown code of the file /index.php?action=register of the component Registration. The manipulation of the argument student_id/full_name/section/username results in cross site scripting. The attack can be launched remotely. The exploit is now public and may be used.</p></details></td>
+        <td>2026-04-29</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-7400" target="_blank" rel="noopener">CVE-2026-7400</a></td>
+        <td>5.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-22</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.85</td>
+        <td><details><summary>A security vulnerability has been detected in geekgod382 filesystem-mcp-server 1...</summary><p>A security vulnerability has been detected in geekgod382 filesystem-mcp-server 1.0.0. This issue affects the function is_path_allowed of the file server.py of the component read_file_tool/write_file_tool. Such manipulation leads to path traversal. The attack can be launched remotely. The exploit has been disclosed publicly and may be used. Upgrading to version 1.1.0 is capable of addressing this issue. The name of the patch is 45364545fc60dc80aadcd4379f08042d3d3d292e. Upgrading the affected component is advised.</p></details></td>
+        <td>2026-04-29</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34965" target="_blank" rel="noopener">CVE-2026-34965</a></td>
+        <td>8.7</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-94</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.09</td>
+        <td><details><summary>Cockpit CMS contains an authenticated remote code execution vulnerability in the...</summary><p>Cockpit CMS contains an authenticated remote code execution vulnerability in the /cockpit/collections/save_collection endpoint that allows authenticated attackers with collection management privileges to inject arbitrary PHP code into collection rules parameters. Attackers can inject malicious PHP code through rule parameters which is written directly to server-side PHP files and executed via include() to achieve arbitrary command execution on the underlying server.</p></details></td>
+        <td>2026-04-29</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2018-25318" target="_blank" rel="noopener">CVE-2018-25318</a></td>
+        <td>9.3</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-290</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.51</td>
+        <td><details><summary>Tenda FH303/A300 firmware V5.07.68_EN contains a session weakness vulnerability ...</summary><p>Tenda FH303/A300 firmware V5.07.68_EN contains a session weakness vulnerability that allows unauthenticated attackers to modify DNS settings by exploiting insufficient cookie validation. Attackers can send GET requests to the /goform/AdvSetDns endpoint with a crafted admin cookie to change DNS servers and redirect user traffic to malicious sites.</p></details></td>
+        <td>2026-04-29</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2018-25317" target="_blank" rel="noopener">CVE-2018-25317</a></td>
+        <td>9.3</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-290</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.51</td>
+        <td><details><summary>Tenda W3002R/A302/W309R wireless routers version V5.07.64_en contain a cookie se...</summary><p>Tenda W3002R/A302/W309R wireless routers version V5.07.64_en contain a cookie session weakness vulnerability that allows unauthenticated attackers to modify DNS settings by exploiting insufficient session validation. Attackers can send GET requests to the /goform/AdvSetDns endpoint with a crafted admin language cookie to change primary and secondary DNS servers, redirecting user traffic to malicious DNS servers.</p></details></td>
+        <td>2026-04-29</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2018-25316" target="_blank" rel="noopener">CVE-2018-25316</a></td>
+        <td>9.3</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-290</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.51</td>
+        <td><details><summary>Tenda W308R v2 V5.07.48 contains a cookie session weakness vulnerability that al...</summary><p>Tenda W308R v2 V5.07.48 contains a cookie session weakness vulnerability that allows unauthenticated attackers to modify DNS settings by exploiting insufficient session validation. Attackers can send GET requests to the goform/AdvSetDns endpoint with a crafted admin language cookie to change DNS servers and redirect user traffic to malicious sites.</p></details></td>
+        <td>2026-04-29</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2018-25315" target="_blank" rel="noopener">CVE-2018-25315</a></td>
+        <td>8.6</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-120</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.02</td>
+        <td><details><summary>Alloksoft Video joiner 4.6.1217 contains a buffer overflow vulnerability that al...</summary><p>Alloksoft Video joiner 4.6.1217 contains a buffer overflow vulnerability that allows local attackers to execute arbitrary code by supplying a malicious string in the License Name field. Attackers can craft a payload with structured exception handler (SEH) overwrite and shellcode to achieve code execution when the application processes the license registration input.</p></details></td>
+        <td>2026-04-29</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2018-25314" target="_blank" rel="noopener">CVE-2018-25314</a></td>
+        <td>8.6</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-120</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.02</td>
+        <td><details><summary>Allok soft WMV to AVI MPEG DVD WMV Converter 4.6.1217 contains a buffer overflow...</summary><p>Allok soft WMV to AVI MPEG DVD WMV Converter 4.6.1217 contains a buffer overflow vulnerability that allows local attackers to execute arbitrary code by supplying an oversized string in the License Name field. Attackers can craft a malicious input containing shellcode with structured exception handler (SEH) overwrite to bypass protections and execute code with application privileges.</p></details></td>
+        <td>2026-04-29</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2018-25313" target="_blank" rel="noopener">CVE-2018-25313</a></td>
+        <td>6.9</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-120</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.83</td>
+        <td><details><summary>SysGauge 4.5.18 contains a buffer overflow vulnerability in the proxy configurat...</summary><p>SysGauge 4.5.18 contains a buffer overflow vulnerability in the proxy configuration handler that allows local attackers to cause a denial of service by supplying an oversized string. Attackers can inject a large payload through the Proxy Server Host Name field in the Options menu to crash the application.</p></details></td>
+        <td>2026-04-29</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2018-25312" target="_blank" rel="noopener">CVE-2018-25312</a></td>
+        <td>7.1</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-22</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.97</td>
+        <td><details><summary>LifeSize ClearSea 3.1.4 contains directory traversal vulnerabilities that allow ...</summary><p>LifeSize ClearSea 3.1.4 contains directory traversal vulnerabilities that allow authenticated attackers to download and upload arbitrary files by manipulating path parameters in the smartgui interface. Attackers can exploit the upload endpoint with directory traversal sequences to write files to arbitrary locations on the system, enabling remote code execution.</p></details></td>
+        <td>2026-04-29</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2018-25311" target="_blank" rel="noopener">CVE-2018-25311</a></td>
+        <td>7.1</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-22</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.97</td>
+        <td><details><summary>VideoFlow Digital Video Protection DVP 2.10 contains an authenticated directory ...</summary><p>VideoFlow Digital Video Protection DVP 2.10 contains an authenticated directory traversal vulnerability that allows authenticated attackers to disclose arbitrary files by injecting path traversal sequences in the ID parameter. Attackers can submit requests to downloadsys.pl, download_xml.pl, download.pl, downloadmib.pl, or downloadFile.pl with directory traversal payloads to read sensitive system files like /etc/passwd.</p></details></td>
+        <td>2026-04-29</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2018-25310" target="_blank" rel="noopener">CVE-2018-25310</a></td>
+        <td>5.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-352</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.71</td>
+        <td><details><summary>VideoFlow Digital Video Protection DVP 2.10 contains an authenticated remote cod...</summary><p>VideoFlow Digital Video Protection DVP 2.10 contains an authenticated remote code execution vulnerability that allows authenticated attackers to execute arbitrary system commands by exploiting a cross-site request forgery flaw in the web management interface. Attackers with valid credentials can leverage the CSRF vulnerability to inject and execute system commands through the Tools &gt; System &gt; Shell interface, gaining root-level access to the device.</p></details></td>
+        <td>2026-04-29</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2018-25309" target="_blank" rel="noopener">CVE-2018-25309</a></td>
+        <td>5.1</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.57</td>
+        <td><details><summary>MyBB Recent threads 17.0 contains a persistent cross-site scripting vulnerabilit...</summary><p>MyBB Recent threads 17.0 contains a persistent cross-site scripting vulnerability that allows attackers to inject malicious scripts by creating threads with crafted subject lines. Attackers can create threads with script tags in the subject parameter to execute arbitrary JavaScript in the browsers of all users viewing the index page.</p></details></td>
+        <td>2026-04-29</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2018-25308" target="_blank" rel="noopener">CVE-2018-25308</a></td>
+        <td>8.7</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-22</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.09</td>
+        <td><details><summary>BuddyPress Xprofile Custom Fields Type 2.6.3 contains a remote code execution vu...</summary><p>BuddyPress Xprofile Custom Fields Type 2.6.3 contains a remote code execution vulnerability that allows authenticated users to delete arbitrary files by manipulating unescaped POST parameters. Attackers can modify the field_hiddenfile and field_deleteimg parameters during profile editing to unlink files from the server.</p></details></td>
+        <td>2026-04-29</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2018-25307" target="_blank" rel="noopener">CVE-2018-25307</a></td>
+        <td>8.6</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-120</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.02</td>
+        <td><details><summary>SysGauge Pro 4.6.12 contains a local buffer overflow vulnerability in the Regist...</summary><p>SysGauge Pro 4.6.12 contains a local buffer overflow vulnerability in the Register function that allows local attackers to overwrite the structured exception handler by supplying a crafted unlock key. Attackers can inject shellcode through the Unlock Key field during registration to execute arbitrary code with application privileges.</p></details></td>
+        <td>2026-04-29</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2018-25306" target="_blank" rel="noopener">CVE-2018-25306</a></td>
+        <td>6.9</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-120</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.83</td>
+        <td><details><summary>PDFunite 0.41.0 contains a buffer overflow vulnerability that allows local attac...</summary><p>PDFunite 0.41.0 contains a buffer overflow vulnerability that allows local attackers to crash the application by processing malformed PDF files during merge operations. Attackers can trigger a segmentation fault in the XRef::getEntry function within libpoppler by providing a specially crafted PDF file to the pdfunite utility.</p></details></td>
+        <td>2026-04-29</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2018-25305" target="_blank" rel="noopener">CVE-2018-25305</a></td>
+        <td>6.9</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-120</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.83</td>
+        <td><details><summary>librsvg2-bin 2.40.13 contains a buffer overflow vulnerability that allows local ...</summary><p>librsvg2-bin 2.40.13 contains a buffer overflow vulnerability that allows local attackers to cause a denial of service by processing malformed SVG files. Attackers can supply crafted SVG input to the rsvg conversion tool to trigger a segmentation fault in the cairo image compositor.</p></details></td>
+        <td>2026-04-29</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2018-25304" target="_blank" rel="noopener">CVE-2018-25304</a></td>
+        <td>8.6</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-120</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.02</td>
+        <td><details><summary>Free Download Manager 2.0 Built 417 contains a local buffer overflow vulnerabili...</summary><p>Free Download Manager 2.0 Built 417 contains a local buffer overflow vulnerability in the URL import functionality that allows attackers to trigger a structured exception handler (SEH) chain exploitation. Attackers can craft a malicious URL file that, when imported through the File &gt; Import &gt; Import lists of downloads menu, causes a buffer overflow in the Location header response that overwrites the SEH chain and executes arbitrary code.</p></details></td>
+        <td>2026-04-29</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2018-25303" target="_blank" rel="noopener">CVE-2018-25303</a></td>
+        <td>8.6</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-121</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.02</td>
+        <td><details><summary>Allok Video to DVD Burner 2.6.1217 contains a stack-based buffer overflow vulner...</summary><p>Allok Video to DVD Burner 2.6.1217 contains a stack-based buffer overflow vulnerability in the License Name field that allows local attackers to execute arbitrary code by triggering a structured exception handler (SEH) overwrite. Attackers can craft a malicious input string with 780 bytes of junk data followed by SEH chain pointers and shellcode, then paste it into the License Name field during registration to achieve code execution.</p></details></td>
+        <td>2026-04-29</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2018-25302" target="_blank" rel="noopener">CVE-2018-25302</a></td>
+        <td>8.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-120</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.95</td>
+        <td><details><summary>Allok AVI to DVD SVCD VCD Converter 4.0.1217 contains a structured exception han...</summary><p>Allok AVI to DVD SVCD VCD Converter 4.0.1217 contains a structured exception handling (SEH) based buffer overflow vulnerability that allows local attackers to execute arbitrary code by supplying a malicious string in the License Name field. Attackers can craft a payload with junk data, NSEH bypass, SEH handler address, and shellcode that triggers the overflow when pasted into the License Name field and the Register button is clicked, resulting in code execution.</p></details></td>
+        <td>2026-04-29</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2018-25301" target="_blank" rel="noopener">CVE-2018-25301</a></td>
+        <td>8.6</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-120</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.02</td>
+        <td><details><summary>Easy MPEG to DVD Burner 1.7.11 contains a structured exception handling (SEH) lo...</summary><p>Easy MPEG to DVD Burner 1.7.11 contains a structured exception handling (SEH) local buffer overflow vulnerability that allows local attackers to execute arbitrary code by supplying a malicious username string. Attackers can craft a payload containing junk data, SEH chain pointers, and shellcode that overwrites the SEH handler to redirect execution and run arbitrary commands like opening calc.exe.</p></details></td>
+        <td>2026-04-29</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2018-25300" target="_blank" rel="noopener">CVE-2018-25300</a></td>
+        <td>8.8</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-89</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.16</td>
+        <td><details><summary>XATABoost CMS 1.0.0 contains a union-based SQL injection vulnerability that allo...</summary><p>XATABoost CMS 1.0.0 contains a union-based SQL injection vulnerability that allows unauthenticated attackers to manipulate database queries by injecting SQL code through the id parameter. Attackers can send GET requests to news.php with malicious id values to extract sensitive database information.</p></details></td>
+        <td>2026-04-29</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2018-25299" target="_blank" rel="noopener">CVE-2018-25299</a></td>
+        <td>8.6</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-120</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.02</td>
+        <td><details><summary>Prime95 29.4b8 contains a local buffer overflow vulnerability that allows attack...</summary><p>Prime95 29.4b8 contains a local buffer overflow vulnerability that allows attackers to execute arbitrary code by exploiting structured exception handling (SEH) mechanisms. Attackers can inject malicious payload through the optional proxy hostname field in the PrimeNet connection settings to trigger the overflow and execute system commands.</p></details></td>
+        <td>2026-04-29</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2018-25298" target="_blank" rel="noopener">CVE-2018-25298</a></td>
+        <td>6.9</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-352</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.83</td>
+        <td><details><summary>Merge PACS 7.0 contains a cross-site request forgery vulnerability that allows a...</summary><p>Merge PACS 7.0 contains a cross-site request forgery vulnerability that allows attackers to perform unauthorized actions by crafting malicious HTML forms targeting the merge-viewer endpoint. Attackers can submit POST requests to /servlet/actions/merge-viewer/summary with login credentials to hijack user sessions and gain unauthorized access to the PACS system.</p></details></td>
+        <td>2026-04-29</td>
+      </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-7466" target="_blank" rel="noopener">CVE-2026-7466</a></td>
         <td>7.7</td>
@@ -62,65 +356,6 @@
         <td>&mdash;</td>
         <td>3.36</td>
         <td><details><summary>AgentFlow&#x27;s local web API accepts non-JSON content types on POST /api/runs and P...</summary><p>AgentFlow&#x27;s local web API accepts non-JSON content types on POST /api/runs and POST /api/runs/validate endpoints without enforcing application/json validation, allowing attackers to bypass trust-boundary enforcement on sensitive operations. Attackers can exploit this content-type validation weakness through browser-driven or local cross-origin requests to abuse the localhost API and enable attack chains against the local control plane.</p></details></td>
-        <td>2026-04-29</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-7424" target="_blank" rel="noopener">CVE-2026-7424</a></td>
-        <td>7.2</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-191</td>
-        <td>&nbsp;</td>
-        <td>&mdash;</td>
-        <td>5.04</td>
-        <td><details><summary>Integer underflow in the DHCPv6 sub-option parser in FreeRTOS-Plus-TCP before V4...</summary><p>Integer underflow in the DHCPv6 sub-option parser in FreeRTOS-Plus-TCP before V4.4.1 and V4.2.6 allows an adjacent network actor to corrupt the device&#x27;s IPv6 address assignment, DNS configuration, and lease times, and to cause a denial of service (permanent IP task freeze requiring hardware reset) by sending a single crafted DHCPv6 packet.
-
-
-
-
-
-
-
-
-The issue is present whenever DHCPv6 is enabled.
-
-
-
-
-
-
-
-
-To mitigate this issue, users should upgrade to version V4.2.6 or V4.4.1 or newer.</p></details></td>
-        <td>2026-04-29</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-7423" target="_blank" rel="noopener">CVE-2026-7423</a></td>
-        <td>6.0</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-191</td>
-        <td>&nbsp;</td>
-        <td>&mdash;</td>
-        <td>4.20</td>
-        <td><details><summary>Integer underflow in the ICMP and ICMPv6 echo reply handlers in FreeRTOS-Plus-TC...</summary><p>Integer underflow in the ICMP and ICMPv6 echo reply handlers in FreeRTOS-Plus-TCP before V4.4.1 and V4.2.6 allows an adjacent network user to cause a denial of service (device crash) when outgoing ping support is enabled, because header sizes are subtracted from a packet length field without validating the field is large enough, resulting in a heap out-of-bounds read of up to approximately 65KB.
-
-
-
-To mitigate this issue, users should upgrade to the fixed version when available.</p></details></td>
-        <td>2026-04-29</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-7422" target="_blank" rel="noopener">CVE-2026-7422</a></td>
-        <td>7.1</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-290</td>
-        <td>&nbsp;</td>
-        <td>&mdash;</td>
-        <td>4.97</td>
-        <td><details><summary>Insufficient packet validation in FreeRTOS-Plus-TCP before V4.2.6 and V4.4.1 all...</summary><p>Insufficient packet validation in FreeRTOS-Plus-TCP before V4.2.6 and V4.4.1 allows an adjacent network actor to bypass all checksum and minimum-size validation by spoofing the Ethernet source MAC address to match one of the device&#x27;s own registered endpoints, because the loopback detection mechanism skips all input validation for packets whose source MAC matches a local endpoint.
-
-
-
-To mitigate this issue, users should upgrade to the fixed version when available.</p></details></td>
         <td>2026-04-29</td>
       </tr>
       <tr>
@@ -444,12 +679,12 @@ To mitigate this issue, users should upgrade to the fixed version when available
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-37555" target="_blank" rel="noopener">CVE-2026-37555</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-190</td>
         <td>&nbsp;</td>
         <td>&mdash;</td>
-        <td>0.00</td>
+        <td>5.25</td>
         <td><details><summary>An issue was discovered in libsndfile 1.2.2 IMA ADPCM codec. The AIFF code path ...</summary><p>An issue was discovered in libsndfile 1.2.2 IMA ADPCM codec. The AIFF code path (line 241) was fixed with (sf_count_t) cast, but the WAV code path (line 235) and close path (line 167) were not. When samplesperblock (int) * blocks (int) exceeds INT_MAX, the 32-bit multiplication overflows before being assigned to sf.frames (sf_count_t/int64). With samplesperblock=50000 and blocks=50000, the product 2500000000 overflows to -1794967296. This causes incorrect frame count leading to heap buffer overflow or denial of service. Both values come from the WAV file header and are attacker-controlled. This issue was discovered after an incomplete fix for CVE-2022-33065.</p></details></td>
         <td>2026-04-29</td>
       </tr>
@@ -528,21 +763,6 @@ To mitigate this issue, users should upgrade to the fixed version when available
         <td>&mdash;</td>
         <td>3.85</td>
         <td><details><summary>A vulnerability was detected in ezequiroga mcp-bases 357ca19c7a49a9b9cb2ef639b36...</summary><p>A vulnerability was detected in ezequiroga mcp-bases 357ca19c7a49a9b9cb2ef639b366f03aba8bea39/c630b8ab0f970614d42da8e566e9c0d15a16414c. This impacts the function search_papers of the file research_server.py. Performing a manipulation of the argument topic results in path traversal. Remote exploitation of the attack is possible. The exploit is now public and may be used. This product follows a rolling release approach for continuous delivery, so version details for affected or updated releases are not provided. The project was informed of the problem early through an issue report but has not responded yet.</p></details></td>
-        <td>2026-04-29</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-7111" target="_blank" rel="noopener">CVE-2026-7111</a></td>
-        <td>8.4</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-416</td>
-        <td>&nbsp;</td>
-        <td>&mdash;</td>
-        <td>5.88</td>
-        <td><details><summary>Text::CSV_XS versions before 1.62 for Perl have a use-after-free when registered...</summary><p>Text::CSV_XS versions before 1.62 for Perl have a use-after-free when registered callbacks extend the Perl argument stack, which may enable type confusion or memory corruption.
-
-The Parse, print, getline, and getline_all methods invoke registered callbacks (for example after_parse, before_print, or on_error) and cache the Perl argument stack pointer across the call. If a callback extends the argument stack enough to trigger a reallocation, the return value is written through the stale pointer into the freed buffer, and the caller reads the original $self argument as the return value instead.
-
-Calling code that expects parsed data from getline_all receives the Text::CSV_XS object in its place, leading to logic errors or crashes. Text::CSV_XS objects used without any registered callbacks are not affected.</p></details></td>
         <td>2026-04-29</td>
       </tr>
       <tr>
@@ -2548,48 +2768,6 @@ Calling code that expects parsed data from getline_all receives the Text::CSV_XS
         <td>2026-04-28</td>
       </tr>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40980" target="_blank" rel="noopener">CVE-2026-40980</a></td>
-        <td>6.5</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-400</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p11</small></td>
-        <td>4.55</td>
-        <td><details><summary>In Spring AI, a malicious PDF file can be crafted that triggers the allocation o...</summary><p>In Spring AI, a malicious PDF file can be crafted that triggers the allocation of unreasonable amounts of memory when handled by `ForkPDFLayoutTextStripper`.
-
-Affected versions:
-Spring AI: 1.0.0 - 1.0.5 (fixed in 1.0.6), 1.1.0 - 1.1.4 (fixed in 1.1.5)</p></details></td>
-        <td>2026-04-28</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40979" target="_blank" rel="noopener">CVE-2026-40979</a></td>
-        <td>6.1</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-377</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p1</small></td>
-        <td>4.27</td>
-        <td><details><summary>In Spring AI, having access to a shared environment can expose the ONNX model us...</summary><p>In Spring AI, having access to a shared environment can expose the ONNX model used by the application.
-
-Affected versions:
-Spring AI: 1.0.0 - 1.0.5 (fixed in 1.0.6), 1.1.0 - 1.1.4 (fixed in 1.1.5)</p></details></td>
-        <td>2026-04-28</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40978" target="_blank" rel="noopener">CVE-2026-40978</a></td>
-        <td>8.8</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-89</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p12</small></td>
-        <td>6.16</td>
-        <td><details><summary>SQL injection vulnerability in Spring AI&#x27;s `CosmosDBVectorStore` allows attacker...</summary><p>SQL injection vulnerability in Spring AI&#x27;s `CosmosDBVectorStore` allows attackers to execute arbitrary SQL queries via crafted document IDs.
-
-Affected versions:
-Spring AI: 1.0.0 - 1.0.5 (fixed in 1.0.6), 1.1.0 - 1.1.4 (fixed in 1.1.5)</p></details></td>
-        <td>2026-04-28</td>
-      </tr>
-      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-10539" target="_blank" rel="noopener">CVE-2025-10539</a></td>
         <td>4.8</td>
         <td><span class="severity medium">MEDIUM</span></td>
@@ -2785,20 +2963,6 @@ Spring AI: 1.0.0 - 1.0.5 (fixed in 1.0.6), 1.1.0 - 1.1.4 (fixed in 1.1.5)</p></d
         <td>0.1% <small>p15</small></td>
         <td>3.78</td>
         <td><details><summary>The Check &amp; Log Email  WordPress plugin before 2.0.13 does not properly handle e...</summary><p>The Check &amp; Log Email  WordPress plugin before 2.0.13 does not properly handle email replacement, which could allow unauthenticated users to perform Stored XSS attacks when the email encoder setting is enabled</p></details></td>
-        <td>2026-04-28</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40967" target="_blank" rel="noopener">CVE-2026-40967</a></td>
-        <td>8.6</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-94</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p14</small></td>
-        <td>6.02</td>
-        <td><details><summary>In Spring AI, various FilterExpressionConverter implementations accept a filter ...</summary><p>In Spring AI, various FilterExpressionConverter implementations accept a filter expression object and translate them to specific vector store query languages. In several cases, keys and values are not properly escaped, leading to the ability to alter the query.
-
-Affected versions:
-Spring AI: 1.0.0 - 1.0.5 (fixed in 1.0.6), 1.1.0 - 1.1.4 (fixed in 1.1.5)</p></details></td>
         <td>2026-04-28</td>
       </tr>
       <tr>
@@ -4452,38 +4616,6 @@ Spring AI: 1.0.0 - 1.0.5 (fixed in 1.0.6), 1.1.0 - 1.1.4 (fixed in 1.1.5)</p></d
         <td>2026-04-27</td>
       </tr>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-41409" target="_blank" rel="noopener">CVE-2026-41409</a></td>
-        <td>9.8</td>
-        <td><span class="severity critical">CRITICAL</span></td>
-        <td>CWE-502</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p14</small></td>
-        <td>6.86</td>
-        <td><details><summary>The fix for CVE-2024-52046 in Apache MINA AbstractIoBuffer.getObject() was incom...</summary><p>The fix for CVE-2024-52046 in Apache MINA AbstractIoBuffer.getObject() was incomplete. The classname allowlist of classes allowed to be deserialized was applied too late after a static initializer in a class to be read might already have been executed.
-
-
-
-
-Affected versions are Apache MINA 2.0.0 &lt;= 2.0.27, 2.1.0 &lt;= 2.1.10, and 2.2.0 &lt;= 2.2.5.
-
-
-
-
-The problem is resolved in Apache MINA 2.0.28, 2.1.11, and 2.2.6 by 
-applying the classname allowlist earlier.
-
-
-
-
-Affected are applications using Apache MINA that call IoBuffer.getObject().
-
-
-
-
-Applications using Apache MINA are advised to upgrade</p></details></td>
-        <td>2026-04-27</td>
-      </tr>
-      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-7108" target="_blank" rel="noopener">CVE-2026-7108</a></td>
         <td>2.1</td>
         <td><span class="severity low">LOW</span></td>
@@ -4580,51 +4712,6 @@ Applications using Apache MINA are advised to upgrade</p></details></td>
         <td>0.0% <small>p8</small></td>
         <td>5.39</td>
         <td><details><summary>Insertion of Sensitive Information Into Sent Data vulnerability in WPDeveloper T...</summary><p>Insertion of Sensitive Information Into Sent Data vulnerability in WPDeveloper Templately allows Retrieve Embedded Sensitive Data.This issue affects Templately: from n/a through 3.6.1.</p></details></td>
-        <td>2026-04-27</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-41635" target="_blank" rel="noopener">CVE-2026-41635</a></td>
-        <td>9.8</td>
-        <td><span class="severity critical">CRITICAL</span></td>
-        <td>CWE-502</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p14</small></td>
-        <td>6.86</td>
-        <td><details><summary>Apache MINA&#x27;s AbstractIoBuffer.resolveClass() contains two branches, one of them...</summary><p>Apache MINA&#x27;s AbstractIoBuffer.resolveClass() contains two branches, one of them (for static classes or primitive types) does not check the class at all, bypassing the classname allowlist and allowing arbitrary code to be executed.
-
-
-
-
-The fix checks if the class is present in the accepted class filter before calling Class.forName(). 
-
-
-
-
-
-
-Affected versions are Apache MINA 2.0.0 &lt;= 2.0.27, 2.1.0 &lt;= 2.1.10, and
-
-
-2.2.0 &lt;= 2.2.5.
-
-
-
-
-
-The problem is resolved in Apache MINA 2.0.28, 2.1.11, and 2.2.6 by 
-applying the classname allowlist earlier.
-
-
-
-
-
-Affected are applications using Apache MINA that call  IoBuffer.getObject().
-
-
-
-
-
-Applications using Apache MINA are advised to upgrade.</p></details></td>
         <td>2026-04-27</td>
       </tr>
       <tr>
@@ -6905,107 +6992,347 @@ Applications using Apache MINA are advised to upgrade.</p></details></td>
         <td>2026-04-24</td>
       </tr>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-31614" target="_blank" rel="noopener">CVE-2026-31614</a></td>
-        <td>7.1</td>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-31608" target="_blank" rel="noopener">CVE-2026-31608</a></td>
+        <td>9.8</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-415</td>
+        <td>&nbsp;</td>
+        <td>0.0% <small>p13</small></td>
+        <td>6.86</td>
+        <td><details><summary>In the Linux kernel, the following vulnerability has been resolved:
+
+smb: server...</summary><p>In the Linux kernel, the following vulnerability has been resolved:
+
+smb: server: avoid double-free in smb_direct_free_sendmsg after smb_direct_flush_send_list()
+
+smb_direct_flush_send_list() already calls smb_direct_free_sendmsg(),
+so we should not call it again after post_sendmsg()
+moved it to the batch list.</p></details></td>
+        <td>2026-04-24</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-31606" target="_blank" rel="noopener">CVE-2026-31606</a></td>
+        <td>5.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>NVD-CWE-noinfo</td>
+        <td>&nbsp;</td>
+        <td>0.0% <small>p4</small></td>
+        <td>3.85</td>
+        <td><details><summary>In the Linux kernel, the following vulnerability has been resolved:
+
+usb: gadget...</summary><p>In the Linux kernel, the following vulnerability has been resolved:
+
+usb: gadget: f_hid: don&#x27;t call cdev_init while cdev in use
+
+When calling unbind, then bind again, cdev_init reinitialized the cdev,
+even though there may still be references to it. That&#x27;s the case when
+the /dev/hidg* device is still opened. This obviously unsafe behavior
+like oopes.
+
+This fixes this by using cdev_alloc to put the cdev on the heap. That
+way, we can simply allocate a new one in hidg_bind.</p></details></td>
+        <td>2026-04-24</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-31602" target="_blank" rel="noopener">CVE-2026-31602</a></td>
+        <td>7.8</td>
         <td><span class="severity high">HIGH</span></td>
-        <td>CWE-125</td>
+        <td>NVD-CWE-noinfo</td>
         <td>&nbsp;</td>
-        <td>0.0% <small>p6</small></td>
-        <td>4.97</td>
+        <td>0.0% <small>p1</small></td>
+        <td>5.46</td>
         <td><details><summary>In the Linux kernel, the following vulnerability has been resolved:
 
-smb: client...</summary><p>In the Linux kernel, the following vulnerability has been resolved:
+ALSA: ctxfi...</summary><p>In the Linux kernel, the following vulnerability has been resolved:
 
-smb: client: fix off-by-8 bounds check in check_wsl_eas()
+ALSA: ctxfi: Limit PTP to a single page
 
-The bounds check uses (u8 *)ea + nlen + 1 + vlen as the end of the EA
-name and value, but ea_data sits at offset sizeof(struct
-smb2_file_full_ea_info) = 8 from ea, not at offset 0.  The strncmp()
-later reads ea-&gt;ea_data[0..nlen-1] and the value bytes follow at
-ea_data[nlen+1..nlen+vlen], so the actual end is ea-&gt;ea_data + nlen + 1
-+ vlen.  Isn&#x27;t pointer math fun?
+Commit 391e69143d0a increased CT_PTP_NUM from 1 to 4 to support 256
+playback streams, but the additional pages are not used by the card
+correctly. The CT20K2 hardware already has multiple VMEM_PTPAL
+registers, but using them separately would require refactoring the
+entire virtual memory allocation logic.
 
-The earlier check (u8 *)ea &gt; end - sizeof(*ea) only guarantees the
-8-byte header is in bounds, but since the last EA is placed within 8
-bytes of the end of the response, the name and value bytes are read past
-the end of iov.
+ct_vm_map() always uses PTEs in vm-&gt;ptp[0].area regardless of
+CT_PTP_NUM. On AMD64 systems, a single PTP covers 512 PTEs (2M). When
+aggregate memory allocations exceed this limit, ct_vm_map() tries to
+access beyond the allocated space and causes a page fault:
 
-Fix this mess all up by using ea-&gt;ea_data as the base for the bounds
-check.
+  BUG: unable to handle page fault for address: ffffd4ae8a10a000
+  Oops: Oops: 0002 [#1] SMP PTI
+  RIP: 0010:ct_vm_map+0x17c/0x280 [snd_ctxfi]
+  Call Trace:
+  atc_pcm_playback_prepare+0x225/0x3b0
+  ct_pcm_playback_prepare+0x38/0x60
+  snd_pcm_do_prepare+0x2f/0x50
+  snd_pcm_action_single+0x36/0x90
+  snd_pcm_action_nonatomic+0xbf/0xd0
+  snd_pcm_ioctl+0x28/0x40
+  __x64_sys_ioctl+0x97/0xe0
+  do_syscall_64+0x81/0x610
+  entry_SYSCALL_64_after_hwframe+0x76/0x7e
 
-An &quot;untrusted&quot; server can use this to leak up to 8 bytes of kernel heap
-into the EA name comparison and influence which WSL xattr the data is
-interpreted as.</p></details></td>
+Revert CT_PTP_NUM to 1. The 256 SRC_RESOURCE_NUM and playback_count
+remain unchanged.</p></details></td>
         <td>2026-04-24</td>
       </tr>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-31605" target="_blank" rel="noopener">CVE-2026-31605</a></td>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-31601" target="_blank" rel="noopener">CVE-2026-31601</a></td>
         <td>5.5</td>
         <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-369</td>
+        <td>NVD-CWE-noinfo</td>
+        <td>&nbsp;</td>
+        <td>0.0% <small>p4</small></td>
+        <td>3.85</td>
+        <td><details><summary>In the Linux kernel, the following vulnerability has been resolved:
+
+vfio/xe: Re...</summary><p>In the Linux kernel, the following vulnerability has been resolved:
+
+vfio/xe: Reorganize the init to decouple migration from reset
+
+Attempting to issue reset on VF devices that don&#x27;t support migration
+leads to the following:
+
+  BUG: unable to handle page fault for address: 00000000000011f8
+  #PF: supervisor read access in kernel mode
+  #PF: error_code(0x0000) - not-present page
+  PGD 0 P4D 0
+  Oops: Oops: 0000 [#1] SMP NOPTI
+  CPU: 2 UID: 0 PID: 7443 Comm: xe_sriov_flr Tainted: G S   U              7.0.0-rc1-lgci-xe-xe-4588-cec43d5c2696af219-nodebug+ #1 PREEMPT(lazy)
+  Tainted: [S]=CPU_OUT_OF_SPEC, [U]=USER
+  Hardware name: Intel Corporation Alder Lake Client Platform/AlderLake-P DDR4 RVP, BIOS RPLPFWI1.R00.4035.A00.2301200723 01/20/2023
+  RIP: 0010:xe_sriov_vfio_wait_flr_done+0xc/0x80 [xe]
+  Code: ff c3 cc cc cc cc 0f 1f 84 00 00 00 00 00 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 0f 1f 44 00 00 55 48 89 e5 41 54 53 &lt;83&gt; bf f8 11 00 00 02 75 61 41 89 f4 85 f6 74 52 48 8b 47 08 48 89
+  RSP: 0018:ffffc9000f7c39b8 EFLAGS: 00010202
+  RAX: ffffffffa04d8660 RBX: ffff88813e3e4000 RCX: 0000000000000000
+  RDX: 0000000000000000 RSI: 0000000000000000 RDI: 0000000000000000
+  RBP: ffffc9000f7c39c8 R08: 0000000000000000 R09: 0000000000000000
+  R10: 0000000000000000 R11: 0000000000000000 R12: ffff888101a48800
+  R13: ffff88813e3e4150 R14: ffff888130d0d008 R15: ffff88813e3e40d0
+  FS:  00007877d3d0d940(0000) GS:ffff88890b6d3000(0000) knlGS:0000000000000000
+  CS:  0010 DS: 0000 ES: 0000 CR0: 0000000080050033
+  CR2: 00000000000011f8 CR3: 000000015a762000 CR4: 0000000000f52ef0
+  PKRU: 55555554
+  Call Trace:
+   &lt;TASK&gt;
+   xe_vfio_pci_reset_done+0x49/0x120 [xe_vfio_pci]
+   pci_dev_restore+0x3b/0x80
+   pci_reset_function+0x109/0x140
+   reset_store+0x5c/0xb0
+   dev_attr_store+0x17/0x40
+   sysfs_kf_write+0x72/0x90
+   kernfs_fop_write_iter+0x161/0x1f0
+   vfs_write+0x261/0x440
+   ksys_write+0x69/0xf0
+   __x64_sys_write+0x19/0x30
+   x64_sys_call+0x259/0x26e0
+   do_syscall_64+0xcb/0x1500
+   ? __fput+0x1a2/0x2d0
+   ? fput_close_sync+0x3d/0xa0
+   ? __x64_sys_close+0x3e/0x90
+   ? x64_sys_call+0x1b7c/0x26e0
+   ? do_syscall_64+0x109/0x1500
+   ? __task_pid_nr_ns+0x68/0x100
+   ? __do_sys_getpid+0x1d/0x30
+   ? x64_sys_call+0x10b5/0x26e0
+   ? do_syscall_64+0x109/0x1500
+   ? putname+0x41/0x90
+   ? do_faccessat+0x1e8/0x300
+   ? __x64_sys_access+0x1c/0x30
+   ? x64_sys_call+0x1822/0x26e0
+   ? do_syscall_64+0x109/0x1500
+   ? tick_program_event+0x43/0xa0
+   ? hrtimer_interrupt+0x126/0x260
+   ? irqentry_exit+0xb2/0x710
+   entry_SYSCALL_64_after_hwframe+0x76/0x7e
+  RIP: 0033:0x7877d5f1c5a4
+  Code: c7 00 16 00 00 00 b8 ff ff ff ff c3 66 2e 0f 1f 84 00 00 00 00 00 f3 0f 1e fa 80 3d a5 ea 0e 00 00 74 13 b8 01 00 00 00 0f 05 &lt;48&gt; 3d 00 f0 ff ff 77 54 c3 0f 1f 00 55 48 89 e5 48 83 ec 20 48 89
+  RSP: 002b:00007fff48e5f908 EFLAGS: 00000202 ORIG_RAX: 0000000000000001
+  RAX: ffffffffffffffda RBX: 0000000000000000 RCX: 00007877d5f1c5a4
+  RDX: 0000000000000001 RSI: 00007877d621b0c9 RDI: 0000000000000009
+  RBP: 0000000000000001 R08: 00005fb49113b010 R09: 0000000000000007
+  R10: 0000000000000000 R11: 0000000000000202 R12: 00007877d621b0c9
+  R13: 0000000000000009 R14: 00007fff48e5fac0 R15: 00007fff48e5fac0
+   &lt;/TASK&gt;
+
+This is caused by the fact that some of the xe_vfio_pci_core_device
+members needed for handling reset are only initialized as part of
+migration init.
+
+Fix the problem by reorganizing the code to decouple VF init from
+migration init.</p></details></td>
+        <td>2026-04-24</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-31600" target="_blank" rel="noopener">CVE-2026-31600</a></td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-476</td>
+        <td>&nbsp;</td>
+        <td>0.0% <small>p6</small></td>
+        <td>5.25</td>
+        <td><details><summary>In the Linux kernel, the following vulnerability has been resolved:
+
+arm64: mm: ...</summary><p>In the Linux kernel, the following vulnerability has been resolved:
+
+arm64: mm: Handle invalid large leaf mappings correctly
+
+It has been possible for a long time to mark ptes in the linear map as
+invalid. This is done for secretmem, kfence, realm dma memory un/share,
+and others, by simply clearing the PTE_VALID bit. But until commit
+a166563e7ec37 (&quot;arm64: mm: support large block mapping when
+rodata=full&quot;) large leaf mappings were never made invalid in this way.
+
+It turns out various parts of the code base are not equipped to handle
+invalid large leaf mappings (in the way they are currently encoded) and
+I&#x27;ve observed a kernel panic while booting a realm guest on a
+BBML2_NOABORT system as a result:
+
+[   15.432706] software IO TLB: Memory encryption is active and system is using DMA bounce buffers
+[   15.476896] Unable to handle kernel paging request at virtual address ffff000019600000
+[   15.513762] Mem abort info:
+[   15.527245]   ESR = 0x0000000096000046
+[   15.548553]   EC = 0x25: DABT (current EL), IL = 32 bits
+[   15.572146]   SET = 0, FnV = 0
+[   15.592141]   EA = 0, S1PTW = 0
+[   15.612694]   FSC = 0x06: level 2 translation fault
+[   15.640644] Data abort info:
+[   15.661983]   ISV = 0, ISS = 0x00000046, ISS2 = 0x00000000
+[   15.694875]   CM = 0, WnR = 1, TnD = 0, TagAccess = 0
+[   15.723740]   GCS = 0, Overlay = 0, DirtyBit = 0, Xs = 0
+[   15.755776] swapper pgtable: 4k pages, 48-bit VAs, pgdp=0000000081f3f000
+[   15.800410] [ffff000019600000] pgd=0000000000000000, p4d=180000009ffff403, pud=180000009fffe403, pmd=00e8000199600704
+[   15.855046] Internal error: Oops: 0000000096000046 [#1]  SMP
+[   15.886394] Modules linked in:
+[   15.900029] CPU: 0 UID: 0 PID: 1 Comm: swapper/0 Not tainted 7.0.0-rc4-dirty #4 PREEMPT
+[   15.935258] Hardware name: linux,dummy-virt (DT)
+[   15.955612] pstate: 21400005 (nzCv daif +PAN -UAO -TCO +DIT -SSBS BTYPE=--)
+[   15.986009] pc : __pi_memcpy_generic+0x128/0x22c
+[   16.006163] lr : swiotlb_bounce+0xf4/0x158
+[   16.024145] sp : ffff80008000b8f0
+[   16.038896] x29: ffff80008000b8f0 x28: 0000000000000000 x27: 0000000000000000
+[   16.069953] x26: ffffb3976d261ba8 x25: 0000000000000000 x24: ffff000019600000
+[   16.100876] x23: 0000000000000001 x22: ffff0000043430d0 x21: 0000000000007ff0
+[   16.131946] x20: 0000000084570010 x19: 0000000000000000 x18: ffff00001ffe3fcc
+[   16.163073] x17: 0000000000000000 x16: 00000000003fffff x15: 646e612065766974
+[   16.194131] x14: 0000000000000000 x13: 0000000000000000 x12: 0000000000000000
+[   16.225059] x11: 0000000000000000 x10: 0000000000000010 x9 : 0000000000000018
+[   16.256113] x8 : 0000000000000018 x7 : 0000000000000000 x6 : 0000000000000000
+[   16.287203] x5 : ffff000019607ff0 x4 : ffff000004578000 x3 : ffff000019600000
+[   16.318145] x2 : 0000000000007ff0 x1 : ffff000004570010 x0 : ffff000019600000
+[   16.349071] Call trace:
+[   16.360143]  __pi_memcpy_generic+0x128/0x22c (P)
+[   16.380310]  swiotlb_tbl_map_single+0x154/0x2b4
+[   16.400282]  swiotlb_map+0x5c/0x228
+[   16.415984]  dma_map_phys+0x244/0x2b8
+[   16.432199]  dma_map_page_attrs+0x44/0x58
+[   16.449782]  virtqueue_map_page_attrs+0x38/0x44
+[   16.469596]  virtqueue_map_single_attrs+0xc0/0x130
+[   16.490509]  virtnet_rq_alloc.isra.0+0xa4/0x1fc
+[   16.510355]  try_fill_recv+0x2a4/0x584
+[   16.526989]  virtnet_open+0xd4/0x238
+[   16.542775]  __dev_open+0x110/0x24c
+[   16.558280]  __dev_change_flags+0x194/0x20c
+[   16.576879]  netif_change_flags+0x24/0x6c
+[   16.594489]  dev_change_flags+0x48/0x7c
+[   16.611462]  ip_auto_config+0x258/0x1114
+[   16.628727]  do_one_initcall+0x80/0x1c8
+[   16.645590]  kernel_init_freeable+0x208/0x2f0
+[   16.664917]  kernel_init+0x24/0x1e0
+[   16.680295]  ret_from_fork+0x10/0x20
+[   16.696369] Code: 927cec03 cb0e0021 8b0e0042 a9411c26 (a900340c)
+[   16.723106] ---[ end trace 0000000000000000 ]---
+[   16.752866] Kernel panic - not syncing: Attempted to kill init! exitcode=0x0000000b
+[   16.792556] Kernel Offset: 0x3396ea200000 from 0xffff8000800000
+---truncated---</p></details></td>
+        <td>2026-04-24</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-31599" target="_blank" rel="noopener">CVE-2026-31599</a></td>
+        <td>5.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-476</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p6</small></td>
         <td>3.85</td>
         <td><details><summary>In the Linux kernel, the following vulnerability has been resolved:
 
-fbdev: udlf...</summary><p>In the Linux kernel, the following vulnerability has been resolved:
+media: vidt...</summary><p>In the Linux kernel, the following vulnerability has been resolved:
 
-fbdev: udlfb: avoid divide-by-zero on FBIOPUT_VSCREENINFO
+media: vidtv: fix NULL pointer dereference in vidtv_channel_pmt_match_sections
 
-Much like commit 19f953e74356 (&quot;fbdev: fb_pm2fb: Avoid potential divide
-by zero error&quot;), we also need to prevent that same crash from happening
-in the udlfb driver as it uses pixclock directly when dividing, which
-will crash.</p></details></td>
+syzbot reported a general protection fault in vidtv_psi_desc_assign [1].
+
+vidtv_psi_pmt_stream_init() can return NULL on memory allocation
+failure, but vidtv_channel_pmt_match_sections() does not check for
+this. When tail is NULL, the subsequent call to
+vidtv_psi_desc_assign(&amp;tail-&gt;descriptor, desc) dereferences a NULL
+pointer offset, causing a general protection fault.
+
+Add a NULL check after vidtv_psi_pmt_stream_init(). On failure, clean
+up the already-allocated stream chain and return.
+
+[1]
+Oops: general protection fault, probably for non-canonical address 0xdffffc0000000000: 0000 [#1] SMP KASAN PTI
+KASAN: null-ptr-deref in range [0x0000000000000000-0x0000000000000007]
+RIP: 0010:vidtv_psi_desc_assign+0x24/0x90 drivers/media/test-drivers/vidtv/vidtv_psi.c:629
+Call Trace:
+ &lt;TASK&gt;
+ vidtv_channel_pmt_match_sections drivers/media/test-drivers/vidtv/vidtv_channel.c:349 [inline]
+ vidtv_channel_si_init+0x1445/0x1a50 drivers/media/test-drivers/vidtv/vidtv_channel.c:479
+ vidtv_mux_init+0x526/0xbe0 drivers/media/test-drivers/vidtv/vidtv_mux.c:519
+ vidtv_start_streaming drivers/media/test-drivers/vidtv/vidtv_bridge.c:194 [inline]
+ vidtv_start_feed+0x33e/0x4d0 drivers/media/test-drivers/vidtv/vidtv_bridge.c:239</p></details></td>
         <td>2026-04-24</td>
       </tr>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-31604" target="_blank" rel="noopener">CVE-2026-31604</a></td>
-        <td>5.5</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-401</td>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-31598" target="_blank" rel="noopener">CVE-2026-31598</a></td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-667</td>
         <td>&nbsp;</td>
-        <td>0.0% <small>p7</small></td>
-        <td>3.85</td>
+        <td>0.1% <small>p16</small></td>
+        <td>5.25</td>
         <td><details><summary>In the Linux kernel, the following vulnerability has been resolved:
 
-wifi: rtw88...</summary><p>In the Linux kernel, the following vulnerability has been resolved:
+ocfs2: fix ...</summary><p>In the Linux kernel, the following vulnerability has been resolved:
 
-wifi: rtw88: fix device leak on probe failure
+ocfs2: fix possible deadlock between unlink and dio_end_io_write
 
-Driver core holds a reference to the USB interface and its parent USB
-device while the interface is bound to a driver and there is no need to
-take additional references unless the structures are needed after
-disconnect.
+ocfs2_unlink takes orphan dir inode_lock first and then ip_alloc_sem,
+while in ocfs2_dio_end_io_write, it acquires these locks in reverse order.
+This creates an ABBA lock ordering violation on lock classes
+ocfs2_sysfile_lock_key[ORPHAN_DIR_SYSTEM_INODE] and
+ocfs2_file_ip_alloc_sem_key.
 
-This driver takes a reference to the USB device during probe but does
-not to release it on all probe errors (e.g. when descriptor parsing
-fails).
+Lock Chain #0 (orphan dir inode_lock -&gt; ip_alloc_sem):
+ocfs2_unlink
+  ocfs2_prepare_orphan_dir
+    ocfs2_lookup_lock_orphan_dir
+      inode_lock(orphan_dir_inode) &lt;- lock A
+    __ocfs2_prepare_orphan_dir
+      ocfs2_prepare_dir_for_insert
+        ocfs2_extend_dir
+	  ocfs2_expand_inline_dir
+	    down_write(&amp;oi-&gt;ip_alloc_sem) &lt;- Lock B
 
-Drop the redundant device reference to fix the leak, reduce cargo
-culting, make it easier to spot drivers where an extra reference is
-needed, and reduce the risk of further memory leaks.</p></details></td>
-        <td>2026-04-24</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-31603" target="_blank" rel="noopener">CVE-2026-31603</a></td>
-        <td>5.5</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-369</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p6</small></td>
-        <td>3.85</td>
-        <td><details><summary>In the Linux kernel, the following vulnerability has been resolved:
+Lock Chain #1 (ip_alloc_sem -&gt; orphan dir inode_lock):
+ocfs2_dio_end_io_write
+  down_write(&amp;oi-&gt;ip_alloc_sem) &lt;- Lock B
+  ocfs2_del_inode_from_orphan()
+    inode_lock(orphan_dir_inode) &lt;- Lock A
 
-staging: sm...</summary><p>In the Linux kernel, the following vulnerability has been resolved:
+Deadlock Scenario:
+  CPU0 (unlink)                     CPU1 (dio_end_io_write)
+  ------                            ------
+  inode_lock(orphan_dir_inode)
+                                    down_write(ip_alloc_sem)
+  down_write(ip_alloc_sem)
+                                    inode_lock(orphan_dir_inode)
 
-staging: sm750fb: fix division by zero in ps_to_hz()
-
-ps_to_hz() is called from hw_sm750_crtc_set_mode() without validating
-that pixclock is non-zero. A zero pixclock passed via FBIOPUT_VSCREENINFO
-causes a division by zero.
-
-Fix by rejecting zero pixclock in lynxfb_ops_check_var(), consistent
-with other framebuffer drivers.</p></details></td>
+Since ip_alloc_sem is to protect allocation changes, which is unrelated
+with operations in ocfs2_del_inode_from_orphan.  So move
+ocfs2_del_inode_from_orphan out of ip_alloc_sem to fix the deadlock.</p></details></td>
         <td>2026-04-24</td>
       </tr>
       <tr>
@@ -8156,7 +8483,7 @@ with other framebuffer drivers.</p></details></td>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6942" target="_blank" rel="noopener">CVE-2026-6942</a></td>
         <td>9.3</td>
         <td><span class="severity critical">CRITICAL</span></td>
-        <td>N/A</td>
+        <td>CWE-78</td>
         <td>&nbsp;</td>
         <td>0.3% <small>p57</small></td>
         <td>6.52</td>
@@ -15036,6 +15363,20 @@ with other framebuffer drivers.</p></details></td>
         <td>0.1% <small>p17</small></td>
         <td>4.55</td>
         <td><details><summary>User‑Controlled HTTP Header in Fortra&#x27;s GoAnywhere MFT prior to version 7.10.0 a...</summary><p>User‑Controlled HTTP Header in Fortra&#x27;s GoAnywhere MFT prior to version 7.10.0 allows attackers to trigger a DNS lookup, as well as DNS Rebinding and Information Disclosure.</p></details></td>
+        <td>2026-04-21</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-0972" target="_blank" rel="noopener">CVE-2026-0972</a></td>
+        <td>5.4</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-74</td>
+        <td>&nbsp;</td>
+        <td>0.0% <small>p8</small></td>
+        <td>3.78</td>
+        <td><details><summary>HTML injection is possible in system generated emails in Fortra&#x27;s GoAnywhere MFT...</summary><p>HTML injection is possible in system generated emails in Fortra&#x27;s GoAnywhere MFT prior to 7.10.0.
+
+
+Note: The title, details, and description of this CVE were corrected post-publishing.</p></details></td>
         <td>2026-04-21</td>
       </tr>
       <tr>
