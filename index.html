@@ -11,7 +11,7 @@
     <header>
       <h1>vuln-tracker</h1>
       <p class="subtitle">CVEs from the National Vulnerability Database — current and previous month</p>
-      <p class="last-updated">Last updated: 2026-04-29 06:28 UTC</p>
+      <p class="last-updated">Last updated: 2026-04-29 10:11 UTC</p>
     </header>
     <nav>
       <a href="top50.html">&#9733; Top 50</a>
@@ -25,7 +25,7 @@
     </nav>
     <main>
     <section>
-      <h2>Current Month — April 2026 <span class="count">(4786)</span></h2>
+      <h2>Current Month — April 2026 <span class="count">(4797)</span></h2>
       <div class="table-wrapper">
         <table>
           <thead>
@@ -42,6 +42,139 @@
             </tr>
           </thead>
           <tbody>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4019" target="_blank" rel="noopener">CVE-2026-4019</a></td>
+        <td>5.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.71</td>
+        <td><details><summary>The Complianz – GDPR/CCPA Cookie Consent plugin for WordPress is vulnerable to u...</summary><p>The Complianz – GDPR/CCPA Cookie Consent plugin for WordPress is vulnerable to unauthorized data access in all versions up to, and including, 7.4.5 This is due to the REST API endpoint at /wp-json/complianz/v1/consent-area/{post_id}/{block_id} using __return_true as the permission_callback, allowing any unauthenticated user to access it. The cmplz_rest_consented_content() function retrieves a post by ID via get_post() and returns the consentedContent attribute of any complianz/consent-area block found in it, without checking if the post is published or if the user has permission to read it. This makes it possible for unauthenticated attackers to read the consent area block content from private, draft, or unpublished posts.</p></details></td>
+        <td>2026-04-29</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-42518" target="_blank" rel="noopener">CVE-2026-42518</a></td>
+        <td>8.7</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-321</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.09</td>
+        <td><details><summary>This vulnerability exists in e-Sushrut due to disclosure of sensitive informatio...</summary><p>This vulnerability exists in e-Sushrut due to disclosure of sensitive information and hardcoded AES encryption keys in client-side JavaScript. An unauthenticated remote attacker could exploit this vulnerability by accessing the client-side code to extract sensitive information and cryptographic keys.
+
+Successful exploitation of this vulnerability could lead to exposure of sensitive data and compromise of cryptographic protections on the targeted system.</p></details></td>
+        <td>2026-04-29</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-42517" target="_blank" rel="noopener">CVE-2026-42517</a></td>
+        <td>7.1</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-639</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.97</td>
+        <td><details><summary>This vulnerability exists in e-Sushrut due to the use of reversible Base64 encod...</summary><p>This vulnerability exists in e-Sushrut due to the use of reversible Base64 encoding for protecting sensitive data. An authenticated attacker could exploit this vulnerability by decoding and manipulating Base64-encoded parameters in the request URL to gain unauthorized access to sensitive information on the targeted system.</p></details></td>
+        <td>2026-04-29</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-42516" target="_blank" rel="noopener">CVE-2026-42516</a></td>
+        <td>7.1</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-639</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.97</td>
+        <td><details><summary>This vulnerability exists in e-Sushrut due to improper authorization checks duri...</summary><p>This vulnerability exists in e-Sushrut due to improper authorization checks during resource access. An authenticated attacker could exploit this vulnerability by manipulating encoded parameters in the request URL to gain unauthorized access to patient accounts on the targeted system.</p></details></td>
+        <td>2026-04-29</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-42515" target="_blank" rel="noopener">CVE-2026-42515</a></td>
+        <td>7.1</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-639</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.97</td>
+        <td><details><summary>This vulnerability exists in e-Sushrut due to improper access control in resourc...</summary><p>This vulnerability exists in e-Sushrut due to improper access control in resource access validation. An authenticated attacker could exploit this vulnerability by manipulating parameter in the API request URL to gain unauthorized access to sensitive information of patients on the targeted system.</p></details></td>
+        <td>2026-04-29</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-42514" target="_blank" rel="noopener">CVE-2026-42514</a></td>
+        <td>8.8</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-319</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.16</td>
+        <td><details><summary>This vulnerability exists in e-Sushrut due to exposure of OTPs in plaintext with...</summary><p>This vulnerability exists in e-Sushrut due to exposure of OTPs in plaintext within API responses. A remote attacker could exploit this vulnerability by intercepting API responses containing valid OTPs.
+
+Successful exploitation of this vulnerability could allow an attacker to impersonate the target user and gain unauthorized access to user accounts on the targeted system.</p></details></td>
+        <td>2026-04-29</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-42513" target="_blank" rel="noopener">CVE-2026-42513</a></td>
+        <td>8.8</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.16</td>
+        <td><details><summary>This vulnerability exists in e-Sushrut due to improper authentication logic that...</summary><p>This vulnerability exists in e-Sushrut due to improper authentication logic that relies on client-side response parameters to determine authentication status. A remote attacker could exploit this vulnerability by intercepting and modifying the server response.  
+
+Successful exploitation of this vulnerability could allow the attacker to bypass authentication and gain unauthorized access to user accounts on the targeted system.</p></details></td>
+        <td>2026-04-29</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-42412" target="_blank" rel="noopener">CVE-2026-42412</a></td>
+        <td>6.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.55</td>
+        <td><details><summary>Missing Authorization vulnerability in weDevs WP User Frontend allows Exploiting...</summary><p>Missing Authorization vulnerability in weDevs WP User Frontend allows Exploiting Incorrectly Configured Access Control Security Levels.
+
+This issue affects WP User Frontend: from n/a through 4.3.1.</p></details></td>
+        <td>2026-04-29</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-3325" target="_blank" rel="noopener">CVE-2026-3325</a></td>
+        <td>10.0</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-89</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>7.00</td>
+        <td><details><summary>SQL injection (SQLi) in MegaCMS v12.0.0, specifically in the “id_territorio” par...</summary><p>SQL injection (SQLi) in MegaCMS v12.0.0, specifically in the “id_territorio” parameter of the “/web_comunications/cms/get_provincias” endpoint. The vulnerability arises from inadequate validation and sanitisation of user input. Specifically, via a POST request, the “id_territorio” parameter, used immediately after the registration form is submitted, could be manipulated by an unauthenticated attacker to execute arbitrary SQL queries.</p></details></td>
+        <td>2026-04-29</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-10503" target="_blank" rel="noopener">CVE-2025-10503</a></td>
+        <td>6.1</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.27</td>
+        <td><details><summary>The authentication endpoint accepts user-supplied input without enforcing expect...</summary><p>The authentication endpoint accepts user-supplied input without enforcing expected validation constraints, leading to a lack of proper output encoding. This allows for the injection of malicious JavaScript payloads, enabling reflected cross-site scripting.
+
+An attacker can leverage this vulnerability to redirect the user&#x27;s browser to a malicious website, modify the user interface of the web page, retrieve information from the browser, or cause other harmful actions. However, due to the protection of session-related cookies with the httpOnly flag, session hijacking is not possible.</p></details></td>
+        <td>2026-04-29</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-42377" target="_blank" rel="noopener">CVE-2026-42377</a></td>
+        <td>7.3</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.11</td>
+        <td><details><summary>Missing Authorization vulnerability in Brainstorm Force SureForms Pro allows Exp...</summary><p>Missing Authorization vulnerability in Brainstorm Force SureForms Pro allows Exploiting Incorrectly Configured Access Control Security Levels.
+
+This issue affects SureForms Pro: from n/a through 2.8.0.</p></details></td>
+        <td>2026-04-29</td>
+      </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35155" target="_blank" rel="noopener">CVE-2026-35155</a></td>
         <td>7.1</td>
@@ -84,21 +217,6 @@
         <td>&mdash;</td>
         <td>3.01</td>
         <td><details><summary>Dell Disk Library for Mainframe, version(s) DLm 8700/2700 contain(s) a Server-Si...</summary><p>Dell Disk Library for Mainframe, version(s) DLm 8700/2700 contain(s) a Server-Side Request Forgery (SSRF) vulnerability. A low privileged attacker with remote access could potentially exploit this vulnerability, leading to Server-side request forgery.</p></details></td>
-        <td>2026-04-29</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40560" target="_blank" rel="noopener">CVE-2026-40560</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>CWE-444</td>
-        <td>&nbsp;</td>
-        <td>&mdash;</td>
-        <td>0.00</td>
-        <td><details><summary>Starman versions before 0.4018 for Perl allows HTTP Request Smuggling via Improp...</summary><p>Starman versions before 0.4018 for Perl allows HTTP Request Smuggling via Improper Header Precedence.
-
-Starman incorrectly prioritizes &quot;Content-Length&quot; over &quot;Transfer-Encoding: chunked&quot; when both headers are present in an HTTP request. Per RFC 7230 3.3.3, Transfer-Encoding must take precedence.
-
-An attacker could exploit this to smuggle malicious HTTP requests via a front-end reverse proxy.</p></details></td>
         <td>2026-04-29</td>
       </tr>
       <tr>
@@ -1474,6 +1592,17 @@ An attacker could exploit this to smuggle malicious HTTP requests via a front-en
         <td>&mdash;</td>
         <td>1.40</td>
         <td><details><summary>A vulnerability was identified in SourceCodester Pharmacy Sales and Inventory Sy...</summary><p>A vulnerability was identified in SourceCodester Pharmacy Sales and Inventory System 1.0. This affects the function delete_expired of the file /ajax.php?action=delete_expired. The manipulation of the argument ID leads to sql injection. It is possible to initiate the attack remotely. The exploit is publicly available and might be used.</p></details></td>
+        <td>2026-04-28</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40556" target="_blank" rel="noopener">CVE-2026-40556</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Rejected reason: This CVE ID has been rejected or withdrawn by its CVE Numbering...</summary><p>Rejected reason: This CVE ID has been rejected or withdrawn by its CVE Numbering Authority.</p></details></td>
         <td>2026-04-28</td>
       </tr>
       <tr>
@@ -74370,7 +74499,7 @@ An attacker could exploit this to smuggle malicious HTTP requests via a front-en
         <td>&nbsp;</td>
         <td>0.3% <small>p54</small></td>
         <td>1.41</td>
-        <td><details><summary>A vulnerability was determined in Cudy TR1200 R46-2.4.15-20250721-164017. Impact...</summary><p>A vulnerability was determined in Cudy TR1200 R46-2.4.15-20250721-164017. Impacted is the function action_ipsec_conn of the file /usr/bin/lib/lua/luci/controller/ipsec.lua. Executing a manipulation can lead to command injection. The attack may be launched remotely. The exploit has been publicly disclosed and may be utilized. The vendor was contacted early about this disclosure but did not respond in any way.</p></details></td>
+        <td><details><summary>A vulnerability was determined in Cudy TR1200 R46-2.4.15-20250721-164017. Impact...</summary><p>A vulnerability was determined in Cudy TR1200 R46-2.4.15-20250721-164017. Impacted is the function action_ipsec_conn of the file /usr/bin/lib/lua/luci/controller/ipsec.lua. Executing a manipulation can lead to command injection. The attack may be launched remotely. The exploit has been publicly disclosed and may be utilized. Upgrading the affected component is advised. The vendor explains, that &quot;some other customer has reported this to us before. And we have fixed this.&quot;</p></details></td>
         <td>2026-03-22</td>
       </tr>
       <tr>

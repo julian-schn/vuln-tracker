@@ -1,14 +1,24 @@
 # CVEs — April 2026
 
-_4786 vulnerabilities_
+_4797 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
+| [CVE-2026-4019](https://nvd.nist.gov/vuln/detail/CVE-2026-4019) | 5.3 | MEDIUM | CWE-862 | No | — | 3.71 | 2026-04-29 | The Complianz – GDPR/CCPA Cookie Consent plugin for WordPress is vulnerable to unauthorized data access in all versions... |
+| [CVE-2026-42518](https://nvd.nist.gov/vuln/detail/CVE-2026-42518) | 8.7 | HIGH | CWE-321 | No | — | 6.09 | 2026-04-29 | This vulnerability exists in e-Sushrut due to disclosure of sensitive information and hardcoded AES encryption keys in c... |
+| [CVE-2026-42517](https://nvd.nist.gov/vuln/detail/CVE-2026-42517) | 7.1 | HIGH | CWE-639 | No | — | 4.97 | 2026-04-29 | This vulnerability exists in e-Sushrut due to the use of reversible Base64 encoding for protecting sensitive data. An au... |
+| [CVE-2026-42516](https://nvd.nist.gov/vuln/detail/CVE-2026-42516) | 7.1 | HIGH | CWE-639 | No | — | 4.97 | 2026-04-29 | This vulnerability exists in e-Sushrut due to improper authorization checks during resource access. An authenticated att... |
+| [CVE-2026-42515](https://nvd.nist.gov/vuln/detail/CVE-2026-42515) | 7.1 | HIGH | CWE-639 | No | — | 4.97 | 2026-04-29 | This vulnerability exists in e-Sushrut due to improper access control in resource access validation. An authenticated at... |
+| [CVE-2026-42514](https://nvd.nist.gov/vuln/detail/CVE-2026-42514) | 8.8 | HIGH | CWE-319 | No | — | 6.16 | 2026-04-29 | This vulnerability exists in e-Sushrut due to exposure of OTPs in plaintext within API responses. A remote attacker coul... |
+| [CVE-2026-42513](https://nvd.nist.gov/vuln/detail/CVE-2026-42513) | 8.8 | HIGH | N/A | No | — | 6.16 | 2026-04-29 | This vulnerability exists in e-Sushrut due to improper authentication logic that relies on client-side response paramete... |
+| [CVE-2026-42412](https://nvd.nist.gov/vuln/detail/CVE-2026-42412) | 6.5 | MEDIUM | CWE-862 | No | — | 4.55 | 2026-04-29 | Missing Authorization vulnerability in weDevs WP User Frontend allows Exploiting Incorrectly Configured Access Control S... |
+| [CVE-2026-3325](https://nvd.nist.gov/vuln/detail/CVE-2026-3325) | 10.0 | CRITICAL | CWE-89 | No | — | 7.00 | 2026-04-29 | SQL injection (SQLi) in MegaCMS v12.0.0, specifically in the “id_territorio” parameter of the “/web_comunications/cms/ge... |
+| [CVE-2025-10503](https://nvd.nist.gov/vuln/detail/CVE-2025-10503) | 6.1 | MEDIUM | CWE-79 | No | — | 4.27 | 2026-04-29 | The authentication endpoint accepts user-supplied input without enforcing expected validation constraints, leading to a... |
+| [CVE-2026-42377](https://nvd.nist.gov/vuln/detail/CVE-2026-42377) | 7.3 | HIGH | CWE-862 | No | — | 5.11 | 2026-04-29 | Missing Authorization vulnerability in Brainstorm Force SureForms Pro allows Exploiting Incorrectly Configured Access Co... |
 | [CVE-2026-35155](https://nvd.nist.gov/vuln/detail/CVE-2026-35155) | 7.1 | HIGH | CWE-522 | No | — | 4.97 | 2026-04-29 | Dell iDRAC10, versions 1.20.70.50 and 1.30.05.10, contains an Insufficiently Protected Credentials vulnerability. A race... |
 | [CVE-2026-21023](https://nvd.nist.gov/vuln/detail/CVE-2026-21023) | 6.9 | MEDIUM | N/A | No | — | 4.83 | 2026-04-29 | Insufficient verification of data authenticity in PackageManagerService prior to SMR Mar-2026 Release 1 allows local att... |
 | [CVE-2026-42615](https://nvd.nist.gov/vuln/detail/CVE-2026-42615) | 7.2 | HIGH | CWE-79 | No | — | 5.04 | 2026-04-29 | GCHQ CyberChef before 11.0.0 allows XSS via Show Base64 offsets, as demonstrated by the /#recipe=Show_Base64_offsets('%3... |
 | [CVE-2026-23773](https://nvd.nist.gov/vuln/detail/CVE-2026-23773) | 4.3 | MEDIUM | CWE-918 | No | — | 3.01 | 2026-04-29 | Dell Disk Library for Mainframe, version(s) DLm 8700/2700 contain(s) a Server-Side Request Forgery (SSRF) vulnerability.... |
-| [CVE-2026-40560](https://nvd.nist.gov/vuln/detail/CVE-2026-40560) | 0.0 | NONE | CWE-444 | No | — | 0.00 | 2026-04-29 | Starman versions before 0.4018 for Perl allows HTTP Request Smuggling via Improper Header Precedence.  Starman incorrect... |
 | [CVE-2026-7363](https://nvd.nist.gov/vuln/detail/CVE-2026-7363) | 0.0 | NONE | CWE-416 | No | — | 0.00 | 2026-04-28 | Use after free in Canvas in Google Chrome on Linux, ChromeOS prior to 147.0.7727.138 allowed a remote attacker to execut... |
 | [CVE-2026-7361](https://nvd.nist.gov/vuln/detail/CVE-2026-7361) | 0.0 | NONE | CWE-416 | No | — | 0.00 | 2026-04-28 | Use after free in iOS in Google Chrome prior to 147.0.7727.138 allowed a remote attacker to potentially exploit heap cor... |
 | [CVE-2026-7360](https://nvd.nist.gov/vuln/detail/CVE-2026-7360) | 0.0 | NONE | CWE-20 | No | — | 0.00 | 2026-04-28 | Insufficient validation of untrusted input. in Compositing in Google Chrome prior to 147.0.7727.138 allowed a remote att... |
@@ -134,6 +144,7 @@ _4786 vulnerabilities_
 | [CVE-2026-7288](https://nvd.nist.gov/vuln/detail/CVE-2026-7288) | 7.4 | HIGH | CWE-119 | No | — | 5.18 | 2026-04-28 | A vulnerability has been found in D-Link DIR-825M 1.1.12. This vulnerability affects the function sub_4151FC of the file... |
 | [CVE-2026-7283](https://nvd.nist.gov/vuln/detail/CVE-2026-7283) | 2.0 | LOW | CWE-74 | No | — | 1.40 | 2026-04-28 | A security flaw has been discovered in SourceCodester Pharmacy Sales and Inventory System 1.0. This impacts the function... |
 | [CVE-2026-7282](https://nvd.nist.gov/vuln/detail/CVE-2026-7282) | 2.0 | LOW | CWE-74 | No | — | 1.40 | 2026-04-28 | A vulnerability was identified in SourceCodester Pharmacy Sales and Inventory System 1.0. This affects the function dele... |
+| [CVE-2026-40556](https://nvd.nist.gov/vuln/detail/CVE-2026-40556) | 0.0 | NONE | N/A | No | — | 0.00 | 2026-04-28 | Rejected reason: This CVE ID has been rejected or withdrawn by its CVE Numbering Authority. |
 | [CVE-2026-27760](https://nvd.nist.gov/vuln/detail/CVE-2026-27760) | 9.2 | CRITICAL | CWE-94 | No | — | 6.44 | 2026-04-28 | OpenCATS prior to commit 3002a29 contains a PHP code injection vulnerability in the installer AJAX endpoint that allows... |
 | [CVE-2025-67223](https://nvd.nist.gov/vuln/detail/CVE-2025-67223) | 7.5 | HIGH | CWE-377 | No | — | 5.25 | 2026-04-28 | The Aranda File Server (AFS) component in Aranda Software Aranda Service Desk before 8.3.12 stores daily activity logs w... |
 | [CVE-2026-7281](https://nvd.nist.gov/vuln/detail/CVE-2026-7281) | 1.9 | LOW | CWE-79 | No | — | 1.33 | 2026-04-28 | A vulnerability was determined in SourceCodester Pharmacy Sales and Inventory System 1.0. The impacted element is the fu... |
