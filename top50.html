@@ -11,7 +11,7 @@
     <header>
       <h1>vuln-tracker — Top 50</h1>
       <p class="subtitle">The 50 most important CVEs from the current and previous month, ranked by VAP score (70% CVSS + 30% EPSS)</p>
-      <p class="last-updated">Last updated: 2026-04-29 10:11 UTC</p>
+      <p class="last-updated">Last updated: 2026-04-29 17:43 UTC</p>
     </header>
     <nav>
       <a href="index.html">&larr; All CVEs</a>
@@ -206,17 +206,6 @@
         <td>2026-03-30</td>
       </tr>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-31816" target="_blank" rel="noopener">CVE-2026-31816</a></td>
-        <td>9.1</td>
-        <td><span class="severity critical">CRITICAL</span></td>
-        <td>CWE-74</td>
-        <td>&nbsp;</td>
-        <td>24.3% <small>p96</small></td>
-        <td>7.10</td>
-        <td><details><summary>Budibase is a low code platform for creating internal tools, workflows, and admi...</summary><p>Budibase is a low code platform for creating internal tools, workflows, and admin panels. In 3.31.4 and earlier, the Budibase server&#x27;s authorized() middleware that protects every server-side API endpoint can be completely bypassed by appending a webhook path pattern to the query string of any request. The isWebhookEndpoint() function uses an unanchored regex that tests against ctx.request.url, which in Koa includes the full URL with query parameters. When the regex matches, the authorized() middleware immediately calls return next(), skipping all authentication, authorization, role checks, and CSRF protection. This means a completely unauthenticated, remote attacker can access any server-side API endpoint by simply appending ?/webhooks/trigger (or any webhook pattern variant) to the URL.</p></details></td>
-        <td>2026-03-09</td>
-      </tr>
-      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33634" target="_blank" rel="noopener">CVE-2026-33634</a></td>
         <td>9.4</td>
         <td><span class="severity critical">CRITICAL</span></td>
@@ -233,8 +222,8 @@
         <td><span class="severity critical">CRITICAL</span></td>
         <td>CWE-306</td>
         <td>&nbsp;</td>
-        <td>7.4% <small>p91</small></td>
-        <td>7.08</td>
+        <td>6.8% <small>p91</small></td>
+        <td>7.06</td>
         <td><details><summary>Nginx UI is a web user interface for the Nginx web server. Prior to version 2.3....</summary><p>Nginx UI is a web user interface for the Nginx web server. Prior to version 2.3.3, the /api/backup endpoint is accessible without authentication and discloses the encryption keys required to decrypt the backup in the X-Backup-Security response header. This allows an unauthenticated attacker to download a full system backup containing sensitive data (user credentials, session tokens, SSL private keys, Nginx configurations) and decrypt it immediately. This issue has been patched in version 2.3.3.</p></details></td>
         <td>2026-03-05</td>
       </tr>
@@ -283,6 +272,17 @@
         <td>2026-04-01</td>
       </tr>
       <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-31816" target="_blank" rel="noopener">CVE-2026-31816</a></td>
+        <td>9.1</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-74</td>
+        <td>&nbsp;</td>
+        <td>21.6% <small>p95</small></td>
+        <td>7.02</td>
+        <td><details><summary>Budibase is a low code platform for creating internal tools, workflows, and admi...</summary><p>Budibase is a low code platform for creating internal tools, workflows, and admin panels. In 3.31.4 and earlier, the Budibase server&#x27;s authorized() middleware that protects every server-side API endpoint can be completely bypassed by appending a webhook path pattern to the query string of any request. The isWebhookEndpoint() function uses an unanchored regex that tests against ctx.request.url, which in Koa includes the full URL with query parameters. When the regex matches, the authorized() middleware immediately calls return next(), skipping all authentication, authorization, role checks, and CSRF protection. This means a completely unauthenticated, remote attacker can access any server-side API endpoint by simply appending ?/webhooks/trigger (or any webhook pattern variant) to the URL.</p></details></td>
+        <td>2026-03-09</td>
+      </tr>
+      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-2743" target="_blank" rel="noopener">CVE-2026-2743</a></td>
         <td>10.0</td>
         <td><span class="severity critical">CRITICAL</span></td>
@@ -292,6 +292,17 @@
         <td>7.02</td>
         <td><details><summary>Arbitrary File Write via Path Traversal upload to Remote Code Execution in SeppM...</summary><p>Arbitrary File Write via Path Traversal upload to Remote Code Execution in SeppMail User Web Interface. The affected feature is the large file transfer (LFT). This issue affects SeppMail: 15.0.2.1 and before</p></details></td>
         <td>2026-03-05</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-41679" target="_blank" rel="noopener">CVE-2026-41679</a></td>
+        <td>10.0</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-287</td>
+        <td>&nbsp;</td>
+        <td>0.5% <small>p67</small></td>
+        <td>7.02</td>
+        <td><details><summary>Paperclip is a Node.js server and React UI that orchestrates a team of AI agents...</summary><p>Paperclip is a Node.js server and React UI that orchestrates a team of AI agents to run a business. Prior to version 2026.416.0, an unauthenticated attacker can achieve full remote code execution on any network-accessible Paperclip instance running in `authenticated` mode with default configuration. No user interaction, no credentials, just the target&#x27;s address. The chain consists of six API calls. The attack is fully automated, requires no user interaction, and works against the default deployment configuration. Version 2026.416.0 patches the issue.</p></details></td>
+        <td>2026-04-23</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-30302" target="_blank" rel="noopener">CVE-2026-30302</a></td>
@@ -305,14 +316,14 @@
         <td>2026-03-27</td>
       </tr>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-41679" target="_blank" rel="noopener">CVE-2026-41679</a></td>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33819" target="_blank" rel="noopener">CVE-2026-33819</a></td>
         <td>10.0</td>
         <td><span class="severity critical">CRITICAL</span></td>
-        <td>CWE-287</td>
+        <td>CWE-502</td>
         <td>&nbsp;</td>
-        <td>0.4% <small>p60</small></td>
+        <td>0.4% <small>p57</small></td>
         <td>7.01</td>
-        <td><details><summary>Paperclip is a Node.js server and React UI that orchestrates a team of AI agents...</summary><p>Paperclip is a Node.js server and React UI that orchestrates a team of AI agents to run a business. Prior to version 2026.416.0, an unauthenticated attacker can achieve full remote code execution on any network-accessible Paperclip instance running in `authenticated` mode with default configuration. No user interaction, no credentials, just the target&#x27;s address. The chain consists of six API calls. The attack is fully automated, requires no user interaction, and works against the default deployment configuration. Version 2026.416.0 patches the issue.</p></details></td>
+        <td><details><summary>Deserialization of untrusted data in Microsoft Bing allows an unauthorized attac...</summary><p>Deserialization of untrusted data in Microsoft Bing allows an unauthorized attacker to execute code over a network.</p></details></td>
         <td>2026-04-23</td>
       </tr>
       <tr>
@@ -347,17 +358,6 @@
         <td>7.01</td>
         <td><details><summary>WWBN AVideo is an open source video platform. In versions 29.0 and prior, the YP...</summary><p>WWBN AVideo is an open source video platform. In versions 29.0 and prior, the YPTSocket plugin&#x27;s WebSocket server relays attacker-supplied JSON message bodies to every connected client without sanitizing the `msg` or `callback` fields. On the client side, `plugin/YPTSocket/script.js` contains two `eval()` sinks fed directly by those relayed fields (`json.msg.autoEvalCodeOnHTML` at line 568 and `json.callback` at line 95). Because tokens are minted for anonymous visitors and never revalidated beyond decryption, an unauthenticated attacker can broadcast arbitrary JavaScript that executes in the origin of every currently-connected user (including administrators), resulting in universal account takeover, session theft, and privileged action execution. Commit c08694bf6264eb4decceb78c711baee2609b4efd contains a fix.</p></details></td>
         <td>2026-04-21</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33819" target="_blank" rel="noopener">CVE-2026-33819</a></td>
-        <td>10.0</td>
-        <td><span class="severity critical">CRITICAL</span></td>
-        <td>CWE-502</td>
-        <td>&nbsp;</td>
-        <td>0.3% <small>p50</small></td>
-        <td>7.01</td>
-        <td><details><summary>Deserialization of untrusted data in Microsoft Bing allows an unauthorized attac...</summary><p>Deserialization of untrusted data in Microsoft Bing allows an unauthorized attacker to execute code over a network.</p></details></td>
-        <td>2026-04-23</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-31957" target="_blank" rel="noopener">CVE-2026-31957</a></td>
@@ -470,6 +470,17 @@
         <td>2026-03-11</td>
       </tr>
       <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35431" target="_blank" rel="noopener">CVE-2026-35431</a></td>
+        <td>10.0</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-918</td>
+        <td>&nbsp;</td>
+        <td>0.1% <small>p25</small></td>
+        <td>7.00</td>
+        <td><details><summary>Server-side request forgery (ssrf) in Microsoft Entra ID Entitlement Management ...</summary><p>Server-side request forgery (ssrf) in Microsoft Entra ID Entitlement Management allows an unauthorized attacker to perform spoofing over a network.</p></details></td>
+        <td>2026-04-23</td>
+      </tr>
+      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-26954" target="_blank" rel="noopener">CVE-2026-26954</a></td>
         <td>10.0</td>
         <td><span class="severity critical">CRITICAL</span></td>
@@ -512,17 +523,6 @@
         <td>7.00</td>
         <td><details><summary>OpenEMR is a free and open source electronic health records and medical practice...</summary><p>OpenEMR is a free and open source electronic health records and medical practice management application. Prior to 8.0.0, an unauthenticated token disclosure vulnerability in the MedEx callback endpoint allows any unauthenticated visitor to obtain the practice&#x27;s MedEx API tokens, leading to complete third-party service compromise, PHI exfiltration, unauthorized actions on the MedEx platform, and HIPAA violations. The vulnerability exists because the endpoint bypasses authentication ($ignoreAuth = true) and performs a MedEx login whenever $_POST[&#x27;callback_key&#x27;] is provided, returning the full JSON response including sensitive API tokens. This vulnerability is fixed in 8.0.0.</p></details></td>
         <td>2026-03-03</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35431" target="_blank" rel="noopener">CVE-2026-35431</a></td>
-        <td>10.0</td>
-        <td><span class="severity critical">CRITICAL</span></td>
-        <td>CWE-918</td>
-        <td>&nbsp;</td>
-        <td>0.1% <small>p21</small></td>
-        <td>7.00</td>
-        <td><details><summary>Server-side request forgery (ssrf) in Microsoft Entra ID Entitlement Management ...</summary><p>Server-side request forgery (ssrf) in Microsoft Entra ID Entitlement Management allows an unauthorized attacker to perform spoofing over a network.</p></details></td>
-        <td>2026-04-23</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-54328" target="_blank" rel="noopener">CVE-2025-54328</a></td>
