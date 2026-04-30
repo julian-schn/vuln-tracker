@@ -11,7 +11,7 @@
     <header>
       <h1>vuln-tracker</h1>
       <p class="subtitle">CVEs from the National Vulnerability Database — current and previous month</p>
-      <p class="last-updated">Last updated: 2026-04-30 06:32 UTC</p>
+      <p class="last-updated">Last updated: 2026-04-30 10:11 UTC</p>
     </header>
     <nav>
       <a href="top50.html">&#9733; Top 50</a>
@@ -25,7 +25,7 @@
     </nav>
     <main>
     <section>
-      <h2>Current Month — April 2026 <span class="count">(4904)</span></h2>
+      <h2>Current Month — April 2026 <span class="count">(4948)</span></h2>
       <div class="table-wrapper">
         <table>
           <thead>
@@ -42,6 +42,508 @@
             </tr>
           </thead>
           <tbody>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-42799" target="_blank" rel="noopener">CVE-2026-42799</a></td>
+        <td>7.4</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-125</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.18</td>
+        <td><details><summary>Out-of-bounds read vulnerability in ASR Kestrel (nr_fw modules) allows Overflow ...</summary><p>Out-of-bounds read vulnerability in ASR Kestrel (nr_fw modules) allows Overflow Buffers.
+
+ This vulnerability is associated with program files Code/Nr/nr_fw/RA/src/NrPwrCtrl.C.
+
+
+
+This issue affects Kestrel: before 2026/02/10.</p></details></td>
+        <td>2026-04-30</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-42512" target="_blank" rel="noopener">CVE-2026-42512</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-122</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>As dhclient is building an environment to pass to dhclient-script, it may need t...</summary><p>As dhclient is building an environment to pass to dhclient-script, it may need to resize the array of string pointers.  The code which expands the array incorrectly calculates its new size when requesting memory, resulting in a heap buffer overrun.
+
+A specially crafted packet can cause dhclient to overrun its buffer of environment entries.  This can result in a crash, but it may be possible to leverage this bug to achieve remote code execution.</p></details></td>
+        <td>2026-04-30</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39457" target="_blank" rel="noopener">CVE-2026-39457</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-121</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>When exchanging data over a socket, libnv uses select(2) to wait for data to arr...</summary><p>When exchanging data over a socket, libnv uses select(2) to wait for data to arrive.  However, it does not verify whether the provided socket descriptor fits in select(2)&#x27;s file descriptor set size limit of FD_SETSIZE (1024).
+
+An attacker who is able to force a libnv application to allocate large file descriptors, e.g., by opening many descriptors and executing a program which is not careful to close them upon startup, can trigger stack corruption.  If the target application is setuid-root, then this could be used to elevate local privileges.</p></details></td>
+        <td>2026-04-30</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35547" target="_blank" rel="noopener">CVE-2026-35547</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-122</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>When processing the header of an incoming message, libnv failed to properly vali...</summary><p>When processing the header of an incoming message, libnv failed to properly validate the message size.
+
+The lack of validation allows a malicious program to write outside the bounds of a heap allocation.  This can trigger a crash or system panic, and it may be possible for an unprivileged user to exploit the bug to elevate their privileges.</p></details></td>
+        <td>2026-04-30</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-22070" target="_blank" rel="noopener">CVE-2026-22070</a></td>
+        <td>7.1</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-23</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.97</td>
+        <td><details><summary>ColorOS Assistant has an unauthenticated start-download channel, leading to file...</summary><p>ColorOS Assistant has an unauthenticated start-download channel, leading to file path traversal.</p></details></td>
+        <td>2026-04-30</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-7164" target="_blank" rel="noopener">CVE-2026-7164</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-674</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Incorrect packet validation allowed unbounded recursion parsing SCTP chunk param...</summary><p>Incorrect packet validation allowed unbounded recursion parsing SCTP chunk parameters.  This can eventually result in a stack overflow and panic.
+
+Remote attackers can craft packets which cause affected systems to panic.  This affects any system where pf is configured to process traffic, independent of the configured ruleset.</p></details></td>
+        <td>2026-04-30</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-7270" target="_blank" rel="noopener">CVE-2026-7270</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-783</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>An operator precedence bug in the kernel results in a scenario where a buffer ov...</summary><p>An operator precedence bug in the kernel results in a scenario where a buffer overflow causes attacker-controlled data to overwrite adjacent execve(2) argument buffers.
+
+The bug may be exploitable by an unprivileged user to obtain superuser privileges.</p></details></td>
+        <td>2026-04-30</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6870" target="_blank" rel="noopener">CVE-2026-6870</a></td>
+        <td>5.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-824</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.85</td>
+        <td><details><summary>GSM RP protocol dissector crash in Wireshark 4.6.0 to 4.6.4 and 4.4.0 to 4.4.14 ...</summary><p>GSM RP protocol dissector crash in Wireshark 4.6.0 to 4.6.4 and 4.4.0 to 4.4.14 allows denial of service</p></details></td>
+        <td>2026-04-30</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6869" target="_blank" rel="noopener">CVE-2026-6869</a></td>
+        <td>5.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-1325</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.85</td>
+        <td><details><summary>WebSocket protocol dissector crash in Wireshark 4.6.0 to 4.6.4 and 4.4.0 to 4.4....</summary><p>WebSocket protocol dissector crash in Wireshark 4.6.0 to 4.6.4 and 4.4.0 to 4.4.14 allows denial of service</p></details></td>
+        <td>2026-04-30</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6867" target="_blank" rel="noopener">CVE-2026-6867</a></td>
+        <td>5.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-1325</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.85</td>
+        <td><details><summary>SMB2 protocol dissector crash in Wireshark 4.6.0 to 4.6.4 and 4.4.0 to 4.4.14 al...</summary><p>SMB2 protocol dissector crash in Wireshark 4.6.0 to 4.6.4 and 4.4.0 to 4.4.14 allows denial of service</p></details></td>
+        <td>2026-04-30</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6538" target="_blank" rel="noopener">CVE-2026-6538</a></td>
+        <td>5.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-121</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.85</td>
+        <td><details><summary>BEEP protocol dissector crash in Wireshark 4.6.0 to 4.6.4 and 4.4.0 to 4.4.14 al...</summary><p>BEEP protocol dissector crash in Wireshark 4.6.0 to 4.6.4 and 4.4.0 to 4.4.14 allows denial of service</p></details></td>
+        <td>2026-04-30</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6537" target="_blank" rel="noopener">CVE-2026-6537</a></td>
+        <td>5.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-121</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.85</td>
+        <td><details><summary>ZigBee protocol dissector crash in Wireshark 4.6.0 to 4.6.4 and 4.4.0 to 4.4.14 ...</summary><p>ZigBee protocol dissector crash in Wireshark 4.6.0 to 4.6.4 and 4.4.0 to 4.4.14 allows denial of service</p></details></td>
+        <td>2026-04-30</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6536" target="_blank" rel="noopener">CVE-2026-6536</a></td>
+        <td>5.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-835</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.85</td>
+        <td><details><summary>DLMS/COSEM protocol dissector infinite loop in Wireshark 4.6.0 to 4.6.4</summary><p>DLMS/COSEM protocol dissector infinite loop in Wireshark 4.6.0 to 4.6.4</p></details></td>
+        <td>2026-04-30</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6535" target="_blank" rel="noopener">CVE-2026-6535</a></td>
+        <td>5.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-1325</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.85</td>
+        <td><details><summary>Dissection engine zlib decompression crash in Wireshark 4.6.0 to 4.6.4 and 4.4.0...</summary><p>Dissection engine zlib decompression crash in Wireshark 4.6.0 to 4.6.4 and 4.4.0 to 4.4.14 allows denial of service</p></details></td>
+        <td>2026-04-30</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6534" target="_blank" rel="noopener">CVE-2026-6534</a></td>
+        <td>5.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-835</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.85</td>
+        <td><details><summary>USB HID protocol dissector infinite loop in Wireshark 4.6.0 to 4.6.4 and 4.4.0 t...</summary><p>USB HID protocol dissector infinite loop in Wireshark 4.6.0 to 4.6.4 and 4.4.0 to 4.4.14 allows denial of service</p></details></td>
+        <td>2026-04-30</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6533" target="_blank" rel="noopener">CVE-2026-6533</a></td>
+        <td>5.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-1325</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.85</td>
+        <td><details><summary>Dissection engine LZ77 decompression crash in Wireshark 4.6.0 to 4.6.4 and 4.4.0...</summary><p>Dissection engine LZ77 decompression crash in Wireshark 4.6.0 to 4.6.4 and 4.4.0 to 4.4.14 allows denial of service</p></details></td>
+        <td>2026-04-30</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6532" target="_blank" rel="noopener">CVE-2026-6532</a></td>
+        <td>5.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-126</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.85</td>
+        <td><details><summary>Kismet protocol dissector crash in Wireshark 4.6.0 to 4.6.4 and 4.4.0 to 4.4.14 ...</summary><p>Kismet protocol dissector crash in Wireshark 4.6.0 to 4.6.4 and 4.4.0 to 4.4.14 allows denial of service</p></details></td>
+        <td>2026-04-30</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6531" target="_blank" rel="noopener">CVE-2026-6531</a></td>
+        <td>5.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-835</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.85</td>
+        <td><details><summary>SANE protocol dissector infinite loop in Wireshark 4.6.0 to 4.6.4 and 4.4.0 to 4...</summary><p>SANE protocol dissector infinite loop in Wireshark 4.6.0 to 4.6.4 and 4.4.0 to 4.4.14 allows denial of service</p></details></td>
+        <td>2026-04-30</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6530" target="_blank" rel="noopener">CVE-2026-6530</a></td>
+        <td>5.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-122</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.85</td>
+        <td><details><summary>DCP-ETSI protocol dissector crash in Wireshark 4.6.0 to 4.6.4 and 4.4.0 to 4.4.1...</summary><p>DCP-ETSI protocol dissector crash in Wireshark 4.6.0 to 4.6.4 and 4.4.0 to 4.4.14 allows denial of service</p></details></td>
+        <td>2026-04-30</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6529" target="_blank" rel="noopener">CVE-2026-6529</a></td>
+        <td>5.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-122</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.85</td>
+        <td><details><summary>iLBC audio codec crash in Wireshark 4.6.0 to 4.6.4 and 4.4.0 to 4.4.14 allows de...</summary><p>iLBC audio codec crash in Wireshark 4.6.0 to 4.6.4 and 4.4.0 to 4.4.14 allows denial of service</p></details></td>
+        <td>2026-04-30</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6528" target="_blank" rel="noopener">CVE-2026-6528</a></td>
+        <td>5.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-835</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.85</td>
+        <td><details><summary>TLS protocol dissector infinite loop in Wireshark 4.6.0 to 4.6.4 allows denial o...</summary><p>TLS protocol dissector infinite loop in Wireshark 4.6.0 to 4.6.4 allows denial of service</p></details></td>
+        <td>2026-04-30</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6527" target="_blank" rel="noopener">CVE-2026-6527</a></td>
+        <td>5.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-674</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.85</td>
+        <td><details><summary>ASN.1 PER protocol dissector crash in Wireshark 4.6.0 to 4.6.4 and 4.4.0 to 4.4....</summary><p>ASN.1 PER protocol dissector crash in Wireshark 4.6.0 to 4.6.4 and 4.4.0 to 4.4.14 allows denial of service</p></details></td>
+        <td>2026-04-30</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6526" target="_blank" rel="noopener">CVE-2026-6526</a></td>
+        <td>5.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-476</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.85</td>
+        <td><details><summary>RTSP protocol dissector crash in Wireshark 4.6.0 to 4.6.4</summary><p>RTSP protocol dissector crash in Wireshark 4.6.0 to 4.6.4</p></details></td>
+        <td>2026-04-30</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6524" target="_blank" rel="noopener">CVE-2026-6524</a></td>
+        <td>5.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-824</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.85</td>
+        <td><details><summary>MySQL protocol dissector crash in Wireshark 4.6.0 to 4.6.4 and 4.4.0 to 4.4.14 a...</summary><p>MySQL protocol dissector crash in Wireshark 4.6.0 to 4.6.4 and 4.4.0 to 4.4.14 allows denial of service</p></details></td>
+        <td>2026-04-30</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6523" target="_blank" rel="noopener">CVE-2026-6523</a></td>
+        <td>5.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-835</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.85</td>
+        <td><details><summary>GNW protocol dissector infinite loop in Wireshark 4.6.0 to 4.6.4 and 4.4.0 to 4....</summary><p>GNW protocol dissector infinite loop in Wireshark 4.6.0 to 4.6.4 and 4.4.0 to 4.4.14 allows denial of service</p></details></td>
+        <td>2026-04-30</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6522" target="_blank" rel="noopener">CVE-2026-6522</a></td>
+        <td>5.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-835</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.85</td>
+        <td><details><summary>RPKI-Router protocol dissector infinite loop in Wireshark 4.6.0 to 4.6.4 and 4.4...</summary><p>RPKI-Router protocol dissector infinite loop in Wireshark 4.6.0 to 4.6.4 and 4.4.0 to 4.4.14 allows denial of service</p></details></td>
+        <td>2026-04-30</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6521" target="_blank" rel="noopener">CVE-2026-6521</a></td>
+        <td>5.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-835</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.85</td>
+        <td><details><summary>OpenFlow v5 protocol dissector infinite loops in Wireshark 4.6.0 to 4.6.4 and 4....</summary><p>OpenFlow v5 protocol dissector infinite loops in Wireshark 4.6.0 to 4.6.4 and 4.4.0 to 4.4.14 allows denial of service</p></details></td>
+        <td>2026-04-30</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6520" target="_blank" rel="noopener">CVE-2026-6520</a></td>
+        <td>5.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-835</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.85</td>
+        <td><details><summary>OpenFlow v6 protocol dissector infinite loop in Wireshark 4.6.0 to 4.6.4 and 4.4...</summary><p>OpenFlow v6 protocol dissector infinite loop in Wireshark 4.6.0 to 4.6.4 and 4.4.0 to 4.4.14 allows denial of service</p></details></td>
+        <td>2026-04-30</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6519" target="_blank" rel="noopener">CVE-2026-6519</a></td>
+        <td>5.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-835</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.85</td>
+        <td><details><summary>MBIM protocol dissector infinite loop in Wireshark 4.6.0 to 4.6.4 and 4.4.0 to 4...</summary><p>MBIM protocol dissector infinite loop in Wireshark 4.6.0 to 4.6.4 and 4.4.0 to 4.4.14 allows denial of service</p></details></td>
+        <td>2026-04-30</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5657" target="_blank" rel="noopener">CVE-2026-5657</a></td>
+        <td>5.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-415</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.85</td>
+        <td><details><summary>iLBC codec crash in Wireshark 4.6.0 to 4.6.4 and 4.4.0 to 4.4.14 allows denial o...</summary><p>iLBC codec crash in Wireshark 4.6.0 to 4.6.4 and 4.4.0 to 4.4.14 allows denial of service</p></details></td>
+        <td>2026-04-30</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5655" target="_blank" rel="noopener">CVE-2026-5655</a></td>
+        <td>5.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-416</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.85</td>
+        <td><details><summary>SDP protocol dissector crash in Wireshark 4.6.0 to 4.6.4 allows denial of servic...</summary><p>SDP protocol dissector crash in Wireshark 4.6.0 to 4.6.4 allows denial of service</p></details></td>
+        <td>2026-04-30</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5654" target="_blank" rel="noopener">CVE-2026-5654</a></td>
+        <td>5.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-121</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.85</td>
+        <td><details><summary>AMR-NB codec crash in Wireshark 4.6.0 to 4.6.4 and 4.4.0 to 4.4.14 allows denial...</summary><p>AMR-NB codec crash in Wireshark 4.6.0 to 4.6.4 and 4.4.0 to 4.4.14 allows denial of service</p></details></td>
+        <td>2026-04-30</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5653" target="_blank" rel="noopener">CVE-2026-5653</a></td>
+        <td>5.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-122</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.85</td>
+        <td><details><summary>DCP-ETSI protocol dissector crash in Wireshark 4.6.0 to 4.6.4 and 4.4.0 to 4.4.1...</summary><p>DCP-ETSI protocol dissector crash in Wireshark 4.6.0 to 4.6.4 and 4.4.0 to 4.4.14 allows denial of service</p></details></td>
+        <td>2026-04-30</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5409" target="_blank" rel="noopener">CVE-2026-5409</a></td>
+        <td>5.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-674</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.85</td>
+        <td><details><summary>Monero protocol dissector crash in Wireshark 4.6.0 to 4.6.4 and 4.4.0 to 4.4.14 ...</summary><p>Monero protocol dissector crash in Wireshark 4.6.0 to 4.6.4 and 4.4.0 to 4.4.14 allows denial of service</p></details></td>
+        <td>2026-04-30</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5408" target="_blank" rel="noopener">CVE-2026-5408</a></td>
+        <td>5.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-674</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.85</td>
+        <td><details><summary>BT-DHT protocol dissector crash in Wireshark 4.6.0 to 4.6.4 and 4.4.0 to 4.4.14 ...</summary><p>BT-DHT protocol dissector crash in Wireshark 4.6.0 to 4.6.4 and 4.4.0 to 4.4.14 allows denial of service</p></details></td>
+        <td>2026-04-30</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5407" target="_blank" rel="noopener">CVE-2026-5407</a></td>
+        <td>5.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-835</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.85</td>
+        <td><details><summary>SMB2 protocol dissector infinite loop in Wireshark 4.6.0 to 4.6.4 and 4.4.0 to 4...</summary><p>SMB2 protocol dissector infinite loop in Wireshark 4.6.0 to 4.6.4 and 4.4.0 to 4.4.14 allows denial of service</p></details></td>
+        <td>2026-04-30</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5406" target="_blank" rel="noopener">CVE-2026-5406</a></td>
+        <td>5.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-674</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.85</td>
+        <td><details><summary>FC-SWILS protocol dissector crash in Wireshark 4.6.0 to 4.6.4 and 4.4.0 to 4.4.1...</summary><p>FC-SWILS protocol dissector crash in Wireshark 4.6.0 to 4.6.4 and 4.4.0 to 4.4.14 allows denial of service</p></details></td>
+        <td>2026-04-30</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5402" target="_blank" rel="noopener">CVE-2026-5402</a></td>
+        <td>8.8</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-122</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.16</td>
+        <td><details><summary>TLS protocol dissector heap overflow in Wireshark 4.6.0 to 4.6.4 allows denial o...</summary><p>TLS protocol dissector heap overflow in Wireshark 4.6.0 to 4.6.4 allows denial of service and possible code execution</p></details></td>
+        <td>2026-04-30</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5401" target="_blank" rel="noopener">CVE-2026-5401</a></td>
+        <td>5.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-674</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.85</td>
+        <td><details><summary>AFP Spotlight protocol dissector crash in Wireshark 4.6.0 to 4.6.4 and 4.4.0 to ...</summary><p>AFP Spotlight protocol dissector crash in Wireshark 4.6.0 to 4.6.4 and 4.4.0 to 4.4.14 allows denial of service</p></details></td>
+        <td>2026-04-30</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5299" target="_blank" rel="noopener">CVE-2026-5299</a></td>
+        <td>5.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-674</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.85</td>
+        <td><details><summary>ICMPv6 PvD protocol dissector crash in Wireshark 4.6.0 to 4.6.4 and 4.4.0 to 4.4...</summary><p>ICMPv6 PvD protocol dissector crash in Wireshark 4.6.0 to 4.6.4 and 4.4.0 to 4.4.14 allows denial of service</p></details></td>
+        <td>2026-04-30</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-42798" target="_blank" rel="noopener">CVE-2026-42798</a></td>
+        <td>4.0</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-190</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>2.80</td>
+        <td><details><summary>Little CMS (lcms2) 2.16 through 2.18 before 2.19 has an integer overflow in Pars...</summary><p>Little CMS (lcms2) 2.16 through 2.18 before 2.19 has an integer overflow in ParseCube in cmscgats.c.</p></details></td>
+        <td>2026-04-30</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-42511" target="_blank" rel="noopener">CVE-2026-42511</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-149</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>The BOOTP file field is written to the lease file without escaping embedded doub...</summary><p>The BOOTP file field is written to the lease file without escaping embedded double-quotes, allowing injection of arbitrary dhclient.conf directives.  When the lease file is subsequently re-parsed by dhclient, e.g., after a system restart, an attacker-controlled field from the lease is passed to dhclient-script(8), which evaluates it.
+
+A rogue DHCP server may be able to execute arbirary code as root on a system running dhclient.</p></details></td>
+        <td>2026-04-30</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-41226" target="_blank" rel="noopener">CVE-2026-41226</a></td>
+        <td>5.1</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-601</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.57</td>
+        <td><details><summary>Open redirect vulnerability exists in Multiple laser printers and MFPs which imp...</summary><p>Open redirect vulnerability exists in Multiple laser printers and MFPs which implement Ricoh Web Image Monitor. When accessing a specially crafted URL, the user may be redirected to an arbitrary website. As a result, the user may become a victim of a phishing attack.</p></details></td>
+        <td>2026-04-30</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2024-39847" target="_blank" rel="noopener">CVE-2024-39847</a></td>
+        <td>8.7</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-611</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.09</td>
+        <td><details><summary>Unauthenticated attackers can exploit a weakness in the XML parser functionality...</summary><p>Unauthenticated attackers can exploit a weakness in the XML parser functionality of the SOAP endpoints in 4D server. This allows them to obtain read access to files on the application server and adjacent network shares, and perform HTTP GET requests to arbitrary services.</p></details></td>
+        <td>2026-04-30</td>
+      </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-7379" target="_blank" rel="noopener">CVE-2026-7379</a></td>
         <td>5.5</td>
@@ -112735,7 +113237,7 @@ AD directly.</p></details></td>
         <td>&nbsp;</td>
         <td>0.0% <small>p4</small></td>
         <td>2.38</td>
-        <td><details><summary>Dell PowerScale OneFS, versions 9.10.0.0 through 9.10.1.5 and versions 9.11.0.0 ...</summary><p>Dell PowerScale OneFS, versions 9.10.0.0 through 9.10.1.5 and versions 9.11.0.0 through 9.12.0.1, contains an external control of system or configuration setting vulnerability. A high privileged attacker with local access could potentially exploit this vulnerability, leading to protection mechanism bypass.</p></details></td>
+        <td><details><summary>Dell PowerScale OneFS, versions 9.10.0.0 through 9.13.1.0, contains an external ...</summary><p>Dell PowerScale OneFS, versions 9.10.0.0 through 9.13.1.0, contains an external control of system or configuration setting vulnerability. A high privileged attacker with local access could potentially exploit this vulnerability, leading to protection mechanism bypass.</p></details></td>
         <td>2026-03-04</td>
       </tr>
       <tr>
