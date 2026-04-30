@@ -11,7 +11,7 @@
     <header>
       <h1>vuln-tracker — Top 50</h1>
       <p class="subtitle">The 50 most important CVEs from the current and previous month, ranked by VAP score (70% CVSS + 30% EPSS)</p>
-      <p class="last-updated">Last updated: 2026-04-30 10:11 UTC</p>
+      <p class="last-updated">Last updated: 2026-04-30 14:10 UTC</p>
     </header>
     <nav>
       <a href="index.html">&larr; All CVEs</a>
@@ -57,8 +57,8 @@
         <td><span class="severity critical">CRITICAL</span></td>
         <td>CWE-306</td>
         <td><span class="kev-yes">&#10003;</span></td>
-        <td>55.2% <small>p98</small></td>
-        <td>8.17</td>
+        <td>56.1% <small>p98</small></td>
+        <td>8.19</td>
         <td><details><summary>marimo is a reactive Python notebook. Prior to 0.23.0, Marimo has a Pre-Auth RCE...</summary><p>marimo is a reactive Python notebook. Prior to 0.23.0, Marimo has a Pre-Auth RCE vulnerability. The terminal WebSocket endpoint /terminal/ws lacks authentication validation, allowing an unauthenticated attacker to obtain a full PTY shell and execute arbitrary system commands. Unlike other WebSocket endpoints (e.g., /ws) that correctly call validate_auth() for authentication, the /terminal/ws endpoint only checks the running mode and platform support before accepting connections, completely skipping authentication verification. This vulnerability is fixed in 0.23.0.</p></details></td>
         <td>2026-04-09</td>
       </tr>
@@ -173,6 +173,17 @@
         <td>2026-03-23</td>
       </tr>
       <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39808" target="_blank" rel="noopener">CVE-2026-39808</a></td>
+        <td>9.8</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-78</td>
+        <td>&nbsp;</td>
+        <td>13.1% <small>p94</small></td>
+        <td>7.25</td>
+        <td><details><summary>A improper neutralization of special elements used in an os command (&#x27;os command...</summary><p>A improper neutralization of special elements used in an os command (&#x27;os command injection&#x27;) vulnerability in Fortinet FortiSandbox 4.4.0 through 4.4.8 may allow attacker to execute unauthorized code or commands via &lt;insert attack vector here&gt;</p></details></td>
+        <td>2026-04-14</td>
+      </tr>
+      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34156" target="_blank" rel="noopener">CVE-2026-34156</a></td>
         <td>9.9</td>
         <td><span class="severity critical">CRITICAL</span></td>
@@ -184,15 +195,15 @@
         <td>2026-03-31</td>
       </tr>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39808" target="_blank" rel="noopener">CVE-2026-39808</a></td>
-        <td>9.8</td>
-        <td><span class="severity critical">CRITICAL</span></td>
-        <td>CWE-78</td>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-71260" target="_blank" rel="noopener">CVE-2025-71260</a></td>
+        <td>8.7</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-502</td>
         <td>&nbsp;</td>
-        <td>11.3% <small>p93</small></td>
-        <td>7.20</td>
-        <td><details><summary>A improper neutralization of special elements used in an os command (&#x27;os command...</summary><p>A improper neutralization of special elements used in an os command (&#x27;os command injection&#x27;) vulnerability in Fortinet FortiSandbox 4.4.0 through 4.4.8 may allow attacker to execute unauthorized code or commands via &lt;insert attack vector here&gt;</p></details></td>
-        <td>2026-04-14</td>
+        <td>36.6% <small>p97</small></td>
+        <td>7.19</td>
+        <td><details><summary>BMC FootPrints ITSM versions 20.20.02 through 20.24.01.001 contain a deserializa...</summary><p>BMC FootPrints ITSM versions 20.20.02 through 20.24.01.001 contain a deserialization of untrusted data vulnerability in the ASP.NET servlet&#x27;s VIEWSTATE handling that allows authenticated attackers to execute arbitrary code. Attackers can supply crafted serialized objects to the VIEWSTATE parameter to achieve remote code execution and fully compromise the application. The following hotfixes remediate the vulnerability: 20.20.02, 20.20.03.002, 20.21.01.001, 20.21.02.002, 20.22.01, 20.22.01.001, 20.23.01, 20.23.01.002, and 20.24.01.</p></details></td>
+        <td>2026-03-19</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33032" target="_blank" rel="noopener">CVE-2026-33032</a></td>
@@ -226,17 +237,6 @@
         <td>7.06</td>
         <td><details><summary>Nginx UI is a web user interface for the Nginx web server. Prior to version 2.3....</summary><p>Nginx UI is a web user interface for the Nginx web server. Prior to version 2.3.3, the /api/backup endpoint is accessible without authentication and discloses the encryption keys required to decrypt the backup in the X-Backup-Security response header. This allows an unauthenticated attacker to download a full system backup containing sensitive data (user credentials, session tokens, SSL private keys, Nginx configurations) and decrypt it immediately. This issue has been patched in version 2.3.3.</p></details></td>
         <td>2026-03-05</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-71260" target="_blank" rel="noopener">CVE-2025-71260</a></td>
-        <td>8.7</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-502</td>
-        <td>&nbsp;</td>
-        <td>32.3% <small>p96</small></td>
-        <td>7.06</td>
-        <td><details><summary>BMC FootPrints ITSM versions 20.20.02 through 20.24.01.001 contain a deserializa...</summary><p>BMC FootPrints ITSM versions 20.20.02 through 20.24.01.001 contain a deserialization of untrusted data vulnerability in the ASP.NET servlet&#x27;s VIEWSTATE handling that allows authenticated attackers to execute arbitrary code. Attackers can supply crafted serialized objects to the VIEWSTATE parameter to achieve remote code execution and fully compromise the application. The following hotfixes remediate the vulnerability: 20.20.02, 20.20.03.002, 20.21.01.001, 20.21.02.002, 20.22.01, 20.22.01.001, 20.23.01, 20.23.01.002, and 20.24.01.</p></details></td>
-        <td>2026-03-19</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-31843" target="_blank" rel="noopener">CVE-2026-31843</a></td>
@@ -338,6 +338,17 @@
         <td>2026-04-07</td>
       </tr>
       <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-26015" target="_blank" rel="noopener">CVE-2026-26015</a></td>
+        <td>10.0</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-77</td>
+        <td>&nbsp;</td>
+        <td>0.3% <small>p52</small></td>
+        <td>7.01</td>
+        <td><details><summary>DocsGPT is a GPT-powered chat for documentation. From version 0.15.0 to before v...</summary><p>DocsGPT is a GPT-powered chat for documentation. From version 0.15.0 to before version 0.16.0, an attacker accessing both the official DocsGPT website or any local and public deployment, can craft a malicious payload bypassing the &quot;MCP test&quot; behavior to achieve arbitrary remote code execution (RCE). This issue has been patched in version 0.16.0.</p></details></td>
+        <td>2026-04-29</td>
+      </tr>
+      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-0848" target="_blank" rel="noopener">CVE-2026-0848</a></td>
         <td>10.0</td>
         <td><span class="severity critical">CRITICAL</span></td>
@@ -393,6 +404,17 @@
         <td>2026-03-12</td>
       </tr>
       <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-41940" target="_blank" rel="noopener">CVE-2026-41940</a></td>
+        <td>9.3</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-306</td>
+        <td>&nbsp;</td>
+        <td>16.5% <small>p94</small></td>
+        <td>7.01</td>
+        <td><details><summary>cPanel and WHM versions after 11.40 contain an authentication bypass vulnerabili...</summary><p>cPanel and WHM versions after 11.40 contain an authentication bypass vulnerability in the login flow that allows unauthenticated remote attackers to gain unauthorized access to the control panel.</p></details></td>
+        <td>2026-04-29</td>
+      </tr>
+      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34208" target="_blank" rel="noopener">CVE-2026-34208</a></td>
         <td>10.0</td>
         <td><span class="severity critical">CRITICAL</span></td>
@@ -420,7 +442,7 @@
         <td><span class="severity critical">CRITICAL</span></td>
         <td>CWE-912</td>
         <td>&nbsp;</td>
-        <td>0.1% <small>p32</small></td>
+        <td>0.1% <small>p31</small></td>
         <td>7.00</td>
         <td><details><summary>An unauthenticated remote attacker can exploit a hidden function in the CLI prom...</summary><p>An unauthenticated remote attacker can exploit a hidden function in the CLI prompt to escape the restricted interface, leading to full compromise of the device.</p></details></td>
         <td>2026-03-23</td>
@@ -566,28 +588,6 @@
         <td>0.1% <small>p17</small></td>
         <td>7.00</td>
         <td><details><summary>Server-side request forgery (ssrf) in Azure Databricks allows an unauthorized at...</summary><p>Server-side request forgery (ssrf) in Azure Databricks allows an unauthorized attacker to elevate privileges over a network.</p></details></td>
-        <td>2026-04-03</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33105" target="_blank" rel="noopener">CVE-2026-33105</a></td>
-        <td>10.0</td>
-        <td><span class="severity critical">CRITICAL</span></td>
-        <td>CWE-285</td>
-        <td>&nbsp;</td>
-        <td>0.1% <small>p17</small></td>
-        <td>7.00</td>
-        <td><details><summary>Improper authorization in Microsoft Azure Kubernetes Service allows an unauthori...</summary><p>Improper authorization in Microsoft Azure Kubernetes Service allows an unauthorized attacker to elevate privileges over a network.</p></details></td>
-        <td>2026-04-03</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32213" target="_blank" rel="noopener">CVE-2026-32213</a></td>
-        <td>10.0</td>
-        <td><span class="severity critical">CRITICAL</span></td>
-        <td>CWE-285</td>
-        <td>&nbsp;</td>
-        <td>0.1% <small>p17</small></td>
-        <td>7.00</td>
-        <td><details><summary>Improper authorization in Azure AI Foundry allows an unauthorized attacker to el...</summary><p>Improper authorization in Azure AI Foundry allows an unauthorized attacker to elevate privileges over a network.</p></details></td>
         <td>2026-04-03</td>
       </tr>
             </tbody>
