@@ -11,7 +11,7 @@
     <header>
       <h1>vuln-tracker</h1>
       <p class="subtitle">CVEs from the National Vulnerability Database — current and previous month</p>
-      <p class="last-updated">Last updated: 2026-04-30 17:26 UTC</p>
+      <p class="last-updated">Last updated: 2026-04-30 19:41 UTC</p>
     </header>
     <nav>
       <a href="top50.html">&#9733; Top 50</a>
@@ -25,7 +25,7 @@
     </nav>
     <main>
     <section>
-      <h2>Current Month — April 2026 <span class="count">(5020)</span></h2>
+      <h2>Current Month — April 2026 <span class="count">(4996)</span></h2>
       <div class="table-wrapper">
         <table>
           <thead>
@@ -43,46 +43,230 @@
           </thead>
           <tbody>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-36767" target="_blank" rel="noopener">CVE-2026-36767</a></td>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-7461" target="_blank" rel="noopener">CVE-2026-7461</a></td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-78</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.25</td>
+        <td><details><summary>Improper neutralization of inputs used in an OS command in the FSx Windows File ...</summary><p>Improper neutralization of inputs used in an OS command in the FSx Windows File Server volume mounting component in Amazon ECS Agent on Windows before version 1.103.0 might allow a remote authenticated threat actor to execute shell commands with SYSTEM privileges on the underlying host via a specially crafted username field in an ECS task definition. This issue requires permissions to register ECS task definitions or write to the Secrets Manager or SSM Parameter Store credentials used by the FSx volume configuration.
+
+To remediate this issue, users should upgrade to version 1.103.0.</p></details></td>
+        <td>2026-04-30</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40904" target="_blank" rel="noopener">CVE-2026-40904</a></td>
+        <td>8.1</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-284</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.67</td>
+        <td><details><summary>Chartbrew is an open-source web application that can connect directly to databas...</summary><p>Chartbrew is an open-source web application that can connect directly to databases and APIs and use the data to create charts. In version 4.9.0, Chartbrew exposes multiple dataset and dataRequest endpoints that authorize low-privileged project members at the team level instead of binding the requested dataset_id, dataRequest id, and connection_id to the caller&#x27;s allowed projects. An authenticated attacker who only has access to one project inside a team can read, execute, create, update, and delete datasets and data requests that belong to other projects in the same team. The issue is exploitable remotely with ordinary project-level credentials and leads to cross-project data disclosure and unauthorized use of victim-side database or API connections. This issue has been patched in version 5.0.0.</p></details></td>
+        <td>2026-04-30</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40603" target="_blank" rel="noopener">CVE-2026-40603</a></td>
+        <td>6.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-284</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.55</td>
+        <td><details><summary>Chartbrew is an open-source web application that can connect directly to databas...</summary><p>Chartbrew is an open-source web application that can connect directly to databases and APIs and use the data to create charts. In version 4.9.0, Chartbrew exposes a legacy dashboard route that returns a project&#x27;s report data to any authenticated member of the same team, even when that user does not have access to the specific project. The route bypasses project-level authorization and returns the raw project object. As a result, a low-privileged same-team user can read another project&#x27;s dashboard data and recover the project&#x27;s stored report password from the response. This issue has been patched in version 5.0.0.</p></details></td>
+        <td>2026-04-30</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40601" target="_blank" rel="noopener">CVE-2026-40601</a></td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.25</td>
+        <td><details><summary>Chartbrew is an open-source web application that can connect directly to databas...</summary><p>Chartbrew is an open-source web application that can connect directly to databases and APIs and use the data to create charts. In version 4.9.0, Chartbrew exposes POST /api/chart/:chart_id/query without authentication. The endpoint only checks team.allowReportRefresh and does not verify that the target chart belongs to a public report, that the project is public, or that sharing policy allows the operation. An unauthenticated attacker who knows a chart identifier can trigger a data refresh and retrieve the current data of private charts. This issue has been patched in version 5.0.0.</p></details></td>
+        <td>2026-04-30</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40600" target="_blank" rel="noopener">CVE-2026-40600</a></td>
+        <td>8.1</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-639</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.67</td>
+        <td><details><summary>Chartbrew is an open-source web application that can connect directly to databas...</summary><p>Chartbrew is an open-source web application that can connect directly to databases and APIs and use the data to create charts. In version 4.9.0, Chartbrew allows authenticated users with access to one project to update or delete a SharePolicy record that belongs to a different project. The affected routes authorize the caller against the project in the URL path, but they never verify that policy_id belongs to that project. This permits cross-project modification of dashboard sharing rules, including visibility, password requirements, allowed parameters, and expiration settings. This issue has been patched in version 5.0.0.</p></details></td>
+        <td>2026-04-30</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40595" target="_blank" rel="noopener">CVE-2026-40595</a></td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-284</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.25</td>
+        <td><details><summary>Chartbrew is an open-source web application that can connect directly to databas...</summary><p>Chartbrew is an open-source web application that can connect directly to databases and APIs and use the data to create charts. In version 4.9.0, Chartbrew exposes public chart retrieval and export routes that only verify project-level public access and, for exports, a team-level export toggle. The routes do not verify whether the target chart is actually allowed on the public report or whether the governing SharePolicy permits public access. An unauthenticated attacker who knows a chart identifier in a public project can read or export chart data for charts that were intentionally hidden from the report. This issue has been patched in version 5.0.0.</p></details></td>
+        <td>2026-04-30</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35514" target="_blank" rel="noopener">CVE-2026-35514</a></td>
+        <td>6.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-306</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.55</td>
+        <td><details><summary>Chartbrew is an open-source web application that can connect directly to databas...</summary><p>Chartbrew is an open-source web application that can connect directly to databases and APIs and use the data to create charts. In version 4.9.0, the endpoint POST /user/invited does not validate any invite token, authentication header, or session. Any unauthenticated attacker can call this endpoint directly to create a fully active account and receive a valid JWT — even when the instance has existing users and signupRestricted is enabled. This bypass is distinct from the normal registration endpoint (POST /user) which enforces signupRestricted and sets active: false pending verification. This issue has been patched in version 5.0.0.</p></details></td>
+        <td>2026-04-30</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32148" target="_blank" rel="noopener">CVE-2026-32148</a></td>
+        <td>8.9</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-354</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.23</td>
+        <td><details><summary>Insufficient Verification of Data Authenticity vulnerability in hexpm hex (Hex.R...</summary><p>Insufficient Verification of Data Authenticity vulnerability in hexpm hex (Hex.RemoteConverger module) allows dependency integrity bypass via unverified lockfile checksums.
+
+Hex stores checksums for dependencies in the mix.lock file to ensure reproducible and integrity-checked builds. However, Hex.RemoteConverger.verify_resolved/2 never executes checksum verification because the lock data returned by Hex.Utils.lock/1 uses string-based dependency names, while the verification logic compares against atom-based names. This type mismatch causes the verification code path to be silently skipped. Checksums are still validated when packages are initially downloaded from the registry, but mismatches between the lockfile and resolved dependencies are not detected.
+
+An attacker who can influence cached packages (e.g., via local cache poisoning or a compromised registry) can provide modified dependency contents that will be accepted without detection. The mix.lock file is silently rewritten with the checksum values from the registry, erasing evidence of tampering.
+
+This issue affects hex: from 0.16.0 before 2.4.2.</p></details></td>
+        <td>2026-04-30</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-3833" target="_blank" rel="noopener">CVE-2026-3833</a></td>
+        <td>6.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-178</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.55</td>
+        <td><details><summary>A flaw was found in gnutls. This vulnerability occurs because gnutls performs ca...</summary><p>A flaw was found in gnutls. This vulnerability occurs because gnutls performs case-sensitive comparisons of `nameConstraints` labels, specifically for `dNSName` (DNS) or `rfc822Name` (email) constraints within `excludedSubtrees` or `permittedSubtrees`. A remote attacker can exploit this by crafting a leaf certificate with casing differences in the Subject Alternative Name (SAN), leading to a policy bypass where a certificate that should be rejected is instead accepted. This could result in unauthorized access or information disclosure.</p></details></td>
+        <td>2026-04-30</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-3832" target="_blank" rel="noopener">CVE-2026-3832</a></td>
+        <td>3.7</td>
+        <td><span class="severity low">LOW</span></td>
+        <td>CWE-179</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>2.59</td>
+        <td><details><summary>A flaw was found in gnutls. A remote attacker could exploit this vulnerability b...</summary><p>A flaw was found in gnutls. A remote attacker could exploit this vulnerability by presenting a specially crafted Online Certificate Status Protocol (OCSP) response during a TLS handshake. Due to a logic error in how gnutls processes multi-record OCSP responses, a client with OCSP verification enabled may incorrectly accept a revoked server certificate, potentially leading to a compromise of trust.</p></details></td>
+        <td>2026-04-30</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-36766" target="_blank" rel="noopener">CVE-2026-36766</a></td>
+        <td>5.4</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.78</td>
+        <td><details><summary>Multiple authenticated cross-site scripting (XSS) vulnerabilities in the XssHttp...</summary><p>Multiple authenticated cross-site scripting (XSS) vulnerabilities in the XssHttpServletRequestWrapper class of shopizer v3.2.5 allows attackers to execute arbitrary web scripts or HTML via injecting a crafted payload into the getInputStream() or getReader() functions.</p></details></td>
+        <td>2026-04-30</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-36765" target="_blank" rel="noopener">CVE-2026-36765</a></td>
         <td>0.0</td>
         <td><span class="severity none">NONE</span></td>
         <td>N/A</td>
         <td>&nbsp;</td>
         <td>&mdash;</td>
         <td>0.00</td>
+        <td><details><summary>An XML external entity (XXE) vulnerability in the /designer/loadReport endpoint ...</summary><p>An XML external entity (XXE) vulnerability in the /designer/loadReport endpoint of SpringBlade v4.8.0 allows authenticated attackers to execute arbitrary code via injecting a crafted payload.</p></details></td>
+        <td>2026-04-30</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-36763" target="_blank" rel="noopener">CVE-2026-36763</a></td>
+        <td>6.1</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.27</td>
+        <td><details><summary>A stored cross-site scripting (XSS) vulnerability in the /api/blade-desk/notice/...</summary><p>A stored cross-site scripting (XSS) vulnerability in the /api/blade-desk/notice/submit endpoint of SpringBlade v4.8.0 allows attackers to execute arbitrary web scripts or HTML via injecting a crafted input into the content parameter.</p></details></td>
+        <td>2026-04-30</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-36762" target="_blank" rel="noopener">CVE-2026-36762</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>An issue in the fileEntityId parameter in the /a/file/upload endpoint of JeeSite...</summary><p>An issue in the fileEntityId parameter in the /a/file/upload endpoint of JeeSite v5.15.1 allows authenticated attackers with file upload permissions to execute a path traversal and write arbitrary files with whitelisted suffixes to arbitrary filesystem locations.</p></details></td>
+        <td>2026-04-30</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-36761" target="_blank" rel="noopener">CVE-2026-36761</a></td>
+        <td>6.1</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.27</td>
+        <td><details><summary>A stored cross-site scripting (XSS) vulnerability in the /msg/msgInner/save endp...</summary><p>A stored cross-site scripting (XSS) vulnerability in the /msg/msgInner/save endpoint of JeeSite v5.15.1 allows attackers to execute arbitrary web scripts or HTML via injecting a crafted input into the msgContent parameter.</p></details></td>
+        <td>2026-04-30</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33845" target="_blank" rel="noopener">CVE-2026-33845</a></td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-191</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.25</td>
+        <td><details><summary>A flaw in GnuTLS DTLS handshake parsing allows malformed fragments with zero len...</summary><p>A flaw in GnuTLS DTLS handshake parsing allows malformed fragments with zero length and non-zero offset, leading to an integer underflow during reassembly and resulting in an out-of-bounds read. This issue is remotely exploitable and may cause information disclosure or denial of service.</p></details></td>
+        <td>2026-04-30</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-36767" target="_blank" rel="noopener">CVE-2026-36767</a></td>
+        <td>10.0</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-22</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>7.00</td>
         <td><details><summary>A path traversal vulnerability in the /content/images/add endpoint of shopizer v...</summary><p>A path traversal vulnerability in the /content/images/add endpoint of shopizer v3.2.5 allows attackers write arbitrary files to any writeable path via a crafted POST request.</p></details></td>
         <td>2026-04-30</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-36764" target="_blank" rel="noopener">CVE-2026-36764</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>5.0</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-918</td>
         <td>&nbsp;</td>
         <td>&mdash;</td>
-        <td>0.00</td>
+        <td>3.50</td>
         <td><details><summary>A Server-Side Request Forgery (SSRF) in the /ureport/datasource/testConnection e...</summary><p>A Server-Side Request Forgery (SSRF) in the /ureport/datasource/testConnection endpoint of SpringBlade v4.8.0 allows authenticated attackers to scan internal resources via a crafted GET request.</p></details></td>
         <td>2026-04-30</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-36760" target="_blank" rel="noopener">CVE-2026-36760</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>9.6</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-22</td>
         <td>&nbsp;</td>
         <td>&mdash;</td>
-        <td>0.00</td>
+        <td>6.72</td>
         <td><details><summary>An issue in the fileMd5 parameter in the /a/file/upload endpoint of JeeSite v5.1...</summary><p>An issue in the fileMd5 parameter in the /a/file/upload endpoint of JeeSite v5.15.1 allows authenticated attackers with file upload permissions to execute a path traversal and write arbitrary files with whitelisted suffixes to arbitrary filesystem locations while chunked upload is enabled.</p></details></td>
         <td>2026-04-30</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-36757" target="_blank" rel="noopener">CVE-2026-36757</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>4.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-918</td>
         <td>&nbsp;</td>
         <td>&mdash;</td>
-        <td>0.00</td>
+        <td>3.01</td>
         <td><details><summary>A Server-Side Request Forgery (SSRF) in the /plugins/{name}/upgrade-from-uri end...</summary><p>A Server-Side Request Forgery (SSRF) in the /plugins/{name}/upgrade-from-uri endpoint of halo v2.22.14 allows authenticated attackers to scan internal resources via a crafted GET request.</p></details></td>
         <td>2026-04-30</td>
       </tr>
@@ -131,50 +315,24 @@
         <td>2026-04-30</td>
       </tr>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5174" target="_blank" rel="noopener">CVE-2026-5174</a></td>
-        <td>7.7</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-20</td>
-        <td>&nbsp;</td>
-        <td>&mdash;</td>
-        <td>5.39</td>
-        <td><details><summary>Improper input validation vulnerability in Progress Software MOVEit Automation a...</summary><p>Improper input validation vulnerability in Progress Software MOVEit Automation allows Privilege Escalation.
-
-This issue affects MOVEit Automation: from 2025.1.0 before 2025.1.5, from 2025.0.0 before 2025.0.9, from 2024.0.0 before 2024.1.8, versions prior to 2024.0.0.</p></details></td>
-        <td>2026-04-30</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4670" target="_blank" rel="noopener">CVE-2026-4670</a></td>
-        <td>9.8</td>
-        <td><span class="severity critical">CRITICAL</span></td>
-        <td>CWE-305</td>
-        <td>&nbsp;</td>
-        <td>&mdash;</td>
-        <td>6.86</td>
-        <td><details><summary>Authentication bypass by primary weakness vulnerability in Progress Software MOV...</summary><p>Authentication bypass by primary weakness vulnerability in Progress Software MOVEit Automation allows Authentication Bypass.
-
-This issue affects MOVEit Automation: from 2025.0.0 before 2025.0.9, from 2024.0.0 before 2024.1.8, versions prior to 2024.0.0.</p></details></td>
-        <td>2026-04-30</td>
-      </tr>
-      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-38940" target="_blank" rel="noopener">CVE-2026-38940</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>6.1</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
         <td>&nbsp;</td>
         <td>&mdash;</td>
-        <td>0.00</td>
+        <td>4.27</td>
         <td><details><summary>Cross Site Scripting vulnerability in RafyMrX TOKO-ONLINE-ROTI v.1.0 allows a re...</summary><p>Cross Site Scripting vulnerability in RafyMrX TOKO-ONLINE-ROTI v.1.0 allows a remote attacker to execute arbitrary code via the detail_produk.php component</p></details></td>
         <td>2026-04-30</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-38939" target="_blank" rel="noopener">CVE-2026-38939</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>6.1</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
         <td>&nbsp;</td>
         <td>&mdash;</td>
-        <td>0.00</td>
+        <td>4.27</td>
         <td><details><summary>Cross Site Scripting vulnerability in andrewtch88 mvc-ecommerce v.1.0 allows a r...</summary><p>Cross Site Scripting vulnerability in andrewtch88 mvc-ecommerce v.1.0 allows a remote attacker to execute arbitrary code and obtain sensitive information via the product_catalogue.php component</p></details></td>
         <td>2026-04-30</td>
       </tr>
@@ -191,45 +349,45 @@ This issue affects MOVEit Automation: from 2025.0.0 before 2025.0.9, from 2024.0
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-36759" target="_blank" rel="noopener">CVE-2026-36759</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>6.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-918</td>
         <td>&nbsp;</td>
         <td>&mdash;</td>
-        <td>0.00</td>
+        <td>4.55</td>
         <td><details><summary>A Server-Side Request Forgery (SSRF) in the /themes/{name}/upgrade-from-uri endp...</summary><p>A Server-Side Request Forgery (SSRF) in the /themes/{name}/upgrade-from-uri endpoint of halo v2.22.14 allows authenticated attackers to scan internal resources via a crafted GET request.</p></details></td>
         <td>2026-04-30</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-36758" target="_blank" rel="noopener">CVE-2026-36758</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>4.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-918</td>
         <td>&nbsp;</td>
         <td>&mdash;</td>
-        <td>0.00</td>
+        <td>3.01</td>
         <td><details><summary>A Server-Side Request Forgery (SSRF) in the /themes/-/install-from-uri endpoint ...</summary><p>A Server-Side Request Forgery (SSRF) in the /themes/-/install-from-uri endpoint of halo v2.22.14 allows authenticated attackers to scan internal resources via a crafted GET request.</p></details></td>
         <td>2026-04-30</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-36756" target="_blank" rel="noopener">CVE-2026-36756</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>5.4</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-918</td>
         <td>&nbsp;</td>
         <td>&mdash;</td>
-        <td>0.00</td>
+        <td>3.78</td>
         <td><details><summary>A Server-Side Request Forgery (SSRF) in the /plugins/-/install-from-uri endpoint...</summary><p>A Server-Side Request Forgery (SSRF) in the /plugins/-/install-from-uri endpoint of halo v2.22.14 allows authenticated attackers to scan internal resources via a crafted GET request.</p></details></td>
         <td>2026-04-30</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-36340" target="_blank" rel="noopener">CVE-2026-36340</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>8.1</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-94</td>
         <td>&nbsp;</td>
         <td>&mdash;</td>
-        <td>0.00</td>
+        <td>5.67</td>
         <td><details><summary>An issue in Krayin CRM v.2.1.5 and fixed in v.2.1.6 allows a remote attacker to ...</summary><p>An issue in Krayin CRM v.2.1.5 and fixed in v.2.1.6 allows a remote attacker to execute arbitrary code via the compose email function</p></details></td>
         <td>2026-04-30</td>
       </tr>
@@ -439,45 +597,6 @@ Successful exploitation gives the attacker the kubeadmin password and kubeconfig
         <td>2026-04-30</td>
       </tr>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-7402" target="_blank" rel="noopener">CVE-2026-7402</a></td>
-        <td>8.1</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-799</td>
-        <td>&nbsp;</td>
-        <td>&mdash;</td>
-        <td>5.67</td>
-        <td><details><summary>Improper Control of Interaction Frequency vulnerability in MeWare Software Devel...</summary><p>Improper Control of Interaction Frequency vulnerability in MeWare Software Development Inc. PDKS allows Flooding.
-
-This issue affects PDKS: from V16.20200313 before VMYR_3.5.2025117.</p></details></td>
-        <td>2026-04-30</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-7399" target="_blank" rel="noopener">CVE-2026-7399</a></td>
-        <td>8.1</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-639</td>
-        <td>&nbsp;</td>
-        <td>&mdash;</td>
-        <td>5.67</td>
-        <td><details><summary>Authorization bypass through User-Controlled key vulnerability in MeWare Softwar...</summary><p>Authorization bypass through User-Controlled key vulnerability in MeWare Software Development Inc. PDKS allows Privilege Abuse.
-
-This issue affects PDKS: from V16.20200313 before VMYR_3.5.2025117.</p></details></td>
-        <td>2026-04-30</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-7382" target="_blank" rel="noopener">CVE-2026-7382</a></td>
-        <td>6.5</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-200</td>
-        <td>&nbsp;</td>
-        <td>&mdash;</td>
-        <td>4.55</td>
-        <td><details><summary>Exposure of Sensitive Information to an Unauthorized Actor, Exposure of private ...</summary><p>Exposure of Sensitive Information to an Unauthorized Actor, Exposure of private personal information to an unauthorized actor vulnerability in MeWare Software Development Inc. PDKS allows Excavation.
-
-This issue affects PDKS: from V16.20200313 before VMYR_3.5.2025117.</p></details></td>
-        <td>2026-04-30</td>
-      </tr>
-      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-14576" target="_blank" rel="noopener">CVE-2025-14576</a></td>
         <td>7.4</td>
         <td><span class="severity high">HIGH</span></td>
@@ -523,159 +642,6 @@ Predictable session ids could allow an attacker to gain access to systems.</p></
         <td>2026-04-30</td>
       </tr>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-41882" target="_blank" rel="noopener">CVE-2026-41882</a></td>
-        <td>7.4</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-59</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p0</small></td>
-        <td>5.18</td>
-        <td><details><summary>In JetBrains IntelliJ IDEA before 2024.3.7.1, 
-2025.1.7.1,
-2025.2.6.2,  
-2025.3....</summary><p>In JetBrains IntelliJ IDEA before 2024.3.7.1, 
-2025.1.7.1,
-2025.2.6.2,  
-2025.3.4.1, 
-2026.1.1 reading arbitrary local files was possible via built-in web server</p></details></td>
-        <td>2026-04-30</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-31693" target="_blank" rel="noopener">CVE-2026-31693</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
-        <td>&nbsp;</td>
-        <td>&mdash;</td>
-        <td>0.00</td>
-        <td><details><summary>In the Linux kernel, the following vulnerability has been resolved:
-
-cifs: some ...</summary><p>In the Linux kernel, the following vulnerability has been resolved:
-
-cifs: some missing initializations on replay
-
-In several places in the code, we have a label to signify
-the start of the code where a request can be replayed if
-necessary. However, some of these places were missing the
-necessary reinitializations of certain local variables
-before replay.
-
-This change makes sure that these variables get initialized
-after the label.</p></details></td>
-        <td>2026-04-30</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-1493" target="_blank" rel="noopener">CVE-2026-1493</a></td>
-        <td>4.6</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-79</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p6</small></td>
-        <td>3.22</td>
-        <td><details><summary>LEX Baza Dokumentów is vulnerable to DOM-based XSS in &quot;em&quot; cookie parameter. The...</summary><p>LEX Baza Dokumentów is vulnerable to DOM-based XSS in &quot;em&quot; cookie parameter. The application unsafely
-processes the parameter on the client side, allowing an attacker to execute arbitrary
-JavaScript in the context of the victim&#x27;s browser.
-An attacker with ability to set a cookie can perform a more severe attack, so we evaluate the impact and risk of exploitation as minimal. However, the vendor considered this a vulnerability and released a security patch.
-
-This issue was fixed in version 1.3.4.</p></details></td>
-        <td>2026-04-30</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-31787" target="_blank" rel="noopener">CVE-2026-31787</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p9</small></td>
-        <td>0.00</td>
-        <td><details><summary>In the Linux kernel, the following vulnerability has been resolved:
-
-xen/privcmd...</summary><p>In the Linux kernel, the following vulnerability has been resolved:
-
-xen/privcmd: fix double free via VMA splitting
-
-privcmd_vm_ops defines .close (privcmd_close), but neither .may_split
-nor .open. When userspace does a partial munmap() on a privcmd mapping,
-the kernel splits the VMA via __split_vma(). Since may_split is NULL,
-the split is allowed. vm_area_dup() copies vm_private_data (a pages
-array allocated in alloc_empty_pages()) into the new VMA without any
-fixup, because there is no .open callback.
-
-Both VMAs now point to the same pages array. When the unmapped portion
-is closed, privcmd_close() calls:
-    - xen_unmap_domain_gfn_range()
-    - xen_free_unpopulated_pages()
-    - kvfree(pages)
-
-The surviving VMA still holds the dangling pointer. When it is later
-destroyed, the same sequence runs again, which leads to a double free.
-
-Fix this issue by adding a .may_split callback denying the VMA split.
-
-This is XSA-487 / CVE-2026-31787</p></details></td>
-        <td>2026-04-30</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-31786" target="_blank" rel="noopener">CVE-2026-31786</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
-        <td>&nbsp;</td>
-        <td>0.1% <small>p22</small></td>
-        <td>0.00</td>
-        <td><details><summary>In the Linux kernel, the following vulnerability has been resolved:
-
-Buffer over...</summary><p>In the Linux kernel, the following vulnerability has been resolved:
-
-Buffer overflow in drivers/xen/sys-hypervisor.c
-
-The build id returned by HYPERVISOR_xen_version(XENVER_build_id) is
-neither NUL terminated nor a string.
-
-The first causes a buffer overflow as sprintf in buildid_show will
-read and copy till it finds a NUL.
-
-00000000  f4 91 51 f4 dd 38 9e 9d  65 47 52 eb 10 71 db 50  |..Q..8..eGR..q.P|
-00000010  b9 a8 01 42 6f 2e 32                              |...Bo.2|
-00000017
-
-So use a memcpy instead of sprintf to have the correct value:
-
-00000000  f4 91 51 f4 dd 00 9e 9d  65 47 52 eb 10 71 db 50  |..Q.....eGR..q.P|
-00000010  b9 a8 01 42                                       |...B|
-00000014
-
-(the above have a hack to embed a zero inside and check it&#x27;s
-returned correctly).
-
-This is XSA-485 / CVE-2026-31786</p></details></td>
-        <td>2026-04-30</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-31692" target="_blank" rel="noopener">CVE-2026-31692</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p4</small></td>
-        <td>0.00</td>
-        <td><details><summary>In the Linux kernel, the following vulnerability has been resolved:
-
-rtnetlink: ...</summary><p>In the Linux kernel, the following vulnerability has been resolved:
-
-rtnetlink: add missing netlink_ns_capable() check for peer netns
-
-rtnl_newlink() lacks a CAP_NET_ADMIN capability check on the peer
-network namespace when creating paired devices (veth, vxcan,
-netkit). This allows an unprivileged user with a user namespace
-to create interfaces in arbitrary network namespaces, including
-init_net.
-
-Add a netlink_ns_capable() check for CAP_NET_ADMIN in the peer
-namespace before allowing device creation to proceed.</p></details></td>
-        <td>2026-04-30</td>
-      </tr>
-      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6498" target="_blank" rel="noopener">CVE-2026-6498</a></td>
         <td>5.3</td>
         <td><span class="severity medium">MEDIUM</span></td>
@@ -684,19 +650,6 @@ namespace before allowing device creation to proceed.</p></details></td>
         <td>0.0% <small>p7</small></td>
         <td>3.71</td>
         <td><details><summary>The Five Star Restaurant Reservations plugin for WordPress is vulnerable to a pa...</summary><p>The Five Star Restaurant Reservations plugin for WordPress is vulnerable to a payment bypass via PHP type juggling in versions up to, and including, 2.7.16 This is due to the valid_payment() function using a PHP loose comparison (==) between the attacker-controlled payment_id POST parameter and the booking&#x27;s stripe_payment_intent_id property. When an unauthenticated attacker submits a request to the nopriv AJAX handler rtb_stripe_pmt_succeed before the Stripe payment intent has been created for a booking (i.e., before the JavaScript-triggered create_stripe_pmtIntnt() call has stored an intent ID in post meta), the stripe_payment_intent_id property on the booking object remains null. The comparison sanitize_text_field(&#x27;&#x27;) == null evaluates to TRUE in PHP loose comparison, causing the payment verification check to pass with zero actual payment. This makes it possible for unauthenticated attackers to mark any existing payment_pending booking as paid without completing a Stripe payment by submitting an empty payment_id parameter.</p></details></td>
-        <td>2026-04-30</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-42800" target="_blank" rel="noopener">CVE-2026-42800</a></td>
-        <td>7.4</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-476</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p11</small></td>
-        <td>5.18</td>
-        <td><details><summary>NULL pointer dereference vulnerability in ASR1903 in ASR Lapwing_Linux on Linux ...</summary><p>NULL pointer dereference vulnerability in ASR1903 in ASR Lapwing_Linux on Linux (ims_client modules) allows Pointer Manipulation.
-
- This vulnerability is associated with program files sip/utils/src/sipuri.c.</p></details></td>
         <td>2026-04-30</td>
       </tr>
       <tr>
@@ -711,62 +664,6 @@ namespace before allowing device creation to proceed.</p></details></td>
         <td>2026-04-30</td>
       </tr>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-42799" target="_blank" rel="noopener">CVE-2026-42799</a></td>
-        <td>7.4</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-125</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p10</small></td>
-        <td>5.18</td>
-        <td><details><summary>Out-of-bounds read vulnerability in ASR Kestrel (nr_fw modules) allows Overflow ...</summary><p>Out-of-bounds read vulnerability in ASR Kestrel (nr_fw modules) allows Overflow Buffers.
-
- This vulnerability is associated with program files Code/Nr/nr_fw/RA/src/NrPwrCtrl.C.
-
-
-
-This issue affects Kestrel: before 2026/02/10.</p></details></td>
-        <td>2026-04-30</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-42512" target="_blank" rel="noopener">CVE-2026-42512</a></td>
-        <td>7.3</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-122</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p8</small></td>
-        <td>5.11</td>
-        <td><details><summary>As dhclient is building an environment to pass to dhclient-script, it may need t...</summary><p>As dhclient is building an environment to pass to dhclient-script, it may need to resize the array of string pointers.  The code which expands the array incorrectly calculates its new size when requesting memory, resulting in a heap buffer overrun.
-
-A specially crafted packet can cause dhclient to overrun its buffer of environment entries.  This can result in a crash, but it may be possible to leverage this bug to achieve remote code execution.</p></details></td>
-        <td>2026-04-30</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39457" target="_blank" rel="noopener">CVE-2026-39457</a></td>
-        <td>7.8</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-121</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p4</small></td>
-        <td>5.46</td>
-        <td><details><summary>When exchanging data over a socket, libnv uses select(2) to wait for data to arr...</summary><p>When exchanging data over a socket, libnv uses select(2) to wait for data to arrive.  However, it does not verify whether the provided socket descriptor fits in select(2)&#x27;s file descriptor set size limit of FD_SETSIZE (1024).
-
-An attacker who is able to force a libnv application to allocate large file descriptors, e.g., by opening many descriptors and executing a program which is not careful to close them upon startup, can trigger stack corruption.  If the target application is setuid-root, then this could be used to elevate local privileges.</p></details></td>
-        <td>2026-04-30</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35547" target="_blank" rel="noopener">CVE-2026-35547</a></td>
-        <td>9.1</td>
-        <td><span class="severity critical">CRITICAL</span></td>
-        <td>CWE-122</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p4</small></td>
-        <td>6.37</td>
-        <td><details><summary>When processing the header of an incoming message, libnv failed to properly vali...</summary><p>When processing the header of an incoming message, libnv failed to properly validate the message size.
-
-The lack of validation allows a malicious program to write outside the bounds of a heap allocation.  This can trigger a crash or system panic, and it may be possible for an unprivileged user to exploit the bug to elevate their privileges.</p></details></td>
-        <td>2026-04-30</td>
-      </tr>
-      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-22070" target="_blank" rel="noopener">CVE-2026-22070</a></td>
         <td>7.1</td>
         <td><span class="severity high">HIGH</span></td>
@@ -775,32 +672,6 @@ The lack of validation allows a malicious program to write outside the bounds of
         <td>0.0% <small>p1</small></td>
         <td>4.97</td>
         <td><details><summary>ColorOS Assistant has an unauthenticated start-download channel, leading to file...</summary><p>ColorOS Assistant has an unauthenticated start-download channel, leading to file path traversal.</p></details></td>
-        <td>2026-04-30</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-7164" target="_blank" rel="noopener">CVE-2026-7164</a></td>
-        <td>7.5</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-674</td>
-        <td>&nbsp;</td>
-        <td>0.1% <small>p17</small></td>
-        <td>5.25</td>
-        <td><details><summary>Incorrect packet validation allowed unbounded recursion parsing SCTP chunk param...</summary><p>Incorrect packet validation allowed unbounded recursion parsing SCTP chunk parameters.  This can eventually result in a stack overflow and panic.
-
-Remote attackers can craft packets which cause affected systems to panic.  This affects any system where pf is configured to process traffic, independent of the configured ruleset.</p></details></td>
-        <td>2026-04-30</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-7270" target="_blank" rel="noopener">CVE-2026-7270</a></td>
-        <td>7.8</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-783</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p4</small></td>
-        <td>5.46</td>
-        <td><details><summary>An operator precedence bug in the kernel results in a scenario where a buffer ov...</summary><p>An operator precedence bug in the kernel results in a scenario where a buffer overflow causes attacker-controlled data to overwrite adjacent execve(2) argument buffers.
-
-The bug may be exploitable by an unprivileged user to obtain superuser privileges.</p></details></td>
         <td>2026-04-30</td>
       </tr>
       <tr>
@@ -1178,19 +1049,6 @@ The bug may be exploitable by an unprivileged user to obtain superuser privilege
         <td>2026-04-30</td>
       </tr>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-42511" target="_blank" rel="noopener">CVE-2026-42511</a></td>
-        <td>7.3</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-149</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p4</small></td>
-        <td>5.11</td>
-        <td><details><summary>The BOOTP file field is written to the lease file without escaping embedded doub...</summary><p>The BOOTP file field is written to the lease file without escaping embedded double-quotes, allowing injection of arbitrary dhclient.conf directives.  When the lease file is subsequently re-parsed by dhclient, e.g., after a system restart, an attacker-controlled field from the lease is passed to dhclient-script(8), which evaluates it.
-
-A rogue DHCP server may be able to execute arbirary code as root on a system running dhclient.</p></details></td>
-        <td>2026-04-30</td>
-      </tr>
-      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-41226" target="_blank" rel="noopener">CVE-2026-41226</a></td>
         <td>5.1</td>
         <td><span class="severity medium">MEDIUM</span></td>
@@ -1378,25 +1236,6 @@ A rogue DHCP server may be able to execute arbirary code as root on a system run
         <td>2026-04-29</td>
       </tr>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-7381" target="_blank" rel="noopener">CVE-2026-7381</a></td>
-        <td>9.1</td>
-        <td><span class="severity critical">CRITICAL</span></td>
-        <td>CWE-200</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p0</small></td>
-        <td>6.37</td>
-        <td><details><summary>Plack::Middleware::XSendfile versions through 1.0053 for Perl can allow client-c...</summary><p>Plack::Middleware::XSendfile versions through 1.0053 for Perl can allow client-controlled path rewriting.
-
-Plack::Middleware::XSendfile allows the variation setting (sendfile type) to be set by the client via the X-Sendfile-Type header, if it is not considered in the middleware constructor or the Plack environment.
-
-A malicious client can set the X-Sendfile-Type header to &quot;X-Accel-Redirect&quot; to services running behind nginx reverse proxies, and then set the X-Accel-Mapping to map the path to an arbitrary file on the server.
-
-Since 1.0053, Plack::Middleware::XSendfile is deprecated and will be removed from future releases of Plack.
-
-This is similar to CVE-2025-61780 for Rack::Sendfile, although Plack::Middleware::XSendfile has some mitigations that disallow regular expressions to be used in the mapping, and only apply the mapping for the &quot;X-Accel-Redirect&quot; type.</p></details></td>
-        <td>2026-04-29</td>
-      </tr>
-      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6221" target="_blank" rel="noopener">CVE-2026-6221</a></td>
         <td>0.0</td>
         <td><span class="severity none">NONE</span></td>
@@ -1526,36 +1365,6 @@ This is similar to CVE-2025-61780 for Rack::Sendfile, although Plack::Middleware
         <td>0.0% <small>p0</small></td>
         <td>5.11</td>
         <td><details><summary>A vulnerability in B1 Free Archiver v1.5.86 allows files extracted from download...</summary><p>A vulnerability in B1 Free Archiver v1.5.86 allows files extracted from downloaded archives to bypass Windows Mark of the Web (MotW) protections. When an archive is downloaded from the internet and extracted using B1 Free Archiver, the software fails to propagate the &#x27;Zone.Identifier&#x27; alternate data stream to the extracted files. As a result, these files can be executed without triggering Windows Defender SmartScreen warnings or security prompts, enabling untrusted code execution without standard security restrictions.</p></details></td>
-        <td>2026-04-29</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-7426" target="_blank" rel="noopener">CVE-2026-7426</a></td>
-        <td>6.1</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-787</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p3</small></td>
-        <td>4.27</td>
-        <td><details><summary>Insufficient validation of the prefix length field in IPv6 Router Advertisement ...</summary><p>Insufficient validation of the prefix length field in IPv6 Router Advertisement processing in FreeRTOS-Plus-TCP before V4.2.6 and V4.4.1 allows an adjacent network actor to cause memory corruption by sending a crafted Router Advertisement with a prefix length value exceeding the maximum valid length, resulting in a heap buffer overflow. Users processing IPv4 RA only are not impacted.
-
-
-
-To mitigate this issue, users should upgrade to the fixed version when available.</p></details></td>
-        <td>2026-04-29</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-7425" target="_blank" rel="noopener">CVE-2026-7425</a></td>
-        <td>6.0</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-125</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p3</small></td>
-        <td>4.20</td>
-        <td><details><summary>Insufficient option length validation in the IPv6 Router Advertisement parser in...</summary><p>Insufficient option length validation in the IPv6 Router Advertisement parser in FreeRTOS-Plus-TCP before V4.2.6 and V4.4.1 allows an adjacent network actor to cause a denial of service (device crash) by sending a crafted Router Advertisement with a truncated PREFIX_INFORMATION option that is smaller than the expected structure size.
-
-
-
-To mitigate this issue, users should upgrade to the fixed version when available.</p></details></td>
         <td>2026-04-29</td>
       </tr>
       <tr>
@@ -1845,65 +1654,6 @@ To mitigate this issue, users should upgrade to the fixed version when available
         <td>2026-04-29</td>
       </tr>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-7424" target="_blank" rel="noopener">CVE-2026-7424</a></td>
-        <td>7.2</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-191</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p1</small></td>
-        <td>5.04</td>
-        <td><details><summary>Integer underflow in the DHCPv6 sub-option parser in FreeRTOS-Plus-TCP before V4...</summary><p>Integer underflow in the DHCPv6 sub-option parser in FreeRTOS-Plus-TCP before V4.4.1 and V4.2.6 allows an adjacent network actor to corrupt the device&#x27;s IPv6 address assignment, DNS configuration, and lease times, and to cause a denial of service (permanent IP task freeze requiring hardware reset) by sending a single crafted DHCPv6 packet.
-
-
-
-
-
-
-
-
-The issue is present whenever DHCPv6 is enabled.
-
-
-
-
-
-
-
-
-To mitigate this issue, users should upgrade to version V4.2.6 or V4.4.1 or newer.</p></details></td>
-        <td>2026-04-29</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-7423" target="_blank" rel="noopener">CVE-2026-7423</a></td>
-        <td>6.0</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-191</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p3</small></td>
-        <td>4.20</td>
-        <td><details><summary>Integer underflow in the ICMP and ICMPv6 echo reply handlers in FreeRTOS-Plus-TC...</summary><p>Integer underflow in the ICMP and ICMPv6 echo reply handlers in FreeRTOS-Plus-TCP before V4.4.1 and V4.2.6 allows an adjacent network user to cause a denial of service (device crash) when outgoing ping support is enabled, because header sizes are subtracted from a packet length field without validating the field is large enough, resulting in a heap out-of-bounds read of up to approximately 65KB.
-
-
-
-To mitigate this issue, users should upgrade to the fixed version when available.</p></details></td>
-        <td>2026-04-29</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-7422" target="_blank" rel="noopener">CVE-2026-7422</a></td>
-        <td>7.1</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-290</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p3</small></td>
-        <td>4.97</td>
-        <td><details><summary>Insufficient packet validation in FreeRTOS-Plus-TCP before V4.2.6 and V4.4.1 all...</summary><p>Insufficient packet validation in FreeRTOS-Plus-TCP before V4.2.6 and V4.4.1 allows an adjacent network actor to bypass all checksum and minimum-size validation by spoofing the Ethernet source MAC address to match one of the device&#x27;s own registered endpoints, because the loopback detection mechanism skips all input validation for packets whose source MAC matches a local endpoint.
-
-
-
-To mitigate this issue, users should upgrade to the fixed version when available.</p></details></td>
-        <td>2026-04-29</td>
-      </tr>
-      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-7398" target="_blank" rel="noopener">CVE-2026-7398</a></td>
         <td>5.5</td>
         <td><span class="severity medium">MEDIUM</span></td>
@@ -2077,18 +1827,6 @@ To mitigate this issue, users should upgrade to the fixed version when available
         <td>0.1% <small>p19</small></td>
         <td>3.71</td>
         <td><details><summary>An authorization flaw in the user management command could allow an authenticate...</summary><p>An authorization flaw in the user management command could allow an authenticated user to make limited changes to authentication-related data associated with another user account. This could affect how authentication is performed for the impacted account.</p></details></td>
-        <td>2026-04-29</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6914" target="_blank" rel="noopener">CVE-2026-6914</a></td>
-        <td>7.1</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-191</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p11</small></td>
-        <td>4.97</td>
-        <td><details><summary>Computing the MD5 checksum of a malformed BSON object under specific conditions ...</summary><p>Computing the MD5 checksum of a malformed BSON object under specific conditions may cause loss of availability in MongoDB server.
-This issue affects all MongoDB Server v8.2 versions, all MongoDB Server v8.1 versions, MongoDB Server v8.0 versions prior to 8.0.21, MongoDB Server v7.0 versions prior to 7.0.32</p></details></td>
         <td>2026-04-29</td>
       </tr>
       <tr>
@@ -2323,21 +2061,6 @@ This issue affects all MongoDB Server v8.2 versions, all MongoDB Server v8.1 ver
         <td>2026-04-29</td>
       </tr>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-7111" target="_blank" rel="noopener">CVE-2026-7111</a></td>
-        <td>8.4</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-416</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p2</small></td>
-        <td>5.88</td>
-        <td><details><summary>Text::CSV_XS versions before 1.62 for Perl have a use-after-free when registered...</summary><p>Text::CSV_XS versions before 1.62 for Perl have a use-after-free when registered callbacks extend the Perl argument stack, which may enable type confusion or memory corruption.
-
-The Parse, print, getline, and getline_all methods invoke registered callbacks (for example after_parse, before_print, or on_error) and cache the Perl argument stack pointer across the call. If a callback extends the argument stack enough to trigger a reallocation, the return value is written through the stale pointer into the freed buffer, and the caller reads the original $self argument as the return value instead.
-
-Calling code that expects parsed data from getline_all receives the Text::CSV_XS object in its place, leading to logic errors or crashes. Text::CSV_XS objects used without any registered callbacks are not affected.</p></details></td>
-        <td>2026-04-29</td>
-      </tr>
-      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-41952" target="_blank" rel="noopener">CVE-2026-41952</a></td>
         <td>7.8</td>
         <td><span class="severity high">HIGH</span></td>
@@ -2569,37 +2292,6 @@ Calling code that expects parsed data from getline_all receives the Text::CSV_XS
         <td>2026-04-29</td>
       </tr>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-42249" target="_blank" rel="noopener">CVE-2026-42249</a></td>
-        <td>7.7</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-22</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p9</small></td>
-        <td>5.39</td>
-        <td><details><summary>Ollama for Windows contains a Remote Code Execution vulnerability in its update ...</summary><p>Ollama for Windows contains a Remote Code Execution vulnerability in its update mechanism due to improper handling of attacker‑controlled HTTP response headers. When downloading updates, the application constructs local file paths using values derived from HTTP headers without validation. These values are passed directly to filepath.Join, allowing path traversal sequences (../) to be resolved and enabling files to be written outside the intended update staging directory.
-An attacker who can influence update responses can exploit this flaw to write arbitrary executables to attacker‑chosen locations accessible to the current user, including the Windows Startup directory. This allows execution of arbitrary executables.
-
-Critically, when chained with CVE‑2026‑42248 (Missing Signature Verification for Updates), an attacker can deliver malicious payloads that are written to sensitive locations and executed automatically. Because Ollama for Windows performs silent automatic updates and executes staged binaries without user interaction, this results in automatic and persistent code execution without user awareness.
-
-Maintainers of this project were notified early about this vulnerability, but didn&#x27;t respond with the details of vulnerability or vulnerable version range. Versions from 0.12.10 to 0.17.5 were tested and confirmed as vulnerable, other versions were not tested but might also be vulnerable.</p></details></td>
-        <td>2026-04-29</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-42248" target="_blank" rel="noopener">CVE-2026-42248</a></td>
-        <td>7.7</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-494</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p0</small></td>
-        <td>5.39</td>
-        <td><details><summary>Ollama for Windows does not perform integrity or authenticity verification of do...</summary><p>Ollama for Windows does not perform integrity or authenticity verification of downloaded update executables. Unlike other platforms, the Windows implementation of the update verification routine unconditionally returns success so no digital signature or trust validation is performed before staging or executing update payloads, enabling attacker‑supplied executables to be accepted and later executed by the application.
-
-Critically, Ollama for Windows performs silent automatic updates, so the malicious payload may be installed automatically without user awareness.
-
-Maintainers of this project were notified early about this vulnerability, but didn&#x27;t respond with the details of vulnerability or vulnerable version range. Versions from 0.12.10 to 0.17.5 were tested and confirmed as vulnerable, other versions were not tested but might also be vulnerable.</p></details></td>
-        <td>2026-04-29</td>
-      </tr>
-      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-2902" target="_blank" rel="noopener">CVE-2026-2902</a></td>
         <td>6.1</td>
         <td><span class="severity medium">MEDIUM</span></td>
@@ -2608,62 +2300,6 @@ Maintainers of this project were notified early about this vulnerability, but di
         <td>0.1% <small>p21</small></td>
         <td>4.27</td>
         <td><details><summary>The WP Meteor Website Speed Optimization Addon plugin for WordPress is vulnerabl...</summary><p>The WP Meteor Website Speed Optimization Addon plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the &#x27;frontend_rewrite&#x27; function&#x27;s &#x27;WPMETEOR[N]WPMETEOR&#x27; placeholder content in all versions up to, and including, 3.4.16 due to insufficient input sanitization and output escaping. This makes it possible for unauthenticated attackers to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.</p></details></td>
-        <td>2026-04-29</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-22745" target="_blank" rel="noopener">CVE-2026-22745</a></td>
-        <td>5.3</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-400</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p13</small></td>
-        <td>3.71</td>
-        <td><details><summary>Spring MVC and WebFlux applications are vulnerable to Denial of Service attacks ...</summary><p>Spring MVC and WebFlux applications are vulnerable to Denial of Service attacks when resolving static resources.
-
-
-More precisely, an application can be vulnerable when all the following are true:
-
-  *  the application is using Spring MVC or Spring WebFlux
-  *  the application is serving static resources from the file system
-  *  the application is running on a Windows platform
-
-
-When all the conditions above are met, the attacker can send malicious requests that are slow to resolve and that can keep HTTP connections in use. This can cause a Denial of Service on the application.</p></details></td>
-        <td>2026-04-29</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-22741" target="_blank" rel="noopener">CVE-2026-22741</a></td>
-        <td>3.1</td>
-        <td><span class="severity low">LOW</span></td>
-        <td>CWE-524</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p14</small></td>
-        <td>2.17</td>
-        <td><details><summary>Spring MVC and WebFlux applications are vulnerable to cache poisoning when resol...</summary><p>Spring MVC and WebFlux applications are vulnerable to cache poisoning when resolving static resources.
-
-
-More precisely, an application can be vulnerable when all the following are true:
-
-  *  the application is using Spring MVC or Spring WebFlux
-  *  the application is configuring the  resource chain support https://docs.spring.io/spring-framework/reference/web/webmvc/mvc-config/static-resources.html#page-title  with caching enabled
-  *  the application adds support for encoded resources resolution
-  *  the resource cache must be empty when the attacker has access to the application
-
-
-When all the conditions above are met, the attacker can send malicious requests and poison the resource cache with resources using the wrong encoding. This can cause a denial of service by breaking the front-end application for clients.</p></details></td>
-        <td>2026-04-29</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-22740" target="_blank" rel="noopener">CVE-2026-22740</a></td>
-        <td>6.5</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-400</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p14</small></td>
-        <td>4.55</td>
-        <td><details><summary>A WebFlux server application that processes multipart requests creates temp file...</summary><p>A WebFlux server application that processes multipart requests creates temp files for parts larger than 10 K. Under some circumstances, temp files may remain not deleted after the request is fully processed. This allows an attacker to consume available disk space.
-
-Older, unsupported versions are also affected.</p></details></td>
         <td>2026-04-29</td>
       </tr>
       <tr>
@@ -2722,19 +2358,6 @@ Older, unsupported versions are also affected.</p></details></td>
         <td>2026-04-29</td>
       </tr>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-10503" target="_blank" rel="noopener">CVE-2025-10503</a></td>
-        <td>6.1</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-79</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p8</small></td>
-        <td>4.27</td>
-        <td><details><summary>The authentication endpoint accepts user-supplied input without enforcing expect...</summary><p>The authentication endpoint accepts user-supplied input without enforcing expected validation constraints, leading to a lack of proper output encoding. This allows for the injection of malicious JavaScript payloads, enabling reflected cross-site scripting.
-
-An attacker can leverage this vulnerability to redirect the user&#x27;s browser to a malicious website, modify the user interface of the web page, retrieve information from the browser, or cause other harmful actions. However, due to the protection of session-related cookies with the httpOnly flag, session hijacking is not possible.</p></details></td>
-        <td>2026-04-29</td>
-      </tr>
-      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35155" target="_blank" rel="noopener">CVE-2026-35155</a></td>
         <td>7.1</td>
         <td><span class="severity high">HIGH</span></td>
@@ -2776,21 +2399,6 @@ An attacker can leverage this vulnerability to redirect the user&#x27;s browser 
         <td>0.0% <small>p0</small></td>
         <td>3.01</td>
         <td><details><summary>Dell Disk Library for Mainframe, version(s) DLm 8700/2700 contain(s) a Server-Si...</summary><p>Dell Disk Library for Mainframe, version(s) DLm 8700/2700 contain(s) a Server-Side Request Forgery (SSRF) vulnerability. A low privileged attacker with remote access could potentially exploit this vulnerability, leading to Server-side request forgery.</p></details></td>
-        <td>2026-04-29</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40560" target="_blank" rel="noopener">CVE-2026-40560</a></td>
-        <td>7.5</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-444</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p8</small></td>
-        <td>5.25</td>
-        <td><details><summary>Starman versions before 0.4018 for Perl allows HTTP Request Smuggling via Improp...</summary><p>Starman versions before 0.4018 for Perl allows HTTP Request Smuggling via Improper Header Precedence.
-
-Starman incorrectly prioritizes &quot;Content-Length&quot; over &quot;Transfer-Encoding: chunked&quot; when both headers are present in an HTTP request. Per RFC 7230 3.3.3, Transfer-Encoding must take precedence.
-
-An attacker could exploit this to smuggle malicious HTTP requests via a front-end reverse proxy.</p></details></td>
         <td>2026-04-29</td>
       </tr>
       <tr>
@@ -4077,7 +3685,7 @@ An attacker could exploit this to smuggle malicious HTTP requests via a front-en
         <td>&nbsp;</td>
         <td>0.0% <small>p10</small></td>
         <td>5.11</td>
-        <td><details><summary>Memory safety bugs present in Firefox 150.0.0. Some of these bugs showed evidenc...</summary><p>Memory safety bugs present in Firefox 150.0.0. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code. This vulnerability was fixed in Firefox 150.0.1.</p></details></td>
+        <td><details><summary>Memory safety bugs present in Thunderbird 150.0.0. Some of these bugs showed evi...</summary><p>Memory safety bugs present in Thunderbird 150.0.0. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code. This vulnerability was fixed in Firefox 150.0.1 and Thunderbird 150.0.1.</p></details></td>
         <td>2026-04-28</td>
       </tr>
       <tr>
@@ -4088,7 +3696,7 @@ An attacker could exploit this to smuggle malicious HTTP requests via a front-en
         <td>&nbsp;</td>
         <td>0.0% <small>p10</small></td>
         <td>5.11</td>
-        <td><details><summary>Memory safety bugs present in Firefox ESR 140.10.0 and Firefox 150.0.0. Some of ...</summary><p>Memory safety bugs present in Firefox ESR 140.10.0 and Firefox 150.0.0. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code. This vulnerability was fixed in Firefox 150.0.1 and Firefox ESR 140.10.1.</p></details></td>
+        <td><details><summary>Memory safety bugs present in Thunderbird ESR 140.10.0 and Thunderbird 150.0.0. ...</summary><p>Memory safety bugs present in Thunderbird ESR 140.10.0 and Thunderbird 150.0.0. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code. This vulnerability was fixed in Firefox 150.0.1, Firefox ESR 140.10.1, Thunderbird 150.0.1, and Thunderbird 140.10.1.</p></details></td>
         <td>2026-04-28</td>
       </tr>
       <tr>
@@ -4099,7 +3707,7 @@ An attacker could exploit this to smuggle malicious HTTP requests via a front-en
         <td>&nbsp;</td>
         <td>0.0% <small>p11</small></td>
         <td>5.11</td>
-        <td><details><summary>Memory safety bugs present in Firefox ESR 115.35.0, Firefox ESR 140.10.0 and Fir...</summary><p>Memory safety bugs present in Firefox ESR 115.35.0, Firefox ESR 140.10.0 and Firefox 150.0.0. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code. This vulnerability was fixed in Firefox 150.0.1, Firefox ESR 140.10.1, and Firefox ESR 115.35.1.</p></details></td>
+        <td><details><summary>Memory safety bugs present in Thunderbird ESR 140.10.0 and Thunderbird 150.0.0. ...</summary><p>Memory safety bugs present in Thunderbird ESR 140.10.0 and Thunderbird 150.0.0. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code. This vulnerability was fixed in Firefox 150.0.1, Firefox ESR 140.10.1, Firefox ESR 115.35.1, Thunderbird 150.0.1, and Thunderbird 140.10.1.</p></details></td>
         <td>2026-04-28</td>
       </tr>
       <tr>
@@ -4110,7 +3718,7 @@ An attacker could exploit this to smuggle malicious HTTP requests via a front-en
         <td>&nbsp;</td>
         <td>0.0% <small>p11</small></td>
         <td>6.72</td>
-        <td><details><summary>Sandbox escape due to incorrect boundary conditions in the WebRTC: Networking co...</summary><p>Sandbox escape due to incorrect boundary conditions in the WebRTC: Networking component. This vulnerability was fixed in Firefox 150, Thunderbird 150, and Firefox ESR 140.10.1.</p></details></td>
+        <td><details><summary>Sandbox escape due to incorrect boundary conditions in the WebRTC: Networking co...</summary><p>Sandbox escape due to incorrect boundary conditions in the WebRTC: Networking component. This vulnerability was fixed in Firefox 150, Thunderbird 150, Firefox ESR 140.10.1, and Thunderbird 140.10.1.</p></details></td>
         <td>2026-04-28</td>
       </tr>
       <tr>
@@ -4121,7 +3729,7 @@ An attacker could exploit this to smuggle malicious HTTP requests via a front-en
         <td>&nbsp;</td>
         <td>0.0% <small>p8</small></td>
         <td>5.25</td>
-        <td><details><summary>Information disclosure due to incorrect boundary conditions in the Audio/Video c...</summary><p>Information disclosure due to incorrect boundary conditions in the Audio/Video component. This vulnerability was fixed in Firefox 150.0.1, Firefox ESR 140.10.1, and Firefox ESR 115.35.1.</p></details></td>
+        <td><details><summary>Information disclosure due to incorrect boundary conditions in the Audio/Video c...</summary><p>Information disclosure due to incorrect boundary conditions in the Audio/Video component. This vulnerability was fixed in Firefox 150.0.1, Firefox ESR 140.10.1, Firefox ESR 115.35.1, Thunderbird 150.0.1, and Thunderbird 140.10.1.</p></details></td>
         <td>2026-04-28</td>
       </tr>
       <tr>
@@ -4221,6 +3829,26 @@ An attacker could exploit this to smuggle malicious HTTP requests via a front-en
         <td>0.1% <small>p15</small></td>
         <td>3.85</td>
         <td><details><summary>A flaw has been found in WilliamCloudQi matlab-mcp-server up to ab88f6b9bf5f36f7...</summary><p>A flaw has been found in WilliamCloudQi matlab-mcp-server up to ab88f6b9bf5f36f725e8628029f7f6dd0d9913ca. The affected element is the function generate_matlab_code/execute_matlab_code of the file src/index.ts of the component MCP Interface. Executing a manipulation of the argument scriptPath can lead to path traversal. The attack can be executed remotely. The exploit has been published and may be used. The project was informed of the problem early through an issue report but has not responded yet.</p></details></td>
+        <td>2026-04-28</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6706" target="_blank" rel="noopener">CVE-2026-6706</a></td>
+        <td>6.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>0.0% <small>p7</small></td>
+        <td>4.55</td>
+        <td><details><summary>Improper
+ access control in the vault documentation feature in Devolutions 
+Serv...</summary><p>Improper
+ access control in the vault documentation feature in Devolutions 
+Server allows an authenticated attacker to read documentation content 
+from unauthorized vaults via a crafted API request.
+
+
+
+This issue affects Server: from 2026.1.6.0 through 2026.1.14.0, through 2025.3.18.0.</p></details></td>
         <td>2026-04-28</td>
       </tr>
       <tr>
@@ -5181,32 +4809,6 @@ An attacker could exploit this to smuggle malicious HTTP requests via a front-en
         <td>2026-04-28</td>
       </tr>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40973" target="_blank" rel="noopener">CVE-2026-40973</a></td>
-        <td>7.0</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-377</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p2</small></td>
-        <td>4.90</td>
-        <td><details><summary>A local attacker on the same host as the application may be able to take control...</summary><p>A local attacker on the same host as the application may be able to take control of the directory used by `ApplicationTemp`. When `server.servlet.session.persistent` is set to `true` and the attack persists across application restarts, this may allow the attacker to read session information and hijack authenticated users or deploy a gadget chain and execute code as the application&#x27;s user.
-
-Affected: Spring Boot 4.0.0–4.0.5 (fix 4.0.6), 3.5.0–3.5.13 (fix 3.5.14), 3.4.0–3.4.15 (fix 3.4.16), 3.3.0–3.3.18 (fix 3.3.19), 2.7.0–2.7.32 (fix 2.7.33); predictable temp directory / `ApplicationTemp` ownership verification. Versions that are no longer supported are also affected per vendor advisory.</p></details></td>
-        <td>2026-04-28</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40972" target="_blank" rel="noopener">CVE-2026-40972</a></td>
-        <td>7.5</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-208</td>
-        <td>&nbsp;</td>
-        <td>0.1% <small>p16</small></td>
-        <td>5.25</td>
-        <td><details><summary>An attacker on the same network as the remote application may be able to utilize...</summary><p>An attacker on the same network as the remote application may be able to utilize a timing attack to discover information about the remote secret. In extreme circumstances this could result in the attacker determining the secret and uploading changed classes, thereby achieving remote code execution in the remote application.
-
-Affected: Spring Boot 4.0.0–4.0.5 (fix 4.0.6), 3.5.0–3.5.13 (fix 3.5.14), 3.4.0–3.4.15 (fix 3.4.16), 3.3.0–3.3.18 (fix 3.3.19), 2.7.0–2.7.32 (fix 2.7.33); DevTools remote secret comparison. Versions that are no longer supported are also affected per vendor advisory.</p></details></td>
-        <td>2026-04-28</td>
-      </tr>
-      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-27785" target="_blank" rel="noopener">CVE-2026-27785</a></td>
         <td>7.7</td>
         <td><span class="severity high">HIGH</span></td>
@@ -6040,33 +5642,6 @@ Affected: Spring Boot 4.0.0–4.0.5 (fix 4.0.6), 3.5.0–3.5.13 (fix 3.5.14), 3.
         <td>0.0% <small>p1</small></td>
         <td>5.11</td>
         <td><details><summary>Insecure preserved inherited permissions vulnerability in Cerberus FTP Server on...</summary><p>Insecure preserved inherited permissions vulnerability in Cerberus FTP Server on Windows allows Privilege Escalation.This issue has been resolved in Cerberus FTP Server: 2026.1</p></details></td>
-        <td>2026-04-27</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40557" target="_blank" rel="noopener">CVE-2026-40557</a></td>
-        <td>4.8</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-295</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p1</small></td>
-        <td>3.36</td>
-        <td><details><summary>Improper Certificate Validation via Global SSL Context Downgrade in Apache Storm...</summary><p>Improper Certificate Validation via Global SSL Context Downgrade in Apache Storm Prometheus Reporter
-
-
-Versions Affected: from 2.6.3 to 2.8.6
-
-
-Description: 
-
-In production deployments where an administrator enables storm.daemon.metrics.reporter.plugin.prometheus.skip_tls_validation (by default it is disabled) intending to affect only the Prometheus reporter, the undocumented global side effect creates an attack surface across every TLS-protected communication channel in the Storm daemon.
-
-
-The PrometheusPreparableReporter class implements an INSECURE_TRUST_MANAGER that accepts all SSL certificates without validation, with empty checkClientTrusted and checkServerTrusted methods. Most critically, when the storm.daemon.metrics.reporter.plugin.prometheus.skip_tls_validation configuration option is enabled (default = disabled) for HTTPS Prometheus PushGateway connections, the INSECURE_CONNECTION_FACTORY calls SSLContext.setDefault(sslContext), which globally replaces the JVM&#x27;s default SSL context rather than applying the insecure context only to the Prometheus connection. This payload flows through storm.yaml configuration → PrometheusPreparableReporter.prepare() → INSECURE_CONNECTION_FACTORY → SSLContext.setDefault(), resulting in a JVM-wide TLS security downgrade. All subsequent HTTPS connections in the process - including ZooKeeper, Thrift, Netty, and UI connections - silently trust all certificates, including self-signed, expired, and attacker-generated ones, enabling man-in-the-middle interception of cluster state, topology submissions, tuple data, and administrative credentials.
-
-
-
-
-Mitigation: 2.x users should upgrade to 2.8.7 if the Prometheus Metrics Reporter is used. Prometheus Metrics Reporter Users who cannot upgrade immediately should remove the storm.daemon.metrics.reporter.plugin.prometheus.skip_tls_validation: true setting from their storm.yaml configuration and instead configure a proper truststore containing the PushGateway&#x27;s certificate.</p></details></td>
         <td>2026-04-27</td>
       </tr>
       <tr>
@@ -13580,6 +13155,29 @@ Mitigation: 2.x users should upgrade to 2.8.7 if the Prometheus Metrics Reporter
         <td>0.0% <small>p6</small></td>
         <td>3.08</td>
         <td><details><summary>The Short Comment Filter plugin for WordPress is vulnerable to Stored Cross-Site...</summary><p>The Short Comment Filter plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the &#x27;Minimum Count&#x27; settings field in all versions up to and including 2.2. This is due to insufficient input sanitization (no sanitize callback on register_setting) and missing output escaping (no esc_attr() on the echoed value in the input&#x27;s value attribute). The option value is stored via update_option() and rendered unescaped in an HTML attribute context. This makes it possible for authenticated attackers, with administrator-level access and above, to inject arbitrary web scripts in the settings page that will execute whenever a user accesses that page. This is particularly impactful in WordPress multisite installations or when DISALLOW_UNFILTERED_HTML is set, where administrators are not granted the unfiltered_html capability.</p></details></td>
+        <td>2026-04-22</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-31431" target="_blank" rel="noopener">CVE-2026-31431</a></td>
+        <td>7.8</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-669</td>
+        <td>&nbsp;</td>
+        <td>0.0% <small>p0</small></td>
+        <td>5.46</td>
+        <td><details><summary>In the Linux kernel, the following vulnerability has been resolved:
+
+crypto: alg...</summary><p>In the Linux kernel, the following vulnerability has been resolved:
+
+crypto: algif_aead - Revert to operating out-of-place
+
+This mostly reverts commit 72548b093ee3 except for the copying of
+the associated data.
+
+There is no benefit in operating in-place in algif_aead since the
+source and destination come from different mappings.  Get rid of
+all the complexity added for in-place operation and just copy the
+AD directly.</p></details></td>
         <td>2026-04-22</td>
       </tr>
       <tr>
@@ -29343,98 +28941,6 @@ Mitigation: 2.x users should upgrade to 2.8.7 if the Prometheus Metrics Reporter
         <td>0.0% <small>p2</small></td>
         <td>3.85</td>
         <td><details><summary>ImageMagick is free and open-source software used for editing and manipulating d...</summary><p>ImageMagick is free and open-source software used for editing and manipulating digital images. In versions below both 7.1.2-19 and 6.9.13-44, a stack overflow vulnerability in ImageMagick&#x27;s FX expression parser allows an attacker to crash the process by providing a deeply nested expression. This issue has been fixed in versions 6.9.13-44 and 7.1.2-19.</p></details></td>
-        <td>2026-04-13</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-22566" target="_blank" rel="noopener">CVE-2026-22566</a></td>
-        <td>7.5</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-284</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p3</small></td>
-        <td>5.25</td>
-        <td><details><summary>An Improper Access Control vulnerability could allow a malicious actor with acce...</summary><p>An Improper Access Control vulnerability could allow a malicious actor with access to the UniFi Play network to obtain UniFi Play WiFi credentials.  
-
-Affected Products:
-UniFi Play PowerAmp (Version 1.0.35 and earlier) 
-UniFi Play Audio Port  (Version 1.0.24 and earlier)  
-
-Mitigation:
-Update UniFi Play PowerAmp to Version 1.0.38 or later 
-Update UniFi Play Audio Port  to Version 1.1.9 or later</p></details></td>
-        <td>2026-04-13</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-22565" target="_blank" rel="noopener">CVE-2026-22565</a></td>
-        <td>7.5</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-20</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p6</small></td>
-        <td>5.25</td>
-        <td><details><summary>An Improper Input Validation vulnerability could allow a malicious actor with ac...</summary><p>An Improper Input Validation vulnerability could allow a malicious actor with access to the UniFi Play network to cause the device to stop responding.  
-
-Affected Products:
-UniFi Play PowerAmp (Version 1.0.35 and earlier) 
-UniFi Play Audio Port  (Version 1.0.24 and earlier)  
-
-Mitigation:
-Update UniFi Play PowerAmp to Version 1.0.38 or later 
-Update UniFi Play Audio Port  to Version 1.1.9 or later</p></details></td>
-        <td>2026-04-13</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-22564" target="_blank" rel="noopener">CVE-2026-22564</a></td>
-        <td>9.8</td>
-        <td><span class="severity critical">CRITICAL</span></td>
-        <td>CWE-284</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p5</small></td>
-        <td>6.86</td>
-        <td><details><summary>An Improper Access Control vulnerability could allow a malicious actor with acce...</summary><p>An Improper Access Control vulnerability could allow a malicious actor with access to the UniFi Play network to enable SSH to make unauthorized changes to the system.  
-
-Affected Products:
-UniFi Play PowerAmp (Version 1.0.35 and earlier) 
-UniFi Play Audio Port  (Version 1.0.24 and earlier)  
-
-Mitigation:
-Update UniFi Play PowerAmp to Version 1.0.38 or later 
-Update UniFi Play Audio Port  to Version 1.1.9 or later</p></details></td>
-        <td>2026-04-13</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-22563" target="_blank" rel="noopener">CVE-2026-22563</a></td>
-        <td>9.8</td>
-        <td><span class="severity critical">CRITICAL</span></td>
-        <td>CWE-20</td>
-        <td>&nbsp;</td>
-        <td>0.1% <small>p28</small></td>
-        <td>6.86</td>
-        <td><details><summary>A series of Improper Input Validation vulnerabilities could allow a Command Inje...</summary><p>A series of Improper Input Validation vulnerabilities could allow a Command Injection by a malicious actor with access to the UniFi Play network.
- 
-Affected Products:
-UniFi Play PowerAmp (Version 1.0.35 and earlier) 
-UniFi Play Audio Port  (Version 1.0.24 and earlier)  
-
-Mitigation:
-Update UniFi Play PowerAmp to Version 1.0.38 or later 
-Update UniFi Play Audio Port  to Version 1.1.9 or later</p></details></td>
-        <td>2026-04-13</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-22562" target="_blank" rel="noopener">CVE-2026-22562</a></td>
-        <td>9.8</td>
-        <td><span class="severity critical">CRITICAL</span></td>
-        <td>CWE-22</td>
-        <td>&nbsp;</td>
-        <td>0.2% <small>p38</small></td>
-        <td>6.87</td>
-        <td><details><summary>A malicious actor with access to the UniFi Play network could exploit a Path Tra...</summary><p>A malicious actor with access to the UniFi Play network could exploit a Path Traversal vulnerability found in the device firmware to write files on the system that could be used for a remote code execution (RCE).
- 
-Affected Products:
-UniFi Play PowerAmp (Version 1.0.35 and earlier) UniFi Play Audio Port  (Version 1.0.24 and earlier)  
-Mitigation:
-Update UniFi Play PowerAmp to Version 1.0.38 or later Update UniFi Play Audio Port  to Version 1.1.9 or later</p></details></td>
         <td>2026-04-13</td>
       </tr>
       <tr>
@@ -55545,7 +55051,7 @@ Update UniFi Play PowerAmp to Version 1.0.38 or later Update UniFi Play Audio 
       </div>
     </section>
     <section>
-      <h2>Previous Month — March 2026 <span class="count">(5744)</span></h2>
+      <h2>Previous Month — March 2026 <span class="count">(5738)</span></h2>
       <div class="table-wrapper">
         <table>
           <thead>
@@ -62922,6 +62428,18 @@ Update UniFi Play PowerAmp to Version 1.0.38 or later Update UniFi Play Audio 
         <td>2026-03-27</td>
       </tr>
       <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-27858" target="_blank" rel="noopener">CVE-2026-27858</a></td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-400</td>
+        <td>&nbsp;</td>
+        <td>0.0% <small>p5</small></td>
+        <td>5.25</td>
+        <td><details><summary>Attacker can send a specifically crafted message before authentication that caus...</summary><p>Attacker can send a specifically crafted message before authentication that causes managesieve to allocate large amount of memory.
+ Attacker can force managesieve-login to be unavailable by repeatedly crashing the process. Protect access to managesieve protocol, or install fixed version. No publicly available exploits are known.</p></details></td>
+        <td>2026-03-27</td>
+      </tr>
+      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-27857" target="_blank" rel="noopener">CVE-2026-27857</a></td>
         <td>4.3</td>
         <td><span class="severity medium">MEDIUM</span></td>
@@ -63703,6 +63221,18 @@ Update UniFi Play PowerAmp to Version 1.0.38 or later Update UniFi Play Audio 
         <td>2026-03-26</td>
       </tr>
       <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33658" target="_blank" rel="noopener">CVE-2026-33658</a></td>
+        <td>2.3</td>
+        <td><span class="severity low">LOW</span></td>
+        <td>CWE-770</td>
+        <td>&nbsp;</td>
+        <td>0.0% <small>p5</small></td>
+        <td>1.61</td>
+        <td><details><summary>Active Storage allows users to attach cloud and local files in Rails application...</summary><p>Active Storage allows users to attach cloud and local files in Rails applications. Prior to versions 8.1.2.1, 8.0.4.1, and 7.2.3.1
+Active Storage&#x27;s proxy controller does not limit the number of byte ranges in an HTTP Range header. A request with thousands of small ranges causes disproportionate CPU usage compared to a normal request for the same file, possibly resulting in a DoS vulnerability. Versions 8.1.2.1, 8.0.4.1, and 7.2.3.1 contain a patch.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33653" target="_blank" rel="noopener">CVE-2026-33653</a></td>
         <td>4.6</td>
         <td><span class="severity medium">MEDIUM</span></td>
@@ -64121,28 +63651,6 @@ Update UniFi Play PowerAmp to Version 1.0.38 or later Update UniFi Play Audio 
         <td>2026-03-26</td>
       </tr>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-0966" target="_blank" rel="noopener">CVE-2026-0966</a></td>
-        <td>8.2</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-124</td>
-        <td>&nbsp;</td>
-        <td>0.1% <small>p24</small></td>
-        <td>5.74</td>
-        <td><details><summary>The API function `ssh_get_hexa()` is vulnerable, when 0-lenght
-input is provided...</summary><p>The API function `ssh_get_hexa()` is vulnerable, when 0-lenght
-input is provided to this function. This function is used internally
-in `ssh_get_fingerprint_hash()` and `ssh_print_hexa()` (deprecated),
-which is vulnerable to the same input (length is provided by the
-calling application).
-
-The function is also used internally in the gssapi code for logging
-the OIDs received by the server during GSSAPI authentication. This
-could be triggered remotely, when the server allows GSSAPI authentication
-and logging verbosity is set at least to SSH_LOG_PACKET (3). This
-could cause self-DoS of the per-connection daemon process.</p></details></td>
-        <td>2026-03-26</td>
-      </tr>
-      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-0965" target="_blank" rel="noopener">CVE-2026-0965</a></td>
         <td>3.3</td>
         <td><span class="severity low">LOW</span></td>
@@ -64151,23 +63659,6 @@ could cause self-DoS of the per-connection daemon process.</p></details></td>
         <td>0.0% <small>p0</small></td>
         <td>2.31</td>
         <td><details><summary>A flaw was found in libssh where it can attempt to open arbitrary files during c...</summary><p>A flaw was found in libssh where it can attempt to open arbitrary files during configuration parsing. A local attacker can exploit this by providing a malicious configuration file or when the system is misconfigured. This vulnerability could lead to a Denial of Service (DoS) by causing the system to try and access dangerous files, such as block devices or large system files, which can disrupt normal operations.</p></details></td>
-        <td>2026-03-26</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-0964" target="_blank" rel="noopener">CVE-2026-0964</a></td>
-        <td>6.3</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-22</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p4</small></td>
-        <td>4.41</td>
-        <td><details><summary>A malicious SCP server can send unexpected paths that could make the
-client appl...</summary><p>A malicious SCP server can send unexpected paths that could make the
-client application override local files outside of working directory.
-This could be misused to create malicious executable or configuration
-files and make the user execute them under specific consequences.
-
-This is the same issue as in OpenSSH, tracked as CVE-2019-6111.</p></details></td>
         <td>2026-03-26</td>
       </tr>
       <tr>
@@ -65950,6 +65441,34 @@ This is the same issue as in OpenSSH, tracked as CVE-2019-6111.</p></details></t
         <td>0.0% <small>p10</small></td>
         <td>1.47</td>
         <td><details><summary>A vulnerability was found in dameng100 muucmf 1.9.5.20260309. The impacted eleme...</summary><p>A vulnerability was found in dameng100 muucmf 1.9.5.20260309. The impacted element is an unknown function of the file /admin/config/list.html. Performing a manipulation of the argument Name results in cross site scripting. The attack can be initiated remotely. The exploit has been made public and could be used. The vendor was contacted early about this disclosure but did not respond in any way.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4652" target="_blank" rel="noopener">CVE-2026-4652</a></td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-476</td>
+        <td>&nbsp;</td>
+        <td>0.1% <small>p20</small></td>
+        <td>5.25</td>
+        <td><details><summary>On a system exposing an NVMe/TCP target, a remote client can trigger a kernel pa...</summary><p>On a system exposing an NVMe/TCP target, a remote client can trigger a kernel panic by sending a CONNECT command for an I/O queue with a bogus or stale CNTLID.
+
+An attacker with network access to the NVMe/TCP target can trigger an unauthenticated Denial of Service condition on the affected machine.</p></details></td>
+        <td>2026-03-26</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4247" target="_blank" rel="noopener">CVE-2026-4247</a></td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-401</td>
+        <td>&nbsp;</td>
+        <td>0.0% <small>p8</small></td>
+        <td>5.25</td>
+        <td><details><summary>When a challenge ACK is to be sent tcp_respond() constructs and sends the challe...</summary><p>When a challenge ACK is to be sent tcp_respond() constructs and sends the challenge ACK and consumes the mbuf that is passed in.  When no challenge ACK should be sent the function returns and leaks the mbuf.
+
+If an attacker is either on path with an established TCP connection, or can themselves establish a TCP connection, to an affected FreeBSD machine, they can easily craft and send packets which meet the challenge ACK criteria and cause the FreeBSD host to leak an mbuf for each crafted packet in excess of the configured rate limit settings i.e. with default settings, crafted packets in excess of the first 5 sent within a 1s period will leak an mbuf.
+
+Technically, off-path attackers can also exploit this problem by guessing the IP addresses, TCP port numbers and in some cases the sequence numbers of established connections and spoofing packets towards a FreeBSD machine, but this is harder to do effectively.</p></details></td>
         <td>2026-03-26</td>
       </tr>
       <tr>
@@ -72190,25 +71709,6 @@ This is the same issue as in OpenSSH, tracked as CVE-2019-6111.</p></details></t
         <td>2026-03-24</td>
       </tr>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-22559" target="_blank" rel="noopener">CVE-2026-22559</a></td>
-        <td>8.8</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-20</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p8</small></td>
-        <td>6.16</td>
-        <td><details><summary>An Improper Input Validation vulnerability in UniFi Network Server may allow una...</summary><p>An Improper Input Validation vulnerability in UniFi Network Server may allow unauthorized access to an account if the account owner is socially engineered into clicking a malicious link.
-
-
-Affected Products:
-UniFi Network Server (Version 10.1.85 and earlier) 
-
-
-Mitigation:
-Update UniFi Network Server to Version 10.1.89 or later.</p></details></td>
-        <td>2026-03-24</td>
-      </tr>
-      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-21783" target="_blank" rel="noopener">CVE-2026-21783</a></td>
         <td>4.3</td>
         <td><span class="severity medium">MEDIUM</span></td>
@@ -74046,19 +73546,6 @@ Update UniFi Network Server to Version 10.1.89 or later.</p></details></td>
         <td>2026-03-24</td>
       </tr>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4741" target="_blank" rel="noopener">CVE-2026-4741</a></td>
-        <td>8.6</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-22</td>
-        <td>&nbsp;</td>
-        <td>0.1% <small>p20</small></td>
-        <td>6.02</td>
-        <td><details><summary>Improper Limitation of a Pathname to a Restricted Directory (&#x27;Path Traversal&#x27;) v...</summary><p>Improper Limitation of a Pathname to a Restricted Directory (&#x27;Path Traversal&#x27;) vulnerability in TeamJCD JoyConDroid (app/src/main/java/com/rdapps/gamepad/util modules). This vulnerability is associated with program files UnzipUtil.Java‎.
-
-This issue affects JoyConDroid: through 1.0.93.</p></details></td>
-        <td>2026-03-24</td>
-      </tr>
-      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4739" target="_blank" rel="noopener">CVE-2026-4739</a></td>
         <td>9.4</td>
         <td><span class="severity critical">CRITICAL</span></td>
@@ -74070,58 +73557,6 @@ This issue affects JoyConDroid: through 1.0.93.</p></details></td>
         <td>2026-03-24</td>
       </tr>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4737" target="_blank" rel="noopener">CVE-2026-4737</a></td>
-        <td>7.3</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-416</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p4</small></td>
-        <td>5.11</td>
-        <td><details><summary>Use After Free vulnerability in No-Chicken Echo-Mate (‎SDK/rv1106-sdk/sysdrv/sou...</summary><p>Use After Free vulnerability in No-Chicken Echo-Mate (‎SDK/rv1106-sdk/sysdrv/source/kernel/mm modules). This vulnerability is associated with program files rmap.C‎.
-
-This issue affects Echo-Mate: before V250329.</p></details></td>
-        <td>2026-03-24</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4736" target="_blank" rel="noopener">CVE-2026-4736</a></td>
-        <td>7.3</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-229</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p4</small></td>
-        <td>5.11</td>
-        <td><details><summary>Improper Handling of Values vulnerability in No-Chicken Echo-Mate (SDK/rv1106-sd...</summary><p>Improper Handling of Values vulnerability in No-Chicken Echo-Mate (SDK/rv1106-sdk/sysdrv/source/kernel/include/net/netfilter modules). This vulnerability is associated with program files nf_tables.H‎, nft_byteorder.C‎, nft_meta.C‎.
-
-This issue affects Echo-Mate: before V250329.</p></details></td>
-        <td>2026-03-24</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4735" target="_blank" rel="noopener">CVE-2026-4735</a></td>
-        <td>8.7</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-502</td>
-        <td>&nbsp;</td>
-        <td>0.1% <small>p17</small></td>
-        <td>6.09</td>
-        <td><details><summary>Deserialization of Untrusted Data vulnerability in DTStack chunjun (‎chunjun-cor...</summary><p>Deserialization of Untrusted Data vulnerability in DTStack chunjun (‎chunjun-core/src/main/java/com/dtstack/chunjun/util modules). This vulnerability is associated with program files GsonUtil.Java.
-
-This issue affects chunjun: before 1.16.1.</p></details></td>
-        <td>2026-03-24</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4734" target="_blank" rel="noopener">CVE-2026-4734</a></td>
-        <td>9.4</td>
-        <td><span class="severity critical">CRITICAL</span></td>
-        <td>CWE-119</td>
-        <td>&nbsp;</td>
-        <td>0.1% <small>p18</small></td>
-        <td>6.58</td>
-        <td><details><summary>Improper Restriction of Operations within the Bounds of a Memory Buffer vulnerab...</summary><p>Improper Restriction of Operations within the Bounds of a Memory Buffer vulnerability in yoyofr modizer (libs/libopenmpt/openmpt-trunk/include/premake/contrib/curl/lib modules). This vulnerability is associated with program files imap.C‎.
-
-This issue affects modizer: before v4.3.</p></details></td>
-        <td>2026-03-24</td>
-      </tr>
-      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4733" target="_blank" rel="noopener">CVE-2026-4733</a></td>
         <td>5.3</td>
         <td><span class="severity medium">MEDIUM</span></td>
@@ -74130,32 +73565,6 @@ This issue affects modizer: before v4.3.</p></details></td>
         <td>0.1% <small>p17</small></td>
         <td>3.71</td>
         <td><details><summary>Exposure of Sensitive Information to an Unauthorized Actor vulnerability in ixra...</summary><p>Exposure of Sensitive Information to an Unauthorized Actor vulnerability in ixray-team ixray-1.6-stcop.This issue affects ixray-1.6-stcop: before 1.3.</p></details></td>
-        <td>2026-03-24</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4732" target="_blank" rel="noopener">CVE-2026-4732</a></td>
-        <td>8.4</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-125</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p5</small></td>
-        <td>5.88</td>
-        <td><details><summary>Out-of-bounds Read vulnerability in tildearrow furnace (‎extern/libsndfile-modif...</summary><p>Out-of-bounds Read vulnerability in tildearrow furnace (‎extern/libsndfile-modified/src modules). This vulnerability is associated with program files flac.C‎.
-
-This issue affects furnace: before 0.7.</p></details></td>
-        <td>2026-03-24</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4731" target="_blank" rel="noopener">CVE-2026-4731</a></td>
-        <td>8.5</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-190</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p5</small></td>
-        <td>5.95</td>
-        <td><details><summary>Integer Overflow or Wraparound vulnerability in artraweditor ART (‎rtengine‎ mod...</summary><p>Integer Overflow or Wraparound vulnerability in artraweditor ART (‎rtengine‎ modules). This vulnerability is associated with program files dcraw.C.
-
-This issue affects ART: before 1.25.12.</p></details></td>
         <td>2026-03-24</td>
       </tr>
       <tr>
