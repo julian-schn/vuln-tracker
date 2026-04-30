@@ -1,9 +1,15 @@
 # CVEs — April 2026
 
-_4903 vulnerabilities_
+_4904 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
+| [CVE-2026-7379](https://nvd.nist.gov/vuln/detail/CVE-2026-7379) | 5.5 | MEDIUM | CWE-401 | No | — | 3.85 | 2026-04-30 | Memory leak in sharkd 4.6.0 to 4.6.4 and 4.4.0 to 4.4.14 allows denial of service |
+| [CVE-2026-7378](https://nvd.nist.gov/vuln/detail/CVE-2026-7378) | 5.5 | MEDIUM | CWE-122 | No | — | 3.85 | 2026-04-30 | Crash in sharkd 4.6.0 to 4.6.4 and 4.4.0 to 4.4.14 allows denial of service |
+| [CVE-2026-7376](https://nvd.nist.gov/vuln/detail/CVE-2026-7376) | 5.5 | MEDIUM | CWE-476 | No | — | 3.85 | 2026-04-30 | Crash in sharkd 4.6.0 to 4.6.4 and 4.4.0 to 4.4.14 allows denial of service |
+| [CVE-2026-7375](https://nvd.nist.gov/vuln/detail/CVE-2026-7375) | 5.5 | MEDIUM | CWE-835 | No | — | 3.85 | 2026-04-30 | UDS protocol dissector infinite loop in Wireshark 4.6.0 to 4.6.4 and 4.4.0 to 4.4.14 allows denial of service |
+| [CVE-2026-6868](https://nvd.nist.gov/vuln/detail/CVE-2026-6868) | 5.5 | MEDIUM | CWE-121 | No | — | 3.85 | 2026-04-30 | HTTP protocol dissector crash in Wireshark 4.6.0 to 4.6.4 and 4.4.0 to 4.4.14 allows denial of service |
+| [CVE-2025-13030](https://nvd.nist.gov/vuln/detail/CVE-2025-13030) | 2.0 | LOW | CWE-306 | No | — | 1.40 | 2026-04-30 | All versions of the package django-mdeditor are vulnerable to Missing Authentication for Critical Function in the image... |
 | [CVE-2026-7470](https://nvd.nist.gov/vuln/detail/CVE-2026-7470) | 7.4 | HIGH | CWE-119 | No | — | 5.18 | 2026-04-30 | A flaw has been found in Tenda 4G300 US_4G300V1.0Mt_V1.01.42_CN_TDC01. Affected is the function sub_427C3C of the file /... |
 | [CVE-2026-7469](https://nvd.nist.gov/vuln/detail/CVE-2026-7469) | 2.1 | LOW | CWE-74 | No | — | 1.47 | 2026-04-30 | A vulnerability was detected in Tenda 4G300 US_4G300V1.0Mt_V1.01.42_CN_TDC01. This impacts the function sub_425A28 of th... |
 | [CVE-2026-7468](https://nvd.nist.gov/vuln/detail/CVE-2026-7468) | 5.5 | MEDIUM | CWE-266 | No | — | 3.85 | 2026-04-30 | A security vulnerability has been detected in 1024-lab smart-admin up to 3.30.0. This affects an unknown function of the... |
@@ -13,7 +19,6 @@ _4903 vulnerabilities_
 | [CVE-2026-7443](https://nvd.nist.gov/vuln/detail/CVE-2026-7443) | 5.5 | MEDIUM | CWE-77 | No | — | 3.85 | 2026-04-29 | A weakness has been identified in BurtTheCoder mcp-dnstwist up to 1.0.4. Affected by this vulnerability is the function... |
 | [CVE-2026-7420](https://nvd.nist.gov/vuln/detail/CVE-2026-7420) | 7.4 | HIGH | CWE-119 | No | — | 5.18 | 2026-04-29 | A security flaw has been discovered in UTT HiPER 1250GW up to 3.2.7-210907-180535. Impacted is the function strcpy of th... |
 | [CVE-2026-7419](https://nvd.nist.gov/vuln/detail/CVE-2026-7419) | 7.4 | HIGH | CWE-119 | No | — | 5.18 | 2026-04-29 | A vulnerability was identified in UTT HiPER 1250GW up to 3.2.7-210907-180535. This issue affects the function strcpy of... |
-| [CVE-2026-7381](https://nvd.nist.gov/vuln/detail/CVE-2026-7381) | 0.0 | NONE | CWE-200 | No | — | 0.00 | 2026-04-29 | Plack::Middleware::XSendfile versions through 1.0053 for Perl can allow client-controlled path rewriting.  Plack::Middle... |
 | [CVE-2026-6221](https://nvd.nist.gov/vuln/detail/CVE-2026-6221) | 0.0 | NONE | N/A | No | — | 0.00 | 2026-04-29 | Rejected reason: This CVE ID has been rejected or withdrawn by its CVE Numbering Authority. |
 | [CVE-2026-7418](https://nvd.nist.gov/vuln/detail/CVE-2026-7418) | 7.4 | HIGH | CWE-119 | No | — | 5.18 | 2026-04-29 | A vulnerability was determined in UTT HiPER 1250GW up to 3.2.7-210907-180535. This vulnerability affects the function st... |
 | [CVE-2026-7417](https://nvd.nist.gov/vuln/detail/CVE-2026-7417) | 5.5 | MEDIUM | CWE-918 | No | — | 3.85 | 2026-04-29 | A vulnerability was found in Algovate xhs-mcp 0.8.11. This affects the function xhs_publish_content of the file src/serv... |
@@ -26,8 +31,6 @@ _4903 vulnerabilities_
 | [CVE-2026-7403](https://nvd.nist.gov/vuln/detail/CVE-2026-7403) | 5.5 | MEDIUM | CWE-22 | No | — | 3.85 | 2026-04-29 | A security flaw has been discovered in geldata gel-mcp 0.1.0. This impacts the function list_rules/fetch_rule of the fil... |
 | [CVE-2026-1858](https://nvd.nist.gov/vuln/detail/CVE-2026-1858) | 4.8 | MEDIUM | CWE-20 | No | — | 3.36 | 2026-04-29 | wget2 accepts a server certificate with incorrect Key Usage (KU) or Extended Key Usage (EKU). If the attackers compromis... |
 | [CVE-2025-50328](https://nvd.nist.gov/vuln/detail/CVE-2025-50328) | 0.0 | NONE | N/A | No | — | 0.00 | 2026-04-29 | A vulnerability in B1 Free Archiver v1.5.86 allows files extracted from downloaded archives to bypass Windows Mark of th... |
-| [CVE-2026-7426](https://nvd.nist.gov/vuln/detail/CVE-2026-7426) | 6.1 | MEDIUM | CWE-787 | No | — | 4.27 | 2026-04-29 | Insufficient validation of the prefix length field in IPv6 Router Advertisement processing in FreeRTOS-Plus-TCP before V... |
-| [CVE-2026-7425](https://nvd.nist.gov/vuln/detail/CVE-2026-7425) | 6.0 | MEDIUM | CWE-125 | No | — | 4.20 | 2026-04-29 | Insufficient option length validation in the IPv6 Router Advertisement parser in FreeRTOS-Plus-TCP before V4.2.6 and V4.... |
 | [CVE-2026-7401](https://nvd.nist.gov/vuln/detail/CVE-2026-7401) | 2.1 | LOW | CWE-79 | No | — | 1.47 | 2026-04-29 | A vulnerability was detected in SourceCodester CET Automated Grading System with AI Predictive Analytics 1.0. This vulne... |
 | [CVE-2026-7400](https://nvd.nist.gov/vuln/detail/CVE-2026-7400) | 5.5 | MEDIUM | CWE-22 | No | — | 3.85 | 2026-04-29 | A security vulnerability has been detected in geekgod382 filesystem-mcp-server 1.0.0. This issue affects the function is... |
 | [CVE-2026-34965](https://nvd.nist.gov/vuln/detail/CVE-2026-34965) | 8.7 | HIGH | CWE-94 | No | — | 6.09 | 2026-04-29 | Cockpit CMS contains an authenticated remote code execution vulnerability in the /cockpit/collections/save_collection en... |
@@ -54,7 +57,6 @@ _4903 vulnerabilities_
 | [CVE-2018-25298](https://nvd.nist.gov/vuln/detail/CVE-2018-25298) | 6.9 | MEDIUM | CWE-352 | No | — | 4.83 | 2026-04-29 | Merge PACS 7.0 contains a cross-site request forgery vulnerability that allows attackers to perform unauthorized actions... |
 | [CVE-2026-7466](https://nvd.nist.gov/vuln/detail/CVE-2026-7466) | 7.7 | HIGH | CWE-94 | No | — | 5.39 | 2026-04-29 | AgentFlow contains an arbitrary code execution vulnerability that allows attackers to execute local Python pipeline file... |
 | [CVE-2026-7439](https://nvd.nist.gov/vuln/detail/CVE-2026-7439) | 4.8 | MEDIUM | CWE-346 | No | — | 3.36 | 2026-04-29 | AgentFlow's local web API accepts non-JSON content types on POST /api/runs and POST /api/runs/validate endpoints without... |
-| [CVE-2026-7424](https://nvd.nist.gov/vuln/detail/CVE-2026-7424) | 7.2 | HIGH | CWE-191 | No | — | 5.04 | 2026-04-29 | Integer underflow in the DHCPv6 sub-option parser in FreeRTOS-Plus-TCP before V4.4.1 and V4.2.6 allows an adjacent netwo... |
 | [CVE-2026-7398](https://nvd.nist.gov/vuln/detail/CVE-2026-7398) | 5.5 | MEDIUM | CWE-22 | No | — | 3.85 | 2026-04-29 | A weakness has been identified in florensiawidjaja BioinfoMCP up to 7ada7918b9e515604d3c0ae264d3a9af10bf6e54. This vulne... |
 | [CVE-2026-7397](https://nvd.nist.gov/vuln/detail/CVE-2026-7397) | 1.9 | LOW | CWE-59 | No | — | 1.33 | 2026-04-29 | A security flaw has been discovered in NousResearch hermes-agent 0.8.0. This affects the function _check_sensitive_path... |
 | [CVE-2026-41499](https://nvd.nist.gov/vuln/detail/CVE-2026-41499) | 6.5 | MEDIUM | CWE-124 | No | — | 4.55 | 2026-04-29 | Wazuh is a free and open source platform used for threat prevention, detection, and response. From version 4.0.0 to befo... |
@@ -4253,7 +4255,6 @@ _4903 vulnerabilities_
 | [CVE-2026-5552](https://nvd.nist.gov/vuln/detail/CVE-2026-5552) | 2.1 | LOW | CWE-74 | No | 0.0% | 1.47 | 2026-04-05 | A weakness has been identified in PHPGurukul Online Shopping Portal Project 2.1. This issue affects some unknown process... |
 | [CVE-2026-5551](https://nvd.nist.gov/vuln/detail/CVE-2026-5551) | 5.5 | MEDIUM | CWE-74 | No | 0.0% | 3.85 | 2026-04-05 | A security flaw has been discovered in itsourcecode Free Hotel Reservation System 1.0. This vulnerability affects unknow... |
 | [CVE-2026-5550](https://nvd.nist.gov/vuln/detail/CVE-2026-5550) | 8.7 | HIGH | CWE-119 | No | 0.0% | 6.09 | 2026-04-05 | A vulnerability was identified in Tenda AC10 16.03.10.10_multi_TDE01. This affects the function fromSysToolChangePwd of... |
-| [CVE-2026-5549](https://nvd.nist.gov/vuln/detail/CVE-2026-5549) | 5.5 | MEDIUM | CWE-320 | No | 0.0% | 3.85 | 2026-04-05 | A vulnerability was determined in Tenda AC10 16.03.10.10_multi_TDE01. Affected by this issue is some unknown functionali... |
 | [CVE-2026-5548](https://nvd.nist.gov/vuln/detail/CVE-2026-5548) | 8.7 | HIGH | CWE-119 | No | 0.0% | 6.09 | 2026-04-05 | A vulnerability was found in Tenda AC10 16.03.10.10_multi_TDE01. Affected by this vulnerability is the function fromSysT... |
 | [CVE-2026-5547](https://nvd.nist.gov/vuln/detail/CVE-2026-5547) | 5.3 | MEDIUM | CWE-77 | No | 0.8% | 3.73 | 2026-04-05 | A vulnerability has been found in Tenda AC10 16.03.10.10_multi_TDE01. Affected is the function formAddMacfilterRule of t... |
 | [CVE-2026-5546](https://nvd.nist.gov/vuln/detail/CVE-2026-5546) | 2.1 | LOW | CWE-284 | No | 0.0% | 1.47 | 2026-04-05 | A flaw has been found in Campcodes Complete Online Learning Management System 1.0. This impacts the function add_lesson... |
