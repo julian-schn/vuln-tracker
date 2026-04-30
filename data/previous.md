@@ -1,6 +1,6 @@
 # CVEs — March 2026
 
-_5734 vulnerabilities_
+_5744 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
@@ -782,7 +782,9 @@ _5734 vulnerabilities_
 | [CVE-2026-21724](https://nvd.nist.gov/vuln/detail/CVE-2026-21724) | 5.4 | MEDIUM | CWE-285 | No | 0.0% | 3.78 | 2026-03-26 | A vulnerability has been discovered in Grafana OSS where an authorization bypass in the provisioning contact points API... |
 | [CVE-2026-0968](https://nvd.nist.gov/vuln/detail/CVE-2026-0968) | 3.1 | LOW | CWE-476 | No | 0.0% | 2.17 | 2026-03-26 | A flaw was found in libssh in which a malicious SFTP (SSH File Transfer Protocol) server can exploit this by sending a m... |
 | [CVE-2026-0967](https://nvd.nist.gov/vuln/detail/CVE-2026-0967) | 5.5 | MEDIUM | CWE-1333 | No | 0.0% | 3.85 | 2026-03-26 | A flaw was found in libssh. A remote attacker, by controlling client configuration files or known_hosts files, could cra... |
+| [CVE-2026-0966](https://nvd.nist.gov/vuln/detail/CVE-2026-0966) | 8.2 | HIGH | CWE-124 | No | 0.1% | 5.74 | 2026-03-26 | The API function `ssh_get_hexa()` is vulnerable, when 0-lenght input is provided to this function. This function is used... |
 | [CVE-2026-0965](https://nvd.nist.gov/vuln/detail/CVE-2026-0965) | 3.3 | LOW | CWE-73 | No | 0.0% | 2.31 | 2026-03-26 | A flaw was found in libssh where it can attempt to open arbitrary files during configuration parsing. A local attacker c... |
+| [CVE-2026-0964](https://nvd.nist.gov/vuln/detail/CVE-2026-0964) | 6.3 | MEDIUM | CWE-22 | No | 0.0% | 4.41 | 2026-03-26 | A malicious SCP server can send unexpected paths that could make the client application override local files outside of... |
 | [CVE-2026-33632](https://nvd.nist.gov/vuln/detail/CVE-2026-33632) | 8.4 | HIGH | CWE-862 | No | 0.0% | 5.88 | 2026-03-26 | ClearanceKit intercepts file-system access events on macOS and enforces per-process access policies. Prior to version 4.... |
 | [CVE-2026-33631](https://nvd.nist.gov/vuln/detail/CVE-2026-33631) | 8.7 | HIGH | CWE-862 | No | 0.0% | 6.09 | 2026-03-26 | ClearanceKit intercepts file-system access events on macOS and enforces per-process access policies. In versions on the... |
 | [CVE-2026-33536](https://nvd.nist.gov/vuln/detail/CVE-2026-33536) | 5.1 | MEDIUM | CWE-121 | No | 0.0% | 3.57 | 2026-03-26 | ImageMagick is free and open-source software used for editing and manipulating digital images. Prior to 7.1.2-18 and 6.9... |
@@ -1512,6 +1514,7 @@ _5734 vulnerabilities_
 | [CVE-2026-33322](https://nvd.nist.gov/vuln/detail/CVE-2026-33322) | 9.2 | CRITICAL | CWE-287 | No | 0.0% | 6.44 | 2026-03-24 | MinIO is a high-performance object storage system. From RELEASE.2022-11-08T05-27-07Z to before RELEASE.2026-03-17T21-25-... |
 | [CVE-2026-33314](https://nvd.nist.gov/vuln/detail/CVE-2026-33314) | 6.5 | MEDIUM | CWE-287 | No | 0.0% | 4.55 | 2026-03-24 | pyLoad is a free and open-source download manager written in Python. Prior to version 0.5.0b3.dev97, a Host Header Spoof... |
 | [CVE-2026-32948](https://nvd.nist.gov/vuln/detail/CVE-2026-32948) | 6.7 | MEDIUM | CWE-78 | No | 0.0% | 4.69 | 2026-03-24 | sbt is a build tool for Scala, Java, and others. From version 0.9.5 to before version 1.12.7, on Windows, sbt uses Proce... |
+| [CVE-2026-22559](https://nvd.nist.gov/vuln/detail/CVE-2026-22559) | 8.8 | HIGH | CWE-20 | No | 0.0% | 6.16 | 2026-03-24 | An Improper Input Validation vulnerability in UniFi Network Server may allow unauthorized access to an account if the ac... |
 | [CVE-2026-21783](https://nvd.nist.gov/vuln/detail/CVE-2026-21783) | 4.3 | MEDIUM | CWE-209 | No | 0.0% | 3.01 | 2026-03-24 | HCL Traveler is affected by sensitive information disclosure.  The application generates some error messages that provid... |
 | [CVE-2026-33769](https://nvd.nist.gov/vuln/detail/CVE-2026-33769) | 2.9 | LOW | CWE-20 | No | 0.0% | 2.03 | 2026-03-24 | Astro is a web framework. From version 2.10.10 to before version 5.18.1, this issue concerns Astro's remotePatterns path... |
 | [CVE-2026-33768](https://nvd.nist.gov/vuln/detail/CVE-2026-33768) | 6.5 | MEDIUM | CWE-441 | No | 0.0% | 4.55 | 2026-03-24 | Astro is a web framework. Prior to version 10.0.2, the @astrojs/vercel serverless entrypoint reads the x-astro-path head... |
@@ -1679,8 +1682,15 @@ _5734 vulnerabilities_
 | [CVE-2026-4283](https://nvd.nist.gov/vuln/detail/CVE-2026-4283) | 9.1 | CRITICAL | CWE-862 | No | 0.2% | 6.38 | 2026-03-24 | The WP DSGVO Tools (GDPR) plugin for WordPress is vulnerable to unauthorized account destruction in all versions up to,... |
 | [CVE-2026-3260](https://nvd.nist.gov/vuln/detail/CVE-2026-3260) | 5.9 | MEDIUM | CWE-770 | No | 0.6% | 4.15 | 2026-03-24 | A flaw was found in Undertow. A remote attacker could exploit this vulnerability by sending an HTTP GET request containi... |
 | [CVE-2026-3138](https://nvd.nist.gov/vuln/detail/CVE-2026-3138) | 6.5 | MEDIUM | CWE-862 | No | 0.1% | 4.55 | 2026-03-24 | The Product Filter for WooCommerce by WBW plugin for WordPress is vulnerable to unauthorized data loss due to a missing... |
+| [CVE-2026-4741](https://nvd.nist.gov/vuln/detail/CVE-2026-4741) | 8.6 | HIGH | CWE-22 | No | 0.1% | 6.02 | 2026-03-24 | Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal') vulnerability in TeamJCD JoyConDroid (app... |
 | [CVE-2026-4739](https://nvd.nist.gov/vuln/detail/CVE-2026-4739) | 9.4 | CRITICAL | CWE-190 | No | 0.1% | 6.58 | 2026-03-24 | Integer Overflow or Wraparound vulnerability in InsightSoftwareConsortium ITK (‎Modules/ThirdParty/Expat/src/expat modul... |
+| [CVE-2026-4737](https://nvd.nist.gov/vuln/detail/CVE-2026-4737) | 7.3 | HIGH | CWE-416 | No | 0.0% | 5.11 | 2026-03-24 | Use After Free vulnerability in No-Chicken Echo-Mate (‎SDK/rv1106-sdk/sysdrv/source/kernel/mm modules). This vulnerabili... |
+| [CVE-2026-4736](https://nvd.nist.gov/vuln/detail/CVE-2026-4736) | 7.3 | HIGH | CWE-229 | No | 0.0% | 5.11 | 2026-03-24 | Improper Handling of Values vulnerability in No-Chicken Echo-Mate (SDK/rv1106-sdk/sysdrv/source/kernel/include/net/netfi... |
+| [CVE-2026-4735](https://nvd.nist.gov/vuln/detail/CVE-2026-4735) | 8.7 | HIGH | CWE-502 | No | 0.1% | 6.09 | 2026-03-24 | Deserialization of Untrusted Data vulnerability in DTStack chunjun (‎chunjun-core/src/main/java/com/dtstack/chunjun/util... |
+| [CVE-2026-4734](https://nvd.nist.gov/vuln/detail/CVE-2026-4734) | 9.4 | CRITICAL | CWE-119 | No | 0.1% | 6.58 | 2026-03-24 | Improper Restriction of Operations within the Bounds of a Memory Buffer vulnerability in yoyofr modizer (libs/libopenmpt... |
 | [CVE-2026-4733](https://nvd.nist.gov/vuln/detail/CVE-2026-4733) | 5.3 | MEDIUM | CWE-200 | No | 0.1% | 3.71 | 2026-03-24 | Exposure of Sensitive Information to an Unauthorized Actor vulnerability in ixray-team ixray-1.6-stcop.This issue affect... |
+| [CVE-2026-4732](https://nvd.nist.gov/vuln/detail/CVE-2026-4732) | 8.4 | HIGH | CWE-125 | No | 0.0% | 5.88 | 2026-03-24 | Out-of-bounds Read vulnerability in tildearrow furnace (‎extern/libsndfile-modified/src modules). This vulnerability is... |
+| [CVE-2026-4731](https://nvd.nist.gov/vuln/detail/CVE-2026-4731) | 8.5 | HIGH | CWE-190 | No | 0.0% | 5.95 | 2026-03-24 | Integer Overflow or Wraparound vulnerability in artraweditor ART (‎rtengine‎ modules). This vulnerability is associated... |
 | [CVE-2026-4626](https://nvd.nist.gov/vuln/detail/CVE-2026-4626) | 2.0 | LOW | CWE-79 | No | 0.0% | 1.40 | 2026-03-24 | A vulnerability has been found in projectworlds Lawyer Management System 1.0. This impacts an unknown function of the fi... |
 | [CVE-2026-4625](https://nvd.nist.gov/vuln/detail/CVE-2026-4625) | 5.5 | MEDIUM | CWE-74 | No | 0.0% | 3.85 | 2026-03-24 | A flaw has been found in SourceCodester Online Admission System 1.0. This affects an unknown function of the file /progr... |
 | [CVE-2026-4624](https://nvd.nist.gov/vuln/detail/CVE-2026-4624) | 5.5 | MEDIUM | CWE-74 | No | 0.0% | 3.85 | 2026-03-24 | A vulnerability was detected in SourceCodester Online Library Management System 1.0. The impacted element is an unknown... |
