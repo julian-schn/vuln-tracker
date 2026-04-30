@@ -1,6 +1,6 @@
 # CVEs — March 2026
 
-_5738 vulnerabilities_
+_5734 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
@@ -673,7 +673,6 @@ _5738 vulnerabilities_
 | [CVE-2026-3457](https://nvd.nist.gov/vuln/detail/CVE-2026-3457) | 7.0 | HIGH | CWE-79 | No | 0.0% | 4.90 | 2026-03-27 | Improper Neutralization of Input During Web Page Generation (XSS or 'Cross-site Scripting') vulnerability in Thales Sent... |
 | [CVE-2026-27860](https://nvd.nist.gov/vuln/detail/CVE-2026-27860) | 3.7 | LOW | CWE-90 | No | 0.0% | 2.59 | 2026-03-27 | If auth_username_chars is empty, it is possible to inject arbitrary LDAP filter to Dovecot's LDAP authentication. This l... |
 | [CVE-2026-27859](https://nvd.nist.gov/vuln/detail/CVE-2026-27859) | 5.3 | MEDIUM | CWE-400 | No | 0.0% | 3.71 | 2026-03-27 | A mail message containing excessive amount of RFC 2231 MIME parameters causes LMTP to use too much CPU. A suitably forma... |
-| [CVE-2026-27858](https://nvd.nist.gov/vuln/detail/CVE-2026-27858) | 7.5 | HIGH | CWE-400 | No | 0.0% | 5.25 | 2026-03-27 | Attacker can send a specifically crafted message before authentication that causes managesieve to allocate large amount... |
 | [CVE-2026-27857](https://nvd.nist.gov/vuln/detail/CVE-2026-27857) | 4.3 | MEDIUM | CWE-400 | No | 0.0% | 3.01 | 2026-03-27 | Sending "NOOP (((...)))" command with 4000 parenthesis open+close results in ~1MB extra memory usage. Longer commands wi... |
 | [CVE-2026-27856](https://nvd.nist.gov/vuln/detail/CVE-2026-27856) | 7.4 | HIGH | CWE-287 | No | 0.0% | 5.18 | 2026-03-27 | Doveadm credentials are verified using direct comparison which is susceptible to timing oracle attack. An attacker can u... |
 | [CVE-2026-27855](https://nvd.nist.gov/vuln/detail/CVE-2026-27855) | 6.8 | MEDIUM | CWE-294 | No | 0.0% | 4.76 | 2026-03-27 | Dovecot OTP authentication is vulnerable to replay attack under specific conditions. If auth cache is enabled, and usern... |
@@ -745,7 +744,6 @@ _5738 vulnerabilities_
 | [CVE-2026-33669](https://nvd.nist.gov/vuln/detail/CVE-2026-33669) | 9.8 | CRITICAL | CWE-125 | No | 0.0% | 6.86 | 2026-03-26 | SiYuan is a personal knowledge management system. Prior to version 3.6.2, document IDs were retrieved via the /api/file/... |
 | [CVE-2026-33664](https://nvd.nist.gov/vuln/detail/CVE-2026-33664) | 7.3 | HIGH | CWE-79 | No | 0.1% | 5.11 | 2026-03-26 | Kestra is an open-source, event-driven orchestration platform Versions up to and including 1.3.3 render user-supplied fl... |
 | [CVE-2026-33661](https://nvd.nist.gov/vuln/detail/CVE-2026-33661) | 8.6 | HIGH | CWE-290 | No | 0.0% | 6.02 | 2026-03-26 | Pay is an open-source payment SDK extension package for various Chinese payment services. Prior to version 3.7.20, the `... |
-| [CVE-2026-33658](https://nvd.nist.gov/vuln/detail/CVE-2026-33658) | 2.3 | LOW | CWE-770 | No | 0.0% | 1.61 | 2026-03-26 | Active Storage allows users to attach cloud and local files in Rails applications. Prior to versions 8.1.2.1, 8.0.4.1, a... |
 | [CVE-2026-33653](https://nvd.nist.gov/vuln/detail/CVE-2026-33653) | 4.6 | MEDIUM | CWE-79 | No | 0.0% | 3.22 | 2026-03-26 | Ulloady is a file uploader script with multi-file upload support. A Stored Cross-Site Scripting (XSS) vulnerability exis... |
 | [CVE-2026-1556](https://nvd.nist.gov/vuln/detail/CVE-2026-1556) | 6.9 | MEDIUM | CWE-200 | No | 0.0% | 4.83 | 2026-03-26 | Information disclosure in the file URI processing of File (Field) Paths in Drupal File (Field) Paths 7.x prior to 7.1.3... |
 | [CVE-2025-12805](https://nvd.nist.gov/vuln/detail/CVE-2025-12805) | 8.1 | HIGH | CWE-653 | No | 0.0% | 5.67 | 2026-03-26 | A flaw was found in Red Hat OpenShift AI (RHOAI) llama-stack-operator. This vulnerability allows unauthorized access to... |
@@ -947,8 +945,6 @@ _5738 vulnerabilities_
 | [CVE-2026-4849](https://nvd.nist.gov/vuln/detail/CVE-2026-4849) | 2.1 | LOW | CWE-79 | No | 0.0% | 1.47 | 2026-03-26 | A vulnerability was identified in code-projects Simple Laundry System 1.0. This impacts an unknown function of the file... |
 | [CVE-2026-4848](https://nvd.nist.gov/vuln/detail/CVE-2026-4848) | 2.1 | LOW | CWE-79 | No | 0.0% | 1.47 | 2026-03-26 | A vulnerability was determined in dameng100 muucmf 1.9.5.20260309. This affects an unknown function of the file /admin/e... |
 | [CVE-2026-4847](https://nvd.nist.gov/vuln/detail/CVE-2026-4847) | 2.1 | LOW | CWE-79 | No | 0.0% | 1.47 | 2026-03-26 | A vulnerability was found in dameng100 muucmf 1.9.5.20260309. The impacted element is an unknown function of the file /a... |
-| [CVE-2026-4652](https://nvd.nist.gov/vuln/detail/CVE-2026-4652) | 7.5 | HIGH | CWE-476 | No | 0.1% | 5.25 | 2026-03-26 | On a system exposing an NVMe/TCP target, a remote client can trigger a kernel panic by sending a CONNECT command for an... |
-| [CVE-2026-4247](https://nvd.nist.gov/vuln/detail/CVE-2026-4247) | 7.5 | HIGH | CWE-401 | No | 0.0% | 5.25 | 2026-03-26 | When a challenge ACK is to be sent tcp_respond() constructs and sends the challenge ACK and consumes the mbuf that is pa... |
 | [CVE-2026-32680](https://nvd.nist.gov/vuln/detail/CVE-2026-32680) | 8.5 | HIGH | CWE-276 | No | 0.0% | 5.95 | 2026-03-26 | The installer of RATOC RAID Monitoring Manager for Windows allows to customize the installation folder. If the installat... |
 | [CVE-2026-28760](https://nvd.nist.gov/vuln/detail/CVE-2026-28760) | 8.4 | HIGH | CWE-427 | No | 0.0% | 5.88 | 2026-03-26 | The installer of RATOC RAID Monitoring Manager for Windows searches the current directory to load certain DLLs. If a use... |
 | [CVE-2026-1890](https://nvd.nist.gov/vuln/detail/CVE-2026-1890) | 5.3 | MEDIUM | N/A | No | 0.1% | 3.71 | 2026-03-26 | The LeadConnector WordPress plugin before 3.0.22 does not have authorization in a REST route, allowing unauthenticated u... |

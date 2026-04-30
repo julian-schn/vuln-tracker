@@ -1,10 +1,15 @@
 # CVEs — April 2026
 
-_4996 vulnerabilities_
+_4998 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
-| [CVE-2026-7461](https://nvd.nist.gov/vuln/detail/CVE-2026-7461) | 7.5 | HIGH | CWE-78 | No | — | 5.25 | 2026-04-30 | Improper neutralization of inputs used in an OS command in the FSx Windows File Server volume mounting component in Amaz... |
+| [CVE-2026-7429](https://nvd.nist.gov/vuln/detail/CVE-2026-7429) | 2.1 | LOW | CWE-79 | No | — | 1.47 | 2026-04-30 | SSCMS v7.4.0 contains a reflected cross-site scripting vulnerability in the STL processing endpoint that allows attacker... |
+| [CVE-2026-33448](https://nvd.nist.gov/vuln/detail/CVE-2026-33448) | 4.8 | MEDIUM | N/A | No | — | 3.36 | 2026-04-30 | CVE-2026-33448 is a format string vulnerability in the logging subsystem  of Secure Access client for MacOS prior to 14.... |
+| [CVE-2026-33447](https://nvd.nist.gov/vuln/detail/CVE-2026-33447) | 2.3 | LOW | N/A | No | — | 1.61 | 2026-04-30 | CVE-2026-33447 is a buffer overflow in a message parsing function of the  Secure Access client prior to 14.50. Attackers... |
+| [CVE-2026-33446](https://nvd.nist.gov/vuln/detail/CVE-2026-33446) | 2.3 | LOW | N/A | No | — | 1.61 | 2026-04-30 | CVE-2026-33446 is a buffer overflow in the authentication sub-system of  the Secure Access client prior to 14.50. Attack... |
+| [CVE-2025-56568](https://nvd.nist.gov/vuln/detail/CVE-2025-56568) | 0.0 | NONE | N/A | No | — | 0.00 | 2026-04-30 | Assertion failure vulnerability in the PCO (Protocol Configuration Options) parser in the SMF (Session Management Functi... |
+| [CVE-2025-46115](https://nvd.nist.gov/vuln/detail/CVE-2025-46115) | 0.0 | NONE | N/A | No | — | 0.00 | 2026-04-30 | An issue in open5gs v.2.7.3 allows a remote attacker to cause a denial of service via a crafted PDU Session Modification... |
 | [CVE-2026-40904](https://nvd.nist.gov/vuln/detail/CVE-2026-40904) | 8.1 | HIGH | CWE-284 | No | — | 5.67 | 2026-04-30 | Chartbrew is an open-source web application that can connect directly to databases and APIs and use the data to create c... |
 | [CVE-2026-40603](https://nvd.nist.gov/vuln/detail/CVE-2026-40603) | 6.5 | MEDIUM | CWE-284 | No | — | 4.55 | 2026-04-30 | Chartbrew is an open-source web application that can connect directly to databases and APIs and use the data to create c... |
 | [CVE-2026-40601](https://nvd.nist.gov/vuln/detail/CVE-2026-40601) | 7.5 | HIGH | CWE-862 | No | — | 5.25 | 2026-04-30 | Chartbrew is an open-source web application that can connect directly to databases and APIs and use the data to create c... |
@@ -51,11 +56,9 @@ _4996 vulnerabilities_
 | [CVE-2026-36957](https://nvd.nist.gov/vuln/detail/CVE-2026-36957) | 7.5 | HIGH | CWE-400 | No | — | 5.25 | 2026-04-30 | Dbit N300 T1 Pro Easy Setup Wireless Wi-Fi Router V1.0.0 is vulnerable to Denial of Service via the boa web server URI h... |
 | [CVE-2026-36956](https://nvd.nist.gov/vuln/detail/CVE-2026-36956) | 8.8 | HIGH | CWE-352 | No | — | 6.16 | 2026-04-30 | A Cross-Site Request Forgery (CSRF) vulnerability exists in the web management interface of the Dbit N300 T1 Pro wireles... |
 | [CVE-2026-7246](https://nvd.nist.gov/vuln/detail/CVE-2026-7246) | 7.2 | HIGH | CWE-77 | No | — | 5.04 | 2026-04-30 | Pallets Click, versions 8.3.2 and below, contain a command injection vulnerability in the click.edit() function, allowin... |
-| [CVE-2026-7163](https://nvd.nist.gov/vuln/detail/CVE-2026-7163) | 6.1 | MEDIUM | CWE-312 | No | — | 4.27 | 2026-04-30 | A vulnerability in the assisted-service REST API, an optional Assisted Installer (assisted-service) component in the Mul... |
 | [CVE-2026-2892](https://nvd.nist.gov/vuln/detail/CVE-2026-2892) | 7.5 | HIGH | CWE-285 | No | — | 5.25 | 2026-04-30 | The Otter Blocks plugin for WordPress is vulnerable to Purchase Verification Bypass in all versions up to, and including... |
 | [CVE-2025-14576](https://nvd.nist.gov/vuln/detail/CVE-2025-14576) | 7.4 | HIGH | CWE-20 | No | — | 5.18 | 2026-04-30 | Insufficient validation of node IDs in Qt SVG module allows arbitrary QML/JavaScript code injection when loading malicio... |
 | [CVE-2024-13971](https://nvd.nist.gov/vuln/detail/CVE-2024-13971) | 7.7 | HIGH | CWE-611 | No | — | 5.39 | 2026-04-30 | Unauthenticated attackers can exploit a weakness in the XML parser functionality of Lobster_pro prior to version 4.12.6-... |
-| [CVE-2026-5080](https://nvd.nist.gov/vuln/detail/CVE-2026-5080) | 5.9 | MEDIUM | CWE-338 | No | — | 4.13 | 2026-04-30 | Dancer::Session::Abstract versions through 1.3522 for Perl generates session ids insecurely.  The session id is generate... |
 | [CVE-2026-6498](https://nvd.nist.gov/vuln/detail/CVE-2026-6498) | 5.3 | MEDIUM | CWE-345 | No | 0.0% | 3.71 | 2026-04-30 | The Five Star Restaurant Reservations plugin for WordPress is vulnerable to a payment bypass via PHP type juggling in ve... |
 | [CVE-2026-41016](https://nvd.nist.gov/vuln/detail/CVE-2026-41016) | 5.9 | MEDIUM | CWE-295 | No | 0.0% | 4.13 | 2026-04-30 | Apache Airflow's SMTP provider `SmtpHook` called Python's `smtplib.SMTP.starttls()` without an SSL context, so no certif... |
 | [CVE-2026-22070](https://nvd.nist.gov/vuln/detail/CVE-2026-22070) | 7.1 | HIGH | CWE-23 | No | 0.0% | 4.97 | 2026-04-30 | ColorOS Assistant has an unauthenticated start-download channel, leading to file path traversal. |
@@ -172,7 +175,7 @@ _4996 vulnerabilities_
 | [CVE-2026-7388](https://nvd.nist.gov/vuln/detail/CVE-2026-7388) | 2.0 | LOW | CWE-74 | No | 0.0% | 1.40 | 2026-04-29 | A weakness has been identified in EyouCMS up to 1.7.9. Impacted is the function editFile of the file application/admin/l... |
 | [CVE-2026-7386](https://nvd.nist.gov/vuln/detail/CVE-2026-7386) | 5.5 | MEDIUM | CWE-22 | No | 0.1% | 3.85 | 2026-04-29 | A flaw has been found in fatbobman mail-mcp-bridge up to 1.3.3. Affected is an unknown function of the file src/mail_mcp... |
 | [CVE-2026-42198](https://nvd.nist.gov/vuln/detail/CVE-2026-42198) | 7.5 | HIGH | CWE-770 | No | 0.0% | 5.25 | 2026-04-29 | pgjdbc is an open source postgresql JDBC Driver. From version 42.2.0 to before version 42.7.11, pgjdbc is vulnerable to... |
-| [CVE-2026-41940](https://nvd.nist.gov/vuln/detail/CVE-2026-41940) | 9.3 | CRITICAL | CWE-306 | No | 16.5% | 7.01 | 2026-04-29 | cPanel and WHM versions after 11.40 contain an authentication bypass vulnerability in the login flow that allows unauthe... |
+| [CVE-2026-41940](https://nvd.nist.gov/vuln/detail/CVE-2026-41940) | 9.3 | CRITICAL | CWE-306 | Yes | 16.5% | 7.01 | 2026-04-29 | cPanel and WHM versions after 11.40 contain an authentication bypass vulnerability in the login flow that allows unauthe... |
 | [CVE-2026-40230](https://nvd.nist.gov/vuln/detail/CVE-2026-40230) | 4.8 | MEDIUM | CWE-79 | No | 0.0% | 3.36 | 2026-04-29 | Helpy contains a stored cross-site scripting vulnerability in the knowledge base Doc rendering logic. An authenticated a... |
 | [CVE-2026-40229](https://nvd.nist.gov/vuln/detail/CVE-2026-40229) | 5.1 | MEDIUM | CWE-79 | No | 0.0% | 3.57 | 2026-04-29 | Helpy contains a stored cross-site scripting vulnerability in the post author display logic. Any registered user can per... |
 | [CVE-2026-38993](https://nvd.nist.gov/vuln/detail/CVE-2026-38993) | 6.5 | MEDIUM | CWE-22 | No | 0.1% | 4.55 | 2026-04-29 | Cockpit 2.13.5 and earlier is vulnerable to directory traversal via the Buckets component. This vulnerability allows aut... |
@@ -346,7 +349,6 @@ _4996 vulnerabilities_
 | [CVE-2025-67223](https://nvd.nist.gov/vuln/detail/CVE-2025-67223) | 7.5 | HIGH | CWE-377 | No | 0.1% | 5.25 | 2026-04-28 | The Aranda File Server (AFS) component in Aranda Software Aranda Service Desk before 8.3.12 stores daily activity logs w... |
 | [CVE-2026-7281](https://nvd.nist.gov/vuln/detail/CVE-2026-7281) | 1.9 | LOW | CWE-79 | No | 0.0% | 1.33 | 2026-04-28 | A vulnerability was determined in SourceCodester Pharmacy Sales and Inventory System 1.0. The impacted element is the fu... |
 | [CVE-2026-7272](https://nvd.nist.gov/vuln/detail/CVE-2026-7272) | 5.5 | MEDIUM | CWE-22 | No | 0.1% | 3.85 | 2026-04-28 | A flaw has been found in WilliamCloudQi matlab-mcp-server up to ab88f6b9bf5f36f725e8628029f7f6dd0d9913ca. The affected e... |
-| [CVE-2026-6706](https://nvd.nist.gov/vuln/detail/CVE-2026-6706) | 6.5 | MEDIUM | CWE-862 | No | 0.0% | 4.55 | 2026-04-28 | Improper  access control in the vault documentation feature in Devolutions  Server allows an authenticated attacker to r... |
 | [CVE-2026-7309](https://nvd.nist.gov/vuln/detail/CVE-2026-7309) | 4.3 | MEDIUM | CWE-426 | No | 0.0% | 3.01 | 2026-04-28 | A flaw was found in the OpenShift Container Platform build system. A user with the `edit` ClusterRole can inject arbitra... |
 | [CVE-2026-7271](https://nvd.nist.gov/vuln/detail/CVE-2026-7271) | 5.5 | MEDIUM | CWE-22 | No | 0.0% | 3.85 | 2026-04-28 | A vulnerability was detected in DV0x creative-ad-agent up to 751b9e5146604dc65049bd0f62dcbdad6212f8a3. Impacted is an un... |
 | [CVE-2026-7269](https://nvd.nist.gov/vuln/detail/CVE-2026-7269) | 1.9 | LOW | CWE-79 | No | 0.0% | 1.33 | 2026-04-28 | A vulnerability was found in SourceCodester Pharmacy Sales and Inventory System 1.0. Affected is an unknown function of... |

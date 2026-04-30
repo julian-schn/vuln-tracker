@@ -11,7 +11,7 @@
     <header>
       <h1>vuln-tracker</h1>
       <p class="subtitle">CVEs from the National Vulnerability Database — current and previous month</p>
-      <p class="last-updated">Last updated: 2026-04-30 19:41 UTC</p>
+      <p class="last-updated">Last updated: 2026-04-30 21:06 UTC</p>
     </header>
     <nav>
       <a href="top50.html">&#9733; Top 50</a>
@@ -25,7 +25,7 @@
     </nav>
     <main>
     <section>
-      <h2>Current Month — April 2026 <span class="count">(4996)</span></h2>
+      <h2>Current Month — April 2026 <span class="count">(4998)</span></h2>
       <div class="table-wrapper">
         <table>
           <thead>
@@ -43,16 +43,84 @@
           </thead>
           <tbody>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-7461" target="_blank" rel="noopener">CVE-2026-7461</a></td>
-        <td>7.5</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-78</td>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-7429" target="_blank" rel="noopener">CVE-2026-7429</a></td>
+        <td>2.1</td>
+        <td><span class="severity low">LOW</span></td>
+        <td>CWE-79</td>
         <td>&nbsp;</td>
         <td>&mdash;</td>
-        <td>5.25</td>
-        <td><details><summary>Improper neutralization of inputs used in an OS command in the FSx Windows File ...</summary><p>Improper neutralization of inputs used in an OS command in the FSx Windows File Server volume mounting component in Amazon ECS Agent on Windows before version 1.103.0 might allow a remote authenticated threat actor to execute shell commands with SYSTEM privileges on the underlying host via a specially crafted username field in an ECS task definition. This issue requires permissions to register ECS task definitions or write to the Secrets Manager or SSM Parameter Store credentials used by the FSx volume configuration.
-
-To remediate this issue, users should upgrade to version 1.103.0.</p></details></td>
+        <td>1.47</td>
+        <td><details><summary>SSCMS v7.4.0 contains a reflected cross-site scripting vulnerability in the STL ...</summary><p>SSCMS v7.4.0 contains a reflected cross-site scripting vulnerability in the STL processing endpoint that allows attackers to execute arbitrary JavaScript by crafting malicious STL template payloads that are decrypted and returned without proper sanitization. Attackers can exploit improper output encoding in the /api/stl/actions/dynamic endpoint to inject executable JavaScript into JSON responses, leading to session hijacking, phishing attacks, and unauthorized actions performed on behalf of users.</p></details></td>
+        <td>2026-04-30</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33448" target="_blank" rel="noopener">CVE-2026-33448</a></td>
+        <td>4.8</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.36</td>
+        <td><details><summary>CVE-2026-33448 is a format string vulnerability in the logging subsystem
+ of Sec...</summary><p>CVE-2026-33448 is a format string vulnerability in the logging subsystem
+ of Secure Access client for MacOS prior to 14.50. Attackers with 
+control of a modified server can force the client to dump the contents 
+of a small portion of memory to the log files potentially revealing 
+secrets.</p></details></td>
+        <td>2026-04-30</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33447" target="_blank" rel="noopener">CVE-2026-33447</a></td>
+        <td>2.3</td>
+        <td><span class="severity low">LOW</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>1.61</td>
+        <td><details><summary>CVE-2026-33447 is a buffer overflow in a message parsing function of the
+ Secure...</summary><p>CVE-2026-33447 is a buffer overflow in a message parsing function of the
+ Secure Access client prior to 14.50. Attackers with control of a 
+modified server can send a special packet that can overwrite a small 
+portion of memory conceivably leading to memory corruption or denial of 
+service.</p></details></td>
+        <td>2026-04-30</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33446" target="_blank" rel="noopener">CVE-2026-33446</a></td>
+        <td>2.3</td>
+        <td><span class="severity low">LOW</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>1.61</td>
+        <td><details><summary>CVE-2026-33446 is a buffer overflow in the authentication sub-system of 
+the Sec...</summary><p>CVE-2026-33446 is a buffer overflow in the authentication sub-system of 
+the Secure Access client prior to 14.50. Attackers with control of a 
+modified server can send a special packet that can overwrite a small 
+portion of memory conceivably leading to memory corruption or a denial 
+of service.</p></details></td>
+        <td>2026-04-30</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-56568" target="_blank" rel="noopener">CVE-2025-56568</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Assertion failure vulnerability in the PCO (Protocol Configuration Options) pars...</summary><p>Assertion failure vulnerability in the PCO (Protocol Configuration Options) parser in the SMF (Session Management Function) component of Open5GS before v2.7.5 allows remote attackers to cause denial of service via specially crafted NGAP messages containing malformed length fields in protocol configuration data.</p></details></td>
+        <td>2026-04-30</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-46115" target="_blank" rel="noopener">CVE-2025-46115</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>An issue in open5gs v.2.7.3 allows a remote attacker to cause a denial of servic...</summary><p>An issue in open5gs v.2.7.3 allows a remote attacker to cause a denial of service via a crafted PDU Session Modification Request</p></details></td>
         <td>2026-04-30</td>
       </tr>
       <tr>
@@ -568,24 +636,6 @@ This issue affects hex: from 0.16.0 before 2.4.2.</p></details></td>
         <td>2026-04-30</td>
       </tr>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-7163" target="_blank" rel="noopener">CVE-2026-7163</a></td>
-        <td>6.1</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-312</td>
-        <td>&nbsp;</td>
-        <td>&mdash;</td>
-        <td>4.27</td>
-        <td><details><summary>A vulnerability in the assisted-service REST API, an optional Assisted Installer...</summary><p>A vulnerability in the assisted-service REST API, an optional Assisted Installer (assisted-service) component in the Multicluster Engine (MCE), allows an authenticated user with minimal namespace-scoped privileges to obtain administrative credentials for arbitrary clusters provisioned through the hub. 
-
-The credentials download endpoint (GET /v2/clusters/{cluster_id}/credentials, which returns the kubeadmin password) and the kubeconfig download endpoint are operational in AUTH_TYPE=local mode, the only authentication mode available in on-premises ACM/MCE hub deployments. The local authenticator unconditionally grants full administrative access to any request bearing a valid JWT, with no per-endpoint restrictions. A valid local JWT is embedded as a plaintext query parameter in InfraEnvStatus.ISODownloadURL and is readable by any user who has get rights on an InfraEnv object in their own namespace.
-
-The affected components ship as part of Multicluster Engine (MCE). The Red Hat Advanced Cluster Management (ACM) deployments that include MCE are equally affected.
-This issue does not affect the hosted SaaS offering (console.redhat.com), which uses a different authentication mode.
-
-Successful exploitation gives the attacker the kubeadmin password and kubeconfig for any OpenShift cluster provisioned through the affected hub, granting unrestricted root-level administrative access to those spoke clusters.</p></details></td>
-        <td>2026-04-30</td>
-      </tr>
-      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-2892" target="_blank" rel="noopener">CVE-2026-2892</a></td>
         <td>7.5</td>
         <td><span class="severity high">HIGH</span></td>
@@ -616,29 +666,6 @@ Successful exploitation gives the attacker the kubeadmin password and kubeconfig
         <td>&mdash;</td>
         <td>5.39</td>
         <td><details><summary>Unauthenticated attackers can exploit a weakness in the XML parser functionality...</summary><p>Unauthenticated attackers can exploit a weakness in the XML parser functionality of Lobster_pro prior to version 4.12.6-GA. This allows them to obtain read access to files on the application server and adjacent network shares, and perform HTTP GET requests to arbitrary services.</p></details></td>
-        <td>2026-04-30</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5080" target="_blank" rel="noopener">CVE-2026-5080</a></td>
-        <td>5.9</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-338</td>
-        <td>&nbsp;</td>
-        <td>&mdash;</td>
-        <td>4.13</td>
-        <td><details><summary>Dancer::Session::Abstract versions through 1.3522 for Perl generates session ids...</summary><p>Dancer::Session::Abstract versions through 1.3522 for Perl generates session ids insecurely.
-
-The session id is generated from summing the character codepoints of the absolute pathname with the process id, the epoch time and calls to the built-in rand() function to return a number between 0 and 999-billion, and concatenating that result three times.
-
-The path name might be known or guessed by an attacker, especially for applications known to be written using Dancer with standard installation locations.
-
-The epoch time can be guessed by an attacker, and may be leaked in the HTTP header.
-
-The process id comes from a small set of numbers, and workers may have sequential process ids.
-
-The built-in rand() function is seeded with 32-bits and is considered unsuitable for security applications.
-
-Predictable session ids could allow an attacker to gain access to systems.</p></details></td>
         <td>2026-04-30</td>
       </tr>
       <tr>
@@ -1922,7 +1949,7 @@ Predictable session ids could allow an attacker to gain access to systems.</p></
         <td>9.3</td>
         <td><span class="severity critical">CRITICAL</span></td>
         <td>CWE-306</td>
-        <td>&nbsp;</td>
+        <td><span class="kev-yes">&#10003;</span></td>
         <td>16.5% <small>p94</small></td>
         <td>7.01</td>
         <td><details><summary>cPanel and WHM versions after 11.40 contain an authentication bypass vulnerabili...</summary><p>cPanel and WHM versions after 11.40 contain an authentication bypass vulnerability in the login flow that allows unauthenticated remote attackers to gain unauthorized access to the control panel.</p></details></td>
@@ -3829,26 +3856,6 @@ Predictable session ids could allow an attacker to gain access to systems.</p></
         <td>0.1% <small>p15</small></td>
         <td>3.85</td>
         <td><details><summary>A flaw has been found in WilliamCloudQi matlab-mcp-server up to ab88f6b9bf5f36f7...</summary><p>A flaw has been found in WilliamCloudQi matlab-mcp-server up to ab88f6b9bf5f36f725e8628029f7f6dd0d9913ca. The affected element is the function generate_matlab_code/execute_matlab_code of the file src/index.ts of the component MCP Interface. Executing a manipulation of the argument scriptPath can lead to path traversal. The attack can be executed remotely. The exploit has been published and may be used. The project was informed of the problem early through an issue report but has not responded yet.</p></details></td>
-        <td>2026-04-28</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6706" target="_blank" rel="noopener">CVE-2026-6706</a></td>
-        <td>6.5</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-862</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p7</small></td>
-        <td>4.55</td>
-        <td><details><summary>Improper
- access control in the vault documentation feature in Devolutions 
-Serv...</summary><p>Improper
- access control in the vault documentation feature in Devolutions 
-Server allows an authenticated attacker to read documentation content 
-from unauthorized vaults via a crafted API request.
-
-
-
-This issue affects Server: from 2026.1.6.0 through 2026.1.14.0, through 2025.3.18.0.</p></details></td>
         <td>2026-04-28</td>
       </tr>
       <tr>
@@ -55051,7 +55058,7 @@ AD directly.</p></details></td>
       </div>
     </section>
     <section>
-      <h2>Previous Month — March 2026 <span class="count">(5738)</span></h2>
+      <h2>Previous Month — March 2026 <span class="count">(5734)</span></h2>
       <div class="table-wrapper">
         <table>
           <thead>
@@ -62428,18 +62435,6 @@ AD directly.</p></details></td>
         <td>2026-03-27</td>
       </tr>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-27858" target="_blank" rel="noopener">CVE-2026-27858</a></td>
-        <td>7.5</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-400</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p5</small></td>
-        <td>5.25</td>
-        <td><details><summary>Attacker can send a specifically crafted message before authentication that caus...</summary><p>Attacker can send a specifically crafted message before authentication that causes managesieve to allocate large amount of memory.
- Attacker can force managesieve-login to be unavailable by repeatedly crashing the process. Protect access to managesieve protocol, or install fixed version. No publicly available exploits are known.</p></details></td>
-        <td>2026-03-27</td>
-      </tr>
-      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-27857" target="_blank" rel="noopener">CVE-2026-27857</a></td>
         <td>4.3</td>
         <td><span class="severity medium">MEDIUM</span></td>
@@ -63218,18 +63213,6 @@ AD directly.</p></details></td>
         <td>0.0% <small>p1</small></td>
         <td>6.02</td>
         <td><details><summary>Pay is an open-source payment SDK extension package for various Chinese payment ...</summary><p>Pay is an open-source payment SDK extension package for various Chinese payment services. Prior to version 3.7.20, the `verify_wechat_sign()` function in `src/Functions.php` unconditionally skips all signature verification when the PSR-7 request reports `localhost` as the host. An attacker can exploit this by sending a crafted HTTP request to the WeChat Pay callback endpoint with a `Host: localhost` header, bypassing the RSA signature check entirely. This allows forging fake WeChat Pay payment success notifications, potentially causing applications to mark orders as paid without actual payment. Version 3.7.20 fixes the issue.</p></details></td>
-        <td>2026-03-26</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33658" target="_blank" rel="noopener">CVE-2026-33658</a></td>
-        <td>2.3</td>
-        <td><span class="severity low">LOW</span></td>
-        <td>CWE-770</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p5</small></td>
-        <td>1.61</td>
-        <td><details><summary>Active Storage allows users to attach cloud and local files in Rails application...</summary><p>Active Storage allows users to attach cloud and local files in Rails applications. Prior to versions 8.1.2.1, 8.0.4.1, and 7.2.3.1
-Active Storage&#x27;s proxy controller does not limit the number of byte ranges in an HTTP Range header. A request with thousands of small ranges causes disproportionate CPU usage compared to a normal request for the same file, possibly resulting in a DoS vulnerability. Versions 8.1.2.1, 8.0.4.1, and 7.2.3.1 contain a patch.</p></details></td>
         <td>2026-03-26</td>
       </tr>
       <tr>
@@ -65441,34 +65424,6 @@ Active Storage&#x27;s proxy controller does not limit the number of byte ranges 
         <td>0.0% <small>p10</small></td>
         <td>1.47</td>
         <td><details><summary>A vulnerability was found in dameng100 muucmf 1.9.5.20260309. The impacted eleme...</summary><p>A vulnerability was found in dameng100 muucmf 1.9.5.20260309. The impacted element is an unknown function of the file /admin/config/list.html. Performing a manipulation of the argument Name results in cross site scripting. The attack can be initiated remotely. The exploit has been made public and could be used. The vendor was contacted early about this disclosure but did not respond in any way.</p></details></td>
-        <td>2026-03-26</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4652" target="_blank" rel="noopener">CVE-2026-4652</a></td>
-        <td>7.5</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-476</td>
-        <td>&nbsp;</td>
-        <td>0.1% <small>p20</small></td>
-        <td>5.25</td>
-        <td><details><summary>On a system exposing an NVMe/TCP target, a remote client can trigger a kernel pa...</summary><p>On a system exposing an NVMe/TCP target, a remote client can trigger a kernel panic by sending a CONNECT command for an I/O queue with a bogus or stale CNTLID.
-
-An attacker with network access to the NVMe/TCP target can trigger an unauthenticated Denial of Service condition on the affected machine.</p></details></td>
-        <td>2026-03-26</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4247" target="_blank" rel="noopener">CVE-2026-4247</a></td>
-        <td>7.5</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-401</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p8</small></td>
-        <td>5.25</td>
-        <td><details><summary>When a challenge ACK is to be sent tcp_respond() constructs and sends the challe...</summary><p>When a challenge ACK is to be sent tcp_respond() constructs and sends the challenge ACK and consumes the mbuf that is passed in.  When no challenge ACK should be sent the function returns and leaks the mbuf.
-
-If an attacker is either on path with an established TCP connection, or can themselves establish a TCP connection, to an affected FreeBSD machine, they can easily craft and send packets which meet the challenge ACK criteria and cause the FreeBSD host to leak an mbuf for each crafted packet in excess of the configured rate limit settings i.e. with default settings, crafted packets in excess of the first 5 sent within a 1s period will leak an mbuf.
-
-Technically, off-path attackers can also exploit this problem by guessing the IP addresses, TCP port numbers and in some cases the sequence numbers of established connections and spoofing packets towards a FreeBSD machine, but this is harder to do effectively.</p></details></td>
         <td>2026-03-26</td>
       </tr>
       <tr>
