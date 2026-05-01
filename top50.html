@@ -11,7 +11,7 @@
     <header>
       <h1>vuln-tracker — Top 50</h1>
       <p class="subtitle">The 50 most important CVEs from the current and previous month, ranked by VAP score (70% CVSS + 30% EPSS)</p>
-      <p class="last-updated">Last updated: 2026-05-01 13:40 UTC</p>
+      <p class="last-updated">Last updated: 2026-05-01 15:01 UTC</p>
     </header>
     <nav>
       <a href="index.html">&larr; All CVEs</a>
@@ -72,6 +72,28 @@
         <td>7.57</td>
         <td><details><summary>Customer Managed ShareFile Storage Zones Controller (SZC) allows an unauthentica...</summary><p>Customer Managed ShareFile Storage Zones Controller (SZC) allows an unauthenticated attacker to access restricted configuration pages. This leads to changing system configuration and potential remote code execution.</p></details></td>
         <td>2026-04-02</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-41940" target="_blank" rel="noopener">CVE-2026-41940</a></td>
+        <td>9.3</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-306</td>
+        <td><span class="kev-yes">&#10003;</span></td>
+        <td>28.4% <small>p96</small></td>
+        <td>7.36</td>
+        <td><details><summary>cPanel and WHM versions after 11.40 contain an authentication bypass vulnerabili...</summary><p>cPanel and WHM versions after 11.40 contain an authentication bypass vulnerability in the login flow that allows unauthenticated remote attackers to gain unauthorized access to the control panel.</p></details></td>
+        <td>2026-04-29</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-3844" target="_blank" rel="noopener">CVE-2026-3844</a></td>
+        <td>9.8</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-434</td>
+        <td>&nbsp;</td>
+        <td>13.1% <small>p94</small></td>
+        <td>7.25</td>
+        <td><details><summary>The Breeze Cache plugin for WordPress is vulnerable to arbitrary file uploads du...</summary><p>The Breeze Cache plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the &#x27;fetch_gravatar_from_remote&#x27; function in all versions up to, and including, 2.4.4. This makes it possible for unauthenticated attackers to upload arbitrary files on the affected site&#x27;s server which may make remote code execution possible. The vulnerability can only be exploited if &quot;Host Files Locally - Gravatars&quot; is enabled, which is disabled by default.</p></details></td>
+        <td>2026-04-23</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39808" target="_blank" rel="noopener">CVE-2026-39808</a></td>
@@ -162,17 +184,6 @@
         <td>2026-04-21</td>
       </tr>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-41940" target="_blank" rel="noopener">CVE-2026-41940</a></td>
-        <td>9.3</td>
-        <td><span class="severity critical">CRITICAL</span></td>
-        <td>CWE-306</td>
-        <td><span class="kev-yes">&#10003;</span></td>
-        <td>16.5% <small>p94</small></td>
-        <td>7.01</td>
-        <td><details><summary>cPanel and WHM versions after 11.40 contain an authentication bypass vulnerabili...</summary><p>cPanel and WHM versions after 11.40 contain an authentication bypass vulnerability in the login flow that allows unauthenticated remote attackers to gain unauthorized access to the control panel.</p></details></td>
-        <td>2026-04-29</td>
-      </tr>
-      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34208" target="_blank" rel="noopener">CVE-2026-34208</a></td>
         <td>10.0</td>
         <td><span class="severity critical">CRITICAL</span></td>
@@ -181,17 +192,6 @@
         <td>0.2% <small>p39</small></td>
         <td>7.01</td>
         <td><details><summary>SandboxJS is a JavaScript sandboxing library. Prior to 0.8.36, SandboxJS blocks ...</summary><p>SandboxJS is a JavaScript sandboxing library. Prior to 0.8.36, SandboxJS blocks direct assignment to global objects (for example Math.random = ...), but this protection can be bypassed through an exposed callable constructor path: this.constructor.call(target, attackerObject). Because this.constructor resolves to the internal SandboxGlobal function and Function.prototype.call is allowed, attacker code can write arbitrary properties into host global objects and persist those mutations across sandbox instances in the same process. This vulnerability is fixed in 0.8.36.</p></details></td>
-        <td>2026-04-06</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34976" target="_blank" rel="noopener">CVE-2026-34976</a></td>
-        <td>10.0</td>
-        <td><span class="severity critical">CRITICAL</span></td>
-        <td>CWE-862</td>
-        <td>&nbsp;</td>
-        <td>0.1% <small>p26</small></td>
-        <td>7.00</td>
-        <td><details><summary>Dgraph is an open source distributed GraphQL database. Prior to 25.3.1, the rest...</summary><p>Dgraph is an open source distributed GraphQL database. Prior to 25.3.1, the restoreTenant admin mutation is missing from the authorization middleware config (admin.go), making it completely unauthenticated. Unlike the similar restore mutation which requires Guardian-of-Galaxy authentication, restoreTenant executes with zero middleware. This mutation accepts attacker-controlled backup source URLs (including file:// for local filesystem access), S3/MinIO credentials, encryption key file paths, and Vault credential file paths. An unauthenticated attacker can overwrite the entire database, read server-side files, and perform SSRF. This vulnerability is fixed in 25.3.1.</p></details></td>
         <td>2026-04-06</td>
       </tr>
       <tr>
@@ -217,6 +217,17 @@
         <td>2026-04-02</td>
       </tr>
       <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34976" target="_blank" rel="noopener">CVE-2026-34976</a></td>
+        <td>10.0</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>0.1% <small>p22</small></td>
+        <td>7.00</td>
+        <td><details><summary>Dgraph is an open source distributed GraphQL database. Prior to 25.3.1, the rest...</summary><p>Dgraph is an open source distributed GraphQL database. Prior to 25.3.1, the restoreTenant admin mutation is missing from the authorization middleware config (admin.go), making it completely unauthenticated. Unlike the similar restore mutation which requires Guardian-of-Galaxy authentication, restoreTenant executes with zero middleware. This mutation accepts attacker-controlled backup source URLs (including file:// for local filesystem access), S3/MinIO credentials, encryption key file paths, and Vault credential file paths. An unauthenticated attacker can overwrite the entire database, read server-side files, and perform SSRF. This vulnerability is fixed in 25.3.1.</p></details></td>
+        <td>2026-04-06</td>
+      </tr>
+      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-54328" target="_blank" rel="noopener">CVE-2025-54328</a></td>
         <td>10.0</td>
         <td><span class="severity critical">CRITICAL</span></td>
@@ -226,6 +237,17 @@
         <td>7.00</td>
         <td><details><summary>An issue was discovered in SMS in Samsung Mobile Processor, Wearable Processor, ...</summary><p>An issue was discovered in SMS in Samsung Mobile Processor, Wearable Processor, and Modem Exynos 980, 990, 850, 1080, 2100, 1280, 2200, 1330, 1380, 1480, 2400, 1580, 2500, 9110, W920, W930, W1000, Modem 5123, Modem 5300, and Modem 5400. A Stack-based Buffer Overflow occurs while parsing SMS RP-DATA messages.</p></details></td>
         <td>2026-04-06</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-36767" target="_blank" rel="noopener">CVE-2026-36767</a></td>
+        <td>10.0</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-22</td>
+        <td>&nbsp;</td>
+        <td>0.1% <small>p19</small></td>
+        <td>7.00</td>
+        <td><details><summary>A path traversal vulnerability in the /content/images/add endpoint of shopizer v...</summary><p>A path traversal vulnerability in the /content/images/add endpoint of shopizer v3.2.5 allows attackers write arbitrary files to any writeable path via a crafted POST request.</p></details></td>
+        <td>2026-04-30</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32186" target="_blank" rel="noopener">CVE-2026-32186</a></td>
@@ -316,23 +338,12 @@
         <td>2026-04-01</td>
       </tr>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-36767" target="_blank" rel="noopener">CVE-2026-36767</a></td>
-        <td>10.0</td>
-        <td><span class="severity critical">CRITICAL</span></td>
-        <td>CWE-22</td>
-        <td>&nbsp;</td>
-        <td>&mdash;</td>
-        <td>7.00</td>
-        <td><details><summary>A path traversal vulnerability in the /content/images/add endpoint of shopizer v...</summary><p>A path traversal vulnerability in the /content/images/add endpoint of shopizer v3.2.5 allows attackers write arbitrary files to any writeable path via a crafted POST request.</p></details></td>
-        <td>2026-04-30</td>
-      </tr>
-      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-42996" target="_blank" rel="noopener">CVE-2026-42996</a></td>
         <td>10.0</td>
         <td><span class="severity critical">CRITICAL</span></td>
         <td>CWE-121</td>
         <td>&nbsp;</td>
-        <td>&mdash;</td>
+        <td>0.0% <small>p2</small></td>
         <td>7.00</td>
         <td><details><summary>JS8Call through 2.3.1 and JS8Call-improved before 3.0 have a stack-based buffer ...</summary><p>JS8Call through 2.3.1 and JS8Call-improved before 3.0 have a stack-based buffer overflow via a radio transmission of @APRSIS GRID followed by a long Maidenhead locator. This occurs in grid2deg in APRSISClient.cpp.</p></details></td>
         <td>2026-05-01</td>
@@ -519,7 +530,7 @@
         <td><span class="severity critical">CRITICAL</span></td>
         <td>CWE-862</td>
         <td>&nbsp;</td>
-        <td>0.0% <small>p14</small></td>
+        <td>0.0% <small>p13</small></td>
         <td>6.93</td>
         <td><details><summary>Genealogy is a family tree PHP application. Prior to 5.9.1, a critical broken ac...</summary><p>Genealogy is a family tree PHP application. Prior to 5.9.1, a critical broken access control vulnerability in the genealogy application allows any authenticated user to transfer ownership of arbitrary non-personal teams to themselves. This enables complete takeover of other users’ team workspaces and unrestricted access to all genealogy data associated with the compromised team. This vulnerability is fixed in 5.9.1.</p></details></td>
         <td>2026-04-07</td>
@@ -578,17 +589,6 @@
         <td>6.93</td>
         <td><details><summary>Electric is a Postgres sync engine. From 1.1.12 to before 1.5.0, the order_by pa...</summary><p>Electric is a Postgres sync engine. From 1.1.12 to before 1.5.0, the order_by parameter in the ElectricSQL /v1/shape API is vulnerable to error-based SQL injection, allowing any authenticated user to read, write, and destroy the full contents of the underlying PostgreSQL database through crafted ORDER BY expressions. This vulnerability is fixed in 1.5.0.</p></details></td>
         <td>2026-04-21</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-41478" target="_blank" rel="noopener">CVE-2026-41478</a></td>
-        <td>9.9</td>
-        <td><span class="severity critical">CRITICAL</span></td>
-        <td>CWE-89</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p9</small></td>
-        <td>6.93</td>
-        <td><details><summary>Saltcorn is an extensible, open source, no-code database application builder. Pr...</summary><p>Saltcorn is an extensible, open source, no-code database application builder. Prior to 1.4.6, 1.5.6, and 1.6.0-beta.5, a SQL injection vulnerability in Saltcorn’s mobile-sync routes allows any authenticated low-privilege user with read access to at least one table to inject arbitrary SQL through sync parameters. This can lead to full database exfiltration, including admin password hashes and configuration secrets, and may also enable database modification or destruction depending on the backend. This vulnerability is fixed in 1.4.6, 1.5.6, and 1.6.0-beta.5.</p></details></td>
-        <td>2026-04-24</td>
       </tr>
             </tbody>
           </table>
