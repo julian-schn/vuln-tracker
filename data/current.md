@@ -1,15 +1,28 @@
 # CVEs — May 2026
 
-_100 vulnerabilities_
+_112 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
+| [CVE-2026-7599](https://nvd.nist.gov/vuln/detail/CVE-2026-7599) | 2.1 | LOW | CWE-22 | No | — | 1.47 | 2026-05-01 | A vulnerability was detected in Dayoooun hwpx-mcp 0.2.0. This affects the function save_document/export_to_text/export_t... |
+| [CVE-2026-7598](https://nvd.nist.gov/vuln/detail/CVE-2026-7598) | 6.9 | MEDIUM | CWE-189 | No | — | 4.83 | 2026-05-01 | A security vulnerability has been detected in libssh2 up to 1.11.1. The impacted element is the function userauth_passwo... |
+| [CVE-2026-7597](https://nvd.nist.gov/vuln/detail/CVE-2026-7597) | 2.1 | LOW | CWE-20 | No | — | 1.47 | 2026-05-01 | A vulnerability was found in mem0ai mem0 up to 1.0.11. This affects the function pickle.load/pickle.dump of the file mem... |
+| [CVE-2026-7596](https://nvd.nist.gov/vuln/detail/CVE-2026-7596) | 2.1 | LOW | CWE-79 | No | — | 1.47 | 2026-05-01 | A vulnerability has been found in nextlevelbuilder ui-ux-pro-max-skill up to 2.5.0. Affected by this issue is the functi... |
+| [CVE-2026-7595](https://nvd.nist.gov/vuln/detail/CVE-2026-7595) | 2.1 | LOW | CWE-74 | No | — | 1.47 | 2026-05-01 | A flaw has been found in nextlevelbuilder ui-ux-pro-max-skill up to 2.5.0. Affected by this vulnerability is the functio... |
+| [CVE-2026-7594](https://nvd.nist.gov/vuln/detail/CVE-2026-7594) | 5.5 | MEDIUM | CWE-22 | No | — | 3.85 | 2026-05-01 | A vulnerability was detected in Flux159 mcp-game-asset-gen 0.1.0. Affected is the function image_to_3d_async of the file... |
+| [CVE-2026-7593](https://nvd.nist.gov/vuln/detail/CVE-2026-7593) | 5.5 | MEDIUM | CWE-77 | No | — | 3.85 | 2026-05-01 | A security vulnerability has been detected in Sunwood-ai-labs command-executor-mcp-server up to 0.1.0. This impacts the... |
+| [CVE-2026-42788](https://nvd.nist.gov/vuln/detail/CVE-2026-42788) | 6.9 | MEDIUM | CWE-770 | No | — | 4.83 | 2026-05-01 | Allocation of Resources Without Limits or Throttling vulnerability in mtrudel bandit allows unauthenticated memory exhau... |
+| [CVE-2026-42786](https://nvd.nist.gov/vuln/detail/CVE-2026-42786) | 8.7 | HIGH | CWE-770 | No | — | 6.09 | 2026-05-01 | Allocation of Resources Without Limits or Throttling vulnerability in mtrudel bandit allows unauthenticated remote denia... |
+| [CVE-2026-39807](https://nvd.nist.gov/vuln/detail/CVE-2026-39807) | 6.3 | MEDIUM | CWE-807 | No | — | 4.41 | 2026-05-01 | Reliance on Untrusted Inputs in a Security Decision vulnerability in mtrudel bandit allows unauthenticated transport-sta... |
+| [CVE-2026-39805](https://nvd.nist.gov/vuln/detail/CVE-2026-39805) | 6.3 | MEDIUM | CWE-444 | No | — | 4.41 | 2026-05-01 | Inconsistent Interpretation of HTTP Requests vulnerability in mtrudel bandit allows HTTP request smuggling via duplicate... |
+| [CVE-2026-39804](https://nvd.nist.gov/vuln/detail/CVE-2026-39804) | 8.2 | HIGH | CWE-770 | No | — | 5.74 | 2026-05-01 | Allocation of Resources Without Limits or Throttling vulnerability in mtrudel bandit allows unauthenticated remote denia... |
+| [CVE-2025-12993](https://nvd.nist.gov/vuln/detail/CVE-2025-12993) | 0.0 | NONE | N/A | No | — | 0.00 | 2026-05-01 | Rejected reason: ** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: CVE-2025-67968. Reason: This candidate is a... |
 | [CVE-2026-7592](https://nvd.nist.gov/vuln/detail/CVE-2026-7592) | 5.5 | MEDIUM | CWE-74 | No | — | 3.85 | 2026-05-01 | A weakness has been identified in itsourcecode Courier Management System 1.0. This affects an unknown function of the fi... |
 | [CVE-2025-8903](https://nvd.nist.gov/vuln/detail/CVE-2025-8903) | 0.0 | NONE | N/A | No | — | 0.00 | 2026-05-01 | Rejected reason: ** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: CVE-2026-2052. Reason: This candidate is a r... |
 | [CVE-2026-7591](https://nvd.nist.gov/vuln/detail/CVE-2026-7591) | 2.1 | LOW | CWE-74 | No | — | 1.47 | 2026-05-01 | A security flaw has been discovered in TimBroddin astro-mcp-server up to 1.1.1. The impacted element is an unknown funct... |
 | [CVE-2026-7590](https://nvd.nist.gov/vuln/detail/CVE-2026-7590) | 5.5 | MEDIUM | CWE-77 | No | — | 3.85 | 2026-05-01 | A vulnerability was identified in eyal-gor p_69_branch_monkey_mcp up to 69bc71874ce40050ef45fde5a435855f18af3373. The af... |
 | [CVE-2026-7589](https://nvd.nist.gov/vuln/detail/CVE-2026-7589) | 5.5 | MEDIUM | CWE-22 | No | — | 3.85 | 2026-05-01 | A vulnerability was determined in ghantakiran splunk-mcp-integration up to 0b86b09d5e5adf0433acd43c975951224613a1a6. Imp... |
-| [CVE-2026-30363](https://nvd.nist.gov/vuln/detail/CVE-2026-30363) | 0.0 | NONE | N/A | No | — | 0.00 | 2026-05-01 | flipperzero-firmware commit ad2a80 was discovered to contain a stack overflow in the "Main" function. |
+| [CVE-2026-30363](https://nvd.nist.gov/vuln/detail/CVE-2026-30363) | 8.4 | HIGH | CWE-121 | No | — | 5.88 | 2026-05-01 | flipperzero-firmware commit ad2a80 was discovered to contain a stack overflow in the "Main" function. |
 | [CVE-2025-52347](https://nvd.nist.gov/vuln/detail/CVE-2025-52347) | 7.8 | HIGH | CWE-20 | No | — | 5.46 | 2026-05-01 | An issue in the component DirectIo64.sys of PassMark BurnInTest v11.0 Build 1011, OSForensics v11.1 Build 1007, and Perf... |
 | [CVE-2026-7588](https://nvd.nist.gov/vuln/detail/CVE-2026-7588) | 5.5 | MEDIUM | CWE-22 | No | — | 3.85 | 2026-05-01 | A vulnerability was found in ggerve coding-standards-mcp. This issue affects the function get_style_guide/get_best_pract... |
 | [CVE-2026-37457](https://nvd.nist.gov/vuln/detail/CVE-2026-37457) | 7.5 | HIGH | CWE-787 | No | — | 5.25 | 2026-05-01 | An off-by-one out-of-bounds write vulnerability in the bgp_flowspec_op_decode() function (bgpd/bgp_flowspec_util.c) of F... |
@@ -53,7 +66,6 @@ _100 vulnerabilities_
 | [CVE-2026-37503](https://nvd.nist.gov/vuln/detail/CVE-2026-37503) | 6.9 | MEDIUM | CWE-79 | No | — | 4.83 | 2026-05-01 | Cross-Site Scripting (XSS) in V2Board thru 1.7.4. The custom_html field in theme configuration is rendered using Blade u... |
 | [CVE-2026-23866](https://nvd.nist.gov/vuln/detail/CVE-2026-23866) | 4.3 | MEDIUM | CWE-940 | No | — | 3.01 | 2026-05-01 | Incomplete validation of AI rich response messages for Instagram Reels in WhatsApp for iOS v2.25.8.0 to v2.26.15.72 and... |
 | [CVE-2026-23863](https://nvd.nist.gov/vuln/detail/CVE-2026-23863) | 6.5 | MEDIUM | CWE-158 | No | — | 4.55 | 2026-05-01 | An attachment spoofing issue in WhatsApp for Windows prior to v2.3000.1032164386.258709 could have allowed maliciously f... |
-| [CVE-2026-22167](https://nvd.nist.gov/vuln/detail/CVE-2026-22167) | 7.8 | HIGH | CWE-119 | No | — | 5.46 | 2026-05-01 | Software installed and run as a non-privileged user may conduct improper GPU system calls to force GPU to write to arbit... |
 | [CVE-2026-22166](https://nvd.nist.gov/vuln/detail/CVE-2026-22166) | 8.1 | HIGH | CWE-416 | No | — | 5.67 | 2026-05-01 | A web page that contains unusual WebGPU content loaded into the GPU GLES render process and can trigger write UAF crash... |
 | [CVE-2026-22165](https://nvd.nist.gov/vuln/detail/CVE-2026-22165) | 8.1 | HIGH | CWE-416 | No | — | 5.67 | 2026-05-01 | A web page that contains unusual WebGPU content loaded into the GPU GLES render process and can trigger a write UAF cras... |
 | [CVE-2026-7583](https://nvd.nist.gov/vuln/detail/CVE-2026-7583) | 2.1 | LOW | CWE-404 | No | — | 1.47 | 2026-05-01 | A flaw has been found in Open5GS up to 2.7.7. This issue affects the function bsf_sess_find_by_ipv6prefix of the file /s... |
