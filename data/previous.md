@@ -1,6 +1,6 @@
 # CVEs — April 2026
 
-_5031 vulnerabilities_
+_5030 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
@@ -247,7 +247,6 @@ _5031 vulnerabilities_
 | [CVE-2026-42516](https://nvd.nist.gov/vuln/detail/CVE-2026-42516) | 7.1 | HIGH | CWE-639 | No | 0.0% | 4.97 | 2026-04-29 | This vulnerability exists in e-Sushrut due to improper authorization checks during resource access. An authenticated att... |
 | [CVE-2026-42515](https://nvd.nist.gov/vuln/detail/CVE-2026-42515) | 7.1 | HIGH | CWE-639 | No | 0.0% | 4.97 | 2026-04-29 | This vulnerability exists in e-Sushrut due to improper access control in resource access validation. An authenticated at... |
 | [CVE-2026-3325](https://nvd.nist.gov/vuln/detail/CVE-2026-3325) | 10.0 | CRITICAL | CWE-89 | No | 0.0% | 7.00 | 2026-04-29 | SQL injection (SQLi) in MegaCMS v12.0.0, specifically in the “id_territorio” parameter of the “/web_comunications/cms/ge... |
-| [CVE-2025-10503](https://nvd.nist.gov/vuln/detail/CVE-2025-10503) | 6.1 | MEDIUM | CWE-79 | No | 0.0% | 4.27 | 2026-04-29 | The authentication endpoint accepts user-supplied input without enforcing expected validation constraints, leading to a... |
 | [CVE-2026-35155](https://nvd.nist.gov/vuln/detail/CVE-2026-35155) | 7.1 | HIGH | CWE-522 | No | 0.0% | 4.97 | 2026-04-29 | Dell iDRAC10, versions 1.20.70.50 and 1.30.05.10, contains an Insufficiently Protected Credentials vulnerability. A race... |
 | [CVE-2026-21023](https://nvd.nist.gov/vuln/detail/CVE-2026-21023) | 6.9 | MEDIUM | NVD-CWE-noinfo | No | 0.0% | 4.83 | 2026-04-29 | Insufficient verification of data authenticity in PackageManagerService prior to SMR Mar-2026 Release 1 allows local att... |
 | [CVE-2026-42615](https://nvd.nist.gov/vuln/detail/CVE-2026-42615) | 7.2 | HIGH | CWE-79 | No | 0.0% | 5.04 | 2026-04-29 | GCHQ CyberChef before 11.0.0 allows XSS via Show Base64 offsets, as demonstrated by the /#recipe=Show_Base64_offsets('%3... |
