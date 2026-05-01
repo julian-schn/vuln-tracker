@@ -1,9 +1,16 @@
 # CVEs — May 2026
 
-_22 vulnerabilities_
+_29 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
+| [CVE-2026-43003](https://nvd.nist.gov/vuln/detail/CVE-2026-43003) | 8.0 | HIGH | CWE-829 | No | — | 5.60 | 2026-05-01 | An issue was discovered in OpenStack ironic-python-agent 1.0.0 through 11.5.0. Ironic Python Agent (IPA) sometimes execu... |
+| [CVE-2026-43001](https://nvd.nist.gov/vuln/detail/CVE-2026-43001) | 7.9 | HIGH | CWE-863 | No | — | 5.53 | 2026-05-01 | An issue was discovered in OpenStack Keystone 13 through 29. POST /v3/credentials did not validate that the caller-suppl... |
+| [CVE-2026-42403](https://nvd.nist.gov/vuln/detail/CVE-2026-42403) | 7.5 | HIGH | CWE-400 | No | — | 5.25 | 2026-05-01 | Apache Neethi does not properly detect circular references in policy definitions. When a WS-Policy document contains cir... |
+| [CVE-2026-42402](https://nvd.nist.gov/vuln/detail/CVE-2026-42402) | 7.5 | HIGH | CWE-400 | No | — | 5.25 | 2026-05-01 | Apache Neethi is vulnerable to a Denial of Service attack through algorithmic complexity in policy normalization. Specia... |
+| [CVE-2026-40201](https://nvd.nist.gov/vuln/detail/CVE-2026-40201) | 5.4 | MEDIUM | CWE-79 | No | — | 3.78 | 2026-05-01 | @diplodoc/search-extension 1.0.0 through 3.x before 3.0.3 allows stored XSS via the title in a .md file. |
+| [CVE-2026-7584](https://nvd.nist.gov/vuln/detail/CVE-2026-7584) | 8.4 | HIGH | CWE-502 | No | — | 5.88 | 2026-05-01 | The LabOne Q serialization framework uses a class-loading mechanism (import_cls) to dynamically import and instantiate P... |
+| [CVE-2026-42996](https://nvd.nist.gov/vuln/detail/CVE-2026-42996) | 10.0 | CRITICAL | CWE-121 | No | — | 7.00 | 2026-05-01 | JS8Call through 2.3.1 and JS8Call-improved before 3.0 have a stack-based buffer overflow via a radio transmission of @AP... |
 | [CVE-2026-7555](https://nvd.nist.gov/vuln/detail/CVE-2026-7555) | 5.5 | MEDIUM | CWE-74 | No | — | 3.85 | 2026-05-01 | A vulnerability was identified in itsourcecode Electronic Judging System 1.0. This affects an unknown part of the file /... |
 | [CVE-2026-7554](https://nvd.nist.gov/vuln/detail/CVE-2026-7554) | 2.9 | LOW | CWE-640 | No | — | 2.03 | 2026-05-01 | A vulnerability was determined in D-Link M60 up to 1.20B02. Affected by this issue is some unknown functionality of the... |
 | [CVE-2026-6127](https://nvd.nist.gov/vuln/detail/CVE-2026-6127) | 6.4 | MEDIUM | CWE-79 | No | — | 4.48 | 2026-05-01 | The Elementor Website Builder plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the _elementor_data... |
