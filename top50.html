@@ -11,7 +11,7 @@
     <header>
       <h1>vuln-tracker — Top 50</h1>
       <p class="subtitle">The 50 most important CVEs from the current and previous month, ranked by VAP score (70% CVSS + 30% EPSS)</p>
-      <p class="last-updated">Last updated: 2026-05-01 03:55 UTC</p>
+      <p class="last-updated">Last updated: 2026-05-01 06:41 UTC</p>
     </header>
     <nav>
       <a href="index.html">&larr; All CVEs</a>
@@ -50,31 +50,6 @@
         <td>8.19</td>
         <td><details><summary>marimo is a reactive Python notebook. Prior to 0.23.0, Marimo has a Pre-Auth RCE...</summary><p>marimo is a reactive Python notebook. Prior to 0.23.0, Marimo has a Pre-Auth RCE vulnerability. The terminal WebSocket endpoint /terminal/ws lacks authentication validation, allowing an unauthenticated attacker to obtain a full PTY shell and execute arbitrary system commands. Unlike other WebSocket endpoints (e.g., /ws) that correctly call validate_auth() for authentication, the /terminal/ws endpoint only checks the running mode and platform support before accepting connections, completely skipping authentication verification. This vulnerability is fixed in 0.23.0.</p></details></td>
         <td>2026-04-09</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34197" target="_blank" rel="noopener">CVE-2026-34197</a></td>
-        <td>8.8</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-20</td>
-        <td><span class="kev-yes">&#10003;</span></td>
-        <td>65.1% <small>p98</small></td>
-        <td>8.11</td>
-        <td><details><summary>Improper Input Validation, Improper Control of Generation of Code (&#x27;Code Injecti...</summary><p>Improper Input Validation, Improper Control of Generation of Code (&#x27;Code Injection&#x27;) vulnerability in Apache ActiveMQ Broker, Apache ActiveMQ.
-
-Apache ActiveMQ Classic exposes the Jolokia JMX-HTTP bridge at /api/jolokia/ on the web console. The default Jolokia access policy permits exec operations on all ActiveMQ MBeans (org.apache.activemq:*), including
-BrokerService.addNetworkConnector(String) and BrokerService.addConnector(String).
-
-An authenticated attacker can invoke these operations with a crafted discovery URI that triggers the VM transport&#x27;s brokerConfig parameter to load a remote Spring XML application context using ResourceXmlApplicationContext.
-Because Spring&#x27;s ResourceXmlApplicationContext instantiates all singleton beans before the BrokerService validates the configuration, arbitrary code execution occurs on the broker&#x27;s JVM through bean factory methods such as Runtime.exec().
-
-
-
-This issue affects Apache ActiveMQ Broker: before 5.19.4, from 6.0.0 before 6.2.3; Apache ActiveMQ All: before 5.19.4, from 6.0.0 before 6.2.3; Apache ActiveMQ: before 5.19.4, from 6.0.0 before 6.2.3.
-
-
-
-Users are recommended to upgrade to version 5.19.4 or 6.2.3, which fixes the issue</p></details></td>
-        <td>2026-04-07</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35616" target="_blank" rel="noopener">CVE-2026-35616</a></td>
@@ -141,31 +116,6 @@ Users are recommended to upgrade to version 5.19.4 or 6.2.3, which fixes the iss
         <td>7.02</td>
         <td><details><summary>Paperclip is a Node.js server and React UI that orchestrates a team of AI agents...</summary><p>Paperclip is a Node.js server and React UI that orchestrates a team of AI agents to run a business. Prior to version 2026.416.0, an unauthenticated attacker can achieve full remote code execution on any network-accessible Paperclip instance running in `authenticated` mode with default configuration. No user interaction, no credentials, just the target&#x27;s address. The chain consists of six API calls. The attack is fully automated, requires no user interaction, and works against the default deployment configuration. Version 2026.416.0 patches the issue.</p></details></td>
         <td>2026-04-23</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33453" target="_blank" rel="noopener">CVE-2026-33453</a></td>
-        <td>10.0</td>
-        <td><span class="severity critical">CRITICAL</span></td>
-        <td>CWE-915</td>
-        <td>&nbsp;</td>
-        <td>0.4% <small>p59</small></td>
-        <td>7.01</td>
-        <td><details><summary>Improperly Controlled Modification of Dynamically-Determined Object Attributes v...</summary><p>Improperly Controlled Modification of Dynamically-Determined Object Attributes vulnerability in Apache Camel Camel-Coap component.
-
-Apache Camel&#x27;s camel-coap component is vulnerable to Camel message header injection, leading to remote code execution when routes forward CoAP requests to header-sensitive producers (e.g. camel-exec)
-
-The camel-coap component maps incoming CoAP request URI query parameters directly into Camel Exchange In message headers without applying any HeaderFilterStrategy.    
-Specifically, CamelCoapResource.handleRequest() iterates over OptionSet.getUriQuery() and calls camelExchange.getIn().setHeader(...) for every query parameter. CoAPEndpoint extends DefaultEndpoint rather than DefaultHeaderFilterStrategyEndpoint, and CoAPComponent does not implement HeaderFilterStrategyComponent; the component contains no references to HeaderFilterStrategy at all.
-
-As a result, an unauthenticated attacker who can send a single CoAP UDP packet to a Camel route consuming from coap:// can inject arbitrary Camel internal headers (those prefixed with Camel*) into the Exchange. When the route delivers the message to a header-sensitive producer such as camel-exec, camel-sql, camel-bean, camel-file, or template components (camel-freemarker, camel-velocity), the injected headers can alter the producer&#x27;s behavior. In the case of camel-exec, the CamelExecCommandExecutable and CamelExecCommandArgs headers override the executable and arguments configured on the endpoint, resulting in arbitrary OS command execution under the privileges of the Camel process.
-
-The producer&#x27;s output is written back to the Exchange body and returned in the CoAP response payload by CamelCoapResource, giving the attacker an interactive RCE channel without any need for out-of-band exfiltration.
-                                                                                                                                                                         
-Exploitation prerequisites are minimal: a single unauthenticated UDP datagram to the CoAP port (default 5683). CoAP (RFC 7252) has no built-in authentication, and DTLS is optional and disabled by default. Because the protocol is UDP-based, HTTP-layer WAF/IDS controls do not apply.
-This issue affects Apache Camel: from 4.14.0 through 4.14.5, from 4.18.0 before 4.18.1, 4.19.0.
-
-Users are recommended to upgrade to version 4.18.1 or 4.19.0, fixing the issue.</p></details></td>
-        <td>2026-04-27</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33819" target="_blank" rel="noopener">CVE-2026-33819</a></td>
@@ -333,21 +283,6 @@ Users are recommended to upgrade to version 4.18.1 or 4.19.0, fixing the issue.<
         <td>2026-04-03</td>
       </tr>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2017-20230" target="_blank" rel="noopener">CVE-2017-20230</a></td>
-        <td>10.0</td>
-        <td><span class="severity critical">CRITICAL</span></td>
-        <td>CWE-121</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p9</small></td>
-        <td>7.00</td>
-        <td><details><summary>Storable versions before 3.05 for Perl has a stack overflow.
-
-The retrieve_hook ...</summary><p>Storable versions before 3.05 for Perl has a stack overflow.
-
-The retrieve_hook function stored the length of the class name into a signed integer but in read operations treated the length as unsigned. This allowed an attacker to craft data that could trigger the overflow.</p></details></td>
-        <td>2026-04-21</td>
-      </tr>
-      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-3325" target="_blank" rel="noopener">CVE-2026-3325</a></td>
         <td>10.0</td>
         <td><span class="severity critical">CRITICAL</span></td>
@@ -379,19 +314,6 @@ The retrieve_hook function stored the length of the class name into a signed int
         <td>7.00</td>
         <td><details><summary>A vulnerability was identified in Juju from version 3.2.0 until 3.6.19 and from ...</summary><p>A vulnerability was identified in Juju from version 3.2.0 until 3.6.19 and from version 4.0 until 4.0.4, where the internal Dqlite database cluster fails to perform proper TLS client and server authentication. Specifically, the Juju controller&#x27;s database endpoint does not validate client certificates when a new node attempts to join the cluster. An unauthenticated attacker with network reachability to the Juju controller&#x27;s Dqlite port can exploit this flaw to join the database cluster. Once joined, the attacker gains full read and write access to the underlying database, allowing for total data compromise.</p></details></td>
         <td>2026-04-01</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-15638" target="_blank" rel="noopener">CVE-2025-15638</a></td>
-        <td>10.0</td>
-        <td><span class="severity critical">CRITICAL</span></td>
-        <td>NVD-CWE-noinfo</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p5</small></td>
-        <td>7.00</td>
-        <td><details><summary>Net::Dropbear versions before 0.14 for Perl contains a vulnerable version of lib...</summary><p>Net::Dropbear versions before 0.14 for Perl contains a vulnerable version of libtomcrypt.
-
-Net::Dropbear versions before 0.14 includes versions of Dropbear 2019.78 or earlier. These include versions of libtomcrypt v1.18.1 or earlier, which is affected by CVE-2016-6129 and CVE-2018-12437.</p></details></td>
-        <td>2026-04-21</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-36767" target="_blank" rel="noopener">CVE-2026-36767</a></td>
@@ -436,60 +358,6 @@ Net::Dropbear versions before 0.14 includes versions of Dropbear 2019.78 or earl
         <td>6.94</td>
         <td><details><summary>Jellyfin is an open source self hosted media server. Versions prior to 10.11.7 c...</summary><p>Jellyfin is an open source self hosted media server. Versions prior to 10.11.7 contain a vulnerability chain in the subtitle upload endpoint (POST /Videos/{itemId}/Subtitles), where the Format field is not validated, allowing path traversal via the file extension and enabling arbitrary file write. This arbitrary file write can be chained into arbitrary file read via .strm files, database extraction, admin privilege escalation, and ultimately remote code execution as root via ld.so.preload. Exploitation requires an administrator account or a user that has been explicitly granted the &quot;Upload Subtitles&quot; permission. This issue has been fixed in version 10.11.7. If users are unable to upgrade immediately, they can grant non-administrator users Subtitle upload permissions to reduce attack surface.</p></details></td>
         <td>2026-04-14</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-20147" target="_blank" rel="noopener">CVE-2026-20147</a></td>
-        <td>9.9</td>
-        <td><span class="severity critical">CRITICAL</span></td>
-        <td>CWE-77</td>
-        <td>&nbsp;</td>
-        <td>0.3% <small>p51</small></td>
-        <td>6.94</td>
-        <td><details><summary>A vulnerability in Cisco ISE and Cisco ISE-PIC could allow an authenticated, rem...</summary><p>A vulnerability in Cisco ISE and Cisco ISE-PIC could allow an authenticated, remote attacker to execute arbitrary commands on the underlying operating system of an affected device. To exploit this vulnerability, the attacker must have valid administrative credentials.
-
-This vulnerability is due to insufficient validation of user-supplied input. An attacker could exploit this vulnerability by sending a crafted HTTP request to an affected device. A successful exploit could allow the attacker to obtain user-level access to the underlying operating system and then elevate privileges to root. In single-node ISE deployments, successful exploitation of this vulnerability could cause the affected ISE node to become unavailable, resulting in a denial of service (DoS) condition. In that condition, endpoints that have not already authenticated would be unable to access the network until the node is restored.</p></details></td>
-        <td>2026-04-15</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-20186" target="_blank" rel="noopener">CVE-2026-20186</a></td>
-        <td>9.9</td>
-        <td><span class="severity critical">CRITICAL</span></td>
-        <td>CWE-77</td>
-        <td>&nbsp;</td>
-        <td>0.3% <small>p51</small></td>
-        <td>6.94</td>
-        <td><details><summary>A vulnerability in Cisco Identity Services Engine (ISE) could allow an authentic...</summary><p>A vulnerability in Cisco Identity Services Engine (ISE) could allow an authenticated, remote attacker to execute arbitrary commands on the underlying operating system of an affected device. To exploit this vulnerability, the attacker must have at least Read Only Admin credentials.
-
-This vulnerability is due to insufficient validation of user-supplied input. An attacker could exploit this vulnerability by sending a crafted HTTP request to an affected device. A successful exploit could allow the attacker to obtain user-level access to the underlying operating system and then elevate privileges to&amp;nbsp;root. In single-node ISE deployments, successful exploitation of these vulnerabilities could cause the affected ISE node to become unavailable, resulting in a denial of service (DoS) condition. In that condition, endpoints that have not already authenticated would be unable to access the network until the node is restored.</p></details></td>
-        <td>2026-04-15</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-20180" target="_blank" rel="noopener">CVE-2026-20180</a></td>
-        <td>9.9</td>
-        <td><span class="severity critical">CRITICAL</span></td>
-        <td>CWE-22</td>
-        <td>&nbsp;</td>
-        <td>0.3% <small>p49</small></td>
-        <td>6.94</td>
-        <td><details><summary>A vulnerability in Cisco Identity Services Engine (ISE) could allow an authentic...</summary><p>A vulnerability in Cisco Identity Services Engine (ISE) could allow an authenticated, remote attacker to execute arbitrary commands on the underlying operating system of an affected device. To exploit this vulnerability, the attacker must have at least Read Only Admin credentials.
-
-This vulnerability is due to insufficient validation of user-supplied input. An attacker could exploit this vulnerability by sending a crafted HTTP request to an affected device. A successful exploit could allow the attacker to obtain user-level access to the underlying operating system and then elevate privileges to&amp;nbsp;root. In single-node ISE deployments, successful exploitation of these vulnerabilities could cause the affected ISE node to become unavailable, resulting in a denial of service (DoS) condition. In that condition, endpoints that have not already authenticated would be unable to access the network until the node is restored.</p></details></td>
-        <td>2026-04-15</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40453" target="_blank" rel="noopener">CVE-2026-40453</a></td>
-        <td>9.9</td>
-        <td><span class="severity critical">CRITICAL</span></td>
-        <td>CWE-178</td>
-        <td>&nbsp;</td>
-        <td>0.2% <small>p38</small></td>
-        <td>6.94</td>
-        <td><details><summary>The fix for CVE-2025-27636 added setLowerCase(true) to HttpHeaderFilterStrategy ...</summary><p>The fix for CVE-2025-27636 added setLowerCase(true) to HttpHeaderFilterStrategy so that case-variant header names such as &#x27;CAmelExecCommandExecutable&#x27; are filtered out alongside &#x27;CamelExecCommandExecutable&#x27;. The same setLowerCase(true) call was not applied to five non-HTTP HeaderFilterStrategy implementations: JmsHeaderFilterStrategy and ClassicJmsHeaderFilterStrategy in camel-jms, SjmsHeaderFilterStrategy in camel-sjms, CoAPHeaderFilterStrategy in camel-coap, and GooglePubsubHeaderFilterStrategy in camel-google-pubsub. Because those strategies use case-sensitive String.startsWith(&#x27;Camel&#x27;/&#x27;camel&#x27;) filtering while the Camel Exchange stores headers in a case-insensitive map, an attacker with JMS (or equivalent) producer access to the broker consumed by a Camel route can inject case-variant Camel internal headers, which are then resolved by downstream components such as camel-exec and camel-file using their canonical casing. This enables remote code execution and arbitrary file write on routes that forward JMS messages to header-driven components.
-
-This issue affects Apache Camel: from 3.0.0 before 4.14.6, from 4.15.0 before 4.18.2, from 4.19.0 before 4.20.0.
-
-Users are recommended to upgrade to version 4.20.0, which fixes the issue. If users are on the 4.14.x LTS releases stream, then they are suggested to upgrade to 4.14.6. If users are on the 4.18.x releases stream, then they are suggested to upgrade to 4.18.2.</p></details></td>
-        <td>2026-04-27</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34612" target="_blank" rel="noopener">CVE-2026-34612</a></td>
@@ -613,36 +481,113 @@ Users are recommended to upgrade to version 4.20.0, which fixes the issue. If us
         <td>2026-04-01</td>
       </tr>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40470" target="_blank" rel="noopener">CVE-2026-40470</a></td>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-25212" target="_blank" rel="noopener">CVE-2026-25212</a></td>
         <td>9.9</td>
         <td><span class="severity critical">CRITICAL</span></td>
-        <td>CWE-79</td>
+        <td>CWE-250</td>
         <td>&nbsp;</td>
         <td>0.1% <small>p15</small></td>
         <td>6.93</td>
-        <td><details><summary>A critical XSS vulnerability affected hackage-server and
-hackage.haskell.org.  H...</summary><p>A critical XSS vulnerability affected hackage-server and
-hackage.haskell.org.  HTML and JavaScript files provided in source
-packages or via the documentation upload facility were served
-as-is on the main hackage.haskell.org domain.  As a consequence,
-when a user with latent HTTP credentials browses to the package
-pages or documentation uploaded by a malicious package maintainer,
-their session can be hijacked to upload packages or
-documentation, amend maintainers or other package metadata, or
-perform any other action the user is authorised to do.</p></details></td>
-        <td>2026-04-23</td>
+        <td><details><summary>An issue was discovered in Percona PMM before 3.7. Because an internal database ...</summary><p>An issue was discovered in Percona PMM before 3.7. Because an internal database user retains specific superuser privileges, an attacker with pmm-admin rights can abuse the &quot;Add data source&quot; feature to break out of the database context and execute shell commands on the underlying operating system.</p></details></td>
+        <td>2026-04-02</td>
       </tr>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40472" target="_blank" rel="noopener">CVE-2026-40472</a></td>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40933" target="_blank" rel="noopener">CVE-2026-40933</a></td>
+        <td>9.9</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-78</td>
+        <td>&nbsp;</td>
+        <td>0.0% <small>p14</small></td>
+        <td>6.93</td>
+        <td><details><summary>Flowise is a drag &amp; drop user interface to build a customized large language mod...</summary><p>Flowise is a drag &amp; drop user interface to build a customized large language model flow. Prior to 3.1.0, due to unsafe serialization of stdio commands in the MCP adapter, an authenticated attacker can add an MCP stdio server with an arbitrary command, achieving command execution. The vulnerability lies in a bug in the input sanitization from the “Custom MCP” configuration in http://localhost:3000/canvas - where any user can add a new MCP, when doing so - adding a new MCP using stdio, the user can add any command, even though your code have input sanitization checks such as validateCommandInjection and validateArgsForLocalFileAccess, and a list of predefined specific safe commands - these commands, for example &quot;npx&quot; can be combined with code execution arguments (&quot;-c touch /tmp/pwn&quot;) that enable direct code execution on the underlying OS. This vulnerability is fixed in 3.1.0.</p></details></td>
+        <td>2026-04-21</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39355" target="_blank" rel="noopener">CVE-2026-39355</a></td>
+        <td>9.9</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>0.0% <small>p14</small></td>
+        <td>6.93</td>
+        <td><details><summary>Genealogy is a family tree PHP application. Prior to 5.9.1, a critical broken ac...</summary><p>Genealogy is a family tree PHP application. Prior to 5.9.1, a critical broken access control vulnerability in the genealogy application allows any authenticated user to transfer ownership of arbitrary non-personal teams to themselves. This enables complete takeover of other users’ team workspaces and unrestricted access to all genealogy data associated with the compromised team. This vulnerability is fixed in 5.9.1.</p></details></td>
+        <td>2026-04-07</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-30269" target="_blank" rel="noopener">CVE-2026-30269</a></td>
+        <td>9.9</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-269</td>
+        <td>&nbsp;</td>
+        <td>0.0% <small>p12</small></td>
+        <td>6.93</td>
+        <td><details><summary>Improper access control in Doorman v0.1.0 and v1.0.2 allows any authenticated us...</summary><p>Improper access control in Doorman v0.1.0 and v1.0.2 allows any authenticated user to update their own account role to a non-admin privileged role via /platform/user/{username}. The `role` field is accepted by the update model without a manage_users permission check for self-updates, enabling privilege escalation to high-privileged roles.</p></details></td>
+        <td>2026-04-20</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40089" target="_blank" rel="noopener">CVE-2026-40089</a></td>
+        <td>9.9</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-918</td>
+        <td>&nbsp;</td>
+        <td>0.0% <small>p12</small></td>
+        <td>6.93</td>
+        <td><details><summary>Sonicverse is a Self-hosted Docker Compose stack for live radio streaming. The S...</summary><p>Sonicverse is a Self-hosted Docker Compose stack for live radio streaming. The Sonicverse Radio Audio Streaming Stack dashboard contains a Server-Side Request Forgery (SSRF) vulnerability in its API client (apps/dashboard/lib/api.ts). Installations created using the provided install.sh script (including the one‑liner bash &lt;(curl -fsSL https://sonicverse.short.gy/install-audiostack)) are affected. In these deployments, the dashboard accepts user-controlled URLs and passes them directly to a server-side HTTP client without sufficient validation. An authenticated operator can abuse this to make arbitrary HTTP requests from the dashboard backend to internal or external systems. This vulnerability is fixed with commit cb1ddbacafcb441549fe87d3eeabdb6a085325e4.</p></details></td>
+        <td>2026-04-09</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34569" target="_blank" rel="noopener">CVE-2026-34569</a></td>
         <td>9.9</td>
         <td><span class="severity critical">CRITICAL</span></td>
         <td>CWE-79</td>
         <td>&nbsp;</td>
-        <td>0.1% <small>p15</small></td>
+        <td>0.0% <small>p13</small></td>
         <td>6.93</td>
-        <td><details><summary>In hackage-server, user-controlled metadata from .cabal files are rendered into ...</summary><p>In hackage-server, user-controlled metadata from .cabal files are rendered into HTML
-href attributes without proper sanitization, enabling stored
-Cross-Site Scripting (XSS) attacks.</p></details></td>
+        <td><details><summary>CI4MS is a CodeIgniter 4-based CMS skeleton that delivers a production-ready, mo...</summary><p>CI4MS is a CodeIgniter 4-based CMS skeleton that delivers a production-ready, modular architecture with RBAC authorization and theme support. Prior to version 0.31.0.0, the application fails to properly sanitize user-controlled input when creating or editing blog categories. An attacker can inject a malicious JavaScript payload into the category title field, which is then stored server-side. This stored payload is later rendered unsafely across public-facing blog category pages, administrative interfaces, and blog post views without proper output encoding, leading to stored cross-site scripting (XSS). This issue has been patched in version 0.31.0.0.</p></details></td>
+        <td>2026-04-01</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34717" target="_blank" rel="noopener">CVE-2026-34717</a></td>
+        <td>9.9</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-89</td>
+        <td>&nbsp;</td>
+        <td>0.0% <small>p11</small></td>
+        <td>6.93</td>
+        <td><details><summary>OpenProject is an open-source, web-based project management software. Prior to v...</summary><p>OpenProject is an open-source, web-based project management software. Prior to version 17.2.3, the =n operator in modules/reporting/lib/report/operator.rb:177 embeds user input directly into SQL WHERE clauses without parameterization. This issue has been patched in version 17.2.3.</p></details></td>
+        <td>2026-04-02</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40906" target="_blank" rel="noopener">CVE-2026-40906</a></td>
+        <td>9.9</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-89</td>
+        <td>&nbsp;</td>
+        <td>0.0% <small>p9</small></td>
+        <td>6.93</td>
+        <td><details><summary>Electric is a Postgres sync engine. From 1.1.12 to before 1.5.0, the order_by pa...</summary><p>Electric is a Postgres sync engine. From 1.1.12 to before 1.5.0, the order_by parameter in the ElectricSQL /v1/shape API is vulnerable to error-based SQL injection, allowing any authenticated user to read, write, and destroy the full contents of the underlying PostgreSQL database through crafted ORDER BY expressions. This vulnerability is fixed in 1.5.0.</p></details></td>
+        <td>2026-04-21</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-41478" target="_blank" rel="noopener">CVE-2026-41478</a></td>
+        <td>9.9</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-89</td>
+        <td>&nbsp;</td>
+        <td>0.0% <small>p9</small></td>
+        <td>6.93</td>
+        <td><details><summary>Saltcorn is an extensible, open source, no-code database application builder. Pr...</summary><p>Saltcorn is an extensible, open source, no-code database application builder. Prior to 1.4.6, 1.5.6, and 1.6.0-beta.5, a SQL injection vulnerability in Saltcorn’s mobile-sync routes allows any authenticated low-privilege user with read access to at least one table to inject arbitrary SQL through sync parameters. This can lead to full database exfiltration, including admin password hashes and configuration secrets, and may also enable database modification or destruction depending on the backend. This vulnerability is fixed in 1.4.6, 1.5.6, and 1.6.0-beta.5.</p></details></td>
+        <td>2026-04-24</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39440" target="_blank" rel="noopener">CVE-2026-39440</a></td>
+        <td>9.9</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-94</td>
+        <td>&nbsp;</td>
+        <td>0.0% <small>p5</small></td>
+        <td>6.93</td>
+        <td><details><summary>Improper Control of Generation of Code (&#x27;Code Injection&#x27;) vulnerability in Funne...</summary><p>Improper Control of Generation of Code (&#x27;Code Injection&#x27;) vulnerability in Funnelforms LLC FunnelFormsPro allows Remote Code Inclusion.This issue affects FunnelFormsPro: from n/a through 3.8.1.</p></details></td>
         <td>2026-04-23</td>
       </tr>
             </tbody>

@@ -1,9 +1,17 @@
 # CVEs — May 2026
 
-_15 vulnerabilities_
+_22 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
+| [CVE-2026-7555](https://nvd.nist.gov/vuln/detail/CVE-2026-7555) | 5.5 | MEDIUM | CWE-74 | No | — | 3.85 | 2026-05-01 | A vulnerability was identified in itsourcecode Electronic Judging System 1.0. This affects an unknown part of the file /... |
+| [CVE-2026-7554](https://nvd.nist.gov/vuln/detail/CVE-2026-7554) | 2.9 | LOW | CWE-640 | No | — | 2.03 | 2026-05-01 | A vulnerability was determined in D-Link M60 up to 1.20B02. Affected by this issue is some unknown functionality of the... |
+| [CVE-2026-6127](https://nvd.nist.gov/vuln/detail/CVE-2026-6127) | 6.4 | MEDIUM | CWE-79 | No | — | 4.48 | 2026-05-01 | The Elementor Website Builder plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the _elementor_data... |
+| [CVE-2024-13362](https://nvd.nist.gov/vuln/detail/CVE-2024-13362) | 6.1 | MEDIUM | CWE-79 | No | — | 4.27 | 2026-05-01 | Multiple plugins and/or themes for WordPress are vulnerable to Reflected Cross-Site Scripting via the url parameter in v... |
+| [CVE-2026-7553](https://nvd.nist.gov/vuln/detail/CVE-2026-7553) | 2.0 | LOW | CWE-74 | No | — | 1.40 | 2026-05-01 | A vulnerability was found in code-projects Gym Management System 1.0. Affected by this vulnerability is an unknown funct... |
+| [CVE-2026-7550](https://nvd.nist.gov/vuln/detail/CVE-2026-7550) | 5.5 | MEDIUM | CWE-74 | No | — | 3.85 | 2026-05-01 | A vulnerability has been found in SourceCodester Pharmacy Sales and Inventory System 1.0. Affected is an unknown functio... |
+| [CVE-2026-7549](https://nvd.nist.gov/vuln/detail/CVE-2026-7549) | 5.5 | MEDIUM | CWE-74 | No | — | 3.85 | 2026-05-01 | A flaw has been found in SourceCodester Pharmacy Sales and Inventory System 1.0. This impacts an unknown function of the... |
+| [CVE-2026-42994](https://nvd.nist.gov/vuln/detail/CVE-2026-42994) | 8.8 | HIGH | CWE-78 | No | — | 6.16 | 2026-05-01 | Bitwarden CLI 2026.4.0 from 2026-04-22T21:57Z to 2026-04-22T23:30Z, when obtained from npm, had embedded malicious code.... |
 | [CVE-2026-7548](https://nvd.nist.gov/vuln/detail/CVE-2026-7548) | 7.4 | HIGH | CWE-74 | No | — | 5.18 | 2026-05-01 | A vulnerability was detected in Totolink NR1800X 9.1.0u.6279_B20210910. This affects the function sub_41A68C of the file... |
 | [CVE-2026-7546](https://nvd.nist.gov/vuln/detail/CVE-2026-7546) | 8.9 | HIGH | CWE-119 | No | — | 6.23 | 2026-05-01 | A security vulnerability has been detected in Totolink NR1800X 9.1.0u.6279_B20210910. The impacted element is the functi... |
 | [CVE-2026-7545](https://nvd.nist.gov/vuln/detail/CVE-2026-7545) | 5.5 | MEDIUM | CWE-74 | No | — | 3.85 | 2026-05-01 | A weakness has been identified in SourceCodester Advanced School Management System 1.0. The affected element is an unkno... |
@@ -18,4 +26,3 @@ _15 vulnerabilities_
 | [CVE-2026-5405](https://nvd.nist.gov/vuln/detail/CVE-2026-5405) | 7.8 | HIGH | CWE-122 | No | — | 5.46 | 2026-05-01 | RDP protocol dissector crash in Wireshark 4.6.0 to 4.6.4 and 4.4.0 to 4.4.14 allows denial of service and possible code... |
 | [CVE-2026-5404](https://nvd.nist.gov/vuln/detail/CVE-2026-5404) | 4.7 | MEDIUM | CWE-120 | No | — | 3.29 | 2026-05-01 | K12 RF5 file parser crash in Wireshark 4.6.0 to 4.6.4 and 4.4.0 to 4.4.14 allows denial of service |
 | [CVE-2026-5403](https://nvd.nist.gov/vuln/detail/CVE-2026-5403) | 7.8 | HIGH | CWE-122 | No | — | 5.46 | 2026-05-01 | SBC codec crash in Wireshark 4.6.0 to 4.6.4 and 4.4.0 to 4.4.14 allows denial of service and possible code execution |
-| [CVE-2026-22726](https://nvd.nist.gov/vuln/detail/CVE-2026-22726) | 5.0 | MEDIUM | CWE-923 | No | — | 3.50 | 2026-05-01 | Route Services can be leveraged to send app traffic to network destinations outside of an app's configured egress rules.... |
