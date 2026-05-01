@@ -11,7 +11,7 @@
     <header>
       <h1>vuln-tracker</h1>
       <p class="subtitle">CVEs from the National Vulnerability Database — current and previous month</p>
-      <p class="last-updated">Last updated: 2026-05-01 09:51 UTC</p>
+      <p class="last-updated">Last updated: 2026-05-01 11:12 UTC</p>
     </header>
     <nav>
       <a href="top50.html">&#9733; Top 50</a>
@@ -25,7 +25,7 @@
     </nav>
     <main>
     <section>
-      <h2>Current Month — May 2026 <span class="count">(29)</span></h2>
+      <h2>Current Month — May 2026 <span class="count">(28)</span></h2>
       <div class="table-wrapper">
         <table>
           <thead>
@@ -42,6 +42,17 @@
             </tr>
           </thead>
           <tbody>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-7567" target="_blank" rel="noopener">CVE-2026-7567</a></td>
+        <td>9.8</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-288</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.86</td>
+        <td><details><summary>The Temporary Login plugin for WordPress is vulnerable to Authentication Bypass ...</summary><p>The Temporary Login plugin for WordPress is vulnerable to Authentication Bypass in versions up to and including 1.0.0. This is due to improper input validation in the maybe_login_temporary_user() function, which fails to verify that the &#x27;temp-login-token&#x27; GET parameter is a scalar string before processing it. When the parameter is supplied as an array, PHP&#x27;s empty() check is bypassed and sanitize_key() returns an empty string, which is then passed as the meta_value to get_users(). WordPress ignores an empty meta_value and returns all users matching the meta_key &#x27;_temporary_login_token&#x27;, allowing authentication without a valid token. This makes it possible for unauthenticated attackers to authenticate as any active temporary login user by sending a single crafted GET request.</p></details></td>
+        <td>2026-05-01</td>
+      </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-43003" target="_blank" rel="noopener">CVE-2026-43003</a></td>
         <td>8.0</td>
@@ -62,32 +73,6 @@
         <td>&mdash;</td>
         <td>5.53</td>
         <td><details><summary>An issue was discovered in OpenStack Keystone 13 through 29. POST /v3/credential...</summary><p>An issue was discovered in OpenStack Keystone 13 through 29. POST /v3/credentials did not validate that the caller-supplied project_id for an EC2-type credential matched the project of the authenticating application credential. This allowed an attacker holding an unrestricted application credential for project A to create an EC2 credential targeting project B; a subsequent /v3/ec2tokens exchange would then issue a Keystone token scoped to project B while still carrying the original app_cred_id, enabling cross-project lateral movement within the credential owner&#x27;s role footprint.</p></details></td>
-        <td>2026-05-01</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-42403" target="_blank" rel="noopener">CVE-2026-42403</a></td>
-        <td>7.5</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-400</td>
-        <td>&nbsp;</td>
-        <td>&mdash;</td>
-        <td>5.25</td>
-        <td><details><summary>Apache Neethi does not properly detect circular references in policy definitions...</summary><p>Apache Neethi does not properly detect circular references in policy definitions. When a WS-Policy document contains circular policy references (where Policy A references Policy B which references Policy A), the policy normalization process can enter an infinite loop or cause excessive recursion, leading to a stack overflow or application hang. An attacker can craft malicious policy documents with circular references to cause a Denial of Service condition
-
-Users are recommended to upgrade to version 3.2.2, which fixes this issue.</p></details></td>
-        <td>2026-05-01</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-42402" target="_blank" rel="noopener">CVE-2026-42402</a></td>
-        <td>7.5</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-400</td>
-        <td>&nbsp;</td>
-        <td>&mdash;</td>
-        <td>5.25</td>
-        <td><details><summary>Apache Neethi is vulnerable to a Denial of Service attack through algorithmic co...</summary><p>Apache Neethi is vulnerable to a Denial of Service attack through algorithmic complexity in policy normalization. Specially crafted WS-Policy documents can trigger an exponential Cartesian cross-product expansion during the normalization process, causing unbounded memory allocation that exhausts the JVM heap. This occurs when the normalization process generates an excessive number of policy alternatives without bounds, leading to runtime memory exhaustion.
-
-Users should upgrade to 3.2.2 which limits the maximum number of normalized policy alternatives.</p></details></td>
         <td>2026-05-01</td>
       </tr>
       <tr>
@@ -370,7 +355,7 @@ Users should upgrade to 3.2.2 which limits the maximum number of normalized poli
       </div>
     </section>
     <section>
-      <h2>Previous Month — April 2026 <span class="count">(5030)</span></h2>
+      <h2>Previous Month — April 2026 <span class="count">(5029)</span></h2>
       <div class="table-wrapper">
         <table>
           <thead>
@@ -13838,29 +13823,6 @@ Users should upgrade to 3.2.2 which limits the maximum number of normalized poli
         <td>0.0% <small>p6</small></td>
         <td>3.08</td>
         <td><details><summary>The Short Comment Filter plugin for WordPress is vulnerable to Stored Cross-Site...</summary><p>The Short Comment Filter plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the &#x27;Minimum Count&#x27; settings field in all versions up to and including 2.2. This is due to insufficient input sanitization (no sanitize callback on register_setting) and missing output escaping (no esc_attr() on the echoed value in the input&#x27;s value attribute). The option value is stored via update_option() and rendered unescaped in an HTML attribute context. This makes it possible for authenticated attackers, with administrator-level access and above, to inject arbitrary web scripts in the settings page that will execute whenever a user accesses that page. This is particularly impactful in WordPress multisite installations or when DISALLOW_UNFILTERED_HTML is set, where administrators are not granted the unfiltered_html capability.</p></details></td>
-        <td>2026-04-22</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-31431" target="_blank" rel="noopener">CVE-2026-31431</a></td>
-        <td>7.8</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-669</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p0</small></td>
-        <td>5.46</td>
-        <td><details><summary>In the Linux kernel, the following vulnerability has been resolved:
-
-crypto: alg...</summary><p>In the Linux kernel, the following vulnerability has been resolved:
-
-crypto: algif_aead - Revert to operating out-of-place
-
-This mostly reverts commit 72548b093ee3 except for the copying of
-the associated data.
-
-There is no benefit in operating in-place in algif_aead since the
-source and destination come from different mappings.  Get rid of
-all the complexity added for in-place operation and just copy the
-AD directly.</p></details></td>
         <td>2026-04-22</td>
       </tr>
       <tr>
