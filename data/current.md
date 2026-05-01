@@ -1,9 +1,18 @@
 # CVEs — May 2026
 
-_28 vulnerabilities_
+_37 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
+| [CVE-2026-7581](https://nvd.nist.gov/vuln/detail/CVE-2026-7581) | 2.1 | LOW | CWE-346 | No | — | 1.47 | 2026-05-01 | A security vulnerability has been detected in alexta69 MeTube up to 2026.04.09. This affects the function on_prepare of... |
+| [CVE-2026-7580](https://nvd.nist.gov/vuln/detail/CVE-2026-7580) | 1.9 | LOW | CWE-74 | No | — | 1.33 | 2026-05-01 | A vulnerability was detected in Exiftool up to 13.53. Impacted is the function Process_mrld of the file lib/Image/ExifTo... |
+| [CVE-2026-7579](https://nvd.nist.gov/vuln/detail/CVE-2026-7579) | 5.5 | MEDIUM | CWE-259 | No | — | 3.85 | 2026-05-01 | A security vulnerability has been detected in AstrBotDevs AstrBot up to 4.16.0. This issue affects some unknown processi... |
+| [CVE-2026-3772](https://nvd.nist.gov/vuln/detail/CVE-2026-3772) | 8.8 | HIGH | CWE-352 | No | — | 6.16 | 2026-05-01 | The WP Editor plugin for WordPress is vulnerable to Cross-Site Request Forgery in all versions up to, and including, 1.2... |
+| [CVE-2026-3140](https://nvd.nist.gov/vuln/detail/CVE-2026-3140) | 4.3 | MEDIUM | CWE-352 | No | — | 3.01 | 2026-05-01 | The Ultimate Dashboard plugin for WordPress is vulnerable to Cross-Site Request Forgery in all versions up to, and inclu... |
+| [CVE-2026-7578](https://nvd.nist.gov/vuln/detail/CVE-2026-7578) | 2.0 | LOW | CWE-284 | No | — | 1.40 | 2026-05-01 | A weakness has been identified in MacCMS Pro up to 2022.1.3. This vulnerability affects the function install of the file... |
+| [CVE-2026-42779](https://nvd.nist.gov/vuln/detail/CVE-2026-42779) | 9.8 | CRITICAL | CWE-502 | No | — | 6.86 | 2026-05-01 | The fix for CVE-2026-41635 was not applied to the 2.1.X and 2.2.X branches. Here was the original issue description:... |
+| [CVE-2026-42778](https://nvd.nist.gov/vuln/detail/CVE-2026-42778) | 9.8 | CRITICAL | CWE-502 | No | — | 6.86 | 2026-05-01 | The fix for CVE-2026-41409 was not applied to the 2.1.X and 2.2.X branches. Here was the original issue description:... |
+| [CVE-2026-42404](https://nvd.nist.gov/vuln/detail/CVE-2026-42404) | 6.5 | MEDIUM | CWE-918 | No | — | 4.55 | 2026-05-01 | Apache Neethi does not impose any restrictions on URIs when manually fetching remote policy references through the Polic... |
 | [CVE-2026-7567](https://nvd.nist.gov/vuln/detail/CVE-2026-7567) | 9.8 | CRITICAL | CWE-288 | No | — | 6.86 | 2026-05-01 | The Temporary Login plugin for WordPress is vulnerable to Authentication Bypass in versions up to and including 1.0.0. T... |
 | [CVE-2026-43003](https://nvd.nist.gov/vuln/detail/CVE-2026-43003) | 8.0 | HIGH | CWE-829 | No | — | 5.60 | 2026-05-01 | An issue was discovered in OpenStack ironic-python-agent 1.0.0 through 11.5.0. Ironic Python Agent (IPA) sometimes execu... |
 | [CVE-2026-43001](https://nvd.nist.gov/vuln/detail/CVE-2026-43001) | 7.9 | HIGH | CWE-863 | No | — | 5.53 | 2026-05-01 | An issue was discovered in OpenStack Keystone 13 through 29. POST /v3/credentials did not validate that the caller-suppl... |

@@ -1,6 +1,6 @@
 # CVEs — April 2026
 
-_5029 vulnerabilities_
+_5038 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
@@ -93,7 +93,12 @@ _5029 vulnerabilities_
 | [CVE-2024-13971](https://nvd.nist.gov/vuln/detail/CVE-2024-13971) | 7.7 | HIGH | CWE-611 | No | — | 5.39 | 2026-04-30 | Unauthenticated attackers can exploit a weakness in the XML parser functionality of Lobster_pro prior to version 4.12.6-... |
 | [CVE-2026-6498](https://nvd.nist.gov/vuln/detail/CVE-2026-6498) | 5.3 | MEDIUM | CWE-345 | No | 0.0% | 3.71 | 2026-04-30 | The Five Star Restaurant Reservations plugin for WordPress is vulnerable to a payment bypass via PHP type juggling in ve... |
 | [CVE-2026-41016](https://nvd.nist.gov/vuln/detail/CVE-2026-41016) | 5.9 | MEDIUM | CWE-295 | No | 0.0% | 4.13 | 2026-04-30 | Apache Airflow's SMTP provider `SmtpHook` called Python's `smtplib.SMTP.starttls()` without an SSL context, so no certif... |
+| [CVE-2026-42512](https://nvd.nist.gov/vuln/detail/CVE-2026-42512) | 7.3 | HIGH | CWE-122 | No | 0.0% | 5.11 | 2026-04-30 | As dhclient is building an environment to pass to dhclient-script, it may need to resize the array of string pointers.... |
+| [CVE-2026-39457](https://nvd.nist.gov/vuln/detail/CVE-2026-39457) | 7.8 | HIGH | CWE-121 | No | 0.0% | 5.46 | 2026-04-30 | When exchanging data over a socket, libnv uses select(2) to wait for data to arrive.  However, it does not verify whethe... |
+| [CVE-2026-35547](https://nvd.nist.gov/vuln/detail/CVE-2026-35547) | 9.1 | CRITICAL | CWE-122 | No | 0.0% | 6.37 | 2026-04-30 | When processing the header of an incoming message, libnv failed to properly validate the message size.  The lack of vali... |
 | [CVE-2026-22070](https://nvd.nist.gov/vuln/detail/CVE-2026-22070) | 7.1 | HIGH | CWE-23 | No | 0.0% | 4.97 | 2026-04-30 | ColorOS Assistant has an unauthenticated start-download channel, leading to file path traversal. |
+| [CVE-2026-7164](https://nvd.nist.gov/vuln/detail/CVE-2026-7164) | 7.5 | HIGH | CWE-674 | No | 0.1% | 5.25 | 2026-04-30 | Incorrect packet validation allowed unbounded recursion parsing SCTP chunk parameters.  This can eventually result in a... |
+| [CVE-2026-7270](https://nvd.nist.gov/vuln/detail/CVE-2026-7270) | 7.8 | HIGH | CWE-783 | No | 0.0% | 5.46 | 2026-04-30 | An operator precedence bug in the kernel results in a scenario where a buffer overflow causes attacker-controlled data t... |
 | [CVE-2026-6870](https://nvd.nist.gov/vuln/detail/CVE-2026-6870) | 5.5 | MEDIUM | CWE-824 | No | 0.0% | 3.85 | 2026-04-30 | GSM RP protocol dissector crash in Wireshark 4.6.0 to 4.6.4 and 4.4.0 to 4.4.14 allows denial of service |
 | [CVE-2026-6869](https://nvd.nist.gov/vuln/detail/CVE-2026-6869) | 5.5 | MEDIUM | CWE-1325 | No | 0.0% | 3.85 | 2026-04-30 | WebSocket protocol dissector crash in Wireshark 4.6.0 to 4.6.4 and 4.4.0 to 4.4.14 allows denial of service |
 | [CVE-2026-6867](https://nvd.nist.gov/vuln/detail/CVE-2026-6867) | 5.5 | MEDIUM | CWE-1325 | No | 0.0% | 3.85 | 2026-04-30 | SMB2 protocol dissector crash in Wireshark 4.6.0 to 4.6.4 and 4.4.0 to 4.4.14 allows denial of service |
@@ -128,6 +133,7 @@ _5029 vulnerabilities_
 | [CVE-2026-5401](https://nvd.nist.gov/vuln/detail/CVE-2026-5401) | 5.5 | MEDIUM | CWE-674 | No | 0.0% | 3.85 | 2026-04-30 | AFP Spotlight protocol dissector crash in Wireshark 4.6.0 to 4.6.4 and 4.4.0 to 4.4.14 allows denial of service |
 | [CVE-2026-5299](https://nvd.nist.gov/vuln/detail/CVE-2026-5299) | 5.5 | MEDIUM | CWE-674 | No | 0.0% | 3.85 | 2026-04-30 | ICMPv6 PvD protocol dissector crash in Wireshark 4.6.0 to 4.6.4 and 4.4.0 to 4.4.14 allows denial of service |
 | [CVE-2026-42798](https://nvd.nist.gov/vuln/detail/CVE-2026-42798) | 4.0 | MEDIUM | CWE-190 | No | 0.0% | 2.80 | 2026-04-30 | Little CMS (lcms2) 2.16 through 2.18 before 2.19 has an integer overflow in ParseCube in cmscgats.c. |
+| [CVE-2026-42511](https://nvd.nist.gov/vuln/detail/CVE-2026-42511) | 7.3 | HIGH | CWE-149 | No | 0.0% | 5.11 | 2026-04-30 | The BOOTP file field is written to the lease file without escaping embedded double-quotes, allowing injection of arbitra... |
 | [CVE-2026-41226](https://nvd.nist.gov/vuln/detail/CVE-2026-41226) | 5.1 | MEDIUM | CWE-601 | No | 0.0% | 3.57 | 2026-04-30 | Open redirect vulnerability exists in Multiple laser printers and MFPs which implement Ricoh Web Image Monitor. When acc... |
 | [CVE-2024-39847](https://nvd.nist.gov/vuln/detail/CVE-2024-39847) | 8.7 | HIGH | CWE-611 | No | 0.1% | 6.09 | 2026-04-30 | Unauthenticated attackers can exploit a weakness in the XML parser functionality of the SOAP endpoints in 4D server. Thi... |
 | [CVE-2026-7379](https://nvd.nist.gov/vuln/detail/CVE-2026-7379) | 5.5 | MEDIUM | CWE-401 | No | 0.0% | 3.85 | 2026-04-30 | Memory leak in sharkd 4.6.0 to 4.6.4 and 4.4.0 to 4.4.14 allows denial of service |
@@ -1247,6 +1253,8 @@ _5029 vulnerabilities_
 | [CVE-2026-6416](https://nvd.nist.gov/vuln/detail/CVE-2026-6416) | 2.7 | LOW | CWE-400 | No | 0.0% | 1.89 | 2026-04-22 | Tanium addressed an uncontrolled resource consumption vulnerability in Interact. |
 | [CVE-2026-6408](https://nvd.nist.gov/vuln/detail/CVE-2026-6408) | 2.7 | LOW | CWE-522 | No | 0.0% | 1.89 | 2026-04-22 | Tanium addressed an information disclosure vulnerability in Tanium Server. |
 | [CVE-2026-6392](https://nvd.nist.gov/vuln/detail/CVE-2026-6392) | 2.7 | LOW | CWE-200 | No | 0.0% | 1.89 | 2026-04-22 | Tanium addressed an information disclosure vulnerability in Threat Response. |
+| [CVE-2026-6386](https://nvd.nist.gov/vuln/detail/CVE-2026-6386) | 6.2 | MEDIUM | CWE-269 | No | 0.0% | 4.34 | 2026-04-22 | In order to apply a particular protection key to an address range, the kernel must update the corresponding page table e... |
+| [CVE-2026-5398](https://nvd.nist.gov/vuln/detail/CVE-2026-5398) | 8.4 | HIGH | CWE-416 | No | 0.0% | 5.88 | 2026-04-22 | The implementation of TIOCNOTTY failed to clear a back-pointer from the structure representing the controlling terminal... |
 | [CVE-2026-41458](https://nvd.nist.gov/vuln/detail/CVE-2026-41458) | 8.2 | HIGH | CWE-362 | No | 0.4% | 5.75 | 2026-04-22 | OwnTone Server versions 28.4 through 29.0 contain a race condition vulnerability in the DAAP login handler that allows u... |
 | [CVE-2026-41457](https://nvd.nist.gov/vuln/detail/CVE-2026-41457) | 6.9 | MEDIUM | CWE-89 | No | 0.0% | 4.83 | 2026-04-22 | OwnTone Server versions 28.4 through 29.0 contain a SQL injection vulnerability in DAAP query and filter handling that a... |
 | [CVE-2026-41146](https://nvd.nist.gov/vuln/detail/CVE-2026-41146) | 8.7 | HIGH | CWE-400 | No | 0.1% | 6.09 | 2026-04-22 | facil.io is a C micro-framework for web applications. Prior to commit 5128747363055201d3ecf0e29bf0a961703c9fa0, `fio_jso... |
@@ -2591,6 +2599,7 @@ _5029 vulnerabilities_
 | [CVE-2026-2450](https://nvd.nist.gov/vuln/detail/CVE-2026-2450) | 7.4 | HIGH | CWE-520 | No | 0.0% | 5.18 | 2026-04-14 | .NET misconfiguration: use of impersonation vulnerability in upKeeper Solutions upKeeper Instant Privilege Access allows... |
 | [CVE-2024-9168](https://nvd.nist.gov/vuln/detail/CVE-2024-9168) | 0.0 | NONE | N/A | No | — | 0.00 | 2026-04-14 | Rejected reason: ** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. Reason: This candidate was issued in error. Notes: All r... |
 | [CVE-2026-2449](https://nvd.nist.gov/vuln/detail/CVE-2026-2449) | 9.0 | CRITICAL | CWE-88 | No | 0.1% | 6.30 | 2026-04-14 | Improper neutralization of argument delimiters in a command ('argument injection') vulnerability in upKeeper Solutions u... |
+| [CVE-2026-2332](https://nvd.nist.gov/vuln/detail/CVE-2026-2332) | 7.4 | HIGH | CWE-444 | No | 0.0% | 5.18 | 2026-04-14 | In Eclipse Jetty, the HTTP/1.1 parser is vulnerable to request smuggling when chunk extensions are used, similar to the... |
 | [CVE-2026-24069](https://nvd.nist.gov/vuln/detail/CVE-2026-24069) | 5.4 | MEDIUM | CWE-863 | No | 0.0% | 3.78 | 2026-04-14 | Kiuwan SAST improperly authorizes SSO logins for locally disabled mapped user accounts, allowing disabled users to conti... |
 | [CVE-2025-13822](https://nvd.nist.gov/vuln/detail/CVE-2025-13822) | 5.3 | MEDIUM | CWE-639 | No | 0.1% | 3.71 | 2026-04-14 | MCPHub in versions below 0.11.0 is vulnerable to authentication bypass. Some endpoints are not protected by authenticati... |
 | [CVE-2026-4109](https://nvd.nist.gov/vuln/detail/CVE-2026-4109) | 4.3 | MEDIUM | CWE-862 | No | 0.0% | 3.01 | 2026-04-14 | The Eventin – Events Calendar, Event Booking, Ticket & Registration (AI Powered) plugin for WordPress is vulnerable to u... |
