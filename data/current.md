@@ -1,9 +1,29 @@
 # CVEs — May 2026
 
-_123 vulnerabilities_
+_144 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
+| [CVE-2026-7649](https://nvd.nist.gov/vuln/detail/CVE-2026-7649) | 7.5 | HIGH | CWE-89 | No | — | 5.25 | 2026-05-02 | The ARMember – Membership Plugin, Content Restriction, Member Levels, User Profile & User signup plugin for WordPress is... |
+| [CVE-2026-7607](https://nvd.nist.gov/vuln/detail/CVE-2026-7607) | 8.7 | HIGH | CWE-119 | No | — | 6.09 | 2026-05-02 | A security vulnerability has been detected in TRENDnet TEW-821DAP 1.12B01. Impacted is the function auto_update_firmware... |
+| [CVE-2026-7606](https://nvd.nist.gov/vuln/detail/CVE-2026-7606) | 6.3 | MEDIUM | CWE-345 | No | — | 4.41 | 2026-05-02 | A weakness has been identified in TRENDnet TEW-821DAP 1.12B01. This issue affects the function find_hwid/new_gui_update_... |
+| [CVE-2026-6457](https://nvd.nist.gov/vuln/detail/CVE-2026-6457) | 6.5 | MEDIUM | CWE-89 | No | — | 4.55 | 2026-05-02 | The Geo Mashup plugin for WordPress is vulnerable to time-based blind SQL Injection via the 'geo_mashup_null_fields' par... |
+| [CVE-2026-6449](https://nvd.nist.gov/vuln/detail/CVE-2026-6449) | 5.3 | MEDIUM | CWE-285 | No | — | 3.71 | 2026-05-02 | The Booking for Appointments and Events Calendar – Amelia plugin for WordPress is vulnerable to Improper Authorization i... |
+| [CVE-2026-6229](https://nvd.nist.gov/vuln/detail/CVE-2026-6229) | 7.2 | HIGH | CWE-918 | No | — | 5.04 | 2026-05-02 | The Royal Elementor Addons plugin for WordPress is vulnerable to Server-Side Request Forgery in versions up to, and incl... |
+| [CVE-2026-4650](https://nvd.nist.gov/vuln/detail/CVE-2026-4650) | 5.3 | MEDIUM | CWE-862 | No | — | 3.71 | 2026-05-02 | The FundPress – WordPress Donation Plugin for WordPress is vulnerable to authorization bypass in versions up to and incl... |
+| [CVE-2026-2052](https://nvd.nist.gov/vuln/detail/CVE-2026-2052) | 8.8 | HIGH | CWE-94 | No | — | 6.16 | 2026-05-02 | The Widget Options – Advanced Conditional Visibility for Gutenberg Blocks & Classic Widgets plugin for WordPress is vuln... |
+| [CVE-2026-7605](https://nvd.nist.gov/vuln/detail/CVE-2026-7605) | 2.1 | LOW | CWE-918 | No | — | 1.47 | 2026-05-02 | A security flaw has been discovered in JeecgBoot up to 3.9.1. This vulnerability affects the function CommonController.u... |
+| [CVE-2026-43058](https://nvd.nist.gov/vuln/detail/CVE-2026-43058) | 0.0 | NONE | N/A | No | — | 0.00 | 2026-05-02 | In the Linux kernel, the following vulnerability has been resolved:  media: vidtv: fix pass-by-value structs causing MSA... |
+| [CVE-2026-7647](https://nvd.nist.gov/vuln/detail/CVE-2026-7647) | 8.1 | HIGH | CWE-502 | No | — | 5.67 | 2026-05-02 | The Profile Builder Pro plugin for WordPress is vulnerable to PHP Object Injection in all versions up to and including 3... |
+| [CVE-2026-7049](https://nvd.nist.gov/vuln/detail/CVE-2026-7049) | 7.2 | HIGH | CWE-918 | No | — | 5.04 | 2026-05-02 | The PixelYourSite Pro – Your smart PIXEL (TAG) Manager plugin for WordPress is vulnerable to Server-Side Request Forgery... |
+| [CVE-2026-6916](https://nvd.nist.gov/vuln/detail/CVE-2026-6916) | 6.4 | MEDIUM | CWE-79 | No | — | 4.48 | 2026-05-02 | The Jeg Kit for Elementor – Powerful Addons for Elementor, Widgets & Templates for WordPress plugin for WordPress is vul... |
+| [CVE-2026-6812](https://nvd.nist.gov/vuln/detail/CVE-2026-6812) | 4.4 | MEDIUM | CWE-918 | No | — | 3.08 | 2026-05-02 | The Ona theme for WordPress is vulnerable to Server-Side Request Forgery in all versions up to, and including, 1.26 via... |
+| [CVE-2026-6447](https://nvd.nist.gov/vuln/detail/CVE-2026-6447) | 4.4 | MEDIUM | CWE-79 | No | — | 3.08 | 2026-05-02 | The Call for Price for WooCommerce plugin for WordPress is vulnerable to Stored Cross-Site Scripting via admin settings... |
+| [CVE-2026-5113](https://nvd.nist.gov/vuln/detail/CVE-2026-5113) | 7.2 | HIGH | CWE-79 | No | — | 5.04 | 2026-05-02 | The Gravity Forms plugin for WordPress is vulnerable to Stored Cross-Site Scripting via Consent field hidden inputs in v... |
+| [CVE-2026-5112](https://nvd.nist.gov/vuln/detail/CVE-2026-5112) | 7.2 | HIGH | CWE-79 | No | — | 5.04 | 2026-05-02 | The Gravity Forms plugin for WordPress is vulnerable to Unauthenticated Stored Cross-Site Scripting in versions up to an... |
+| [CVE-2026-5111](https://nvd.nist.gov/vuln/detail/CVE-2026-5111) | 7.2 | HIGH | CWE-79 | No | — | 5.04 | 2026-05-02 | The Gravity Forms plugin for WordPress is vulnerable to Stored Cross-Site Scripting in versions up to and including 2.10... |
+| [CVE-2026-5110](https://nvd.nist.gov/vuln/detail/CVE-2026-5110) | 7.2 | HIGH | CWE-79 | No | — | 5.04 | 2026-05-02 | The Gravity Forms plugin for WordPress is vulnerable to Unauthenticated Stored Cross-Site Scripting in versions up to an... |
+| [CVE-2026-5109](https://nvd.nist.gov/vuln/detail/CVE-2026-5109) | 7.2 | HIGH | CWE-79 | No | — | 5.04 | 2026-05-02 | The Gravity Forms plugin for WordPress is vulnerable to Stored Cross-Site Scripting in versions up to and including 2.10... |
 | [CVE-2026-7641](https://nvd.nist.gov/vuln/detail/CVE-2026-7641) | 8.8 | HIGH | CWE-269 | No | — | 6.16 | 2026-05-02 | The Import and export users and customers plugin for WordPress is vulnerable to Privilege Escalation in all versions up... |
 | [CVE-2026-7604](https://nvd.nist.gov/vuln/detail/CVE-2026-7604) | 2.1 | LOW | CWE-918 | No | — | 1.47 | 2026-05-02 | A vulnerability was identified in JeecgBoot up to 3.9.1. This affects the function OpenApiController.add/OpenApiControll... |
 | [CVE-2026-7603](https://nvd.nist.gov/vuln/detail/CVE-2026-7603) | 2.1 | LOW | CWE-918 | No | — | 1.47 | 2026-05-02 | A vulnerability was determined in JeecgBoot up to 3.9.1. Affected by this issue is the function checkPathTraversalBatch... |
@@ -88,6 +108,7 @@ _123 vulnerabilities_
 | [CVE-2026-42478](https://nvd.nist.gov/vuln/detail/CVE-2026-42478) | 7.5 | HIGH | CWE-476 | No | — | 5.25 | 2026-05-01 | An issue was discovered in VrmlData_IndexedFaceSet::TShape in the VRML V2.0 parser in Open CASCADE Technology (OCCT) V8_... |
 | [CVE-2026-42477](https://nvd.nist.gov/vuln/detail/CVE-2026-42477) | 7.1 | HIGH | CWE-125 | No | — | 4.97 | 2026-05-01 | A heap-based out-of-bounds read vulnerability in RWObj_Reader::read in the OBJ file parser in Open CASCADE Technology (O... |
 | [CVE-2026-42476](https://nvd.nist.gov/vuln/detail/CVE-2026-42476) | 7.1 | HIGH | CWE-125 | No | — | 4.97 | 2026-05-01 | Two heap-based out-of-bounds read vulnerabilities in the STL ASCII file parser in Open CASCADE Technology (OCCT) V8_0_0_... |
+| [CVE-2026-31776](https://nvd.nist.gov/vuln/detail/CVE-2026-31776) | 0.0 | NONE | N/A | No | — | 0.00 | 2026-05-01 | In the Linux kernel, the following vulnerability has been resolved:  ALSA: ctxfi: Fix missing SPDIFI1 index handling  SP... |
 | [CVE-2026-7582](https://nvd.nist.gov/vuln/detail/CVE-2026-7582) | 1.9 | LOW | CWE-119 | No | — | 1.33 | 2026-05-01 | A vulnerability was detected in AcademySoftwareFoundation OpenImageIO up to 3.2.0.1-dev. This vulnerability affects unkn... |
 | [CVE-2026-42484](https://nvd.nist.gov/vuln/detail/CVE-2026-42484) | 9.8 | CRITICAL | CWE-787 | No | — | 6.86 | 2026-05-01 | A heap-based buffer overflow in hex_to_binary in the PKZIP hash parser in hashcat v7.1.2 allows an attacker to cause a d... |
 | [CVE-2026-42483](https://nvd.nist.gov/vuln/detail/CVE-2026-42483) | 9.8 | CRITICAL | CWE-787 | No | — | 6.86 | 2026-05-01 | A heap-based buffer overflow in the Kerberos hash parser in hashcat v7.1.2 allows an attacker to cause a denial of servi... |

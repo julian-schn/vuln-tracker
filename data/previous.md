@@ -1,6 +1,6 @@
 # CVEs — April 2026
 
-_5029 vulnerabilities_
+_5030 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
@@ -4555,6 +4555,7 @@ _5029 vulnerabilities_
 | [CVE-2026-25118](https://nvd.nist.gov/vuln/detail/CVE-2026-25118) | 6.3 | MEDIUM | CWE-598 | No | 0.1% | 4.41 | 2026-04-03 | immich is a high performance self-hosted photo and video management solution. Prior to version 2.6.0, the Immich applica... |
 | [CVE-2026-25044](https://nvd.nist.gov/vuln/detail/CVE-2026-25044) | 8.7 | HIGH | CWE-78 | No | 0.1% | 6.09 | 2026-04-03 | Budibase is an open-source low-code platform. Prior to version 3.33.4, the bash automation step executes user-provided c... |
 | [CVE-2026-25043](https://nvd.nist.gov/vuln/detail/CVE-2026-25043) | 5.3 | MEDIUM | CWE-770 | No | 0.1% | 3.71 | 2026-04-03 | Budibase is an open-source low-code platform. Prior to version 3.23.25, a business logic vulnerability exists in Budibas... |
+| [CVE-2026-23473](https://nvd.nist.gov/vuln/detail/CVE-2026-23473) | 0.0 | NONE | N/A | No | 0.0% | 0.00 | 2026-04-03 | Rejected reason: This CVE ID has been rejected or withdrawn by its CVE Numbering Authority. |
 | [CVE-2026-23471](https://nvd.nist.gov/vuln/detail/CVE-2026-23471) | 0.0 | NONE | N/A | No | — | 0.00 | 2026-04-03 | Rejected reason: This CVE ID has been rejected or withdrawn by its CVE Numbering Authority. |
 | [CVE-2025-68153](https://nvd.nist.gov/vuln/detail/CVE-2025-68153) | 7.1 | HIGH | CWE-863 | No | 0.0% | 4.97 | 2026-04-03 | Juju is an open source application orchestration engine that enables any application operation on any infrastructure at... |
 | [CVE-2025-68152](https://nvd.nist.gov/vuln/detail/CVE-2025-68152) | 6.9 | MEDIUM | CWE-863 | No | 0.0% | 4.83 | 2026-04-03 | Juju is an open source application orchestration engine that enables any application operation on any infrastructure at... |
