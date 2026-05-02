@@ -1,9 +1,19 @@
 # CVEs — May 2026
 
-_153 vulnerabilities_
+_163 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
+| [CVE-2026-7628](https://nvd.nist.gov/vuln/detail/CVE-2026-7628) | 2.1 | LOW | CWE-74 | No | — | 1.47 | 2026-05-02 | A vulnerability was detected in crazyrabbitLTC mcp-code-review-server up to 0.1.0. This issue affects the function execu... |
+| [CVE-2026-6817](https://nvd.nist.gov/vuln/detail/CVE-2026-6817) | 5.8 | MEDIUM | CWE-79 | No | — | 4.06 | 2026-05-02 | The Quiz Maker by AYS plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'rate_reason' parameter... |
+| [CVE-2026-6525](https://nvd.nist.gov/vuln/detail/CVE-2026-6525) | 5.5 | MEDIUM | CWE-476 | No | — | 3.85 | 2026-05-02 | IEEE 802.11 protocol dissector crash in Wireshark 4.6.0 to 4.6.4 |
+| [CVE-2026-6320](https://nvd.nist.gov/vuln/detail/CVE-2026-6320) | 7.5 | HIGH | CWE-22 | No | — | 5.25 | 2026-05-02 | The Salon Booking System – Free Version plugin for WordPress is vulnerable to Arbitrary File Read in versions up to, and... |
+| [CVE-2026-4790](https://nvd.nist.gov/vuln/detail/CVE-2026-4790) | 5.4 | MEDIUM | CWE-79 | No | — | 3.78 | 2026-05-02 | The Premium Addons for Elementor – Powerful Elementor Templates & Widgets plugin for WordPress is vulnerable to Stored C... |
+| [CVE-2026-4100](https://nvd.nist.gov/vuln/detail/CVE-2026-4100) | 7.1 | HIGH | CWE-862 | No | — | 4.97 | 2026-05-02 | The Paid Memberships Pro plugin for WordPress is vulnerable to unauthorized modification and disruption of Stripe webhoo... |
+| [CVE-2026-4062](https://nvd.nist.gov/vuln/detail/CVE-2026-4062) | 7.5 | HIGH | CWE-89 | No | — | 5.25 | 2026-05-02 | The Geo Mashup plugin for WordPress is vulnerable to Time-Based SQL Injection via the 'object_ids' and 'exclude_object_i... |
+| [CVE-2026-4061](https://nvd.nist.gov/vuln/detail/CVE-2026-4061) | 7.5 | HIGH | CWE-89 | No | — | 5.25 | 2026-05-02 | The Geo Mashup plugin for WordPress is vulnerable to Time-Based SQL Injection via the 'map_post_type' parameter in all v... |
+| [CVE-2026-4060](https://nvd.nist.gov/vuln/detail/CVE-2026-4060) | 7.5 | HIGH | CWE-89 | No | — | 5.25 | 2026-05-02 | The Geo Mashup plugin for WordPress is vulnerable to Time-Based SQL Injection via the 'sort' parameter in all versions u... |
+| [CVE-2026-7627](https://nvd.nist.gov/vuln/detail/CVE-2026-7627) | 2.1 | LOW | CWE-22 | No | — | 1.47 | 2026-05-02 | A security vulnerability has been detected in 8nite metatrader-4-mcp 1.0.0. This vulnerability affects the function Call... |
 | [CVE-2026-7612](https://nvd.nist.gov/vuln/detail/CVE-2026-7612) | 2.0 | LOW | CWE-74 | No | — | 1.40 | 2026-05-02 | A vulnerability was determined in itsourcecode Courier Management System 1.0. Affected is an unknown function of the fil... |
 | [CVE-2026-7611](https://nvd.nist.gov/vuln/detail/CVE-2026-7611) | 6.3 | MEDIUM | CWE-345 | No | — | 4.41 | 2026-05-02 | A vulnerability was found in TRENDnet TEW-821DAP up to 1.12B01. This impacts the function platform_do_upgrade_cameo_dev... |
 | [CVE-2026-7610](https://nvd.nist.gov/vuln/detail/CVE-2026-7610) | 2.9 | LOW | CWE-310 | No | — | 2.03 | 2026-05-02 | A vulnerability has been found in TRENDnet TEW-821DAP 1.12B01. This affects an unknown function of the file /www/cgi/ssi... |
