@@ -1,9 +1,20 @@
 # CVEs — May 2026
 
-_144 vulnerabilities_
+_153 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
+| [CVE-2026-7612](https://nvd.nist.gov/vuln/detail/CVE-2026-7612) | 2.0 | LOW | CWE-74 | No | — | 1.40 | 2026-05-02 | A vulnerability was determined in itsourcecode Courier Management System 1.0. Affected is an unknown function of the fil... |
+| [CVE-2026-7611](https://nvd.nist.gov/vuln/detail/CVE-2026-7611) | 6.3 | MEDIUM | CWE-345 | No | — | 4.41 | 2026-05-02 | A vulnerability was found in TRENDnet TEW-821DAP up to 1.12B01. This impacts the function platform_do_upgrade_cameo_dev... |
+| [CVE-2026-7610](https://nvd.nist.gov/vuln/detail/CVE-2026-7610) | 2.9 | LOW | CWE-310 | No | — | 2.03 | 2026-05-02 | A vulnerability has been found in TRENDnet TEW-821DAP 1.12B01. This affects an unknown function of the file /www/cgi/ssi... |
+| [CVE-2026-7609](https://nvd.nist.gov/vuln/detail/CVE-2026-7609) | 2.1 | LOW | CWE-77 | No | — | 1.47 | 2026-05-02 | A flaw has been found in TRENDnet TEW-821DAP up to 1.12B01. The impacted element is the function tools_diagnostic of the... |
+| [CVE-2026-7491](https://nvd.nist.gov/vuln/detail/CVE-2026-7491) | 8.6 | HIGH | CWE-639 | No | — | 6.02 | 2026-05-02 | School App developed by Zyosoft has an Insecure Direct Object Reference vulnerability, allowing authenticated remote att... |
+| [CVE-2026-7490](https://nvd.nist.gov/vuln/detail/CVE-2026-7490) | 8.6 | HIGH | CWE-434 | No | — | 6.02 | 2026-05-02 | CTMS and CPAS developed by Sunnet has an Arbitrary File Upload vulnerability, allowing privileged remote attackers to up... |
+| [CVE-2026-7489](https://nvd.nist.gov/vuln/detail/CVE-2026-7489) | 8.7 | HIGH | CWE-89 | No | — | 6.09 | 2026-05-02 | CTMS developed by Sunnet has a SQL Injection vulnerability, allowing authenticated remote attackers to inject arbitrary... |
+| [CVE-2026-5077](https://nvd.nist.gov/vuln/detail/CVE-2026-5077) | 5.4 | MEDIUM | CWE-79 | No | — | 3.78 | 2026-05-02 | The Total theme for WordPress is vulnerable to Stored Cross-Site Scripting via post titles in versions up to, and includ... |
+| [CVE-2026-7608](https://nvd.nist.gov/vuln/detail/CVE-2026-7608) | 2.0 | LOW | CWE-77 | No | — | 1.40 | 2026-05-02 | A vulnerability was detected in TRENDnet TEW-821DAP up to 1.12B01. The affected element is the function tools_diagnostic... |
+| [CVE-2026-5324](https://nvd.nist.gov/vuln/detail/CVE-2026-5324) | 7.2 | HIGH | CWE-79 | No | — | 5.04 | 2026-05-02 | The Brizy – Page Builder plugin for WordPress is vulnerable to Unauthenticated Stored Cross-Site Scripting in all versio... |
+| [CVE-2026-4024](https://nvd.nist.gov/vuln/detail/CVE-2026-4024) | 5.3 | MEDIUM | CWE-862 | No | — | 3.71 | 2026-05-02 | The Royal Addons for Elementor plugin for WordPress is vulnerable to unauthorized modification of data due to a missing... |
 | [CVE-2026-7649](https://nvd.nist.gov/vuln/detail/CVE-2026-7649) | 7.5 | HIGH | CWE-89 | No | — | 5.25 | 2026-05-02 | The ARMember – Membership Plugin, Content Restriction, Member Levels, User Profile & User signup plugin for WordPress is... |
 | [CVE-2026-7607](https://nvd.nist.gov/vuln/detail/CVE-2026-7607) | 8.7 | HIGH | CWE-119 | No | — | 6.09 | 2026-05-02 | A security vulnerability has been detected in TRENDnet TEW-821DAP 1.12B01. Impacted is the function auto_update_firmware... |
 | [CVE-2026-7606](https://nvd.nist.gov/vuln/detail/CVE-2026-7606) | 6.3 | MEDIUM | CWE-345 | No | — | 4.41 | 2026-05-02 | A weakness has been identified in TRENDnet TEW-821DAP 1.12B01. This issue affects the function find_hwid/new_gui_update_... |
@@ -13,7 +24,6 @@ _144 vulnerabilities_
 | [CVE-2026-4650](https://nvd.nist.gov/vuln/detail/CVE-2026-4650) | 5.3 | MEDIUM | CWE-862 | No | — | 3.71 | 2026-05-02 | The FundPress – WordPress Donation Plugin for WordPress is vulnerable to authorization bypass in versions up to and incl... |
 | [CVE-2026-2052](https://nvd.nist.gov/vuln/detail/CVE-2026-2052) | 8.8 | HIGH | CWE-94 | No | — | 6.16 | 2026-05-02 | The Widget Options – Advanced Conditional Visibility for Gutenberg Blocks & Classic Widgets plugin for WordPress is vuln... |
 | [CVE-2026-7605](https://nvd.nist.gov/vuln/detail/CVE-2026-7605) | 2.1 | LOW | CWE-918 | No | — | 1.47 | 2026-05-02 | A security flaw has been discovered in JeecgBoot up to 3.9.1. This vulnerability affects the function CommonController.u... |
-| [CVE-2026-43058](https://nvd.nist.gov/vuln/detail/CVE-2026-43058) | 0.0 | NONE | N/A | No | — | 0.00 | 2026-05-02 | In the Linux kernel, the following vulnerability has been resolved:  media: vidtv: fix pass-by-value structs causing MSA... |
 | [CVE-2026-7647](https://nvd.nist.gov/vuln/detail/CVE-2026-7647) | 8.1 | HIGH | CWE-502 | No | — | 5.67 | 2026-05-02 | The Profile Builder Pro plugin for WordPress is vulnerable to PHP Object Injection in all versions up to and including 3... |
 | [CVE-2026-7049](https://nvd.nist.gov/vuln/detail/CVE-2026-7049) | 7.2 | HIGH | CWE-918 | No | — | 5.04 | 2026-05-02 | The PixelYourSite Pro – Your smart PIXEL (TAG) Manager plugin for WordPress is vulnerable to Server-Side Request Forgery... |
 | [CVE-2026-6916](https://nvd.nist.gov/vuln/detail/CVE-2026-6916) | 6.4 | MEDIUM | CWE-79 | No | — | 4.48 | 2026-05-02 | The Jeg Kit for Elementor – Powerful Addons for Elementor, Widgets & Templates for WordPress plugin for WordPress is vul... |
@@ -108,7 +118,6 @@ _144 vulnerabilities_
 | [CVE-2026-42478](https://nvd.nist.gov/vuln/detail/CVE-2026-42478) | 7.5 | HIGH | CWE-476 | No | — | 5.25 | 2026-05-01 | An issue was discovered in VrmlData_IndexedFaceSet::TShape in the VRML V2.0 parser in Open CASCADE Technology (OCCT) V8_... |
 | [CVE-2026-42477](https://nvd.nist.gov/vuln/detail/CVE-2026-42477) | 7.1 | HIGH | CWE-125 | No | — | 4.97 | 2026-05-01 | A heap-based out-of-bounds read vulnerability in RWObj_Reader::read in the OBJ file parser in Open CASCADE Technology (O... |
 | [CVE-2026-42476](https://nvd.nist.gov/vuln/detail/CVE-2026-42476) | 7.1 | HIGH | CWE-125 | No | — | 4.97 | 2026-05-01 | Two heap-based out-of-bounds read vulnerabilities in the STL ASCII file parser in Open CASCADE Technology (OCCT) V8_0_0_... |
-| [CVE-2026-31776](https://nvd.nist.gov/vuln/detail/CVE-2026-31776) | 0.0 | NONE | N/A | No | — | 0.00 | 2026-05-01 | In the Linux kernel, the following vulnerability has been resolved:  ALSA: ctxfi: Fix missing SPDIFI1 index handling  SP... |
 | [CVE-2026-7582](https://nvd.nist.gov/vuln/detail/CVE-2026-7582) | 1.9 | LOW | CWE-119 | No | — | 1.33 | 2026-05-01 | A vulnerability was detected in AcademySoftwareFoundation OpenImageIO up to 3.2.0.1-dev. This vulnerability affects unkn... |
 | [CVE-2026-42484](https://nvd.nist.gov/vuln/detail/CVE-2026-42484) | 9.8 | CRITICAL | CWE-787 | No | — | 6.86 | 2026-05-01 | A heap-based buffer overflow in hex_to_binary in the PKZIP hash parser in hashcat v7.1.2 allows an attacker to cause a d... |
 | [CVE-2026-42483](https://nvd.nist.gov/vuln/detail/CVE-2026-42483) | 9.8 | CRITICAL | CWE-787 | No | — | 6.86 | 2026-05-01 | A heap-based buffer overflow in the Kerberos hash parser in hashcat v7.1.2 allows an attacker to cause a denial of servi... |
