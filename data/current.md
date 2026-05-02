@@ -1,9 +1,12 @@
 # CVEs — May 2026
 
-_112 vulnerabilities_
+_115 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
+| [CVE-2026-7601](https://nvd.nist.gov/vuln/detail/CVE-2026-7601) | 5.3 | MEDIUM | CWE-404 | No | — | 3.71 | 2026-05-02 | A vulnerability has been found in Open5GS up to 2.7.6. Affected is an unknown function of the file src/amf/gmm-handler.c... |
+| [CVE-2026-43824](https://nvd.nist.gov/vuln/detail/CVE-2026-43824) | 7.7 | HIGH | CWE-212 | No | — | 5.39 | 2026-05-02 | In Argo CD 3.2.0 before 3.2.11 and 3.3.0 before 3.3.9, ServerSideDiff allows reading cleartext Kubernetes Secret data. |
+| [CVE-2026-7600](https://nvd.nist.gov/vuln/detail/CVE-2026-7600) | 2.1 | LOW | CWE-77 | No | — | 1.47 | 2026-05-02 | A flaw has been found in ArtMin96 yii2-mcp-server 1.0.2. This impacts the function yii_command_help/yii_execute_command... |
 | [CVE-2026-7599](https://nvd.nist.gov/vuln/detail/CVE-2026-7599) | 2.1 | LOW | CWE-22 | No | — | 1.47 | 2026-05-01 | A vulnerability was detected in Dayoooun hwpx-mcp 0.2.0. This affects the function save_document/export_to_text/export_t... |
 | [CVE-2026-7598](https://nvd.nist.gov/vuln/detail/CVE-2026-7598) | 6.9 | MEDIUM | CWE-189 | No | — | 4.83 | 2026-05-01 | A security vulnerability has been detected in libssh2 up to 1.11.1. The impacted element is the function userauth_passwo... |
 | [CVE-2026-7597](https://nvd.nist.gov/vuln/detail/CVE-2026-7597) | 2.1 | LOW | CWE-20 | No | — | 1.47 | 2026-05-01 | A vulnerability was found in mem0ai mem0 up to 1.0.11. This affects the function pickle.load/pickle.dump of the file mem... |
