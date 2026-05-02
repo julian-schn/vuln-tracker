@@ -1,9 +1,11 @@
 # CVEs — May 2026
 
-_176 vulnerabilities_
+_178 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
+| [CVE-2026-7669](https://nvd.nist.gov/vuln/detail/CVE-2026-7669) | 6.3 | MEDIUM | CWE-20 | No | — | 4.41 | 2026-05-02 | A vulnerability was detected in sgl-project SGLang up to 0.5.9. Impacted is the function get_tokenizer of the file pytho... |
+| [CVE-2026-7668](https://nvd.nist.gov/vuln/detail/CVE-2026-7668) | 5.5 | MEDIUM | CWE-119 | No | — | 3.85 | 2026-05-02 | A vulnerability was identified in MikroTik RouterOS 6.49.8. This vulnerability affects the function ASN1_STRING_data in... |
 | [CVE-2026-7653](https://nvd.nist.gov/vuln/detail/CVE-2026-7653) | 2.1 | LOW | CWE-77 | No | — | 1.47 | 2026-05-02 | A security flaw has been discovered in r-huijts mcp-server-rijksmuseum up to 1.0.4. Affected is the function open_image_... |
 | [CVE-2026-7645](https://nvd.nist.gov/vuln/detail/CVE-2026-7645) | 5.5 | MEDIUM | CWE-22 | No | — | 3.85 | 2026-05-02 | A vulnerability was found in ruvnet sublinear-time-solver 1.5.0. Affected by this vulnerability is the function export_s... |
 | [CVE-2026-7644](https://nvd.nist.gov/vuln/detail/CVE-2026-7644) | 5.5 | MEDIUM | CWE-266 | No | — | 3.85 | 2026-05-02 | A vulnerability has been found in ChatGPTNextWeb NextChat up to 2.16.1. Affected is the function addMcpServer of the fil... |
