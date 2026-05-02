@@ -1,9 +1,15 @@
 # CVEs — May 2026
 
-_170 vulnerabilities_
+_176 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
+| [CVE-2026-7653](https://nvd.nist.gov/vuln/detail/CVE-2026-7653) | 2.1 | LOW | CWE-77 | No | — | 1.47 | 2026-05-02 | A security flaw has been discovered in r-huijts mcp-server-rijksmuseum up to 1.0.4. Affected is the function open_image_... |
+| [CVE-2026-7645](https://nvd.nist.gov/vuln/detail/CVE-2026-7645) | 5.5 | MEDIUM | CWE-22 | No | — | 3.85 | 2026-05-02 | A vulnerability was found in ruvnet sublinear-time-solver 1.5.0. Affected by this vulnerability is the function export_s... |
+| [CVE-2026-7644](https://nvd.nist.gov/vuln/detail/CVE-2026-7644) | 5.5 | MEDIUM | CWE-266 | No | — | 3.85 | 2026-05-02 | A vulnerability has been found in ChatGPTNextWeb NextChat up to 2.16.1. Affected is the function addMcpServer of the fil... |
+| [CVE-2026-7643](https://nvd.nist.gov/vuln/detail/CVE-2026-7643) | 2.1 | LOW | CWE-346 | No | — | 1.47 | 2026-05-02 | A flaw has been found in ChatGPTNextWeb NextChat up to 2.16.1. This impacts an unknown function of the file Next.js of t... |
+| [CVE-2026-7642](https://nvd.nist.gov/vuln/detail/CVE-2026-7642) | 2.1 | LOW | CWE-77 | No | — | 1.47 | 2026-05-02 | A vulnerability was detected in pskill9 website-downloader up to 0.1.0. This affects the function download_website of th... |
+| [CVE-2026-7633](https://nvd.nist.gov/vuln/detail/CVE-2026-7633) | 5.5 | MEDIUM | CWE-73 | No | — | 3.85 | 2026-05-02 | A vulnerability was identified in Totolink N300RH 6.1c.1353_B20190305. This impacts the function setUploadSetting of the... |
 | [CVE-2026-7632](https://nvd.nist.gov/vuln/detail/CVE-2026-7632) | 5.5 | MEDIUM | CWE-74 | No | — | 3.85 | 2026-05-02 | A vulnerability was determined in code-projects Online Hospital Management System 1.0. This affects an unknown function... |
 | [CVE-2026-7631](https://nvd.nist.gov/vuln/detail/CVE-2026-7631) | 2.1 | LOW | CWE-266 | No | — | 1.47 | 2026-05-02 | A vulnerability was found in code-projects Online Hospital Management System 1.0. The impacted element is an unknown fun... |
 | [CVE-2026-7630](https://nvd.nist.gov/vuln/detail/CVE-2026-7630) | 5.5 | MEDIUM | CWE-287 | No | — | 3.85 | 2026-05-02 | A vulnerability has been found in innocommerce InnoShop up to 0.7.8. The affected element is the function InstallService... |
