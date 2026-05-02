@@ -11,7 +11,7 @@
     <header>
       <h1>vuln-tracker — Top 50</h1>
       <p class="subtitle">The 50 most important CVEs from the current and previous month, ranked by VAP score (70% CVSS + 30% EPSS)</p>
-      <p class="last-updated">Last updated: 2026-05-02 13:24 UTC</p>
+      <p class="last-updated">Last updated: 2026-05-02 14:54 UTC</p>
     </header>
     <nav>
       <a href="index.html">&larr; All CVEs</a>
@@ -151,12 +151,23 @@
         <td>2026-04-23</td>
       </tr>
       <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40911" target="_blank" rel="noopener">CVE-2026-40911</a></td>
+        <td>10.0</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-94</td>
+        <td>&nbsp;</td>
+        <td>0.3% <small>p51</small></td>
+        <td>7.01</td>
+        <td><details><summary>WWBN AVideo is an open source video platform. In versions 29.0 and prior, the YP...</summary><p>WWBN AVideo is an open source video platform. In versions 29.0 and prior, the YPTSocket plugin&#x27;s WebSocket server relays attacker-supplied JSON message bodies to every connected client without sanitizing the `msg` or `callback` fields. On the client side, `plugin/YPTSocket/script.js` contains two `eval()` sinks fed directly by those relayed fields (`json.msg.autoEvalCodeOnHTML` at line 568 and `json.callback` at line 95). Because tokens are minted for anonymous visitors and never revalidated beyond decryption, an unauthenticated attacker can broadcast arbitrary JavaScript that executes in the origin of every currently-connected user (including administrators), resulting in universal account takeover, session theft, and privileged action execution. Commit c08694bf6264eb4decceb78c711baee2609b4efd contains a fix.</p></details></td>
+        <td>2026-04-21</td>
+      </tr>
+      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39337" target="_blank" rel="noopener">CVE-2026-39337</a></td>
         <td>10.0</td>
         <td><span class="severity critical">CRITICAL</span></td>
         <td>CWE-94</td>
         <td>&nbsp;</td>
-        <td>0.3% <small>p55</small></td>
+        <td>0.3% <small>p48</small></td>
         <td>7.01</td>
         <td><details><summary>ChurchCRM is an open-source church management system. Prior to 7.1.0, critical p...</summary><p>ChurchCRM is an open-source church management system. Prior to 7.1.0, critical pre-authentication remote code execution vulnerability in ChurchCRM&#x27;s setup wizard allows unauthenticated attackers to inject arbitrary PHP code during the initial installation process, leading to complete server compromise. The &quot;$dbPassword&quot; variable is not sanitized. This vulnerability exists due to an incomplete fix for CVE-2025-62521. This vulnerability is fixed in 7.1.0.</p></details></td>
         <td>2026-04-07</td>
@@ -167,21 +178,21 @@
         <td><span class="severity critical">CRITICAL</span></td>
         <td>CWE-77</td>
         <td>&nbsp;</td>
-        <td>0.3% <small>p52</small></td>
+        <td>0.2% <small>p43</small></td>
         <td>7.01</td>
         <td><details><summary>DocsGPT is a GPT-powered chat for documentation. From version 0.15.0 to before v...</summary><p>DocsGPT is a GPT-powered chat for documentation. From version 0.15.0 to before version 0.16.0, an attacker accessing both the official DocsGPT website or any local and public deployment, can craft a malicious payload bypassing the &quot;MCP test&quot; behavior to achieve arbitrary remote code execution (RCE). This issue has been patched in version 0.16.0.</p></details></td>
         <td>2026-04-29</td>
       </tr>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40911" target="_blank" rel="noopener">CVE-2026-40911</a></td>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-37541" target="_blank" rel="noopener">CVE-2026-37541</a></td>
         <td>10.0</td>
         <td><span class="severity critical">CRITICAL</span></td>
-        <td>CWE-94</td>
+        <td>CWE-121</td>
         <td>&nbsp;</td>
-        <td>0.3% <small>p51</small></td>
+        <td>0.2% <small>p41</small></td>
         <td>7.01</td>
-        <td><details><summary>WWBN AVideo is an open source video platform. In versions 29.0 and prior, the YP...</summary><p>WWBN AVideo is an open source video platform. In versions 29.0 and prior, the YPTSocket plugin&#x27;s WebSocket server relays attacker-supplied JSON message bodies to every connected client without sanitizing the `msg` or `callback` fields. On the client side, `plugin/YPTSocket/script.js` contains two `eval()` sinks fed directly by those relayed fields (`json.msg.autoEvalCodeOnHTML` at line 568 and `json.callback` at line 95). Because tokens are minted for anonymous visitors and never revalidated beyond decryption, an unauthenticated attacker can broadcast arbitrary JavaScript that executes in the origin of every currently-connected user (including administrators), resulting in universal account takeover, session theft, and privileged action execution. Commit c08694bf6264eb4decceb78c711baee2609b4efd contains a fix.</p></details></td>
-        <td>2026-04-21</td>
+        <td><details><summary>Buffer overflow vulnerability in Open Vehicle Monitoring System 3 (OVMS3) 3.3.00...</summary><p>Buffer overflow vulnerability in Open Vehicle Monitoring System 3 (OVMS3) 3.3.005. In canformat_gvret.cpp, the length field in GVRET binary data is not properly validated, allowing remote attackers to cause a denial of service or possibly execute arbitrary code via crafted GVRET frames.</p></details></td>
+        <td>2026-05-01</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34208" target="_blank" rel="noopener">CVE-2026-34208</a></td>
@@ -349,24 +360,13 @@
         <td>2026-05-01</td>
       </tr>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-37541" target="_blank" rel="noopener">CVE-2026-37541</a></td>
-        <td>10.0</td>
-        <td><span class="severity critical">CRITICAL</span></td>
-        <td>CWE-121</td>
-        <td>&nbsp;</td>
-        <td>&mdash;</td>
-        <td>7.00</td>
-        <td><details><summary>Buffer overflow vulnerability in Open Vehicle Monitoring System 3 (OVMS3) 3.3.00...</summary><p>Buffer overflow vulnerability in Open Vehicle Monitoring System 3 (OVMS3) 3.3.005. In canformat_gvret.cpp, the length field in GVRET binary data is not properly validated, allowing remote attackers to cause a denial of service or possibly execute arbitrary code via crafted GVRET frames.</p></details></td>
-        <td>2026-05-01</td>
-      </tr>
-      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4631" target="_blank" rel="noopener">CVE-2026-4631</a></td>
         <td>9.8</td>
         <td><span class="severity critical">CRITICAL</span></td>
         <td>CWE-78</td>
         <td>&nbsp;</td>
-        <td>3.6% <small>p87</small></td>
-        <td>6.97</td>
+        <td>3.9% <small>p88</small></td>
+        <td>6.98</td>
         <td><details><summary>Cockpit&#x27;s remote login feature passes user-supplied hostnames and usernames from...</summary><p>Cockpit&#x27;s remote login feature passes user-supplied hostnames and usernames from the web interface to the SSH client without validation or sanitization. An attacker with network access to the Cockpit web service can craft a single HTTP request to the login endpoint that injects malicious SSH options or shell commands, achieving code execution on the Cockpit host without valid credentials. The injection occurs during the authentication flow before any credential verification takes place, meaning no login is required to exploit the vulnerability.</p></details></td>
         <td>2026-04-07</td>
       </tr>
@@ -486,7 +486,7 @@
         <td><span class="severity critical">CRITICAL</span></td>
         <td>CWE-434</td>
         <td>&nbsp;</td>
-        <td>0.1% <small>p18</small></td>
+        <td>0.1% <small>p19</small></td>
         <td>6.93</td>
         <td><details><summary>An authenticated arbitrary file upload vulnerability in the /admin/tinymce/uploa...</summary><p>An authenticated arbitrary file upload vulnerability in the /admin/tinymce/upload endpoint of Webkul Krayin CRM v2.2.x allows attackers to execute arbitrary code via uploading a crafted PHP file.</p></details></td>
         <td>2026-04-14</td>
