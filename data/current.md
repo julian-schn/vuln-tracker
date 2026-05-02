@@ -1,9 +1,22 @@
 # CVEs — May 2026
 
-_115 vulnerabilities_
+_123 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
+| [CVE-2026-7641](https://nvd.nist.gov/vuln/detail/CVE-2026-7641) | 8.8 | HIGH | CWE-269 | No | — | 6.16 | 2026-05-02 | The Import and export users and customers plugin for WordPress is vulnerable to Privilege Escalation in all versions up... |
+| [CVE-2026-7604](https://nvd.nist.gov/vuln/detail/CVE-2026-7604) | 2.1 | LOW | CWE-918 | No | — | 1.47 | 2026-05-02 | A vulnerability was identified in JeecgBoot up to 3.9.1. This affects the function OpenApiController.add/OpenApiControll... |
+| [CVE-2026-7603](https://nvd.nist.gov/vuln/detail/CVE-2026-7603) | 2.1 | LOW | CWE-918 | No | — | 1.47 | 2026-05-02 | A vulnerability was determined in JeecgBoot up to 3.9.1. Affected by this issue is the function checkPathTraversalBatch... |
+| [CVE-2026-7458](https://nvd.nist.gov/vuln/detail/CVE-2026-7458) | 9.8 | CRITICAL | CWE-288 | No | — | 6.86 | 2026-05-02 | The User Verification by PickPlugins plugin for WordPress is vulnerable to authentication bypass in all versions up to,... |
+| [CVE-2026-6963](https://nvd.nist.gov/vuln/detail/CVE-2026-6963) | 8.8 | HIGH | CWE-862 | No | — | 6.16 | 2026-05-02 | The WP Mail Gateway plugin for WordPress is vulnerable to unauthorized access due to a missing capability check on the w... |
+| [CVE-2026-6446](https://nvd.nist.gov/vuln/detail/CVE-2026-6446) | 5.4 | MEDIUM | CWE-522 | No | — | 3.78 | 2026-05-02 | The My Social Feeds – Social Feeds Embedder plugin for WordPress is vulnerable to Sensitive Information Exposure in all... |
+| [CVE-2026-4882](https://nvd.nist.gov/vuln/detail/CVE-2026-4882) | 9.8 | CRITICAL | CWE-434 | No | — | 6.86 | 2026-05-02 | The User Registration Advanced Fields plugin for WordPress is vulnerable to arbitrary file uploads due to missing file t... |
+| [CVE-2026-4658](https://nvd.nist.gov/vuln/detail/CVE-2026-4658) | 6.4 | MEDIUM | CWE-79 | No | — | 4.48 | 2026-05-02 | The Essential Blocks – Page Builder Gutenberg Blocks, Patterns & Templates plugin for WordPress is vulnerable to Stored... |
+| [CVE-2025-14726](https://nvd.nist.gov/vuln/detail/CVE-2025-14726) | 6.5 | MEDIUM | CWE-200 | No | — | 4.55 | 2026-05-02 | The Widgets for Social Photo Feed plugin for WordPress is vulnerable to unauthorized access of data and modification of... |
+| [CVE-2026-7638](https://nvd.nist.gov/vuln/detail/CVE-2026-7638) | 5.3 | MEDIUM | CWE-639 | No | — | 3.71 | 2026-05-02 | The App Builder – Create Native Android & iOS Apps On The Flight plugin for WordPress is vulnerable to Insecure Direct O... |
+| [CVE-2026-7602](https://nvd.nist.gov/vuln/detail/CVE-2026-7602) | 2.1 | LOW | CWE-266 | No | — | 1.47 | 2026-05-02 | A vulnerability was found in JeecgBoot up to 3.9.1. Affected by this vulnerability is an unknown functionality of the fi... |
+| [CVE-2026-7209](https://nvd.nist.gov/vuln/detail/CVE-2026-7209) | 6.4 | MEDIUM | CWE-79 | No | — | 4.48 | 2026-05-02 | The Simple Link Directory plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the plugin's `qcopd-dire... |
+| [CVE-2026-6378](https://nvd.nist.gov/vuln/detail/CVE-2026-6378) | 6.4 | MEDIUM | CWE-79 | No | — | 4.48 | 2026-05-02 | The Maxi Blocks plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the `/wp-json/maxi-blocks/v1.0/sty... |
 | [CVE-2026-7601](https://nvd.nist.gov/vuln/detail/CVE-2026-7601) | 5.3 | MEDIUM | CWE-404 | No | — | 3.71 | 2026-05-02 | A vulnerability has been found in Open5GS up to 2.7.6. Affected is an unknown function of the file src/amf/gmm-handler.c... |
 | [CVE-2026-43824](https://nvd.nist.gov/vuln/detail/CVE-2026-43824) | 7.7 | HIGH | CWE-212 | No | — | 5.39 | 2026-05-02 | In Argo CD 3.2.0 before 3.2.11 and 3.3.0 before 3.3.9, ServerSideDiff allows reading cleartext Kubernetes Secret data. |
 | [CVE-2026-7600](https://nvd.nist.gov/vuln/detail/CVE-2026-7600) | 2.1 | LOW | CWE-77 | No | — | 1.47 | 2026-05-02 | A flaw has been found in ArtMin96 yii2-mcp-server 1.0.2. This impacts the function yii_command_help/yii_execute_command... |
@@ -14,11 +27,6 @@ _115 vulnerabilities_
 | [CVE-2026-7595](https://nvd.nist.gov/vuln/detail/CVE-2026-7595) | 2.1 | LOW | CWE-74 | No | — | 1.47 | 2026-05-01 | A flaw has been found in nextlevelbuilder ui-ux-pro-max-skill up to 2.5.0. Affected by this vulnerability is the functio... |
 | [CVE-2026-7594](https://nvd.nist.gov/vuln/detail/CVE-2026-7594) | 5.5 | MEDIUM | CWE-22 | No | — | 3.85 | 2026-05-01 | A vulnerability was detected in Flux159 mcp-game-asset-gen 0.1.0. Affected is the function image_to_3d_async of the file... |
 | [CVE-2026-7593](https://nvd.nist.gov/vuln/detail/CVE-2026-7593) | 5.5 | MEDIUM | CWE-77 | No | — | 3.85 | 2026-05-01 | A security vulnerability has been detected in Sunwood-ai-labs command-executor-mcp-server up to 0.1.0. This impacts the... |
-| [CVE-2026-42788](https://nvd.nist.gov/vuln/detail/CVE-2026-42788) | 6.9 | MEDIUM | CWE-770 | No | — | 4.83 | 2026-05-01 | Allocation of Resources Without Limits or Throttling vulnerability in mtrudel bandit allows unauthenticated memory exhau... |
-| [CVE-2026-42786](https://nvd.nist.gov/vuln/detail/CVE-2026-42786) | 8.7 | HIGH | CWE-770 | No | — | 6.09 | 2026-05-01 | Allocation of Resources Without Limits or Throttling vulnerability in mtrudel bandit allows unauthenticated remote denia... |
-| [CVE-2026-39807](https://nvd.nist.gov/vuln/detail/CVE-2026-39807) | 6.3 | MEDIUM | CWE-807 | No | — | 4.41 | 2026-05-01 | Reliance on Untrusted Inputs in a Security Decision vulnerability in mtrudel bandit allows unauthenticated transport-sta... |
-| [CVE-2026-39805](https://nvd.nist.gov/vuln/detail/CVE-2026-39805) | 6.3 | MEDIUM | CWE-444 | No | — | 4.41 | 2026-05-01 | Inconsistent Interpretation of HTTP Requests vulnerability in mtrudel bandit allows HTTP request smuggling via duplicate... |
-| [CVE-2026-39804](https://nvd.nist.gov/vuln/detail/CVE-2026-39804) | 8.2 | HIGH | CWE-770 | No | — | 5.74 | 2026-05-01 | Allocation of Resources Without Limits or Throttling vulnerability in mtrudel bandit allows unauthenticated remote denia... |
 | [CVE-2025-12993](https://nvd.nist.gov/vuln/detail/CVE-2025-12993) | 0.0 | NONE | N/A | No | — | 0.00 | 2026-05-01 | Rejected reason: ** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: CVE-2025-67968. Reason: This candidate is a... |
 | [CVE-2026-7592](https://nvd.nist.gov/vuln/detail/CVE-2026-7592) | 5.5 | MEDIUM | CWE-74 | No | — | 3.85 | 2026-05-01 | A weakness has been identified in itsourcecode Courier Management System 1.0. This affects an unknown function of the fi... |
 | [CVE-2025-8903](https://nvd.nist.gov/vuln/detail/CVE-2025-8903) | 0.0 | NONE | N/A | No | — | 0.00 | 2026-05-01 | Rejected reason: ** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: CVE-2026-2052. Reason: This candidate is a r... |
