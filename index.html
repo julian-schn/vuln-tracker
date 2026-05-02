@@ -11,7 +11,7 @@
     <header>
       <h1>vuln-tracker</h1>
       <p class="subtitle">CVEs from the National Vulnerability Database — current and previous month</p>
-      <p class="last-updated">Last updated: 2026-05-02 16:56 UTC</p>
+      <p class="last-updated">Last updated: 2026-05-02 19:08 UTC</p>
     </header>
     <nav>
       <a href="top50.html">&#9733; Top 50</a>
@@ -1983,7 +1983,7 @@
       </div>
     </section>
     <section>
-      <h2>Previous Month — April 2026 <span class="count">(5031)</span></h2>
+      <h2>Previous Month — April 2026 <span class="count">(5030)</span></h2>
       <div class="table-wrapper">
         <table>
           <thead>
@@ -15451,29 +15451,6 @@
         <td>0.0% <small>p6</small></td>
         <td>3.08</td>
         <td><details><summary>The Short Comment Filter plugin for WordPress is vulnerable to Stored Cross-Site...</summary><p>The Short Comment Filter plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the &#x27;Minimum Count&#x27; settings field in all versions up to and including 2.2. This is due to insufficient input sanitization (no sanitize callback on register_setting) and missing output escaping (no esc_attr() on the echoed value in the input&#x27;s value attribute). The option value is stored via update_option() and rendered unescaped in an HTML attribute context. This makes it possible for authenticated attackers, with administrator-level access and above, to inject arbitrary web scripts in the settings page that will execute whenever a user accesses that page. This is particularly impactful in WordPress multisite installations or when DISALLOW_UNFILTERED_HTML is set, where administrators are not granted the unfiltered_html capability.</p></details></td>
-        <td>2026-04-22</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-31431" target="_blank" rel="noopener">CVE-2026-31431</a></td>
-        <td>7.8</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-669</td>
-        <td><span class="kev-yes">&#10003;</span></td>
-        <td>2.3% <small>p84</small></td>
-        <td>5.53</td>
-        <td><details><summary>In the Linux kernel, the following vulnerability has been resolved:
-
-crypto: alg...</summary><p>In the Linux kernel, the following vulnerability has been resolved:
-
-crypto: algif_aead - Revert to operating out-of-place
-
-This mostly reverts commit 72548b093ee3 except for the copying of
-the associated data.
-
-There is no benefit in operating in-place in algif_aead since the
-source and destination come from different mappings.  Get rid of
-all the complexity added for in-place operation and just copy the
-AD directly.</p></details></td>
         <td>2026-04-22</td>
       </tr>
       <tr>
