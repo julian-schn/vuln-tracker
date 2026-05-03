@@ -1,9 +1,11 @@
 # CVEs — May 2026
 
-_213 vulnerabilities_
+_215 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
+| [CVE-2026-7704](https://nvd.nist.gov/vuln/detail/CVE-2026-7704) | 2.1 | LOW | CWE-22 | No | — | 1.47 | 2026-05-03 | A vulnerability has been found in AV Stumpfl Pixera Two Media Server up to 25.1 R2. The affected element is an unknown f... |
+| [CVE-2026-7703](https://nvd.nist.gov/vuln/detail/CVE-2026-7703) | 5.5 | MEDIUM | CWE-74 | No | — | 3.85 | 2026-05-03 | A flaw has been found in AV Stumpfl Pixera Two Media Server up to 25.2 R2. Impacted is an unknown function of the compon... |
 | [CVE-2026-7702](https://nvd.nist.gov/vuln/detail/CVE-2026-7702) | 5.5 | MEDIUM | CWE-285 | No | — | 3.85 | 2026-05-03 | A vulnerability was detected in toeverything AFFiNE up to 0.26.3. This issue affects the function allowDocPreview of the... |
 | [CVE-2026-7701](https://nvd.nist.gov/vuln/detail/CVE-2026-7701) | 2.1 | LOW | CWE-404 | No | — | 1.47 | 2026-05-03 | A security vulnerability has been detected in Telegram Desktop up to 6.7.5. This vulnerability affects the function Requ... |
 | [CVE-2026-7700](https://nvd.nist.gov/vuln/detail/CVE-2026-7700) | 2.1 | LOW | CWE-74 | No | — | 1.47 | 2026-05-03 | A weakness has been identified in langflow-ai langflow up to 1.8.4. This affects the function eval of the file src/lfx/s... |
