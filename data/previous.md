@@ -1,6 +1,6 @@
 # CVEs — April 2026
 
-_5033 vulnerabilities_
+_5030 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
@@ -91,8 +91,6 @@ _5033 vulnerabilities_
 | [CVE-2026-2892](https://nvd.nist.gov/vuln/detail/CVE-2026-2892) | 7.5 | HIGH | CWE-285 | No | 0.1% | 5.25 | 2026-04-30 | The Otter Blocks plugin for WordPress is vulnerable to Purchase Verification Bypass in all versions up to, and including... |
 | [CVE-2025-14576](https://nvd.nist.gov/vuln/detail/CVE-2025-14576) | 7.4 | HIGH | CWE-20 | No | 0.0% | 5.18 | 2026-04-30 | Insufficient validation of node IDs in Qt SVG module allows arbitrary QML/JavaScript code injection when loading malicio... |
 | [CVE-2024-13971](https://nvd.nist.gov/vuln/detail/CVE-2024-13971) | 7.7 | HIGH | CWE-611 | No | 0.0% | 5.39 | 2026-04-30 | Unauthenticated attackers can exploit a weakness in the XML parser functionality of Lobster_pro prior to version 4.12.6-... |
-| [CVE-2026-31693](https://nvd.nist.gov/vuln/detail/CVE-2026-31693) | 7.8 | HIGH | N/A | No | 0.0% | 5.46 | 2026-04-30 | In the Linux kernel, the following vulnerability has been resolved:  cifs: some missing initializations on replay  In se... |
-| [CVE-2026-31786](https://nvd.nist.gov/vuln/detail/CVE-2026-31786) | 7.8 | HIGH | N/A | No | 0.1% | 5.46 | 2026-04-30 | In the Linux kernel, the following vulnerability has been resolved:  Buffer overflow in drivers/xen/sys-hypervisor.c  Th... |
 | [CVE-2026-6498](https://nvd.nist.gov/vuln/detail/CVE-2026-6498) | 5.3 | MEDIUM | CWE-345 | No | 0.0% | 3.71 | 2026-04-30 | The Five Star Restaurant Reservations plugin for WordPress is vulnerable to a payment bypass via PHP type juggling in ve... |
 | [CVE-2026-41016](https://nvd.nist.gov/vuln/detail/CVE-2026-41016) | 5.9 | MEDIUM | CWE-295 | No | 0.0% | 4.13 | 2026-04-30 | Apache Airflow's SMTP provider `SmtpHook` called Python's `smtplib.SMTP.starttls()` without an SSL context, so no certif... |
 | [CVE-2026-22070](https://nvd.nist.gov/vuln/detail/CVE-2026-22070) | 7.1 | HIGH | CWE-23 | No | 0.0% | 4.97 | 2026-04-30 | ColorOS Assistant has an unauthenticated start-download channel, leading to file path traversal. |
@@ -1229,7 +1227,6 @@ _5033 vulnerabilities_
 | [CVE-2026-4076](https://nvd.nist.gov/vuln/detail/CVE-2026-4076) | 6.4 | MEDIUM | CWE-79 | No | 0.0% | 4.48 | 2026-04-22 | The Slider Bootstrap Carousel plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'category' and '... |
 | [CVE-2026-4074](https://nvd.nist.gov/vuln/detail/CVE-2026-4074) | 6.4 | MEDIUM | CWE-79 | No | 0.0% | 4.48 | 2026-04-22 | The Quran Live Multilanguage plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'cheikh' and 'lan... |
 | [CVE-2026-3362](https://nvd.nist.gov/vuln/detail/CVE-2026-3362) | 4.4 | MEDIUM | CWE-79 | No | 0.0% | 3.08 | 2026-04-22 | The Short Comment Filter plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'Minimum Count' setti... |
-| [CVE-2026-31431](https://nvd.nist.gov/vuln/detail/CVE-2026-31431) | 7.8 | HIGH | CWE-669 | Yes | 2.3% | 5.53 | 2026-04-22 | In the Linux kernel, the following vulnerability has been resolved:  crypto: algif_aead - Revert to operating out-of-pla... |
 | [CVE-2026-2719](https://nvd.nist.gov/vuln/detail/CVE-2026-2719) | 4.4 | MEDIUM | CWE-79 | No | 0.0% | 3.08 | 2026-04-22 | The Private WP suite plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'Exceptions' setting in a... |
 | [CVE-2026-2717](https://nvd.nist.gov/vuln/detail/CVE-2026-2717) | 5.5 | MEDIUM | CWE-93 | No | 0.0% | 3.85 | 2026-04-22 | The HTTP Headers plugin for WordPress is vulnerable to CRLF Injection in all versions up to, and including, 1.19.2. This... |
 | [CVE-2026-2714](https://nvd.nist.gov/vuln/detail/CVE-2026-2714) | 4.4 | MEDIUM | CWE-79 | No | 0.0% | 3.08 | 2026-04-22 | The Institute Management plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'Enquiry Form Title'... |

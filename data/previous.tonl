@@ -1,7 +1,7 @@
 #version 1.0
 #delimiter "|"
 
-cves[5033]{cveId:str|published:str|lastModified:str|cvssScore:f64|severity:str|cweId:str|cweName:str|kev:bool|description:str|nvdUrl:str|epssScore:f64|epssPercentile:f64|vapScore:f64}:
+cves[5030]{cveId:str|published:str|lastModified:str|cvssScore:f64|severity:str|cweId:str|cweName:str|kev:bool|description:str|nvdUrl:str|epssScore:f64|epssPercentile:f64|vapScore:f64}:
   CVE-2026-7510|2026-04-30T23:16:21.300|2026-05-01T15:26:24.553|2.1|LOW|CWE-285|N/A|false|A vulnerability was determined in OWAP DefectDojo up to 2.55.4. Affected by this vulnerability is an unknown functionality of the component Benchmark/Engagement/Product/Survey. Executing a manipulation can lead to authorization bypass. The attack can be executed remotely. The exploit has been publicly disclosed and may be utilized. Upgrading to version 2.56.0 addresses this issue. This patch is called eb6120a379185d37eb1af17b69bb5614a830ab1f. Upgrading the affected component is recommended.|https://nvd.nist.gov/vuln/detail/CVE-2026-7510|0.00043|0.12843|1.4713
   CVE-2026-7508|2026-04-30T23:16:21.097|2026-05-01T15:26:24.553|2.1|LOW|CWE-74|N/A|false|A vulnerability was found in Bootstrap CMS 0.9.0-alpha. Affected is an unknown function of the file resources/views/pages/show.blade.php of the component Page Creation Handler. Performing a manipulation of the argument body results in code injection. Remote exploitation of the attack is possible. The exploit has been made public and could be used. The code repository of the project has not been active for many years. This vulnerability only affects products that are no longer supported by the maintainer.|https://nvd.nist.gov/vuln/detail/CVE-2026-7508|0.00041|0.12247|1.4712
   CVE-2026-7506|2026-04-30T23:16:20.917|2026-05-01T15:26:24.553|5.5|MEDIUM|CWE-74|N/A|false|A vulnerability has been found in SourceCodester Hotel Management System 1.0. This impacts an unknown function of the file /index.php/reservation/check. Such manipulation of the argument room_type leads to sql injection. The attack may be launched remotely. The exploit has been disclosed to the public and may be used.|https://nvd.nist.gov/vuln/detail/CVE-2026-7506|0.00030|0.08581|3.8509
@@ -89,42 +89,6 @@ cves[5033]{cveId:str|published:str|lastModified:str|cvssScore:f64|severity:str|c
   CVE-2026-2892|2026-04-30T14:16:29.760|2026-04-30T14:52:54.847|7.5|HIGH|CWE-285|N/A|false|The Otter Blocks plugin for WordPress is vulnerable to Purchase Verification Bypass in all versions up to, and including, 3.1.4. This is due to the 'get_customer_data' method relying on an unsigned 'o_stripe_data' cookie to determine Stripe product ownership for unauthenticated users. The 'check_purchase' method trusts this cookie data without performing server-side verification against the Stripe API for one-time 'payment' mode purchases. This makes it possible for unauthenticated attackers to bypass Stripe purchase-gated content visibility conditions by forging the 'o_stripe_data' cookie with a target product ID, which is publicly exposed in the checkout block's HTML source.|https://nvd.nist.gov/vuln/detail/CVE-2026-2892|0.00057|0.17548|5.2517
   CVE-2025-14576|2026-04-30T13:16:02.850|2026-04-30T15:48:26.580|7.4|HIGH|CWE-20|N/A|false|Insufficient validation of node IDs in Qt SVG module allows arbitrary QML/JavaScript code injection when loading malicious SVG files through the VectorImage component in Qt Quick. While QML execution is typically more restricted than native code execution, this could still lead to denial of service, information disclosure, or other impacts depending on the application's privilege level and data access.|https://nvd.nist.gov/vuln/detail/CVE-2025-14576|0.00012|0.01898|5.1804
   CVE-2024-13971|2026-04-30T13:16:02.680|2026-04-30T15:48:26.580|7.7|HIGH|CWE-611|N/A|false|Unauthenticated attackers can exploit a weakness in the XML parser functionality of Lobster_pro prior to version 4.12.6-GA. This allows them to obtain read access to files on the application server and adjacent network shares, and perform HTTP GET requests to arbitrary services.|https://nvd.nist.gov/vuln/detail/CVE-2024-13971|0.00017|0.04301|5.3905
-  CVE-2026-31693|2026-04-30T12:16:24.103|2026-05-03T07:16:16.610|7.8|HIGH|N/A|N/A|false|"In the Linux kernel, the following vulnerability has been resolved:
-
-cifs: some missing initializations on replay
-
-In several places in the code, we have a label to signify
-the start of the code where a request can be replayed if
-necessary. However, some of these places were missing the
-necessary reinitializations of certain local variables
-before replay.
-
-This change makes sure that these variables get initialized
-after the label."|https://nvd.nist.gov/vuln/detail/CVE-2026-31693|0.00018|0.04852|5.4605
-  CVE-2026-31786|2026-04-30T11:16:20.967|2026-05-03T07:16:21.370|7.8|HIGH|N/A|N/A|false|"In the Linux kernel, the following vulnerability has been resolved:
-
-Buffer overflow in drivers/xen/sys-hypervisor.c
-
-The build id returned by HYPERVISOR_xen_version(XENVER_build_id) is
-neither NUL terminated nor a string.
-
-The first causes a buffer overflow as sprintf in buildid_show will
-read and copy till it finds a NUL.
-
-00000000  f4 91 51 f4 dd 38 9e 9d  65 47 52 eb 10 71 db 50  |..Q..8..eGR..q.P|
-00000010  b9 a8 01 42 6f 2e 32                              |...Bo.2|
-00000017
-
-So use a memcpy instead of sprintf to have the correct value:
-
-00000000  f4 91 51 f4 dd 00 9e 9d  65 47 52 eb 10 71 db 50  |..Q.....eGR..q.P|
-00000010  b9 a8 01 42                                       |...B|
-00000014
-
-(the above have a hack to embed a zero inside and check it's
-returned correctly).
-
-This is XSA-485 / CVE-2026-31786"|https://nvd.nist.gov/vuln/detail/CVE-2026-31786|0.00078|0.22923|5.4623
   CVE-2026-6498|2026-04-30T10:16:02.327|2026-04-30T14:52:54.847|5.3|MEDIUM|CWE-345|N/A|false|The Five Star Restaurant Reservations plugin for WordPress is vulnerable to a payment bypass via PHP type juggling in versions up to, and including, 2.7.16 This is due to the valid_payment() function using a PHP loose comparison (==) between the attacker-controlled payment_id POST parameter and the booking's stripe_payment_intent_id property. When an unauthenticated attacker submits a request to the nopriv AJAX handler rtb_stripe_pmt_succeed before the Stripe payment intent has been created for a booking (i.e., before the JavaScript-triggered create_stripe_pmtIntnt() call has stored an intent ID in post meta), the stripe_payment_intent_id property on the booking object remains null. The comparison sanitize_text_field('') == null evaluates to TRUE in PHP loose comparison, causing the payment verification check to pass with zero actual payment. This makes it possible for unauthenticated attackers to mark any existing payment_pending booking as paid without completing a Stripe payment by submitting an empty payment_id parameter.|https://nvd.nist.gov/vuln/detail/CVE-2026-6498|0.00026|0.07138|3.7108
   CVE-2026-41016|2026-04-30T10:16:01.930|2026-05-01T17:54:49.593|5.9|MEDIUM|CWE-295|N/A|false|Apache Airflow's SMTP provider `SmtpHook` called Python's `smtplib.SMTP.starttls()` without an SSL context, so no certificate validation was performed on the TLS upgrade. A man-in-the-middle between the Airflow worker and the SMTP server could present a self-signed certificate, complete the STARTTLS upgrade, and capture the SMTP credentials sent during the subsequent `login()` call. Users are advised to upgrade to the `apache-airflow-providers-smtp` version that contains the fix.|https://nvd.nist.gov/vuln/detail/CVE-2026-41016|0.00043|0.13036|4.1313
   CVE-2026-22070|2026-04-30T09:16:02.917|2026-04-30T15:48:26.580|7.1|HIGH|CWE-23|N/A|false|ColorOS Assistant has an unauthenticated start-download channel, leading to file path traversal.|https://nvd.nist.gov/vuln/detail/CVE-2026-22070|0.00012|0.01766|4.9704
@@ -1261,17 +1225,6 @@ This is XSA-485 / CVE-2026-31786"|https://nvd.nist.gov/vuln/detail/CVE-2026-3178
   CVE-2026-4076|2026-04-22T09:16:22.117|2026-04-22T20:22:50.570|6.4|MEDIUM|CWE-79|N/A|false|The Slider Bootstrap Carousel plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'category' and 'template' shortcode attributes in all versions up to and including 1.0.7. This is due to insufficient input sanitization and output escaping on user-supplied shortcode attributes. The plugin uses extract() on shortcode_atts() to parse attributes, then directly outputs the $category variable into multiple HTML attributes (id, data-target, href) on lines 38, 47, 109, and 113 without applying esc_attr(). Similarly, the $template attribute flows into a class attribute on line 93 without escaping. This makes it possible for authenticated attackers, with Contributor-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.|https://nvd.nist.gov/vuln/detail/CVE-2026-4076|0.00018|0.04517|4.4805
   CVE-2026-4074|2026-04-22T09:16:21.947|2026-04-22T20:22:50.570|6.4|MEDIUM|CWE-79|N/A|false|The Quran Live Multilanguage plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'cheikh' and 'lang' shortcode attributes in all versions up to, and including, 1.0.3. This is due to insufficient input sanitization and output escaping on user-supplied shortcode attributes. The quran_live_render() function of quran-live.php receives shortcode attributes and passes them directly through shortcode_atts() and extract() without any sanitization. These values are then passed to Render_Quran_Live::render_verse_quran_live() where they are echoed directly into inline <script> blocks using PHP short tags (<?=$cheikh;?> and <?=$lang;?>) at lines 191, 216, 217, 245, and 246 of Class_QuranLive.php. Since the output occurs inside a JavaScript context within <script> tags, an attacker can break out of the JavaScript string and inject arbitrary script code. This makes it possible for authenticated attackers, with Contributor-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.|https://nvd.nist.gov/vuln/detail/CVE-2026-4074|0.00018|0.04517|4.4805
   CVE-2026-3362|2026-04-22T09:16:21.757|2026-04-22T20:22:50.570|4.4|MEDIUM|CWE-79|N/A|false|The Short Comment Filter plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'Minimum Count' settings field in all versions up to and including 2.2. This is due to insufficient input sanitization (no sanitize callback on register_setting) and missing output escaping (no esc_attr() on the echoed value in the input's value attribute). The option value is stored via update_option() and rendered unescaped in an HTML attribute context. This makes it possible for authenticated attackers, with administrator-level access and above, to inject arbitrary web scripts in the settings page that will execute whenever a user accesses that page. This is particularly impactful in WordPress multisite installations or when DISALLOW_UNFILTERED_HTML is set, where administrators are not granted the unfiltered_html capability.|https://nvd.nist.gov/vuln/detail/CVE-2026-3362|0.00024|0.06638|3.0807
-  CVE-2026-31431|2026-04-22T09:16:21.270|2026-05-03T07:16:15.277|7.8|HIGH|CWE-669|N/A|true|"In the Linux kernel, the following vulnerability has been resolved:
-
-crypto: algif_aead - Revert to operating out-of-place
-
-This mostly reverts commit 72548b093ee3 except for the copying of
-the associated data.
-
-There is no benefit in operating in-place in algif_aead since the
-source and destination come from different mappings.  Get rid of
-all the complexity added for in-place operation and just copy the
-AD directly."|https://nvd.nist.gov/vuln/detail/CVE-2026-31431|0.02255|0.84675|5.5277
   CVE-2026-2719|2026-04-22T09:16:21.130|2026-04-22T20:22:50.570|4.4|MEDIUM|CWE-79|N/A|false|The Private WP suite plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'Exceptions' setting in all versions up to, and including, 0.4.1. This is due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with Administrator-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page. This only affects multi-site installations and installations where unfiltered_html has been disabled.|https://nvd.nist.gov/vuln/detail/CVE-2026-2719|0.00011|0.01277|3.0803
   CVE-2026-2717|2026-04-22T09:16:20.987|2026-04-22T20:22:50.570|5.5|MEDIUM|CWE-93|N/A|false|The HTTP Headers plugin for WordPress is vulnerable to CRLF Injection in all versions up to, and including, 1.19.2. This is due to insufficient sanitization of custom header name and value fields before writing them to the Apache .htaccess file via `insert_with_markers()`. This makes it possible for authenticated attackers, with Administrator-level access and above, to inject arbitrary newline characters and additional Apache directives into the .htaccess configuration file via the 'Custom Headers' settings, leading to Apache configuration parse errors and potential site-wide denial of service.|https://nvd.nist.gov/vuln/detail/CVE-2026-2717|0.00019|0.05248|3.8506
   CVE-2026-2714|2026-04-22T09:16:20.817|2026-04-22T20:22:50.570|4.4|MEDIUM|CWE-79|N/A|false|The Institute Management plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'Enquiry Form Title' setting in all versions up to, and including, 5.5. This is due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with Administrator-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page. This only affects multi-site installations and installations where unfiltered_html has been disabled.|https://nvd.nist.gov/vuln/detail/CVE-2026-2714|0.00011|0.01277|3.0803
