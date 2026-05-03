@@ -1,9 +1,16 @@
 # CVEs — May 2026
 
-_186 vulnerabilities_
+_193 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
+| [CVE-2026-7681](https://nvd.nist.gov/vuln/detail/CVE-2026-7681) | 5.5 | MEDIUM | CWE-285 | No | — | 3.85 | 2026-05-03 | A security vulnerability has been detected in jsbroks COCO Annotator up to 0.11.1. Affected by this vulnerability is an... |
+| [CVE-2026-7680](https://nvd.nist.gov/vuln/detail/CVE-2026-7680) | 2.1 | LOW | CWE-22 | No | — | 1.47 | 2026-05-03 | A weakness has been identified in jsbroks COCO Annotator up to 0.11.1. Affected is an unknown function of the file backe... |
+| [CVE-2026-5063](https://nvd.nist.gov/vuln/detail/CVE-2026-5063) | 7.2 | HIGH | CWE-79 | No | — | 5.04 | 2026-05-03 | The NEX-Forms – Ultimate Forms Plugin for WordPress plugin for WordPress is vulnerable to Stored Cross-Site Scripting vi... |
+| [CVE-2026-7679](https://nvd.nist.gov/vuln/detail/CVE-2026-7679) | 5.5 | MEDIUM | CWE-287 | No | — | 3.85 | 2026-05-03 | A security flaw has been discovered in YunaiV yudao-cloud up to 2026.01. This impacts the function getAccessToken of the... |
+| [CVE-2026-7678](https://nvd.nist.gov/vuln/detail/CVE-2026-7678) | 2.1 | LOW | CWE-74 | No | — | 1.47 | 2026-05-03 | A vulnerability was identified in YunaiV yudao-cloud up to 2026.01. This affects the function getDataBySQL of the file y... |
+| [CVE-2026-7677](https://nvd.nist.gov/vuln/detail/CVE-2026-7677) | 2.0 | LOW | CWE-79 | No | — | 1.40 | 2026-05-03 | A vulnerability was determined in kerwincui FastBee up to 1.2.1. The impacted element is the function Add of the file sp... |
+| [CVE-2026-7676](https://nvd.nist.gov/vuln/detail/CVE-2026-7676) | 2.1 | LOW | CWE-22 | No | — | 1.47 | 2026-05-03 | A vulnerability was found in kerwincui FastBee up to 1.2.1. The affected element is the function ToolController.download... |
 | [CVE-2026-7675](https://nvd.nist.gov/vuln/detail/CVE-2026-7675) | 7.4 | HIGH | CWE-119 | No | — | 5.18 | 2026-05-03 | A vulnerability has been found in Shenzhen Libituo Technology LBT-T300-HW1 up to 1.2.8. Impacted is the function start_l... |
 | [CVE-2026-7674](https://nvd.nist.gov/vuln/detail/CVE-2026-7674) | 8.7 | HIGH | CWE-119 | No | — | 6.09 | 2026-05-03 | A flaw has been found in Shenzhen Libituo Technology LBT-T300-HW1 up to 1.2.8. This issue affects the function start_sin... |
 | [CVE-2026-7673](https://nvd.nist.gov/vuln/detail/CVE-2026-7673) | 2.0 | LOW | CWE-284 | No | — | 1.40 | 2026-05-03 | A vulnerability was detected in crmeb_java up to 1.3.4. This vulnerability affects unknown code of the file crmeb/crmeb-... |
