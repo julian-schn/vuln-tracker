@@ -1,9 +1,13 @@
 # CVEs — May 2026
 
-_209 vulnerabilities_
+_213 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
+| [CVE-2026-7702](https://nvd.nist.gov/vuln/detail/CVE-2026-7702) | 5.5 | MEDIUM | CWE-285 | No | — | 3.85 | 2026-05-03 | A vulnerability was detected in toeverything AFFiNE up to 0.26.3. This issue affects the function allowDocPreview of the... |
+| [CVE-2026-7701](https://nvd.nist.gov/vuln/detail/CVE-2026-7701) | 2.1 | LOW | CWE-404 | No | — | 1.47 | 2026-05-03 | A security vulnerability has been detected in Telegram Desktop up to 6.7.5. This vulnerability affects the function Requ... |
+| [CVE-2026-7700](https://nvd.nist.gov/vuln/detail/CVE-2026-7700) | 2.1 | LOW | CWE-74 | No | — | 1.47 | 2026-05-03 | A weakness has been identified in langflow-ai langflow up to 1.8.4. This affects the function eval of the file src/lfx/s... |
+| [CVE-2026-7699](https://nvd.nist.gov/vuln/detail/CVE-2026-7699) | 2.1 | LOW | CWE-74 | No | — | 1.47 | 2026-05-03 | A security flaw has been discovered in Dromara MaxKey up to 3.5.13. Affected by this issue is the function StrUtils.chec... |
 | [CVE-2026-7698](https://nvd.nist.gov/vuln/detail/CVE-2026-7698) | 5.5 | MEDIUM | CWE-77 | No | — | 3.85 | 2026-05-03 | A vulnerability was identified in Tiandy Easy7 Integrated Management Platform 7.17.0. Affected by this vulnerability is... |
 | [CVE-2026-7697](https://nvd.nist.gov/vuln/detail/CVE-2026-7697) | 2.0 | LOW | CWE-74 | No | — | 1.40 | 2026-05-03 | A vulnerability was determined in AMTT Hotel Broadband Operation System 1.0. Affected is an unknown function of the file... |
 | [CVE-2026-7696](https://nvd.nist.gov/vuln/detail/CVE-2026-7696) | 2.1 | LOW | CWE-284 | No | — | 1.47 | 2026-05-03 | A vulnerability was found in Acrel Electrical EEMS Enterprise Power Operation and Maintenance Cloud Platform 1.3.0. This... |
