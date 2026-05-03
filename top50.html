@@ -11,7 +11,7 @@
     <header>
       <h1>vuln-tracker — Top 50</h1>
       <p class="subtitle">The 50 most important CVEs from the current and previous month, ranked by VAP score (70% CVSS + 30% EPSS)</p>
-      <p class="last-updated">Last updated: 2026-05-03 13:24 UTC</p>
+      <p class="last-updated">Last updated: 2026-05-03 14:54 UTC</p>
     </header>
     <nav>
       <a href="index.html">&larr; All CVEs</a>
@@ -46,8 +46,8 @@
         <td><span class="severity critical">CRITICAL</span></td>
         <td>CWE-306</td>
         <td><span class="kev-yes">&#10003;</span></td>
-        <td>56.1% <small>p98</small></td>
-        <td>8.19</td>
+        <td>58.2% <small>p98</small></td>
+        <td>8.25</td>
         <td><details><summary>marimo is a reactive Python notebook. Prior to 0.23.0, Marimo has a Pre-Auth RCE...</summary><p>marimo is a reactive Python notebook. Prior to 0.23.0, Marimo has a Pre-Auth RCE vulnerability. The terminal WebSocket endpoint /terminal/ws lacks authentication validation, allowing an unauthenticated attacker to obtain a full PTY shell and execute arbitrary system commands. Unlike other WebSocket endpoints (e.g., /ws) that correctly call validate_auth() for authentication, the /terminal/ws endpoint only checks the running mode and platform support before accepting connections, completely skipping authentication verification. This vulnerability is fixed in 0.23.0.</p></details></td>
         <td>2026-04-09</td>
       </tr>
@@ -107,6 +107,17 @@
         <td>2026-04-14</td>
       </tr>
       <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-29014" target="_blank" rel="noopener">CVE-2026-29014</a></td>
+        <td>9.3</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-94</td>
+        <td>&nbsp;</td>
+        <td>18.3% <small>p95</small></td>
+        <td>7.06</td>
+        <td><details><summary>MetInfo CMS versions 7.9, 8.0, and 8.1 contain an unauthenticated PHP code injec...</summary><p>MetInfo CMS versions 7.9, 8.0, and 8.1 contain an unauthenticated PHP code injection vulnerability that allows remote attackers to execute arbitrary code by sending crafted requests with malicious PHP code. Attackers can exploit insufficient input neutralization in the execution path to achieve remote code execution and gain full control over the affected server.</p></details></td>
+        <td>2026-04-01</td>
+      </tr>
+      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-31843" target="_blank" rel="noopener">CVE-2026-31843</a></td>
         <td>10.0</td>
         <td><span class="severity critical">CRITICAL</span></td>
@@ -116,17 +127,6 @@
         <td>7.03</td>
         <td><details><summary>The goodoneuz/pay-uz Laravel package (&lt;= 2.2.24) contains a critical vulnerabili...</summary><p>The goodoneuz/pay-uz Laravel package (&lt;= 2.2.24) contains a critical vulnerability in the /payment/api/editable/update endpoint that allows unauthenticated attackers to overwrite existing PHP payment hook files. The endpoint is exposed via Route::any() without authentication middleware, enabling remote access without credentials. User-controlled input is directly written into executable PHP files using file_put_contents(). These files are later executed via require() during normal payment processing workflows, resulting in remote code execution under default application behavior. The payment secret token mentioned by the vendor is unrelated to this endpoint and does not mitigate the vulnerability.</p></details></td>
         <td>2026-04-16</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-29014" target="_blank" rel="noopener">CVE-2026-29014</a></td>
-        <td>9.3</td>
-        <td><span class="severity critical">CRITICAL</span></td>
-        <td>CWE-94</td>
-        <td>&nbsp;</td>
-        <td>17.1% <small>p95</small></td>
-        <td>7.02</td>
-        <td><details><summary>MetInfo CMS versions 7.9, 8.0, and 8.1 contain an unauthenticated PHP code injec...</summary><p>MetInfo CMS versions 7.9, 8.0, and 8.1 contain an unauthenticated PHP code injection vulnerability that allows remote attackers to execute arbitrary code by sending crafted requests with malicious PHP code. Attackers can exploit insufficient input neutralization in the execution path to achieve remote code execution and gain full control over the affected server.</p></details></td>
-        <td>2026-04-01</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-41679" target="_blank" rel="noopener">CVE-2026-41679</a></td>
@@ -486,10 +486,21 @@
         <td><span class="severity critical">CRITICAL</span></td>
         <td>CWE-434</td>
         <td>&nbsp;</td>
-        <td>0.1% <small>p19</small></td>
+        <td>0.1% <small>p18</small></td>
         <td>6.93</td>
         <td><details><summary>An authenticated arbitrary file upload vulnerability in the /admin/tinymce/uploa...</summary><p>An authenticated arbitrary file upload vulnerability in the /admin/tinymce/upload endpoint of Webkul Krayin CRM v2.2.x allows attackers to execute arbitrary code via uploading a crafted PHP file.</p></details></td>
         <td>2026-04-14</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34571" target="_blank" rel="noopener">CVE-2026-34571</a></td>
+        <td>9.9</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>0.1% <small>p18</small></td>
+        <td>6.93</td>
+        <td><details><summary>CI4MS is a CodeIgniter 4-based CMS skeleton that delivers a production-ready, mo...</summary><p>CI4MS is a CodeIgniter 4-based CMS skeleton that delivers a production-ready, modular architecture with RBAC authorization and theme support. Prior to version 0.31.0.0, a Stored Cross-Site Scripting (Stored XSS) vulnerability exists in the backend user management functionality. The application fails to properly sanitize user-controlled input before rendering it in the administrative interface, allowing attackers to inject persistent JavaScript code. This results in automatic execution whenever backend users access the affected page, enabling session hijacking, privilege escalation, and full administrative account compromise. This issue has been patched in version 0.31.0.0.</p></details></td>
+        <td>2026-04-01</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-27681" target="_blank" rel="noopener">CVE-2026-27681</a></td>
@@ -503,17 +514,6 @@
         <td>2026-04-14</td>
       </tr>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34571" target="_blank" rel="noopener">CVE-2026-34571</a></td>
-        <td>9.9</td>
-        <td><span class="severity critical">CRITICAL</span></td>
-        <td>CWE-79</td>
-        <td>&nbsp;</td>
-        <td>0.1% <small>p16</small></td>
-        <td>6.93</td>
-        <td><details><summary>CI4MS is a CodeIgniter 4-based CMS skeleton that delivers a production-ready, mo...</summary><p>CI4MS is a CodeIgniter 4-based CMS skeleton that delivers a production-ready, modular architecture with RBAC authorization and theme support. Prior to version 0.31.0.0, a Stored Cross-Site Scripting (Stored XSS) vulnerability exists in the backend user management functionality. The application fails to properly sanitize user-controlled input before rendering it in the administrative interface, allowing attackers to inject persistent JavaScript code. This results in automatic execution whenever backend users access the affected page, enabling session hijacking, privilege escalation, and full administrative account compromise. This issue has been patched in version 0.31.0.0.</p></details></td>
-        <td>2026-04-01</td>
-      </tr>
-      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-25212" target="_blank" rel="noopener">CVE-2026-25212</a></td>
         <td>9.9</td>
         <td><span class="severity critical">CRITICAL</span></td>
@@ -523,6 +523,17 @@
         <td>6.93</td>
         <td><details><summary>An issue was discovered in Percona PMM before 3.7. Because an internal database ...</summary><p>An issue was discovered in Percona PMM before 3.7. Because an internal database user retains specific superuser privileges, an attacker with pmm-admin rights can abuse the &quot;Add data source&quot; feature to break out of the database context and execute shell commands on the underlying operating system.</p></details></td>
         <td>2026-04-02</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34569" target="_blank" rel="noopener">CVE-2026-34569</a></td>
+        <td>9.9</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>0.1% <small>p15</small></td>
+        <td>6.93</td>
+        <td><details><summary>CI4MS is a CodeIgniter 4-based CMS skeleton that delivers a production-ready, mo...</summary><p>CI4MS is a CodeIgniter 4-based CMS skeleton that delivers a production-ready, modular architecture with RBAC authorization and theme support. Prior to version 0.31.0.0, the application fails to properly sanitize user-controlled input when creating or editing blog categories. An attacker can inject a malicious JavaScript payload into the category title field, which is then stored server-side. This stored payload is later rendered unsafely across public-facing blog category pages, administrative interfaces, and blog post views without proper output encoding, leading to stored cross-site scripting (XSS). This issue has been patched in version 0.31.0.0.</p></details></td>
+        <td>2026-04-01</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40933" target="_blank" rel="noopener">CVE-2026-40933</a></td>
@@ -567,17 +578,6 @@
         <td>6.93</td>
         <td><details><summary>Sonicverse is a Self-hosted Docker Compose stack for live radio streaming. The S...</summary><p>Sonicverse is a Self-hosted Docker Compose stack for live radio streaming. The Sonicverse Radio Audio Streaming Stack dashboard contains a Server-Side Request Forgery (SSRF) vulnerability in its API client (apps/dashboard/lib/api.ts). Installations created using the provided install.sh script (including the one‑liner bash &lt;(curl -fsSL https://sonicverse.short.gy/install-audiostack)) are affected. In these deployments, the dashboard accepts user-controlled URLs and passes them directly to a server-side HTTP client without sufficient validation. An authenticated operator can abuse this to make arbitrary HTTP requests from the dashboard backend to internal or external systems. This vulnerability is fixed with commit cb1ddbacafcb441549fe87d3eeabdb6a085325e4.</p></details></td>
         <td>2026-04-09</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34569" target="_blank" rel="noopener">CVE-2026-34569</a></td>
-        <td>9.9</td>
-        <td><span class="severity critical">CRITICAL</span></td>
-        <td>CWE-79</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p13</small></td>
-        <td>6.93</td>
-        <td><details><summary>CI4MS is a CodeIgniter 4-based CMS skeleton that delivers a production-ready, mo...</summary><p>CI4MS is a CodeIgniter 4-based CMS skeleton that delivers a production-ready, modular architecture with RBAC authorization and theme support. Prior to version 0.31.0.0, the application fails to properly sanitize user-controlled input when creating or editing blog categories. An attacker can inject a malicious JavaScript payload into the category title field, which is then stored server-side. This stored payload is later rendered unsafely across public-facing blog category pages, administrative interfaces, and blog post views without proper output encoding, leading to stored cross-site scripting (XSS). This issue has been patched in version 0.31.0.0.</p></details></td>
-        <td>2026-04-01</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34717" target="_blank" rel="noopener">CVE-2026-34717</a></td>
