@@ -1,9 +1,14 @@
 # CVEs — May 2026
 
-_202 vulnerabilities_
+_207 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
+| [CVE-2026-7696](https://nvd.nist.gov/vuln/detail/CVE-2026-7696) | 2.1 | LOW | CWE-284 | No | — | 1.47 | 2026-05-03 | A vulnerability was found in Acrel Electrical EEMS Enterprise Power Operation and Maintenance Cloud Platform 1.3.0. This... |
+| [CVE-2026-7695](https://nvd.nist.gov/vuln/detail/CVE-2026-7695) | 5.5 | MEDIUM | CWE-74 | No | — | 3.85 | 2026-05-03 | A vulnerability has been found in Acrel Electrical EEMS Enterprise Power Operation and Maintenance Cloud Platform 1.3.0.... |
+| [CVE-2026-7694](https://nvd.nist.gov/vuln/detail/CVE-2026-7694) | 5.5 | MEDIUM | CWE-74 | No | — | 3.85 | 2026-05-03 | A flaw has been found in Acrel Electrical ECEMS Enterprise Microgrid Energy Efficiency Management System 1.3.0. The impa... |
+| [CVE-2026-7692](https://nvd.nist.gov/vuln/detail/CVE-2026-7692) | 2.1 | LOW | CWE-74 | No | — | 1.47 | 2026-05-03 | A vulnerability was detected in Wavlink WL-WN570HA1 R70HA1 V1410_221110. The affected element is the function ping_ddns... |
+| [CVE-2026-7691](https://nvd.nist.gov/vuln/detail/CVE-2026-7691) | 2.1 | LOW | CWE-74 | No | — | 1.47 | 2026-05-03 | A security vulnerability has been detected in Wavlink WL-WN570HA1 R70HA1 V1410_221110. Impacted is the function set_sys_... |
 | [CVE-2026-7690](https://nvd.nist.gov/vuln/detail/CVE-2026-7690) | 2.1 | LOW | CWE-74 | No | — | 1.47 | 2026-05-03 | A weakness has been identified in Wavlink WL-WN570HA1 R70HA1 V1410_221110. This issue affects the function set_sys_adm o... |
 | [CVE-2026-7689](https://nvd.nist.gov/vuln/detail/CVE-2026-7689) | 2.9 | LOW | CWE-345 | No | — | 2.03 | 2026-05-03 | A security flaw has been discovered in Dolibarr ERP CRM up to 23.0.2. This vulnerability affects the function dol_verify... |
 | [CVE-2026-7688](https://nvd.nist.gov/vuln/detail/CVE-2026-7688) | 1.3 | LOW | CWE-74 | No | — | 0.91 | 2026-05-03 | A vulnerability was identified in Dolibarr ERP CRM up to 23.0.2. This affects the function _checkValForAPI of the file h... |
