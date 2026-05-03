@@ -1,9 +1,17 @@
 # CVEs — May 2026
 
-_178 vulnerabilities_
+_186 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
+| [CVE-2026-7675](https://nvd.nist.gov/vuln/detail/CVE-2026-7675) | 7.4 | HIGH | CWE-119 | No | — | 5.18 | 2026-05-03 | A vulnerability has been found in Shenzhen Libituo Technology LBT-T300-HW1 up to 1.2.8. Impacted is the function start_l... |
+| [CVE-2026-7674](https://nvd.nist.gov/vuln/detail/CVE-2026-7674) | 8.7 | HIGH | CWE-119 | No | — | 6.09 | 2026-05-03 | A flaw has been found in Shenzhen Libituo Technology LBT-T300-HW1 up to 1.2.8. This issue affects the function start_sin... |
+| [CVE-2026-7673](https://nvd.nist.gov/vuln/detail/CVE-2026-7673) | 2.0 | LOW | CWE-284 | No | — | 1.40 | 2026-05-03 | A vulnerability was detected in crmeb_java up to 1.3.4. This vulnerability affects unknown code of the file crmeb/crmeb-... |
+| [CVE-2026-40561](https://nvd.nist.gov/vuln/detail/CVE-2026-40561) | 0.0 | NONE | CWE-444 | No | — | 0.00 | 2026-05-03 | Starlet versions through 0.31 for Perl allows HTTP Request Smuggling via Improper Header Precedence.  Starlet incorrectl... |
+| [CVE-2026-7672](https://nvd.nist.gov/vuln/detail/CVE-2026-7672) | 2.1 | LOW | CWE-74 | No | — | 1.47 | 2026-05-03 | A security vulnerability has been detected in youlaitech youlai-boot up to 2.21.1. This affects the function getUserList... |
+| [CVE-2026-7671](https://nvd.nist.gov/vuln/detail/CVE-2026-7671) | 2.9 | LOW | CWE-307 | No | — | 2.03 | 2026-05-03 | A vulnerability has been found in CodeWise Tornet Scooter Mobile App 4.75 on iOS/Android. The impacted element is an unk... |
+| [CVE-2026-7670](https://nvd.nist.gov/vuln/detail/CVE-2026-7670) | 5.5 | MEDIUM | CWE-74 | No | — | 3.85 | 2026-05-02 | A flaw has been found in Jinher OA 1.0. The affected element is an unknown function of the file /C6/JHSoft.Web.PlanSumma... |
+| [CVE-2026-6481](https://nvd.nist.gov/vuln/detail/CVE-2026-6481) | 0.0 | NONE | N/A | No | — | 0.00 | 2026-05-02 | Rejected reason: This CVE ID has been rejected or withdrawn by its CVE Numbering Authority. |
 | [CVE-2026-7669](https://nvd.nist.gov/vuln/detail/CVE-2026-7669) | 6.3 | MEDIUM | CWE-20 | No | — | 4.41 | 2026-05-02 | A vulnerability was detected in sgl-project SGLang up to 0.5.9. Impacted is the function get_tokenizer of the file pytho... |
 | [CVE-2026-7668](https://nvd.nist.gov/vuln/detail/CVE-2026-7668) | 5.5 | MEDIUM | CWE-119 | No | — | 3.85 | 2026-05-02 | A vulnerability was identified in MikroTik RouterOS 6.49.8. This vulnerability affects the function ASN1_STRING_data in... |
 | [CVE-2026-7653](https://nvd.nist.gov/vuln/detail/CVE-2026-7653) | 2.1 | LOW | CWE-77 | No | — | 1.47 | 2026-05-02 | A security flaw has been discovered in r-huijts mcp-server-rijksmuseum up to 1.0.4. Affected is the function open_image_... |
