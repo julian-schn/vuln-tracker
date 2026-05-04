@@ -1,9 +1,40 @@
 # CVEs — May 2026
 
-_252 vulnerabilities_
+_283 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
+| [CVE-2026-7750](https://nvd.nist.gov/vuln/detail/CVE-2026-7750) | 7.4 | HIGH | CWE-119 | No | — | 5.18 | 2026-05-04 | A vulnerability was detected in Totolink N300RH 3.2.4-B20220812. This vulnerability affects the function setMacFilterRul... |
+| [CVE-2026-7749](https://nvd.nist.gov/vuln/detail/CVE-2026-7749) | 7.4 | HIGH | CWE-119 | No | — | 5.18 | 2026-05-04 | A security vulnerability has been detected in Totolink N300RH 3.2.4-B20220812. This affects the function setWanConfig of... |
+| [CVE-2026-7748](https://nvd.nist.gov/vuln/detail/CVE-2026-7748) | 7.4 | HIGH | CWE-119 | No | — | 5.18 | 2026-05-04 | A weakness has been identified in Totolink N300RH 3.2.4-B20220812. Affected by this issue is the function setUpgradeFW o... |
+| [CVE-2026-33846](https://nvd.nist.gov/vuln/detail/CVE-2026-33846) | 7.5 | HIGH | CWE-130 | No | — | 5.25 | 2026-05-04 | A heap buffer overflow vulnerability exists in the DTLS handshake fragment reassembly logic of GnuTLS. The issue arises... |
+| [CVE-2026-7747](https://nvd.nist.gov/vuln/detail/CVE-2026-7747) | 8.9 | HIGH | CWE-119 | No | — | 6.23 | 2026-05-04 | A security flaw has been discovered in Totolink N300RH 3.2.4-B20220812. Affected by this vulnerability is the function l... |
+| [CVE-2026-7746](https://nvd.nist.gov/vuln/detail/CVE-2026-7746) | 2.1 | LOW | CWE-74 | No | — | 1.47 | 2026-05-04 | A vulnerability was identified in SourceCodester Web-based Pharmacy Product Management System 1.0. Affected is an unknow... |
+| [CVE-2026-7745](https://nvd.nist.gov/vuln/detail/CVE-2026-7745) | 2.1 | LOW | CWE-74 | No | — | 1.47 | 2026-05-04 | A vulnerability was determined in CodeAstro Online Classroom 1.0. This impacts an unknown function of the file /OnlineCl... |
+| [CVE-2025-14320](https://nvd.nist.gov/vuln/detail/CVE-2025-14320) | 9.8 | CRITICAL | CWE-79 | No | — | 6.86 | 2026-05-04 | Improper neutralization of input during web page generation ('cross-site scripting') vulnerability in Tegsoft Management... |
+| [CVE-2026-7744](https://nvd.nist.gov/vuln/detail/CVE-2026-7744) | 2.1 | LOW | CWE-74 | No | — | 1.47 | 2026-05-04 | A vulnerability was found in CodeAstro Online Classroom 1.0. This affects an unknown function of the file /OnlineClassro... |
+| [CVE-2026-7743](https://nvd.nist.gov/vuln/detail/CVE-2026-7743) | 2.1 | LOW | CWE-74 | No | — | 1.47 | 2026-05-04 | A vulnerability has been found in CodeAstro Online Classroom 1.0. The impacted element is an unknown function of the fil... |
+| [CVE-2026-7742](https://nvd.nist.gov/vuln/detail/CVE-2026-7742) | 2.1 | LOW | CWE-74 | No | — | 1.47 | 2026-05-04 | A flaw has been found in CodeAstro Online Classroom 1.0. The affected element is an unknown function of the file /Online... |
+| [CVE-2026-7741](https://nvd.nist.gov/vuln/detail/CVE-2026-7741) | 2.1 | LOW | CWE-74 | No | — | 1.47 | 2026-05-04 | A vulnerability was detected in CodeAstro Online Classroom 1.0. Impacted is an unknown function of the file /OnlineClass... |
+| [CVE-2026-7740](https://nvd.nist.gov/vuln/detail/CVE-2026-7740) | 1.9 | LOW | CWE-404 | No | — | 1.33 | 2026-05-04 | A security vulnerability has been detected in justdan96 tsMuxer up to 2.7.0. This issue affects the function VvcVpsUnit:... |
+| [CVE-2026-7739](https://nvd.nist.gov/vuln/detail/CVE-2026-7739) | 1.9 | LOW | CWE-404 | No | — | 1.33 | 2026-05-04 | A weakness has been identified in justdan96 tsMuxer up to 2.7.0. This vulnerability affects the function HevcVpsUnit::se... |
+| [CVE-2026-7738](https://nvd.nist.gov/vuln/detail/CVE-2026-7738) | 2.1 | LOW | CWE-22 | No | — | 1.47 | 2026-05-04 | A security flaw has been discovered in puchunjie doc-tools-mcp 1.0.18. This affects the function create_document/open_do... |
+| [CVE-2026-7737](https://nvd.nist.gov/vuln/detail/CVE-2026-7737) | 6.9 | MEDIUM | CWE-119 | No | — | 4.83 | 2026-05-04 | A vulnerability was identified in osrg GoBGP up to 4.3.0. Affected by this issue is the function BMPPeerUpNotification.P... |
+| [CVE-2026-7736](https://nvd.nist.gov/vuln/detail/CVE-2026-7736) | 6.9 | MEDIUM | CWE-189 | No | — | 4.83 | 2026-05-04 | A vulnerability was determined in osrg GoBGP up to 4.3.0. Affected by this vulnerability is the function parseRibEntry o... |
+| [CVE-2026-5335](https://nvd.nist.gov/vuln/detail/CVE-2026-5335) | 0.0 | NONE | N/A | No | — | 0.00 | 2026-05-04 | The Magic Export & Import WordPress plugin before 1.2.0 stores exported CSV files at a publicly accessible location, mak... |
+| [CVE-2026-43864](https://nvd.nist.gov/vuln/detail/CVE-2026-43864) | 2.5 | LOW | CWE-476 | No | — | 1.75 | 2026-05-04 | mutt before 2.3.2 has a show_sig_summary NULL pointer dereference. |
+| [CVE-2026-43863](https://nvd.nist.gov/vuln/detail/CVE-2026-43863) | 3.7 | LOW | CWE-253 | No | — | 2.59 | 2026-05-04 | mutt before 2.3.2 has an infinite loop in data_object_to_stream in crypt-gpgme.c. |
+| [CVE-2026-43862](https://nvd.nist.gov/vuln/detail/CVE-2026-43862) | 3.7 | LOW | CWE-843 | No | — | 2.59 | 2026-05-04 | In mutt before 2.3.2, the imap_auth_gss security level is mishandled. |
+| [CVE-2026-43861](https://nvd.nist.gov/vuln/detail/CVE-2026-43861) | 3.7 | LOW | CWE-158 | No | — | 2.59 | 2026-05-04 | mutt before 2.3.2 does not check for '\0' in url_pct_decode. |
+| [CVE-2026-43860](https://nvd.nist.gov/vuln/detail/CVE-2026-43860) | 3.7 | LOW | CWE-193 | No | — | 2.59 | 2026-05-04 | mutt before 2.3.2 sometimes truncates the hash_passwd by one byte for IMAP auth_cram MD5 digest. |
+| [CVE-2026-43859](https://nvd.nist.gov/vuln/detail/CVE-2026-43859) | 3.7 | LOW | CWE-158 | No | — | 2.59 | 2026-05-04 | mutt before 2.3.2 sometimes uses strfcpy instead of memcpy for the IMAP auth_cram MD5 digest. |
+| [CVE-2026-29200](https://nvd.nist.gov/vuln/detail/CVE-2026-29200) | 9.9 | CRITICAL | CWE-639 | No | — | 6.93 | 2026-05-04 | A critical IDOR vulnerability has been discovered in Comet Backup affecting all versions from 20.11.0 to 26.1.1 and 26.2... |
+| [CVE-2026-29199](https://nvd.nist.gov/vuln/detail/CVE-2026-29199) | 0.0 | NONE | CWE-640 | No | — | 0.00 | 2026-05-04 | phpBB before 3.3.16 is vulnerable to Host Header Injection that can lead to password rest link poisoning. When force_ser... |
+| [CVE-2026-20451](https://nvd.nist.gov/vuln/detail/CVE-2026-20451) | 0.0 | NONE | CWE-843 | No | — | 0.00 | 2026-05-04 | In slbc, there is a possible out of bounds write due to type confusion. This could lead to local escalation of privilege... |
+| [CVE-2026-20450](https://nvd.nist.gov/vuln/detail/CVE-2026-20450) | 0.0 | NONE | CWE-617 | No | — | 0.00 | 2026-05-04 | In Modem, there is a possible system crash due to incorrect error handling. This could lead to remote denial of service,... |
+| [CVE-2026-20449](https://nvd.nist.gov/vuln/detail/CVE-2026-20449) | 0.0 | NONE | CWE-120 | No | — | 0.00 | 2026-05-04 | In Modem, there is a possible system crash due to a heap buffer overflow. This could lead to remote denial of service, i... |
+| [CVE-2026-20448](https://nvd.nist.gov/vuln/detail/CVE-2026-20448) | 0.0 | NONE | CWE-280 | No | — | 0.00 | 2026-05-04 | In geniezone, there is a possible escalation of privilege due to a missing permission check. This could lead to local es... |
+| [CVE-2026-20447](https://nvd.nist.gov/vuln/detail/CVE-2026-20447) | 0.0 | NONE | CWE-125 | No | — | 0.00 | 2026-05-04 | In geniezone, there is a possible escalation of privilege due to a missing bounds check. This could lead to local escala... |
 | [CVE-2026-7735](https://nvd.nist.gov/vuln/detail/CVE-2026-7735) | 6.9 | MEDIUM | CWE-119 | No | — | 4.83 | 2026-05-04 | A vulnerability was found in osrg GoBGP up to 4.3.0. Affected is the function PathAttributeAigp.DecodeFromBytes of the f... |
 | [CVE-2026-7734](https://nvd.nist.gov/vuln/detail/CVE-2026-7734) | 6.9 | MEDIUM | CWE-404 | No | — | 4.83 | 2026-05-04 | A vulnerability has been found in osrg GoBGP up to 4.3.0. This impacts the function SRv6L3ServiceAttribute.DecodeFromByt... |
 | [CVE-2026-7733](https://nvd.nist.gov/vuln/detail/CVE-2026-7733) | 5.5 | MEDIUM | CWE-284 | No | — | 3.85 | 2026-05-04 | A flaw has been found in funadmin up to 7.1.0-rc6. This affects the function UploadService::chunkUpload of the file app/... |

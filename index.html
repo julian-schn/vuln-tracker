@@ -11,7 +11,7 @@
     <header>
       <h1>vuln-tracker</h1>
       <p class="subtitle">CVEs from the National Vulnerability Database — current and previous month</p>
-      <p class="last-updated">Last updated: 2026-05-04 06:45 UTC</p>
+      <p class="last-updated">Last updated: 2026-05-04 10:19 UTC</p>
     </header>
     <nav>
       <a href="top50.html">&#9733; Top 50</a>
@@ -25,7 +25,7 @@
     </nav>
     <main>
     <section>
-      <h2>Current Month — May 2026 <span class="count">(252)</span></h2>
+      <h2>Current Month — May 2026 <span class="count">(283)</span></h2>
       <div class="table-wrapper">
         <table>
           <thead>
@@ -42,6 +42,349 @@
             </tr>
           </thead>
           <tbody>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-7750" target="_blank" rel="noopener">CVE-2026-7750</a></td>
+        <td>7.4</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-119</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.18</td>
+        <td><details><summary>A vulnerability was detected in Totolink N300RH 3.2.4-B20220812. This vulnerabil...</summary><p>A vulnerability was detected in Totolink N300RH 3.2.4-B20220812. This vulnerability affects the function setMacFilterRules of the file /cgi-bin/cstecgi.cgi of the component POST Request Handler. The manipulation of the argument mac_address results in buffer overflow. The attack may be launched remotely. The exploit is now public and may be used.</p></details></td>
+        <td>2026-05-04</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-7749" target="_blank" rel="noopener">CVE-2026-7749</a></td>
+        <td>7.4</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-119</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.18</td>
+        <td><details><summary>A security vulnerability has been detected in Totolink N300RH 3.2.4-B20220812. T...</summary><p>A security vulnerability has been detected in Totolink N300RH 3.2.4-B20220812. This affects the function setWanConfig of the file /cgi-bin/cstecgi.cgi of the component POST Request Handler. The manipulation of the argument priDns leads to buffer overflow. The attack may be initiated remotely. The exploit has been disclosed publicly and may be used.</p></details></td>
+        <td>2026-05-04</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-7748" target="_blank" rel="noopener">CVE-2026-7748</a></td>
+        <td>7.4</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-119</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.18</td>
+        <td><details><summary>A weakness has been identified in Totolink N300RH 3.2.4-B20220812. Affected by t...</summary><p>A weakness has been identified in Totolink N300RH 3.2.4-B20220812. Affected by this issue is the function setUpgradeFW of the file /cgi-bin/cstecgi.cgi of the component POST Request Handler. Executing a manipulation of the argument FileName can lead to buffer overflow. The attack can be launched remotely. The exploit has been made available to the public and could be used for attacks.</p></details></td>
+        <td>2026-05-04</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33846" target="_blank" rel="noopener">CVE-2026-33846</a></td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-130</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.25</td>
+        <td><details><summary>A heap buffer overflow vulnerability exists in the DTLS handshake fragment reass...</summary><p>A heap buffer overflow vulnerability exists in the DTLS handshake fragment reassembly logic of GnuTLS. The issue arises in merge_handshake_packet() where incoming handshake fragments are matched and merged based solely on handshake type, without validating that the message_length field remains consistent across all fragments of the same logical message. An attacker can exploit this by sending crafted DTLS fragments with conflicting message_length values, causing the implementation to allocate a buffer based on a smaller initial fragment and subsequently write beyond its bounds using larger, inconsistent fragments. Because the merge operation does not enforce proper bounds checking against the allocated buffer size, this results in an out-of-bounds write on the heap. The vulnerability is remotely exploitable without authentication via the DTLS handshake path and can lead to application crashes or potential memory corruption.</p></details></td>
+        <td>2026-05-04</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-7747" target="_blank" rel="noopener">CVE-2026-7747</a></td>
+        <td>8.9</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-119</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.23</td>
+        <td><details><summary>A security flaw has been discovered in Totolink N300RH 3.2.4-B20220812. Affected...</summary><p>A security flaw has been discovered in Totolink N300RH 3.2.4-B20220812. Affected by this vulnerability is the function loginauth of the file /cgi-bin/cstecgi.cgi of the component Parameter Handler. Performing a manipulation of the argument Password results in buffer overflow. The attack can be initiated remotely. The exploit has been released to the public and may be used for attacks.</p></details></td>
+        <td>2026-05-04</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-7746" target="_blank" rel="noopener">CVE-2026-7746</a></td>
+        <td>2.1</td>
+        <td><span class="severity low">LOW</span></td>
+        <td>CWE-74</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>1.47</td>
+        <td><details><summary>A vulnerability was identified in SourceCodester Web-based Pharmacy Product Mana...</summary><p>A vulnerability was identified in SourceCodester Web-based Pharmacy Product Management System 1.0. Affected is an unknown function of the file /product_expiry/edit-admin.php. Such manipulation of the argument ID leads to sql injection. It is possible to launch the attack remotely. The exploit is publicly available and might be used.</p></details></td>
+        <td>2026-05-04</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-7745" target="_blank" rel="noopener">CVE-2026-7745</a></td>
+        <td>2.1</td>
+        <td><span class="severity low">LOW</span></td>
+        <td>CWE-74</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>1.47</td>
+        <td><details><summary>A vulnerability was determined in CodeAstro Online Classroom 1.0. This impacts a...</summary><p>A vulnerability was determined in CodeAstro Online Classroom 1.0. This impacts an unknown function of the file /OnlineClassroom/facultydetails. This manipulation of the argument deleteid causes sql injection. It is possible to initiate the attack remotely. The exploit has been publicly disclosed and may be utilized.</p></details></td>
+        <td>2026-05-04</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-14320" target="_blank" rel="noopener">CVE-2025-14320</a></td>
+        <td>9.8</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.86</td>
+        <td><details><summary>Improper neutralization of input during web page generation (&#x27;cross-site scripti...</summary><p>Improper neutralization of input during web page generation (&#x27;cross-site scripting&#x27;) vulnerability in Tegsoft Management and Information Services Trade Limited Company Online Support Application allows Reflected XSS.
+
+This issue affects Online Support Application: from V3 through 31122025.</p></details></td>
+        <td>2026-05-04</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-7744" target="_blank" rel="noopener">CVE-2026-7744</a></td>
+        <td>2.1</td>
+        <td><span class="severity low">LOW</span></td>
+        <td>CWE-74</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>1.47</td>
+        <td><details><summary>A vulnerability was found in CodeAstro Online Classroom 1.0. This affects an unk...</summary><p>A vulnerability was found in CodeAstro Online Classroom 1.0. This affects an unknown function of the file /OnlineClassroom/addnewstudent. The manipulation of the argument fname results in sql injection. The attack may be performed from remote. The exploit has been made public and could be used.</p></details></td>
+        <td>2026-05-04</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-7743" target="_blank" rel="noopener">CVE-2026-7743</a></td>
+        <td>2.1</td>
+        <td><span class="severity low">LOW</span></td>
+        <td>CWE-74</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>1.47</td>
+        <td><details><summary>A vulnerability has been found in CodeAstro Online Classroom 1.0. The impacted e...</summary><p>A vulnerability has been found in CodeAstro Online Classroom 1.0. The impacted element is an unknown function of the file /OnlineClassroom/studentdetails. The manipulation of the argument deleteid leads to sql injection. The attack is possible to be carried out remotely. The exploit has been disclosed to the public and may be used.</p></details></td>
+        <td>2026-05-04</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-7742" target="_blank" rel="noopener">CVE-2026-7742</a></td>
+        <td>2.1</td>
+        <td><span class="severity low">LOW</span></td>
+        <td>CWE-74</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>1.47</td>
+        <td><details><summary>A flaw has been found in CodeAstro Online Classroom 1.0. The affected element is...</summary><p>A flaw has been found in CodeAstro Online Classroom 1.0. The affected element is an unknown function of the file /OnlineClassroom/facultylogin. Executing a manipulation of the argument fid can lead to sql injection. The attack can be executed remotely. The exploit has been published and may be used.</p></details></td>
+        <td>2026-05-04</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-7741" target="_blank" rel="noopener">CVE-2026-7741</a></td>
+        <td>2.1</td>
+        <td><span class="severity low">LOW</span></td>
+        <td>CWE-74</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>1.47</td>
+        <td><details><summary>A vulnerability was detected in CodeAstro Online Classroom 1.0. Impacted is an u...</summary><p>A vulnerability was detected in CodeAstro Online Classroom 1.0. Impacted is an unknown function of the file /OnlineClassroom/studentlogin. Performing a manipulation of the argument sid results in sql injection. Remote exploitation of the attack is possible. The exploit is now public and may be used.</p></details></td>
+        <td>2026-05-04</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-7740" target="_blank" rel="noopener">CVE-2026-7740</a></td>
+        <td>1.9</td>
+        <td><span class="severity low">LOW</span></td>
+        <td>CWE-404</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>1.33</td>
+        <td><details><summary>A security vulnerability has been detected in justdan96 tsMuxer up to 2.7.0. Thi...</summary><p>A security vulnerability has been detected in justdan96 tsMuxer up to 2.7.0. This issue affects the function VvcVpsUnit::setFPS of the file tsMuxer/vvc.cpp. Such manipulation of the argument track_id leads to denial of service. An attack has to be approached locally. The exploit has been disclosed publicly and may be used. This vulnerability only affects products that are no longer supported by the maintainer.</p></details></td>
+        <td>2026-05-04</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-7739" target="_blank" rel="noopener">CVE-2026-7739</a></td>
+        <td>1.9</td>
+        <td><span class="severity low">LOW</span></td>
+        <td>CWE-404</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>1.33</td>
+        <td><details><summary>A weakness has been identified in justdan96 tsMuxer up to 2.7.0. This vulnerabil...</summary><p>A weakness has been identified in justdan96 tsMuxer up to 2.7.0. This vulnerability affects the function HevcVpsUnit::setFPS of the file /AFLplusplus/tsMuxer_prev/tsMuxer/hevc.cpp. This manipulation of the argument track_id causes denial of service. The attack requires local access. The exploit has been made available to the public and could be used for attacks. This vulnerability only affects products that are no longer supported by the maintainer.</p></details></td>
+        <td>2026-05-04</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-7738" target="_blank" rel="noopener">CVE-2026-7738</a></td>
+        <td>2.1</td>
+        <td><span class="severity low">LOW</span></td>
+        <td>CWE-22</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>1.47</td>
+        <td><details><summary>A security flaw has been discovered in puchunjie doc-tools-mcp 1.0.18. This affe...</summary><p>A security flaw has been discovered in puchunjie doc-tools-mcp 1.0.18. This affects the function create_document/open_document of the file src/mcp-server.ts of the component MCP Interface. The manipulation of the argument filePath results in path traversal. The attack can be launched remotely. The exploit has been released to the public and may be used for attacks. The project was informed of the problem early through an issue report but has not responded yet.</p></details></td>
+        <td>2026-05-04</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-7737" target="_blank" rel="noopener">CVE-2026-7737</a></td>
+        <td>6.9</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-119</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.83</td>
+        <td><details><summary>A vulnerability was identified in osrg GoBGP up to 4.3.0. Affected by this issue...</summary><p>A vulnerability was identified in osrg GoBGP up to 4.3.0. Affected by this issue is the function BMPPeerUpNotification.ParseBody/BMPStatisticsReport.ParseBody of the file pkg/packet/bmp/bmp.go of the component BMP Parser. The manipulation leads to out-of-bounds read. The attack can be initiated remotely. Upgrading to version 4.4.0 can resolve this issue. The identifier of the patch is bc77597d42335c78464bc8e15a471d887bbdf260. Upgrading the affected component is recommended.</p></details></td>
+        <td>2026-05-04</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-7736" target="_blank" rel="noopener">CVE-2026-7736</a></td>
+        <td>6.9</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-189</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.83</td>
+        <td><details><summary>A vulnerability was determined in osrg GoBGP up to 4.3.0. Affected by this vulne...</summary><p>A vulnerability was determined in osrg GoBGP up to 4.3.0. Affected by this vulnerability is the function parseRibEntry of the file pkg/packet/mrt/mrt.go. Executing a manipulation can lead to integer underflow. It is possible to launch the attack remotely. Upgrading to version 4.4.0 addresses this issue. This patch is called 76d911046344a3923cbe573364197aa081944592. It is suggested to upgrade the affected component.</p></details></td>
+        <td>2026-05-04</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5335" target="_blank" rel="noopener">CVE-2026-5335</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>The Magic Export &amp; Import WordPress plugin before 1.2.0 stores exported CSV file...</summary><p>The Magic Export &amp; Import WordPress plugin before 1.2.0 stores exported CSV files at a publicly accessible location, making it possible for any visitors to leak sensitive user information.</p></details></td>
+        <td>2026-05-04</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-43864" target="_blank" rel="noopener">CVE-2026-43864</a></td>
+        <td>2.5</td>
+        <td><span class="severity low">LOW</span></td>
+        <td>CWE-476</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>1.75</td>
+        <td><details><summary>mutt before 2.3.2 has a show_sig_summary NULL pointer dereference.</summary><p>mutt before 2.3.2 has a show_sig_summary NULL pointer dereference.</p></details></td>
+        <td>2026-05-04</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-43863" target="_blank" rel="noopener">CVE-2026-43863</a></td>
+        <td>3.7</td>
+        <td><span class="severity low">LOW</span></td>
+        <td>CWE-253</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>2.59</td>
+        <td><details><summary>mutt before 2.3.2 has an infinite loop in data_object_to_stream in crypt-gpgme.c...</summary><p>mutt before 2.3.2 has an infinite loop in data_object_to_stream in crypt-gpgme.c.</p></details></td>
+        <td>2026-05-04</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-43862" target="_blank" rel="noopener">CVE-2026-43862</a></td>
+        <td>3.7</td>
+        <td><span class="severity low">LOW</span></td>
+        <td>CWE-843</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>2.59</td>
+        <td><details><summary>In mutt before 2.3.2, the imap_auth_gss security level is mishandled.</summary><p>In mutt before 2.3.2, the imap_auth_gss security level is mishandled.</p></details></td>
+        <td>2026-05-04</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-43861" target="_blank" rel="noopener">CVE-2026-43861</a></td>
+        <td>3.7</td>
+        <td><span class="severity low">LOW</span></td>
+        <td>CWE-158</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>2.59</td>
+        <td><details><summary>mutt before 2.3.2 does not check for &#x27;\0&#x27; in url_pct_decode.</summary><p>mutt before 2.3.2 does not check for &#x27;\0&#x27; in url_pct_decode.</p></details></td>
+        <td>2026-05-04</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-43860" target="_blank" rel="noopener">CVE-2026-43860</a></td>
+        <td>3.7</td>
+        <td><span class="severity low">LOW</span></td>
+        <td>CWE-193</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>2.59</td>
+        <td><details><summary>mutt before 2.3.2 sometimes truncates the hash_passwd by one byte for IMAP auth_...</summary><p>mutt before 2.3.2 sometimes truncates the hash_passwd by one byte for IMAP auth_cram MD5 digest.</p></details></td>
+        <td>2026-05-04</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-43859" target="_blank" rel="noopener">CVE-2026-43859</a></td>
+        <td>3.7</td>
+        <td><span class="severity low">LOW</span></td>
+        <td>CWE-158</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>2.59</td>
+        <td><details><summary>mutt before 2.3.2 sometimes uses strfcpy instead of memcpy for the IMAP auth_cra...</summary><p>mutt before 2.3.2 sometimes uses strfcpy instead of memcpy for the IMAP auth_cram MD5 digest.</p></details></td>
+        <td>2026-05-04</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-29200" target="_blank" rel="noopener">CVE-2026-29200</a></td>
+        <td>9.9</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-639</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.93</td>
+        <td><details><summary>A critical IDOR vulnerability has been discovered in Comet Backup affecting all ...</summary><p>A critical IDOR vulnerability has been discovered in Comet Backup affecting all versions from 20.11.0 to 26.1.1 and 26.2.1. The vulnerability allows a tenant administrator to impersonate any end-user account of other tenants on the same server via a vulnerable API call.</p></details></td>
+        <td>2026-05-04</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-29199" target="_blank" rel="noopener">CVE-2026-29199</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-640</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>phpBB before 3.3.16 is vulnerable to Host Header Injection that can lead to pass...</summary><p>phpBB before 3.3.16 is vulnerable to Host Header Injection that can lead to password rest link poisoning. When force_server_vars is disabled, the servers hostname may be extracted from the HTTP Host header which is used to generate the password reset link URL. An attacker who can manipulate the Host header (e.g. through misconfigured host setup or missing header validation by the webserver) can cause password reset emails to contain a link pointing to an attacker-controlled domain, potentially leading to account takeover.</p></details></td>
+        <td>2026-05-04</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-20451" target="_blank" rel="noopener">CVE-2026-20451</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-843</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>In slbc, there is a possible out of bounds write due to type confusion. This cou...</summary><p>In slbc, there is a possible out of bounds write due to type confusion. This could lead to local escalation of privilege if a malicious actor has already obtained the System privilege. User interaction is not needed for exploitation. Patch ID: ALPS10828685; Issue ID: MSV-6504.</p></details></td>
+        <td>2026-05-04</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-20450" target="_blank" rel="noopener">CVE-2026-20450</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-617</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>In Modem, there is a possible system crash due to incorrect error handling. This...</summary><p>In Modem, there is a possible system crash due to incorrect error handling. This could lead to remote denial of service, if a UE has connected to a rogue base station controlled by the attacker, with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: MOLY01753620; Issue ID: MSV-6100.</p></details></td>
+        <td>2026-05-04</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-20449" target="_blank" rel="noopener">CVE-2026-20449</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-120</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>In Modem, there is a possible system crash due to a heap buffer overflow. This c...</summary><p>In Modem, there is a possible system crash due to a heap buffer overflow. This could lead to remote denial of service, if a UE has connected to a rogue base station controlled by the attacker, with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: MOLY01760138; Issue ID: MSV-6148.</p></details></td>
+        <td>2026-05-04</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-20448" target="_blank" rel="noopener">CVE-2026-20448</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-280</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>In geniezone, there is a possible escalation of privilege due to a missing permi...</summary><p>In geniezone, there is a possible escalation of privilege due to a missing permission check. This could lead to local escalation of privilege if a malicious actor has already obtained the System privilege. User interaction is not needed for exploitation. Patch ID: ALPS10708513; Issue ID: MSV-6281.</p></details></td>
+        <td>2026-05-04</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-20447" target="_blank" rel="noopener">CVE-2026-20447</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-125</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>In geniezone, there is a possible escalation of privilege due to a missing bound...</summary><p>In geniezone, there is a possible escalation of privilege due to a missing bounds check. This could lead to local escalation of privilege if a malicious actor has already obtained the System privilege. User interaction is not needed for exploitation. Patch ID: ALPS10724073; Issue ID: MSV-6296.</p></details></td>
+        <td>2026-05-04</td>
+      </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-7735" target="_blank" rel="noopener">CVE-2026-7735</a></td>
         <td>6.9</td>
@@ -3761,24 +4104,6 @@
         <td>2026-04-30</td>
       </tr>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-7163" target="_blank" rel="noopener">CVE-2026-7163</a></td>
-        <td>6.1</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-312</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p2</small></td>
-        <td>4.27</td>
-        <td><details><summary>A vulnerability in the assisted-service REST API, an optional Assisted Installer...</summary><p>A vulnerability in the assisted-service REST API, an optional Assisted Installer (assisted-service) component in the Multicluster Engine (MCE), allows an authenticated user with minimal namespace-scoped privileges to obtain administrative credentials for arbitrary clusters provisioned through the hub. 
-
-The credentials download endpoint (GET /v2/clusters/{cluster_id}/credentials, which returns the kubeadmin password) and the kubeconfig download endpoint are operational in AUTH_TYPE=local mode, the only authentication mode available in on-premises ACM/MCE hub deployments. The local authenticator unconditionally grants full administrative access to any request bearing a valid JWT, with no per-endpoint restrictions. A valid local JWT is embedded as a plaintext query parameter in InfraEnvStatus.ISODownloadURL and is readable by any user who has get rights on an InfraEnv object in their own namespace.
-
-The affected components ship as part of Multicluster Engine (MCE). The Red Hat Advanced Cluster Management (ACM) deployments that include MCE are equally affected.
-This issue does not affect the hosted SaaS offering (console.redhat.com), which uses a different authentication mode.
-
-Successful exploitation gives the attacker the kubeadmin password and kubeconfig for any OpenShift cluster provisioned through the affected hub, granting unrestricted root-level administrative access to those spoke clusters.</p></details></td>
-        <td>2026-04-30</td>
-      </tr>
-      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-2892" target="_blank" rel="noopener">CVE-2026-2892</a></td>
         <td>7.5</td>
         <td><span class="severity high">HIGH</span></td>
@@ -3809,6 +4134,77 @@ Successful exploitation gives the attacker the kubeadmin password and kubeconfig
         <td>0.0% <small>p4</small></td>
         <td>5.39</td>
         <td><details><summary>Unauthenticated attackers can exploit a weakness in the XML parser functionality...</summary><p>Unauthenticated attackers can exploit a weakness in the XML parser functionality of Lobster_pro prior to version 4.12.6-GA. This allows them to obtain read access to files on the application server and adjacent network shares, and perform HTTP GET requests to arbitrary services.</p></details></td>
+        <td>2026-04-30</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-31787" target="_blank" rel="noopener">CVE-2026-31787</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td>0.0% <small>p9</small></td>
+        <td>0.00</td>
+        <td><details><summary>In the Linux kernel, the following vulnerability has been resolved:
+
+xen/privcmd...</summary><p>In the Linux kernel, the following vulnerability has been resolved:
+
+xen/privcmd: fix double free via VMA splitting
+
+privcmd_vm_ops defines .close (privcmd_close), but neither .may_split
+nor .open. When userspace does a partial munmap() on a privcmd mapping,
+the kernel splits the VMA via __split_vma(). Since may_split is NULL,
+the split is allowed. vm_area_dup() copies vm_private_data (a pages
+array allocated in alloc_empty_pages()) into the new VMA without any
+fixup, because there is no .open callback.
+
+Both VMAs now point to the same pages array. When the unmapped portion
+is closed, privcmd_close() calls:
+    - xen_unmap_domain_gfn_range()
+    - xen_free_unpopulated_pages()
+    - kvfree(pages)
+
+The surviving VMA still holds the dangling pointer. When it is later
+destroyed, the same sequence runs again, which leads to a double free.
+
+Fix this issue by adding a .may_split callback denying the VMA split.
+
+This is XSA-487 / CVE-2026-31787</p></details></td>
+        <td>2026-04-30</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-31786" target="_blank" rel="noopener">CVE-2026-31786</a></td>
+        <td>7.8</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td>0.0% <small>p1</small></td>
+        <td>5.46</td>
+        <td><details><summary>In the Linux kernel, the following vulnerability has been resolved:
+
+Buffer over...</summary><p>In the Linux kernel, the following vulnerability has been resolved:
+
+Buffer overflow in drivers/xen/sys-hypervisor.c
+
+The build id returned by HYPERVISOR_xen_version(XENVER_build_id) is
+neither NUL terminated nor a string.
+
+The first causes a buffer overflow as sprintf in buildid_show will
+read and copy till it finds a NUL.
+
+00000000  f4 91 51 f4 dd 38 9e 9d  65 47 52 eb 10 71 db 50  |..Q..8..eGR..q.P|
+00000010  b9 a8 01 42 6f 2e 32                              |...Bo.2|
+00000017
+
+So use a memcpy instead of sprintf to have the correct value:
+
+00000000  f4 91 51 f4 dd 00 9e 9d  65 47 52 eb 10 71 db 50  |..Q.....eGR..q.P|
+00000010  b9 a8 01 42                                       |...B|
+00000014
+
+(the above have a hack to embed a zero inside and check it&#x27;s
+returned correctly).
+
+This is XSA-485 / CVE-2026-31786</p></details></td>
         <td>2026-04-30</td>
       </tr>
       <tr>
@@ -16305,29 +16701,6 @@ Successful exploitation gives the attacker the kubeadmin password and kubeconfig
         <td>0.0% <small>p6</small></td>
         <td>3.08</td>
         <td><details><summary>The Short Comment Filter plugin for WordPress is vulnerable to Stored Cross-Site...</summary><p>The Short Comment Filter plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the &#x27;Minimum Count&#x27; settings field in all versions up to and including 2.2. This is due to insufficient input sanitization (no sanitize callback on register_setting) and missing output escaping (no esc_attr() on the echoed value in the input&#x27;s value attribute). The option value is stored via update_option() and rendered unescaped in an HTML attribute context. This makes it possible for authenticated attackers, with administrator-level access and above, to inject arbitrary web scripts in the settings page that will execute whenever a user accesses that page. This is particularly impactful in WordPress multisite installations or when DISALLOW_UNFILTERED_HTML is set, where administrators are not granted the unfiltered_html capability.</p></details></td>
-        <td>2026-04-22</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-31431" target="_blank" rel="noopener">CVE-2026-31431</a></td>
-        <td>7.8</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-669</td>
-        <td><span class="kev-yes">&#10003;</span></td>
-        <td>4.0% <small>p88</small></td>
-        <td>5.58</td>
-        <td><details><summary>In the Linux kernel, the following vulnerability has been resolved:
-
-crypto: alg...</summary><p>In the Linux kernel, the following vulnerability has been resolved:
-
-crypto: algif_aead - Revert to operating out-of-place
-
-This mostly reverts commit 72548b093ee3 except for the copying of
-the associated data.
-
-There is no benefit in operating in-place in algif_aead since the
-source and destination come from different mappings.  Get rid of
-all the complexity added for in-place operation and just copy the
-AD directly.</p></details></td>
         <td>2026-04-22</td>
       </tr>
       <tr>
