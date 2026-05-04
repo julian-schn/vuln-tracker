@@ -11,7 +11,7 @@
     <header>
       <h1>vuln-tracker — Top 50</h1>
       <p class="subtitle">The 50 most important CVEs from the current and previous month, ranked by VAP score (70% CVSS + 30% EPSS)</p>
-      <p class="last-updated">Last updated: 2026-05-04 14:16 UTC</p>
+      <p class="last-updated">Last updated: 2026-05-04 17:45 UTC</p>
     </header>
     <nav>
       <a href="index.html">&larr; All CVEs</a>
@@ -204,6 +204,27 @@
         <td>7.01</td>
         <td><details><summary>SandboxJS is a JavaScript sandboxing library. Prior to 0.8.36, SandboxJS blocks ...</summary><p>SandboxJS is a JavaScript sandboxing library. Prior to 0.8.36, SandboxJS blocks direct assignment to global objects (for example Math.random = ...), but this protection can be bypassed through an exposed callable constructor path: this.constructor.call(target, attackerObject). Because this.constructor resolves to the internal SandboxGlobal function and Function.prototype.call is allowed, attacker code can write arbitrary properties into host global objects and persist those mutations across sandbox instances in the same process. This vulnerability is fixed in 0.8.36.</p></details></td>
         <td>2026-04-06</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-42369" target="_blank" rel="noopener">CVE-2026-42369</a></td>
+        <td>10.0</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-787</td>
+        <td>&nbsp;</td>
+        <td>0.2% <small>p35</small></td>
+        <td>7.00</td>
+        <td><details><summary>GV-VMS V20 is a Video Monitoring Software used to gather the feeds of many surve...</summary><p>GV-VMS V20 is a Video Monitoring Software used to gather the feeds of many surveillance cameras and manage other security devices. It is a native application accessed locally, but it is also possible to enable remote access via the &quot;WebCam Server&quot; feature.  Once enabled, it is possible to access to the management and monitoring feature via a regular Web interface. This webersever is another native application, compiled without ASLR, which makes exploitation much easier and more likely. 
+
+
+
+Most of the features require authentication before being reachable and leverage a standard login page to grant access. However the `gvapi` endpoint uses its own authentication mechanism via an `HTTP Authorization` header. It supports both `Basic` authentication and the `Digest` modes of authentication.  
+
+
+
+#### Stack-overflow via unbound copy of base64 decoded string
+
+The `b64decoder` string is sized dynamically, but it is then copied to the `Buffer` stack variable one character at the time at [0], and there&#x27;s no bound-check. As such, if the decoded string is bigger than 256 characters (the size of the `Buffer` variable) then a stack overflow occurs. Because the data can be fully controlled by an attacker and lack of ASLR, this vulnerability can easily be exploited to gain full code execution as SYSTEM on the machine running the service.</p></details></td>
+        <td>2026-05-04</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35431" target="_blank" rel="noopener">CVE-2026-35431</a></td>
@@ -578,17 +599,6 @@
         <td>6.93</td>
         <td><details><summary>Genealogy is a family tree PHP application. Prior to 5.9.1, a critical broken ac...</summary><p>Genealogy is a family tree PHP application. Prior to 5.9.1, a critical broken access control vulnerability in the genealogy application allows any authenticated user to transfer ownership of arbitrary non-personal teams to themselves. This enables complete takeover of other users’ team workspaces and unrestricted access to all genealogy data associated with the compromised team. This vulnerability is fixed in 5.9.1.</p></details></td>
         <td>2026-04-07</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34717" target="_blank" rel="noopener">CVE-2026-34717</a></td>
-        <td>9.9</td>
-        <td><span class="severity critical">CRITICAL</span></td>
-        <td>CWE-89</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p13</small></td>
-        <td>6.93</td>
-        <td><details><summary>OpenProject is an open-source, web-based project management software. Prior to v...</summary><p>OpenProject is an open-source, web-based project management software. Prior to version 17.2.3, the =n operator in modules/reporting/lib/report/operator.rb:177 embeds user input directly into SQL WHERE clauses without parameterization. This issue has been patched in version 17.2.3.</p></details></td>
-        <td>2026-04-02</td>
       </tr>
             </tbody>
           </table>
