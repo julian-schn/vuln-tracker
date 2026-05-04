@@ -11,7 +11,7 @@
     <header>
       <h1>vuln-tracker — Top 50</h1>
       <p class="subtitle">The 50 most important CVEs from the current and previous month, ranked by VAP score (70% CVSS + 30% EPSS)</p>
-      <p class="last-updated">Last updated: 2026-05-03 22:52 UTC</p>
+      <p class="last-updated">Last updated: 2026-05-04 03:47 UTC</p>
     </header>
     <nav>
       <a href="index.html">&larr; All CVEs</a>
@@ -360,6 +360,27 @@
         <td>2026-05-01</td>
       </tr>
       <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-42369" target="_blank" rel="noopener">CVE-2026-42369</a></td>
+        <td>10.0</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-787</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>7.00</td>
+        <td><details><summary>GV-VMS V20 is a Video Monitoring Software used to gather the feeds of many surve...</summary><p>GV-VMS V20 is a Video Monitoring Software used to gather the feeds of many surveillance cameras and manage other security devices. It is a native application accessed locally, but it is also possible to enable remote access via the &quot;WebCam Server&quot; feature.  Once enabled, it is possible to access to the management and monitoring feature via a regular Web interface. This webersever is another native application, compiled without ASLR, which makes exploitation much easier and more likely. 
+
+
+
+Most of the features require authentication before being reachable and leverage a standard login page to grant access. However the `gvapi` endpoint uses its own authentication mechanism via an `HTTP Authorization` header. It supports both `Basic` authentication and the `Digest` modes of authentication.  
+
+
+
+#### Stack-overflow via unbound copy of base64 decoded string
+
+The `b64decoder` string is sized dynamically, but it is then copied to the `Buffer` stack variable one character at the time at [0], and there&#x27;s no bound-check. As such, if the decoded string is bigger than 256 characters (the size of the `Buffer` variable) then a stack overflow occurs. Because the data can be fully controlled by an attacker and lack of ASLR, this vulnerability can easily be exploited to gain full code execution as SYSTEM on the machine running the service.</p></details></td>
+        <td>2026-05-04</td>
+      </tr>
+      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4631" target="_blank" rel="noopener">CVE-2026-4631</a></td>
         <td>9.8</td>
         <td><span class="severity critical">CRITICAL</span></td>
@@ -578,17 +599,6 @@
         <td>6.93</td>
         <td><details><summary>Sonicverse is a Self-hosted Docker Compose stack for live radio streaming. The S...</summary><p>Sonicverse is a Self-hosted Docker Compose stack for live radio streaming. The Sonicverse Radio Audio Streaming Stack dashboard contains a Server-Side Request Forgery (SSRF) vulnerability in its API client (apps/dashboard/lib/api.ts). Installations created using the provided install.sh script (including the one‑liner bash &lt;(curl -fsSL https://sonicverse.short.gy/install-audiostack)) are affected. In these deployments, the dashboard accepts user-controlled URLs and passes them directly to a server-side HTTP client without sufficient validation. An authenticated operator can abuse this to make arbitrary HTTP requests from the dashboard backend to internal or external systems. This vulnerability is fixed with commit cb1ddbacafcb441549fe87d3eeabdb6a085325e4.</p></details></td>
         <td>2026-04-09</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34717" target="_blank" rel="noopener">CVE-2026-34717</a></td>
-        <td>9.9</td>
-        <td><span class="severity critical">CRITICAL</span></td>
-        <td>CWE-89</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p11</small></td>
-        <td>6.93</td>
-        <td><details><summary>OpenProject is an open-source, web-based project management software. Prior to v...</summary><p>OpenProject is an open-source, web-based project management software. Prior to version 17.2.3, the =n operator in modules/reporting/lib/report/operator.rb:177 embeds user input directly into SQL WHERE clauses without parameterization. This issue has been patched in version 17.2.3.</p></details></td>
-        <td>2026-04-02</td>
       </tr>
             </tbody>
           </table>
