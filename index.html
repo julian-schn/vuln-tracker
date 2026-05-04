@@ -11,7 +11,7 @@
     <header>
       <h1>vuln-tracker</h1>
       <p class="subtitle">CVEs from the National Vulnerability Database — current and previous month</p>
-      <p class="last-updated">Last updated: 2026-05-04 19:47 UTC</p>
+      <p class="last-updated">Last updated: 2026-05-04 21:13 UTC</p>
     </header>
     <nav>
       <a href="top50.html">&#9733; Top 50</a>
@@ -25,7 +25,7 @@
     </nav>
     <main>
     <section>
-      <h2>Current Month — May 2026 <span class="count">(379)</span></h2>
+      <h2>Current Month — May 2026 <span class="count">(382)</span></h2>
       <div class="table-wrapper">
         <table>
           <thead>
@@ -42,6 +42,116 @@
             </tr>
           </thead>
           <tbody>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-7768" target="_blank" rel="noopener">CVE-2026-7768</a></td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-770</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.25</td>
+        <td><details><summary>@fastify/accepts-serializer cached serializer-selection results keyed by the req...</summary><p>@fastify/accepts-serializer cached serializer-selection results keyed by the request Accept header without a size limit or eviction policy. A remote unauthenticated client could send many distinct but matching Accept header variants to make the cache grow unbounded, eventually exhausting the Node.js heap and crashing the process. Versions &lt;= 6.0.3 are affected. Update to 6.0.4 or later, which bounds the cache via an LRU with a default size of 100 entries, configurable through the new cacheSize plugin option.</p></details></td>
+        <td>2026-05-04</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6321" target="_blank" rel="noopener">CVE-2026-6321</a></td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-22</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.25</td>
+        <td><details><summary>fast-uri decoded percent-encoded path separators and dot segments before applyin...</summary><p>fast-uri decoded percent-encoded path separators and dot segments before applying dot-segment removal in its normalize() and equal() functions. Encoded path data was treated like real slashes and parent-directory references, so distinct URIs could collapse onto the same normalized path. Applications that normalize or compare attacker-controlled URLs to enforce path-based policy can be bypassed, with a path that appears confined under an allowed prefix normalizing to a different location. Versions &lt;= 3.1.0 are affected. Update to 3.1.1 or later.</p></details></td>
+        <td>2026-05-04</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-41927" target="_blank" rel="noopener">CVE-2026-41927</a></td>
+        <td>8.3</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-121</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.81</td>
+        <td><details><summary>WDR201A WiFi Extender (HW V2.1, FW LFMZX28040922V1.02) contains a stack-based bu...</summary><p>WDR201A WiFi Extender (HW V2.1, FW LFMZX28040922V1.02) contains a stack-based buffer overflow vulnerability in the firewall.cgi and makeRequest.cgi binaries that allows unauthenticated attackers to overwrite the saved return address by sending a POST request with a Content-Length header exceeding 512 bytes. Attackers can exploit insufficient length validation in the fgets() call to achieve arbitrary code execution through return-oriented programming or return-to-libc techniques.</p></details></td>
+        <td>2026-05-04</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-41926" target="_blank" rel="noopener">CVE-2026-41926</a></td>
+        <td>9.3</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-78</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.51</td>
+        <td><details><summary>WDR201A WiFi Extender (HW V2.1, FW LFMZX28040922V1.02) contains an OS command in...</summary><p>WDR201A WiFi Extender (HW V2.1, FW LFMZX28040922V1.02) contains an OS command injection vulnerability in the firewall.cgi binary across five request handlers that apply insufficient input validation. Attackers can inject arbitrary shell commands through vulnerable parameters like websURLFilter, websHostFilter, portForward, singlePortForward, and ipportFilter using subshell syntax or unfiltered parameters, with payloads persisting in NVRAM and re-executing on every subsequent firewall.cgi request.</p></details></td>
+        <td>2026-05-04</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-41925" target="_blank" rel="noopener">CVE-2026-41925</a></td>
+        <td>9.3</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-78</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.51</td>
+        <td><details><summary>WDR201A WiFi Extender (HW V2.1, FW LFMZX28040922V1.02) contains an OS command in...</summary><p>WDR201A WiFi Extender (HW V2.1, FW LFMZX28040922V1.02) contains an OS command injection vulnerability in the adm.cgi binary&#x27;s reboot_time function that allows unauthenticated remote attackers to execute arbitrary shell commands by injecting malicious input into the reboot_time POST parameter. Attackers can send a crafted request with shell metacharacters in the reboot_time parameter when reboot_enabled=1 to achieve remote code execution.</p></details></td>
+        <td>2026-05-04</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-41924" target="_blank" rel="noopener">CVE-2026-41924</a></td>
+        <td>9.3</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-78</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.51</td>
+        <td><details><summary>WDR201A WiFi Extender (HW V2.1, FW LFMZX28040922V1.02) contains an OS command in...</summary><p>WDR201A WiFi Extender (HW V2.1, FW LFMZX28040922V1.02) contains an OS command injection vulnerability in the makeRequest.cgi binary that allows unauthenticated remote attackers to execute arbitrary shell commands by injecting malicious input into the set_time or StartSniffer functions. Attackers can craft a POST request with specially crafted ampersand-delimited parameters to bypass input sanitization and execute commands with a maximum length of 31 bytes through the date command or channel parameter processing.</p></details></td>
+        <td>2026-05-04</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-41923" target="_blank" rel="noopener">CVE-2026-41923</a></td>
+        <td>9.3</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-78</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.51</td>
+        <td><details><summary>WDR201A WiFi Extender (HW V2.1, FW LFMZX28040922V1.02) contains an OS command in...</summary><p>WDR201A WiFi Extender (HW V2.1, FW LFMZX28040922V1.02) contains an OS command injection vulnerability in the internet.cgi binary that allows unauthenticated remote attackers to execute arbitrary shell commands by injecting malicious input into the gateway POST parameter. Attackers can exploit unsanitized parameter concatenation in the set_add_routing function to inject shell commands that are executed via popen() with partial output reflected in the HTTP response.</p></details></td>
+        <td>2026-05-04</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-41922" target="_blank" rel="noopener">CVE-2026-41922</a></td>
+        <td>9.3</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-78</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.51</td>
+        <td><details><summary>WDR201A WiFi Extender (HW V2.1, FW LFMZX28040922V1.02) contains an OS command in...</summary><p>WDR201A WiFi Extender (HW V2.1, FW LFMZX28040922V1.02) contains an OS command injection vulnerability in the wireless.cgi binary that allow unauthenticated remote attackers to execute arbitrary shell commands by injecting malicious input into the sz11gChannel or PIN POST parameters. Attackers can exploit unsanitized parameter handling in the set_wifi_basic and set_wifi_do_wps functions to achieve remote code execution without authentication.</p></details></td>
+        <td>2026-05-04</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34882" target="_blank" rel="noopener">CVE-2026-34882</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Rejected reason: DO NOT USE THIS CVE RECORD. ConsultIDs: CVE-2026-6074. Reason: ...</summary><p>Rejected reason: DO NOT USE THIS CVE RECORD. ConsultIDs: CVE-2026-6074. Reason: This record is a reservation duplicate of CVE-2026-6074. Notes: All CVE users should reference CVE-2026-6074 instead of this record. All references and descriptions in this record have been removed to prevent accidental usage.</p></details></td>
+        <td>2026-05-04</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-67796" target="_blank" rel="noopener">CVE-2025-67796</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>IKUS Rdiffweb before 2.10.5 has an improper authorization flaw that allows an at...</summary><p>IKUS Rdiffweb before 2.10.5 has an improper authorization flaw that allows an attacker with any valid or stolen access token to act as other users. The API does not enforce binding between the authenticated subject and the targeted user/tenant, so crafted requests can read or modify other users data and, in some cases, perform privileged actions. This issue may enable cross-tenant access. Fixed in version 2.10.6.</p></details></td>
+        <td>2026-05-04</td>
+      </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-43964" target="_blank" rel="noopener">CVE-2026-43964</a></td>
         <td>3.7</td>
@@ -429,12 +539,12 @@
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-37459" target="_blank" rel="noopener">CVE-2026-37459</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-400</td>
         <td>&nbsp;</td>
         <td>&mdash;</td>
-        <td>0.00</td>
+        <td>5.25</td>
         <td><details><summary>An integer underflow in FRRouting (FRR) stable/10.0 to stable/10.6 allows attack...</summary><p>An integer underflow in FRRouting (FRR) stable/10.0 to stable/10.6 allows attackers to cause a Denial of Service (DoS) via supplying a crafted BGP UPDATE message.</p></details></td>
         <td>2026-05-04</td>
       </tr>
@@ -480,118 +590,6 @@
         <td>&mdash;</td>
         <td>6.16</td>
         <td><details><summary>In adbd_tls_verify_cert of auth.cpp, there is a possible bypass of wireless ADB ...</summary><p>In adbd_tls_verify_cert of auth.cpp, there is a possible bypass of wireless ADB mutual authentication due to a logic error in the code. This could lead to remote (proximal/adjacent) code execution as the shell user with no additional execution privileges needed. User interaction is not needed for exploitation.</p></details></td>
-        <td>2026-05-04</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-42810" target="_blank" rel="noopener">CVE-2026-42810</a></td>
-        <td>9.4</td>
-        <td><span class="severity critical">CRITICAL</span></td>
-        <td>CWE-20</td>
-        <td>&nbsp;</td>
-        <td>&mdash;</td>
-        <td>6.58</td>
-        <td><details><summary>Apache Polaris accepts literal `*` characters in namespace and table names. When...</summary><p>Apache Polaris accepts literal `*` characters in namespace and table names. When it
-later builds temporary S3 access policies for delegated table access, those
-same characters appear to be reused unescaped in S3 IAM resource patterns
-and
-`s3:prefix` conditions.
-
-
-
-In S3 IAM policy matching, `*` is treated as a wildcard rather than as
-ordinary text. That means temporary credentials issued for one crafted table
-can match the storage path of a different table.
-
-
-
-In private testing against Polaris 1.4.0 using Polaris&#x27; AWS S3 temporary-
-credential path on both MinIO and real AWS S3, credentials returned for
-crafted tables such as `f*.t1`, `f*.*`, `*.*`, and `foo.*` could reach other
-tables&#x27; S3 locations.
-
-
-The confirmed behavior includes:
-
-
-- reading another table&#x27;s metadata control file ([Iceberg metadata JSON]);
-
-- listing another table&#x27;s exact S3 table prefix ([table prefix]);
-
-- and, when write delegation was returned for the crafted table, creating
-and
-deleting an object under another table&#x27;s exact S3 table prefix.
-
-
-
-A control case using ordinary different names did not allow the same
-cross-table access.
-
-
-
-A least-privilege AWS S3 variant was also confirmed in which the attacker
-principal had no Polaris permissions on the victim table and only the
-minimal permissions required to create and use a crafted wildcard table
-(namespace-scoped `TABLE_CREATE` and `TABLE_WRITE_DATA` on `*`). In that
-setup, direct Polaris access to `foo.t1` remained forbidden, but the
-attacker
-could still create and load `*.*`, receive delegated S3 credentials, and use
-those credentials to list, read, create, and delete objects under `foo.t1`.
-
-
-
-In Iceberg, the metadata JSON file is a control file: it tells readers which
-data files belong to the table, which snapshots exist, and which table
-version
-to read. So unauthorized access to it is already a meaningful
-confidentiality
-problem. The confirmed write-capable variant means the issue is not limited
-to
-disclosure.</p></details></td>
-        <td>2026-05-04</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-42440" target="_blank" rel="noopener">CVE-2026-42440</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>CWE-789</td>
-        <td>&nbsp;</td>
-        <td>&mdash;</td>
-        <td>0.00</td>
-        <td><details><summary>OOM Denial of Service via Unbounded Array Allocation in Apache OpenNLP AbstractM...</summary><p>OOM Denial of Service via Unbounded Array Allocation in Apache OpenNLP AbstractModelReader 
-
-Versions Affected: 
-
-before 2.5.9
-
-before 3.0.0-M3 
-
-Description:
-
-
-The AbstractModelReader methods getOutcomes(), getOutcomePatterns(), and getPredicates() each read a 32-bit signed integer count field from a binary model stream and pass that value directly to an array allocation (new String[numOutcomes], new int[numOCTypes][], new String[NUM_PREDS]) without validating that the value is non-negative or within a reasonable bound. The count is therefore fully attacker-controlled when the model file originates from an untrusted source.
-
-
-A crafted .bin model file in which any of these count fields is set to Integer.MAX_VALUE (or any value large enough to exhaust the available heap) triggers an OutOfMemoryError at the array allocation itself, before the corresponding label or pattern data is consumed from the stream. The error occurs very early in deserialization: for a GIS model, getOutcomes() is reached after only the model-type string, the correction constant, and the correction parameter have been read; so the attacker pays no meaningful size cost to weaponize a payload, and a single small file can crash a JVM that loads it. Any code path that deserializes a .bin model is affected, including direct use of GenericModelReader and any higher-level component that delegates to it during model load.
-
-
-The practical impact is denial of service against processes that load model files from untrusted or semi-trusted origins.  
-
-
-Mitigation:
-
-
-
-  *  2.x users should upgrade to 2.5.9.
-
-  *  3.x users should upgrade to 3.0.0-M3.
-
-
-
-
-Note: The fix introduces an upper bound on each of the three count fields, checked before array allocation; counts that are negative or exceed the bound cause an IllegalArgumentException to be thrown and the read to fail fast with no large allocation. The default bound is 10,000,000, which is well above the entry counts of legitimate OpenNLP models but far below any value that would threaten heap exhaustion. Deployments that legitimately need to load models with more entries than the default can raise the limit at JVM startup by setting the OPENNLP_MAX_ENTRIES system property to the desired positive integer (e.g. -DOPENNLP_MAX_ENTRIES=50000000); invalid or non-positive values fall back to the default.
-
-
-Users who cannot upgrade immediately should treat all .bin model files as untrusted input unless their provenance is verified, and should avoid loading models supplied by end users or fetched from third-party repositories without integrity checks.</p></details></td>
         <td>2026-05-04</td>
       </tr>
       <tr>
@@ -727,80 +725,13 @@ Users who cannot upgrade immediately should treat all .bin model files as untrus
         <td>2026-05-04</td>
       </tr>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-42027" target="_blank" rel="noopener">CVE-2026-42027</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>CWE-470</td>
-        <td>&nbsp;</td>
-        <td>&mdash;</td>
-        <td>0.00</td>
-        <td><details><summary>Arbitrary Class Instantiation via Model Manifest in Apache OpenNLP ExtensionLoad...</summary><p>Arbitrary Class Instantiation via Model Manifest in Apache OpenNLP ExtensionLoader
-
-
-
-
-
-Versions Affected: before 2.5.9, before 3.0.0-M3
-
-
-
-
-
-Description: 
-
-The ExtensionLoader.instantiateExtension(Class, String) method loads a class by its fully-qualified name via Class.forName() and invokes its no-arg constructor, with the class name sourced from the manifest.properties entry of a model archive. The existing isAssignableFrom check correctly rejects classes that are not subtypes of the expected extension interface (BaseToolFactory for factory=, ArtifactSerializer for serializer-class-*), but the check runs after Class.forName() has already loaded and initialized the named class. 
-
-Class.forName() with default initialization semantics executes the target class&#x27;s static initializer before returning, so an attacker who can supply a crafted model archive can cause the static initializer of any class on the classpath to run during model loading, regardless of whether that class passes the subsequent type check. 
-
-Exploitation requires a class with attacker-useful side effects in its static initializer (for example, JNDI lookup, outbound network I/O, or filesystem access) to be present on the classpath, so this is not a drop-in remote code execution; however, the attack surface grows as third-party model distribution becomes more common (community model repositories, Hugging Face-style sharing), where users routinely load model files from origins they do not control. A secondary, narrower vector affects deployments that ship legitimate BaseToolFactory or ArtifactSerializer subclasses with side-effecting no-arg constructors: a malicious manifest can name such a class and force its constructor to run during model load.
-
-
-
-
-
-Mitigation: 
-
-
-
-  *  2.x users should upgrade to 2.5.9. 
-  *  3.x users should upgrade to 3.0.0-M3. 
-
-
-
-
-Note: The fix introduces a package-prefix allowlist that is consulted before Class.forName() is invoked, so the static initializer of a disallowed class is never executed. Classes under the opennlp. prefix remain permitted by default. Deployments that load models referencing factories or serializers outside opennlp.* must opt those packages in, either programmatically via ExtensionLoader.registerAllowedPackage(String) before the first model load, or by setting the OPENNLP_EXT_ALLOWED_PACKAGES system property to a comma-separated list of allowed package prefixes. 
-
-Users who cannot upgrade immediately should ensure that all model files are sourced from trusted origins and should audit their classpath for classes with side-effecting static initializers or constructors, particularly any that perform JNDI lookups, network requests, or filesystem operations during class initialization.</p></details></td>
-        <td>2026-05-04</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40682" target="_blank" rel="noopener">CVE-2026-40682</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>CWE-611</td>
-        <td>&nbsp;</td>
-        <td>&mdash;</td>
-        <td>0.00</td>
-        <td><details><summary>XML External Entity (XXE) via Unsanitized Dictionary Parsing in Apache OpenNLP D...</summary><p>XML External Entity (XXE) via Unsanitized Dictionary Parsing in Apache OpenNLP DictionaryEntryPersistor
-
-
-Versions Affected: before 2.5.9, before 3.0.0-M3
-
-
-Description: The DictionaryEntryPersistor class initializes a static SAXParserFactory at class-load time without enabling FEATURE_SECURE_PROCESSING or disabling DTD processing. When create(InputStream, EntryInserter) is invoked, the only feature set on the XMLReader is namespace support — external entity resolution and DOCTYPE declarations remain fully enabled. An attacker who can supply a crafted dictionary file (e.g., a stop-word list or domain dictionary) containing a malicious DOCTYPE declaration can trigger local file disclosure via file:// entity references or server-side request forgery via http:// entity references during SAX parsing, before the application processes a single dictionary entry. This is inconsistent with the project&#x27;s own XmlUtil.createSaxParser() helper, which correctly sets FEATURE_SECURE_PROCESSING and disallow-doctype-decl and is used by all other XML parsing paths in the codebase. The public Dictionary(InputStream) constructor delegates directly to this method and is the documented API for loading user-supplied dictionaries, making untrusted input a realistic scenario.
-
-
-Mitigation: 2.x users should upgrade to 2.5.9. 3.x users should upgrade to 3.0.0-M3. Users who cannot upgrade immediately should ensure that all dictionary files are sourced from trusted origins and should consider wrapping the Dictionary(InputStream) constructor with input validation that rejects any XML containing a DOCTYPE declaration before it reaches the parser.</p></details></td>
-        <td>2026-05-04</td>
-      </tr>
-      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-38669" target="_blank" rel="noopener">CVE-2026-38669</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>6.1</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-79</td>
         <td>&nbsp;</td>
         <td>&mdash;</td>
-        <td>0.00</td>
+        <td>4.27</td>
         <td><details><summary>wCMS v.1.4 is vulnerable to Cross Site Scripting (XSS) when creating a new blog.</summary><p>wCMS v.1.4 is vulnerable to Cross Site Scripting (XSS) when creating a new blog.</p></details></td>
         <td>2026-05-04</td>
       </tr>
@@ -1063,21 +994,6 @@ Users are recommended to upgrade to version 2.4.67, which fixes this issue.</p><
         <td><details><summary>A timing attack against mod_auth_digest in Apache HTTP Server 2.4.66 allows a by...</summary><p>A timing attack against mod_auth_digest in Apache HTTP Server 2.4.66 allows a bypass of Digest authentication by a remote attacker.
 
 Users are recommended to upgrade to version 2.4.67, which fixes this issue.</p></details></td>
-        <td>2026-05-04</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-29169" target="_blank" rel="noopener">CVE-2026-29169</a></td>
-        <td>7.5</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-476</td>
-        <td>&nbsp;</td>
-        <td>&mdash;</td>
-        <td>5.25</td>
-        <td><details><summary>A NULL pointer dereference in mod_dav_lock in Apache HTTP Server 2.4.66 and earl...</summary><p>A NULL pointer dereference in mod_dav_lock in Apache HTTP Server 2.4.66 and earlier may allow an attacker to crash the server with a malicious request.mod_dav_lock is not used internally by mod_dav or mod_dav_fs.
-
-The only known use-case for mod_dav_lock was mod_dav_svn from Apache Subversion earlier than version 1.2.0.
-
-Users are recommended to upgrade to version 2.4.66, which fixes this issue, or remove mod_dav_lock.</p></details></td>
         <td>2026-05-04</td>
       </tr>
       <tr>
@@ -1526,12 +1442,12 @@ Users are recommended to upgrade to version 2.4.67, which fixes this issue.</p><
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-29199" target="_blank" rel="noopener">CVE-2026-29199</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
+        <td>8.1</td>
+        <td><span class="severity high">HIGH</span></td>
         <td>CWE-640</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p4</small></td>
-        <td>0.00</td>
+        <td>5.67</td>
         <td><details><summary>phpBB before 3.3.16 is vulnerable to Host Header Injection that can lead to pass...</summary><p>phpBB before 3.3.16 is vulnerable to Host Header Injection that can lead to password rest link poisoning. When force_server_vars is disabled, the servers hostname may be extracted from the HTTP Host header which is used to generate the password reset link URL. An attacker who can manipulate the Host header (e.g. through misconfigured host setup or missing header validation by the webserver) can cause password reset emails to contain a link pointing to an attacker-controlled domain, potentially leading to account takeover.</p></details></td>
         <td>2026-05-04</td>
       </tr>
@@ -3890,36 +3806,6 @@ Users are recommended to upgrade to version 2.4.67, which fixes this issue.</p><
         <td>2026-05-01</td>
       </tr>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-43037" target="_blank" rel="noopener">CVE-2026-43037</a></td>
-        <td>9.8</td>
-        <td><span class="severity critical">CRITICAL</span></td>
-        <td>CWE-787</td>
-        <td>&nbsp;</td>
-        <td>0.1% <small>p16</small></td>
-        <td>6.86</td>
-        <td><details><summary>In the Linux kernel, the following vulnerability has been resolved:
-
-ip6_tunnel:...</summary><p>In the Linux kernel, the following vulnerability has been resolved:
-
-ip6_tunnel: clear skb2-&gt;cb[] in ip4ip6_err()
-
-Oskar Kjos reported the following problem.
-
-ip4ip6_err() calls icmp_send() on a cloned skb whose cb[] was written
-by the IPv6 receive path as struct inet6_skb_parm. icmp_send() passes
-IPCB(skb2) to __ip_options_echo(), which interprets that cb[] region
-as struct inet_skb_parm (IPv4). The layouts differ: inet6_skb_parm.nhoff
-at offset 14 overlaps inet_skb_parm.opt.rr, producing a non-zero rr
-value. __ip_options_echo() then reads optlen from attacker-controlled
-packet data at sptr[rr+1] and copies that many bytes into dopt-&gt;__data,
-a fixed 40-byte stack buffer (IP_OPTIONS_DATA_FIXED_SIZE).
-
-To fix this we clear skb2-&gt;cb[], as suggested by Oskar Kjos.
-
-Also add minimal IPv4 header validation (version == 4, ihl &gt;= 5).</p></details></td>
-        <td>2026-05-01</td>
-      </tr>
-      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-42479" target="_blank" rel="noopener">CVE-2026-42479</a></td>
         <td>5.5</td>
         <td><span class="severity medium">MEDIUM</span></td>
@@ -4392,24 +4278,12 @@ Also add minimal IPv4 header validation (version == 4, ihl &gt;= 5).</p></detail
         <td><details><summary>SBC codec crash in Wireshark 4.6.0 to 4.6.4 and 4.4.0 to 4.4.14 allows denial of...</summary><p>SBC codec crash in Wireshark 4.6.0 to 4.6.4 and 4.4.0 to 4.4.14 allows denial of service and possible code execution</p></details></td>
         <td>2026-05-01</td>
       </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-22726" target="_blank" rel="noopener">CVE-2026-22726</a></td>
-        <td>5.0</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-923</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p10</small></td>
-        <td>3.50</td>
-        <td><details><summary>Route Services can be leveraged to send app traffic to network destinations outs...</summary><p>Route Services can be leveraged to send app traffic to network destinations outside of an app&#x27;s configured egress rules. As a result, a malicious developer with access to Cloudfoundry could configure a route-service that would allow it to send requests to HTTP services on internal networks reachable by the Gorouter, which may not have previously had direct access from outside networks, or from the application.
-Routing release: affected from v0.118.0 through v0.371.0 (inclusive); upgrade to v0.372.0 or greater. CF Deployment: affected from v0.0.2 through v54.14.0 (inclusive); upgrade to v55.0.0 or greater (includes routing_release v0.372.0).</p></details></td>
-        <td>2026-05-01</td>
-      </tr>
           </tbody>
         </table>
       </div>
     </section>
     <section>
-      <h2>Previous Month — April 2026 <span class="count">(5034)</span></h2>
+      <h2>Previous Month — April 2026 <span class="count">(5031)</span></h2>
       <div class="table-wrapper">
         <table>
           <thead>
@@ -4757,21 +4631,6 @@ Routing release: affected from v0.118.0 through v0.371.0 (inclusive); upgrade to
         <td>2026-04-30</td>
       </tr>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40951" target="_blank" rel="noopener">CVE-2026-40951</a></td>
-        <td>6.8</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-400</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p4</small></td>
-        <td>4.76</td>
-        <td><details><summary>CVE-2026-40951 is a memory corruption vulnerability on Secure Access 
-Windows cl...</summary><p>CVE-2026-40951 is a memory corruption vulnerability on Secure Access 
-Windows clients prior to 14.50. Attackers with local control of the 
-Windows client can send malformed data to an API and trigger a denial of
- service.</p></details></td>
-        <td>2026-04-30</td>
-      </tr>
-      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40912" target="_blank" rel="noopener">CVE-2026-40912</a></td>
         <td>7.8</td>
         <td><span class="severity high">HIGH</span></td>
@@ -5110,19 +4969,6 @@ Windows client can send malformed data to an API and trigger a denial of
         <td>0.1% <small>p30</small></td>
         <td>6.09</td>
         <td><details><summary>Weaver (Fanwei) E-cology 9.5 versions prior to 10.52 contain an arbitrary file r...</summary><p>Weaver (Fanwei) E-cology 9.5 versions prior to 10.52 contain an arbitrary file read vulnerability in the XmlRpcServlet interface at the XML-RPC endpoint that allows unauthenticated remote attackers to read arbitrary files by supplying file paths to the WorkflowService.getAttachment and WorkflowService.LoadTemplateProp methods. Attackers can exploit these methods without authentication to retrieve sensitive files including system configuration files and database credentials from the server. Exploitation evidence was first observed by the Shadowserver Foundation on 2022-12-14 (UTC).</p></details></td>
-        <td>2026-04-30</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4670" target="_blank" rel="noopener">CVE-2026-4670</a></td>
-        <td>9.8</td>
-        <td><span class="severity critical">CRITICAL</span></td>
-        <td>CWE-305</td>
-        <td>&nbsp;</td>
-        <td>0.1% <small>p22</small></td>
-        <td>6.86</td>
-        <td><details><summary>Authentication bypass by primary weakness vulnerability in Progress Software MOV...</summary><p>Authentication bypass by primary weakness vulnerability in Progress Software MOVEit Automation allows Authentication Bypass.
-
-This issue affects MOVEit Automation: from 2025.0.0 before 2025.0.9, from 2024.0.0 before 2024.1.8, versions prior to 2024.0.0.</p></details></td>
         <td>2026-04-30</td>
       </tr>
       <tr>
@@ -7741,19 +7587,6 @@ This issue affects MOVEit Automation: from 2025.0.0 before 2025.0.9, from 2024.0
         <td>0.0% <small>p10</small></td>
         <td>1.47</td>
         <td><details><summary>A vulnerability was determined in JeecgBoot up to 3.9.1. Impacted is the functio...</summary><p>A vulnerability was determined in JeecgBoot up to 3.9.1. Impacted is the function SqlInjectionUtil of the file jeecg-boot/jeecg-boot-base-core/src/main/java/org/jeecg/common/util/SqlInjectionUtil.java of the component loadDict Endpoint. This manipulation of the argument keyword causes sql injection. The attack is possible to be carried out remotely. The exploit has been publicly disclosed and may be utilized. Patch name: a9c8e8eb1185751c4c3c68d2a53f3dadee9edc6b. To fix this issue, it is recommended to deploy a patch.</p></details></td>
-        <td>2026-04-28</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6238" target="_blank" rel="noopener">CVE-2026-6238</a></td>
-        <td>6.5</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-126</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p14</small></td>
-        <td>4.55</td>
-        <td><details><summary>The deprecated functions ns_printrrf, ns_printrr and fp_nquery in the GNU C Libr...</summary><p>The deprecated functions ns_printrrf, ns_printrr and fp_nquery in the GNU C Library version 2.2 and newer fail to validate the RDATA content against the RDATA length in a DNS response when processing LOC, CERT, TKEY or TSIG records, which may allow an attacker to craft a DNS response, causing a target application to crash or read uninitialized memory.
-
-These functions are for application debugging only and hence not in the path of code executed by the DNS resolver.  Further, they have been deprecated since version 2.34 and should not be used by any new applications.  Applications should consider porting away from these interfaces since they may be removed in future versions.</p></details></td>
         <td>2026-04-28</td>
       </tr>
       <tr>

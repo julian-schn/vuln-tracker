@@ -1,6 +1,6 @@
 # CVEs — April 2026
 
-_5034 vulnerabilities_
+_5031 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
@@ -34,7 +34,6 @@ _5034 vulnerabilities_
 | [CVE-2026-4502](https://nvd.nist.gov/vuln/detail/CVE-2026-4502) | 6.5 | MEDIUM | CWE-22 | No | 0.0% | 4.55 | 2026-04-30 | IBM Langflow Desktop 1.2.0 through 1.8.4 Langflow could allow an authenticated attacker to traverse directories on the s... |
 | [CVE-2026-41263](https://nvd.nist.gov/vuln/detail/CVE-2026-41263) | 6.3 | MEDIUM | CWE-208 | No | 0.0% | 4.41 | 2026-04-30 | Traefik is an HTTP reverse proxy and load balancer. Prior to versions 2.11.43, 3.6.14, and 3.7.0-rc.2, there is a timing... |
 | [CVE-2026-41174](https://nvd.nist.gov/vuln/detail/CVE-2026-41174) | 4.8 | MEDIUM | CWE-653 | No | 0.0% | 3.36 | 2026-04-30 | Traefik is an HTTP reverse proxy and load balancer. Prior to versions 2.11.43, 3.6.14, and 3.7.0-rc.2, there is a potent... |
-| [CVE-2026-40951](https://nvd.nist.gov/vuln/detail/CVE-2026-40951) | 6.8 | MEDIUM | CWE-400 | No | 0.0% | 4.76 | 2026-04-30 | CVE-2026-40951 is a memory corruption vulnerability on Secure Access  Windows clients prior to 14.50. Attackers with loc... |
 | [CVE-2026-40912](https://nvd.nist.gov/vuln/detail/CVE-2026-40912) | 7.8 | HIGH | CWE-706 | No | 0.1% | 5.46 | 2026-04-30 | Traefik is an HTTP reverse proxy and load balancer. Prior to versions 2.11.43, 3.6.14, and 3.7.0-rc.2, there is a high s... |
 | [CVE-2026-3346](https://nvd.nist.gov/vuln/detail/CVE-2026-3346) | 6.4 | MEDIUM | CWE-89 | No | 0.0% | 4.48 | 2026-04-30 | IBM Langflow Desktop 1.6.0 through 1.8.4 Lanflow is vulnerable to stored cross-site scripting. This vulnerability allows... |
 | [CVE-2026-3340](https://nvd.nist.gov/vuln/detail/CVE-2026-3340) | 6.5 | MEDIUM | CWE-918 | No | 0.0% | 4.55 | 2026-04-30 | IBM Langflow Desktop 1.0.0 through 1.8.4 IBM Langflow is vulnerable to server-side request forgery (SSRF). This may allo... |
@@ -66,7 +65,6 @@ _5034 vulnerabilities_
 | [CVE-2025-51846](https://nvd.nist.gov/vuln/detail/CVE-2025-51846) | 8.7 | HIGH | CWE-770 | No | 0.1% | 6.09 | 2026-04-30 | CryptPad 2025.3.1 allows unbounded WebSocket frame flood. A remote, unauthenticated attacker can significantly degrade o... |
 | [CVE-2022-50993](https://nvd.nist.gov/vuln/detail/CVE-2022-50993) | 9.3 | CRITICAL | CWE-434 | No | 0.2% | 6.52 | 2026-04-30 | Weaver (Fanwei) E-office versions prior to 10.0_20221201 contain an unauthenticated arbitrary file upload vulnerability... |
 | [CVE-2022-50992](https://nvd.nist.gov/vuln/detail/CVE-2022-50992) | 8.7 | HIGH | CWE-22 | No | 0.1% | 6.09 | 2026-04-30 | Weaver (Fanwei) E-cology 9.5 versions prior to 10.52 contain an arbitrary file read vulnerability in the XmlRpcServlet i... |
-| [CVE-2026-4670](https://nvd.nist.gov/vuln/detail/CVE-2026-4670) | 9.8 | CRITICAL | CWE-305 | No | 0.1% | 6.86 | 2026-04-30 | Authentication bypass by primary weakness vulnerability in Progress Software MOVEit Automation allows Authentication Byp... |
 | [CVE-2026-38940](https://nvd.nist.gov/vuln/detail/CVE-2026-38940) | 6.1 | MEDIUM | CWE-79 | No | 0.1% | 4.27 | 2026-04-30 | Cross Site Scripting vulnerability in RafyMrX TOKO-ONLINE-ROTI v.1.0 allows a remote attacker to execute arbitrary code... |
 | [CVE-2026-38939](https://nvd.nist.gov/vuln/detail/CVE-2026-38939) | 6.1 | MEDIUM | CWE-79 | No | 0.1% | 4.27 | 2026-04-30 | Cross Site Scripting vulnerability in andrewtch88 mvc-ecommerce v.1.0 allows a remote attacker to execute arbitrary code... |
 | [CVE-2026-36960](https://nvd.nist.gov/vuln/detail/CVE-2026-36960) | 8.8 | HIGH | CWE-352 | No | 0.0% | 6.16 | 2026-04-30 | A Cross-Site Request Forgery (CSRF) vulnerability exists in the web management interface of the U-SPEED N300 Rounter V1.... |
@@ -305,7 +303,6 @@ _5034 vulnerabilities_
 | [CVE-2026-7292](https://nvd.nist.gov/vuln/detail/CVE-2026-7292) | 2.9 | LOW | CWE-266 | No | 0.1% | 2.03 | 2026-04-28 | A security vulnerability has been detected in o2oa up to 10.0. This impacts the function syncFile of the file NodeAgent.... |
 | [CVE-2026-7291](https://nvd.nist.gov/vuln/detail/CVE-2026-7291) | 2.1 | LOW | CWE-918 | No | 0.0% | 1.47 | 2026-04-28 | A weakness has been identified in o2oa up to 10.0. This affects the function FileAction of the file FileAction.java of t... |
 | [CVE-2026-7290](https://nvd.nist.gov/vuln/detail/CVE-2026-7290) | 2.1 | LOW | CWE-74 | No | 0.0% | 1.47 | 2026-04-28 | A vulnerability was determined in JeecgBoot up to 3.9.1. Impacted is the function SqlInjectionUtil of the file jeecg-boo... |
-| [CVE-2026-6238](https://nvd.nist.gov/vuln/detail/CVE-2026-6238) | 6.5 | MEDIUM | CWE-126 | No | 0.0% | 4.55 | 2026-04-28 | The deprecated functions ns_printrrf, ns_printrr and fp_nquery in the GNU C Library version 2.2 and newer fail to valida... |
 | [CVE-2026-5794](https://nvd.nist.gov/vuln/detail/CVE-2026-5794) | 4.9 | MEDIUM | CWE-694 | No | 0.1% | 3.43 | 2026-04-28 | A vulnerability affecting the detailed versions of Cryptobox allows a legitimate user to prevent another to login by tri... |
 | [CVE-2026-42432](https://nvd.nist.gov/vuln/detail/CVE-2026-42432) | 7.3 | HIGH | CWE-863 | No | 0.0% | 5.11 | 2026-04-28 | OpenClaw before 2026.4.8 contains a privilege escalation vulnerability allowing previously paired nodes to reconnect wit... |
 | [CVE-2026-42431](https://nvd.nist.gov/vuln/detail/CVE-2026-42431) | 7.6 | HIGH | CWE-863 | No | 0.0% | 5.32 | 2026-04-28 | OpenClaw before 2026.4.8 contains a security bypass vulnerability in node.invoke(browser.proxy) that allows mutation of... |
