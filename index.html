@@ -11,7 +11,7 @@
     <header>
       <h1>vuln-tracker</h1>
       <p class="subtitle">CVEs from the National Vulnerability Database — current and previous month</p>
-      <p class="last-updated">Last updated: 2026-05-04 21:13 UTC</p>
+      <p class="last-updated">Last updated: 2026-05-04 22:59 UTC</p>
     </header>
     <nav>
       <a href="top50.html">&#9733; Top 50</a>
@@ -25,7 +25,7 @@
     </nav>
     <main>
     <section>
-      <h2>Current Month — May 2026 <span class="count">(382)</span></h2>
+      <h2>Current Month — May 2026 <span class="count">(383)</span></h2>
       <div class="table-wrapper">
         <table>
           <thead>
@@ -42,6 +42,105 @@
             </tr>
           </thead>
           <tbody>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-7791" target="_blank" rel="noopener">CVE-2026-7791</a></td>
+        <td>8.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-367</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.95</td>
+        <td><details><summary>Improper privilege management in the log rotation mechanism of the Skylight Work...</summary><p>Improper privilege management in the log rotation mechanism of the Skylight Workspace Config Service in Amazon WorkSpaces for Windows before 2.6.2034.0 allows a local non-admin authenticated user to place arbitrary files into arbitrary locations bypassing file system permission protections, leading to local privilege escalation to SYSTEM.</p></details></td>
+        <td>2026-05-04</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-7780" target="_blank" rel="noopener">CVE-2026-7780</a></td>
+        <td>2.1</td>
+        <td><span class="severity low">LOW</span></td>
+        <td>CWE-404</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>1.47</td>
+        <td><details><summary>A weakness has been identified in Open5GS up to 2.7.7. Affected by this vulnerab...</summary><p>A weakness has been identified in Open5GS up to 2.7.7. Affected by this vulnerability is the function udm_state_operational of the file /src/udm/udm-sm.c of the component smf-registrations Endpoint. Executing a manipulation can lead to denial of service. The attack can be executed remotely. The exploit has been made available to the public and could be used for attacks. The project was informed of the problem early through an issue report but has not responded yet.</p></details></td>
+        <td>2026-05-04</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-7776" target="_blank" rel="noopener">CVE-2026-7776</a></td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-770</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.25</td>
+        <td><details><summary>Boundary Community Edition and Boundary Enterprise (“Boundary”) workers are vuln...</summary><p>Boundary Community Edition and Boundary Enterprise (“Boundary”) workers are vulnerable to a denial-of-service condition during node enrollment TLS handshakes. An attacker with network access to the worker authentication listener may open a connection and delay or withhold the client certificate during the TLS handshake, causing worker connection handling to block. This may prevent legitimate worker connections from being accepted or routed. This vulnerability, CVE-2026-7776, is fixed in Boundary 0.21.3, 0.20.3, 0.19.5.</p></details></td>
+        <td>2026-05-04</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-7779" target="_blank" rel="noopener">CVE-2026-7779</a></td>
+        <td>2.1</td>
+        <td><span class="severity low">LOW</span></td>
+        <td>CWE-404</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>1.47</td>
+        <td><details><summary>A security flaw has been discovered in Open5GS up to 2.7.7. Affected is the func...</summary><p>A security flaw has been discovered in Open5GS up to 2.7.7. Affected is the function udm_nudr_dr_handle_subscription_authentication of the file /src/udm/nudr-handler.c of the component authentication-subscription Endpoint. Performing a manipulation results in denial of service. Remote exploitation of the attack is possible. The exploit has been released to the public and may be used for attacks. The project was informed of the problem early through an issue report but has not responded yet.</p></details></td>
+        <td>2026-05-04</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-42238" target="_blank" rel="noopener">CVE-2026-42238</a></td>
+        <td>9.0</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-94</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.30</td>
+        <td><details><summary>Nginx UI is a web user interface for the Nginx web server. Prior to version 2.3....</summary><p>Nginx UI is a web user interface for the Nginx web server. Prior to version 2.3.8, nginx-ui exposes a backup restore endpoint (POST /api/restore) that is completely unauthenticated during the first 10 minutes after process startup on any fresh installation. An unauthenticated remote attacker can upload a crafted backup archive that overwrites the application&#x27;s configuration file (app.ini) and SQLite database. Because the attacker controls the restored app.ini, they can inject an arbitrary OS command into the TestConfigCmd setting. After the application automatically restarts to apply the restored config, a single follow-up request triggers that command as the user running nginx-ui — typically root in Docker deployments. This issue has been patched in version 2.3.8.</p></details></td>
+        <td>2026-05-04</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-42223" target="_blank" rel="noopener">CVE-2026-42223</a></td>
+        <td>6.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-200</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.55</td>
+        <td><details><summary>Nginx UI is a web user interface for the Nginx web server. Prior to version 2.3....</summary><p>Nginx UI is a web user interface for the Nginx web server. Prior to version 2.3.8, the GetSettings API handler (api/settings/settings.go:24-65) serializes all settings structs to JSON and returns them to authenticated users. Many sensitive fields are tagged with protected:&quot;true&quot; - however, this tag is only enforced during writes (via ProtectedFill in SaveSettings) and is completely ignored during reads. This exposes 40+ protected fields including JwtSecret (enabling auth token forgery), NodeSecret (enabling cluster node impersonation), OIDC ClientSecret (enabling OAuth account takeover), and the IP whitelist configuration. This issue has been patched in version 2.3.8.</p></details></td>
+        <td>2026-05-04</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-42222" target="_blank" rel="noopener">CVE-2026-42222</a></td>
+        <td>8.1</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-284</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.67</td>
+        <td><details><summary>Nginx UI is a web user interface for the Nginx web server. In version 2.3.5, an ...</summary><p>Nginx UI is a web user interface for the Nginx web server. In version 2.3.5, an unauthenticated bootstrap takeover exists in nginx-ui during the initial installation window exposed by POST /api/install. At time of publication no public patches are available.</p></details></td>
+        <td>2026-05-04</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-42221" target="_blank" rel="noopener">CVE-2026-42221</a></td>
+        <td>8.1</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-306</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.67</td>
+        <td><details><summary>Nginx UI is a web user interface for the Nginx web server. From version 2.0.0 to...</summary><p>Nginx UI is a web user interface for the Nginx web server. From version 2.0.0 to before version 2.3.8, an unauthenticated network attacker can claim the initial administrator account on a fresh nginx-ui instance during the first-run setup window. The public /api/install endpoint is reachable without authentication, and the request-encryption flow only protects payload confidentiality in transit; it does not authenticate who is allowed to perform installation. A remote attacker who reaches the service before the legitimate operator can set the admin email, username, and password, causing permanent initial-instance takeover. This issue has been patched in version 2.3.8.</p></details></td>
+        <td>2026-05-04</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-42220" target="_blank" rel="noopener">CVE-2026-42220</a></td>
+        <td>6.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-200</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.55</td>
+        <td><details><summary>Nginx UI is a web user interface for the Nginx web server. Prior to version 2.3....</summary><p>Nginx UI is a web user interface for the Nginx web server. Prior to version 2.3.8, an authenticated user can call GET /api/settings and retrieve sensitive configuration values, including node.secret. The same node.secret is accepted by AuthRequired() through the X-Node-Secret header (or node_secret query parameter), causing the request to be treated as authenticated via the trusted-node path and associated with the init user. This issue has been patched in version 2.3.8.</p></details></td>
+        <td>2026-05-04</td>
+      </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-7768" target="_blank" rel="noopener">CVE-2026-7768</a></td>
         <td>7.5</td>
@@ -956,62 +1055,6 @@
         <td>2026-05-04</td>
       </tr>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33523" target="_blank" rel="noopener">CVE-2026-33523</a></td>
-        <td>6.5</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-443</td>
-        <td>&nbsp;</td>
-        <td>&mdash;</td>
-        <td>4.55</td>
-        <td><details><summary>HTTP response splitting vulnerability in multiple Apache HTTP Server modules wit...</summary><p>HTTP response splitting vulnerability in multiple Apache HTTP Server modules with untrusted or compromised backend servers.
-
-This issue affects Apache HTTP Server: from through 2.4.66.
-
-Users are recommended to upgrade to version 2.4.67, which fixes the issue.</p></details></td>
-        <td>2026-05-04</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33007" target="_blank" rel="noopener">CVE-2026-33007</a></td>
-        <td>5.3</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-476</td>
-        <td>&nbsp;</td>
-        <td>&mdash;</td>
-        <td>3.71</td>
-        <td><details><summary>A NULL pointer dereference in the mod_authn_socache in Apache HTTP Server 2.4.66...</summary><p>A NULL pointer dereference in the mod_authn_socache in Apache HTTP Server 2.4.66 and earlier allows an unauthenticated remote user to crash a child process in a caching forward proxy configuration.
-
-Users are recommended to upgrade to version 2.4.67, which fixes this issue.</p></details></td>
-        <td>2026-05-04</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33006" target="_blank" rel="noopener">CVE-2026-33006</a></td>
-        <td>4.8</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-208</td>
-        <td>&nbsp;</td>
-        <td>&mdash;</td>
-        <td>3.36</td>
-        <td><details><summary>A timing attack against mod_auth_digest in Apache HTTP Server 2.4.66 allows a by...</summary><p>A timing attack against mod_auth_digest in Apache HTTP Server 2.4.66 allows a bypass of Digest authentication by a remote attacker.
-
-Users are recommended to upgrade to version 2.4.67, which fixes this issue.</p></details></td>
-        <td>2026-05-04</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-23918" target="_blank" rel="noopener">CVE-2026-23918</a></td>
-        <td>8.8</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-415</td>
-        <td>&nbsp;</td>
-        <td>&mdash;</td>
-        <td>6.16</td>
-        <td><details><summary>Double Free and possible RCE vulnerability in Apache HTTP Server with the HTTP/2...</summary><p>Double Free and possible RCE vulnerability in Apache HTTP Server with the HTTP/2 protocol.
-
-This issue affects Apache HTTP Server: 2.4.66.
-
-Users are recommended to upgrade to version 2.4.67, which fixes the issue.</p></details></td>
-        <td>2026-05-04</td>
-      </tr>
-      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-70072" target="_blank" rel="noopener">CVE-2025-70072</a></td>
         <td>6.5</td>
         <td><span class="severity medium">MEDIUM</span></td>
@@ -1053,42 +1096,6 @@ Users are recommended to upgrade to version 2.4.67, which fixes the issue.</p></
         <td>&mdash;</td>
         <td>0.00</td>
         <td><details><summary>Rejected reason: ** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. Reason: This can...</summary><p>Rejected reason: ** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. Reason: This candidate was issued in error. Notes: All references and descriptions in this candidate have been removed to prevent accidental usage.</p></details></td>
-        <td>2026-05-04</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34032" target="_blank" rel="noopener">CVE-2026-34032</a></td>
-        <td>5.3</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-125</td>
-        <td>&nbsp;</td>
-        <td>&mdash;</td>
-        <td>3.71</td>
-        <td><details><summary>Improper Null Termination, Out-of-bounds Read vulnerability in Apache HTTP Serve...</summary><p>Improper Null Termination, Out-of-bounds Read vulnerability in Apache HTTP Server.
-
-This issue affects Apache HTTP Server: through 2.4.66.
-
-Users are recommended to upgrade to version 2.4.67, which fixes the issue.</p></details></td>
-        <td>2026-05-04</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33857" target="_blank" rel="noopener">CVE-2026-33857</a></td>
-        <td>5.3</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-125</td>
-        <td>&nbsp;</td>
-        <td>&mdash;</td>
-        <td>3.71</td>
-        <td><details><summary>Out-of-bounds Read vulnerability in mod_proxy_ajp of 
-
-Apache HTTP Server.
-
-This...</summary><p>Out-of-bounds Read vulnerability in mod_proxy_ajp of 
-
-Apache HTTP Server.
-
-This issue affects Apache HTTP Server: through 2.4.66.
-
-Users are recommended to upgrade to version 2.4.67, which fixes the issue.</p></details></td>
         <td>2026-05-04</td>
       </tr>
       <tr>
@@ -1144,36 +1151,6 @@ Users are recommended to upgrade to version 2.4.67, which fixes the issue.</p></
         <td>&mdash;</td>
         <td>6.16</td>
         <td><details><summary>Ollama before 0.17.1 contains a heap out-of-bounds read vulnerability in the GGU...</summary><p>Ollama before 0.17.1 contains a heap out-of-bounds read vulnerability in the GGUF model loader. The /api/create endpoint accepts an attacker-supplied GGUF file in which the declared tensor offset and size exceed the file&#x27;s actual length; during quantization in fs/ggml/gguf.go and server/quantization.go (WriteTo()), the server reads past the allocated heap buffer. The leaked memory contents may include environment variables, API keys, system prompts, and concurrent users&#x27; conversation data, and can be exfiltrated by uploading the resulting model artifact through the /api/push endpoint to an attacker-controlled registry. The /api/create and /api/push endpoints have no authentication in the upstream distribution. Default deployments bind to 127.0.0.1, but the documented OLLAMA_HOST=0.0.0.0 configuration is widely used in practice (large public-internet exposure observed).</p></details></td>
-        <td>2026-05-04</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34059" target="_blank" rel="noopener">CVE-2026-34059</a></td>
-        <td>7.5</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-126</td>
-        <td>&nbsp;</td>
-        <td>&mdash;</td>
-        <td>5.25</td>
-        <td><details><summary>Buffer Over-read vulnerability in Apache HTTP Server.
-
-This issue affects Apache...</summary><p>Buffer Over-read vulnerability in Apache HTTP Server.
-
-This issue affects Apache HTTP Server: through 2.4.66.
-
-Users are recommended to upgrade to version 2.4.67, which fixes the issue.</p></details></td>
-        <td>2026-05-04</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-24072" target="_blank" rel="noopener">CVE-2026-24072</a></td>
-        <td>8.8</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-269</td>
-        <td>&nbsp;</td>
-        <td>&mdash;</td>
-        <td>6.16</td>
-        <td><details><summary>An escalation of privilege bug in various modules in Apache HTTP 2.4.66 and earl...</summary><p>An escalation of privilege bug in various modules in Apache HTTP 2.4.66 and earlier allows local .htaccess authors to read files with the privileges of the httpd user.
-
-Users are recommended to upgrade to version 2.4.67, which fixes this issue.</p></details></td>
         <td>2026-05-04</td>
       </tr>
       <tr>
@@ -1613,7 +1590,7 @@ Users are recommended to upgrade to version 2.4.67, which fixes this issue.</p><
         <td>&nbsp;</td>
         <td>0.1% <small>p15</small></td>
         <td>1.47</td>
-        <td><details><summary>A vulnerability was found in PrefectHQ prefect up to 3.6.25.dev6. Affected by th...</summary><p>A vulnerability was found in PrefectHQ prefect up to 3.6.25.dev6. Affected by this issue is some unknown functionality of the file src/prefect/runner/storage.py of the component GitRepository Pull Handler. The manipulation of the argument commit_sha/directories results in argument injection. It is possible to launch the attack remotely. The exploit has been made public and could be used. Upgrading to version 3.6.25.dev7 can resolve this issue. The patch is identified as 6a9d9918716ce4ee0297b69f3046f7067ef1faae. It is advisable to upgrade the affected component.</p></details></td>
+        <td><details><summary>A vulnerability was found in PrefectHQ prefect up to 3.6.25.dev6. Affected by th...</summary><p>A vulnerability was found in PrefectHQ prefect up to 3.6.25.dev6. Affected by this issue is some unknown functionality of the file src/prefect/runner/storage.py of the component GitRepository Pull Handler. The manipulation of the argument commit_sha/directories results in argument injection. It is possible to launch the attack remotely. The exploit has been made public and could be used. Upgrading to version 3.6.25.dev7 can resolve this issue. The patch is identified as 6a9d9918716ce4ee0297b69f3046f7067ef1faae. It is advisable to upgrade the affected component. The vendor was contacted early, responded in a very professional manner and quickly released a fixed version of the affected product.</p></details></td>
         <td>2026-05-04</td>
       </tr>
       <tr>
@@ -1624,7 +1601,7 @@ Users are recommended to upgrade to version 2.4.67, which fixes this issue.</p><
         <td>&nbsp;</td>
         <td>0.1% <small>p20</small></td>
         <td>0.91</td>
-        <td><details><summary>A vulnerability has been found in PrefectHQ prefect up to 3.6.28.dev1. Affected ...</summary><p>A vulnerability has been found in PrefectHQ prefect up to 3.6.28.dev1. Affected by this vulnerability is the function validate_restricted_url of the component Webhook/Notification. The manipulation leads to time-of-check time-of-use. It is possible to initiate the attack remotely. The attack is considered to have high complexity. The exploitation appears to be difficult. The exploit has been disclosed to the public and may be used. Upgrading to version 3.6.28.dev2 addresses this issue. The identifier of the patch is 7c70ac54a5e101431d83b9f2681ec88d5e0021ed. Upgrading the affected component is advised.</p></details></td>
+        <td><details><summary>A vulnerability has been found in PrefectHQ prefect up to 3.6.28.dev1. Affected ...</summary><p>A vulnerability has been found in PrefectHQ prefect up to 3.6.28.dev1. Affected by this vulnerability is the function validate_restricted_url of the component Webhook/Notification. The manipulation leads to time-of-check time-of-use. It is possible to initiate the attack remotely. The attack is considered to have high complexity. The exploitation appears to be difficult. The exploit has been disclosed to the public and may be used. Upgrading to version 3.6.28.dev2 addresses this issue. The identifier of the patch is 7c70ac54a5e101431d83b9f2681ec88d5e0021ed. Upgrading the affected component is advised. The vendor was contacted early, responded in a very professional manner and quickly released a fixed version of the affected product.</p></details></td>
         <td>2026-05-04</td>
       </tr>
       <tr>
@@ -1635,7 +1612,7 @@ Users are recommended to upgrade to version 2.4.67, which fixes this issue.</p><
         <td>&nbsp;</td>
         <td>0.1% <small>p29</small></td>
         <td>3.85</td>
-        <td><details><summary>A flaw has been found in PrefectHQ prefect up to 3.6.13. Affected is an unknown ...</summary><p>A flaw has been found in PrefectHQ prefect up to 3.6.13. Affected is an unknown function of the file /api/events/in of the component WebSocket Endpoint. Executing a manipulation can lead to missing authentication. The attack may be performed from remote. The exploit has been published and may be used. Upgrading to version 3.6.14 is able to address this issue. This patch is called 0d3ab3c2d3f9f98abfafdf7b9f6d4f8ed3925e40. It is recommended to upgrade the affected component.</p></details></td>
+        <td><details><summary>A flaw has been found in PrefectHQ prefect up to 3.6.13. Affected is an unknown ...</summary><p>A flaw has been found in PrefectHQ prefect up to 3.6.13. Affected is an unknown function of the file /api/events/in of the component WebSocket Endpoint. Executing a manipulation can lead to missing authentication. The attack may be performed from remote. The exploit has been published and may be used. Upgrading to version 3.6.14 is able to address this issue. This patch is called f8afecadf88ea5f73694dafa3a365b9d8fae1ad6. It is recommended to upgrade the affected component. The vendor was contacted early, responded in a very professional manner and quickly released a fixed version of the affected product.</p></details></td>
         <td>2026-05-04</td>
       </tr>
       <tr>
@@ -1646,7 +1623,7 @@ Users are recommended to upgrade to version 2.4.67, which fixes this issue.</p><
         <td>&nbsp;</td>
         <td>0.1% <small>p21</small></td>
         <td>3.85</td>
-        <td><details><summary>A vulnerability was detected in PrefectHQ prefect up to 3.6.21. This impacts the...</summary><p>A vulnerability was detected in PrefectHQ prefect up to 3.6.21. This impacts the function endswith of the file /api/health of the component Health Check API. Performing a manipulation results in improper authentication. The attack is possible to be carried out remotely. The exploit is now public and may be used. Upgrading to version 3.6.22 will fix this issue. Upgrading the affected component is recommended.</p></details></td>
+        <td><details><summary>A vulnerability was detected in PrefectHQ prefect up to 3.6.21. This impacts the...</summary><p>A vulnerability was detected in PrefectHQ prefect up to 3.6.21. This impacts the function endswith of the file /api/health of the component Health Check API. Performing a manipulation results in improper authentication. The attack is possible to be carried out remotely. The exploit is now public and may be used. Upgrading to version 3.6.22 will fix this issue. The patch is named e21617125335025b4b27e7d6f0ca028e8e8f3b79. Upgrading the affected component is recommended. The vendor was contacted early, responded in a very professional manner and quickly released a fixed version of the affected product.</p></details></td>
         <td>2026-05-04</td>
       </tr>
       <tr>
@@ -4283,7 +4260,7 @@ Users are recommended to upgrade to version 2.4.67, which fixes this issue.</p><
       </div>
     </section>
     <section>
-      <h2>Previous Month — April 2026 <span class="count">(5031)</span></h2>
+      <h2>Previous Month — April 2026 <span class="count">(5032)</span></h2>
       <div class="table-wrapper">
         <table>
           <thead>
@@ -5222,6 +5199,24 @@ Users are recommended to upgrade to version 2.4.67, which fixes this issue.</p><
         <td>0.0% <small>p7</small></td>
         <td>5.04</td>
         <td><details><summary>Pallets Click, versions 8.3.2 and below, contain a command injection vulnerabili...</summary><p>Pallets Click, versions 8.3.2 and below, contain a command injection vulnerability in the click.edit() function, allowing attackers to pass arbitrary OS commands from an unprivileged account.</p></details></td>
+        <td>2026-04-30</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-7163" target="_blank" rel="noopener">CVE-2026-7163</a></td>
+        <td>6.1</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-312</td>
+        <td>&nbsp;</td>
+        <td>0.0% <small>p1</small></td>
+        <td>4.27</td>
+        <td><details><summary>A vulnerability in the assisted-service REST API, an optional Assisted Installer...</summary><p>A vulnerability in the assisted-service REST API, an optional Assisted Installer (assisted-service) component in the Multicluster Engine (MCE), allows an authenticated user with minimal namespace-scoped privileges to obtain administrative credentials for arbitrary clusters provisioned through the hub. 
+
+The credentials download endpoint (GET /v2/clusters/{cluster_id}/credentials, which returns the kubeadmin password) and the kubeconfig download endpoint are operational in AUTH_TYPE=local mode, the only authentication mode available in on-premises ACM/MCE hub deployments. The local authenticator unconditionally grants full administrative access to any request bearing a valid JWT, with no per-endpoint restrictions. A valid local JWT is embedded as a plaintext query parameter in InfraEnvStatus.ISODownloadURL and is readable by any user who has get rights on an InfraEnv object in their own namespace.
+
+The affected components ship as part of Multicluster Engine (MCE). The Red Hat Advanced Cluster Management (ACM) deployments that include MCE are equally affected.
+This issue does not affect the hosted SaaS offering (console.redhat.com), which uses a different authentication mode.
+
+Successful exploitation gives the attacker the kubeadmin password and kubeconfig for any OpenShift cluster provisioned through the affected hub, granting unrestricted root-level administrative access to those spoke clusters.</p></details></td>
         <td>2026-04-30</td>
       </tr>
       <tr>
@@ -14318,7 +14313,7 @@ Users are recommended to upgrade to version 2.4.67, which fixes this issue.</p><
         <td>&nbsp;</td>
         <td>0.2% <small>p41</small></td>
         <td>6.52</td>
-        <td><details><summary>A path traversal condition in Intrado 911 Emergency Gateway could allow an attac...</summary><p>A path traversal condition in Intrado 911 Emergency Gateway could allow an attacker with existing network access the ability to access the EGW management interface without authentication. Successful exploitation of this vulnerability could allow a user to read, modify, or delete files.</p></details></td>
+        <td><details><summary>Intrado 911 Emergency Gateway (EGW) 5.x, 6.x, and 7.x contain a path traversal v...</summary><p>Intrado 911 Emergency Gateway (EGW) 5.x, 6.x, and 7.x contain a path traversal vulnerability in the download_debuglog_file.php endpoint used for Debug Logs downloads. An unauthenticated attacker can manipulate the name parameter to read arbitrary files outside the intended directory</p></details></td>
         <td>2026-04-23</td>
       </tr>
       <tr>

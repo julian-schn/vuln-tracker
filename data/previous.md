@@ -1,6 +1,6 @@
 # CVEs — April 2026
 
-_5031 vulnerabilities_
+_5032 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
@@ -88,6 +88,7 @@ _5031 vulnerabilities_
 | [CVE-2026-36957](https://nvd.nist.gov/vuln/detail/CVE-2026-36957) | 7.5 | HIGH | CWE-400 | No | 0.0% | 5.25 | 2026-04-30 | Dbit N300 T1 Pro Easy Setup Wireless Wi-Fi Router V1.0.0 is vulnerable to Denial of Service via the boa web server URI h... |
 | [CVE-2026-36956](https://nvd.nist.gov/vuln/detail/CVE-2026-36956) | 8.8 | HIGH | CWE-352 | No | 0.0% | 6.16 | 2026-04-30 | A Cross-Site Request Forgery (CSRF) vulnerability exists in the web management interface of the Dbit N300 T1 Pro wireles... |
 | [CVE-2026-7246](https://nvd.nist.gov/vuln/detail/CVE-2026-7246) | 7.2 | HIGH | CWE-77 | No | 0.0% | 5.04 | 2026-04-30 | Pallets Click, versions 8.3.2 and below, contain a command injection vulnerability in the click.edit() function, allowin... |
+| [CVE-2026-7163](https://nvd.nist.gov/vuln/detail/CVE-2026-7163) | 6.1 | MEDIUM | CWE-312 | No | 0.0% | 4.27 | 2026-04-30 | A vulnerability in the assisted-service REST API, an optional Assisted Installer (assisted-service) component in the Mul... |
 | [CVE-2026-2892](https://nvd.nist.gov/vuln/detail/CVE-2026-2892) | 7.5 | HIGH | CWE-285 | No | 0.1% | 5.25 | 2026-04-30 | The Otter Blocks plugin for WordPress is vulnerable to Purchase Verification Bypass in all versions up to, and including... |
 | [CVE-2025-14576](https://nvd.nist.gov/vuln/detail/CVE-2025-14576) | 7.4 | HIGH | CWE-20 | No | 0.0% | 5.18 | 2026-04-30 | Insufficient validation of node IDs in Qt SVG module allows arbitrary QML/JavaScript code injection when loading malicio... |
 | [CVE-2024-13971](https://nvd.nist.gov/vuln/detail/CVE-2024-13971) | 7.7 | HIGH | CWE-611 | No | 0.0% | 5.39 | 2026-04-30 | Unauthenticated attackers can exploit a weakness in the XML parser functionality of Lobster_pro prior to version 4.12.6-... |
@@ -914,7 +915,7 @@ _5031 vulnerabilities_
 | [CVE-2026-41138](https://nvd.nist.gov/vuln/detail/CVE-2026-41138) | 8.8 | HIGH | CWE-94 | No | 0.3% | 6.17 | 2026-04-23 | Flowise is a drag & drop user interface to build a customized large language model flow. Prior to 3.1.0, there is a remo... |
 | [CVE-2026-41137](https://nvd.nist.gov/vuln/detail/CVE-2026-41137) | 9.4 | CRITICAL | CWE-94 | No | 0.3% | 6.59 | 2026-04-23 | Flowise is a drag & drop user interface to build a customized large language model flow. Prior to 3.1.0, The CSVAgent al... |
 | [CVE-2026-25874](https://nvd.nist.gov/vuln/detail/CVE-2026-25874) | 9.3 | CRITICAL | CWE-502 | No | 0.1% | 6.51 | 2026-04-23 | LeRobot through 0.5.1 contains an unsafe deserialization vulnerability in the async inference pipeline where pickle.load... |
-| [CVE-2026-6074](https://nvd.nist.gov/vuln/detail/CVE-2026-6074) | 9.3 | CRITICAL | CWE-35 | No | 0.2% | 6.52 | 2026-04-23 | A path traversal condition in Intrado 911 Emergency Gateway could allow an attacker with existing network access the abi... |
+| [CVE-2026-6074](https://nvd.nist.gov/vuln/detail/CVE-2026-6074) | 9.3 | CRITICAL | CWE-35 | No | 0.2% | 6.52 | 2026-04-23 | Intrado 911 Emergency Gateway (EGW) 5.x, 6.x, and 7.x contain a path traversal vulnerability in the download_debuglog_fi... |
 | [CVE-2026-41259](https://nvd.nist.gov/vuln/detail/CVE-2026-41259) | 8.2 | HIGH | CWE-841 | No | 0.0% | 5.74 | 2026-04-23 | Mastodon is a free, open-source social network server based on ActivityPub. Prior to v4.5.9, v4.4.16, and v4.3.22, Masto... |
 | [CVE-2026-41247](https://nvd.nist.gov/vuln/detail/CVE-2026-41247) | 8.9 | HIGH | CWE-78 | No | 0.2% | 6.23 | 2026-04-23 | elFinder is an open-source file manager for web, written in JavaScript using jQuery UI. Prior to 2.1.67, elFinder contai... |
 | [CVE-2026-41246](https://nvd.nist.gov/vuln/detail/CVE-2026-41246) | 8.1 | HIGH | CWE-94 | No | 0.1% | 5.67 | 2026-04-23 | Contour is a Kubernetes ingress controller using Envoy proxy. From v1.19.0 to before v1.33.4, v1.32.5, and v1.31.6, Cont... |
