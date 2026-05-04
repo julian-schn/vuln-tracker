@@ -11,7 +11,7 @@
     <header>
       <h1>vuln-tracker</h1>
       <p class="subtitle">CVEs from the National Vulnerability Database — current and previous month</p>
-      <p class="last-updated">Last updated: 2026-05-04 03:47 UTC</p>
+      <p class="last-updated">Last updated: 2026-05-04 06:45 UTC</p>
     </header>
     <nav>
       <a href="top50.html">&#9733; Top 50</a>
@@ -25,7 +25,7 @@
     </nav>
     <main>
     <section>
-      <h2>Current Month — May 2026 <span class="count">(246)</span></h2>
+      <h2>Current Month — May 2026 <span class="count">(252)</span></h2>
       <div class="table-wrapper">
         <table>
           <thead>
@@ -42,6 +42,116 @@
             </tr>
           </thead>
           <tbody>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-7735" target="_blank" rel="noopener">CVE-2026-7735</a></td>
+        <td>6.9</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-119</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.83</td>
+        <td><details><summary>A vulnerability was found in osrg GoBGP up to 4.3.0. Affected is the function Pa...</summary><p>A vulnerability was found in osrg GoBGP up to 4.3.0. Affected is the function PathAttributeAigp.DecodeFromBytes of the file pkg/packet/bgp/bgp.go of the component AIGP Attribute Parser. Performing a manipulation results in buffer overflow. It is possible to initiate the attack remotely. Upgrading to version 4.4.0 is able to address this issue. The patch is named 51ad1ada06cb41ce47b7066799981816f50b7ced. The affected component should be upgraded.</p></details></td>
+        <td>2026-05-04</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-7734" target="_blank" rel="noopener">CVE-2026-7734</a></td>
+        <td>6.9</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-404</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.83</td>
+        <td><details><summary>A vulnerability has been found in osrg GoBGP up to 4.3.0. This impacts the funct...</summary><p>A vulnerability has been found in osrg GoBGP up to 4.3.0. This impacts the function SRv6L3ServiceAttribute.DecodeFromBytes of the file pkg/packet/bgp/prefix_sid.go of the component SRv6 L3 Service. Such manipulation of the argument data leads to denial of service. The attack may be performed from remote. Upgrading to version 4.4.0 will fix this issue. The name of the patch is f9f7b55ec258e514be0264871fa645a2c3edad11. You should upgrade the affected component.</p></details></td>
+        <td>2026-05-04</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-7733" target="_blank" rel="noopener">CVE-2026-7733</a></td>
+        <td>5.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-284</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.85</td>
+        <td><details><summary>A flaw has been found in funadmin up to 7.1.0-rc6. This affects the function Upl...</summary><p>A flaw has been found in funadmin up to 7.1.0-rc6. This affects the function UploadService::chunkUpload of the file app/common/service/UploadService.php of the component Frontend Chunked Upload Endpoint. This manipulation of the argument File causes unrestricted upload. The attack is possible to be carried out remotely. The exploit has been published and may be used. Patch name: 59. To fix this issue, it is recommended to deploy a patch.</p></details></td>
+        <td>2026-05-04</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-7732" target="_blank" rel="noopener">CVE-2026-7732</a></td>
+        <td>2.1</td>
+        <td><span class="severity low">LOW</span></td>
+        <td>CWE-284</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>1.47</td>
+        <td><details><summary>A vulnerability was detected in code-projects BloodBank Managing System 1.0. The...</summary><p>A vulnerability was detected in code-projects BloodBank Managing System 1.0. The impacted element is an unknown function of the file request_blood.php. The manipulation results in unrestricted upload. The attack can be executed remotely. The exploit is now public and may be used.</p></details></td>
+        <td>2026-05-04</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-7731" target="_blank" rel="noopener">CVE-2026-7731</a></td>
+        <td>2.1</td>
+        <td><span class="severity low">LOW</span></td>
+        <td>CWE-74</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>1.47</td>
+        <td><details><summary>A security vulnerability has been detected in code-projects BloodBank Managing S...</summary><p>A security vulnerability has been detected in code-projects BloodBank Managing System 1.0. The affected element is an unknown function of the file get_state.php. The manipulation of the argument G_STATE_ID leads to sql injection. Remote exploitation of the attack is possible. The exploit has been disclosed publicly and may be used.</p></details></td>
+        <td>2026-05-04</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-7730" target="_blank" rel="noopener">CVE-2026-7730</a></td>
+        <td>2.1</td>
+        <td><span class="severity low">LOW</span></td>
+        <td>CWE-77</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>1.47</td>
+        <td><details><summary>A weakness has been identified in privsim mcp-test-runner 0.2.0. Impacted is the...</summary><p>A weakness has been identified in privsim mcp-test-runner 0.2.0. Impacted is the function child_process.spawn of the file src/index.ts of the component MCP Interface. Executing a manipulation of the argument command can lead to os command injection. The attack may be launched remotely. The exploit has been made available to the public and could be used for attacks. The project was informed of the problem early through an issue report but has not responded yet.</p></details></td>
+        <td>2026-05-04</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-7729" target="_blank" rel="noopener">CVE-2026-7729</a></td>
+        <td>2.1</td>
+        <td><span class="severity low">LOW</span></td>
+        <td>CWE-918</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>1.47</td>
+        <td><details><summary>A security flaw has been discovered in pixelsock directus-mcp 1.0.0. This issue ...</summary><p>A security flaw has been discovered in pixelsock directus-mcp 1.0.0. This issue affects the function validateUrl of the file index.ts of the component MCP Interface. Performing a manipulation of the argument fileUrl results in server-side request forgery. The attack may be initiated remotely. The exploit has been released to the public and may be used for attacks. The pull request to fix this issue awaits acceptance.</p></details></td>
+        <td>2026-05-04</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-7728" target="_blank" rel="noopener">CVE-2026-7728</a></td>
+        <td>2.1</td>
+        <td><span class="severity low">LOW</span></td>
+        <td>CWE-22</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>1.47</td>
+        <td><details><summary>A vulnerability was identified in ryanjoachim mcp-rtfm 0.1.0. This vulnerability...</summary><p>A vulnerability was identified in ryanjoachim mcp-rtfm 0.1.0. This vulnerability affects the function get_doc_content/read_doc/update_doc of the component MCP Interface. Such manipulation of the argument docFile leads to path traversal. The attack can be launched remotely. The exploit is publicly available and might be used. The name of the patch is e6f0686fc36012f78236e7fed172c81444904b0b. It is best practice to apply a patch to resolve this issue.</p></details></td>
+        <td>2026-05-04</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-7727" target="_blank" rel="noopener">CVE-2026-7727</a></td>
+        <td>6.9</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-74</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.83</td>
+        <td><details><summary>A vulnerability was determined in Shandong Hoteam Software PDM Product Data Mana...</summary><p>A vulnerability was determined in Shandong Hoteam Software PDM Product Data Management System up to 8.3.9. This affects the function GetQueryMachineGridOnePageData of the file /Base/BaseService.asmx/DataService. This manipulation of the argument SortOrder causes sql injection. The attack can be initiated remotely. Upgrading to version 8.3.10 is able to mitigate this issue. You should upgrade the affected component.</p></details></td>
+        <td>2026-05-04</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-7725" target="_blank" rel="noopener">CVE-2026-7725</a></td>
+        <td>2.1</td>
+        <td><span class="severity low">LOW</span></td>
+        <td>CWE-74</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>1.47</td>
+        <td><details><summary>A vulnerability was found in PrefectHQ prefect up to 3.6.25.dev6. Affected by th...</summary><p>A vulnerability was found in PrefectHQ prefect up to 3.6.25.dev6. Affected by this issue is some unknown functionality of the file src/prefect/runner/storage.py of the component GitRepository Pull Handler. The manipulation of the argument commit_sha/directories results in argument injection. It is possible to launch the attack remotely. The exploit has been made public and could be used. Upgrading to version 3.6.25.dev7 can resolve this issue. The patch is identified as 6a9d9918716ce4ee0297b69f3046f7067ef1faae. It is advisable to upgrade the affected component.</p></details></td>
+        <td>2026-05-04</td>
+      </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-7724" target="_blank" rel="noopener">CVE-2026-7724</a></td>
         <td>1.3</td>
@@ -164,25 +274,6 @@
         <td>2026-05-04</td>
       </tr>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-7372" target="_blank" rel="noopener">CVE-2026-7372</a></td>
-        <td>9.0</td>
-        <td><span class="severity critical">CRITICAL</span></td>
-        <td>CWE-787</td>
-        <td>&nbsp;</td>
-        <td>&mdash;</td>
-        <td>6.30</td>
-        <td><details><summary>A stack overflow vulnerability exists in the WebCam Server Login functionality o...</summary><p>A stack overflow vulnerability exists in the WebCam Server Login functionality of GeoVision GV-VMS V20 20.0.2. A specially crafted HTTP request can lead to an arbitrary code execution. An attacker can make an unauthenticated HTTP request to trigger this vulnerability.
-
-#### Stack-overflow via unconstrained sscanf
-
-The call to `sscanf` at [1] to split the `Buffer` variable into the `username` and `password` variables doesn&#x27;t limit the size of the extracted content to match the destination buffers&#x27; sizes. In this case, if either the username or password decoded from the authorization string exceeds `40` characters (the size the stack variables  `username` and `password`) then a stack overflow will occur. 
-
-
-
-The data is controlled by an attacker, but sronger constraints (e.g. no null bytes) may make exploitation harder. A successful attack could  lead to full code execution as SYSTEM on the machine running the service.</p></details></td>
-        <td>2026-05-04</td>
-      </tr>
-      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-7371" target="_blank" rel="noopener">CVE-2026-7371</a></td>
         <td>7.4</td>
         <td><span class="severity high">HIGH</span></td>
@@ -194,20 +285,6 @@ The data is controlled by an attacker, but sronger constraints (e.g. no null byt
         <td>2026-05-04</td>
       </tr>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-7161" target="_blank" rel="noopener">CVE-2026-7161</a></td>
-        <td>9.3</td>
-        <td><span class="severity critical">CRITICAL</span></td>
-        <td>CWE-656</td>
-        <td>&nbsp;</td>
-        <td>&mdash;</td>
-        <td>6.51</td>
-        <td><details><summary>An insufficient encryption vulnerability exists in the Device Authentication fun...</summary><p>An insufficient encryption vulnerability exists in the Device Authentication functionality of GeoVision GV-IP Device Utility 9.0.5. Listening to broadcast packets can lead to credentials leak. An attacker can listen to broadcast messages to trigger this vulnerability.
-
-
-When interacting with various Geovision devices on the network, the utility may send privileged commands; in order to do so, the username and password of the device need to be provided. In some instances the command is broadcasted over UDP and the username/password are encrypted using a cryptographic protocol that appears to be derivated from Blowfish. However the symmetric key used for the encryption is also included in the packet, and thus the security of the username/password only relies on the &quot;obscurity&quot; of the encryption scheme. An attacker on the same LAN can listen to the broadcast traffic once an admin user interacts with the device, and decrypt the credentials using their own implementation of the algorithm. With this password the attacker would have full control over the device configuration, allowing them to change its ip address or even reset it to factory default.</p></details></td>
-        <td>2026-05-04</td>
-      </tr>
-      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-42370" target="_blank" rel="noopener">CVE-2026-42370</a></td>
         <td>9.0</td>
         <td><span class="severity critical">CRITICAL</span></td>
@@ -216,27 +293,6 @@ When interacting with various Geovision devices on the network, the utility may 
         <td>&mdash;</td>
         <td>6.30</td>
         <td><details><summary>A stack overflow vulnerability exists in the WebCam Server Login functionality o...</summary><p>A stack overflow vulnerability exists in the WebCam Server Login functionality of GeoVision GV-VMS V20 20.0.2. A specially crafted HTTP request can lead to an arbitrary code execution. An attacker can make an unauthenticated HTTP request to trigger this vulnerability.</p></details></td>
-        <td>2026-05-04</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-42369" target="_blank" rel="noopener">CVE-2026-42369</a></td>
-        <td>10.0</td>
-        <td><span class="severity critical">CRITICAL</span></td>
-        <td>CWE-787</td>
-        <td>&nbsp;</td>
-        <td>&mdash;</td>
-        <td>7.00</td>
-        <td><details><summary>GV-VMS V20 is a Video Monitoring Software used to gather the feeds of many surve...</summary><p>GV-VMS V20 is a Video Monitoring Software used to gather the feeds of many surveillance cameras and manage other security devices. It is a native application accessed locally, but it is also possible to enable remote access via the &quot;WebCam Server&quot; feature.  Once enabled, it is possible to access to the management and monitoring feature via a regular Web interface. This webersever is another native application, compiled without ASLR, which makes exploitation much easier and more likely. 
-
-
-
-Most of the features require authentication before being reachable and leverage a standard login page to grant access. However the `gvapi` endpoint uses its own authentication mechanism via an `HTTP Authorization` header. It supports both `Basic` authentication and the `Digest` modes of authentication.  
-
-
-
-#### Stack-overflow via unbound copy of base64 decoded string
-
-The `b64decoder` string is sized dynamically, but it is then copied to the `Buffer` stack variable one character at the time at [0], and there&#x27;s no bound-check. As such, if the decoded string is bigger than 256 characters (the size of the `Buffer` variable) then a stack overflow occurs. Because the data can be fully controlled by an attacker and lack of ASLR, this vulnerability can easily be exploited to gain full code execution as SYSTEM on the machine running the service.</p></details></td>
         <td>2026-05-04</td>
       </tr>
       <tr>
@@ -336,21 +392,6 @@ The `b64decoder` string is sized dynamically, but it is then copied to the `Buff
         <td>&mdash;</td>
         <td>3.85</td>
         <td><details><summary>A security flaw has been discovered in YunaiV yudao-cloud up to 3.8.0. This affe...</summary><p>A security flaw has been discovered in YunaiV yudao-cloud up to 3.8.0. This affects the function doFilterInternal of the file JwtAuthenticationTokenFilter.java of the component Ruoyi-Vue-Pro. Performing a manipulation of the argument mock-token results in improper authentication. Remote exploitation of the attack is possible. The exploit has been released to the public and may be used for attacks. The vendor was contacted early about this disclosure but did not respond in any way.</p></details></td>
-        <td>2026-05-04</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6948" target="_blank" rel="noopener">CVE-2026-6948</a></td>
-        <td>4.9</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-770</td>
-        <td>&nbsp;</td>
-        <td>&mdash;</td>
-        <td>3.43</td>
-        <td><details><summary>Velociraptor versions prior to 0.76.4 contain a resource exhaustion vulnerabilit...</summary><p>Velociraptor versions prior to 0.76.4 contain a resource exhaustion vulnerability in the server&#x27;s agent control channel.
-
-
-
-This allows a compromised or rogue Velociraptor client to crash the server via out-of-memory (OOM) by sending crafted messages through the normal client communication channel.</p></details></td>
         <td>2026-05-04</td>
       </tr>
       <tr>
@@ -819,11 +860,11 @@ This allows a compromised or rogue Velociraptor client to crash the server via o
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-7669" target="_blank" rel="noopener">CVE-2026-7669</a></td>
         <td>6.3</td>
         <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-20</td>
+        <td>CWE-74</td>
         <td>&nbsp;</td>
         <td>0.0% <small>p10</small></td>
         <td>4.41</td>
-        <td><details><summary>A vulnerability was detected in sgl-project SGLang up to 0.5.9. Impacted is the ...</summary><p>A vulnerability was detected in sgl-project SGLang up to 0.5.9. Impacted is the function get_tokenizer of the file python/sglang/srt/utils/hf_transformers_utils.py of the component HuggingFace Transformer Handler. The manipulation results in deserialization. The attack can be executed remotely. A high complexity level is associated with this attack. The exploitability is considered difficult. The vendor was contacted early about this disclosure but did not respond in any way.</p></details></td>
+        <td><details><summary>A vulnerability was detected in sgl-project SGLang up to 0.5.9. Impacted is the ...</summary><p>A vulnerability was detected in sgl-project SGLang up to 0.5.9. Impacted is the function get_tokenizer of the file python/sglang/srt/utils/hf_transformers_utils.py of the component HuggingFace Transformer Handler. The manipulation of the argument trust_remote_code with the input False as part of Boolean results in code injection. The attack can be executed remotely. A high complexity level is associated with this attack. The exploitability is considered difficult. In get_tokenizer(), when the caller passes trust_remote_code=False and HuggingFace transformers v5 returns a TokenizersBackend instance (the generic fallback for tokenizer classes not in the registry), SGLang silently re-invokes AutoTokenizer.from_pretrained with trust_remote_code=True, overriding the caller&#x27;s explicit security setting. A model repository containing a malicious tokenizer.py referenced via auto_map in tokenizer_config.json will execute arbitrary Python in the SGLang process during this second call. No log line or warning is emitted. The override affects all current SGLang versions because transformers==5.3.0 is pinned in pyproject.toml. Both tokenizer_mode=&quot;auto&quot; and tokenizer_mode=&quot;slow&quot; are affected. The exploit is now public and may be used. The vendor was contacted early about this disclosure but did not respond in any way.</p></details></td>
         <td>2026-05-02</td>
       </tr>
       <tr>
@@ -2778,7 +2819,7 @@ This allows a compromised or rogue Velociraptor client to crash the server via o
       </div>
     </section>
     <section>
-      <h2>Previous Month — April 2026 <span class="count">(5031)</span></h2>
+      <h2>Previous Month — April 2026 <span class="count">(5032)</span></h2>
       <div class="table-wrapper">
         <table>
           <thead>
@@ -3717,6 +3758,24 @@ This allows a compromised or rogue Velociraptor client to crash the server via o
         <td>0.0% <small>p7</small></td>
         <td>5.04</td>
         <td><details><summary>Pallets Click, versions 8.3.2 and below, contain a command injection vulnerabili...</summary><p>Pallets Click, versions 8.3.2 and below, contain a command injection vulnerability in the click.edit() function, allowing attackers to pass arbitrary OS commands from an unprivileged account.</p></details></td>
+        <td>2026-04-30</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-7163" target="_blank" rel="noopener">CVE-2026-7163</a></td>
+        <td>6.1</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-312</td>
+        <td>&nbsp;</td>
+        <td>0.0% <small>p2</small></td>
+        <td>4.27</td>
+        <td><details><summary>A vulnerability in the assisted-service REST API, an optional Assisted Installer...</summary><p>A vulnerability in the assisted-service REST API, an optional Assisted Installer (assisted-service) component in the Multicluster Engine (MCE), allows an authenticated user with minimal namespace-scoped privileges to obtain administrative credentials for arbitrary clusters provisioned through the hub. 
+
+The credentials download endpoint (GET /v2/clusters/{cluster_id}/credentials, which returns the kubeadmin password) and the kubeconfig download endpoint are operational in AUTH_TYPE=local mode, the only authentication mode available in on-premises ACM/MCE hub deployments. The local authenticator unconditionally grants full administrative access to any request bearing a valid JWT, with no per-endpoint restrictions. A valid local JWT is embedded as a plaintext query parameter in InfraEnvStatus.ISODownloadURL and is readable by any user who has get rights on an InfraEnv object in their own namespace.
+
+The affected components ship as part of Multicluster Engine (MCE). The Red Hat Advanced Cluster Management (ACM) deployments that include MCE are equally affected.
+This issue does not affect the hosted SaaS offering (console.redhat.com), which uses a different authentication mode.
+
+Successful exploitation gives the attacker the kubeadmin password and kubeconfig for any OpenShift cluster provisioned through the affected hub, granting unrestricted root-level administrative access to those spoke clusters.</p></details></td>
         <td>2026-04-30</td>
       </tr>
       <tr>
@@ -13297,7 +13356,7 @@ This allows a compromised or rogue Velociraptor client to crash the server via o
         <td>&nbsp;</td>
         <td>0.3% <small>p55</small></td>
         <td>6.87</td>
-        <td><details><summary>An issue in Ntfy ntfy.sh before v.2.21 allows a remote attacker to execute arbit...</summary><p>An issue in Ntfy ntfy.sh before v.2.21 allows a remote attacker to execute arbitrary code via the parseActions function</p></details></td>
+        <td><details><summary>ntfy before 2.22.0 allows SSRF because of an unanchored regular expression.</summary><p>ntfy before 2.22.0 allows SSRF because of an unanchored regular expression.</p></details></td>
         <td>2026-04-23</td>
       </tr>
       <tr>

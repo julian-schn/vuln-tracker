@@ -1,6 +1,6 @@
 # CVEs — April 2026
 
-_5031 vulnerabilities_
+_5032 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
@@ -88,6 +88,7 @@ _5031 vulnerabilities_
 | [CVE-2026-36957](https://nvd.nist.gov/vuln/detail/CVE-2026-36957) | 7.5 | HIGH | CWE-400 | No | 0.0% | 5.25 | 2026-04-30 | Dbit N300 T1 Pro Easy Setup Wireless Wi-Fi Router V1.0.0 is vulnerable to Denial of Service via the boa web server URI h... |
 | [CVE-2026-36956](https://nvd.nist.gov/vuln/detail/CVE-2026-36956) | 8.8 | HIGH | CWE-352 | No | 0.0% | 6.16 | 2026-04-30 | A Cross-Site Request Forgery (CSRF) vulnerability exists in the web management interface of the Dbit N300 T1 Pro wireles... |
 | [CVE-2026-7246](https://nvd.nist.gov/vuln/detail/CVE-2026-7246) | 7.2 | HIGH | CWE-77 | No | 0.0% | 5.04 | 2026-04-30 | Pallets Click, versions 8.3.2 and below, contain a command injection vulnerability in the click.edit() function, allowin... |
+| [CVE-2026-7163](https://nvd.nist.gov/vuln/detail/CVE-2026-7163) | 6.1 | MEDIUM | CWE-312 | No | 0.0% | 4.27 | 2026-04-30 | A vulnerability in the assisted-service REST API, an optional Assisted Installer (assisted-service) component in the Mul... |
 | [CVE-2026-2892](https://nvd.nist.gov/vuln/detail/CVE-2026-2892) | 7.5 | HIGH | CWE-285 | No | 0.1% | 5.25 | 2026-04-30 | The Otter Blocks plugin for WordPress is vulnerable to Purchase Verification Bypass in all versions up to, and including... |
 | [CVE-2025-14576](https://nvd.nist.gov/vuln/detail/CVE-2025-14576) | 7.4 | HIGH | CWE-20 | No | 0.0% | 5.18 | 2026-04-30 | Insufficient validation of node IDs in Qt SVG module allows arbitrary QML/JavaScript code injection when loading malicio... |
 | [CVE-2024-13971](https://nvd.nist.gov/vuln/detail/CVE-2024-13971) | 7.7 | HIGH | CWE-611 | No | 0.0% | 5.39 | 2026-04-30 | Unauthenticated attackers can exploit a weakness in the XML parser functionality of Lobster_pro prior to version 4.12.6-... |
@@ -958,7 +959,7 @@ _5031 vulnerabilities_
 | [CVE-2026-41239](https://nvd.nist.gov/vuln/detail/CVE-2026-41239) | 6.8 | MEDIUM | CWE-79 | No | 0.1% | 4.76 | 2026-04-23 | DOMPurify is a DOM-only cross-site scripting sanitizer for HTML, MathML, and SVG. Starting in version 1.0.10 and prior t... |
 | [CVE-2026-41238](https://nvd.nist.gov/vuln/detail/CVE-2026-41238) | 6.9 | MEDIUM | CWE-79 | No | 0.0% | 4.83 | 2026-04-23 | DOMPurify is a DOM-only cross-site scripting sanitizer for HTML, MathML, and SVG. Versions 3.0.1 through 3.3.3 are vulne... |
 | [CVE-2026-40471](https://nvd.nist.gov/vuln/detail/CVE-2026-40471) | 9.6 | CRITICAL | CWE-352 | No | 0.0% | 6.72 | 2026-04-23 | hackage-server lacked Cross-Site Request Forgery (CSRF) protection across its endpoints. Scripts on foreign sites could... |
-| [CVE-2026-39087](https://nvd.nist.gov/vuln/detail/CVE-2026-39087) | 9.8 | CRITICAL | CWE-94 | No | 0.3% | 6.87 | 2026-04-23 | An issue in Ntfy ntfy.sh before v.2.21 allows a remote attacker to execute arbitrary code via the parseActions function |
+| [CVE-2026-39087](https://nvd.nist.gov/vuln/detail/CVE-2026-39087) | 9.8 | CRITICAL | CWE-94 | No | 0.3% | 6.87 | 2026-04-23 | ntfy before 2.22.0 allows SSRF because of an unanchored regular expression. |
 | [CVE-2026-34003](https://nvd.nist.gov/vuln/detail/CVE-2026-34003) | 7.8 | HIGH | CWE-125 | No | 0.0% | 5.46 | 2026-04-23 | A flaw was found in the X.Org X server's XKB key types request validation. A local attacker could send a specially craft... |
 | [CVE-2026-34001](https://nvd.nist.gov/vuln/detail/CVE-2026-34001) | 7.8 | HIGH | CWE-825 | No | 0.0% | 5.46 | 2026-04-23 | A flaw was found in the X.Org X server. This use-after-free vulnerability occurs in the XSYNC fence triggering logic, sp... |
 | [CVE-2026-33999](https://nvd.nist.gov/vuln/detail/CVE-2026-33999) | 7.8 | HIGH | CWE-191 | No | 0.0% | 5.46 | 2026-04-23 | A flaw was found in the X.Org X server. This integer underflow vulnerability, specifically in the XKB compatibility map... |
