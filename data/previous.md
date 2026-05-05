@@ -1,6 +1,6 @@
 # CVEs — April 2026
 
-_5030 vulnerabilities_
+_5033 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
@@ -489,6 +489,7 @@ _5030 vulnerabilities_
 | [CVE-2026-7152](https://nvd.nist.gov/vuln/detail/CVE-2026-7152) | 8.9 | HIGH | CWE-77 | No | 1.3% | 6.27 | 2026-04-27 | A vulnerability was identified in Totolink A8000RU 7.1cu.643_b20200521. The affected element is the function setTelnetCf... |
 | [CVE-2026-7151](https://nvd.nist.gov/vuln/detail/CVE-2026-7151) | 7.4 | HIGH | CWE-119 | No | 0.1% | 5.18 | 2026-04-27 | A vulnerability was determined in Tenda HG3 2.0. Impacted is the function formUploadConfig of the file /boaform/formIPv6... |
 | [CVE-2026-6741](https://nvd.nist.gov/vuln/detail/CVE-2026-6741) | 8.8 | HIGH | CWE-269 | No | 0.1% | 6.16 | 2026-04-27 | The LatePoint – Calendar Booking Plugin for Appointments and Events plugin for WordPress is vulnerable to Privilege Esca... |
+| [CVE-2026-5394](https://nvd.nist.gov/vuln/detail/CVE-2026-5394) | 7.0 | HIGH | CWE-89 | No | 0.0% | 4.90 | 2026-04-27 | An authenticated administrative user who can import or save DataObject class definitions can inject attacker-controlled... |
 | [CVE-2026-7150](https://nvd.nist.gov/vuln/detail/CVE-2026-7150) | 2.1 | LOW | CWE-918 | No | 0.0% | 1.47 | 2026-04-27 | A vulnerability was found in dh1011 auto-favicon up to f189116a9259950c2393f114dbcb94dde0ad864b. This issue affects the... |
 | [CVE-2026-7149](https://nvd.nist.gov/vuln/detail/CVE-2026-7149) | 5.5 | MEDIUM | CWE-22 | No | 0.1% | 3.85 | 2026-04-27 | A vulnerability has been found in dexhunter kaggle-mcp up to 406127ffcb2b91b8c10e20e6c2ca787fbc1dc92d. This vulnerabilit... |
 | [CVE-2026-7148](https://nvd.nist.gov/vuln/detail/CVE-2026-7148) | 2.1 | LOW | CWE-74 | No | 0.0% | 1.47 | 2026-04-27 | A flaw has been found in CodeAstro Online Classroom 1.0. This affects an unknown part of the file /addnewfaculty. Execut... |
@@ -544,6 +545,7 @@ _5030 vulnerabilities_
 | [CVE-2026-7127](https://nvd.nist.gov/vuln/detail/CVE-2026-7127) | 5.5 | MEDIUM | CWE-74 | No | 0.0% | 3.85 | 2026-04-27 | A weakness has been identified in SourceCodester Pharmacy Sales and Inventory System 1.0. This vulnerability affects unk... |
 | [CVE-2026-7126](https://nvd.nist.gov/vuln/detail/CVE-2026-7126) | 5.5 | MEDIUM | CWE-74 | No | 0.0% | 3.85 | 2026-04-27 | A security flaw has been discovered in SourceCodester Pharmacy Sales and Inventory System 1.0. This affects an unknown p... |
 | [CVE-2026-6265](https://nvd.nist.gov/vuln/detail/CVE-2026-6265) | 7.3 | HIGH | CWE-278 | No | 0.0% | 5.11 | 2026-04-27 | Insecure preserved inherited permissions vulnerability in Cerberus FTP Server on Windows allows Privilege Escalation.Thi... |
+| [CVE-2026-40557](https://nvd.nist.gov/vuln/detail/CVE-2026-40557) | 4.8 | MEDIUM | CWE-295 | No | 0.0% | 3.36 | 2026-04-27 | Improper Certificate Validation via Global SSL Context Downgrade in Apache Storm Prometheus Reporter   Versions Affected... |
 | [CVE-2025-15626](https://nvd.nist.gov/vuln/detail/CVE-2025-15626) | 5.3 | MEDIUM | CWE-639 | No | 0.0% | 3.71 | 2026-04-27 | Authenticated user can bypass authorization in Ribblr - Crochet & Knitting iOS application |
 | [CVE-2026-7125](https://nvd.nist.gov/vuln/detail/CVE-2026-7125) | 8.9 | HIGH | CWE-77 | No | 1.3% | 6.27 | 2026-04-27 | A vulnerability was identified in Totolink A8000RU 7.1cu.643_b20200521. Affected by this issue is the function setWiFiEa... |
 | [CVE-2026-7124](https://nvd.nist.gov/vuln/detail/CVE-2026-7124) | 8.9 | HIGH | CWE-77 | No | 1.3% | 6.27 | 2026-04-27 | A vulnerability was determined in Totolink A8000RU 7.1cu.643_b20200521. Affected by this vulnerability is the function s... |
@@ -734,6 +736,7 @@ _5030 vulnerabilities_
 | [CVE-2026-41476](https://nvd.nist.gov/vuln/detail/CVE-2026-41476) | 7.4 | HIGH | CWE-120 | No | 0.1% | 5.18 | 2026-04-24 | Deskflow is a keyboard and mouse sharing app.  Prior to 1.26.0.138, a remote memory-safety vulnerability in Deskflow's c... |
 | [CVE-2026-41475](https://nvd.nist.gov/vuln/detail/CVE-2026-41475) | 8.7 | HIGH | CWE-125 | No | 0.3% | 6.10 | 2026-04-24 | BACnet Stack is a BACnet open source protocol stack C library for embedded systems. Prior to 1.4.3, an out-of-bounds rea... |
 | [CVE-2026-41433](https://nvd.nist.gov/vuln/detail/CVE-2026-41433) | 8.4 | HIGH | CWE-22 | No | 0.0% | 5.88 | 2026-04-24 | OpenTelemetry eBPF Instrumentation provides eBPF instrumentation based on the OpenTelemetry standard. From 0.4.0 to befo... |
+| [CVE-2026-41429](https://nvd.nist.gov/vuln/detail/CVE-2026-41429) | 8.8 | HIGH | CWE-121 | No | 0.0% | 6.16 | 2026-04-24 | arduino-esp32 is an Arduino core for the ESP32, ESP32-S2, ESP32-S3, ESP32-C3, ESP32-C6 and ESP32-H2 microcontrollers. Pr... |
 | [CVE-2026-41428](https://nvd.nist.gov/vuln/detail/CVE-2026-41428) | 9.1 | CRITICAL | CWE-287 | No | 0.1% | 6.37 | 2026-04-24 | Budibase is an open-source low-code platform. Prior to 3.35.4, the authenticated middleware uses unanchored regular expr... |
 | [CVE-2026-41427](https://nvd.nist.gov/vuln/detail/CVE-2026-41427) | 7.1 | HIGH | CWE-863 | No | 0.1% | 4.97 | 2026-04-24 | Better Auth is an authentication and authorization library for TypeScript. Prior to 1.6.5, the clientPrivileges option d... |
 | [CVE-2026-41426](https://nvd.nist.gov/vuln/detail/CVE-2026-41426) | 6.1 | MEDIUM | CWE-79 | No | 0.0% | 4.27 | 2026-04-24 | pretalx is a conference planning tool. Prior to 2026.1.0, an unauthenticated attacker can send arbitrary HTML-rendered e... |

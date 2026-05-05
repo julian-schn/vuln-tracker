@@ -11,7 +11,7 @@
     <header>
       <h1>vuln-tracker</h1>
       <p class="subtitle">CVEs from the National Vulnerability Database — current and previous month</p>
-      <p class="last-updated">Last updated: 2026-05-05 17:42 UTC</p>
+      <p class="last-updated">Last updated: 2026-05-05 19:43 UTC</p>
     </header>
     <nav>
       <a href="top50.html">&#9733; Top 50</a>
@@ -25,7 +25,7 @@
     </nav>
     <main>
     <section>
-      <h2>Current Month — May 2026 <span class="count">(523)</span></h2>
+      <h2>Current Month — May 2026 <span class="count">(534)</span></h2>
       <div class="table-wrapper">
         <table>
           <thead>
@@ -42,6 +42,105 @@
             </tr>
           </thead>
           <tbody>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-7855" target="_blank" rel="noopener">CVE-2026-7855</a></td>
+        <td>7.4</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-119</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.18</td>
+        <td><details><summary>A vulnerability was detected in D-Link DI-8100 16.07.26A1. Affected by this issu...</summary><p>A vulnerability was detected in D-Link DI-8100 16.07.26A1. Affected by this issue is the function tggl_asp of the file /tggl.asp of the component HTTP Request Handler. Performing a manipulation of the argument Name results in buffer overflow. The attack can be initiated remotely. The exploit is now public and may be used.</p></details></td>
+        <td>2026-05-05</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-7854" target="_blank" rel="noopener">CVE-2026-7854</a></td>
+        <td>8.9</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-119</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.23</td>
+        <td><details><summary>A security vulnerability has been detected in D-Link DI-8100 16.07.26A1. Affecte...</summary><p>A security vulnerability has been detected in D-Link DI-8100 16.07.26A1. Affected by this vulnerability is the function url_rule_asp of the file /url_rule.asp of the component POST Parameter Handler. Such manipulation leads to buffer overflow. It is possible to launch the attack remotely. The exploit has been disclosed publicly and may be used.</p></details></td>
+        <td>2026-05-05</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-42997" target="_blank" rel="noopener">CVE-2026-42997</a></td>
+        <td>7.7</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-669</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.39</td>
+        <td><details><summary>An issue was discovered in idrac in OpenStack Ironic before 35.0.1. During impor...</summary><p>An issue was discovered in idrac in OpenStack Ironic before 35.0.1. During import, a user invoking molds can request authorization to be sent to a remote endpoint. The credential forwarded is a time-limited Keystone token (which provides access to all OpenStack services Ironic is authorized for); or basic credentials configured for molds storage. The fixed versions are 26.1.6, 29.0.5, 32.0.1, and 35.0.1.</p></details></td>
+        <td>2026-05-05</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-38428" target="_blank" rel="noopener">CVE-2026-38428</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>N/A</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Kestra v1.3.3 and before is vulnerable to SQL Injection. The vulnerability occur...</summary><p>Kestra v1.3.3 and before is vulnerable to SQL Injection. The vulnerability occurs because user-controlled input from a GET parameter is directly concatenated into an SQL query without proper sanitization or parameterization. As a result, attackers can inject arbitrary SQL expressions into the database query.</p></details></td>
+        <td>2026-05-05</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-31835" target="_blank" rel="noopener">CVE-2026-31835</a></td>
+        <td>5.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-345</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.71</td>
+        <td><details><summary>Vaultwarden is a Bitwarden-compatible server written in Rust. In versions 1.35.4...</summary><p>Vaultwarden is a Bitwarden-compatible server written in Rust. In versions 1.35.4 and earlier, the WebAuthn authentication flow in `validate_webauthn_login()` updates persistent credential metadata (1backup_eligible1 and 1backup_state flags1) based on unverified `authenticatorData` before signature validation is performed. An attacker who knows a user&#x27;s password but cannot produce a valid WebAuthn signature can permanently modify the stored backup flags for that user&#x27;s credential. If signature verification fails, the database update is not rolled back. This can result in a persistent denial of service of WebAuthn two-factor authentication for affected credentials. This issue has been fixed in version 1.35.5.</p></details></td>
+        <td>2026-05-05</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-30923" target="_blank" rel="noopener">CVE-2026-30923</a></td>
+        <td>8.2</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-125</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.74</td>
+        <td><details><summary>ModSecurity is an open source, cross platform web application firewall (WAF) eng...</summary><p>ModSecurity is an open source, cross platform web application firewall (WAF) engine for Apache, IIS and Nginx. Libmodsecurity is one component of the ModSecurity v3 project. A segmentation fault occurs when a rule using the t:hexDecode transformation inspects a query string parameter containing a single character. An attacker can exploit this to crash worker processes, causing a denial of service. Service resumes once the attack stops as worker processes recover from the segfault. All versions before 3.0.15 of libModSecurity3 are affected. This has been patched in version 3.0.15.</p></details></td>
+        <td>2026-05-05</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-27960" target="_blank" rel="noopener">CVE-2026-27960</a></td>
+        <td>9.8</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-287</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.86</td>
+        <td><details><summary>OpenCTI is an open source platform for managing cyber threat intelligence knowle...</summary><p>OpenCTI is an open source platform for managing cyber threat intelligence knowledge and observables. In versions 6.6.0 through 6.9.12, there is a privilege escalation vulnerability that can be exploited by unauthenticated attackers to query the API as any existing user, including the default admin account. This issue has been fixed in version 6.9.13. As a workaround, the default admin can be disabled using the `APP__ADMIN__EXTERNALLY_MANAGED` configuration.</p></details></td>
+        <td>2026-05-05</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-7853" target="_blank" rel="noopener">CVE-2026-7853</a></td>
+        <td>8.9</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-119</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.23</td>
+        <td><details><summary>A weakness has been identified in D-Link DI-8100 16.07.26A1. Affected is the fun...</summary><p>A weakness has been identified in D-Link DI-8100 16.07.26A1. Affected is the function sprintf of the file /auto_reboot.asp of the component HTTP Handler. This manipulation of the argument enable/time causes buffer overflow. It is possible to initiate the attack remotely. The exploit has been made available to the public and could be used for attacks.</p></details></td>
+        <td>2026-05-05</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-7851" target="_blank" rel="noopener">CVE-2026-7851</a></td>
+        <td>7.3</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-119</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.11</td>
+        <td><details><summary>A vulnerability was identified in D-Link DI-8100 16.07.26A1. This affects the fu...</summary><p>A vulnerability was identified in D-Link DI-8100 16.07.26A1. This affects the function sprintf of the file yyxz.asp. The manipulation of the argument ID leads to stack-based buffer overflow. The attack is possible to be carried out remotely. The exploit is publicly available and might be used.</p></details></td>
+        <td>2026-05-05</td>
+      </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-7847" target="_blank" rel="noopener">CVE-2026-7847</a></td>
         <td>1.2</td>
@@ -153,24 +252,6 @@
         <td>2026-05-05</td>
       </tr>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-7865" target="_blank" rel="noopener">CVE-2026-7865</a></td>
-        <td>7.4</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-88</td>
-        <td>&nbsp;</td>
-        <td>&mdash;</td>
-        <td>5.18</td>
-        <td><details><summary>A hidden console command is vulnerable to command injection
-flaw when control ch...</summary><p>A hidden console command is vulnerable to command injection
-flaw when control characters are passed to its second argument. 
-
-A third party researcher Eugene Lim had discovered vulnerability
-in the way console command passes to a popen function call. Attackers with
-authenticated access to SSH console of Crestron devices may use to run
-underlying OS commands.</p></details></td>
-        <td>2026-05-05</td>
-      </tr>
-      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-7846" target="_blank" rel="noopener">CVE-2026-7846</a></td>
         <td>1.2</td>
         <td><span class="severity low">LOW</span></td>
@@ -255,535 +336,6 @@ ASGI requests with a missing or understated `Content-Length` header can bypass t
 As a reminder, Django expects a limit to be configured at the web server level rather than solely relying on `FILE_UPLOAD_MAX_MEMORY_SIZE`.
 Earlier, unsupported Django series (such as 5.0.x, 4.1.x, and 3.2.x) were not evaluated and may also be affected.
 Django would like to thank Kyle Agronick for reporting this issue.</p></details></td>
-        <td>2026-05-05</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-43073" target="_blank" rel="noopener">CVE-2026-43073</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
-        <td>&nbsp;</td>
-        <td>&mdash;</td>
-        <td>0.00</td>
-        <td><details><summary>In the Linux kernel, the following vulnerability has been resolved:
-
-x86-64: ren...</summary><p>In the Linux kernel, the following vulnerability has been resolved:
-
-x86-64: rename misleadingly named &#x27;__copy_user_nocache()&#x27; function
-
-This function was a masterclass in bad naming, for various historical
-reasons.
-
-It claimed to be a non-cached user copy.  It is literally _neither_ of
-those things.  It&#x27;s a specialty memory copy routine that uses
-non-temporal stores for the destination (but not the source), and that
-does exception handling for both source and destination accesses.
-
-Also note that while it works for unaligned targets, any unaligned parts
-(whether at beginning or end) will not use non-temporal stores, since
-only words and quadwords can be non-temporal on x86.
-
-The exception handling means that it _can_ be used for user space
-accesses, but not on its own - it needs all the normal &quot;start user space
-access&quot; logic around it.
-
-But typically the user space access would be the source, not the
-non-temporal destination.  That was the original intention of this,
-where the destination was some fragile persistent memory target that
-needed non-temporal stores in order to catch machine check exceptions
-synchronously and deal with them gracefully.
-
-Thus that non-descriptive name: one use case was to copy from user space
-into a non-cached kernel buffer.  However, the existing users are a mix
-of that intended use-case, and a couple of random drivers that just did
-this as a performance tweak.
-
-Some of those random drivers then actively misused the user copying
-version (with STAC/CLAC and all) to do kernel copies without ever even
-caring about the exception handling, _just_ for the non-temporal
-destination.
-
-Rename it as a first small step to actually make it halfway sane, and
-change the prototype to be more normal: it doesn&#x27;t take a user pointer
-unless the caller has done the proper conversion, and the argument size
-is the full size_t (it still won&#x27;t actually copy more than 4GB in one
-go, but there&#x27;s also no reason to silently truncate the size argument in
-the caller).
-
-Finally, use this now sanely named function in the NTB code, which
-mis-used a user copy version (with STAC/CLAC and all) of this interface
-despite it not actually being a user copy at all.</p></details></td>
-        <td>2026-05-05</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-43072" target="_blank" rel="noopener">CVE-2026-43072</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
-        <td>&nbsp;</td>
-        <td>&mdash;</td>
-        <td>0.00</td>
-        <td><details><summary>In the Linux kernel, the following vulnerability has been resolved:
-
-drm/vc4: pl...</summary><p>In the Linux kernel, the following vulnerability has been resolved:
-
-drm/vc4: platform_get_irq_byname() returns an int
-
-platform_get_irq_byname() will return a negative value if an error
-happens, so it should be checked and not just passed directly into
-devm_request_threaded_irq() hoping all will be ok.</p></details></td>
-        <td>2026-05-05</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-43071" target="_blank" rel="noopener">CVE-2026-43071</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
-        <td>&nbsp;</td>
-        <td>&mdash;</td>
-        <td>0.00</td>
-        <td><details><summary>In the Linux kernel, the following vulnerability has been resolved:
-
-dcache: Lim...</summary><p>In the Linux kernel, the following vulnerability has been resolved:
-
-dcache: Limit the minimal number of bucket to two
-
-There is an OOB read problem on dentry_hashtable when user sets
-&#x27;dhash_entries=1&#x27;:
-  BUG: unable to handle page fault for address: ffff888b30b774b0
-  #PF: supervisor read access in kernel mode
-  #PF: error_code(0x0000) - not-present page
-  Oops: Oops: 0000 [#1] SMP PTI
-  RIP: 0010:__d_lookup+0x56/0x120
-   Call Trace:
-    d_lookup.cold+0x16/0x5d
-    lookup_dcache+0x27/0xf0
-    lookup_one_qstr_excl+0x2a/0x180
-    start_dirop+0x55/0xa0
-    simple_start_creating+0x8d/0xa0
-    debugfs_start_creating+0x8c/0x180
-    debugfs_create_dir+0x1d/0x1c0
-    pinctrl_init+0x6d/0x140
-    do_one_initcall+0x6d/0x3d0
-    kernel_init_freeable+0x39f/0x460
-    kernel_init+0x2a/0x260
-
-There will be only one bucket in dentry_hashtable when dhash_entries is
-set as one, and d_hash_shift is calculated as 32 by dcache_init(). Then,
-following process will access more than one buckets(which memory region
-is not allocated) in dentry_hashtable:
- d_lookup
-  b = d_hash(hash)
-    dentry_hashtable + ((u32)hashlen &gt;&gt; d_hash_shift)
-    // The C standard defines the behavior of right shift amounts
-    // exceeding the bit width of the operand as undefined. The
-    // result of &#x27;(u32)hashlen &gt;&gt; d_hash_shift&#x27; becomes &#x27;hashlen&#x27;,
-    // so &#x27;b&#x27; will point to an unallocated memory region.
-  hlist_bl_for_each_entry_rcu(b)
-   hlist_bl_first_rcu(head)
-    h-&gt;first  // read OOB!
-
-Fix it by limiting the minimal number of dentry_hashtable bucket to two,
-so that &#x27;d_hash_shift&#x27; won&#x27;t exceeds the bit width of type u32.</p></details></td>
-        <td>2026-05-05</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-43070" target="_blank" rel="noopener">CVE-2026-43070</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
-        <td>&nbsp;</td>
-        <td>&mdash;</td>
-        <td>0.00</td>
-        <td><details><summary>In the Linux kernel, the following vulnerability has been resolved:
-
-bpf: Reset ...</summary><p>In the Linux kernel, the following vulnerability has been resolved:
-
-bpf: Reset register ID for BPF_END value tracking
-
-When a register undergoes a BPF_END (byte swap) operation, its scalar
-value is mutated in-place. If this register previously shared a scalar ID
-with another register (e.g., after an `r1 = r0` assignment), this tie must
-be broken.
-
-Currently, the verifier misses resetting `dst_reg-&gt;id` to 0 for BPF_END.
-Consequently, if a conditional jump checks the swapped register, the
-verifier incorrectly propagates the learned bounds to the linked register,
-leading to false confidence in the linked register&#x27;s value and potentially
-allowing out-of-bounds memory accesses.
-
-Fix this by explicitly resetting `dst_reg-&gt;id` to 0 in the BPF_END case
-to break the scalar tie, similar to how BPF_NEG handles it via
-`__mark_reg_known`.</p></details></td>
-        <td>2026-05-05</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-43069" target="_blank" rel="noopener">CVE-2026-43069</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
-        <td>&nbsp;</td>
-        <td>&mdash;</td>
-        <td>0.00</td>
-        <td><details><summary>In the Linux kernel, the following vulnerability has been resolved:
-
-Bluetooth: ...</summary><p>In the Linux kernel, the following vulnerability has been resolved:
-
-Bluetooth: hci_ll: Fix firmware leak on error path
-
-Smatch reports:
-
-drivers/bluetooth/hci_ll.c:587 download_firmware() warn:
-&#x27;fw&#x27; from request_firmware() not released on lines: 544.
-
-In download_firmware(), if request_firmware() succeeds but the returned
-firmware content is invalid (no data or zero size), the function returns
-without releasing the firmware, resulting in a resource leak.
-
-Fix this by calling release_firmware() before returning when
-request_firmware() succeeded but the firmware content is invalid.</p></details></td>
-        <td>2026-05-05</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-43068" target="_blank" rel="noopener">CVE-2026-43068</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
-        <td>&nbsp;</td>
-        <td>&mdash;</td>
-        <td>0.00</td>
-        <td><details><summary>In the Linux kernel, the following vulnerability has been resolved:
-
-ext4: avoid...</summary><p>In the Linux kernel, the following vulnerability has been resolved:
-
-ext4: avoid allocate block from corrupted group in ext4_mb_find_by_goal()
-
-There&#x27;s issue as follows:
-...
-EXT4-fs (mmcblk0p1): Delayed block allocation failed for inode 206 at logical offset 0 with max blocks 1 with error 117
-EXT4-fs (mmcblk0p1): This should not happen!! Data will be lost
-
-EXT4-fs (mmcblk0p1): Delayed block allocation failed for inode 206 at logical offset 0 with max blocks 1 with error 117
-EXT4-fs (mmcblk0p1): This should not happen!! Data will be lost
-
-EXT4-fs (mmcblk0p1): Delayed block allocation failed for inode 206 at logical offset 0 with max blocks 1 with error 117
-EXT4-fs (mmcblk0p1): This should not happen!! Data will be lost
-
-EXT4-fs (mmcblk0p1): Delayed block allocation failed for inode 206 at logical offset 0 with max blocks 1 with error 117
-EXT4-fs (mmcblk0p1): This should not happen!! Data will be lost
-
-EXT4-fs (mmcblk0p1): Delayed block allocation failed for inode 2243 at logical offset 0 with max blocks 1 with error 117
-EXT4-fs (mmcblk0p1): This should not happen!! Data will be lost
-
-EXT4-fs (mmcblk0p1): Delayed block allocation failed for inode 2239 at logical offset 0 with max blocks 1 with error 117
-EXT4-fs (mmcblk0p1): This should not happen!! Data will be lost
-
-EXT4-fs (mmcblk0p1): error count since last fsck: 1
-EXT4-fs (mmcblk0p1): initial error at time 1765597433: ext4_mb_generate_buddy:760
-EXT4-fs (mmcblk0p1): last error at time 1765597433: ext4_mb_generate_buddy:760
-...
-
-According to the log analysis, blocks are always requested from the
-corrupted block group. This may happen as follows:
-ext4_mb_find_by_goal
-  ext4_mb_load_buddy
-   ext4_mb_load_buddy_gfp
-     ext4_mb_init_cache
-      ext4_read_block_bitmap_nowait
-      ext4_wait_block_bitmap
-       ext4_validate_block_bitmap
-        if (!grp || EXT4_MB_GRP_BBITMAP_CORRUPT(grp))
-         return -EFSCORRUPTED; // There&#x27;s no logs.
- if (err)
-  return err;  // Will return error
-ext4_lock_group(ac-&gt;ac_sb, group);
-  if (unlikely(EXT4_MB_GRP_BBITMAP_CORRUPT(e4b-&gt;bd_info))) // Unreachable
-   goto out;
-
-After commit 9008a58e5dce (&quot;ext4: make the bitmap read routines return
-real error codes&quot;) merged, Commit 163a203ddb36 (&quot;ext4: mark block group
-as corrupt on block bitmap error&quot;) is no real solution for allocating
-blocks from corrupted block groups. This is because if
-&#x27;EXT4_MB_GRP_BBITMAP_CORRUPT(e4b-&gt;bd_info)&#x27; is true, then
-&#x27;ext4_mb_load_buddy()&#x27; may return an error. This means that the block
-allocation will fail.
-Therefore, check block group if corrupted when ext4_mb_load_buddy()
-returns error.</p></details></td>
-        <td>2026-05-05</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-43067" target="_blank" rel="noopener">CVE-2026-43067</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
-        <td>&nbsp;</td>
-        <td>&mdash;</td>
-        <td>0.00</td>
-        <td><details><summary>In the Linux kernel, the following vulnerability has been resolved:
-
-ext4: handl...</summary><p>In the Linux kernel, the following vulnerability has been resolved:
-
-ext4: handle wraparound when searching for blocks for indirect mapped blocks
-
-Commit 4865c768b563 (&quot;ext4: always allocate blocks only from groups
-inode can use&quot;) restricts what blocks will be allocated for indirect
-block based files to block numbers that fit within 32-bit block
-numbers.
-
-However, when using a review bot running on the latest Gemini LLM to
-check this commit when backporting into an LTS based kernel, it raised
-this concern:
-
-   If ac-&gt;ac_g_ex.fe_group is &gt;= ngroups (for instance, if the goal
-   group was populated via stream allocation from s_mb_last_groups),
-   then start will be &gt;= ngroups.
-
-   Does this allow allocating blocks beyond the 32-bit limit for
-   indirect block mapped files? The commit message mentions that
-   ext4_mb_scan_groups_linear() takes care to not select unsupported
-   groups. However, its loop uses group = *start, and the very first
-   iteration will call ext4_mb_scan_group() with this unsupported
-   group because next_linear_group() is only called at the end of the
-   iteration.
-
-After reviewing the code paths involved and considering the LLM
-review, I determined that this can happen when there is a file system
-where some files/directories are extent-mapped and others are
-indirect-block mapped.  To address this, add a safety clamp in
-ext4_mb_scan_groups().</p></details></td>
-        <td>2026-05-05</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-43066" target="_blank" rel="noopener">CVE-2026-43066</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
-        <td>&nbsp;</td>
-        <td>&mdash;</td>
-        <td>0.00</td>
-        <td><details><summary>In the Linux kernel, the following vulnerability has been resolved:
-
-ext4: fix i...</summary><p>In the Linux kernel, the following vulnerability has been resolved:
-
-ext4: fix iloc.bh leak in ext4_fc_replay_inode() error paths
-
-During code review, Joseph found that ext4_fc_replay_inode() calls
-ext4_get_fc_inode_loc() to get the inode location, which holds a
-reference to iloc.bh that must be released via brelse().
-
-However, several error paths jump to the &#x27;out&#x27; label without
-releasing iloc.bh:
-
- - ext4_handle_dirty_metadata() failure
- - sync_dirty_buffer() failure
- - ext4_mark_inode_used() failure
- - ext4_iget() failure
-
-Fix this by introducing an &#x27;out_brelse&#x27; label placed just before
-the existing &#x27;out&#x27; label to ensure iloc.bh is always released.
-
-Additionally, make ext4_fc_replay_inode() propagate errors
-properly instead of always returning 0.</p></details></td>
-        <td>2026-05-05</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-43065" target="_blank" rel="noopener">CVE-2026-43065</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
-        <td>&nbsp;</td>
-        <td>&mdash;</td>
-        <td>0.00</td>
-        <td><details><summary>In the Linux kernel, the following vulnerability has been resolved:
-
-ext4: alway...</summary><p>In the Linux kernel, the following vulnerability has been resolved:
-
-ext4: always drain queued discard work in ext4_mb_release()
-
-While reviewing recent ext4 patch[1], Sashiko raised the following
-concern[2]:
-
-&gt; If the filesystem is initially mounted with the discard option,
-&gt; deleting files will populate sbi-&gt;s_discard_list and queue
-&gt; s_discard_work. If it is then remounted with nodiscard, the
-&gt; EXT4_MOUNT_DISCARD flag is cleared, but the pending s_discard_work is
-&gt; neither cancelled nor flushed.
-
-[1] https://lore.kernel.org/r/20260319094545.19291-1-qiang.zhang@linux.dev/
-[2] https://sashiko.dev/#/patchset/20260319094545.19291-1-qiang.zhang%40linux.dev
-
-The concern was valid, but it had nothing to do with the patch[1].
-One of the problems with Sashiko in its current (early) form is that
-it will detect pre-existing issues and report it as a problem with the
-patch that it is reviewing.
-
-In practice, it would be hard to hit deliberately (unless you are a
-malicious syzkaller fuzzer), since it would involve mounting the file
-system with -o discard, and then deleting a large number of files,
-remounting the file system with -o nodiscard, and then immediately
-unmounting the file system before the queued discard work has a change
-to drain on its own.
-
-Fix it because it&#x27;s a real bug, and to avoid Sashiko from raising this
-concern when analyzing future patches to mballoc.c.</p></details></td>
-        <td>2026-05-05</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-43064" target="_blank" rel="noopener">CVE-2026-43064</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
-        <td>&nbsp;</td>
-        <td>&mdash;</td>
-        <td>0.00</td>
-        <td><details><summary>In the Linux kernel, the following vulnerability has been resolved:
-
-dmaengine: ...</summary><p>In the Linux kernel, the following vulnerability has been resolved:
-
-dmaengine: idxd: Fix not releasing workqueue on .release()
-
-The workqueue associated with an DSA/IAA device is not released when
-the object is freed.</p></details></td>
-        <td>2026-05-05</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-43063" target="_blank" rel="noopener">CVE-2026-43063</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
-        <td>&nbsp;</td>
-        <td>&mdash;</td>
-        <td>0.00</td>
-        <td><details><summary>In the Linux kernel, the following vulnerability has been resolved:
-
-xfs: don&#x27;t ...</summary><p>In the Linux kernel, the following vulnerability has been resolved:
-
-xfs: don&#x27;t irele after failing to iget in xfs_attri_recover_work
-
-xlog_recovery_iget* never set @ip to a valid pointer if they return
-an error, so this irele will walk off a dangling pointer.  Fix that.</p></details></td>
-        <td>2026-05-05</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-43062" target="_blank" rel="noopener">CVE-2026-43062</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
-        <td>&nbsp;</td>
-        <td>&mdash;</td>
-        <td>0.00</td>
-        <td><details><summary>In the Linux kernel, the following vulnerability has been resolved:
-
-Bluetooth: ...</summary><p>In the Linux kernel, the following vulnerability has been resolved:
-
-Bluetooth: L2CAP: Fix type confusion in l2cap_ecred_reconf_rsp()
-
-l2cap_ecred_reconf_rsp() casts the incoming data to struct
-l2cap_ecred_conn_rsp (the ECRED *connection* response, 8 bytes with
-result at offset 6) instead of struct l2cap_ecred_reconf_rsp (2 bytes
-with result at offset 0).
-
-This causes two problems:
-
- - The sizeof(*rsp) length check requires 8 bytes instead of the
-   correct 2, so valid L2CAP_ECRED_RECONF_RSP packets are rejected
-   with -EPROTO.
-
- - rsp-&gt;result reads from offset 6 instead of offset 0, returning
-   wrong data when the packet is large enough to pass the check.
-
-Fix by using the correct type.  Also pass the already byte-swapped
-result variable to BT_DBG instead of the raw __le16 field.</p></details></td>
-        <td>2026-05-05</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-43061" target="_blank" rel="noopener">CVE-2026-43061</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
-        <td>&nbsp;</td>
-        <td>&mdash;</td>
-        <td>0.00</td>
-        <td><details><summary>In the Linux kernel, the following vulnerability has been resolved:
-
-serial: 825...</summary><p>In the Linux kernel, the following vulnerability has been resolved:
-
-serial: 8250: Fix TX deadlock when using DMA
-
-`dmaengine_terminate_async` does not guarantee that the
-`__dma_tx_complete` callback will run. The callback is currently the
-only place where `dma-&gt;tx_running` gets cleared. If the transaction is
-canceled and the callback never runs, then `dma-&gt;tx_running` will never
-get cleared and we will never schedule new TX DMA transactions again.
-
-This change makes it so we clear `dma-&gt;tx_running` after we terminate
-the DMA transaction. This is &quot;safe&quot; because `serial8250_tx_dma_flush`
-is holding the UART port lock. The first thing the callback does is also
-grab the UART port lock, so access to `dma-&gt;tx_running` is serialized.</p></details></td>
-        <td>2026-05-05</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-43060" target="_blank" rel="noopener">CVE-2026-43060</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
-        <td>&nbsp;</td>
-        <td>&mdash;</td>
-        <td>0.00</td>
-        <td><details><summary>In the Linux kernel, the following vulnerability has been resolved:
-
-netfilter: ...</summary><p>In the Linux kernel, the following vulnerability has been resolved:
-
-netfilter: nft_ct: drop pending enqueued packets on removal
-
-Packets sitting in nfqueue might hold a reference to:
-
-- templates that specify the conntrack zone, because a percpu area is
-  used and module removal is possible.
-- conntrack timeout policies and helper, where object removal leave
-  a stale reference.
-
-Since these objects can just go away, drop enqueued packets to avoid
-stale reference to them.
-
-If there is a need for finer grain removal, this logic can be revisited
-to make selective packet drop upon dependencies.</p></details></td>
-        <td>2026-05-05</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-43059" target="_blank" rel="noopener">CVE-2026-43059</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
-        <td>&nbsp;</td>
-        <td>&mdash;</td>
-        <td>0.00</td>
-        <td><details><summary>In the Linux kernel, the following vulnerability has been resolved:
-
-Bluetooth: ...</summary><p>In the Linux kernel, the following vulnerability has been resolved:
-
-Bluetooth: MGMT: Fix list corruption and UAF in command complete handlers
-
-Commit 302a1f674c00 (&quot;Bluetooth: MGMT: Fix possible UAFs&quot;) introduced
-mgmt_pending_valid(), which not only validates the pending command but
-also unlinks it from the pending list if it is valid. This change in
-semantics requires updates to several completion handlers to avoid list
-corruption and memory safety issues.
-
-This patch addresses two left-over issues from the aforementioned rework:
-
-1. In mgmt_add_adv_patterns_monitor_complete(), mgmt_pending_remove()
-is replaced with mgmt_pending_free() in the success path. Since
-mgmt_pending_valid() already unlinks the command at the beginning of
-the function, calling mgmt_pending_remove() leads to a double list_del()
-and subsequent list corruption/kernel panic.
-
-2. In set_mesh_complete(), the use of mgmt_pending_foreach() in the error
-path is removed. Since the current command is already unlinked by
-mgmt_pending_valid(), this foreach loop would incorrectly target other
-pending mesh commands, potentially freeing them while they are still being
-processed concurrently (leading to UAFs). The redundant mgmt_cmd_status()
-is also simplified to use cmd-&gt;opcode directly.</p></details></td>
         <td>2026-05-05</td>
       </tr>
       <tr>
@@ -952,23 +504,23 @@ This issue affects phoenix: from 1.7.0 before 1.7.22 and 1.8.6.</p></details></t
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-36356" target="_blank" rel="noopener">CVE-2026-36356</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>9.1</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-78</td>
         <td>&nbsp;</td>
         <td>&mdash;</td>
-        <td>0.00</td>
+        <td>6.37</td>
         <td><details><summary>The GoAhead web server on MeiG Smart FORGE_SLT711 devices (firmware MDM9607.LE.1...</summary><p>The GoAhead web server on MeiG Smart FORGE_SLT711 devices (firmware MDM9607.LE.1.0-00110-STD.PROD-1) allows unauthenticated OS command injection via the /action/SetRemoteAccessCfg endpoint.</p></details></td>
         <td>2026-05-05</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-36355" target="_blank" rel="noopener">CVE-2026-36355</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>N/A</td>
+        <td>7.7</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-200</td>
         <td>&nbsp;</td>
         <td>&mdash;</td>
-        <td>0.00</td>
+        <td>5.39</td>
         <td><details><summary>The rtl8192cd Wi-Fi kernel driver in the Realtek rtl819x Jungle SDK (all known v...</summary><p>The rtl8192cd Wi-Fi kernel driver in the Realtek rtl819x Jungle SDK (all known versions through v3.4.14B) does not perform any access control checks on the write_mem (ioctl 0x89F5) and read_mem (ioctl 0x89F6) debug handlers, which are compiled into production builds via the unconditionally defined _IOCTL_DEBUG_CMD_ macro in 8192cd_cfg.h</p></details></td>
         <td>2026-05-05</td>
       </tr>
@@ -1483,6 +1035,38 @@ Users are recommended to upgrade to version 2.4.67, which fixes the issue.</p></
         <td>2026-05-05</td>
       </tr>
       <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-43870" target="_blank" rel="noopener">CVE-2026-43870</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-22</td>
+        <td>&nbsp;</td>
+        <td>0.0% <small>p0</small></td>
+        <td>0.00</td>
+        <td><details><summary>Origin Validation Error, Improper Limitation of a Pathname to a Restricted Direc...</summary><p>Origin Validation Error, Improper Limitation of a Pathname to a Restricted Directory (&#x27;Path Traversal&#x27;), Improper Neutralization of CRLF Sequences in HTTP Headers (&#x27;HTTP Request/Response Splitting&#x27;), Uncontrolled Resource Consumption vulnerability in Apache Thrift.
+
+This issue affects Apache Thrift: before 0.23.0.
+
+Users are recommended to upgrade to version 0.23.0, which fixes the issue.</p></details></td>
+        <td>2026-05-05</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-43868" target="_blank" rel="noopener">CVE-2026-43868</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-789</td>
+        <td>&nbsp;</td>
+        <td>0.0% <small>p4</small></td>
+        <td>0.00</td>
+        <td><details><summary>Memory Allocation with Excessive Size Value vulnerability in Apache Thrift.
+
+Thi...</summary><p>Memory Allocation with Excessive Size Value vulnerability in Apache Thrift.
+
+This issue affects Apache Thrift: before 0.23.0.
+
+Users are recommended to upgrade to version 0.23.0, which fixes the issue.</p></details></td>
+        <td>2026-05-05</td>
+      </tr>
+      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-3601" target="_blank" rel="noopener">CVE-2026-3601</a></td>
         <td>4.3</td>
         <td><span class="severity medium">MEDIUM</span></td>
@@ -1505,6 +1089,21 @@ Users are recommended to upgrade to version 2.4.67, which fixes the issue.</p></
         <td>2026-05-05</td>
       </tr>
       <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-43869" target="_blank" rel="noopener">CVE-2026-43869</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-297</td>
+        <td>&nbsp;</td>
+        <td>0.0% <small>p0</small></td>
+        <td>0.00</td>
+        <td><details><summary>Improper Validation of Certificate with Host Mismatch vulnerability in Apache Th...</summary><p>Improper Validation of Certificate with Host Mismatch vulnerability in Apache Thrift.
+
+This issue affects Apache Thrift: before 0.23.0.
+
+Users are recommended to upgrade to version 0.23.0, which fixes the issue.</p></details></td>
+        <td>2026-05-05</td>
+      </tr>
+      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5192" target="_blank" rel="noopener">CVE-2026-5192</a></td>
         <td>7.5</td>
         <td><span class="severity high">HIGH</span></td>
@@ -1513,6 +1112,19 @@ Users are recommended to upgrade to version 2.4.67, which fixes the issue.</p></
         <td>0.0% <small>p12</small></td>
         <td>5.25</td>
         <td><details><summary>The Forminator Forms – Contact Form, Payment Form &amp; Custom Form Builder plugin f...</summary><p>The Forminator Forms – Contact Form, Payment Form &amp; Custom Form Builder plugin for WordPress is vulnerable to Path Traversal in versions up to, and including, 1.52.1 via the &#x27;upload-1[file][file_path]&#x27; parameter. This makes it possible for unauthenticated attackers to read the contents of arbitrary files on the server, which can contain sensitive information. Successful exploitation requires a publicly accessible form with a File Upload field where Save and Continue is enabled in that form&#x27;s Behavior settings and the Save and Continue email notification is configured to attach uploaded files in Email Notifications.</p></details></td>
+        <td>2026-05-05</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40797" target="_blank" rel="noopener">CVE-2026-40797</a></td>
+        <td>9.3</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-89</td>
+        <td>&nbsp;</td>
+        <td>0.0% <small>p1</small></td>
+        <td>6.51</td>
+        <td><details><summary>Improper Neutralization of Special Elements used in an SQL Command (&#x27;SQL Injecti...</summary><p>Improper Neutralization of Special Elements used in an SQL Command (&#x27;SQL Injection&#x27;) vulnerability in Saleswonder LLC WebinarIgnition allows Blind SQL Injection.
+
+This issue affects WebinarIgnition: from n/a through 4.08.253.</p></details></td>
         <td>2026-05-05</td>
       </tr>
       <tr>
@@ -2594,6 +2206,270 @@ Users are recommended to upgrade to version 2.4.67, which fixes the issue.</p></
         <td>2026-05-04</td>
       </tr>
       <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-42812" target="_blank" rel="noopener">CVE-2026-42812</a></td>
+        <td>9.4</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-20</td>
+        <td>&nbsp;</td>
+        <td>0.1% <small>p17</small></td>
+        <td>6.58</td>
+        <td><details><summary>In Apache Iceberg, the table&#x27;s metadata files are control files: they tell reade...</summary><p>In Apache Iceberg, the table&#x27;s metadata files are control files: they tell readers
+which data files belong to the table and which table version to read.
+
+
+
+`write.metadata.path` is an optional table property that tells Polaris
+where to
+write those metadata files. 
+For a table already registered in a
+Polaris-managed
+catalog, changing only that property through an `ALTER TABLE`-style settings
+change (not a row-level `INSERT`, `SELECT`, `UPDATE`, or `DELETE`) bypasses
+the commit-time branch that is supposed to revalidate storage locations.
+
+The full persisted / credential-vending variant requires the affected
+catalog
+to have `polaris.config.allow.unstructured.table.location=true`, with
+`allowedLocations` broad enough to include the attacker-chosen target.
+
+
+`allowedLocations` is the admin-configured allowlist of storage paths that
+the
+catalog is allowed to use. Public project materials suggest that this flag
+is a
+real supported compatibility / layout mode, not just a contrived lab-only
+prerequisite.
+
+
+In that configuration, a user who can change table settings can cause Apache Polaris
+itself to write new table metadata to an attacker-chosen reachable storage
+location before the intended location-validation branch runs.
+
+If the later concrete-path validation also accepts that location, Polaris
+persists the resulting metadata path into stored table state. Later
+table-load
+and credential APIs can then return temporary cloud-storage credentials for
+the
+same location without revalidating it. In plain terms, Polaris can later
+hand
+out temporary storage access for the same attacker-chosen area.
+
+That attacker-chosen area does not need to be limited to the poisoned
+table&#x27;s
+own files. If it is a broader storage prefix, another table&#x27;s prefix, or,
+depending on configuration or provider behavior, even a bucket/container
+root,
+the resulting disclosure or corruption scope can extend to any data and
+metadata Polaris can reach there.
+
+
+
+The practical consequences are therefore similar to the staged-create
+credential-vending issue already discussed: data and metadata reachable in
+that
+storage scope can be exposed and, if write-capable credentials are later
+issued, modified, corrupted, or removed. Even before that later credential
+step, Polaris itself performs the metadata write to the unchecked location.
+
+So the core issue is not only later credential vending. 
+
+The primary defect
+is
+that Polaris skips its intended location checks before performing a
+security-
+sensitive metadata write when only `write.metadata.path` changes.
+
+
+
+When `polaris.config.allow.unstructured.table.location=false`, current code
+review suggests the later `updateTableLike(...)` validation usually rejects
+out-of-tree metadata locations before the unsafe path is persisted. That may
+reduce the persisted / credential-vending variant, but it does not prevent
+the
+underlying defect: Polaris still skips the intended pre-write location check
+when only `write.metadata.path` changes.</p></details></td>
+        <td>2026-05-04</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-42811" target="_blank" rel="noopener">CVE-2026-42811</a></td>
+        <td>9.4</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-20</td>
+        <td>&nbsp;</td>
+        <td>0.1% <small>p21</small></td>
+        <td>6.58</td>
+        <td><details><summary>In plain terms, Apache Polaris is supposed to issue short-lived GCS credentials
+...</summary><p>In plain terms, Apache Polaris is supposed to issue short-lived GCS credentials
+that
+only work for one table&#x27;s files, but a crafted namespace or table name can
+cause those credentials to work across the configured bucket instead.
+
+
+Apache Polaris builds Google Cloud Storage downscoped credentials by creating a
+Credential Access Boundary (CAB) with CEL conditions that are intended to
+restrict access to the requested table&#x27;s storage path.
+
+
+
+The relevant CEL string is built from the bucket name and the table path.
+That
+table path is derived from namespace and table identifiers. In current code,
+that path appears to be inserted into the CEL expression without escaping.
+
+
+
+As a result, a namespace or table identifier containing a single quote and
+other URI-safe CEL fragments can break out of the intended quoted string and
+change the meaning of the CEL condition.
+
+
+
+In private testing against Polaris 1.4.0 on real Google Cloud Storage, it was confirmed that Polaris accepted a crafted identifier and returned delegated
+GCS
+credentials whose CEL path restriction had effectively collapsed.
+
+
+Those delegated credentials could then:
+
+
+- list another table&#x27;s object prefix;
+
+- read another table&#x27;s metadata control file (Iceberg metadata JSON);
+
+- create and delete an object under another table&#x27;s object prefix;
+
+- and also list, read, create, and delete objects under an unrelated
+external
+prefix in the same bucket that was not part of any table path.
+
+
+
+That last point is important. The issue is not limited to &quot;another table&quot;.
+In
+the confirmed setup, once Apache Polaris returned credentials for the crafted
+table,
+the path restriction inside the configured bucket was effectively gone.
+
+The practical effect is that temporary credentials for one crafted table
+can be
+broader than the table Polaris was asked to authorize, and can become
+effectively bucket-wide within the configured bucket.
+
+
+
+The current GCS testing used a Polaris principal with broad catalog
+privileges for setup. A separate least-privilege Polaris RBAC variant
+has not yet been tested on GCS. However, the storage-credential
+broadening behavior itself has been confirmed on GCS.</p></details></td>
+        <td>2026-05-04</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-42810" target="_blank" rel="noopener">CVE-2026-42810</a></td>
+        <td>9.4</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-20</td>
+        <td>&nbsp;</td>
+        <td>0.1% <small>p18</small></td>
+        <td>6.58</td>
+        <td><details><summary>Apache Polaris accepts literal `*` characters in namespace and table names. When...</summary><p>Apache Polaris accepts literal `*` characters in namespace and table names. When it
+later builds temporary S3 access policies for delegated table access, those
+same characters appear to be reused unescaped in S3 IAM resource patterns
+and
+`s3:prefix` conditions.
+
+
+
+In S3 IAM policy matching, `*` is treated as a wildcard rather than as
+ordinary text. That means temporary credentials issued for one crafted table
+can match the storage path of a different table.
+
+
+
+In private testing against Polaris 1.4.0 using Polaris&#x27; AWS S3 temporary-
+credential path on both MinIO and real AWS S3, credentials returned for
+crafted tables such as `f*.t1`, `f*.*`, `*.*`, and `foo.*` could reach other
+tables&#x27; S3 locations.
+
+
+The confirmed behavior includes:
+
+
+- reading another table&#x27;s metadata control file ([Iceberg metadata JSON]);
+
+- listing another table&#x27;s exact S3 table prefix ([table prefix]);
+
+- and, when write delegation was returned for the crafted table, creating
+and
+deleting an object under another table&#x27;s exact S3 table prefix.
+
+
+
+A control case using ordinary different names did not allow the same
+cross-table access.
+
+
+
+A least-privilege AWS S3 variant was also confirmed in which the attacker
+principal had no Polaris permissions on the victim table and only the
+minimal permissions required to create and use a crafted wildcard table
+(namespace-scoped `TABLE_CREATE` and `TABLE_WRITE_DATA` on `*`). In that
+setup, direct Polaris access to `foo.t1` remained forbidden, but the
+attacker
+could still create and load `*.*`, receive delegated S3 credentials, and use
+those credentials to list, read, create, and delete objects under `foo.t1`.
+
+
+
+In Iceberg, the metadata JSON file is a control file: it tells readers which
+data files belong to the table, which snapshots exist, and which table
+version
+to read. So unauthorized access to it is already a meaningful
+confidentiality
+problem. The confirmed write-capable variant means the issue is not limited
+to
+disclosure.</p></details></td>
+        <td>2026-05-04</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-42809" target="_blank" rel="noopener">CVE-2026-42809</a></td>
+        <td>9.4</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-20</td>
+        <td>&nbsp;</td>
+        <td>0.1% <small>p17</small></td>
+        <td>6.58</td>
+        <td><details><summary>Apache Polaris can issue broad temporary (&quot;vended&quot;) storage credentials during
+s...</summary><p>Apache Polaris can issue broad temporary (&quot;vended&quot;) storage credentials during
+staged
+table creation before the effective table location has been validated or
+durably reserved. 
+Those temporary credentials are meant to limit the scope
+of
+accessible table data and metadata, but this scope limitation becomes
+attacker-
+directed because the attacker can choose a reachable target location.
+
+
+
+In the confirmed variant, if the caller supplies a custom `location` during
+stage create and requests credential vending, Apache Polaris uses that location to
+construct delegated storage credentials immediately. The stage-create path
+itself neither runs the normal location validation nor the overlap checks
+before those credentials are issued.
+
+
+
+Closely related to that, the staged-create flow also accepts
+`write.data.path` / `write.metadata.path` in the request properties and
+feeds
+those location overrides into the same effective table location set used for
+credential vending. Those fields are secondary to the main custom-`location`
+exploit, but they are still attacker-influenced location inputs that should
+be
+validated before any credentials are issued.</p></details></td>
+        <td>2026-05-04</td>
+      </tr>
+      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-42440" target="_blank" rel="noopener">CVE-2026-42440</a></td>
         <td>7.5</td>
         <td><span class="severity high">HIGH</span></td>
@@ -3036,6 +2912,38 @@ Mitigation: 2.x users should upgrade to 2.5.9. 3.x users should upgrade to 3.0.0
         <td>2026-05-04</td>
       </tr>
       <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40563" target="_blank" rel="noopener">CVE-2026-40563</a></td>
+        <td>7.1</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-94</td>
+        <td>&nbsp;</td>
+        <td>0.0% <small>p9</small></td>
+        <td>4.97</td>
+        <td><details><summary>Description:
+Improper Control of Generation of Code (&#x27;Code Injection&#x27;) vulnerabi...</summary><p>Description:
+Improper Control of Generation of Code (&#x27;Code Injection&#x27;) vulnerability in Apache Atlas
+Apache Atlas exposes a DSL search endpoint that accepts user-supplied query strings. Attacker can alter Gremlin traversal logic within grammar-allowed characters to access unintended data
+
+
+
+
+Affect Version:
+This issue affects Apache Atlas: from 0.8 through 2.4.0.
+
+
+
+For the affect version &gt;= 2.0, vulnerability is only when Atlas is deployed with below non-default configuration.
+
+
+atlas.dsl.executor.traversal=false
+
+
+
+Mitigation:
+Users are recommended to upgrade to version 2.5.0, which fixes the issue.</p></details></td>
+        <td>2026-05-04</td>
+      </tr>
+      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-37458" target="_blank" rel="noopener">CVE-2026-37458</a></td>
         <td>6.5</td>
         <td><span class="severity medium">MEDIUM</span></td>
@@ -3088,6 +2996,18 @@ Mitigation: 2.x users should upgrade to 2.5.9. 3.x users should upgrade to 3.0.0
         <td>0.1% <small>p27</small></td>
         <td>4.55</td>
         <td><details><summary>An issue in Assimp v.6.0.2 allows a remote attacker to cause a denial of service...</summary><p>An issue in Assimp v.6.0.2 allows a remote attacker to cause a denial of service via the FBXMeshGeometry.cpp, MeshGeometry::MeshGeometry()</p></details></td>
+        <td>2026-05-04</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-13605" target="_blank" rel="noopener">CVE-2025-13605</a></td>
+        <td>9.3</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-78</td>
+        <td>&nbsp;</td>
+        <td>0.0% <small>p6</small></td>
+        <td>6.51</td>
+        <td><details><summary>3onedata modbus gateway device model GW1101-1D(RS-485)-TB-P (hardware version V2...</summary><p>3onedata modbus gateway device model GW1101-1D(RS-485)-TB-P (hardware version V2.2.0) allows authenticated users to execute arbitrary shell commands in the context of the root user by providing payload in the &quot;IP address&quot; field of the diagnosis test tools.
+This issue has been resolved in firmware version 3.0.59B2024080600R4353</p></details></td>
         <td>2026-05-04</td>
       </tr>
       <tr>
@@ -3168,6 +3088,19 @@ Mitigation: 2.x users should upgrade to 2.5.9. 3.x users should upgrade to 3.0.0
         <td>2026-05-04</td>
       </tr>
       <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-3120" target="_blank" rel="noopener">CVE-2026-3120</a></td>
+        <td>7.2</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-94</td>
+        <td>&nbsp;</td>
+        <td>0.1% <small>p15</small></td>
+        <td>5.04</td>
+        <td><details><summary>Improper Control of Generation of Code (&#x27;Code Injection&#x27;) vulnerability in Profe...</summary><p>Improper Control of Generation of Code (&#x27;Code Injection&#x27;) vulnerability in Profelis Information and Consulting Trade and Industry Limited Company SambaBox allows OS Command Injection.
+
+This issue affects SambaBox: from 5.1 before 5.3.</p></details></td>
+        <td>2026-05-04</td>
+      </tr>
+      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-7750" target="_blank" rel="noopener">CVE-2026-7750</a></td>
         <td>7.4</td>
         <td><span class="severity high">HIGH</span></td>
@@ -3242,6 +3175,19 @@ Mitigation: 2.x users should upgrade to 2.5.9. 3.x users should upgrade to 3.0.0
         <td>0.0% <small>p7</small></td>
         <td>1.47</td>
         <td><details><summary>A vulnerability was determined in CodeAstro Online Classroom 1.0. This impacts a...</summary><p>A vulnerability was determined in CodeAstro Online Classroom 1.0. This impacts an unknown function of the file /OnlineClassroom/facultydetails. This manipulation of the argument deleteid causes sql injection. It is possible to initiate the attack remotely. The exploit has been publicly disclosed and may be utilized.</p></details></td>
+        <td>2026-05-04</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-14320" target="_blank" rel="noopener">CVE-2025-14320</a></td>
+        <td>9.8</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-79</td>
+        <td>&nbsp;</td>
+        <td>0.0% <small>p14</small></td>
+        <td>6.86</td>
+        <td><details><summary>Improper neutralization of input during web page generation (&#x27;cross-site scripti...</summary><p>Improper neutralization of input during web page generation (&#x27;cross-site scripting&#x27;) vulnerability in Tegsoft Management and Information Services Trade Limited Company Online Support Application allows Reflected XSS.
+
+This issue affects Online Support Application: from V3 through 31122025.</p></details></td>
         <td>2026-05-04</td>
       </tr>
       <tr>
@@ -4268,6 +4214,21 @@ Mitigation: 2.x users should upgrade to 2.5.9. 3.x users should upgrade to 3.0.0
         <td>2026-05-03</td>
       </tr>
       <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40561" target="_blank" rel="noopener">CVE-2026-40561</a></td>
+        <td>5.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-444</td>
+        <td>&nbsp;</td>
+        <td>0.0% <small>p1</small></td>
+        <td>3.71</td>
+        <td><details><summary>Starlet versions through 0.31 for Perl allows HTTP Request Smuggling via Imprope...</summary><p>Starlet versions through 0.31 for Perl allows HTTP Request Smuggling via Improper Header Precedence.
+
+Starlet incorrectly prioritizes &quot;Content-Length&quot; over &quot;Transfer-Encoding: chunked&quot; when both headers are present in an HTTP request. Per RFC 7230 3.3.3, Transfer-Encoding must take precedence.
+
+An attacker could exploit this to smuggle malicious HTTP requests via a front-end reverse proxy.</p></details></td>
+        <td>2026-05-03</td>
+      </tr>
+      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-7672" target="_blank" rel="noopener">CVE-2026-7672</a></td>
         <td>2.1</td>
         <td><span class="severity low">LOW</span></td>
@@ -5167,6 +5128,93 @@ Mitigation: 2.x users should upgrade to 2.5.9. 3.x users should upgrade to 3.0.0
         <td>1.3% <small>p79</small></td>
         <td>3.89</td>
         <td><details><summary>A security vulnerability has been detected in Sunwood-ai-labs command-executor-m...</summary><p>A security vulnerability has been detected in Sunwood-ai-labs command-executor-mcp-server up to 0.1.0. This impacts the function execute_command of the file src/index.ts of the component MCP Interface. The manipulation leads to os command injection. Remote exploitation of the attack is possible. The exploit has been disclosed publicly and may be used. The project was informed of the problem early through an issue report but has not responded yet.</p></details></td>
+        <td>2026-05-01</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-42788" target="_blank" rel="noopener">CVE-2026-42788</a></td>
+        <td>6.9</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-770</td>
+        <td>&nbsp;</td>
+        <td>0.0% <small>p4</small></td>
+        <td>4.83</td>
+        <td><details><summary>Allocation of Resources Without Limits or Throttling vulnerability in mtrudel ba...</summary><p>Allocation of Resources Without Limits or Throttling vulnerability in mtrudel bandit allows unauthenticated memory exhaustion via oversized HTTP/2 frames.
+
+&#x27;Elixir.Bandit.HTTP2.Frame&#x27;:deserialize/2 in lib/bandit/http2/frame.ex checks the SETTINGS_MAX_FRAME_SIZE limit only after pattern-matching payload::binary-size(length), which requires the entire frame body to be present in memory before either the accept or reject clause can fire. A peer that announces a frame length up to the 24-bit maximum (~16 MiB) causes the server to buffer that entire body before the size guard is evaluated, regardless of the max_frame_size negotiated during the HTTP/2 handshake (default 16 KiB per RFC 9113).
+
+An unauthenticated attacker holding many concurrent connections can force the server to buffer far more memory than the negotiated frame size limit should permit, leading to memory pressure and potential denial of service.
+
+This issue affects bandit: from 0.3.6 before 1.11.0.</p></details></td>
+        <td>2026-05-01</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-42786" target="_blank" rel="noopener">CVE-2026-42786</a></td>
+        <td>8.7</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-770</td>
+        <td>&nbsp;</td>
+        <td>0.1% <small>p17</small></td>
+        <td>6.09</td>
+        <td><details><summary>Allocation of Resources Without Limits or Throttling vulnerability in mtrudel ba...</summary><p>Allocation of Resources Without Limits or Throttling vulnerability in mtrudel bandit allows unauthenticated remote denial of service via memory exhaustion.
+
+The fragment reassembly path in &#x27;Elixir.Bandit.WebSocket.Connection&#x27;:handle_frame/3 in lib/bandit/websocket/connection.ex appends every incoming Continuation{fin: false} frame&#x27;s payload to a per-connection iolist with no cumulative size cap. The existing max_frame_size option only bounds individual frames; a peer that streams an unbounded number of continuation frames without ever setting fin=1 grows BEAM heap linearly until the OS or a supervisor kills the process.
+
+Because the accumulation happens before WebSock.handle_in/2 is called, the application has no opportunity to interpose a size check. Phoenix Channels and LiveView both run over WebSock on Bandit, so a stock Phoenix application exposes this surface as soon as it accepts socket connections.
+
+This issue affects bandit: from 0.5.0 before 1.11.0.</p></details></td>
+        <td>2026-05-01</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39807" target="_blank" rel="noopener">CVE-2026-39807</a></td>
+        <td>6.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-807</td>
+        <td>&nbsp;</td>
+        <td>0.0% <small>p4</small></td>
+        <td>4.41</td>
+        <td><details><summary>Reliance on Untrusted Inputs in a Security Decision vulnerability in mtrudel ban...</summary><p>Reliance on Untrusted Inputs in a Security Decision vulnerability in mtrudel bandit allows unauthenticated transport-state spoofing on plaintext HTTP connections.
+
+&#x27;Elixir.Bandit.Pipeline&#x27;:determine_scheme/2 in lib/bandit/pipeline.ex returns the client-supplied URI scheme verbatim, ignoring the transport&#x27;s secure? flag. HTTP/1.1 absolute-form request targets (e.g. GET https://victim/path HTTP/1.1) and the HTTP/2 :scheme pseudo-header are both attacker-controlled strings that flow through this function. Over a plaintext TCP connection, a client can declare https and Bandit will set conn.scheme = :https even though no TLS was negotiated.
+
+Downstream Plug consumers that branch on conn.scheme are silently misled: Plug.SSL&#x27;s already-secure branch skips its HTTP→HTTPS redirect, cookies emitted with secure: true are sent over plaintext, audit logs record requests as having arrived over HTTPS, and CSRF/SameSite gating may make incorrect decisions.
+
+This issue affects bandit: from 1.0.0 before 1.11.0.</p></details></td>
+        <td>2026-05-01</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39805" target="_blank" rel="noopener">CVE-2026-39805</a></td>
+        <td>6.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-444</td>
+        <td>&nbsp;</td>
+        <td>0.0% <small>p4</small></td>
+        <td>4.41</td>
+        <td><details><summary>Inconsistent Interpretation of HTTP Requests vulnerability in mtrudel bandit all...</summary><p>Inconsistent Interpretation of HTTP Requests vulnerability in mtrudel bandit allows HTTP request smuggling via duplicate Content-Length headers.
+
+&#x27;Elixir.Bandit.Headers&#x27;:get_content_length/1 in lib/bandit/headers.ex uses List.keyfind/3, which returns only the first matching header. When a request contains two Content-Length headers with different values, Bandit silently accepts it, uses the first value to read the body, and dispatches the remaining bytes as a second pipelined request on the same keep-alive connection. RFC 9112 §6.3 requires recipients to treat this as an unrecoverable framing error.
+
+When Bandit sits behind a proxy that picks the last Content-Length value and forwards the request rather than rejecting it, an unauthenticated attacker can smuggle requests past edge WAF rules, path-based ACLs, rate limiting, and audit logging.
+
+This issue affects bandit: before 1.11.0.</p></details></td>
+        <td>2026-05-01</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39804" target="_blank" rel="noopener">CVE-2026-39804</a></td>
+        <td>8.2</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-770</td>
+        <td>&nbsp;</td>
+        <td>0.0% <small>p11</small></td>
+        <td>5.74</td>
+        <td><details><summary>Allocation of Resources Without Limits or Throttling vulnerability in mtrudel ba...</summary><p>Allocation of Resources Without Limits or Throttling vulnerability in mtrudel bandit allows unauthenticated remote denial of service via memory exhaustion when WebSocket permessage-deflate compression is enabled.
+
+&#x27;Elixir.Bandit.WebSocket.PerMessageDeflate&#x27;:inflate/2 in lib/bandit/websocket/permessage_deflate.ex calls :zlib.inflate/2 with no output-size cap, then materializes the entire decompressed payload as a single binary via IO.iodata_to_binary/1. The websocket_options.max_frame_size option only bounds the on-the-wire (compressed) frame size, not the decompressed output. A high-ratio compressed frame (e.g. uniform data at ~1024:1 ratio) can stay well under any wire-size limit while forcing GiB-scale heap allocations in the connection process before any application code runs.
+
+An unauthenticated attacker who can open a WebSocket connection can send a single such frame to exhaust the BEAM node&#x27;s memory and trigger an OOM kill.
+
+This vulnerability requires both Bandit&#x27;s server-level websocket_options.compress and the per-upgrade compress: true option passed to WebSockAdapter.upgrade/4 to be enabled. Stock Phoenix and LiveView applications are not affected as they default to compress: false.
+
+This issue affects bandit: from 0.5.9 before 1.11.0.</p></details></td>
         <td>2026-05-01</td>
       </tr>
       <tr>
@@ -6274,7 +6322,7 @@ Mitigation: 2.x users should upgrade to 2.5.9. 3.x users should upgrade to 3.0.0
       </div>
     </section>
     <section>
-      <h2>Previous Month — April 2026 <span class="count">(5030)</span></h2>
+      <h2>Previous Month — April 2026 <span class="count">(5033)</span></h2>
       <div class="table-wrapper">
         <table>
           <thead>
@@ -11627,6 +11675,19 @@ Mitigation: 2.x users should upgrade to 2.5.9. 3.x users should upgrade to 3.0.0
         <td>2026-04-27</td>
       </tr>
       <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5394" target="_blank" rel="noopener">CVE-2026-5394</a></td>
+        <td>7.0</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-89</td>
+        <td>&nbsp;</td>
+        <td>0.0% <small>p1</small></td>
+        <td>4.90</td>
+        <td><details><summary>An authenticated administrative user who can import or save DataObject class def...</summary><p>An authenticated administrative user who can import or save DataObject class definitions can inject attacker-controlled composite index metadata and trigger unintended SQL execution in the backend.
+
+This issue affects pimcore: 12.3.3.</p></details></td>
+        <td>2026-04-27</td>
+      </tr>
+      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-7150" target="_blank" rel="noopener">CVE-2026-7150</a></td>
         <td>2.1</td>
         <td><span class="severity low">LOW</span></td>
@@ -12229,6 +12290,33 @@ Mitigation: 2.x users should upgrade to 2.5.9. 3.x users should upgrade to 3.0.0
         <td>0.0% <small>p1</small></td>
         <td>5.11</td>
         <td><details><summary>Insecure preserved inherited permissions vulnerability in Cerberus FTP Server on...</summary><p>Insecure preserved inherited permissions vulnerability in Cerberus FTP Server on Windows allows Privilege Escalation.This issue has been resolved in Cerberus FTP Server: 2026.1</p></details></td>
+        <td>2026-04-27</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40557" target="_blank" rel="noopener">CVE-2026-40557</a></td>
+        <td>4.8</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-295</td>
+        <td>&nbsp;</td>
+        <td>0.0% <small>p5</small></td>
+        <td>3.36</td>
+        <td><details><summary>Improper Certificate Validation via Global SSL Context Downgrade in Apache Storm...</summary><p>Improper Certificate Validation via Global SSL Context Downgrade in Apache Storm Prometheus Reporter
+
+
+Versions Affected: from 2.6.3 to 2.8.6
+
+
+Description: 
+
+In production deployments where an administrator enables storm.daemon.metrics.reporter.plugin.prometheus.skip_tls_validation (by default it is disabled) intending to affect only the Prometheus reporter, the undocumented global side effect creates an attack surface across every TLS-protected communication channel in the Storm daemon.
+
+
+The PrometheusPreparableReporter class implements an INSECURE_TRUST_MANAGER that accepts all SSL certificates without validation, with empty checkClientTrusted and checkServerTrusted methods. Most critically, when the storm.daemon.metrics.reporter.plugin.prometheus.skip_tls_validation configuration option is enabled (default = disabled) for HTTPS Prometheus PushGateway connections, the INSECURE_CONNECTION_FACTORY calls SSLContext.setDefault(sslContext), which globally replaces the JVM&#x27;s default SSL context rather than applying the insecure context only to the Prometheus connection. This payload flows through storm.yaml configuration → PrometheusPreparableReporter.prepare() → INSECURE_CONNECTION_FACTORY → SSLContext.setDefault(), resulting in a JVM-wide TLS security downgrade. All subsequent HTTPS connections in the process - including ZooKeeper, Thrift, Netty, and UI connections - silently trust all certificates, including self-signed, expired, and attacker-generated ones, enabling man-in-the-middle interception of cluster state, topology submissions, tuple data, and administrative credentials.
+
+
+
+
+Mitigation: 2.x users should upgrade to 2.8.7 if the Prometheus Metrics Reporter is used. Prometheus Metrics Reporter Users who cannot upgrade immediately should remove the storm.daemon.metrics.reporter.plugin.prometheus.skip_tls_validation: true setting from their storm.yaml configuration and instead configure a proper truststore containing the PushGateway&#x27;s certificate.</p></details></td>
         <td>2026-04-27</td>
       </tr>
       <tr>
@@ -14319,6 +14407,18 @@ Mitigation: 2.x users should upgrade to 2.5.9. 3.x users should upgrade to 3.0.0
         <td>0.0% <small>p5</small></td>
         <td>5.88</td>
         <td><details><summary>OpenTelemetry eBPF Instrumentation provides eBPF instrumentation based on the Op...</summary><p>OpenTelemetry eBPF Instrumentation provides eBPF instrumentation based on the OpenTelemetry standard. From 0.4.0 to before 0.8.0, a flaw in the Java agent injection path allows a local attacker controlling a Java workload to overwrite arbitrary host files when Java injection is enabled and OBI is running with elevated privileges. The injector trusted TMPDIR from the target process and used unsafe file creation semantics, enabling both filesystem boundary escape and symlink-based file clobbering. This vulnerability is fixed in 0.8.0.</p></details></td>
+        <td>2026-04-24</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-41429" target="_blank" rel="noopener">CVE-2026-41429</a></td>
+        <td>8.8</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-121</td>
+        <td>&nbsp;</td>
+        <td>0.0% <small>p5</small></td>
+        <td>6.16</td>
+        <td><details><summary>arduino-esp32 is an Arduino core for the ESP32, ESP32-S2, ESP32-S3, ESP32-C3, ES...</summary><p>arduino-esp32 is an Arduino core for the ESP32, ESP32-S2, ESP32-S3, ESP32-C3, ESP32-C6 and ESP32-H2 microcontrollers. Prior to 3.3.8, there is a remotely reachable memory corruption issue in the NBNS packet handling path. When NetBIOS is enabled by calling NBNS.begin(...), the device listens on UDP port 137 and processes untrusted NBNS requests from the local network.
+The request parser trusts the attacker-controlled name_len field without enforcing a bound consistent with the fixed-size destination buffers used later in the flow. This vulnerability is fixed in 3.3.8.</p></details></td>
         <td>2026-04-24</td>
       </tr>
       <tr>
