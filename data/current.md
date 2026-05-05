@@ -1,9 +1,21 @@
 # CVEs — May 2026
 
-_420 vulnerabilities_
+_432 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
+| [CVE-2026-43870](https://nvd.nist.gov/vuln/detail/CVE-2026-43870) | 0.0 | NONE | CWE-22 | No | — | 0.00 | 2026-05-05 | Origin Validation Error, Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal'), Improper Neutra... |
+| [CVE-2026-43868](https://nvd.nist.gov/vuln/detail/CVE-2026-43868) | 0.0 | NONE | CWE-789 | No | — | 0.00 | 2026-05-05 | Memory Allocation with Excessive Size Value vulnerability in Apache Thrift.  This issue affects Apache Thrift: before 0.... |
+| [CVE-2026-3601](https://nvd.nist.gov/vuln/detail/CVE-2026-3601) | 4.3 | MEDIUM | CWE-862 | No | — | 3.01 | 2026-05-05 | The User Registration & Membership plugin for WordPress is vulnerable to unauthorized modification of data due to a miss... |
+| [CVE-2026-3359](https://nvd.nist.gov/vuln/detail/CVE-2026-3359) | 7.5 | HIGH | CWE-89 | No | — | 5.25 | 2026-05-05 | The Form Maker by 10Web – Mobile-Friendly Drag & Drop Contact Form Builder plugin for WordPress is vulnerable to SQL Inj... |
+| [CVE-2026-43869](https://nvd.nist.gov/vuln/detail/CVE-2026-43869) | 0.0 | NONE | CWE-297 | No | — | 0.00 | 2026-05-05 | Improper Validation of Certificate with Host Mismatch vulnerability in Apache Thrift.  This issue affects Apache Thrift:... |
+| [CVE-2026-7824](https://nvd.nist.gov/vuln/detail/CVE-2026-7824) | 5.9 | MEDIUM | CWE-532 | No | — | 4.13 | 2026-05-05 | An issue was discovered in the PaperCut Hive Ricoh embedded application. When the "Deep Logging" (diagnostic) mode is en... |
+| [CVE-2026-6418](https://nvd.nist.gov/vuln/detail/CVE-2026-6418) | 4.6 | MEDIUM | CWE-36 | No | — | 3.22 | 2026-05-05 | An issue was discovered in the Shared Account Synchronization component of PaperCut MF (version 25.0.4). The application... |
+| [CVE-2026-6180](https://nvd.nist.gov/vuln/detail/CVE-2026-6180) | 4.1 | MEDIUM | CWE-20 | No | — | 2.87 | 2026-05-05 | A race condition exists in PaperCut MF when processing badge-swipe data from certain HP multifunction devices. Under spe... |
+| [CVE-2026-5192](https://nvd.nist.gov/vuln/detail/CVE-2026-5192) | 7.5 | HIGH | CWE-22 | No | — | 5.25 | 2026-05-05 | The Forminator Forms – Contact Form, Payment Form & Custom Form Builder plugin for WordPress is vulnerable to Path Trave... |
+| [CVE-2026-40797](https://nvd.nist.gov/vuln/detail/CVE-2026-40797) | 9.3 | CRITICAL | CWE-89 | No | — | 6.51 | 2026-05-05 | Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in Saleswonder LLC We... |
+| [CVE-2026-3454](https://nvd.nist.gov/vuln/detail/CVE-2026-3454) | 6.5 | MEDIUM | CWE-639 | No | — | 4.55 | 2026-05-05 | The GenerateBlocks plugin for WordPress is vulnerable to Insecure Direct Object Reference in all versions up to, and inc... |
+| [CVE-2026-2729](https://nvd.nist.gov/vuln/detail/CVE-2026-2729) | 5.3 | MEDIUM | CWE-639 | No | — | 3.71 | 2026-05-05 | The Forminator plugin for WordPress is vulnerable to authorization bypass in all versions up to, and including, 1.52.0.... |
 | [CVE-2026-7823](https://nvd.nist.gov/vuln/detail/CVE-2026-7823) | 8.9 | HIGH | CWE-77 | No | — | 6.23 | 2026-05-05 | A security flaw has been discovered in Totolink A8000RU 7.1cu.643_b20200521. Affected is the function setAppFilterCfg of... |
 | [CVE-2026-7822](https://nvd.nist.gov/vuln/detail/CVE-2026-7822) | 2.1 | LOW | CWE-74 | No | — | 1.47 | 2026-05-05 | A vulnerability was identified in itsourcecode Courier Management System 1.0. This impacts an unknown function of the fi... |
 | [CVE-2026-7812](https://nvd.nist.gov/vuln/detail/CVE-2026-7812) | 5.5 | MEDIUM | CWE-74 | No | — | 3.85 | 2026-05-05 | A vulnerability was found in 54yyyu code-mcp up to 4cfc4643541a110c906d93635b391bf7e357f4a8. The impacted element is the... |
