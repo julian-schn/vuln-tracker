@@ -1,6 +1,6 @@
 # CVEs — April 2026
 
-_5031 vulnerabilities_
+_5034 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
@@ -1144,7 +1144,6 @@ _5031 vulnerabilities_
 | [CVE-2026-6355](https://nvd.nist.gov/vuln/detail/CVE-2026-6355) | 6.5 | MEDIUM | N/A | No | 0.0% | 4.55 | 2026-04-22 | A vulnerability in the web application allows unauthorized users to access and manipulate sensitive data across differen... |
 | [CVE-2026-5750](https://nvd.nist.gov/vuln/detail/CVE-2026-5750) | 7.6 | HIGH | CWE-639 | No | 0.0% | 5.32 | 2026-04-22 | An insecure direct object reference (IDOR) vulnerability in the Fullstep V5 registration process allows authenticated us... |
 | [CVE-2026-5749](https://nvd.nist.gov/vuln/detail/CVE-2026-5749) | 8.7 | HIGH | CWE-306 | No | 0.1% | 6.09 | 2026-04-22 | Inadequate access control in the registration process in Fullstep V5, which could allow unauthenticated users to obtain... |
-| [CVE-2026-41651](https://nvd.nist.gov/vuln/detail/CVE-2026-41651) | 8.8 | HIGH | CWE-367 | No | 0.2% | 6.17 | 2026-04-22 | PackageKit is a a D-Bus abstraction layer that allows the user to manage packages in a secure way using a cross-distro,... |
 | [CVE-2026-33611](https://nvd.nist.gov/vuln/detail/CVE-2026-33611) | 6.5 | MEDIUM | CWE-190 | No | 0.0% | 4.55 | 2026-04-22 | An operator allowed to use the REST API can cause the Authoritative server to produce invalid HTTPS or SVCB record data,... |
 | [CVE-2026-33610](https://nvd.nist.gov/vuln/detail/CVE-2026-33610) | 5.9 | MEDIUM | CWE-400 | No | 0.0% | 4.13 | 2026-04-22 | A rogue primary server may cause file descriptor exhaustion and eventually a denial of service, when a PowerDNS secondar... |
 | [CVE-2026-33609](https://nvd.nist.gov/vuln/detail/CVE-2026-33609) | 5.3 | MEDIUM | CWE-90 | No | 0.0% | 3.71 | 2026-04-22 | Incomplete escaping of LDAP queries when running with 8bit-dns enabled allows users to perform queries of internal domai... |
@@ -1158,6 +1157,10 @@ _5031 vulnerabilities_
 | [CVE-2026-33594](https://nvd.nist.gov/vuln/detail/CVE-2026-33594) | 5.3 | MEDIUM | CWE-770 | No | 0.0% | 3.71 | 2026-04-22 | A client can trigger excessive memory allocation by generating a lot of queries that are routed to an overloaded DoH bac... |
 | [CVE-2026-33593](https://nvd.nist.gov/vuln/detail/CVE-2026-33593) | 7.5 | HIGH | CWE-369 | No | 0.0% | 5.25 | 2026-04-22 | A client can trigger a divide by zero error leading to crash by sending a crafted DNSCrypt query. |
 | [CVE-2026-33254](https://nvd.nist.gov/vuln/detail/CVE-2026-33254) | 5.3 | MEDIUM | CWE-770 | No | 0.0% | 3.71 | 2026-04-22 | An attacker can create a large number of concurrent DoQ or DoH3 connections, causing unlimited memory allocation in DNSd... |
+| [CVE-2026-31458](https://nvd.nist.gov/vuln/detail/CVE-2026-31458) | 5.5 | MEDIUM | CWE-476 | No | 0.0% | 3.85 | 2026-04-22 | In the Linux kernel, the following vulnerability has been resolved:  mm/damon/sysfs: check contexts->nr before accessing... |
+| [CVE-2026-31457](https://nvd.nist.gov/vuln/detail/CVE-2026-31457) | 5.5 | MEDIUM | CWE-476 | No | 0.0% | 3.85 | 2026-04-22 | In the Linux kernel, the following vulnerability has been resolved:  mm/damon/sysfs: check contexts->nr in repeat_call_f... |
+| [CVE-2026-31456](https://nvd.nist.gov/vuln/detail/CVE-2026-31456) | 4.7 | MEDIUM | CWE-362 | No | 0.0% | 3.29 | 2026-04-22 | In the Linux kernel, the following vulnerability has been resolved:  mm/pagewalk: fix race between concurrent split and... |
+| [CVE-2026-31455](https://nvd.nist.gov/vuln/detail/CVE-2026-31455) | 7.8 | HIGH | CWE-416 | No | 0.0% | 5.46 | 2026-04-22 | In the Linux kernel, the following vulnerability has been resolved:  xfs: stop reclaim before pushing AIL during unmount... |
 | [CVE-2026-31192](https://nvd.nist.gov/vuln/detail/CVE-2026-31192) | 6.5 | MEDIUM | CWE-20 | No | 0.0% | 4.55 | 2026-04-22 | Insufficient validation of Chrome extension identifiers in Raindrop.io Bookmark Manager Web App 5.6.76.0 allows attacker... |
 | [CVE-2026-0539](https://nvd.nist.gov/vuln/detail/CVE-2026-0539) | 8.5 | HIGH | CWE-276 | No | 0.0% | 5.95 | 2026-04-22 | Incorrect Default Permissions in pcvisit service binary on Windows allows a low-privileged local attacker to escalate th... |
 | [CVE-2014-125120](https://nvd.nist.gov/vuln/detail/CVE-2014-125120) | 0.0 | NONE | N/A | No | — | 0.00 | 2026-04-22 | Rejected reason: This CVE has the been REJECTED and will not be published by the CNA. |

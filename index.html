@@ -11,7 +11,7 @@
     <header>
       <h1>vuln-tracker</h1>
       <p class="subtitle">CVEs from the National Vulnerability Database — current and previous month</p>
-      <p class="last-updated">Last updated: 2026-05-05 21:07 UTC</p>
+      <p class="last-updated">Last updated: 2026-05-05 22:59 UTC</p>
     </header>
     <nav>
       <a href="top50.html">&#9733; Top 50</a>
@@ -25,7 +25,7 @@
     </nav>
     <main>
     <section>
-      <h2>Current Month — May 2026 <span class="count">(542)</span></h2>
+      <h2>Current Month — May 2026 <span class="count">(543)</span></h2>
       <div class="table-wrapper">
         <table>
           <thead>
@@ -42,6 +42,159 @@
             </tr>
           </thead>
           <tbody>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40934" target="_blank" rel="noopener">CVE-2026-40934</a></td>
+        <td>7.6</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-613</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.32</td>
+        <td><details><summary>Jupyter Server is the backend for Jupyter web applications. In versions 2.17.0 a...</summary><p>Jupyter Server is the backend for Jupyter web applications. In versions 2.17.0 and earlier, the secret used to sign authentication cookies is persisted to a static file at ~/.local/share/jupyter/runtime/jupyter_cookie_secret and is never rotated when a user changes their password. After a password reset and server restart, any previously issued authentication cookie remains cryptographically valid because the signing key has not changed. An attacker who has captured a session cookie through any means retains full authenticated access to the server regardless of subsequent password changes. This affects deployments using password-based authentication, particularly shared or public-facing servers where credential rotation is expected to revoke existing sessions. This issue has been fixed in version 2.18.0.</p></details></td>
+        <td>2026-05-05</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40110" target="_blank" rel="noopener">CVE-2026-40110</a></td>
+        <td>7.6</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-777</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.32</td>
+        <td><details><summary>Jupyter Server is the backend for Jupyter web applications. In versions 2.17.0 a...</summary><p>Jupyter Server is the backend for Jupyter web applications. In versions 2.17.0 and earlier, the Origin header validation uses Python&#x27;s re.match() to check incoming origins against the allow_origin_pat configuration value. Because re.match() only anchors at the start of the string and does not require a full match, a pattern intended to match only a trusted domain (e.g., trusted.example.com) will also match any origin that begins with that domain followed by additional characters (e.g., trusted.example.com.evil.com). An attacker who controls such a domain can bypass the CORS origin restriction and make cross-origin requests to the Jupyter Server API from an untrusted site. This issue has been fixed in version 2.18.0.</p></details></td>
+        <td>2026-05-05</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40075" target="_blank" rel="noopener">CVE-2026-40075</a></td>
+        <td>8.2</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-22</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.74</td>
+        <td><details><summary>OpenMRS Core is an open source electronic medical record system platform. In ver...</summary><p>OpenMRS Core is an open source electronic medical record system platform. In versions 2.7.8 and earlier and versions 2.8.0 through 2.8.5, the `/openmrs/moduleResources/{moduleid}` endpoint is vulnerable to a path traversal attack. The ModuleResourcesServlet constructs a filesystem path from user-controlled input without performing path boundary validation — the getFile() method concatenates the user-supplied path into an absolute filesystem path without calling normalize() or checking that the result stays within the allowed module resources directory. Because this endpoint serves static resources required for rendering the login page, it is not protected by authentication filters, allowing unauthenticated exploitation.
+
+An attacker can traverse directories and read arbitrary files from the server filesystem, including /etc/passwd and application configuration files containing database credentials. Successful exploitation requires the target deployment to run on Apache Tomcat versions prior to 8.5.31, where the ..; path parameter bypass is not mitigated by the container. Deployments on Tomcat 8.5.31 or later and Tomcat 9.0.10 or later are protected at the container level, though the underlying code defect remains. This issue has been fixed in versions after 2.7.8 (within the 2.7.x branch) and in version 2.8.6 and later.</p></details></td>
+        <td>2026-05-05</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-28780" target="_blank" rel="noopener">CVE-2026-28780</a></td>
+        <td>0.0</td>
+        <td><span class="severity none">NONE</span></td>
+        <td>CWE-122</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>0.00</td>
+        <td><details><summary>Heap-based Buffer Overflow vulnerability in mod_proxy_ajp of Apache HTTP Server....</summary><p>Heap-based Buffer Overflow vulnerability in mod_proxy_ajp of Apache HTTP Server.
+If mod_proxy_ajp connects to a malicious AJP server this AJP server can send a malicious AJP message back to mod_proxy_ajp and cause it to write 4 attacker controlled bytes after the end of a heap based buffer.
+
+This issue affects Apache HTTP Server: through 2.4.66.
+
+Users are recommended to upgrade to version 2.4.67, which fixes the issue.</p></details></td>
+        <td>2026-05-05</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-41950" target="_blank" rel="noopener">CVE-2026-41950</a></td>
+        <td>6.0</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-639</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.20</td>
+        <td><details><summary>Dify before version 1.14.0 contains an authorization bypass vulnerability that a...</summary><p>Dify before version 1.14.0 contains an authorization bypass vulnerability that allows authenticated users to read the full contents of files uploaded by other users within the same tenant by supplying an arbitrary file UUID in the files array of a chat-messages request. Attackers can exploit insufficient permission verification in the chat-messages endpoints to access files without ownership validation, bypassing workspace separation and signed URL protections to retrieve sensitive file contents through workflow processing.</p></details></td>
+        <td>2026-05-05</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40068" target="_blank" rel="noopener">CVE-2026-40068</a></td>
+        <td>7.7</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-20</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.39</td>
+        <td><details><summary>In versions 2.1.63 through 2.1.83 of Claude Code, the folder trust determination...</summary><p>In versions 2.1.63 through 2.1.83 of Claude Code, the folder trust determination logic used the git worktree commondir file without validating its contents. An attacker could craft a malicious repository with a commondir file pointing to a path the victim had previously trusted, causing Claude Code to bypass its trust confirmation dialog and immediately execute hooks defined in `.claude/settings.json`. Exploitation requires the victim to clone the malicious repository and run Claude Code within it, and the attacker must know or guess a path the victim had already trusted. This issue has been fixed in version 2.1.84.</p></details></td>
+        <td>2026-05-05</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39852" target="_blank" rel="noopener">CVE-2026-39852</a></td>
+        <td>8.8</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-863</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.16</td>
+        <td><details><summary>Quarkus is a Java framework for building cloud-native applications. In versions ...</summary><p>Quarkus is a Java framework for building cloud-native applications. In versions prior to 3.20.6.1, 3.27.3.1, 3.33.1.1, 3.35.1.1, 3.34.7, and 3.35.2, a path normalization inconsistency between the security layer and the routing layer allows unauthenticated or lower-privileged users to bypass HTTP path-based authorization policies. Quarkus&#x27;s security layer performs authorization checks on the raw URL path which preserves matrix parameters (semicolons), while RESTEasy Reactive&#x27;s routing layer strips matrix parameters before matching endpoints. An attacker can append a semicolon and arbitrary text to a request URL (e.g., /api/admin;anything) to bypass policies protecting /api/admin while still routing to the protected endpoint. This issue has been fixed in versions 3.20.6.1, 3.27.3.1, 3.33.1.1, 3.35.1.1, 3.34.7, and 3.35.2.</p></details></td>
+        <td>2026-05-05</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39849" target="_blank" rel="noopener">CVE-2026-39849</a></td>
+        <td>8.7</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-93</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>6.09</td>
+        <td><details><summary>Pi-hole FTL is the core engine of the Pi-hole network-level advertisement and tr...</summary><p>Pi-hole FTL is the core engine of the Pi-hole network-level advertisement and tracker blocker. In versions before 6.6.1, the `dns.interface` configuration field in Pi-hole FTL accepted newline characters without validation, allowing an attacker to inject arbitrary directives into the generated dnsmasq configuration file. On installations with no admin password set (the default for many deployments), the configuration API is fully accessible without credentials, allowing a network-adjacent attacker to inject the payload, enable the built-in DHCP server, and achieve arbitrary command execution on the host the next time any device on the network requests a DHCP lease. The injected value is persisted to /etc/pihole/pihole.toml and survives restarts. The strncpy in the code path limits the total interface field to 31 bytes, but payloads such as wlan0\ndhcp-script=/tmp/p fit within this constraint. The dnsmasq config validation introduced in FTL 6.6 only checks syntactic validity, so valid directives injected via newline pass validation successfully. This issue has been fixed in version 6.6.1.</p></details></td>
+        <td>2026-05-05</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39402" target="_blank" rel="noopener">CVE-2026-39402</a></td>
+        <td>4.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-863</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.01</td>
+        <td><details><summary>lxc is a Linux container runtime. In the setuid helper lxc-user-nic, the delete ...</summary><p>lxc is a Linux container runtime. In the setuid helper lxc-user-nic, the delete path contains a logic flaw in the find_line() function that allows an unprivileged user to delete OVS-attached network interfaces belonging to other users. When lxc-user-nic delete scans its NIC database to authorize a deletion request, the interface name comparison can set the authorization flag based on a name match alone, even when the ownership, type, and link fields in that database entry belong to a different user. The vulnerable check sits after the goto next label handling, meaning it is reachable on lines where earlier ownership checks failed or were skipped. Because nothing downstream of this authorization signal re-verifies that the matched database line actually belongs to the caller, an unprivileged attacker with a valid lxc-usernet policy entry can trigger deletion of another user&#x27;s OVS port on the same bridge. 
+
+This is limited to multi-tenant environments using lxc-user-nic with OpenVSwitch bridges. The impact is denial of service - one tenant can repeatedly disconnect networking from containers run by another tenant on shared infrastructure. This is patched in version 7.0.0.</p></details></td>
+        <td>2026-05-05</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39383" target="_blank" rel="noopener">CVE-2026-39383</a></td>
+        <td>6.9</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-918</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.83</td>
+        <td><details><summary>Gotenberg is an API-based document conversion tool. In version 8.29.1, an unauth...</summary><p>Gotenberg is an API-based document conversion tool. In version 8.29.1, an unauthenticated attacker with network access can force the server to make outbound HTTP POST requests to arbitrary internal or external destinations by supplying a crafted URL in the Gotenberg-Webhook-Url request header. The FilterDeadline function in filter.go is intended to gate outbound URLs, but when both the allow-list and deny-list are empty (the default configuration), it returns nil unconditionally and permits any URL. 
+
+This is a blind SSRF: Gotenberg POSTs the converted document to the webhook URL and only checks whether the response status code is an error, but never returns the target&#x27;s response body to the attacker. An attacker can use this to probe internal network infrastructure by observing whether the error callback is invoked, force POST requests against internal services that perform side effects, and confirm reachability of cloud metadata endpoints. The retryable HTTP client issues up to 4 automatic retries per request, amplifying each probe.
+
+This issue has been fixed in version 8.31.0. As a workaround, configure the GOTENBERG_API_WEBHOOK_ALLOW_LIST environment variable to restrict webhook URLs to known receivers, or set GOTENBERG_API_WEBHOOK_DENY_LIST to block RFC-1918 and link-local address ranges.</p></details></td>
+        <td>2026-05-05</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35579" target="_blank" rel="noopener">CVE-2026-35579</a></td>
+        <td>8.2</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-287</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>5.74</td>
+        <td><details><summary>CoreDNS is a DNS server written in Go. In versions prior to 1.14.3, the gRPC, QU...</summary><p>CoreDNS is a DNS server written in Go. In versions prior to 1.14.3, the gRPC, QUIC, DoH, and DoH3 transport implementations incorrectly handle TSIG authentication. For gRPC and QUIC, the server checks whether the TSIG key name exists in the configuration but never calls dns.TsigVerify() to validate the HMAC. If the key name matches a configured key, the tsigStatus field remains nil and the tsig plugin treats the request as successfully authenticated regardless of the MAC value. For DoH and DoH3, the issue is more severe: the DoHWriter.TsigStatus() method unconditionally returns nil, and the server never inspects the TSIG record at all. Any request containing a TSIG record is treated as authenticated over DoH and DoH3, even if the key name is invalid and the MAC is arbitrary.
+
+An unauthenticated network attacker can exploit this to bypass TSIG-protected functionality such as AXFR/IXFR zone transfers, dynamic DNS updates, or other TSIG-gated plugin behavior. The DoH and DoH3 variants have a lower exploitation bar because the attacker does not need to know a valid TSIG key name.
+
+This issue has been fixed in version 1.14.3. As a workaround, disable gRPC, QUIC, DoH, and DoH3 listeners where TSIG authentication is required, or restrict network-level access to affected transport ports to trusted sources only.</p></details></td>
+        <td>2026-05-05</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35527" target="_blank" rel="noopener">CVE-2026-35527</a></td>
+        <td>5.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-918</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.71</td>
+        <td><details><summary>Incus is an open source container and virtual machine manager. In versions prior...</summary><p>Incus is an open source container and virtual machine manager. In versions prior to 7.0.0, the image import flow issues an outbound HEAD request to a user-supplied URL before validating the request against project restrictions such as restricted.images.servers. The imgPostURLInfo function constructs and sends a HEAD request directly from the attacker-supplied source URL to resolve image metadata, and this network interaction occurs before the flow reaches the point where the import would be rejected by policy. Although the actual image download is blocked by the project restriction, an authenticated user can coerce the daemon into making blind HEAD requests to arbitrary destinations.
+
+These requests include server metadata in custom headers (Incus-Server-Architectures, Incus-Server-Version), which discloses information about the host environment to the attacker-controlled endpoint. This blind SSRF primitive can be used to probe internal services, unroutable address space, or cloud metadata endpoints reachable from the host.
+
+This vulnerability pattern is similar to CVE-2026-24767. This issue has been fixed in version 7.0.0.</p></details></td>
+        <td>2026-05-05</td>
+      </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-7857" target="_blank" rel="noopener">CVE-2026-7857</a></td>
         <td>7.3</td>
@@ -76,60 +229,6 @@
         <td>2026-05-05</td>
       </tr>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40331" target="_blank" rel="noopener">CVE-2026-40331</a></td>
-        <td>9.3</td>
-        <td><span class="severity critical">CRITICAL</span></td>
-        <td>CWE-89</td>
-        <td>&nbsp;</td>
-        <td>&mdash;</td>
-        <td>6.51</td>
-        <td><details><summary>Masa CMS is an open source content management system. In versions 7.2.0 through ...</summary><p>Masa CMS is an open source content management system. In versions 7.2.0 through 7.2.9, 7.3.0 through 7.3.14, 7.4.0 through 7.4.9, and 7.5.0 through 7.5.2, the unauthenticated JSON API accepts an altTable parameter that is stored via the setAltTable() method without validation or sanitization. This value is injected directly into a SQL FROM clause within feedGateway.cfc. An unauthenticated attacker can pass an arbitrary subquery into the altTable parameter to read sensitive data from any table in the database in a single HTTP request, including administrative credentials and password reset tokens.
-
-This issue has been fixed in versions 7.2.10, 7.3.15, 7.4.10, and 7.5.3. As a workaround, apply validation to the setAltTable function in core/mura/content/feed/feedBean.cfc to restrict input to simple alphanumeric table names, or disable the JSON API if it is not required.</p></details></td>
-        <td>2026-05-05</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40330" target="_blank" rel="noopener">CVE-2026-40330</a></td>
-        <td>9.3</td>
-        <td><span class="severity critical">CRITICAL</span></td>
-        <td>CWE-89</td>
-        <td>&nbsp;</td>
-        <td>&mdash;</td>
-        <td>6.51</td>
-        <td><details><summary>Masa CMS is an open source content management system. In versions 7.2.0 through ...</summary><p>Masa CMS is an open source content management system. In versions 7.2.0 through 7.2.9, 7.3.0 through 7.3.14, 7.4.0 through 7.4.9, and 7.5.0 through 7.5.2, a SQL injection vulnerability exists in the beanFeed.cfc component within the getQuery function&#x27;s handling of the sortDirection parameter. The parameter value is concatenated directly into SQL queries without sanitization or parameterization. An unauthenticated remote attacker can exploit this to extract sensitive information, modify or delete database records, or potentially achieve remote code execution on the underlying database server.
-
-This issue has been fixed in versions 7.2.10, 7.3.15, 7.4.10, and 7.5.3. As a workaround, use a WAF to block or restrict access to the beanFeed.cfc component, or deploy rules to detect SQL injection patterns targeting the sortDirection parameter.</p></details></td>
-        <td>2026-05-05</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40329" target="_blank" rel="noopener">CVE-2026-40329</a></td>
-        <td>9.3</td>
-        <td><span class="severity critical">CRITICAL</span></td>
-        <td>CWE-89</td>
-        <td>&nbsp;</td>
-        <td>&mdash;</td>
-        <td>6.51</td>
-        <td><details><summary>Masa CMS is an open source content management system. In versions 7.5.2 and earl...</summary><p>Masa CMS is an open source content management system. In versions 7.5.2 and earlier, a SQL injection vulnerability exists in the beanFeed.cfc component within the getQuery function&#x27;s processing of the sortBy parameter. The application fails to properly sanitize or parameterize this input before incorporating it into dynamic SQL statements. An unauthenticated remote attacker can execute arbitrary SQL commands against the database, potentially gaining access to sensitive data, modifying or deleting records, or escalating privileges to administrative control.
-
-This issue has been fixed in versions 7.2.10, 7.3.15, 7.4.10, and 7.5.3. As a workaround, configure WAF rules to block malicious SQL patterns in the sortBy parameter sent to beanFeed.cfc.</p></details></td>
-        <td>2026-05-05</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40280" target="_blank" rel="noopener">CVE-2026-40280</a></td>
-        <td>7.8</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-918</td>
-        <td>&nbsp;</td>
-        <td>&mdash;</td>
-        <td>5.46</td>
-        <td><details><summary>Gotenberg is an API-based document conversion tool. In versions 8.30.1 and earli...</summary><p>Gotenberg is an API-based document conversion tool. In versions 8.30.1 and earlier, the default private-IP deny-lists for the --webhook-deny-list and --api-download-from-deny-list flags use a case-sensitive regular expression (^https?://) to match URL schemes. Because Go&#x27;s net/url.Parse() normalizes the scheme to lowercase before establishing the outbound TCP connection, an attacker can bypass the deny-list by simply capitalizing part of the URL scheme (e.g., HTTP://, HTTPS://, or Http://). This allows unauthenticated requests to reach internal network services, including private IP ranges, loopback addresses, and cloud instance metadata endpoints such as HTTP://169.254.169.254/latest/meta-data/. 
-
-This bypasses the same security control that was patched in CVE-2026-27018.
-
-This issue has been fixed in version 8.31.0.</p></details></td>
-        <td>2026-05-05</td>
-      </tr>
-      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-38947" target="_blank" rel="noopener">CVE-2026-38947</a></td>
         <td>0.0</td>
         <td><span class="severity none">NONE</span></td>
@@ -149,45 +248,6 @@ This issue has been fixed in version 8.31.0.</p></details></td>
         <td>&mdash;</td>
         <td>3.36</td>
         <td><details><summary>PhpSpreadsheet is a library for reading and writing spreadsheet files. In versio...</summary><p>PhpSpreadsheet is a library for reading and writing spreadsheet files. In versions 1.30.3 and earlier, 2.0.0 through 2.1.15, 2.2.0 through 2.4.4, 3.3.0 through 3.10.4, and 4.0.0 through 5.6.0, the HTML Writer skips htmlspecialchars() output escaping when a cell uses a custom number format containing the @ text placeholder with additional literal text (e.g., @ &quot;items&quot;). The escaping is only applied when the formatted output strictly equals the original cell value. When the format code contains @ with quoted literal text, the formatter substitutes the raw cell value into the format string and returns early without invoking the escaping callback. An attacker who can control cell content in a spreadsheet processed by the HTML Writer can inject arbitrary HTML and JavaScript into the generated output. This issue has been fixed in versions 1.30.4, 2.1.16, 2.4.5, 3.10.5, and 5.7.0.</p></details></td>
-        <td>2026-05-05</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35397" target="_blank" rel="noopener">CVE-2026-35397</a></td>
-        <td>7.6</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-22</td>
-        <td>&nbsp;</td>
-        <td>&mdash;</td>
-        <td>5.32</td>
-        <td><details><summary>Jupyter Server is the backend for Jupyter web applications. In versions 2.17.0 a...</summary><p>Jupyter Server is the backend for Jupyter web applications. In versions 2.17.0 and earlier, a path traversal vulnerability in the REST API allows an authenticated user to escape the configured root_dir and access sibling directories whose names begin with the same prefix as the root_dir. For example, with a root_dir named &quot;test&quot;, the API permits access to a sibling directory named &quot;testtest&quot; through a crafted request to the /api/contents endpoint using encoded path components. An attacker can read, write, and delete files in affected sibling directories. Multi-tenant deployments using predictable naming schemes are particularly at risk, as a user with a directory named &quot;user1&quot; could access directories for user10 through user19 and beyond. A user who can choose a single-character folder name could gain access to a significant number of sibling directories. 
-
-Version 2.18.0 contains a fix. As a workaround, ensure folder names do not share a common prefix with any sibling directory.</p></details></td>
-        <td>2026-05-05</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34596" target="_blank" rel="noopener">CVE-2026-34596</a></td>
-        <td>5.4</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-367</td>
-        <td>&nbsp;</td>
-        <td>&mdash;</td>
-        <td>3.78</td>
-        <td><details><summary>Sandboxie-Plus is an open source sandbox-based isolation software for Windows. I...</summary><p>Sandboxie-Plus is an open source sandbox-based isolation software for Windows. In versions 1.17.2 and earlier, a Time-of-Check-to-Time-of-Use (TOCTOU) race condition exists during addon installation. When a user installs an addon through the SandMan interface, UpdUtil.exe is spawned as SYSTEM by SbieSvc but stages files in the user-writable %TEMP%\sandboxie-updater directory. After UpdUtil verifies file hashes against the signed addon manifest, install.bat extracts files.cab and executes config.exe from its contents. Between hash verification and extraction, an unprivileged user can replace files.cab with a crafted cabinet containing a malicious executable, which is then run as SYSTEM. No UAC prompt is required.
-
-This issue has been fixed in version 1.17.3.</p></details></td>
-        <td>2026-05-05</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34527" target="_blank" rel="noopener">CVE-2026-34527</a></td>
-        <td>2.0</td>
-        <td><span class="severity low">LOW</span></td>
-        <td>CWE-328</td>
-        <td>&nbsp;</td>
-        <td>&mdash;</td>
-        <td>1.40</td>
-        <td><details><summary>Sandboxie-Plus is an open source sandbox-based isolation software for Windows. I...</summary><p>Sandboxie-Plus is an open source sandbox-based isolation software for Windows. In versions 1.17.2 and earlier, SbieIniServer::HashPassword converts a SHA-1 digest to hexadecimal incorrectly. The high nibble of each byte is shifted right by 8 instead of 4, which always produces zero for an 8-bit value. As a result, the stored EditPassword hash only preserves the low nibble of each digest byte, reducing the effective entropy from 160 bits to 80 bits. This is layered on top of an unsalted SHA-1 scheme. The reduced entropy makes leaked or backed-up password hashes materially easier to brute-force.
-
-This issue has been fixed in version 1.17.3.</p></details></td>
         <td>2026-05-05</td>
       </tr>
       <tr>
@@ -1288,23 +1348,6 @@ This issue has been fixed in version 1.17.3.</p></details></td>
         <td>0.0% <small>p8</small></td>
         <td>5.25</td>
         <td><details><summary>fast-uri normalize() decoded percent-encoded authority delimiters inside the hos...</summary><p>fast-uri normalize() decoded percent-encoded authority delimiters inside the host component and then re-emitted them as raw delimiters during serialization. A host that combined an allowed domain, an encoded at-sign, and a different domain was re-emitted with the at-sign as a raw userinfo separator, changing the URI&#x27;s authority to the second domain. Applications that normalize untrusted URLs before host allowlist checks, redirect validation, or outbound request routing can be steered to a different authority than the input appeared to specify. Versions &lt;= 3.1.1 are affected. Update to 3.1.2 or later.</p></details></td>
-        <td>2026-05-05</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-43868" target="_blank" rel="noopener">CVE-2026-43868</a></td>
-        <td>5.3</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-789</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p4</small></td>
-        <td>3.71</td>
-        <td><details><summary>Memory Allocation with Excessive Size Value vulnerability in Apache Thrift.
-
-Thi...</summary><p>Memory Allocation with Excessive Size Value vulnerability in Apache Thrift.
-
-This issue affects Apache Thrift: before 0.23.0.
-
-Users are recommended to upgrade to version 0.23.0, which fixes the issue.</p></details></td>
         <td>2026-05-05</td>
       </tr>
       <tr>
@@ -2749,38 +2792,6 @@ Users are recommended to upgrade to version 0.23.0, which fixes the issue.</p></
         <td>2026-05-04</td>
       </tr>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40563" target="_blank" rel="noopener">CVE-2026-40563</a></td>
-        <td>7.1</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-94</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p9</small></td>
-        <td>4.97</td>
-        <td><details><summary>Description:
-Improper Control of Generation of Code (&#x27;Code Injection&#x27;) vulnerabi...</summary><p>Description:
-Improper Control of Generation of Code (&#x27;Code Injection&#x27;) vulnerability in Apache Atlas
-Apache Atlas exposes a DSL search endpoint that accepts user-supplied query strings. Attacker can alter Gremlin traversal logic within grammar-allowed characters to access unintended data
-
-
-
-
-Affect Version:
-This issue affects Apache Atlas: from 0.8 through 2.4.0.
-
-
-
-For the affect version &gt;= 2.0, vulnerability is only when Atlas is deployed with below non-default configuration.
-
-
-atlas.dsl.executor.traversal=false
-
-
-
-Mitigation:
-Users are recommended to upgrade to version 2.5.0, which fixes the issue.</p></details></td>
-        <td>2026-05-04</td>
-      </tr>
-      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-37458" target="_blank" rel="noopener">CVE-2026-37458</a></td>
         <td>6.5</td>
         <td><span class="severity medium">MEDIUM</span></td>
@@ -2814,29 +2825,18 @@ Users are recommended to upgrade to version 2.5.0, which fixes the issue.</p></d
         <td>2026-05-04</td>
       </tr>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6501" target="_blank" rel="noopener">CVE-2026-6501</a></td>
-        <td>5.3</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-611</td>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-29169" target="_blank" rel="noopener">CVE-2026-29169</a></td>
+        <td>7.5</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-476</td>
         <td>&nbsp;</td>
-        <td>0.1% <small>p17</small></td>
-        <td>3.71</td>
-        <td><details><summary>Improper restriction of XML external entity reference vulnerability in ILM Infor...</summary><p>Improper restriction of XML external entity reference vulnerability in ILM Informatique jOpenDocument allows Data Serialization External Entities Blowup.
+        <td>0.3% <small>p52</small></td>
+        <td>5.26</td>
+        <td><details><summary>A NULL pointer dereference in mod_dav_lock in Apache HTTP Server 2.4.66 and earl...</summary><p>A NULL pointer dereference in mod_dav_lock in Apache HTTP Server 2.4.66 and earlier may allow an attacker to crash the server with a malicious request.mod_dav_lock is not used internally by mod_dav or mod_dav_fs.
 
-This issue affects jOpenDocument: 1.5.</p></details></td>
-        <td>2026-05-04</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6500" target="_blank" rel="noopener">CVE-2026-6500</a></td>
-        <td>4.8</td>
-        <td><span class="severity medium">MEDIUM</span></td>
-        <td>CWE-256</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p2</small></td>
-        <td>3.36</td>
-        <td><details><summary>Plaintext storage of a password vulnerability in ILM Informatique OpenConcerto a...</summary><p>Plaintext storage of a password vulnerability in ILM Informatique OpenConcerto allows Retrieve Embedded Sensitive Data.
+The only known use-case for mod_dav_lock was mod_dav_svn from Apache Subversion earlier than version 1.2.0.
 
-This issue affects OpenConcerto: 1.7.5.</p></details></td>
+Users are recommended to upgrade to version 2.4.66, which fixes this issue, or remove mod_dav_lock.</p></details></td>
         <td>2026-05-04</td>
       </tr>
       <tr>
@@ -2859,19 +2859,6 @@ This issue affects OpenConcerto: 1.7.5.</p></details></td>
         <td>0.1% <small>p27</small></td>
         <td>4.55</td>
         <td><details><summary>An issue in Assimp v.6.0.2 allows a remote attacker to cause a denial of service...</summary><p>An issue in Assimp v.6.0.2 allows a remote attacker to cause a denial of service via the FBXMeshGeometry.cpp, MeshGeometry::MeshGeometry()</p></details></td>
-        <td>2026-05-04</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6499" target="_blank" rel="noopener">CVE-2026-6499</a></td>
-        <td>2.4</td>
-        <td><span class="severity low">LOW</span></td>
-        <td>CWE-732</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p2</small></td>
-        <td>1.68</td>
-        <td><details><summary>Incorrect Permission Assignment for Critical Resource vulnerability in ILM Infor...</summary><p>Incorrect Permission Assignment for Critical Resource vulnerability in ILM Informatique OpenConcerto allows Replace Binaries.
-
-This issue affects OpenConcerto: 1.7.5.</p></details></td>
         <td>2026-05-04</td>
       </tr>
       <tr>
@@ -6058,7 +6045,7 @@ This issue affects OpenConcerto: 1.7.5.</p></details></td>
       </div>
     </section>
     <section>
-      <h2>Previous Month — April 2026 <span class="count">(5031)</span></h2>
+      <h2>Previous Month — April 2026 <span class="count">(5034)</span></h2>
       <div class="table-wrapper">
         <table>
           <thead>
@@ -18616,22 +18603,6 @@ This issue affects OpenConcerto: 1.7.5.</p></details></td>
         <td>2026-04-22</td>
       </tr>
       <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-41651" target="_blank" rel="noopener">CVE-2026-41651</a></td>
-        <td>8.8</td>
-        <td><span class="severity high">HIGH</span></td>
-        <td>CWE-367</td>
-        <td>&nbsp;</td>
-        <td>0.2% <small>p41</small></td>
-        <td>6.17</td>
-        <td><details><summary>PackageKit is a a D-Bus abstraction layer that allows the user to manage package...</summary><p>PackageKit is a a D-Bus abstraction layer that allows the user to manage packages in a secure way using a cross-distro, cross-architecture API. PackageKit between and including versions 1.0.2 and 1.3.4 is vulnerable to a time-of-check time-of-use (TOCTOU) race condition on transaction flags that allows unprivileged users to install packages as root and thus leads to a local privilege escalation. This is patched in version 1.3.5.
-
-A local unprivileged user can install arbitrary RPM packages as root, including executing RPM scriptlets, without authentication. The vulnerability is a TOCTOU race condition on `transaction-&gt;cached_transaction_flags`  combined with a silent state-machine guard that discards illegal backward transitions while leaving corrupted flags in place. Three bugs exist in `src/pk-transaction.c`:
-1. Unconditional flag overwrite (line 4036): `InstallFiles()` writes caller-supplied flags to `transaction-&gt;cached_transaction_flags` without checking whether the transaction has already been  authorized/started. A second call blindly overwrites the flags even while the transaction is RUNNING.
-2. Silent state-transition rejection (lines 873–882): `pk_transaction_set_state()` silently discards backward state transitions (e.g. `RUNNING` → `WAITING_FOR_AUTH`) but the flag overwrite at step 1 already happened. The transaction continues running with corrupted flags.
-3. Late flag read at execution time (lines 2273–2277): The scheduler&#x27;s idle callback reads cached_transaction_flags at dispatch time, not at authorization time. If flags were overwritten between authorization and execution, the backend sees the attacker&#x27;s flags.</p></details></td>
-        <td>2026-04-22</td>
-      </tr>
-      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33611" target="_blank" rel="noopener">CVE-2026-33611</a></td>
         <td>6.5</td>
         <td><span class="severity medium">MEDIUM</span></td>
@@ -18772,6 +18743,189 @@ A local unprivileged user can install arbitrary RPM packages as root, including 
         <td>0.0% <small>p1</small></td>
         <td>3.71</td>
         <td><details><summary>An attacker can create a large number of concurrent DoQ or DoH3 connections, cau...</summary><p>An attacker can create a large number of concurrent DoQ or DoH3 connections, causing unlimited memory allocation in DNSdist and leading to a denial of service. DOQ and DoH3 are disabled by default.</p></details></td>
+        <td>2026-04-22</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-31458" target="_blank" rel="noopener">CVE-2026-31458</a></td>
+        <td>5.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-476</td>
+        <td>&nbsp;</td>
+        <td>0.0% <small>p6</small></td>
+        <td>3.85</td>
+        <td><details><summary>In the Linux kernel, the following vulnerability has been resolved:
+
+mm/damon/sy...</summary><p>In the Linux kernel, the following vulnerability has been resolved:
+
+mm/damon/sysfs: check contexts-&gt;nr before accessing contexts_arr[0]
+
+Multiple sysfs command paths dereference contexts_arr[0] without first
+verifying that kdamond-&gt;contexts-&gt;nr == 1.  A user can set nr_contexts to
+0 via sysfs while DAMON is running, causing NULL pointer dereferences.
+
+In more detail, the issue can be triggered by privileged users like
+below.
+
+First, start DAMON and make contexts directory empty
+(kdamond-&gt;contexts-&gt;nr == 0).
+
+    # damo start
+    # cd /sys/kernel/mm/damon/admin/kdamonds/0
+    # echo 0 &gt; contexts/nr_contexts
+
+Then, each of below commands will cause the NULL pointer dereference.
+
+    # echo update_schemes_stats &gt; state
+    # echo update_schemes_tried_regions &gt; state
+    # echo update_schemes_tried_bytes &gt; state
+    # echo update_schemes_effective_quotas &gt; state
+    # echo update_tuned_intervals &gt; state
+
+Guard all commands (except OFF) at the entry point of
+damon_sysfs_handle_cmd().</p></details></td>
+        <td>2026-04-22</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-31457" target="_blank" rel="noopener">CVE-2026-31457</a></td>
+        <td>5.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-476</td>
+        <td>&nbsp;</td>
+        <td>0.0% <small>p6</small></td>
+        <td>3.85</td>
+        <td><details><summary>In the Linux kernel, the following vulnerability has been resolved:
+
+mm/damon/sy...</summary><p>In the Linux kernel, the following vulnerability has been resolved:
+
+mm/damon/sysfs: check contexts-&gt;nr in repeat_call_fn
+
+damon_sysfs_repeat_call_fn() calls damon_sysfs_upd_tuned_intervals(),
+damon_sysfs_upd_schemes_stats(), and
+damon_sysfs_upd_schemes_effective_quotas() without checking contexts-&gt;nr. 
+If nr_contexts is set to 0 via sysfs while DAMON is running, these
+functions dereference contexts_arr[0] and cause a NULL pointer
+dereference.  Add the missing check.
+
+For example, the issue can be reproduced using DAMON sysfs interface and
+DAMON user-space tool (damo) [1] like below.
+
+    $ sudo damo start --refresh_interval 1s
+    $ echo 0 | sudo tee \
+            /sys/kernel/mm/damon/admin/kdamonds/0/contexts/nr_contexts</p></details></td>
+        <td>2026-04-22</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-31456" target="_blank" rel="noopener">CVE-2026-31456</a></td>
+        <td>4.7</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-362</td>
+        <td>&nbsp;</td>
+        <td>0.0% <small>p6</small></td>
+        <td>3.29</td>
+        <td><details><summary>In the Linux kernel, the following vulnerability has been resolved:
+
+mm/pagewalk...</summary><p>In the Linux kernel, the following vulnerability has been resolved:
+
+mm/pagewalk: fix race between concurrent split and refault
+
+The splitting of a PUD entry in walk_pud_range() can race with a
+concurrent thread refaulting the PUD leaf entry causing it to try walking
+a PMD range that has disappeared.
+
+An example and reproduction of this is to try reading numa_maps of a
+process while VFIO-PCI is setting up DMA (specifically the
+vfio_pin_pages_remote call) on a large BAR for that process.
+
+This will trigger a kernel BUG:
+vfio-pci 0000:03:00.0: enabling device (0000 -&gt; 0002)
+BUG: unable to handle page fault for address: ffffa23980000000
+PGD 0 P4D 0
+Oops: Oops: 0000 [#1] SMP NOPTI
+...
+RIP: 0010:walk_pgd_range+0x3b5/0x7a0
+Code: 8d 43 ff 48 89 44 24 28 4d 89 ce 4d 8d a7 00 00 20 00 48 8b 4c 24
+28 49 81 e4 00 00 e0 ff 49 8d 44 24 ff 48 39 c8 4c 0f 43 e3 &lt;49&gt; f7 06
+   9f ff ff ff 75 3b 48 8b 44 24 20 48 8b 40 28 48 85 c0 74
+RSP: 0018:ffffac23e1ecf808 EFLAGS: 00010287
+RAX: 00007f44c01fffff RBX: 00007f4500000000 RCX: 00007f44ffffffff
+RDX: 0000000000000000 RSI: 000ffffffffff000 RDI: ffffffff93378fe0
+RBP: ffffac23e1ecf918 R08: 0000000000000004 R09: ffffa23980000000
+R10: 0000000000000020 R11: 0000000000000004 R12: 00007f44c0200000
+R13: 00007f44c0000000 R14: ffffa23980000000 R15: 00007f44c0000000
+FS:  00007fe884739580(0000) GS:ffff9b7d7a9c0000(0000)
+knlGS:0000000000000000
+CS:  0010 DS: 0000 ES: 0000 CR0: 0000000080050033
+CR2: ffffa23980000000 CR3: 000000c0650e2005 CR4: 0000000000770ef0
+PKRU: 55555554
+Call Trace:
+ &lt;TASK&gt;
+ __walk_page_range+0x195/0x1b0
+ walk_page_vma+0x62/0xc0
+ show_numa_map+0x12b/0x3b0
+ seq_read_iter+0x297/0x440
+ seq_read+0x11d/0x140
+ vfs_read+0xc2/0x340
+ ksys_read+0x5f/0xe0
+ do_syscall_64+0x68/0x130
+ ? get_page_from_freelist+0x5c2/0x17e0
+ ? mas_store_prealloc+0x17e/0x360
+ ? vma_set_page_prot+0x4c/0xa0
+ ? __alloc_pages_noprof+0x14e/0x2d0
+ ? __mod_memcg_lruvec_state+0x8d/0x140
+ ? __lruvec_stat_mod_folio+0x76/0xb0
+ ? __folio_mod_stat+0x26/0x80
+ ? do_anonymous_page+0x705/0x900
+ ? __handle_mm_fault+0xa8d/0x1000
+ ? __count_memcg_events+0x53/0xf0
+ ? handle_mm_fault+0xa5/0x360
+ ? do_user_addr_fault+0x342/0x640
+ ? arch_exit_to_user_mode_prepare.constprop.0+0x16/0xa0
+ ? irqentry_exit_to_user_mode+0x24/0x100
+ entry_SYSCALL_64_after_hwframe+0x76/0x7e
+RIP: 0033:0x7fe88464f47e
+Code: c0 e9 b6 fe ff ff 50 48 8d 3d be 07 0b 00 e8 69 01 02 00 66 0f 1f
+84 00 00 00 00 00 64 8b 04 25 18 00 00 00 85 c0 75 14 0f 05 &lt;48&gt; 3d 00
+   f0 ff ff 77 5a c3 66 0f 1f 84 00 00 00 00 00 48 83 ec 28
+RSP: 002b:00007ffe6cd9a9b8 EFLAGS: 00000246 ORIG_RAX: 0000000000000000
+RAX: ffffffffffffffda RBX: 0000000000020000 RCX: 00007fe88464f47e
+RDX: 0000000000020000 RSI: 00007fe884543000 RDI: 0000000000000003
+RBP: 00007fe884543000 R08: 00007fe884542010 R09: 0000000000000000
+R10: fffffffffffffbc5 R11: 0000000000000246 R12: 0000000000000000
+R13: 0000000000000003 R14: 0000000000020000 R15: 0000000000020000
+ &lt;/TASK&gt;
+
+Fix this by validating the PUD entry in walk_pmd_range() using a stable
+snapshot (pudp_get()).  If the PUD is not present or is a leaf, retry the
+walk via ACTION_AGAIN instead of descending further.  This mirrors the
+retry logic in walk_pte_range(), which lets walk_pmd_range() retry if the
+PTE is not being got by pte_offset_map_lock().</p></details></td>
+        <td>2026-04-22</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-31455" target="_blank" rel="noopener">CVE-2026-31455</a></td>
+        <td>7.8</td>
+        <td><span class="severity high">HIGH</span></td>
+        <td>CWE-416</td>
+        <td>&nbsp;</td>
+        <td>0.0% <small>p9</small></td>
+        <td>5.46</td>
+        <td><details><summary>In the Linux kernel, the following vulnerability has been resolved:
+
+xfs: stop r...</summary><p>In the Linux kernel, the following vulnerability has been resolved:
+
+xfs: stop reclaim before pushing AIL during unmount
+
+The unmount sequence in xfs_unmount_flush_inodes() pushed the AIL while
+background reclaim and inodegc are still running. This is broken
+independently of any use-after-free issues - background reclaim and
+inodegc should not be running while the AIL is being pushed during
+unmount, as inodegc can dirty and insert inodes into the AIL during the
+flush, and background reclaim can race to abort and free dirty inodes.
+
+Reorder xfs_unmount_flush_inodes() to stop inodegc and cancel background
+reclaim before pushing the AIL. Stop inodegc before cancelling
+m_reclaim_work because the inodegc worker can re-queue m_reclaim_work
+via xfs_inodegc_set_reclaimable.</p></details></td>
         <td>2026-04-22</td>
       </tr>
       <tr>
