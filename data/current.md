@@ -1,9 +1,23 @@
 # CVEs — May 2026
 
-_409 vulnerabilities_
+_420 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
+| [CVE-2026-7823](https://nvd.nist.gov/vuln/detail/CVE-2026-7823) | 8.9 | HIGH | CWE-77 | No | — | 6.23 | 2026-05-05 | A security flaw has been discovered in Totolink A8000RU 7.1cu.643_b20200521. Affected is the function setAppFilterCfg of... |
+| [CVE-2026-7822](https://nvd.nist.gov/vuln/detail/CVE-2026-7822) | 2.1 | LOW | CWE-74 | No | — | 1.47 | 2026-05-05 | A vulnerability was identified in itsourcecode Courier Management System 1.0. This impacts an unknown function of the fi... |
+| [CVE-2026-7812](https://nvd.nist.gov/vuln/detail/CVE-2026-7812) | 5.5 | MEDIUM | CWE-74 | No | — | 3.85 | 2026-05-05 | A vulnerability was found in 54yyyu code-mcp up to 4cfc4643541a110c906d93635b391bf7e357f4a8. The impacted element is the... |
+| [CVE-2026-7811](https://nvd.nist.gov/vuln/detail/CVE-2026-7811) | 5.5 | MEDIUM | CWE-22 | No | — | 3.85 | 2026-05-05 | A vulnerability has been found in 54yyyu code-mcp up to 4cfc4643541a110c906d93635b391bf7e357f4a8. The affected element i... |
+| [CVE-2026-4362](https://nvd.nist.gov/vuln/detail/CVE-2026-4362) | 6.5 | MEDIUM | CWE-862 | No | — | 4.55 | 2026-05-05 | The ElementsKit Elementor Addons plugin for WordPress is vulnerable to unauthorized modification of data due to a missin... |
+| [CVE-2026-7810](https://nvd.nist.gov/vuln/detail/CVE-2026-7810) | 5.5 | MEDIUM | CWE-22 | No | — | 3.85 | 2026-05-05 | A flaw has been found in UsamaK98 python-notebook-mcp up to a05a232815809a7e425b5fa7be26e0d4369894c2. Impacted is the fu... |
+| [CVE-2026-5957](https://nvd.nist.gov/vuln/detail/CVE-2026-5957) | 6.5 | MEDIUM | CWE-22 | No | — | 4.55 | 2026-05-05 | The EmailKit plugin for WordPress is vulnerable to Arbitrary File Read in all versions up to and including 1.6.5. This i... |
+| [CVE-2026-5294](https://nvd.nist.gov/vuln/detail/CVE-2026-5294) | 9.8 | CRITICAL | CWE-862 | No | — | 6.86 | 2026-05-05 | The Geeky Bot plugin for WordPress is vulnerable to Missing Authorization in versions up to, and including, 1.2.2. This... |
+| [CVE-2026-5159](https://nvd.nist.gov/vuln/detail/CVE-2026-5159) | 6.4 | MEDIUM | CWE-79 | No | — | 4.48 | 2026-05-05 | The Royal Addons for Elementor plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the Instagram Feed... |
+| [CVE-2026-4803](https://nvd.nist.gov/vuln/detail/CVE-2026-4803) | 7.2 | HIGH | CWE-79 | No | — | 5.04 | 2026-05-05 | The Royal Elementor Addons plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'status' parameter... |
+| [CVE-2026-4665](https://nvd.nist.gov/vuln/detail/CVE-2026-4665) | 6.4 | MEDIUM | CWE-79 | No | — | 4.48 | 2026-05-05 | The WP Carousel Free plugin for WordPress is vulnerable to Stored Cross-Site Scripting via crafted fancybox `data-captio... |
+| [CVE-2026-3456](https://nvd.nist.gov/vuln/detail/CVE-2026-3456) | 7.5 | HIGH | CWE-89 | No | — | 5.25 | 2026-05-05 | The GeekyBot — Generate AI Content Without Prompt, Chatbot and Lead Generation plugin for WordPress is vulnerable to SQL... |
+| [CVE-2026-35228](https://nvd.nist.gov/vuln/detail/CVE-2026-35228) | 8.7 | HIGH | N/A | No | — | 6.09 | 2026-05-05 | Vulnerability in the Oracle MCP Server Helper Tool product of Oracle Open Source Projects (component: helper tool). The... |
+| [CVE-2026-2948](https://nvd.nist.gov/vuln/detail/CVE-2026-2948) | 6.4 | MEDIUM | CWE-918 | No | — | 4.48 | 2026-05-05 | The Gutenverse – Ultimate WordPress FSE Blocks Addons & Ecosystem plugin for WordPress is vulnerable to Server-Side Requ... |
 | [CVE-2026-6704](https://nvd.nist.gov/vuln/detail/CVE-2026-6704) | 6.1 | MEDIUM | CWE-79 | No | — | 4.27 | 2026-05-05 | The Blog Settings plugin for WordPress is vulnerable to Reflected Cross-Site Scripting via the 'page' parameter in all v... |
 | [CVE-2026-6702](https://nvd.nist.gov/vuln/detail/CVE-2026-6702) | 6.1 | MEDIUM | CWE-352 | No | — | 4.27 | 2026-05-05 | The Publish 2 Ping.fm plugin for WordPress is vulnerable to Cross-Site Request Forgery in all versions up to, and includ... |
 | [CVE-2026-6701](https://nvd.nist.gov/vuln/detail/CVE-2026-6701) | 4.3 | MEDIUM | CWE-352 | No | — | 3.01 | 2026-05-05 | The addfreespace plugin for WordPress is vulnerable to Cross-Site Request Forgery in all versions up to, and including,... |
@@ -119,7 +133,6 @@ _409 vulnerabilities_
 | [CVE-2026-37458](https://nvd.nist.gov/vuln/detail/CVE-2026-37458) | 0.0 | NONE | N/A | No | — | 0.00 | 2026-05-04 | Missing input validation in the MP_REACH_NLRI component of FRRouting (FRR) stable/10.0 to stable/10.6 allows authenticat... |
 | [CVE-2026-36365](https://nvd.nist.gov/vuln/detail/CVE-2026-36365) | 0.0 | NONE | N/A | No | — | 0.00 | 2026-05-04 | An issue in Lymphatus caesium-image-compressor All versions up to and including commit 02da2c6 allows a local attacker t... |
 | [CVE-2025-70071](https://nvd.nist.gov/vuln/detail/CVE-2025-70071) | 5.9 | MEDIUM | CWE-400 | No | — | 4.13 | 2026-05-04 | An issue in Assimp v.6.0.2 allows a remote attacker to cause a denial of service via the FBXParser.cpp, ParseVectorDataA... |
-| [CVE-2026-29169](https://nvd.nist.gov/vuln/detail/CVE-2026-29169) | 7.5 | HIGH | CWE-476 | No | — | 5.25 | 2026-05-04 | A NULL pointer dereference in mod_dav_lock in Apache HTTP Server 2.4.66 and earlier may allow an attacker to crash the s... |
 | [CVE-2025-70072](https://nvd.nist.gov/vuln/detail/CVE-2025-70072) | 6.5 | MEDIUM | CWE-125 | No | — | 4.55 | 2026-05-04 | An issue in Assimp v.6.0.2 allows a remote attacker to cause a denial of service via the FBXConverter.cpp, FBXConverter:... |
 | [CVE-2025-70070](https://nvd.nist.gov/vuln/detail/CVE-2025-70070) | 6.5 | MEDIUM | CWE-476 | No | — | 4.55 | 2026-05-04 | An issue in Assimp v.6.0.2 allows a remote attacker to cause a denial of service via the FBXMeshGeometry.cpp, MeshGeomet... |
 | [CVE-2026-6266](https://nvd.nist.gov/vuln/detail/CVE-2026-6266) | 8.3 | HIGH | CWE-305 | No | — | 5.81 | 2026-05-04 | A flaw was found in the AAP gateway. The user auto-link strategy, introduced in AAP 2.6, automatically links an external... |
@@ -180,9 +193,7 @@ _409 vulnerabilities_
 | [CVE-2026-7716](https://nvd.nist.gov/vuln/detail/CVE-2026-7716) | 2.1 | LOW | CWE-74 | No | 0.0% | 1.47 | 2026-05-04 | A vulnerability was found in code-projects Gym Management System In PHP and Windows NT 1.0. This vulnerability affects u... |
 | [CVE-2026-7715](https://nvd.nist.gov/vuln/detail/CVE-2026-7715) | 2.1 | LOW | CWE-22 | No | 0.1% | 1.47 | 2026-05-04 | A vulnerability has been found in ravenwits mcp-server-arangodb up to 0.4.7. This affects the function arango_backup of... |
 | [CVE-2026-7714](https://nvd.nist.gov/vuln/detail/CVE-2026-7714) | 5.5 | MEDIUM | CWE-287 | No | 0.1% | 3.85 | 2026-05-04 | A flaw has been found in crocodilestick Calibre-Web-Automated up to 4.0.6. Affected by this issue is some unknown functi... |
-| [CVE-2026-7372](https://nvd.nist.gov/vuln/detail/CVE-2026-7372) | 9.0 | CRITICAL | CWE-787 | No | 0.1% | 6.30 | 2026-05-04 | A stack overflow vulnerability exists in the WebCam Server Login functionality of GeoVision GV-VMS V20 20.0.2. A special... |
 | [CVE-2026-7371](https://nvd.nist.gov/vuln/detail/CVE-2026-7371) | 7.4 | HIGH | CWE-79 | No | 0.0% | 5.18 | 2026-05-04 | Multiple reflected cross-site scripting (xss) vulnerabilities exist in the Web Interface / ssi.cgi functionality of GeoV... |
-| [CVE-2026-7161](https://nvd.nist.gov/vuln/detail/CVE-2026-7161) | 9.3 | CRITICAL | CWE-656 | No | 0.0% | 6.51 | 2026-05-04 | An insufficient encryption vulnerability exists in the Device Authentication functionality of GeoVision GV-IP Device Uti... |
 | [CVE-2026-42370](https://nvd.nist.gov/vuln/detail/CVE-2026-42370) | 9.0 | CRITICAL | CWE-787 | No | 0.1% | 6.30 | 2026-05-04 | A stack overflow vulnerability exists in the WebCam Server Login functionality of GeoVision GV-VMS V20 20.0.2. A special... |
 | [CVE-2026-42368](https://nvd.nist.gov/vuln/detail/CVE-2026-42368) | 9.9 | CRITICAL | CWE-266 | No | 0.1% | 6.93 | 2026-05-04 | A privilege escalation vulnerability exists in the Web Interface functionality of GeoVision LPC2011/LPC2211 1.10. A spec... |
 | [CVE-2026-42367](https://nvd.nist.gov/vuln/detail/CVE-2026-42367) | 6.5 | MEDIUM | CWE-522 | No | 0.1% | 4.55 | 2026-05-04 | A privilege escalation vulnerability exists in the Web Interface / ssi.cgi functionality of GeoVision LPC2011/LPC2211 1.... |
