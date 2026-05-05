@@ -11,7 +11,7 @@
     <header>
       <h1>vuln-tracker — Top 50</h1>
       <p class="subtitle">The 50 most important CVEs from the current and previous month, ranked by VAP score (70% CVSS + 30% EPSS)</p>
-      <p class="last-updated">Last updated: 2026-05-05 14:10 UTC</p>
+      <p class="last-updated">Last updated: 2026-05-05 17:42 UTC</p>
     </header>
     <nav>
       <a href="index.html">&larr; All CVEs</a>
@@ -349,6 +349,17 @@
         <td>2026-05-01</td>
       </tr>
       <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-7411" target="_blank" rel="noopener">CVE-2026-7411</a></td>
+        <td>10.0</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-22</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>7.00</td>
+        <td><details><summary>In Eclipse BaSyx Java Server SDK versions prior to 2.0.0-milestone-10, inadequat...</summary><p>In Eclipse BaSyx Java Server SDK versions prior to 2.0.0-milestone-10, inadequate path normalization in the Submodel HTTP API allows an unauthenticated remote attacker to perform a path traversal attack. By supplying a maliciously crafted fileName parameter during a file upload operation, an attacker can bypass intended storage boundaries and write arbitrary files to any location on the host filesystem accessible by the Java process. This can lead to Remote Code Execution (RCE) and complete system compromise.</p></details></td>
+        <td>2026-05-05</td>
+      </tr>
+      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4631" target="_blank" rel="noopener">CVE-2026-4631</a></td>
         <td>9.8</td>
         <td><span class="severity critical">CRITICAL</span></td>
@@ -578,17 +589,6 @@
         <td>6.93</td>
         <td><details><summary>OpenProject is an open-source, web-based project management software. Prior to v...</summary><p>OpenProject is an open-source, web-based project management software. Prior to version 17.2.3, the =n operator in modules/reporting/lib/report/operator.rb:177 embeds user input directly into SQL WHERE clauses without parameterization. This issue has been patched in version 17.2.3.</p></details></td>
         <td>2026-04-02</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-30269" target="_blank" rel="noopener">CVE-2026-30269</a></td>
-        <td>9.9</td>
-        <td><span class="severity critical">CRITICAL</span></td>
-        <td>CWE-269</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p12</small></td>
-        <td>6.93</td>
-        <td><details><summary>Improper access control in Doorman v0.1.0 and v1.0.2 allows any authenticated us...</summary><p>Improper access control in Doorman v0.1.0 and v1.0.2 allows any authenticated user to update their own account role to a non-admin privileged role via /platform/user/{username}. The `role` field is accepted by the update model without a manage_users permission check for self-updates, enabling privilege escalation to high-privileged roles.</p></details></td>
-        <td>2026-04-20</td>
       </tr>
             </tbody>
           </table>
