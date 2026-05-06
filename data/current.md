@@ -1,9 +1,12 @@
 # CVEs — May 2026
 
-_546 vulnerabilities_
+_548 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
+| [CVE-2026-2306](https://nvd.nist.gov/vuln/detail/CVE-2026-2306) | 4.3 | MEDIUM | CWE-862 | No | — | 3.01 | 2026-05-06 | The Ninja Tables – Easy Data Table Builder plugin for WordPress is vulnerable to unauthorized database table creation du... |
+| [CVE-2026-5753](https://nvd.nist.gov/vuln/detail/CVE-2026-5753) | 6.5 | MEDIUM | CWE-862 | No | — | 4.55 | 2026-05-06 | The All-in-One WP Migration Unlimited Extension plugin for WordPress is vulnerable to Missing Authorization in versions... |
+| [CVE-2026-3208](https://nvd.nist.gov/vuln/detail/CVE-2026-3208) | 5.3 | MEDIUM | CWE-862 | No | — | 3.71 | 2026-05-06 | The Mercado Pago payments for WooCommerce plugin for WordPress is vulnerable to unauthorized access of data due to a mis... |
 | [CVE-2026-7573](https://nvd.nist.gov/vuln/detail/CVE-2026-7573) | 5.0 | MEDIUM | CWE-639 | No | — | 3.50 | 2026-05-06 | An authorization bypass (CWE-639) in the GetUserRoles gRPC API endpoint in Velocidex Velociraptor below version 0.76.5 a... |
 | [CVE-2026-7572](https://nvd.nist.gov/vuln/detail/CVE-2026-7572) | 4.4 | MEDIUM | CWE-193 | No | — | 3.08 | 2026-05-06 | An off-by-one error (CWE-193) in the ConsumeUnit16Array and ConsumeUnit64Array functions in Velocidex Velociraptor befor... |
 | [CVE-2025-71256](https://nvd.nist.gov/vuln/detail/CVE-2025-71256) | 7.5 | HIGH | N/A | No | — | 5.25 | 2026-05-06 | In nr modem, there is a possible improper input validation. This could lead to remote denial of service with no addition... |
@@ -15,7 +18,6 @@ _546 vulnerabilities_
 | [CVE-2026-44405](https://nvd.nist.gov/vuln/detail/CVE-2026-44405) | 3.4 | LOW | CWE-327 | No | — | 2.38 | 2026-05-06 | In Paramiko through 4.0.0 before a448945, rsakey.py allows the SHA-1 algorithm. |
 | [CVE-2026-40934](https://nvd.nist.gov/vuln/detail/CVE-2026-40934) | 7.6 | HIGH | CWE-613 | No | — | 5.32 | 2026-05-05 | Jupyter Server is the backend for Jupyter web applications. In versions 2.17.0 and earlier, the secret used to sign auth... |
 | [CVE-2026-40110](https://nvd.nist.gov/vuln/detail/CVE-2026-40110) | 7.6 | HIGH | CWE-777 | No | — | 5.32 | 2026-05-05 | Jupyter Server is the backend for Jupyter web applications. In versions 2.17.0 and earlier, the Origin header validation... |
-| [CVE-2026-28780](https://nvd.nist.gov/vuln/detail/CVE-2026-28780) | 0.0 | NONE | CWE-122 | No | — | 0.00 | 2026-05-05 | Heap-based Buffer Overflow vulnerability in mod_proxy_ajp of Apache HTTP Server. If mod_proxy_ajp connects to a maliciou... |
 | [CVE-2026-41950](https://nvd.nist.gov/vuln/detail/CVE-2026-41950) | 6.0 | MEDIUM | CWE-639 | No | — | 4.20 | 2026-05-05 | Dify before version 1.14.0 contains an authorization bypass vulnerability that allows authenticated users to read the fu... |
 | [CVE-2026-40068](https://nvd.nist.gov/vuln/detail/CVE-2026-40068) | 7.7 | HIGH | CWE-20 | No | — | 5.39 | 2026-05-05 | In versions 2.1.63 through 2.1.83 of Claude Code, the folder trust determination logic used the git worktree commondir f... |
 | [CVE-2026-39852](https://nvd.nist.gov/vuln/detail/CVE-2026-39852) | 8.8 | HIGH | CWE-863 | No | — | 6.16 | 2026-05-05 | Quarkus is a Java framework for building cloud-native applications. In versions prior to 3.20.6.1, 3.27.3.1, 3.33.1.1, 3... |

@@ -11,7 +11,7 @@
     <header>
       <h1>vuln-tracker</h1>
       <p class="subtitle">CVEs from the National Vulnerability Database — current and previous month</p>
-      <p class="last-updated">Last updated: 2026-05-06 03:42 UTC</p>
+      <p class="last-updated">Last updated: 2026-05-06 06:35 UTC</p>
     </header>
     <nav>
       <a href="top50.html">&#9733; Top 50</a>
@@ -25,7 +25,7 @@
     </nav>
     <main>
     <section>
-      <h2>Current Month — May 2026 <span class="count">(546)</span></h2>
+      <h2>Current Month — May 2026 <span class="count">(548)</span></h2>
       <div class="table-wrapper">
         <table>
           <thead>
@@ -42,6 +42,39 @@
             </tr>
           </thead>
           <tbody>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-2306" target="_blank" rel="noopener">CVE-2026-2306</a></td>
+        <td>4.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.01</td>
+        <td><details><summary>The Ninja Tables – Easy Data Table Builder plugin for WordPress is vulnerable to...</summary><p>The Ninja Tables – Easy Data Table Builder plugin for WordPress is vulnerable to unauthorized database table creation due to missing authorization checks on the `createFluentCartTable` function in all versions up to, and including, 5.2.6. This makes it possible for authenticated attackers, with Subscriber-level access and above, to create arbitrary Ninja Tables in the database which can lead to database pollution and resource exhaustion.</p></details></td>
+        <td>2026-05-06</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5753" target="_blank" rel="noopener">CVE-2026-5753</a></td>
+        <td>6.5</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>4.55</td>
+        <td><details><summary>The All-in-One WP Migration Unlimited Extension plugin for WordPress is vulnerab...</summary><p>The All-in-One WP Migration Unlimited Extension plugin for WordPress is vulnerable to Missing Authorization in versions up to, and including, 2.83. This is due to the &#x27;Ai1wmve_Schedules_Controller::save&#x27; handler for &#x27;admin_post_ai1wm_schedule_event_save&#x27; not verifying user capabilities before saving schedule data. This makes it possible for authenticated attackers, with subscriber-level access and above, to create scheduled export jobs and send backup notifications to attacker-controlled email addresses. Because such notifications include the random backup filename, full site backups can subsequently be downloaded from the target site, resulting in sensitive information exposure.</p></details></td>
+        <td>2026-05-06</td>
+      </tr>
+      <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-3208" target="_blank" rel="noopener">CVE-2026-3208</a></td>
+        <td>5.3</td>
+        <td><span class="severity medium">MEDIUM</span></td>
+        <td>CWE-862</td>
+        <td>&nbsp;</td>
+        <td>&mdash;</td>
+        <td>3.71</td>
+        <td><details><summary>The Mercado Pago payments for WooCommerce plugin for WordPress is vulnerable to ...</summary><p>The Mercado Pago payments for WooCommerce plugin for WordPress is vulnerable to unauthorized access of data due to a missing capability check on the &#x27;mp_pix_image&#x27; WooCommerce API endpoint in all versions up to, and including, 8.7.11. This makes it possible for unauthenticated attackers to retrieve PIX payment QR code images for arbitrary orders. PIX QR codes contain sensitive merchant information including PIX keys (which may be CPF/CNPJ personal identifiers), transaction amounts, merchant name and city, and MercadoPago transaction references.</p></details></td>
+        <td>2026-05-06</td>
+      </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-7573" target="_blank" rel="noopener">CVE-2026-7573</a></td>
         <td>5.0</td>
@@ -161,22 +194,6 @@
         <td>&mdash;</td>
         <td>5.32</td>
         <td><details><summary>Jupyter Server is the backend for Jupyter web applications. In versions 2.17.0 a...</summary><p>Jupyter Server is the backend for Jupyter web applications. In versions 2.17.0 and earlier, the Origin header validation uses Python&#x27;s re.match() to check incoming origins against the allow_origin_pat configuration value. Because re.match() only anchors at the start of the string and does not require a full match, a pattern intended to match only a trusted domain (e.g., trusted.example.com) will also match any origin that begins with that domain followed by additional characters (e.g., trusted.example.com.evil.com). An attacker who controls such a domain can bypass the CORS origin restriction and make cross-origin requests to the Jupyter Server API from an untrusted site. This issue has been fixed in version 2.18.0.</p></details></td>
-        <td>2026-05-05</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-28780" target="_blank" rel="noopener">CVE-2026-28780</a></td>
-        <td>0.0</td>
-        <td><span class="severity none">NONE</span></td>
-        <td>CWE-122</td>
-        <td>&nbsp;</td>
-        <td>&mdash;</td>
-        <td>0.00</td>
-        <td><details><summary>Heap-based Buffer Overflow vulnerability in mod_proxy_ajp of Apache HTTP Server....</summary><p>Heap-based Buffer Overflow vulnerability in mod_proxy_ajp of Apache HTTP Server.
-If mod_proxy_ajp connects to a malicious AJP server this AJP server can send a malicious AJP message back to mod_proxy_ajp and cause it to write 4 attacker controlled bytes after the end of a heap based buffer.
-
-This issue affects Apache HTTP Server: through 2.4.66.
-
-Users are recommended to upgrade to version 2.4.67, which fixes the issue.</p></details></td>
         <td>2026-05-05</td>
       </tr>
       <tr>
