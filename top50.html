@@ -11,7 +11,7 @@
     <header>
       <h1>vuln-tracker — Top 50</h1>
       <p class="subtitle">The 50 most important CVEs from the current and previous month, ranked by VAP score (70% CVSS + 30% EPSS)</p>
-      <p class="last-updated">Last updated: 2026-05-06 10:23 UTC</p>
+      <p class="last-updated">Last updated: 2026-05-06 14:28 UTC</p>
     </header>
     <nav>
       <a href="index.html">&larr; All CVEs</a>
@@ -57,8 +57,8 @@
         <td><span class="severity critical">CRITICAL</span></td>
         <td>CWE-284</td>
         <td><span class="kev-yes">&#10003;</span></td>
-        <td>41.4% <small>p97</small></td>
-        <td>8.10</td>
+        <td>43.2% <small>p97</small></td>
+        <td>8.16</td>
         <td><details><summary>A improper access control vulnerability in Fortinet FortiClientEMS 7.4.5 through...</summary><p>A improper access control vulnerability in Fortinet FortiClientEMS 7.4.5 through 7.4.6 may allow an unauthenticated attacker to execute unauthorized code or commands via crafted requests.</p></details></td>
         <td>2026-04-04</td>
       </tr>
@@ -118,6 +118,17 @@
         <td>2026-04-16</td>
       </tr>
       <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-0545" target="_blank" rel="noopener">CVE-2026-0545</a></td>
+        <td>9.8</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-306</td>
+        <td>&nbsp;</td>
+        <td>5.5% <small>p90</small></td>
+        <td>7.02</td>
+        <td><details><summary>In mlflow/mlflow, the FastAPI job endpoints under `/ajax-api/3.0/jobs/*` are not...</summary><p>In mlflow/mlflow, the FastAPI job endpoints under `/ajax-api/3.0/jobs/*` are not protected by authentication or authorization when the `basic-auth` app is enabled. This vulnerability affects the latest version of the repository. If job execution is enabled (`MLFLOW_SERVER_ENABLE_JOB_EXECUTION=true`) and any job function is allowlisted, any network client can submit, read, search, and cancel jobs without credentials, bypassing basic-auth entirely. This can lead to unauthenticated remote code execution if allowed jobs perform privileged actions such as shell execution or filesystem changes. Even if jobs are deemed safe, this still constitutes an authentication bypass, potentially resulting in job spam, denial of service (DoS), or data exposure in job results.</p></details></td>
+        <td>2026-04-03</td>
+      </tr>
+      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-41679" target="_blank" rel="noopener">CVE-2026-41679</a></td>
         <td>10.0</td>
         <td><span class="severity critical">CRITICAL</span></td>
@@ -134,7 +145,7 @@
         <td><span class="severity critical">CRITICAL</span></td>
         <td>CWE-502</td>
         <td>&nbsp;</td>
-        <td>0.4% <small>p57</small></td>
+        <td>0.4% <small>p60</small></td>
         <td>7.01</td>
         <td><details><summary>Deserialization of untrusted data in Microsoft Bing allows an unauthorized attac...</summary><p>Deserialization of untrusted data in Microsoft Bing allows an unauthorized attacker to execute code over a network.</p></details></td>
         <td>2026-04-23</td>
@@ -195,6 +206,17 @@
         <td>2026-04-06</td>
       </tr>
       <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-7411" target="_blank" rel="noopener">CVE-2026-7411</a></td>
+        <td>10.0</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-22</td>
+        <td>&nbsp;</td>
+        <td>0.1% <small>p27</small></td>
+        <td>7.00</td>
+        <td><details><summary>In Eclipse BaSyx Java Server SDK versions prior to 2.0.0-milestone-10, inadequat...</summary><p>In Eclipse BaSyx Java Server SDK versions prior to 2.0.0-milestone-10, inadequate path normalization in the Submodel HTTP API allows an unauthenticated remote attacker to perform a path traversal attack. By supplying a maliciously crafted fileName parameter during a file upload operation, an attacker can bypass intended storage boundaries and write arbitrary files to any location on the host filesystem accessible by the Java process. This can lead to Remote Code Execution (RCE) and complete system compromise.</p></details></td>
+        <td>2026-05-05</td>
+      </tr>
+      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35431" target="_blank" rel="noopener">CVE-2026-35431</a></td>
         <td>10.0</td>
         <td><span class="severity critical">CRITICAL</span></td>
@@ -217,6 +239,17 @@
         <td>2026-04-02</td>
       </tr>
       <tr>
+        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-36767" target="_blank" rel="noopener">CVE-2026-36767</a></td>
+        <td>10.0</td>
+        <td><span class="severity critical">CRITICAL</span></td>
+        <td>CWE-22</td>
+        <td>&nbsp;</td>
+        <td>0.1% <small>p23</small></td>
+        <td>7.00</td>
+        <td><details><summary>A path traversal vulnerability in the /content/images/add endpoint of shopizer v...</summary><p>A path traversal vulnerability in the /content/images/add endpoint of shopizer v3.2.5 allows attackers write arbitrary files to any writeable path via a crafted POST request.</p></details></td>
+        <td>2026-04-30</td>
+      </tr>
+      <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34976" target="_blank" rel="noopener">CVE-2026-34976</a></td>
         <td>10.0</td>
         <td><span class="severity critical">CRITICAL</span></td>
@@ -237,17 +270,6 @@
         <td>7.00</td>
         <td><details><summary>An issue was discovered in SMS in Samsung Mobile Processor, Wearable Processor, ...</summary><p>An issue was discovered in SMS in Samsung Mobile Processor, Wearable Processor, and Modem Exynos 980, 990, 850, 1080, 2100, 1280, 2200, 1330, 1380, 1480, 2400, 1580, 2500, 9110, W920, W930, W1000, Modem 5123, Modem 5300, and Modem 5400. A Stack-based Buffer Overflow occurs while parsing SMS RP-DATA messages.</p></details></td>
         <td>2026-04-06</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-36767" target="_blank" rel="noopener">CVE-2026-36767</a></td>
-        <td>10.0</td>
-        <td><span class="severity critical">CRITICAL</span></td>
-        <td>CWE-22</td>
-        <td>&nbsp;</td>
-        <td>0.1% <small>p19</small></td>
-        <td>7.00</td>
-        <td><details><summary>A path traversal vulnerability in the /content/images/add endpoint of shopizer v...</summary><p>A path traversal vulnerability in the /content/images/add endpoint of shopizer v3.2.5 allows attackers write arbitrary files to any writeable path via a crafted POST request.</p></details></td>
-        <td>2026-04-30</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32186" target="_blank" rel="noopener">CVE-2026-32186</a></td>
@@ -347,17 +369,6 @@
         <td>7.00</td>
         <td><details><summary>JS8Call through 2.3.1 and JS8Call-improved before 3.0 have a stack-based buffer ...</summary><p>JS8Call through 2.3.1 and JS8Call-improved before 3.0 have a stack-based buffer overflow via a radio transmission of @APRSIS GRID followed by a long Maidenhead locator. This occurs in grid2deg in APRSISClient.cpp.</p></details></td>
         <td>2026-05-01</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-7411" target="_blank" rel="noopener">CVE-2026-7411</a></td>
-        <td>10.0</td>
-        <td><span class="severity critical">CRITICAL</span></td>
-        <td>CWE-22</td>
-        <td>&nbsp;</td>
-        <td>&mdash;</td>
-        <td>7.00</td>
-        <td><details><summary>In Eclipse BaSyx Java Server SDK versions prior to 2.0.0-milestone-10, inadequat...</summary><p>In Eclipse BaSyx Java Server SDK versions prior to 2.0.0-milestone-10, inadequate path normalization in the Submodel HTTP API allows an unauthenticated remote attacker to perform a path traversal attack. By supplying a maliciously crafted fileName parameter during a file upload operation, an attacker can bypass intended storage boundaries and write arbitrary files to any location on the host filesystem accessible by the Java process. This can lead to Remote Code Execution (RCE) and complete system compromise.</p></details></td>
-        <td>2026-05-05</td>
       </tr>
       <tr>
         <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4631" target="_blank" rel="noopener">CVE-2026-4631</a></td>
@@ -578,17 +589,6 @@
         <td>6.93</td>
         <td><details><summary>Genealogy is a family tree PHP application. Prior to 5.9.1, a critical broken ac...</summary><p>Genealogy is a family tree PHP application. Prior to 5.9.1, a critical broken access control vulnerability in the genealogy application allows any authenticated user to transfer ownership of arbitrary non-personal teams to themselves. This enables complete takeover of other users’ team workspaces and unrestricted access to all genealogy data associated with the compromised team. This vulnerability is fixed in 5.9.1.</p></details></td>
         <td>2026-04-07</td>
-      </tr>
-      <tr>
-        <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34717" target="_blank" rel="noopener">CVE-2026-34717</a></td>
-        <td>9.9</td>
-        <td><span class="severity critical">CRITICAL</span></td>
-        <td>CWE-89</td>
-        <td>&nbsp;</td>
-        <td>0.0% <small>p13</small></td>
-        <td>6.93</td>
-        <td><details><summary>OpenProject is an open-source, web-based project management software. Prior to v...</summary><p>OpenProject is an open-source, web-based project management software. Prior to version 17.2.3, the =n operator in modules/reporting/lib/report/operator.rb:177 embeds user input directly into SQL WHERE clauses without parameterization. This issue has been patched in version 17.2.3.</p></details></td>
-        <td>2026-04-02</td>
       </tr>
             </tbody>
           </table>
