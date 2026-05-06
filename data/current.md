@@ -1,21 +1,25 @@
 # CVEs — May 2026
 
-_543 vulnerabilities_
+_546 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
+| [CVE-2026-7573](https://nvd.nist.gov/vuln/detail/CVE-2026-7573) | 5.0 | MEDIUM | CWE-639 | No | — | 3.50 | 2026-05-06 | An authorization bypass (CWE-639) in the GetUserRoles gRPC API endpoint in Velocidex Velociraptor below version 0.76.5 a... |
+| [CVE-2026-7572](https://nvd.nist.gov/vuln/detail/CVE-2026-7572) | 4.4 | MEDIUM | CWE-193 | No | — | 3.08 | 2026-05-06 | An off-by-one error (CWE-193) in the ConsumeUnit16Array and ConsumeUnit64Array functions in Velocidex Velociraptor befor... |
+| [CVE-2025-71256](https://nvd.nist.gov/vuln/detail/CVE-2025-71256) | 7.5 | HIGH | N/A | No | — | 5.25 | 2026-05-06 | In nr modem, there is a possible improper input validation. This could lead to remote denial of service with no addition... |
+| [CVE-2025-71255](https://nvd.nist.gov/vuln/detail/CVE-2025-71255) | 7.5 | HIGH | N/A | No | — | 5.25 | 2026-05-06 | In Modem IMS, there is a possible improper input validation. This could lead to remote denial of service with no additio... |
+| [CVE-2025-71254](https://nvd.nist.gov/vuln/detail/CVE-2025-71254) | 7.5 | HIGH | N/A | No | — | 5.25 | 2026-05-06 | In Modem IMS, there is a possible improper input validation. This could lead to remote denial of service with no additio... |
+| [CVE-2025-71253](https://nvd.nist.gov/vuln/detail/CVE-2025-71253) | 7.5 | HIGH | N/A | No | — | 5.25 | 2026-05-06 | In Modem IMS, there is a possible improper input validation. This could lead to remote denial of service with no additio... |
+| [CVE-2025-71252](https://nvd.nist.gov/vuln/detail/CVE-2025-71252) | 7.5 | HIGH | N/A | No | — | 5.25 | 2026-05-06 | In Modem IMS, there is a possible improper input validation. This could lead to remote denial of service with no additio... |
+| [CVE-2025-71251](https://nvd.nist.gov/vuln/detail/CVE-2025-71251) | 7.5 | HIGH | N/A | No | — | 5.25 | 2026-05-06 | In IMS, there is a possible system crash due to improper input validation. This could lead to remote denial of service w... |
+| [CVE-2026-44405](https://nvd.nist.gov/vuln/detail/CVE-2026-44405) | 3.4 | LOW | CWE-327 | No | — | 2.38 | 2026-05-06 | In Paramiko through 4.0.0 before a448945, rsakey.py allows the SHA-1 algorithm. |
 | [CVE-2026-40934](https://nvd.nist.gov/vuln/detail/CVE-2026-40934) | 7.6 | HIGH | CWE-613 | No | — | 5.32 | 2026-05-05 | Jupyter Server is the backend for Jupyter web applications. In versions 2.17.0 and earlier, the secret used to sign auth... |
 | [CVE-2026-40110](https://nvd.nist.gov/vuln/detail/CVE-2026-40110) | 7.6 | HIGH | CWE-777 | No | — | 5.32 | 2026-05-05 | Jupyter Server is the backend for Jupyter web applications. In versions 2.17.0 and earlier, the Origin header validation... |
-| [CVE-2026-40075](https://nvd.nist.gov/vuln/detail/CVE-2026-40075) | 8.2 | HIGH | CWE-22 | No | — | 5.74 | 2026-05-05 | OpenMRS Core is an open source electronic medical record system platform. In versions 2.7.8 and earlier and versions 2.8... |
 | [CVE-2026-28780](https://nvd.nist.gov/vuln/detail/CVE-2026-28780) | 0.0 | NONE | CWE-122 | No | — | 0.00 | 2026-05-05 | Heap-based Buffer Overflow vulnerability in mod_proxy_ajp of Apache HTTP Server. If mod_proxy_ajp connects to a maliciou... |
 | [CVE-2026-41950](https://nvd.nist.gov/vuln/detail/CVE-2026-41950) | 6.0 | MEDIUM | CWE-639 | No | — | 4.20 | 2026-05-05 | Dify before version 1.14.0 contains an authorization bypass vulnerability that allows authenticated users to read the fu... |
 | [CVE-2026-40068](https://nvd.nist.gov/vuln/detail/CVE-2026-40068) | 7.7 | HIGH | CWE-20 | No | — | 5.39 | 2026-05-05 | In versions 2.1.63 through 2.1.83 of Claude Code, the folder trust determination logic used the git worktree commondir f... |
 | [CVE-2026-39852](https://nvd.nist.gov/vuln/detail/CVE-2026-39852) | 8.8 | HIGH | CWE-863 | No | — | 6.16 | 2026-05-05 | Quarkus is a Java framework for building cloud-native applications. In versions prior to 3.20.6.1, 3.27.3.1, 3.33.1.1, 3... |
 | [CVE-2026-39849](https://nvd.nist.gov/vuln/detail/CVE-2026-39849) | 8.7 | HIGH | CWE-93 | No | — | 6.09 | 2026-05-05 | Pi-hole FTL is the core engine of the Pi-hole network-level advertisement and tracker blocker. In versions before 6.6.1,... |
-| [CVE-2026-39402](https://nvd.nist.gov/vuln/detail/CVE-2026-39402) | 4.3 | MEDIUM | CWE-863 | No | — | 3.01 | 2026-05-05 | lxc is a Linux container runtime. In the setuid helper lxc-user-nic, the delete path contains a logic flaw in the find_l... |
-| [CVE-2026-39383](https://nvd.nist.gov/vuln/detail/CVE-2026-39383) | 6.9 | MEDIUM | CWE-918 | No | — | 4.83 | 2026-05-05 | Gotenberg is an API-based document conversion tool. In version 8.29.1, an unauthenticated attacker with network access c... |
-| [CVE-2026-35579](https://nvd.nist.gov/vuln/detail/CVE-2026-35579) | 8.2 | HIGH | CWE-287 | No | — | 5.74 | 2026-05-05 | CoreDNS is a DNS server written in Go. In versions prior to 1.14.3, the gRPC, QUIC, DoH, and DoH3 transport implementati... |
-| [CVE-2026-35527](https://nvd.nist.gov/vuln/detail/CVE-2026-35527) | 5.3 | MEDIUM | CWE-918 | No | — | 3.71 | 2026-05-05 | Incus is an open source container and virtual machine manager. In versions prior to 7.0.0, the image import flow issues... |
 | [CVE-2026-7857](https://nvd.nist.gov/vuln/detail/CVE-2026-7857) | 7.3 | HIGH | CWE-119 | No | — | 5.11 | 2026-05-05 | A vulnerability has been found in D-Link DI-8100 16.07.26A1. This vulnerability affects the function sprintf of the file... |
 | [CVE-2026-7856](https://nvd.nist.gov/vuln/detail/CVE-2026-7856) | 7.3 | HIGH | CWE-119 | No | — | 5.11 | 2026-05-05 | A flaw has been found in D-Link DI-8100 16.07.26A1. This affects an unknown part of the file /url_member.asp of the comp... |
 | [CVE-2026-44331](https://nvd.nist.gov/vuln/detail/CVE-2026-44331) | 8.1 | HIGH | CWE-89 | No | — | 5.67 | 2026-05-05 | In ProFTPD through 1.3.9a before 7666224, a SQL injection vulnerability in sqltab_fetch_clients_cb() in contrib/mod_wrap... |
@@ -255,7 +259,6 @@ _543 vulnerabilities_
 | [CVE-2026-37458](https://nvd.nist.gov/vuln/detail/CVE-2026-37458) | 6.5 | MEDIUM | CWE-20 | No | 0.0% | 4.55 | 2026-05-04 | Missing input validation in the MP_REACH_NLRI component of FRRouting (FRR) stable/10.0 to stable/10.6 allows authenticat... |
 | [CVE-2026-36365](https://nvd.nist.gov/vuln/detail/CVE-2026-36365) | 7.8 | HIGH | CWE-77 | No | 0.0% | 5.46 | 2026-05-04 | An issue in Lymphatus caesium-image-compressor All versions up to and including commit 02da2c6 allows a local attacker t... |
 | [CVE-2025-70071](https://nvd.nist.gov/vuln/detail/CVE-2025-70071) | 5.9 | MEDIUM | CWE-400 | No | 0.0% | 4.13 | 2026-05-04 | An issue in Assimp v.6.0.2 allows a remote attacker to cause a denial of service via the FBXParser.cpp, ParseVectorDataA... |
-| [CVE-2026-29169](https://nvd.nist.gov/vuln/detail/CVE-2026-29169) | 7.5 | HIGH | CWE-476 | No | 0.3% | 5.26 | 2026-05-04 | A NULL pointer dereference in mod_dav_lock in Apache HTTP Server 2.4.66 and earlier may allow an attacker to crash the s... |
 | [CVE-2025-70072](https://nvd.nist.gov/vuln/detail/CVE-2025-70072) | 6.5 | MEDIUM | CWE-125 | No | 0.1% | 4.55 | 2026-05-04 | An issue in Assimp v.6.0.2 allows a remote attacker to cause a denial of service via the FBXConverter.cpp, FBXConverter:... |
 | [CVE-2025-70070](https://nvd.nist.gov/vuln/detail/CVE-2025-70070) | 6.5 | MEDIUM | CWE-476 | No | 0.1% | 4.55 | 2026-05-04 | An issue in Assimp v.6.0.2 allows a remote attacker to cause a denial of service via the FBXMeshGeometry.cpp, MeshGeomet... |
 | [CVE-2026-6266](https://nvd.nist.gov/vuln/detail/CVE-2026-6266) | 8.3 | HIGH | CWE-305 | No | 0.0% | 5.81 | 2026-05-04 | A flaw was found in the AAP gateway. The user auto-link strategy, introduced in AAP 2.6, automatically links an external... |

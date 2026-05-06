@@ -1,6 +1,6 @@
 # CVEs — April 2026
 
-_5034 vulnerabilities_
+_5030 vulnerabilities_
 
 | CVE ID | CVSS | Severity | CWE | KEV | EPSS | VAP | Published | Description |
 |--------|------|----------|-----|-----|------|-----|-----------|-------------|
@@ -1157,10 +1157,6 @@ _5034 vulnerabilities_
 | [CVE-2026-33594](https://nvd.nist.gov/vuln/detail/CVE-2026-33594) | 5.3 | MEDIUM | CWE-770 | No | 0.0% | 3.71 | 2026-04-22 | A client can trigger excessive memory allocation by generating a lot of queries that are routed to an overloaded DoH bac... |
 | [CVE-2026-33593](https://nvd.nist.gov/vuln/detail/CVE-2026-33593) | 7.5 | HIGH | CWE-369 | No | 0.0% | 5.25 | 2026-04-22 | A client can trigger a divide by zero error leading to crash by sending a crafted DNSCrypt query. |
 | [CVE-2026-33254](https://nvd.nist.gov/vuln/detail/CVE-2026-33254) | 5.3 | MEDIUM | CWE-770 | No | 0.0% | 3.71 | 2026-04-22 | An attacker can create a large number of concurrent DoQ or DoH3 connections, causing unlimited memory allocation in DNSd... |
-| [CVE-2026-31458](https://nvd.nist.gov/vuln/detail/CVE-2026-31458) | 5.5 | MEDIUM | CWE-476 | No | 0.0% | 3.85 | 2026-04-22 | In the Linux kernel, the following vulnerability has been resolved:  mm/damon/sysfs: check contexts->nr before accessing... |
-| [CVE-2026-31457](https://nvd.nist.gov/vuln/detail/CVE-2026-31457) | 5.5 | MEDIUM | CWE-476 | No | 0.0% | 3.85 | 2026-04-22 | In the Linux kernel, the following vulnerability has been resolved:  mm/damon/sysfs: check contexts->nr in repeat_call_f... |
-| [CVE-2026-31456](https://nvd.nist.gov/vuln/detail/CVE-2026-31456) | 4.7 | MEDIUM | CWE-362 | No | 0.0% | 3.29 | 2026-04-22 | In the Linux kernel, the following vulnerability has been resolved:  mm/pagewalk: fix race between concurrent split and... |
-| [CVE-2026-31455](https://nvd.nist.gov/vuln/detail/CVE-2026-31455) | 7.8 | HIGH | CWE-416 | No | 0.0% | 5.46 | 2026-04-22 | In the Linux kernel, the following vulnerability has been resolved:  xfs: stop reclaim before pushing AIL during unmount... |
 | [CVE-2026-31192](https://nvd.nist.gov/vuln/detail/CVE-2026-31192) | 6.5 | MEDIUM | CWE-20 | No | 0.0% | 4.55 | 2026-04-22 | Insufficient validation of Chrome extension identifiers in Raindrop.io Bookmark Manager Web App 5.6.76.0 allows attacker... |
 | [CVE-2026-0539](https://nvd.nist.gov/vuln/detail/CVE-2026-0539) | 8.5 | HIGH | CWE-276 | No | 0.0% | 5.95 | 2026-04-22 | Incorrect Default Permissions in pcvisit service binary on Windows allows a low-privileged local attacker to escalate th... |
 | [CVE-2014-125120](https://nvd.nist.gov/vuln/detail/CVE-2014-125120) | 0.0 | NONE | N/A | No | — | 0.00 | 2026-04-22 | Rejected reason: This CVE has the been REJECTED and will not be published by the CNA. |
